@@ -3,7 +3,7 @@ Description=Poll Japan incident feeds hourly
 
 [Timer]
 OnBootSec=2min
-OnUnitActiveSec=1h
+OnCalendar=*-*-* *:13:00 Asia/Tokyo
 AccuracySec=1min
 Persistent=true
 

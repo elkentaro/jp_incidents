@@ -348,7 +348,7 @@ sudo systemctl daemon-reload
 sudo systemctl enable --now jp-incidents.timer
 ```
 
-The timer runs two minutes after boot and once per hour thereafter as the `kentaro` user. The service loads optional secrets and overrides from `.env`, which is ignored by Git.
+The timer runs two minutes after boot and at 13 minutes past every hour in the `Asia/Tokyo` timezone as the `kentaro` user. The 03:13 run deliberately starts after the host's usual 03:00–03:05 network reset. Before changing collection state, the process waits up to 10 minutes for external connectivity, checking every 30 seconds. If connectivity is still unavailable, systemd retries the failed run after five minutes (up to four starts per 30 minutes). The service loads optional secrets and overrides from `.env`, which is ignored by Git. `JPI_NETWORK_WAIT_SECONDS`, `JPI_NETWORK_RETRY_SECONDS`, and comma-separated `JPI_NETWORK_CHECK_URLS` can override the defaults.
 
 ## Enable GitHub Pages
 

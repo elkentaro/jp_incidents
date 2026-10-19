@@ -38,6 +38,21 @@ class StaticPublishingTests(unittest.TestCase):
         connection.commit()
         connection.close()
 
+    def test_network_wait_retries_without_touching_collection(self):
+        checks = iter((False, False, True))
+        delays = []
+        self.assertTrue(app.wait_for_network(
+            timeout=10, interval=2, probe_fn=lambda: next(checks), sleep_fn=delays.append
+        ))
+        self.assertEqual(delays, [2, 2])
+
+    def test_network_wait_fails_for_systemd_to_retry(self):
+        with patch.object(app.time, "monotonic", side_effect=(0, 0, 1)):
+            with self.assertRaisesRegex(RuntimeError, "Network unavailable"):
+                app.wait_for_network(
+                    timeout=1, interval=1, probe_fn=lambda: False, sleep_fn=lambda _: None
+                )
+
     def tearDown(self):
         app.DB_PATH = self.old_db
         self.temp.cleanup()

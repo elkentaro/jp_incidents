@@ -845,6 +845,42 @@ def fetch(url, timeout=25):
         return r.read(2_000_000)
 
 
+def network_ready(urls=None, timeout=10):
+    """Return true when at least one external endpoint is reachable."""
+    if urls is None:
+        urls = tuple(filter(None, os.environ.get(
+            "JPI_NETWORK_CHECK_URLS", "https://github.com/,https://news.google.com/"
+        ).split(",")))
+    for url in urls:
+        try:
+            request = urllib.request.Request(url.strip(), headers={"User-Agent": UA}, method="HEAD")
+            with urllib.request.urlopen(request, timeout=timeout):
+                return True
+        except (urllib.error.URLError, TimeoutError, OSError, ValueError):
+            continue
+    return False
+
+
+def wait_for_network(timeout=None, interval=None, probe_fn=network_ready, sleep_fn=time.sleep):
+    """Wait through a short router/network outage before touching collection state."""
+    timeout = int(os.environ.get("JPI_NETWORK_WAIT_SECONDS", "600")) if timeout is None else timeout
+    interval = int(os.environ.get("JPI_NETWORK_RETRY_SECONDS", "30")) if interval is None else interval
+    deadline = time.monotonic() + max(0, timeout)
+    attempt = 0
+    while True:
+        attempt += 1
+        if probe_fn():
+            if attempt > 1:
+                print(f"Network available after {attempt} checks", flush=True)
+            return True
+        remaining = deadline - time.monotonic()
+        if remaining <= 0:
+            raise RuntimeError(f"Network unavailable after {timeout} seconds")
+        delay = min(max(1, interval), remaining)
+        print(f"Network unavailable; retrying in {int(delay)} seconds", flush=True)
+        sleep_fn(delay)
+
+
 WRAPPER_HOSTS = ("news.google.com",)  # feeds whose links are redirect pages, not the article
 
 
@@ -2051,6 +2087,8 @@ UNITS = """\
 Description=Poll Japan incident feeds
 Wants=network-online.target
 After=network-online.target
+StartLimitIntervalSec=30min
+StartLimitBurst=4
 [Service]
 Type=oneshot
 User={user}
@@ -2063,13 +2101,16 @@ Environment=JPI_RSS_PATH={wd}/feed.xml
 Environment=PYTHONUNBUFFERED=1
 EnvironmentFile=-{wd}/.env
 ExecStart={py} {script} poll --notify --publish
+Restart=on-failure
+RestartSec=5min
 
 # /etc/systemd/system/jp-incidents.timer
 [Unit]
 Description=Poll Japan incident feeds hourly
 [Timer]
 OnBootSec=2min
-OnUnitActiveSec=1h
+OnCalendar=*-*-* *:13:00 Asia/Tokyo
+AccuracySec=1min
 Persistent=true
 [Install]
 WantedBy=timers.target
@@ -2127,6 +2168,7 @@ def main():
     if a.cmd == "sources":
         test_sources(name_match=a.match, group=a.group)
     elif a.cmd == "poll":
+        wait_for_network()
         poll(a.notify)
         if a.publish:
             publish_public_json(a.json_path, a.rss_path, a.sources_path)

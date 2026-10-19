@@ -2,6 +2,8 @@
 Description=Poll Japan incident feeds and publish static data
 Wants=network-online.target
 After=network-online.target
+StartLimitIntervalSec=30min
+StartLimitBurst=4
 
 [Service]
 Type=oneshot
@@ -15,3 +17,5 @@ Environment=JPI_RSS_PATH=/opt/jp-incidents/feed.xml
 Environment=PYTHONUNBUFFERED=1
 EnvironmentFile=-/opt/jp-incidents/.env
 ExecStart=/usr/bin/python3 /opt/jp-incidents/jp_incidents.py poll --notify --publish
+Restart=on-failure
+RestartSec=5min
