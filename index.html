@@ -6,7 +6,7 @@
   <meta name="description" content="A continuously updated index of publicly reported cybersecurity incidents affecting organizations in Japan.">
   <title>JP Incident Monitor</title>
   <link rel="alternate" type="application/rss+xml" title="JP Incident Monitor RSS" href="feed.xml">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20261019-2">
 </head>
 <body>
   <header class="site-header">
@@ -16,6 +16,7 @@
         <span>Incident Monitor</span>
       </a>
       <div class="header-actions">
+        <span class="coverage-range"><span data-i18n="coverage">Coverage</span> <strong id="coverage-range">—</strong></span>
         <a class="rss-link" href="feed.xml" data-i18n="rssFeed" type="application/rss+xml">RSS feed</a>
         <button class="language-switch" id="language-switch" type="button" aria-label="日本語に切り替える">
           <span class="language-option is-active" data-language-option="en">EN</span>
@@ -34,16 +35,25 @@
           <h1 id="page-title" data-i18n="title">Cyber incidents in Japan</h1>
           <p class="lede" data-i18n="description">Publicly reported cybersecurity incidents affecting Japanese organizations, collected from news, security publications, and official notices.</p>
         </div>
-        <dl class="summary" aria-live="polite">
-          <div>
-            <dt data-i18n="totalIncidents">Total incidents</dt>
-            <dd id="total-count">—</dd>
-          </div>
-          <div>
-            <dt data-i18n="lastUpdated">Data updated</dt>
-            <dd id="updated-at">—</dd>
-          </div>
-        </dl>
+        <div class="overview-panel">
+          <section class="trend" aria-labelledby="trend-title">
+            <div class="trend-heading">
+              <h2 id="trend-title" data-i18n="trendTitle">90-day incident trend</h2>
+              <span id="trend-total" class="trend-total"></span>
+            </div>
+            <svg id="trend-chart" width="420" height="154" viewBox="0 0 420 154" role="img"></svg>
+          </section>
+          <dl class="summary" aria-live="polite">
+            <div>
+              <dt data-i18n="totalIncidents">Total incidents</dt>
+              <dd id="total-count">—</dd>
+            </div>
+            <div>
+              <dt data-i18n="lastUpdated">Data updated</dt>
+              <dd id="updated-at">—</dd>
+            </div>
+          </dl>
+        </div>
       </div>
     </section>
 
@@ -106,6 +116,6 @@
     </div>
   </footer>
 
-  <script src="app.js" defer></script>
+  <script src="app.js?v=20261019-2" defer></script>
 </body>
 </html>

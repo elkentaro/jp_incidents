@@ -2,6 +2,19 @@
 
 const PAGE_SIZE = 100;
 
+function savedLanguage() {
+  try {
+    return localStorage.getItem("jp-incidents-language");
+  } catch (_) {
+    return null;
+  }
+}
+
+function replaceContent(node, children) {
+  while (node.firstChild) node.removeChild(node.firstChild);
+  children.forEach((child) => node.appendChild(child));
+}
+
 const copy = {
   en: {
     eyebrow: "OPEN-SOURCE INCIDENT INDEX",
@@ -9,6 +22,10 @@ const copy = {
     description: "Publicly reported cybersecurity incidents affecting Japanese organizations, collected from news, security publications, and official notices.",
     totalIncidents: "Total incidents",
     lastUpdated: "Data updated",
+    coverage: "Coverage",
+    trendTitle: "90-day incident trend",
+    trendCount: (count) => `${count.toLocaleString("en-US")} reported`,
+    trendAria: (total, peak) => `Daily incident counts for the last 90 days. ${total} incidents total; highest daily count ${peak}.`,
     directoryTitle: "Incident directory",
     reset: "Reset filters",
     searchLabel: "Search organizations or sources",
@@ -48,6 +65,10 @@ const copy = {
     description: "ニュース、セキュリティ専門メディア、公式発表から収集した、日本の組織に影響する公表済みサイバーインシデントです。",
     totalIncidents: "インシデント総数",
     lastUpdated: "データ更新日時",
+    coverage: "収録期間",
+    trendTitle: "過去90日間のインシデント推移",
+    trendCount: (count) => `${count.toLocaleString("ja-JP")}件`,
+    trendAria: (total, peak) => `過去90日間の日別インシデント件数。合計${total}件、1日の最大件数${peak}件。`,
     directoryTitle: "インシデント一覧",
     reset: "絞り込みを解除",
     searchLabel: "組織名・情報源を検索",
@@ -87,6 +108,9 @@ const elements = {
   language: document.querySelector("#language-switch"),
   total: document.querySelector("#total-count"),
   updated: document.querySelector("#updated-at"),
+  coverage: document.querySelector("#coverage-range"),
+  trend: document.querySelector("#trend-chart"),
+  trendTotal: document.querySelector("#trend-total"),
   results: document.querySelector("#result-count"),
   search: document.querySelector("#search"),
   type: document.querySelector("#type-filter"),
@@ -100,7 +124,7 @@ const elements = {
 };
 
 const state = {
-  language: localStorage.getItem("jp-incidents-language") || (navigator.language.startsWith("ja") ? "ja" : "en"),
+  language: savedLanguage() || (navigator.language.startsWith("ja") ? "ja" : "en"),
   incidents: [],
   updatedAt: null,
   page: 1,
@@ -113,7 +137,7 @@ function text(key) { return copy[state.language][key]; }
 
 function setOptions(select, options) {
   const selected = select.value;
-  select.replaceChildren(...options.map(([value, label]) => {
+  replaceContent(select, options.map(([value, label]) => {
     const option = document.createElement("option");
     option.value = value;
     option.textContent = label;
@@ -173,6 +197,100 @@ function formatUpdated(value) {
   }).format(date);
 }
 
+function formatCoverageRange() {
+  const dates = state.incidents
+    .map((incident) => new Date(incident.published_at))
+    .filter((date) => !Number.isNaN(date.valueOf()))
+    .sort((a, b) => a - b);
+  if (!dates.length) return "—";
+  const formatter = new Intl.DateTimeFormat(state.language === "ja" ? "ja-JP" : "en-US", {
+    year: "numeric", month: "short", day: "numeric", timeZone: "Asia/Tokyo"
+  });
+  const first = formatter.format(dates[0]);
+  const last = formatter.format(dates[dates.length - 1]);
+  return first === last ? first : `${first} – ${last}`;
+}
+
+function tokyoDateKey(date) {
+  const parts = new Intl.DateTimeFormat("en-US", {
+    year: "numeric", month: "2-digit", day: "2-digit", timeZone: "Asia/Tokyo"
+  }).formatToParts(date);
+  const values = {};
+  parts.forEach((part) => { values[part.type] = part.value; });
+  return `${values.year}-${values.month}-${values.day}`;
+}
+
+function svgNode(name, attributes = {}, value = null) {
+  const node = document.createElementNS("http://www.w3.org/2000/svg", name);
+  Object.entries(attributes).forEach(([key, attribute]) => node.setAttribute(key, attribute));
+  if (value !== null) node.textContent = value;
+  return node;
+}
+
+function renderTrend() {
+  const dayMs = 24 * 60 * 60 * 1000;
+  const now = Date.now();
+  const days = Array.from({ length: 90 }, (_, index) => {
+    const date = new Date(now - (89 - index) * dayMs);
+    return { date, key: tokyoDateKey(date), count: 0 };
+  });
+  const byKey = new Map(days.map((day) => [day.key, day]));
+  state.incidents.forEach((incident) => {
+    const date = new Date(incident.published_at);
+    if (!Number.isNaN(date.valueOf())) {
+      const day = byKey.get(tokyoDateKey(date));
+      if (day) day.count += 1;
+    }
+  });
+
+  const total = days.reduce((sum, day) => sum + day.count, 0);
+  const peak = Math.max(1, ...days.map((day) => day.count));
+  const width = 420;
+  const top = 10;
+  const bottom = 126;
+  const left = 29;
+  const right = 416;
+  const plotHeight = bottom - top;
+  const x = (index) => left + (index / (days.length - 1)) * (right - left);
+  const y = (count) => bottom - (count / peak) * plotHeight;
+  const points = days.map((day, index) => `${x(index).toFixed(2)},${y(day.count).toFixed(2)}`);
+
+  replaceContent(elements.trend, []);
+  const gridValues = [...new Set([0, Math.ceil(peak / 2), peak])].sort((a, b) => a - b);
+  gridValues.forEach((value) => {
+    const gridY = y(value);
+    elements.trend.append(
+      svgNode("line", { x1: left, y1: gridY, x2: right, y2: gridY, class: "chart-grid" }),
+      svgNode("text", { x: 0, y: gridY + 3, class: "chart-label" }, String(value))
+    );
+  });
+  elements.trend.append(
+    svgNode("path", {
+      d: `M ${left} ${bottom} L ${points.join(" L ")} L ${right} ${bottom} Z`, class: "chart-area"
+    }),
+    svgNode("polyline", { points: points.join(" "), class: "chart-line" })
+  );
+
+  const locale = state.language === "ja" ? "ja-JP" : "en-US";
+  const shortDate = new Intl.DateTimeFormat(locale, { month: "short", day: "numeric", timeZone: "Asia/Tokyo" });
+  days.forEach((day, index) => {
+    const nextX = index === days.length - 1 ? right : x(index + 1);
+    const previousX = index === 0 ? left : x(index - 1);
+    const hit = svgNode("rect", {
+      x: (x(index) - (x(index) - previousX) / 2).toFixed(2), y: top,
+      width: ((nextX - previousX) / 2).toFixed(2), height: bottom - top, class: "chart-hit"
+    });
+    hit.append(svgNode("title", {}, `${shortDate.format(day.date)}: ${day.count.toLocaleString(locale)}`));
+    elements.trend.append(hit);
+  });
+  elements.trend.append(
+    svgNode("text", { x: left, y: 149, class: "chart-label" }, shortDate.format(days[0].date)),
+    svgNode("text", { x: right, y: 149, class: "chart-label", "text-anchor": "end" }, shortDate.format(days[days.length - 1].date))
+  );
+  elements.trend.setAttribute("aria-label", text("trendAria")(total, Math.max(...days.map((day) => day.count))));
+  elements.trendTotal.textContent = text("trendCount")(total);
+}
+
 function filteredIncidents() {
   const query = elements.search.value.trim().toLocaleLowerCase(state.language);
   return state.incidents.filter((incident) => {
@@ -182,7 +300,7 @@ function filteredIncidents() {
     const searchable = [
       incident.organization,
       text("types")[incident.incident_type],
-      ...(incident.sources || []).flatMap((source) => [source.name, source.url])
+      ...(incident.sources || []).reduce((values, source) => values.concat([source.name, source.url]), [])
     ].filter(Boolean).join(" ").toLocaleLowerCase(state.language);
     return searchable.includes(query);
   });
@@ -222,7 +340,8 @@ function updateSortHeaders() {
     if (direction) header.setAttribute("aria-sort", direction === "asc" ? "ascending" : "descending");
     else header.removeAttribute("aria-sort");
     const button = header.querySelector("button");
-    const label = header.querySelector("[data-i18n]")?.textContent || "";
+    const labelNode = header.querySelector("[data-i18n]");
+    const label = labelNode ? labelNode.textContent : "";
     const nextDirection = active && direction === "asc" ? "desc" : "asc";
     button.setAttribute("aria-label", nextDirection === "asc"
       ? text("sortAscending")(label)
@@ -319,7 +438,7 @@ function pageButton(label, page, disabled = false, className = "") {
 }
 
 function renderPagination(totalPages) {
-  elements.pagination.replaceChildren();
+  replaceContent(elements.pagination, []);
   if (totalPages <= 1) return;
   elements.pagination.append(pageButton(`← ${text("previous")}`, state.page - 1, state.page === 1, "page-arrow"));
   pageItems(state.page, totalPages).forEach((item) => {
@@ -348,8 +467,10 @@ function render() {
 
   elements.total.textContent = state.incidents.length.toLocaleString(state.language === "ja" ? "ja-JP" : "en-US");
   elements.updated.textContent = formatUpdated(state.updatedAt);
+  elements.coverage.textContent = formatCoverageRange();
+  renderTrend();
   elements.results.textContent = `${text("results")(filtered.length, state.incidents.length)} · ${text("page")(state.page, totalPages)}`;
-  elements.rows.replaceChildren(...visible.map(incidentRow));
+  replaceContent(elements.rows, visible.map(incidentRow));
   elements.empty.hidden = filtered.length !== 0;
   updateSortHeaders();
   renderPagination(totalPages);
@@ -362,7 +483,7 @@ function filtersChanged() {
 
 elements.language.addEventListener("click", () => {
   state.language = state.language === "en" ? "ja" : "en";
-  localStorage.setItem("jp-incidents-language", state.language);
+  try { localStorage.setItem("jp-incidents-language", state.language); } catch (_) { /* Safari private mode */ }
   applyLanguage();
 });
 elements.search.addEventListener("input", filtersChanged);
@@ -377,7 +498,7 @@ elements.reset.addEventListener("click", () => {
 });
 document.querySelectorAll("th[data-sort] .sort-button").forEach((button) => {
   button.addEventListener("click", () => {
-    const key = button.closest("th").dataset.sort;
+    const key = button.parentElement.dataset.sort;
     if (state.sortKey === key) state.sortDirection = state.sortDirection === "asc" ? "desc" : "asc";
     else {
       state.sortKey = key;

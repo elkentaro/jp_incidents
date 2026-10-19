@@ -734,7 +734,7 @@ def fmt_records(n):
 
 
 def send_webhook(rows):
-    url = os.environ.get("WEBHOOK_URL", "").strip()
+    url = re.sub(r"\s+", "", os.environ.get("WEBHOOK_URL", ""))
     if not url:
         print("[warn] --notify set but WEBHOOK_URL empty", file=sys.stderr)
         return
