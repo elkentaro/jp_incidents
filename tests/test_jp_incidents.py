@@ -281,7 +281,7 @@ class StaticPublishingTests(unittest.TestCase):
             result = app.review_pending(
                 fetch_body_fn=lambda _: "article body", corroborate_fn=lambda *_: []
             )
-        self.assertEqual(result, {"total": 1, "confirmed": 0, "rejected": 1, "deferred": 0})
+        self.assertEqual(result, {"total": 1, "confirmed": 0, "rejected": 0, "deferred": 1})
 
     def test_unmatched_followup_is_not_inserted_as_new_incident(self):
         connection = app.db()

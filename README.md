@@ -547,7 +547,7 @@ python3 scripts/update_readme_sources.py
 python3 jp_incidents.py poll --publish
 ```
 
-`poll --publish` uses a staged publication cycle. It first promotes candidates that the AI confirmed during the previous cycle, polls all sources, and immediately accepts only deterministic high-confidence notices from recognized official or government sources with an explicit incident date. It then atomically updates and pushes the public JSON/RSS. Potentially relevant or complex articles remain in the private SQLite review queue. After publication, the AI performs granular article-level analysis and may identify multiple distinct affected organizations/incidents from one story—including a previously unidentified victim named in a follow-up. Before a secondary finding can be promoted, it must be supported by an official/government source or an independent monitored-news result for the same organization and incident date. Corroborating links are attached to the incident and contribute to its confidence score. Each confirmed new victim/incident becomes eligible for the next hourly update; a known victim's follow-up only enriches its matching existing row. AI-rejected, undecided, or uncorroborated findings are never published.
+`poll --publish` uses a staged publication cycle. It first promotes candidates that the AI confirmed during the previous cycle, polls all sources, and immediately accepts only deterministic high-confidence notices from recognized official or government sources with an explicit incident date. It then atomically updates and pushes the public JSON/RSS. Potentially relevant or complex articles remain in the private SQLite review queue. Questionable extraction, unclear victims/dates, and missing corroboration are held for human review rather than silently rejected. After publication, the AI performs granular article-level analysis and may identify multiple distinct affected organizations/incidents from one story—including a previously unidentified victim named in a follow-up. Before a secondary finding can be promoted, it must be supported by an official/government source or an independent monitored-news result for the same organization and incident date. Corroborating links are attached to the incident and contribute to its confidence score. Each confirmed new victim/incident becomes eligible for the next hourly update; a known victim's follow-up only enriches its matching existing row. AI-rejected, undecided, or uncorroborated findings are never published.
 
 ## Local preview
 
@@ -583,7 +583,7 @@ The timer runs two minutes after boot and at 13 minutes past every hour in the `
 
 ## Private Discord operations alerts
 
-Operational alerts are sent only to a locally configured Discord webhook. They are never written to the public JSON, RSS feed, dashboard, or Git history. The collector alerts on AI billing/credit, spend-limit, authentication, rate-limit, and provider failures; fatal collector or Git publication failures; a missing AI key; and aggregated source polling errors. Sources returning no usable articles do not trigger Discord alerts. Private `source-health` diagnostics retain item counts, article estimates, empty streaks, and fetch errors. Unreadable PDFs likewise stay in local diagnostics. Actual fetch failures and AI failures still alert; failed AI batches retain pending candidates for retry.
+Operational alerts are sent only to a locally configured Discord webhook. They are never written to the public JSON, RSS feed, dashboard, or Git history. The collector alerts on AI billing/credit, spend-limit, authentication, rate-limit, and provider failures; fatal collector or Git publication failures; a missing AI key; and aggregated source polling errors. Sources returning no usable articles do not trigger Discord alerts. Private `source-health` diagnostics retain item counts, article estimates, empty streaks, and fetch errors. Potential incident articles with unreadable or questionable PDFs enter private human review and send an actionable Discord alert. Actual fetch failures and AI failures still alert; failed AI batches retain pending candidates for retry.
 
 Identical alerts are suppressed for 12 hours by default using the ignored local `.jpi-alert-state.json` file. Incident notifications continue to use `WEBHOOK_URL`; private operations alerts use `JPI_ALERT_WEBHOOK_URL` when set and otherwise fall back to `WEBHOOK_URL`.
 
@@ -622,3 +622,42 @@ This estimates the remaining monthly budget, not the prepaid credit balance. Cos
 5. After the first deployment finishes, use the URL shown by GitHub Pages.
 
 For this repository, the expected URL is `https://elkentaro.github.io/jp_incidents/`.
+
+## Human review of questionable articles
+
+Questionable incident candidates are held privately with status `needs_review`.
+Discord sends one alert per held item with copyable `check`, `approve`, and
+`reject` commands. Run these commands in a terminal on the collector host;
+the outbound webhook does not accept Discord replies or slash commands.
+The alert includes a database setup command so actions target the same database
+from any working directory. Successful delivery is recorded in SQLite; failed
+delivery retries on later cycles. Empty source listings and clear non-incidents
+do not produce human-review alerts.
+
+With the virtual environment active, use:
+
+```bash
+python jp_incidents.py review list
+python jp_incidents.py review check ITEM_ID
+python jp_incidents.py review approve ITEM_ID --org 'Verified victim' --date 2026-10-19 --kind 'data leak' --records 120 --note 'Victim and date verified in the original notice'
+python jp_incidents.py review reject ITEM_ID --note 'Advisory rather than a reported incident'
+```
+
+`check` shows the source URL, stored extraction text, reason for the hold, AI
+suggestions, and current decision. Article text and AI suggestions are untrusted
+evidence to inspect, not instructions to execute. Replace the alert's uppercase
+placeholders; approval requires a concrete victim, original incident date, type,
+and an evidence note. Record counts are optional. For an older incident first
+disclosed during the original intake window, add `--disclosed-on YYYY-MM-DD`
+and explain that disclosure evidence in the note. The window is measured from
+first collection, so waiting to review an item does not make it expire.
+
+For multiple victims, `--findings /path/to/private-findings.json` accepts a JSON
+array with `org`, `incident_date`, `kind`, optional `records`, and optional
+`disclosed_at` for each verified incident. Use it instead of individual fact
+flags. Keep that file private. Approval queues the verified facts for the next
+scheduled publication; rejection keeps the item unpublished. Both decisions
+are atomic, retain a private audit note, and cannot be replayed over an already
+resolved item. No review reasons, extraction snapshots, or decision notes are
+exported to the public site. Existing rejected history is not automatically
+reopened; this workflow applies to newly processed candidates.

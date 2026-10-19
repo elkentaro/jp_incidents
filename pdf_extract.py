@@ -20,6 +20,8 @@ def extract(raw):
     if reader.is_encrypted and not reader.decrypt(""):
         raise ValueError("PDF requires a password")
     result = ""
+    if len(reader.pages) > MAX_PAGES:
+        print("JPI_PDF_TRUNCATED", file=sys.stderr)
     for page in reader.pages[:MAX_PAGES]:
         result += (page.extract_text() or "") + "\n"
         if len(result) >= MAX_TEXT:

@@ -111,7 +111,7 @@ class CollectionCoverageTests(unittest.TestCase):
         with app.db() as c:
             self.assertEqual(c.execute("SELECT COUNT(*) FROM review_queue WHERE status='pending'").fetchone()[0], 2)
 
-    def test_unreadable_pdf_stays_pending_without_ai_call(self):
+    def test_unreadable_pdf_waits_for_human_without_ai_call(self):
         self.queue(self.candidate(path='notice/20261019.pdf'))
         with patch.object(app, 'llm_extract_many') as ai:
             result = app.review_pending(fetch_body_fn=lambda _: '')

@@ -55,7 +55,7 @@ Source entry format (JPI_SOURCES JSON, list of objects):
         text around the link as its summary (how aggregator tables are read)
   municipal/official: scan the official homepage's latest links and every RSS/Atom feed it advertises
 """
-import argparse, csv, hashlib, html, io, json, os, re, sqlite3, subprocess, sys, time
+import argparse, csv, hashlib, html, io, json, os, re, shlex, sqlite3, subprocess, sys, time
 import urllib.request, urllib.error, urllib.parse
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
@@ -675,6 +675,10 @@ CREATE TABLE IF NOT EXISTS review_queue(
   id TEXT PRIMARY KEY, source TEXT, title TEXT, url TEXT, summary TEXT, published TEXT,
   first_seen TEXT, status TEXT DEFAULT 'pending', decision_json TEXT, reviewed_at TEXT
 );
+CREATE TABLE IF NOT EXISTS manual_reviews(
+  queue_id TEXT PRIMARY KEY, reason TEXT NOT NULL, body TEXT, suggestions_json TEXT,
+  created_at TEXT NOT NULL, notified_at TEXT, resolved_at TEXT, resolution TEXT, note TEXT
+);
 """
 
 
@@ -1132,6 +1136,14 @@ def resolve_url(url):
         return url
 
 
+class ArticleText(str):
+    """Text plus extraction diagnostics, including PDFs behind download URLs."""
+    def __new__(cls, text, problem=None):
+        value = super().__new__(cls, text)
+        value.problem = problem
+        return value
+
+
 def fetch_body(url, limit=12000):
     """Article text for extraction. Empty string on any failure (never fatal)."""
     if os.environ.get("JPI_FETCH_BODY", "1") != "1" or not _http(url) or is_wrapper(url):
@@ -1141,6 +1153,8 @@ def fetch_body(url, limit=12000):
     is_pdf = urllib.parse.urlsplit(url).path.lower().endswith(".pdf")
     try:
         raw = fetch(url, timeout=20, max_bytes=12_000_000)
+        if is_pdf and not raw.lstrip().startswith(b"%PDF-"):
+            return ArticleText("", "Expected a PDF but received different content; inspect the source")
         is_pdf = raw.lstrip().startswith(b"%PDF-")
         if is_pdf:
             result = subprocess.run(
@@ -1151,12 +1165,15 @@ def fetch_body(url, limit=12000):
             text = result.stdout.decode("utf-8", errors="replace").strip()
             if result.returncode or not text:
                 print(f"[warn] PDF text unavailable: {url}", file=sys.stderr)
-                return ""
-            return text[:limit]
+                return ArticleText("", "PDF text unavailable; inspect the original document")
+            problem = ("PDF text may be incomplete or garbled; inspect the original document"
+                       if len(text) < 80 or text.count("\ufffd") > len(text) * 0.03
+                       or len(text) > limit or b"JPI_PDF_TRUNCATED" in result.stderr else None)
+            return ArticleText(text[:limit], problem)
         page = decode(raw)
     except Exception as error:
         print(f"[warn] Article text unavailable ({type(error).__name__}): {url}", file=sys.stderr)
-        return ""
+        return ArticleText("", "PDF extraction failed; inspect the original document" if is_pdf else None)
     page = re.sub(r"(?is)<(script|style|nav|header|footer|aside)[^>]*>.*?</\1>", " ", page)
     return strip_html(page)[:limit]
 
@@ -1462,7 +1479,7 @@ LLM_MULTI_SYSTEM = (
     '"kind" ("data leak", "unauthorized access", or "other"), "records" (positive integer or null), '
     '"incident_date" (YYYY-MM-DD: occurrence, discovery, then first disclosure; never the later article date), '
     'and "is_followup" (boolean). For an update/reaction/remediation item, use the original incident date; '
-    "omit the entry when that date or affected organization cannot be established. A follow-up may reveal "
+    "flag needs_review when that date or affected organization cannot be established. A follow-up may reveal "
     "a victim organization not previously known: include that victim as its own entry so the database layer "
     "can decide whether it is new. Do not combine distinct organizations into one entry, and do not duplicate "
     "the same organization and underlying incident. "
@@ -1471,8 +1488,18 @@ LLM_MULTI_SYSTEM = (
     "public announcement of that victim's incident, even if the incident happened long ago. "
     "The quote must explicitly connect that calendar date to public disclosure. Do not infer "
     "it from a page update date, a follow-up publication date, a recovery date, or today's date. "
-    "If the first public disclosure is not established, both fields must be null."
+    "If the first public disclosure is not established, both fields must be null. "
+    "At the top level also return needs_review (boolean) and review_reason (short explanation). "
+    "Set needs_review=true for a potentially relevant incident whose victim, original date, "
+    "relevance, or document evidence is ambiguous, missing or conflicting. Do not silently omit "
+    "such cases as non-incidents. Clear non-incidents return incidents=[] and needs_review=false."
 )
+
+
+class ReviewFindings(list):
+    def __init__(self, values=(), reasons=()):
+        super().__init__(values)
+        self.reasons = list(reasons)
 
 
 def llm_extract_many(rec, body):
@@ -1527,14 +1554,21 @@ def llm_extract_many(rec, body):
         document = json.loads(match.group(0) if match else text)
         if not isinstance(document, dict) or not isinstance(document.get("incidents"), list):
             raise ValueError("AI response must contain an incidents array")
-        findings, seen = [], set()
+        findings, seen = ReviewFindings(), set()
+        if "needs_review" in document and type(document["needs_review"]) is not bool:
+            raise ValueError("AI needs_review must be a boolean")
+        if document.get("needs_review") is True:
+            findings.reasons.append(str(document.get("review_reason") or "AI could not establish the incident facts")[:500])
         for item in document.get("incidents") or []:
+            if not isinstance(item, dict):
+                raise ValueError("AI incident entries must be objects")
             if not item.get("is_incident", True):
                 continue
             org = str(item.get("org") or "").strip()[:60]
             kind = item.get("kind")
             incident_date = normalize_incident_date(item.get("incident_date"))
             if not plausible_org(org) or kind not in RANK or not incident_date:
+                findings.reasons.append("Victim, incident date, or incident type could not be established")
                 continue
             records = item.get("records") if kind == "data leak" else None
             records = (int(records) if isinstance(records, (int, float))
@@ -1613,6 +1647,8 @@ def classify(rec, src, fetch_body_fn=fetch_body, observed_at=None, enforce_windo
         return None
     rec["url"] = resolve_url(rec["url"])
     body = fetch_body_fn(rec["url"])
+    if getattr(body, "problem", None) or (not body and urllib.parse.urlsplit(rec["url"]).path.lower().endswith(".pdf")):
+        return None  # questionable PDFs must reach private review, never immediate publication
     if require_ai and not body and FOLLOWUP_RE.search(rec["title"]):
         return None
     text = f"{rec['title']} {rec['summary']} {body}"
@@ -1633,6 +1669,8 @@ def classify(rec, src, fetch_body_fn=fetch_body, observed_at=None, enforce_windo
         res = {k: ai[k] for k in ("org", "kind", "records")}
         res["is_followup"] = bool(ai.get("is_followup"))
     if require_ai and not ai.get("incident_date"):
+        return None
+    if not plausible_org(res["org"]):
         return None
     if ai and ai.get("incident_date"):
         incident_date, date_basis = ai["incident_date"], "incident"
@@ -1835,6 +1873,126 @@ def promote_reviewed(c):
     return new_rows
 
 
+def hold_for_manual_review(c, row, reason, body="", suggestions=()):
+    """Hold a candidate privately; never turn extraction ambiguity into rejection."""
+    changed = c.execute(
+        "UPDATE review_queue SET status='needs_review',reviewed_at=? WHERE id=? AND status='pending'",
+        (now_iso(), row["id"]),
+    ).rowcount
+    if changed:
+        c.execute(
+            "INSERT OR IGNORE INTO manual_reviews(queue_id,reason,body,suggestions_json,created_at) "
+            "VALUES(?,?,?,?,?)", (row["id"], reason[:1500], str(body)[:12000],
+                                 json.dumps(list(suggestions), ensure_ascii=False), now_iso()),
+        )
+    c.commit()
+
+
+def manual_review_commands(queue_id):
+    # Only trusted runtime paths and a quoted opaque ID enter commands, never article text.
+    prefix = shlex.join([sys.executable, os.path.abspath(__file__), "review"])
+    return {
+        "setup": shlex.join(["export", "JPI_DB=" + os.path.abspath(DB_PATH)]),
+        "check": prefix + " check " + shlex.quote(queue_id),
+        "approve": prefix + " approve " + shlex.quote(queue_id)
+                   + " --org 'VICTIM_NAME' --date YYYY-MM-DD --kind 'data leak' --note 'SOURCE_EVIDENCE'",
+        "reject": prefix + " reject " + shlex.quote(queue_id) + " --note 'REASON'",
+    }
+
+
+def notify_manual_reviews(c):
+    rows = list(c.execute(
+        "SELECT q.id,m.reason FROM review_queue q JOIN manual_reviews m ON m.queue_id=q.id "
+        "WHERE q.status='needs_review' AND m.notified_at IS NULL ORDER BY m.created_at,q.id"
+    ))
+    for row in rows:
+        commands = manual_review_commands(row["id"])
+        reason = row['reason'][:160].replace('`', "'")
+        detail = (f"Item {row['id']} is held privately. Reason: {reason}\n"
+                  "Run on the collector host; replace uppercase placeholders after checking the source.\n"
+                  + "\n".join(f"{label}: `{command}`" for label, command in commands.items()))
+        if send_local_alert("manual-review-" + row["id"], "Human review required", detail,
+                            severity="warning", cooldown_hours=0, preserve_format=True):
+            c.execute("UPDATE manual_reviews SET notified_at=? WHERE queue_id=? AND notified_at IS NULL",
+                      (now_iso(), row["id"]))
+            c.commit()  # only successful delivery is acknowledged; retry failures next cycle
+
+
+def inspect_manual_review(queue_id=None):
+    c = db()
+    try:
+        if queue_id is None:
+            return [dict(row) for row in c.execute(
+                "SELECT q.id,q.title,q.url,m.reason,m.created_at FROM review_queue q "
+                "JOIN manual_reviews m ON m.queue_id=q.id WHERE q.status='needs_review' "
+                "ORDER BY m.created_at,q.id")]
+        row = c.execute(
+            "SELECT q.*,m.reason,m.body,m.suggestions_json,m.notified_at,m.resolution,m.note "
+            "FROM review_queue q JOIN manual_reviews m ON m.queue_id=q.id WHERE q.id=?", (queue_id,),
+        ).fetchone()
+        if row is None:
+            raise ValueError("No manual-review item with that exact ID")
+        result = dict(row)
+        result["suggestions"] = json.loads(result.pop("suggestions_json") or "[]")
+        result["commands"] = manual_review_commands(queue_id)
+        return result
+    finally:
+        c.close()
+
+
+def decide_manual_review(queue_id, action, note, findings=None):
+    """One atomic, audited decision. Approval queues next-cycle promotion only."""
+    if action not in {"approve", "reject"} or not note or not note.strip() or note.strip() in {"REASON", "SOURCE_EVIDENCE"}:
+        raise ValueError("Provide approve/reject and a substantive --note describing your source evidence or reason")
+    c = db()
+    try:
+        c.execute("BEGIN IMMEDIATE")
+        row = c.execute("SELECT * FROM review_queue WHERE id=? AND status='needs_review'", (queue_id,)).fetchone()
+        if row is None:
+            raise ValueError("Item is not awaiting manual review (unknown, already decided, or published)")
+        decision = None
+        if action == "approve":
+            if not isinstance(findings, list) or not findings:
+                raise ValueError("Approval requires at least one verified victim/incident")
+            validated = []
+            for finding in findings:
+                if not isinstance(finding, dict):
+                    raise ValueError("Each finding must be an object")
+                org = str(finding.get("org") or "").strip()
+                date = normalize_incident_date(finding.get("incident_date"))
+                disclosed = normalize_incident_date(finding.get("disclosed_at"))
+                kind, records = finding.get("kind"), finding.get("records")
+                if not plausible_org(org) or org == "VICTIM_NAME" or len(org) > 60 or not date or kind not in RANK:
+                    raise ValueError("Supply a concrete victim, valid incident date and incident type")
+                if records is not None and (type(records) is not int or records <= 0 or kind != "data leak"):
+                    raise ValueError("Records must be a positive integer for a data leak, or omitted")
+                if finding.get("disclosed_at") and not disclosed:
+                    raise ValueError("Invalid first-disclosure date")
+                if disclosed and (not within_collection_window(disclosed, row["first_seen"])
+                                  or _incident_day(disclosed) > _incident_day(row["first_seen"])
+                                  or _incident_day(date) > _incident_day(disclosed)):
+                    raise ValueError("First disclosure must fall within the original intake window and follow the incident")
+                if not within_collection_window(date, row["first_seen"]) and not disclosed:
+                    raise ValueError("Old incidents require a verified --disclosed-on date and source evidence in --note")
+                validated.append({"org": org, "incident_date": date, "kind": kind, "records": records,
+                                  "disclosed_at": disclosed, "date_basis": "incident",
+                                  "is_followup": bool(finding.get("is_followup")), "secondary_validated": True})
+            rec = {key: row[key] for key in ("title", "url", "summary", "published")}
+            rec["outlet"] = row["source"]
+            decision = json.dumps({"record": rec, "classifications": validated}, ensure_ascii=False)
+        c.execute("UPDATE review_queue SET status=?,decision_json=?,reviewed_at=? WHERE id=?",
+                  ("confirmed" if action == "approve" else "rejected", decision, now_iso(), queue_id))
+        c.execute("UPDATE manual_reviews SET resolved_at=?,resolution=?,note=? WHERE queue_id=?",
+                  (now_iso(), action, note.strip(), queue_id))
+        c.commit()
+    except Exception:
+        c.rollback()
+        raise
+    finally:
+        c.close()
+    return "Approved for next scheduled publication" if action == "approve" else "Rejected; item stays unpublished"
+
+
 def review_pending(fetch_body_fn=fetch_body, corroborate_fn=corroborate_finding):
     """Granular AI review after publication; all distinct confirmations wait for the next cycle."""
     c = db()
@@ -1849,19 +2007,27 @@ def review_pending(fetch_body_fn=fetch_body, corroborate_fn=corroborate_finding)
         }
         rec["url"] = resolve_url(rec["url"])
         body = fetch_body_fn(rec["url"])
-        if not body and urllib.parse.urlsplit(rec["url"]).path.lower().endswith(".pdf"):
+        problem = getattr(body, "problem", None)
+        if not body and (urllib.parse.urlsplit(rec["url"]).path.lower().endswith(".pdf")
+                         or FOLLOWUP_RE.search(rec["title"])):
+            problem = problem or "Article/PDF text unavailable; original incident evidence needs checking"
+        if problem:
+            hold_for_manual_review(c, row, problem, body)
             deferred += 1
-            continue  # an unreadable PDF must not become an AI content rejection
-        findings = ([] if (not body and FOLLOWUP_RE.search(rec["title"]))
-                    else llm_extract_many(rec, body))
+            continue
+        findings = llm_extract_many(rec, body)
         if findings is None:
             # Missing credentials, a billing/rate limit, or a transient API error
             # is not a content rejection. Retry on the next scheduled cycle.
             deferred += len(rows) - index + 1
             print(f"AI queue review deferred: {deferred} candidate(s) remain pending", flush=True)
             break
+        reasons = list(getattr(findings, "reasons", ()))
         validated = []
         for finding in findings or []:
+            if not plausible_org(finding.get("org")) or not finding.get("incident_date"):
+                reasons.append("Victim or original incident date is unclear")
+                continue
             disclosed_at = verified_disclosure_date(finding, rec, body, row["first_seen"])
             if not within_collection_window(finding["incident_date"], row["first_seen"]) and not disclosed_at:
                 continue
@@ -1869,10 +2035,15 @@ def review_pending(fetch_body_fn=fetch_body, corroborate_fn=corroborate_finding)
             tier = ref_tier(rec["url"], row["source"] or "", rec["title"])
             corroboration = corroborate_fn(finding, rec)
             if tier not in {"official", "gov"} and not corroboration:
+                reasons.append("Potential incident has no independent corroboration")
                 continue
             finding["corroboration"] = corroboration
             finding["secondary_validated"] = True
             validated.append(finding)
+        if reasons:
+            hold_for_manual_review(c, row, "; ".join(dict.fromkeys(reasons)), body, findings)
+            deferred += 1
+            continue
         findings = validated
         if findings:
             status = "confirmed"
@@ -1888,6 +2059,7 @@ def review_pending(fetch_body_fn=fetch_body, corroborate_fn=corroborate_finding)
         c.commit()
         if index % 10 == 0 or index == len(rows):
             print(f"AI queue review: {index}/{len(rows)} checked, {confirmed} confirmed", flush=True)
+    notify_manual_reviews(c)
     c.close()
     return {"total": len(rows), "confirmed": confirmed, "rejected": rejected, "deferred": deferred}
 
@@ -1973,6 +2145,11 @@ def poll(notify=False, fetcher=fetch, fetch_body_fn=fetch_body):
                         continue  # leave unprocessed notices eligible for the next cycle
                     body_checks += 1
                     cached_body = fetch_body_fn(rec["url"])
+                    if getattr(cached_body, "problem", None):
+                        queue_for_review(c, rec.get("outlet") or src["name"], iid, rec)
+                        hold_for_manual_review(c, {"id": iid},
+                                               "Vague official notice: " + cached_body.problem, cached_body)
+                        continue
                     if not cached_body:
                         continue  # failed extraction is retryable, not a permanent skip
                     c.execute("INSERT OR REPLACE INTO notice_checks VALUES(?,?,?)", (iid, fingerprint, now_iso()))
@@ -2233,7 +2410,7 @@ def _private_webhook_url():
                   or os.environ.get("WEBHOOK_URL", ""))
 
 
-def _safe_alert_detail(value):
+def _safe_alert_detail(value, preserve_format=False):
     """Keep operational context useful without ever sending configured secrets."""
     text = str(value or "")
     for name in ("ANTHROPIC_API_KEY", "ANTHROPIC_ADMIN_API_KEY", "WEBHOOK_URL", "JPI_ALERT_WEBHOOK_URL"):
@@ -2243,7 +2420,7 @@ def _safe_alert_detail(value):
     text = re.sub(r"sk-ant-[A-Za-z0-9_-]+", "[redacted-api-key]", text)
     text = re.sub(r"https://(?:canary\.|ptb\.)?discord(?:app)?\.com/api/webhooks/\S+",
                   "[redacted-webhook]", text, flags=re.I)
-    return re.sub(r"\s+", " ", text).strip()[:1200]
+    return text.strip()[:1600] if preserve_format else re.sub(r"\s+", " ", text).strip()[:1200]
 
 
 def post_webhook(message, url=None, opener=urllib.request.urlopen):
@@ -2289,7 +2466,7 @@ def _write_alert_state(state, path=ALERT_STATE_PATH):
 
 
 def send_local_alert(key, title, detail, severity="warning", cooldown_hours=None,
-                     now=None, post_fn=post_webhook, state_path=None):
+                     now=None, post_fn=post_webhook, state_path=None, preserve_format=False):
     """Send a private, rate-limited operations alert; never enters public output."""
     if not _private_webhook_url():
         print(f"[warn] local alert not sent (webhook empty): {title}", file=sys.stderr)
@@ -2310,7 +2487,7 @@ def send_local_alert(key, title, detail, severity="warning", cooldown_hours=None
                 return False
         except (TypeError, ValueError):
             pass
-    clean_detail = _safe_alert_detail(detail)
+    clean_detail = _safe_alert_detail(detail, preserve_format=preserve_format)
     icon = {"critical": "🚨", "warning": "⚠️", "info": "ℹ️"}.get(severity, "⚠️")
     message = (f"{icon} **JP Incident Monitor — {title}**\n"
                f"{clean_detail}\n"
@@ -2857,6 +3034,23 @@ def main():
     v.add_argument("--apply", action="store_true", help="restore only AI-confirmed valid incidents")
     v.add_argument("--publish", action="store_true", help="publish JSON/RSS after restoring valid incidents")
     sub.add_parser("review-pending", help="AI-review private candidates for promotion next cycle")
+    manual = sub.add_parser("review", help="inspect and decide private human-review items")
+    actions = manual.add_subparsers(dest="review_action", required=True)
+    actions.add_parser("list", help="list items awaiting a human decision")
+    check = actions.add_parser("check", help="show source, extraction evidence, suggestions and commands")
+    check.add_argument("id")
+    approve = actions.add_parser("approve", help="approve verified facts for next scheduled publication")
+    approve.add_argument("id")
+    approve.add_argument("--org")
+    approve.add_argument("--date", help="original incident date, YYYY-MM-DD")
+    approve.add_argument("--kind", choices=list(RANK))
+    approve.add_argument("--records", type=int)
+    approve.add_argument("--disclosed-on", help="verified first public disclosure, for older incidents")
+    approve.add_argument("--findings", help="private JSON array of verified findings for multiple victims")
+    approve.add_argument("--note", required=True)
+    reject = actions.add_parser("reject", help="reject a held item with an audit note")
+    reject.add_argument("id")
+    reject.add_argument("--note", required=True)
     sub.add_parser("source-health", help="show private per-source parser health as JSON")
     sub.add_parser("test-alert", help="send a private Discord operations test alert")
     s = sub.add_parser("serve"); s.add_argument("--host", default="127.0.0.1"); s.add_argument("--port", type=int, default=8080)
@@ -2906,6 +3100,24 @@ def main():
             publish_public_json()
     elif a.cmd == "review-pending":
         review_pending()
+    elif a.cmd == "review":
+        try:
+            if a.review_action in {"list", "check"}:
+                print(json.dumps(inspect_manual_review(getattr(a, "id", None)), ensure_ascii=False, indent=2))
+            else:
+                findings = None
+                if a.review_action == "approve":
+                    if a.findings:
+                        if any(value is not None for value in (a.org, a.date, a.kind, a.records, a.disclosed_on)):
+                            raise ValueError("Use --findings or individual fact flags, not both")
+                        with open(a.findings, encoding="utf-8") as source:
+                            findings = json.load(source)
+                    else:
+                        findings = [{"org": a.org, "incident_date": a.date, "kind": a.kind,
+                                     "records": a.records, "disclosed_at": a.disclosed_on}]
+                print(decide_manual_review(a.id, a.review_action, a.note, findings))
+        except (ValueError, OSError) as error:
+            ap.error(str(error))
     elif a.cmd == "source-health":
         connection = db()
         print(json.dumps([dict(row) for row in connection.execute(
