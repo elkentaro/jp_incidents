@@ -1920,9 +1920,32 @@ def manual_review_commands(queue_id):
 
 def notify_manual_reviews(c):
     rows = list(c.execute(
-        "SELECT q.id,m.reason FROM review_queue q JOIN manual_reviews m ON m.queue_id=q.id "
+        "SELECT q.id,q.title,q.source,m.reason FROM review_queue q JOIN manual_reviews m ON m.queue_id=q.id "
         "WHERE q.status='needs_review' AND m.notified_at IS NULL ORDER BY m.created_at,q.id LIMIT 4"
     ))
+    admin_url = os.environ.get('JPI_REVIEW_ADMIN_URL', '').strip()
+    if rows and admin_url:
+        parsed = urllib.parse.urlsplit(admin_url)
+        if (parsed.scheme not in {'http', 'https'} or not parsed.hostname or parsed.username or parsed.password
+                or len(admin_url) > 400 or re.search(r'[\s<>`]', admin_url)):
+            raise ValueError('JPI_REVIEW_ADMIN_URL must be an HTTP(S) URL without credentials, whitespace or markup')
+        total = c.execute("SELECT COUNT(*) FROM review_queue WHERE status='needs_review'").fetchone()[0]
+        def label(value, limit):
+            return re.sub(r'[\s]+', ' ', re.sub(r'[`*_~<>\[\]@]', '', str(value or ''))).strip()[:limit]
+        lines = [f'{len(rows)} newly queued item(s); {total} awaiting review.',
+                 f'Review admin: {admin_url}', '']
+        for index, row in enumerate(rows, 1):
+            lines.extend([f"{index}. {label(row['title'], 100)}",
+                          f"Source: {label(row['source'], 30)} · ID: {row['id']}",
+                          f"Review reason: {label(row['reason'], 60)}"])
+        lines.append('\nOpen the admin page to inspect evidence, approve, reject, or add a source to an existing incident.')
+        key = 'manual-review-batch-' + hashlib.sha256('|'.join(r['id'] for r in rows).encode()).hexdigest()[:16]
+        if send_local_alert(key, 'Items awaiting review', '\n'.join(lines), severity='warning',
+                            cooldown_hours=0, preserve_format=True):
+            c.executemany('UPDATE manual_reviews SET notified_at=? WHERE queue_id=? AND notified_at IS NULL',
+                          [(now_iso(), row['id']) for row in rows])
+            c.commit()
+        return
     for row in rows:
         commands = manual_review_commands(row["id"])
         reason = row['reason'][:160].replace('`', "'")
@@ -2564,7 +2587,10 @@ def post_webhook(message, url=None, opener=urllib.request.urlopen):
         return False
     host = (urllib.parse.urlsplit(url).hostname or "").casefold()
     field = "content" if "discord" in host else "text"
-    body = json.dumps({field: message[:1900]}).encode()
+    payload = {field: message[:1900]}
+    if field == 'content':
+        payload['allowed_mentions'] = {'parse': []}
+    body = json.dumps(payload).encode()
     request = urllib.request.Request(
         url, data=body, headers={"Content-Type": "application/json", "User-Agent": UA}
     )

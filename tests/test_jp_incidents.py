@@ -96,7 +96,8 @@ class StaticPublishingTests(unittest.TestCase):
         self.assertTrue(app.post_webhook(
             "private test", url="https://discord.com/api/webhooks/example/token", opener=opener
         ))
-        self.assertEqual(json.loads(requests[0][0].data), {"content": "private test"})
+        self.assertEqual(json.loads(requests[0][0].data),
+                         {"content": "private test", "allowed_mentions": {"parse": []}})
 
     def test_ai_billing_error_sends_critical_alert(self):
         body = io.BytesIO(json.dumps({

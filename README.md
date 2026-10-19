@@ -634,6 +634,13 @@ from any working directory. Successful delivery is recorded in SQLite; failed
 delivery retries on later cycles. Empty source listings and clear non-incidents
 do not produce human-review alerts.
 
+If you operate a private review interface, set `JPI_REVIEW_ADMIN_URL` in private
+runtime configuration. Review alerts then group up to four new items with titles,
+sources, short reasons, the total queue count, and a link to that interface instead
+of terminal commands. Successful delivery acknowledges only the listed items;
+failed batches retry and additional items follow in later deliveries. The URL
+appears only in private alerts and must be reachable from your reviewing device.
+
 With the virtual environment active, use:
 
 ```bash

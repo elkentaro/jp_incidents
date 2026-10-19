@@ -59,6 +59,41 @@ class ManualReviewTests(unittest.TestCase):
         self.assertEqual(self.alert.call_count, 2)
         self.assertIsNotNone(app.inspect_manual_review(self.iid)['notified_at'])
 
+    def test_admin_digest_lists_items_and_retries_only_unacknowledged_batches(self):
+        with app.db() as c:
+            for index in range(6):
+                iid = f'digest-{index}'
+                app.queue_for_review(c, 'Example source', iid, {**self.rec, 'title':f'Article {index} @everyone'})
+                app.hold_for_manual_review(c, {'id':iid}, 'Victim unclear')
+            with patch.dict(os.environ, {'JPI_REVIEW_ADMIN_URL':'http://admin.example:1337'}):
+                self.alert.return_value = False
+                app.notify_manual_reviews(c)
+                self.assertEqual(c.execute('SELECT COUNT(*) FROM manual_reviews WHERE notified_at IS NOT NULL').fetchone()[0],0)
+                detail = self.alert.call_args.args[2]
+                self.assertIn('6 awaiting review', detail)
+                self.assertIn('http://admin.example:1337', detail)
+                self.assertIn('Article 0', detail)
+                self.assertIn('Article 3', detail)
+                self.assertNotIn('Article 4', detail)
+                self.assertNotIn('@everyone', detail)
+                self.assertNotIn('review approve', detail)
+                self.assertLess(len(detail),1600)
+                self.alert.return_value = True
+                app.notify_manual_reviews(c)
+                self.assertEqual(c.execute('SELECT COUNT(*) FROM manual_reviews WHERE notified_at IS NOT NULL').fetchone()[0],4)
+                app.notify_manual_reviews(c)
+                self.assertEqual(c.execute('SELECT COUNT(*) FROM manual_reviews WHERE notified_at IS NOT NULL').fetchone()[0],6)
+                app.notify_manual_reviews(c)
+                self.assertEqual(self.alert.call_count,3)
+
+    def test_invalid_admin_url_preserves_unsent_review(self):
+        with app.db() as c:
+            app.hold_for_manual_review(c, {'id':self.iid}, 'Victim unclear')
+            with patch.dict(os.environ, {'JPI_REVIEW_ADMIN_URL':'https://user:password@admin.example'}):
+                with self.assertRaises(ValueError):app.notify_manual_reviews(c)
+            self.assertIsNone(app.inspect_manual_review(self.iid)['notified_at'])
+            self.alert.assert_not_called()
+
     def test_unclear_victim_is_held_even_with_no_concrete_findings(self):
         with patch.object(app, 'llm_extract_many', return_value=app.ReviewFindings(reasons=['Victim unclear'])):
             app.review_pending(fetch_body_fn=lambda _: 'article evidence')
