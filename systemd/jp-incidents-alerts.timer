@@ -1,0 +1,7 @@
+[Unit]
+Description=JP Incident Monitor alerts schedule
+[Timer]
+OnBootSec=3min
+OnUnitActiveSec=5min
+[Install]
+WantedBy=timers.target

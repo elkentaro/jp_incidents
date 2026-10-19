@@ -661,3 +661,81 @@ are atomic, retain a private audit note, and cannot be replayed over an already
 resolved item. No review reasons, extraction snapshots, or decision notes are
 exported to the public site. Existing rejected history is not automatically
 reopened; this workflow applies to newly processed candidates.
+
+## Monitoring, recovery, and operating limits
+
+Collection and publication are separate failure boundaries: failed Git publishing
+does not skip private AI review or alert delivery. The `deliver-alerts` command
+retries durable operational alerts and held-item notices without collecting
+articles or calling AI. Install the additional `jp-incidents-alerts`,
+`jp-incidents-watchdog`, and `jp-incidents-backup` service/timer pairs alongside
+the collector after reviewing their generic paths and service account. The
+collector has a 35-minute systemd limit and excludes overlapping collector/review
+commands with a process lock. Alert delivery runs every five minutes; the local
+watchdog checks for overdue collection and backups every ten minutes.
+
+Each successful collection updates `data/health.json` independently of incident
+changes. The **Collector heartbeat** GitHub Actions workflow checks the repository
+and public site's heartbeat hourly and alerts if it is over three hours old or
+unreadable. Configure the repository Actions secret `JPI_ALERT_WEBHOOK_URL`; set
+`JPI_PUBLIC_HEALTH_URL` as a repository variable for a custom site address. This
+runner can alert when the collector host is offline. Scheduled Actions can be
+delayed, and monitoring still depends on GitHub and Discord availability; see
+[GitHub's schedule documentation](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule).
+
+`backup` creates a private SQLite-consistent snapshot, selected local configuration,
+and a checksum/row-count manifest. Every archive is restored to an isolated
+temporary directory and integrity-checked before it is retained. The daily timer
+keeps 30 verified archives by default. Backups include secrets when `.env` exists:
+keep the backup directory private. To rehearse recovery without overwriting live
+state, run `python jp_incidents.py restore-backup ARCHIVE --destination NEW_DIRECTORY`.
+Stop the collector before any deliberate live recovery; preserve the current DB
+and configuration before replacing them with validated restored files.
+
+Optional encrypted replication uses an existing restic repository. Install restic,
+set `JPI_BACKUP_RESTIC_REPOSITORY` and restic credentials (for example
+`RESTIC_PASSWORD_FILE`) in private configuration. Local snapshots alone do not
+protect against loss of the host. A failed upload retains the verified local
+archive and fails the backup job. Remote repository retention and credential
+recovery remain the repository operator's responsibility.
+
+| Setting | Default | Purpose |
+| --- | --- | --- |
+| `JPI_REVIEW_BATCH_LIMIT` | 40 | Candidates attempted per review cycle |
+| `JPI_REVIEW_SECONDS` | 600 | Review time budget, checked between candidates |
+| `JPI_AI_DAILY_REQUEST_LIMIT` | 200 | Hard daily API request reservations, UTC day |
+| `JPI_AI_DAILY_TOKEN_LIMIT` | 2000000 | Conservative input-byte plus maximum-output token reservations |
+| `JPI_RECHECK_LIMIT` | 20 | Known article URLs re-read per collection |
+| `JPI_RECHECK_HOURS` | 24 | Interval for unchanged listing entries |
+| `JPI_BACKUP_KEEP` | 30 | Verified local snapshots retained |
+| `JPI_BACKUP_DIR` | `backups/` beside the database | Private snapshot destination |
+
+Daily API reservations persist across retries and restarts. They are conservative
+work limits, not exact billing figures. When configured cost reporting shows the
+monthly budget exhausted, review pauses; failed candidates remain pending and
+rotate behind less-attempted candidates. One in-flight fetch/API call can exceed
+the review time budget; the service timeout bounds the whole process.
+
+Known article URLs are periodically re-read within a bounded sampling budget.
+Changes to listing text or extracted body create a private human-review item;
+public facts are not silently overwritten. Initial baselines cannot reconstruct
+past revisions, and this sampling does not guarantee every change is captured.
+For existing records use the correction commands below, approving a review item
+only when it describes a new victim/incident. Empty source listings stay silent.
+
+## Correcting published records
+
+```bash
+python jp_incidents.py incident check INCIDENT_ID
+python jp_incidents.py incident correct INCIDENT_ID --records 42 --note 'Corrected figure in primary disclosure'
+python jp_incidents.py incident withdraw INCIDENT_ID --note 'Source withdrew the allegation'
+python jp_incidents.py incident restore INCIDENT_ID --note 'New evidence supports republication'
+```
+
+Corrections support `--org`, `--date`, `--kind`, `--records`, `--clear-records`,
+and `--disclosed-on`. Original IDs and private before/after audit records are
+retained. Changes reach public exports on the next scheduled publication.
+Withdrawn records are excluded from the public JSON, RSS and local dashboard;
+restoration is explicit. Automated reprocessing cannot overwrite an operator
+correction or recreate a withdrawn record from its recorded sources. Withdrawal
+does not erase previously published Git history or copies held by feed readers.

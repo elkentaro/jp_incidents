@@ -62,6 +62,7 @@ from datetime import datetime, timedelta, timezone
 from decimal import Decimal, InvalidOperation
 from email.utils import format_datetime, parsedate_to_datetime
 from zoneinfo import ZoneInfo
+import operations as ops
 
 DB_PATH = os.environ.get("JPI_DB", "jp_incidents.db")
 JSON_PATH = os.environ.get("JPI_JSON_PATH", "data/incidents.json")
@@ -686,15 +687,19 @@ CREATE TABLE IF NOT EXISTS manual_reviews(
 def db():
     c = sqlite3.connect(DB_PATH, timeout=10)
     c.row_factory = sqlite3.Row
-    c.executescript(SCHEMA)
+    c.executescript(SCHEMA + ops.SCHEMA)
     cols = {r["name"] for r in c.execute("PRAGMA table_info(incidents)")}
     for col, typ in (("org", "TEXT"), ("kind", "TEXT"), ("records", "INTEGER"),
                      ("score", "INTEGER DEFAULT 0"), ("confidence", "TEXT DEFAULT 'low'"),
-                     ("disclosed_at", "TEXT")):
+                     ("disclosed_at", "TEXT"), ("withdrawn", "INTEGER DEFAULT 0")):
         if col not in cols:  # migrate older DBs
             c.execute(f"ALTER TABLE incidents ADD COLUMN {col} {typ}")
     if "title" not in {r["name"] for r in c.execute("PRAGMA table_info(refs)")}:
         c.execute("ALTER TABLE refs ADD COLUMN title TEXT")
+    review_cols = {r['name'] for r in c.execute('PRAGMA table_info(review_queue)')}
+    for col, typ in [('attempts', 'INTEGER DEFAULT 0'), ('last_attempt', 'TEXT')]:
+        if col not in review_cols:
+            c.execute(f'ALTER TABLE review_queue ADD COLUMN {col} {typ}')
     c.execute("INSERT OR IGNORE INTO refs(incident_id,url,source,title) SELECT id, url, source, title FROM incidents")
     c.commit()  # never leave the migration's write lock open (the dashboard opens one connection per request)
     return c
@@ -1379,6 +1384,9 @@ def anthropic_error_info(error):
 
 def report_ai_error(error, context):
     """Send a rate-limited private alert for any AI API failure."""
+    if isinstance(error, ops.BudgetLimit):
+        send_local_alert('ai-local-limit', 'AI work paused at configured limit', str(error), cooldown_hours=12)
+        return
     info = anthropic_error_info(error)
     status = info["status"]
     searchable = f"{info['type']} {info['message']}".casefold()
@@ -1418,6 +1426,7 @@ def llm_extract(rec, body):
             "https://api.anthropic.com/v1/messages", data=json.dumps(payload).encode(),
             headers={"x-api-key": key, "anthropic-version": "2023-06-01",
                      "content-type": "application/json", "User-Agent": UA})
+        ops.reserve_request(DB_PATH, payload)
         with urllib.request.urlopen(req, timeout=60) as r:
             return json.load(r)
     try:
@@ -1525,6 +1534,7 @@ def llm_extract_many(rec, body):
             headers={"x-api-key": key, "anthropic-version": "2023-06-01",
                      "content-type": "application/json", "User-Agent": UA},
         )
+        ops.reserve_request(DB_PATH, request_body)
         with urllib.request.urlopen(request, timeout=60) as response:
             return json.load(response)
 
@@ -1732,10 +1742,18 @@ def store(c, src_name, rec, cl):
     """
     iid = rec.get("_incident_id") or item_id(rec["url"])
     ref_src = rec.get("outlet") or src_name
+    protected = c.execute(
+        'SELECT 1 FROM refs r JOIN incident_changes h ON h.incident_id=r.incident_id WHERE r.url=? LIMIT 1',
+        (rec['url'],)).fetchone()
+    if protected:
+        return False  # automated reprocessing must never undo an operator correction/withdrawal
     if c.execute("SELECT 1 FROM incidents WHERE id=?", (iid,)).fetchone():
         return False  # same article reached through two feeds
     prev = find_existing_incident(c, cl["org"], cl.get("incident_date") or rec.get("published"))
     if prev:  # follow-up or second outlet: worst type, largest count, add the reference, rescore
+        if c.execute('SELECT 1 FROM incident_changes WHERE incident_id=? LIMIT 1', (prev['id'],)).fetchone():
+            c.execute('INSERT OR IGNORE INTO refs VALUES(?,?,?,?)', (prev['id'],rec['url'],ref_src,rec['title']))
+            return False
         kind = cl["kind"] if RANK[cl["kind"]] > RANK[prev["kind"] or "other"] else prev["kind"]
         recs = max(filter(None, [prev["records"], cl["records"]]), default=None)
         c.execute("UPDATE incidents SET kind=?, records=?, disclosed_at=CASE "
@@ -1903,7 +1921,7 @@ def manual_review_commands(queue_id):
 def notify_manual_reviews(c):
     rows = list(c.execute(
         "SELECT q.id,m.reason FROM review_queue q JOIN manual_reviews m ON m.queue_id=q.id "
-        "WHERE q.status='needs_review' AND m.notified_at IS NULL ORDER BY m.created_at,q.id"
+        "WHERE q.status='needs_review' AND m.notified_at IS NULL ORDER BY m.created_at,q.id LIMIT 4"
     ))
     for row in rows:
         commands = manual_review_commands(row["id"])
@@ -1993,14 +2011,75 @@ def decide_manual_review(queue_id, action, note, findings=None):
     return "Approved for next scheduled publication" if action == "approve" else "Rejected; item stays unpublished"
 
 
+def edit_incident(incident_id, action, note=None, changes=None):
+    """Audit corrections/withdrawals in private; public exports only use current facts."""
+    c = db()
+    try:
+        c.execute('BEGIN IMMEDIATE')
+        row = c.execute('SELECT * FROM incidents WHERE id=?', (incident_id,)).fetchone()
+        if row is None:
+            raise ValueError('Unknown incident ID')
+        before = dict(row)
+        if action == 'check':
+            return {'incident': before, 'sources': [dict(r) for r in c.execute('SELECT * FROM refs WHERE incident_id=?',(incident_id,))],
+                    'history': [dict(r) for r in c.execute('SELECT * FROM incident_changes WHERE incident_id=? ORDER BY id',(incident_id,))]}
+        if action not in {'correct','withdraw','restore'} or not note or not note.strip():
+            raise ValueError('A correction/withdrawal/restore requires an audit note')
+        after = dict(before)
+        if action in {'withdraw','restore'}:
+            after['withdrawn'] = int(action == 'withdraw')
+            if before['withdrawn'] == after['withdrawn']:
+                raise ValueError('Incident is already in that publication state')
+        else:
+            changes = changes or {}
+            if not changes or set(changes) - {'org','kind','records','published','disclosed_at'}:
+                raise ValueError('Supply supported correction fields')
+            after.update(changes)
+            if not plausible_org(after['org']) or len(after['org']) > 60 or after['kind'] not in RANK:
+                raise ValueError('A concrete victim and valid incident type are required')
+            for field in ['published','disclosed_at']:
+                if after[field] is not None:
+                    after[field] = normalize_incident_date(after[field])
+                    if not after[field]:
+                        raise ValueError('Invalid date')
+            if not after['published'] or _incident_day(after['published']) > _incident_day(now_iso()):
+                raise ValueError('Original incident date must not be in the future')
+            if after['disclosed_at'] and (_incident_day(after['disclosed_at']) < _incident_day(after['published'])
+                                         or _incident_day(after['disclosed_at']) > _incident_day(now_iso())):
+                raise ValueError('Disclosure date must follow incident and must not be in the future')
+            if after['records'] is not None and (type(after['records']) is not int or after['records'] <= 0 or after['kind'] != 'data leak'):
+                raise ValueError('Records must be a positive data-leak count or cleared')
+        if after == before:
+            raise ValueError('Correction changes nothing')
+        c.execute('UPDATE incidents SET org=?,kind=?,records=?,published=?,disclosed_at=?,withdrawn=? WHERE id=?',
+                  (after['org'],after['kind'],after['records'],after['published'],after['disclosed_at'],after['withdrawn'],incident_id))
+        c.execute('INSERT INTO incident_changes(incident_id,action,before_json,after_json,note,created_at) VALUES(?,?,?,?,?,?)',
+                  (incident_id,action,json.dumps(before),json.dumps(after),note.strip(),now_iso()))
+        c.commit()
+        return {'id': incident_id, 'action': action, 'publication': 'next scheduled cycle'}
+    except Exception:
+        c.rollback()
+        raise
+    finally:
+        c.close()
+
+
 def review_pending(fetch_body_fn=fetch_body, corroborate_fn=corroborate_finding):
     """Granular AI review after publication; all distinct confirmations wait for the next cycle."""
     c = db()
     rows = list(c.execute(
-        "SELECT * FROM review_queue WHERE status='pending' ORDER BY first_seen,id"
+        "SELECT * FROM review_queue WHERE status='pending' ORDER BY attempts,first_seen,id"
     ))
+    limit = max(1, int(os.environ.get('JPI_REVIEW_BATCH_LIMIT', '40')))
+    deadline = time.monotonic() + max(1, int(os.environ.get('JPI_REVIEW_SECONDS', '600')))
+    budget = ops.get_state(DB_PATH, 'ai_budget', {})
     confirmed = rejected = deferred = 0
     for index, row in enumerate(rows, 1):
+        if index > limit or time.monotonic() >= deadline or budget.get('remaining', 1) <= 0:
+            deferred += len(rows) - index + 1
+            break
+        c.execute('UPDATE review_queue SET attempts=attempts+1,last_attempt=? WHERE id=?', (now_iso(),row['id']))
+        c.commit()
         rec = {
             "title": row["title"], "url": row["url"], "summary": row["summary"] or "",
             "published": row["published"], "outlet": row["source"],
@@ -2059,8 +2138,8 @@ def review_pending(fetch_body_fn=fetch_body, corroborate_fn=corroborate_finding)
         c.commit()
         if index % 10 == 0 or index == len(rows):
             print(f"AI queue review: {index}/{len(rows)} checked, {confirmed} confirmed", flush=True)
-    notify_manual_reviews(c)
     c.close()
+    deliver_alerts()
     return {"total": len(rows), "confirmed": confirmed, "rejected": rejected, "deferred": deferred}
 
 
@@ -2115,10 +2194,44 @@ def record_source_health(connection, source, items, error=None):
     return "error" if error else "ok" if good else "empty"
 
 
+def article_fingerprint(rec):
+    return hashlib.sha256((rec.get('title','')+'\n'+rec.get('summary','')).encode()).hexdigest()
+
+
+def recheck_article(c, rec, source, fetch_body_fn):
+    """Compare a bounded, periodic sample of known URLs; changes require a human."""
+    prior = c.execute('SELECT * FROM article_versions WHERE url=?', (rec['url'],)).fetchone()
+    fingerprint = article_fingerprint(rec)
+    if prior and prior['fingerprint'] == fingerprint and prior['checked_at']:
+        age = (datetime.fromisoformat(now_iso())-datetime.fromisoformat(prior['checked_at'])).total_seconds()
+        if age < int(os.environ.get('JPI_RECHECK_HOURS','24')) * 3600:
+            return False
+    # Do not create review noise from old navigation links or non-article pages.
+    if not probable_article(rec) or is_wrapper(rec['url']):
+        return False
+    body = fetch_body_fn(rec['url'])
+    if not body or getattr(body, 'problem', None):
+        c.execute('INSERT INTO article_versions VALUES(?,?,NULL,?) ON CONFLICT(url) DO UPDATE SET checked_at=excluded.checked_at',
+                  (rec['url'], fingerprint, now_iso()))
+        c.commit()
+        return True  # preserve last usable baseline; existing candidate failures have their own review path
+    digest = hashlib.sha256(re.sub(r'\s+',' ',str(body)).strip().encode()).hexdigest()
+    changed = prior and (prior['fingerprint'] != fingerprint or (prior['body_hash'] and prior['body_hash'] != digest))
+    if changed:
+        iid = hashlib.sha256((rec['url']+fingerprint+digest).encode()).hexdigest()[:16]
+        queue_for_review(c, rec.get('outlet') or source['name'], iid, rec)
+        hold_for_manual_review(c, {'id':iid}, 'Previously processed article changed. Inspect existing incidents; use incident correct/withdraw for revisions, approve only a new victim/incident.', body)
+    c.execute('INSERT OR REPLACE INTO article_versions VALUES(?,?,?,?)',
+              (rec['url'], fingerprint, digest, now_iso()))
+    c.commit()
+    return True
+
+
 def poll(notify=False, fetcher=fetch, fetch_body_fn=fetch_body):
     c = db()
     new_rows = promote_reviewed(c)
     source_errors = []
+    rechecks_left = max(0, int(os.environ.get('JPI_RECHECK_LIMIT','20')))
     for src in load_sources():
         fetched = new = 0
         err = None
@@ -2130,9 +2243,12 @@ def poll(notify=False, fetcher=fetch, fetch_body_fn=fetch_body):
             fetched = len(items)
             for rec in items:
                 iid = item_id(rec["url"])
+                listing_fingerprint = article_fingerprint(rec)
                 if c.execute(
                     "SELECT 1 FROM incidents WHERE id=? UNION SELECT 1 FROM review_queue WHERE id=?", (iid, iid)
                 ).fetchone():
+                    if rechecks_left and recheck_article(c, rec, src, fetch_body_fn):
+                        rechecks_left -= 1
                     continue  # already published or awaiting/private AI review
                 vague = needs_notice_body(rec, src)
                 cached_body = None
@@ -2140,6 +2256,8 @@ def poll(notify=False, fetcher=fetch, fetch_body_fn=fetch_body):
                     fingerprint = hashlib.sha256((rec["title"] + rec["summary"]).encode()).hexdigest()
                     checked = c.execute("SELECT fingerprint FROM notice_checks WHERE id=?", (iid,)).fetchone()
                     if checked and checked["fingerprint"] == fingerprint:
+                        if rechecks_left and recheck_article(c, rec, src, fetch_body_fn):
+                            rechecks_left -= 1
                         continue
                     if body_checks >= 8:
                         continue  # leave unprocessed notices eligible for the next cycle
@@ -2153,15 +2271,31 @@ def poll(notify=False, fetcher=fetch, fetch_body_fn=fetch_body):
                     if not cached_body:
                         continue  # failed extraction is retryable, not a permanent skip
                     c.execute("INSERT OR REPLACE INTO notice_checks VALUES(?,?,?)", (iid, fingerprint, now_iso()))
+                    digest = hashlib.sha256(re.sub(r'\s+', ' ', str(cached_body)).strip().encode()).hexdigest()
+                    c.execute('INSERT OR REPLACE INTO article_versions VALUES(?,?,?,?)',
+                              (rec['url'], listing_fingerprint, digest, now_iso()))
                     rec = {**rec, "summary": rec["summary"] + " " + cached_body}
                 elif c.execute("SELECT 1 FROM skipped WHERE id=?", (iid,)).fetchone():
+                    if rechecks_left and recheck_article(c, rec, src, fetch_body_fn):
+                        rechecks_left -= 1
                     continue
                 if not gate(rec, src):
+                    if probable_article(rec):
+                        c.execute('INSERT OR IGNORE INTO article_versions VALUES(?,?,NULL,NULL)',
+                                  (rec['url'], article_fingerprint(rec)))
                     c.execute("INSERT OR IGNORE INTO skipped VALUES(?)", (iid,))
                     c.commit()
                     continue
                 source_published = rec.get("published")
-                cl = classify(rec, src, (lambda _: cached_body) if cached_body is not None else fetch_body_fn,
+                def observed_body(url):
+                    text = cached_body if cached_body is not None else fetch_body_fn(url)
+                    if text and not getattr(text, 'problem', None):
+                        digest = hashlib.sha256(re.sub(r'\s+',' ',str(text)).strip().encode()).hexdigest()
+                        c.execute('INSERT OR REPLACE INTO article_versions VALUES(?,?,?,?)',
+                                  (rec['url'],listing_fingerprint,digest,now_iso()))
+                        c.commit()
+                    return text
+                cl = classify(rec, src, observed_body,
                               use_ai=False)
                 tier = ref_tier(rec["url"], rec.get("outlet") or src["name"], rec["title"])
                 immediately_confirmed = (cl and not cl.get("is_followup")
@@ -2466,11 +2600,19 @@ def _write_alert_state(state, path=ALERT_STATE_PATH):
 
 
 def send_local_alert(key, title, detail, severity="warning", cooldown_hours=None,
-                     now=None, post_fn=post_webhook, state_path=None, preserve_format=False):
+                     now=None, post_fn=post_webhook, state_path=None, preserve_format=False, queue_on_failure=True):
     """Send a private, rate-limited operations alert; never enters public output."""
+    def defer():
+        if queue_on_failure and not key.startswith('manual-review-'):
+            try:
+                ops.queue_alert(DB_PATH, key, dict(title=title, detail=_safe_alert_detail(detail, preserve_format),
+                                severity=severity, cooldown_hours=cooldown_hours, preserve_format=preserve_format))
+            except (OSError, sqlite3.Error) as error:
+                print(f'[warn] alert queue unavailable: {type(error).__name__}', file=sys.stderr)
+        return False
     if not _private_webhook_url():
         print(f"[warn] local alert not sent (webhook empty): {title}", file=sys.stderr)
-        return False
+        return defer()
     now = now or datetime.now(timezone.utc)
     if cooldown_hours is None:
         try:
@@ -2494,16 +2636,35 @@ def send_local_alert(key, title, detail, severity="warning", cooldown_hours=None
                f"Time: {now.astimezone(JST).strftime('%Y-%m-%d %H:%M:%S JST')}")
     try:
         if not post_fn(message):
-            return False
+            return defer()
     except Exception as error:
         print(f"[warn] operations webhook failed: {type(error).__name__}: {error}", file=sys.stderr)
-        return False
+        return defer()
     state[key] = {"sent_at": now.isoformat(timespec="seconds"), "title": title}
     try:
         _write_alert_state(state, state_path)
     except OSError as error:
         print(f"[warn] alert state was not saved: {error}", file=sys.stderr)
     return True
+
+
+def deliver_alerts():
+    """Independent timer entrypoint: never depends on Git, collection or AI success."""
+    with ops.lock(DB_PATH, 'alerts') as acquired:
+        if not acquired:
+            return
+        c = db()
+        try:
+            notify_manual_reviews(c)
+            # Eight total webhook attempts fit the independent service's three-minute timeout.
+            for row in list(c.execute('SELECT * FROM alert_outbox ORDER BY created_at LIMIT 4')):
+                state = _read_alert_state(ALERT_STATE_PATH)
+                sent = state.get(row['key'], {}).get('sent_at', '') >= row['created_at']
+                if sent or send_local_alert(row['key'], **json.loads(row['payload']), queue_on_failure=False):
+                    c.execute('DELETE FROM alert_outbox WHERE key=?', (row['key'],))
+                    c.commit()
+        finally:
+            c.close()
 
 
 def check_ai_budget(opener=urllib.request.urlopen):
@@ -2543,6 +2704,7 @@ def check_ai_budget(opener=urllib.request.urlopen):
             Decimal("0"),
         ) / Decimal("100")
         remaining = budget - spent
+        ops.set_state(DB_PATH, 'ai_budget', {'remaining': float(remaining), 'checked_at': now_iso()})
         if remaining <= low:
             send_local_alert(
                 "ai-low-credit", "AI monthly budget is running low",
@@ -2575,7 +2737,7 @@ def send_webhook(rows):
 def recent(days=28, kind=None, min_score=0):
     c = db()
     since = (datetime.now(timezone.utc) - timedelta(days=days)).isoformat(timespec="seconds")
-    sql = "SELECT id,published,org,kind,records,url,score,confidence FROM incidents WHERE published >= ? AND score >= ?"
+    sql = "SELECT id,published,org,kind,records,url,score,confidence FROM incidents WHERE withdrawn=0 AND published >= ? AND score >= ?"
     args = [since, min_score]
     if kind:
         sql += " AND kind=?"
@@ -2594,7 +2756,7 @@ def all_public_incidents():
     rows = []
     for row in c.execute(
         "SELECT id,published,org,kind,records,score,confidence,disclosed_at "
-        "FROM incidents ORDER BY published DESC, score DESC, id"
+        "FROM incidents WHERE withdrawn=0 ORDER BY published DESC, score DESC, id"
     ):
         incident = {
             "id": row["id"],
@@ -2866,6 +3028,15 @@ def publish_public_json(path=JSON_PATH, rss_path=RSS_PATH, sources_path=SOURCES_
     root_result = _run_git(["rev-parse", "--show-toplevel"], os.getcwd())
     repo = root_result.stdout.strip()
     absolute_paths = [os.path.abspath(path), os.path.abspath(rss_path), os.path.abspath(sources_path)]
+    heartbeat = ops.get_state(DB_PATH, 'collection_success')
+    if heartbeat:
+        health_path = os.path.join(os.path.dirname(os.path.abspath(path)), 'health.json')
+        temporary = health_path + '.tmp'
+        with open(temporary, 'w', encoding='utf-8') as target:
+            json.dump({'schema_version': 1, 'collector_success_at': heartbeat}, target)
+            target.write('\n')
+        os.replace(temporary, health_path)
+        absolute_paths.append(health_path)
     for output_path in absolute_paths:
         if os.path.commonpath((repo, output_path)) != repo:
             raise RuntimeError(f"Published output must be inside the Git repository: {output_path}")
@@ -2895,6 +3066,77 @@ def publish_public_json(path=JSON_PATH, rss_path=RSS_PATH, sources_path=SOURCES_
     else:
         print("GitHub publish skipped: no data changes")
     return False
+
+
+def run_cycle(args):
+    with ops.lock(DB_PATH, 'collector') as acquired:
+        if not acquired:
+            print('Another collector/review process is active; skipping overlapping run')
+            return
+        started = now_iso()
+        ops.set_state(DB_PATH, 'cycle', {'started_at': started, 'status': 'running'})
+        errors = []
+        try:
+            wait_for_network()
+            if not os.environ.get('ANTHROPIC_API_KEY', '').strip():
+                send_local_alert('ai-key-missing', 'AI analysis is not configured',
+                                 'Queued candidates cannot receive AI validation.', cooldown_hours=24)
+            check_ai_budget()
+            poll(args.notify)
+            ops.set_state(DB_PATH, 'collection_success', now_iso())
+        except Exception as error:
+            errors.append(('collection', error))
+        # Publication failure must not block private review or notification delivery.
+        if args.publish:
+            try:
+                publish_public_json(args.json_path, args.rss_path, args.sources_path)
+            except Exception as error:
+                errors.append(('publication', error))
+        try:
+            review_pending()
+        except Exception as error:
+            errors.append(('review', error))
+        finally:
+            try:
+                deliver_alerts()
+            except Exception as error:
+                errors.append(('alerts', error))
+        ops.set_state(DB_PATH, 'cycle', {'started_at': started, 'finished_at': now_iso(),
+                                       'status': 'failed' if errors else 'success'})
+        if errors:
+            raise RuntimeError('; '.join(f'{phase}: {type(error).__name__}: {error}' for phase,error in errors))
+
+
+def watchdog():
+    """Host-side checks supplement the external heartbeat (which survives host failure)."""
+    cycle = ops.get_state(DB_PATH, 'cycle', {})
+    stamp = cycle.get('started_at') if cycle.get('status') == 'running' else ops.get_state(DB_PATH, 'collection_success')
+    age = (datetime.now(timezone.utc)-datetime.fromisoformat(stamp)).total_seconds() if stamp else float('inf')
+    limit = 2400 if cycle.get('status') == 'running' else 10800
+    if age > limit:
+        send_local_alert('collector-stale', 'Collector heartbeat overdue',
+                         'No recent completed collection, or a run exceeded its expected duration.', cooldown_hours=6)
+    backup = ops.get_state(DB_PATH, 'backup', {})
+    stamp = backup.get('completed_at')
+    if not stamp or (datetime.now(timezone.utc)-datetime.fromisoformat(stamp)).total_seconds() > 172800:
+        send_local_alert('backup-stale', 'Verified backup overdue',
+                         'No successful restore-tested backup in the last 48 hours.', cooldown_hours=12)
+    deliver_alerts()
+
+
+def create_backup():
+    with ops.lock(DB_PATH, 'backup') as acquired:
+        if not acquired:
+            return {'status': 'already running'}
+        c = db()
+        c.close()
+        root = os.path.dirname(os.path.abspath(DB_PATH))
+        files = {'config.env': os.path.join(root, '.env'), 'alert-state.json': ALERT_STATE_PATH}
+        for role, base in [('collector','jp-incidents'), ('alerts','jp-incidents-alerts'),
+                           ('backup','jp-incidents-backup'), ('watchdog','jp-incidents-watchdog')]:
+            for suffix in ['service','timer']:
+                files[f'{role}.{suffix}'] = os.path.join(root, '.local', 'systemd', f'{base}.{suffix}')
+        return ops.backup(DB_PATH, os.environ.get('JPI_BACKUP_DIR', os.path.join(root, 'backups')), files)
 
 
 def to_csv(rows):
@@ -2973,6 +3215,8 @@ Environment=JPI_RSS_PATH={wd}/feed.xml
 Environment=PYTHONUNBUFFERED=1
 EnvironmentFile=-{wd}/.env
 ExecStart={py} {script} poll --notify --publish
+TimeoutStartSec=35min
+UMask=0077
 Restart=on-failure
 RestartSec=5min
 
@@ -3034,6 +3278,27 @@ def main():
     v.add_argument("--apply", action="store_true", help="restore only AI-confirmed valid incidents")
     v.add_argument("--publish", action="store_true", help="publish JSON/RSS after restoring valid incidents")
     sub.add_parser("review-pending", help="AI-review private candidates for promotion next cycle")
+    sub.add_parser('deliver-alerts', help='retry private alerts independently of collection/publication')
+    sub.add_parser('watchdog', help='check collection and verified backup freshness')
+    sub.add_parser('backup', help='create private snapshot and test a full restore')
+    restore = sub.add_parser('restore-backup', help='restore an archive into a NEW directory for recovery')
+    restore.add_argument('archive')
+    restore.add_argument('--destination', required=True)
+    incident = sub.add_parser('incident', help='inspect/correct/withdraw/restore a published record')
+    ia = incident.add_subparsers(dest='incident_action', required=True)
+    for name in ['check','correct','withdraw','restore']:
+        parser = ia.add_parser(name)
+        parser.add_argument('id')
+        if name != 'check':
+            parser.add_argument('--note', required=True)
+        if name == 'correct':
+            parser.add_argument('--org')
+            parser.add_argument('--date')
+            parser.add_argument('--kind', choices=list(RANK))
+            counts = parser.add_mutually_exclusive_group()
+            counts.add_argument('--records', type=int)
+            counts.add_argument('--clear-records', action='store_true')
+            parser.add_argument('--disclosed-on')
     manual = sub.add_parser("review", help="inspect and decide private human-review items")
     actions = manual.add_subparsers(dest="review_action", required=True)
     actions.add_parser("list", help="list items awaiting a human decision")
@@ -3058,19 +3323,27 @@ def main():
     a = ap.parse_args()
     if a.cmd == "sources":
         test_sources(name_match=a.match, group=a.group)
+    elif a.cmd == 'deliver-alerts':
+        deliver_alerts()
+    elif a.cmd == 'watchdog':
+        watchdog()
+    elif a.cmd == 'backup':
+        print(json.dumps(create_backup(), indent=2))
+    elif a.cmd == 'restore-backup':
+        print(json.dumps(ops.restore_backup(a.archive, a.destination), indent=2))
+    elif a.cmd == 'incident':
+        changes = {}
+        for flag,field in [('org','org'),('date','published'),('kind','kind'),('records','records'),('disclosed_on','disclosed_at')]:
+            if getattr(a,flag,None) is not None:
+                changes[field] = getattr(a,flag)
+        if getattr(a,'clear_records',False):
+            changes['records'] = None
+        try:
+            print(json.dumps(edit_incident(a.id,a.incident_action,getattr(a,'note',None),changes),ensure_ascii=False,indent=2))
+        except ValueError as error:
+            ap.error(str(error))
     elif a.cmd == "poll":
-        wait_for_network()
-        if not os.environ.get("ANTHROPIC_API_KEY", "").strip():
-            send_local_alert(
-                "ai-key-missing", "AI analysis is not configured",
-                "ANTHROPIC_API_KEY is missing; queued candidates cannot receive secondary AI validation.",
-                severity="critical", cooldown_hours=24,
-            )
-        check_ai_budget()
-        poll(a.notify)
-        if a.publish:
-            publish_public_json(a.json_path, a.rss_path, a.sources_path)
-        review_pending()
+        run_cycle(a)
     elif a.cmd == "list":
         for r in recent(a.days, a.type, a.min_score):
             print(f"{r['published'][:10]}  {r['org']:<28} {r['kind']:<20} {fmt_records(r['records']):>12}"
@@ -3099,7 +3372,10 @@ def main():
         if a.publish:
             publish_public_json()
     elif a.cmd == "review-pending":
-        review_pending()
+        with ops.lock(DB_PATH, "collector") as acquired:
+            if acquired:
+                check_ai_budget()
+                review_pending()
     elif a.cmd == "review":
         try:
             if a.review_action in {"list", "check"}:

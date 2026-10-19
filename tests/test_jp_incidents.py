@@ -577,7 +577,7 @@ class SourceRecoveryAlertTests(unittest.TestCase):
     def run_poll(self, results, sources=None):
         with patch.object(app, "load_sources", return_value=sources or [self.source]), \
                 patch.object(app, "load_items", side_effect=results):
-            app.poll()
+            app.poll(fetch_body_fn=lambda _: '')
 
     def test_known_403_is_logged_but_not_alerted(self):
         with patch.object(app, "send_local_alert") as alert:

@@ -1,0 +1,12 @@
+[Unit]
+Description=JP Incident Monitor backup
+[Service]
+Type=oneshot
+User=jp-incidents
+Group=jp-incidents
+WorkingDirectory=/opt/jp-incidents
+Environment=JPI_DB=/opt/jp-incidents/jp_incidents.db
+EnvironmentFile=-/opt/jp-incidents/.env
+ExecStart=/opt/jp-incidents/.venv/bin/python /opt/jp-incidents/jp_incidents.py backup
+TimeoutStartSec=25min
+UMask=0077

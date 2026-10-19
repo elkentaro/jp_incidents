@@ -1,0 +1,7 @@
+[Unit]
+Description=JP Incident Monitor backup schedule
+[Timer]
+OnCalendar=*-*-* 02:40:00
+Persistent=true
+[Install]
+WantedBy=timers.target

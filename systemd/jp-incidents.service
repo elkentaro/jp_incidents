@@ -17,5 +17,7 @@ Environment=JPI_RSS_PATH=/opt/jp-incidents/feed.xml
 Environment=PYTHONUNBUFFERED=1
 EnvironmentFile=-/opt/jp-incidents/.env
 ExecStart=/opt/jp-incidents/.venv/bin/python /opt/jp-incidents/jp_incidents.py poll --notify --publish
+TimeoutStartSec=35min
+UMask=0077
 Restart=on-failure
 RestartSec=5min
