@@ -1224,6 +1224,47 @@ def queue_for_review(c, src_name, queue_id, rec):
     )
 
 
+def _org_match_text(value):
+    return re.sub(
+        r"株式会社|有限会社|合同会社|ホールディングス|グループ|[\s　・･.,，。()（）「」『』\-_/]",
+        "", str(value or "").casefold(),
+    )
+
+
+def corroborate_finding(finding, record, fetcher=fetch):
+    """Find independent monitored-news evidence for one secondary AI finding."""
+    org_key = _org_match_text(finding["org"])
+    if len(org_key) < 2:
+        return []
+    query = f'"{finding["org"]}" (不正アクセス OR 情報漏えい OR 情報漏洩 OR サイバー攻撃) when:14d'
+    source = {"name": "GNews corroboration", "url": gnews(query)}
+    try:
+        items = parse_feed(fetcher(source["url"]))
+    except (urllib.error.URLError, ET.ParseError, TimeoutError, OSError, ValueError):
+        return []
+    evidence, seen_outlets = [], set()
+    original_url = norm_url(record["url"])
+    original_outlet = str(record.get("outlet") or "").casefold()
+    for item in items:
+        if norm_url(item["url"]) == original_url or not gate(item, source):
+            continue
+        text_key = _org_match_text(f"{item['title']} {item['summary']}")
+        if org_key not in text_key:
+            continue
+        published = normalize_incident_date(item.get("published"))
+        if published and not within_collection_window(finding["incident_date"], published):
+            continue
+        outlet = str(item.get("outlet") or "GNews corroboration").strip()
+        outlet_key = outlet.casefold()
+        if outlet_key == original_outlet or outlet_key in seen_outlets:
+            continue
+        seen_outlets.add(outlet_key)
+        evidence.append({"url": item["url"], "source": outlet, "title": item["title"]})
+        if len(evidence) == 3:
+            break
+    return evidence
+
+
 def promote_reviewed(c):
     """Promote prior-cycle AI confirmations; never promote rejected or undecided rows."""
     new_rows = []
@@ -1243,6 +1284,20 @@ def promote_reviewed(c):
                 identity = f"{norm_url(rec['url'])}|{cl['org'].casefold()}|{cl['incident_date'][:10]}"
                 rec["_incident_id"] = hashlib.sha1(identity.encode()).hexdigest()[:16]
                 inserted = store(c, row["source"], rec, cl)
+                incident_row = c.execute(
+                    "SELECT id FROM incidents WHERE id=?", (rec["_incident_id"],)
+                ).fetchone()
+                if incident_row is None:
+                    incident_row = c.execute(
+                        "SELECT id FROM incidents WHERE org=? ORDER BY published DESC LIMIT 1", (cl["org"],)
+                    ).fetchone()
+                if incident_row:
+                    for ref in cl.get("corroboration") or []:
+                        c.execute(
+                            "INSERT OR IGNORE INTO refs(incident_id,url,source,title) VALUES(?,?,?,?)",
+                            (incident_row["id"], ref["url"], ref["source"], ref["title"]),
+                        )
+                    rescore(c, incident_row["id"])
                 if inserted:
                     incident = c.execute(
                         "SELECT score,confidence FROM incidents WHERE id=?", (rec["_incident_id"],)
@@ -1267,7 +1322,7 @@ def promote_reviewed(c):
     return new_rows
 
 
-def review_pending(fetch_body_fn=fetch_body):
+def review_pending(fetch_body_fn=fetch_body, corroborate_fn=corroborate_finding):
     """Granular AI review after publication; all distinct confirmations wait for the next cycle."""
     c = db()
     rows = list(c.execute(
@@ -1283,9 +1338,17 @@ def review_pending(fetch_body_fn=fetch_body):
         body = fetch_body_fn(rec["url"])
         findings = ([] if (not body and FOLLOWUP_RE.search(rec["title"]))
                     else llm_extract_many(rec, body))
-        findings = [finding for finding in (findings or []) if within_collection_window(
-            finding["incident_date"], row["first_seen"]
-        )]
+        validated = []
+        for finding in findings or []:
+            if not within_collection_window(finding["incident_date"], row["first_seen"]):
+                continue
+            tier = ref_tier(rec["url"], row["source"] or "", rec["title"])
+            corroboration = corroborate_fn(finding, rec)
+            if tier not in {"official", "gov"} and not corroboration:
+                continue
+            finding["corroboration"] = corroboration
+            validated.append(finding)
+        findings = validated
         if findings:
             status = "confirmed"
             decision = json.dumps({"record": rec, "classifications": findings}, ensure_ascii=False)
@@ -1339,7 +1402,7 @@ def poll(notify=False, fetcher=fetch, fetch_body_fn=fetch_body):
                     # classify() rewrites this field to its inferred incident date. The AI needs the
                     # original source date so it can independently determine the incident date.
                     rec["published"] = source_published
-                    queue_for_review(c, src["name"], iid, rec)
+                    queue_for_review(c, rec.get("outlet") or src["name"], iid, rec)
                 c.execute("INSERT OR IGNORE INTO skipped VALUES(?)", (iid,))
                 c.commit()
         except (urllib.error.URLError, ET.ParseError, TimeoutError, OSError, ValueError) as e:

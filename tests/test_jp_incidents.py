@@ -81,8 +81,9 @@ class StaticPublishingTests(unittest.TestCase):
             "incident_date": app.calendar_date_iso(2026, 10, 18), "date_basis": "incident",
             "is_followup": False,
         }]
+        evidence = [{"url": "https://other.example.jp/report", "source": "Other News", "title": "Example breach"}]
         with patch.object(app, "llm_extract_many", return_value=extracted):
-            result = app.review_pending(fetch_body_fn=lambda _: "")
+            result = app.review_pending(fetch_body_fn=lambda _: "", corroborate_fn=lambda *_: evidence)
         self.assertEqual(result, {"total": 1, "confirmed": 1, "rejected": 0})
         connection = app.db()
         self.assertIsNone(connection.execute(
@@ -114,8 +115,11 @@ class StaticPublishingTests(unittest.TestCase):
              "incident_date": app.calendar_date_iso(2026, 10, 18), "date_basis": "incident",
              "is_followup": False},
         ]
+        evidence = [{"url": "https://other.example.jp/report", "source": "Other News", "title": "Report"}]
         with patch.object(app, "llm_extract_many", return_value=findings):
-            result = app.review_pending(fetch_body_fn=lambda _: "article body")
+            result = app.review_pending(
+                fetch_body_fn=lambda _: "article body", corroborate_fn=lambda *_: evidence
+            )
         self.assertEqual(result, {"total": 1, "confirmed": 1, "rejected": 0})
         connection = app.db()
         promoted = app.promote_reviewed(connection)
@@ -125,6 +129,26 @@ class StaticPublishingTests(unittest.TestCase):
             {"Alpha", "Beta"},
         )
         connection.close()
+
+    def test_uncorroborated_secondary_finding_stays_unpublished(self):
+        connection = app.db()
+        candidate = {
+            "title": "Exampleへの不正アクセス", "url": "https://news.example.jp/uncorroborated",
+            "summary": "", "published": "2026-10-18T00:00:00+00:00",
+        }
+        app.queue_for_review(connection, "Example News", "queued-uncorroborated", candidate)
+        connection.commit()
+        connection.close()
+        findings = [{
+            "org": "Only One Source", "kind": "unauthorized access", "records": None,
+            "incident_date": app.calendar_date_iso(2026, 10, 18), "date_basis": "incident",
+            "is_followup": False,
+        }]
+        with patch.object(app, "llm_extract_many", return_value=findings):
+            result = app.review_pending(
+                fetch_body_fn=lambda _: "article body", corroborate_fn=lambda *_: []
+            )
+        self.assertEqual(result, {"total": 1, "confirmed": 0, "rejected": 1})
 
     def test_unmatched_followup_is_not_inserted_as_new_incident(self):
         connection = app.db()
