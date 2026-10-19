@@ -23,6 +23,7 @@ const copy = {
     disclaimer: "This index is collected automatically and analyzed with AI. It may contain omissions or errors and should not be regarded as a complete or authoritative record. Verify details with the linked sources.",
     totalIncidents: "Total incidents",
     lastUpdated: "Data updated",
+    nextPlannedUpdate: (date) => `Next planned update: ${date}`,
     coverage: "Coverage",
     trendTitle: "90-day incident trend",
     trendCount: (count, peak) => `${count.toLocaleString("en-US")} reported · peak ${peak.toLocaleString("en-US")}/day`,
@@ -68,6 +69,7 @@ const copy = {
     disclaimer: "本一覧は公開情報を自動収集し、AIを用いて分析しています。情報の欠落や誤りが含まれる可能性があり、完全または権威ある記録として扱わないでください。詳細はリンク先の情報源でご確認ください。",
     totalIncidents: "インシデント総数",
     lastUpdated: "データ更新日時",
+    nextPlannedUpdate: (date) => `次回更新予定：${date}`,
     coverage: "収録期間",
     trendTitle: "過去90日間のインシデント推移",
     trendCount: (count, peak) => `${count.toLocaleString("ja-JP")}件 · 最大${peak.toLocaleString("ja-JP")}件/日`,
@@ -112,6 +114,7 @@ const elements = {
   language: document.querySelector("#language-switch"),
   total: document.querySelector("#total-count"),
   updated: document.querySelector("#updated-at"),
+  nextUpdate: document.querySelector("#next-update-at"),
   coverage: document.querySelector("#coverage-range"),
   trend: document.querySelector("#trend-chart"),
   trendTotal: document.querySelector("#trend-total"),
@@ -203,6 +206,22 @@ function formatUpdated(value) {
     year: "numeric", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit",
     timeZone: "Asia/Tokyo", timeZoneName: "short"
   }).format(date);
+}
+
+function nextPlannedUpdate(value) {
+  const updated = new Date(value);
+  if (Number.isNaN(updated.valueOf())) return null;
+  const hour = 60 * 60 * 1000;
+  let next = updated.valueOf() + hour;
+  const now = Date.now();
+  if (next <= now) next += (Math.floor((now - next) / hour) + 1) * hour;
+  return new Date(next);
+}
+
+function renderUpdateTimes() {
+  elements.updated.textContent = formatUpdated(state.updatedAt);
+  const next = nextPlannedUpdate(state.updatedAt);
+  elements.nextUpdate.textContent = text("nextPlannedUpdate")(next ? formatUpdated(next) : "—");
 }
 
 function formatCoverageRange() {
@@ -346,13 +365,16 @@ function incidentRow(incident) {
 
   const date = document.createElement("td");
   date.className = "date-cell";
+  date.dataset.label = text("date");
   date.textContent = formatDate(incident.published_at);
 
   const organization = document.createElement("td");
   organization.className = "org-cell";
+  organization.dataset.label = text("organization");
   organization.textContent = incident.organization || text("unknown");
 
   const type = document.createElement("td");
+  type.dataset.label = text("incidentType");
   const typeTag = document.createElement("span");
   typeTag.className = "tag";
   typeTag.textContent = text("types")[incident.incident_type] || incident.incident_type;
@@ -360,11 +382,13 @@ function incidentRow(incident) {
 
   const records = document.createElement("td");
   records.className = "numeric records-cell";
+  records.dataset.label = text("potentialRecords");
   records.textContent = Number.isFinite(incident.potential_records)
     ? incident.potential_records.toLocaleString(state.language === "ja" ? "ja-JP" : "en-US")
     : "—";
 
   const confidence = document.createElement("td");
+  confidence.dataset.label = text("confidence");
   const confidenceLabel = document.createElement("span");
   confidenceLabel.className = "confidence";
   confidenceLabel.dataset.level = incident.confidence;
@@ -376,6 +400,7 @@ function incidentRow(incident) {
   confidence.append(confidenceLabel);
 
   const sources = document.createElement("td");
+  sources.dataset.label = text("sources");
   const sourceList = document.createElement("div");
   sourceList.className = "source-list";
   (incident.sources || []).forEach((source) => {
@@ -443,7 +468,7 @@ function render() {
   const visible = filtered.slice(start, start + PAGE_SIZE);
 
   elements.total.textContent = state.incidents.length.toLocaleString(state.language === "ja" ? "ja-JP" : "en-US");
-  elements.updated.textContent = formatUpdated(state.updatedAt);
+  renderUpdateTimes();
   elements.coverage.textContent = formatCoverageRange();
   renderTrend();
   elements.results.textContent = `${text("results")(filtered.length, state.incidents.length)} · ${text("page")(state.page, totalPages)}`;
@@ -508,3 +533,4 @@ async function loadData() {
 }
 
 loadData();
+setInterval(() => { if (state.loaded) renderUpdateTimes(); }, 60 * 1000);
