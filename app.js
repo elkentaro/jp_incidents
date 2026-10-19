@@ -374,6 +374,7 @@ function incidentRow(incident) {
   organization.textContent = incident.organization || text("unknown");
 
   const type = document.createElement("td");
+  type.className = "type-cell";
   type.dataset.label = text("incidentType");
   const typeTag = document.createElement("span");
   typeTag.className = "tag";
@@ -388,6 +389,7 @@ function incidentRow(incident) {
     : "—";
 
   const confidence = document.createElement("td");
+  confidence.className = "confidence-cell";
   confidence.dataset.label = text("confidence");
   const confidenceLabel = document.createElement("span");
   confidenceLabel.className = "confidence";
@@ -400,6 +402,7 @@ function incidentRow(incident) {
   confidence.append(confidenceLabel);
 
   const sources = document.createElement("td");
+  sources.className = "sources-cell";
   sources.dataset.label = text("sources");
   const sourceList = document.createElement("div");
   sourceList.className = "source-list";
