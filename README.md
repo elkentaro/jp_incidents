@@ -320,7 +320,7 @@ python3 scripts/update_readme_sources.py
 python3 jp_incidents.py poll --publish
 ```
 
-`poll --publish` uses a staged publication cycle. It first promotes candidates that the AI confirmed during the previous cycle, polls all sources, and immediately accepts only deterministic high-confidence notices from recognized official or government sources with an explicit incident date. It then atomically updates and pushes the public JSON/RSS. Potentially relevant but uncertain candidates remain in the private SQLite review queue; the AI reviews them only after publication, and confirmed candidates become eligible for the next hourly update. AI-rejected or undecided candidates are never published.
+`poll --publish` uses a staged publication cycle. It first promotes candidates that the AI confirmed during the previous cycle, polls all sources, and immediately accepts only deterministic high-confidence notices from recognized official or government sources with an explicit incident date. It then atomically updates and pushes the public JSON/RSS. Potentially relevant or complex articles remain in the private SQLite review queue. After publication, the AI performs granular article-level analysis and may identify multiple distinct affected organizations/incidents from one story. Each confirmed new incident becomes eligible for the next hourly update; known follow-ups only enrich an existing row. AI-rejected or undecided findings are never published.
 
 ## Local preview
 

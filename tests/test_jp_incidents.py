@@ -76,11 +76,12 @@ class StaticPublishingTests(unittest.TestCase):
         app.queue_for_review(connection, "Example News", "queued-1", candidate)
         connection.commit()
         connection.close()
-        extracted = {
-            "is_incident": True, "org": "Queued Example", "kind": "data leak", "records": 42,
-            "incident_date": app.calendar_date_iso(2026, 10, 18),
-        }
-        with patch.object(app, "llm_extract", return_value=extracted):
+        extracted = [{
+            "org": "Queued Example", "kind": "data leak", "records": 42,
+            "incident_date": app.calendar_date_iso(2026, 10, 18), "date_basis": "incident",
+            "is_followup": False,
+        }]
+        with patch.object(app, "llm_extract_many", return_value=extracted):
             result = app.review_pending(fetch_body_fn=lambda _: "")
         self.assertEqual(result, {"total": 1, "confirmed": 1, "rejected": 0})
         connection = app.db()
@@ -92,6 +93,37 @@ class StaticPublishingTests(unittest.TestCase):
         self.assertIsNotNone(connection.execute(
             "SELECT id FROM incidents WHERE org='Queued Example'"
         ).fetchone())
+        connection.close()
+
+    def test_secondary_review_can_publish_multiple_incidents_from_one_article(self):
+        connection = app.db()
+        candidate = {
+            "title": "複数組織への不正アクセスが判明",
+            "url": "https://news.example.jp/multiple",
+            "summary": "AlphaとBetaが被害を公表しました。",
+            "published": "2026-10-18T00:00:00+00:00",
+        }
+        app.queue_for_review(connection, "Example News", "queued-multiple", candidate)
+        connection.commit()
+        connection.close()
+        findings = [
+            {"org": "Alpha", "kind": "data leak", "records": 10,
+             "incident_date": app.calendar_date_iso(2026, 10, 17), "date_basis": "incident",
+             "is_followup": False},
+            {"org": "Beta", "kind": "unauthorized access", "records": None,
+             "incident_date": app.calendar_date_iso(2026, 10, 18), "date_basis": "incident",
+             "is_followup": False},
+        ]
+        with patch.object(app, "llm_extract_many", return_value=findings):
+            result = app.review_pending(fetch_body_fn=lambda _: "article body")
+        self.assertEqual(result, {"total": 1, "confirmed": 1, "rejected": 0})
+        connection = app.db()
+        promoted = app.promote_reviewed(connection)
+        self.assertEqual(len(promoted), 2)
+        self.assertEqual(
+            {row[0] for row in connection.execute("SELECT org FROM incidents WHERE org IN ('Alpha','Beta')")},
+            {"Alpha", "Beta"},
+        )
         connection.close()
 
     def test_unmatched_followup_is_not_inserted_as_new_incident(self):
