@@ -26,6 +26,8 @@ Confidence is based on source authority and independent corroboration: direct of
 
 The displayed date is the incident's occurrence, discovery, or first-disclosure date—not a webpage's later update date. New candidates must fall within the collector's 14-day intake window when first discovered. If a report states no incident date, its source publication date is used as a fallback. Once a valid incident is collected it remains in the all-history dataset as it ages.
 
+One database row represents one underlying incident, not one article. Follow-up reports, second notices, reactions, remediation, recovery, and impact stories may add sources or facts to an existing incident but can never create a new incident row. A follow-up is unpublished when its original incident date is unknown, and an underlying incident is admitted only when that date falls inside the intake window.
+
 <!-- source-registry:begin -->
 ## Complete source registry
 

@@ -931,17 +931,47 @@ LLM_SYSTEM = (
     '"is_incident" (true only if the item reports one specific cyber incident affecting a Japan-based '
     "organization or its customers, of any size; false for advisories, roundups, opinion, products, "
     "statistics, or non-Japan incidents), "
-    '"org" (the affected organization, shortest common name, as written in the source language; for a '
-    'contractor/vendor breach use the organization named as affected, or the vendor if none), '
+    '"org" (the actual affected organization, shortest common name, as written in the source language; '
+    'never use an apology/notice headline, incident description, or generic article phrase as the name; '
+    'for a contractor/vendor breach use the organization named as affected, or the vendor if none; null '
+    'when no organization can be identified), '
+    '"is_followup" (true when the item is mainly a later update, reaction, remediation, recovery, impact, '
+    'or consequence report about an already disclosed incident; false for the initial incident report), '
     '"kind" (one of "data leak", "unauthorized access", "other": data leak = the item says data was '
     "leaked/exposed/taken or possibly so; unauthorized access = intrusion reported with no data loss stated; "
     "other = ransomware outage, DDoS, defacement, malware infection, etc.), "
     '"records" (integer: the largest number of records/people/accounts stated as leaked or possibly leaked, '
     'including "up to" figures; null if kind is not "data leak" or no number is stated), '
     '"incident_date" (YYYY-MM-DD: the date the incident first occurred, was discovered, or was first '
-    'disclosed, in that priority order; use the source publication date only when no incident date is '
-    'stated; never use a webpage update date when a different incident date is stated; null if unknown).'
+    'disclosed, in that priority order; use the source publication date only for an initial incident report '
+    'when no incident date is stated; for follow-up, reaction, remediation, recovery, or consequence stories '
+    'use the original incident date and return null if it is unknown; never use a webpage update date or '
+    'follow-up article date when a different incident date is stated; null if unknown).'
 )
+
+FOLLOWUP_RE = re.compile(
+    r"第[二2三3四4五5]報|続報|最終報|調査結果|対応方針|復旧|再開|その後|"
+    r"怒りの声|再交付|特例措置|二次被害|影響.{0,8}(?:拡大|広が)|follow[- ]?up|update",
+    re.I,
+)
+ORG_TITLE_NOISE_RE = re.compile(
+    r"お客様情報|個人情報(?:漏|流)|不正アクセス|サイバー攻撃|ランサムウェア|"
+    r"お詫び|お知らせ|で発生した|ニュース|情報(?:漏えい|漏洩|流出)",
+    re.I,
+)
+GENERIC_ORGS = {
+    "一連", "自治体", "複数自治体", "大手スーパー", "都内の税理士法人",
+    "ネット通販サイト支援の会社", "産婦人科など利用のシステム",
+}
+
+
+def plausible_org(org):
+    value = str(org or "").strip()
+    if not value:
+        return False
+    if value in GENERIC_ORGS or re.search(r"など.{0,12}利用.{0,8}システム$", value):
+        return False
+    return not ORG_TITLE_NOISE_RE.search(value)
 
 
 def llm_extract(rec, body):
@@ -988,7 +1018,7 @@ def llm_extract(rec, body):
         if not d.get("is_incident"):
             return {"is_incident": False}
         kind, org = d.get("kind"), str(d.get("org") or "").strip()[:60]
-        if kind not in RANK or not org:
+        if kind not in RANK or not plausible_org(org):
             return None
         recs = d.get("records") if kind == "data leak" else None
         recs = int(recs) if isinstance(recs, (int, float)) and not isinstance(recs, bool) and recs > 0 else None
@@ -998,7 +1028,7 @@ def llm_extract(rec, body):
             if normalized:
                 incident_date = normalized
         return {"is_incident": True, "org": org, "kind": kind, "records": recs,
-                "incident_date": incident_date}
+                "incident_date": incident_date, "is_followup": bool(d.get("is_followup"))}
     except Exception as e:
         print(f"[warn] llm extract failed: {type(e).__name__}: {e}", file=sys.stderr)
         return None
@@ -1006,6 +1036,8 @@ def llm_extract(rec, body):
 
 def gate(rec, src):
     """Cheap keyword gate on title+summary, before any article fetch or API call."""
+    if re.search(r"/(?:images?|gallery)(?:/|$)", urllib.parse.urlsplit(rec["url"]).path, re.I):
+        return False
     if NOISE_RE.search(rec["title"]):
         return False
     head = re.sub(r"\s+[-|–—]\s+[^-|–—]+$", "", rec["title"])  # without the " - 日本経済新聞" outlet suffix
@@ -1026,6 +1058,8 @@ def classify(rec, src, fetch_body_fn=fetch_body, observed_at=None, enforce_windo
         return None
     rec["url"] = resolve_url(rec["url"])
     body = fetch_body_fn(rec["url"])
+    if require_ai and not body and FOLLOWUP_RE.search(rec["title"]):
+        return None
     text = f"{rec['title']} {rec['summary']} {body}"
     source_published = normalize_incident_date(rec.get("published"))
     page_published = source_page_date(body)
@@ -1033,7 +1067,8 @@ def classify(rec, src, fetch_body_fn=fetch_body, observed_at=None, enforce_windo
     kind = ("data leak" if LEAK_RE.search(text)
             else "unauthorized access" if ACCESS_RE.search(text) else "other")
     res = {"org": guess_org(rec["title"]), "kind": kind,
-           "records": parse_records(text) if kind == "data leak" else None}
+           "records": parse_records(text) if kind == "data leak" else None,
+           "is_followup": bool(FOLLOWUP_RE.search(text))}
     ai = llm_extract(rec, body) if use_ai else None
     if require_ai and ai is None:
         return None
@@ -1041,6 +1076,7 @@ def classify(rec, src, fetch_body_fn=fetch_body, observed_at=None, enforce_windo
         if not ai["is_incident"]:
             return None
         res = {k: ai[k] for k in ("org", "kind", "records")}
+        res["is_followup"] = bool(ai.get("is_followup"))
     if require_ai and not ai.get("incident_date"):
         return None
     if ai and ai.get("incident_date"):
@@ -1083,6 +1119,9 @@ def store(c, src_name, rec, cl):
         c.execute("INSERT OR IGNORE INTO skipped VALUES(?)", (iid,))
         c.execute("INSERT OR IGNORE INTO refs VALUES(?,?,?,?)", (prev["id"], rec["url"], ref_src, rec["title"]))
         rescore(c, prev["id"])
+        return False
+    if cl.get("is_followup"):
+        print(f"Follow-up not added as a new incident: {rec['title'][:100]}")
         return False
     c.execute("INSERT INTO incidents(id,source,title,url,summary,published,first_seen,org,kind,records)"
               " VALUES(?,?,?,?,?,?,?,?,?,?)",
@@ -1195,7 +1234,9 @@ def poll(notify=False, fetcher=fetch, fetch_body_fn=fetch_body):
                 source_published = rec.get("published")
                 cl = classify(rec, src, fetch_body_fn, use_ai=False)
                 tier = ref_tier(rec["url"], rec.get("outlet") or src["name"], rec["title"])
-                immediately_confirmed = cl and cl["date_basis"] == "incident" and tier in {"official", "gov"}
+                immediately_confirmed = (cl and not cl.get("is_followup")
+                                         and cl["date_basis"] == "incident"
+                                         and tier in {"official", "gov"})
                 if immediately_confirmed and store(c, src["name"], rec, cl):
                     new += 1
                     row = c.execute("SELECT score,confidence FROM incidents WHERE id=?",
@@ -1232,7 +1273,11 @@ def audit_current(apply=False, fetch_body_fn=fetch_body):
         refs = list(c.execute(
             "SELECT url,source,title FROM refs WHERE incident_id=? ORDER BY rowid", (row["id"],)
         ))
-        refs.sort(key=lambda ref: norm_url(ref["url"]) != norm_url(row["url"]))
+        refs.sort(key=lambda ref: (
+            is_wrapper(ref["url"]),
+            -TIER_POINTS[ref_tier(ref["url"], ref["source"] or "", ref["title"] or "")],
+            norm_url(ref["url"]) != norm_url(row["url"]),
+        ))
         inferred_collection_date = row["published"] == row["first_seen"]
         classification = accepted_record = None
         for ref in refs or [{"url": row["url"], "source": row["source"], "title": row["title"]}]:
@@ -1249,10 +1294,12 @@ def audit_current(apply=False, fetch_body_fn=fetch_body):
                 fetch_body_fn=fetch_body_fn,
                 observed_at=row["first_seen"],
                 enforce_window=True,
+                require_ai=True,
             )
-            if classification:
+            if classification and not classification.get("is_followup"):
                 accepted_record = candidate
                 break
+            classification = None
         decisions.append({
             "id": row["id"],
             "old_org": row["org"],
@@ -1317,7 +1364,11 @@ def audit_rejected(source_db_path, apply=False, fetch_body_fn=fetch_body):
         refs = list(source.execute(
             "SELECT url,source,title FROM refs WHERE incident_id=? ORDER BY rowid", (row["id"],)
         ))
-        refs.sort(key=lambda ref: norm_url(ref["url"]) != norm_url(row["url"]))
+        refs.sort(key=lambda ref: (
+            is_wrapper(ref["url"]),
+            -TIER_POINTS[ref_tier(ref["url"], ref["source"] or "", ref["title"] or "")],
+            norm_url(ref["url"]) != norm_url(row["url"]),
+        ))
         inferred_collection_date = row["published"] == row["first_seen"]
         classification = accepted_record = None
         for ref in refs or [{"url": row["url"], "source": row["source"], "title": row["title"]}]:
@@ -1336,9 +1387,10 @@ def audit_rejected(source_db_path, apply=False, fetch_body_fn=fetch_body):
                 enforce_window=True,
                 require_ai=True,
             )
-            if classification:
+            if classification and not classification.get("is_followup"):
                 accepted_record = candidate
                 break
+            classification = None
         decisions.append({
             "row": row, "classification": classification, "record": accepted_record,
             "refs": refs,

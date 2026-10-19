@@ -94,6 +94,22 @@ class StaticPublishingTests(unittest.TestCase):
         ).fetchone())
         connection.close()
 
+    def test_unmatched_followup_is_not_inserted_as_new_incident(self):
+        connection = app.db()
+        record = {
+            "title": "既報インシデントの対応方針", "url": "https://example.jp/followup",
+            "summary": "", "published": app.calendar_date_iso(2026, 10, 18),
+        }
+        classification = {
+            "org": "Unlisted Example", "kind": "data leak", "records": 10,
+            "incident_date": record["published"], "date_basis": "incident", "is_followup": True,
+        }
+        self.assertFalse(app.store(connection, "News", record, classification))
+        self.assertIsNone(connection.execute(
+            "SELECT id FROM incidents WHERE org='Unlisted Example'"
+        ).fetchone())
+        connection.close()
+
 
 class MunicipalSourceTests(unittest.TestCase):
     def test_discovers_feed_and_same_site_homepage_items(self):
@@ -125,6 +141,15 @@ class MunicipalSourceTests(unittest.TestCase):
         ):
             record = {"title": title, "summary": "", "url": "https://example.jp/a"}
             self.assertFalse(app.gate(record, source), title)
+
+    def test_image_and_gallery_pages_are_not_incident_sources(self):
+        source = {"name": "News"}
+        for url in (
+            "https://news.yahoo.co.jp/articles/example/images/000",
+            "https://example.jp/news/gallery/incident",
+        ):
+            record = {"title": "不正アクセスで情報漏えい", "summary": "", "url": url}
+            self.assertFalse(app.gate(record, source))
 
     def test_verified_municipal_domains_are_government_tier(self):
         self.assertEqual(app.ref_tier("https://www.city.kumamoto.jp/example"), "gov")
@@ -265,6 +290,31 @@ class MunicipalSourceTests(unittest.TestCase):
                 observed_at="2026-10-19T09:52:02+00:00", require_ai=True,
             )
         self.assertIsNone(result)
+
+    def test_strict_ai_review_rejects_bodyless_followup(self):
+        record = {
+            "title": "個人情報流出で怒りの声、免許証再交付の特例措置",
+            "summary": "",
+            "url": "https://news.example.jp/followup",
+            "published": "2026-10-18T00:00:00+00:00",
+        }
+        extracted = {
+            "is_incident": True, "org": "Example", "kind": "data leak", "records": 10,
+            "incident_date": app.calendar_date_iso(2026, 10, 18),
+        }
+        with patch.object(app, "llm_extract", return_value=extracted) as llm:
+            result = app.classify(
+                record, {"name": "News"}, fetch_body_fn=lambda _: "",
+                observed_at="2026-10-19T09:52:02+00:00", require_ai=True,
+            )
+        self.assertIsNone(result)
+        llm.assert_not_called()
+
+    def test_headline_phrase_is_not_a_plausible_organization(self):
+        self.assertFalse(app.plausible_org("お客様情報の外部流出に関するお詫びとお知らせ（第2報）"))
+        self.assertFalse(app.plausible_org("Studio株式会社で発生した不正アクセス"))
+        self.assertFalse(app.plausible_org("産婦人科など利用のシステム"))
+        self.assertTrue(app.plausible_org("IMADEYA"))
 
 
 if __name__ == "__main__":
