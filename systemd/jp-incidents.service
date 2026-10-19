@@ -1,0 +1,17 @@
+[Unit]
+Description=Poll Japan incident feeds and publish static data
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=kentaro
+Group=kentaro
+WorkingDirectory=/opt/jp-incidents
+Environment=HOME=/home/kentaro
+Environment=JPI_DB=/opt/jp-incidents/jp_incidents.db
+Environment=JPI_JSON_PATH=/opt/jp-incidents/data/incidents.json
+Environment=JPI_RSS_PATH=/opt/jp-incidents/feed.xml
+Environment=PYTHONUNBUFFERED=1
+EnvironmentFile=-/opt/jp-incidents/.env
+ExecStart=/usr/bin/python3 /opt/jp-incidents/jp_incidents.py poll --notify --publish

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A continuously updated index of publicly reported cybersecurity incidents affecting organizations in Japan.">
+  <title>JP Incident Monitor</title>
+  <link rel="alternate" type="application/rss+xml" title="JP Incident Monitor RSS" href="feed.xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="./" aria-label="JP Incident Monitor home">
+        <span class="brand-mark" aria-hidden="true">JP</span>
+        <span>Incident Monitor</span>
+      </a>
+      <div class="header-actions">
+        <a class="rss-link" href="feed.xml" data-i18n="rssFeed" type="application/rss+xml">RSS feed</a>
+        <button class="language-switch" id="language-switch" type="button" aria-label="日本語に切り替える">
+          <span class="language-option is-active" data-language-option="en">EN</span>
+          <span aria-hidden="true">/</span>
+          <span class="language-option" data-language-option="ja">日本語</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow" data-i18n="eyebrow">OPEN-SOURCE INCIDENT INDEX</p>
+      <div class="intro-grid">
+        <div>
+          <h1 id="page-title" data-i18n="title">Cyber incidents in Japan</h1>
+          <p class="lede" data-i18n="description">Publicly reported cybersecurity incidents affecting Japanese organizations, collected from news, security publications, and official notices.</p>
+        </div>
+        <dl class="summary" aria-live="polite">
+          <div>
+            <dt data-i18n="totalIncidents">Total incidents</dt>
+            <dd id="total-count">—</dd>
+          </div>
+          <div>
+            <dt data-i18n="lastUpdated">Data updated</dt>
+            <dd id="updated-at">—</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="directory" aria-labelledby="directory-title">
+      <div class="directory-heading">
+        <div>
+          <h2 id="directory-title" data-i18n="directoryTitle">Incident directory</h2>
+          <p id="result-count" class="result-count" aria-live="polite"></p>
+        </div>
+        <button class="reset-button" id="reset-filters" type="button" data-i18n="reset">Reset filters</button>
+      </div>
+
+      <div class="filters">
+        <label class="search-field">
+          <span data-i18n="searchLabel">Search organizations or sources</span>
+          <input id="search" type="search" autocomplete="off" data-i18n-placeholder="searchPlaceholder" placeholder="Search…">
+        </label>
+        <label>
+          <span data-i18n="typeLabel">Incident type</span>
+          <select id="type-filter"></select>
+        </label>
+        <label>
+          <span data-i18n="confidenceLabel">Confidence</span>
+          <select id="confidence-filter"></select>
+        </label>
+      </div>
+
+      <div class="table-frame">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col" data-i18n="date">Date</th>
+              <th scope="col" data-i18n="organization">Organization</th>
+              <th scope="col" data-i18n="incidentType">Incident type</th>
+              <th scope="col" class="numeric" data-i18n="potentialRecords">Potential records</th>
+              <th scope="col" data-i18n="confidence">Confidence</th>
+              <th scope="col" data-i18n="sources">Sources</th>
+            </tr>
+          </thead>
+          <tbody id="incident-rows"></tbody>
+        </table>
+        <div class="empty-state" id="empty-state" hidden>
+          <p data-i18n="noResults">No incidents match these filters.</p>
+        </div>
+        <div class="loading-state" id="loading-state" role="status" data-i18n="loading">Loading incident data…</div>
+        <div class="error-state" id="error-state" role="alert" hidden>
+          <strong data-i18n="loadErrorTitle">The incident data could not be loaded.</strong>
+          <span data-i18n="loadErrorBody">Please refresh the page or try again later.</span>
+        </div>
+      </div>
+
+      <nav class="pagination" id="pagination" aria-label="Pagination" data-i18n-aria="paginationLabel"></nav>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <p data-i18n="methodNote">Automated collection from public sources. Confidence reflects source quality, not incident severity.</p>
+      <a href="https://github.com/elkentaro/jp_incidents" rel="noopener noreferrer" data-i18n="viewSource">View project on GitHub</a>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

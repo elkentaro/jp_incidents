@@ -1,0 +1,11 @@
+[Unit]
+Description=Poll Japan incident feeds hourly
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=1h
+AccuracySec=1min
+Persistent=true
+
+[Install]
+WantedBy=timers.target
