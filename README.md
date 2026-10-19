@@ -24,6 +24,8 @@ For official sites, the collector discovers advertised RSS/Atom feeds and scans 
 
 Confidence is based on source authority and independent corroboration: direct official/government disclosures score highly, while single aggregators and social sources score lower. It is a guide to the reliability of the collected record, not incident severity. The dashboard can sort every column—including confidence—across the complete dataset before applying its 100-row pagination.
 
+The displayed date is the incident's occurrence, discovery, or first-disclosure date—not a webpage's later update date. New candidates must fall within the collector's 14-day intake window when first discovered. If a report states no incident date, its source publication date is used as a fallback. Once a valid incident is collected it remains in the all-history dataset as it ages.
+
 <!-- source-registry:begin -->
 ## Complete source registry
 
@@ -308,11 +310,15 @@ python3 jp_incidents.py poll
 python3 jp_incidents.py export-json
 python3 jp_incidents.py export-rss
 python3 jp_incidents.py export-sources
+python3 jp_incidents.py audit-current
+python3 jp_incidents.py audit-current --apply --publish
+python3 jp_incidents.py audit-rejected /tmp/jp_incidents-pre-audit-TIMESTAMP.db --apply --publish
+python3 jp_incidents.py review-pending
 python3 scripts/update_readme_sources.py
 python3 jp_incidents.py poll --publish
 ```
 
-`poll --publish` polls all sources, atomically updates the incident JSON, source-directory JSON, and RSS files only when their content changed, commits only those published data files, and pushes pending data commits to `origin/main`.
+`poll --publish` uses a staged publication cycle. It first promotes candidates that the AI confirmed during the previous cycle, polls all sources, and immediately accepts only deterministic high-confidence notices from recognized official or government sources with an explicit incident date. It then atomically updates and pushes the public JSON/RSS. Potentially relevant but uncertain candidates remain in the private SQLite review queue; the AI reviews them only after publication, and confirmed candidates become eligible for the next hourly update. AI-rejected or undecided candidates are never published.
 
 ## Local preview
 

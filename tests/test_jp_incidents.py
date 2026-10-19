@@ -6,6 +6,7 @@ import unittest
 import xml.etree.ElementTree as ET
 from datetime import datetime
 from pathlib import Path
+from unittest.mock import patch
 
 import jp_incidents as app
 
@@ -63,6 +64,35 @@ class StaticPublishingTests(unittest.TestCase):
         items = ET.parse(rss_path).findall("./channel/item")
         self.assertEqual(len(items), 1)
         self.assertIn("Example Organization", items[0].findtext("title"))
+
+    def test_ai_review_is_private_until_next_cycle_promotion(self):
+        connection = app.db()
+        candidate = {
+            "title": "Exampleへの不正アクセスについて",
+            "url": "https://news.example.jp/incident",
+            "summary": "個人情報が漏えいした可能性があります。",
+            "published": "2026-10-18T00:00:00+00:00",
+        }
+        app.queue_for_review(connection, "Example News", "queued-1", candidate)
+        connection.commit()
+        connection.close()
+        extracted = {
+            "is_incident": True, "org": "Queued Example", "kind": "data leak", "records": 42,
+            "incident_date": app.calendar_date_iso(2026, 10, 18),
+        }
+        with patch.object(app, "llm_extract", return_value=extracted):
+            result = app.review_pending(fetch_body_fn=lambda _: "")
+        self.assertEqual(result, {"total": 1, "confirmed": 1, "rejected": 0})
+        connection = app.db()
+        self.assertIsNone(connection.execute(
+            "SELECT id FROM incidents WHERE org='Queued Example'"
+        ).fetchone())
+        promoted = app.promote_reviewed(connection)
+        self.assertEqual(len(promoted), 1)
+        self.assertIsNotNone(connection.execute(
+            "SELECT id FROM incidents WHERE org='Queued Example'"
+        ).fetchone())
+        connection.close()
 
 
 class MunicipalSourceTests(unittest.TestCase):
@@ -149,6 +179,92 @@ class MunicipalSourceTests(unittest.TestCase):
         self.assertIn(f"**{len(sources)} configured sources**", readme)
         for source in sources:
             self.assertIn(f"[{source['name']}]({source['url']})", readme)
+
+    def test_incident_date_not_page_update_date_controls_collection_window(self):
+        body = (
+            "更新日 2025年12月25日 株式会社TOKAIのサービスが不正なアクセスを受け、"
+            "情報が漏えいした可能性があることが12月19日に公表されました。"
+        )
+        page_date = app.source_page_date(body)
+        self.assertEqual(page_date, app.calendar_date_iso(2025, 12, 25))
+        self.assertEqual(
+            app.heuristic_incident_date(body, page_date),
+            app.calendar_date_iso(2025, 12, 19),
+        )
+        self.assertFalse(app.within_collection_window(
+            app.calendar_date_iso(2025, 12, 19), "2026-10-19T09:52:02+00:00"
+        ))
+
+    def test_classification_uses_ai_incident_date_and_rejects_stale_item(self):
+        record = {
+            "title": "不正アクセスによる情報漏えいについて",
+            "summary": "個人情報が漏えいした可能性があります。",
+            "url": "https://example.jp/incident",
+            "published": "2026-10-19T00:00:00+00:00",
+        }
+        extracted = {
+            "is_incident": True, "org": "Example", "kind": "data leak", "records": None,
+            "incident_date": app.calendar_date_iso(2025, 12, 19),
+        }
+        with patch.object(app, "llm_extract", return_value=extracted):
+            result = app.classify(
+                record, {"name": "Official"}, fetch_body_fn=lambda _: "",
+                observed_at="2026-10-19T09:52:02+00:00",
+            )
+        self.assertIsNone(result)
+
+    def test_classification_persists_current_incident_date(self):
+        record = {
+            "title": "不正アクセスによる情報漏えいについて",
+            "summary": "個人情報が漏えいした可能性があります。",
+            "url": "https://example.jp/incident",
+            "published": "2026-10-19T00:00:00+00:00",
+        }
+        incident_date = app.calendar_date_iso(2026, 10, 15)
+        extracted = {
+            "is_incident": True, "org": "Example", "kind": "data leak", "records": 10,
+            "incident_date": incident_date,
+        }
+        with patch.object(app, "llm_extract", return_value=extracted):
+            result = app.classify(
+                record, {"name": "Official"}, fetch_body_fn=lambda _: "",
+                observed_at="2026-10-19T09:52:02+00:00",
+            )
+        self.assertEqual(result["incident_date"], incident_date)
+        self.assertEqual(record["published"], incident_date)
+
+    def test_strict_ai_review_bypasses_keyword_gate(self):
+        record = {
+            "title": "Official announcement: Example",
+            "summary": "",
+            "url": "https://example.jp/notice",
+            "published": "2026-10-18T00:00:00+00:00",
+        }
+        extracted = {
+            "is_incident": True, "org": "Example", "kind": "unauthorized access", "records": None,
+            "incident_date": app.calendar_date_iso(2026, 10, 17),
+        }
+        self.assertFalse(app.gate(record, {"name": "Official"}))
+        with patch.object(app, "llm_extract", return_value=extracted):
+            result = app.classify(
+                record, {"name": "Official"}, fetch_body_fn=lambda _: "",
+                observed_at="2026-10-19T09:52:02+00:00", require_ai=True,
+            )
+        self.assertEqual(result["org"], "Example")
+
+    def test_strict_ai_review_rejects_undecided(self):
+        record = {
+            "title": "不正アクセスによる情報漏えいについて",
+            "summary": "",
+            "url": "https://example.jp/notice",
+            "published": "2026-10-18T00:00:00+00:00",
+        }
+        with patch.object(app, "llm_extract", return_value=None):
+            result = app.classify(
+                record, {"name": "Official"}, fetch_body_fn=lambda _: "",
+                observed_at="2026-10-19T09:52:02+00:00", require_ai=True,
+            )
+        self.assertIsNone(result)
 
 
 if __name__ == "__main__":

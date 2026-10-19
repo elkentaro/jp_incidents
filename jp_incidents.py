@@ -19,6 +19,9 @@ Usage:
   python3 jp_incidents.py export --days 28 -o out.csv
   python3 jp_incidents.py export-json          # write data/incidents.json if data changed
   python3 jp_incidents.py export-sources       # write data/sources.json if sources changed
+  python3 jp_incidents.py audit-current        # re-evaluate stored incidents and incident dates
+  python3 jp_incidents.py audit-rejected BACKUP.db  # strict AI review of rejected incidents
+  python3 jp_incidents.py review-pending       # review private candidates for next cycle
   python3 jp_incidents.py serve --port 8080    # dashboard + /api/incidents + /export.csv
   python3 jp_incidents.py install-units        # print systemd service + timer
 
@@ -34,6 +37,7 @@ Env:
   JPI_JSON_PATH      static JSON path (default ./data/incidents.json)
   JPI_RSS_PATH       static RSS path (default ./feed.xml)
   JPI_SOURCES_PATH   static source-directory JSON path (default ./data/sources.json)
+  JPI_COLLECTION_DAYS maximum incident age when first collected (default 14 days)
   JPI_SITE_URL       public site URL used by RSS (default GitHub Pages URL)
   JPI_GIT_REMOTE     Git remote used by --publish (default origin)
   JPI_GIT_BRANCH     Git branch used by --publish (default main)
@@ -56,6 +60,7 @@ DB_PATH = os.environ.get("JPI_DB", "jp_incidents.db")
 JSON_PATH = os.environ.get("JPI_JSON_PATH", "data/incidents.json")
 RSS_PATH = os.environ.get("JPI_RSS_PATH", "feed.xml")
 SOURCES_PATH = os.environ.get("JPI_SOURCES_PATH", "data/sources.json")
+COLLECTION_DAYS = max(1, int(os.environ.get("JPI_COLLECTION_DAYS", "14")))
 UA = "Mozilla/5.0 (compatible; jp-incidents-collector/2.0; +security research)"
 JST = ZoneInfo("Asia/Tokyo")
 
@@ -485,6 +490,10 @@ CREATE INDEX IF NOT EXISTS ix_org ON incidents(org);
 CREATE TABLE IF NOT EXISTS skipped(id TEXT PRIMARY KEY);
 CREATE TABLE IF NOT EXISTS refs(incident_id TEXT, url TEXT, source TEXT, title TEXT, UNIQUE(incident_id, url));
 CREATE TABLE IF NOT EXISTS runs(ts TEXT, source TEXT, fetched INTEGER, new INTEGER, error TEXT);
+CREATE TABLE IF NOT EXISTS review_queue(
+  id TEXT PRIMARY KEY, source TEXT, title TEXT, url TEXT, summary TEXT, published TEXT,
+  first_seen TEXT, status TEXT DEFAULT 'pending', decision_json TEXT, reviewed_at TEXT
+);
 """
 
 
@@ -553,6 +562,93 @@ def parse_date(s):
     if d.tzinfo is None:
         d = d.replace(tzinfo=timezone.utc)
     return d.astimezone(timezone.utc).isoformat(timespec="seconds")
+
+
+def calendar_date_iso(year, month, day):
+    """Convert a calendar date in Japan to the stored UTC timestamp format."""
+    try:
+        value = datetime(int(year), int(month), int(day), tzinfo=JST)
+    except (TypeError, ValueError):
+        return None
+    return value.astimezone(timezone.utc).isoformat(timespec="seconds")
+
+
+def normalize_incident_date(value):
+    """Normalize an extracted YYYY-MM-DD/date-time value for storage."""
+    if not value:
+        return None
+    match = re.search(r"\b(20\d{2})[-/.](\d{1,2})[-/.](\d{1,2})\b", str(value))
+    if match:
+        return calendar_date_iso(*match.groups())
+    return parse_date(str(value))
+
+
+def source_page_date(text):
+    """Extract a page publication/update date for year context and fallback only."""
+    if not text:
+        return None
+    patterns = (
+        r"(?:更新日|掲載日|公開日|公表日|発表日|最終更新日|作成日)\s*[:：]?\s*(20\d{2})年(\d{1,2})月(\d{1,2})日",
+        r"(?:updated|published)(?:\s+on)?\s*[:：]?\s*(20\d{2})[-/.](\d{1,2})[-/.](\d{1,2})",
+    )
+    for pattern in patterns:
+        match = re.search(pattern, text, re.I)
+        if match:
+            return calendar_date_iso(*match.groups())
+    return None
+
+
+def heuristic_incident_date(text, source_published=None):
+    """Find an event/disclosure date while avoiding a page's generic update stamp."""
+    if not text:
+        return None
+    event_terms = re.compile(
+        r"不正アクセス|サイバー攻撃|ランサムウェア|情報(?:漏えい|漏洩|流出)|個人情報|"
+        r"発生|確認|判明|公表|発表|侵入|攻撃|breach|ransomware|cyberattack|incident|disclos",
+        re.I,
+    )
+    full_dates = re.compile(r"(20\d{2})年(\d{1,2})月(\d{1,2})日|\b(20\d{2})[-/.](\d{1,2})[-/.](\d{1,2})\b")
+    for match in full_dates.finditer(text):
+        before = text[max(0, match.start() - 90):match.start()]
+        after = text[match.end():match.end() + 90]
+        if re.search(r"(?:更新日|掲載日|公開日|最終更新日|作成日)\s*[:：]?\s*$", before):
+            continue
+        if event_terms.search(before + after):
+            groups = match.groups()
+            return calendar_date_iso(*(groups[:3] if groups[0] else groups[3:]))
+
+    context = source_published or source_page_date(text)
+    if context:
+        context_dt = datetime.fromisoformat(context.replace("Z", "+00:00")).astimezone(JST)
+        month_days = re.finditer(
+            r"(\d{1,2})月(\d{1,2})日(?:\s*(?:頃|ごろ))?(?:に|、|時点で|付で)?[^。]{0,45}"
+            r"(?:発生|確認|判明|公表|発表|不正アクセス|漏えい|漏洩|流出|攻撃)",
+            text,
+            re.I,
+        )
+        for month_day in month_days:
+            before = text[max(0, month_day.start() - 20):month_day.start()]
+            if re.search(r"(?:更新日|掲載日|公開日|最終更新日|作成日)\s*[:：]?\s*(?:20\d{2}年)?\s*$", before):
+                continue
+            return calendar_date_iso(context_dt.year, *month_day.groups())
+    return None
+
+
+def within_collection_window(value, observed_at=None, days=COLLECTION_DAYS):
+    """True when the incident date was inside the backfill window when collected."""
+    try:
+        incident = datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+        observed = datetime.fromisoformat(str(observed_at).replace("Z", "+00:00")) \
+            if observed_at else datetime.now(timezone.utc)
+        if incident.tzinfo is None:
+            incident = incident.replace(tzinfo=timezone.utc)
+        if observed.tzinfo is None:
+            observed = observed.replace(tzinfo=timezone.utc)
+    except (TypeError, ValueError):
+        return False
+    incident_day = incident.astimezone(JST).date()
+    observed_day = observed.astimezone(JST).date()
+    return observed_day - timedelta(days=days) <= incident_day <= observed_day + timedelta(days=1)
 
 
 def _local(tag):
@@ -841,7 +937,10 @@ LLM_SYSTEM = (
     "leaked/exposed/taken or possibly so; unauthorized access = intrusion reported with no data loss stated; "
     "other = ransomware outage, DDoS, defacement, malware infection, etc.), "
     '"records" (integer: the largest number of records/people/accounts stated as leaked or possibly leaked, '
-    'including "up to" figures; null if kind is not "data leak" or no number is stated).'
+    'including "up to" figures; null if kind is not "data leak" or no number is stated), '
+    '"incident_date" (YYYY-MM-DD: the date the incident first occurred, was discovered, or was first '
+    'disclosed, in that priority order; use the source publication date only when no incident date is '
+    'stated; never use a webpage update date when a different incident date is stated; null if unknown).'
 )
 
 
@@ -850,6 +949,8 @@ def llm_extract(rec, body):
     if not key:
         return None
     content = f"<item>\nTitle: {rec['title']}\nSummary: {rec['summary'][:800]}\n"
+    if rec.get("published"):
+        content += f"Source publication date: {rec['published']}\n"
     if body:
         content += f"Article: {body[:3500]}\n"
     content += "</item>"
@@ -891,7 +992,13 @@ def llm_extract(rec, body):
             return None
         recs = d.get("records") if kind == "data leak" else None
         recs = int(recs) if isinstance(recs, (int, float)) and not isinstance(recs, bool) and recs > 0 else None
-        return {"is_incident": True, "org": org, "kind": kind, "records": recs}
+        incident_date = None
+        if d.get("incident_date"):
+            normalized = normalize_incident_date(d["incident_date"])
+            if normalized:
+                incident_date = normalized
+        return {"is_incident": True, "org": org, "kind": kind, "records": recs,
+                "incident_date": incident_date}
     except Exception as e:
         print(f"[warn] llm extract failed: {type(e).__name__}: {e}", file=sys.stderr)
         return None
@@ -912,22 +1019,41 @@ def gate(rec, src):
     return True
 
 
-def classify(rec, src, fetch_body_fn=fetch_body):
+def classify(rec, src, fetch_body_fn=fetch_body, observed_at=None, enforce_window=True,
+             require_ai=False, use_ai=True):
     """-> {org, kind, records} or None."""
-    if not gate(rec, src):
+    if not require_ai and not gate(rec, src):
         return None
     rec["url"] = resolve_url(rec["url"])
     body = fetch_body_fn(rec["url"])
     text = f"{rec['title']} {rec['summary']} {body}"
+    source_published = normalize_incident_date(rec.get("published"))
+    page_published = source_page_date(body)
+    inferred_incident_date = heuristic_incident_date(text, source_published or page_published)
     kind = ("data leak" if LEAK_RE.search(text)
             else "unauthorized access" if ACCESS_RE.search(text) else "other")
     res = {"org": guess_org(rec["title"]), "kind": kind,
            "records": parse_records(text) if kind == "data leak" else None}
-    ai = llm_extract(rec, body)
+    ai = llm_extract(rec, body) if use_ai else None
+    if require_ai and ai is None:
+        return None
     if ai is not None:
         if not ai["is_incident"]:
             return None
         res = {k: ai[k] for k in ("org", "kind", "records")}
+    if require_ai and not ai.get("incident_date"):
+        return None
+    if ai and ai.get("incident_date"):
+        incident_date, date_basis = ai["incident_date"], "incident"
+    elif inferred_incident_date:
+        incident_date, date_basis = inferred_incident_date, "incident"
+    else:
+        incident_date, date_basis = source_published or page_published, "source"
+    if not incident_date or (enforce_window and not within_collection_window(incident_date, observed_at)):
+        return None
+    rec["published"] = incident_date
+    res["incident_date"] = incident_date
+    res["date_basis"] = date_basis
     return res
 
 
@@ -967,9 +1093,88 @@ def store(c, src_name, rec, cl):
     return True
 
 
+def queue_for_review(c, src_name, queue_id, rec):
+    """Keep an uncertain candidate private until a later AI decision."""
+    c.execute(
+        "INSERT OR IGNORE INTO review_queue"
+        "(id,source,title,url,summary,published,first_seen,status) VALUES(?,?,?,?,?,?,?,'pending')",
+        (queue_id, src_name, rec["title"], rec["url"], rec["summary"][:1500],
+         rec.get("published"), now_iso()),
+    )
+
+
+def promote_reviewed(c):
+    """Promote prior-cycle AI confirmations; never promote rejected or undecided rows."""
+    new_rows = []
+    rows = list(c.execute(
+        "SELECT id,source,decision_json FROM review_queue WHERE status='confirmed' ORDER BY first_seen,id"
+    ))
+    for row in rows:
+        try:
+            decision = json.loads(row["decision_json"])
+            rec, cl = decision["record"], decision["classification"]
+            inserted = store(c, row["source"], rec, cl)
+            c.execute(
+                "UPDATE review_queue SET status='published',reviewed_at=? WHERE id=?",
+                (now_iso(), row["id"]),
+            )
+            if inserted:
+                incident = c.execute(
+                    "SELECT score,confidence FROM incidents WHERE id=?", (item_id(rec["url"]),)
+                ).fetchone()
+                new_rows.append({
+                    **cl, "url": rec["url"], "score": incident["score"],
+                    "confidence": incident["confidence"],
+                })
+        except (KeyError, TypeError, ValueError, json.JSONDecodeError) as error:
+            print(f"[warn] invalid confirmed review {row['id']}: {error}", file=sys.stderr)
+            c.execute(
+                "UPDATE review_queue SET status='rejected',reviewed_at=? WHERE id=?",
+                (now_iso(), row["id"]),
+            )
+    c.commit()
+    if rows:
+        print(f"Review promotion: {len(new_rows)} new incidents from {len(rows)} AI confirmations")
+    return new_rows
+
+
+def review_pending(fetch_body_fn=fetch_body):
+    """AI-review private candidates after publication; confirmations wait for the next cycle."""
+    c = db()
+    rows = list(c.execute(
+        "SELECT * FROM review_queue WHERE status='pending' ORDER BY first_seen,id"
+    ))
+    confirmed = rejected = 0
+    for index, row in enumerate(rows, 1):
+        rec = {
+            "title": row["title"], "url": row["url"], "summary": row["summary"] or "",
+            "published": row["published"], "outlet": row["source"],
+        }
+        cl = classify(
+            rec, {"name": row["source"]}, fetch_body_fn=fetch_body_fn,
+            observed_at=row["first_seen"], enforce_window=True, require_ai=True,
+        )
+        if cl:
+            status = "confirmed"
+            decision = json.dumps({"record": rec, "classification": cl}, ensure_ascii=False)
+            confirmed += 1
+        else:
+            status, decision = "rejected", None
+            rejected += 1
+        c.execute(
+            "UPDATE review_queue SET status=?,decision_json=?,reviewed_at=? WHERE id=?",
+            (status, decision, now_iso(), row["id"]),
+        )
+        c.commit()
+        if index % 10 == 0 or index == len(rows):
+            print(f"AI queue review: {index}/{len(rows)} checked, {confirmed} confirmed", flush=True)
+    c.close()
+    return {"total": len(rows), "confirmed": confirmed, "rejected": rejected}
+
+
 def poll(notify=False, fetcher=fetch, fetch_body_fn=fetch_body):
     c = db()
-    new_rows = []
+    new_rows = promote_reviewed(c)
     for src in load_sources():
         fetched = new = 0
         err = None
@@ -978,16 +1183,30 @@ def poll(notify=False, fetcher=fetch, fetch_body_fn=fetch_body):
             fetched = len(items)
             for rec in items:
                 iid = item_id(rec["url"])
-                if c.execute("SELECT 1 FROM incidents WHERE id=? UNION SELECT 1 FROM skipped WHERE id=?",
-                             (iid, iid)).fetchone():
-                    continue  # judged before: no refetch, no API call
-                cl = classify(rec, src, fetch_body_fn)  # may rewrite rec["url"] to the resolved one
-                if cl and store(c, src["name"], rec, cl):
+                if c.execute(
+                    "SELECT 1 FROM incidents WHERE id=? UNION SELECT 1 FROM skipped WHERE id=? "
+                    "UNION SELECT 1 FROM review_queue WHERE id=?", (iid, iid, iid)
+                ).fetchone():
+                    continue  # already published, rejected, or awaiting/private AI review
+                if not gate(rec, src):
+                    c.execute("INSERT OR IGNORE INTO skipped VALUES(?)", (iid,))
+                    c.commit()
+                    continue
+                source_published = rec.get("published")
+                cl = classify(rec, src, fetch_body_fn, use_ai=False)
+                tier = ref_tier(rec["url"], rec.get("outlet") or src["name"], rec["title"])
+                immediately_confirmed = cl and cl["date_basis"] == "incident" and tier in {"official", "gov"}
+                if immediately_confirmed and store(c, src["name"], rec, cl):
                     new += 1
                     row = c.execute("SELECT score,confidence FROM incidents WHERE id=?",
                                     (item_id(rec["url"]),)).fetchone()
                     new_rows.append({**cl, "url": rec["url"], "score": row["score"], "confidence": row["confidence"]})
-                c.execute("INSERT OR IGNORE INTO skipped VALUES(?)", (iid,))  # judged: never refetch
+                elif not immediately_confirmed:
+                    # classify() rewrites this field to its inferred incident date. The AI needs the
+                    # original source date so it can independently determine the incident date.
+                    rec["published"] = source_published
+                    queue_for_review(c, src["name"], iid, rec)
+                c.execute("INSERT OR IGNORE INTO skipped VALUES(?)", (iid,))
                 c.commit()
         except (urllib.error.URLError, ET.ParseError, TimeoutError, OSError, ValueError) as e:
             err = f"{type(e).__name__}: {e}"
@@ -998,6 +1217,171 @@ def poll(notify=False, fetcher=fetch, fetch_body_fn=fetch_body):
     if notify and new_rows:
         send_webhook(new_rows)
     return new_rows
+
+
+def audit_current(apply=False, fetch_body_fn=fetch_body):
+    """Re-evaluate every stored incident and its date against the collection window."""
+    c = db()
+    rows = list(c.execute(
+        "SELECT id,source,title,url,summary,published,first_seen,org,kind,records "
+        "FROM incidents ORDER BY first_seen, id"
+    ))
+    decisions = []
+    total = len(rows)
+    for index, row in enumerate(rows, 1):
+        refs = list(c.execute(
+            "SELECT url,source,title FROM refs WHERE incident_id=? ORDER BY rowid", (row["id"],)
+        ))
+        refs.sort(key=lambda ref: norm_url(ref["url"]) != norm_url(row["url"]))
+        inferred_collection_date = row["published"] == row["first_seen"]
+        classification = accepted_record = None
+        for ref in refs or [{"url": row["url"], "source": row["source"], "title": row["title"]}]:
+            candidate = {
+                "title": ref["title"] or row["title"],
+                "url": ref["url"],
+                "summary": row["summary"] or "",
+                "published": None if inferred_collection_date else row["published"],
+                "outlet": ref["source"] or row["source"],
+            }
+            classification = classify(
+                candidate,
+                {"name": ref["source"] or row["source"]},
+                fetch_body_fn=fetch_body_fn,
+                observed_at=row["first_seen"],
+                enforce_window=True,
+            )
+            if classification:
+                accepted_record = candidate
+                break
+        decisions.append({
+            "id": row["id"],
+            "old_org": row["org"],
+            "old_title": row["title"],
+            "old_published": row["published"],
+            "classification": classification,
+            "record": accepted_record,
+        })
+        if index % 10 == 0 or index == total:
+            kept = sum(1 for item in decisions if item["classification"])
+            print(f"Audit progress: {index}/{total} checked, {kept} valid", flush=True)
+
+    kept = [item for item in decisions if item["classification"]]
+    removed = [item for item in decisions if not item["classification"]]
+    changed_dates = sum(
+        item["record"]["published"] != item["old_published"] for item in kept
+    )
+    changed_facts = sum(
+        item["classification"]["org"] != item["old_org"] for item in kept
+    )
+    print(f"Audit result: {len(kept)} valid, {len(removed)} invalid, "
+          f"{changed_dates} dates corrected, {changed_facts} organizations corrected")
+    for item in removed:
+        print(f"REMOVE {item['id']} | {item['old_org']} | {item['old_title'][:100]}")
+
+    backup_path = None
+    if apply:
+        backup_path = f"/tmp/jp_incidents-pre-audit-{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}.db"
+        backup = sqlite3.connect(backup_path)
+        try:
+            c.backup(backup)
+        finally:
+            backup.close()
+        for item in kept:
+            cl, rec = item["classification"], item["record"]
+            c.execute(
+                "UPDATE incidents SET published=?,org=?,kind=?,records=? WHERE id=?",
+                (rec["published"], cl["org"], cl["kind"], cl["records"], item["id"]),
+            )
+        for item in removed:
+            c.execute("DELETE FROM refs WHERE incident_id=?", (item["id"],))
+            c.execute("DELETE FROM incidents WHERE id=?", (item["id"],))
+        c.commit()
+        print(f"Audit applied. Recovery backup: {backup_path}")
+    c.close()
+    return {"total": total, "kept": len(kept), "removed": len(removed),
+            "changed_dates": changed_dates, "changed_facts": changed_facts,
+            "backup_path": backup_path}
+
+
+def audit_rejected(source_db_path, apply=False, fetch_body_fn=fetch_body):
+    """Strict AI review of incidents present in a pre-audit DB but absent from the live DB."""
+    source = sqlite3.connect(source_db_path)
+    source.row_factory = sqlite3.Row
+    current = db()
+    current_ids = {row["id"] for row in current.execute("SELECT id FROM incidents")}
+    rows = list(source.execute("SELECT * FROM incidents ORDER BY first_seen, id"))
+    rows = [row for row in rows if row["id"] not in current_ids]
+    decisions = []
+    total = len(rows)
+    for index, row in enumerate(rows, 1):
+        refs = list(source.execute(
+            "SELECT url,source,title FROM refs WHERE incident_id=? ORDER BY rowid", (row["id"],)
+        ))
+        refs.sort(key=lambda ref: norm_url(ref["url"]) != norm_url(row["url"]))
+        inferred_collection_date = row["published"] == row["first_seen"]
+        classification = accepted_record = None
+        for ref in refs or [{"url": row["url"], "source": row["source"], "title": row["title"]}]:
+            candidate = {
+                "title": ref["title"] or row["title"],
+                "url": ref["url"],
+                "summary": row["summary"] or "",
+                "published": None if inferred_collection_date else row["published"],
+                "outlet": ref["source"] or row["source"],
+            }
+            classification = classify(
+                candidate,
+                {"name": ref["source"] or row["source"]},
+                fetch_body_fn=fetch_body_fn,
+                observed_at=row["first_seen"],
+                enforce_window=True,
+                require_ai=True,
+            )
+            if classification:
+                accepted_record = candidate
+                break
+        decisions.append({
+            "row": row, "classification": classification, "record": accepted_record,
+            "refs": refs,
+        })
+        if index % 10 == 0 or index == total:
+            kept = sum(1 for item in decisions if item["classification"])
+            print(f"Rejected review progress: {index}/{total} checked, {kept} restored", flush=True)
+
+    restored = [item for item in decisions if item["classification"]]
+    rejected = [item for item in decisions if not item["classification"]]
+    print(f"Rejected review result: {len(restored)} AI-confirmed valid, "
+          f"{len(rejected)} rejected or undecided")
+    for item in restored:
+        row, rec = item["row"], item["record"]
+        print(f"RESTORE {row['id']} | {rec['published'][:10]} | "
+              f"{item['classification']['org']} | {row['title'][:100]}")
+
+    if apply:
+        columns = [row["name"] for row in current.execute("PRAGMA table_info(incidents)")]
+        placeholders = ",".join("?" for _ in columns)
+        names = ",".join(columns)
+        for item in restored:
+            row, cl, rec = item["row"], item["classification"], item["record"]
+            values = {column: row[column] for column in columns}
+            values.update({
+                "published": rec["published"], "org": cl["org"],
+                "kind": cl["kind"], "records": cl["records"],
+            })
+            current.execute(
+                f"INSERT INTO incidents({names}) VALUES({placeholders})",
+                [values[column] for column in columns],
+            )
+            for ref in item["refs"]:
+                current.execute(
+                    "INSERT OR IGNORE INTO refs(incident_id,url,source,title) VALUES(?,?,?,?)",
+                    (row["id"], ref["url"], ref["source"], ref["title"]),
+                )
+            rescore(current, row["id"])
+        current.commit()
+        print(f"Rejected review applied: restored {len(restored)} incidents")
+    source.close()
+    current.close()
+    return {"total": total, "restored": len(restored), "rejected": len(rejected)}
 
 
 def test_sources(fetcher=fetch, name_match=None, group=None):
@@ -1488,6 +1872,14 @@ def main():
     r.add_argument("-o", "--output", default=RSS_PATH)
     q = sub.add_parser("export-sources", help="write the static source directory")
     q.add_argument("-o", "--output", default=SOURCES_PATH)
+    u = sub.add_parser("audit-current", help="re-evaluate every stored incident and incident date")
+    u.add_argument("--apply", action="store_true", help="apply corrections and remove invalid incidents")
+    u.add_argument("--publish", action="store_true", help="publish corrected JSON/RSS after applying")
+    v = sub.add_parser("audit-rejected", help="strict AI review of incidents removed by an audit")
+    v.add_argument("source_db", help="pre-audit SQLite backup containing the rejected incidents")
+    v.add_argument("--apply", action="store_true", help="restore only AI-confirmed valid incidents")
+    v.add_argument("--publish", action="store_true", help="publish JSON/RSS after restoring valid incidents")
+    sub.add_parser("review-pending", help="AI-review private candidates for promotion next cycle")
     s = sub.add_parser("serve"); s.add_argument("--host", default="127.0.0.1"); s.add_argument("--port", type=int, default=8080)
     sub.add_parser("install-units")
     a = ap.parse_args()
@@ -1497,6 +1889,7 @@ def main():
         poll(a.notify)
         if a.publish:
             publish_public_json(a.json_path, a.rss_path, a.sources_path)
+        review_pending()
     elif a.cmd == "list":
         for r in recent(a.days, a.type, a.min_score):
             print(f"{r['published'][:10]}  {r['org']:<28} {r['kind']:<20} {fmt_records(r['records']):>12}"
@@ -1512,6 +1905,20 @@ def main():
         write_public_rss(a.output)
     elif a.cmd == "export-sources":
         write_public_sources(a.output)
+    elif a.cmd == "audit-current":
+        if a.publish and not a.apply:
+            ap.error("audit-current --publish requires --apply")
+        audit_current(apply=a.apply)
+        if a.publish:
+            publish_public_json()
+    elif a.cmd == "audit-rejected":
+        if a.publish and not a.apply:
+            ap.error("audit-rejected --publish requires --apply")
+        audit_rejected(a.source_db, apply=a.apply)
+        if a.publish:
+            publish_public_json()
+    elif a.cmd == "review-pending":
+        review_pending()
     elif a.cmd == "serve":
         serve(a.host, a.port)
     elif a.cmd == "install-units":
