@@ -1,8 +1,10 @@
 import json
+import io
 import os
 import sqlite3
 import tempfile
 import unittest
+import urllib.error
 import xml.etree.ElementTree as ET
 from datetime import datetime
 from pathlib import Path
@@ -52,6 +54,122 @@ class StaticPublishingTests(unittest.TestCase):
                 app.wait_for_network(
                     timeout=1, interval=1, probe_fn=lambda: False, sleep_fn=lambda _: None
                 )
+
+    def test_private_alert_is_rate_limited_and_redacts_secrets(self):
+        state_path = os.path.join(self.temp.name, "alert-state.json")
+        sent = []
+        moment = datetime.fromisoformat("2026-10-19T12:00:00+00:00")
+        environment = {
+            "JPI_ALERT_WEBHOOK_URL": "https://discord.com/api/webhooks/example/token",
+            "ANTHROPIC_API_KEY": "sk-ant-secret-value",
+        }
+        with patch.dict(os.environ, environment, clear=False):
+            self.assertTrue(app.send_local_alert(
+                "ai-billing", "AI billing", "key sk-ant-secret-value has low credits",
+                now=moment, post_fn=lambda message: sent.append(message) or True,
+                state_path=state_path,
+            ))
+            self.assertFalse(app.send_local_alert(
+                "ai-billing", "AI billing", "duplicate",
+                now=moment, post_fn=lambda message: sent.append(message) or True,
+                state_path=state_path,
+            ))
+        self.assertEqual(len(sent), 1)
+        self.assertNotIn("sk-ant-secret-value", sent[0])
+        self.assertIn("[redacted]", sent[0])
+        self.assertEqual(os.stat(state_path).st_mode & 0o777, 0o600)
+
+    def test_discord_webhook_uses_content_payload(self):
+        requests = []
+
+        class Response:
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *_):
+                return False
+
+        def opener(request, timeout):
+            requests.append((request, timeout))
+            return Response()
+
+        self.assertTrue(app.post_webhook(
+            "private test", url="https://discord.com/api/webhooks/example/token", opener=opener
+        ))
+        self.assertEqual(json.loads(requests[0][0].data), {"content": "private test"})
+
+    def test_ai_billing_error_sends_critical_alert(self):
+        body = io.BytesIO(json.dumps({
+            "type": "error",
+            "error": {"type": "billing_error", "message": "credit balance is too low"},
+        }).encode())
+        error = urllib.error.HTTPError("https://api.anthropic.com", 402, "Payment Required", {}, body)
+        with patch.object(app, "send_local_alert") as alert:
+            app.report_ai_error(error, "test extraction")
+        self.assertEqual(alert.call_args.args[:2], ("ai-billing", "AI credit or billing problem"))
+        self.assertEqual(alert.call_args.kwargs["severity"], "critical")
+
+    def test_cost_report_triggers_low_budget_alert(self):
+        document = {"data": [{"results": [
+            {"amount": "875", "currency": "USD"},
+            {"amount": "1.00", "currency": "EUR"},
+        ]}]}
+
+        class Response:
+            def __enter__(self):
+                return io.BytesIO(json.dumps(document).encode())
+
+            def __exit__(self, *_):
+                return False
+
+        environment = {
+            "ANTHROPIC_ADMIN_API_KEY": "admin-secret",
+            "JPI_AI_MONTHLY_BUDGET_USD": "10",
+            "JPI_AI_LOW_CREDIT_USD": "2",
+        }
+        with patch.dict(os.environ, environment, clear=False), \
+                patch.object(app, "send_local_alert") as alert:
+            result = app.check_ai_budget(opener=lambda *_args, **_kwargs: Response())
+        self.assertEqual(result["remaining"], app.Decimal("1.25"))
+        self.assertEqual(alert.call_args.args[:2],
+                         ("ai-low-credit", "AI monthly budget is running low"))
+
+    def test_cost_report_fractional_cents_do_not_trigger_false_warning(self):
+        document = {"data": [{"results": [{"amount": "123.78912", "currency": "USD"}]}]}
+        environment = {
+            "ANTHROPIC_ADMIN_API_KEY": "admin-secret",
+            "JPI_AI_MONTHLY_BUDGET_USD": "10",
+            "JPI_AI_LOW_CREDIT_USD": "2",
+        }
+        with patch.dict(os.environ, environment), patch.object(app, "send_local_alert") as alert:
+            result = app.check_ai_budget(
+                opener=lambda *_args, **_kwargs: io.BytesIO(json.dumps(document).encode())
+            )
+        self.assertEqual(result["spent"], app.Decimal("1.2378912"))
+        self.assertEqual(result["remaining"], app.Decimal("8.7621088"))
+        alert.assert_not_called()
+
+    def test_budget_rejects_nonfinite_and_negative_configuration(self):
+        for budget, low in [("NaN", "2"), ("Infinity", "2"), ("0", "2"),
+                            ("-1", "2"), ("10", "-2"), ("10", "NaN")]:
+            with self.subTest(budget=budget, low=low), patch.dict(os.environ, {
+                "ANTHROPIC_ADMIN_API_KEY": "admin-secret",
+                "JPI_AI_MONTHLY_BUDGET_USD": budget,
+                "JPI_AI_LOW_CREDIT_USD": low,
+            }), patch.object(app, "send_local_alert") as alert:
+                self.assertIsNone(app.check_ai_budget(
+                    opener=lambda *_args, **_kwargs: self.fail("invalid config must not call API")
+                ))
+                self.assertEqual(alert.call_args.args[0], "ai-budget-config")
+
+    def test_ai_access_rate_limit_and_provider_errors_alert(self):
+        for status, key in [(401, "ai-access"), (403, "ai-access"),
+                            (429, "ai-rate-limit"), (503, "ai-service")]:
+            with self.subTest(status=status), patch.object(app, "send_local_alert") as alert:
+                error = urllib.error.HTTPError("https://api.anthropic.com", status,
+                                               "test error", {}, io.BytesIO(b"{}"))
+                app.report_ai_error(error, "test extraction")
+                self.assertEqual(alert.call_args.args[0], key)
 
     def tearDown(self):
         app.DB_PATH = self.old_db
@@ -435,6 +553,161 @@ class MunicipalSourceTests(unittest.TestCase):
         self.assertFalse(app.plausible_org("Studio株式会社で発生した不正アクセス"))
         self.assertFalse(app.plausible_org("産婦人科など利用のシステム"))
         self.assertTrue(app.plausible_org("IMADEYA"))
+
+
+class SourceRecoveryAlertTests(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.source = {"name": "Known blocked source", "url": "https://blocked.example/news"}
+        self.other = {"name": "Other source", "url": "https://other.example/news"}
+        patches = [
+            patch.object(app, "DB_PATH", os.path.join(self.temp.name, "test.db")),
+            patch.dict(os.environ, {"JPI_EXPECTED_403_SOURCES": self.source["url"]}),
+            patch.object(app, "promote_reviewed", return_value=[]),
+            patch.object(app, "gate", return_value=False),
+        ]
+        for patcher in patches:
+            patcher.start()
+            self.addCleanup(patcher.stop)
+
+    def error(self, code=403):
+        return urllib.error.HTTPError(self.source["url"], code, "test error", {}, None)
+
+    def run_poll(self, results, sources=None):
+        with patch.object(app, "load_sources", return_value=sources or [self.source]), \
+                patch.object(app, "load_items", side_effect=results):
+            app.poll()
+
+    def test_known_403_is_logged_but_not_alerted(self):
+        with patch.object(app, "send_local_alert") as alert:
+            self.run_poll([self.error()])
+        alert.assert_not_called()
+        with sqlite3.connect(app.DB_PATH) as connection:
+            self.assertIn("403", connection.execute("SELECT error FROM runs").fetchone()[0])
+            self.assertEqual(connection.execute("SELECT blocked FROM source_alert_state").fetchone()[0], 1)
+
+    def test_other_errors_and_unconfigured_403_still_alert(self):
+        with patch.object(app, "send_local_alert") as alert:
+            self.run_poll([self.error(), self.error()], [self.source, self.other])
+            self.assertEqual(alert.call_args.args[0], "source-errors")
+            self.assertIn("Other source", alert.call_args.args[2])
+            self.assertNotIn("Known blocked source", alert.call_args.args[2])
+            alert.reset_mock()
+            self.run_poll([self.error(500)])
+            self.assertIn("Known blocked source", alert.call_args.args[2])
+            self.assertIn("500", alert.call_args.args[2])
+
+    def test_recovery_persists_and_rearms_after_new_block(self):
+        items = [{"url": "https://blocked.example/article"}]
+        with patch.object(app, "send_local_alert", return_value=True) as alert:
+            self.run_poll([self.error()])
+            self.run_poll([items])
+            self.run_poll([items])  # separate connection/process-equivalent poll
+            self.assertEqual(alert.call_count, 1)
+            self.assertEqual(alert.call_args.args[1], "Source access restored")
+            self.assertEqual(alert.call_args.kwargs["severity"], "info")
+            self.run_poll([self.error()])
+            self.run_poll([items])
+            self.assertEqual(alert.call_count, 2)
+
+    def test_initial_recovery_retries_failed_delivery(self):
+        items = [{"url": "https://blocked.example/article"}]
+        with patch.object(app, "send_local_alert", side_effect=[False, True]) as alert:
+            self.run_poll([items])  # configuration already declares the known block
+            self.run_poll([items])
+            self.run_poll([items])
+            self.assertEqual(alert.call_count, 2)
+
+    def test_empty_or_failed_poll_does_not_claim_recovery(self):
+        with patch.object(app, "send_local_alert", return_value=True) as alert:
+            self.run_poll([self.error()])
+            self.run_poll([[]])
+            alert.assert_not_called()
+            self.run_poll([TimeoutError("source unavailable")])
+            self.assertEqual(alert.call_count, 1)
+            self.assertEqual(alert.call_args.args[0], "source-errors")
+
+
+class OrganizationSourceTests(unittest.TestCase):
+    def test_html_redirect_resolves_articles_against_new_index(self):
+        source = {"name": "Example", "type": "official", "url": "https://example.jp/news/"}
+        for redirect in (
+            b'<meta content="0;URL=2027/" http-equiv="refresh">',
+            b'<script>window.location.href = "2027/";</script>',
+        ):
+            pages = {source["url"]: redirect,
+                     source["url"] + "2027/": '<a href="notice.html">不正アクセスについて</a>'.encode()}
+            items = app.load_items(source, pages.__getitem__)
+            self.assertEqual(items[0]["url"], source["url"] + "2027/notice.html")
+            self.assertEqual(source["url"], "https://example.jp/news/")
+
+    def test_html_redirect_refuses_offsite_and_stops_loops(self):
+        source = {"name": "Example", "type": "official", "url": "https://example.jp/news/"}
+        for target in (source["url"], "https://other.example/news/"):
+            calls = []
+
+            def fetcher(url):
+                calls.append(url)
+                return f'<meta http-equiv="refresh" content="0;URL={target}">'.encode()
+
+            self.assertEqual(app.load_items(source, fetcher), [])
+            self.assertEqual(calls, [source["url"]])
+
+    def test_json_news_reads_both_years_and_filters_invalid_links(self):
+        source = {"name": "Example", "type": "json_news", "url": "https://example.jp/news/",
+                  "feed_url": "https://example.jp/data/{year}.json"}
+        calls = []
+
+        def fetcher(url):
+            calls.append(url)
+            return json.dumps([
+                {"title": "不正アクセス", "date": "2026-12-30", "url": "/notice.html", "subtitle": None},
+                {"title": "Invalid", "url": "javascript:alert(1)"}, {"title": "Missing URL"}, None,
+            ]).encode()
+
+        with patch.object(app, "datetime") as clock:
+            clock.now.return_value = datetime(2027, 1, 3)
+            items = app.load_items(source, fetcher)
+        self.assertEqual(calls, ["https://example.jp/data/2027.json", "https://example.jp/data/2026.json"])
+        self.assertEqual(len(items), 2)
+        self.assertEqual(items[0]["url"], "https://example.jp/notice.html")
+        self.assertEqual(items[0]["published"], "2026-12-30")
+        self.assertEqual(items[0]["summary"], "")
+
+    def test_json_news_new_year_404_falls_back_but_other_errors_surface(self):
+        source = {"name": "Example", "type": "json_news", "url": "https://example.jp/",
+                  "feed_url": "https://example.jp/{year}.json"}
+        def fetcher(url):
+            if "2027" in url:
+                raise urllib.error.HTTPError(url, 404, "Not found", {}, None)
+            return b'[]'
+        with patch.object(app, "datetime") as clock:
+            clock.now.return_value = datetime(2027, 1, 3)
+            self.assertEqual(app.load_items(source, fetcher), [])
+            clock.now.return_value = datetime(2027, 6, 3)
+            with self.assertRaises(urllib.error.HTTPError):
+                app.load_items(source, fetcher)
+
+    def test_monthly_json_news_flattens_and_normalizes_dates(self):
+        source = {"name": "Carrier", "type": "json_news", "url": "https://example.jp/news/",
+                  "feed_url": "https://example.jp/{year}.json", "json_layout": "monthly"}
+        raw = json.dumps({"data": [{"list": [
+            {"title": "Notice", "url": "/notice/", "date": "20261019"}
+        ]}]}).encode()
+        with patch.object(app, "datetime") as clock:
+            clock.now.return_value = datetime(2026, 10, 19)
+            items = app.load_items(source, lambda _: raw)
+        self.assertEqual(len(items), 1)
+        self.assertEqual(items[0]["published"], "2026-10-19")
+        self.assertEqual(items[0]["url"], "https://example.jp/notice/")
+
+    def test_added_domains_are_official_without_trusting_lookalikes(self):
+        for host in ("www.iij.ad.jp", "www.nri.com", "notices.jcom.co.jp", "www.jcho.go.jp"):
+            self.assertEqual(app.ref_tier(f"https://{host}/example"), "official")
+        self.assertEqual(app.ref_tier("https://www.iij.ad.jp.attacker.example/example"), "other")
+        urls = [s["url"] for s in app.SOURCES]
+        self.assertEqual(len(urls), len(set(urls)))
 
 
 if __name__ == "__main__":

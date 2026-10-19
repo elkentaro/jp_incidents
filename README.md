@@ -31,7 +31,7 @@ One database row represents one affected organization and underlying incident, n
 <!-- source-registry:begin -->
 ## Complete source registry
 
-The collector currently polls **213 configured sources**. This list is generated from [`data/sources.json`](data/sources.json); run `python3 scripts/update_readme_sources.py` after changing the registry.
+The collector currently polls **279 configured sources**. This list is generated from [`data/sources.json`](data/sources.json); run `python3 scripts/update_readme_sources.py` after changing the registry.
 
 <details>
 <summary><strong>News, search, and specialist publications (20)</strong></summary>
@@ -302,6 +302,102 @@ The collector currently polls **213 configured sources**. This list is generated
 
 </details>
 
+<details>
+<summary><strong>IT solution providers and cloud services (17)</strong></summary>
+
+- [NEC](https://jpn.nec.com/press/)
+- [日立製作所 / Hitachi](https://www.hitachi.com/ja-jp/press/)
+- [日立システムズ / Hitachi Systems](https://www.hitachi-systems.com/news/)
+- [日立ソリューションズ / Hitachi Solutions](https://www.hitachi-solutions.co.jp/company/press/)
+- [NTTデータ / NTT DATA](https://www.nttdata.com/global/ja/news/)
+- [野村総合研究所 / NRI](https://www.nri.com/jp/news/index.html)
+- [SCSK](https://www.scsk.jp/news/index.html)
+- [TIS](https://www.tis.co.jp/news/)
+- [BIPROGY](https://www.biprogy.com/news/)
+- [伊藤忠テクノソリューションズ / CTC](https://www.ctc-g.co.jp/company/release/)
+- [日鉄ソリューションズ / NSSOL](https://www.nssol.nipponsteel.com/press/atom.xml)
+- [大塚商会 / Otsuka Corporation](https://www.otsuka-shokai.co.jp/corporate/release/)
+- [オービック / OBIC](https://www.obic.co.jp/pressrelease/)
+- [日本IBM / IBM Japan](https://jp.newsroom.ibm.com/)
+- [さくらインターネット / Sakura Internet](https://www.sakura.ad.jp/corporate/information/)
+- [IDCフロンティア / IDC Frontier](https://www.idcf.jp/news/feed)
+- [GMOインターネット / GMO Internet](https://internet.gmo/news/)
+
+</details>
+
+<details>
+<summary><strong>Retailers (14)</strong></summary>
+
+- [イオン / AEON](https://www.aeon.info/news/)
+- [セブン＆アイ・ホールディングス / Seven & i Holdings](https://www.7andi.com/company/news.html)
+- [ローソン / Lawson](https://www.lawson.co.jp/company/news/)
+- [ファミリーマート / FamilyMart](https://www.family.co.jp/company/news_releases.html)
+- [パン・パシフィック・インターナショナルホールディングス / PPIH](https://ppih.co.jp/news/)
+- [ヤマダホールディングス / Yamada Holdings](https://www.yamada-holdings.jp/ir/press.html)
+- [ビックカメラ / Bic Camera](https://www.biccamera.co.jp/news/)
+- [エディオン / EDION](https://www.edion.co.jp/news-release)
+- [ファーストリテイリング / Fast Retailing](https://www.fastretailing.com/jp/ir/news/)
+- [高島屋 / Takashimaya](https://www.takashimaya.co.jp/)
+- [J.フロント リテイリング / J. Front Retailing](https://www.j-front-retailing.com/news/news_1.html)
+- [マツキヨココカラ＆カンパニー / MatsukiyoCocokara](https://www.matsukiyococokara.com/news/)
+- [ツルハホールディングス / Tsuruha Holdings](https://www.tsuruha-hd.co.jp/)
+- [楽天グループ / Rakuten Group](https://corp.rakuten.co.jp/news/press/)
+
+</details>
+
+<details>
+<summary><strong>Distribution and logistics (7)</strong></summary>
+
+- [ヤマトホールディングス / Yamato Holdings](https://www.yamato-hd.co.jp/)
+- [NIPPON EXPRESSホールディングス / NX Group](https://www.nipponexpress-holdings.com/ja/news/press/)
+- [西濃運輸 / Seino Transportation](https://www.seino.co.jp/)
+- [福山通運 / Fukuyama Transporting](https://corp.fukutsu.co.jp/news/)
+- [日本郵便 / Japan Post](https://www.post.japanpost.jp/notification/)
+- [センコーグループホールディングス / SENKO Group Holdings](https://www.senkogrouphd.co.jp/about/news/)
+- [三菱倉庫 / Mitsubishi Logistics](https://www.mitsubishi-logistics.co.jp/news/)
+
+</details>
+
+<details>
+<summary><strong>Healthcare organizations (12)</strong></summary>
+
+- [国立病院機構 / National Hospital Organization](https://nho.hosp.go.jp/)
+- [地域医療機能推進機構 / JCHO](https://www.jcho.go.jp/)
+- [労働者健康安全機構 / JOHAS](https://www.johas.go.jp/)
+- [日本赤十字社 / Japanese Red Cross Society](https://www.jrc.or.jp/press/)
+- [徳洲会 / Tokushukai](https://www.tokushukai.or.jp/)
+- [IMSグループ / IMS Group](https://www.ims.gr.jp/group/)
+- [戸田中央メディカルケアグループ / Toda Medicalcare Group](https://www.tmg.or.jp/)
+- [聖隷福祉事業団 / Seirei](https://www.seirei.or.jp/hq/)
+- [済生会 / Saiseikai](https://www.saiseikai.or.jp/)
+- [国立がん研究センター / National Cancer Center](https://www.ncc.go.jp/jp/information/pr_release/index.html)
+- [国立循環器病研究センター / National Cerebral and Cardiovascular Center](https://www.ncvc.go.jp/pr/)
+- [国立健康危機管理研究機構 / JIHS](https://www.jihs.go.jp/)
+
+</details>
+
+<details>
+<summary><strong>Telecom carriers and Internet service providers (16)</strong></summary>
+
+- [ソフトバンク / SoftBank](https://www.softbank.jp/corp/news/press/sbkk/)
+- [NTTドコモビジネス / NTT DOCOMO BUSINESS](https://www.ntt.com/about-us/press-releases.html)
+- [インターネットイニシアティブ / IIJ](https://www.iij.ad.jp/news/pressrelease/)
+- [NTTグループ / NTT Group](https://group.ntt/jp/newsrelease/)
+- [NTTドコモ / NTT DOCOMO](https://www.docomo.ne.jp/info/rss/news_release.rdf)
+- [KDDI](https://newsroom.kddi.com/news/newsrelease.xml)
+- [楽天モバイル / Rakuten Mobile](https://corp.mobile.rakuten.co.jp/news/)
+- [NTT東日本 / NTT EAST](https://www.ntt-east.co.jp/release/)
+- [NTT西日本 / NTT WEST](https://www.ntt-west.co.jp/news/)
+- [JCOM](https://notices.jcom.co.jp/)
+- [オプテージ / OPTAGE](https://optage.co.jp/press/)
+- [ビッグローブ / BIGLOBE](https://www.biglobe.co.jp/pressroom/)
+- [ニフティ / NIFTY](https://www.nifty.co.jp/newsrelease/)
+- [NTTドコモ お知らせ / NTT DOCOMO notices](https://www.docomo.ne.jp/info/rss/notice.rdf)
+- [KDDI 重要なお知らせ / KDDI important notices](https://news.kddi.com/important/news/rss/kddi_important_ex.xml)
+- [TOKAIコミュニケーションズ / TOKAI Communications](https://www.tokai-com.co.jp/news/)
+
+</details>
+
 <!-- source-registry:end -->
 
 ## Commands
@@ -340,7 +436,11 @@ Review the generated units:
 python3 jp_incidents.py install-units
 ```
 
-Install and enable the included units on this host:
+Before installing the included units, create a `jp-incidents` service account with
+home directory `/var/lib/jp-incidents`, or adjust `User`, `Group`, and `HOME` to
+an existing service account. Review the `/opt/jp-incidents` paths and grant that
+account access to the checkout, database, configuration, and publication credentials.
+Then install and enable the units:
 
 ```bash
 sudo cp systemd/jp-incidents.service systemd/jp-incidents.timer /etc/systemd/system/
@@ -348,7 +448,37 @@ sudo systemctl daemon-reload
 sudo systemctl enable --now jp-incidents.timer
 ```
 
-The timer runs two minutes after boot and at 13 minutes past every hour in the `Asia/Tokyo` timezone as the `kentaro` user. The 03:13 run deliberately starts after the host's usual 03:00–03:05 network reset. Before changing collection state, the process waits up to 10 minutes for external connectivity, checking every 30 seconds. If connectivity is still unavailable, systemd retries the failed run after five minutes (up to four starts per 30 minutes). The service loads optional secrets and overrides from `.env`, which is ignored by Git. `JPI_NETWORK_WAIT_SECONDS`, `JPI_NETWORK_RETRY_SECONDS`, and comma-separated `JPI_NETWORK_CHECK_URLS` can override the defaults.
+The timer runs two minutes after boot and at 13 minutes past every hour in the `Asia/Tokyo` timezone. Before changing collection state, the process waits up to 10 minutes for external connectivity, checking every 30 seconds. If connectivity is still unavailable, systemd retries the failed run after five minutes (up to four starts per 30 minutes). The service loads optional secrets and overrides from `.env`, which is ignored by Git. `JPI_NETWORK_WAIT_SECONDS`, `JPI_NETWORK_RETRY_SECONDS`, and comma-separated `JPI_NETWORK_CHECK_URLS` can override the defaults.
+
+## Private Discord operations alerts
+
+Operational alerts are sent only to a locally configured Discord webhook. They are never written to the public JSON, RSS feed, dashboard, or Git history. The collector alerts on AI billing/credit, spend-limit, authentication, rate-limit, and provider failures; fatal collector or Git publication failures; a missing AI key; and aggregated source polling errors. Identical alerts are suppressed for 12 hours by default using the ignored local `.jpi-alert-state.json` file. Incident notifications continue to use `WEBHOOK_URL`; private operations alerts use `JPI_ALERT_WEBHOOK_URL` when set and otherwise fall back to `WEBHOOK_URL`.
+
+Add private values to `/opt/jp-incidents/.env`:
+
+```dotenv
+JPI_ALERT_WEBHOOK_URL=https://discord.com/api/webhooks/REPLACE_ME
+JPI_ALERT_COOLDOWN_HOURS=12
+```
+
+After saving `.env`, test the private channel locally with:
+
+```bash
+set -a; . ./.env; set +a
+python3 jp_incidents.py test-alert
+```
+
+The Messages API reports exhausted credits, billing failures, and spend caps as request errors, so those conditions alert automatically. For a warning *before* exhaustion, create a read-capable Anthropic Admin API key and define a local monthly budget and remaining-budget threshold:
+
+```dotenv
+ANTHROPIC_ADMIN_API_KEY=REPLACE_ME
+JPI_AI_MONTHLY_BUDGET_USD=20
+JPI_AI_LOW_CREDIT_USD=5
+```
+
+At the start of each hourly run, the collector reads Anthropic's month-to-date [Cost Report](https://platform.claude.com/docs/en/api/beta/organization/cost_report/retrieve), subtracts it from the locally configured budget, and sends a rate-limited critical alert when the estimated remainder reaches the threshold. The Admin key, webhook, budget values, alert history, and error details remain local.
+
+This estimates the remaining monthly budget, not the prepaid credit balance. Cost Report amounts are converted from cents to dollars before comparison. Without an Admin credential and a configured budget, advance warnings are disabled; exhausted-credit and other AI request failures still trigger operations alerts.
 
 ## Enable GitHub Pages
 

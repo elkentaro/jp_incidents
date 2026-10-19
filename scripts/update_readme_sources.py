@@ -20,6 +20,11 @@ GROUP_LABELS = {
     "prefecture": "Prefectural governments",
     "government": "Tokyo, special wards, and ordinance-designated cities",
     "transport": "Transport operators and parent companies",
+    "it": "IT solution providers and cloud services",
+    "retail": "Retailers",
+    "distribution": "Distribution and logistics",
+    "healthcare": "Healthcare organizations",
+    "telecom": "Telecom carriers and Internet service providers",
 }
 GROUP_ORDER = tuple(GROUP_LABELS)
 SECTOR_LABELS = {

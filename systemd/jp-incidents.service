@@ -7,10 +7,10 @@ StartLimitBurst=4
 
 [Service]
 Type=oneshot
-User=kentaro
-Group=kentaro
+User=jp-incidents
+Group=jp-incidents
 WorkingDirectory=/opt/jp-incidents
-Environment=HOME=/home/kentaro
+Environment=HOME=/var/lib/jp-incidents
 Environment=JPI_DB=/opt/jp-incidents/jp_incidents.db
 Environment=JPI_JSON_PATH=/opt/jp-incidents/data/incidents.json
 Environment=JPI_RSS_PATH=/opt/jp-incidents/feed.xml

@@ -23,7 +23,9 @@ const copy = {
     groups: {
       discovery: "News, search & specialist media", government: "Tokyo & designated cities",
       prefecture: "Prefectural governments", national: "National authorities",
-      disclosure: "Listed-company disclosures", transport: "Transport operators & groups"
+      disclosure: "Listed-company disclosures", transport: "Transport operators & groups",
+      it: "IT solution providers & cloud", retail: "Retailers", distribution: "Distribution & logistics",
+      healthcare: "Healthcare organizations", telecom: "Telecom carriers & ISPs"
     }
   },
   ja: {
@@ -39,7 +41,9 @@ const copy = {
     groups: {
       discovery: "ニュース・検索・専門メディア", government: "東京都・特別区・政令指定都市",
       prefecture: "都道府県", national: "国の機関",
-      disclosure: "上場企業の適時開示", transport: "交通事業者・グループ"
+      disclosure: "上場企業の適時開示", transport: "交通事業者・グループ",
+      it: "ITソリューション・クラウド", retail: "小売", distribution: "流通・物流",
+      healthcare: "医療機関・団体", telecom: "通信事業者・ISP"
     }
   }
 };
@@ -53,7 +57,7 @@ const elements = {
 };
 
 const state = { language: savedLanguage() || (navigator.language.startsWith("ja") ? "ja" : "en"), sources: [], updatedAt: null };
-const groupOrder = ["discovery", "disclosure", "national", "prefecture", "government", "transport"];
+const groupOrder = ["discovery", "disclosure", "national", "prefecture", "government", "transport", "it", "retail", "distribution", "healthcare", "telecom"];
 
 function text(key) { return copy[state.language][key]; }
 

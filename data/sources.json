@@ -1,14 +1,19 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-19T09:44:41+00:00",
-  "total": 213,
+  "updated_at": "2026-10-19T14:10:10+00:00",
+  "total": 279,
   "groups": {
     "discovery": 20,
     "government": 44,
     "prefecture": 46,
     "national": 10,
     "disclosure": 1,
-    "transport": 92
+    "transport": 92,
+    "telecom": 16,
+    "it": 17,
+    "retail": 14,
+    "distribution": 7,
+    "healthcare": 12
   },
   "sources": [
     {
@@ -1500,6 +1505,468 @@
       "url": "https://www.tsubame-taxi.or.jp/",
       "group": "transport",
       "sector": "taxi",
+      "type": "official"
+    },
+    {
+      "name": "ソフトバンク / SoftBank",
+      "url": "https://www.softbank.jp/corp/news/press/sbkk/",
+      "group": "telecom",
+      "sector": "carriers and ISPs",
+      "type": "json_news"
+    },
+    {
+      "name": "NEC",
+      "url": "https://jpn.nec.com/press/",
+      "group": "it",
+      "sector": "systems integration",
+      "type": "official"
+    },
+    {
+      "name": "日立製作所 / Hitachi",
+      "url": "https://www.hitachi.com/ja-jp/press/",
+      "group": "it",
+      "sector": "systems integration",
+      "type": "official"
+    },
+    {
+      "name": "日立システムズ / Hitachi Systems",
+      "url": "https://www.hitachi-systems.com/news/",
+      "group": "it",
+      "sector": "systems integration",
+      "type": "official"
+    },
+    {
+      "name": "日立ソリューションズ / Hitachi Solutions",
+      "url": "https://www.hitachi-solutions.co.jp/company/press/",
+      "group": "it",
+      "sector": "systems integration",
+      "type": "official"
+    },
+    {
+      "name": "NTTデータ / NTT DATA",
+      "url": "https://www.nttdata.com/global/ja/news/",
+      "group": "it",
+      "sector": "systems integration",
+      "type": "official"
+    },
+    {
+      "name": "NTTドコモビジネス / NTT DOCOMO BUSINESS",
+      "url": "https://www.ntt.com/about-us/press-releases.html",
+      "group": "telecom",
+      "sector": "enterprise networks and ISP",
+      "type": "official"
+    },
+    {
+      "name": "野村総合研究所 / NRI",
+      "url": "https://www.nri.com/jp/news/index.html",
+      "group": "it",
+      "sector": "systems integration",
+      "type": "json_news"
+    },
+    {
+      "name": "SCSK",
+      "url": "https://www.scsk.jp/news/index.html",
+      "group": "it",
+      "sector": "systems integration",
+      "type": "official"
+    },
+    {
+      "name": "TIS",
+      "url": "https://www.tis.co.jp/news/",
+      "group": "it",
+      "sector": "systems integration",
+      "type": "official"
+    },
+    {
+      "name": "BIPROGY",
+      "url": "https://www.biprogy.com/news/",
+      "group": "it",
+      "sector": "systems integration",
+      "type": "official"
+    },
+    {
+      "name": "伊藤忠テクノソリューションズ / CTC",
+      "url": "https://www.ctc-g.co.jp/company/release/",
+      "group": "it",
+      "sector": "systems integration",
+      "type": "official"
+    },
+    {
+      "name": "日鉄ソリューションズ / NSSOL",
+      "url": "https://www.nssol.nipponsteel.com/press/atom.xml",
+      "group": "it",
+      "sector": "systems integration",
+      "type": "rss"
+    },
+    {
+      "name": "大塚商会 / Otsuka Corporation",
+      "url": "https://www.otsuka-shokai.co.jp/corporate/release/",
+      "group": "it",
+      "sector": "systems integration",
+      "type": "official"
+    },
+    {
+      "name": "オービック / OBIC",
+      "url": "https://www.obic.co.jp/pressrelease/",
+      "group": "it",
+      "sector": "enterprise software",
+      "type": "official"
+    },
+    {
+      "name": "日本IBM / IBM Japan",
+      "url": "https://jp.newsroom.ibm.com/",
+      "group": "it",
+      "sector": "systems integration",
+      "type": "official"
+    },
+    {
+      "name": "インターネットイニシアティブ / IIJ",
+      "url": "https://www.iij.ad.jp/news/pressrelease/",
+      "group": "telecom",
+      "sector": "enterprise networks and ISP",
+      "type": "official"
+    },
+    {
+      "name": "さくらインターネット / Sakura Internet",
+      "url": "https://www.sakura.ad.jp/corporate/information/",
+      "group": "it",
+      "sector": "cloud and hosting",
+      "type": "official"
+    },
+    {
+      "name": "IDCフロンティア / IDC Frontier",
+      "url": "https://www.idcf.jp/news/feed",
+      "group": "it",
+      "sector": "cloud and hosting",
+      "type": "rss"
+    },
+    {
+      "name": "GMOインターネット / GMO Internet",
+      "url": "https://internet.gmo/news/",
+      "group": "it",
+      "sector": "cloud and hosting",
+      "type": "official"
+    },
+    {
+      "name": "イオン / AEON",
+      "url": "https://www.aeon.info/news/",
+      "group": "retail",
+      "sector": "retail",
+      "type": "official"
+    },
+    {
+      "name": "セブン＆アイ・ホールディングス / Seven & i Holdings",
+      "url": "https://www.7andi.com/company/news.html",
+      "group": "retail",
+      "sector": "retail",
+      "type": "official"
+    },
+    {
+      "name": "ローソン / Lawson",
+      "url": "https://www.lawson.co.jp/company/news/",
+      "group": "retail",
+      "sector": "retail",
+      "type": "official"
+    },
+    {
+      "name": "ファミリーマート / FamilyMart",
+      "url": "https://www.family.co.jp/company/news_releases.html",
+      "group": "retail",
+      "sector": "retail",
+      "type": "official"
+    },
+    {
+      "name": "パン・パシフィック・インターナショナルホールディングス / PPIH",
+      "url": "https://ppih.co.jp/news/",
+      "group": "retail",
+      "sector": "retail",
+      "type": "official"
+    },
+    {
+      "name": "ヤマダホールディングス / Yamada Holdings",
+      "url": "https://www.yamada-holdings.jp/ir/press.html",
+      "group": "retail",
+      "sector": "retail",
+      "type": "official"
+    },
+    {
+      "name": "ビックカメラ / Bic Camera",
+      "url": "https://www.biccamera.co.jp/news/",
+      "group": "retail",
+      "sector": "retail",
+      "type": "official"
+    },
+    {
+      "name": "エディオン / EDION",
+      "url": "https://www.edion.co.jp/news-release",
+      "group": "retail",
+      "sector": "retail",
+      "type": "official"
+    },
+    {
+      "name": "ファーストリテイリング / Fast Retailing",
+      "url": "https://www.fastretailing.com/jp/ir/news/",
+      "group": "retail",
+      "sector": "retail",
+      "type": "official"
+    },
+    {
+      "name": "高島屋 / Takashimaya",
+      "url": "https://www.takashimaya.co.jp/",
+      "group": "retail",
+      "sector": "retail",
+      "type": "official"
+    },
+    {
+      "name": "J.フロント リテイリング / J. Front Retailing",
+      "url": "https://www.j-front-retailing.com/news/news_1.html",
+      "group": "retail",
+      "sector": "retail",
+      "type": "official"
+    },
+    {
+      "name": "マツキヨココカラ＆カンパニー / MatsukiyoCocokara",
+      "url": "https://www.matsukiyococokara.com/news/",
+      "group": "retail",
+      "sector": "retail",
+      "type": "official"
+    },
+    {
+      "name": "ツルハホールディングス / Tsuruha Holdings",
+      "url": "https://www.tsuruha-hd.co.jp/",
+      "group": "retail",
+      "sector": "retail",
+      "type": "official"
+    },
+    {
+      "name": "楽天グループ / Rakuten Group",
+      "url": "https://corp.rakuten.co.jp/news/press/",
+      "group": "retail",
+      "sector": "retail",
+      "type": "official"
+    },
+    {
+      "name": "ヤマトホールディングス / Yamato Holdings",
+      "url": "https://www.yamato-hd.co.jp/",
+      "group": "distribution",
+      "sector": "logistics and wholesale",
+      "type": "official"
+    },
+    {
+      "name": "NIPPON EXPRESSホールディングス / NX Group",
+      "url": "https://www.nipponexpress-holdings.com/ja/news/press/",
+      "group": "distribution",
+      "sector": "logistics and wholesale",
+      "type": "official"
+    },
+    {
+      "name": "西濃運輸 / Seino Transportation",
+      "url": "https://www.seino.co.jp/",
+      "group": "distribution",
+      "sector": "logistics and wholesale",
+      "type": "official"
+    },
+    {
+      "name": "福山通運 / Fukuyama Transporting",
+      "url": "https://corp.fukutsu.co.jp/news/",
+      "group": "distribution",
+      "sector": "logistics and wholesale",
+      "type": "official"
+    },
+    {
+      "name": "日本郵便 / Japan Post",
+      "url": "https://www.post.japanpost.jp/notification/",
+      "group": "distribution",
+      "sector": "logistics and wholesale",
+      "type": "official"
+    },
+    {
+      "name": "センコーグループホールディングス / SENKO Group Holdings",
+      "url": "https://www.senkogrouphd.co.jp/about/news/",
+      "group": "distribution",
+      "sector": "logistics and wholesale",
+      "type": "official"
+    },
+    {
+      "name": "三菱倉庫 / Mitsubishi Logistics",
+      "url": "https://www.mitsubishi-logistics.co.jp/news/",
+      "group": "distribution",
+      "sector": "logistics and wholesale",
+      "type": "official"
+    },
+    {
+      "name": "国立病院機構 / National Hospital Organization",
+      "url": "https://nho.hosp.go.jp/",
+      "group": "healthcare",
+      "sector": "healthcare",
+      "type": "official"
+    },
+    {
+      "name": "地域医療機能推進機構 / JCHO",
+      "url": "https://www.jcho.go.jp/",
+      "group": "healthcare",
+      "sector": "healthcare",
+      "type": "official"
+    },
+    {
+      "name": "労働者健康安全機構 / JOHAS",
+      "url": "https://www.johas.go.jp/",
+      "group": "healthcare",
+      "sector": "healthcare",
+      "type": "official"
+    },
+    {
+      "name": "日本赤十字社 / Japanese Red Cross Society",
+      "url": "https://www.jrc.or.jp/press/",
+      "group": "healthcare",
+      "sector": "healthcare",
+      "type": "official"
+    },
+    {
+      "name": "徳洲会 / Tokushukai",
+      "url": "https://www.tokushukai.or.jp/",
+      "group": "healthcare",
+      "sector": "healthcare",
+      "type": "official"
+    },
+    {
+      "name": "IMSグループ / IMS Group",
+      "url": "https://www.ims.gr.jp/group/",
+      "group": "healthcare",
+      "sector": "healthcare",
+      "type": "official"
+    },
+    {
+      "name": "戸田中央メディカルケアグループ / Toda Medicalcare Group",
+      "url": "https://www.tmg.or.jp/",
+      "group": "healthcare",
+      "sector": "healthcare",
+      "type": "official"
+    },
+    {
+      "name": "聖隷福祉事業団 / Seirei",
+      "url": "https://www.seirei.or.jp/hq/",
+      "group": "healthcare",
+      "sector": "healthcare",
+      "type": "official"
+    },
+    {
+      "name": "済生会 / Saiseikai",
+      "url": "https://www.saiseikai.or.jp/",
+      "group": "healthcare",
+      "sector": "healthcare",
+      "type": "official"
+    },
+    {
+      "name": "国立がん研究センター / National Cancer Center",
+      "url": "https://www.ncc.go.jp/jp/information/pr_release/index.html",
+      "group": "healthcare",
+      "sector": "healthcare",
+      "type": "official"
+    },
+    {
+      "name": "国立循環器病研究センター / National Cerebral and Cardiovascular Center",
+      "url": "https://www.ncvc.go.jp/pr/",
+      "group": "healthcare",
+      "sector": "healthcare",
+      "type": "official"
+    },
+    {
+      "name": "国立健康危機管理研究機構 / JIHS",
+      "url": "https://www.jihs.go.jp/",
+      "group": "healthcare",
+      "sector": "healthcare",
+      "type": "official"
+    },
+    {
+      "name": "NTTグループ / NTT Group",
+      "url": "https://group.ntt/jp/newsrelease/",
+      "group": "telecom",
+      "sector": "carriers and ISPs",
+      "type": "official"
+    },
+    {
+      "name": "NTTドコモ / NTT DOCOMO",
+      "url": "https://www.docomo.ne.jp/info/rss/news_release.rdf",
+      "group": "telecom",
+      "sector": "carriers and ISPs",
+      "type": "rss"
+    },
+    {
+      "name": "KDDI",
+      "url": "https://newsroom.kddi.com/news/newsrelease.xml",
+      "group": "telecom",
+      "sector": "carriers and ISPs",
+      "type": "rss"
+    },
+    {
+      "name": "楽天モバイル / Rakuten Mobile",
+      "url": "https://corp.mobile.rakuten.co.jp/news/",
+      "group": "telecom",
+      "sector": "carriers and ISPs",
+      "type": "official"
+    },
+    {
+      "name": "NTT東日本 / NTT EAST",
+      "url": "https://www.ntt-east.co.jp/release/",
+      "group": "telecom",
+      "sector": "carriers and ISPs",
+      "type": "official"
+    },
+    {
+      "name": "NTT西日本 / NTT WEST",
+      "url": "https://www.ntt-west.co.jp/news/",
+      "group": "telecom",
+      "sector": "carriers and ISPs",
+      "type": "official"
+    },
+    {
+      "name": "JCOM",
+      "url": "https://notices.jcom.co.jp/",
+      "group": "telecom",
+      "sector": "carriers and ISPs",
+      "type": "official"
+    },
+    {
+      "name": "オプテージ / OPTAGE",
+      "url": "https://optage.co.jp/press/",
+      "group": "telecom",
+      "sector": "carriers and ISPs",
+      "type": "official"
+    },
+    {
+      "name": "ビッグローブ / BIGLOBE",
+      "url": "https://www.biglobe.co.jp/pressroom/",
+      "group": "telecom",
+      "sector": "carriers and ISPs",
+      "type": "official"
+    },
+    {
+      "name": "ニフティ / NIFTY",
+      "url": "https://www.nifty.co.jp/newsrelease/",
+      "group": "telecom",
+      "sector": "carriers and ISPs",
+      "type": "official"
+    },
+    {
+      "name": "NTTドコモ お知らせ / NTT DOCOMO notices",
+      "url": "https://www.docomo.ne.jp/info/rss/notice.rdf",
+      "group": "telecom",
+      "sector": "carriers and ISPs",
+      "type": "rss"
+    },
+    {
+      "name": "KDDI 重要なお知らせ / KDDI important notices",
+      "url": "https://news.kddi.com/important/news/rss/kddi_important_ex.xml",
+      "group": "telecom",
+      "sector": "carriers and ISPs",
+      "type": "rss"
+    },
+    {
+      "name": "TOKAIコミュニケーションズ / TOKAI Communications",
+      "url": "https://www.tokai-com.co.jp/news/",
+      "group": "telecom",
+      "sector": "carriers and ISPs",
       "type": "official"
     }
   ]

@@ -22,6 +22,7 @@ Usage:
   python3 jp_incidents.py audit-current        # re-evaluate stored incidents and incident dates
   python3 jp_incidents.py audit-rejected BACKUP.db  # strict AI review of rejected incidents
   python3 jp_incidents.py review-pending       # review private candidates for next cycle
+  python3 jp_incidents.py test-alert           # send one private Discord operations test
   python3 jp_incidents.py serve --port 8080    # dashboard + /api/incidents + /export.csv
   python3 jp_incidents.py install-units        # print systemd service + timer
 
@@ -41,6 +42,11 @@ Env:
   JPI_SITE_URL       public site URL used by RSS (default GitHub Pages URL)
   JPI_GIT_REMOTE     Git remote used by --publish (default origin)
   JPI_GIT_BRANCH     Git branch used by --publish (default main)
+  JPI_ALERT_WEBHOOK_URL private Discord operations webhook; falls back to WEBHOOK_URL
+  JPI_ALERT_COOLDOWN_HOURS suppress repeat alerts with the same key (default 12)
+  ANTHROPIC_ADMIN_API_KEY optional Admin API key used only for proactive cost checks
+  JPI_AI_MONTHLY_BUDGET_USD optional local monthly budget for remaining-credit alerts
+  JPI_AI_LOW_CREDIT_USD alert when configured budget minus reported cost reaches this (default 5)
 
 Source entry format (JPI_SOURCES JSON, list of objects):
   {"name": "...", "url": "...", "type": "rss"|"html"|"municipal", "jp_only": bool, "link_re": "regex"}
@@ -53,6 +59,7 @@ import argparse, csv, hashlib, html, io, json, os, re, sqlite3, subprocess, sys,
 import urllib.request, urllib.error, urllib.parse
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
+from decimal import Decimal, InvalidOperation
 from email.utils import format_datetime, parsedate_to_datetime
 from zoneinfo import ZoneInfo
 
@@ -60,6 +67,7 @@ DB_PATH = os.environ.get("JPI_DB", "jp_incidents.db")
 JSON_PATH = os.environ.get("JPI_JSON_PATH", "data/incidents.json")
 RSS_PATH = os.environ.get("JPI_RSS_PATH", "feed.xml")
 SOURCES_PATH = os.environ.get("JPI_SOURCES_PATH", "data/sources.json")
+ALERT_STATE_PATH = os.environ.get("JPI_ALERT_STATE_PATH", ".jpi-alert-state.json")
 COLLECTION_DAYS = max(1, int(os.environ.get("JPI_COLLECTION_DAYS", "14")))
 UA = "Mozilla/5.0 (compatible; jp-incidents-collector/2.0; +security research)"
 JST = ZoneInfo("Asia/Tokyo")
@@ -348,11 +356,83 @@ TRANSPORT_SOURCES = [
     for sector, name, url in _TRANSPORT_SITES
 ]
 
+# Direct disclosures complement news/search discovery; group sites do not cover
+# every subsidiary, store, hospital, or customer-facing service.
+ORGANIZATION_SOURCES = [
+    {"name": "ソフトバンク / SoftBank", "type": "json_news", "group": "telecom", "sector": "carriers and ISPs", "url": "https://www.softbank.jp/corp/news/press/sbkk/", "feed_url": "https://www.softbank.jp/scsystem/api/CreateJson/?category=corp&sub_category=sbkk_press&year={year}&corp_category=&language=ja-JP", "json_layout": "monthly"},
+    {'name': 'NEC', 'sector': 'systems integration', 'url': 'https://jpn.nec.com/press/', 'group': 'it', 'type': 'official'},
+    {'name': '日立製作所 / Hitachi', 'sector': 'systems integration', 'url': 'https://www.hitachi.com/ja-jp/press/', 'group': 'it', 'type': 'official'},
+    {'name': '日立システムズ / Hitachi Systems', 'sector': 'systems integration', 'url': 'https://www.hitachi-systems.com/news/', 'group': 'it', 'type': 'official'},
+    {'name': '日立ソリューションズ / Hitachi Solutions', 'sector': 'systems integration', 'url': 'https://www.hitachi-solutions.co.jp/company/press/', 'group': 'it', 'type': 'official'},
+    {'name': 'NTTデータ / NTT DATA', 'sector': 'systems integration', 'url': 'https://www.nttdata.com/global/ja/news/', 'group': 'it', 'type': 'official'},
+    {'name': 'NTTドコモビジネス / NTT DOCOMO BUSINESS', 'sector': 'enterprise networks and ISP', 'url': 'https://www.ntt.com/about-us/press-releases.html', 'group': 'telecom', 'type': 'official'},
+    {'name': '野村総合研究所 / NRI', 'sector': 'systems integration', 'url': 'https://www.nri.com/jp/news/index.html', 'group': 'it', 'type': 'json_news', 'feed_url': 'https://www.nri.com/data/jp/news/newsrelease_info_{year}.json'},
+    {'name': 'SCSK', 'sector': 'systems integration', 'url': 'https://www.scsk.jp/news/index.html', 'group': 'it', 'type': 'official'},
+    {'name': 'TIS', 'sector': 'systems integration', 'url': 'https://www.tis.co.jp/news/', 'group': 'it', 'type': 'official'},
+    {'name': 'BIPROGY', 'sector': 'systems integration', 'url': 'https://www.biprogy.com/news/', 'group': 'it', 'type': 'official'},
+    {'name': '伊藤忠テクノソリューションズ / CTC', 'sector': 'systems integration', 'url': 'https://www.ctc-g.co.jp/company/release/', 'group': 'it', 'type': 'official'},
+    {'name': '日鉄ソリューションズ / NSSOL', 'sector': 'systems integration', 'url': 'https://www.nssol.nipponsteel.com/press/atom.xml', 'group': 'it', 'type': 'rss'},
+    {'name': '大塚商会 / Otsuka Corporation', 'sector': 'systems integration', 'url': 'https://www.otsuka-shokai.co.jp/corporate/release/', 'group': 'it', 'type': 'official'},
+    {'name': 'オービック / OBIC', 'sector': 'enterprise software', 'url': 'https://www.obic.co.jp/pressrelease/', 'group': 'it', 'type': 'official'},
+    {'name': '日本IBM / IBM Japan', 'sector': 'systems integration', 'url': 'https://jp.newsroom.ibm.com/', 'group': 'it', 'type': 'official'},
+    {'name': 'インターネットイニシアティブ / IIJ', 'sector': 'enterprise networks and ISP', 'url': 'https://www.iij.ad.jp/news/pressrelease/', 'group': 'telecom', 'type': 'official'},
+    {'name': 'さくらインターネット / Sakura Internet', 'sector': 'cloud and hosting', 'url': 'https://www.sakura.ad.jp/corporate/information/', 'group': 'it', 'type': 'official'},
+    {'name': 'IDCフロンティア / IDC Frontier', 'sector': 'cloud and hosting', 'url': 'https://www.idcf.jp/news/feed', 'group': 'it', 'type': 'rss'},
+    {'name': 'GMOインターネット / GMO Internet', 'sector': 'cloud and hosting', 'url': 'https://internet.gmo/news/', 'group': 'it', 'type': 'official'},
+    {'name': 'イオン / AEON', 'url': 'https://www.aeon.info/news/', 'group': 'retail', 'type': 'official', 'sector': 'retail'},
+    {'name': 'セブン＆アイ・ホールディングス / Seven & i Holdings', 'url': 'https://www.7andi.com/company/news.html', 'group': 'retail', 'type': 'official', 'sector': 'retail'},
+    {'name': 'ローソン / Lawson', 'url': 'https://www.lawson.co.jp/company/news/', 'group': 'retail', 'type': 'official', 'sector': 'retail'},
+    {'name': 'ファミリーマート / FamilyMart', 'url': 'https://www.family.co.jp/company/news_releases.html', 'group': 'retail', 'type': 'official', 'sector': 'retail'},
+    {'name': 'パン・パシフィック・インターナショナルホールディングス / PPIH', 'url': 'https://ppih.co.jp/news/', 'group': 'retail', 'type': 'official', 'sector': 'retail'},
+    {'name': 'ヤマダホールディングス / Yamada Holdings', 'url': 'https://www.yamada-holdings.jp/ir/press.html', 'group': 'retail', 'type': 'official', 'sector': 'retail'},
+    {'name': 'ビックカメラ / Bic Camera', 'url': 'https://www.biccamera.co.jp/news/', 'group': 'retail', 'type': 'official', 'sector': 'retail'},
+    {'name': 'エディオン / EDION', 'url': 'https://www.edion.co.jp/news-release', 'group': 'retail', 'type': 'official', 'sector': 'retail'},
+    {'name': 'ファーストリテイリング / Fast Retailing', 'url': 'https://www.fastretailing.com/jp/ir/news/', 'group': 'retail', 'type': 'official', 'sector': 'retail'},
+    {'name': '高島屋 / Takashimaya', 'url': 'https://www.takashimaya.co.jp/', 'group': 'retail', 'type': 'official', 'sector': 'retail'},
+    {'name': 'J.フロント リテイリング / J. Front Retailing', 'url': 'https://www.j-front-retailing.com/news/news_1.html', 'group': 'retail', 'type': 'official', 'sector': 'retail'},
+    {'name': 'マツキヨココカラ＆カンパニー / MatsukiyoCocokara', 'url': 'https://www.matsukiyococokara.com/news/', 'group': 'retail', 'type': 'official', 'sector': 'retail'},
+    {'name': 'ツルハホールディングス / Tsuruha Holdings', 'url': 'https://www.tsuruha-hd.co.jp/', 'group': 'retail', 'type': 'official', 'sector': 'retail'},
+    {'name': '楽天グループ / Rakuten Group', 'url': 'https://corp.rakuten.co.jp/news/press/', 'group': 'retail', 'type': 'official', 'sector': 'retail'},
+    {'name': 'ヤマトホールディングス / Yamato Holdings', 'url': 'https://www.yamato-hd.co.jp/', 'group': 'distribution', 'type': 'official', 'sector': 'logistics and wholesale'},
+    {'name': 'NIPPON EXPRESSホールディングス / NX Group', 'url': 'https://www.nipponexpress-holdings.com/ja/news/press/', 'group': 'distribution', 'type': 'official', 'sector': 'logistics and wholesale'},
+    {'name': '西濃運輸 / Seino Transportation', 'url': 'https://www.seino.co.jp/', 'group': 'distribution', 'type': 'official', 'sector': 'logistics and wholesale'},
+    {'name': '福山通運 / Fukuyama Transporting', 'url': 'https://corp.fukutsu.co.jp/news/', 'group': 'distribution', 'type': 'official', 'sector': 'logistics and wholesale'},
+    {'name': '日本郵便 / Japan Post', 'url': 'https://www.post.japanpost.jp/notification/', 'group': 'distribution', 'type': 'official', 'sector': 'logistics and wholesale'},
+    {'name': 'センコーグループホールディングス / SENKO Group Holdings', 'url': 'https://www.senkogrouphd.co.jp/about/news/', 'group': 'distribution', 'type': 'official', 'sector': 'logistics and wholesale'},
+    {'name': '三菱倉庫 / Mitsubishi Logistics', 'url': 'https://www.mitsubishi-logistics.co.jp/news/', 'group': 'distribution', 'type': 'official', 'sector': 'logistics and wholesale'},
+    {'name': '国立病院機構 / National Hospital Organization', 'url': 'https://nho.hosp.go.jp/', 'group': 'healthcare', 'type': 'official', 'sector': 'healthcare'},
+    {'name': '地域医療機能推進機構 / JCHO', 'url': 'https://www.jcho.go.jp/', 'group': 'healthcare', 'type': 'official', 'sector': 'healthcare'},
+    {'name': '労働者健康安全機構 / JOHAS', 'url': 'https://www.johas.go.jp/', 'group': 'healthcare', 'type': 'official', 'sector': 'healthcare'},
+    {'name': '日本赤十字社 / Japanese Red Cross Society', 'url': 'https://www.jrc.or.jp/press/', 'group': 'healthcare', 'type': 'official', 'sector': 'healthcare'},
+    {'name': '徳洲会 / Tokushukai', 'url': 'https://www.tokushukai.or.jp/', 'group': 'healthcare', 'type': 'official', 'sector': 'healthcare'},
+    {'name': 'IMSグループ / IMS Group', 'url': 'https://www.ims.gr.jp/group/', 'group': 'healthcare', 'type': 'official', 'sector': 'healthcare'},
+    {'name': '戸田中央メディカルケアグループ / Toda Medicalcare Group', 'url': 'https://www.tmg.or.jp/', 'group': 'healthcare', 'type': 'official', 'sector': 'healthcare'},
+    {'name': '聖隷福祉事業団 / Seirei', 'url': 'https://www.seirei.or.jp/hq/', 'group': 'healthcare', 'type': 'official', 'sector': 'healthcare'},
+    {'name': '済生会 / Saiseikai', 'url': 'https://www.saiseikai.or.jp/', 'group': 'healthcare', 'type': 'official', 'sector': 'healthcare'},
+    {'name': '国立がん研究センター / National Cancer Center', 'url': 'https://www.ncc.go.jp/jp/information/pr_release/index.html', 'group': 'healthcare', 'type': 'official', 'sector': 'healthcare'},
+    {'name': '国立循環器病研究センター / National Cerebral and Cardiovascular Center', 'url': 'https://www.ncvc.go.jp/pr/', 'group': 'healthcare', 'type': 'official', 'sector': 'healthcare'},
+    {'name': '国立健康危機管理研究機構 / JIHS', 'url': 'https://www.jihs.go.jp/', 'group': 'healthcare', 'type': 'official', 'sector': 'healthcare'},
+    {'name': 'NTTグループ / NTT Group', 'url': 'https://group.ntt/jp/newsrelease/', 'group': 'telecom', 'sector': 'carriers and ISPs', 'type': 'official'},
+    {'name': 'NTTドコモ / NTT DOCOMO', 'url': 'https://www.docomo.ne.jp/info/rss/news_release.rdf', 'group': 'telecom', 'sector': 'carriers and ISPs', 'type': 'rss'},
+    {'name': 'KDDI', 'url': 'https://newsroom.kddi.com/news/newsrelease.xml', 'group': 'telecom', 'sector': 'carriers and ISPs', 'type': 'rss'},
+    {'name': '楽天モバイル / Rakuten Mobile', 'url': 'https://corp.mobile.rakuten.co.jp/news/', 'group': 'telecom', 'sector': 'carriers and ISPs', 'type': 'official'},
+    {'name': 'NTT東日本 / NTT EAST', 'url': 'https://www.ntt-east.co.jp/release/', 'group': 'telecom', 'sector': 'carriers and ISPs', 'type': 'official'},
+    {'name': 'NTT西日本 / NTT WEST', 'url': 'https://www.ntt-west.co.jp/news/', 'group': 'telecom', 'sector': 'carriers and ISPs', 'type': 'official'},
+    {'name': 'JCOM', 'url': 'https://notices.jcom.co.jp/', 'group': 'telecom', 'sector': 'carriers and ISPs', 'type': 'official'},
+    {'name': 'オプテージ / OPTAGE', 'url': 'https://optage.co.jp/press/', 'group': 'telecom', 'sector': 'carriers and ISPs', 'type': 'official'},
+    {'name': 'ビッグローブ / BIGLOBE', 'url': 'https://www.biglobe.co.jp/pressroom/', 'group': 'telecom', 'sector': 'carriers and ISPs', 'type': 'official'},
+    {'name': 'ニフティ / NIFTY', 'url': 'https://www.nifty.co.jp/newsrelease/', 'group': 'telecom', 'sector': 'carriers and ISPs', 'type': 'official'},
+    {'name': 'NTTドコモ お知らせ / NTT DOCOMO notices', 'url': 'https://www.docomo.ne.jp/info/rss/notice.rdf', 'type': 'rss', 'group': 'telecom', 'sector': 'carriers and ISPs'},
+    {'name': 'KDDI 重要なお知らせ / KDDI important notices', 'url': 'https://news.kddi.com/important/news/rss/kddi_important_ex.xml', 'type': 'rss', 'group': 'telecom', 'sector': 'carriers and ISPs'},
+    {'name': 'TOKAIコミュニケーションズ / TOKAI Communications', 'url': 'https://www.tokai-com.co.jp/news/', 'type': 'official', 'group': 'telecom', 'sector': 'carriers and ISPs'},
+]
+
 SOURCES.extend(MUNICIPAL_SOURCES)
 SOURCES.extend(PREFECTURAL_SOURCES)
 SOURCES.extend(NATIONAL_SOURCES)
 SOURCES.extend(DISCLOSURE_SOURCES)
 SOURCES.extend(TRANSPORT_SOURCES)
+SOURCES.extend(ORGANIZATION_SOURCES)
 MUNICIPAL_HOSTS = {
     (urllib.parse.urlsplit(src["url"]).hostname or "").removeprefix("www.")
     for src in MUNICIPAL_SOURCES + PREFECTURAL_SOURCES + NATIONAL_SOURCES
@@ -364,6 +444,11 @@ TRANSPORT_HOSTS = {
 DISCLOSURE_HOSTS = {
     (urllib.parse.urlsplit(src["url"]).hostname or "").removeprefix("www.")
     for src in DISCLOSURE_SOURCES
+}
+
+ORGANIZATION_HOSTS = {
+    (urllib.parse.urlsplit(src["url"]).hostname or "").removeprefix("www.")
+    for src in ORGANIZATION_SOURCES
 }
 
 # Gate: is this an incident report at all?  Wide on purpose; the LLM/regex step refines.
@@ -444,7 +529,7 @@ def ref_tier(url, outlet="", title=""):
         return "social"
     if host in MUNICIPAL_HOSTS:
         return "gov"
-    if host in TRANSPORT_HOSTS:
+    if host in TRANSPORT_HOSTS or host in ORGANIZATION_HOSTS:
         return "official"
     if host in DISCLOSURE_HOSTS:
         return "official"
@@ -490,6 +575,7 @@ CREATE INDEX IF NOT EXISTS ix_org ON incidents(org);
 CREATE TABLE IF NOT EXISTS skipped(id TEXT PRIMARY KEY);
 CREATE TABLE IF NOT EXISTS refs(incident_id TEXT, url TEXT, source TEXT, title TEXT, UNIQUE(incident_id, url));
 CREATE TABLE IF NOT EXISTS runs(ts TEXT, source TEXT, fetched INTEGER, new INTEGER, error TEXT);
+CREATE TABLE IF NOT EXISTS source_alert_state(url TEXT PRIMARY KEY, blocked INTEGER NOT NULL);
 CREATE TABLE IF NOT EXISTS review_queue(
   id TEXT PRIMARY KEY, source TEXT, title TEXT, url TEXT, summary TEXT, published TEXT,
   first_seen TEXT, status TEXT DEFAULT 'pending', decision_json TEXT, reviewed_at TEXT
@@ -916,7 +1002,65 @@ def fetch_body(url, limit=6000):
 
 
 def load_items(src, fetcher=fetch):
+    if src.get("type") == "json_news":
+        # Public JSON backing a news index, including the previous year when
+        # the collection window crosses New Year. Never execute page scripts.
+        today = datetime.now(timezone.utc).date()
+        years = sorted({today.year, (today - timedelta(days=COLLECTION_DAYS)).year}, reverse=True)
+        items = []
+        for year in years:
+            feed_url = src["feed_url"].format(year=year)
+            try:
+                records = json.loads(fetcher(feed_url))
+            except urllib.error.HTTPError as exc:
+                if exc.code == 404 and today.month == 1 and year == today.year:
+                    continue  # the new year's index may not exist yet
+                raise
+            if src.get("json_layout") == "monthly":
+                records = [record for month in records["data"] for record in month["list"]]
+            if not isinstance(records, list):
+                raise ValueError("News JSON must contain a list")
+            for record in records:
+                if not isinstance(record, dict):
+                    continue
+                url = urllib.parse.urljoin(src["url"], str(record.get("url", "")))
+                if record.get("title") and record.get("url") and _http(url):
+                    published = record.get("date")
+                    if isinstance(published, str) and re.fullmatch(r"\d{8}", published):
+                        published = f"{published[:4]}-{published[4:6]}-{published[6:]}"
+                    items.append({"title": strip_html(str(record["title"])), "url": url,
+                                  "summary": strip_html(str(record.get("subtitle") or "")),
+                                  "published": published, "outlet": src["name"]})
+        return items
     raw = fetcher(src["url"])
+    # Some official indexes redirect to the current year's listing in HTML
+    # rather than with HTTP Location. Follow only literal same-site targets.
+    if src.get("type") in ("municipal", "official"):
+        visited = {src["url"]}
+        for _ in range(3):
+            page = decode(raw)
+            target = None
+            for tag in re.findall(r"<meta\b[^>]*>", page, re.I):
+                attrs = {key.lower(): html.unescape(value) for key, _, value in
+                         re.findall(r"([\w:-]+)\s*=\s*([\"'])(.*?)\2", tag, re.I | re.S)}
+                if attrs.get("http-equiv", "").casefold() == "refresh":
+                    match = re.search(r";\s*url\s*=\s*(.+)", attrs.get("content", ""), re.I)
+                    if match:
+                        target = match.group(1).strip(" \t\r\n\"'")
+                        break
+            if not target and len(raw) < 10000:
+                match = re.search(r"(?:window\.)?location\.href\s*=\s*([\"'])([^\"']+)\1", page)
+                if match:
+                    target = match.group(2)
+            if not target:
+                break
+            target = urllib.parse.urljoin(src["url"], target)
+            if (not _http(target) or target in visited or
+                    urllib.parse.urlsplit(target).netloc != urllib.parse.urlsplit(src["url"]).netloc):
+                break
+            visited.add(target)
+            src = {**src, "url": target}
+            raw = fetcher(target)
     if src.get("type") == "tdnet":
         return load_tdnet_items(raw, src, fetcher)
     if src.get("type") in ("municipal", "official"):
@@ -1012,6 +1156,51 @@ def plausible_org(org):
     return not ORG_TITLE_NOISE_RE.search(value)
 
 
+def anthropic_error_info(error):
+    """Extract a safe, reusable status/type/message tuple from an Anthropic HTTP error."""
+    cached = getattr(error, "_jpi_anthropic_error", None)
+    if cached:
+        return cached
+    status = getattr(error, "code", None)
+    error_type = type(error).__name__
+    message = str(error)
+    if isinstance(error, urllib.error.HTTPError):
+        try:
+            raw = error.read(8192).decode("utf-8", "replace")
+            document = json.loads(raw)
+            details = document.get("error") or {}
+            error_type = str(details.get("type") or document.get("type") or error_type)
+            message = str(details.get("message") or message)
+        except (OSError, ValueError, TypeError, AttributeError):
+            pass
+    info = {"status": status, "type": error_type[:80], "message": message[:500]}
+    try:
+        error._jpi_anthropic_error = info
+    except (AttributeError, TypeError):
+        pass
+    return info
+
+
+def report_ai_error(error, context):
+    """Send a rate-limited private alert for any AI API failure."""
+    info = anthropic_error_info(error)
+    status = info["status"]
+    searchable = f"{info['type']} {info['message']}".casefold()
+    billing_terms = ("credit", "balance", "billing", "payment", "spend limit", "spending limit", "usage limit")
+    if status == 402 or any(term in searchable for term in billing_terms):
+        key, title, severity = "ai-billing", "AI credit or billing problem", "critical"
+    elif status in {401, 403}:
+        key, title, severity = "ai-access", "AI authentication or permission failure", "critical"
+    elif status == 429:
+        key, title, severity = "ai-rate-limit", "AI rate or spend limit reached", "warning"
+    elif status and status >= 500:
+        key, title, severity = "ai-service", "AI provider service failure", "warning"
+    else:
+        key, title, severity = "ai-error", "AI analysis failure", "warning"
+    detail = f"{context}: HTTP {status or 'n/a'} {info['type']}: {info['message']}"
+    send_local_alert(key, title, detail, severity=severity)
+
+
 def llm_extract(rec, body):
     key = os.environ.get("ANTHROPIC_API_KEY")
     if not key:
@@ -1039,15 +1228,24 @@ def llm_extract(rec, body):
         try:
             resp = call(body_json)
         except urllib.error.HTTPError as e:
-            if e.code != 400:
+            info = anthropic_error_info(e)
+            if e.code != 400 or "thinking" not in info["message"].casefold():
                 raise
             body_json.pop("thinking", None)  # API rejected the parameter: rely on the larger budget
             resp = call(body_json)
         if resp.get("stop_reason") == "max_tokens":
+            send_local_alert(
+                "ai-max-tokens", "AI response was truncated",
+                "Single-incident extraction reached max_tokens and may be undecided.",
+            )
             print("[warn] llm extract: hit max_tokens; raise it or use a non-thinking model", file=sys.stderr)
         blocks = resp.get("content") or []
         txt = next((b.get("text") for b in blocks if b.get("type") == "text" and b.get("text")), None)
         if txt is None:
+            send_local_alert(
+                "ai-empty-response", "AI returned no text",
+                f"Single-incident extraction stop_reason={resp.get('stop_reason') or 'unknown'}.",
+            )
             print(f"[warn] llm extract: no text block; got {[b.get('type') for b in blocks]} "
                   f"stop_reason={resp.get('stop_reason')} {json.dumps(resp, ensure_ascii=False)[:300]}", file=sys.stderr)
             return None
@@ -1068,6 +1266,7 @@ def llm_extract(rec, body):
         return {"is_incident": True, "org": org, "kind": kind, "records": recs,
                 "incident_date": incident_date, "is_followup": bool(d.get("is_followup"))}
     except Exception as e:
+        report_ai_error(e, "single-incident extraction")
         print(f"[warn] llm extract failed: {type(e).__name__}: {e}", file=sys.stderr)
         return None
 
@@ -1119,7 +1318,8 @@ def llm_extract_many(rec, body):
         try:
             response = call(payload)
         except urllib.error.HTTPError as error:
-            if error.code != 400:
+            info = anthropic_error_info(error)
+            if error.code != 400 or "thinking" not in info["message"].casefold():
                 raise
             payload.pop("thinking", None)
             response = call(payload)
@@ -1127,6 +1327,10 @@ def llm_extract_many(rec, body):
         text = next((block.get("text") for block in blocks
                      if block.get("type") == "text" and block.get("text")), None)
         if text is None:
+            send_local_alert(
+                "ai-empty-response", "AI returned no text",
+                f"Secondary extraction stop_reason={response.get('stop_reason') or 'unknown'}.",
+            )
             return None
         match = re.search(r"\{.*\}", text, re.S)
         document = json.loads(match.group(0) if match else text)
@@ -1152,6 +1356,7 @@ def llm_extract_many(rec, body):
                 findings.append(finding)
         return findings
     except Exception as error:
+        report_ai_error(error, "secondary multi-incident extraction")
         print(f"[warn] multi-incident AI extract failed: {type(error).__name__}: {error}", file=sys.stderr)
         return None
 
@@ -1380,6 +1585,11 @@ def promote_reviewed(c):
             )
         except (KeyError, TypeError, ValueError, json.JSONDecodeError) as error:
             print(f"[warn] invalid confirmed review {row['id']}: {error}", file=sys.stderr)
+            send_local_alert(
+                "review-data-error", "Confirmed AI review could not be promoted",
+                f"Review {row['id']}: {type(error).__name__}: {error}",
+                severity="warning", cooldown_hours=12,
+            )
             c.execute(
                 "UPDATE review_queue SET status='rejected',reviewed_at=? WHERE id=?",
                 (now_iso(), row["id"]),
@@ -1436,12 +1646,46 @@ def review_pending(fetch_body_fn=fetch_body, corroborate_fn=corroborate_finding)
     return {"total": len(rows), "confirmed": confirmed, "rejected": rejected}
 
 
+def handle_expected_source_block(connection, source, error, fetched):
+    """Mute configured HTTP 403s and notify once when usable source items return."""
+    expected = {url.strip() for url in os.environ.get("JPI_EXPECTED_403_SOURCES", "").split(",")
+                if url.strip()}
+    url = source["url"]
+    if url not in expected:
+        return False
+    if isinstance(error, urllib.error.HTTPError) and error.code == 403:
+        connection.execute(
+            "INSERT INTO source_alert_state(url,blocked) VALUES(?,1) "
+            "ON CONFLICT(url) DO UPDATE SET blocked=1", (url,),
+        )
+        return True
+    if error is not None or fetched == 0:
+        return False
+    row = connection.execute("SELECT blocked FROM source_alert_state WHERE url=?", (url,)).fetchone()
+    # Configuration declares an already-known block, so first successful access
+    # also deserves a recovery notice even before this version observes a 403.
+    if (row is None or row["blocked"]) and send_local_alert(
+        "source-recovered-" + hashlib.sha256(url.encode()).hexdigest()[:16],
+        "Source access restored",
+        f"{source['name']} is readable again: {url} ({fetched} source items fetched).",
+        severity="info", cooldown_hours=0,
+    ):
+        connection.execute(
+            "INSERT INTO source_alert_state(url,blocked) VALUES(?,0) "
+            "ON CONFLICT(url) DO UPDATE SET blocked=0", (url,),
+        )
+    # If delivery failed, retain the blocked state and retry on a successful poll.
+    return False
+
+
 def poll(notify=False, fetcher=fetch, fetch_body_fn=fetch_body):
     c = db()
     new_rows = promote_reviewed(c)
+    source_errors = []
     for src in load_sources():
         fetched = new = 0
         err = None
+        source_error = None
         try:
             items = load_items(src, fetcher)
             fetched = len(items)
@@ -1476,10 +1720,23 @@ def poll(notify=False, fetcher=fetch, fetch_body_fn=fetch_body):
                 c.commit()
         except (urllib.error.URLError, ET.ParseError, TimeoutError, OSError, ValueError) as e:
             err = f"{type(e).__name__}: {e}"
+            source_error = e
             print(f"[warn] {src['name']}: {err}", file=sys.stderr)
+        suppressed = handle_expected_source_block(c, src, source_error, fetched)
+        if err and not suppressed:
+            source_errors.append((src["name"], err))
         c.execute("INSERT INTO runs VALUES(?,?,?,?,?)", (now_iso(), src["name"], fetched, new, err))
         c.commit()
         print(f"{src['name']}: fetched={fetched} new={new}" + (f" ERR={err}" if err else ""))
+    c.close()
+    if source_errors:
+        summary = "; ".join(f"{name}: {error}" for name, error in source_errors[:10])
+        if len(source_errors) > 10:
+            summary += f"; and {len(source_errors) - 10} more"
+        send_local_alert(
+            "source-errors", f"{len(source_errors)} source poll error(s)", summary,
+            severity="warning", cooldown_hours=12,
+        )
     if notify and new_rows:
         send_webhook(new_rows)
     return new_rows
@@ -1683,6 +1940,157 @@ def fmt_records(n):
     return f"{n:,}" if n else "-"
 
 
+def _private_webhook_url():
+    return re.sub(r"\s+", "", os.environ.get("JPI_ALERT_WEBHOOK_URL")
+                  or os.environ.get("WEBHOOK_URL", ""))
+
+
+def _safe_alert_detail(value):
+    """Keep operational context useful without ever sending configured secrets."""
+    text = str(value or "")
+    for name in ("ANTHROPIC_API_KEY", "ANTHROPIC_ADMIN_API_KEY", "WEBHOOK_URL", "JPI_ALERT_WEBHOOK_URL"):
+        secret = os.environ.get(name)
+        if secret:
+            text = text.replace(secret.strip(), "[redacted]")
+    text = re.sub(r"sk-ant-[A-Za-z0-9_-]+", "[redacted-api-key]", text)
+    text = re.sub(r"https://(?:canary\.|ptb\.)?discord(?:app)?\.com/api/webhooks/\S+",
+                  "[redacted-webhook]", text, flags=re.I)
+    return re.sub(r"\s+", " ", text).strip()[:1200]
+
+
+def post_webhook(message, url=None, opener=urllib.request.urlopen):
+    """Post a message using Discord's content field or Slack's text field."""
+    url = url or _private_webhook_url()
+    if not url:
+        return False
+    host = (urllib.parse.urlsplit(url).hostname or "").casefold()
+    field = "content" if "discord" in host else "text"
+    body = json.dumps({field: message[:1900]}).encode()
+    request = urllib.request.Request(
+        url, data=body, headers={"Content-Type": "application/json", "User-Agent": UA}
+    )
+    with opener(request, timeout=15):
+        pass
+    return True
+
+
+def _read_alert_state(path=ALERT_STATE_PATH):
+    try:
+        with open(path, encoding="utf-8") as source:
+            document = json.load(source)
+        return document if isinstance(document, dict) else {}
+    except (OSError, ValueError, TypeError):
+        return {}
+
+
+def _write_alert_state(state, path=ALERT_STATE_PATH):
+    parent = os.path.dirname(os.path.abspath(path))
+    os.makedirs(parent, exist_ok=True)
+    temporary = os.path.join(parent, f".{os.path.basename(path)}.{os.getpid()}.tmp")
+    try:
+        with open(temporary, "w", encoding="utf-8") as target:
+            json.dump(state, target, ensure_ascii=False, indent=2, sort_keys=True)
+            target.write("\n")
+        os.chmod(temporary, 0o600)
+        os.replace(temporary, path)
+    finally:
+        try:
+            os.unlink(temporary)
+        except FileNotFoundError:
+            pass
+
+
+def send_local_alert(key, title, detail, severity="warning", cooldown_hours=None,
+                     now=None, post_fn=post_webhook, state_path=None):
+    """Send a private, rate-limited operations alert; never enters public output."""
+    if not _private_webhook_url():
+        print(f"[warn] local alert not sent (webhook empty): {title}", file=sys.stderr)
+        return False
+    now = now or datetime.now(timezone.utc)
+    if cooldown_hours is None:
+        try:
+            cooldown_hours = float(os.environ.get("JPI_ALERT_COOLDOWN_HOURS", "12"))
+        except ValueError:
+            cooldown_hours = 12
+    state_path = state_path or ALERT_STATE_PATH
+    state = _read_alert_state(state_path)
+    previous = state.get(key, {}).get("sent_at")
+    if previous:
+        try:
+            sent_at = datetime.fromisoformat(previous.replace("Z", "+00:00"))
+            if now - sent_at < timedelta(hours=max(0, cooldown_hours)):
+                return False
+        except (TypeError, ValueError):
+            pass
+    clean_detail = _safe_alert_detail(detail)
+    icon = {"critical": "🚨", "warning": "⚠️", "info": "ℹ️"}.get(severity, "⚠️")
+    message = (f"{icon} **JP Incident Monitor — {title}**\n"
+               f"{clean_detail}\n"
+               f"Time: {now.astimezone(JST).strftime('%Y-%m-%d %H:%M:%S JST')}")
+    try:
+        if not post_fn(message):
+            return False
+    except Exception as error:
+        print(f"[warn] operations webhook failed: {type(error).__name__}: {error}", file=sys.stderr)
+        return False
+    state[key] = {"sent_at": now.isoformat(timespec="seconds"), "title": title}
+    try:
+        _write_alert_state(state, state_path)
+    except OSError as error:
+        print(f"[warn] alert state was not saved: {error}", file=sys.stderr)
+    return True
+
+
+def check_ai_budget(opener=urllib.request.urlopen):
+    """Optionally alert when Anthropic month-to-date cost nears a local budget."""
+    admin_key = os.environ.get("ANTHROPIC_ADMIN_API_KEY", "").strip()
+    budget_text = os.environ.get("JPI_AI_MONTHLY_BUDGET_USD", "").strip()
+    if not admin_key or not budget_text:
+        return None
+    try:
+        budget = Decimal(budget_text)
+        low = Decimal(os.environ.get("JPI_AI_LOW_CREDIT_USD", "5"))
+        if not budget.is_finite() or not low.is_finite() or budget <= 0 or low < 0:
+            raise InvalidOperation
+    except InvalidOperation:
+        send_local_alert("ai-budget-config", "Invalid AI budget configuration",
+                         "The monthly budget must be positive and the warning threshold nonnegative; "
+                         "both must be finite dollar amounts.")
+        return None
+    month_start = datetime.now(timezone.utc).replace(day=1, hour=0, minute=0, second=0, microsecond=0)
+    query = urllib.parse.urlencode({
+        "starting_at": month_start.isoformat().replace("+00:00", "Z"),
+        "bucket_width": "1d", "limit": 31,
+    })
+    request = urllib.request.Request(
+        "https://api.anthropic.com/v1/organizations/cost_report?" + query,
+        headers={"x-api-key": admin_key, "anthropic-version": "2023-06-01", "User-Agent": UA},
+    )
+    try:
+        with opener(request, timeout=30) as response:
+            document = json.load(response)
+        # The Cost Report API returns decimal strings in cents, including fractional cents.
+        spent = sum(
+            (Decimal(str(result.get("amount", "0")))
+             for bucket in document.get("data") or []
+             for result in bucket.get("results") or []
+             if result.get("currency") == "USD"),
+            Decimal("0"),
+        ) / Decimal("100")
+        remaining = budget - spent
+        if remaining <= low:
+            send_local_alert(
+                "ai-low-credit", "AI monthly budget is running low",
+                f"Anthropic month-to-date cost: ${spent:.2f}; local budget: ${budget:.2f}; "
+                f"estimated remaining: ${remaining:.2f} (alert threshold ${low:.2f}).",
+                severity="critical", cooldown_hours=6,
+            )
+        return {"spent": spent, "budget": budget, "remaining": remaining}
+    except Exception as error:
+        report_ai_error(error, "proactive cost report")
+        return None
+
+
 def send_webhook(rows):
     url = re.sub(r"\s+", "", os.environ.get("WEBHOOK_URL", ""))
     if not url:
@@ -1692,10 +2100,8 @@ def send_webhook(rows):
         chunk = rows[i:i + 20]
         text = "\n".join(f"- {r['org']} | {r['kind']} | {fmt_records(r['records'])} | "
                          f"{r['confidence']} ({r['score']}) | {r['url']}" for r in chunk)
-        body = json.dumps({"text": f"New JP incidents ({len(chunk)}):\n{text}"}).encode()
         try:
-            urllib.request.urlopen(urllib.request.Request(
-                url, data=body, headers={"Content-Type": "application/json", "User-Agent": UA}), timeout=15)
+            post_webhook(f"New JP incidents ({len(chunk)}):\n{text}", url=url)
         except Exception as e:
             print(f"[warn] webhook failed: {e}", file=sys.stderr)
 
@@ -2162,6 +2568,7 @@ def main():
     v.add_argument("--apply", action="store_true", help="restore only AI-confirmed valid incidents")
     v.add_argument("--publish", action="store_true", help="publish JSON/RSS after restoring valid incidents")
     sub.add_parser("review-pending", help="AI-review private candidates for promotion next cycle")
+    sub.add_parser("test-alert", help="send a private Discord operations test alert")
     s = sub.add_parser("serve"); s.add_argument("--host", default="127.0.0.1"); s.add_argument("--port", type=int, default=8080)
     sub.add_parser("install-units")
     a = ap.parse_args()
@@ -2169,6 +2576,13 @@ def main():
         test_sources(name_match=a.match, group=a.group)
     elif a.cmd == "poll":
         wait_for_network()
+        if not os.environ.get("ANTHROPIC_API_KEY", "").strip():
+            send_local_alert(
+                "ai-key-missing", "AI analysis is not configured",
+                "ANTHROPIC_API_KEY is missing; queued candidates cannot receive secondary AI validation.",
+                severity="critical", cooldown_hours=24,
+            )
+        check_ai_budget()
         poll(a.notify)
         if a.publish:
             publish_public_json(a.json_path, a.rss_path, a.sources_path)
@@ -2202,6 +2616,14 @@ def main():
             publish_public_json()
     elif a.cmd == "review-pending":
         review_pending()
+    elif a.cmd == "test-alert":
+        if not send_local_alert(
+            "manual-test", "Operations alert test",
+            "Private Discord alerting is configured and reachable.",
+            severity="info", cooldown_hours=0,
+        ):
+            raise RuntimeError("operations alert was not sent")
+        print("Private operations alert sent")
     elif a.cmd == "serve":
         serve(a.host, a.port)
     elif a.cmd == "install-units":
@@ -2211,4 +2633,14 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as error:
+        try:
+            send_local_alert(
+                "collector-failure", "Collector run failed",
+                f"{type(error).__name__}: {error}", severity="critical", cooldown_hours=1,
+            )
+        except Exception as alert_error:
+            print(f"[warn] fatal-error alert failed: {alert_error}", file=sys.stderr)
+        raise
