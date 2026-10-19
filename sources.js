@@ -25,7 +25,10 @@ const copy = {
       prefecture: "Prefectural governments", national: "National authorities",
       disclosure: "Listed-company disclosures", transport: "Transport operators & groups",
       it: "IT solution providers & cloud", retail: "Retailers", distribution: "Distribution & logistics",
-      healthcare: "Healthcare organizations", telecom: "Telecom carriers & ISPs"
+      healthcare: "Healthcare organizations", telecom: "Telecom carriers & ISPs",
+      finance: "Banks, insurance & payments", education: "Universities & education",
+      utilities: "Energy & water utilities", manufacturing: "Manufacturing & pharmaceuticals",
+      wholesale: "Wholesale suppliers"
     }
   },
   ja: {
@@ -43,7 +46,9 @@ const copy = {
       prefecture: "都道府県", national: "国の機関",
       disclosure: "上場企業の適時開示", transport: "交通事業者・グループ",
       it: "ITソリューション・クラウド", retail: "小売", distribution: "流通・物流",
-      healthcare: "医療機関・団体", telecom: "通信事業者・ISP"
+      healthcare: "医療機関・団体", telecom: "通信事業者・ISP",
+      finance: "銀行・保険・決済", education: "大学・教育", utilities: "電力・ガス・水道",
+      manufacturing: "製造業・製薬", wholesale: "卸売"
     }
   }
 };
@@ -57,7 +62,7 @@ const elements = {
 };
 
 const state = { language: savedLanguage() || (navigator.language.startsWith("ja") ? "ja" : "en"), sources: [], updatedAt: null };
-const groupOrder = ["discovery", "disclosure", "national", "prefecture", "government", "transport", "it", "retail", "distribution", "healthcare", "telecom"];
+const groupOrder = ["discovery", "disclosure", "national", "prefecture", "government", "transport", "it", "retail", "distribution", "healthcare", "telecom", "finance", "education", "utilities", "manufacturing", "wholesale"];
 
 function text(key) { return copy[state.language][key]; }
 

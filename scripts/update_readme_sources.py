@@ -25,6 +25,11 @@ GROUP_LABELS = {
     "distribution": "Distribution and logistics",
     "healthcare": "Healthcare organizations",
     "telecom": "Telecom carriers and Internet service providers",
+    "finance": "Banks, insurance, securities, and payments",
+    "education": "Universities and education",
+    "utilities": "Energy and water utilities",
+    "manufacturing": "Manufacturing and pharmaceuticals",
+    "wholesale": "Wholesale suppliers",
 }
 GROUP_ORDER = tuple(GROUP_LABELS)
 SECTOR_LABELS = {

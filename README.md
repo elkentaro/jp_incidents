@@ -20,18 +20,20 @@ The transport layer polls 92 major official operator and group sites across rail
 
 Listed-company coverage includes the Japan Exchange Group's public TDnet viewer, checked across its latest 14 days of disclosures. A targeted PR TIMES search adds company-issued releases that may not yet have received editorial coverage. The published [source directory](https://elkentaro.github.io/jp_incidents/sources.html) is generated from the same registry used by the hourly poller.
 
+Direct organization coverage also includes banks, insurers, securities and payment providers, universities, individual hospitals and hospital networks, energy and water utilities, manufacturers, pharmaceutical companies, and wholesale suppliers. These are selected sources rather than an exhaustive organization census.
+
 For official sites, the collector discovers advertised RSS/Atom feeds and scans current same-site links. Health and environmental uses of terms such as “virus infection” and “leak” are excluded before analysis.
 
 Confidence is based on source authority and independent corroboration: direct official/government disclosures score highly, while single aggregators and social sources score lower. It is a guide to the reliability of the collected record, not incident severity. The dashboard can sort every column—including confidence—across the complete dataset before applying its 100-row pagination.
 
-The displayed date is the incident's occurrence, discovery, or first-disclosure date—not a webpage's later update date. New candidates must fall within the collector's 14-day intake window when first discovered. If a report states no incident date, its source publication date is used as a fallback. Once a valid incident is collected it remains in the all-history dataset as it ages.
+The displayed date is the incident's occurrence, discovery, or first-disclosure date—not a webpage's later update date. New candidates must fall within the collector's 14-day intake window when first discovered. An older incident may enter when AI review supplies a recent first-disclosure date backed by an exact, dated quote in the source. Its original incident date is retained, and the separate disclosure date is shown underneath it. If a report states no incident date, its source publication date is used as a fallback. Once a valid incident is collected it remains in the all-history dataset as it ages.
 
-One database row represents one affected organization and underlying incident, not one article. Follow-up reports, second notices, reactions, remediation, recovery, and impact stories add sources or facts when that organization/incident is already listed. A follow-up may also reveal a previously unidentified victim organization; after secondary AI evaluation confirms the victim, original incident date, relevance, and source corroboration, that organization can receive its own row. A follow-up remains unpublished when its original incident date is unknown, and an underlying incident is admitted only when that date falls inside the intake window.
+One database row represents one affected organization and underlying incident, not one article. Follow-up reports, second notices, reactions, remediation, recovery, and impact stories add sources or facts when that organization/incident is already listed. A follow-up may also reveal a previously unidentified victim organization; after secondary AI evaluation confirms the victim, original incident date, relevance, and source corroboration, that organization can receive its own row. A follow-up remains unpublished when its original incident date is unknown, and an underlying incident must meet the incident-date or verified first-disclosure intake rule. A recent follow-up or recovery announcement alone does not qualify.
 
 <!-- source-registry:begin -->
 ## Complete source registry
 
-The collector currently polls **279 configured sources**. This list is generated from [`data/sources.json`](data/sources.json); run `python3 scripts/update_readme_sources.py` after changing the registry.
+The collector currently polls **365 configured sources**. This list is generated from [`data/sources.json`](data/sources.json); run `python3 scripts/update_readme_sources.py` after changing the registry.
 
 <details>
 <summary><strong>News, search, and specialist publications (20)</strong></summary>
@@ -359,7 +361,7 @@ The collector currently polls **279 configured sources**. This list is generated
 </details>
 
 <details>
-<summary><strong>Healthcare organizations (12)</strong></summary>
+<summary><strong>Healthcare organizations (24)</strong></summary>
 
 - [国立病院機構 / National Hospital Organization](https://nho.hosp.go.jp/)
 - [地域医療機能推進機構 / JCHO](https://www.jcho.go.jp/)
@@ -373,6 +375,18 @@ The collector currently polls **279 configured sources**. This list is generated
 - [国立がん研究センター / National Cancer Center](https://www.ncc.go.jp/jp/information/pr_release/index.html)
 - [国立循環器病研究センター / National Cerebral and Cardiovascular Center](https://www.ncvc.go.jp/pr/)
 - [国立健康危機管理研究機構 / JIHS](https://www.jihs.go.jp/)
+- [がん研究会有明病院 / Cancer Institute Hospital](https://www.jfcr.or.jp/hospital/information/general/)
+- [北海道大学病院 / Hokkaido University Hospital](https://www.huhp.hokudai.ac.jp/news/)
+- [名古屋大学医学部附属病院 / Nagoya University Hospital](https://www.med.nagoya-u.ac.jp/hospital/news/)
+- [埼玉県立病院機構 / Saitama Prefectural Hospital Organization](https://www.saitama-pho.jp/)
+- [大阪大学医学部附属病院 / Osaka University Hospital](https://www.hosp.med.osaka-u.ac.jp/)
+- [大阪急性期・総合医療センター / Osaka General Medical Center](https://www.gh.opho.jp/news/)
+- [慶應義塾大学病院 / Keio University Hospital](https://www.hosp.keio.ac.jp/oshirase/)
+- [東京大学医学部附属病院 / University of Tokyo Hospital](https://www.h.u-tokyo.ac.jp/)
+- [東京都立病院機構 / Tokyo Metropolitan Hospitals](https://www.tmhp.jp/)
+- [東北大学病院 / Tohoku University Hospital](https://www.hosp.tohoku.ac.jp/release/news/)
+- [筑波大学附属病院 / University of Tsukuba Hospital](https://www.hosp.tsukuba.ac.jp/)
+- [長野県立病院機構 / Nagano Prefectural Hospital Organization](https://www.pref-nagano-hosp.jp/honbu/news/)
 
 </details>
 
@@ -398,12 +412,129 @@ The collector currently polls **279 configured sources**. This list is generated
 
 </details>
 
+<details>
+<summary><strong>Banks, insurance, securities, and payments (17)</strong></summary>
+
+- [GMOペイメントゲートウェイ / GMO Payment Gateway](https://www.gmo-pg.com/)
+- [MS&AD](https://www.ms-ad-hd.com/ja/news.html)
+- [PayPay](https://about.paypay.ne.jp/pr/)
+- [SOMPOホールディングス / SOMPO](https://www.sompo-hd.com/news/)
+- [みずほ銀行 / Mizuho Bank](https://www.mizuhobank.co.jp/release/index.html)
+- [ゆうちょ銀行 / Japan Post Bank](https://www.jp-bank.japanpost.jp/news/news_index.html)
+- [りそなホールディングス / Resona](https://www.resona-gr.co.jp/holdings/news/)
+- [アフラック / Aflac](https://www.aflac.co.jp/)
+- [三井住友銀行 / SMBC](https://www.smbc.co.jp/news/)
+- [三菱UFJ銀行 / MUFG Bank](https://www.bk.mufg.jp/news/index.html)
+- [住信SBIネット銀行 / SBI Sumishin Net Bank](https://www.netbk.co.jp/contents/company/press/)
+- [千葉銀行 / Chiba Bank](https://www.chibabank.co.jp/)
+- [大和証券グループ / Daiwa Securities](https://www.daiwa-grp.jp/update/update.rss)
+- [楽天銀行 / Rakuten Bank](https://www.rakuten-bank.co.jp/press/)
+- [福岡銀行 / Bank of Fukuoka](https://www.fukuokabank.co.jp/)
+- [第一生命 / Dai-ichi Life](https://www.dai-ichi-life.co.jp/)
+- [野村ホールディングス / Nomura](https://www.nomuraholdings.com/jp/news/)
+
+</details>
+
+<details>
+<summary><strong>Universities and education (17)</strong></summary>
+
+- [九州大学 / Kyushu University](https://www.kyushu-u.ac.jp/ja/notices/)
+- [京都大学 / Kyoto University](https://www.kyoto-u.ac.jp/ja)
+- [北海道大学 / Hokkaido University](https://www.hokudai.ac.jp/news/)
+- [千葉大学 / Chiba University](https://www.chiba-u.ac.jp/)
+- [同志社大学 / Doshisha University](https://www.doshisha.ac.jp/news/)
+- [広島大学 / Hiroshima University](https://www.hiroshima-u.ac.jp/)
+- [慶應義塾 / Keio University](https://www.keio.ac.jp/ja/news/)
+- [早稲田大学 / Waseda University](https://www.waseda.jp/top/news)
+- [東京大学 / University of Tokyo](https://www.u-tokyo.ac.jp/focus/ja/press/)
+- [東京科学大学 / Institute of Science Tokyo](https://www.isct.ac.jp/ja)
+- [東北大学 / Tohoku University](https://www.tohoku.ac.jp/japanese/)
+- [熊本大学 / Kumamoto University](https://www.kumamoto-u.ac.jp/daigakujouhou/kouhou/pressrelease)
+- [神戸大学 / Kobe University](https://www.kobe-u.ac.jp/ja/)
+- [立命館 / Ritsumeikan](https://www.ritsumei.ac.jp/xml.jsp?id=229770)
+- [筑波大学 / University of Tsukuba](https://www.tsukuba.ac.jp/news/)
+- [近畿大学 / Kindai University](https://www.kindai.ac.jp/news-pr/)
+- [関西大学 / Kansai University](https://www.kansai-u.ac.jp/ja/about/pr/news/)
+
+</details>
+
+<details>
+<summary><strong>Energy and water utilities (16)</strong></summary>
+
+- [JERA](https://www.jera.co.jp/)
+- [中国電力 / Chugoku Electric Power](https://www.energia.co.jp/press/)
+- [中部電力 / Chubu Electric Power](https://www.chuden.co.jp/publicity/press/)
+- [九州電力 / Kyushu Electric Power](https://www.kyuden.co.jp/rss/news.xml)
+- [北海道電力 / Hokkaido Electric Power](https://www.hepco.co.jp/info/rss/press_rss.xml)
+- [北陸電力 / Hokuriku Electric Power](https://www.rikuden.co.jp/press/)
+- [四国電力 / Shikoku Electric Power](https://www.yonden.co.jp/press/)
+- [大阪ガス / Osaka Gas](https://www.osakagas.co.jp/company/press/)
+- [大阪市水道局 / Osaka Waterworks](https://www.city.osaka.lg.jp/suido/)
+- [東京ガス / Tokyo Gas](https://www.tokyo-gas.co.jp/news/)
+- [東京都水道局 / Tokyo Waterworks](https://www.waterworks.metro.tokyo.lg.jp/press/)
+- [東京電力ホールディングス / TEPCO](https://www.tepco.co.jp/press/)
+- [東北電力 / Tohoku Electric Power](https://www.tohoku-epco.co.jp/rss/index.xml)
+- [東邦ガス / Toho Gas](https://www.tohogas.co.jp/corporate-n/press/)
+- [沖縄電力 / Okinawa Electric Power](https://www.okiden.co.jp/press/)
+- [関西電力 / Kansai Electric Power](https://www.kepco.co.jp/corporate/pr/)
+
+</details>
+
+<details>
+<summary><strong>Manufacturing and pharmaceuticals (17)</strong></summary>
+
+- [アイシン / AISIN](https://www.aisin.com/jp/news/)
+- [アサヒグループ / Asahi Group](https://www.asahigroup-holdings.com/pressroom/)
+- [エーザイ / Eisai](https://www.eisai.co.jp/news/)
+- [キヤノン / Canon](https://global.canon/ja/news/)
+- [サントリー / Suntory](https://www.suntory.co.jp/news/)
+- [スズキ / Suzuki](https://www.suzuki.co.jp/)
+- [ソニーグループ / Sony Group](https://www.sony.com/ja/SonyInfo/News/Press/)
+- [デンソー / DENSO](https://www.denso.com/jp/ja/newsroom/)
+- [トヨタ自動車 / Toyota](https://global.toyota/jp/newsroom/)
+- [マツダ / Mazda](https://newsroom.mazda.com/ja/publicity/release/)
+- [リコー / Ricoh](https://jp.ricoh.com/release)
+- [京セラ / Kyocera](https://www.kyocera.co.jp/newsroom/)
+- [日産自動車 / Nissan](https://global.nissannews.com/ja-JP/)
+- [本田技研工業 / Honda](https://global.honda/jp/news/)
+- [村田製作所 / Murata Manufacturing](https://corporate.murata.com/ja-jp/newsroom)
+- [東芝 / Toshiba](https://www.global.toshiba/jp/news/corporate.html)
+- [武田薬品 / Takeda](https://www.takeda.com/)
+
+</details>
+
+<details>
+<summary><strong>Wholesale suppliers (7)</strong></summary>
+
+- [アルフレッサ / Alfresa](https://www.alfresa.com/news/)
+- [スズケン / Suzuken](https://www.suzuken.co.jp/news/)
+- [ダイワボウホールディングス / Daiwabo](https://www.daiwabo-holdings.com/ja/news.html)
+- [メディパル / Medipal](https://www.medipal.co.jp/news/)
+- [三菱食品 / Mitsubishi Shokuhin](https://www.mitsubishi-shokuhin.com/)
+- [伊藤忠食品 / Itochu-Shokuhin](https://www.itochu-shokuhin.com/newsrelease/)
+- [国分グループ / Kokubu Group](https://www.kokubu.co.jp/news/)
+
+</details>
+
 <!-- source-registry:end -->
+
+## Setup
+
+Use Python 3.10 or later and install the PDF text extraction dependency:
+
+```bash
+python3 -m venv .venv
+. .venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
+PDF extraction runs in a separate process with limits on document size, pages, memory, and runtime. Image-only or password-protected PDFs may yield no usable text; OCR is not included. The optional local Flask dashboard requires Flask separately.
 
 ## Commands
 
 ```bash
 python3 jp_incidents.py sources
+python3 jp_incidents.py source-health
 python3 jp_incidents.py poll
 python3 jp_incidents.py export-json
 python3 jp_incidents.py export-rss
@@ -452,7 +583,9 @@ The timer runs two minutes after boot and at 13 minutes past every hour in the `
 
 ## Private Discord operations alerts
 
-Operational alerts are sent only to a locally configured Discord webhook. They are never written to the public JSON, RSS feed, dashboard, or Git history. The collector alerts on AI billing/credit, spend-limit, authentication, rate-limit, and provider failures; fatal collector or Git publication failures; a missing AI key; and aggregated source polling errors. Identical alerts are suppressed for 12 hours by default using the ignored local `.jpi-alert-state.json` file. Incident notifications continue to use `WEBHOOK_URL`; private operations alerts use `JPI_ALERT_WEBHOOK_URL` when set and otherwise fall back to `WEBHOOK_URL`.
+Operational alerts are sent only to a locally configured Discord webhook. They are never written to the public JSON, RSS feed, dashboard, or Git history. The collector alerts on AI billing/credit, spend-limit, authentication, rate-limit, and provider failures; fatal collector or Git publication failures; a missing AI key; and aggregated source polling errors. Sources returning no usable articles do not trigger Discord alerts. Private `source-health` diagnostics retain item counts, article estimates, empty streaks, and fetch errors. Unreadable PDFs likewise stay in local diagnostics. Actual fetch failures and AI failures still alert; failed AI batches retain pending candidates for retry.
+
+Identical alerts are suppressed for 12 hours by default using the ignored local `.jpi-alert-state.json` file. Incident notifications continue to use `WEBHOOK_URL`; private operations alerts use `JPI_ALERT_WEBHOOK_URL` when set and otherwise fall back to `WEBHOOK_URL`.
 
 Add private values to `/opt/jp-incidents/.env`:
 

@@ -35,6 +35,7 @@ const copy = {
     typeLabel: "Incident type",
     confidenceLabel: "Confidence",
     date: "Incident date",
+    disclosed: "First disclosed",
     organization: "Organization",
     incidentType: "Incident type",
     potentialRecords: "Potential records",
@@ -81,6 +82,7 @@ const copy = {
     typeLabel: "インシデント種別",
     confidenceLabel: "信頼度",
     date: "インシデント日",
+    disclosed: "初公表日",
     organization: "組織",
     incidentType: "インシデント種別",
     potentialRecords: "影響の可能性がある件数",
@@ -367,6 +369,12 @@ function incidentRow(incident) {
   date.className = "date-cell";
   date.dataset.label = text("date");
   date.textContent = formatDate(incident.published_at);
+  if (incident.disclosed_at && formatDate(incident.disclosed_at) !== formatDate(incident.published_at)) {
+    const disclosed = document.createElement("small");
+    disclosed.className = "disclosure-date";
+    disclosed.textContent = `${text("disclosed")}: ${formatDate(incident.disclosed_at)}`;
+    date.append(disclosed);
+  }
 
   const organization = document.createElement("td");
   organization.className = "org-cell";

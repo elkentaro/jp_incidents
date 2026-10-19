@@ -217,7 +217,7 @@ class StaticPublishingTests(unittest.TestCase):
         evidence = [{"url": "https://other.example.jp/report", "source": "Other News", "title": "Example breach"}]
         with patch.object(app, "llm_extract_many", return_value=extracted):
             result = app.review_pending(fetch_body_fn=lambda _: "", corroborate_fn=lambda *_: evidence)
-        self.assertEqual(result, {"total": 1, "confirmed": 1, "rejected": 0})
+        self.assertEqual(result, {"total": 1, "confirmed": 1, "rejected": 0, "deferred": 0})
         connection = app.db()
         self.assertIsNone(connection.execute(
             "SELECT id FROM incidents WHERE org='Queued Example'"
@@ -253,7 +253,7 @@ class StaticPublishingTests(unittest.TestCase):
             result = app.review_pending(
                 fetch_body_fn=lambda _: "article body", corroborate_fn=lambda *_: evidence
             )
-        self.assertEqual(result, {"total": 1, "confirmed": 1, "rejected": 0})
+        self.assertEqual(result, {"total": 1, "confirmed": 1, "rejected": 0, "deferred": 0})
         connection = app.db()
         promoted = app.promote_reviewed(connection)
         self.assertEqual(len(promoted), 2)
@@ -281,7 +281,7 @@ class StaticPublishingTests(unittest.TestCase):
             result = app.review_pending(
                 fetch_body_fn=lambda _: "article body", corroborate_fn=lambda *_: []
             )
-        self.assertEqual(result, {"total": 1, "confirmed": 0, "rejected": 1})
+        self.assertEqual(result, {"total": 1, "confirmed": 0, "rejected": 1, "deferred": 0})
 
     def test_unmatched_followup_is_not_inserted_as_new_incident(self):
         connection = app.db()
@@ -599,7 +599,7 @@ class SourceRecoveryAlertTests(unittest.TestCase):
             self.assertIn("500", alert.call_args.args[2])
 
     def test_recovery_persists_and_rearms_after_new_block(self):
-        items = [{"url": "https://blocked.example/article"}]
+        items = [{"url": "https://blocked.example/article", "title": "不正アクセスに関するお知らせ", "summary": ""}]
         with patch.object(app, "send_local_alert", return_value=True) as alert:
             self.run_poll([self.error()])
             self.run_poll([items])
@@ -612,7 +612,7 @@ class SourceRecoveryAlertTests(unittest.TestCase):
             self.assertEqual(alert.call_count, 2)
 
     def test_initial_recovery_retries_failed_delivery(self):
-        items = [{"url": "https://blocked.example/article"}]
+        items = [{"url": "https://blocked.example/article", "title": "不正アクセスに関するお知らせ", "summary": ""}]
         with patch.object(app, "send_local_alert", side_effect=[False, True]) as alert:
             self.run_poll([items])  # configuration already declares the known block
             self.run_poll([items])
@@ -666,13 +666,13 @@ class OrganizationSourceTests(unittest.TestCase):
                 {"title": "Invalid", "url": "javascript:alert(1)"}, {"title": "Missing URL"}, None,
             ]).encode()
 
-        with patch.object(app, "datetime") as clock:
+        with patch.object(app, "datetime", wraps=datetime) as clock:
             clock.now.return_value = datetime(2027, 1, 3)
             items = app.load_items(source, fetcher)
         self.assertEqual(calls, ["https://example.jp/data/2027.json", "https://example.jp/data/2026.json"])
         self.assertEqual(len(items), 2)
         self.assertEqual(items[0]["url"], "https://example.jp/notice.html")
-        self.assertEqual(items[0]["published"], "2026-12-30")
+        self.assertEqual(app._incident_day(items[0]["published"]), "2026-12-30")
         self.assertEqual(items[0]["summary"], "")
 
     def test_json_news_new_year_404_falls_back_but_other_errors_surface(self):
@@ -682,7 +682,7 @@ class OrganizationSourceTests(unittest.TestCase):
             if "2027" in url:
                 raise urllib.error.HTTPError(url, 404, "Not found", {}, None)
             return b'[]'
-        with patch.object(app, "datetime") as clock:
+        with patch.object(app, "datetime", wraps=datetime) as clock:
             clock.now.return_value = datetime(2027, 1, 3)
             self.assertEqual(app.load_items(source, fetcher), [])
             clock.now.return_value = datetime(2027, 6, 3)
@@ -695,11 +695,11 @@ class OrganizationSourceTests(unittest.TestCase):
         raw = json.dumps({"data": [{"list": [
             {"title": "Notice", "url": "/notice/", "date": "20261019"}
         ]}]}).encode()
-        with patch.object(app, "datetime") as clock:
+        with patch.object(app, "datetime", wraps=datetime) as clock:
             clock.now.return_value = datetime(2026, 10, 19)
             items = app.load_items(source, lambda _: raw)
         self.assertEqual(len(items), 1)
-        self.assertEqual(items[0]["published"], "2026-10-19")
+        self.assertEqual(app._incident_day(items[0]["published"]), "2026-10-19")
         self.assertEqual(items[0]["url"], "https://example.jp/notice/")
 
     def test_added_domains_are_official_without_trusting_lookalikes(self):

@@ -8,7 +8,7 @@ also publish the complete dataset as JSON for the static GitHub Pages dashboard.
 Type is one of: "data leak", "unauthorized access", "other".
 Records are only filled for data leaks (largest figure stated, "up to"/"possible" included).
 
-Stack: Python 3 stdlib + Flask (dashboard only). Single file.
+Stack: Python 3 + pypdf (PDF worker); Flask is optional for the local dashboard.
 
 Usage:
   python3 jp_incidents.py sources              # test every source: items, gate hits, errors (no DB writes)
@@ -425,6 +425,92 @@ ORGANIZATION_SOURCES = [
     {'name': 'NTTドコモ お知らせ / NTT DOCOMO notices', 'url': 'https://www.docomo.ne.jp/info/rss/notice.rdf', 'type': 'rss', 'group': 'telecom', 'sector': 'carriers and ISPs'},
     {'name': 'KDDI 重要なお知らせ / KDDI important notices', 'url': 'https://news.kddi.com/important/news/rss/kddi_important_ex.xml', 'type': 'rss', 'group': 'telecom', 'sector': 'carriers and ISPs'},
     {'name': 'TOKAIコミュニケーションズ / TOKAI Communications', 'url': 'https://www.tokai-com.co.jp/news/', 'type': 'official', 'group': 'telecom', 'sector': 'carriers and ISPs'},
+    {'group': 'education', 'name': '九州大学 / Kyushu University', 'url': 'https://www.kyushu-u.ac.jp/ja/notices/', 'type': 'official', 'sector': 'education'},
+    {'group': 'education', 'name': '京都大学 / Kyoto University', 'url': 'https://www.kyoto-u.ac.jp/ja', 'type': 'official', 'sector': 'education'},
+    {'group': 'education', 'name': '北海道大学 / Hokkaido University', 'url': 'https://www.hokudai.ac.jp/news/', 'type': 'official', 'sector': 'education'},
+    {'group': 'education', 'name': '千葉大学 / Chiba University', 'url': 'https://www.chiba-u.ac.jp/', 'type': 'official', 'sector': 'education'},
+    {'group': 'education', 'name': '同志社大学 / Doshisha University', 'url': 'https://www.doshisha.ac.jp/news/', 'type': 'official', 'sector': 'education'},
+    {'group': 'education', 'name': '広島大学 / Hiroshima University', 'url': 'https://www.hiroshima-u.ac.jp/', 'type': 'official', 'sector': 'education'},
+    {'group': 'education', 'name': '慶應義塾 / Keio University', 'url': 'https://www.keio.ac.jp/ja/news/', 'type': 'official', 'sector': 'education'},
+    {'group': 'education', 'name': '早稲田大学 / Waseda University', 'url': 'https://www.waseda.jp/top/news', 'type': 'official', 'sector': 'education'},
+    {'group': 'education', 'name': '東京大学 / University of Tokyo', 'url': 'https://www.u-tokyo.ac.jp/focus/ja/press/', 'type': 'official', 'sector': 'education'},
+    {'group': 'education', 'name': '東京科学大学 / Institute of Science Tokyo', 'url': 'https://www.isct.ac.jp/ja', 'type': 'official', 'sector': 'education'},
+    {'group': 'education', 'name': '東北大学 / Tohoku University', 'url': 'https://www.tohoku.ac.jp/japanese/', 'type': 'official', 'sector': 'education'},
+    {'group': 'education', 'name': '熊本大学 / Kumamoto University', 'url': 'https://www.kumamoto-u.ac.jp/daigakujouhou/kouhou/pressrelease', 'type': 'official', 'sector': 'education'},
+    {'group': 'education', 'name': '神戸大学 / Kobe University', 'url': 'https://www.kobe-u.ac.jp/ja/', 'type': 'official', 'sector': 'education'},
+    {'group': 'education', 'name': '立命館 / Ritsumeikan', 'url': 'https://www.ritsumei.ac.jp/xml.jsp?id=229770', 'type': 'rss', 'sector': 'education'},
+    {'group': 'education', 'name': '筑波大学 / University of Tsukuba', 'url': 'https://www.tsukuba.ac.jp/news/', 'type': 'official', 'sector': 'education'},
+    {'group': 'education', 'name': '近畿大学 / Kindai University', 'url': 'https://www.kindai.ac.jp/news-pr/', 'type': 'official', 'sector': 'education'},
+    {'group': 'education', 'name': '関西大学 / Kansai University', 'url': 'https://www.kansai-u.ac.jp/ja/about/pr/news/', 'type': 'official', 'sector': 'education'},
+    {'group': 'finance', 'name': 'GMOペイメントゲートウェイ / GMO Payment Gateway', 'url': 'https://www.gmo-pg.com/', 'type': 'official', 'sector': 'finance'},
+    {'group': 'finance', 'name': 'MS&AD', 'url': 'https://www.ms-ad-hd.com/ja/news.html', 'type': 'official', 'sector': 'finance'},
+    {'group': 'finance', 'name': 'PayPay', 'url': 'https://about.paypay.ne.jp/pr/', 'type': 'official', 'sector': 'finance'},
+    {'group': 'finance', 'name': 'SOMPOホールディングス / SOMPO', 'url': 'https://www.sompo-hd.com/news/', 'type': 'official', 'sector': 'finance'},
+    {'group': 'finance', 'name': 'みずほ銀行 / Mizuho Bank', 'url': 'https://www.mizuhobank.co.jp/release/index.html', 'type': 'official', 'sector': 'finance'},
+    {'group': 'finance', 'name': 'ゆうちょ銀行 / Japan Post Bank', 'url': 'https://www.jp-bank.japanpost.jp/news/news_index.html', 'type': 'official', 'sector': 'finance'},
+    {'group': 'finance', 'name': 'りそなホールディングス / Resona', 'url': 'https://www.resona-gr.co.jp/holdings/news/', 'type': 'official', 'sector': 'finance'},
+    {'group': 'finance', 'name': 'アフラック / Aflac', 'url': 'https://www.aflac.co.jp/', 'type': 'official', 'sector': 'finance'},
+    {'group': 'finance', 'name': '三井住友銀行 / SMBC', 'url': 'https://www.smbc.co.jp/news/', 'type': 'official', 'sector': 'finance'},
+    {'group': 'finance', 'name': '三菱UFJ銀行 / MUFG Bank', 'url': 'https://www.bk.mufg.jp/news/index.html', 'type': 'official', 'sector': 'finance'},
+    {'group': 'finance', 'name': '住信SBIネット銀行 / SBI Sumishin Net Bank', 'url': 'https://www.netbk.co.jp/contents/company/press/', 'type': 'official', 'sector': 'finance'},
+    {'group': 'finance', 'name': '千葉銀行 / Chiba Bank', 'url': 'https://www.chibabank.co.jp/', 'type': 'official', 'sector': 'finance'},
+    {'group': 'finance', 'name': '大和証券グループ / Daiwa Securities', 'url': 'https://www.daiwa-grp.jp/update/update.rss', 'type': 'rss', 'sector': 'finance'},
+    {'group': 'finance', 'name': '楽天銀行 / Rakuten Bank', 'url': 'https://www.rakuten-bank.co.jp/press/', 'type': 'official', 'sector': 'finance'},
+    {'group': 'finance', 'name': '福岡銀行 / Bank of Fukuoka', 'url': 'https://www.fukuokabank.co.jp/', 'type': 'official', 'sector': 'finance'},
+    {'group': 'finance', 'name': '第一生命 / Dai-ichi Life', 'url': 'https://www.dai-ichi-life.co.jp/', 'type': 'official', 'sector': 'finance'},
+    {'group': 'finance', 'name': '野村ホールディングス / Nomura', 'url': 'https://www.nomuraholdings.com/jp/news/', 'type': 'official', 'sector': 'finance'},
+    {'group': 'healthcare', 'name': 'がん研究会有明病院 / Cancer Institute Hospital', 'url': 'https://www.jfcr.or.jp/hospital/information/general/', 'type': 'official', 'sector': 'healthcare'},
+    {'group': 'healthcare', 'name': '北海道大学病院 / Hokkaido University Hospital', 'url': 'https://www.huhp.hokudai.ac.jp/news/', 'type': 'official', 'sector': 'healthcare'},
+    {'group': 'healthcare', 'name': '名古屋大学医学部附属病院 / Nagoya University Hospital', 'url': 'https://www.med.nagoya-u.ac.jp/hospital/news/', 'type': 'official', 'sector': 'healthcare'},
+    {'group': 'healthcare', 'name': '埼玉県立病院機構 / Saitama Prefectural Hospital Organization', 'url': 'https://www.saitama-pho.jp/', 'type': 'official', 'sector': 'healthcare'},
+    {'group': 'healthcare', 'name': '大阪大学医学部附属病院 / Osaka University Hospital', 'url': 'https://www.hosp.med.osaka-u.ac.jp/', 'type': 'official', 'sector': 'healthcare'},
+    {'group': 'healthcare', 'name': '大阪急性期・総合医療センター / Osaka General Medical Center', 'url': 'https://www.gh.opho.jp/news/', 'type': 'official', 'sector': 'healthcare'},
+    {'group': 'healthcare', 'name': '慶應義塾大学病院 / Keio University Hospital', 'url': 'https://www.hosp.keio.ac.jp/oshirase/', 'type': 'official', 'sector': 'healthcare'},
+    {'group': 'healthcare', 'name': '東京大学医学部附属病院 / University of Tokyo Hospital', 'url': 'https://www.h.u-tokyo.ac.jp/', 'type': 'official', 'sector': 'healthcare'},
+    {'group': 'healthcare', 'name': '東京都立病院機構 / Tokyo Metropolitan Hospitals', 'url': 'https://www.tmhp.jp/', 'type': 'official', 'sector': 'healthcare'},
+    {'group': 'healthcare', 'name': '東北大学病院 / Tohoku University Hospital', 'url': 'https://www.hosp.tohoku.ac.jp/release/news/', 'type': 'official', 'sector': 'healthcare'},
+    {'group': 'healthcare', 'name': '筑波大学附属病院 / University of Tsukuba Hospital', 'url': 'https://www.hosp.tsukuba.ac.jp/', 'type': 'official', 'sector': 'healthcare'},
+    {'group': 'healthcare', 'name': '長野県立病院機構 / Nagano Prefectural Hospital Organization', 'url': 'https://www.pref-nagano-hosp.jp/honbu/news/', 'type': 'official', 'sector': 'healthcare'},
+    {'group': 'manufacturing', 'name': 'アイシン / AISIN', 'url': 'https://www.aisin.com/jp/news/', 'type': 'official', 'sector': 'manufacturing'},
+    {'group': 'manufacturing', 'name': 'アサヒグループ / Asahi Group', 'url': 'https://www.asahigroup-holdings.com/pressroom/', 'type': 'official', 'sector': 'manufacturing'},
+    {'group': 'manufacturing', 'name': 'エーザイ / Eisai', 'url': 'https://www.eisai.co.jp/news/', 'type': 'official', 'sector': 'manufacturing'},
+    {'group': 'manufacturing', 'name': 'キヤノン / Canon', 'url': 'https://global.canon/ja/news/', 'type': 'official', 'sector': 'manufacturing'},
+    {'group': 'manufacturing', 'name': 'サントリー / Suntory', 'url': 'https://www.suntory.co.jp/news/', 'type': 'official', 'sector': 'manufacturing'},
+    {'group': 'manufacturing', 'name': 'スズキ / Suzuki', 'url': 'https://www.suzuki.co.jp/', 'type': 'official', 'sector': 'manufacturing'},
+    {'group': 'manufacturing', 'name': 'ソニーグループ / Sony Group', 'url': 'https://www.sony.com/ja/SonyInfo/News/Press/', 'type': 'official', 'sector': 'manufacturing'},
+    {'group': 'manufacturing', 'name': 'デンソー / DENSO', 'url': 'https://www.denso.com/jp/ja/newsroom/', 'type': 'official', 'sector': 'manufacturing'},
+    {'group': 'manufacturing', 'name': 'トヨタ自動車 / Toyota', 'url': 'https://global.toyota/jp/newsroom/', 'type': 'official', 'sector': 'manufacturing'},
+    {'group': 'manufacturing', 'name': 'マツダ / Mazda', 'url': 'https://newsroom.mazda.com/ja/publicity/release/', 'type': 'official', 'sector': 'manufacturing'},
+    {'group': 'manufacturing', 'name': 'リコー / Ricoh', 'url': 'https://jp.ricoh.com/release', 'type': 'official', 'sector': 'manufacturing'},
+    {'group': 'manufacturing', 'name': '京セラ / Kyocera', 'url': 'https://www.kyocera.co.jp/newsroom/', 'type': 'official', 'sector': 'manufacturing'},
+    {'group': 'manufacturing', 'name': '日産自動車 / Nissan', 'url': 'https://global.nissannews.com/ja-JP/', 'type': 'official', 'sector': 'manufacturing'},
+    {'group': 'manufacturing', 'name': '本田技研工業 / Honda', 'url': 'https://global.honda/jp/news/', 'type': 'official', 'sector': 'manufacturing'},
+    {'group': 'manufacturing', 'name': '村田製作所 / Murata Manufacturing', 'url': 'https://corporate.murata.com/ja-jp/newsroom', 'type': 'official', 'sector': 'manufacturing'},
+    {'group': 'manufacturing', 'name': '東芝 / Toshiba', 'url': 'https://www.global.toshiba/jp/news/corporate.html', 'type': 'official', 'sector': 'manufacturing'},
+    {'group': 'manufacturing', 'name': '武田薬品 / Takeda', 'url': 'https://www.takeda.com/', 'type': 'official', 'sector': 'manufacturing'},
+    {'group': 'utilities', 'name': 'JERA', 'url': 'https://www.jera.co.jp/', 'type': 'official', 'sector': 'utilities'},
+    {'group': 'utilities', 'name': '中国電力 / Chugoku Electric Power', 'url': 'https://www.energia.co.jp/press/', 'type': 'official', 'sector': 'utilities'},
+    {'group': 'utilities', 'name': '中部電力 / Chubu Electric Power', 'url': 'https://www.chuden.co.jp/publicity/press/', 'type': 'official', 'sector': 'utilities'},
+    {'group': 'utilities', 'name': '九州電力 / Kyushu Electric Power', 'url': 'https://www.kyuden.co.jp/rss/news.xml', 'type': 'rss', 'sector': 'utilities'},
+    {'group': 'utilities', 'name': '北海道電力 / Hokkaido Electric Power', 'url': 'https://www.hepco.co.jp/info/rss/press_rss.xml', 'type': 'rss', 'sector': 'utilities'},
+    {'group': 'utilities', 'name': '北陸電力 / Hokuriku Electric Power', 'url': 'https://www.rikuden.co.jp/press/', 'type': 'official', 'sector': 'utilities'},
+    {'group': 'utilities', 'name': '四国電力 / Shikoku Electric Power', 'url': 'https://www.yonden.co.jp/press/', 'type': 'official', 'sector': 'utilities'},
+    {'group': 'utilities', 'name': '大阪ガス / Osaka Gas', 'url': 'https://www.osakagas.co.jp/company/press/', 'type': 'official', 'sector': 'utilities'},
+    {'group': 'utilities', 'name': '大阪市水道局 / Osaka Waterworks', 'url': 'https://www.city.osaka.lg.jp/suido/', 'type': 'official', 'sector': 'utilities'},
+    {'group': 'utilities', 'name': '東京ガス / Tokyo Gas', 'url': 'https://www.tokyo-gas.co.jp/news/', 'type': 'official', 'sector': 'utilities'},
+    {'group': 'utilities', 'name': '東京都水道局 / Tokyo Waterworks', 'url': 'https://www.waterworks.metro.tokyo.lg.jp/press/', 'type': 'official', 'sector': 'utilities'},
+    {'group': 'utilities', 'name': '東京電力ホールディングス / TEPCO', 'url': 'https://www.tepco.co.jp/press/', 'type': 'official', 'sector': 'utilities'},
+    {'group': 'utilities', 'name': '東北電力 / Tohoku Electric Power', 'url': 'https://www.tohoku-epco.co.jp/rss/index.xml', 'type': 'rss', 'sector': 'utilities'},
+    {'group': 'utilities', 'name': '東邦ガス / Toho Gas', 'url': 'https://www.tohogas.co.jp/corporate-n/press/', 'type': 'official', 'sector': 'utilities'},
+    {'group': 'utilities', 'name': '沖縄電力 / Okinawa Electric Power', 'url': 'https://www.okiden.co.jp/press/', 'type': 'official', 'sector': 'utilities'},
+    {'group': 'utilities', 'name': '関西電力 / Kansai Electric Power', 'url': 'https://www.kepco.co.jp/corporate/pr/', 'type': 'official', 'sector': 'utilities'},
+    {'name': 'アルフレッサ / Alfresa', 'url': 'https://www.alfresa.com/news/', 'type': 'json_news', 'group': 'wholesale', 'sector': 'pharmaceutical wholesale', 'article_prefixes': ['https://ssl4.eir-parts.net/doc/2784/'], 'feed_url': 'https://ssl4.eir-parts.net/V4Public/EIR/2784/ja/announcement/announcement_22.js', 'jsonp': True, 'records_key': 'item', 'link_field': 'link'},
+    {'name': 'スズケン / Suzuken', 'url': 'https://www.suzuken.co.jp/news/', 'type': 'json_news', 'group': 'wholesale', 'sector': 'pharmaceutical wholesale', 'article_prefixes': ['https://ssl4.eir-parts.net/doc/9987/'], 'feed_url': 'https://ssl4.eir-parts.net/V4Public/EIR/9987/ja/announcement/announcement_27.js', 'jsonp': True, 'records_key': 'item', 'link_field': 'link'},
+    {'group': 'wholesale', 'name': 'ダイワボウホールディングス / Daiwabo', 'url': 'https://www.daiwabo-holdings.com/ja/news.html', 'type': 'official', 'sector': 'wholesale'},
+    {'name': 'メディパル / Medipal', 'url': 'https://www.medipal.co.jp/news/', 'type': 'json_news', 'group': 'wholesale', 'sector': 'pharmaceutical wholesale', 'article_prefixes': ['https://ssl4.eir-parts.net/doc/7459/'], 'feed_url': 'https://ssl4.eir-parts.net/V4Public/EIR/7459/ja/announcement/announcement_45.js', 'jsonp': True, 'records_key': 'item', 'link_field': 'link'},
+    {'group': 'wholesale', 'name': '三菱食品 / Mitsubishi Shokuhin', 'url': 'https://www.mitsubishi-shokuhin.com/', 'type': 'official', 'sector': 'wholesale'},
+    {'group': 'wholesale', 'name': '伊藤忠食品 / Itochu-Shokuhin', 'url': 'https://www.itochu-shokuhin.com/newsrelease/', 'type': 'official', 'sector': 'wholesale'},
+    {'name': '国分グループ / Kokubu Group', 'url': 'https://www.kokubu.co.jp/news/', 'type': 'json_news', 'group': 'wholesale', 'sector': 'food wholesale', 'feed_url': 'https://www.kokubu.co.jp/news/news.json', 'json_layout': 'news_links'},
 ]
 
 SOURCES.extend(MUNICIPAL_SOURCES)
@@ -531,6 +617,9 @@ def ref_tier(url, outlet="", title=""):
         return "gov"
     if host in TRANSPORT_HOSTS or host in ORGANIZATION_HOSTS:
         return "official"
+    if any(url.startswith(prefix) for src in ORGANIZATION_SOURCES
+           for prefix in src.get("article_prefixes", ())):
+        return "official"
     if host in DISCLOSURE_HOSTS:
         return "official"
     if GOV_RE.search(host):
@@ -576,6 +665,12 @@ CREATE TABLE IF NOT EXISTS skipped(id TEXT PRIMARY KEY);
 CREATE TABLE IF NOT EXISTS refs(incident_id TEXT, url TEXT, source TEXT, title TEXT, UNIQUE(incident_id, url));
 CREATE TABLE IF NOT EXISTS runs(ts TEXT, source TEXT, fetched INTEGER, new INTEGER, error TEXT);
 CREATE TABLE IF NOT EXISTS source_alert_state(url TEXT PRIMARY KEY, blocked INTEGER NOT NULL);
+CREATE TABLE IF NOT EXISTS source_health(
+  url TEXT PRIMARY KEY, name TEXT, checked_at TEXT, last_success TEXT,
+  item_count INTEGER, article_count INTEGER, empty_streak INTEGER DEFAULT 0,
+  error TEXT, alerted INTEGER DEFAULT 0
+);
+CREATE TABLE IF NOT EXISTS notice_checks(id TEXT PRIMARY KEY, fingerprint TEXT, checked_at TEXT);
 CREATE TABLE IF NOT EXISTS review_queue(
   id TEXT PRIMARY KEY, source TEXT, title TEXT, url TEXT, summary TEXT, published TEXT,
   first_seen TEXT, status TEXT DEFAULT 'pending', decision_json TEXT, reviewed_at TEXT
@@ -590,7 +685,8 @@ def db():
     c.executescript(SCHEMA)
     cols = {r["name"] for r in c.execute("PRAGMA table_info(incidents)")}
     for col, typ in (("org", "TEXT"), ("kind", "TEXT"), ("records", "INTEGER"),
-                     ("score", "INTEGER DEFAULT 0"), ("confidence", "TEXT DEFAULT 'low'")):
+                     ("score", "INTEGER DEFAULT 0"), ("confidence", "TEXT DEFAULT 'low'"),
+                     ("disclosed_at", "TEXT")):
         if col not in cols:  # migrate older DBs
             c.execute(f"ALTER TABLE incidents ADD COLUMN {col} {typ}")
     if "title" not in {r["name"] for r in c.execute("PRAGMA table_info(refs)")}:
@@ -737,6 +833,36 @@ def within_collection_window(value, observed_at=None, days=COLLECTION_DAYS):
     return observed_day - timedelta(days=days) <= incident_day <= observed_day + timedelta(days=1)
 
 
+def verified_disclosure_date(finding, record, body, observed_at=None):
+    """Accept an AI-extracted first-disclosure date only with dated source evidence.
+
+    A recent publication/update stamp alone must never re-age an old incident.
+    """
+    date = normalize_incident_date(finding.get("first_disclosure_date"))
+    evidence = str(finding.get("disclosure_evidence") or "").strip()
+    if not date or not evidence or not within_collection_window(date, observed_at):
+        return None
+    if _incident_day(date) > _incident_day(observed_at or now_iso()):
+        return None
+    text = f"{record.get('title', '')} {record.get('summary', '')} {body}"
+    squash = lambda value: re.sub(r"\s+", "", value)
+    if squash(evidence) not in squash(text):
+        return None
+    if not re.search(r"公表|発表|開示|disclos|announc", evidence, re.I):
+        return None
+    if finding.get("is_followup") and not re.search(r"初めて|初公表|初開示|first", evidence, re.I):
+        return None
+    dates = []
+    for match in re.finditer(r"(20\d{2})[年/.-](\d{1,2})[月/.-](\d{1,2})日?", evidence):
+        dates.append(calendar_date_iso(*match.groups()))
+    if _incident_day(date) not in {_incident_day(value) for value in dates}:
+        return None
+    incident_day = _incident_day(finding.get("incident_date"))
+    if not incident_day or incident_day > _incident_day(date):
+        return None
+    return date
+
+
 def _local(tag):
     return tag.rsplit("}", 1)[-1]
 
@@ -747,6 +873,13 @@ def _http(u):
 
 def parse_feed(xml_bytes):
     """RSS 2.0 / RSS 1.0 (RDF) / Atom -> [{title,url,summary,published,outlet}]"""
+    if isinstance(xml_bytes, bytes):
+        encoding = re.match(br'\s*<\?xml[^>]*encoding=[\"\x27]([^\"\x27]+)', xml_bytes, re.I)
+        if encoding:
+            try:
+                xml_bytes = xml_bytes.decode(encoding.group(1).decode('ascii'))
+            except (LookupError, UnicodeError) as exc:
+                raise ValueError('Unsupported or invalid XML encoding') from exc
     root = ET.fromstring(xml_bytes)
     out = []
     for el in root.iter():
@@ -774,7 +907,7 @@ def parse_feed(xml_bytes):
 def parse_html_list(raw, src):
     """Listing page -> items. Each matching <a> is an item; the text around it is the summary,
     so aggregator table rows (org | vector | count) travel with the link."""
-    page = decode(raw)
+    page = re.sub(r"(?s)<!--.*?-->", " ", decode(raw))
     page = re.sub(r"(?is)<(script|style|nav|header|footer)[^>]*>.*?</\1>", " ", page)
     link_re = re.compile(src["link_re"]) if src.get("link_re") else None
     out, seen = [], set()
@@ -899,7 +1032,7 @@ def discover_feed_urls(raw, base_url):
 def load_official_items(raw, src, fetcher):
     """Read advertised feeds plus current same-site links from an official homepage."""
     items = []
-    feed_urls = discover_feed_urls(raw, src["url"])
+    feed_urls = list(dict.fromkeys(src.get("feed_urls", []) + discover_feed_urls(raw, src["url"])))[:10]
     for feed_url in feed_urls:
         try:
             items.extend(parse_feed(fetcher(feed_url)))
@@ -925,10 +1058,22 @@ def load_official_items(raw, src, fetcher):
     return deduped
 
 
-def fetch(url, timeout=25):
+class FetchedBytes(bytes):
+    """Keep the final HTTP URL so relative links survive redirects."""
+
+    def __new__(cls, raw, url):
+        result = super().__new__(cls, raw)
+        result.url = url
+        return result
+
+
+def fetch(url, timeout=25, max_bytes=8_000_000):
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*", "Accept-Language": "ja,en"})
     with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read(2_000_000)
+        raw = r.read(max_bytes + 1)
+        if len(raw) > max_bytes:
+            raise ValueError(f"Response exceeds {max_bytes} bytes")
+        return FetchedBytes(raw, r.url)
 
 
 def network_ready(urls=None, timeout=10):
@@ -987,15 +1132,30 @@ def resolve_url(url):
         return url
 
 
-def fetch_body(url, limit=6000):
+def fetch_body(url, limit=12000):
     """Article text for extraction. Empty string on any failure (never fatal)."""
     if os.environ.get("JPI_FETCH_BODY", "1") != "1" or not _http(url) or is_wrapper(url):
         return ""
     if ref_tier(url) == "social":  # JS-rendered, and never the primary source: don't bother
         return ""
+    is_pdf = urllib.parse.urlsplit(url).path.lower().endswith(".pdf")
     try:
-        page = decode(fetch(url, timeout=20))
-    except Exception:
+        raw = fetch(url, timeout=20, max_bytes=12_000_000)
+        is_pdf = raw.lstrip().startswith(b"%PDF-")
+        if is_pdf:
+            result = subprocess.run(
+                [sys.executable, os.path.join(os.path.dirname(os.path.abspath(__file__)), "pdf_extract.py")],
+                input=raw, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=20,
+                check=False,
+            )
+            text = result.stdout.decode("utf-8", errors="replace").strip()
+            if result.returncode or not text:
+                print(f"[warn] PDF text unavailable: {url}", file=sys.stderr)
+                return ""
+            return text[:limit]
+        page = decode(raw)
+    except Exception as error:
+        print(f"[warn] Article text unavailable ({type(error).__name__}): {url}", file=sys.stderr)
         return ""
     page = re.sub(r"(?is)<(script|style|nav|header|footer|aside)[^>]*>.*?</\1>", " ", page)
     return strip_html(page)[:limit]
@@ -1007,32 +1167,47 @@ def load_items(src, fetcher=fetch):
         # the collection window crosses New Year. Never execute page scripts.
         today = datetime.now(timezone.utc).date()
         years = sorted({today.year, (today - timedelta(days=COLLECTION_DAYS)).year}, reverse=True)
+        if "{year}" not in src["feed_url"]:
+            years = years[:1]
         items = []
         for year in years:
             feed_url = src["feed_url"].format(year=year)
             try:
-                records = json.loads(fetcher(feed_url))
+                payload = decode(fetcher(feed_url)).lstrip("\ufeff").strip()
+                if src.get("jsonp"):
+                    wrapper = re.fullmatch(r"[A-Za-z_$][\w.$]*\s*\((.*)\)\s*;?", payload, re.S)
+                    if not wrapper:
+                        raise ValueError("Invalid JSONP news wrapper")
+                    payload = wrapper.group(1)  # parse data only; never evaluate JavaScript
+                records = json.loads(payload)
             except urllib.error.HTTPError as exc:
                 if exc.code == 404 and today.month == 1 and year == today.year:
                     continue  # the new year's index may not exist yet
                 raise
             if src.get("json_layout") == "monthly":
                 records = [record for month in records["data"] for record in month["list"]]
+            if src.get("records_key"):
+                records = records[src["records_key"]]
             if not isinstance(records, list):
                 raise ValueError("News JSON must contain a list")
             for record in records:
                 if not isinstance(record, dict):
                     continue
-                url = urllib.parse.urljoin(src["url"], str(record.get("url", "")))
-                if record.get("title") and record.get("url") and _http(url):
+                link = record.get(src.get("link_field", "url"), "")
+                if src.get("json_layout") == "news_links":
+                    link = record.get({"pdf": "file", "url": "linkurl"}.get(record.get("type"), "url"), "")
+                url = urllib.parse.urljoin(src["url"], str(link))
+                if record.get("title") and link and _http(url):
                     published = record.get("date")
                     if isinstance(published, str) and re.fullmatch(r"\d{8}", published):
                         published = f"{published[:4]}-{published[4:6]}-{published[6:]}"
+                    published = normalize_incident_date(published) or source_page_date(str(published or ""))
                     items.append({"title": strip_html(str(record["title"])), "url": url,
                                   "summary": strip_html(str(record.get("subtitle") or "")),
                                   "published": published, "outlet": src["name"]})
         return items
     raw = fetcher(src["url"])
+    src = {**src, "url": getattr(raw, "url", src["url"])}
     # Some official indexes redirect to the current year's listing in HTML
     # rather than with HTTP Location. Follow only literal same-site targets.
     if src.get("type") in ("municipal", "official"):
@@ -1061,6 +1236,7 @@ def load_items(src, fetcher=fetch):
             visited.add(target)
             src = {**src, "url": target}
             raw = fetcher(target)
+            src = {**src, "url": getattr(raw, "url", target)}
     if src.get("type") == "tdnet":
         return load_tdnet_items(raw, src, fetcher)
     if src.get("type") in ("municipal", "official"):
@@ -1128,7 +1304,10 @@ LLM_SYSTEM = (
     'use the original incident date and return null if it is unknown; never use a webpage update date or '
     'follow-up article date when a different incident date is stated; null if unknown).'
     "A follow-up can identify a victim organization that was not previously listed. Always return that "
-    "actual victim and original incident date; whether it is new is decided later against stored incidents."
+    "actual victim and original incident date; whether it is new is decided later against stored incidents. "
+    "Also return first_disclosure_date and disclosure_evidence: the first public announcement date "
+    "(YYYY-MM-DD) and an exact dated quote explicitly supporting it. Use null for both unless the "
+    "source establishes the first disclosure; a recent webpage update or follow-up is not evidence."
 )
 
 FOLLOWUP_RE = re.compile(
@@ -1264,7 +1443,9 @@ def llm_extract(rec, body):
             if normalized:
                 incident_date = normalized
         return {"is_incident": True, "org": org, "kind": kind, "records": recs,
-                "incident_date": incident_date, "is_followup": bool(d.get("is_followup"))}
+                "incident_date": incident_date, "is_followup": bool(d.get("is_followup")),
+                "first_disclosure_date": normalize_incident_date(d.get("first_disclosure_date")),
+                "disclosure_evidence": str(d.get("disclosure_evidence") or "")[:600]}
     except Exception as e:
         report_ai_error(e, "single-incident extraction")
         print(f"[warn] llm extract failed: {type(e).__name__}: {e}", file=sys.stderr)
@@ -1284,7 +1465,13 @@ LLM_MULTI_SYSTEM = (
     "omit the entry when that date or affected organization cannot be established. A follow-up may reveal "
     "a victim organization not previously known: include that victim as its own entry so the database layer "
     "can decide whether it is new. Do not combine distinct organizations into one entry, and do not duplicate "
-    "the same organization and underlying incident."
+    "the same organization and underlying incident. "
+    "Also include first_disclosure_date (YYYY-MM-DD or null) and disclosure_evidence "
+    "(an exact short quote from the item or article, or null). These describe the FIRST "
+    "public announcement of that victim's incident, even if the incident happened long ago. "
+    "The quote must explicitly connect that calendar date to public disclosure. Do not infer "
+    "it from a page update date, a follow-up publication date, a recovery date, or today's date. "
+    "If the first public disclosure is not established, both fields must be null."
 )
 
 
@@ -1324,6 +1511,10 @@ def llm_extract_many(rec, body):
             payload.pop("thinking", None)
             response = call(payload)
         blocks = response.get("content") or []
+        if response.get("stop_reason") == "max_tokens":
+            send_local_alert("ai-max-tokens", "AI response was truncated",
+                             "Secondary extraction will retry; candidate remains pending.")
+            return None
         text = next((block.get("text") for block in blocks
                      if block.get("type") == "text" and block.get("text")), None)
         if text is None:
@@ -1334,6 +1525,8 @@ def llm_extract_many(rec, body):
             return None
         match = re.search(r"\{.*\}", text, re.S)
         document = json.loads(match.group(0) if match else text)
+        if not isinstance(document, dict) or not isinstance(document.get("incidents"), list):
+            raise ValueError("AI response must contain an incidents array")
         findings, seen = [], set()
         for item in document.get("incidents") or []:
             if not item.get("is_incident", True):
@@ -1349,6 +1542,8 @@ def llm_extract_many(rec, body):
             finding = {
                 "org": org, "kind": kind, "records": records, "incident_date": incident_date,
                 "date_basis": "incident", "is_followup": bool(item.get("is_followup")),
+                "first_disclosure_date": normalize_incident_date(item.get("first_disclosure_date")),
+                "disclosure_evidence": str(item.get("disclosure_evidence") or "")[:600],
             }
             identity = (org.casefold(), incident_date[:10], kind)
             if identity not in seen:
@@ -1376,6 +1571,39 @@ def gate(rec, src):
     if src.get("jp_only") and not JAPAN_RE.search(text + " " + rec["url"]):
         return False
     return True
+
+
+VAGUE_NOTICE_RE = re.compile(
+    r"お詫び|おわび|重要なお知らせ|重要なご報告|調査結果|"
+    r"(?:システム|サービス|サイト|ネットワーク).{0,15}(?:障害|停止|不具合)|"
+    r"(?:apology|important notice|security notice|service disruption)", re.I,
+)
+
+
+def needs_notice_body(rec, src):
+    official = (src.get("type") in {"official", "municipal", "json_news", "tdnet"}
+                or src.get("group") not in {None, "discovery"})
+    if not official or gate(rec, src) or NOISE_RE.search(rec["title"]):
+        return False
+    if rec.get("published") and not within_collection_window(rec["published"]):
+        return False
+    if not VAGUE_NOTICE_RE.search(rec["title"]):
+        return False
+    # Avoid fetching category/navigation pages such as /important/.
+    return probable_article(rec)
+
+
+def probable_article(rec):
+    """Distinguish article-like entries from a page of navigation links."""
+    title = rec.get("title", "").strip()
+    path = urllib.parse.urlsplit(rec.get("url", "")).path
+    if re.fullmatch(r"(?:ホーム|トップページ|お知らせ|ニュース|一覧|ニュースリリース|プレスリリース|RSS|HOME|TOP)", title, re.I):
+        return False
+    if re.search(r"(?:一覧(?:を見る|へ)?|サイトマップ|お問い合わせ|採用情報|会社概要|プライバシー|検索)$", title):
+        return False
+    dated = bool(rec.get("published") or re.search(r"20\d{2}[-/年.]?\d{2}|20\d{2}年\d{1,2}月", path + " " + title))
+    return (len(title) >= 6 and dated) or bool(INCIDENT_RE.search(title)) or (
+        len(title) >= 14 and bool(re.search(r"\.pdf$|/\d{3,}(?:[./]|$)|/detail/|/release/[^/]+", path, re.I)))
 
 
 def classify(rec, src, fetch_body_fn=fetch_body, observed_at=None, enforce_window=True,
@@ -1412,11 +1640,14 @@ def classify(rec, src, fetch_body_fn=fetch_body, observed_at=None, enforce_windo
         incident_date, date_basis = inferred_incident_date, "incident"
     else:
         incident_date, date_basis = source_published or page_published, "source"
-    if not incident_date or (enforce_window and not within_collection_window(incident_date, observed_at)):
+    disclosed_at = verified_disclosure_date(ai, rec, body, observed_at) if ai else None
+    if not incident_date or (enforce_window and not within_collection_window(incident_date, observed_at)
+                             and not disclosed_at):
         return None
     rec["published"] = incident_date
     res["incident_date"] = incident_date
     res["date_basis"] = date_basis
+    res["disclosed_at"] = disclosed_at
     return res
 
 
@@ -1469,7 +1700,10 @@ def store(c, src_name, rec, cl):
     if prev:  # follow-up or second outlet: worst type, largest count, add the reference, rescore
         kind = cl["kind"] if RANK[cl["kind"]] > RANK[prev["kind"] or "other"] else prev["kind"]
         recs = max(filter(None, [prev["records"], cl["records"]]), default=None)
-        c.execute("UPDATE incidents SET kind=?, records=? WHERE id=?", (kind, recs, prev["id"]))
+        c.execute("UPDATE incidents SET kind=?, records=?, disclosed_at=CASE "
+                  "WHEN disclosed_at IS NULL OR disclosed_at>? THEN COALESCE(?,disclosed_at) "
+                  "ELSE disclosed_at END WHERE id=?",
+                  (kind, recs, cl.get("disclosed_at"), cl.get("disclosed_at"), prev["id"]))
         c.execute("INSERT OR IGNORE INTO skipped VALUES(?)", (iid,))
         c.execute("INSERT OR IGNORE INTO refs VALUES(?,?,?,?)", (prev["id"], rec["url"], ref_src, rec["title"]))
         rescore(c, prev["id"])
@@ -1477,10 +1711,11 @@ def store(c, src_name, rec, cl):
     if cl.get("is_followup") and not cl.get("secondary_validated"):
         print(f"Unvalidated follow-up not added as a new incident: {rec['title'][:100]}")
         return False
-    c.execute("INSERT INTO incidents(id,source,title,url,summary,published,first_seen,org,kind,records)"
-              " VALUES(?,?,?,?,?,?,?,?,?,?)",
+    c.execute("INSERT INTO incidents(id,source,title,url,summary,published,first_seen,org,kind,records,disclosed_at)"
+              " VALUES(?,?,?,?,?,?,?,?,?,?,?)",
               (iid, src_name, rec["title"], rec["url"], rec["summary"][:1500],
-               rec["published"] or now_iso(), now_iso(), cl["org"], cl["kind"], cl["records"]))
+               rec["published"] or now_iso(), now_iso(), cl["org"], cl["kind"], cl["records"],
+               cl.get("disclosed_at")))
     c.execute("INSERT OR IGNORE INTO refs VALUES(?,?,?,?)", (iid, rec["url"], ref_src, rec["title"]))
     rescore(c, iid)
     return True
@@ -1524,7 +1759,7 @@ def corroborate_finding(finding, record, fetcher=fetch):
         if org_key not in text_key:
             continue
         published = normalize_incident_date(item.get("published"))
-        if published and not within_collection_window(finding["incident_date"], published):
+        if published and not within_collection_window(finding.get("disclosed_at") or finding["incident_date"], published):
             continue
         outlet = str(item.get("outlet") or "GNews corroboration").strip()
         outlet_key = outlet.casefold()
@@ -1606,7 +1841,7 @@ def review_pending(fetch_body_fn=fetch_body, corroborate_fn=corroborate_finding)
     rows = list(c.execute(
         "SELECT * FROM review_queue WHERE status='pending' ORDER BY first_seen,id"
     ))
-    confirmed = rejected = 0
+    confirmed = rejected = deferred = 0
     for index, row in enumerate(rows, 1):
         rec = {
             "title": row["title"], "url": row["url"], "summary": row["summary"] or "",
@@ -1614,12 +1849,23 @@ def review_pending(fetch_body_fn=fetch_body, corroborate_fn=corroborate_finding)
         }
         rec["url"] = resolve_url(rec["url"])
         body = fetch_body_fn(rec["url"])
+        if not body and urllib.parse.urlsplit(rec["url"]).path.lower().endswith(".pdf"):
+            deferred += 1
+            continue  # an unreadable PDF must not become an AI content rejection
         findings = ([] if (not body and FOLLOWUP_RE.search(rec["title"]))
                     else llm_extract_many(rec, body))
+        if findings is None:
+            # Missing credentials, a billing/rate limit, or a transient API error
+            # is not a content rejection. Retry on the next scheduled cycle.
+            deferred += len(rows) - index + 1
+            print(f"AI queue review deferred: {deferred} candidate(s) remain pending", flush=True)
+            break
         validated = []
         for finding in findings or []:
-            if not within_collection_window(finding["incident_date"], row["first_seen"]):
+            disclosed_at = verified_disclosure_date(finding, rec, body, row["first_seen"])
+            if not within_collection_window(finding["incident_date"], row["first_seen"]) and not disclosed_at:
                 continue
+            finding["disclosed_at"] = disclosed_at
             tier = ref_tier(rec["url"], row["source"] or "", rec["title"])
             corroboration = corroborate_fn(finding, rec)
             if tier not in {"official", "gov"} and not corroboration:
@@ -1643,7 +1889,7 @@ def review_pending(fetch_body_fn=fetch_body, corroborate_fn=corroborate_finding)
         if index % 10 == 0 or index == len(rows):
             print(f"AI queue review: {index}/{len(rows)} checked, {confirmed} confirmed", flush=True)
     c.close()
-    return {"total": len(rows), "confirmed": confirmed, "rejected": rejected}
+    return {"total": len(rows), "confirmed": confirmed, "rejected": rejected, "deferred": deferred}
 
 
 def handle_expected_source_block(connection, source, error, fetched):
@@ -1678,6 +1924,25 @@ def handle_expected_source_block(connection, source, error, fetched):
     return False
 
 
+def record_source_health(connection, source, items, error=None):
+    """Persist private parser health. Empty/navigation-only listings never alert."""
+    previous = connection.execute("SELECT * FROM source_health WHERE url=?", (source["url"],)).fetchone()
+    articles = sum(probable_article(item) for item in items)
+    good = error is None and articles > 0
+    streak = (previous["empty_streak"] if previous else 0) + 1 if error is None and not articles else 0
+    alerted = previous["alerted"] if previous else 0
+    checked = now_iso()
+    connection.execute(
+        "INSERT INTO source_health VALUES(?,?,?,?,?,?,?,?,?) "
+        "ON CONFLICT(url) DO UPDATE SET name=excluded.name,checked_at=excluded.checked_at,"
+        "last_success=excluded.last_success,item_count=excluded.item_count,article_count=excluded.article_count,"
+        "empty_streak=excluded.empty_streak,error=excluded.error",
+        (source["url"], source["name"], checked, checked if good else (previous["last_success"] if previous else None),
+         len(items), articles, streak, str(error) if error else None, alerted),
+    )
+    return "error" if error else "ok" if good else "empty"
+
+
 def poll(notify=False, fetcher=fetch, fetch_body_fn=fetch_body):
     c = db()
     new_rows = promote_reviewed(c)
@@ -1686,26 +1951,45 @@ def poll(notify=False, fetcher=fetch, fetch_body_fn=fetch_body):
         fetched = new = 0
         err = None
         source_error = None
+        items = []
+        body_checks = 0
         try:
             items = load_items(src, fetcher)
             fetched = len(items)
             for rec in items:
                 iid = item_id(rec["url"])
                 if c.execute(
-                    "SELECT 1 FROM incidents WHERE id=? UNION SELECT 1 FROM skipped WHERE id=? "
-                    "UNION SELECT 1 FROM review_queue WHERE id=?", (iid, iid, iid)
+                    "SELECT 1 FROM incidents WHERE id=? UNION SELECT 1 FROM review_queue WHERE id=?", (iid, iid)
                 ).fetchone():
-                    continue  # already published, rejected, or awaiting/private AI review
+                    continue  # already published or awaiting/private AI review
+                vague = needs_notice_body(rec, src)
+                cached_body = None
+                if vague:
+                    fingerprint = hashlib.sha256((rec["title"] + rec["summary"]).encode()).hexdigest()
+                    checked = c.execute("SELECT fingerprint FROM notice_checks WHERE id=?", (iid,)).fetchone()
+                    if checked and checked["fingerprint"] == fingerprint:
+                        continue
+                    if body_checks >= 8:
+                        continue  # leave unprocessed notices eligible for the next cycle
+                    body_checks += 1
+                    cached_body = fetch_body_fn(rec["url"])
+                    if not cached_body:
+                        continue  # failed extraction is retryable, not a permanent skip
+                    c.execute("INSERT OR REPLACE INTO notice_checks VALUES(?,?,?)", (iid, fingerprint, now_iso()))
+                    rec = {**rec, "summary": rec["summary"] + " " + cached_body}
+                elif c.execute("SELECT 1 FROM skipped WHERE id=?", (iid,)).fetchone():
+                    continue
                 if not gate(rec, src):
                     c.execute("INSERT OR IGNORE INTO skipped VALUES(?)", (iid,))
                     c.commit()
                     continue
                 source_published = rec.get("published")
-                cl = classify(rec, src, fetch_body_fn, use_ai=False)
+                cl = classify(rec, src, (lambda _: cached_body) if cached_body is not None else fetch_body_fn,
+                              use_ai=False)
                 tier = ref_tier(rec["url"], rec.get("outlet") or src["name"], rec["title"])
                 immediately_confirmed = (cl and not cl.get("is_followup")
                                          and cl["date_basis"] == "incident"
-                                         and tier in {"official", "gov"})
+                                         and tier in {"official", "gov"} and not vague)
                 if immediately_confirmed and store(c, src["name"], rec, cl):
                     new += 1
                     row = c.execute("SELECT score,confidence FROM incidents WHERE id=?",
@@ -1722,12 +2006,14 @@ def poll(notify=False, fetcher=fetch, fetch_body_fn=fetch_body):
             err = f"{type(e).__name__}: {e}"
             source_error = e
             print(f"[warn] {src['name']}: {err}", file=sys.stderr)
-        suppressed = handle_expected_source_block(c, src, source_error, fetched)
+        suppressed = handle_expected_source_block(c, src, source_error, sum(probable_article(item) for item in items))
+        record_source_health(c, src, items, source_error)
         if err and not suppressed:
             source_errors.append((src["name"], err))
         c.execute("INSERT INTO runs VALUES(?,?,?,?,?)", (now_iso(), src["name"], fetched, new, err))
         c.commit()
         print(f"{src['name']}: fetched={fetched} new={new}" + (f" ERR={err}" if err else ""))
+    c.commit()
     c.close()
     if source_errors:
         summary = "; ".join(f"{name}: {error}" for name, error in source_errors[:10])
@@ -1929,7 +2215,9 @@ def test_sources(fetcher=fetch, name_match=None, group=None):
         try:
             items = load_items(src, fetcher)
             hits = [i for i in items if gate(i, src)]
-            print(f"OK   {src['name']:<24} items={len(items):<4} gate_hits={len(hits):<4} {time.time()-t0:.1f}s")
+            articles = sum(probable_article(item) for item in items)
+            status = "OK  " if articles else "WARN"
+            print(f"{status} {src['name']:<24} items={len(items):<4} articles={articles:<4} gate_hits={len(hits):<4} {time.time()-t0:.1f}s")
             for i in hits[:3]:
                 print(f"       - {i['title'][:90]}")
         except Exception as e:
@@ -2128,12 +2416,13 @@ def all_public_incidents():
     c = db()
     rows = []
     for row in c.execute(
-        "SELECT id,published,org,kind,records,score,confidence "
+        "SELECT id,published,org,kind,records,score,confidence,disclosed_at "
         "FROM incidents ORDER BY published DESC, score DESC, id"
     ):
         incident = {
             "id": row["id"],
             "published_at": row["published"],
+            "disclosed_at": row["disclosed_at"],
             "organization": row["org"],
             "incident_type": row["kind"],
             "potential_records": row["records"],
@@ -2568,6 +2857,7 @@ def main():
     v.add_argument("--apply", action="store_true", help="restore only AI-confirmed valid incidents")
     v.add_argument("--publish", action="store_true", help="publish JSON/RSS after restoring valid incidents")
     sub.add_parser("review-pending", help="AI-review private candidates for promotion next cycle")
+    sub.add_parser("source-health", help="show private per-source parser health as JSON")
     sub.add_parser("test-alert", help="send a private Discord operations test alert")
     s = sub.add_parser("serve"); s.add_argument("--host", default="127.0.0.1"); s.add_argument("--port", type=int, default=8080)
     sub.add_parser("install-units")
@@ -2616,6 +2906,11 @@ def main():
             publish_public_json()
     elif a.cmd == "review-pending":
         review_pending()
+    elif a.cmd == "source-health":
+        connection = db()
+        print(json.dumps([dict(row) for row in connection.execute(
+            "SELECT * FROM source_health ORDER BY empty_streak DESC,name")], ensure_ascii=False, indent=2))
+        connection.close()
     elif a.cmd == "test-alert":
         if not send_local_alert(
             "manual-test", "Operations alert test",
