@@ -131,6 +131,27 @@ h2 { margin-bottom: 5px; font-size: 27px; letter-spacing: -0.025em; }
 .table-frame { position: relative; border-top: 1px solid var(--ink); overflow-x: auto; }
 table { width: 100%; min-width: 980px; border-collapse: collapse; font-size: 13px; }
 th { padding: 13px 12px; color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: 0.035em; text-align: left; text-transform: uppercase; white-space: nowrap; }
+.sort-button {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 2px 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  cursor: pointer;
+}
+.numeric .sort-button { justify-content: flex-end; }
+.sort-button:hover { color: var(--ink); }
+.sort-button:focus-visible { outline: 1px solid var(--ink); outline-offset: 4px; }
+.sort-indicator { width: 10px; color: var(--ink); font-size: 11px; }
+th[aria-sort="ascending"] .sort-indicator::after { content: "↑"; }
+th[aria-sort="descending"] .sort-indicator::after { content: "↓"; }
 td { padding: 17px 12px; border-top: 1px solid var(--line); vertical-align: top; }
 th:first-child, td:first-child { padding-left: 0; }
 th:last-child, td:last-child { padding-right: 0; }

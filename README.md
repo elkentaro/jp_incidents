@@ -4,6 +4,18 @@ A Python collector and static, bilingual dashboard for publicly reported cyberse
 
 The collector stores normalized incidents in SQLite, polls its sources hourly on the host machine, and writes the complete public dataset to `data/incidents.json` and `feed.xml`. The GitHub Pages site reads the JSON in the browser and paginates it at 100 records per page; feed readers can subscribe to the full-history RSS feed.
 
+## Coverage and confidence
+
+The collector keeps any relevant Japanese incident it finds, regardless of organization size. Its source mix includes broad Japanese/English news searches, security publications, incident aggregators, JPCERT/CC, global outlets filtered for Japan, and a direct official-government layer covering:
+
+- Tokyo Metropolitan Government
+- All 23 Tokyo special wards
+- All 20 ordinance-designated cities
+
+For official-government sites, the collector discovers advertised RSS/Atom feeds and scans current same-site homepage links. Health and environmental uses of terms such as “virus infection” and “leak” are excluded before analysis.
+
+Confidence is based on source authority and independent corroboration: direct official/government disclosures score highly, while single aggregators and social sources score lower. It is a guide to the reliability of the collected record, not incident severity. The dashboard can sort every column—including confidence—across the complete dataset before applying its 100-row pagination.
+
 ## Commands
 
 ```bash

@@ -37,10 +37,11 @@ Env:
   JPI_GIT_BRANCH     Git branch used by --publish (default main)
 
 Source entry format (JPI_SOURCES JSON, list of objects):
-  {"name": "...", "url": "...", "type": "rss"|"html", "jp_only": bool, "link_re": "regex"}
+  {"name": "...", "url": "...", "type": "rss"|"html"|"municipal", "jp_only": bool, "link_re": "regex"}
   rss  (default): RSS 2.0 / RSS 1.0 (RDF) / Atom
   html: a listing page; every <a> whose href matches link_re becomes an item, with the
         text around the link as its summary (how aggregator tables are read)
+  municipal: scan the official homepage's latest links and every RSS/Atom feed it advertises
 """
 import argparse, csv, hashlib, html, io, json, os, re, sqlite3, subprocess, sys, time
 import urllib.request, urllib.error, urllib.parse
@@ -92,6 +93,62 @@ SOURCES = [
     {"name": "The Record",       "url": "https://therecord.media/feed",           "jp_only": True},
 ]
 
+# Official public-sector sites requested for direct polling: Tokyo Metropolitan
+# Government, all 23 special wards, and all 20 ordinance-designated cities.
+# Municipal mode follows RSS/Atom autodiscovery links and also scans current homepage links.
+MUNICIPAL_SOURCES = [
+    {"name": "東京都 / Tokyo Metropolitan Government", "type": "municipal", "url": "https://www.metro.tokyo.lg.jp/"},
+    {"name": "千代田区 / Chiyoda", "type": "municipal", "url": "https://www.city.chiyoda.lg.jp/"},
+    {"name": "中央区 / Chuo", "type": "municipal", "url": "https://www.city.chuo.lg.jp/"},
+    {"name": "港区 / Minato", "type": "municipal", "url": "https://www.city.minato.tokyo.jp/"},
+    {"name": "新宿区 / Shinjuku", "type": "municipal", "url": "https://www.city.shinjuku.lg.jp/"},
+    {"name": "文京区 / Bunkyo", "type": "municipal", "url": "https://www.city.bunkyo.lg.jp/"},
+    {"name": "台東区 / Taito", "type": "municipal", "url": "https://www.city.taito.lg.jp/"},
+    {"name": "墨田区 / Sumida", "type": "municipal", "url": "https://www.city.sumida.lg.jp/"},
+    {"name": "江東区 / Koto", "type": "municipal", "url": "https://www.city.koto.lg.jp/"},
+    {"name": "品川区 / Shinagawa", "type": "municipal", "url": "https://www.city.shinagawa.tokyo.jp/"},
+    {"name": "目黒区 / Meguro", "type": "municipal", "url": "https://www.city.meguro.tokyo.jp/"},
+    {"name": "大田区 / Ota", "type": "municipal", "url": "https://www.city.ota.tokyo.jp/"},
+    {"name": "世田谷区 / Setagaya", "type": "municipal", "url": "https://www.city.setagaya.lg.jp/"},
+    {"name": "渋谷区 / Shibuya", "type": "municipal", "url": "https://www.city.shibuya.tokyo.jp/"},
+    {"name": "中野区 / Nakano", "type": "municipal", "url": "https://www.city.tokyo-nakano.lg.jp/"},
+    {"name": "杉並区 / Suginami", "type": "municipal", "url": "https://www.city.suginami.tokyo.jp/"},
+    {"name": "豊島区 / Toshima", "type": "municipal", "url": "https://www.city.toshima.lg.jp/"},
+    {"name": "北区 / Kita", "type": "municipal", "url": "https://www.city.kita.lg.jp/"},
+    {"name": "荒川区 / Arakawa", "type": "municipal", "url": "https://www.city.arakawa.tokyo.jp/"},
+    {"name": "板橋区 / Itabashi", "type": "municipal", "url": "https://www.city.itabashi.tokyo.jp/"},
+    {"name": "練馬区 / Nerima", "type": "municipal", "url": "https://www.city.nerima.tokyo.jp/"},
+    {"name": "足立区 / Adachi", "type": "municipal", "url": "https://www.city.adachi.tokyo.jp/"},
+    {"name": "葛飾区 / Katsushika", "type": "municipal", "url": "https://www.city.katsushika.lg.jp/"},
+    {"name": "江戸川区 / Edogawa", "type": "municipal", "url": "https://www.city.edogawa.tokyo.jp/"},
+    {"name": "札幌市 / Sapporo", "type": "municipal", "url": "https://www.city.sapporo.jp/"},
+    {"name": "仙台市 / Sendai", "type": "municipal", "url": "https://www.city.sendai.jp/"},
+    {"name": "さいたま市 / Saitama", "type": "municipal", "url": "https://www.city.saitama.lg.jp/"},
+    {"name": "千葉市 / Chiba", "type": "municipal", "url": "https://www.city.chiba.jp/"},
+    {"name": "横浜市 / Yokohama", "type": "municipal", "url": "https://www.city.yokohama.lg.jp/"},
+    {"name": "川崎市 / Kawasaki", "type": "municipal", "url": "https://www.city.kawasaki.jp/"},
+    {"name": "相模原市 / Sagamihara", "type": "municipal", "url": "https://www.city.sagamihara.kanagawa.jp/"},
+    {"name": "新潟市 / Niigata", "type": "municipal", "url": "https://www.city.niigata.lg.jp/"},
+    {"name": "静岡市 / Shizuoka", "type": "municipal", "url": "https://www.city.shizuoka.lg.jp/"},
+    {"name": "浜松市 / Hamamatsu", "type": "municipal", "url": "https://www.city.hamamatsu.shizuoka.jp/"},
+    {"name": "名古屋市 / Nagoya", "type": "municipal", "url": "https://www.city.nagoya.jp/"},
+    {"name": "京都市 / Kyoto", "type": "municipal", "url": "https://www.city.kyoto.lg.jp/"},
+    {"name": "大阪市 / Osaka", "type": "municipal", "url": "https://www.city.osaka.lg.jp/"},
+    {"name": "堺市 / Sakai", "type": "municipal", "url": "https://www.city.sakai.lg.jp/"},
+    {"name": "神戸市 / Kobe", "type": "municipal", "url": "https://www.city.kobe.lg.jp/"},
+    {"name": "岡山市 / Okayama", "type": "municipal", "url": "https://www.city.okayama.jp/"},
+    {"name": "広島市 / Hiroshima", "type": "municipal", "url": "https://www.city.hiroshima.lg.jp/"},
+    {"name": "北九州市 / Kitakyushu", "type": "municipal", "url": "https://www.city.kitakyushu.lg.jp/"},
+    {"name": "福岡市 / Fukuoka", "type": "municipal", "url": "https://www.city.fukuoka.lg.jp/"},
+    {"name": "熊本市 / Kumamoto", "type": "municipal", "url": "https://www.city.kumamoto.jp/"},
+]
+
+SOURCES.extend(MUNICIPAL_SOURCES)
+MUNICIPAL_HOSTS = {
+    (urllib.parse.urlsplit(src["url"]).hostname or "").removeprefix("www.")
+    for src in MUNICIPAL_SOURCES
+}
+
 # Gate: is this an incident report at all?  Wide on purpose; the LLM/regex step refines.
 INCIDENT_RE = re.compile(
     r"不正アクセス|不正ログイン|不正侵入|不正利用|不正操作|なりすまし|漏えい|漏洩|流出|持ち出|"
@@ -108,7 +165,8 @@ NOISE_RE = re.compile(
     r"対策(製品|サービス|ソリューション)|新製品|リリース(?!を)|how to|guide|top \d+|"
     r"相次ぐ|官房長官|大臣|首相|breach wave|wave of|roundup|year in review|"
     r"注意喚起|weekly report|社説|アンケート|％が|%が|脅威動向|上半期|下半期|年間|統計|コラム|解説|に学ぶ|"
-    r"対抗策|防御|実態|急増|倍に|トレンド|レポートを公開|調査(を|結果を)公開", re.I)
+    r"対抗策|防御|実態|急増|倍に|トレンド|レポートを公開|調査(を|結果を)公開|"
+    r"新型コロナウイルス|インフルエンザ|ワクチン|予防接種|アスベスト|複数発生", re.I)
 # Headlines about incidents abroad that reach the Japanese-language feeds.
 FOREIGN_RE = re.compile(
     r"フランス|アメリカ|米国|イギリス|英国|ドイツ|韓国|中国(?!電力|地方|銀行|新聞|バス)|台湾|インド|ロシア|"
@@ -165,6 +223,8 @@ def ref_tier(url, outlet="", title=""):
     host = host[4:] if host.startswith("www.") else host
     if SOCIAL_RE.search(host):
         return "social"
+    if host in MUNICIPAL_HOSTS:
+        return "gov"
     if GOV_RE.search(host):
         return "gov"
     if is_wrapper(url) or "bing.com" in host:  # wrapper: judge by the outlet name
@@ -344,6 +404,60 @@ def parse_html_list(raw, src):
     return out
 
 
+def discover_feed_urls(raw, base_url):
+    """Find RSS/Atom endpoints explicitly advertised by an official homepage."""
+    page = decode(raw)
+    feeds = []
+    for tag in re.findall(r"<link\b[^>]*>", page, re.I):
+        attrs = {
+            key.lower(): html.unescape(value)
+            for key, _, value in re.findall(r"([\w:-]+)\s*=\s*([\"'])(.*?)\2", tag, re.I | re.S)
+        }
+        rel = attrs.get("rel", "").lower()
+        mime = attrs.get("type", "").lower()
+        href = attrs.get("href", "")
+        if href and ("alternate" in rel) and ("rss" in mime or "atom" in mime or "xml" in mime):
+            feeds.append(urllib.parse.urljoin(base_url, href))
+    for match in re.finditer(r'<a\b[^>]*href=["\']([^"\']+)["\'][^>]*>(.*?)</a>', page, re.I | re.S):
+        href, label = html.unescape(match.group(1)), strip_html(match.group(2))
+        if re.search(r"\bRSS\b|Atom|フィード", label, re.I) or re.search(r"(?:rss|atom)[^/]*\.(?:xml|rdf)$", href, re.I):
+            feeds.append(urllib.parse.urljoin(base_url, href))
+    unique = []
+    for url in feeds:
+        if _http(url) and url not in unique:
+            unique.append(url)
+    return unique[:10]
+
+
+def load_municipal_items(raw, src, fetcher):
+    """Read advertised feeds plus current same-site links from an official homepage."""
+    items = []
+    feed_urls = discover_feed_urls(raw, src["url"])
+    for feed_url in feed_urls:
+        try:
+            items.extend(parse_feed(fetcher(feed_url)))
+        except (urllib.error.URLError, ET.ParseError, TimeoutError, OSError, ValueError):
+            continue  # one stale feed link must not suppress the municipality's homepage
+
+    base_host = (urllib.parse.urlsplit(src["url"]).hostname or "").removeprefix("www.")
+    feed_keys = {norm_url(url) for url in feed_urls}
+    for item in parse_html_list(raw, src):
+        item_host = (urllib.parse.urlsplit(item["url"]).hostname or "").removeprefix("www.")
+        if (item_host == base_host or item_host.endswith("." + base_host)) \
+                and norm_url(item["url"]) not in feed_keys \
+                and not re.search(r"(?:重要な)?お知らせRSS|RSSフィード", item["title"], re.I):
+            items.append(item)
+
+    deduped = []
+    seen = set()
+    for item in items:
+        key = norm_url(item["url"])
+        if key not in seen:
+            seen.add(key)
+            deduped.append(item)
+    return deduped
+
+
 def fetch(url, timeout=25):
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*", "Accept-Language": "ja,en"})
     with urllib.request.urlopen(req, timeout=timeout) as r:
@@ -386,6 +500,8 @@ def fetch_body(url, limit=6000):
 
 def load_items(src, fetcher=fetch):
     raw = fetcher(src["url"])
+    if src.get("type") == "municipal":
+        return load_municipal_items(raw, src, fetcher)
     return parse_html_list(raw, src) if src.get("type") == "html" else parse_feed(raw)
 
 
@@ -597,9 +713,11 @@ def poll(notify=False, fetcher=fetch, fetch_body_fn=fetch_body):
     return new_rows
 
 
-def test_sources(fetcher=fetch):
+def test_sources(fetcher=fetch, name_match=None):
     """Fetch every source once, no DB writes: shows which URLs work and what they yield."""
     for src in load_sources():
+        if name_match and name_match.casefold() not in src["name"].casefold():
+            continue
         t0 = time.time()
         try:
             items = load_items(src, fetcher)
@@ -616,7 +734,7 @@ def fmt_records(n):
 
 
 def send_webhook(rows):
-    url = os.environ.get("WEBHOOK_URL")
+    url = os.environ.get("WEBHOOK_URL", "").strip()
     if not url:
         print("[warn] --notify set but WEBHOOK_URL empty", file=sys.stderr)
         return
@@ -732,7 +850,7 @@ def _rss_date(value):
 
 def _xml_safe(value):
     """Remove characters XML 1.0 cannot represent."""
-    return re.sub(r"[^\x09\x0a\x0d\x20-\ud7ff\ue000-\ufffd]", "", str(value or ""))
+    return re.sub(r"[^\x09\x0a\x0d\x20-\ud7ff\ue000-\ufffd\U00010000-\U0010ffff]", "", str(value or ""))
 
 
 def write_public_rss(path=RSS_PATH, incidents=None):
@@ -973,7 +1091,8 @@ WantedBy=multi-user.target
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
-    sub.add_parser("sources")
+    t = sub.add_parser("sources")
+    t.add_argument("--match", help="only test source names containing this text")
     p = sub.add_parser("poll"); p.add_argument("--notify", action="store_true")
     p.add_argument("--publish", action="store_true",
                    help="update the static JSON/RSS, commit changes, and push to GitHub")
@@ -991,7 +1110,7 @@ def main():
     sub.add_parser("install-units")
     a = ap.parse_args()
     if a.cmd == "sources":
-        test_sources()
+        test_sources(name_match=a.match)
     elif a.cmd == "poll":
         poll(a.notify)
         if a.publish:

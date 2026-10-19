@@ -75,12 +75,12 @@
         <table>
           <thead>
             <tr>
-              <th scope="col" data-i18n="date">Date</th>
-              <th scope="col" data-i18n="organization">Organization</th>
-              <th scope="col" data-i18n="incidentType">Incident type</th>
-              <th scope="col" class="numeric" data-i18n="potentialRecords">Potential records</th>
-              <th scope="col" data-i18n="confidence">Confidence</th>
-              <th scope="col" data-i18n="sources">Sources</th>
+              <th scope="col" data-sort="published_at" aria-sort="descending"><button class="sort-button" type="button"><span data-i18n="date">Date</span><span class="sort-indicator" aria-hidden="true"></span></button></th>
+              <th scope="col" data-sort="organization"><button class="sort-button" type="button"><span data-i18n="organization">Organization</span><span class="sort-indicator" aria-hidden="true"></span></button></th>
+              <th scope="col" data-sort="incident_type"><button class="sort-button" type="button"><span data-i18n="incidentType">Incident type</span><span class="sort-indicator" aria-hidden="true"></span></button></th>
+              <th scope="col" class="numeric" data-sort="potential_records"><button class="sort-button" type="button"><span data-i18n="potentialRecords">Potential records</span><span class="sort-indicator" aria-hidden="true"></span></button></th>
+              <th scope="col" data-sort="confidence_score"><button class="sort-button" type="button"><span data-i18n="confidence">Confidence</span><span class="sort-indicator" aria-hidden="true"></span></button></th>
+              <th scope="col" data-sort="sources"><button class="sort-button" type="button"><span data-i18n="sources">Sources</span><span class="sort-indicator" aria-hidden="true"></span></button></th>
             </tr>
           </thead>
           <tbody id="incident-rows"></tbody>

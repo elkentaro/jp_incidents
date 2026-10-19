@@ -36,6 +36,8 @@ const copy = {
     previous: "Previous",
     next: "Next",
     switchLanguage: "日本語に切り替える",
+    sortAscending: (label) => `Sort by ${label}, ascending`,
+    sortDescending: (label) => `Sort by ${label}, descending`,
     unknown: "Not stated",
     types: { "data leak": "Data leak", "unauthorized access": "Unauthorized access", other: "Other" },
     levels: { high: "High", medium: "Medium", low: "Low" }
@@ -73,6 +75,8 @@ const copy = {
     previous: "前へ",
     next: "次へ",
     switchLanguage: "Switch to English",
+    sortAscending: (label) => `${label}を昇順で並べ替え`,
+    sortDescending: (label) => `${label}を降順で並べ替え`,
     unknown: "記載なし",
     types: { "data leak": "情報漏えい", "unauthorized access": "不正アクセス", other: "その他" },
     levels: { high: "高", medium: "中", low: "低" }
@@ -100,6 +104,8 @@ const state = {
   incidents: [],
   updatedAt: null,
   page: 1,
+  sortKey: "published_at",
+  sortDirection: "desc",
   loaded: false
 };
 
@@ -146,6 +152,7 @@ function applyLanguage() {
     ["medium", languageCopy.levels.medium],
     ["low", languageCopy.levels.low]
   ]);
+  updateSortHeaders();
   render();
 }
 
@@ -178,6 +185,48 @@ function filteredIncidents() {
       ...(incident.sources || []).flatMap((source) => [source.name, source.url])
     ].filter(Boolean).join(" ").toLocaleLowerCase(state.language);
     return searchable.includes(query);
+  });
+}
+
+function sortValue(incident, key) {
+  if (key === "published_at") return Date.parse(incident.published_at);
+  if (key === "sources") return (incident.sources || []).length;
+  if (key === "incident_type") return text("types")[incident.incident_type] || incident.incident_type;
+  return incident[key];
+}
+
+function sortedIncidents(incidents) {
+  const direction = state.sortDirection === "asc" ? 1 : -1;
+  const collator = new Intl.Collator(state.language === "ja" ? "ja-JP" : "en-US", {
+    numeric: true, sensitivity: "base"
+  });
+  return [...incidents].sort((first, second) => {
+    const a = sortValue(first, state.sortKey);
+    const b = sortValue(second, state.sortKey);
+    const aMissing = a === null || a === undefined || a === "" || Number.isNaN(a);
+    const bMissing = b === null || b === undefined || b === "" || Number.isNaN(b);
+    if (aMissing && bMissing) return 0;
+    if (aMissing) return 1;
+    if (bMissing) return -1;
+    const comparison = typeof a === "number" && typeof b === "number"
+      ? a - b
+      : collator.compare(String(a), String(b));
+    return comparison * direction;
+  });
+}
+
+function updateSortHeaders() {
+  document.querySelectorAll("th[data-sort]").forEach((header) => {
+    const active = header.dataset.sort === state.sortKey;
+    const direction = active ? state.sortDirection : null;
+    if (direction) header.setAttribute("aria-sort", direction === "asc" ? "ascending" : "descending");
+    else header.removeAttribute("aria-sort");
+    const button = header.querySelector("button");
+    const label = header.querySelector("[data-i18n]")?.textContent || "";
+    const nextDirection = active && direction === "asc" ? "desc" : "asc";
+    button.setAttribute("aria-label", nextDirection === "asc"
+      ? text("sortAscending")(label)
+      : text("sortDescending")(label));
   });
 }
 
@@ -291,7 +340,7 @@ function renderPagination(totalPages) {
 
 function render() {
   if (!state.loaded) return;
-  const filtered = filteredIncidents();
+  const filtered = sortedIncidents(filteredIncidents());
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   state.page = Math.min(state.page, totalPages);
   const start = (state.page - 1) * PAGE_SIZE;
@@ -302,6 +351,7 @@ function render() {
   elements.results.textContent = `${text("results")(filtered.length, state.incidents.length)} · ${text("page")(state.page, totalPages)}`;
   elements.rows.replaceChildren(...visible.map(incidentRow));
   elements.empty.hidden = filtered.length !== 0;
+  updateSortHeaders();
   renderPagination(totalPages);
 }
 
@@ -324,6 +374,18 @@ elements.reset.addEventListener("click", () => {
   elements.confidence.value = "";
   filtersChanged();
   elements.search.focus();
+});
+document.querySelectorAll("th[data-sort] .sort-button").forEach((button) => {
+  button.addEventListener("click", () => {
+    const key = button.closest("th").dataset.sort;
+    if (state.sortKey === key) state.sortDirection = state.sortDirection === "asc" ? "desc" : "asc";
+    else {
+      state.sortKey = key;
+      state.sortDirection = "asc";
+    }
+    state.page = 1;
+    render();
+  });
 });
 
 async function loadData() {
