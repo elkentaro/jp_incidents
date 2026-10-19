@@ -24,7 +24,7 @@ const copy = {
     lastUpdated: "Data updated",
     coverage: "Coverage",
     trendTitle: "90-day incident trend",
-    trendCount: (count) => `${count.toLocaleString("en-US")} reported`,
+    trendCount: (count, peak) => `${count.toLocaleString("en-US")} reported · peak ${peak.toLocaleString("en-US")}/day`,
     trendAria: (total, peak) => `Daily incident counts for the last 90 days. ${total} incidents total; highest daily count ${peak}.`,
     directoryTitle: "Incident directory",
     reset: "Reset filters",
@@ -67,7 +67,7 @@ const copy = {
     lastUpdated: "データ更新日時",
     coverage: "収録期間",
     trendTitle: "過去90日間のインシデント推移",
-    trendCount: (count) => `${count.toLocaleString("ja-JP")}件`,
+    trendCount: (count, peak) => `${count.toLocaleString("ja-JP")}件 · 最大${peak.toLocaleString("ja-JP")}件/日`,
     trendAria: (total, peak) => `過去90日間の日別インシデント件数。合計${total}件、1日の最大件数${peak}件。`,
     directoryTitle: "インシデント一覧",
     reset: "絞り込みを解除",
@@ -111,6 +111,8 @@ const elements = {
   coverage: document.querySelector("#coverage-range"),
   trend: document.querySelector("#trend-chart"),
   trendTotal: document.querySelector("#trend-total"),
+  trendStart: document.querySelector("#trend-start"),
+  trendEnd: document.querySelector("#trend-end"),
   results: document.querySelector("#result-count"),
   search: document.querySelector("#search"),
   type: document.querySelector("#type-filter"),
@@ -126,6 +128,8 @@ const elements = {
 const state = {
   language: savedLanguage() || (navigator.language.startsWith("ja") ? "ja" : "en"),
   incidents: [],
+  dailyCounts: [],
+  dateRange: null,
   updatedAt: null,
   page: 1,
   sortKey: "published_at",
@@ -220,75 +224,44 @@ function tokyoDateKey(date) {
   return `${values.year}-${values.month}-${values.day}`;
 }
 
-function svgNode(name, attributes = {}, value = null) {
-  const node = document.createElementNS("http://www.w3.org/2000/svg", name);
-  Object.entries(attributes).forEach(([key, attribute]) => node.setAttribute(key, attribute));
-  if (value !== null) node.textContent = value;
-  return node;
-}
-
 function renderTrend() {
-  const dayMs = 24 * 60 * 60 * 1000;
-  const now = Date.now();
-  const days = Array.from({ length: 90 }, (_, index) => {
-    const date = new Date(now - (89 - index) * dayMs);
-    return { date, key: tokyoDateKey(date), count: 0 };
-  });
-  const byKey = new Map(days.map((day) => [day.key, day]));
-  state.incidents.forEach((incident) => {
-    const date = new Date(incident.published_at);
-    if (!Number.isNaN(date.valueOf())) {
-      const day = byKey.get(tokyoDateKey(date));
-      if (day) day.count += 1;
-    }
-  });
+  let days = state.dailyCounts.map((day) => ({
+    date: new Date(`${day.date}T00:00:00+09:00`), key: day.date, count: day.count
+  }));
+  if (days.length !== 90) {
+    const dayMs = 24 * 60 * 60 * 1000;
+    const now = Date.now();
+    days = Array.from({ length: 90 }, (_, index) => {
+      const date = new Date(now - (89 - index) * dayMs);
+      return { date, key: tokyoDateKey(date), count: 0 };
+    });
+    const byKey = new Map(days.map((day) => [day.key, day]));
+    state.incidents.forEach((incident) => {
+      const date = new Date(incident.published_at);
+      if (!Number.isNaN(date.valueOf())) {
+        const day = byKey.get(tokyoDateKey(date));
+        if (day) day.count += 1;
+      }
+    });
+  }
 
   const total = days.reduce((sum, day) => sum + day.count, 0);
-  const peak = Math.max(1, ...days.map((day) => day.count));
-  const width = 420;
-  const top = 10;
-  const bottom = 126;
-  const left = 29;
-  const right = 416;
-  const plotHeight = bottom - top;
-  const x = (index) => left + (index / (days.length - 1)) * (right - left);
-  const y = (count) => bottom - (count / peak) * plotHeight;
-  const points = days.map((day, index) => `${x(index).toFixed(2)},${y(day.count).toFixed(2)}`);
-
-  replaceContent(elements.trend, []);
-  const gridValues = [...new Set([0, Math.ceil(peak / 2), peak])].sort((a, b) => a - b);
-  gridValues.forEach((value) => {
-    const gridY = y(value);
-    elements.trend.append(
-      svgNode("line", { x1: left, y1: gridY, x2: right, y2: gridY, class: "chart-grid" }),
-      svgNode("text", { x: 0, y: gridY + 3, class: "chart-label" }, String(value))
-    );
-  });
-  elements.trend.append(
-    svgNode("path", {
-      d: `M ${left} ${bottom} L ${points.join(" L ")} L ${right} ${bottom} Z`, class: "chart-area"
-    }),
-    svgNode("polyline", { points: points.join(" "), class: "chart-line" })
-  );
-
+  const actualPeak = Math.max(...days.map((day) => day.count));
+  const peak = Math.max(1, actualPeak);
   const locale = state.language === "ja" ? "ja-JP" : "en-US";
   const shortDate = new Intl.DateTimeFormat(locale, { month: "short", day: "numeric", timeZone: "Asia/Tokyo" });
-  days.forEach((day, index) => {
-    const nextX = index === days.length - 1 ? right : x(index + 1);
-    const previousX = index === 0 ? left : x(index - 1);
-    const hit = svgNode("rect", {
-      x: (x(index) - (x(index) - previousX) / 2).toFixed(2), y: top,
-      width: ((nextX - previousX) / 2).toFixed(2), height: bottom - top, class: "chart-hit"
-    });
-    hit.append(svgNode("title", {}, `${shortDate.format(day.date)}: ${day.count.toLocaleString(locale)}`));
-    elements.trend.append(hit);
+  const bars = days.map((day) => {
+    const bar = document.createElement("span");
+    bar.className = "trend-bar";
+    bar.style.height = day.count ? `${Math.max(2, (day.count / peak) * 100)}%` : "1px";
+    bar.title = `${shortDate.format(day.date)}: ${day.count.toLocaleString(locale)}`;
+    return bar;
   });
-  elements.trend.append(
-    svgNode("text", { x: left, y: 149, class: "chart-label" }, shortDate.format(days[0].date)),
-    svgNode("text", { x: right, y: 149, class: "chart-label", "text-anchor": "end" }, shortDate.format(days[days.length - 1].date))
-  );
-  elements.trend.setAttribute("aria-label", text("trendAria")(total, Math.max(...days.map((day) => day.count))));
-  elements.trendTotal.textContent = text("trendCount")(total);
+  replaceContent(elements.trend, bars);
+  elements.trend.setAttribute("aria-label", text("trendAria")(total, actualPeak));
+  elements.trendTotal.textContent = text("trendCount")(total, actualPeak);
+  elements.trendStart.textContent = shortDate.format(days[0].date);
+  elements.trendEnd.textContent = shortDate.format(days[days.length - 1].date);
 }
 
 function filteredIncidents() {
@@ -517,6 +490,8 @@ async function loadData() {
     const data = await response.json();
     if (!Array.isArray(data.incidents)) throw new Error("Invalid data document");
     state.incidents = data.incidents;
+    state.dailyCounts = Array.isArray(data.daily_counts_90d) ? data.daily_counts_90d : [];
+    state.dateRange = data.date_range || null;
     state.updatedAt = data.updated_at;
     state.loaded = true;
     elements.loading.hidden = true;

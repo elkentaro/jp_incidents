@@ -6,13 +6,17 @@ The collector stores normalized incidents in SQLite, polls its sources hourly on
 
 ## Coverage and confidence
 
-The collector keeps any relevant Japanese incident it finds, regardless of organization size. Its source mix includes broad Japanese/English news searches, security publications, incident aggregators, JPCERT/CC, global outlets filtered for Japan, and a direct official-government layer covering:
+The collector keeps any relevant Japanese incident it finds, regardless of organization size. Its source mix includes broad Japanese/English news searches, security publications, incident aggregators, JPCERT/CC, global outlets filtered for Japan, and direct official-site layers.
+
+The government layer covers:
 
 - Tokyo Metropolitan Government
 - All 23 Tokyo special wards
 - All 20 ordinance-designated cities
 
-For official-government sites, the collector discovers advertised RSS/Atom feeds and scans current same-site homepage links. Health and environmental uses of terms such as “virus infection” and “leak” are excluded before analysis.
+The transport layer polls 92 major official operator and group sites across rail, subway, airlines, airports, buses, ferries, taxis, and their distinct parent companies. Broad news monitoring supplies additional coverage for public companies and named subsidiaries; subsidiary incidents remain listed under the organization reported by the source.
+
+For official sites, the collector discovers advertised RSS/Atom feeds and scans current same-site links. Health and environmental uses of terms such as “virus infection” and “leak” are excluded before analysis.
 
 Confidence is based on source authority and independent corroboration: direct official/government disclosures score highly, while single aggregators and social sources score lower. It is a guide to the reliability of the collected record, not incident severity. The dashboard can sort every column—including confidence—across the complete dataset before applying its 100-row pagination.
 

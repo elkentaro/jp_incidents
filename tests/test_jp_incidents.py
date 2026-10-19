@@ -4,6 +4,7 @@ import sqlite3
 import tempfile
 import unittest
 import xml.etree.ElementTree as ET
+from datetime import datetime
 
 import jp_incidents as app
 
@@ -13,14 +14,16 @@ class StaticPublishingTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.old_db = app.DB_PATH
         app.DB_PATH = os.path.join(self.temp.name, "test.db")
+        published = app.now_iso()
+        self.published_day = datetime.fromisoformat(published).astimezone(app.JST).date().isoformat()
         connection = app.db()
         connection.execute(
             "INSERT INTO incidents(id,source,title,url,summary,published,first_seen,org,kind,records,score,confidence) "
             "VALUES(?,?,?,?,?,?,?,?,?,?,?,?)",
             (
                 "incident-1", "東京都 / Tokyo Metropolitan Government", "個人情報の漏えいについて",
-                "https://www.metro.tokyo.lg.jp/example", "", "2026-10-19T00:00:00+00:00",
-                "2026-10-19T00:01:00+00:00", "Example Organization", "data leak", 1200, 60, "high",
+                "https://www.metro.tokyo.lg.jp/example", "", published,
+                published, "Example Organization", "data leak", 1200, 60, "high",
             ),
         )
         connection.execute(
@@ -48,9 +51,13 @@ class StaticPublishingTests(unittest.TestCase):
 
         with open(json_path, encoding="utf-8") as source:
             document = json.load(source)
+        self.assertEqual(document["schema_version"], 2)
         self.assertEqual(document["total"], 1)
         self.assertEqual(document["incidents"][0]["potential_records"], 1200)
         self.assertEqual(len(document["incidents"][0]["sources"]), 1)
+        self.assertEqual(len(document["daily_counts_90d"]), 90)
+        self.assertEqual(sum(day["count"] for day in document["daily_counts_90d"]), 1)
+        self.assertEqual(document["date_range"], {"start": self.published_day, "end": self.published_day})
 
         items = ET.parse(rss_path).findall("./channel/item")
         self.assertEqual(len(items), 1)
@@ -81,7 +88,10 @@ class MunicipalSourceTests(unittest.TestCase):
 
     def test_health_and_environment_titles_are_noise(self):
         source = {"name": "Official", "type": "municipal", "url": "https://example.jp/"}
-        for title in ("インフルエンザウイルス感染症", "ワクチン予防接種", "アスベストの漏えい"):
+        for title in (
+            "インフルエンザウイルス感染症", "ワクチン予防接種", "アスベストの漏えい",
+            "船舶からの重油流出", "スポンサー契約のお知らせ",
+        ):
             record = {"title": title, "summary": "", "url": "https://example.jp/a"}
             self.assertFalse(app.gate(record, source), title)
 
@@ -89,6 +99,12 @@ class MunicipalSourceTests(unittest.TestCase):
         self.assertEqual(app.ref_tier("https://www.city.kumamoto.jp/example"), "gov")
         self.assertEqual(app.ref_tier("https://www.city.shibuya.tokyo.jp/example"), "gov")
         self.assertEqual(len(app.MUNICIPAL_SOURCES), 44)
+
+    def test_transport_registry_is_official_and_covers_every_mode(self):
+        sectors = {source["sector"] for source in app.TRANSPORT_SOURCES}
+        self.assertTrue({"rail", "air", "airport", "bus", "ferry", "taxi", "parent"} <= sectors)
+        self.assertGreaterEqual(len(app.TRANSPORT_SOURCES), 90)
+        self.assertEqual(app.ref_tier("https://www.jreast.co.jp/example"), "official")
 
 
 if __name__ == "__main__":

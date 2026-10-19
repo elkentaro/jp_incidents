@@ -101,12 +101,18 @@ h1 { margin-bottom: 18px; max-width: 860px; font-size: clamp(42px, 5.6vw, 76px);
 .trend-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 8px; }
 .trend-heading h2 { margin: 0; color: var(--muted); font-size: 12px; font-weight: 600; letter-spacing: 0; }
 .trend-total { font-size: 12px; font-weight: 680; }
-.trend-chart { width: 100%; height: auto; aspect-ratio: 420 / 154; display: block; overflow: visible; }
-.chart-grid { stroke: var(--line); stroke-width: 1; vector-effect: non-scaling-stroke; }
-.chart-area { fill: var(--wash); }
-.chart-line { fill: none; stroke: var(--ink); stroke-width: 1.75; vector-effect: non-scaling-stroke; }
-.chart-label { fill: var(--subtle); font: 10px Inter, ui-sans-serif, sans-serif; }
-.chart-hit { fill: transparent; cursor: crosshair; }
+.trend-chart {
+  width: 100%;
+  height: 126px;
+  display: flex;
+  align-items: flex-end;
+  gap: 1px;
+  border-bottom: 1px solid var(--line-strong);
+  background: linear-gradient(to bottom, transparent 49.5%, var(--line) 50%, transparent 50.5%);
+}
+.trend-bar { flex: 1 1 0; min-width: 1px; background: var(--ink); opacity: 0.82; }
+.trend-bar:hover { opacity: 1; }
+.trend-dates { display: flex; justify-content: space-between; margin-top: 6px; color: var(--subtle); font-size: 10px; }
 .summary { margin: 0; display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line-strong); }
 .summary div { padding: 18px 0 4px; }
 .summary div + div { padding-left: 24px; border-left: 1px solid var(--line); }

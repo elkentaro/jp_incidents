@@ -41,18 +41,20 @@ Source entry format (JPI_SOURCES JSON, list of objects):
   rss  (default): RSS 2.0 / RSS 1.0 (RDF) / Atom
   html: a listing page; every <a> whose href matches link_re becomes an item, with the
         text around the link as its summary (how aggregator tables are read)
-  municipal: scan the official homepage's latest links and every RSS/Atom feed it advertises
+  municipal/official: scan the official homepage's latest links and every RSS/Atom feed it advertises
 """
 import argparse, csv, hashlib, html, io, json, os, re, sqlite3, subprocess, sys, time
 import urllib.request, urllib.error, urllib.parse
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from email.utils import format_datetime, parsedate_to_datetime
+from zoneinfo import ZoneInfo
 
 DB_PATH = os.environ.get("JPI_DB", "jp_incidents.db")
 JSON_PATH = os.environ.get("JPI_JSON_PATH", "data/incidents.json")
 RSS_PATH = os.environ.get("JPI_RSS_PATH", "feed.xml")
 UA = "Mozilla/5.0 (compatible; jp-incidents-collector/2.0; +security research)"
+JST = ZoneInfo("Asia/Tokyo")
 
 
 def gnews(q):
@@ -143,10 +145,127 @@ MUNICIPAL_SOURCES = [
     {"name": "熊本市 / Kumamoto", "type": "municipal", "url": "https://www.city.kumamoto.jp/"},
 ]
 
+for _source in MUNICIPAL_SOURCES:
+    _source["group"] = "government"
+
+# Major nationwide passenger-transport operators and distinct parent/holding companies.
+# Rail-owned bus companies generally disclose group-wide incidents through the railway parent;
+# the independent bus groups and every JR bus operator are included separately.
+_TRANSPORT_SITES = [
+    # JR companies and major private railways
+    ("rail", "JR北海道 / JR Hokkaido", "https://www.jrhokkaido.co.jp/"),
+    ("rail", "JR東日本 / JR East", "https://www.jreast.co.jp/"),
+    ("rail", "JR東海 / JR Central", "https://jr-central.co.jp/"),
+    ("rail", "JR西日本 / JR West", "https://www.westjr.co.jp/"),
+    ("rail", "JR四国 / JR Shikoku", "https://www.jr-shikoku.co.jp/"),
+    ("rail", "JR九州 / JR Kyushu", "https://www.jrkyushu.co.jp/"),
+    ("rail", "JR貨物 / JR Freight", "https://www.jrfreight.co.jp/"),
+    ("rail", "東武鉄道 / Tobu Railway", "https://www.tobu.co.jp/"),
+    ("rail", "西武鉄道 / Seibu Railway", "https://www.seiburailway.jp/"),
+    ("parent", "西武ホールディングス / Seibu Holdings", "https://www.seibuholdings.co.jp/"),
+    ("rail", "京成電鉄 / Keisei Electric Railway", "https://www.keisei.co.jp/"),
+    ("rail", "京王電鉄 / Keio Corporation", "https://www.keio.co.jp/"),
+    ("rail", "小田急電鉄 / Odakyu Electric Railway", "https://www.odakyu.jp/"),
+    ("rail", "東急 / Tokyu", "https://www.tokyu.co.jp/"),
+    ("rail", "京浜急行電鉄 / Keikyu", "https://www.keikyu.co.jp/"),
+    ("rail", "東京メトロ / Tokyo Metro", "https://www.tokyometro.jp/"),
+    ("rail", "相鉄グループ / Sotetsu Group", "https://www.sotetsu.co.jp/"),
+    ("rail", "名古屋鉄道 / Meitetsu", "https://www.meitetsu.co.jp/"),
+    ("rail", "近畿日本鉄道 / Kintetsu Railway", "https://www.kintetsu.co.jp/"),
+    ("parent", "近鉄グループホールディングス / Kintetsu Group Holdings", "https://www.kintetsu-g-hd.co.jp/"),
+    ("rail", "南海電気鉄道 / Nankai Electric Railway", "https://www.nankai.co.jp/"),
+    ("rail", "京阪ホールディングス / Keihan Holdings", "https://www.keihan.co.jp/"),
+    ("rail", "阪急電鉄 / Hankyu Railway", "https://www.hankyu.co.jp/"),
+    ("rail", "阪神電気鉄道 / Hanshin Electric Railway", "https://www.hanshin.co.jp/"),
+    ("parent", "阪急阪神ホールディングス / Hankyu Hanshin Holdings", "https://www.hankyu-hanshin.co.jp/"),
+    ("rail", "西日本鉄道 / Nishitetsu", "https://www.nishitetsu.co.jp/"),
+    # Large public and urban rail/subway operators
+    ("rail", "東京都交通局 / Toei Transportation", "https://www.kotsu.metro.tokyo.jp/"),
+    ("rail", "Osaka Metro", "https://www.osakametro.co.jp/"),
+    ("rail", "名古屋市交通局 / Nagoya Transportation Bureau", "https://www.kotsu.city.nagoya.jp/"),
+    ("rail", "横浜市交通局 / Yokohama Transportation Bureau", "https://www.city.yokohama.lg.jp/kotsu/"),
+    ("rail", "京都市交通局 / Kyoto Transportation Bureau", "https://www.city.kyoto.lg.jp/kotsu/"),
+    ("rail", "札幌市交通局 / Sapporo Transportation", "https://www.city.sapporo.jp/st/"),
+    ("rail", "仙台市交通局 / Sendai Transportation Bureau", "https://www.kotsu.city.sendai.jp/"),
+    ("rail", "福岡市地下鉄 / Fukuoka City Subway", "https://subway.city.fukuoka.lg.jp/"),
+    ("rail", "つくばエクスプレス / Tsukuba Express", "https://www.mir.co.jp/"),
+    ("rail", "東京臨海高速鉄道 / Tokyo Waterfront Area Rapid Transit", "https://www.twr.co.jp/"),
+    ("rail", "ゆりかもめ / Yurikamome", "https://www.yurikamome.co.jp/"),
+    ("rail", "東京モノレール / Tokyo Monorail", "https://www.tokyo-monorail.co.jp/"),
+    # Airlines and major airport operators
+    ("air", "ANAグループ / ANA Group", "https://www.ana.co.jp/group/"),
+    ("air", "日本航空 / Japan Airlines", "https://www.jal.com/ja/"),
+    ("air", "スカイマーク / Skymark", "https://www.skymark.co.jp/"),
+    ("air", "Peach Aviation", "https://www.flypeach.com/"),
+    ("air", "ジェットスター・ジャパン / Jetstar Japan", "https://www.jetstar.com/jp/ja/home"),
+    ("air", "AIRDO", "https://www.airdo.jp/"),
+    ("air", "ソラシドエア / Solaseed Air", "https://www.solaseedair.jp/"),
+    ("air", "スターフライヤー / StarFlyer", "https://www.starflyer.jp/"),
+    ("air", "フジドリームエアラインズ / Fuji Dream Airlines", "https://www.fujidream.co.jp/"),
+    ("air", "ZIPAIR", "https://www.corporate.zipair.net/"),
+    ("air", "SPRING JAPAN", "https://jp.ch.com/Help/News/1.html"),
+    ("air", "トキエア / Toki Air", "https://tokiair.com/"),
+    ("airport", "成田国際空港株式会社 / Narita International Airport Corporation", "https://www.naa.jp/"),
+    ("airport", "日本空港ビルデング / Japan Airport Terminal", "https://www.tokyo-airport-bldg.co.jp/"),
+    ("airport", "関西エアポート / Kansai Airports", "https://www.kansai-airports.co.jp/"),
+    ("airport", "中部国際空港 / Central Japan International Airport", "https://www.centrair.jp/corporate/newsroom/"),
+    ("airport", "北海道エアポート / Hokkaido Airports", "https://www.hokkaido-airports.co.jp/"),
+    ("airport", "福岡国際空港 / Fukuoka International Airport", "https://www.fukuoka-airport.jp/"),
+    # Major bus operators and nationwide bus parents
+    ("bus", "ジェイ・アール北海道バス / JR Hokkaido Bus", "https://www.jrhokkaidobus.com/"),
+    ("bus", "ジェイアールバス東北 / JR Bus Tohoku", "https://www.jrbustohoku.co.jp/"),
+    ("bus", "ジェイアールバス関東 / JR Bus Kanto", "https://www.jrbuskanto.co.jp/"),
+    ("bus", "ジェイアール東海バス / JR Tokai Bus", "https://www.jrtbinm.co.jp/"),
+    ("bus", "西日本ジェイアールバス / West JR Bus", "https://www.nishinihonjrbus.co.jp/"),
+    ("bus", "ジェイアール四国バス / JR Shikoku Bus", "https://www.jr-shikokubus.co.jp/"),
+    ("bus", "JR九州バス / JR Kyushu Bus", "https://www.jrkbus.co.jp/"),
+    ("bus", "WILLER", "https://www.willer.co.jp/"),
+    ("parent", "みちのりホールディングス / Michinori Holdings", "https://www.michinori.co.jp/"),
+    ("parent", "アルピコグループ / Alpico Group", "https://www.alpico.co.jp/"),
+    ("bus", "神奈川中央交通 / Kanagawa Chuo Kotsu", "https://www.kanachu.co.jp/"),
+    ("bus", "国際興業 / Kokusai Kogyo", "https://www.kokusaikogyo.co.jp/"),
+    # Major long-distance and island ferry operators plus distinct parents
+    ("parent", "商船三井 / Mitsui O.S.K. Lines", "https://www.mol.co.jp/"),
+    ("ferry", "商船三井さんふらわあ / MOL Sunflower", "https://www.sunflower.co.jp/"),
+    ("ferry", "新日本海フェリー / Shin Nihonkai Ferry", "https://www.snf.jp/"),
+    ("ferry", "阪九フェリー / Hankyu Ferry", "https://www.han9f.co.jp/"),
+    ("ferry", "東京九州フェリー / Tokyo Kyusyu Ferry", "https://tqf.co.jp/"),
+    ("ferry", "名門大洋フェリー / Meimon Taiyo Ferry", "https://www.cityline.co.jp/"),
+    ("ferry", "太平洋フェリー / Taiheiyo Ferry", "https://www.taiheiyo-ferry.co.jp/"),
+    ("ferry", "南海フェリー / Nankai Ferry", "https://nankai-ferry.co.jp/"),
+    ("ferry", "オレンジフェリー / Orange Ferry", "https://www.orange-ferry.co.jp/"),
+    ("ferry", "東海汽船 / Tokai Kisen", "https://www.tokaikisen.co.jp/"),
+    ("ferry", "佐渡汽船 / Sado Kisen", "https://www.sadokisen.co.jp/"),
+    ("ferry", "津軽海峡フェリー / Tsugaru Kaikyo Ferry", "https://www.tsugarukaikyo.co.jp/"),
+    ("ferry", "小笠原海運 / Ogasawara Kaiun", "https://www.ogasawarakaiun.co.jp/"),
+    ("ferry", "オーシャントランス / Ocean Trans", "https://www.otf.jp/"),
+    # Major taxi operators, dispatch groups and nationwide taxi platforms
+    ("taxi", "日本交通 / Nihon Kotsu", "https://www.nihon-kotsu.co.jp/"),
+    ("taxi", "第一交通産業 / Daiichi Kotsu Sangyo", "https://www.daiichi-koutsu.co.jp/"),
+    ("taxi", "国際自動車 / Kokusai Motorcars", "https://www.km-group.co.jp/"),
+    ("taxi", "MKグループ / MK Group", "https://www.mk-group.co.jp/"),
+    ("taxi", "日の丸交通 / Hinomaru Kotsu", "https://hinomaru.tokyo/"),
+    ("taxi", "東京無線 / Tokyo Musen", "https://www.tokyomusen.or.jp/"),
+    ("taxi", "チェッカーキャブ / Checker Cab", "https://www.checker-cab.co.jp/"),
+    ("taxi", "GO株式会社 / GO Inc.", "https://goinc.jp/"),
+    ("taxi", "S.RIDE", "https://www.sride.jp/"),
+    ("taxi", "つばめタクシーグループ / Tsubame Taxi Group", "https://www.tsubame-taxi.or.jp/"),
+]
+
+TRANSPORT_SOURCES = [
+    {"name": name, "type": "official", "url": url, "group": "transport", "sector": sector}
+    for sector, name, url in _TRANSPORT_SITES
+]
+
 SOURCES.extend(MUNICIPAL_SOURCES)
+SOURCES.extend(TRANSPORT_SOURCES)
 MUNICIPAL_HOSTS = {
     (urllib.parse.urlsplit(src["url"]).hostname or "").removeprefix("www.")
     for src in MUNICIPAL_SOURCES
+}
+TRANSPORT_HOSTS = {
+    (urllib.parse.urlsplit(src["url"]).hostname or "").removeprefix("www.")
+    for src in TRANSPORT_SOURCES
 }
 
 # Gate: is this an incident report at all?  Wide on purpose; the LLM/regex step refines.
@@ -166,7 +285,8 @@ NOISE_RE = re.compile(
     r"相次ぐ|官房長官|大臣|首相|breach wave|wave of|roundup|year in review|"
     r"注意喚起|weekly report|社説|アンケート|％が|%が|脅威動向|上半期|下半期|年間|統計|コラム|解説|に学ぶ|"
     r"対抗策|防御|実態|急増|倍に|トレンド|レポートを公開|調査(を|結果を)公開|"
-    r"新型コロナウイルス|インフルエンザ|ワクチン|予防接種|アスベスト|複数発生", re.I)
+    r"新型コロナウイルス|インフルエンザ|ワクチン|予防接種|アスベスト|複数発生|"
+    r"重油流出|油流出|燃料流出|スポンサー契約", re.I)
 # Headlines about incidents abroad that reach the Japanese-language feeds.
 FOREIGN_RE = re.compile(
     r"フランス|アメリカ|米国|イギリス|英国|ドイツ|韓国|中国(?!電力|地方|銀行|新聞|バス)|台湾|インド|ロシア|"
@@ -225,6 +345,8 @@ def ref_tier(url, outlet="", title=""):
         return "social"
     if host in MUNICIPAL_HOSTS:
         return "gov"
+    if host in TRANSPORT_HOSTS:
+        return "official"
     if GOV_RE.search(host):
         return "gov"
     if is_wrapper(url) or "bing.com" in host:  # wrapper: judge by the outlet name
@@ -429,7 +551,7 @@ def discover_feed_urls(raw, base_url):
     return unique[:10]
 
 
-def load_municipal_items(raw, src, fetcher):
+def load_official_items(raw, src, fetcher):
     """Read advertised feeds plus current same-site links from an official homepage."""
     items = []
     feed_urls = discover_feed_urls(raw, src["url"])
@@ -500,8 +622,8 @@ def fetch_body(url, limit=6000):
 
 def load_items(src, fetcher=fetch):
     raw = fetcher(src["url"])
-    if src.get("type") == "municipal":
-        return load_municipal_items(raw, src, fetcher)
+    if src.get("type") in ("municipal", "official"):
+        return load_official_items(raw, src, fetcher)
     return parse_html_list(raw, src) if src.get("type") == "html" else parse_feed(raw)
 
 
@@ -713,10 +835,12 @@ def poll(notify=False, fetcher=fetch, fetch_body_fn=fetch_body):
     return new_rows
 
 
-def test_sources(fetcher=fetch, name_match=None):
+def test_sources(fetcher=fetch, name_match=None, group=None):
     """Fetch every source once, no DB writes: shows which URLs work and what they yield."""
     for src in load_sources():
         if name_match and name_match.casefold() not in src["name"].casefold():
+            continue
+        if group and src.get("group") != group:
             continue
         t0 = time.time()
         try:
@@ -795,6 +919,31 @@ def all_public_incidents():
     return rows
 
 
+def public_date_metadata(incidents):
+    """Return the complete coverage range and a zero-filled rolling 90-day series in JST."""
+    dated = []
+    for incident in incidents:
+        try:
+            value = datetime.fromisoformat((incident["published_at"] or "").replace("Z", "+00:00"))
+            if value.tzinfo is None:
+                value = value.replace(tzinfo=timezone.utc)
+            dated.append(value.astimezone(JST).date())
+        except (TypeError, ValueError):
+            continue
+    coverage = {
+        "start": min(dated).isoformat() if dated else None,
+        "end": max(dated).isoformat() if dated else None,
+    }
+    end = datetime.now(JST).date()
+    start = end - timedelta(days=89)
+    counts = {start + timedelta(days=offset): 0 for offset in range(90)}
+    for day in dated:
+        if day in counts:
+            counts[day] += 1
+    series = [{"date": day.isoformat(), "count": count} for day, count in counts.items()]
+    return coverage, series
+
+
 def write_public_json(path=JSON_PATH):
     """Atomically write the static dataset only when its incident content changed.
 
@@ -802,21 +951,25 @@ def write_public_json(path=JSON_PATH):
     poll from creating a pointless Git commit.
     """
     incidents = all_public_incidents()
+    coverage, daily_counts = public_date_metadata(incidents)
     old = None
     try:
         with open(path, encoding="utf-8") as f:
             old = json.load(f)
     except (FileNotFoundError, json.JSONDecodeError, OSError):
         pass
-    if (isinstance(old, dict) and old.get("schema_version") == 1
-            and old.get("incidents") == incidents and old.get("total") == len(incidents)):
+    if (isinstance(old, dict) and old.get("schema_version") == 2
+            and old.get("incidents") == incidents and old.get("total") == len(incidents)
+            and old.get("date_range") == coverage and old.get("daily_counts_90d") == daily_counts):
         print(f"JSON unchanged: {path} ({len(incidents)} incidents)")
         return False
 
     document = {
-        "schema_version": 1,
+        "schema_version": 2,
         "updated_at": now_iso(),
         "total": len(incidents),
+        "date_range": coverage,
+        "daily_counts_90d": daily_counts,
         "incidents": incidents,
     }
     parent = os.path.dirname(os.path.abspath(path))
@@ -1093,6 +1246,7 @@ def main():
     sub = ap.add_subparsers(dest="cmd", required=True)
     t = sub.add_parser("sources")
     t.add_argument("--match", help="only test source names containing this text")
+    t.add_argument("--group", choices=["government", "transport"], help="only test one source group")
     p = sub.add_parser("poll"); p.add_argument("--notify", action="store_true")
     p.add_argument("--publish", action="store_true",
                    help="update the static JSON/RSS, commit changes, and push to GitHub")
@@ -1110,7 +1264,7 @@ def main():
     sub.add_parser("install-units")
     a = ap.parse_args()
     if a.cmd == "sources":
-        test_sources(name_match=a.match)
+        test_sources(name_match=a.match, group=a.group)
     elif a.cmd == "poll":
         poll(a.notify)
         if a.publish:
