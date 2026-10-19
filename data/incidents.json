@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-19T09:32:18+00:00",
-  "total": 345,
+  "updated_at": "2026-10-19T09:55:20+00:00",
+  "total": 365,
   "date_range": {
     "start": "2026-10-05",
     "end": "2026-10-19"
@@ -313,7 +313,7 @@
     },
     {
       "date": "2026-10-06",
-      "count": 0
+      "count": 2
     },
     {
       "date": "2026-10-07",
@@ -325,7 +325,7 @@
     },
     {
       "date": "2026-10-09",
-      "count": 0
+      "count": 3
     },
     {
       "date": "2026-10-10",
@@ -341,7 +341,7 @@
     },
     {
       "date": "2026-10-13",
-      "count": 16
+      "count": 17
     },
     {
       "date": "2026-10-14",
@@ -349,11 +349,11 @@
     },
     {
       "date": "2026-10-15",
-      "count": 33
+      "count": 35
     },
     {
       "date": "2026-10-16",
-      "count": 45
+      "count": 48
     },
     {
       "date": "2026-10-17",
@@ -365,10 +365,74 @@
     },
     {
       "date": "2026-10-19",
-      "count": 221
+      "count": 230
     }
   ],
   "incidents": [
+    {
+      "id": "9ef42dee769af315",
+      "published_at": "2026-10-19T09:52:43+00:00",
+      "organization": "島根県",
+      "incident_type": "data leak",
+      "potential_records": 1500,
+      "confidence": "high",
+      "confidence_score": 60,
+      "sources": [
+        {
+          "name": "島根県 / Shimane",
+          "url": "https://www.pref.shimane.lg.jp/press_release/2026/tliih22sqpum.html"
+        }
+      ]
+    },
+    {
+      "id": "6b03b7f8c81e9d61",
+      "published_at": "2026-10-19T09:52:25+00:00",
+      "organization": "鳥取県",
+      "incident_type": "data leak",
+      "potential_records": 3,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "sources": [
+        {
+          "name": "鳥取県 / Tottori",
+          "url": "http://db.pref.tottori.jp/pressrelease.nsf/webview/C513594F3E7355FB49258E900018F62C?OpenDocument"
+        },
+        {
+          "name": "鳥取県 / Tottori",
+          "url": "http://db.pref.tottori.jp/pressrelease.nsf/webview/973A7E54DCE5FEC949258E7600189E6B?OpenDocument"
+        }
+      ]
+    },
+    {
+      "id": "f45d820cc020a750",
+      "published_at": "2026-10-19T09:52:02+00:00",
+      "organization": "TOKAIコミュニケーションズ",
+      "incident_type": "data leak",
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "sources": [
+        {
+          "name": "静岡県 / Shizuoka",
+          "url": "https://www.pref.shizuoka.jp/1078923.html"
+        }
+      ]
+    },
+    {
+      "id": "767147131a6c0396",
+      "published_at": "2026-10-19T09:52:01+00:00",
+      "organization": "静岡県",
+      "incident_type": "other",
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "sources": [
+        {
+          "name": "静岡県 / Shizuoka",
+          "url": "https://www.pref.shizuoka.jp/1079272.html"
+        }
+      ]
+    },
     {
       "id": "08953e2143862735",
       "published_at": "2026-10-19T09:31:40+00:00",
@@ -1419,12 +1483,16 @@
       "organization": "ビューティガレージ",
       "incident_type": "data leak",
       "potential_records": 775725,
-      "confidence": "medium",
-      "confidence_score": 30,
+      "confidence": "high",
+      "confidence_score": 75,
       "sources": [
         {
           "name": "satimo list",
           "url": "https://www.beautygarage.co.jp/wp/wp-content/uploads/20261015_%E4%B8%8D%E6%AD%A3%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%81%AB%E3%82%88%E3%82%8B%E3%81%8A%E5%AE%A2%E6%A7%98%E6%83%85%E5%A0%B1%E6%BC%8F%E6%B4%A9%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%81%8A%E8%A9%AB%E3%81%B3%E3%81%A8%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B.pdf"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261015551741.pdf"
         }
       ]
     },
@@ -2981,11 +3049,15 @@
       "incident_type": "data leak",
       "potential_records": 6500000,
       "confidence": "high",
-      "confidence_score": 60,
+      "confidence_score": 75,
       "sources": [
         {
           "name": "legalagent list",
           "url": "https://www.rideonexpresshd.co.jp/news/2026/10/3-33.html"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261013549728.pdf"
         }
       ]
     },
@@ -3244,12 +3316,35 @@
       "organization": "ジグザグ",
       "incident_type": "data leak",
       "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
+      "confidence": "high",
+      "confidence_score": 75,
       "sources": [
         {
           "name": "日本経済新聞",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0tNlJubERvQmZkRjVpVkJ3RkF5Tl96TjJGSmRsSS1UVWRGR3dwSUtHcVFENUdRVV8tVTd4cjhldEhXMklkZmpSakpGQzJNM3FnbTZwczVJX0EwZUZINXBhZk51dENlVlRPQUE?oc=5"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOZktlLUxsdVhkd2xLWmdWbVF0OUpucmMtbDhQQlhHenhJSGtHM3BLZWk0aEROZUdSVzF5RjdFRURrLXpCYVhjR254ZkJVc1hLaXdIM21selFPWFlFSVRTWG1tbU9Ub2FGbml2dGxJLUlzdGVQdVFyU3dtTmU0RG5NOWpUak1pQXN6WmhYTkhEMXZsRWVmUFo3aG9lMlhRa1o5Q19ZUVBJazZuUl9jYzN5U1AtUXZCbzBOdlMzY3NBbW1iaXBlaWdaQU5DbWM?oc=5"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261019553141.pdf"
+        }
+      ]
+    },
+    {
+      "id": "1a70bdd8c0f61777",
+      "published_at": "2026-10-19T09:00:00+00:00",
+      "organization": "LiNKX:Studio株式会社",
+      "incident_type": "data leak",
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261019553109.pdf"
         }
       ]
     },
@@ -3481,6 +3576,21 @@
       ]
     },
     {
+      "id": "9b002e5988f3b9dd",
+      "published_at": "2026-10-19T08:45:09+00:00",
+      "organization": "福岡市のイベント施設",
+      "incident_type": "data leak",
+      "potential_records": 2239,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE93Y2RhRkpNaFFNcktZamZpa1FKMGtydS04XzFOSkhQT3RtcFk0Nm1RS19QckZVTDFraWlOb0VOUmlxVUp4T1RUMm5BNWpTQmlSeUVuQmtiLU9oZUZEbEp0eUlQaG5tbzlFV3VuZQ?oc=5"
+        }
+      ]
+    },
+    {
       "id": "09c388ae90754d2c",
       "published_at": "2026-10-19T07:44:35+00:00",
       "organization": "阪急阪神百貨店",
@@ -3546,6 +3656,36 @@
       ]
     },
     {
+      "id": "12e7a20b5ea44b95",
+      "published_at": "2026-10-19T07:30:00+00:00",
+      "organization": "and US:Studio株式会社",
+      "incident_type": "data leak",
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261019553073.pdf"
+        }
+      ]
+    },
+    {
+      "id": "240dec594b5c1cd4",
+      "published_at": "2026-10-19T07:30:00+00:00",
+      "organization": "東邦ＨＤ",
+      "incident_type": "data leak",
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261019553091.pdf"
+        }
+      ]
+    },
+    {
       "id": "ddd820d22dd5ccdd",
       "published_at": "2026-10-19T06:34:29+00:00",
       "organization": "埼玉県警",
@@ -3557,6 +3697,21 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5SbTdXTFFWdDdQdGRUTWMySzVWZWRRekZ1NngwQTdaaXR1RmMybngySnlvU3J5UVlQQVRVMEJzcFVwenN3N3g3RUdqeXlGWWx2M3FrV0dzUHdyejBCSmx1TVEwanQ4c2o5YzFNZHNhOUw3RFc3Z1RYVlZlRmdNRU0?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "c5b12d5da9f4290f",
+      "published_at": "2026-10-19T06:08:58+00:00",
+      "organization": "H2O",
+      "incident_type": "data leak",
+      "potential_records": 1260000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8wZjhkRnZmNlA5bzVQcGpWNmNqR0JGUy1kYkhPR2dQaFN4c05aY2tKLXZ3VlBJcm5VdlNsLW1WbGRHa0hSYTVhWXhiSEl1Q1NFOWtkNE1CQnBVOXI2WGVNaFRUYmtOZDRsZjNNaG82VU5mRnBqbmpqX0N3b21NeXc?oc=5"
         }
       ]
     },
@@ -3608,12 +3763,16 @@
       "organization": "ゲオ",
       "incident_type": "unauthorized access",
       "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
+      "confidence": "high",
+      "confidence_score": 65,
       "sources": [
         {
           "name": "日本経済新聞",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9aZDkwb2N3YXNod0RTVVdKZUxOVnNwVVRnYzNOaFNTZGc0ajJTTmNKVFpZOG9qZUhNSXFPRC11MXoyZlVyQnduM2JOSGMyRktJS014NXVjc3pNRW56Vkc5cW1hNktiSEQ2c2owVA?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9MNDI5LXZZYmI1cFlpRHVWak9RQXFZZ25pUTQ1TUZSc3VLa1pEeVA1UUFZUW01OEdGS2ZvSHBDZk1iazNmc3VIVWl4amFXYzFtbHdnX0hSSzc2VklHY2JYNDlVbmFGTmhqbExqOXI2MUp4VWYxVW04Qm5Hc2FDVm8?oc=5"
         }
       ]
     },
@@ -3624,7 +3783,7 @@
       "incident_type": "data leak",
       "potential_records": null,
       "confidence": "high",
-      "confidence_score": 80,
+      "confidence_score": 100,
       "sources": [
         {
           "name": "日本経済新聞",
@@ -3649,6 +3808,10 @@
         {
           "name": "ITmedia",
           "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBXMklwMWh1YXVwb2RsTVZ0VkpUYzNvb0NLZGZqY0g4azl0UW8tNE56My0zeGhjMldKTXV2ZGVobnRNZnE2d2g5UTUydjVHZzN0d1pOMklwQXJfOWdUUzd4YVdIdnpHNHhMQV94VkNKR0Q1QkpRQjd3aEpsRndBdw?oc=5"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261019552813.pdf"
         }
       ]
     },
@@ -3918,12 +4081,16 @@
       "organization": "和歌山県",
       "incident_type": "data leak",
       "potential_records": 1749,
-      "confidence": "medium",
-      "confidence_score": 50,
+      "confidence": "high",
+      "confidence_score": 75,
       "sources": [
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/117414"
+        },
+        {
+          "name": "和歌山県 / Wakayama",
+          "url": "https://www.pref.wakayama.lg.jp/prefg/012100/20261019_incident_message.html"
         }
       ]
     },
@@ -4197,6 +4364,10 @@
         {
           "name": "Security NEXT",
           "url": "https://www.security-next.com/191600"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261016552454.pdf"
         }
       ]
     },
@@ -4251,8 +4422,8 @@
       "organization": "アドベンチャー",
       "incident_type": "data leak",
       "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
+      "confidence": "high",
+      "confidence_score": 75,
       "sources": [
         {
           "name": "日本経済新聞",
@@ -4261,6 +4432,10 @@
         {
           "name": "日本経済新聞",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5LTk15dTJ5N3NVRkJjU2tDSW13eldzTVUzTnZhelRmeTh6eXdxcDAybHNiU0s2blg5cUhKbjItM21vWUZkWEFXSEVaMWJfcjlpaDBoSm5lS1ZWYVN5eVBSQnVNdXp0TU15QVE?oc=5"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261008548235.pdf"
         }
       ]
     },
@@ -4536,6 +4711,21 @@
       ]
     },
     {
+      "id": "e05521d454b19ee3",
+      "published_at": "2026-10-16T07:30:00+00:00",
+      "organization": "トレードワークス",
+      "incident_type": "unauthorized access",
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261016552448.pdf"
+        }
+      ]
+    },
+    {
       "id": "c3c714cbe8bd5506",
       "published_at": "2026-10-16T07:00:00+00:00",
       "organization": "台東区",
@@ -4655,6 +4845,44 @@
       ]
     },
     {
+      "id": "f173c3a3ee0fb4ea",
+      "published_at": "2026-10-16T06:00:00+00:00",
+      "organization": "山形県",
+      "incident_type": "data leak",
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "sources": [
+        {
+          "name": "山形県 / Yamagata",
+          "url": "https://www.pref.yamagata.jp/110009/press/ginoukentei-gosohu.html"
+        }
+      ]
+    },
+    {
+      "id": "8f4921e662272736",
+      "published_at": "2026-10-16T04:30:00+00:00",
+      "organization": "ブックオフＧＨＤ",
+      "incident_type": "data leak",
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261016552215.pdf"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261013549865.pdf"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261009548299.pdf"
+        }
+      ]
+    },
+    {
       "id": "f3ffcb8267edaa4a",
       "published_at": "2026-10-16T04:14:34+00:00",
       "organization": "三菱ガス化学",
@@ -4708,13 +4936,17 @@
       "published_at": "2026-10-15T23:05:25+00:00",
       "organization": "大分県",
       "incident_type": "data leak",
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
+      "potential_records": 27667,
+      "confidence": "high",
+      "confidence_score": 75,
       "sources": [
         {
           "name": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2026/10/16/56482.html"
+        },
+        {
+          "name": "大分県 / Oita",
+          "url": "https://www.pref.oita.jp/soshiki/13550/bosaimeil.html"
         }
       ]
     },
@@ -4985,6 +5217,10 @@
         {
           "name": "satimo list",
           "url": "https://contents.xj-storage.jp/xcontents/98820/4f6f6405/bf53/46c6/b275/ddb443b2d159/140120261015551164.pdf"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261015551164.pdf"
         }
       ]
     },
@@ -5179,6 +5415,21 @@
       ]
     },
     {
+      "id": "e572d59e108e872b",
+      "published_at": "2026-10-15T08:00:00+00:00",
+      "organization": "ACCESS",
+      "incident_type": "data leak",
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261015551574.pdf"
+        }
+      ]
+    },
+    {
       "id": "3fd9e7cdb6733d2b",
       "published_at": "2026-10-15T08:00:00+00:00",
       "organization": "ＡＣＣＥＳＳ",
@@ -5366,7 +5617,7 @@
       "incident_type": "data leak",
       "potential_records": 787,
       "confidence": "high",
-      "confidence_score": 95,
+      "confidence_score": 100,
       "sources": [
         {
           "name": "日本経済新聞",
@@ -5383,6 +5634,10 @@
         {
           "name": "Westeria list",
           "url": "https://westeria.jp/security-incidents/cases/medley-atlink-2026/"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261014550839.pdf"
         }
       ]
     },
@@ -5588,6 +5843,21 @@
         {
           "name": "ライブドアニュース",
           "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1JWVJvOG1jT1I2VUk3M1ZNOUctRHdKT2dBMjF6YS1iZEZBT0xPZ0NtZzBRSS1KbEEtaGlGc2RuODBhcWxwb2ttN0tKSXhWd3pCLUxSTW15RF83TTdCd1E?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "48c10dc68f3cceaf",
+      "published_at": "2026-10-14T17:00:00+00:00",
+      "organization": "千葉県",
+      "incident_type": "data leak",
+      "potential_records": 4661,
+      "confidence": "high",
+      "confidence_score": 60,
+      "sources": [
+        {
+          "name": "千葉県 / Chiba",
+          "url": "https://www.pref.chiba.lg.jp/dejisui/press/2026/20261014incident.html"
         }
       ]
     },
@@ -6093,6 +6363,21 @@
       ]
     },
     {
+      "id": "37c7485dd26e4e7d",
+      "published_at": "2026-10-13T09:00:00+00:00",
+      "organization": "ネクストステージ",
+      "incident_type": "unauthorized access",
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261013549964.pdf"
+        }
+      ]
+    },
+    {
       "id": "5179f9f6cc661711",
       "published_at": "2026-10-13T07:56:08+00:00",
       "organization": "一連",
@@ -6153,14 +6438,18 @@
       "id": "fcdfe1975f1cd435",
       "published_at": "2026-10-13T05:51:47+00:00",
       "organization": "トレファク",
-      "incident_type": "unauthorized access",
+      "incident_type": "data leak",
       "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
+      "confidence": "high",
+      "confidence_score": 75,
       "sources": [
         {
           "name": "日本経済新聞",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5RQ2ZOenl3TEk4eW9lLXlSanJlU3I2LU1qdkJYeXpXb2VUZzVWeF9mNnFPcVpWUnNSVTViUmFPb1pjMmhKcTVCUWtPZVBCaGs0clh1dmJZUUltRU5MQWtRSkt6aE96TmdhRjQxMg?oc=5"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261013549468.pdf"
         }
       ]
     },
@@ -6206,6 +6495,81 @@
         {
           "name": "アイマガジン",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE56WmU3Z1I0bGUwdEEwN3RHcklfdDRHcXNrczBSRnUxVzM0ZVRhejBpZ2ZOT3ktSmpVS2NfdkppcUxMZU1EQkRCaS1teVlLeUthUGIxdDU2OUR5dmpBZDYw?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "ae9282b91546de03",
+      "published_at": "2026-10-09T08:30:00+00:00",
+      "organization": "リゾートトラ",
+      "incident_type": "data leak",
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261009548970.pdf"
+        }
+      ]
+    },
+    {
+      "id": "2c87b773aa0d174e",
+      "published_at": "2026-10-09T08:00:00+00:00",
+      "organization": "手間いらず",
+      "incident_type": "unauthorized access",
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261009548929.pdf"
+        }
+      ]
+    },
+    {
+      "id": "422b74302f775263",
+      "published_at": "2026-10-09T06:30:00+00:00",
+      "organization": "ユニリタ",
+      "incident_type": "data leak",
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261006546597.pdf"
+        }
+      ]
+    },
+    {
+      "id": "bac90e7a7ecab5df",
+      "published_at": "2026-10-06T10:00:00+00:00",
+      "organization": "GMO-PP",
+      "incident_type": "data leak",
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261006546782.pdf"
+        }
+      ]
+    },
+    {
+      "id": "1b39c3096cc9b528",
+      "published_at": "2026-10-06T02:00:00+00:00",
+      "organization": "ＭｒＭａｘＨＤ",
+      "incident_type": "data leak",
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261006546323.pdf"
         }
       ]
     },
