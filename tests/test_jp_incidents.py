@@ -5,6 +5,7 @@ import tempfile
 import unittest
 import xml.etree.ElementTree as ET
 from datetime import datetime
+from pathlib import Path
 
 import jp_incidents as app
 
@@ -105,6 +106,49 @@ class MunicipalSourceTests(unittest.TestCase):
         self.assertTrue({"rail", "air", "airport", "bus", "ferry", "taxi", "parent"} <= sectors)
         self.assertGreaterEqual(len(app.TRANSPORT_SOURCES), 90)
         self.assertEqual(app.ref_tier("https://www.jreast.co.jp/example"), "official")
+
+    def test_prefectural_national_and_disclosure_registries(self):
+        self.assertEqual(len(app.PREFECTURAL_SOURCES), 46)
+        self.assertEqual(len(app.NATIONAL_SOURCES), 10)
+        self.assertEqual(len(app.DISCLOSURE_SOURCES), 1)
+        self.assertEqual(app.ref_tier("https://www.pref.aichi.jp/example"), "gov")
+        self.assertEqual(app.ref_tier("https://www.release.tdnet.info/example.pdf"), "official")
+
+    def test_tdnet_reads_incident_disclosures_and_ignores_financial_filings(self):
+        main = b'<option value="I_list_001_20261019.html">2026/10/19</option>'
+        daily = (
+            '<div id="kaiji-date-1">2026年10月19日</div><table>'
+            '<tr><td class="kjTime">17:05</td><td class="kjName">Ｇ－Example</td>'
+            '<td class="kjTitle"><a href="incident.pdf">不正アクセスに関するご報告</a></td></tr>'
+            '<tr><td class="kjTime">16:00</td><td class="kjName">Finance</td>'
+            '<td class="kjTitle"><a href="results.pdf">決算短信</a></td></tr></table>'
+        ).encode()
+
+        def fetcher(url):
+            return main if url.endswith("I_main_00.html") else daily
+
+        items = app.load_items(app.DISCLOSURE_SOURCES[0], fetcher)
+        self.assertEqual(len(items), 1)
+        self.assertEqual(items[0]["title"], "Example：不正アクセスに関するご報告")
+        self.assertTrue(items[0]["url"].endswith("incident.pdf"))
+
+    def test_public_source_directory_matches_registry(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = os.path.join(directory, "sources.json")
+            self.assertTrue(app.write_public_sources(path))
+            self.assertFalse(app.write_public_sources(path))
+            with open(path, encoding="utf-8") as source:
+                document = json.load(source)
+        self.assertEqual(document["total"], len(app.SOURCES))
+        self.assertEqual(document["groups"]["prefecture"], 46)
+        self.assertEqual(document["groups"]["transport"], len(app.TRANSPORT_SOURCES))
+
+    def test_readme_lists_every_public_source(self):
+        readme = (Path(__file__).resolve().parents[1] / "README.md").read_text(encoding="utf-8")
+        sources = app.public_sources()
+        self.assertIn(f"**{len(sources)} configured sources**", readme)
+        for source in sources:
+            self.assertIn(f"[{source['name']}]({source['url']})", readme)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,1506 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-19T09:44:41+00:00",
+  "total": 213,
+  "groups": {
+    "discovery": 20,
+    "government": 44,
+    "prefecture": 46,
+    "national": 10,
+    "disclosure": 1,
+    "transport": 92
+  },
+  "sources": [
+    {
+      "name": "GNews 不正アクセス",
+      "url": "https://news.google.com/rss/search?q=%E4%B8%8D%E6%AD%A3%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%20when%3A7d&hl=ja&gl=JP&ceid=JP:ja",
+      "group": "discovery",
+      "sector": null,
+      "type": "rss"
+    },
+    {
+      "name": "GNews 情報漏えい",
+      "url": "https://news.google.com/rss/search?q=%E6%83%85%E5%A0%B1%E6%BC%8F%E3%81%88%E3%81%84%20OR%20%E6%83%85%E5%A0%B1%E6%BC%8F%E6%B4%A9%20when%3A7d&hl=ja&gl=JP&ceid=JP:ja",
+      "group": "discovery",
+      "sector": null,
+      "type": "rss"
+    },
+    {
+      "name": "GNews 個人情報 流出",
+      "url": "https://news.google.com/rss/search?q=%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1%20%E6%B5%81%E5%87%BA%20when%3A7d&hl=ja&gl=JP&ceid=JP:ja",
+      "group": "discovery",
+      "sector": null,
+      "type": "rss"
+    },
+    {
+      "name": "GNews ランサムウェア",
+      "url": "https://news.google.com/rss/search?q=%E3%83%A9%E3%83%B3%E3%82%B5%E3%83%A0%E3%82%A6%E3%82%A7%E3%82%A2%20%E8%A2%AB%E5%AE%B3%20when%3A7d&hl=ja&gl=JP&ceid=JP:ja",
+      "group": "discovery",
+      "sector": null,
+      "type": "rss"
+    },
+    {
+      "name": "GNews サイバー攻撃",
+      "url": "https://news.google.com/rss/search?q=%E3%82%B5%E3%82%A4%E3%83%90%E3%83%BC%E6%94%BB%E6%92%83%20%E8%A2%AB%E5%AE%B3%20when%3A7d&hl=ja&gl=JP&ceid=JP:ja",
+      "group": "discovery",
+      "sector": null,
+      "type": "rss"
+    },
+    {
+      "name": "GNews お詫び 漏えい",
+      "url": "https://news.google.com/rss/search?q=%E3%81%8A%E8%A9%AB%E3%81%B3%20%E6%BC%8F%E3%81%88%E3%81%84%20OR%20%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%20%E4%B8%8D%E6%AD%A3%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%20when%3A7d&hl=ja&gl=JP&ceid=JP:ja",
+      "group": "discovery",
+      "sector": null,
+      "type": "rss"
+    },
+    {
+      "name": "GNews Japan breach",
+      "url": "https://news.google.com/rss/search?q=Japan%20data%20breach%20OR%20Japan%20ransomware%20when%3A7d&hl=ja&gl=JP&ceid=JP:ja",
+      "group": "discovery",
+      "sector": null,
+      "type": "rss"
+    },
+    {
+      "name": "GNews PR TIMES disclosures",
+      "url": "https://news.google.com/rss/search?q=site%3Aprtimes.jp%20%28%E4%B8%8D%E6%AD%A3%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%20OR%20%E6%83%85%E5%A0%B1%E6%BC%8F%E3%81%88%E3%81%84%20OR%20%E6%83%85%E5%A0%B1%E6%BC%8F%E6%B4%A9%20OR%20%E3%83%A9%E3%83%B3%E3%82%B5%E3%83%A0%E3%82%A6%E3%82%A7%E3%82%A2%20OR%20%E3%82%B5%E3%82%A4%E3%83%90%E3%83%BC%E6%94%BB%E6%92%83%29%20when%3A14d&hl=ja&gl=JP&ceid=JP:ja",
+      "group": "discovery",
+      "sector": null,
+      "type": "rss"
+    },
+    {
+      "name": "Bing 不正アクセス",
+      "url": "https://www.bing.com/news/search?q=%E4%B8%8D%E6%AD%A3%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9&format=rss&setlang=ja&cc=jp",
+      "group": "discovery",
+      "sector": null,
+      "type": "rss"
+    },
+    {
+      "name": "Bing 情報漏えい",
+      "url": "https://www.bing.com/news/search?q=%E6%83%85%E5%A0%B1%E6%BC%8F%E3%81%88%E3%81%84&format=rss&setlang=ja&cc=jp",
+      "group": "discovery",
+      "sector": null,
+      "type": "rss"
+    },
+    {
+      "name": "Security NEXT",
+      "url": "https://www.security-next.com/feed",
+      "group": "discovery",
+      "sector": null,
+      "type": "rss"
+    },
+    {
+      "name": "ScanNetSecurity",
+      "url": "https://scan.netsecurity.ne.jp/rss/index.rdf",
+      "group": "discovery",
+      "sector": null,
+      "type": "rss"
+    },
+    {
+      "name": "Cybersecurity.jp",
+      "url": "https://cybersecurity-jp.com/feed",
+      "group": "discovery",
+      "sector": null,
+      "type": "rss"
+    },
+    {
+      "name": "piyolog",
+      "url": "https://piyolog.hatenadiary.jp/rss",
+      "group": "discovery",
+      "sector": null,
+      "type": "rss"
+    },
+    {
+      "name": "JPCERT/CC",
+      "url": "https://www.jpcert.or.jp/rss/jpcert.rdf",
+      "group": "discovery",
+      "sector": null,
+      "type": "rss"
+    },
+    {
+      "name": "Westeria list",
+      "url": "https://westeria.jp/security-incidents/2026/",
+      "group": "discovery",
+      "sector": null,
+      "type": "html"
+    },
+    {
+      "name": "legalagent list",
+      "url": "https://legalagent.co.jp/en/legal-lab/security-incidents/",
+      "group": "discovery",
+      "sector": null,
+      "type": "html"
+    },
+    {
+      "name": "satimo list",
+      "url": "https://satimo.org/2026/10/data-breach-list-2026/",
+      "group": "discovery",
+      "sector": null,
+      "type": "html"
+    },
+    {
+      "name": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/feed/",
+      "group": "discovery",
+      "sector": null,
+      "type": "rss"
+    },
+    {
+      "name": "The Record",
+      "url": "https://therecord.media/feed",
+      "group": "discovery",
+      "sector": null,
+      "type": "rss"
+    },
+    {
+      "name": "東京都 / Tokyo Metropolitan Government",
+      "url": "https://www.metro.tokyo.lg.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "千代田区 / Chiyoda",
+      "url": "https://www.city.chiyoda.lg.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "中央区 / Chuo",
+      "url": "https://www.city.chuo.lg.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "港区 / Minato",
+      "url": "https://www.city.minato.tokyo.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "新宿区 / Shinjuku",
+      "url": "https://www.city.shinjuku.lg.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "文京区 / Bunkyo",
+      "url": "https://www.city.bunkyo.lg.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "台東区 / Taito",
+      "url": "https://www.city.taito.lg.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "墨田区 / Sumida",
+      "url": "https://www.city.sumida.lg.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "江東区 / Koto",
+      "url": "https://www.city.koto.lg.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "品川区 / Shinagawa",
+      "url": "https://www.city.shinagawa.tokyo.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "目黒区 / Meguro",
+      "url": "https://www.city.meguro.tokyo.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "大田区 / Ota",
+      "url": "https://www.city.ota.tokyo.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "世田谷区 / Setagaya",
+      "url": "https://www.city.setagaya.lg.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "渋谷区 / Shibuya",
+      "url": "https://www.city.shibuya.tokyo.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "中野区 / Nakano",
+      "url": "https://www.city.tokyo-nakano.lg.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "杉並区 / Suginami",
+      "url": "https://www.city.suginami.tokyo.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "豊島区 / Toshima",
+      "url": "https://www.city.toshima.lg.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "北区 / Kita",
+      "url": "https://www.city.kita.lg.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "荒川区 / Arakawa",
+      "url": "https://www.city.arakawa.tokyo.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "板橋区 / Itabashi",
+      "url": "https://www.city.itabashi.tokyo.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "練馬区 / Nerima",
+      "url": "https://www.city.nerima.tokyo.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "足立区 / Adachi",
+      "url": "https://www.city.adachi.tokyo.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "葛飾区 / Katsushika",
+      "url": "https://www.city.katsushika.lg.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "江戸川区 / Edogawa",
+      "url": "https://www.city.edogawa.tokyo.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "札幌市 / Sapporo",
+      "url": "https://www.city.sapporo.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "仙台市 / Sendai",
+      "url": "https://www.city.sendai.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "さいたま市 / Saitama",
+      "url": "https://www.city.saitama.lg.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "千葉市 / Chiba",
+      "url": "https://www.city.chiba.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "横浜市 / Yokohama",
+      "url": "https://www.city.yokohama.lg.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "川崎市 / Kawasaki",
+      "url": "https://www.city.kawasaki.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "相模原市 / Sagamihara",
+      "url": "https://www.city.sagamihara.kanagawa.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "新潟市 / Niigata",
+      "url": "https://www.city.niigata.lg.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "静岡市 / Shizuoka",
+      "url": "https://www.city.shizuoka.lg.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "浜松市 / Hamamatsu",
+      "url": "https://www.city.hamamatsu.shizuoka.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "名古屋市 / Nagoya",
+      "url": "https://www.city.nagoya.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "京都市 / Kyoto",
+      "url": "https://www.city.kyoto.lg.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "大阪市 / Osaka",
+      "url": "https://www.city.osaka.lg.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "堺市 / Sakai",
+      "url": "https://www.city.sakai.lg.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "神戸市 / Kobe",
+      "url": "https://www.city.kobe.lg.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "岡山市 / Okayama",
+      "url": "https://www.city.okayama.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "広島市 / Hiroshima",
+      "url": "https://www.city.hiroshima.lg.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "北九州市 / Kitakyushu",
+      "url": "https://www.city.kitakyushu.lg.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "福岡市 / Fukuoka",
+      "url": "https://www.city.fukuoka.lg.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "熊本市 / Kumamoto",
+      "url": "https://www.city.kumamoto.jp/",
+      "group": "government",
+      "sector": null,
+      "type": "municipal"
+    },
+    {
+      "name": "北海道 / Hokkaido",
+      "url": "https://www.pref.hokkaido.lg.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "青森県 / Aomori",
+      "url": "https://www.pref.aomori.lg.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "岩手県 / Iwate",
+      "url": "https://www.pref.iwate.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "宮城県 / Miyagi",
+      "url": "https://www.pref.miyagi.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "秋田県 / Akita",
+      "url": "https://www.pref.akita.lg.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "山形県 / Yamagata",
+      "url": "https://www.pref.yamagata.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "福島県 / Fukushima",
+      "url": "https://www.pref.fukushima.lg.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "茨城県 / Ibaraki",
+      "url": "https://www.pref.ibaraki.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "栃木県 / Tochigi",
+      "url": "https://www.pref.tochigi.lg.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "群馬県 / Gunma",
+      "url": "https://www.pref.gunma.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "埼玉県 / Saitama",
+      "url": "https://www.pref.saitama.lg.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "千葉県 / Chiba",
+      "url": "https://www.pref.chiba.lg.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "神奈川県 / Kanagawa",
+      "url": "https://www.pref.kanagawa.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "新潟県 / Niigata",
+      "url": "https://www.pref.niigata.lg.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "富山県 / Toyama",
+      "url": "https://www.pref.toyama.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "石川県 / Ishikawa",
+      "url": "https://www.pref.ishikawa.lg.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "福井県 / Fukui",
+      "url": "https://www.pref.fukui.lg.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "山梨県 / Yamanashi",
+      "url": "https://www.pref.yamanashi.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "長野県 / Nagano",
+      "url": "https://www.pref.nagano.lg.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "岐阜県 / Gifu",
+      "url": "https://www.pref.gifu.lg.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "静岡県 / Shizuoka",
+      "url": "https://www.pref.shizuoka.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "愛知県 / Aichi",
+      "url": "https://www.pref.aichi.jp/rss/10/list7.xml",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "rss"
+    },
+    {
+      "name": "三重県 / Mie",
+      "url": "https://www.pref.mie.lg.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "滋賀県 / Shiga",
+      "url": "https://www.pref.shiga.lg.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "京都府 / Kyoto",
+      "url": "https://www.pref.kyoto.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "大阪府 / Osaka",
+      "url": "https://www.pref.osaka.lg.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "兵庫県 / Hyogo",
+      "url": "https://web.pref.hyogo.lg.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "奈良県 / Nara",
+      "url": "https://www.pref.nara.lg.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "和歌山県 / Wakayama",
+      "url": "https://www.pref.wakayama.lg.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "鳥取県 / Tottori",
+      "url": "https://www.pref.tottori.lg.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "島根県 / Shimane",
+      "url": "https://www.pref.shimane.lg.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "岡山県 / Okayama",
+      "url": "https://www.pref.okayama.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "広島県 / Hiroshima",
+      "url": "https://www.pref.hiroshima.lg.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "山口県 / Yamaguchi",
+      "url": "https://www.pref.yamaguchi.lg.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "徳島県 / Tokushima",
+      "url": "https://www.pref.tokushima.lg.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "香川県 / Kagawa",
+      "url": "https://www.pref.kagawa.lg.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "愛媛県 / Ehime",
+      "url": "https://www.pref.ehime.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "高知県 / Kochi",
+      "url": "https://www.pref.kochi.lg.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "福岡県 / Fukuoka",
+      "url": "https://www.pref.fukuoka.lg.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "佐賀県 / Saga",
+      "url": "https://www.pref.saga.lg.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "長崎県 / Nagasaki",
+      "url": "https://www.pref.nagasaki.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "熊本県 / Kumamoto",
+      "url": "https://www.pref.kumamoto.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "大分県 / Oita",
+      "url": "https://www.pref.oita.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "宮崎県 / Miyazaki",
+      "url": "https://www.pref.miyazaki.lg.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "鹿児島県 / Kagoshima",
+      "url": "https://www.pref.kagoshima.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "沖縄県 / Okinawa",
+      "url": "https://www.pref.okinawa.jp/",
+      "group": "prefecture",
+      "sector": "prefecture",
+      "type": "official"
+    },
+    {
+      "name": "個人情報保護委員会 / PPC",
+      "url": "https://www.ppc.go.jp/news/press/",
+      "group": "national",
+      "sector": "government",
+      "type": "official"
+    },
+    {
+      "name": "国家サイバー統括室 / NCO",
+      "url": "https://www.cyber.go.jp/news/",
+      "group": "national",
+      "sector": "government",
+      "type": "official"
+    },
+    {
+      "name": "金融庁 / Financial Services Agency",
+      "url": "https://www.fsa.go.jp/news/",
+      "group": "national",
+      "sector": "government",
+      "type": "official"
+    },
+    {
+      "name": "総務省 / Ministry of Internal Affairs and Communications",
+      "url": "https://www.soumu.go.jp/menu_news/s-news/",
+      "group": "national",
+      "sector": "government",
+      "type": "official"
+    },
+    {
+      "name": "経済産業省 / Ministry of Economy, Trade and Industry",
+      "url": "https://www.meti.go.jp/press/",
+      "group": "national",
+      "sector": "government",
+      "type": "official"
+    },
+    {
+      "name": "厚生労働省 / Ministry of Health, Labour and Welfare",
+      "url": "https://www.mhlw.go.jp/stf/houdou/index.html",
+      "group": "national",
+      "sector": "government",
+      "type": "official"
+    },
+    {
+      "name": "文部科学省 / Ministry of Education, Culture, Sports, Science and Technology",
+      "url": "https://www.mext.go.jp/b_menu/houdou/index.htm",
+      "group": "national",
+      "sector": "government",
+      "type": "official"
+    },
+    {
+      "name": "デジタル庁 / Digital Agency",
+      "url": "https://www.digital.go.jp/news",
+      "group": "national",
+      "sector": "government",
+      "type": "official"
+    },
+    {
+      "name": "警察庁サイバー警察局 / National Police Agency Cyber Bureau",
+      "url": "https://www.npa.go.jp/bureau/cyber/",
+      "group": "national",
+      "sector": "government",
+      "type": "official"
+    },
+    {
+      "name": "情報通信研究機構 / NICT",
+      "url": "https://www.nict.go.jp/press/",
+      "group": "national",
+      "sector": "government",
+      "type": "official"
+    },
+    {
+      "name": "日本取引所グループ TDnet / JPX TDnet",
+      "url": "https://www.release.tdnet.info/inbs/I_main_00.html",
+      "group": "disclosure",
+      "sector": "listed companies",
+      "type": "tdnet"
+    },
+    {
+      "name": "JR北海道 / JR Hokkaido",
+      "url": "https://www.jrhokkaido.co.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "JR東日本 / JR East",
+      "url": "https://www.jreast.co.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "JR東海 / JR Central",
+      "url": "https://jr-central.co.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "JR西日本 / JR West",
+      "url": "https://www.westjr.co.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "JR四国 / JR Shikoku",
+      "url": "https://www.jr-shikoku.co.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "JR九州 / JR Kyushu",
+      "url": "https://www.jrkyushu.co.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "JR貨物 / JR Freight",
+      "url": "https://www.jrfreight.co.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "東武鉄道 / Tobu Railway",
+      "url": "https://www.tobu.co.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "西武鉄道 / Seibu Railway",
+      "url": "https://www.seiburailway.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "西武ホールディングス / Seibu Holdings",
+      "url": "https://www.seibuholdings.co.jp/",
+      "group": "transport",
+      "sector": "parent",
+      "type": "official"
+    },
+    {
+      "name": "京成電鉄 / Keisei Electric Railway",
+      "url": "https://www.keisei.co.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "京王電鉄 / Keio Corporation",
+      "url": "https://www.keio.co.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "小田急電鉄 / Odakyu Electric Railway",
+      "url": "https://www.odakyu.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "東急 / Tokyu",
+      "url": "https://www.tokyu.co.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "京浜急行電鉄 / Keikyu",
+      "url": "https://www.keikyu.co.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "東京メトロ / Tokyo Metro",
+      "url": "https://www.tokyometro.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "相鉄グループ / Sotetsu Group",
+      "url": "https://www.sotetsu.co.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "名古屋鉄道 / Meitetsu",
+      "url": "https://www.meitetsu.co.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "近畿日本鉄道 / Kintetsu Railway",
+      "url": "https://www.kintetsu.co.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "近鉄グループホールディングス / Kintetsu Group Holdings",
+      "url": "https://www.kintetsu-g-hd.co.jp/",
+      "group": "transport",
+      "sector": "parent",
+      "type": "official"
+    },
+    {
+      "name": "南海電気鉄道 / Nankai Electric Railway",
+      "url": "https://www.nankai.co.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "京阪ホールディングス / Keihan Holdings",
+      "url": "https://www.keihan.co.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "阪急電鉄 / Hankyu Railway",
+      "url": "https://www.hankyu.co.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "阪神電気鉄道 / Hanshin Electric Railway",
+      "url": "https://www.hanshin.co.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "阪急阪神ホールディングス / Hankyu Hanshin Holdings",
+      "url": "https://www.hankyu-hanshin.co.jp/",
+      "group": "transport",
+      "sector": "parent",
+      "type": "official"
+    },
+    {
+      "name": "西日本鉄道 / Nishitetsu",
+      "url": "https://www.nishitetsu.co.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "東京都交通局 / Toei Transportation",
+      "url": "https://www.kotsu.metro.tokyo.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "Osaka Metro",
+      "url": "https://www.osakametro.co.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "名古屋市交通局 / Nagoya Transportation Bureau",
+      "url": "https://www.kotsu.city.nagoya.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "横浜市交通局 / Yokohama Transportation Bureau",
+      "url": "https://www.city.yokohama.lg.jp/kotsu/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "京都市交通局 / Kyoto Transportation Bureau",
+      "url": "https://www.city.kyoto.lg.jp/kotsu/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "札幌市交通局 / Sapporo Transportation",
+      "url": "https://www.city.sapporo.jp/st/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "仙台市交通局 / Sendai Transportation Bureau",
+      "url": "https://www.kotsu.city.sendai.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "福岡市地下鉄 / Fukuoka City Subway",
+      "url": "https://subway.city.fukuoka.lg.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "つくばエクスプレス / Tsukuba Express",
+      "url": "https://www.mir.co.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "東京臨海高速鉄道 / Tokyo Waterfront Area Rapid Transit",
+      "url": "https://www.twr.co.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "ゆりかもめ / Yurikamome",
+      "url": "https://www.yurikamome.co.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "東京モノレール / Tokyo Monorail",
+      "url": "https://www.tokyo-monorail.co.jp/",
+      "group": "transport",
+      "sector": "rail",
+      "type": "official"
+    },
+    {
+      "name": "ANAグループ / ANA Group",
+      "url": "https://www.ana.co.jp/group/",
+      "group": "transport",
+      "sector": "air",
+      "type": "official"
+    },
+    {
+      "name": "日本航空 / Japan Airlines",
+      "url": "https://www.jal.com/ja/",
+      "group": "transport",
+      "sector": "air",
+      "type": "official"
+    },
+    {
+      "name": "スカイマーク / Skymark",
+      "url": "https://www.skymark.co.jp/",
+      "group": "transport",
+      "sector": "air",
+      "type": "official"
+    },
+    {
+      "name": "Peach Aviation",
+      "url": "https://www.flypeach.com/",
+      "group": "transport",
+      "sector": "air",
+      "type": "official"
+    },
+    {
+      "name": "ジェットスター・ジャパン / Jetstar Japan",
+      "url": "https://www.jetstar.com/jp/ja/home",
+      "group": "transport",
+      "sector": "air",
+      "type": "official"
+    },
+    {
+      "name": "AIRDO",
+      "url": "https://www.airdo.jp/",
+      "group": "transport",
+      "sector": "air",
+      "type": "official"
+    },
+    {
+      "name": "ソラシドエア / Solaseed Air",
+      "url": "https://www.solaseedair.jp/",
+      "group": "transport",
+      "sector": "air",
+      "type": "official"
+    },
+    {
+      "name": "スターフライヤー / StarFlyer",
+      "url": "https://www.starflyer.jp/",
+      "group": "transport",
+      "sector": "air",
+      "type": "official"
+    },
+    {
+      "name": "フジドリームエアラインズ / Fuji Dream Airlines",
+      "url": "https://www.fujidream.co.jp/",
+      "group": "transport",
+      "sector": "air",
+      "type": "official"
+    },
+    {
+      "name": "ZIPAIR",
+      "url": "https://www.corporate.zipair.net/",
+      "group": "transport",
+      "sector": "air",
+      "type": "official"
+    },
+    {
+      "name": "SPRING JAPAN",
+      "url": "https://jp.ch.com/Help/News/1.html",
+      "group": "transport",
+      "sector": "air",
+      "type": "official"
+    },
+    {
+      "name": "トキエア / Toki Air",
+      "url": "https://tokiair.com/",
+      "group": "transport",
+      "sector": "air",
+      "type": "official"
+    },
+    {
+      "name": "成田国際空港株式会社 / Narita International Airport Corporation",
+      "url": "https://www.naa.jp/",
+      "group": "transport",
+      "sector": "airport",
+      "type": "official"
+    },
+    {
+      "name": "日本空港ビルデング / Japan Airport Terminal",
+      "url": "https://www.tokyo-airport-bldg.co.jp/",
+      "group": "transport",
+      "sector": "airport",
+      "type": "official"
+    },
+    {
+      "name": "関西エアポート / Kansai Airports",
+      "url": "https://www.kansai-airports.co.jp/",
+      "group": "transport",
+      "sector": "airport",
+      "type": "official"
+    },
+    {
+      "name": "中部国際空港 / Central Japan International Airport",
+      "url": "https://www.centrair.jp/corporate/newsroom/",
+      "group": "transport",
+      "sector": "airport",
+      "type": "official"
+    },
+    {
+      "name": "北海道エアポート / Hokkaido Airports",
+      "url": "https://www.hokkaido-airports.co.jp/",
+      "group": "transport",
+      "sector": "airport",
+      "type": "official"
+    },
+    {
+      "name": "福岡国際空港 / Fukuoka International Airport",
+      "url": "https://www.fukuoka-airport.jp/",
+      "group": "transport",
+      "sector": "airport",
+      "type": "official"
+    },
+    {
+      "name": "ジェイ・アール北海道バス / JR Hokkaido Bus",
+      "url": "https://www.jrhokkaidobus.com/",
+      "group": "transport",
+      "sector": "bus",
+      "type": "official"
+    },
+    {
+      "name": "ジェイアールバス東北 / JR Bus Tohoku",
+      "url": "https://www.jrbustohoku.co.jp/",
+      "group": "transport",
+      "sector": "bus",
+      "type": "official"
+    },
+    {
+      "name": "ジェイアールバス関東 / JR Bus Kanto",
+      "url": "https://www.jrbuskanto.co.jp/",
+      "group": "transport",
+      "sector": "bus",
+      "type": "official"
+    },
+    {
+      "name": "ジェイアール東海バス / JR Tokai Bus",
+      "url": "https://www.jrtbinm.co.jp/",
+      "group": "transport",
+      "sector": "bus",
+      "type": "official"
+    },
+    {
+      "name": "西日本ジェイアールバス / West JR Bus",
+      "url": "https://www.nishinihonjrbus.co.jp/",
+      "group": "transport",
+      "sector": "bus",
+      "type": "official"
+    },
+    {
+      "name": "ジェイアール四国バス / JR Shikoku Bus",
+      "url": "https://www.jr-shikokubus.co.jp/",
+      "group": "transport",
+      "sector": "bus",
+      "type": "official"
+    },
+    {
+      "name": "JR九州バス / JR Kyushu Bus",
+      "url": "https://www.jrkbus.co.jp/",
+      "group": "transport",
+      "sector": "bus",
+      "type": "official"
+    },
+    {
+      "name": "WILLER",
+      "url": "https://www.willer.co.jp/",
+      "group": "transport",
+      "sector": "bus",
+      "type": "official"
+    },
+    {
+      "name": "みちのりホールディングス / Michinori Holdings",
+      "url": "https://www.michinori.co.jp/",
+      "group": "transport",
+      "sector": "parent",
+      "type": "official"
+    },
+    {
+      "name": "アルピコグループ / Alpico Group",
+      "url": "https://www.alpico.co.jp/",
+      "group": "transport",
+      "sector": "parent",
+      "type": "official"
+    },
+    {
+      "name": "神奈川中央交通 / Kanagawa Chuo Kotsu",
+      "url": "https://www.kanachu.co.jp/",
+      "group": "transport",
+      "sector": "bus",
+      "type": "official"
+    },
+    {
+      "name": "国際興業 / Kokusai Kogyo",
+      "url": "https://www.kokusaikogyo.co.jp/",
+      "group": "transport",
+      "sector": "bus",
+      "type": "official"
+    },
+    {
+      "name": "商船三井 / Mitsui O.S.K. Lines",
+      "url": "https://www.mol.co.jp/",
+      "group": "transport",
+      "sector": "parent",
+      "type": "official"
+    },
+    {
+      "name": "商船三井さんふらわあ / MOL Sunflower",
+      "url": "https://www.sunflower.co.jp/",
+      "group": "transport",
+      "sector": "ferry",
+      "type": "official"
+    },
+    {
+      "name": "新日本海フェリー / Shin Nihonkai Ferry",
+      "url": "https://www.snf.jp/",
+      "group": "transport",
+      "sector": "ferry",
+      "type": "official"
+    },
+    {
+      "name": "阪九フェリー / Hankyu Ferry",
+      "url": "https://www.han9f.co.jp/",
+      "group": "transport",
+      "sector": "ferry",
+      "type": "official"
+    },
+    {
+      "name": "東京九州フェリー / Tokyo Kyusyu Ferry",
+      "url": "https://tqf.co.jp/",
+      "group": "transport",
+      "sector": "ferry",
+      "type": "official"
+    },
+    {
+      "name": "名門大洋フェリー / Meimon Taiyo Ferry",
+      "url": "https://www.cityline.co.jp/",
+      "group": "transport",
+      "sector": "ferry",
+      "type": "official"
+    },
+    {
+      "name": "太平洋フェリー / Taiheiyo Ferry",
+      "url": "https://www.taiheiyo-ferry.co.jp/",
+      "group": "transport",
+      "sector": "ferry",
+      "type": "official"
+    },
+    {
+      "name": "南海フェリー / Nankai Ferry",
+      "url": "https://nankai-ferry.co.jp/",
+      "group": "transport",
+      "sector": "ferry",
+      "type": "official"
+    },
+    {
+      "name": "オレンジフェリー / Orange Ferry",
+      "url": "https://www.orange-ferry.co.jp/",
+      "group": "transport",
+      "sector": "ferry",
+      "type": "official"
+    },
+    {
+      "name": "東海汽船 / Tokai Kisen",
+      "url": "https://www.tokaikisen.co.jp/",
+      "group": "transport",
+      "sector": "ferry",
+      "type": "official"
+    },
+    {
+      "name": "佐渡汽船 / Sado Kisen",
+      "url": "https://www.sadokisen.co.jp/",
+      "group": "transport",
+      "sector": "ferry",
+      "type": "official"
+    },
+    {
+      "name": "津軽海峡フェリー / Tsugaru Kaikyo Ferry",
+      "url": "https://www.tsugarukaikyo.co.jp/",
+      "group": "transport",
+      "sector": "ferry",
+      "type": "official"
+    },
+    {
+      "name": "小笠原海運 / Ogasawara Kaiun",
+      "url": "https://www.ogasawarakaiun.co.jp/",
+      "group": "transport",
+      "sector": "ferry",
+      "type": "official"
+    },
+    {
+      "name": "オーシャントランス / Ocean Trans",
+      "url": "https://www.otf.jp/",
+      "group": "transport",
+      "sector": "ferry",
+      "type": "official"
+    },
+    {
+      "name": "日本交通 / Nihon Kotsu",
+      "url": "https://www.nihon-kotsu.co.jp/",
+      "group": "transport",
+      "sector": "taxi",
+      "type": "official"
+    },
+    {
+      "name": "第一交通産業 / Daiichi Kotsu Sangyo",
+      "url": "https://www.daiichi-koutsu.co.jp/",
+      "group": "transport",
+      "sector": "taxi",
+      "type": "official"
+    },
+    {
+      "name": "国際自動車 / Kokusai Motorcars",
+      "url": "https://www.km-group.co.jp/",
+      "group": "transport",
+      "sector": "taxi",
+      "type": "official"
+    },
+    {
+      "name": "MKグループ / MK Group",
+      "url": "https://www.mk-group.co.jp/",
+      "group": "transport",
+      "sector": "taxi",
+      "type": "official"
+    },
+    {
+      "name": "日の丸交通 / Hinomaru Kotsu",
+      "url": "https://hinomaru.tokyo/",
+      "group": "transport",
+      "sector": "taxi",
+      "type": "official"
+    },
+    {
+      "name": "東京無線 / Tokyo Musen",
+      "url": "https://www.tokyomusen.or.jp/",
+      "group": "transport",
+      "sector": "taxi",
+      "type": "official"
+    },
+    {
+      "name": "チェッカーキャブ / Checker Cab",
+      "url": "https://www.checker-cab.co.jp/",
+      "group": "transport",
+      "sector": "taxi",
+      "type": "official"
+    },
+    {
+      "name": "GO株式会社 / GO Inc.",
+      "url": "https://goinc.jp/",
+      "group": "transport",
+      "sector": "taxi",
+      "type": "official"
+    },
+    {
+      "name": "S.RIDE",
+      "url": "https://www.sride.jp/",
+      "group": "transport",
+      "sector": "taxi",
+      "type": "official"
+    },
+    {
+      "name": "つばめタクシーグループ / Tsubame Taxi Group",
+      "url": "https://www.tsubame-taxi.or.jp/",
+      "group": "transport",
+      "sector": "taxi",
+      "type": "official"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Polling sources used by JP Incident Monitor.">
+  <title>Sources — JP Incident Monitor</title>
+  <link rel="alternate" type="application/rss+xml" title="JP Incident Monitor RSS" href="feed.xml">
+  <link rel="stylesheet" href="styles.css?v=20261019-7">
+</head>
+<body class="sources-page">
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="./" aria-label="JP Incident Monitor home">
+        <span class="brand-mark" aria-hidden="true">JP</span>
+        <span>Incident Monitor</span>
+      </a>
+      <div class="header-actions">
+        <a class="rss-link" href="./" data-i18n="incidents">Incidents</a>
+        <a class="rss-link" href="feed.xml" data-i18n="rssFeed" type="application/rss+xml">RSS feed</a>
+        <button class="language-switch" id="language-switch" type="button" aria-label="日本語に切り替える">
+          <span class="language-option is-active" data-language-option="en">EN</span>
+          <span aria-hidden="true">/</span>
+          <span class="language-option" data-language-option="ja">日本語</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="sources-intro" aria-labelledby="page-title">
+      <p class="eyebrow" data-i18n="eyebrow">SOURCE TRANSPARENCY</p>
+      <div class="sources-intro-grid">
+        <div>
+          <h1 id="page-title" data-i18n="title">Polling sources</h1>
+          <p class="lede" data-i18n="description">The public feeds, official sites, disclosure systems, and news searches checked by the automated collector.</p>
+          <p class="disclaimer" data-i18n="note">A listed source is monitored for relevant reports; inclusion does not mean every page or advisory becomes an incident record.</p>
+        </div>
+        <dl class="source-summary" aria-live="polite">
+          <div><dt data-i18n="total">Configured sources</dt><dd id="source-total">—</dd></div>
+          <div><dt data-i18n="updated">Directory updated</dt><dd id="source-updated">—</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="source-directory" aria-labelledby="directory-title">
+      <h2 id="directory-title" data-i18n="directory">Source directory</h2>
+      <div class="source-controls">
+        <label><span data-i18n="searchLabel">Search sources</span><input id="source-search" type="search" autocomplete="off" data-i18n-placeholder="searchPlaceholder" placeholder="Search…"></label>
+        <label><span data-i18n="categoryLabel">Category</span><select id="source-category"></select></label>
+      </div>
+      <div id="source-groups"></div>
+      <div class="loading-state" id="source-loading" role="status" data-i18n="loading">Loading sources…</div>
+      <div class="error-state" id="source-error" role="alert" hidden data-i18n="error">The source directory could not be loaded.</div>
+      <div class="sources-empty" id="source-empty" hidden data-i18n="empty">No sources match these filters.</div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <p data-i18n="footerNote">Source URLs are published for transparency and verification.</p>
+      <div class="footer-links">
+        <a href="./" data-i18n="incidents">Incidents</a>
+        <a href="https://github.com/elkentaro/jp_incidents" rel="noopener noreferrer" data-i18n="project">View project on GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="sources.js?v=20261019-7" defer></script>
+</body>
+</html>

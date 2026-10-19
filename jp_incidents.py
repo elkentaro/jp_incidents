@@ -18,6 +18,7 @@ Usage:
   python3 jp_incidents.py list --days 28       # print recent incidents with sources
   python3 jp_incidents.py export --days 28 -o out.csv
   python3 jp_incidents.py export-json          # write data/incidents.json if data changed
+  python3 jp_incidents.py export-sources       # write data/sources.json if sources changed
   python3 jp_incidents.py serve --port 8080    # dashboard + /api/incidents + /export.csv
   python3 jp_incidents.py install-units        # print systemd service + timer
 
@@ -32,6 +33,7 @@ Env:
   JPI_MODEL          model for extraction (default claude-haiku-5-5)
   JPI_JSON_PATH      static JSON path (default ./data/incidents.json)
   JPI_RSS_PATH       static RSS path (default ./feed.xml)
+  JPI_SOURCES_PATH   static source-directory JSON path (default ./data/sources.json)
   JPI_SITE_URL       public site URL used by RSS (default GitHub Pages URL)
   JPI_GIT_REMOTE     Git remote used by --publish (default origin)
   JPI_GIT_BRANCH     Git branch used by --publish (default main)
@@ -53,6 +55,7 @@ from zoneinfo import ZoneInfo
 DB_PATH = os.environ.get("JPI_DB", "jp_incidents.db")
 JSON_PATH = os.environ.get("JPI_JSON_PATH", "data/incidents.json")
 RSS_PATH = os.environ.get("JPI_RSS_PATH", "feed.xml")
+SOURCES_PATH = os.environ.get("JPI_SOURCES_PATH", "data/sources.json")
 UA = "Mozilla/5.0 (compatible; jp-incidents-collector/2.0; +security research)"
 JST = ZoneInfo("Asia/Tokyo")
 
@@ -75,6 +78,8 @@ SOURCES = [
     {"name": "GNews サイバー攻撃",     "url": gnews("サイバー攻撃 被害 when:7d")},
     {"name": "GNews お詫び 漏えい",    "url": gnews("お詫び 漏えい OR お知らせ 不正アクセス when:7d")},
     {"name": "GNews Japan breach",    "url": gnews("Japan data breach OR Japan ransomware when:7d"), "jp_only": True},
+    {"name": "GNews PR TIMES disclosures", "url": gnews(
+        "site:prtimes.jp (不正アクセス OR 情報漏えい OR 情報漏洩 OR ランサムウェア OR サイバー攻撃) when:14d")},
     {"name": "Bing 不正アクセス",      "url": bing("不正アクセス")},
     {"name": "Bing 情報漏えい",        "url": bing("情報漏えい")},
     # --- security trade press that reports nearly every disclosure ---
@@ -147,6 +152,87 @@ MUNICIPAL_SOURCES = [
 
 for _source in MUNICIPAL_SOURCES:
     _source["group"] = "government"
+
+# All prefectural governments except Tokyo, which is already included above.
+_PREFECTURAL_SITES = [
+    ("北海道 / Hokkaido", "https://www.pref.hokkaido.lg.jp/"),
+    ("青森県 / Aomori", "https://www.pref.aomori.lg.jp/"),
+    ("岩手県 / Iwate", "https://www.pref.iwate.jp/"),
+    ("宮城県 / Miyagi", "https://www.pref.miyagi.jp/"),
+    ("秋田県 / Akita", "https://www.pref.akita.lg.jp/"),
+    ("山形県 / Yamagata", "https://www.pref.yamagata.jp/"),
+    ("福島県 / Fukushima", "https://www.pref.fukushima.lg.jp/"),
+    ("茨城県 / Ibaraki", "https://www.pref.ibaraki.jp/"),
+    ("栃木県 / Tochigi", "https://www.pref.tochigi.lg.jp/"),
+    ("群馬県 / Gunma", "https://www.pref.gunma.jp/"),
+    ("埼玉県 / Saitama", "https://www.pref.saitama.lg.jp/"),
+    ("千葉県 / Chiba", "https://www.pref.chiba.lg.jp/"),
+    ("神奈川県 / Kanagawa", "https://www.pref.kanagawa.jp/"),
+    ("新潟県 / Niigata", "https://www.pref.niigata.lg.jp/"),
+    ("富山県 / Toyama", "https://www.pref.toyama.jp/"),
+    ("石川県 / Ishikawa", "https://www.pref.ishikawa.lg.jp/"),
+    ("福井県 / Fukui", "https://www.pref.fukui.lg.jp/"),
+    ("山梨県 / Yamanashi", "https://www.pref.yamanashi.jp/"),
+    ("長野県 / Nagano", "https://www.pref.nagano.lg.jp/"),
+    ("岐阜県 / Gifu", "https://www.pref.gifu.lg.jp/"),
+    ("静岡県 / Shizuoka", "https://www.pref.shizuoka.jp/"),
+    ("愛知県 / Aichi", "https://www.pref.aichi.jp/rss/10/list7.xml"),
+    ("三重県 / Mie", "https://www.pref.mie.lg.jp/"),
+    ("滋賀県 / Shiga", "https://www.pref.shiga.lg.jp/"),
+    ("京都府 / Kyoto", "https://www.pref.kyoto.jp/"),
+    ("大阪府 / Osaka", "https://www.pref.osaka.lg.jp/"),
+    ("兵庫県 / Hyogo", "https://web.pref.hyogo.lg.jp/"),
+    ("奈良県 / Nara", "https://www.pref.nara.lg.jp/"),
+    ("和歌山県 / Wakayama", "https://www.pref.wakayama.lg.jp/"),
+    ("鳥取県 / Tottori", "https://www.pref.tottori.lg.jp/"),
+    ("島根県 / Shimane", "https://www.pref.shimane.lg.jp/"),
+    ("岡山県 / Okayama", "https://www.pref.okayama.jp/"),
+    ("広島県 / Hiroshima", "https://www.pref.hiroshima.lg.jp/"),
+    ("山口県 / Yamaguchi", "https://www.pref.yamaguchi.lg.jp/"),
+    ("徳島県 / Tokushima", "https://www.pref.tokushima.lg.jp/"),
+    ("香川県 / Kagawa", "https://www.pref.kagawa.lg.jp/"),
+    ("愛媛県 / Ehime", "https://www.pref.ehime.jp/"),
+    ("高知県 / Kochi", "https://www.pref.kochi.lg.jp/"),
+    ("福岡県 / Fukuoka", "https://www.pref.fukuoka.lg.jp/"),
+    ("佐賀県 / Saga", "https://www.pref.saga.lg.jp/"),
+    ("長崎県 / Nagasaki", "https://www.pref.nagasaki.jp/"),
+    ("熊本県 / Kumamoto", "https://www.pref.kumamoto.jp/"),
+    ("大分県 / Oita", "https://www.pref.oita.jp/"),
+    ("宮崎県 / Miyazaki", "https://www.pref.miyazaki.lg.jp/"),
+    ("鹿児島県 / Kagoshima", "https://www.pref.kagoshima.jp/"),
+    ("沖縄県 / Okinawa", "https://www.pref.okinawa.jp/"),
+]
+
+PREFECTURAL_SOURCES = [
+    {"name": name, "type": "rss" if url.endswith(".xml") else "official", "url": url,
+     "group": "prefecture", "sector": "prefecture"}
+    for name, url in _PREFECTURAL_SITES
+]
+
+# Central official portals that sometimes name incidents or provide authoritative corroboration.
+_NATIONAL_SITES = [
+    ("個人情報保護委員会 / PPC", "https://www.ppc.go.jp/news/press/"),
+    ("国家サイバー統括室 / NCO", "https://www.cyber.go.jp/news/"),
+    ("金融庁 / Financial Services Agency", "https://www.fsa.go.jp/news/"),
+    ("総務省 / Ministry of Internal Affairs and Communications", "https://www.soumu.go.jp/menu_news/s-news/"),
+    ("経済産業省 / Ministry of Economy, Trade and Industry", "https://www.meti.go.jp/press/"),
+    ("厚生労働省 / Ministry of Health, Labour and Welfare", "https://www.mhlw.go.jp/stf/houdou/index.html"),
+    ("文部科学省 / Ministry of Education, Culture, Sports, Science and Technology", "https://www.mext.go.jp/b_menu/houdou/index.htm"),
+    ("デジタル庁 / Digital Agency", "https://www.digital.go.jp/news"),
+    ("警察庁サイバー警察局 / National Police Agency Cyber Bureau", "https://www.npa.go.jp/bureau/cyber/"),
+    ("情報通信研究機構 / NICT", "https://www.nict.go.jp/press/"),
+]
+
+NATIONAL_SOURCES = [
+    {"name": name, "type": "official", "url": url, "group": "national", "sector": "government"}
+    for name, url in _NATIONAL_SITES
+]
+
+DISCLOSURE_SOURCES = [
+    {"name": "日本取引所グループ TDnet / JPX TDnet", "type": "tdnet",
+     "url": "https://www.release.tdnet.info/inbs/I_main_00.html", "group": "disclosure",
+     "sector": "listed companies"},
+]
 
 # Major nationwide passenger-transport operators and distinct parent/holding companies.
 # Rail-owned bus companies generally disclose group-wide incidents through the railway parent;
@@ -258,14 +344,21 @@ TRANSPORT_SOURCES = [
 ]
 
 SOURCES.extend(MUNICIPAL_SOURCES)
+SOURCES.extend(PREFECTURAL_SOURCES)
+SOURCES.extend(NATIONAL_SOURCES)
+SOURCES.extend(DISCLOSURE_SOURCES)
 SOURCES.extend(TRANSPORT_SOURCES)
 MUNICIPAL_HOSTS = {
     (urllib.parse.urlsplit(src["url"]).hostname or "").removeprefix("www.")
-    for src in MUNICIPAL_SOURCES
+    for src in MUNICIPAL_SOURCES + PREFECTURAL_SOURCES + NATIONAL_SOURCES
 }
 TRANSPORT_HOSTS = {
     (urllib.parse.urlsplit(src["url"]).hostname or "").removeprefix("www.")
     for src in TRANSPORT_SOURCES
+}
+DISCLOSURE_HOSTS = {
+    (urllib.parse.urlsplit(src["url"]).hostname or "").removeprefix("www.")
+    for src in DISCLOSURE_SOURCES
 }
 
 # Gate: is this an incident report at all?  Wide on purpose; the LLM/regex step refines.
@@ -286,7 +379,8 @@ NOISE_RE = re.compile(
     r"注意喚起|weekly report|社説|アンケート|％が|%が|脅威動向|上半期|下半期|年間|統計|コラム|解説|に学ぶ|"
     r"対抗策|防御|実態|急増|倍に|トレンド|レポートを公開|調査(を|結果を)公開|"
     r"新型コロナウイルス|インフルエンザ|ワクチン|予防接種|アスベスト|複数発生|"
-    r"重油流出|油流出|燃料流出|スポンサー契約", re.I)
+    r"重油流出|油流出|燃料流出|スポンサー契約|相談窓口|コンクール|調査・研究|"
+    r"アドバイザリー|共同署名|協定を締結|セキュリティ(?:対策|ガイド|啓発|セミナー)", re.I)
 # Headlines about incidents abroad that reach the Japanese-language feeds.
 FOREIGN_RE = re.compile(
     r"フランス|アメリカ|米国|イギリス|英国|ドイツ|韓国|中国(?!電力|地方|銀行|新聞|バス)|台湾|インド|ロシア|"
@@ -346,6 +440,8 @@ def ref_tier(url, outlet="", title=""):
     if host in MUNICIPAL_HOSTS:
         return "gov"
     if host in TRANSPORT_HOSTS:
+        return "official"
+    if host in DISCLOSURE_HOSTS:
         return "official"
     if GOV_RE.search(host):
         return "gov"
@@ -526,6 +622,73 @@ def parse_html_list(raw, src):
     return out
 
 
+def parse_tdnet_page(raw, page_url):
+    """Extract only incident-like listed-company disclosures from one TDnet daily page."""
+    page = decode(raw)
+    date_match = re.search(r'id=["\']kaiji-date-\d+["\'][^>]*>(\d{4})年(\d{1,2})月(\d{1,2})日', page, re.I)
+    day = tuple(map(int, date_match.groups())) if date_match else None
+    items = []
+    for row in re.findall(r"<tr\b[^>]*>(.*?)</tr>", page, re.I | re.S):
+        name_match = re.search(r'<td\b[^>]*class=["\'][^"\']*\bkjName\b[^"\']*["\'][^>]*>(.*?)</td>', row, re.I | re.S)
+        title_match = re.search(
+            r'<td\b[^>]*class=["\'][^"\']*\bkjTitle\b[^"\']*["\'][^>]*>.*?'
+            r'<a\b[^>]*href=["\']([^"\']+\.pdf)["\'][^>]*>(.*?)</a>', row, re.I | re.S)
+        if not name_match or not title_match:
+            continue
+        organization = strip_html(name_match.group(1))
+        organization = re.sub(r"^(?:Ｇ|Ｐ)[－-]", "", organization).strip()
+        disclosure_title = strip_html(title_match.group(2))
+        if not INCIDENT_RE.search(disclosure_title) or NOISE_RE.search(disclosure_title):
+            continue
+        time_match = re.search(r'<td\b[^>]*class=["\'][^"\']*\bkjTime\b[^"\']*["\'][^>]*>(\d{1,2}):(\d{2})</td>', row, re.I | re.S)
+        published = None
+        if day:
+            hour, minute = map(int, time_match.groups()) if time_match else (0, 0)
+            published = datetime(*day, hour, minute, tzinfo=JST).astimezone(timezone.utc).isoformat(timespec="seconds")
+        title = f"{organization}：{disclosure_title}"
+        items.append({
+            "title": title,
+            "url": urllib.parse.urljoin(page_url, html.unescape(title_match.group(1))),
+            "summary": title,
+            "published": published,
+            "outlet": "日本取引所グループ TDnet / JPX TDnet",
+        })
+    return items
+
+
+def load_tdnet_items(raw, src, fetcher):
+    """Read recent TDnet daily pages and all of their pagination pages."""
+    main = decode(raw)
+    first_pages = []
+    for filename in re.findall(r'I_list_001_\d{8}\.html', main, re.I):
+        url = urllib.parse.urljoin(src["url"], filename)
+        if url not in first_pages:
+            first_pages.append(url)
+    day_limit = max(1, int(os.environ.get("JPI_TDNET_DAYS", "14")))
+    items, seen_urls = [], set()
+    for first_url in first_pages[:day_limit]:
+        try:
+            first_raw = fetcher(first_url)
+        except (urllib.error.URLError, TimeoutError, OSError, ValueError):
+            continue
+        page_urls = [first_url]
+        for filename in re.findall(r'I_list_\d{3}_\d{8}\.html', decode(first_raw), re.I):
+            url = urllib.parse.urljoin(first_url, filename)
+            if url not in page_urls:
+                page_urls.append(url)
+        for page_url in page_urls:
+            try:
+                page_raw = first_raw if page_url == first_url else fetcher(page_url)
+                page_items = parse_tdnet_page(page_raw, page_url)
+            except (urllib.error.URLError, TimeoutError, OSError, ValueError):
+                continue
+            for item in page_items:
+                if item["url"] not in seen_urls:
+                    seen_urls.add(item["url"])
+                    items.append(item)
+    return items
+
+
 def discover_feed_urls(raw, base_url):
     """Find RSS/Atom endpoints explicitly advertised by an official homepage."""
     page = decode(raw)
@@ -567,7 +730,7 @@ def load_official_items(raw, src, fetcher):
         item_host = (urllib.parse.urlsplit(item["url"]).hostname or "").removeprefix("www.")
         if (item_host == base_host or item_host.endswith("." + base_host)) \
                 and norm_url(item["url"]) not in feed_keys \
-                and not re.search(r"(?:重要な)?お知らせRSS|RSSフィード", item["title"], re.I):
+                and not re.search(r"(?:重要な)?お知らせの?RSS|RSSフィード", item["title"], re.I):
             items.append(item)
 
     deduped = []
@@ -622,6 +785,8 @@ def fetch_body(url, limit=6000):
 
 def load_items(src, fetcher=fetch):
     raw = fetcher(src["url"])
+    if src.get("type") == "tdnet":
+        return load_tdnet_items(raw, src, fetcher)
     if src.get("type") in ("municipal", "official"):
         return load_official_items(raw, src, fetcher)
     return parse_html_list(raw, src) if src.get("type") == "html" else parse_feed(raw)
@@ -991,6 +1156,64 @@ def write_public_json(path=JSON_PATH):
     return True
 
 
+def public_sources():
+    """Return the configured polling registry in a stable, publishable form."""
+    return [
+        {
+            "name": source.get("name") or "Source",
+            "url": source.get("url") or "",
+            "group": source.get("group") or "discovery",
+            "sector": source.get("sector"),
+            "type": source.get("type") or "rss",
+        }
+        for source in load_sources()
+    ]
+
+
+def write_public_sources(path=SOURCES_PATH):
+    """Atomically publish the exact source registry shown on the static site."""
+    sources = public_sources()
+    groups = {}
+    for source in sources:
+        groups[source["group"]] = groups.get(source["group"], 0) + 1
+    old = None
+    try:
+        with open(path, encoding="utf-8") as f:
+            old = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError, OSError):
+        pass
+    if (isinstance(old, dict) and old.get("schema_version") == 1
+            and old.get("sources") == sources and old.get("total") == len(sources)
+            and old.get("groups") == groups):
+        print(f"Sources unchanged: {path} ({len(sources)} sources)")
+        return False
+
+    document = {
+        "schema_version": 1,
+        "updated_at": now_iso(),
+        "total": len(sources),
+        "groups": groups,
+        "sources": sources,
+    }
+    parent = os.path.dirname(os.path.abspath(path))
+    os.makedirs(parent, exist_ok=True)
+    temp_path = os.path.join(parent, f".{os.path.basename(path)}.{os.getpid()}.tmp")
+    try:
+        with open(temp_path, "w", encoding="utf-8", newline="\n") as f:
+            json.dump(document, f, ensure_ascii=False, indent=2)
+            f.write("\n")
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(temp_path, path)
+    finally:
+        try:
+            os.unlink(temp_path)
+        except FileNotFoundError:
+            pass
+    print(f"Sources updated: {path} ({len(sources)} sources)")
+    return True
+
+
 def _rss_date(value):
     try:
         dt = datetime.fromisoformat((value or "").replace("Z", "+00:00"))
@@ -1101,14 +1324,15 @@ def _run_git(args, cwd, check=True):
     return result
 
 
-def publish_public_json(path=JSON_PATH, rss_path=RSS_PATH):
-    """Refresh JSON/RSS, commit them if needed, and push pending data commits."""
+def publish_public_json(path=JSON_PATH, rss_path=RSS_PATH, sources_path=SOURCES_PATH):
+    """Refresh public JSON/RSS/source files, commit them if needed, and push."""
     json_changed = write_public_json(path)
     rss_changed = write_public_rss(rss_path)
-    changed = json_changed or rss_changed
+    sources_changed = write_public_sources(sources_path)
+    changed = json_changed or rss_changed or sources_changed
     root_result = _run_git(["rev-parse", "--show-toplevel"], os.getcwd())
     repo = root_result.stdout.strip()
-    absolute_paths = [os.path.abspath(path), os.path.abspath(rss_path)]
+    absolute_paths = [os.path.abspath(path), os.path.abspath(rss_path), os.path.abspath(sources_path)]
     for output_path in absolute_paths:
         if os.path.commonpath((repo, output_path)) != repo:
             raise RuntimeError(f"Published output must be inside the Git repository: {output_path}")
@@ -1246,12 +1470,14 @@ def main():
     sub = ap.add_subparsers(dest="cmd", required=True)
     t = sub.add_parser("sources")
     t.add_argument("--match", help="only test source names containing this text")
-    t.add_argument("--group", choices=["government", "transport"], help="only test one source group")
+    source_groups = sorted({source.get("group") for source in SOURCES if source.get("group")})
+    t.add_argument("--group", choices=source_groups, help="only test one source group")
     p = sub.add_parser("poll"); p.add_argument("--notify", action="store_true")
     p.add_argument("--publish", action="store_true",
                    help="update the static JSON/RSS, commit changes, and push to GitHub")
     p.add_argument("--json-path", default=JSON_PATH)
     p.add_argument("--rss-path", default=RSS_PATH)
+    p.add_argument("--sources-path", default=SOURCES_PATH)
     l = sub.add_parser("list"); l.add_argument("--days", type=int, default=28)
     l.add_argument("--type", choices=list(RANK)); l.add_argument("--min-score", type=int, default=0)
     e = sub.add_parser("export"); e.add_argument("--days", type=int, default=28); e.add_argument("-o", default="-")
@@ -1260,6 +1486,8 @@ def main():
     j.add_argument("-o", "--output", default=JSON_PATH)
     r = sub.add_parser("export-rss", help="write the complete static RSS feed")
     r.add_argument("-o", "--output", default=RSS_PATH)
+    q = sub.add_parser("export-sources", help="write the static source directory")
+    q.add_argument("-o", "--output", default=SOURCES_PATH)
     s = sub.add_parser("serve"); s.add_argument("--host", default="127.0.0.1"); s.add_argument("--port", type=int, default=8080)
     sub.add_parser("install-units")
     a = ap.parse_args()
@@ -1268,7 +1496,7 @@ def main():
     elif a.cmd == "poll":
         poll(a.notify)
         if a.publish:
-            publish_public_json(a.json_path, a.rss_path)
+            publish_public_json(a.json_path, a.rss_path, a.sources_path)
     elif a.cmd == "list":
         for r in recent(a.days, a.type, a.min_score):
             print(f"{r['published'][:10]}  {r['org']:<28} {r['kind']:<20} {fmt_records(r['records']):>12}"
@@ -1282,6 +1510,8 @@ def main():
         write_public_json(a.output)
     elif a.cmd == "export-rss":
         write_public_rss(a.output)
+    elif a.cmd == "export-sources":
+        write_public_sources(a.output)
     elif a.cmd == "serve":
         serve(a.host, a.port)
     elif a.cmd == "install-units":

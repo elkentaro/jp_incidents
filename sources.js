@@ -1,0 +1,158 @@
+"use strict";
+
+function savedLanguage() {
+  try { return localStorage.getItem("jp-incidents-language"); } catch (_) { return null; }
+}
+
+function replaceContent(node, children) {
+  while (node.firstChild) node.removeChild(node.firstChild);
+  children.forEach((child) => node.appendChild(child));
+}
+
+const copy = {
+  en: {
+    eyebrow: "SOURCE TRANSPARENCY", title: "Polling sources",
+    description: "The public feeds, official sites, disclosure systems, and news searches checked by the automated collector.",
+    note: "A listed source is monitored for relevant reports; inclusion does not mean every page or advisory becomes an incident record.",
+    total: "Configured sources", updated: "Directory updated", directory: "Source directory",
+    searchLabel: "Search sources", searchPlaceholder: "Search…", categoryLabel: "Category",
+    loading: "Loading sources…", error: "The source directory could not be loaded.",
+    empty: "No sources match these filters.", incidents: "Incidents", rssFeed: "RSS feed",
+    footerNote: "Source URLs are published for transparency and verification.", project: "View project on GitHub",
+    all: "All categories", switchLanguage: "日本語に切り替える",
+    groups: {
+      discovery: "News, search & specialist media", government: "Tokyo & designated cities",
+      prefecture: "Prefectural governments", national: "National authorities",
+      disclosure: "Listed-company disclosures", transport: "Transport operators & groups"
+    }
+  },
+  ja: {
+    eyebrow: "情報源の透明性", title: "監視している情報源",
+    description: "自動収集システムが確認する公開フィード、公式サイト、開示システム、ニュース検索の一覧です。",
+    note: "掲載された情報源は関連情報の検出対象です。すべてのページや注意喚起がインシデントとして登録されるわけではありません。",
+    total: "設定済み情報源", updated: "一覧更新日時", directory: "情報源一覧",
+    searchLabel: "情報源を検索", searchPlaceholder: "検索…", categoryLabel: "分類",
+    loading: "情報源を読み込んでいます…", error: "情報源一覧を読み込めませんでした。",
+    empty: "条件に一致する情報源はありません。", incidents: "インシデント一覧", rssFeed: "RSSフィード",
+    footerNote: "透明性と検証のため、監視対象のURLを公開しています。", project: "GitHubでプロジェクトを見る",
+    all: "すべての分類", switchLanguage: "Switch to English",
+    groups: {
+      discovery: "ニュース・検索・専門メディア", government: "東京都・特別区・政令指定都市",
+      prefecture: "都道府県", national: "国の機関",
+      disclosure: "上場企業の適時開示", transport: "交通事業者・グループ"
+    }
+  }
+};
+
+const elements = {
+  language: document.querySelector("#language-switch"), total: document.querySelector("#source-total"),
+  updated: document.querySelector("#source-updated"), search: document.querySelector("#source-search"),
+  category: document.querySelector("#source-category"), groups: document.querySelector("#source-groups"),
+  loading: document.querySelector("#source-loading"), error: document.querySelector("#source-error"),
+  empty: document.querySelector("#source-empty")
+};
+
+const state = { language: savedLanguage() || (navigator.language.startsWith("ja") ? "ja" : "en"), sources: [], updatedAt: null };
+const groupOrder = ["discovery", "disclosure", "national", "prefecture", "government", "transport"];
+
+function text(key) { return copy[state.language][key]; }
+
+function applyLanguage() {
+  const languageCopy = copy[state.language];
+  document.documentElement.lang = state.language;
+  document.title = state.language === "ja" ? "情報源一覧｜JP Incident Monitor" : "Sources — JP Incident Monitor";
+  document.querySelectorAll("[data-i18n]").forEach((node) => {
+    const value = languageCopy[node.dataset.i18n];
+    if (typeof value === "string") node.textContent = value;
+  });
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((node) => {
+    node.placeholder = languageCopy[node.dataset.i18nPlaceholder];
+  });
+  elements.language.setAttribute("aria-label", languageCopy.switchLanguage);
+  document.querySelectorAll("[data-language-option]").forEach((node) => {
+    node.classList.toggle("is-active", node.dataset.languageOption === state.language);
+  });
+  const selected = elements.category.value;
+  const options = [["", languageCopy.all]].concat(groupOrder.map((group) => [group, languageCopy.groups[group]]));
+  replaceContent(elements.category, options.map((entry) => {
+    const option = document.createElement("option"); option.value = entry[0]; option.textContent = entry[1]; return option;
+  }));
+  elements.category.value = selected;
+  render();
+}
+
+function formatUpdated(value) {
+  const date = new Date(value);
+  if (Number.isNaN(date.valueOf())) return "—";
+  return new Intl.DateTimeFormat(state.language === "ja" ? "ja-JP" : "en-US", {
+    year: "numeric", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit",
+    timeZone: "Asia/Tokyo", timeZoneName: "short"
+  }).format(date);
+}
+
+function sourceCard(source) {
+  const card = document.createElement("article"); card.className = "source-card";
+  const link = document.createElement("a"); link.href = source.url; link.target = "_blank";
+  link.rel = "noopener noreferrer"; link.textContent = source.name; card.appendChild(link);
+  const meta = document.createElement("div"); meta.className = "source-meta";
+  try {
+    const host = document.createElement("span"); host.textContent = new URL(source.url).hostname; meta.appendChild(host);
+  } catch (_) { /* malformed override URL: leave hostname blank */ }
+  if (source.sector) {
+    const sector = document.createElement("span"); sector.className = "source-sector";
+    sector.textContent = source.sector; meta.appendChild(sector);
+  }
+  card.appendChild(meta); return card;
+}
+
+function render() {
+  if (!state.sources.length) return;
+  const query = elements.search.value.trim().toLocaleLowerCase(state.language);
+  const category = elements.category.value;
+  const filtered = state.sources.filter((source) => {
+    if (category && source.group !== category) return false;
+    return !query || `${source.name} ${source.url} ${source.sector || ""}`.toLocaleLowerCase(state.language).includes(query);
+  });
+  const sections = groupOrder.map((group) => {
+    const rows = filtered.filter((source) => source.group === group);
+    if (!rows.length) return null;
+    const section = document.createElement("section"); section.className = "source-group";
+    const heading = document.createElement("div"); heading.className = "source-group-heading";
+    const title = document.createElement("h2"); title.textContent = text("groups")[group];
+    const count = document.createElement("span"); count.className = "source-group-count";
+    count.textContent = rows.length.toLocaleString(state.language === "ja" ? "ja-JP" : "en-US");
+    heading.appendChild(title); heading.appendChild(count); section.appendChild(heading);
+    const grid = document.createElement("div"); grid.className = "source-list-grid";
+    rows.sort((a, b) => a.name.localeCompare(b.name, state.language)).forEach((source) => grid.appendChild(sourceCard(source)));
+    section.appendChild(grid); return section;
+  }).filter(Boolean);
+  replaceContent(elements.groups, sections);
+  elements.empty.hidden = filtered.length !== 0;
+  elements.total.textContent = state.sources.length.toLocaleString(state.language === "ja" ? "ja-JP" : "en-US");
+  elements.updated.textContent = formatUpdated(state.updatedAt);
+}
+
+elements.language.addEventListener("click", () => {
+  state.language = state.language === "en" ? "ja" : "en";
+  try { localStorage.setItem("jp-incidents-language", state.language); } catch (_) { /* Safari private mode */ }
+  applyLanguage();
+});
+elements.search.addEventListener("input", render);
+elements.category.addEventListener("change", render);
+
+async function loadSources() {
+  applyLanguage();
+  try {
+    const response = await fetch("data/sources.json", { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+    if (!Array.isArray(data.sources)) throw new Error("Invalid source document");
+    state.sources = data.sources; state.updatedAt = data.updated_at;
+    elements.loading.hidden = true; render();
+  } catch (error) {
+    console.error("Failed to load source directory", error);
+    elements.loading.hidden = true; elements.error.hidden = false;
+  }
+}
+
+loadSources();
