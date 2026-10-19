@@ -113,7 +113,7 @@ class StaticPublishingTests(unittest.TestCase):
              "is_followup": False},
             {"org": "Beta", "kind": "unauthorized access", "records": None,
              "incident_date": app.calendar_date_iso(2026, 10, 18), "date_basis": "incident",
-             "is_followup": False},
+             "is_followup": True},  # follow-up newly identifies Beta as another victim
         ]
         evidence = [{"url": "https://other.example.jp/report", "source": "Other News", "title": "Report"}]
         with patch.object(app, "llm_extract_many", return_value=findings):
@@ -164,6 +164,55 @@ class StaticPublishingTests(unittest.TestCase):
         self.assertIsNone(connection.execute(
             "SELECT id FROM incidents WHERE org='Unlisted Example'"
         ).fetchone())
+        connection.close()
+
+    def test_ai_validated_followup_can_add_newly_identified_victim(self):
+        connection = app.db()
+        record = {
+            "title": "複数被害組織に関する調査結果（第2報）",
+            "url": "https://example.jp/followup-new-victim", "summary": "",
+            "published": app.calendar_date_iso(2026, 10, 18),
+        }
+        classification = {
+            "org": "Newly Identified Victim", "kind": "data leak", "records": 10,
+            "incident_date": record["published"], "date_basis": "incident",
+            "is_followup": True, "secondary_validated": True,
+        }
+        self.assertTrue(app.store(connection, "News", record, classification))
+        self.assertIsNotNone(connection.execute(
+            "SELECT id FROM incidents WHERE org='Newly Identified Victim'"
+        ).fetchone())
+        connection.close()
+
+    def test_followup_for_same_victim_and_incident_only_adds_reference(self):
+        connection = app.db()
+        incident_date = app.calendar_date_iso(2026, 10, 18)
+        original = {
+            "title": "Followup Exampleへの不正アクセス", "url": "https://example.jp/first",
+            "summary": "", "published": incident_date,
+        }
+        classification = {
+            "org": "Followup Example", "kind": "unauthorized access", "records": None,
+            "incident_date": incident_date, "date_basis": "incident", "is_followup": False,
+        }
+        self.assertTrue(app.store(connection, "News", original, classification))
+        followup = {
+            "title": "Followup Example調査結果（第2報）", "url": "https://example.jp/second",
+            "summary": "", "published": incident_date,
+        }
+        followup_classification = {
+            **classification, "kind": "data leak", "records": 25, "is_followup": True,
+            "secondary_validated": True,
+        }
+        self.assertFalse(app.store(connection, "News", followup, followup_classification))
+        rows = list(connection.execute(
+            "SELECT id,kind,records FROM incidents WHERE org='Followup Example'"
+        ))
+        self.assertEqual(len(rows), 1)
+        self.assertEqual((rows[0]["kind"], rows[0]["records"]), ("data leak", 25))
+        self.assertEqual(connection.execute(
+            "SELECT COUNT(*) FROM refs WHERE incident_id=?", (rows[0]["id"],)
+        ).fetchone()[0], 2)
         connection.close()
 
 

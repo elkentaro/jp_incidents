@@ -947,6 +947,8 @@ LLM_SYSTEM = (
     'when no incident date is stated; for follow-up, reaction, remediation, recovery, or consequence stories '
     'use the original incident date and return null if it is unknown; never use a webpage update date or '
     'follow-up article date when a different incident date is stated; null if unknown).'
+    "A follow-up can identify a victim organization that was not previously listed. Always return that "
+    "actual victim and original incident date; whether it is new is decided later against stored incidents."
 )
 
 FOLLOWUP_RE = re.compile(
@@ -1044,8 +1046,10 @@ LLM_MULTI_SYSTEM = (
     '"kind" ("data leak", "unauthorized access", or "other"), "records" (positive integer or null), '
     '"incident_date" (YYYY-MM-DD: occurrence, discovery, then first disclosure; never the later article date), '
     'and "is_followup" (boolean). For an update/reaction/remediation item, use the original incident date; '
-    "omit the entry when that date or affected organization cannot be established. Do not combine distinct "
-    "organizations into one entry, and do not duplicate the same underlying incident."
+    "omit the entry when that date or affected organization cannot be established. A follow-up may reveal "
+    "a victim organization not previously known: include that victim as its own entry so the database layer "
+    "can decide whether it is new. Do not combine distinct organizations into one entry, and do not duplicate "
+    "the same organization and underlying incident."
 )
 
 
@@ -1184,16 +1188,43 @@ def load_sources():
     return SOURCES
 
 
+def _incident_day(value):
+    """Return the Japanese calendar day used to identify one underlying incident."""
+    try:
+        parsed = datetime.fromisoformat(str(value).replace("Z", "+00:00"))
+        if parsed.tzinfo is None:
+            parsed = parsed.replace(tzinfo=timezone.utc)
+        return parsed.astimezone(JST).date().isoformat()
+    except (TypeError, ValueError):
+        return None
+
+
+def find_existing_incident(c, org, incident_date):
+    """Find the same victim and underlying incident date without conflating later attacks."""
+    day = _incident_day(incident_date)
+    if not org or not day:
+        return None
+    for row in c.execute(
+        "SELECT id,kind,records,published FROM incidents WHERE org=? AND org!='' ORDER BY published DESC",
+        (org,),
+    ):
+        if _incident_day(row["published"]) == day:
+            return row
+    return None
+
+
 def store(c, src_name, rec, cl):
-    """Insert, or merge into an existing row for the same org in the last 28 days.
-    Returns True only for a new incident."""
+    """Insert a confirmed victim/incident, or merge another report of that exact incident.
+
+    Follow-ups can add a newly identified victim only after secondary AI validation; an
+    unvalidated follow-up can still enrich a matching incident but cannot create a row.
+    Returns True only for a new incident.
+    """
     iid = rec.get("_incident_id") or item_id(rec["url"])
     ref_src = rec.get("outlet") or src_name
     if c.execute("SELECT 1 FROM incidents WHERE id=?", (iid,)).fetchone():
         return False  # same article reached through two feeds
-    since = (datetime.now(timezone.utc) - timedelta(days=28)).isoformat(timespec="seconds")
-    prev = c.execute("SELECT id,kind,records FROM incidents WHERE org=? AND published>=? AND org!=''",
-                     (cl["org"], since)).fetchone()
+    prev = find_existing_incident(c, cl["org"], cl.get("incident_date") or rec.get("published"))
     if prev:  # follow-up or second outlet: worst type, largest count, add the reference, rescore
         kind = cl["kind"] if RANK[cl["kind"]] > RANK[prev["kind"] or "other"] else prev["kind"]
         recs = max(filter(None, [prev["records"], cl["records"]]), default=None)
@@ -1202,8 +1233,8 @@ def store(c, src_name, rec, cl):
         c.execute("INSERT OR IGNORE INTO refs VALUES(?,?,?,?)", (prev["id"], rec["url"], ref_src, rec["title"]))
         rescore(c, prev["id"])
         return False
-    if cl.get("is_followup"):
-        print(f"Follow-up not added as a new incident: {rec['title'][:100]}")
+    if cl.get("is_followup") and not cl.get("secondary_validated"):
+        print(f"Unvalidated follow-up not added as a new incident: {rec['title'][:100]}")
         return False
     c.execute("INSERT INTO incidents(id,source,title,url,summary,published,first_seen,org,kind,records)"
               " VALUES(?,?,?,?,?,?,?,?,?,?)",
@@ -1279,6 +1310,9 @@ def promote_reviewed(c):
             if classifications is None:  # compatibility with decisions made before multi-incident review
                 classifications = [decision["classification"]]
             for cl in classifications:
+                # review_pending has already confirmed the victim, original incident date, window,
+                # and source corroboration. This permits a follow-up to introduce a new victim.
+                cl["secondary_validated"] = True
                 rec = dict(base_record)
                 rec["published"] = cl["incident_date"]
                 identity = f"{norm_url(rec['url'])}|{cl['org'].casefold()}|{cl['incident_date'][:10]}"
@@ -1288,9 +1322,7 @@ def promote_reviewed(c):
                     "SELECT id FROM incidents WHERE id=?", (rec["_incident_id"],)
                 ).fetchone()
                 if incident_row is None:
-                    incident_row = c.execute(
-                        "SELECT id FROM incidents WHERE org=? ORDER BY published DESC LIMIT 1", (cl["org"],)
-                    ).fetchone()
+                    incident_row = find_existing_incident(c, cl["org"], cl["incident_date"])
                 if incident_row:
                     for ref in cl.get("corroboration") or []:
                         c.execute(
@@ -1347,6 +1379,7 @@ def review_pending(fetch_body_fn=fetch_body, corroborate_fn=corroborate_finding)
             if tier not in {"official", "gov"} and not corroboration:
                 continue
             finding["corroboration"] = corroboration
+            finding["secondary_validated"] = True
             validated.append(finding)
         findings = validated
         if findings:
@@ -1452,7 +1485,7 @@ def audit_current(apply=False, fetch_body_fn=fetch_body):
                 enforce_window=True,
                 require_ai=True,
             )
-            if classification and not classification.get("is_followup"):
+            if classification:
                 accepted_record = candidate
                 break
             classification = None
@@ -1543,7 +1576,7 @@ def audit_rejected(source_db_path, apply=False, fetch_body_fn=fetch_body):
                 enforce_window=True,
                 require_ai=True,
             )
-            if classification and not classification.get("is_followup"):
+            if classification:
                 accepted_record = candidate
                 break
             classification = None
