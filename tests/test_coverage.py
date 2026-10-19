@@ -196,6 +196,36 @@ class CollectionCoverageTests(unittest.TestCase):
             self.assertEqual(c.execute('SELECT COUNT(*) FROM review_queue').fetchone()[0], 1)
             self.assertEqual(c.execute('SELECT COUNT(*) FROM incidents').fetchone()[0], 0)
 
+    def test_official_product_award_and_incident_both_require_ai(self):
+        award = self.candidate(title='日本語LLMガードレールがデザイン賞を受賞', path='award/20261019.html')
+        award['summary'] = '2026年10月19日、個人情報漏えいを防ぐ製品が受賞しました。'
+        notice = self.candidate()
+        records = [award, notice]
+        with patch.object(app, 'ref_tier', return_value='official'):
+            self.run_poll(records, lambda _: '2026年10月19日、Exampleへの不正アクセスについて。')
+        with app.db() as c:
+            rows = list(c.execute('SELECT status,published FROM review_queue'))
+            self.assertEqual(len(rows), 2)
+            self.assertTrue(all(r['status'] == 'pending' for r in rows))
+            self.assertTrue(all(r['published'] == notice['published'] for r in rows))
+            self.assertEqual(c.execute('SELECT COUNT(*) FROM incidents').fetchone()[0], 0)
+        def extract(rec, body):
+            if rec['url'] == award['url']:
+                return app.ReviewFindings()
+            return app.ReviewFindings(reasons=['Affected victim is unclear'])
+        with patch.object(app, 'llm_extract_many', side_effect=extract), patch.object(app, 'deliver_alerts'):
+            result = app.review_pending(fetch_body_fn=lambda _: 'saved article', corroborate_fn=lambda *_: [])
+        self.assertEqual(result['rejected'], 1)
+        self.assertEqual(result['deferred'], 1)
+        self.assertEqual(app.all_public_incidents(), [])
+        with app.db() as c:
+            self.assertEqual(c.execute('SELECT status FROM review_queue WHERE id=?',
+                                      (app.item_id(notice['url']),)).fetchone()[0], 'needs_review')
+
+    def test_mixed_advisory_and_incident_evidence_reaches_ai_gate(self):
+        record = self.candidate(title='不正アクセス被害と対策サービスに関するお知らせ')
+        self.assertTrue(app.gate(record, self.source))
+
     def test_notice_body_budget_defers_remaining_items_until_next_cycle(self):
         records = [self.candidate(title='お客様への重要なお知らせとお詫び', path=f'notice/20261019-{i}.html')
                    for i in range(12)]

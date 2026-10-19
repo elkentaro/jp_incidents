@@ -32,8 +32,8 @@ Env:
   JPI_FETCH_BODY     "1" (default) fetch each candidate article so record counts come from the
                      full text, not just the headline; "0" to disable
   WEBHOOK_URL        Slack/Discord-compatible webhook (JSON {"text": ...}) for --notify
-  ANTHROPIC_API_KEY  optional; if set, each new candidate is read by Claude to extract
-                     org / type / records (regex heuristics are the fallback)
+  ANTHROPIC_API_KEY  each new candidate is read by Claude to extract org / type / records;
+                     candidates remain pending if AI analysis is unavailable
   JPI_MODEL          model for extraction (default claude-haiku-5-5)
   JPI_JSON_PATH      static JSON path (default ./data/incidents.json)
   JPI_RSS_PATH       static RSS path (default ./feed.xml)
@@ -1405,6 +1405,12 @@ def report_ai_error(error, context):
     send_local_alert(key, title, detail, severity=severity)
 
 
+def extraction_thinking():
+    """Use the model's supported text-only mode without consuming output on thinking."""
+    model = os.environ.get('JPI_MODEL', 'claude-haiku-5-5')
+    return {'type': 'between_tools' if model.startswith('claude-sonnet-5-5') else 'disabled'}
+
+
 def llm_extract(rec, body):
     key = os.environ.get("ANTHROPIC_API_KEY")
     if not key:
@@ -1419,7 +1425,7 @@ def llm_extract(rec, body):
                  "system": LLM_SYSTEM, "messages": [{"role": "user", "content": content}],
                  # this model thinks before answering by default; a 200-token answer needs no thinking,
                  # and the thinking block would otherwise eat the whole budget (stop_reason=max_tokens)
-                 "thinking": {"type": "disabled"}}
+                 "thinking": extraction_thinking()}
 
     def call(payload):
         req = urllib.request.Request(
@@ -1525,7 +1531,7 @@ def llm_extract_many(rec, body):
     payload = {
         "model": os.environ.get("JPI_MODEL", "claude-haiku-5-5"), "max_tokens": 2048,
         "system": LLM_MULTI_SYSTEM, "messages": [{"role": "user", "content": content}],
-        "thinking": {"type": "disabled"},
+        "thinking": extraction_thinking(),
     }
 
     def call(request_body):
@@ -1604,12 +1610,17 @@ def gate(rec, src):
     """Cheap keyword gate on title+summary, before any article fetch or API call."""
     if re.search(r"/(?:images?|gallery)(?:/|$)", urllib.parse.urlsplit(rec["url"]).path, re.I):
         return False
-    if NOISE_RE.search(rec["title"]):
+    text = f"{rec['title']} {rec['summary']}"
+    # Marketing/advisory language can coexist with a genuine victim disclosure.
+    # Keep clearly non-cyber noise out, but send mixed cybersecurity evidence to AI.
+    cyber_context = re.search(
+        r"個人情報|顧客情報|データ|システム|サイバー|不正アクセス|不正ログイン|"
+        r"ランサムウェア|マルウェア|情報漏|data|cyber|ransomware|malware|unauthori[sz]ed", text, re.I)
+    if NOISE_RE.search(rec["title"]) and not cyber_context:
         return False
     head = re.sub(r"\s+[-|–—]\s+[^-|–—]+$", "", rec["title"])  # without the " - 日本経済新聞" outlet suffix
     if FOREIGN_RE.search(head) and not DOMESTIC_RE.search(head):
         return False  # "フランスで大手スーパーがサイバー攻撃被害" etc.
-    text = f"{rec['title']} {rec['summary']}"
     if not INCIDENT_RE.search(text):
         return False
     if src.get("jp_only") and not JAPAN_RE.search(text + " " + rec["url"]):
@@ -2309,7 +2320,6 @@ def poll(notify=False, fetcher=fetch, fetch_body_fn=fetch_body):
                     c.execute("INSERT OR IGNORE INTO skipped VALUES(?)", (iid,))
                     c.commit()
                     continue
-                source_published = rec.get("published")
                 def observed_body(url):
                     text = cached_body if cached_body is not None else fetch_body_fn(url)
                     if text and not getattr(text, 'problem', None):
@@ -2318,22 +2328,11 @@ def poll(notify=False, fetcher=fetch, fetch_body_fn=fetch_body):
                                   (rec['url'],listing_fingerprint,digest,now_iso()))
                         c.commit()
                     return text
-                cl = classify(rec, src, observed_body,
-                              use_ai=False)
-                tier = ref_tier(rec["url"], rec.get("outlet") or src["name"], rec["title"])
-                immediately_confirmed = (cl and not cl.get("is_followup")
-                                         and cl["date_basis"] == "incident"
-                                         and tier in {"official", "gov"} and not vague)
-                if immediately_confirmed and store(c, src["name"], rec, cl):
-                    new += 1
-                    row = c.execute("SELECT score,confidence FROM incidents WHERE id=?",
-                                    (item_id(rec["url"]),)).fetchone()
-                    new_rows.append({**cl, "url": rec["url"], "score": row["score"], "confidence": row["confidence"]})
-                elif not immediately_confirmed:
-                    # classify() rewrites this field to its inferred incident date. The AI needs the
-                    # original source date so it can independently determine the incident date.
-                    rec["published"] = source_published
-                    queue_for_review(c, rec.get("outlet") or src["name"], iid, rec)
+                # Source authority and keyword/date matches cannot establish that a
+                # real victim exists. Even official-source candidates require AI;
+                # unresolved evidence subsequently reaches the private human queue.
+                observed_body(rec['url'])
+                queue_for_review(c, rec.get("outlet") or src["name"], iid, rec)
                 c.execute("INSERT OR IGNORE INTO skipped VALUES(?)", (iid,))
                 c.commit()
         except (urllib.error.URLError, ET.ParseError, TimeoutError, OSError, ValueError) as e:

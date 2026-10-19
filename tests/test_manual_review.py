@@ -171,6 +171,19 @@ class ManualReviewTests(unittest.TestCase):
             self.assertEqual(result, [])
             self.assertTrue(result.reasons)
 
+    def test_sonnet_55_uses_supported_thinking_mode_in_both_extractors(self):
+        response = {'content':[{'type':'text','text':json.dumps(
+            {'incidents':[], 'needs_review':False, 'is_incident':False})}]}
+        for extract in (app.llm_extract, app.llm_extract_many):
+            with self.subTest(extract=extract.__name__), \
+                 patch.dict(os.environ, {'ANTHROPIC_API_KEY':'test-key', 'JPI_MODEL':'claude-sonnet-5-5'}), \
+                 patch.object(app.urllib.request, 'urlopen', return_value=io.BytesIO(json.dumps(response).encode())) as request:
+                self.assertIsNotNone(extract(self.rec, 'article evidence'))
+                payload=json.loads(request.call_args.args[0].data)
+                self.assertEqual(payload['thinking'], {'type':'between_tools'})
+                self.assertEqual(payload['model'], 'claude-sonnet-5-5')
+                self.assertEqual(request.call_count, 1)
+
     def test_bad_pdf_cannot_take_immediate_official_publication_path(self):
         with patch.object(app, 'resolve_url', side_effect=lambda url: url):
             result = app.classify(self.rec, {'name': 'Example'}, use_ai=False,
