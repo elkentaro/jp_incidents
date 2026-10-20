@@ -20,7 +20,6 @@ Usage:
   python3 jp_incidents.py export --days 28 -o out.csv
   python3 jp_incidents.py export-json          # write data/incidents.json if data changed
   python3 jp_incidents.py export-sources       # write data/sources.json if sources changed
-  python3 jp_incidents.py audit-current        # re-evaluate stored incidents and incident dates
   python3 jp_incidents.py audit-rejected BACKUP.db  # strict AI review of rejected incidents
   python3 jp_incidents.py review-pending       # review private candidates for next cycle
   python3 jp_incidents.py test-alert           # send one private Discord operations test
@@ -2417,94 +2416,16 @@ def poll(notify=False, fetcher=fetch, fetch_body_fn=fetch_body):
     return new_rows
 
 
+AUDIT_CURRENT_RETIRED = (
+    "audit-current is retired because it cannot safely maintain incident categories "
+    "and relationships. Review individual records and use audited corrections or "
+    "withdrawals instead. No audit was run."
+)
+
+
 def audit_current(apply=False, fetch_body_fn=fetch_body):
-    """Re-evaluate every stored incident and its date against the collection window."""
-    c = db()
-    rows = list(c.execute(
-        "SELECT id,source,title,url,summary,published,first_seen,org,kind,records "
-        "FROM incidents ORDER BY first_seen, id"
-    ))
-    decisions = []
-    total = len(rows)
-    for index, row in enumerate(rows, 1):
-        refs = list(c.execute(
-            "SELECT url,source,title FROM refs WHERE incident_id=? ORDER BY rowid", (row["id"],)
-        ))
-        refs.sort(key=lambda ref: (
-            is_wrapper(ref["url"]),
-            -TIER_POINTS[ref_tier(ref["url"], ref["source"] or "", ref["title"] or "")],
-            norm_url(ref["url"]) != norm_url(row["url"]),
-        ))
-        inferred_collection_date = row["published"] == row["first_seen"]
-        classification = accepted_record = None
-        for ref in refs or [{"url": row["url"], "source": row["source"], "title": row["title"]}]:
-            candidate = {
-                "title": ref["title"] or row["title"],
-                "url": ref["url"],
-                "summary": row["summary"] or "",
-                "published": None if inferred_collection_date else row["published"],
-                "outlet": ref["source"] or row["source"],
-            }
-            classification = classify(
-                candidate,
-                {"name": ref["source"] or row["source"]},
-                fetch_body_fn=fetch_body_fn,
-                observed_at=row["first_seen"],
-                enforce_window=True,
-                require_ai=True,
-            )
-            if classification:
-                accepted_record = candidate
-                break
-            classification = None
-        decisions.append({
-            "id": row["id"],
-            "old_org": row["org"],
-            "old_title": row["title"],
-            "old_published": row["published"],
-            "classification": classification,
-            "record": accepted_record,
-        })
-        if index % 10 == 0 or index == total:
-            kept = sum(1 for item in decisions if item["classification"])
-            print(f"Audit progress: {index}/{total} checked, {kept} valid", flush=True)
-
-    kept = [item for item in decisions if item["classification"]]
-    removed = [item for item in decisions if not item["classification"]]
-    changed_dates = sum(
-        item["record"]["published"] != item["old_published"] for item in kept
-    )
-    changed_facts = sum(
-        item["classification"]["org"] != item["old_org"] for item in kept
-    )
-    print(f"Audit result: {len(kept)} valid, {len(removed)} invalid, "
-          f"{changed_dates} dates corrected, {changed_facts} organizations corrected")
-    for item in removed:
-        print(f"REMOVE {item['id']} | {item['old_org']} | {item['old_title'][:100]}")
-
-    backup_path = None
-    if apply:
-        backup_path = f"/tmp/jp_incidents-pre-audit-{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}.db"
-        backup = sqlite3.connect(backup_path)
-        try:
-            c.backup(backup)
-        finally:
-            backup.close()
-        for item in kept:
-            cl, rec = item["classification"], item["record"]
-            c.execute(
-                "UPDATE incidents SET published=?,org=?,kind=?,records=? WHERE id=?",
-                (rec["published"], cl["org"], cl["kind"], cl["records"], item["id"]),
-            )
-        for item in removed:
-            c.execute("DELETE FROM refs WHERE incident_id=?", (item["id"],))
-            c.execute("DELETE FROM incidents WHERE id=?", (item["id"],))
-        c.commit()
-        print(f"Audit applied. Recovery backup: {backup_path}")
-    c.close()
-    return {"total": total, "kept": len(kept), "removed": len(removed),
-            "changed_dates": changed_dates, "changed_facts": changed_facts,
-            "backup_path": backup_path}
+    """Fail closed for callers of the retired bulk audit."""
+    raise RuntimeError(AUDIT_CURRENT_RETIRED)
 
 
 def audit_rejected(source_db_path, apply=False, fetch_body_fn=fetch_body):
@@ -3451,9 +3372,9 @@ def main():
     r.add_argument("-o", "--output", default=RSS_PATH)
     q = sub.add_parser("export-sources", help="write the static source directory")
     q.add_argument("-o", "--output", default=SOURCES_PATH)
-    u = sub.add_parser("audit-current", help="re-evaluate every stored incident and incident date")
-    u.add_argument("--apply", action="store_true", help="apply corrections and remove invalid incidents")
-    u.add_argument("--publish", action="store_true", help="publish corrected JSON/RSS after applying")
+    u = sub.add_parser("audit-current", help="retired; exits without reading or changing records")
+    u.add_argument("--apply", action="store_true", help=argparse.SUPPRESS)
+    u.add_argument("--publish", action="store_true", help=argparse.SUPPRESS)
     v = sub.add_parser("audit-rejected", help="strict AI review of incidents removed by an audit")
     v.add_argument("source_db", help="pre-audit SQLite backup containing the rejected incidents")
     v.add_argument("--apply", action="store_true", help="restore only AI-confirmed valid incidents")
@@ -3552,11 +3473,7 @@ def main():
     elif a.cmd == "export-sources":
         write_public_sources(a.output)
     elif a.cmd == "audit-current":
-        if a.publish and not a.apply:
-            ap.error("audit-current --publish requires --apply")
-        audit_current(apply=a.apply)
-        if a.publish:
-            publish_public_json()
+        ap.error(AUDIT_CURRENT_RETIRED)
     elif a.cmd == "audit-rejected":
         if a.publish and not a.apply:
             ap.error("audit-rejected --publish requires --apply")

@@ -577,13 +577,13 @@ python3 jp_incidents.py poll
 python3 jp_incidents.py export-json
 python3 jp_incidents.py export-rss
 python3 jp_incidents.py export-sources
-python3 jp_incidents.py audit-current
-python3 jp_incidents.py audit-current --apply --publish
 python3 jp_incidents.py audit-rejected /tmp/jp_incidents-pre-audit-TIMESTAMP.db --apply --publish
 python3 jp_incidents.py review-pending
 python3 scripts/update_readme_sources.py
 python3 jp_incidents.py poll --publish
 ```
+
+`audit-current` is retired, including its `--apply` and `--publish` options. It exits without reading or changing records because the old bulk audit cannot safely maintain incident categories and relationships. Review individual records and use audited corrections or withdrawals instead. Normal collection and review do not depend on this command.
 
 `poll --publish` uses a staged publication cycle. It first promotes candidates that the AI confirmed during the previous cycle, polls all sources, and queues every new matching candidate for AI review, including recognized official and government sources. Source authority alone never establishes that an article describes a real victim. Mixed advisory/product language and cybersecurity evidence also go to AI review. It then atomically updates and pushes the public JSON/RSS. Potentially relevant or complex articles remain in the private SQLite review queue. Questionable extraction, unclear victims/dates, and missing corroboration are held for human review rather than silently rejected. After publication, the AI performs granular article-level analysis and may identify multiple distinct affected organizations/incidents from one story—including a previously unidentified victim named in a follow-up. Before a secondary finding can be promoted, it must be supported by an official/government source or an independent monitored-news result for the same organization and incident date. Corroborating links are attached to the incident and contribute to its confidence score. Each confirmed new victim/incident becomes eligible for the next hourly update; a known victim's follow-up only enriches its matching existing row. AI-rejected, undecided, or uncorroborated findings are never published.
 
