@@ -30,6 +30,36 @@ The displayed date is the incident's occurrence, discovery, or first-disclosure 
 
 One database row represents one affected organization and underlying incident, not one article. Follow-up reports, second notices, reactions, remediation, recovery, and impact stories add sources or facts when that organization/incident is already listed. A follow-up may also reveal a previously unidentified victim organization; after secondary AI evaluation confirms the victim, original incident date, relevance, and source corroboration, that organization can receive its own row. A follow-up remains unpublished when its original incident date is unknown, and an underlying incident must meet the incident-date or verified first-disclosure intake rule. A recent follow-up or recovery announcement alone does not qualify.
 
+## Related incident records
+
+Each affected organization has its own incident record. For a supplier breach,
+affected municipalities or customers can be linked to the directly breached
+provider without implying that their own infrastructure was compromised.
+Separate incidents affecting the same organization remain separate records.
+
+The directory displays **Related 1**, **Related 2**, and so on (関連 1, 関連 2
+in Japanese). These links open the specific record, including across pages or
+active filters. Hover or focus a link to see the relationship description.
+Numbers are local to each row; stable incident IDs identify the destinations.
+
+The JSON includes an additive `related` array on each record. Each entry has
+`incident_id`, `relationship`, and `evidence_url`. `affected_by` points to the
+provider incident; its reciprocal is `affects`. `same_organization` connects
+verified separate incidents at one organization. Names are not relationship
+keys, and matching names alone do not create links. Withdrawn records and their
+links are omitted from public output.
+
+After verifying the public evidence, link existing records with:
+
+```bash
+python3 jp_incidents.py link AFFECTED_ID PROVIDER_ID --relationship affected_by --evidence-url https://example.org/notice
+python3 jp_incidents.py link INCIDENT_ID EARLIER_INCIDENT_ID --relationship same_organization --evidence-url https://example.org/notice
+python3 jp_incidents.py link AFFECTED_ID PROVIDER_ID --relationship affected_by --remove
+```
+
+Changes appear on the next publication. Relationship source URLs are public;
+keep private review notes out of them.
+
 <!-- source-registry:begin -->
 ## Complete source registry
 

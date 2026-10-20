@@ -664,6 +664,14 @@ CREATE INDEX IF NOT EXISTS ix_pub ON incidents(published);
 CREATE INDEX IF NOT EXISTS ix_org ON incidents(org);
 CREATE TABLE IF NOT EXISTS skipped(id TEXT PRIMARY KEY);
 CREATE TABLE IF NOT EXISTS refs(incident_id TEXT, url TEXT, source TEXT, title TEXT, UNIQUE(incident_id, url));
+CREATE TABLE IF NOT EXISTS incident_links(
+  incident_id TEXT NOT NULL, related_id TEXT NOT NULL,
+  relationship TEXT NOT NULL CHECK(relationship IN ('affected_by','same_organization')),
+  evidence_url TEXT NOT NULL, created_at TEXT NOT NULL,
+  PRIMARY KEY(incident_id,related_id,relationship),
+  CHECK(incident_id != related_id)
+);
+CREATE INDEX IF NOT EXISTS ix_incident_links_related ON incident_links(related_id);
 CREATE TABLE IF NOT EXISTS runs(ts TEXT, source TEXT, fetched INTEGER, new INTEGER, error TEXT);
 CREATE TABLE IF NOT EXISTS source_alert_state(url TEXT PRIMARY KEY, blocked INTEGER NOT NULL);
 CREATE TABLE IF NOT EXISTS source_health(
@@ -2056,6 +2064,7 @@ def edit_incident(incident_id, action, note=None, changes=None):
         before = dict(row)
         if action == 'check':
             return {'incident': before, 'sources': [dict(r) for r in c.execute('SELECT * FROM refs WHERE incident_id=?',(incident_id,))],
+                    'related': incident_relationships(c).get(incident_id, []),
                     'history': [dict(r) for r in c.execute('SELECT * FROM incident_changes WHERE incident_id=? ORDER BY id',(incident_id,))]}
         if action not in {'correct','withdraw','restore'} or not note or not note.strip():
             raise ValueError('A correction/withdrawal/restore requires an audit note')
@@ -2775,9 +2784,80 @@ def recent(days=28, kind=None, min_score=0):
     return rows
 
 
+def link_incidents(c, incident_id, related_id, relationship, evidence_url):
+    """Link verified records by ID; affected_by points from customer to provider.
+
+    The caller owns the transaction. Names alone never establish a relationship.
+    """
+    if relationship not in {'affected_by', 'same_organization'}:
+        raise ValueError("Choose affected_by or same_organization")
+    if not incident_id or not related_id or incident_id == related_id:
+        raise ValueError("Choose two different incident IDs")
+    parsed = urllib.parse.urlsplit(str(evidence_url or ''))
+    if parsed.scheme not in {'http', 'https'} or not parsed.hostname or parsed.username or parsed.password:
+        raise ValueError("Supply a public source URL supporting the relationship")
+    for iid in (incident_id, related_id):
+        if not c.execute("SELECT 1 FROM incidents WHERE id=? AND withdrawn=0", (iid,)).fetchone():
+            raise ValueError("Both related records must exist and be active")
+    if relationship == 'same_organization':
+        incident_id, related_id = sorted((incident_id, related_id))
+    elif c.execute(
+            "SELECT 1 FROM incident_links WHERE incident_id=? AND related_id=? AND relationship='affected_by'",
+            (related_id, incident_id)).fetchone():
+        raise ValueError("An opposite affected_by link already exists")
+    c.execute(
+        "INSERT INTO incident_links VALUES(?,?,?,?,?) "
+        "ON CONFLICT(incident_id,related_id,relationship) DO UPDATE SET evidence_url=excluded.evidence_url",
+        (incident_id, related_id, relationship, evidence_url, now_iso()))
+
+
+def incident_relationships(c):
+    """Return reciprocal public links, omitting withdrawn or missing endpoints."""
+    result = {}
+    for row in c.execute(
+        "SELECT l.* FROM incident_links l "
+        "JOIN incidents a ON a.id=l.incident_id AND a.withdrawn=0 "
+        "JOIN incidents b ON b.id=l.related_id AND b.withdrawn=0 "
+        "ORDER BY l.incident_id,l.related_id,l.relationship"
+    ):
+        for source, target, kind in (
+            (row['incident_id'], row['related_id'], row['relationship']),
+            (row['related_id'], row['incident_id'],
+             'affects' if row['relationship'] == 'affected_by' else row['relationship'])
+        ):
+            result.setdefault(source, []).append({
+                'incident_id': target, 'relationship': kind, 'evidence_url': row['evidence_url'],
+            })
+    for links in result.values():
+        links.sort(key=lambda link: (link['incident_id'], link['relationship']))
+    return result
+
+
+def edit_incident_link(incident_id, related_id, relationship, evidence_url=None, remove=False):
+    with ops.lock(DB_PATH, 'collector') as acquired:
+        if not acquired:
+            raise ValueError("Collector is active; retry later")
+        c = db()
+        try:
+            with c:
+                if remove:
+                    if relationship not in {'affected_by', 'same_organization'}:
+                        raise ValueError("Choose affected_by or same_organization")
+                    if relationship == 'same_organization':
+                        incident_id, related_id = sorted((incident_id, related_id))
+                    c.execute("DELETE FROM incident_links WHERE incident_id=? AND related_id=? AND relationship=?",
+                              (incident_id, related_id, relationship))
+                else:
+                    link_incidents(c, incident_id, related_id, relationship, evidence_url)
+            return {'incident_id': incident_id, 'related_id': related_id, 'removed': remove}
+        finally:
+            c.close()
+
+
 def all_public_incidents():
     """Return the complete, newest-first dataset exposed by the static site."""
     c = db()
+    relationships = incident_relationships(c)
     rows = []
     for row in c.execute(
         "SELECT id,published,org,kind,records,score,confidence,disclosed_at "
@@ -2792,6 +2872,7 @@ def all_public_incidents():
             "potential_records": row["records"],
             "confidence": row["confidence"],
             "confidence_score": row["score"],
+            "related": relationships.get(row["id"], []),
             "sources": [
                 {"name": ref["source"] or "Source", "url": ref["url"]}
                 for ref in c.execute(
@@ -3004,6 +3085,14 @@ def write_public_rss(path=RSS_PATH, incidents=None):
             f"({incident['confidence_score']})</p>"
             f"<p><strong>Sources / 情報源:</strong> {source_links}</p>"
         )
+        related = incident.get("related", [])
+        if related:
+            links = " · ".join(
+                f'<a href="{html.escape(site_url + "#incident-" + urllib.parse.quote(link["incident_id"], safe=""), quote=True)}">'
+                f'Related {index} / 関連 {index}</a>'
+                for index, link in enumerate(related, 1)
+            )
+            description += f"<p><strong>Related incidents / 関連記録:</strong> {links}</p>"
         ET.SubElement(item, "description").text = description
 
     ET.indent(root, space="  ")
@@ -3306,6 +3395,12 @@ def main():
     sub.add_parser('deliver-alerts', help='retry private alerts independently of collection/publication')
     sub.add_parser('watchdog', help='check collection and verified backup freshness')
     sub.add_parser('backup', help='create private snapshot and test a full restore')
+    links = sub.add_parser('link', help='link affected/provider records or distinct incidents of one organization')
+    links.add_argument('id', help='affected record ID for affected_by')
+    links.add_argument('related_id', help='provider incident ID for affected_by')
+    links.add_argument('--relationship', choices=['affected_by', 'same_organization'], required=True)
+    links.add_argument('--evidence-url', help='public source establishing the relationship')
+    links.add_argument('--remove', action='store_true')
     restore = sub.add_parser('restore-backup', help='restore an archive into a NEW directory for recovery')
     restore.add_argument('archive')
     restore.add_argument('--destination', required=True)
@@ -3354,6 +3449,11 @@ def main():
         watchdog()
     elif a.cmd == 'backup':
         print(json.dumps(create_backup(), indent=2))
+    elif a.cmd == 'link':
+        try:
+            print(json.dumps(edit_incident_link(a.id, a.related_id, a.relationship, a.evidence_url, a.remove)))
+        except ValueError as error:
+            ap.error(str(error))
     elif a.cmd == 'restore-backup':
         print(json.dumps(ops.restore_backup(a.archive, a.destination), indent=2))
     elif a.cmd == 'incident':

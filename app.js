@@ -41,6 +41,9 @@ const copy = {
     potentialRecords: "Potential records",
     confidence: "Confidence",
     sources: "Sources",
+    related: "Related records",
+    relatedLink: (number) => `Related ${number}`,
+    relationships: { affected_by: "Affected through this incident", affects: "Record affected by this incident", same_organization: "Another incident at the same organization" },
     noResults: "No incidents match these filters.",
     loading: "Loading incident data…",
     loadErrorTitle: "The incident data could not be loaded.",
@@ -88,6 +91,9 @@ const copy = {
     potentialRecords: "影響の可能性がある件数",
     confidence: "信頼度",
     sources: "情報源",
+    related: "関連記録",
+    relatedLink: (number) => `関連 ${number}`,
+    relationships: { affected_by: "この委託先等の事案による影響", affects: "この事案の影響を受けた記録", same_organization: "同じ組織の別のインシデント" },
     noResults: "条件に一致するインシデントはありません。",
     loading: "インシデントデータを読み込んでいます…",
     loadErrorTitle: "インシデントデータを読み込めませんでした。",
@@ -364,6 +370,8 @@ function safeSourceLink(source) {
 
 function incidentRow(incident) {
   const row = document.createElement("tr");
+  row.id = `incident-${incident.id}`;
+  row.tabIndex = -1;
 
   const date = document.createElement("td");
   date.className = "date-cell";
@@ -420,9 +428,53 @@ function incidentRow(incident) {
   });
   sources.append(sourceList);
 
-  row.append(date, organization, type, records, confidence, sources);
+  const related = document.createElement("td");
+  related.className = "related-cell";
+  related.dataset.label = text("related");
+  const relatedList = document.createElement("div");
+  relatedList.className = "related-list";
+  (incident.related || []).filter((relation) =>
+    state.incidents.some((item) => item.id === relation.incident_id)
+  ).forEach((relation, index) => {
+    const link = document.createElement("a");
+    link.href = `#incident-${encodeURIComponent(relation.incident_id)}`;
+    link.textContent = text("relatedLink")(index + 1);
+    const kind = text("relationships")[relation.relationship] || text("related");
+    link.title = kind;
+    link.setAttribute("aria-label", `${link.textContent}: ${kind}`);
+    link.addEventListener("click", (event) => {
+      if (event.button || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      history.pushState(null, "", link.getAttribute("href"));
+      showLinkedIncident();
+    });
+    relatedList.append(link);
+  });
+  related.append(relatedList.childElementCount ? relatedList : document.createTextNode("—"));
+
+  row.append(date, organization, type, records, confidence, sources, related);
   return row;
 }
+
+function showLinkedIncident() {
+  if (!state.loaded || !location.hash.startsWith("#incident-")) return;
+  let id;
+  try { id = decodeURIComponent(location.hash.slice("#incident-".length)); } catch (_) { return; }
+  if (!state.incidents.some((incident) => incident.id === id)) return;
+  elements.search.value = "";
+  elements.type.value = "";
+  elements.confidence.value = "";
+  const index = sortedIncidents(state.incidents).findIndex((incident) => incident.id === id);
+  state.page = Math.floor(index / PAGE_SIZE) + 1;
+  render();
+  const row = document.getElementById(`incident-${id}`);
+  if (row) {
+    row.focus({ preventScroll: true });
+    row.scrollIntoView({ block: "center", behavior: "smooth" });
+  }
+}
+window.addEventListener("hashchange", showLinkedIncident);
+window.addEventListener("popstate", showLinkedIncident);
 
 function pageItems(current, total) {
   if (total <= 7) return Array.from({ length: total }, (_, index) => index + 1);
@@ -536,6 +588,7 @@ async function loadData() {
     state.loaded = true;
     elements.loading.hidden = true;
     render();
+    showLinkedIncident();
   } catch (error) {
     console.error("Failed to load incident data", error);
     elements.loading.hidden = true;

@@ -113,7 +113,7 @@ def restore_backup(archive, destination):
         if c.execute('PRAGMA integrity_check').fetchone()[0] != 'ok':
             raise ValueError('Restored database integrity check failed')
         for table, count in manifest['rows'].items():
-            if table not in {'incidents', 'refs', 'review_queue', 'manual_reviews', 'incident_changes'}:
+            if table not in {'incidents', 'refs', 'review_queue', 'manual_reviews', 'incident_changes', 'incident_links'}:
                 raise ValueError('Invalid backup table')
             if c.execute('SELECT COUNT(*) FROM '+table).fetchone()[0] != count:
                 raise ValueError('Restored row counts differ')
@@ -134,6 +134,8 @@ def backup(path, directory, files=None):
             source.backup(dest)
             rows = {table: dest.execute('SELECT COUNT(*) FROM '+table).fetchone()[0]
                     for table in ('incidents','refs','review_queue','manual_reviews','incident_changes')}
+            if dest.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='incident_links'").fetchone():
+                rows['incident_links'] = dest.execute('SELECT COUNT(*) FROM incident_links').fetchone()[0]
         for name, source in (files or {}).items():
             if Path(source).is_file():
                 shutil.copyfile(source, stage/name)
