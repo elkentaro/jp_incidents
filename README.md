@@ -30,6 +30,13 @@ The displayed date is the incident's occurrence, discovery, or first-disclosure 
 
 One database row represents one affected organization and underlying incident, not one article. A single article can support several distinct incident records. Each record can carry independent **Data leak**, **Unauthorized access**, and **Ransomware** tags; **Other** remains available for actual cyber incidents outside these categories, such as DDoS or defacement. A record with multiple tags appears under each matching filter and is counted once in the overall total. Generic outages and provider attacks do not establish ransomware at an affected client. Follow-up reports, second notices, reactions, remediation, recovery, and impact stories add sources or facts when that organization/incident is already listed. A follow-up may also reveal a previously unidentified victim organization; after secondary AI evaluation confirms the victim, original incident date, relevance, and source corroboration, that organization can receive its own row. A follow-up remains unpublished when its original incident date is unknown, and an underlying incident must meet the incident-date or verified first-disclosure intake rule. A recent follow-up or recovery announcement alone does not qualify.
 
+Each incident accepts up to six confirmed source URLs. Further reports of the
+same event do not add references once that limit is reached; older references
+are preserved. The limit applies to an incident, not an organization or its
+upstream provider. Reports can still establish new affected victims, separate
+events, additional categories, or relationships, with supporting evidence saved
+for those changes. Organization-name matches alone do not justify skipping review.
+
 ## Related incident records
 
 Each affected organization has its own incident record. For a supplier breach,

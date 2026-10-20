@@ -611,6 +611,26 @@ NOTICE_PATH_RE = re.compile(r"/(news|info|information|notice|notices|release|pre
 #   two independent outlets    -> 65  high
 TIER_POINTS = {"official": 60, "gov": 60, "press": 50, "aggregator": 35, "other": 30, "social": 10}
 DOMAIN_BONUS = 15
+CONFIRMED_SOURCE_LIMIT = 6
+
+
+def confirmed_source_count(c, incident_id):
+    """Count accepted reference URLs for one event, never an organization."""
+    return c.execute("SELECT count(*) FROM refs WHERE incident_id=?", (incident_id,)).fetchone()[0]
+
+
+def add_reference(c, incident_id, url, source, title):
+    """Add corroboration up to the per-incident limit; preserve historical references.
+
+    Category and relationship evidence have their own provenance tables and must
+    still be saved when a report supplies new facts after this limit is reached.
+    The check and insert are one statement so concurrent writers cannot exceed it.
+    """
+    return bool(c.execute(
+        "INSERT OR IGNORE INTO refs(incident_id,url,source,title) "
+        "SELECT ?,?,?,? WHERE (SELECT count(*) FROM refs WHERE incident_id=?)<?",
+        (incident_id, url, source, title, incident_id, CONFIRMED_SOURCE_LIMIT),
+    ).rowcount)
 
 
 def ref_tier(url, outlet="", title=""):
@@ -712,7 +732,10 @@ def db():
     for col, typ in [('attempts', 'INTEGER DEFAULT 0'), ('last_attempt', 'TEXT')]:
         if col not in review_cols:
             c.execute(f'ALTER TABLE review_queue ADD COLUMN {col} {typ}')
-    c.execute("INSERT OR IGNORE INTO refs(incident_id,url,source,title) SELECT id, url, source, title FROM incidents")
+    c.execute("INSERT OR IGNORE INTO refs(incident_id,url,source,title) "
+              "SELECT id, url, source, title FROM incidents i "
+              "WHERE (SELECT count(*) FROM refs WHERE incident_id=i.id)<?",
+              (CONFIRMED_SOURCE_LIMIT,))
     categories.install(c)
     c.commit()  # never leave the migration's write lock open (the dashboard opens one connection per request)
     return c
@@ -1792,7 +1815,7 @@ def store(c, src_name, rec, cl):
     prev = find_existing_incident(c, cl["org"], cl.get("incident_date") or rec.get("published"))
     if prev:  # follow-up or second outlet: worst type, largest count, add the reference, rescore
         if c.execute('SELECT 1 FROM incident_changes WHERE incident_id=? LIMIT 1', (prev['id'],)).fetchone():
-            c.execute('INSERT OR IGNORE INTO refs VALUES(?,?,?,?)', (prev['id'],rec['url'],ref_src,rec['title']))
+            add_reference(c, prev['id'], rec['url'], ref_src, rec['title'])
             return False
         kind = cl["kind"] if RANK[cl["kind"]] > RANK[prev["kind"] or "other"] else prev["kind"]
         recs = max(filter(None, [prev["records"], cl["records"]]), default=None)
@@ -1801,7 +1824,7 @@ def store(c, src_name, rec, cl):
                   "ELSE disclosed_at END WHERE id=?",
                   (kind, recs, cl.get("disclosed_at"), cl.get("disclosed_at"), prev["id"]))
         c.execute("INSERT OR IGNORE INTO skipped VALUES(?)", (iid,))
-        c.execute("INSERT OR IGNORE INTO refs VALUES(?,?,?,?)", (prev["id"], rec["url"], ref_src, rec["title"]))
+        add_reference(c, prev["id"], rec["url"], ref_src, rec["title"])
         categories.save(c, prev["id"], categories.normalize(cl.get("categories"), cl["kind"]), rec["url"])
         rescore(c, prev["id"])
         return False
@@ -1813,7 +1836,7 @@ def store(c, src_name, rec, cl):
               (iid, src_name, rec["title"], rec["url"], rec["summary"][:1500],
                rec["published"] or now_iso(), now_iso(), cl["org"], cl["kind"], cl["records"],
                cl.get("disclosed_at")))
-    c.execute("INSERT OR IGNORE INTO refs VALUES(?,?,?,?)", (iid, rec["url"], ref_src, rec["title"]))
+    add_reference(c, iid, rec["url"], ref_src, rec["title"])
     categories.save(c, iid, categories.normalize(cl.get("categories"), cl["kind"]), rec["url"])
     rescore(c, iid)
     return True
@@ -1899,10 +1922,7 @@ def promote_reviewed(c):
                     incident_row = find_existing_incident(c, cl["org"], cl["incident_date"])
                 if incident_row:
                     for ref in cl.get("corroboration") or []:
-                        c.execute(
-                            "INSERT OR IGNORE INTO refs(incident_id,url,source,title) VALUES(?,?,?,?)",
-                            (incident_row["id"], ref["url"], ref["source"], ref["title"]),
-                        )
+                        add_reference(c, incident_row["id"], ref["url"], ref["source"], ref["title"])
                     rescore(c, incident_row["id"])
                 if inserted:
                     incident = c.execute(
