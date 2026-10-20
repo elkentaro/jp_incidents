@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-20T23:46:57+00:00",
-  "total": 154,
+  "updated_at": "2026-10-20T23:55:01+00:00",
+  "total": 157,
   "date_range": {
     "start": "2026-08-29",
     "end": "2026-10-20"
@@ -289,7 +289,7 @@
     },
     {
       "date": "2026-10-02",
-      "count": 0
+      "count": 1
     },
     {
       "date": "2026-10-03",
@@ -345,7 +345,7 @@
     },
     {
       "date": "2026-10-16",
-      "count": 15
+      "count": 17
     },
     {
       "date": "2026-10-17",
@@ -1737,6 +1737,66 @@
         {
           "name": "日本経済新聞",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1TWlBDTVZ5MXFNVWRzZXAwc3dTV3pCR0Fuamp6RFhQaGxzc2lxdUlDME5MS0tCdGJFWVNOSno5U1hiclBZSnhFcmRHTnFybm9kY0d5eGM1WXhyT191WlBldUFad1puZXlCOTNrUA?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "9db6a803851430af",
+      "published_at": "2026-10-15T15:00:00+00:00",
+      "disclosed_at": "2026-10-15T15:00:00+00:00",
+      "organization": "日建学院",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "b60cecb4ce8f7164",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/mankan-nikken-gakuin-training-system-data-leak-3597-20261016/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/mankan-nikken-gakuin-training-system-data-leak-3597-20261016/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/mankan-nikken-gakuin-training-system-data-leak-3597-20261016/"
+        }
+      ]
+    },
+    {
+      "id": "b60cecb4ce8f7164",
+      "published_at": "2026-10-15T15:00:00+00:00",
+      "disclosed_at": "2026-10-15T15:00:00+00:00",
+      "organization": "マンション管理センター",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "9db6a803851430af",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/mankan-nikken-gakuin-training-system-data-leak-3597-20261016/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/mankan-nikken-gakuin-training-system-data-leak-3597-20261016/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/mankan-nikken-gakuin-training-system-data-leak-3597-20261016/"
         }
       ]
     },
@@ -5546,6 +5606,27 @@
         {
           "name": "legalagent list",
           "url": "https://www.daiki-suisan.co.jp/files/optionallink/00000164_file.pdf"
+        }
+      ]
+    },
+    {
+      "id": "f1d48c9239de81fa",
+      "published_at": "2026-10-01T15:00:00+00:00",
+      "disclosed_at": "2026-10-08T15:00:00+00:00",
+      "organization": "アドベンチャー",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2149135.html"
         }
       ]
     },
