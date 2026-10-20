@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-20T16:15:40+00:00",
-  "total": 146,
+  "updated_at": "2026-10-20T23:04:04+00:00",
+  "total": 147,
   "date_range": {
     "start": "2026-08-29",
     "end": "2026-10-19"
@@ -317,7 +317,7 @@
     },
     {
       "date": "2026-10-09",
-      "count": 4
+      "count": 5
     },
     {
       "date": "2026-10-10",
@@ -4383,6 +4383,36 @@
       ]
     },
     {
+      "id": "3ddf1e55a4cbea3b",
+      "published_at": "2026-10-08T15:00:00+00:00",
+      "disclosed_at": "2026-10-08T15:00:00+00:00",
+      "organization": "ティップネス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 3000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "5361b8a858516f2f",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/expert/articles/d59b2fd1ea3068a58a6dfa1d1b2c8283229fdb12",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/expert/articles/d59b2fd1ea3068a58a6dfa1d1b2c8283229fdb12"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/expert/articles/d59b2fd1ea3068a58a6dfa1d1b2c8283229fdb12"
+        }
+      ]
+    },
+    {
       "id": "7cffff947ec394ec",
       "published_at": "2026-10-07T15:00:00+00:00",
       "disclosed_at": null,
@@ -4944,6 +4974,14 @@
           "evidence_url": "https://www.yamaha.com/ja/news_release/files/news/26100901/pdf/2610090101.pdf",
           "evidence_urls": [
             "https://www.yamaha.com/ja/news_release/files/news/26100901/pdf/2610090101.pdf"
+          ]
+        },
+        {
+          "incident_id": "3ddf1e55a4cbea3b",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/expert/articles/d59b2fd1ea3068a58a6dfa1d1b2c8283229fdb12",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/expert/articles/d59b2fd1ea3068a58a6dfa1d1b2c8283229fdb12"
           ]
         },
         {
