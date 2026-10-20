@@ -28,7 +28,7 @@ Confidence is based on source authority and independent corroboration: direct of
 
 The displayed date is the incident's occurrence, discovery, or first-disclosure date—not a webpage's later update date. New candidates must fall within the collector's 14-day intake window when first discovered. An older incident may enter when AI review supplies a recent first-disclosure date backed by an exact, dated quote in the source. Its original incident date is retained, and the separate disclosure date is shown underneath it. If a report states no incident date, its source publication date is used as a fallback. Once a valid incident is collected it remains in the all-history dataset as it ages.
 
-One database row represents one affected organization and underlying incident, not one article. Follow-up reports, second notices, reactions, remediation, recovery, and impact stories add sources or facts when that organization/incident is already listed. A follow-up may also reveal a previously unidentified victim organization; after secondary AI evaluation confirms the victim, original incident date, relevance, and source corroboration, that organization can receive its own row. A follow-up remains unpublished when its original incident date is unknown, and an underlying incident must meet the incident-date or verified first-disclosure intake rule. A recent follow-up or recovery announcement alone does not qualify.
+One database row represents one affected organization and underlying incident, not one article. A single article can support several distinct incident records. Each record can carry independent **Data leak**, **Unauthorized access**, and **Ransomware** tags; **Other** remains available for actual cyber incidents outside these categories, such as DDoS or defacement. A record with multiple tags appears under each matching filter and is counted once in the overall total. Generic outages and provider attacks do not establish ransomware at an affected client. Follow-up reports, second notices, reactions, remediation, recovery, and impact stories add sources or facts when that organization/incident is already listed. A follow-up may also reveal a previously unidentified victim organization; after secondary AI evaluation confirms the victim, original incident date, relevance, and source corroboration, that organization can receive its own row. A follow-up remains unpublished when its original incident date is unknown, and an underlying incident must meet the incident-date or verified first-disclosure intake rule. A recent follow-up or recovery announcement alone does not qualify.
 
 ## Related incident records
 
@@ -63,21 +63,22 @@ keep private review notes out of them.
 <!-- source-registry:begin -->
 ## Complete source registry
 
-The collector currently polls **365 configured sources**. This list is generated from [`data/sources.json`](data/sources.json); run `python3 scripts/update_readme_sources.py` after changing the registry.
+The collector currently polls **366 configured sources**. This list is generated from [`data/sources.json`](data/sources.json); run `python3 scripts/update_readme_sources.py` after changing the registry.
 
 <details>
-<summary><strong>News, search, and specialist publications (20)</strong></summary>
+<summary><strong>News, search, and specialist publications (21)</strong></summary>
 
 - [GNews 不正アクセス](https://news.google.com/rss/search?q=%E4%B8%8D%E6%AD%A3%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%20when%3A7d&hl=ja&gl=JP&ceid=JP:ja)
 - [GNews 情報漏えい](https://news.google.com/rss/search?q=%E6%83%85%E5%A0%B1%E6%BC%8F%E3%81%88%E3%81%84%20OR%20%E6%83%85%E5%A0%B1%E6%BC%8F%E6%B4%A9%20when%3A7d&hl=ja&gl=JP&ceid=JP:ja)
 - [GNews 個人情報 流出](https://news.google.com/rss/search?q=%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1%20%E6%B5%81%E5%87%BA%20when%3A7d&hl=ja&gl=JP&ceid=JP:ja)
-- [GNews ランサムウェア](https://news.google.com/rss/search?q=%E3%83%A9%E3%83%B3%E3%82%B5%E3%83%A0%E3%82%A6%E3%82%A7%E3%82%A2%20%E8%A2%AB%E5%AE%B3%20when%3A7d&hl=ja&gl=JP&ceid=JP:ja)
+- [GNews ランサムウェア](https://news.google.com/rss/search?q=%28%E3%83%A9%E3%83%B3%E3%82%B5%E3%83%A0%E3%82%A6%E3%82%A7%E3%82%A2%20OR%20%E3%83%A9%E3%83%B3%E3%82%B5%E3%83%A0%E3%82%A6%E3%82%A8%E3%82%A2%20OR%20%E8%BA%AB%E4%BB%A3%E9%87%91%E8%A6%81%E6%B1%82%E5%9E%8B%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9%29%20%E8%A2%AB%E5%AE%B3%20when%3A7d&hl=ja&gl=JP&ceid=JP:ja)
 - [GNews サイバー攻撃](https://news.google.com/rss/search?q=%E3%82%B5%E3%82%A4%E3%83%90%E3%83%BC%E6%94%BB%E6%92%83%20%E8%A2%AB%E5%AE%B3%20when%3A7d&hl=ja&gl=JP&ceid=JP:ja)
 - [GNews お詫び 漏えい](https://news.google.com/rss/search?q=%E3%81%8A%E8%A9%AB%E3%81%B3%20%E6%BC%8F%E3%81%88%E3%81%84%20OR%20%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B%20%E4%B8%8D%E6%AD%A3%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%20when%3A7d&hl=ja&gl=JP&ceid=JP:ja)
 - [GNews Japan breach](https://news.google.com/rss/search?q=Japan%20data%20breach%20OR%20Japan%20ransomware%20when%3A7d&hl=ja&gl=JP&ceid=JP:ja)
 - [GNews PR TIMES disclosures](https://news.google.com/rss/search?q=site%3Aprtimes.jp%20%28%E4%B8%8D%E6%AD%A3%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%20OR%20%E6%83%85%E5%A0%B1%E6%BC%8F%E3%81%88%E3%81%84%20OR%20%E6%83%85%E5%A0%B1%E6%BC%8F%E6%B4%A9%20OR%20%E3%83%A9%E3%83%B3%E3%82%B5%E3%83%A0%E3%82%A6%E3%82%A7%E3%82%A2%20OR%20%E3%82%B5%E3%82%A4%E3%83%90%E3%83%BC%E6%94%BB%E6%92%83%29%20when%3A14d&hl=ja&gl=JP&ceid=JP:ja)
 - [Bing 不正アクセス](https://www.bing.com/news/search?q=%E4%B8%8D%E6%AD%A3%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9&format=rss&setlang=ja&cc=jp)
 - [Bing 情報漏えい](https://www.bing.com/news/search?q=%E6%83%85%E5%A0%B1%E6%BC%8F%E3%81%88%E3%81%84&format=rss&setlang=ja&cc=jp)
+- [Bing ランサムウェア](https://www.bing.com/news/search?q=%E3%83%A9%E3%83%B3%E3%82%B5%E3%83%A0%E3%82%A6%E3%82%A7%E3%82%A2%20OR%20%E3%83%A9%E3%83%B3%E3%82%B5%E3%83%A0%E3%82%A6%E3%82%A8%E3%82%A2%20%E8%A2%AB%E5%AE%B3&format=rss&setlang=ja&cc=jp)
 - [Security NEXT](https://www.security-next.com/feed)
 - [ScanNetSecurity](https://scan.netsecurity.ne.jp/rss/index.rdf)
 - [Cybersecurity.jp](https://cybersecurity-jp.com/feed)

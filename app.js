@@ -29,6 +29,7 @@ const copy = {
     trendCount: (count, peak) => `${count.toLocaleString("en-US")} reported · peak ${peak.toLocaleString("en-US")}/day`,
     trendAria: (total, peak) => `Daily incident counts for the last 90 days. ${total} incidents total; highest daily count ${peak}.`,
     directoryTitle: "Incident directory",
+    linkageGuide: "One incident can have several category tags. Related links connect affected organizations, upstream incidents, or separate events at the same organization; open Why linked? for evidence.",
     reset: "Reset filters",
     searchLabel: "Search organizations or sources",
     searchPlaceholder: "Search…",
@@ -63,7 +64,7 @@ const copy = {
     sortAscending: (label) => `Sort by ${label}, ascending`,
     sortDescending: (label) => `Sort by ${label}, descending`,
     unknown: "Not stated",
-    types: { "data leak": "Data leak", "unauthorized access": "Unauthorized access", other: "Other" },
+    types: { "data leak": "Data leak", "unauthorized access": "Unauthorized access", ransomware: "Ransomware", other: "Other" },
     levels: { high: "High", medium: "Medium", low: "Low" }
   },
   ja: {
@@ -79,6 +80,7 @@ const copy = {
     trendCount: (count, peak) => `${count.toLocaleString("ja-JP")}件 · 最大${peak.toLocaleString("ja-JP")}件/日`,
     trendAria: (total, peak) => `過去90日間の日別インシデント件数。合計${total}件、1日の最大件数${peak}件。`,
     directoryTitle: "インシデント一覧",
+    linkageGuide: "1件の事案に複数の種別が付く場合があります。関連リンクは影響を受けた組織、起点となる事案、同一組織の別事案を結びます。「関連の根拠」で証拠を確認できます。",
     reset: "絞り込みを解除",
     searchLabel: "組織名・情報源を検索",
     searchPlaceholder: "検索…",
@@ -113,7 +115,7 @@ const copy = {
     sortAscending: (label) => `${label}を昇順で並べ替え`,
     sortDescending: (label) => `${label}を降順で並べ替え`,
     unknown: "記載なし",
-    types: { "data leak": "情報漏えい", "unauthorized access": "不正アクセス", other: "その他" },
+    types: { "data leak": "情報漏えい", "unauthorized access": "不正アクセス", ransomware: "ランサムウェア", other: "その他" },
     levels: { high: "高", medium: "中", low: "低" }
   }
 };
@@ -143,6 +145,7 @@ const elements = {
 const state = {
   language: savedLanguage() || (navigator.language.startsWith("ja") ? "ja" : "en"),
   incidents: [],
+  aliases: {},
   dailyCounts: [],
   dateRange: null,
   updatedAt: null,
@@ -187,6 +190,7 @@ function applyLanguage() {
     ["", languageCopy.allTypes],
     ["data leak", languageCopy.types["data leak"]],
     ["unauthorized access", languageCopy.types["unauthorized access"]],
+    ["ransomware", languageCopy.types.ransomware],
     ["other", languageCopy.types.other]
   ]);
   setOptions(elements.confidence, [
@@ -298,12 +302,13 @@ function renderTrend() {
 function filteredIncidents() {
   const query = elements.search.value.trim().toLocaleLowerCase(state.language);
   return state.incidents.filter((incident) => {
-    if (elements.type.value && incident.incident_type !== elements.type.value) return false;
+    if (elements.type.value && !(incident.incident_categories || [incident.incident_type]).includes(elements.type.value)) return false;
     if (elements.confidence.value && incident.confidence !== elements.confidence.value) return false;
     if (!query) return true;
     const searchable = [
       incident.organization,
-      text("types")[incident.incident_type],
+      ...(incident.incident_categories || [incident.incident_type]).map(v => text("types")[v]),
+      incident.affected_system,
       ...(incident.sources || []).reduce((values, source) => values.concat([source.name, source.url]), [])
     ].filter(Boolean).join(" ").toLocaleLowerCase(state.language);
     return searchable.includes(query);
@@ -313,7 +318,7 @@ function filteredIncidents() {
 function sortValue(incident, key) {
   if (key === "published_at") return Date.parse(incident.published_at);
   if (key === "sources") return (incident.sources || []).length;
-  if (key === "incident_type") return text("types")[incident.incident_type] || incident.incident_type;
+  if (key === "incident_type") return (incident.incident_categories || [incident.incident_type]).map(v => text("types")[v] || v).join(" · ");
   return incident[key];
 }
 
@@ -377,6 +382,11 @@ function incidentRow(incident) {
   date.className = "date-cell";
   date.dataset.label = text("date");
   date.textContent = formatDate(incident.published_at);
+  if (incident.date_basis === "disclosure" || incident.date_basis === "discovery_notification") {
+    const basis = document.createElement("small"); basis.className = "disclosure-date";
+    basis.textContent = state.language === "ja" ? (incident.date_basis === "disclosure" ? "公表日（発生日不明）" : "発覚・通知日") : (incident.date_basis === "disclosure" ? "Disclosure date; occurrence unknown" : "Discovery / notification date");
+    date.append(basis);
+  }
   if (incident.disclosed_at && formatDate(incident.disclosed_at) !== formatDate(incident.published_at)) {
     const disclosed = document.createElement("small");
     disclosed.className = "disclosure-date";
@@ -388,14 +398,28 @@ function incidentRow(incident) {
   organization.className = "org-cell";
   organization.dataset.label = text("organization");
   organization.textContent = incident.organization || text("unknown");
+  if (incident.affected_system) {
+    const system = document.createElement("small"); system.className = "affected-system";
+    system.textContent = incident.affected_system; organization.append(system);
+  }
+  const relations = (incident.related || []).filter(r => state.incidents.some(i => i.id === r.incident_id));
+  const roles = [];
+  if (relations.some(r => r.relationship === "affected_by")) roles.push(state.language === "ja" ? "影響を受けた組織" : "Affected organization");
+  if (relations.some(r => r.relationship === "affects")) roles.push(state.language === "ja" ? "影響の起点となる事案" : "Upstream incident");
+  if (roles.length) {
+    const role = document.createElement("small"); role.className = "incident-role";
+    role.textContent = roles.join(" · "); organization.append(role);
+  }
 
   const type = document.createElement("td");
   type.className = "type-cell";
   type.dataset.label = text("incidentType");
-  const typeTag = document.createElement("span");
-  typeTag.className = "tag";
-  typeTag.textContent = text("types")[incident.incident_type] || incident.incident_type;
-  type.append(typeTag);
+  for (const category of incident.incident_categories || [incident.incident_type]) {
+    const typeTag = document.createElement("span");
+    typeTag.className = "tag";
+    typeTag.textContent = text("types")[category] || category;
+    type.append(typeTag);
+  }
 
   const records = document.createElement("td");
   records.className = "numeric records-cell";
@@ -451,6 +475,21 @@ function incidentRow(incident) {
     relatedList.append(link);
   });
   related.append(relatedList.childElementCount ? relatedList : document.createTextNode("—"));
+  if (relatedList.childElementCount) {
+    const details = document.createElement("details"); details.className = "relationship-details";
+    const summary = document.createElement("summary"); summary.textContent = state.language === "ja" ? "関連の根拠" : "Why linked?";
+    details.append(summary);
+    (incident.related || []).filter(r => state.incidents.some(i => i.id === r.incident_id)).forEach((relation, index) => {
+      const paragraph = document.createElement("p");
+      paragraph.textContent = `${text("relatedLink")(index + 1)} — ${text("relationships")[relation.relationship]}`;
+      for (const [i, url] of (relation.evidence_urls || [relation.evidence_url]).entries()) {
+        const proof = safeSourceLink({url, name: state.language === "ja" ? `根拠 ${i + 1}` : `Evidence ${i + 1}`});
+        if (proof) paragraph.append(document.createTextNode(" "), proof);
+      }
+      details.append(paragraph);
+    });
+    related.append(details);
+  }
 
   row.append(date, organization, type, records, confidence, sources, related);
   return row;
@@ -460,6 +499,10 @@ function showLinkedIncident() {
   if (!state.loaded || !location.hash.startsWith("#incident-")) return;
   let id;
   try { id = decodeURIComponent(location.hash.slice("#incident-".length)); } catch (_) { return; }
+  if ((state.aliases || {})[id]) {
+    id = (state.aliases || {})[id];
+    history.replaceState(null, "", `#incident-${encodeURIComponent(id)}`);
+  }
   if (!state.incidents.some((incident) => incident.id === id)) return;
   elements.search.value = "";
   elements.type.value = "";
@@ -582,6 +625,7 @@ async function loadData() {
     const data = await response.json();
     if (!Array.isArray(data.incidents)) throw new Error("Invalid data document");
     state.incidents = data.incidents;
+    state.aliases = data.aliases || {};
     state.dailyCounts = Array.isArray(data.daily_counts_90d) ? data.daily_counts_90d : [];
     state.dateRange = data.date_range || null;
     state.updatedAt = data.updated_at;
@@ -597,4 +641,6 @@ async function loadData() {
 }
 
 loadData();
+
+
 setInterval(() => { if (state.loaded) renderUpdateTimes(); }, 60 * 1000);

@@ -81,6 +81,19 @@ class IncidentLinkTests(unittest.TestCase):
         restored = operations.restore_backup(result['archive'], self.root / 'restore')
         self.assertEqual(restored['rows']['incident_links'], 1)
 
+    def test_alias_change_updates_json_even_when_visible_records_are_unchanged(self):
+        output = self.root / 'incidents.json'
+        app.write_public_json(str(output))
+        before = json.loads(output.read_text())['incidents']
+        self.c.execute("INSERT INTO incident_aliases VALUES(?,?,?,?)",
+                       ('retired-id', 'city', '[]', app.now_iso()))
+        self.c.commit()
+        self.assertTrue(app.write_public_json(str(output)))
+        document = json.loads(output.read_text())
+        self.assertEqual(document['incidents'], before)
+        self.assertEqual(document['aliases'], {'retired-id': 'city'})
+        self.assertFalse(app.write_public_json(str(output)))
+
 
 if __name__ == '__main__':
     unittest.main()

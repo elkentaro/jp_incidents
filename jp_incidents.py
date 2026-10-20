@@ -5,7 +5,8 @@ news keyword feeds, security trackers, aggregator pages and vendor feeds into SQ
 and reduce each to:  organization | type | potential records | source URLs. It can
 also publish the complete dataset as JSON for the static GitHub Pages dashboard.
 
-Type is one of: "data leak", "unauthorized access", "other".
+Categories include "data leak", "unauthorized access", "ransomware", and "other".
+One underlying incident can have several independent categories.
 Records are only filled for data leaks (largest figure stated, "up to"/"possible" included).
 
 Stack: Python 3 + pypdf (PDF worker); Flask is optional for the local dashboard.
@@ -63,6 +64,7 @@ from decimal import Decimal, InvalidOperation
 from email.utils import format_datetime, parsedate_to_datetime
 from zoneinfo import ZoneInfo
 import operations as ops
+import incident_categories as categories
 
 DB_PATH = os.environ.get("JPI_DB", "jp_incidents.db")
 JSON_PATH = os.environ.get("JPI_JSON_PATH", "data/incidents.json")
@@ -88,7 +90,7 @@ SOURCES = [
     {"name": "GNews 不正アクセス",     "url": gnews("不正アクセス when:7d")},
     {"name": "GNews 情報漏えい",       "url": gnews("情報漏えい OR 情報漏洩 when:7d")},
     {"name": "GNews 個人情報 流出",    "url": gnews("個人情報 流出 when:7d")},
-    {"name": "GNews ランサムウェア",   "url": gnews("ランサムウェア 被害 when:7d")},
+    {"name": "GNews ランサムウェア",   "url": gnews("(ランサムウェア OR ランサムウエア OR 身代金要求型ウイルス) 被害 when:7d")},
     {"name": "GNews サイバー攻撃",     "url": gnews("サイバー攻撃 被害 when:7d")},
     {"name": "GNews お詫び 漏えい",    "url": gnews("お詫び 漏えい OR お知らせ 不正アクセス when:7d")},
     {"name": "GNews Japan breach",    "url": gnews("Japan data breach OR Japan ransomware when:7d"), "jp_only": True},
@@ -96,6 +98,7 @@ SOURCES = [
         "site:prtimes.jp (不正アクセス OR 情報漏えい OR 情報漏洩 OR ランサムウェア OR サイバー攻撃) when:14d")},
     {"name": "Bing 不正アクセス",      "url": bing("不正アクセス")},
     {"name": "Bing 情報漏えい",        "url": bing("情報漏えい")},
+    {"name": "Bing ランサムウェア",      "url": bing("ランサムウェア OR ランサムウエア 被害")},
     # --- security trade press that reports nearly every disclosure ---
     {"name": "Security NEXT",   "url": "https://www.security-next.com/feed"},
     {"name": "ScanNetSecurity", "url": "https://scan.netsecurity.ne.jp/rss/index.rdf"},
@@ -541,7 +544,7 @@ ORGANIZATION_HOSTS = {
 # Gate: is this an incident report at all?  Wide on purpose; the LLM/regex step refines.
 INCIDENT_RE = re.compile(
     r"不正アクセス|不正ログイン|不正侵入|不正利用|不正操作|なりすまし|漏えい|漏洩|流出|持ち出|"
-    r"ランサムウェア|サイバー攻撃|不正プログラム|マルウェア|ウイルス感染|Emotet|改ざん|DDoS|"
+    r"ランサムウェア|ランサムウエア|身代金要求型ウイルス|サイバー攻撃|不正プログラム|マルウェア|ウイルス感染|Emotet|改ざん|DDoS|"
     r"認証情報|第三者による|セキュリティインシデント|"
     r"unauthori[sz]ed access|data breach|breach(ed)?|ransomware|cyberattack|cyber attack|"
     r"data leak|leaked|compromis(ed|e)|exfiltrat|credential stuffing|hacked|defac", re.I)
@@ -566,7 +569,8 @@ DOMESTIC_RE = re.compile(r"日本|国内|邦|都|道|府|県|市|町|村|株式�
 
 LEAK_RE = re.compile(r"漏えい|漏洩|流出|持ち出|取得された|閲覧された|leak|expos|stolen|exfiltrat|data breach", re.I)
 ACCESS_RE = re.compile(r"不正アクセス|不正ログイン|不正侵入|不正プログラム|unauthori[sz]ed access|intrusion|hacked|compromis", re.I)
-RANK = {"other": 0, "unauthorized access": 1, "data leak": 2}
+RANSOMWARE_RE = re.compile(r"ランサム(?:ウェ|ウエ)ア|身代金要求型(?:ウイルス|マルウェア)|(?<![A-Za-z0-9_])ransomware(?![A-Za-z0-9_])", re.I)
+RANK = categories.RANK
 
 UNIT = {"": 1, "億": 10**8, "万": 10**4, "million": 10**6, "m": 10**6, "k": 10**3, "thousand": 10**3}
 NUM_RE = re.compile(
@@ -709,6 +713,7 @@ def db():
         if col not in review_cols:
             c.execute(f'ALTER TABLE review_queue ADD COLUMN {col} {typ}')
     c.execute("INSERT OR IGNORE INTO refs(incident_id,url,source,title) SELECT id, url, source, title FROM incidents")
+    categories.install(c)
     c.commit()  # never leave the migration's write lock open (the dashboard opens one connection per request)
     return c
 
@@ -1323,9 +1328,10 @@ LLM_SYSTEM = (
     'when no organization can be identified), '
     '"is_followup" (true when the item is mainly a later update, reaction, remediation, recovery, impact, '
     'or consequence report about an already disclosed incident; false for the initial incident report), '
-    '"kind" (one of "data leak", "unauthorized access", "other": data leak = the item says data was '
+    '"kind" (one of "data leak", "unauthorized access", "ransomware", "other": data leak = the item says data was '
     "leaked/exposed/taken or possibly so; unauthorized access = intrusion reported with no data loss stated; "
-    "other = ransomware outage, DDoS, defacement, malware infection, etc.), "
+    "ransomware = an explicitly reported ransomware attack or infection; other = DDoS, defacement, other malware, etc.), "
+    '"categories" (array of independently supported types; include ransomware alongside data leak or unauthorized access when each is supported for this victim/event), '
     '"records" (integer: the largest number of records/people/accounts stated as leaked or possibly leaked, '
     'including "up to" figures; null if kind is not "data leak" or no number is stated), '
     '"incident_date" (YYYY-MM-DD: the date the incident first occurred, was discovered, or was first '
@@ -1475,14 +1481,16 @@ def llm_extract(rec, body):
         kind, org = d.get("kind"), str(d.get("org") or "").strip()[:60]
         if kind not in RANK or not plausible_org(org):
             return None
-        recs = d.get("records") if kind == "data leak" else None
+        types = categories.normalize(d.get("categories"), kind)
+        kind = categories.primary(types)
+        recs = d.get("records") if "data leak" in types else None
         recs = int(recs) if isinstance(recs, (int, float)) and not isinstance(recs, bool) and recs > 0 else None
         incident_date = None
         if d.get("incident_date"):
             normalized = normalize_incident_date(d["incident_date"])
             if normalized:
                 incident_date = normalized
-        return {"is_incident": True, "org": org, "kind": kind, "records": recs,
+        return {"is_incident": True, "org": org, "kind": kind, "categories": types, "records": recs,
                 "incident_date": incident_date, "is_followup": bool(d.get("is_followup")),
                 "first_disclosure_date": normalize_incident_date(d.get("first_disclosure_date")),
                 "disclosure_evidence": str(d.get("disclosure_evidence") or "")[:600]}
@@ -1499,13 +1507,14 @@ LLM_MULTI_SYSTEM = (
     "the article genuinely covers multiple incidents or victims; do not include organizations merely "
     "commenting, regulating, investigating, or responding. Each entry has: "
     '"is_incident" (boolean), "org" (actual shortest organization name, never a headline or generic phrase), '
-    '"kind" ("data leak", "unauthorized access", or "other"), "records" (positive integer or null), '
+    '"kind" ("data leak", "unauthorized access", "ransomware", or "other"), "categories" (array of independently supported types for the same incident), "records" (positive integer or null), '
     '"incident_date" (YYYY-MM-DD: occurrence, discovery, then first disclosure; never the later article date), '
     'and "is_followup" (boolean). For an update/reaction/remediation item, use the original incident date; '
     "flag needs_review when that date or affected organization cannot be established. A follow-up may reveal "
     "a victim organization not previously known: include that victim as its own entry so the database layer "
     "can decide whether it is new. Do not combine distinct organizations into one entry, and do not duplicate "
-    "the same organization and underlying incident. "
+    "the same organization and underlying incident merely because multiple categories apply. "
+    "Ransomware requires explicit evidence of ransomware affecting that subject; generic cyberattack, outage, or a provider ransomware incident does not automatically classify a client as ransomware. "
     "Also include first_disclosure_date (YYYY-MM-DD or null) and disclosure_evidence "
     "(an exact short quote from the item or article, or null). These describe the FIRST "
     "public announcement of that victim's incident, even if the incident happened long ago. "
@@ -1594,19 +1603,26 @@ def llm_extract_many(rec, body):
             if not plausible_org(org) or kind not in RANK or not incident_date:
                 findings.reasons.append("Victim, incident date, or incident type could not be established")
                 continue
-            records = item.get("records") if kind == "data leak" else None
+            types = categories.normalize(item.get("categories"), kind)
+            kind = categories.primary(types)
+            records = item.get("records") if "data leak" in types else None
             records = (int(records) if isinstance(records, (int, float))
                        and not isinstance(records, bool) and records > 0 else None)
             finding = {
-                "org": org, "kind": kind, "records": records, "incident_date": incident_date,
+                "org": org, "kind": kind, "categories": types, "records": records, "incident_date": incident_date,
                 "date_basis": "incident", "is_followup": bool(item.get("is_followup")),
                 "first_disclosure_date": normalize_incident_date(item.get("first_disclosure_date")),
                 "disclosure_evidence": str(item.get("disclosure_evidence") or "")[:600],
             }
-            identity = (org.casefold(), incident_date[:10], kind)
+            identity = (org.casefold(), incident_date[:10])
             if identity not in seen:
                 seen.add(identity)
                 findings.append(finding)
+            else:
+                existing = next(v for v in findings if (v["org"].casefold(), v["incident_date"][:10]) == identity)
+                existing["categories"] = categories.normalize(existing["categories"] + types)
+                existing["kind"] = categories.primary(existing["categories"])
+                existing["records"] = max(filter(None, [existing["records"], records]), default=None)
         return findings
     except Exception as error:
         report_ai_error(error, "secondary multi-incident extraction")
@@ -1684,9 +1700,10 @@ def classify(rec, src, fetch_body_fn=fetch_body, observed_at=None, enforce_windo
     source_published = normalize_incident_date(rec.get("published"))
     page_published = source_page_date(body)
     inferred_incident_date = heuristic_incident_date(text, source_published or page_published)
-    kind = ("data leak" if LEAK_RE.search(text)
-            else "unauthorized access" if ACCESS_RE.search(text) else "other")
-    res = {"org": guess_org(rec["title"]), "kind": kind,
+    types = [name for name, pattern in [("data leak", LEAK_RE), ("unauthorized access", ACCESS_RE),
+                                        ("ransomware", RANSOMWARE_RE)] if pattern.search(text)] or ["other"]
+    kind = categories.primary(types)
+    res = {"org": guess_org(rec["title"]), "kind": kind, "categories": types,
            "records": parse_records(text) if kind == "data leak" else None,
            "is_followup": bool(FOLLOWUP_RE.search(text))}
     ai = llm_extract(rec, body) if use_ai else None
@@ -1696,6 +1713,7 @@ def classify(rec, src, fetch_body_fn=fetch_body, observed_at=None, enforce_windo
         if not ai["is_incident"]:
             return None
         res = {k: ai[k] for k in ("org", "kind", "records")}
+        res["categories"] = categories.normalize(ai.get("categories"), ai["kind"])
         res["is_followup"] = bool(ai.get("is_followup"))
     if require_ai and not ai.get("incident_date"):
         return None
@@ -1744,7 +1762,7 @@ def find_existing_incident(c, org, incident_date):
     if not org or not day:
         return None
     for row in c.execute(
-        "SELECT id,kind,records,published FROM incidents WHERE org=? AND org!='' ORDER BY published DESC",
+        "SELECT id,kind,records,published FROM incidents WHERE org=? AND org!='' AND withdrawn=0 ORDER BY published DESC",
         (org,),
     ):
         if _incident_day(row["published"]) == day:
@@ -1766,8 +1784,11 @@ def store(c, src_name, rec, cl):
         (rec['url'],)).fetchone()
     if protected:
         return False  # automated reprocessing must never undo an operator correction/withdrawal
-    if c.execute("SELECT 1 FROM incidents WHERE id=?", (iid,)).fetchone():
-        return False  # same article reached through two feeds
+    existing = c.execute("SELECT * FROM incidents WHERE id=?", (iid,)).fetchone()
+    if existing:
+        if not existing["withdrawn"] and existing["org"] == cl["org"] and _incident_day(existing["published"]) == _incident_day(cl.get("incident_date") or rec.get("published")):
+            categories.save(c, iid, categories.normalize(cl.get("categories"), cl["kind"]), rec["url"])
+        return False  # same article/event can contribute additional independent categories
     prev = find_existing_incident(c, cl["org"], cl.get("incident_date") or rec.get("published"))
     if prev:  # follow-up or second outlet: worst type, largest count, add the reference, rescore
         if c.execute('SELECT 1 FROM incident_changes WHERE incident_id=? LIMIT 1', (prev['id'],)).fetchone():
@@ -1781,6 +1802,7 @@ def store(c, src_name, rec, cl):
                   (kind, recs, cl.get("disclosed_at"), cl.get("disclosed_at"), prev["id"]))
         c.execute("INSERT OR IGNORE INTO skipped VALUES(?)", (iid,))
         c.execute("INSERT OR IGNORE INTO refs VALUES(?,?,?,?)", (prev["id"], rec["url"], ref_src, rec["title"]))
+        categories.save(c, prev["id"], categories.normalize(cl.get("categories"), cl["kind"]), rec["url"])
         rescore(c, prev["id"])
         return False
     if cl.get("is_followup") and not cl.get("secondary_validated"):
@@ -1792,6 +1814,7 @@ def store(c, src_name, rec, cl):
                rec["published"] or now_iso(), now_iso(), cl["org"], cl["kind"], cl["records"],
                cl.get("disclosed_at")))
     c.execute("INSERT OR IGNORE INTO refs VALUES(?,?,?,?)", (iid, rec["url"], ref_src, rec["title"]))
+    categories.save(c, iid, categories.normalize(cl.get("categories"), cl["kind"]), rec["url"])
     rescore(c, iid)
     return True
 
@@ -1818,7 +1841,7 @@ def corroborate_finding(finding, record, fetcher=fetch):
     org_key = _org_match_text(finding["org"])
     if len(org_key) < 2:
         return []
-    query = f'"{finding["org"]}" (不正アクセス OR 情報漏えい OR 情報漏洩 OR サイバー攻撃) when:14d'
+    query = f'"{finding["org"]}" (不正アクセス OR 情報漏えい OR 情報漏洩 OR ランサムウェア OR ランサムウエア OR サイバー攻撃) when:14d'
     source = {"name": "GNews corroboration", "url": gnews(query)}
     try:
         items = parse_feed(fetcher(source["url"]))
@@ -2024,7 +2047,8 @@ def decide_manual_review(queue_id, action, note, findings=None):
                 kind, records = finding.get("kind"), finding.get("records")
                 if not plausible_org(org) or org == "VICTIM_NAME" or len(org) > 60 or not date or kind not in RANK:
                     raise ValueError("Supply a concrete victim, valid incident date and incident type")
-                if records is not None and (type(records) is not int or records <= 0 or kind != "data leak"):
+                types = categories.normalize(finding.get("categories"), kind)
+                if records is not None and (type(records) is not int or records <= 0 or "data leak" not in types):
                     raise ValueError("Records must be a positive integer for a data leak, or omitted")
                 if finding.get("disclosed_at") and not disclosed:
                     raise ValueError("Invalid first-disclosure date")
@@ -2034,7 +2058,8 @@ def decide_manual_review(queue_id, action, note, findings=None):
                     raise ValueError("First disclosure must fall within the original intake window and follow the incident")
                 if not within_collection_window(date, row["first_seen"]) and not disclosed:
                     raise ValueError("Old incidents require a verified --disclosed-on date and source evidence in --note")
-                validated.append({"org": org, "incident_date": date, "kind": kind, "records": records,
+                types = categories.normalize(finding.get("categories"), kind)
+                validated.append({"org": org, "incident_date": date, "kind": categories.primary(types), "categories": types, "records": records,
                                   "disclosed_at": disclosed, "date_basis": "incident",
                                   "is_followup": bool(finding.get("is_followup")), "secondary_validated": True})
             rec = {key: row[key] for key in ("title", "url", "summary", "published")}
@@ -2096,6 +2121,8 @@ def edit_incident(incident_id, action, note=None, changes=None):
             raise ValueError('Correction changes nothing')
         c.execute('UPDATE incidents SET org=?,kind=?,records=?,published=?,disclosed_at=?,withdrawn=? WHERE id=?',
                   (after['org'],after['kind'],after['records'],after['published'],after['disclosed_at'],after['withdrawn'],incident_id))
+        if action == 'correct' and 'kind' in changes:
+            categories.save(c, incident_id, [after['kind']], before['url'], replace=True)
         c.execute('INSERT INTO incident_changes(incident_id,action,before_json,after_json,note,created_at) VALUES(?,?,?,?,?,?)',
                   (incident_id,action,json.dumps(before),json.dumps(after),note.strip(),now_iso()))
         c.commit()
@@ -2774,8 +2801,8 @@ def recent(days=28, kind=None, min_score=0):
     sql = "SELECT id,published,org,kind,records,url,score,confidence FROM incidents WHERE withdrawn=0 AND published >= ? AND score >= ?"
     args = [since, min_score]
     if kind:
-        sql += " AND kind=?"
-        args.append(kind)
+        sql += " AND (EXISTS(SELECT 1 FROM incident_categories t WHERE t.incident_id=incidents.id AND t.category=?) OR (NOT EXISTS(SELECT 1 FROM incident_categories t WHERE t.incident_id=incidents.id) AND kind=?))"
+        args.extend([kind, kind])
     rows = [dict(r) for r in c.execute(sql + " ORDER BY published DESC, score DESC", args)]
     for r in rows:
         r["refs"] = [dict(x) for x in c.execute(
@@ -2827,6 +2854,9 @@ def incident_relationships(c):
         ):
             result.setdefault(source, []).append({
                 'incident_id': target, 'relationship': kind, 'evidence_url': row['evidence_url'],
+                'evidence_urls': sorted({row['evidence_url']} | {r[0] for r in c.execute(
+                    'SELECT evidence_url FROM incident_link_evidence WHERE incident_id=? AND related_id=? AND relationship=?',
+                    (row['incident_id'], row['related_id'], row['relationship']))}),
             })
     for links in result.values():
         links.sort(key=lambda link: (link['incident_id'], link['relationship']))
@@ -2869,6 +2899,7 @@ def all_public_incidents():
             "disclosed_at": row["disclosed_at"],
             "organization": row["org"],
             "incident_type": row["kind"],
+            "incident_categories": categories.get(c, row["id"], row["kind"]),
             "potential_records": row["records"],
             "confidence": row["confidence"],
             "confidence_score": row["score"],
@@ -2880,9 +2911,20 @@ def all_public_incidents():
                 )
             ],
         }
+        annotation = c.execute("SELECT affected_system,date_basis FROM incident_annotations WHERE incident_id=?", (row["id"],)).fetchone()
+        if annotation:
+            incident.update(dict(annotation))
         rows.append(incident)
     c.close()
     return rows
+
+
+def public_incident_aliases():
+    c = db()
+    try:
+        return dict(c.execute("SELECT a.old_id,a.canonical_id FROM incident_aliases a JOIN incidents i ON i.id=a.canonical_id AND i.withdrawn=0"))
+    finally:
+        c.close()
 
 
 def public_date_metadata(incidents):
@@ -2918,6 +2960,7 @@ def write_public_json(path=JSON_PATH):
     """
     incidents = all_public_incidents()
     coverage, daily_counts = public_date_metadata(incidents)
+    aliases = public_incident_aliases()
     old = None
     try:
         with open(path, encoding="utf-8") as f:
@@ -2926,6 +2969,7 @@ def write_public_json(path=JSON_PATH):
         pass
     if (isinstance(old, dict) and old.get("schema_version") == 2
             and old.get("incidents") == incidents and old.get("total") == len(incidents)
+            and old.get("aliases") == aliases
             and old.get("date_range") == coverage and old.get("daily_counts_90d") == daily_counts):
         print(f"JSON unchanged: {path} ({len(incidents)} incidents)")
         return False
@@ -2937,6 +2981,7 @@ def write_public_json(path=JSON_PATH):
         "date_range": coverage,
         "daily_counts_90d": daily_counts,
         "incidents": incidents,
+        "aliases": aliases,
     }
     parent = os.path.dirname(os.path.abspath(path))
     os.makedirs(parent, exist_ok=True)
@@ -3055,6 +3100,7 @@ def write_public_rss(path=RSS_PATH, incidents=None):
     type_labels = {
         "data leak": "Data leak / 情報漏えい",
         "unauthorized access": "Unauthorized access / 不正アクセス",
+        "ransomware": "Ransomware / ランサムウェア",
         "other": "Other / その他",
     }
     confidence_labels = {"high": "High / 高", "medium": "Medium / 中", "low": "Low / 低"}
@@ -3068,7 +3114,8 @@ def write_public_rss(path=RSS_PATH, incidents=None):
         ET.SubElement(item, "link").text = _xml_safe(primary_url)
         ET.SubElement(item, "guid", {"isPermaLink": "false"}).text = f"jp-incidents:{incident['id']}"
         ET.SubElement(item, "pubDate").text = _rss_date(incident["published_at"])
-        ET.SubElement(item, "category").text = kind
+        for category in incident.get("incident_categories", [incident["incident_type"]]):
+            ET.SubElement(item, "category").text = type_labels.get(category, _xml_safe(category))
 
         records = incident["potential_records"]
         records_text = f"{records:,}" if isinstance(records, int) else "Not stated / 記載なし"
@@ -3300,7 +3347,7 @@ def serve(host, port):
                 f".high{{color:#1a7f37}}.medium{{color:#9a6700}}.low{{color:#b42318}}</style>"
                 f"<h2>Japan incidents - last {days}d ({len(rs)})</h2>"
                 f"<form>days <input name=days value={days} size=3> type "
-                f"<select name=type><option value=''>all<option>data leak<option>unauthorized access<option>other</select>"
+                f"<select name=type><option value=''>all<option>data leak<option>unauthorized access<option>ransomware<option>other</select>"
                 f" min score <input name=min_score value={ms} size=3>"
                 f" <button>go</button> <a href='/export.csv?days={days}&min_score={ms}'>csv</a></form>"
                 f"<table><tr><th>date<th>organization<th>type<th>potential records<th>confidence<th>sources</tr>"

@@ -91,3 +91,33 @@ const japanese = context.incidentRow(state.incidents[0]).children[6].children[0]
 assert.equal(japanese[0].textContent, "関連 1");
 assert.equal(japanese[1].textContent, "関連 2");
 console.log("PASS: ID links, role labels, missing targets, filters, pagination, rename, hash/back navigation, Japanese");
+
+state.language = "en";
+state.incidents[0].incident_categories = ["ransomware", "data leak"];
+state.incidents[0].affected_system = "Reservation system";
+state.incidents[0].related[0].evidence_urls = ["https://example.org/notice"];
+const enhanced = context.incidentRow(state.incidents[0]);
+assert.deepEqual(enhanced.children[2].children.map(tag => tag.textContent), ["Ransomware", "Data leak"]);
+assert.equal(enhanced.children[1].children[0].textContent, "Reservation system");
+assert.equal(enhanced.children[1].children[1].textContent, "Affected organization");
+assert.equal(enhanced.children[6].children[1].children[0].textContent, "Why linked?");
+vm.runInContext(source.slice(source.indexOf("function filteredIncidents("), source.indexOf("function sortValue(")), context);
+elements.search.value = "";
+elements.confidence.value = "";
+for (const type of ["ransomware", "data leak"]) {
+  elements.type.value = type;
+  assert.equal(context.filteredIncidents().filter(r => r.id === "id-0").length, 1);
+}
+elements.type.value = "other";
+assert.equal(context.filteredIncidents().length, 101, "Actual other incidents remain filterable");
+elements.type.value = "";
+assert.equal(context.filteredIncidents().length, 102, "Categories never inflate record count");
+state.aliases = {"old-id": "id-101"};
+history.replaceState = history.pushState;
+location.hash = "#incident-old-id";
+context.showLinkedIncident();
+assert.equal(location.hash, "#incident-id-101");
+assert.equal(focused, "incident-id-101");
+state.language = "ja";
+assert.equal(context.incidentRow(state.incidents[0]).children[2].children[0].textContent, "ランサムウェア");
+console.log("PASS: independent ransomware tags/filters, Other retained, system/role/evidence, alias redirects");
