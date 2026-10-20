@@ -750,6 +750,8 @@ recovery remain the repository operator's responsibility.
 | `JPI_REVIEW_SECONDS` | 600 | Review time budget, checked between candidates |
 | `JPI_AI_DAILY_REQUEST_LIMIT` | 200 | Hard daily API request reservations, UTC day |
 | `JPI_AI_DAILY_TOKEN_LIMIT` | 2000000 | Conservative input-byte plus maximum-output token reservations |
+| `JPI_AI_TEMP_DAILY_TOKEN_LIMIT` | unset | Temporary daily reservation cap; requires an expiry |
+| `JPI_AI_TEMP_TOKEN_LIMIT_UNTIL` | unset | Exclusive expiry timestamp with timezone; automatically restores the normal cap |
 | `JPI_RECHECK_LIMIT` | 20 | Known article URLs re-read per collection |
 | `JPI_RECHECK_HOURS` | 24 | Interval for unchanged listing entries |
 | `JPI_BACKUP_KEEP` | 30 | Verified local snapshots retained |
@@ -760,6 +762,11 @@ work limits, not exact billing figures. When configured cost reporting shows the
 monthly budget exhausted, review pauses; failed candidates remain pending and
 rotate behind less-attempted candidates. One in-flight fetch/API call can exceed
 the review time budget; the service timeout bounds the whole process.
+
+For a temporary debugging allowance, set both temporary-budget variables in
+private configuration. The override applies until the specified timestamp and
+then falls back to `JPI_AI_DAILY_TOKEN_LIMIT`. It never clears existing reservations
+or changes the UTC-day reset, request cap, or monthly spending checks.
 
 Known article URLs are periodically re-read within a bounded sampling budget.
 Changes to listing text or extracted body create a private human-review item;

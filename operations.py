@@ -65,16 +65,36 @@ class BudgetLimit(RuntimeError):
     pass
 
 
+def daily_token_limit(at=None):
+    """Apply an explicitly expiring override without resetting recorded usage."""
+    base = int(os.environ.get('JPI_AI_DAILY_TOKEN_LIMIT', '2000000'))
+    temporary = os.environ.get('JPI_AI_TEMP_DAILY_TOKEN_LIMIT')
+    expires = os.environ.get('JPI_AI_TEMP_TOKEN_LIMIT_UNTIL')
+    if not temporary and not expires:
+        return base
+    if not temporary or not expires:
+        raise ValueError('Temporary AI budget requires both a limit and an expiry')
+    expiry = datetime.fromisoformat(expires.replace('Z', '+00:00'))
+    if expiry.tzinfo is None:
+        raise ValueError('Temporary AI budget expiry requires a timezone')
+    limit = int(temporary)
+    if limit <= 0:
+        raise ValueError('Temporary AI budget must be positive')
+    return limit if (at or datetime.now(timezone.utc)) < expiry else base
+
+
 def reserve_request(path, payload):
     """Reserve a conservative UTF-8 byte bound plus maximum output tokens before I/O."""
     tokens = len(json.dumps(payload, ensure_ascii=False).encode()) + int(payload['max_tokens'])
-    day = datetime.now(timezone.utc).date().isoformat()
+    moment = datetime.now(timezone.utc)
+    day = moment.date().isoformat()
+    limit = daily_token_limit(moment)
     with contextlib.closing(connect(path)) as c, c:
         c.execute('BEGIN IMMEDIATE')
         row = c.execute('SELECT requests,tokens FROM ai_usage WHERE day=?', (day,)).fetchone() or (0, 0)
         if row[0] >= int(os.environ.get('JPI_AI_DAILY_REQUEST_LIMIT', '200')):
             raise BudgetLimit('Daily AI request limit reached; candidates remain pending')
-        if row[1] + tokens > int(os.environ.get('JPI_AI_DAILY_TOKEN_LIMIT', '2000000')):
+        if row[1] + tokens > limit:
             raise BudgetLimit('Daily AI token reservation limit reached; candidates remain pending')
         c.execute('INSERT OR REPLACE INTO ai_usage VALUES(?,?,?)', (day, row[0]+1, row[1]+tokens))
 

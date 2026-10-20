@@ -8,6 +8,7 @@ import tempfile
 from types import SimpleNamespace
 import unittest
 from unittest.mock import patch
+from datetime import datetime, timezone
 
 import jp_incidents as app
 import operations as ops
@@ -136,6 +137,42 @@ class ResilienceTests(unittest.TestCase):
         with patch.object(app,'llm_extract_many') as ai, patch.object(app,'deliver_alerts'):
             result=app.review_pending()
         self.assertEqual(result['deferred'],1);ai.assert_not_called()
+
+    def test_temporary_daily_budget_expires_at_exact_timezone_boundary(self):
+        env = {'JPI_AI_DAILY_TOKEN_LIMIT':'2000000',
+               'JPI_AI_TEMP_DAILY_TOKEN_LIMIT':'3000000',
+               'JPI_AI_TEMP_TOKEN_LIMIT_UNTIL':'2030-01-03T09:00:00+09:00'}
+        with patch.dict(os.environ,env,clear=True):
+            self.assertEqual(ops.daily_token_limit(datetime(2030,1,2,23,59,59,tzinfo=timezone.utc)),3000000)
+            self.assertEqual(ops.daily_token_limit(datetime(2030,1,3,tzinfo=timezone.utc)),2000000)
+
+    def test_temporary_budget_preserves_usage_and_hard_limit(self):
+        moment=datetime(2030,1,2,tzinfo=timezone.utc)
+        with ops.connect(self.path) as c:
+            c.execute('INSERT INTO ai_usage VALUES(?,?,?)',('2030-01-02',10,2500000))
+        env={'JPI_AI_TEMP_DAILY_TOKEN_LIMIT':'3000000',
+             'JPI_AI_TEMP_TOKEN_LIMIT_UNTIL':'2030-01-03T00:00:00Z'}
+        with patch.dict(os.environ,env,clear=True), patch.object(ops,'datetime') as clock:
+            clock.now.return_value=moment
+            clock.fromisoformat.side_effect=datetime.fromisoformat
+            ops.reserve_request(self.path,{'max_tokens':1000})
+            with self.assertRaises(ops.BudgetLimit):
+                ops.reserve_request(self.path,{'max_tokens':500000})
+        with ops.connect(self.path) as c:
+            requests,tokens=c.execute('SELECT requests,tokens FROM ai_usage').fetchone()
+        self.assertEqual(requests,11)
+        self.assertGreater(tokens,2500000)
+        self.assertLess(tokens,3000000)
+
+    def test_incomplete_or_invalid_temporary_budget_fails_closed(self):
+        for env in [
+            {'JPI_AI_TEMP_DAILY_TOKEN_LIMIT':'3000000'},
+            {'JPI_AI_TEMP_TOKEN_LIMIT_UNTIL':'2030-01-03T00:00:00Z'},
+            {'JPI_AI_TEMP_DAILY_TOKEN_LIMIT':'3000000','JPI_AI_TEMP_TOKEN_LIMIT_UNTIL':'2030-01-03'},
+            {'JPI_AI_TEMP_DAILY_TOKEN_LIMIT':'0','JPI_AI_TEMP_TOKEN_LIMIT_UNTIL':'2030-01-03T00:00:00Z'},
+        ]:
+            with self.subTest(env=env), patch.dict(os.environ,env,clear=True):
+                with self.assertRaises(ValueError):ops.daily_token_limit()
 
     def test_changed_body_at_same_url_creates_one_private_review(self):
         source={'name':'Example'}
