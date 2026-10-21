@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T03:54:25+00:00",
-  "total": 199,
+  "updated_at": "2026-10-21T03:55:18+00:00",
+  "total": 200,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-20"
@@ -341,7 +341,7 @@
     },
     {
       "date": "2026-10-15",
-      "count": 18
+      "count": 19
     },
     {
       "date": "2026-10-16",
@@ -3577,6 +3577,36 @@
       ]
     },
     {
+      "id": "63810606de9a51be",
+      "published_at": "2026-10-14T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "岡山県警",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "0a08a3f6bcd30b82",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.sanyonews.jp/article/2004992",
+          "evidence_urls": [
+            "https://www.sanyonews.jp/article/2004992"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "山陽新聞",
+          "url": "https://www.sanyonews.jp/article/2004992"
+        }
+      ]
+    },
+    {
       "id": "a379a449d7179ed9",
       "published_at": "2026-10-14T00:00:00+09:00",
       "disclosed_at": "2026-10-14T00:00:00+09:00",
@@ -4443,6 +4473,14 @@
           "evidence_url": "https://www.hokkoku.co.jp/articles/-/2258014",
           "evidence_urls": [
             "https://www.hokkoku.co.jp/articles/-/2258014"
+          ]
+        },
+        {
+          "incident_id": "63810606de9a51be",
+          "relationship": "affects",
+          "evidence_url": "https://www.sanyonews.jp/article/2004992",
+          "evidence_urls": [
+            "https://www.sanyonews.jp/article/2004992"
           ]
         },
         {
