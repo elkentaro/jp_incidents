@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T03:59:34+00:00",
+  "updated_at": "2026-10-21T04:00:43+00:00",
   "total": 205,
   "date_range": {
     "start": "2026-08-09",
@@ -4027,6 +4027,43 @@
       ]
     },
     {
+      "id": "5d515273ad570e8c",
+      "published_at": "2026-10-13T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "岩井コスモ証券",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [
+        {
+          "incident_id": "c54d7b0032b3bb85",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/e8b09c604916701db9901eefed73e9f68cbd1702",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/e8b09c604916701db9901eefed73e9f68cbd1702"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/e8b09c604916701db9901eefed73e9f68cbd1702"
+        },
+        {
+          "name": "ライブドアニュース",
+          "url": "https://news.livedoor.com/topics/detail/32614983/"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261021de62520"
+        }
+      ]
+    },
+    {
       "id": "e7029a3cadb1b7be",
       "published_at": "2026-10-13T15:00:00+00:00",
       "disclosed_at": null,
@@ -4062,39 +4099,6 @@
       ],
       "affected_system": "岩井コスモ証券向けインターネット取引システム",
       "date_basis": "discovery"
-    },
-    {
-      "id": "5d515273ad570e8c",
-      "published_at": "2026-10-13T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "岩井コスモ証券",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [
-        {
-          "incident_id": "c54d7b0032b3bb85",
-          "relationship": "same_organization",
-          "evidence_url": "https://news.yahoo.co.jp/articles/e8b09c604916701db9901eefed73e9f68cbd1702",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/e8b09c604916701db9901eefed73e9f68cbd1702"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/e8b09c604916701db9901eefed73e9f68cbd1702"
-        },
-        {
-          "name": "ライブドアニュース",
-          "url": "https://news.livedoor.com/topics/detail/32614983/"
-        }
-      ]
     },
     {
       "id": "cb4534acea4b4c5d",
