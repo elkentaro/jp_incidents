@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T19:43:05+00:00",
+  "updated_at": "2026-10-21T19:51:50+00:00",
   "total": 249,
   "date_range": {
     "start": "2026-08-09",
@@ -424,6 +424,30 @@
       ]
     },
     {
+      "id": "a2cf60a92a1ad65c",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": "2026-10-20T15:00:00+00:00",
+      "organization": "イオン",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/32a84919f3d40fdd91597df2043c1bb94d7f9cf3"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVBP457VVBPULFA02GM.html"
+        }
+      ]
+    },
+    {
       "id": "30be55b8dfc1bf4b",
       "published_at": "2026-10-20T15:00:00+00:00",
       "disclosed_at": null,
@@ -628,26 +652,6 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/ff0bd5e966aaaab250e12442965d0b3ca333904a"
-        }
-      ]
-    },
-    {
-      "id": "a2cf60a92a1ad65c",
-      "published_at": "2026-10-20T15:00:00+00:00",
-      "disclosed_at": "2026-10-20T15:00:00+00:00",
-      "organization": "イオン",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/32a84919f3d40fdd91597df2043c1bb94d7f9cf3"
         }
       ]
     },
@@ -1100,9 +1104,10 @@
         {
           "incident_id": "a0aa196c95281fea",
           "relationship": "affects",
-          "evidence_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9yX29uY2R4V2FsaXJqM2VBdGlVSlFDMFNLQVoyb2g0MmRQYkZfZ2EwTG1hMDA1RENHTmUzbkF1WTFiRnAxdjRwd2otLTlVMVVvMlBsM3dkWUMwOVZGbHI1M2ZCdkk?oc=5",
+          "evidence_url": "https://news.yahoo.co.jp/articles/34be080b4f5cb4ad7a88e45f62755a55fee80336",
           "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9yX29uY2R4V2FsaXJqM2VBdGlVSlFDMFNLQVoyb2g0MmRQYkZfZ2EwTG1hMDA1RENHTmUzbkF1WTFiRnAxdjRwd2otLTlVMVVvMlBsM3dkWUMwOVZGbHI1M2ZCdkk?oc=5"
+            "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9yX29uY2R4V2FsaXJqM2VBdGlVSlFDMFNLQVoyb2g0MmRQYkZfZ2EwTG1hMDA1RENHTmUzbkF1WTFiRnAxdjRwd2otLTlVMVVvMlBsM3dkWUMwOVZGbHI1M2ZCdkk?oc=5",
+            "https://news.yahoo.co.jp/articles/34be080b4f5cb4ad7a88e45f62755a55fee80336"
           ]
         }
       ],
@@ -1289,12 +1294,13 @@
         {
           "incident_id": "0a08a3f6bcd30b82",
           "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/82d3f09dd833ea3672c544165b50b4669b779a17",
+          "evidence_url": "https://news.yahoo.co.jp/articles/ad102b18dbf6d4c3651f8ad1dc596507315990fa",
           "evidence_urls": [
             "https://news.ntv.co.jp/category/society/24d9720c0eab43fc97fb75d65cdb92cf",
             "https://news.tv-asahi.co.jp/news_society/articles/000541581.html",
             "https://news.yahoo.co.jp/articles/82d3f09dd833ea3672c544165b50b4669b779a17",
             "https://news.yahoo.co.jp/articles/abf566054c40bd79fbb26399db111bf33efbd3e3",
+            "https://news.yahoo.co.jp/articles/ad102b18dbf6d4c3651f8ad1dc596507315990fa",
             "https://news.yahoo.co.jp/articles/cb32bc1871cc1e5919c06e936cdd786ac4d9d911",
             "https://news.yahoo.co.jp/articles/f706fb85ddc92e7f871bdc7b751d6b49e74ae5de"
           ]
@@ -3265,6 +3271,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/788ff8d4b2ecbd3c2d9ed8861bf18c374a1500e6"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/cc0313e722f2a7d20f2a877805114813ab2b2f56"
         }
       ]
     },
@@ -6237,12 +6247,13 @@
         {
           "incident_id": "d5c8ca9a2bb82307",
           "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/82d3f09dd833ea3672c544165b50b4669b779a17",
+          "evidence_url": "https://news.yahoo.co.jp/articles/ad102b18dbf6d4c3651f8ad1dc596507315990fa",
           "evidence_urls": [
             "https://news.ntv.co.jp/category/society/24d9720c0eab43fc97fb75d65cdb92cf",
             "https://news.tv-asahi.co.jp/news_society/articles/000541581.html",
             "https://news.yahoo.co.jp/articles/82d3f09dd833ea3672c544165b50b4669b779a17",
             "https://news.yahoo.co.jp/articles/abf566054c40bd79fbb26399db111bf33efbd3e3",
+            "https://news.yahoo.co.jp/articles/ad102b18dbf6d4c3651f8ad1dc596507315990fa",
             "https://news.yahoo.co.jp/articles/cb32bc1871cc1e5919c06e936cdd786ac4d9d911",
             "https://news.yahoo.co.jp/articles/f706fb85ddc92e7f871bdc7b751d6b49e74ae5de"
           ]
@@ -8015,6 +8026,40 @@
       ]
     },
     {
+      "id": "a0aa196c95281fea",
+      "published_at": "2026-10-08T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大阪大学",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 77851,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "415606b392ad65f5",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/34be080b4f5cb4ad7a88e45f62755a55fee80336",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9yX29uY2R4V2FsaXJqM2VBdGlVSlFDMFNLQVoyb2g0MmRQYkZfZ2EwTG1hMDA1RENHTmUzbkF1WTFiRnAxdjRwd2otLTlVMVVvMlBsM3dkWUMwOVZGbHI1M2ZCdkk?oc=5",
+            "https://news.yahoo.co.jp/articles/34be080b4f5cb4ad7a88e45f62755a55fee80336"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "大阪大学",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9yX29uY2R4V2FsaXJqM2VBdGlVSlFDMFNLQVoyb2g0MmRQYkZfZ2EwTG1hMDA1RENHTmUzbkF1WTFiRnAxdjRwd2otLTlVMVVvMlBsM3dkWUMwOVZGbHI1M2ZCdkk?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/34be080b4f5cb4ad7a88e45f62755a55fee80336"
+        }
+      ]
+    },
+    {
       "id": "bab27c57bcae574b",
       "published_at": "2026-10-08T15:00:00+00:00",
       "disclosed_at": null,
@@ -8102,35 +8147,6 @@
         {
           "name": "satimo list",
           "url": "https://rakumachi.co.jp/20261019/"
-        }
-      ]
-    },
-    {
-      "id": "a0aa196c95281fea",
-      "published_at": "2026-10-08T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "大阪大学",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 77851,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "415606b392ad65f5",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9yX29uY2R4V2FsaXJqM2VBdGlVSlFDMFNLQVoyb2g0MmRQYkZfZ2EwTG1hMDA1RENHTmUzbkF1WTFiRnAxdjRwd2otLTlVMVVvMlBsM3dkWUMwOVZGbHI1M2ZCdkk?oc=5",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9yX29uY2R4V2FsaXJqM2VBdGlVSlFDMFNLQVoyb2g0MmRQYkZfZ2EwTG1hMDA1RENHTmUzbkF1WTFiRnAxdjRwd2otLTlVMVVvMlBsM3dkWUMwOVZGbHI1M2ZCdkk?oc=5"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "大阪大学",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9yX29uY2R4V2FsaXJqM2VBdGlVSlFDMFNLQVoyb2g0MmRQYkZfZ2EwTG1hMDA1RENHTmUzbkF1WTFiRnAxdjRwd2otLTlVMVVvMlBsM3dkWUMwOVZGbHI1M2ZCdkk?oc=5"
         }
       ]
     },
