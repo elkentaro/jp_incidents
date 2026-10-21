@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T03:16:07+00:00",
+  "updated_at": "2026-10-21T03:16:15+00:00",
   "total": 179,
   "date_range": {
     "start": "2026-08-09",
@@ -468,6 +468,41 @@
       ]
     },
     {
+      "id": "8a4f510672760aee",
+      "published_at": "2026-10-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "栃木県警",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "0a08a3f6bcd30b82",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.47news.jp/15107110.html",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/pickup/6599459",
+            "https://www.47news.jp/15107110.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/pickup/6599459"
+        },
+        {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp/15107110.html"
+        }
+      ]
+    },
+    {
       "id": "2a737208d01cfe10",
       "published_at": "2026-10-19T15:00:00+00:00",
       "disclosed_at": "2026-10-20T15:00:00+00:00",
@@ -689,36 +724,6 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE42c1ExSDl4UmppbXRLUHV2Yl84Rk83cEpfbFUwYmt3ZVo4MVowOG85bjBTUGtwcnRNVURYcVJKQ0dzUzdLeFFzTFNial9rNllvWUNfa1F2cUZnajlFR19iSmZFNy1SaHNVZkU3QUN0OTRYRXlvdFRMM2JMNi11T1E?oc=5"
-        }
-      ]
-    },
-    {
-      "id": "8a4f510672760aee",
-      "published_at": "2026-10-19T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "栃木県警",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "0a08a3f6bcd30b82",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/pickup/6599459",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/pickup/6599459"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/pickup/6599459"
         }
       ]
     },
@@ -3718,9 +3723,10 @@
         {
           "incident_id": "8a4f510672760aee",
           "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/pickup/6599459",
+          "evidence_url": "https://www.47news.jp/15107110.html",
           "evidence_urls": [
-            "https://news.yahoo.co.jp/pickup/6599459"
+            "https://news.yahoo.co.jp/pickup/6599459",
+            "https://www.47news.jp/15107110.html"
           ]
         },
         {
