@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T00:43:04+00:00",
+  "updated_at": "2026-10-21T03:11:58+00:00",
   "total": 176,
   "date_range": {
     "start": "2026-08-09",
@@ -2308,9 +2308,10 @@
         {
           "incident_id": "f58940476d597124",
           "relationship": "affects",
-          "evidence_url": "https://corp.raksul.com/news/press/261016raksul_studio/",
+          "evidence_url": "https://cybersecurity-jp.com/news/117514",
           "evidence_urls": [
             "https://corp.raksul.com/news/press/261016raksul_studio/",
+            "https://cybersecurity-jp.com/news/117514",
             "https://studio.design/ja/whats-new/unauthorized-access-2026-10"
           ]
         }
@@ -2492,6 +2493,44 @@
         }
       ],
       "affected_system": "Highway-bus reservations through 発車オーライネット",
+      "date_basis": "existing_record"
+    },
+    {
+      "id": "f58940476d597124",
+      "published_at": "2026-10-14T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ラクスル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 6412,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://cybersecurity-jp.com/news/117514",
+          "evidence_urls": [
+            "https://corp.raksul.com/news/press/261016raksul_studio/",
+            "https://cybersecurity-jp.com/news/117514",
+            "https://studio.design/ja/whats-new/unauthorized-access-2026-10"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://corp.raksul.com/news/press/261016raksul_studio/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/117514"
+        }
+      ],
+      "affected_system": "Service-information website forms on Studio",
       "date_basis": "existing_record"
     },
     {
@@ -2683,38 +2722,6 @@
         }
       ],
       "affected_system": "Highway-bus reservations through 発車オーライネット",
-      "date_basis": "existing_record"
-    },
-    {
-      "id": "f58940476d597124",
-      "published_at": "2026-10-14T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ラクスル",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 6412,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "671c427eadb6fc63",
-          "relationship": "affected_by",
-          "evidence_url": "https://corp.raksul.com/news/press/261016raksul_studio/",
-          "evidence_urls": [
-            "https://corp.raksul.com/news/press/261016raksul_studio/",
-            "https://studio.design/ja/whats-new/unauthorized-access-2026-10"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://corp.raksul.com/news/press/261016raksul_studio/"
-        }
-      ],
-      "affected_system": "Service-information website forms on Studio",
       "date_basis": "existing_record"
     },
     {
