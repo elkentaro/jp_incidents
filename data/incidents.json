@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T03:30:55+00:00",
+  "updated_at": "2026-10-21T03:31:33+00:00",
   "total": 188,
   "date_range": {
     "start": "2026-08-09",
@@ -4192,9 +4192,10 @@
         {
           "incident_id": "f3b905f55eedaf65",
           "relationship": "affects",
-          "evidence_url": "https://mainichi.jp/articles/20261020/k00/00m/310/190000c",
+          "evidence_url": "https://news.tnc.co.jp/news/articles/NID2026102032502",
           "evidence_urls": [
             "https://mainichi.jp/articles/20261020/k00/00m/310/190000c",
+            "https://news.tnc.co.jp/news/articles/NID2026102032502",
             "https://www.sankei.com/article/20261020-BI6DQNMLI5PETAV6P62YGEYDXU/"
           ]
         },
@@ -4335,6 +4336,46 @@
       ]
     },
     {
+      "id": "f3b905f55eedaf65",
+      "published_at": "2026-10-12T15:00:00+00:00",
+      "disclosed_at": "2026-10-19T15:00:00+00:00",
+      "organization": "福岡県警",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "0a08a3f6bcd30b82",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.tnc.co.jp/news/articles/NID2026102032502",
+          "evidence_urls": [
+            "https://mainichi.jp/articles/20261020/k00/00m/310/190000c",
+            "https://news.tnc.co.jp/news/articles/NID2026102032502",
+            "https://www.sankei.com/article/20261020-BI6DQNMLI5PETAV6P62YGEYDXU/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "産経ニュース",
+          "url": "https://www.sankei.com/article/20261020-BI6DQNMLI5PETAV6P62YGEYDXU/"
+        },
+        {
+          "name": "毎日新聞",
+          "url": "https://mainichi.jp/articles/20261020/k00/00m/310/190000c"
+        },
+        {
+          "name": "福岡TNCニュース",
+          "url": "https://news.tnc.co.jp/news/articles/NID2026102032502"
+        }
+      ]
+    },
+    {
       "id": "196233ffeb2e2379",
       "published_at": "2026-10-12T15:00:00+00:00",
       "disclosed_at": null,
@@ -4432,41 +4473,6 @@
         {
           "name": "legalagent list",
           "url": "https://company.golfdigest.co.jp/corp/pr/2026101601.html"
-        }
-      ]
-    },
-    {
-      "id": "f3b905f55eedaf65",
-      "published_at": "2026-10-12T15:00:00+00:00",
-      "disclosed_at": "2026-10-19T15:00:00+00:00",
-      "organization": "福岡県警",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [
-        {
-          "incident_id": "0a08a3f6bcd30b82",
-          "relationship": "affected_by",
-          "evidence_url": "https://mainichi.jp/articles/20261020/k00/00m/310/190000c",
-          "evidence_urls": [
-            "https://mainichi.jp/articles/20261020/k00/00m/310/190000c",
-            "https://www.sankei.com/article/20261020-BI6DQNMLI5PETAV6P62YGEYDXU/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "産経ニュース",
-          "url": "https://www.sankei.com/article/20261020-BI6DQNMLI5PETAV6P62YGEYDXU/"
-        },
-        {
-          "name": "毎日新聞",
-          "url": "https://mainichi.jp/articles/20261020/k00/00m/310/190000c"
         }
       ]
     },
