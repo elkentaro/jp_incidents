@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T08:22:16+00:00",
-  "total": 232,
+  "updated_at": "2026-10-21T08:25:16+00:00",
+  "total": 234,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-21"
@@ -357,7 +357,7 @@
     },
     {
       "date": "2026-10-19",
-      "count": 27
+      "count": 28
     },
     {
       "date": "2026-10-20",
@@ -365,10 +365,40 @@
     },
     {
       "date": "2026-10-21",
-      "count": 7
+      "count": 8
     }
   ],
   "incidents": [
+    {
+      "id": "30be55b8dfc1bf4b",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "加東市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.kato.lg.jp/kakukanogoannai/machidukuriseisakubu/kikakuseisaku/seisakusuishin/kifu/18176.html",
+          "evidence_urls": [
+            "https://www.city.kato.lg.jp/kakukanogoannai/machidukuriseisakubu/kikakuseisaku/seisakusuishin/kifu/18176.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "加東市",
+          "url": "https://www.city.kato.lg.jp/kakukanogoannai/machidukuriseisakubu/kikakuseisaku/seisakusuishin/kifu/18176.html"
+        }
+      ]
+    },
     {
       "id": "5014a88e2f6bb6b3",
       "published_at": "2026-10-20T15:00:00+00:00",
@@ -580,6 +610,14 @@
           ]
         },
         {
+          "incident_id": "30be55b8dfc1bf4b",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.kato.lg.jp/kakukanogoannai/machidukuriseisakubu/kikakuseisaku/seisakusuishin/kifu/18176.html",
+          "evidence_urls": [
+            "https://www.city.kato.lg.jp/kakukanogoannai/machidukuriseisakubu/kikakuseisaku/seisakusuishin/kifu/18176.html"
+          ]
+        },
+        {
           "incident_id": "35199c11de392f0c",
           "relationship": "affects",
           "evidence_url": "https://www.city.gojo.lg.jp/juuyou/19902.html",
@@ -744,12 +782,13 @@
         {
           "incident_id": "0a08a3f6bcd30b82",
           "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/cb32bc1871cc1e5919c06e936cdd786ac4d9d911",
+          "evidence_url": "https://news.yahoo.co.jp/articles/dd4dc1f525a1676ac1f28580d9b3d850cf5591d4",
           "evidence_urls": [
             "https://news.ntv.co.jp/category/society/24d9720c0eab43fc97fb75d65cdb92cf",
             "https://news.tv-asahi.co.jp/news_society/articles/000541581.html",
             "https://news.yahoo.co.jp/articles/abf566054c40bd79fbb26399db111bf33efbd3e3",
             "https://news.yahoo.co.jp/articles/cb32bc1871cc1e5919c06e936cdd786ac4d9d911",
+            "https://news.yahoo.co.jp/articles/dd4dc1f525a1676ac1f28580d9b3d850cf5591d4",
             "https://news.yahoo.co.jp/articles/f706fb85ddc92e7f871bdc7b751d6b49e74ae5de"
           ]
         }
@@ -1007,6 +1046,31 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/cb32bc1871cc1e5919c06e936cdd786ac4d9d911"
+        }
+      ]
+    },
+    {
+      "id": "1ad4af4d81083790",
+      "published_at": "2026-10-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "富士急ハイランド",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "sannichi.co.jp",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB4U0tMU2JLcDZQc055UmttNkR0VDU4Vk5NOTM2UExJSzVhV0xYQlhoX2NrNHdoOU1VdmRlRnRORmdud1FjYWVoQ3dGZnhDRnAxT3NqRHVPbnczOFlGNGNjcUFITlM?oc=5"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261021de62670"
         }
       ]
     },
@@ -1587,27 +1651,6 @@
       ]
     },
     {
-      "id": "1ad4af4d81083790",
-      "published_at": "2026-10-19T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "富士急ハイランド",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "sannichi.co.jp",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB4U0tMU2JLcDZQc055UmttNkR0VDU4Vk5NOTM2UExJSzVhV0xYQlhoX2NrNHdoOU1VdmRlRnRORmdud1FjYWVoQ3dGZnhDRnAxT3NqRHVPbnczOFlGNGNjcUFITlM?oc=5"
-        }
-      ]
-    },
-    {
       "id": "aff60e65bbd8c3d5",
       "published_at": "2026-10-19T15:00:00+00:00",
       "disclosed_at": null,
@@ -2134,6 +2177,43 @@
       ]
     },
     {
+      "id": "d15b4ef4c598e641",
+      "published_at": "2026-10-18T15:00:00+00:00",
+      "disclosed_at": "2026-10-19T15:00:00+00:00",
+      "organization": "山形県警",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.sakuranbo.co.jp/news/2026/10/20/2026102000000003.html",
+          "evidence_urls": [
+            "https://www.sakuranbo.co.jp/news/2026/10/20/2026102000000003.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "さくらんぼテレビ",
+          "url": "https://www.sakuranbo.co.jp/news/2026/10/20/2026102000000003.html"
+        },
+        {
+          "name": "YTS山形テレビ",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5mWFI4YnprNUo3a3N5YUhZcnZCUk8wMHJKTG0yVW1Maml0MzhJUTNOQ1BBRTNYeUhmMllGTUVuYVlqd3ROYzlaYzNqZlpubzRu?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6cebe306d958edfb1cdc3c930be5e316c2625952"
+        }
+      ]
+    },
+    {
       "id": "12e7a20b5ea44b95",
       "published_at": "2026-10-18T15:00:00+00:00",
       "disclosed_at": null,
@@ -2311,35 +2391,6 @@
         {
           "name": "泉大津市",
           "url": "https://www.city.izumiotsu.lg.jp/kakuka/koushitsu/hishokoho/tantougyoumu/16500.html"
-        }
-      ]
-    },
-    {
-      "id": "d15b4ef4c598e641",
-      "published_at": "2026-10-18T15:00:00+00:00",
-      "disclosed_at": "2026-10-19T15:00:00+00:00",
-      "organization": "山形県警",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "0a86ecb2b2d87e50",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.sakuranbo.co.jp/news/2026/10/20/2026102000000003.html",
-          "evidence_urls": [
-            "https://www.sakuranbo.co.jp/news/2026/10/20/2026102000000003.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "さくらんぼテレビ",
-          "url": "https://www.sakuranbo.co.jp/news/2026/10/20/2026102000000003.html"
         }
       ]
     },
@@ -2550,6 +2601,35 @@
         {
           "name": "TBS NEWS DIG",
           "url": "https://newsdig.tbs.co.jp/articles/nbc/3022365?display=1"
+        }
+      ]
+    },
+    {
+      "id": "cc86b97bfc868b53",
+      "published_at": "2026-10-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ＬｉＮＫＸ",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261019553109/",
+          "evidence_urls": [
+            "https://www.nikkei.com/nkd/disclosure/tdnr/20261019553109/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261019553109/"
         }
       ]
     },
@@ -3776,6 +3856,14 @@
           "evidence_urls": [
             "https://newsdig.tbs.co.jp/articles/nbc/3022365?display=1",
             "https://newsdig.tbs.co.jp/articles/nbc/3022603?display=1"
+          ]
+        },
+        {
+          "incident_id": "cc86b97bfc868b53",
+          "relationship": "affects",
+          "evidence_url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261019553109/",
+          "evidence_urls": [
+            "https://www.nikkei.com/nkd/disclosure/tdnr/20261019553109/"
           ]
         },
         {
@@ -5538,12 +5626,13 @@
         {
           "incident_id": "790f2d74f04c4ba6",
           "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/cb32bc1871cc1e5919c06e936cdd786ac4d9d911",
+          "evidence_url": "https://news.yahoo.co.jp/articles/dd4dc1f525a1676ac1f28580d9b3d850cf5591d4",
           "evidence_urls": [
             "https://news.ntv.co.jp/category/society/24d9720c0eab43fc97fb75d65cdb92cf",
             "https://news.tv-asahi.co.jp/news_society/articles/000541581.html",
             "https://news.yahoo.co.jp/articles/abf566054c40bd79fbb26399db111bf33efbd3e3",
             "https://news.yahoo.co.jp/articles/cb32bc1871cc1e5919c06e936cdd786ac4d9d911",
+            "https://news.yahoo.co.jp/articles/dd4dc1f525a1676ac1f28580d9b3d850cf5591d4",
             "https://news.yahoo.co.jp/articles/f706fb85ddc92e7f871bdc7b751d6b49e74ae5de"
           ]
         },
