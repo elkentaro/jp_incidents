@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T03:57:11+00:00",
-  "total": 203,
+  "updated_at": "2026-10-21T03:57:34+00:00",
+  "total": 204,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-21"
@@ -325,7 +325,7 @@
     },
     {
       "date": "2026-10-11",
-      "count": 13
+      "count": 14
     },
     {
       "date": "2026-10-12",
@@ -4639,6 +4639,14 @@
           ]
         },
         {
+          "incident_id": "889809dcebdd0ccb",
+          "relationship": "affects",
+          "evidence_url": "https://www.town.oiso.kanagawa.jp/kinkyu/25377.html",
+          "evidence_urls": [
+            "https://www.town.oiso.kanagawa.jp/kinkyu/25377.html"
+          ]
+        },
+        {
           "incident_id": "8a4f510672760aee",
           "relationship": "affects",
           "evidence_url": "https://news.ntv.co.jp/category/society/24d9720c0eab43fc97fb75d65cdb92cf",
@@ -6157,6 +6165,36 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1Eb2NMc3FxWHlodGtzSkZobXRJVURCMWlCTUFuWG9tZjFoR1lZR3hCMUItZzFvc1dtb0RIT2FxQ1NiOFpBTXc1ZjdlaENFT3NSNnN5TjBJYW9lSkZnWXJyajVNT21nREV2ZE5hb3pQNDhQemNkU1liZTRxSGxiR1U?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "889809dcebdd0ccb",
+      "published_at": "2026-10-10T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大磯町",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "0a08a3f6bcd30b82",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.town.oiso.kanagawa.jp/kinkyu/25377.html",
+          "evidence_urls": [
+            "https://www.town.oiso.kanagawa.jp/kinkyu/25377.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "大磯町",
+          "url": "https://www.town.oiso.kanagawa.jp/kinkyu/25377.html"
         }
       ]
     },
