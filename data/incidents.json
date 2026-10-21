@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T03:45:02+00:00",
+  "updated_at": "2026-10-21T03:45:25+00:00",
   "total": 194,
   "date_range": {
     "start": "2026-08-09",
@@ -4440,10 +4440,11 @@
         {
           "incident_id": "f3b905f55eedaf65",
           "relationship": "affects",
-          "evidence_url": "https://news.tnc.co.jp/news/articles/NID2026102032502",
+          "evidence_url": "https://news.yahoo.co.jp/articles/aff8b515d37cde5d3b42378b9d680c9cb6953351",
           "evidence_urls": [
             "https://mainichi.jp/articles/20261020/k00/00m/310/190000c",
             "https://news.tnc.co.jp/news/articles/NID2026102032502",
+            "https://news.yahoo.co.jp/articles/aff8b515d37cde5d3b42378b9d680c9cb6953351",
             "https://www.sankei.com/article/20261020-BI6DQNMLI5PETAV6P62YGEYDXU/"
           ]
         },
@@ -4552,6 +4553,51 @@
       ]
     },
     {
+      "id": "f3b905f55eedaf65",
+      "published_at": "2026-10-12T15:00:00+00:00",
+      "disclosed_at": "2026-10-19T15:00:00+00:00",
+      "organization": "福岡県警",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "0a08a3f6bcd30b82",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/aff8b515d37cde5d3b42378b9d680c9cb6953351",
+          "evidence_urls": [
+            "https://mainichi.jp/articles/20261020/k00/00m/310/190000c",
+            "https://news.tnc.co.jp/news/articles/NID2026102032502",
+            "https://news.yahoo.co.jp/articles/aff8b515d37cde5d3b42378b9d680c9cb6953351",
+            "https://www.sankei.com/article/20261020-BI6DQNMLI5PETAV6P62YGEYDXU/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "産経ニュース",
+          "url": "https://www.sankei.com/article/20261020-BI6DQNMLI5PETAV6P62YGEYDXU/"
+        },
+        {
+          "name": "毎日新聞",
+          "url": "https://mainichi.jp/articles/20261020/k00/00m/310/190000c"
+        },
+        {
+          "name": "福岡TNCニュース",
+          "url": "https://news.tnc.co.jp/news/articles/NID2026102032502"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/aff8b515d37cde5d3b42378b9d680c9cb6953351"
+        }
+      ]
+    },
+    {
       "id": "2a043284650fc19a",
       "published_at": "2026-10-12T15:00:00+00:00",
       "disclosed_at": null,
@@ -4580,46 +4626,6 @@
         {
           "name": "ITmedia",
           "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA0Z01XTXU2Q2xqSGNkbHNGempZS0ZiMFN5YjJPUGQyYjAwR0tVYVBjWFRfa2s0OEY4NE9QQUFJS2pEbDUxNE9uN3hReHR3ZURrSFBzazhJWHpFcnBfck55UUpORnpWZUc4dFlMSy1NZ0NmRTFm?oc=5"
-        }
-      ]
-    },
-    {
-      "id": "f3b905f55eedaf65",
-      "published_at": "2026-10-12T15:00:00+00:00",
-      "disclosed_at": "2026-10-19T15:00:00+00:00",
-      "organization": "福岡県警",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [
-        {
-          "incident_id": "0a08a3f6bcd30b82",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.tnc.co.jp/news/articles/NID2026102032502",
-          "evidence_urls": [
-            "https://mainichi.jp/articles/20261020/k00/00m/310/190000c",
-            "https://news.tnc.co.jp/news/articles/NID2026102032502",
-            "https://www.sankei.com/article/20261020-BI6DQNMLI5PETAV6P62YGEYDXU/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "産経ニュース",
-          "url": "https://www.sankei.com/article/20261020-BI6DQNMLI5PETAV6P62YGEYDXU/"
-        },
-        {
-          "name": "毎日新聞",
-          "url": "https://mainichi.jp/articles/20261020/k00/00m/310/190000c"
-        },
-        {
-          "name": "福岡TNCニュース",
-          "url": "https://news.tnc.co.jp/news/articles/NID2026102032502"
         }
       ]
     },
