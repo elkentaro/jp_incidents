@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T03:20:57+00:00",
-  "total": 182,
+  "updated_at": "2026-10-21T03:22:21+00:00",
+  "total": 184,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-20"
@@ -357,7 +357,7 @@
     },
     {
       "date": "2026-10-19",
-      "count": 19
+      "count": 21
     },
     {
       "date": "2026-10-20",
@@ -416,6 +416,22 @@
           ]
         },
         {
+          "incident_id": "b83660330dc63273",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.shiga.lg.jp/bj00/press-release/34359.html",
+          "evidence_urls": [
+            "https://www.pref.shiga.lg.jp/bj00/press-release/34359.html"
+          ]
+        },
+        {
+          "incident_id": "dac46be2b8ba8223",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.gunma.jp/site/furusatozei/779930.html",
+          "evidence_urls": [
+            "https://www.pref.gunma.jp/site/furusatozei/779930.html"
+          ]
+        },
+        {
           "incident_id": "e6944fea94acb994",
           "relationship": "affects",
           "evidence_url": "https://www.city.sumida.lg.jp/kurashi/volunteer/furusatonouzei.html",
@@ -440,6 +456,10 @@
         {
           "name": "NHKニュース",
           "url": "https://news.web.nhk/newsweb/na/nd-20261019de61781"
+        },
+        {
+          "name": "群馬県 / Gunma",
+          "url": "https://www.pref.gunma.jp/site/furusatozei/779930.html"
         }
       ]
     },
@@ -1304,6 +1324,64 @@
         {
           "name": "新潟県 / Niigata",
           "url": "https://www.pref.niigata.lg.jp/sec/sangyoritchi/challenge-niigata-husei.html"
+        }
+      ]
+    },
+    {
+      "id": "b83660330dc63273",
+      "published_at": "2026-10-18T15:00:00+00:00",
+      "disclosed_at": "2026-10-18T15:00:00+00:00",
+      "organization": "滋賀県",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.shiga.lg.jp/bj00/press-release/34359.html",
+          "evidence_urls": [
+            "https://www.pref.shiga.lg.jp/bj00/press-release/34359.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "滋賀県 / Shiga",
+          "url": "https://www.pref.shiga.lg.jp/bj00/press-release/34359.html"
+        }
+      ]
+    },
+    {
+      "id": "dac46be2b8ba8223",
+      "published_at": "2026-10-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "群馬県",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.gunma.jp/site/furusatozei/779930.html",
+          "evidence_urls": [
+            "https://www.pref.gunma.jp/site/furusatozei/779930.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "群馬県 / Gunma",
+          "url": "https://www.pref.gunma.jp/site/furusatozei/779930.html"
         }
       ]
     },
