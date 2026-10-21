@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T15:17:03+00:00",
-  "total": 243,
+  "updated_at": "2026-10-21T19:22:12+00:00",
+  "total": 247,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-21"
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-10-21",
-      "count": 10
+      "count": 14
     },
     {
       "date": "2026-10-22",
@@ -484,6 +484,66 @@
       ]
     },
     {
+      "id": "53ec72ba13cb644f",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "プラジャーナル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://plasticjournal.net/news/25490.html",
+          "evidence_urls": [
+            "https://plasticjournal.net/news/25490.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "plasticjournal.net",
+          "url": "https://plasticjournal.net/news/25490.html"
+        }
+      ]
+    },
+    {
+      "id": "7e647fcc0bac0b06",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ラクスライトクラウド",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "53ec72ba13cb644f",
+          "relationship": "affects",
+          "evidence_url": "https://plasticjournal.net/news/25490.html",
+          "evidence_urls": [
+            "https://plasticjournal.net/news/25490.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "plasticjournal.net",
+          "url": "https://plasticjournal.net/news/25490.html"
+        }
+      ]
+    },
+    {
       "id": "51c7b29b419ee197",
       "published_at": "2026-10-20T15:00:00+00:00",
       "disclosed_at": null,
@@ -583,6 +643,35 @@
       ]
     },
     {
+      "id": "d109a1e40a187981",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "茨城県",
+      "incident_type": "other",
+      "incident_categories": [
+        "other"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "17f68e95742d840e",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.ntv.co.jp/n/ytv/category/economy/ytd92671b0edec490493c2c567862d6165",
+          "evidence_urls": [
+            "https://news.ntv.co.jp/n/ytv/category/economy/ytd92671b0edec490493c2c567862d6165"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp/n/ytv/category/economy/ytd92671b0edec490493c2c567862d6165"
+        }
+      ]
+    },
+    {
       "id": "dbb36942804e24a5",
       "published_at": "2026-10-20T15:00:00+00:00",
       "disclosed_at": null,
@@ -608,6 +697,35 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5tcWJ2eVRfZEJpanoxOG1pdVYyUXRiSU9hZUJjcmFLZ3hOMGFabV9xX0JvNEFIZjlKS3gybFVjQ0ZSQ0FERmZXOUE4Y3B3Vjg0cVFWakozd0x5dXBiVEtRQVd2U3VxY2otdDNyLTRSR21sRGRYZlhvVVh6ZW5CWVU?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "defd87e0d0cc4397",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "日水物流",
+      "incident_type": "other",
+      "incident_categories": [
+        "other"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "17f68e95742d840e",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.ntv.co.jp/n/ytv/category/economy/ytd92671b0edec490493c2c567862d6165",
+          "evidence_urls": [
+            "https://news.ntv.co.jp/n/ytv/category/economy/ytd92671b0edec490493c2c567862d6165"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp/n/ytv/category/economy/ytd92671b0edec490493c2c567862d6165"
         }
       ]
     },
@@ -8373,6 +8491,22 @@
           "evidence_urls": [
             "https://www.idcf.jp/news/topics/20261007002",
             "https://www.skyperfectjsat.space/jp/news/20261013"
+          ]
+        },
+        {
+          "incident_id": "d109a1e40a187981",
+          "relationship": "affects",
+          "evidence_url": "https://news.ntv.co.jp/n/ytv/category/economy/ytd92671b0edec490493c2c567862d6165",
+          "evidence_urls": [
+            "https://news.ntv.co.jp/n/ytv/category/economy/ytd92671b0edec490493c2c567862d6165"
+          ]
+        },
+        {
+          "incident_id": "defd87e0d0cc4397",
+          "relationship": "affects",
+          "evidence_url": "https://news.ntv.co.jp/n/ytv/category/economy/ytd92671b0edec490493c2c567862d6165",
+          "evidence_urls": [
+            "https://news.ntv.co.jp/n/ytv/category/economy/ytd92671b0edec490493c2c567862d6165"
           ]
         },
         {
