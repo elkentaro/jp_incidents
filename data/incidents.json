@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T03:16:15+00:00",
-  "total": 179,
+  "updated_at": "2026-10-21T03:16:25+00:00",
+  "total": 180,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-20"
@@ -357,7 +357,7 @@
     },
     {
       "date": "2026-10-19",
-      "count": 17
+      "count": 18
     },
     {
       "date": "2026-10-20",
@@ -1272,6 +1272,36 @@
         {
           "name": "日本経済新聞",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE55N1NVWEhQWDRnT2hxN1hkYkhTMXdoZTdJVS1yNGlZWmVDTk5faVpjNjBuTHhfaHBXa3dhNmlsX1lrNHhJOHFjSDFMbkl6YzQ5LWgwUUV0Y3RRbDRsTVlxc0JfZWFLZ0JUaURMZA?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "c150c9d47bd537d6",
+      "published_at": "2026-10-18T15:00:00+00:00",
+      "disclosed_at": "2026-10-18T15:00:00+00:00",
+      "organization": "新潟市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 67,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.asahi.com/articles/ASVBM3TP2VBMUOHB003M.html",
+          "evidence_urls": [
+            "https://www.asahi.com/articles/ASVBM3TP2VBMUOHB003M.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVBM3TP2VBMUOHB003M.html"
         }
       ]
     },
@@ -2378,6 +2408,14 @@
           "evidence_url": "https://www.town.yuzawa.lg.jp/soshikikarasagasu/kikkakusangyoukankoubu/kikakukankouka/4/4/8110.html",
           "evidence_urls": [
             "https://www.town.yuzawa.lg.jp/soshikikarasagasu/kikkakusangyoukankoubu/kikakukankouka/4/4/8110.html"
+          ]
+        },
+        {
+          "incident_id": "c150c9d47bd537d6",
+          "relationship": "affects",
+          "evidence_url": "https://www.asahi.com/articles/ASVBM3TP2VBMUOHB003M.html",
+          "evidence_urls": [
+            "https://www.asahi.com/articles/ASVBM3TP2VBMUOHB003M.html"
           ]
         },
         {
