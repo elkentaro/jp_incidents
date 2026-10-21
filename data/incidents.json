@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T07:39:39+00:00",
-  "total": 217,
+  "updated_at": "2026-10-21T07:48:26+00:00",
+  "total": 219,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-21"
@@ -309,7 +309,7 @@
     },
     {
       "date": "2026-10-07",
-      "count": 6
+      "count": 7
     },
     {
       "date": "2026-10-08",
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-10-21",
-      "count": 1
+      "count": 2
     }
   ],
   "incidents": [
@@ -396,6 +396,26 @@
         {
           "name": "藤井寺市",
           "url": "https://www.city.fujiidera.lg.jp/topics/21539.html"
+        }
+      ]
+    },
+    {
+      "id": "51c7b29b419ee197",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "三沢市",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/21/56526.html"
         }
       ]
     },
@@ -7456,6 +7476,27 @@
       ],
       "affected_system": "Reservation-related email delivery",
       "date_basis": "existing_record"
+    },
+    {
+      "id": "22f2beedd630c831",
+      "published_at": "2026-10-06T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "PingCAP",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://pingcap.co.jp/trust-hub/security/security-update-october-2026/"
+        }
+      ]
     },
     {
       "id": "39ad7e559743a043",
