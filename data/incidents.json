@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T21:25:20+00:00",
-  "total": 258,
+  "updated_at": "2026-10-21T21:33:03+00:00",
+  "total": 259,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-21"
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-10-21",
-      "count": 20
+      "count": 21
     },
     {
       "date": "2026-10-22",
@@ -398,6 +398,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/145fecde84d037d4b83deefa3e2242145d2fc078"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/0f6249281de2bd0aa009073959f7abc07541e024"
         }
       ]
     },
@@ -975,6 +979,36 @@
       ]
     },
     {
+      "id": "59eee1a08772ea39",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大崎市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.osaki.miyagi.jp/shisei/soshikikarasagasu/shiminkyodousuishimbu/seisakuka/4/23136.html",
+          "evidence_urls": [
+            "https://www.city.osaki.miyagi.jp/shisei/soshikikarasagasu/shiminkyodousuishimbu/seisakuka/4/23136.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "大崎市",
+          "url": "https://www.city.osaki.miyagi.jp/shisei/soshikikarasagasu/shiminkyodousuishimbu/seisakuka/4/23136.html"
+        }
+      ]
+    },
+    {
       "id": "0eaef1bd861f21f3",
       "published_at": "2026-10-19T15:00:00+00:00",
       "disclosed_at": null,
@@ -1043,6 +1077,14 @@
           "evidence_url": "https://www.city.fujiidera.lg.jp/topics/21539.html",
           "evidence_urls": [
             "https://www.city.fujiidera.lg.jp/topics/21539.html"
+          ]
+        },
+        {
+          "incident_id": "59eee1a08772ea39",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.osaki.miyagi.jp/shisei/soshikikarasagasu/shiminkyodousuishimbu/seisakuka/4/23136.html",
+          "evidence_urls": [
+            "https://www.city.osaki.miyagi.jp/shisei/soshikikarasagasu/shiminkyodousuishimbu/seisakuka/4/23136.html"
           ]
         },
         {
@@ -1232,6 +1274,10 @@
         {
           "name": "KTNテレビ長崎",
           "url": "https://www.ktn.co.jp/news/detail.php?id=20261021007"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/1a1fef3f392b2fe706fe0f0519b3c06c1fa5bb36"
         }
       ]
     },
@@ -6625,12 +6671,13 @@
         {
           "incident_id": "f3b905f55eedaf65",
           "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/6be6dd77bcc68f8a47c3f60e56ecdc7849984516",
+          "evidence_url": "https://news.yahoo.co.jp/articles/9694378ab6c80652870f51b6e0ce83df82654f18",
           "evidence_urls": [
             "https://mainichi.jp/articles/20261020/k00/00m/310/190000c",
             "https://news.tnc.co.jp/news/articles/NID2026102032502",
             "https://news.yahoo.co.jp/articles/14302fb00880025a0f2112f8e1c038b2e560c7f6",
             "https://news.yahoo.co.jp/articles/6be6dd77bcc68f8a47c3f60e56ecdc7849984516",
+            "https://news.yahoo.co.jp/articles/9694378ab6c80652870f51b6e0ce83df82654f18",
             "https://news.yahoo.co.jp/articles/aff8b515d37cde5d3b42378b9d680c9cb6953351",
             "https://www.sankei.com/article/20261020-BI6DQNMLI5PETAV6P62YGEYDXU/"
           ]
@@ -6816,12 +6863,13 @@
         {
           "incident_id": "0a08a3f6bcd30b82",
           "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/6be6dd77bcc68f8a47c3f60e56ecdc7849984516",
+          "evidence_url": "https://news.yahoo.co.jp/articles/9694378ab6c80652870f51b6e0ce83df82654f18",
           "evidence_urls": [
             "https://mainichi.jp/articles/20261020/k00/00m/310/190000c",
             "https://news.tnc.co.jp/news/articles/NID2026102032502",
             "https://news.yahoo.co.jp/articles/14302fb00880025a0f2112f8e1c038b2e560c7f6",
             "https://news.yahoo.co.jp/articles/6be6dd77bcc68f8a47c3f60e56ecdc7849984516",
+            "https://news.yahoo.co.jp/articles/9694378ab6c80652870f51b6e0ce83df82654f18",
             "https://news.yahoo.co.jp/articles/aff8b515d37cde5d3b42378b9d680c9cb6953351",
             "https://www.sankei.com/article/20261020-BI6DQNMLI5PETAV6P62YGEYDXU/"
           ]
