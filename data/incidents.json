@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T03:23:44+00:00",
-  "total": 185,
+  "updated_at": "2026-10-21T03:24:06+00:00",
+  "total": 186,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-20"
@@ -333,7 +333,7 @@
     },
     {
       "date": "2026-10-13",
-      "count": 31
+      "count": 32
     },
     {
       "date": "2026-10-14",
@@ -4105,6 +4105,14 @@
           ]
         },
         {
+          "incident_id": "f3b905f55eedaf65",
+          "relationship": "affects",
+          "evidence_url": "https://www.sankei.com/article/20261020-BI6DQNMLI5PETAV6P62YGEYDXU/",
+          "evidence_urls": [
+            "https://www.sankei.com/article/20261020-BI6DQNMLI5PETAV6P62YGEYDXU/"
+          ]
+        },
+        {
           "incident_id": "f3fb9df12b7b5ae8",
           "relationship": "affects",
           "evidence_url": "https://www.arcadia.co.jp/info/4076",
@@ -4826,6 +4834,36 @@
         {
           "name": "satimo list",
           "url": "https://www.ntv-wands.co.jp/news/articles/pbs9b02rgl3oubrj.html"
+        }
+      ]
+    },
+    {
+      "id": "f3b905f55eedaf65",
+      "published_at": "2026-10-12T15:00:00+00:00",
+      "disclosed_at": "2026-10-19T15:00:00+00:00",
+      "organization": "福岡県警",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "0a08a3f6bcd30b82",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.sankei.com/article/20261020-BI6DQNMLI5PETAV6P62YGEYDXU/",
+          "evidence_urls": [
+            "https://www.sankei.com/article/20261020-BI6DQNMLI5PETAV6P62YGEYDXU/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "産経ニュース",
+          "url": "https://www.sankei.com/article/20261020-BI6DQNMLI5PETAV6P62YGEYDXU/"
         }
       ]
     },
