@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T03:50:05+00:00",
-  "total": 196,
+  "updated_at": "2026-10-21T03:52:01+00:00",
+  "total": 197,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-20"
@@ -345,7 +345,7 @@
     },
     {
       "date": "2026-10-16",
-      "count": 21
+      "count": 22
     },
     {
       "date": "2026-10-17",
@@ -2463,6 +2463,44 @@
       ]
     },
     {
+      "id": "912b38db2059ec17",
+      "published_at": "2026-10-15T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ユーザベース",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.uzabase.com/jp/info/20261019/",
+          "evidence_urls": [
+            "https://www.uzabase.com/jp/info/20261019/"
+          ]
+        },
+        {
+          "incident_id": "9974d69269ae360b",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.uzabase.com/jp/info/20261019/",
+          "evidence_urls": [
+            "https://www.uzabase.com/jp/info/20261019/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "株式会社ユーザベース",
+          "url": "https://www.uzabase.com/jp/info/20261019/"
+        }
+      ]
+    },
+    {
       "id": "939b08f2c6d29308",
       "published_at": "2026-10-15T15:00:00+00:00",
       "disclosed_at": "2026-10-15T15:00:00+00:00",
@@ -2934,6 +2972,14 @@
           "evidence_url": "https://news.infoseek.co.jp/article/prtimes_000000380_000006391/",
           "evidence_urls": [
             "https://news.infoseek.co.jp/article/prtimes_000000380_000006391/"
+          ]
+        },
+        {
+          "incident_id": "912b38db2059ec17",
+          "relationship": "affects",
+          "evidence_url": "https://www.uzabase.com/jp/info/20261019/",
+          "evidence_urls": [
+            "https://www.uzabase.com/jp/info/20261019/"
           ]
         },
         {
@@ -6373,6 +6419,14 @@
         {
           "incident_id": "12e7a20b5ea44b95",
           "relationship": "affected_by",
+          "evidence_url": "https://www.uzabase.com/jp/info/20261019/",
+          "evidence_urls": [
+            "https://www.uzabase.com/jp/info/20261019/"
+          ]
+        },
+        {
+          "incident_id": "912b38db2059ec17",
+          "relationship": "same_organization",
           "evidence_url": "https://www.uzabase.com/jp/info/20261019/",
           "evidence_urls": [
             "https://www.uzabase.com/jp/info/20261019/"
