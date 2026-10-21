@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T03:13:05+00:00",
-  "total": 176,
+  "updated_at": "2026-10-21T03:13:43+00:00",
+  "total": 178,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-20"
@@ -357,11 +357,11 @@
     },
     {
       "date": "2026-10-19",
-      "count": 16
+      "count": 17
     },
     {
       "date": "2026-10-20",
-      "count": 11
+      "count": 12
     },
     {
       "date": "2026-10-21",
@@ -440,6 +440,14 @@
           ]
         },
         {
+          "incident_id": "35199c11de392f0c",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.gojo.lg.jp/juuyou/19902.html",
+          "evidence_urls": [
+            "https://www.city.gojo.lg.jp/juuyou/19902.html"
+          ]
+        },
+        {
           "incident_id": "7689ffc7a793d1f6",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE42c1ExSDl4UmppbXRLUHV2Yl84Rk83cEpfbFUwYmt3ZVo4MVowOG85bjBTUGtwcnRNVURYcVJKQ0dzUzdLeFFzTFNial9rNllvWUNfa1F2cUZnajlFR19iSmZFNy1SaHNVZkU3QUN0OTRYRXlvdFRMM2JMNi11T1E?oc=5",
@@ -476,6 +484,35 @@
         {
           "name": "satimo list",
           "url": "https://www.onamae.com/news/article/11584"
+        }
+      ]
+    },
+    {
+      "id": "35199c11de392f0c",
+      "published_at": "2026-10-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "五條市",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.gojo.lg.jp/juuyou/19902.html",
+          "evidence_urls": [
+            "https://www.city.gojo.lg.jp/juuyou/19902.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "五條市",
+          "url": "https://www.city.gojo.lg.jp/juuyou/19902.html"
         }
       ]
     },
@@ -1200,6 +1237,35 @@
         {
           "name": "日本経済新聞",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE55N1NVWEhQWDRnT2hxN1hkYkhTMXdoZTdJVS1yNGlZWmVDTk5faVpjNjBuTHhfaHBXa3dhNmlsX1lrNHhJOHFjSDFMbkl6YzQ5LWgwUUV0Y3RRbDRsTVlxc0JfZWFLZ0JUaURMZA?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "c54167fe29848345",
+      "published_at": "2026-10-18T15:00:00+00:00",
+      "disclosed_at": "2026-10-18T15:00:00+00:00",
+      "organization": "長崎市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/nbc/3022603?display=1",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/nbc/3022603?display=1"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/nbc/3022603?display=1"
         }
       ]
     },
@@ -2286,6 +2352,14 @@
           "evidence_urls": [
             "https://studio.design/ja/whats-new/unauthorized-access-2026-10",
             "https://www.city.kyoto.lg.jp/bunshi/page/0000359411.html"
+          ]
+        },
+        {
+          "incident_id": "c54167fe29848345",
+          "relationship": "affects",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/nbc/3022603?display=1",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/nbc/3022603?display=1"
           ]
         },
         {
