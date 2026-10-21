@@ -17,12 +17,7 @@ function replaceContent(node, children) {
 
 const copy = {
   en: {
-    confidenceGuide: "How confidence is scored",
-    confidenceMeaning: "Confidence is a rule-based score for the sources attached to a record. It is not a probability, an AI certainty rating, or a measure of incident severity.",
-    confidenceBase: "Start with the highest source tier: official or government notice 60; news or security press 50; aggregator 35; other source 30; social media 10. No sources: 0.",
-    confidenceBonus: "Add 15 points for each additional distinct non-social source domain beyond the first, up to a total of 100. For search/news wrapper URLs, the recorded outlet name is counted instead of the wrapper domain. Extra articles from the same counted domain do not add points.",
-    confidenceLevels: "High: 60–100 · Medium: 30–59 · Low: 0–29. Example: one press source scores 50 (Medium); a second non-social domain raises it to 65 (High).",
-    confidenceLimits: "Source tiers are assigned automatically using domain, outlet-name and notice-style title/URL rules, which can misclassify a source. Different domains may repeat the same report, so a higher score does not prove independent confirmation. Even 100 does not mean 100% accuracy. Verify the linked sources; this score does not establish the scale of harm, attribution, or responsibility.",
+    confidenceDisclaimer: "Confidence is a source-based score, not incident severity, an AI certainty rating, or a probability of accuracy. The highest source tier sets the base: official/government 60, news/security press 50, aggregator 35, other 30, and social media 10 (no sources: 0). Each additional distinct non-social domain adds 15 points, capped at 100; search/news wrapper URLs use the recorded outlet name instead. High: 60–100; Medium: 30–59; Low: 0–29. Tiers are assigned automatically from domains, outlet names and notice-style titles/URLs and may be misclassified. Different domains can repeat the same report, so higher scores do not guarantee independent confirmation. Even 100 does not mean 100% accuracy. Verify the linked sources.",
     eyebrow: "OPEN-SOURCE INCIDENT INDEX",
     title: "Cyber incidents in Japan",
     description: "Publicly reported cybersecurity incidents affecting Japanese organizations, collected from news, security publications, and official notices.",
@@ -74,12 +69,7 @@ const copy = {
     levels: { high: "High", medium: "Medium", low: "Low" }
   },
   ja: {
-    confidenceGuide: "信頼度の算出方法と注意点",
-    confidenceMeaning: "信頼度は、各記録に紐づく情報源を一定のルールで評価した点数です。事実である確率、AIの確信度、被害の深刻度を示すものではありません。",
-    confidenceBase: "情報源のうち最も高い区分を基礎点とします。公式・行政発表は60点、報道・セキュリティ専門メディアは50点、情報集約サイトは35点、その他は30点、SNSは10点です。情報源がなければ0点です。",
-    confidenceBonus: "SNS以外の情報源について、異なるドメインが1つ増えるごとに15点を加算し、合計100点を上限とします。検索・ニュース配信の中継URLでは、中継ドメインの代わりに記録された媒体名を数えます。同じドメインとして数えられる記事が増えても加点しません。",
-    confidenceLevels: "高：60〜100点／中：30〜59点／低：0〜29点。例：報道1媒体なら50点（中）、SNS以外の別ドメインが加わると65点（高）です。",
-    confidenceLimits: "情報源の区分は、ドメイン・媒体名・発表らしい見出しやURLなどのルールで自動判定するため、誤分類の可能性があります。別ドメインでも同じ報道の転載の場合があり、高得点でも独立した裏付けを保証しません。100点でも正確性100%を意味しません。リンク先を確認してください。この点数から被害規模、攻撃主体、責任の所在を判断することはできません。",
+    confidenceDisclaimer: "信頼度は情報源に基づく点数であり、被害の深刻度、AIの確信度、正確である確率ではありません。最も高い情報源区分を基礎点とし、公式・行政発表60点、報道・セキュリティ専門メディア50点、情報集約サイト35点、その他30点、SNS10点（情報源なしは0点）とします。SNS以外の異なるドメインが1つ増えるごとに15点を加算し、100点を上限とします。検索・ニュース配信の中継URLは、記録された媒体名で数えます。高：60〜100点／中：30〜59点／低：0〜29点。区分はドメイン・媒体名・発表らしい見出しやURLで自動判定するため、誤分類の可能性があります。別ドメインでも同じ報道の転載の場合があり、高得点でも独立した裏付けを保証しません。100点でも正確性100%を意味しません。リンク先の情報源をご確認ください。",
     eyebrow: "公開情報に基づくインシデント一覧",
     title: "日本のサイバーインシデント",
     description: "ニュース、セキュリティ専門メディア、公式発表から収集した、日本の組織に影響する公表済みサイバーインシデントです。",

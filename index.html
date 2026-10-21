@@ -6,7 +6,7 @@
   <meta name="description" content="A continuously updated index of publicly reported cybersecurity incidents affecting organizations in Japan.">
   <title>JP Incident Monitor</title>
   <link rel="alternate" type="application/rss+xml" title="JP Incident Monitor RSS" href="feed.xml">
-  <link rel="stylesheet" href="styles.css?v=20261021-1">
+  <link rel="stylesheet" href="styles.css?v=20261021-2">
 </head>
 <body>
   <header class="site-header">
@@ -35,6 +35,7 @@
           <h1 id="page-title" data-i18n="title">Cyber incidents in Japan</h1>
           <p class="lede" data-i18n="description">Publicly reported cybersecurity incidents affecting Japanese organizations, collected from news, security publications, and official notices.</p>
           <p class="disclaimer" data-i18n="disclaimer">This index is collected automatically and analyzed with AI. It may contain omissions or errors and should not be regarded as a complete or authoritative record. Verify details with the linked sources.</p>
+          <p id="confidence-guide" class="disclaimer" data-i18n="confidenceDisclaimer">Confidence is a source-based score, not incident severity, an AI certainty rating, or a probability of accuracy. The highest source tier sets the base: official/government 60, news/security press 50, aggregator 35, other 30, and social media 10 (no sources: 0). Each additional distinct non-social domain adds 15 points, capped at 100; search/news wrapper URLs use the recorded outlet name instead. High: 60–100; Medium: 30–59; Low: 0–29. Tiers are assigned automatically from domains, outlet names and notice-style titles/URLs and may be misclassified. Different domains can repeat the same report, so higher scores do not guarantee independent confirmation. Even 100 does not mean 100% accuracy. Verify the linked sources.</p>
         </div>
         <div class="overview-panel">
           <section class="trend" aria-labelledby="trend-title">
@@ -86,15 +87,6 @@
         </label>
       </div>
 
-      <details id="confidence-guide" class="confidence-guide">
-        <summary data-i18n="confidenceGuide">How confidence is scored</summary>
-        <p data-i18n="confidenceMeaning">Confidence is a rule-based score for the sources attached to a record. It is not a probability, an AI certainty rating, or a measure of incident severity.</p>
-        <p data-i18n="confidenceBase">Start with the highest source tier: official or government notice 60; news or security press 50; aggregator 35; other source 30; social media 10. No sources: 0.</p>
-        <p data-i18n="confidenceBonus">Add 15 points for each additional distinct non-social source domain beyond the first, up to a total of 100. For search/news wrapper URLs, the recorded outlet name is counted instead of the wrapper domain. Extra articles from the same counted domain do not add points.</p>
-        <p data-i18n="confidenceLevels">High: 60–100 · Medium: 30–59 · Low: 0–29. Example: one press source scores 50 (Medium); a second non-social domain raises it to 65 (High).</p>
-        <p data-i18n="confidenceLimits">Source tiers are assigned automatically using domain, outlet-name and notice-style title/URL rules, which can misclassify a source. Different domains may repeat the same report, so a higher score does not prove independent confirmation. Even 100 does not mean 100% accuracy. Verify the linked sources; this score does not establish the scale of harm, attribution, or responsibility.</p>
-      </details>
-
       <p class="linkage-guide" data-i18n="linkageGuide">One incident can have several category tags. Open “Why linked?” for relationship evidence.</p>
       <div class="table-frame">
         <table>
@@ -135,6 +127,6 @@
     </div>
   </footer>
 
-  <script src="app.js?v=20261021-1" defer></script>
+  <script src="app.js?v=20261021-2" defer></script>
 </body>
 </html>
