@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T03:17:26+00:00",
+  "updated_at": "2026-10-21T03:18:49+00:00",
   "total": 180,
   "date_range": {
     "start": "2026-08-09",
@@ -1459,6 +1459,40 @@
       ]
     },
     {
+      "id": "aa78266df70136da",
+      "published_at": "2026-10-17T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "リンクステーション",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "7f1b0048e5679d7e",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.chuo.lg.jp/a0013/kurashi/chiikicommunity/kuminkan/20261020.html",
+          "evidence_urls": [
+            "https://www.city.chuo.lg.jp/a0013/kurashi/chiikicommunity/kuminkan/20261020.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.gettiis.jp/notice/detail/40"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/gettiis_linkstation_gettii_lite_data_breach_20261019/"
+        }
+      ]
+    },
+    {
       "id": "f641bcd0cb64a33f",
       "published_at": "2026-10-17T15:00:00+00:00",
       "disclosed_at": null,
@@ -1483,35 +1517,6 @@
         {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261019553141.pdf"
-        }
-      ]
-    },
-    {
-      "id": "aa78266df70136da",
-      "published_at": "2026-10-17T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "リンクステーション",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "7f1b0048e5679d7e",
-          "relationship": "affects",
-          "evidence_url": "https://www.city.chuo.lg.jp/a0013/kurashi/chiikicommunity/kuminkan/20261020.html",
-          "evidence_urls": [
-            "https://www.city.chuo.lg.jp/a0013/kurashi/chiikicommunity/kuminkan/20261020.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.gettiis.jp/notice/detail/40"
         }
       ]
     },
