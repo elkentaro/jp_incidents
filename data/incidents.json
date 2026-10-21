@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T20:08:07+00:00",
-  "total": 253,
+  "updated_at": "2026-10-21T20:18:19+00:00",
+  "total": 255,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-21"
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-10-21",
-      "count": 17
+      "count": 19
     },
     {
       "date": "2026-10-22",
@@ -672,6 +672,35 @@
       ]
     },
     {
+      "id": "654874bcf5011b28",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "三菱自動車",
+      "incident_type": "other",
+      "incident_categories": [
+        "other"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "71726a8f3e54da81",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/9479b8e92693df24ed54bbfc8ef01ec7157555fd",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/9479b8e92693df24ed54bbfc8ef01ec7157555fd"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/9479b8e92693df24ed54bbfc8ef01ec7157555fd"
+        }
+      ]
+    },
+    {
       "id": "658df23c9dccd4ae",
       "published_at": "2026-10-20T15:00:00+00:00",
       "disclosed_at": null,
@@ -785,6 +814,35 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5tcWJ2eVRfZEJpanoxOG1pdVYyUXRiSU9hZUJjcmFLZ3hOMGFabV9xX0JvNEFIZjlKS3gybFVjQ0ZSQ0FERmZXOUE4Y3B3Vjg0cVFWakozd0x5dXBiVEtRQVd2U3VxY2otdDNyLTRSR21sRGRYZlhvVVh6ZW5CWVU?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "dd69de1ee65ccd7d",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "日産自動車",
+      "incident_type": "other",
+      "incident_categories": [
+        "other"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "71726a8f3e54da81",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/9479b8e92693df24ed54bbfc8ef01ec7157555fd",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/9479b8e92693df24ed54bbfc8ef01ec7157555fd"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/9479b8e92693df24ed54bbfc8ef01ec7157555fd"
         }
       ]
     },
@@ -2494,7 +2552,24 @@
       "potential_records": null,
       "confidence": "high",
       "confidence_score": 100,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "654874bcf5011b28",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/9479b8e92693df24ed54bbfc8ef01ec7157555fd",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/9479b8e92693df24ed54bbfc8ef01ec7157555fd"
+          ]
+        },
+        {
+          "incident_id": "dd69de1ee65ccd7d",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/9479b8e92693df24ed54bbfc8ef01ec7157555fd",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/9479b8e92693df24ed54bbfc8ef01ec7157555fd"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "Yahoo!ニュース",
