@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T05:30:04+00:00",
-  "total": 215,
+  "updated_at": "2026-10-21T07:35:32+00:00",
+  "total": 217,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-21"
@@ -281,7 +281,7 @@
     },
     {
       "date": "2026-09-30",
-      "count": 1
+      "count": 2
     },
     {
       "date": "2026-10-01",
@@ -357,7 +357,7 @@
     },
     {
       "date": "2026-10-19",
-      "count": 24
+      "count": 25
     },
     {
       "date": "2026-10-20",
@@ -500,6 +500,14 @@
           "evidence_urls": [
             "https://www.city.higashihiroshima.lg.jp/soshiki/sangyo/12/5/46347.html"
           ]
+        },
+        {
+          "incident_id": "f6a1d05b0a8b4a3d",
+          "relationship": "affects",
+          "evidence_url": "https://www.r-yuuki.jp/2026/10/35582/",
+          "evidence_urls": [
+            "https://www.r-yuuki.jp/2026/10/35582/"
+          ]
         }
       ],
       "sources": [
@@ -536,7 +544,8 @@
       "organization": "NEC",
       "incident_type": "data leak",
       "incident_categories": [
-        "data leak"
+        "data leak",
+        "unauthorized access"
       ],
       "potential_records": null,
       "confidence": "high",
@@ -621,6 +630,34 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/f706fb85ddc92e7f871bdc7b751d6b49e74ae5de"
+        }
+      ]
+    },
+    {
+      "id": "2a737208d01cfe10",
+      "published_at": "2026-10-19T15:00:00+00:00",
+      "disclosed_at": "2026-10-20T15:00:00+00:00",
+      "organization": "お名前.com デスクトップクラウド",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.onamae.com/news/article/11584"
+        },
+        {
+          "name": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2149829.html"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2610/21/2000002442/"
         }
       ]
     },
@@ -844,26 +881,6 @@
         {
           "name": "島根県 / Shimane",
           "url": "https://www.pref.shimane.lg.jp/admin/seisaku/keikaku/furusato/"
-        }
-      ]
-    },
-    {
-      "id": "2a737208d01cfe10",
-      "published_at": "2026-10-19T15:00:00+00:00",
-      "disclosed_at": "2026-10-20T15:00:00+00:00",
-      "organization": "お名前.com デスクトップクラウド",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.onamae.com/news/article/11584"
         }
       ]
     },
@@ -1631,8 +1648,9 @@
       "published_at": "2026-10-18T15:00:00+00:00",
       "disclosed_at": null,
       "organization": "カーセンサー",
-      "incident_type": "unauthorized access",
+      "incident_type": "data leak",
       "incident_categories": [
+        "data leak",
         "unauthorized access"
       ],
       "potential_records": null,
@@ -1659,6 +1677,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/d68fd773bdb006bcce6d67a0f5cb5eadfd52b397"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/e509742927cbbd475baae6336da3b7817fb13b2a"
         }
       ]
     },
@@ -2259,6 +2281,36 @@
       ],
       "affected_system": "Corporate website inquiry forms on Studio",
       "date_basis": "existing_record"
+    },
+    {
+      "id": "f6a1d05b0a8b4a3d",
+      "published_at": "2026-10-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "府中市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.r-yuuki.jp/2026/10/35582/",
+          "evidence_urls": [
+            "https://www.r-yuuki.jp/2026/10/35582/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "市民派無所属 府中市議会議員 結城亮",
+          "url": "https://www.r-yuuki.jp/2026/10/35582/"
+        }
+      ]
     },
     {
       "id": "aa78266df70136da",
@@ -3410,6 +3462,14 @@
       "confidence_score": 95,
       "related": [
         {
+          "incident_id": "0e5a5f861e9983dc",
+          "relationship": "affects",
+          "evidence_url": "https://www.kts-tv.co.jp/plus/single.html?id=277",
+          "evidence_urls": [
+            "https://www.kts-tv.co.jp/plus/single.html?id=277"
+          ]
+        },
+        {
           "incident_id": "142d51835bc0ca2c",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5sNXpRYVNCNUxoVDctT1MyZk8wQ3V5VElvRHpseGxzSjZ6a2JvaERQdllEeVJVQ0dMR1J4U0NUUjdLWFhja01aRWJ6dTVoQ3RxQ3lrVWFJeVpfMUZpVUE?oc=5",
@@ -4144,6 +4204,63 @@
       ]
     },
     {
+      "id": "5d515273ad570e8c",
+      "published_at": "2026-10-13T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "岩井コスモ証券",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "c54d7b0032b3bb85",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/e8b09c604916701db9901eefed73e9f68cbd1702",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/e8b09c604916701db9901eefed73e9f68cbd1702"
+          ]
+        },
+        {
+          "incident_id": "e7029a3cadb1b7be",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/77880155a35f0bfa9c105fa32aa1a02f12c31105",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/77880155a35f0bfa9c105fa32aa1a02f12c31105"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/e8b09c604916701db9901eefed73e9f68cbd1702"
+        },
+        {
+          "name": "ライブドアニュース",
+          "url": "https://news.livedoor.com/topics/detail/32614983/"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261021de62520"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/77880155a35f0bfa9c105fa32aa1a02f12c31105"
+        },
+        {
+          "name": "Yahoo!ファイナンス",
+          "url": "https://finance.yahoo.co.jp/news/detail/5244bc0795536269592695908cd8d9a9d1f3f20a"
+        },
+        {
+          "name": "テレ朝NEWS",
+          "url": "https://news.tv-asahi.co.jp/news_economy/articles/000541663.html"
+        }
+      ]
+    },
+    {
       "id": "933d34557d02f202",
       "published_at": "2026-10-13T15:00:00+00:00",
       "disclosed_at": null,
@@ -4261,59 +4378,6 @@
       ],
       "affected_system": "トレードワークスに運用・保守を委託したインターネット取引システム",
       "date_basis": "discovery"
-    },
-    {
-      "id": "5d515273ad570e8c",
-      "published_at": "2026-10-13T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "岩井コスモ証券",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 95,
-      "related": [
-        {
-          "incident_id": "c54d7b0032b3bb85",
-          "relationship": "same_organization",
-          "evidence_url": "https://news.yahoo.co.jp/articles/e8b09c604916701db9901eefed73e9f68cbd1702",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/e8b09c604916701db9901eefed73e9f68cbd1702"
-          ]
-        },
-        {
-          "incident_id": "e7029a3cadb1b7be",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/77880155a35f0bfa9c105fa32aa1a02f12c31105",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/77880155a35f0bfa9c105fa32aa1a02f12c31105"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/e8b09c604916701db9901eefed73e9f68cbd1702"
-        },
-        {
-          "name": "ライブドアニュース",
-          "url": "https://news.livedoor.com/topics/detail/32614983/"
-        },
-        {
-          "name": "NHKニュース",
-          "url": "https://news.web.nhk/newsweb/na/nd-20261021de62520"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/77880155a35f0bfa9c105fa32aa1a02f12c31105"
-        },
-        {
-          "name": "Yahoo!ファイナンス",
-          "url": "https://finance.yahoo.co.jp/news/detail/5244bc0795536269592695908cd8d9a9d1f3f20a"
-        }
-      ]
     },
     {
       "id": "6b0f4b64bc36019c",
@@ -7850,6 +7914,36 @@
         {
           "name": "株式会社エクサウィザーズ",
           "url": "https://exawizards.com/archives/33142/"
+        }
+      ]
+    },
+    {
+      "id": "0e5a5f861e9983dc",
+      "published_at": "2026-09-29T15:00:00+00:00",
+      "disclosed_at": "2026-10-19T15:00:00+00:00",
+      "organization": "鹿児島テレビ放送",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 13,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.kts-tv.co.jp/plus/single.html?id=277",
+          "evidence_urls": [
+            "https://www.kts-tv.co.jp/plus/single.html?id=277"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "ＫＴＳ鹿児島テレビ",
+          "url": "https://www.kts-tv.co.jp/plus/single.html?id=277"
         }
       ]
     },
