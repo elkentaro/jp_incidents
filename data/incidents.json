@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T22:35:50+00:00",
-  "total": 261,
+  "updated_at": "2026-10-21T23:20:03+00:00",
+  "total": 262,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-21"
@@ -353,7 +353,7 @@
     },
     {
       "date": "2026-10-19",
-      "count": 31
+      "count": 32
     },
     {
       "date": "2026-10-20",
@@ -369,6 +369,35 @@
     }
   ],
   "incidents": [
+    {
+      "id": "5132d5e78b41b9cf",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "デジタルアーツ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261021554017.pdf"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261021554017/"
+        },
+        {
+          "name": "legalagent list",
+          "url": "https://www.daj.jp/webtopics/1354/"
+        }
+      ]
+    },
     {
       "id": "a2cf60a92a1ad65c",
       "published_at": "2026-10-20T15:00:00+00:00",
@@ -402,31 +431,6 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/0f6249281de2bd0aa009073959f7abc07541e024"
-        }
-      ]
-    },
-    {
-      "id": "5132d5e78b41b9cf",
-      "published_at": "2026-10-20T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "デジタルアーツ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [],
-      "sources": [
-        {
-          "name": "日本取引所グループ TDnet / JPX TDnet",
-          "url": "https://www.release.tdnet.info/inbs/140120261021554017.pdf"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261021554017/"
         }
       ]
     },
@@ -3158,6 +3162,36 @@
       ]
     },
     {
+      "id": "ad2e55a87bebd619",
+      "published_at": "2026-10-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "Voicy",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://corp.voicy.jp/2026/10/19/11746/",
+          "evidence_urls": [
+            "https://corp.voicy.jp/2026/10/19/11746/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Howl.link",
+          "url": "https://corp.voicy.jp/2026/10/19/11746/"
+        }
+      ]
+    },
+    {
       "id": "b07928dacef45343",
       "published_at": "2026-10-18T15:00:00+00:00",
       "disclosed_at": null,
@@ -4697,6 +4731,14 @@
           "evidence_url": "https://www.tohogas.co.jp/corporate-n/press/1262174_1342.html",
           "evidence_urls": [
             "https://www.tohogas.co.jp/corporate-n/press/1262174_1342.html"
+          ]
+        },
+        {
+          "incident_id": "ad2e55a87bebd619",
+          "relationship": "affects",
+          "evidence_url": "https://corp.voicy.jp/2026/10/19/11746/",
+          "evidence_urls": [
+            "https://corp.voicy.jp/2026/10/19/11746/"
           ]
         },
         {
