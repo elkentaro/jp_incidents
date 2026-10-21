@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T03:55:18+00:00",
-  "total": 200,
+  "updated_at": "2026-10-21T03:55:40+00:00",
+  "total": 201,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-20"
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-10-20",
-      "count": 20
+      "count": 21
     },
     {
       "date": "2026-10-21",
@@ -445,6 +445,14 @@
           "evidence_url": "https://www.city.sumida.lg.jp/kurashi/volunteer/furusatonouzei.html",
           "evidence_urls": [
             "https://www.city.sumida.lg.jp/kurashi/volunteer/furusatonouzei.html"
+          ]
+        },
+        {
+          "incident_id": "f5c387e1400f8fed",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.higashihiroshima.lg.jp/soshiki/sangyo/12/5/46347.html",
+          "evidence_urls": [
+            "https://www.city.higashihiroshima.lg.jp/soshiki/sangyo/12/5/46347.html"
           ]
         }
       ],
@@ -896,6 +904,35 @@
         {
           "name": "墨田区 / Sumida",
           "url": "https://www.city.sumida.lg.jp/kurashi/volunteer/furusatonouzei.html"
+        }
+      ]
+    },
+    {
+      "id": "f5c387e1400f8fed",
+      "published_at": "2026-10-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東広島市",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.higashihiroshima.lg.jp/soshiki/sangyo/12/5/46347.html",
+          "evidence_urls": [
+            "https://www.city.higashihiroshima.lg.jp/soshiki/sangyo/12/5/46347.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "東広島市",
+          "url": "https://www.city.higashihiroshima.lg.jp/soshiki/sangyo/12/5/46347.html"
         }
       ]
     },
@@ -6746,7 +6783,7 @@
       ],
       "potential_records": null,
       "confidence": "high",
-      "confidence_score": 65,
+      "confidence_score": 80,
       "related": [],
       "sources": [
         {
@@ -6756,6 +6793,10 @@
         {
           "name": "朝日新聞",
           "url": "https://www.asahi.com/articles/ASVBM3TB5VBMUOOB007M.html"
+        },
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/national/20261020-GYT1T00039/"
         }
       ]
     },
