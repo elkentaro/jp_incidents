@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T05:10:52+00:00",
+  "updated_at": "2026-10-21T05:16:03+00:00",
   "total": 212,
   "date_range": {
     "start": "2026-08-09",
@@ -1768,6 +1768,39 @@
       ]
     },
     {
+      "id": "b83660330dc63273",
+      "published_at": "2026-10-18T15:00:00+00:00",
+      "disclosed_at": "2026-10-18T15:00:00+00:00",
+      "organization": "滋賀県",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.shiga.lg.jp/bj00/press-release/34359.html",
+          "evidence_urls": [
+            "https://www.pref.shiga.lg.jp/bj00/press-release/34359.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "滋賀県 / Shiga",
+          "url": "https://www.pref.shiga.lg.jp/bj00/press-release/34359.html"
+        },
+        {
+          "name": "福井県 / Fukui",
+          "url": "https://www.pref.fukui.lg.jp/doc/wakatei/furusatonouzei/access.html"
+        }
+      ]
+    },
+    {
       "id": "e20815863b5a1380",
       "published_at": "2026-10-18T15:00:00+00:00",
       "disclosed_at": null,
@@ -1818,35 +1851,6 @@
         {
           "name": "新潟県 / Niigata",
           "url": "https://www.pref.niigata.lg.jp/sec/sangyoritchi/challenge-niigata-husei.html"
-        }
-      ]
-    },
-    {
-      "id": "b83660330dc63273",
-      "published_at": "2026-10-18T15:00:00+00:00",
-      "disclosed_at": "2026-10-18T15:00:00+00:00",
-      "organization": "滋賀県",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "0eaef1bd861f21f3",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.pref.shiga.lg.jp/bj00/press-release/34359.html",
-          "evidence_urls": [
-            "https://www.pref.shiga.lg.jp/bj00/press-release/34359.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "滋賀県 / Shiga",
-          "url": "https://www.pref.shiga.lg.jp/bj00/press-release/34359.html"
         }
       ]
     },
@@ -5192,38 +5196,6 @@
       ]
     },
     {
-      "id": "2a043284650fc19a",
-      "published_at": "2026-10-12T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "銀のさら",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 6500000,
-      "confidence": "high",
-      "confidence_score": 95,
-      "related": [],
-      "sources": [
-        {
-          "name": "日本経済新聞",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE51RG5uc2VsQ0ZyTkg0dVZiZS1IM0RwbnYwZHlaWHVMMmFuTlZjd0pTRGRmYVFpUDFSemZLbDl2VWsxY3ItdWY3T0FKYWMyYTBjc2JCVGVMb212REx3dmx5M3prY1BYNVM0R0plVQ?oc=5"
-        },
-        {
-          "name": "朝日新聞",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBIaE1EUFE4WUZIZWxkallWU294cVk0dVJOSF9CWndsSmRmRWZBSjF2NUxsd2VXVnY3TVltOFlpV2ctc1dkbXVFX3lXaF9sa3Jic1pXNGxiM016dVppUV9CaE92dnA4MDQ?oc=5"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1FTWRXRDB4Z3YxWUtKY2FDM3p0Y2V6c0NGUm9GaE5STmd0akdBTmMwNURQeE1Pb29SUGk1TlllSnZwOEFOM1F2UXBLR0JwTFZU?oc=5"
-        },
-        {
-          "name": "ITmedia",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA0Z01XTXU2Q2xqSGNkbHNGempZS0ZiMFN5YjJPUGQyYjAwR0tVYVBjWFRfa2s0OEY4NE9QQUFJS2pEbDUxNE9uN3hReHR3ZURrSFBzazhJWHpFcnBfck55UUpORnpWZUc4dFlMSy1NZ0NmRTFm?oc=5"
-        }
-      ]
-    },
-    {
       "id": "0ede24c087f14aff",
       "published_at": "2026-10-12T15:00:00+00:00",
       "disclosed_at": null,
@@ -5235,7 +5207,7 @@
       ],
       "potential_records": null,
       "confidence": "high",
-      "confidence_score": 80,
+      "confidence_score": 95,
       "related": [
         {
           "incident_id": "0a08a3f6bcd30b82",
@@ -5264,6 +5236,42 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/f706fb85ddc92e7f871bdc7b751d6b49e74ae5de"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5Dd3k1a3cxd2Z1UkRVZU1kUHNTbjhkMC1falFsNG1WRWRDWVhlQjQydnJybi1uNUx4aGNEZlAwOFJVYzNBc3hZdExKMFU3eVNOWjhhWlQzZnQ5aE5JUGozMm5kYTU5SXdJWl81VzR3cW5ybVlvQnN5Q3Nud0dxSFk?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "2a043284650fc19a",
+      "published_at": "2026-10-12T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "銀のさら",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 6500000,
+      "confidence": "high",
+      "confidence_score": 95,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE51RG5uc2VsQ0ZyTkg0dVZiZS1IM0RwbnYwZHlaWHVMMmFuTlZjd0pTRGRmYVFpUDFSemZLbDl2VWsxY3ItdWY3T0FKYWMyYTBjc2JCVGVMb212REx3dmx5M3prY1BYNVM0R0plVQ?oc=5"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBIaE1EUFE4WUZIZWxkallWU294cVk0dVJOSF9CWndsSmRmRWZBSjF2NUxsd2VXVnY3TVltOFlpV2ctc1dkbXVFX3lXaF9sa3Jic1pXNGxiM016dVppUV9CaE92dnA4MDQ?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1FTWRXRDB4Z3YxWUtKY2FDM3p0Y2V6c0NGUm9GaE5STmd0akdBTmMwNURQeE1Pb29SUGk1TlllSnZwOEFOM1F2UXBLR0JwTFZU?oc=5"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA0Z01XTXU2Q2xqSGNkbHNGempZS0ZiMFN5YjJPUGQyYjAwR0tVYVBjWFRfa2s0OEY4NE9QQUFJS2pEbDUxNE9uN3hReHR3ZURrSFBzazhJWHpFcnBfck55UUpORnpWZUc4dFlMSy1NZ0NmRTFm?oc=5"
         }
       ]
     },
