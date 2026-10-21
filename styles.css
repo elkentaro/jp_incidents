@@ -388,3 +388,8 @@ footer { border-top: 1px solid var(--line); }
 .relationship-details p { padding:8px 0; border-top:1px solid var(--line); line-height:1.7; }
 .relationship-details a { white-space:nowrap; }
 .linkage-guide { font-size:12px; color:var(--muted); margin:18px 0; }
+
+.confidence-guide { margin: 16px 0; padding: 12px 16px; border: 1px solid var(--line); border-radius: var(--radius); font-size: 13px; line-height: 1.7; }
+.confidence-guide summary { cursor: pointer; font-weight: 600; }
+.confidence-guide p { max-width: 95ch; margin: 12px 0 0; }
+.confidence-guide summary:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
