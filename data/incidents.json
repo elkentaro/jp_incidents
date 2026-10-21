@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T19:51:50+00:00",
-  "total": 249,
+  "updated_at": "2026-10-21T19:59:31+00:00",
+  "total": 253,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-21"
@@ -357,11 +357,11 @@
     },
     {
       "date": "2026-10-20",
-      "count": 36
+      "count": 38
     },
     {
       "date": "2026-10-21",
-      "count": 15
+      "count": 17
     },
     {
       "date": "2026-10-22",
@@ -369,6 +369,34 @@
     }
   ],
   "incidents": [
+    {
+      "id": "a2cf60a92a1ad65c",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": "2026-10-20T15:00:00+00:00",
+      "organization": "イオン",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/32a84919f3d40fdd91597df2043c1bb94d7f9cf3"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVBP457VVBPULFA02GM.html"
+        },
+        {
+          "name": "Yahoo!ファイナンス",
+          "url": "https://finance.yahoo.co.jp/news/detail/d47032bade803e6f4aeb6fd905643e0423d96515"
+        }
+      ]
+    },
     {
       "id": "5132d5e78b41b9cf",
       "published_at": "2026-10-20T15:00:00+00:00",
@@ -420,30 +448,6 @@
         {
           "name": "TBS NEWS DIG",
           "url": "https://newsdig.tbs.co.jp/articles/-/3028998"
-        }
-      ]
-    },
-    {
-      "id": "a2cf60a92a1ad65c",
-      "published_at": "2026-10-20T15:00:00+00:00",
-      "disclosed_at": "2026-10-20T15:00:00+00:00",
-      "organization": "イオン",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/32a84919f3d40fdd91597df2043c1bb94d7f9cf3"
-        },
-        {
-          "name": "朝日新聞",
-          "url": "https://www.asahi.com/articles/ASVBP457VVBPULFA02GM.html"
         }
       ]
     },
@@ -560,6 +564,14 @@
           ]
         },
         {
+          "incident_id": "b20f594030b7930a",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.oita.jp/soshiki/12520/kosodateouen-passport.html",
+          "evidence_urls": [
+            "https://www.pref.oita.jp/soshiki/12520/kosodateouen-passport.html"
+          ]
+        },
+        {
           "incident_id": "e759bea76b8ebf60",
           "relationship": "affects",
           "evidence_url": "https://www.projectdesign.jp/articles/news/df304f2c-22fc-4ae1-b40e-7a17d9e63959",
@@ -572,6 +584,36 @@
         {
           "name": "plasticjournal.net",
           "url": "https://plasticjournal.net/news/25490.html"
+        }
+      ]
+    },
+    {
+      "id": "b20f594030b7930a",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大分県（おおいた子育て応援パスポート）",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.oita.jp/soshiki/12520/kosodateouen-passport.html",
+          "evidence_urls": [
+            "https://www.pref.oita.jp/soshiki/12520/kosodateouen-passport.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "大分県 / Oita",
+          "url": "https://www.pref.oita.jp/soshiki/12520/kosodateouen-passport.html"
         }
       ]
     },
@@ -802,6 +844,36 @@
       ]
     },
     {
+      "id": "2a38e8c03273d4b6",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": "2026-10-20T15:00:00+00:00",
+      "organization": "足利市消防本部",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "0a08a3f6bcd30b82",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92UndXalJ2TWdkY3dWQUNqTEZ0Qk4xczFEUGd3ZUt2bmtzWDFDRG5pWVk4SU5TcXpJSERqT1VpMDNodGYwb1FpRzhCUlV1ZkNNYVhEOHVLYUFtLUE?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92UndXalJ2TWdkY3dWQUNqTEZ0Qk4xczFEUGd3ZUt2bmtzWDFDRG5pWVk4SU5TcXpJSERqT1VpMDNodGYwb1FpRzhCUlV1ZkNNYVhEOHVLYUFtLUE?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "下野新聞社",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92UndXalJ2TWdkY3dWQUNqTEZ0Qk4xczFEUGd3ZUt2bmtzWDFDRG5pWVk4SU5TcXpJSERqT1VpMDNodGYwb1FpRzhCUlV1ZkNNYVhEOHVLYUFtLUE?oc=5"
+        }
+      ]
+    },
+    {
       "id": "0eaef1bd861f21f3",
       "published_at": "2026-10-19T15:00:00+00:00",
       "disclosed_at": null,
@@ -816,6 +888,14 @@
       "confidence_score": 100,
       "related": [
         {
+          "incident_id": "0e7688ff6d7f03d6",
+          "relationship": "affects",
+          "evidence_url": "https://www.town.ashoro.hokkaido.jp/kurashi/important-news/entry_288.html",
+          "evidence_urls": [
+            "https://www.town.ashoro.hokkaido.jp/kurashi/important-news/entry_288.html"
+          ]
+        },
+        {
           "incident_id": "16414fccdfdf5e18",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE82R0Z1Zm5nbXVWTkRKTUgwNlgzV00zeDRXWm9BNm50WkNoRXcyQlk3S1JmbV9mNUI5Y2d6UmV0b0JJeGR5VUJQZ1I5Q1NpUE5HQXFteUR0Nk1jbHBlb05sLTJ3VmFTYXJpTEw3bGt0YUNaSTlnUTdUek1kbzg?oc=5",
@@ -826,9 +906,10 @@
         {
           "incident_id": "1e7d708d8c1ea723",
           "relationship": "affects",
-          "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9TT1dVd1BVNlQ5MW11MmFkSXl4SnlwTDBrWjNmTXJLTy1kZVdRZWVQTDRsUEluWHVBOGJVVGlVZXliczVWaWNEMHk2TXBwWm9fbEVOOFZYR05FMkx6SlpNWjl0T21Ic1ozN1Qwb0lIaGRXc25tX0diRUlXOVlxRU0?oc=5",
+          "evidence_url": "https://news.yahoo.co.jp/articles/a436dd9790807c643e8e067438c0fcd296ddc646",
           "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMif0FVX3lxTE9TT1dVd1BVNlQ5MW11MmFkSXl4SnlwTDBrWjNmTXJLTy1kZVdRZWVQTDRsUEluWHVBOGJVVGlVZXliczVWaWNEMHk2TXBwWm9fbEVOOFZYR05FMkx6SlpNWjl0T21Ic1ozN1Qwb0lIaGRXc25tX0diRUlXOVlxRU0?oc=5"
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE9TT1dVd1BVNlQ5MW11MmFkSXl4SnlwTDBrWjNmTXJLTy1kZVdRZWVQTDRsUEluWHVBOGJVVGlVZXliczVWaWNEMHk2TXBwWm9fbEVOOFZYR05FMkx6SlpNWjl0T21Ic1ozN1Qwb0lIaGRXc25tX0diRUlXOVlxRU0?oc=5",
+            "https://news.yahoo.co.jp/articles/a436dd9790807c643e8e067438c0fcd296ddc646"
           ]
         },
         {
@@ -869,6 +950,14 @@
           "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE42c1ExSDl4UmppbXRLUHV2Yl84Rk83cEpfbFUwYmt3ZVo4MVowOG85bjBTUGtwcnRNVURYcVJKQ0dzUzdLeFFzTFNial9rNllvWUNfa1F2cUZnajlFR19iSmZFNy1SaHNVZkU3QUN0OTRYRXlvdFRMM2JMNi11T1E?oc=5",
           "evidence_urls": [
             "https://news.google.com/rss/articles/CBMif0FVX3lxTE42c1ExSDl4UmppbXRLUHV2Yl84Rk83cEpfbFUwYmt3ZVo4MVowOG85bjBTUGtwcnRNVURYcVJKQ0dzUzdLeFFzTFNial9rNllvWUNfa1F2cUZnajlFR19iSmZFNy1SaHNVZkU3QUN0OTRYRXlvdFRMM2JMNi11T1E?oc=5"
+          ]
+        },
+        {
+          "incident_id": "7fcebaa1e08d58e8",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.shinagawa.tokyo.jp/kurashi/zeikin/1009363/1011744.html",
+          "evidence_urls": [
+            "https://www.city.shinagawa.tokyo.jp/kurashi/zeikin/1009363/1011744.html"
           ]
         },
         {
@@ -992,6 +1081,56 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/1263328cf0888dcd75e80d5dcf353a200b410e20"
+        }
+      ]
+    },
+    {
+      "id": "16414fccdfdf5e18",
+      "published_at": "2026-10-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ふるさとチョイス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE82R0Z1Zm5nbXVWTkRKTUgwNlgzV00zeDRXWm9BNm50WkNoRXcyQlk3S1JmbV9mNUI5Y2d6UmV0b0JJeGR5VUJQZ1I5Q1NpUE5HQXFteUR0Nk1jbHBlb05sLTJ3VmFTYXJpTEw3bGt0YUNaSTlnUTdUek1kbzg?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMifEFVX3lxTE82R0Z1Zm5nbXVWTkRKTUgwNlgzV00zeDRXWm9BNm50WkNoRXcyQlk3S1JmbV9mNUI5Y2d6UmV0b0JJeGR5VUJQZ1I5Q1NpUE5HQXFteUR0Nk1jbHBlb05sLTJ3VmFTYXJpTEw3bGt0YUNaSTlnUTdUek1kbzg?oc=5"
+          ]
+        },
+        {
+          "incident_id": "27be42792272ea99",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.shimane.lg.jp/press_release/2026/aix0su8uvqmh.html",
+          "evidence_urls": [
+            "https://www.pref.shimane.lg.jp/press_release/2026/aix0su8uvqmh.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE82R0Z1Zm5nbXVWTkRKTUgwNlgzV00zeDRXWm9BNm50WkNoRXcyQlk3S1JmbV9mNUI5Y2d6UmV0b0JJeGR5VUJQZ1I5Q1NpUE5HQXFteUR0Nk1jbHBlb05sLTJ3VmFTYXJpTEw3bGt0YUNaSTlnUTdUek1kbzg?oc=5"
+        },
+        {
+          "name": "Impress Watch",
+          "url": "https://www.watch.impress.co.jp/docs/news/2149387.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/pickup/6599501"
+        },
+        {
+          "name": "KTNテレビ長崎",
+          "url": "https://www.ktn.co.jp/news/detail.php?id=20261021007"
         }
       ]
     },
@@ -1232,52 +1371,6 @@
       ]
     },
     {
-      "id": "16414fccdfdf5e18",
-      "published_at": "2026-10-19T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ふるさとチョイス",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 80,
-      "related": [
-        {
-          "incident_id": "0eaef1bd861f21f3",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE82R0Z1Zm5nbXVWTkRKTUgwNlgzV00zeDRXWm9BNm50WkNoRXcyQlk3S1JmbV9mNUI5Y2d6UmV0b0JJeGR5VUJQZ1I5Q1NpUE5HQXFteUR0Nk1jbHBlb05sLTJ3VmFTYXJpTEw3bGt0YUNaSTlnUTdUek1kbzg?oc=5",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMifEFVX3lxTE82R0Z1Zm5nbXVWTkRKTUgwNlgzV00zeDRXWm9BNm50WkNoRXcyQlk3S1JmbV9mNUI5Y2d6UmV0b0JJeGR5VUJQZ1I5Q1NpUE5HQXFteUR0Nk1jbHBlb05sLTJ3VmFTYXJpTEw3bGt0YUNaSTlnUTdUek1kbzg?oc=5"
-          ]
-        },
-        {
-          "incident_id": "27be42792272ea99",
-          "relationship": "affects",
-          "evidence_url": "https://www.pref.shimane.lg.jp/press_release/2026/aix0su8uvqmh.html",
-          "evidence_urls": [
-            "https://www.pref.shimane.lg.jp/press_release/2026/aix0su8uvqmh.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "日テレNEWS NNN",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE82R0Z1Zm5nbXVWTkRKTUgwNlgzV00zeDRXWm9BNm50WkNoRXcyQlk3S1JmbV9mNUI5Y2d6UmV0b0JJeGR5VUJQZ1I5Q1NpUE5HQXFteUR0Nk1jbHBlb05sLTJ3VmFTYXJpTEw3bGt0YUNaSTlnUTdUek1kbzg?oc=5"
-        },
-        {
-          "name": "Impress Watch",
-          "url": "https://www.watch.impress.co.jp/docs/news/2149387.html"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/pickup/6599501"
-        }
-      ]
-    },
-    {
       "id": "d5c8ca9a2bb82307",
       "published_at": "2026-10-19T15:00:00+00:00",
       "disclosed_at": null,
@@ -1359,6 +1452,44 @@
       ]
     },
     {
+      "id": "1e7d708d8c1ea723",
+      "published_at": "2026-10-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "福山市",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/a436dd9790807c643e8e067438c0fcd296ddc646",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE9TT1dVd1BVNlQ5MW11MmFkSXl4SnlwTDBrWjNmTXJLTy1kZVdRZWVQTDRsUEluWHVBOGJVVGlVZXliczVWaWNEMHk2TXBwWm9fbEVOOFZYR05FMkx6SlpNWjl0T21Ic1ozN1Qwb0lIaGRXc25tX0diRUlXOVlxRU0?oc=5",
+            "https://news.yahoo.co.jp/articles/a436dd9790807c643e8e067438c0fcd296ddc646"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9TT1dVd1BVNlQ5MW11MmFkSXl4SnlwTDBrWjNmTXJLTy1kZVdRZWVQTDRsUEluWHVBOGJVVGlVZXliczVWaWNEMHk2TXBwWm9fbEVOOFZYR05FMkx6SlpNWjl0T21Ic1ozN1Qwb0lIaGRXc25tX0diRUlXOVlxRU0?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/a436dd9790807c643e8e067438c0fcd296ddc646"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/01a54342c71fd3e403712ca64c0e26d0318f5c54"
+        }
+      ]
+    },
+    {
       "id": "04791f78ba6dd08b",
       "published_at": "2026-10-19T15:00:00+00:00",
       "disclosed_at": null,
@@ -1385,6 +1516,36 @@
         {
           "name": "相鉄グループ / Sotetsu Group",
           "url": "https://cdn.sotetsu.co.jp/media/2026/news/info-bus-2026-10-20-03-s5u.pdf"
+        }
+      ]
+    },
+    {
+      "id": "0e7688ff6d7f03d6",
+      "published_at": "2026-10-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "足寄町",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.town.ashoro.hokkaido.jp/kurashi/important-news/entry_288.html",
+          "evidence_urls": [
+            "https://www.town.ashoro.hokkaido.jp/kurashi/important-news/entry_288.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "www.town.ashoro.hokkaido.jp",
+          "url": "https://www.town.ashoro.hokkaido.jp/kurashi/important-news/entry_288.html"
         }
       ]
     },
@@ -1498,6 +1659,36 @@
         {
           "name": "中央区 / Chuo",
           "url": "https://www.city.chuo.lg.jp/a0013/kurashi/chiikicommunity/kuminkan/20261020.html"
+        }
+      ]
+    },
+    {
+      "id": "7fcebaa1e08d58e8",
+      "published_at": "2026-10-19T15:00:00+00:00",
+      "disclosed_at": "2026-10-19T15:00:00+00:00",
+      "organization": "品川区",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.shinagawa.tokyo.jp/kurashi/zeikin/1009363/1011744.html",
+          "evidence_urls": [
+            "https://www.city.shinagawa.tokyo.jp/kurashi/zeikin/1009363/1011744.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "www.city.shinagawa.tokyo.jp",
+          "url": "https://www.city.shinagawa.tokyo.jp/kurashi/zeikin/1009363/1011744.html"
         }
       ]
     },
@@ -1741,35 +1932,6 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB3Ulh6WDRnMVEtbXZleGhyYUlfUENzRlNjbUZKTXNFWkE4aVVxU0k1UEZtTnE2UFJtZWlUNFNnbU1pR2V1R2doQVgwd2toRm5ORGJMYlpWb0RMLXV6cE16VkFJNzZpYTgxRUF3aTRja21xV1dvY3o0cHVEcG1kVms?oc=5"
-        }
-      ]
-    },
-    {
-      "id": "1e7d708d8c1ea723",
-      "published_at": "2026-10-19T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "福山市",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "0eaef1bd861f21f3",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9TT1dVd1BVNlQ5MW11MmFkSXl4SnlwTDBrWjNmTXJLTy1kZVdRZWVQTDRsUEluWHVBOGJVVGlVZXliczVWaWNEMHk2TXBwWm9fbEVOOFZYR05FMkx6SlpNWjl0T21Ic1ozN1Qwb0lIaGRXc25tX0diRUlXOVlxRU0?oc=5",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMif0FVX3lxTE9TT1dVd1BVNlQ5MW11MmFkSXl4SnlwTDBrWjNmTXJLTy1kZVdRZWVQTDRsUEluWHVBOGJVVGlVZXliczVWaWNEMHk2TXBwWm9fbEVOOFZYR05FMkx6SlpNWjl0T21Ic1ozN1Qwb0lIaGRXc25tX0diRUlXOVlxRU0?oc=5"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9TT1dVd1BVNlQ5MW11MmFkSXl4SnlwTDBrWjNmTXJLTy1kZVdRZWVQTDRsUEluWHVBOGJVVGlVZXliczVWaWNEMHk2TXBwWm9fbEVOOFZYR05FMkx6SlpNWjl0T21Ic1ozN1Qwb0lIaGRXc25tX0diRUlXOVlxRU0?oc=5"
         }
       ]
     },
@@ -4416,6 +4578,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/bcf2307e9e5a999450301f40c7a1800006c52ab8"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/904ffab5b3d8a4c5bacdda6682a2d5f4b5fdbfcb"
         }
       ],
       "affected_system": "Studio cloud environment",
@@ -6024,6 +6190,14 @@
           "evidence_urls": [
             "https://www.arcadia.co.jp/info/4076",
             "https://www.pref.miyazaki.lg.jp/kiki-kikikanri/press/2026/10/20261013181842.html"
+          ]
+        },
+        {
+          "incident_id": "2a38e8c03273d4b6",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92UndXalJ2TWdkY3dWQUNqTEZ0Qk4xczFEUGd3ZUt2bmtzWDFDRG5pWVk4SU5TcXpJSERqT1VpMDNodGYwb1FpRzhCUlV1ZkNNYVhEOHVLYUFtLUE?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92UndXalJ2TWdkY3dWQUNqTEZ0Qk4xczFEUGd3ZUt2bmtzWDFDRG5pWVk4SU5TcXpJSERqT1VpMDNodGYwb1FpRzhCUlV1ZkNNYVhEOHVLYUFtLUE?oc=5"
           ]
         },
         {
