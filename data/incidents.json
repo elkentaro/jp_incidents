@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T03:13:43+00:00",
-  "total": 178,
+  "updated_at": "2026-10-21T03:16:07+00:00",
+  "total": 179,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-20"
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-10-20",
-      "count": 12
+      "count": 13
     },
     {
       "date": "2026-10-21",
@@ -689,6 +689,36 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE42c1ExSDl4UmppbXRLUHV2Yl84Rk83cEpfbFUwYmt3ZVo4MVowOG85bjBTUGtwcnRNVURYcVJKQ0dzUzdLeFFzTFNial9rNllvWUNfa1F2cUZnajlFR19iSmZFNy1SaHNVZkU3QUN0OTRYRXlvdFRMM2JMNi11T1E?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "8a4f510672760aee",
+      "published_at": "2026-10-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "栃木県警",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "0a08a3f6bcd30b82",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/pickup/6599459",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/pickup/6599459"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/pickup/6599459"
         }
       ]
     },
@@ -3683,6 +3713,14 @@
           "evidence_url": "https://www.hokkoku.co.jp/articles/-/2258014",
           "evidence_urls": [
             "https://www.hokkoku.co.jp/articles/-/2258014"
+          ]
+        },
+        {
+          "incident_id": "8a4f510672760aee",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/pickup/6599459",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/pickup/6599459"
           ]
         },
         {
