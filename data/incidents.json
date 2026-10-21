@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T03:19:27+00:00",
-  "total": 180,
+  "updated_at": "2026-10-21T03:20:19+00:00",
+  "total": 181,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-20"
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-10-20",
-      "count": 13
+      "count": 14
     },
     {
       "date": "2026-10-21",
@@ -453,6 +453,14 @@
           "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE42c1ExSDl4UmppbXRLUHV2Yl84Rk83cEpfbFUwYmt3ZVo4MVowOG85bjBTUGtwcnRNVURYcVJKQ0dzUzdLeFFzTFNial9rNllvWUNfa1F2cUZnajlFR19iSmZFNy1SaHNVZkU3QUN0OTRYRXlvdFRMM2JMNi11T1E?oc=5",
           "evidence_urls": [
             "https://news.google.com/rss/articles/CBMif0FVX3lxTE42c1ExSDl4UmppbXRLUHV2Yl84Rk83cEpfbFUwYmt3ZVo4MVowOG85bjBTUGtwcnRNVURYcVJKQ0dzUzdLeFFzTFNial9rNllvWUNfa1F2cUZnajlFR19iSmZFNy1SaHNVZkU3QUN0OTRYRXlvdFRMM2JMNi11T1E?oc=5"
+          ]
+        },
+        {
+          "incident_id": "e6944fea94acb994",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.sumida.lg.jp/kurashi/volunteer/furusatonouzei.html",
+          "evidence_urls": [
+            "https://www.city.sumida.lg.jp/kurashi/volunteer/furusatonouzei.html"
           ]
         }
       ],
@@ -586,6 +594,44 @@
         {
           "name": "中央区 / Chuo",
           "url": "https://www.city.chuo.lg.jp/a0013/kurashi/chiikicommunity/kuminkan/20261020.html"
+        }
+      ]
+    },
+    {
+      "id": "e6944fea94acb994",
+      "published_at": "2026-10-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "墨田区",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.sumida.lg.jp/kurashi/volunteer/furusatonouzei.html",
+          "evidence_urls": [
+            "https://www.city.sumida.lg.jp/kurashi/volunteer/furusatonouzei.html"
+          ]
+        },
+        {
+          "incident_id": "4e10cd7e9fc71e9e",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.city.sumida.lg.jp/kurashi/volunteer/furusatonouzei.html",
+          "evidence_urls": [
+            "https://www.city.sumida.lg.jp/kurashi/volunteer/furusatonouzei.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "墨田区 / Sumida",
+          "url": "https://www.city.sumida.lg.jp/kurashi/volunteer/furusatonouzei.html"
         }
       ]
     },
@@ -2646,6 +2692,14 @@
           "evidence_urls": [
             "https://www.arcadia.co.jp/info/4076",
             "https://www.city.sumida.lg.jp/anzen_anshin/kurasinoanzen_ansin/anzeninfo/me-ruhusei.html"
+          ]
+        },
+        {
+          "incident_id": "e6944fea94acb994",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.city.sumida.lg.jp/kurashi/volunteer/furusatonouzei.html",
+          "evidence_urls": [
+            "https://www.city.sumida.lg.jp/kurashi/volunteer/furusatonouzei.html"
           ]
         }
       ],
