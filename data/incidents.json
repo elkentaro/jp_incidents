@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T03:36:30+00:00",
-  "total": 191,
+  "updated_at": "2026-10-21T03:40:38+00:00",
+  "total": 192,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-20"
@@ -345,7 +345,7 @@
     },
     {
       "date": "2026-10-16",
-      "count": 20
+      "count": 21
     },
     {
       "date": "2026-10-17",
@@ -2488,6 +2488,35 @@
       ]
     },
     {
+      "id": "8ffddfc96aa3ce97",
+      "published_at": "2026-10-15T15:00:00+00:00",
+      "disclosed_at": "2026-10-15T15:00:00+00:00",
+      "organization": "Schoo",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.infoseek.co.jp/article/prtimes_000000380_000006391/",
+          "evidence_urls": [
+            "https://news.infoseek.co.jp/article/prtimes_000000380_000006391/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Infoseek",
+          "url": "https://news.infoseek.co.jp/article/prtimes_000000380_000006391/"
+        }
+      ]
+    },
+    {
       "id": "b04366395682eecb",
       "published_at": "2026-10-15T15:00:00+00:00",
       "disclosed_at": null,
@@ -2823,6 +2852,14 @@
           "evidence_url": "https://www.pref.niigata.lg.jp/sec/sangyoritchi/challenge-niigata-husei.html",
           "evidence_urls": [
             "https://www.pref.niigata.lg.jp/sec/sangyoritchi/challenge-niigata-husei.html"
+          ]
+        },
+        {
+          "incident_id": "8ffddfc96aa3ce97",
+          "relationship": "affects",
+          "evidence_url": "https://news.infoseek.co.jp/article/prtimes_000000380_000006391/",
+          "evidence_urls": [
+            "https://news.infoseek.co.jp/article/prtimes_000000380_000006391/"
           ]
         },
         {
