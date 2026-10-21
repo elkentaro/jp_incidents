@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T09:34:26+00:00",
-  "total": 237,
+  "updated_at": "2026-10-21T09:41:58+00:00",
+  "total": 239,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-21"
@@ -357,7 +357,7 @@
     },
     {
       "date": "2026-10-19",
-      "count": 28
+      "count": 30
     },
     {
       "date": "2026-10-20",
@@ -678,6 +678,14 @@
           ]
         },
         {
+          "incident_id": "a6becefe2af83d1d",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.miyazaki.lg.jp/kokusai-keizaikoryu/press/2026/10/20261021083152.html",
+          "evidence_urls": [
+            "https://www.pref.miyazaki.lg.jp/kokusai-keizaikoryu/press/2026/10/20261021083152.html"
+          ]
+        },
+        {
           "incident_id": "aff60e65bbd8c3d5",
           "relationship": "affects",
           "evidence_url": "https://www.city.shima.mie.jp/kakuka/sangyoshinkobu/shoko/furusato/9831.html",
@@ -707,6 +715,14 @@
           "evidence_url": "https://www.city.koto.lg.jp/011506/furusato/item/202610fusei.html",
           "evidence_urls": [
             "https://www.city.koto.lg.jp/011506/furusato/item/202610fusei.html"
+          ]
+        },
+        {
+          "incident_id": "cf4d93f326f1b4fa",
+          "relationship": "affects",
+          "evidence_url": "https://www.town.hatoyama.saitama.jp/gyousei/furusato/page004623.html",
+          "evidence_urls": [
+            "https://www.town.hatoyama.saitama.jp/gyousei/furusato/page004623.html"
           ]
         },
         {
@@ -1553,6 +1569,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/dd69f93852e6b18c29c2d35adab1ea01f6a1f5fd"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/0008cf707490090989d4ef4948e5b28585fdb4a5"
         }
       ]
     },
@@ -2443,6 +2463,44 @@
       ]
     },
     {
+      "id": "a6becefe2af83d1d",
+      "published_at": "2026-10-18T15:00:00+00:00",
+      "disclosed_at": "2026-10-19T15:00:00+00:00",
+      "organization": "宮崎県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.miyazaki.lg.jp/kokusai-keizaikoryu/press/2026/10/20261021083152.html",
+          "evidence_urls": [
+            "https://www.pref.miyazaki.lg.jp/kokusai-keizaikoryu/press/2026/10/20261021083152.html"
+          ]
+        },
+        {
+          "incident_id": "271efbbf8599d065",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.pref.miyazaki.lg.jp/kokusai-keizaikoryu/press/2026/10/20261021083152.html",
+          "evidence_urls": [
+            "https://www.pref.miyazaki.lg.jp/kokusai-keizaikoryu/press/2026/10/20261021083152.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "宮崎県 / Miyazaki",
+          "url": "https://www.pref.miyazaki.lg.jp/kokusai-keizaikoryu/press/2026/10/20261021083152.html"
+        }
+      ]
+    },
+    {
       "id": "c09d173f94c9bf65",
       "published_at": "2026-10-18T15:00:00+00:00",
       "disclosed_at": null,
@@ -2727,6 +2785,35 @@
         {
           "name": "流通ニュース",
           "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBJV3hMSjZJMUxzNE84VEhVRDd3WmVLWU5qdkRaaTQ3OGJvd3NsWkV6NzJrSXFDaWhXVkxTV1F5NzRxSld3TFBneEN6OWV6WGgwOHJWanlTNjI?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "cf4d93f326f1b4fa",
+      "published_at": "2026-10-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "鳩山町",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.town.hatoyama.saitama.jp/gyousei/furusato/page004623.html",
+          "evidence_urls": [
+            "https://www.town.hatoyama.saitama.jp/gyousei/furusato/page004623.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "鳩山町",
+          "url": "https://www.town.hatoyama.saitama.jp/gyousei/furusato/page004623.html"
         }
       ]
     },
@@ -6299,6 +6386,14 @@
           "evidence_urls": [
             "https://www.arcadia.co.jp/info/4076",
             "https://www.pref.miyazaki.lg.jp/kiki-kikikanri/press/2026/10/20261013181842.html"
+          ]
+        },
+        {
+          "incident_id": "a6becefe2af83d1d",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.pref.miyazaki.lg.jp/kokusai-keizaikoryu/press/2026/10/20261021083152.html",
+          "evidence_urls": [
+            "https://www.pref.miyazaki.lg.jp/kokusai-keizaikoryu/press/2026/10/20261021083152.html"
           ]
         }
       ],
