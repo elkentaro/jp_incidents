@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T10:26:39+00:00",
-  "total": 239,
+  "updated_at": "2026-10-21T11:04:18+00:00",
+  "total": 243,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-21"
@@ -317,7 +317,7 @@
     },
     {
       "date": "2026-10-09",
-      "count": 6
+      "count": 7
     },
     {
       "date": "2026-10-10",
@@ -357,15 +357,15 @@
     },
     {
       "date": "2026-10-19",
-      "count": 30
+      "count": 31
     },
     {
       "date": "2026-10-20",
-      "count": 34
+      "count": 35
     },
     {
       "date": "2026-10-21",
-      "count": 9
+      "count": 10
     }
   ],
   "incidents": [
@@ -612,6 +612,36 @@
       ]
     },
     {
+      "id": "2668891b9e24dbd7",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "常陸太田市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA3UlAxVFNqYm16N08taGt5aFhFZEVOWW1udTZicVNfTGlGeGxCakV2NHdnbDFNcGx6Zjc0d3VGSTh6emp4TzYzZnN3TGRPNnp1NnQ2aGxob0NsT1h0UElOWkpxLXhjbjlJbFg0eWM0aXdtVV84NnR2Rg?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMieEFVX3lxTFA3UlAxVFNqYm16N08taGt5aFhFZEVOWW1udTZicVNfTGlGeGxCakV2NHdnbDFNcGx6Zjc0d3VGSTh6emp4TzYzZnN3TGRPNnp1NnQ2aGxob0NsT1h0UElOWkpxLXhjbjlJbFg0eWM0aXdtVV84NnR2Rg?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "常陸太田市",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA3UlAxVFNqYm16N08taGt5aFhFZEVOWW1udTZicVNfTGlGeGxCakV2NHdnbDFNcGx6Zjc0d3VGSTh6emp4TzYzZnN3TGRPNnp1NnQ2aGxob0NsT1h0UElOWkpxLXhjbjlJbFg0eWM0aXdtVV84NnR2Rg?oc=5"
+        }
+      ]
+    },
+    {
       "id": "0eaef1bd861f21f3",
       "published_at": "2026-10-19T15:00:00+00:00",
       "disclosed_at": null,
@@ -639,6 +669,14 @@
           "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9TT1dVd1BVNlQ5MW11MmFkSXl4SnlwTDBrWjNmTXJLTy1kZVdRZWVQTDRsUEluWHVBOGJVVGlVZXliczVWaWNEMHk2TXBwWm9fbEVOOFZYR05FMkx6SlpNWjl0T21Ic1ozN1Qwb0lIaGRXc25tX0diRUlXOVlxRU0?oc=5",
           "evidence_urls": [
             "https://news.google.com/rss/articles/CBMif0FVX3lxTE9TT1dVd1BVNlQ5MW11MmFkSXl4SnlwTDBrWjNmTXJLTy1kZVdRZWVQTDRsUEluWHVBOGJVVGlVZXliczVWaWNEMHk2TXBwWm9fbEVOOFZYR05FMkx6SlpNWjl0T21Ic1ozN1Qwb0lIaGRXc25tX0diRUlXOVlxRU0?oc=5"
+          ]
+        },
+        {
+          "incident_id": "2668891b9e24dbd7",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA3UlAxVFNqYm16N08taGt5aFhFZEVOWW1udTZicVNfTGlGeGxCakV2NHdnbDFNcGx6Zjc0d3VGSTh6emp4TzYzZnN3TGRPNnp1NnQ2aGxob0NsT1h0UElOWkpxLXhjbjlJbFg0eWM0aXdtVV84NnR2Rg?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMieEFVX3lxTFA3UlAxVFNqYm16N08taGt5aFhFZEVOWW1udTZicVNfTGlGeGxCakV2NHdnbDFNcGx6Zjc0d3VGSTh6emp4TzYzZnN3TGRPNnp1NnQ2aGxob0NsT1h0UElOWkpxLXhjbjlJbFg0eWM0aXdtVV84NnR2Rg?oc=5"
           ]
         },
         {
@@ -695,6 +733,14 @@
           "evidence_url": "https://www.city.shima.mie.jp/kakuka/sangyoshinkobu/shoko/furusato/9831.html",
           "evidence_urls": [
             "https://www.city.shima.mie.jp/kakuka/sangyoshinkobu/shoko/furusato/9831.html"
+          ]
+        },
+        {
+          "incident_id": "b07928dacef45343",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.chuo.lg.jp/a0006/kurashi/zeikin/furusato/furusatonozei_chuocity/hurusatotyoisuhuseiakusesunituite.html",
+          "evidence_urls": [
+            "https://www.city.chuo.lg.jp/a0006/kurashi/zeikin/furusato/furusatonozei_chuocity/hurusatotyoisuhuseiakusesunituite.html"
           ]
         },
         {
@@ -894,7 +940,16 @@
       "potential_records": null,
       "confidence": "high",
       "confidence_score": 95,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "a0aa196c95281fea",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9yX29uY2R4V2FsaXJqM2VBdGlVSlFDMFNLQVoyb2g0MmRQYkZfZ2EwTG1hMDA1RENHTmUzbkF1WTFiRnAxdjRwd2otLTlVMVVvMlBsM3dkWUMwOVZGbHI1M2ZCdkk?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9yX29uY2R4V2FsaXJqM2VBdGlVSlFDMFNLQVoyb2g0MmRQYkZfZ2EwTG1hMDA1RENHTmUzbkF1WTFiRnAxdjRwd2otLTlVMVVvMlBsM3dkWUMwOVZGbHI1M2ZCdkk?oc=5"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "Yahoo!ニュース",
@@ -1607,6 +1662,36 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/434f6dc5432e1698132bdb51dc82357782859e64"
+        }
+      ]
+    },
+    {
+      "id": "5d088162d8510e17",
+      "published_at": "2026-10-19T15:00:00+00:00",
+      "disclosed_at": "2026-10-19T15:00:00+00:00",
+      "organization": "宮古島市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "0a08a3f6bcd30b82",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1xNnZURTJyRHZ0TmxJTmVGWURFMEc5RGdpQlhGWm14bUxvYThBNGdoWmd2NlNCU000NWVRV0Z4TmxGU0tNdmRBU2t0bHVUODBfWElFcGwyVQ?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1xNnZURTJyRHZ0TmxJTmVGWURFMEc5RGdpQlhGWm14bUxvYThBNGdoWmd2NlNCU000NWVRV0Z4TmxGU0tNdmRBU2t0bHVUODBfWElFcGwyVQ?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1xNnZURTJyRHZ0TmxJTmVGWURFMEc5RGdpQlhGWm14bUxvYThBNGdoWmd2NlNCU000NWVRV0Z4TmxGU0tNdmRBU2t0bHVUODBfWElFcGwyVQ?oc=5"
         }
       ]
     },
@@ -2463,6 +2548,10 @@
         {
           "name": "新潟県 / Niigata",
           "url": "https://www.pref.niigata.lg.jp/sec/sangyoritchi/challenge-niigata-husei.html"
+        },
+        {
+          "name": "新潟県 / Niigata",
+          "url": "https://www.pref.niigata.lg.jp/sec/chiikiseisaku/furusatochoice-houdou.html"
         }
       ]
     },
@@ -2501,6 +2590,36 @@
         {
           "name": "宮崎県 / Miyazaki",
           "url": "https://www.pref.miyazaki.lg.jp/kokusai-keizaikoryu/press/2026/10/20261021083152.html"
+        }
+      ]
+    },
+    {
+      "id": "b07928dacef45343",
+      "published_at": "2026-10-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "中央区",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.chuo.lg.jp/a0006/kurashi/zeikin/furusato/furusatonozei_chuocity/hurusatotyoisuhuseiakusesunituite.html",
+          "evidence_urls": [
+            "https://www.city.chuo.lg.jp/a0006/kurashi/zeikin/furusato/furusatonozei_chuocity/hurusatotyoisuhuseiakusesunituite.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "中央区 / Chuo",
+          "url": "https://www.city.chuo.lg.jp/a0006/kurashi/zeikin/furusato/furusatonozei_chuocity/hurusatotyoisuhuseiakusesunituite.html"
         }
       ]
     },
@@ -3365,6 +3484,51 @@
       ]
     },
     {
+      "id": "cf0fdad37902fd37",
+      "published_at": "2026-10-15T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "福岡県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "0a08a3f6bcd30b82",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.nishinippon.co.jp/item/1549998/",
+          "evidence_urls": [
+            "https://www.nishinippon.co.jp/item/1549998/",
+            "https://www.pref.fukuoka.lg.jp/contents/dosyasystemannounce.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "西日本新聞me",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0xWDN3djFJbk5HelhJcndzbkc2NjVOZUhnbnVkWV9KVy1waV84eVgwcTJhellYc0JHQkYxSldlbTVmM1V3elYyMnBhbFVuLTJBOVBhT1ZB?oc=5"
+        },
+        {
+          "name": "Supporting incident notice",
+          "url": "https://www.nishinippon.co.jp/item/1549998/"
+        },
+        {
+          "name": "Supporting incident notice",
+          "url": "https://www.pref.fukuoka.lg.jp/contents/dosyasystemannounce.html"
+        },
+        {
+          "name": "福岡県庁ホームページ",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0xVFFRUEVPb3o5SmI0bFRhYm1idWFyRnNfUnBDVGFsRWtJMWFaVWJ2MHlKRy1SY3VtVHlkM0sxaWJXVHczUXk1aDM2Yk83dTJuUk5UV3dBWm9zMTdkalY0eUpnM0tWTE95YWFjNUxaVDc?oc=5"
+        }
+      ],
+      "affected_system": "土砂災害危険度情報配信システム",
+      "date_basis": "existing_record"
+    },
+    {
       "id": "01b9a3bb946f0daf",
       "published_at": "2026-10-15T15:00:00+00:00",
       "disclosed_at": null,
@@ -3431,47 +3595,6 @@
           "url": "https://www.astemo.com/jp/news/pdf/20261016-01.pdf"
         }
       ]
-    },
-    {
-      "id": "cf0fdad37902fd37",
-      "published_at": "2026-10-15T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "福岡県",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [
-        {
-          "incident_id": "0a08a3f6bcd30b82",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.nishinippon.co.jp/item/1549998/",
-          "evidence_urls": [
-            "https://www.nishinippon.co.jp/item/1549998/",
-            "https://www.pref.fukuoka.lg.jp/contents/dosyasystemannounce.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "西日本新聞me",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0xWDN3djFJbk5HelhJcndzbkc2NjVOZUhnbnVkWV9KVy1waV84eVgwcTJhellYc0JHQkYxSldlbTVmM1V3elYyMnBhbFVuLTJBOVBhT1ZB?oc=5"
-        },
-        {
-          "name": "Supporting incident notice",
-          "url": "https://www.nishinippon.co.jp/item/1549998/"
-        },
-        {
-          "name": "Supporting incident notice",
-          "url": "https://www.pref.fukuoka.lg.jp/contents/dosyasystemannounce.html"
-        }
-      ],
-      "affected_system": "土砂災害危険度情報配信システム",
-      "date_basis": "existing_record"
     },
     {
       "id": "8ffddfc96aa3ce97",
@@ -5782,6 +5905,14 @@
           ]
         },
         {
+          "incident_id": "5d088162d8510e17",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1xNnZURTJyRHZ0TmxJTmVGWURFMEc5RGdpQlhGWm14bUxvYThBNGdoWmd2NlNCU000NWVRV0Z4TmxGU0tNdmRBU2t0bHVUODBfWElFcGwyVQ?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1xNnZURTJyRHZ0TmxJTmVGWURFMEc5RGdpQlhGWm14bUxvYThBNGdoWmd2NlNCU000NWVRV0Z4TmxGU0tNdmRBU2t0bHVUODBfWElFcGwyVQ?oc=5"
+          ]
+        },
+        {
           "incident_id": "63810606de9a51be",
           "relationship": "affects",
           "evidence_url": "https://www.sanyonews.jp/article/2004992",
@@ -7092,6 +7223,10 @@
         {
           "name": "大分県 / Oita",
           "url": "https://www.pref.oita.jp/soshiki/13550/bosaimeil.html"
+        },
+        {
+          "name": "大分県 / Oita",
+          "url": "https://www.pref.oita.jp/soshiki/10400/20261021furusatochoiceeikyou.html"
         }
       ],
       "affected_system": "県民安全・安心メール等配信システム",
@@ -7306,6 +7441,10 @@
         {
           "name": "堺市 / Sakai",
           "url": "https://www.city.sakai.lg.jp/kurashi/bosai/shiru/shudan/jyouhou.html"
+        },
+        {
+          "name": "堺市 / Sakai",
+          "url": "https://www.city.sakai.lg.jp/shisei/koho/hodo/hodoteikyoshiryo/kakohodo/r8/r810/081021_05.html"
         }
       ],
       "affected_system": "避難情報等一括配信・職員招集システム",
@@ -7764,6 +7903,35 @@
         {
           "name": "satimo list",
           "url": "https://rakumachi.co.jp/20261019/"
+        }
+      ]
+    },
+    {
+      "id": "a0aa196c95281fea",
+      "published_at": "2026-10-08T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大阪大学",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 77851,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "415606b392ad65f5",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9yX29uY2R4V2FsaXJqM2VBdGlVSlFDMFNLQVoyb2g0MmRQYkZfZ2EwTG1hMDA1RENHTmUzbkF1WTFiRnAxdjRwd2otLTlVMVVvMlBsM3dkWUMwOVZGbHI1M2ZCdkk?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9yX29uY2R4V2FsaXJqM2VBdGlVSlFDMFNLQVoyb2g0MmRQYkZfZ2EwTG1hMDA1RENHTmUzbkF1WTFiRnAxdjRwd2otLTlVMVVvMlBsM3dkWUMwOVZGbHI1M2ZCdkk?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "大阪大学",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9yX29uY2R4V2FsaXJqM2VBdGlVSlFDMFNLQVoyb2g0MmRQYkZfZ2EwTG1hMDA1RENHTmUzbkF1WTFiRnAxdjRwd2otLTlVMVVvMlBsM3dkWUMwOVZGbHI1M2ZCdkk?oc=5"
         }
       ]
     },
