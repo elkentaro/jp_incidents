@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T09:26:46+00:00",
+  "updated_at": "2026-10-21T09:34:26+00:00",
   "total": 237,
   "date_range": {
     "start": "2026-08-09",
@@ -370,6 +370,31 @@
   ],
   "incidents": [
     {
+      "id": "5132d5e78b41b9cf",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "デジタルアーツ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261021554017.pdf"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261021554017/"
+        }
+      ]
+    },
+    {
       "id": "30be55b8dfc1bf4b",
       "published_at": "2026-10-20T15:00:00+00:00",
       "disclosed_at": null,
@@ -426,27 +451,6 @@
         {
           "name": "藤井寺市",
           "url": "https://www.city.fujiidera.lg.jp/topics/21539.html"
-        }
-      ]
-    },
-    {
-      "id": "5132d5e78b41b9cf",
-      "published_at": "2026-10-20T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "デジタルアーツ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [],
-      "sources": [
-        {
-          "name": "日本取引所グループ TDnet / JPX TDnet",
-          "url": "https://www.release.tdnet.info/inbs/140120261021554017.pdf"
         }
       ]
     },
@@ -794,6 +798,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/d4555756d408b6529cd22b4b4caf42b1b6bc7a4f"
+        },
+        {
+          "name": "GMOインターネット / GMO Internet",
+          "url": "https://internet.gmo/news/article/246/"
         }
       ]
     },
