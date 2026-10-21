@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T03:28:23+00:00",
-  "total": 186,
+  "updated_at": "2026-10-21T03:28:46+00:00",
+  "total": 187,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-20"
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-10-20",
-      "count": 14
+      "count": 15
     },
     {
       "date": "2026-10-21",
@@ -421,6 +421,14 @@
           "evidence_url": "https://www.pref.shiga.lg.jp/bj00/press-release/34359.html",
           "evidence_urls": [
             "https://www.pref.shiga.lg.jp/bj00/press-release/34359.html"
+          ]
+        },
+        {
+          "incident_id": "c13f0ab12b616bf6",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.koto.lg.jp/011506/furusato/item/202610fusei.html",
+          "evidence_urls": [
+            "https://www.city.koto.lg.jp/011506/furusato/item/202610fusei.html"
           ]
         },
         {
@@ -657,6 +665,43 @@
         {
           "name": "中央区 / Chuo",
           "url": "https://www.city.chuo.lg.jp/a0013/kurashi/chiikicommunity/kuminkan/20261020.html"
+        }
+      ]
+    },
+    {
+      "id": "c13f0ab12b616bf6",
+      "published_at": "2026-10-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "江東区",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.koto.lg.jp/011506/furusato/item/202610fusei.html",
+          "evidence_urls": [
+            "https://www.city.koto.lg.jp/011506/furusato/item/202610fusei.html"
+          ]
+        },
+        {
+          "incident_id": "1bd66e8985fc375d",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.city.koto.lg.jp/011506/furusato/item/202610fusei.html",
+          "evidence_urls": [
+            "https://www.city.koto.lg.jp/011506/furusato/item/202610fusei.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "江東区 / Koto",
+          "url": "https://www.city.koto.lg.jp/011506/furusato/item/202610fusei.html"
         }
       ]
     },
@@ -2498,7 +2543,8 @@
       "organization": "バーガーキング",
       "incident_type": "data leak",
       "incident_categories": [
-        "data leak"
+        "data leak",
+        "unauthorized access"
       ],
       "potential_records": 11180000,
       "confidence": "high",
@@ -4375,7 +4421,16 @@
       "potential_records": null,
       "confidence": "high",
       "confidence_score": 60,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "c13f0ab12b616bf6",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.city.koto.lg.jp/011506/furusato/item/202610fusei.html",
+          "evidence_urls": [
+            "https://www.city.koto.lg.jp/011506/furusato/item/202610fusei.html"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "江東区 / Koto",
