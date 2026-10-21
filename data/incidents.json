@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T03:56:03+00:00",
-  "total": 202,
+  "updated_at": "2026-10-21T03:56:41+00:00",
+  "total": 203,
   "date_range": {
     "start": "2026-08-09",
-    "end": "2026-10-20"
+    "end": "2026-10-21"
   },
   "daily_counts_90d": [
     {
@@ -365,10 +365,40 @@
     },
     {
       "date": "2026-10-21",
-      "count": 0
+      "count": 1
     }
   ],
   "incidents": [
+    {
+      "id": "5014a88e2f6bb6b3",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "藤井寺市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.fujiidera.lg.jp/topics/21539.html",
+          "evidence_urls": [
+            "https://www.city.fujiidera.lg.jp/topics/21539.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "藤井寺市",
+          "url": "https://www.city.fujiidera.lg.jp/topics/21539.html"
+        }
+      ]
+    },
     {
       "id": "0eaef1bd861f21f3",
       "published_at": "2026-10-19T15:00:00+00:00",
@@ -405,6 +435,14 @@
           "evidence_url": "https://www.city.gojo.lg.jp/juuyou/19902.html",
           "evidence_urls": [
             "https://www.city.gojo.lg.jp/juuyou/19902.html"
+          ]
+        },
+        {
+          "incident_id": "5014a88e2f6bb6b3",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.fujiidera.lg.jp/topics/21539.html",
+          "evidence_urls": [
+            "https://www.city.fujiidera.lg.jp/topics/21539.html"
           ]
         },
         {
