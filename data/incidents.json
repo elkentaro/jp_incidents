@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T03:40:38+00:00",
-  "total": 192,
+  "updated_at": "2026-10-21T03:42:01+00:00",
+  "total": 194,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-20"
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-10-20",
-      "count": 17
+      "count": 19
     },
     {
       "date": "2026-10-21",
@@ -920,6 +920,35 @@
       ]
     },
     {
+      "id": "790f2d74f04c4ba6",
+      "published_at": "2026-10-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "神奈川県警",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "0a08a3f6bcd30b82",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/abf566054c40bd79fbb26399db111bf33efbd3e3",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/abf566054c40bd79fbb26399db111bf33efbd3e3"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/abf566054c40bd79fbb26399db111bf33efbd3e3"
+        }
+      ]
+    },
+    {
       "id": "a8dad4a06e50a1a5",
       "published_at": "2026-10-19T15:00:00+00:00",
       "disclosed_at": null,
@@ -937,6 +966,35 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/471d8783a33851cbb1b5a96b67a5acfad91602bf"
+        }
+      ]
+    },
+    {
+      "id": "d5c8ca9a2bb82307",
+      "published_at": "2026-10-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "群馬県警",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "0a08a3f6bcd30b82",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/abf566054c40bd79fbb26399db111bf33efbd3e3",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/abf566054c40bd79fbb26399db111bf33efbd3e3"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/abf566054c40bd79fbb26399db111bf33efbd3e3"
         }
       ]
     },
@@ -4113,6 +4171,14 @@
           ]
         },
         {
+          "incident_id": "0ede24c087f14aff",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/abf566054c40bd79fbb26399db111bf33efbd3e3",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/abf566054c40bd79fbb26399db111bf33efbd3e3"
+          ]
+        },
+        {
           "incident_id": "1218f208fb3469b1",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/6d0af070487c86a95ab8a7489f5fe9fe1216c0ee",
@@ -4233,6 +4299,14 @@
           ]
         },
         {
+          "incident_id": "790f2d74f04c4ba6",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/abf566054c40bd79fbb26399db111bf33efbd3e3",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/abf566054c40bd79fbb26399db111bf33efbd3e3"
+          ]
+        },
+        {
           "incident_id": "7d6722ce071d7a66",
           "relationship": "affects",
           "evidence_url": "https://www.hokkoku.co.jp/articles/-/2258014",
@@ -4292,6 +4366,14 @@
           "evidence_urls": [
             "https://www.city.fukuoka.lg.jp/bousai/bousaikojinjohorouei.html",
             "https://www.nishinippon.co.jp/item/1549998/"
+          ]
+        },
+        {
+          "incident_id": "d5c8ca9a2bb82307",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/abf566054c40bd79fbb26399db111bf33efbd3e3",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/abf566054c40bd79fbb26399db111bf33efbd3e3"
           ]
         },
         {
@@ -4603,6 +4685,39 @@
       ],
       "affected_system": "アルカディア提供の防災情報配信サービス",
       "date_basis": "discovery"
+    },
+    {
+      "id": "0ede24c087f14aff",
+      "published_at": "2026-10-12T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "埼玉県警",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "0a08a3f6bcd30b82",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/abf566054c40bd79fbb26399db111bf33efbd3e3",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/abf566054c40bd79fbb26399db111bf33efbd3e3"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "時事ドットコム",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQd0RINVdfNklCZVAyV0ppUEJtbWgzLU1yX25tUWVsMzBsNmwxUWRwNzBoQzkycGlrY3E1QWJ4WDdFVURDbi1fM2pkcExLdkIxLWFfMlpEN2UxMElTOVVON2VtTmxKUTAwUmx5M0ticFNHQm9hUVBteGtObjRYSUVzQQ?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/abf566054c40bd79fbb26399db111bf33efbd3e3"
+        }
+      ]
     },
     {
       "id": "8e4e2ad29e93d9e7",
@@ -4998,26 +5113,6 @@
       ],
       "affected_system": "ヤマハネットワークエンジニア会（YNE）",
       "date_basis": "existing_record"
-    },
-    {
-      "id": "0ede24c087f14aff",
-      "published_at": "2026-10-12T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "埼玉県警",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "時事ドットコム",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQd0RINVdfNklCZVAyV0ppUEJtbWgzLU1yX25tUWVsMzBsNmwxUWRwNzBoQzkycGlrY3E1QWJ4WDdFVURDbi1fM2pkcExLdkIxLWFfMlpEN2UxMElTOVVON2VtTmxKUTAwUmx5M0ticFNHQm9hUVBteGtObjRYSUVzQQ?oc=5"
-        }
-      ]
     },
     {
       "id": "2e478886f8774f97",
