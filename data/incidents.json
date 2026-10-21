@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T08:10:32+00:00",
-  "total": 228,
+  "updated_at": "2026-10-21T08:16:11+00:00",
+  "total": 229,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-21"
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-10-20",
-      "count": 32
+      "count": 33
     },
     {
       "date": "2026-10-21",
@@ -801,7 +801,7 @@
         {
           "incident_id": "0a08a3f6bcd30b82",
           "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/cb32bc1871cc1e5919c06e936cdd786ac4d9d911",
+          "evidence_url": "https://www.shimotsuke.co.jp/articles/-/1443587",
           "evidence_urls": [
             "https://mainichi.jp/articles/20261020/k00/00m/310/052000c",
             "https://news.ntv.co.jp/category/society/24d9720c0eab43fc97fb75d65cdb92cf",
@@ -811,7 +811,8 @@
             "https://news.yahoo.co.jp/articles/e432ad595673cad43760c3e9f1134aff1d536221/images/000",
             "https://news.yahoo.co.jp/articles/f706fb85ddc92e7f871bdc7b751d6b49e74ae5de",
             "https://news.yahoo.co.jp/pickup/6599459",
-            "https://www.47news.jp/15107110.html"
+            "https://www.47news.jp/15107110.html",
+            "https://www.shimotsuke.co.jp/articles/-/1443587"
           ]
         }
       ],
@@ -1111,6 +1112,36 @@
         {
           "name": "中央区 / Chuo",
           "url": "https://www.city.chuo.lg.jp/a0013/kurashi/chiikicommunity/kuminkan/20261020.html"
+        }
+      ]
+    },
+    {
+      "id": "822674a60857d714",
+      "published_at": "2026-10-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社ネオキャリア",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.neo-career.co.jp/news/article_26461/",
+          "evidence_urls": [
+            "https://www.neo-career.co.jp/news/article_26461/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.neo-career.co.jp/news/article_26461/"
         }
       ]
     },
@@ -3563,6 +3594,14 @@
           ]
         },
         {
+          "incident_id": "822674a60857d714",
+          "relationship": "affects",
+          "evidence_url": "https://www.neo-career.co.jp/news/article_26461/",
+          "evidence_urls": [
+            "https://www.neo-career.co.jp/news/article_26461/"
+          ]
+        },
+        {
           "incident_id": "8309247f1ad2ce04",
           "relationship": "affects",
           "evidence_url": "https://studio.design/ja/whats-new/unauthorized-access-2026-10",
@@ -5425,7 +5464,7 @@
         {
           "incident_id": "8a4f510672760aee",
           "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/cb32bc1871cc1e5919c06e936cdd786ac4d9d911",
+          "evidence_url": "https://www.shimotsuke.co.jp/articles/-/1443587",
           "evidence_urls": [
             "https://mainichi.jp/articles/20261020/k00/00m/310/052000c",
             "https://news.ntv.co.jp/category/society/24d9720c0eab43fc97fb75d65cdb92cf",
@@ -5435,7 +5474,8 @@
             "https://news.yahoo.co.jp/articles/e432ad595673cad43760c3e9f1134aff1d536221/images/000",
             "https://news.yahoo.co.jp/articles/f706fb85ddc92e7f871bdc7b751d6b49e74ae5de",
             "https://news.yahoo.co.jp/pickup/6599459",
-            "https://www.47news.jp/15107110.html"
+            "https://www.47news.jp/15107110.html",
+            "https://www.shimotsuke.co.jp/articles/-/1443587"
           ]
         },
         {
@@ -5720,6 +5760,10 @@
         {
           "name": "Security NEXT",
           "url": "https://www.security-next.com/191554"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1uOHhhTTlieERUNVZVQ3MzZ1NOZEVWODBxdXFfU2pLMlNHc1RoelJrcWRuNUtfZzRpQ1RkaEFjX096aXFrMVZaTFpsUDFwbVYxNmFOYk1QaWdhUTZ6a1RFWE9JeEw2dmtOM3c?oc=5"
         }
       ]
     },
@@ -5806,6 +5850,39 @@
       ]
     },
     {
+      "id": "8e4e2ad29e93d9e7",
+      "published_at": "2026-10-12T15:00:00+00:00",
+      "disclosed_at": "2026-10-15T15:00:00+00:00",
+      "organization": "ゴルフダイジェスト・オンライン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1789,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/20/56515.html"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/20/56514.html"
+        },
+        {
+          "name": "legalagent list",
+          "url": "https://company.golfdigest.co.jp/corp/pr/2026101601.html"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPQkpuWkxPSUN0VWNrRjNZbnl4V2x3Sm9rXzVjeW9rU3dkZHpTaDZSWXlUS2tGTHFETlAyRWp3VVhiSGQzc3BtcllGQ2N0Tl90MmFCS2JBV3ItdWJleXlTaGZlaUkzWGdMc2QtVU1Ua3lHUkxwazNnemZjcVJtRld4dzZQNzR6Z05JMHN6SjNlU1VmMTAtYzlZaDIyWXRTTGpHbTdZR2t2dHU?oc=5"
+        }
+      ]
+    },
+    {
       "id": "196233ffeb2e2379",
       "published_at": "2026-10-12T15:00:00+00:00",
       "disclosed_at": null,
@@ -5876,35 +5953,6 @@
       ],
       "affected_system": "アルカディア提供の防災情報配信サービス",
       "date_basis": "discovery"
-    },
-    {
-      "id": "8e4e2ad29e93d9e7",
-      "published_at": "2026-10-12T15:00:00+00:00",
-      "disclosed_at": "2026-10-15T15:00:00+00:00",
-      "organization": "ゴルフダイジェスト・オンライン",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 1789,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [],
-      "sources": [
-        {
-          "name": "ScanNetSecurity",
-          "url": "https://scan.netsecurity.ne.jp/article/2026/10/20/56515.html"
-        },
-        {
-          "name": "ScanNetSecurity",
-          "url": "https://scan.netsecurity.ne.jp/article/2026/10/20/56514.html"
-        },
-        {
-          "name": "legalagent list",
-          "url": "https://company.golfdigest.co.jp/corp/pr/2026101601.html"
-        }
-      ]
     },
     {
       "id": "1bd66e8985fc375d",
@@ -7840,12 +7888,16 @@
       ],
       "potential_records": null,
       "confidence": "medium",
-      "confidence_score": 30,
+      "confidence_score": 45,
       "related": [],
       "sources": [
         {
           "name": "satimo list",
           "url": "https://pingcap.co.jp/trust-hub/security/security-update-october-2026/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/pingcap_tidb_unauthorized_access_data_leak_20261021/"
         }
       ]
     },
