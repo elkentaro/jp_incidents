@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T20:25:47+00:00",
-  "total": 255,
+  "updated_at": "2026-10-21T21:19:02+00:00",
+  "total": 256,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-21"
@@ -285,7 +285,7 @@
     },
     {
       "date": "2026-10-02",
-      "count": 1
+      "count": 2
     },
     {
       "date": "2026-10-03",
@@ -1312,6 +1312,14 @@
       "confidence": "high",
       "confidence_score": 95,
       "related": [
+        {
+          "incident_id": "5e7167bf3d6672b5",
+          "relationship": "affects",
+          "evidence_url": "https://www.asahi.com/articles/ASVBP15NCVBPPTIL00MM.html",
+          "evidence_urls": [
+            "https://www.asahi.com/articles/ASVBP15NCVBPPTIL00MM.html"
+          ]
+        },
         {
           "incident_id": "a0aa196c95281fea",
           "relationship": "affects",
@@ -9445,6 +9453,35 @@
         {
           "name": "ITmedia",
           "url": "https://www.itmedia.co.jp/news/article/2610/16/2000002340/"
+        }
+      ]
+    },
+    {
+      "id": "5e7167bf3d6672b5",
+      "published_at": "2026-10-01T15:00:00+00:00",
+      "disclosed_at": "2026-10-20T15:00:00+00:00",
+      "organization": "大阪公立大学",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "415606b392ad65f5",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.asahi.com/articles/ASVBP15NCVBPPTIL00MM.html",
+          "evidence_urls": [
+            "https://www.asahi.com/articles/ASVBP15NCVBPPTIL00MM.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVBP15NCVBPPTIL00MM.html"
         }
       ]
     },
