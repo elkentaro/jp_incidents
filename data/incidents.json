@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T00:00:16+00:00",
-  "total": 160,
+  "updated_at": "2026-10-21T00:07:38+00:00",
+  "total": 163,
   "date_range": {
-    "start": "2026-08-29",
+    "start": "2026-08-09",
     "end": "2026-10-20"
   },
   "daily_counts_90d": [
@@ -73,7 +73,7 @@
     },
     {
       "date": "2026-08-09",
-      "count": 0
+      "count": 1
     },
     {
       "date": "2026-08-10",
@@ -357,11 +357,11 @@
     },
     {
       "date": "2026-10-19",
-      "count": 15
+      "count": 16
     },
     {
       "date": "2026-10-20",
-      "count": 6
+      "count": 7
     },
     {
       "date": "2026-10-21",
@@ -452,6 +452,35 @@
         {
           "name": "www.trustbank.co.jp",
           "url": "https://www.trustbank.co.jp/newsroom/newsrelease/news261020/"
+        }
+      ]
+    },
+    {
+      "id": "7f1b0048e5679d7e",
+      "published_at": "2026-10-19T15:00:00+00:00",
+      "disclosed_at": "2026-10-19T15:00:00+00:00",
+      "organization": "中央区",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "aa78266df70136da",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.chuo.lg.jp/a0013/kurashi/chiikicommunity/kuminkan/20261020.html",
+          "evidence_urls": [
+            "https://www.city.chuo.lg.jp/a0013/kurashi/chiikicommunity/kuminkan/20261020.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "中央区 / Chuo",
+          "url": "https://www.city.chuo.lg.jp/a0013/kurashi/chiikicommunity/kuminkan/20261020.html"
         }
       ]
     },
@@ -1026,6 +1055,35 @@
       ]
     },
     {
+      "id": "1d31f267af87c931",
+      "published_at": "2026-10-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "古賀市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "f6e739d2d64628d4",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA4UGhleExnQTZaTXp1S28tNERDekdSVEpQWGU3V0h0bXJQQVNIYnd6SFNmTnhHMmNUOXZPeVZEZ1hHMEVIU21RSmZid1ZKbE5rb3pvOHpFY1c4UWRRQ29jMzB5LU5talBVQ2F6WGNwS1FiMTJYQkd0Zk5LaVdYdTQ?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTFA4UGhleExnQTZaTXp1S28tNERDekdSVEpQWGU3V0h0bXJQQVNIYnd6SFNmTnhHMmNUOXZPeVZEZ1hHMEVIU21RSmZid1ZKbE5rb3pvOHpFY1c4UWRRQ29jMzB5LU5talBVQ2F6WGNwS1FiMTJYQkd0Zk5LaVdYdTQ?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA4UGhleExnQTZaTXp1S28tNERDekdSVEpQWGU3V0h0bXJQQVNIYnd6SFNmTnhHMmNUOXZPeVZEZ1hHMEVIU21RSmZid1ZKbE5rb3pvOHpFY1c4UWRRQ29jMzB5LU5talBVQ2F6WGNwS1FiMTJYQkd0Zk5LaVdYdTQ?oc=5"
+        }
+      ]
+    },
+    {
       "id": "3c5951f7f8671f47",
       "published_at": "2026-10-18T15:00:00+00:00",
       "disclosed_at": null,
@@ -1200,7 +1258,16 @@
       "potential_records": null,
       "confidence": "high",
       "confidence_score": 60,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "7f1b0048e5679d7e",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.chuo.lg.jp/a0013/kurashi/chiikicommunity/kuminkan/20261020.html",
+          "evidence_urls": [
+            "https://www.city.chuo.lg.jp/a0013/kurashi/chiikicommunity/kuminkan/20261020.html"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "satimo list",
@@ -5771,6 +5838,36 @@
       ],
       "affected_system": "釧路市の端末設定・アカウント情報を保管していた社内サーバー",
       "date_basis": "occurrence"
+    },
+    {
+      "id": "f6e739d2d64628d4",
+      "published_at": "2026-08-08T15:00:00+00:00",
+      "disclosed_at": "2026-09-08T15:00:00+00:00",
+      "organization": "アプライナウ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "1d31f267af87c931",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA4UGhleExnQTZaTXp1S28tNERDekdSVEpQWGU3V0h0bXJQQVNIYnd6SFNmTnhHMmNUOXZPeVZEZ1hHMEVIU21RSmZid1ZKbE5rb3pvOHpFY1c4UWRRQ29jMzB5LU5talBVQ2F6WGNwS1FiMTJYQkd0Zk5LaVdYdTQ?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTFA4UGhleExnQTZaTXp1S28tNERDekdSVEpQWGU3V0h0bXJQQVNIYnd6SFNmTnhHMmNUOXZPeVZEZ1hHMEVIU21RSmZid1ZKbE5rb3pvOHpFY1c4UWRRQ29jMzB5LU5talBVQ2F6WGNwS1FiMTJYQkd0Zk5LaVdYdTQ?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "applynow.co.jp",
+          "url": "https://applynow.co.jp/news/20260909"
+        }
+      ]
     }
   ],
   "aliases": {
