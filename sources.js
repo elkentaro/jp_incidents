@@ -11,6 +11,7 @@ function replaceContent(node, children) {
 
 const copy = {
   en: {
+    supporters: "Supporters",
     eyebrow: "SOURCE TRANSPARENCY", title: "Polling sources",
     description: "The public feeds, official sites, disclosure systems, and news searches checked by the automated collector.",
     note: "A listed source is monitored for relevant reports; inclusion does not mean every page or advisory becomes an incident record.",
@@ -32,6 +33,7 @@ const copy = {
     }
   },
   ja: {
+    supporters: "サポーター",
     eyebrow: "情報源の透明性", title: "監視している情報源",
     description: "自動収集システムが確認する公開フィード、公式サイト、開示システム、ニュース検索の一覧です。",
     note: "掲載された情報源は関連情報の検出対象です。すべてのページや注意喚起がインシデントとして登録されるわけではありません。",

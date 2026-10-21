@@ -17,6 +17,7 @@ function replaceContent(node, children) {
 
 const copy = {
   en: {
+    supporters: "Supporters",
     confidenceDisclaimer: "Confidence is a source-based score, not incident severity, an AI certainty rating, or a probability of accuracy. The highest source tier sets the base: official/government 60, news/security press 50, aggregator 35, other 30, and social media 10 (no sources: 0). Each additional distinct non-social domain adds 15 points, capped at 100; search/news wrapper URLs use the recorded outlet name instead. High: 60–100; Medium: 30–59; Low: 0–29. Tiers are assigned automatically from domains, outlet names and notice-style titles/URLs and may be misclassified. Different domains can repeat the same report, so higher scores do not guarantee independent confirmation. Even 100 does not mean 100% accuracy. Verify the linked sources.",
     eyebrow: "OPEN-SOURCE INCIDENT INDEX",
     title: "Cyber incidents in Japan",
@@ -69,6 +70,7 @@ const copy = {
     levels: { high: "High", medium: "Medium", low: "Low" }
   },
   ja: {
+    supporters: "サポーター",
     confidenceDisclaimer: "信頼度は情報源に基づく点数であり、被害の深刻度、AIの確信度、正確である確率ではありません。最も高い情報源区分を基礎点とし、公式・行政発表60点、報道・セキュリティ専門メディア50点、情報集約サイト35点、その他30点、SNS10点（情報源なしは0点）とします。SNS以外の異なるドメインが1つ増えるごとに15点を加算し、100点を上限とします。検索・ニュース配信の中継URLは、記録された媒体名で数えます。高：60〜100点／中：30〜59点／低：0〜29点。区分はドメイン・媒体名・発表らしい見出しやURLで自動判定するため、誤分類の可能性があります。別ドメインでも同じ報道の転載の場合があり、高得点でも独立した裏付けを保証しません。100点でも正確性100%を意味しません。リンク先の情報源をご確認ください。",
     eyebrow: "公開情報に基づくインシデント一覧",
     title: "日本のサイバーインシデント",

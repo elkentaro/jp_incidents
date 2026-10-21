@@ -1,0 +1,22 @@
+.supporters-page { min-height: 100vh; display: flex; flex-direction: column; }
+.supporters-page main { flex: 1; }
+.supporters-content { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(260px, .7fr); gap: clamp(40px, 8vw, 120px); padding: 48px 0 80px; align-items: start; }
+.supporters-content h2 { margin-bottom: 22px; font-size: 22px; font-weight: 620; letter-spacing: -.025em; }
+.supporter-list { margin: 0; padding: 0 0 0 24px; list-style: disc; border-top: 1px solid var(--line-strong); }
+.supporter-list li::marker { color: var(--ink); font-size: 20px; }
+.supporter-list li { border-bottom: 1px solid var(--line); }
+.supporter-link { display: flex; justify-content: space-between; gap: 24px; align-items: baseline; padding: 24px 0; text-decoration: none; }
+.supporter-name { font-size: 25px; font-weight: 620; letter-spacing: -.025em; }
+.supporter-profile { color: var(--muted); font-size: 12px; }
+.supporter-link:hover .supporter-name { text-decoration: underline; text-underline-offset: 5px; }
+.support-project { border: 1px solid var(--line); background: var(--wash); padding: 28px; }
+.support-project .eyebrow { margin-bottom: 18px; color: var(--muted); font-size: 10px; }
+.support-project h2 { margin-bottom: 12px; font-size: 28px; }
+.support-project > p:not(.eyebrow) { color: var(--muted); font-size: 14px; line-height: 1.65; margin-bottom: 24px; }
+.support-button { display: block; padding: 13px 16px; background: var(--ink); color: var(--paper); font-size: 13px; font-weight: 650; line-height: 1.6; text-decoration: none; text-align: center; }
+.support-button:hover { background: #333; }
+.support-button:focus-visible, .supporter-link:focus-visible { outline: 2px solid var(--ink); outline-offset: 5px; }
+@media (max-width: 800px) {
+  .supporters-content { grid-template-columns: 1fr; gap: 38px; padding: 36px 0 56px; }
+  .support-project { padding: 24px; }
+}
