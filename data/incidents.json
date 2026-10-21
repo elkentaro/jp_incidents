@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T03:49:12+00:00",
+  "updated_at": "2026-10-21T03:50:05+00:00",
   "total": 196,
   "date_range": {
     "start": "2026-08-09",
@@ -3794,6 +3794,39 @@
       "date_basis": "discovery"
     },
     {
+      "id": "5d515273ad570e8c",
+      "published_at": "2026-10-13T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "岩井コスモ証券",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "c54d7b0032b3bb85",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/e8b09c604916701db9901eefed73e9f68cbd1702",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/e8b09c604916701db9901eefed73e9f68cbd1702"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/e8b09c604916701db9901eefed73e9f68cbd1702"
+        },
+        {
+          "name": "ライブドアニュース",
+          "url": "https://news.livedoor.com/topics/detail/32614983/"
+        }
+      ]
+    },
+    {
       "id": "cb4534acea4b4c5d",
       "published_at": "2026-10-13T15:00:00+00:00",
       "disclosed_at": null,
@@ -3947,35 +3980,6 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/117406"
-        }
-      ]
-    },
-    {
-      "id": "5d515273ad570e8c",
-      "published_at": "2026-10-13T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "岩井コスモ証券",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "c54d7b0032b3bb85",
-          "relationship": "same_organization",
-          "evidence_url": "https://news.yahoo.co.jp/articles/e8b09c604916701db9901eefed73e9f68cbd1702",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/e8b09c604916701db9901eefed73e9f68cbd1702"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/e8b09c604916701db9901eefed73e9f68cbd1702"
         }
       ]
     },
