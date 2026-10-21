@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T04:02:00+00:00",
+  "updated_at": "2026-10-21T04:02:22+00:00",
   "total": 206,
   "date_range": {
     "start": "2026-08-09",
@@ -3934,8 +3934,9 @@
         {
           "incident_id": "e7029a3cadb1b7be",
           "relationship": "affected_by",
-          "evidence_url": "https://www.shinmai.co.jp/news/article/gfkn2026102001001745",
+          "evidence_url": "https://news.yahoo.co.jp/articles/77880155a35f0bfa9c105fa32aa1a02f12c31105",
           "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/77880155a35f0bfa9c105fa32aa1a02f12c31105",
             "https://www.iwaicosmo.co.jp/news/2026/10161410.html",
             "https://www.shinmai.co.jp/news/article/gfkn2026102001001745"
           ]
@@ -3961,6 +3962,10 @@
         {
           "name": "信濃毎日新聞デジタル",
           "url": "https://www.shinmai.co.jp/news/article/gfkn2026102001001745"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/77880155a35f0bfa9c105fa32aa1a02f12c31105"
         }
       ],
       "affected_system": "トレードワークスに運用・保守を委託したインターネット取引システム",
@@ -4039,6 +4044,56 @@
       ]
     },
     {
+      "id": "e7029a3cadb1b7be",
+      "published_at": "2026-10-13T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社トレードワークス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "5d515273ad570e8c",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/77880155a35f0bfa9c105fa32aa1a02f12c31105",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/77880155a35f0bfa9c105fa32aa1a02f12c31105"
+          ]
+        },
+        {
+          "incident_id": "c54d7b0032b3bb85",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/77880155a35f0bfa9c105fa32aa1a02f12c31105",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/77880155a35f0bfa9c105fa32aa1a02f12c31105",
+            "https://www.iwaicosmo.co.jp/news/2026/10161410.html",
+            "https://www.shinmai.co.jp/news/article/gfkn2026102001001745"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Supporting incident notice",
+          "url": "https://www.iwaicosmo.co.jp/news/2026/10161410.html"
+        },
+        {
+          "name": "Supporting incident notice",
+          "url": "https://www.nikkei.com/article/DGXZQOUB1692W0W6A011C2000000/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/77880155a35f0bfa9c105fa32aa1a02f12c31105"
+        }
+      ],
+      "affected_system": "岩井コスモ証券向けインターネット取引システム",
+      "date_basis": "discovery"
+    },
+    {
       "id": "5d515273ad570e8c",
       "published_at": "2026-10-13T15:00:00+00:00",
       "disclosed_at": null,
@@ -4058,6 +4113,14 @@
           "evidence_urls": [
             "https://news.yahoo.co.jp/articles/e8b09c604916701db9901eefed73e9f68cbd1702"
           ]
+        },
+        {
+          "incident_id": "e7029a3cadb1b7be",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/77880155a35f0bfa9c105fa32aa1a02f12c31105",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/77880155a35f0bfa9c105fa32aa1a02f12c31105"
+          ]
         }
       ],
       "sources": [
@@ -4072,45 +4135,12 @@
         {
           "name": "NHKニュース",
           "url": "https://news.web.nhk/newsweb/na/nd-20261021de62520"
-        }
-      ]
-    },
-    {
-      "id": "e7029a3cadb1b7be",
-      "published_at": "2026-10-13T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "株式会社トレードワークス",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [
-        {
-          "incident_id": "c54d7b0032b3bb85",
-          "relationship": "affects",
-          "evidence_url": "https://www.shinmai.co.jp/news/article/gfkn2026102001001745",
-          "evidence_urls": [
-            "https://www.iwaicosmo.co.jp/news/2026/10161410.html",
-            "https://www.shinmai.co.jp/news/article/gfkn2026102001001745"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Supporting incident notice",
-          "url": "https://www.iwaicosmo.co.jp/news/2026/10161410.html"
         },
         {
-          "name": "Supporting incident notice",
-          "url": "https://www.nikkei.com/article/DGXZQOUB1692W0W6A011C2000000/"
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/77880155a35f0bfa9c105fa32aa1a02f12c31105"
         }
-      ],
-      "affected_system": "岩井コスモ証券向けインターネット取引システム",
-      "date_basis": "discovery"
+      ]
     },
     {
       "id": "cb4534acea4b4c5d",
