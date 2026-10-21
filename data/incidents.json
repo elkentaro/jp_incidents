@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-20T23:55:01+00:00",
-  "total": 157,
+  "updated_at": "2026-10-21T00:00:16+00:00",
+  "total": 160,
   "date_range": {
     "start": "2026-08-29",
     "end": "2026-10-20"
@@ -337,7 +337,7 @@
     },
     {
       "date": "2026-10-14",
-      "count": 14
+      "count": 16
     },
     {
       "date": "2026-10-15",
@@ -357,7 +357,7 @@
     },
     {
       "date": "2026-10-19",
-      "count": 14
+      "count": 15
     },
     {
       "date": "2026-10-20",
@@ -1002,6 +1002,26 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9MNDI5LXZZYmI1cFlpRHVWak9RQXFZZ25pUTQ1TUZSc3VLa1pEeVA1UUFZUW01OEdGS2ZvSHBDZk1iazNmc3VIVWl4amFXYzFtbHdnX0hSSzc2VklHY2JYNDlVbmFGTmhqbExqOXI2MUp4VWYxVW04Qm5Hc2FDVm8?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "087570b014bbe67a",
+      "published_at": "2026-10-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "石川県教育委員会",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 138,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "朝日新聞",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQVDBMeFFWNlo3TlZWeHJWUWdSa3pTdUFWZ0d6NjZWdzhOamozX3JaVW0yTHo0TUtKckJzbjdybURoTGtENzRUVUdPUE94QzZUUzI2Smw2dkpIaG5qeTA3ZE1wRWl0X04zVHpZOTVoZGphRFo2ZW83VXVTcUEzQ0J5bkc1aDhNUjhkdTB0bDFUMHBfTTg?oc=5"
         }
       ]
     },
@@ -2794,6 +2814,26 @@
       "date_basis": "discovery"
     },
     {
+      "id": "59a8d027c7572826",
+      "published_at": "2026-10-13T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "幼児活動研究会",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261020553396.pdf"
+        }
+      ]
+    },
+    {
       "id": "ab9ed9776864cef5",
       "published_at": "2026-10-13T15:00:00+00:00",
       "disclosed_at": null,
@@ -2975,6 +3015,36 @@
       "date_basis": "existing_record"
     },
     {
+      "id": "cb4534acea4b4c5d",
+      "published_at": "2026-10-13T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "鹿沼市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "0a08a3f6bcd30b82",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1pb1ZtNmM4Y0xVWFd4cXdTX05iRjhQYTB0a19wQUZmU2FFa09VOU1BSDZXcU9pRkt1ZHNjTGV6WWZGWk10Q0xVSTZ6WXpRX0YzamExS3RnS3hEVVU?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1pb1ZtNmM4Y0xVWFd4cXdTX05iRjhQYTB0a19wQUZmU2FFa09VOU1BSDZXcU9pRkt1ZHNjTGV6WWZGWk10Q0xVSTZ6WXpRX0YzamExS3RnS3hEVVU?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "下野新聞社",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1pb1ZtNmM4Y0xVWFd4cXdTX05iRjhQYTB0a19wQUZmU2FFa09VOU1BSDZXcU9pRkt1ZHNjTGV6WWZGWk10Q0xVSTZ6WXpRX0YzamExS3RnS3hEVVU?oc=5"
+        }
+      ]
+    },
+    {
       "id": "0a08a3f6bcd30b82",
       "published_at": "2026-10-12T15:00:00+00:00",
       "disclosed_at": null,
@@ -3107,6 +3177,14 @@
           "evidence_url": "https://www.city.taito.lg.jp/kusei/sanka/sns/taitomail/teishi20261013.html",
           "evidence_urls": [
             "https://www.city.taito.lg.jp/kusei/sanka/sns/taitomail/teishi20261013.html"
+          ]
+        },
+        {
+          "incident_id": "cb4534acea4b4c5d",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1pb1ZtNmM4Y0xVWFd4cXdTX05iRjhQYTB0a19wQUZmU2FFa09VOU1BSDZXcU9pRkt1ZHNjTGV6WWZGWk10Q0xVSTZ6WXpRX0YzamExS3RnS3hEVVU?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1pb1ZtNmM4Y0xVWFd4cXdTX05iRjhQYTB0a19wQUZmU2FFa09VOU1BSDZXcU9pRkt1ZHNjTGV6WWZGWk10Q0xVSTZ6WXpRX0YzamExS3RnS3hEVVU?oc=5"
           ]
         },
         {
