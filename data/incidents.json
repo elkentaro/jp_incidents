@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T21:19:02+00:00",
-  "total": 256,
+  "updated_at": "2026-10-21T21:25:20+00:00",
+  "total": 258,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-21"
@@ -197,7 +197,7 @@
     },
     {
       "date": "2026-09-10",
-      "count": 0
+      "count": 1
     },
     {
       "date": "2026-09-11",
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-10-21",
-      "count": 19
+      "count": 20
     },
     {
       "date": "2026-10-22",
@@ -716,6 +716,35 @@
         {
           "name": "月刊「事業構想」オンライン",
           "url": "https://www.projectdesign.jp/articles/news/df304f2c-22fc-4ae1-b40e-7a17d9e63959"
+        }
+      ]
+    },
+    {
+      "id": "3cb01ea2dcb770b4",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "熊本日日新聞社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "aa78266df70136da",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/5361a6f9b98c0ba4da2cde8ebd87c49a999c0074",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/5361a6f9b98c0ba4da2cde8ebd87c49a999c0074"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/5361a6f9b98c0ba4da2cde8ebd87c49a999c0074"
         }
       ]
     },
@@ -3467,6 +3496,14 @@
       "confidence": "high",
       "confidence_score": 100,
       "related": [
+        {
+          "incident_id": "3cb01ea2dcb770b4",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/5361a6f9b98c0ba4da2cde8ebd87c49a999c0074",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/5361a6f9b98c0ba4da2cde8ebd87c49a999c0074"
+          ]
+        },
         {
           "incident_id": "7f1b0048e5679d7e",
           "relationship": "affects",
@@ -9626,6 +9663,27 @@
       ],
       "affected_system": "Airport / highway-bus reservations through 発車オーライネット",
       "date_basis": "occurrence_start"
+    },
+    {
+      "id": "fa9a151d86eb1c1d",
+      "published_at": "2026-09-09T15:00:00+00:00",
+      "disclosed_at": "2026-10-19T15:00:00+00:00",
+      "organization": "たまのや",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/679ae0ff7797331db38b65986d7a9251aa611625"
+        }
+      ]
     },
     {
       "id": "771d425a095483bb",
