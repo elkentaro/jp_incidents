@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-21T00:29:48+00:00",
-  "total": 170,
+  "updated_at": "2026-10-21T00:43:04+00:00",
+  "total": 176,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-20"
@@ -337,7 +337,7 @@
     },
     {
       "date": "2026-10-14",
-      "count": 17
+      "count": 22
     },
     {
       "date": "2026-10-15",
@@ -345,7 +345,7 @@
     },
     {
       "date": "2026-10-16",
-      "count": 17
+      "count": 18
     },
     {
       "date": "2026-10-17",
@@ -1283,6 +1283,10 @@
         {
           "name": "株探",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9mSDBUM09UYUYtNHRBTGx3eXUtU3dqa0NRX0l3ZzR3ekFyUVdIUmFwUU5GSXdwX0ktazZDOXZpYzkyaWJDR3dsSV9KMERmb0VkNEotQ0JkcDRyZG9JTWNObA?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/f7933fce9fd300665b6dbbde95bc1f9d4d8706f7"
         }
       ]
     },
@@ -1869,6 +1873,36 @@
       ]
     },
     {
+      "id": "939b08f2c6d29308",
+      "published_at": "2026-10-15T15:00:00+00:00",
+      "disclosed_at": "2026-10-15T15:00:00+00:00",
+      "organization": "湯沢町",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.town.yuzawa.lg.jp/soshikikarasagasu/kikkakusangyoukankoubu/kikakukankouka/4/4/8110.html",
+          "evidence_urls": [
+            "https://www.town.yuzawa.lg.jp/soshikikarasagasu/kikkakusangyoukankoubu/kikakukankouka/4/4/8110.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "湯沢町役場",
+          "url": "https://www.town.yuzawa.lg.jp/soshikikarasagasu/kikkakusangyoukankoubu/kikakukankouka/4/4/8110.html"
+        }
+      ]
+    },
+    {
       "id": "f173c3a3ee0fb4ea",
       "published_at": "2026-10-15T15:00:00+00:00",
       "disclosed_at": null,
@@ -2235,6 +2269,14 @@
           "evidence_urls": [
             "https://studio.design/ja/whats-new/unauthorized-access-2026-10",
             "https://www.pref.saitama.lg.jp/a0508/news/page/news2026101603.html"
+          ]
+        },
+        {
+          "incident_id": "939b08f2c6d29308",
+          "relationship": "affects",
+          "evidence_url": "https://www.town.yuzawa.lg.jp/soshikikarasagasu/kikkakusangyoukankoubu/kikakukankouka/4/4/8110.html",
+          "evidence_urls": [
+            "https://www.town.yuzawa.lg.jp/soshikikarasagasu/kikkakusangyoukankoubu/kikakukankouka/4/4/8110.html"
           ]
         },
         {
@@ -3059,6 +3101,27 @@
       ]
     },
     {
+      "id": "0440d0e3aa68448d",
+      "published_at": "2026-10-13T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "Fivot",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 129659,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Impress Watch",
+          "url": "https://www.watch.impress.co.jp/docs/news/2148121.html"
+        }
+      ]
+    },
+    {
       "id": "3fd9e7cdb6733d2b",
       "published_at": "2026-10-13T15:00:00+00:00",
       "disclosed_at": null,
@@ -3192,6 +3255,93 @@
       "date_basis": "existing_record"
     },
     {
+      "id": "5646507935721ef4",
+      "published_at": "2026-10-13T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "志賀町",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "0a08a3f6bcd30b82",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.hokkoku.co.jp/articles/-/2258014",
+          "evidence_urls": [
+            "https://www.hokkoku.co.jp/articles/-/2258014"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "北國新聞",
+          "url": "https://www.hokkoku.co.jp/articles/-/2258014"
+        }
+      ]
+    },
+    {
+      "id": "66c8be9171c08474",
+      "published_at": "2026-10-13T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "石川県",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "0a08a3f6bcd30b82",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.hokkoku.co.jp/articles/-/2258014",
+          "evidence_urls": [
+            "https://www.hokkoku.co.jp/articles/-/2258014"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "北國新聞",
+          "url": "https://www.hokkoku.co.jp/articles/-/2258014"
+        }
+      ]
+    },
+    {
+      "id": "7d6722ce071d7a66",
+      "published_at": "2026-10-13T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "金沢市",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "0a08a3f6bcd30b82",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.hokkoku.co.jp/articles/-/2258014",
+          "evidence_urls": [
+            "https://www.hokkoku.co.jp/articles/-/2258014"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "北國新聞",
+          "url": "https://www.hokkoku.co.jp/articles/-/2258014"
+        }
+      ]
+    },
+    {
       "id": "7ea2e3a6a88f849c",
       "published_at": "2026-10-13T15:00:00+00:00",
       "disclosed_at": null,
@@ -3266,6 +3416,35 @@
         {
           "name": "下野新聞社",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1pb1ZtNmM4Y0xVWFd4cXdTX05iRjhQYTB0a19wQUZmU2FFa09VOU1BSDZXcU9pRkt1ZHNjTGV6WWZGWk10Q0xVSTZ6WXpRX0YzamExS3RnS3hEVVU?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "cc0920e31948205d",
+      "published_at": "2026-10-13T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "中能登町",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "0a08a3f6bcd30b82",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.hokkoku.co.jp/articles/-/2258014",
+          "evidence_urls": [
+            "https://www.hokkoku.co.jp/articles/-/2258014"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "北國新聞",
+          "url": "https://www.hokkoku.co.jp/articles/-/2258014"
         }
       ]
     },
@@ -3388,12 +3567,36 @@
           ]
         },
         {
+          "incident_id": "5646507935721ef4",
+          "relationship": "affects",
+          "evidence_url": "https://www.hokkoku.co.jp/articles/-/2258014",
+          "evidence_urls": [
+            "https://www.hokkoku.co.jp/articles/-/2258014"
+          ]
+        },
+        {
+          "incident_id": "66c8be9171c08474",
+          "relationship": "affects",
+          "evidence_url": "https://www.hokkoku.co.jp/articles/-/2258014",
+          "evidence_urls": [
+            "https://www.hokkoku.co.jp/articles/-/2258014"
+          ]
+        },
+        {
           "incident_id": "70b3479deadcc2a6",
           "relationship": "affects",
           "evidence_url": "https://www.arcadia.co.jp/info/4076",
           "evidence_urls": [
             "https://www.arcadia.co.jp/info/4076",
             "https://www.city.odawara.kanagawa.jp/field/disaster/disaster/topics/p42964.html"
+          ]
+        },
+        {
+          "incident_id": "7d6722ce071d7a66",
+          "relationship": "affects",
+          "evidence_url": "https://www.hokkoku.co.jp/articles/-/2258014",
+          "evidence_urls": [
+            "https://www.hokkoku.co.jp/articles/-/2258014"
           ]
         },
         {
@@ -3410,6 +3613,14 @@
           "evidence_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1pb1ZtNmM4Y0xVWFd4cXdTX05iRjhQYTB0a19wQUZmU2FFa09VOU1BSDZXcU9pRkt1ZHNjTGV6WWZGWk10Q0xVSTZ6WXpRX0YzamExS3RnS3hEVVU?oc=5",
           "evidence_urls": [
             "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1pb1ZtNmM4Y0xVWFd4cXdTX05iRjhQYTB0a19wQUZmU2FFa09VOU1BSDZXcU9pRkt1ZHNjTGV6WWZGWk10Q0xVSTZ6WXpRX0YzamExS3RnS3hEVVU?oc=5"
+          ]
+        },
+        {
+          "incident_id": "cc0920e31948205d",
+          "relationship": "affects",
+          "evidence_url": "https://www.hokkoku.co.jp/articles/-/2258014",
+          "evidence_urls": [
+            "https://www.hokkoku.co.jp/articles/-/2258014"
           ]
         },
         {
