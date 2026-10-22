@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-22T09:20:51+00:00",
+  "updated_at": "2026-10-22T09:27:30+00:00",
   "total": 292,
   "date_range": {
     "start": "2026-08-09",
@@ -370,6 +370,40 @@
   ],
   "incidents": [
     {
+      "id": "21292bd9a729dc5c",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "新日本プロレス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/3a57c1b85677a028ba0938753ad1bc86bfd887e6",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/3a57c1b85677a028ba0938753ad1bc86bfd887e6"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/3a57c1b85677a028ba0938753ad1bc86bfd887e6"
+        },
+        {
+          "name": "スポニチ Sponichi Annex",
+          "url": "https://www.sponichi.co.jp/battle/news/2026/10/22/articles/20261022s00003000301000c.html"
+        }
+      ]
+    },
+    {
       "id": "4220c745782e4b6d",
       "published_at": "2026-10-21T15:00:00+00:00",
       "disclosed_at": null,
@@ -708,36 +742,6 @@
         {
           "name": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2026/10/22/56537.html"
-        }
-      ]
-    },
-    {
-      "id": "21292bd9a729dc5c",
-      "published_at": "2026-10-21T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "新日本プロレス",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "7e647fcc0bac0b06",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/3a57c1b85677a028ba0938753ad1bc86bfd887e6",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/3a57c1b85677a028ba0938753ad1bc86bfd887e6"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/3a57c1b85677a028ba0938753ad1bc86bfd887e6"
         }
       ]
     },
@@ -7098,6 +7102,30 @@
       ]
     },
     {
+      "id": "3fd9e7cdb6733d2b",
+      "published_at": "2026-10-13T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ACCESS",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBUWkV6a0g3ZVRwV3hMTHVSWU5yUm1JV21vMjBhUE1OaGt2NktSRXhMNG1PdE9PNjRETHJOQWl6MG9hdUlpcS1Id1F1OVBYZHNWZzJYNk1CNWVxaHd3THd0ak9Hd1BKdnVwWGc?oc=5"
+        },
+        {
+          "name": "株式会社ACCESS",
+          "url": "https://www.access-company.com/ir_news/n261015/"
+        }
+      ]
+    },
+    {
       "id": "59a8d027c7572826",
       "published_at": "2026-10-13T15:00:00+00:00",
       "disclosed_at": null,
@@ -7155,26 +7183,6 @@
         {
           "name": "Impress Watch",
           "url": "https://www.watch.impress.co.jp/docs/news/2148121.html"
-        }
-      ]
-    },
-    {
-      "id": "3fd9e7cdb6733d2b",
-      "published_at": "2026-10-13T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ACCESS",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "日本経済新聞",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBUWkV6a0g3ZVRwV3hMTHVSWU5yUm1JV21vMjBhUE1OaGt2NktSRXhMNG1PdE9PNjRETHJOQWl6MG9hdUlpcS1Id1F1OVBYZHNWZzJYNk1CNWVxaHd3THd0ak9Hd1BKdnVwWGc?oc=5"
         }
       ]
     },
