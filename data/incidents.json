@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-22T02:29:34+00:00",
+  "updated_at": "2026-10-22T02:31:52+00:00",
   "total": 264,
   "date_range": {
     "start": "2026-08-09",
@@ -9202,6 +9202,35 @@
       "date_basis": "existing_record"
     },
     {
+      "id": "22f2beedd630c831",
+      "published_at": "2026-10-06T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "PingCAP",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 50000,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://pingcap.co.jp/trust-hub/security/security-update-october-2026/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/pingcap_tidb_unauthorized_access_data_leak_20261021/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/117593"
+        }
+      ]
+    },
+    {
       "id": "f764fcd74c2c165e",
       "published_at": "2026-10-06T15:00:00+00:00",
       "disclosed_at": null,
@@ -9285,31 +9314,6 @@
       ],
       "affected_system": "Reservation-related email delivery",
       "date_basis": "existing_record"
-    },
-    {
-      "id": "22f2beedd630c831",
-      "published_at": "2026-10-06T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "PingCAP",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 50000,
-      "confidence": "medium",
-      "confidence_score": 45,
-      "related": [],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://pingcap.co.jp/trust-hub/security/security-update-october-2026/"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/pingcap_tidb_unauthorized_access_data_leak_20261021/"
-        }
-      ]
     },
     {
       "id": "39ad7e559743a043",
