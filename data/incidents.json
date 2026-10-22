@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-22T07:50:21+00:00",
-  "total": 283,
+  "updated_at": "2026-10-22T08:05:06+00:00",
+  "total": 284,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-22"
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-10-21",
-      "count": 28
+      "count": 29
     },
     {
       "date": "2026-10-22",
@@ -915,6 +915,36 @@
         {
           "name": "加東市",
           "url": "https://www.city.kato.lg.jp/kakukanogoannai/machidukuriseisakubu/kikakuseisaku/seisakusuishin/kifu/18176.html"
+        }
+      ]
+    },
+    {
+      "id": "3f5dc844048205a9",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "三豊市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.mitoyo.lg.jp/kakuka/seisaku/zaisei/3_1/15420.html",
+          "evidence_urls": [
+            "https://www.city.mitoyo.lg.jp/kakuka/seisaku/zaisei/3_1/15420.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "三豊市",
+          "url": "https://www.city.mitoyo.lg.jp/kakuka/seisaku/zaisei/3_1/15420.html"
         }
       ]
     },
@@ -1640,6 +1670,14 @@
           "evidence_url": "https://www.city.gojo.lg.jp/juuyou/19902.html",
           "evidence_urls": [
             "https://www.city.gojo.lg.jp/juuyou/19902.html"
+          ]
+        },
+        {
+          "incident_id": "3f5dc844048205a9",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.mitoyo.lg.jp/kakuka/seisaku/zaisei/3_1/15420.html",
+          "evidence_urls": [
+            "https://www.city.mitoyo.lg.jp/kakuka/seisaku/zaisei/3_1/15420.html"
           ]
         },
         {
