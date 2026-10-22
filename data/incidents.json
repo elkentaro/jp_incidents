@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-22T07:20:00+00:00",
-  "total": 273,
+  "updated_at": "2026-10-22T07:28:30+00:00",
+  "total": 276,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-22"
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-10-22",
-      "count": 6
+      "count": 9
     }
   ],
   "incidents": [
@@ -426,6 +426,35 @@
         {
           "name": "Civic Force",
           "url": "https://www.civic-force.org/info/news/20261022.html"
+        }
+      ]
+    },
+    {
+      "id": "c26e266b9bc5a256",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社デイトナ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.release.tdnet.info/inbs/140120261022554714.pdf",
+          "evidence_urls": [
+            "https://www.release.tdnet.info/inbs/140120261022554714.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261022554714.pdf"
         }
       ]
     },
@@ -497,6 +526,65 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/3a57c1b85677a028ba0938753ad1bc86bfd887e6"
+        }
+      ]
+    },
+    {
+      "id": "2addd531b34f4660",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "長崎県警",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 3500,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "0a08a3f6bcd30b82",
+          "relationship": "affected_by",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/nbc/3031156",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/nbc/3031156"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/nbc/3031156"
+        }
+      ]
+    },
+    {
+      "id": "c49459f90410b9a4",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "飛騨まんが王国",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 15,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.yomiuri.co.jp/local/chubu/news/20261022-GYTNT00081/",
+          "evidence_urls": [
+            "https://www.yomiuri.co.jp/local/chubu/news/20261022-GYTNT00081/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/local/chubu/news/20261022-GYTNT00081/"
         }
       ]
     },
@@ -871,6 +959,14 @@
           "evidence_url": "https://www.pref.oita.jp/soshiki/12520/kosodateouen-passport.html",
           "evidence_urls": [
             "https://www.pref.oita.jp/soshiki/12520/kosodateouen-passport.html"
+          ]
+        },
+        {
+          "incident_id": "c26e266b9bc5a256",
+          "relationship": "affects",
+          "evidence_url": "https://www.release.tdnet.info/inbs/140120261022554714.pdf",
+          "evidence_urls": [
+            "https://www.release.tdnet.info/inbs/140120261022554714.pdf"
           ]
         },
         {
@@ -1874,6 +1970,31 @@
       ]
     },
     {
+      "id": "abdc6866dec00c43",
+      "published_at": "2026-10-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "三重県",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "other",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "三重県 / Mie",
+          "url": "https://www.pref.mie.lg.jp/TOPICS/m0015100352.htm"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/843ebc72a834f747417b299a5e370a91ba6d0076"
+        }
+      ]
+    },
+    {
       "id": "1ad4af4d81083790",
       "published_at": "2026-10-19T15:00:00+00:00",
       "disclosed_at": null,
@@ -2226,26 +2347,6 @@
         {
           "name": "佐賀県 / Saga",
           "url": "https://www.pref.saga.lg.jp/kiji003121567/index.html"
-        }
-      ]
-    },
-    {
-      "id": "abdc6866dec00c43",
-      "published_at": "2026-10-19T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "三重県",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [],
-      "sources": [
-        {
-          "name": "三重県 / Mie",
-          "url": "https://www.pref.mie.lg.jp/TOPICS/m0015100352.htm"
         }
       ]
     },
@@ -5088,6 +5189,14 @@
           ]
         },
         {
+          "incident_id": "c49459f90410b9a4",
+          "relationship": "affects",
+          "evidence_url": "https://www.yomiuri.co.jp/local/chubu/news/20261022-GYTNT00081/",
+          "evidence_urls": [
+            "https://www.yomiuri.co.jp/local/chubu/news/20261022-GYTNT00081/"
+          ]
+        },
+        {
           "incident_id": "c4df135afcce4f21",
           "relationship": "affects",
           "evidence_url": "https://studio.design/ja/whats-new/unauthorized-access-2026-10",
@@ -6879,6 +6988,14 @@
           "evidence_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92UndXalJ2TWdkY3dWQUNqTEZ0Qk4xczFEUGd3ZUt2bmtzWDFDRG5pWVk4SU5TcXpJSERqT1VpMDNodGYwb1FpRzhCUlV1ZkNNYVhEOHVLYUFtLUE?oc=5",
           "evidence_urls": [
             "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92UndXalJ2TWdkY3dWQUNqTEZ0Qk4xczFEUGd3ZUt2bmtzWDFDRG5pWVk4SU5TcXpJSERqT1VpMDNodGYwb1FpRzhCUlV1ZkNNYVhEOHVLYUFtLUE?oc=5"
+          ]
+        },
+        {
+          "incident_id": "2addd531b34f4660",
+          "relationship": "affects",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/nbc/3031156",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/nbc/3031156"
           ]
         },
         {
