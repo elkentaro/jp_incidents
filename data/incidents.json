@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-22T09:48:09+00:00",
-  "total": 293,
+  "updated_at": "2026-10-22T10:24:30+00:00",
+  "total": 295,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-22"
@@ -365,10 +365,39 @@
     },
     {
       "date": "2026-10-22",
-      "count": 19
+      "count": 21
     }
   ],
   "incidents": [
+    {
+      "id": "4220c745782e4b6d",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "カプコン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 11774247,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261022554474.pdf"
+        },
+        {
+          "name": "ASCII.jp",
+          "url": "https://ascii.jp/elem/000/004/445/4445054/"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://www.capcom.co.jp/ir/news/html/261022.html"
+        }
+      ]
+    },
     {
       "id": "21292bd9a729dc5c",
       "published_at": "2026-10-21T15:00:00+00:00",
@@ -400,31 +429,6 @@
         {
           "name": "スポニチ Sponichi Annex",
           "url": "https://www.sponichi.co.jp/battle/news/2026/10/22/articles/20261022s00003000301000c.html"
-        }
-      ]
-    },
-    {
-      "id": "4220c745782e4b6d",
-      "published_at": "2026-10-21T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "カプコン",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 11774247,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [],
-      "sources": [
-        {
-          "name": "日本取引所グループ TDnet / JPX TDnet",
-          "url": "https://www.release.tdnet.info/inbs/140120261022554474.pdf"
-        },
-        {
-          "name": "ASCII.jp",
-          "url": "https://ascii.jp/elem/000/004/445/4445054/"
         }
       ]
     },
@@ -476,6 +480,35 @@
         {
           "name": "北区 / Kita",
           "url": "https://www.city.kita.lg.jp/living/tax/1002005/1026907.html"
+        }
+      ]
+    },
+    {
+      "id": "3b4432bc847a1336",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "佐川急便",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "de9a0397ae6b57cd",
+          "relationship": "affects",
+          "evidence_url": "https://www.sakigake.jp/news/article/20261022AK0034/",
+          "evidence_urls": [
+            "https://www.sakigake.jp/news/article/20261022AK0034/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "秋田魁新報電子版",
+          "url": "https://www.sakigake.jp/news/article/20261022AK0034/"
         }
       ]
     },
@@ -701,6 +734,35 @@
         {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261022554714.pdf"
+        }
+      ]
+    },
+    {
+      "id": "de9a0397ae6b57cd",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大潟村",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "3b4432bc847a1336",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.sakigake.jp/news/article/20261022AK0034/",
+          "evidence_urls": [
+            "https://www.sakigake.jp/news/article/20261022AK0034/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "秋田魁新報電子版",
+          "url": "https://www.sakigake.jp/news/article/20261022AK0034/"
         }
       ]
     },
