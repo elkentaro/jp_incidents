@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-22T08:05:06+00:00",
-  "total": 284,
+  "updated_at": "2026-10-22T08:09:38+00:00",
+  "total": 285,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-22"
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-10-21",
-      "count": 29
+      "count": 30
     },
     {
       "date": "2026-10-22",
@@ -1535,6 +1535,36 @@
       ]
     },
     {
+      "id": "65d6cacdb07e7d97",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "加賀市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.kaga.ishikawa.jp/kurashi/furusato/16731.html",
+          "evidence_urls": [
+            "https://www.city.kaga.ishikawa.jp/kurashi/furusato/16731.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "加賀市",
+          "url": "https://www.city.kaga.ishikawa.jp/kurashi/furusato/16731.html"
+        }
+      ]
+    },
+    {
       "id": "6d11da96173d448e",
       "published_at": "2026-10-20T15:00:00+00:00",
       "disclosed_at": null,
@@ -1702,6 +1732,14 @@
           "evidence_url": "https://www.city.osaki.miyagi.jp/shisei/soshikikarasagasu/shiminkyodousuishimbu/seisakuka/4/23136.html",
           "evidence_urls": [
             "https://www.city.osaki.miyagi.jp/shisei/soshikikarasagasu/shiminkyodousuishimbu/seisakuka/4/23136.html"
+          ]
+        },
+        {
+          "incident_id": "65d6cacdb07e7d97",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.kaga.ishikawa.jp/kurashi/furusato/16731.html",
+          "evidence_urls": [
+            "https://www.city.kaga.ishikawa.jp/kurashi/furusato/16731.html"
           ]
         },
         {
