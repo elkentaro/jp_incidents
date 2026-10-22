@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-22T10:24:30+00:00",
-  "total": 295,
+  "updated_at": "2026-10-22T10:31:22+00:00",
+  "total": 297,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-22"
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-10-22",
-      "count": 21
+      "count": 23
     }
   ],
   "incidents": [
@@ -381,7 +381,7 @@
       ],
       "potential_records": 11774247,
       "confidence": "high",
-      "confidence_score": 90,
+      "confidence_score": 100,
       "related": [],
       "sources": [
         {
@@ -395,6 +395,14 @@
         {
           "name": "satimo list",
           "url": "https://www.capcom.co.jp/ir/news/html/261022.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/f1a10795beada9a8c2d7b61b206e2ae7b02def81"
+        },
+        {
+          "name": "インサイド",
+          "url": "https://www.inside-games.jp/article/2026/10/22/189640_2.html"
         }
       ]
     },
@@ -617,6 +625,35 @@
         {
           "name": "埼玉県 / Saitama",
           "url": "https://www.pref.saitama.lg.jp/b0616/news/page/news2026102202.html"
+        }
+      ]
+    },
+    {
+      "id": "88199697c33ee264",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "公益財団法人いきいき埼玉",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 1900,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.saitama.lg.jp/a0302/news/page/news2026102201.html",
+          "evidence_urls": [
+            "https://www.pref.saitama.lg.jp/a0302/news/page/news2026102201.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "埼玉県 / Saitama",
+          "url": "https://www.pref.saitama.lg.jp/a0302/news/page/news2026102201.html"
         }
       ]
     },
@@ -897,6 +934,27 @@
       ]
     },
     {
+      "id": "cbbe8cc7947fddd4",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "山梨県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3030223?display=1"
+        }
+      ]
+    },
+    {
       "id": "87cff2bff2e55c4c",
       "published_at": "2026-10-21T15:00:00+00:00",
       "disclosed_at": "2026-10-21T15:00:00+00:00",
@@ -1077,6 +1135,14 @@
           "evidence_url": "https://tokamachi.yukiguni.town/l-news/238042.html",
           "evidence_urls": [
             "https://tokamachi.yukiguni.town/l-news/238042.html"
+          ]
+        },
+        {
+          "incident_id": "88199697c33ee264",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.saitama.lg.jp/a0302/news/page/news2026102201.html",
+          "evidence_urls": [
+            "https://www.pref.saitama.lg.jp/a0302/news/page/news2026102201.html"
           ]
         },
         {
