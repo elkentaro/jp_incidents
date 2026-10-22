@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-22T04:55:58+00:00",
-  "total": 269,
+  "updated_at": "2026-10-22T06:56:59+00:00",
+  "total": 270,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-22"
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-10-22",
-      "count": 3
+      "count": 4
     }
   ],
   "incidents": [
@@ -396,6 +396,36 @@
         {
           "name": "北区 / Kita",
           "url": "https://www.city.kita.lg.jp/living/tax/1002005/1026907.html"
+        }
+      ]
+    },
+    {
+      "id": "41bddacedb87f195",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "Civic Force",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.civic-force.org/info/news/20261022.html",
+          "evidence_urls": [
+            "https://www.civic-force.org/info/news/20261022.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Civic Force",
+          "url": "https://www.civic-force.org/info/news/20261022.html"
         }
       ]
     },
@@ -1227,6 +1257,14 @@
           "evidence_url": "https://www.city.gojo.lg.jp/juuyou/19902.html",
           "evidence_urls": [
             "https://www.city.gojo.lg.jp/juuyou/19902.html"
+          ]
+        },
+        {
+          "incident_id": "41bddacedb87f195",
+          "relationship": "affects",
+          "evidence_url": "https://www.civic-force.org/info/news/20261022.html",
+          "evidence_urls": [
+            "https://www.civic-force.org/info/news/20261022.html"
           ]
         },
         {
