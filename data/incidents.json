@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-22T10:39:16+00:00",
-  "total": 297,
+  "updated_at": "2026-10-22T10:44:10+00:00",
+  "total": 298,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-22"
@@ -341,7 +341,7 @@
     },
     {
       "date": "2026-10-16",
-      "count": 22
+      "count": 23
     },
     {
       "date": "2026-10-17",
@@ -5592,6 +5592,35 @@
       ]
     },
     {
+      "id": "2c7973528a7563ec",
+      "published_at": "2026-10-15T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社アイシン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 3396,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.aisin.com/jp/news/2026/010729.html",
+          "evidence_urls": [
+            "https://www.aisin.com/jp/news/2026/010729.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "アイシン / AISIN",
+          "url": "https://www.aisin.com/jp/news/2026/010729.html"
+        }
+      ]
+    },
+    {
       "id": "912b38db2059ec17",
       "published_at": "2026-10-15T15:00:00+00:00",
       "disclosed_at": null,
@@ -5817,6 +5846,14 @@
           "evidence_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5sNXpRYVNCNUxoVDctT1MyZk8wQ3V5VElvRHpseGxzSjZ6a2JvaERQdllEeVJVQ0dMR1J4U0NUUjdLWFhja01aRWJ6dTVoQ3RxQ3lrVWFJeVpfMUZpVUE?oc=5",
           "evidence_urls": [
             "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5sNXpRYVNCNUxoVDctT1MyZk8wQ3V5VElvRHpseGxzSjZ6a2JvaERQdllEeVJVQ0dMR1J4U0NUUjdLWFhja01aRWJ6dTVoQ3RxQ3lrVWFJeVpfMUZpVUE?oc=5"
+          ]
+        },
+        {
+          "incident_id": "2c7973528a7563ec",
+          "relationship": "affects",
+          "evidence_url": "https://www.aisin.com/jp/news/2026/010729.html",
+          "evidence_urls": [
+            "https://www.aisin.com/jp/news/2026/010729.html"
           ]
         },
         {
