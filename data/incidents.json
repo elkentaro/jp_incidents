@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-22T19:16:03+00:00",
-  "total": 318,
+  "updated_at": "2026-10-22T19:17:51+00:00",
+  "total": 321,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-22"
@@ -357,11 +357,11 @@
     },
     {
       "date": "2026-10-21",
-      "count": 31
+      "count": 33
     },
     {
       "date": "2026-10-22",
-      "count": 32
+      "count": 33
     },
     {
       "date": "2026-10-23",
@@ -481,6 +481,39 @@
       ]
     },
     {
+      "id": "34f25f912c372e1f",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "バルテック",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [],
+      "sources": [
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVBQ05W9VBQUTIL005M.html"
+        },
+        {
+          "name": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2150396.html"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVBQ23Q9VBQUTIL01RM.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6a0552f2b7553e9dcba4a3f3770aab26b04bf3be"
+        }
+      ]
+    },
+    {
       "id": "21292bd9a729dc5c",
       "published_at": "2026-10-21T15:00:00+00:00",
       "disclosed_at": null,
@@ -511,6 +544,10 @@
         {
           "name": "スポニチ Sponichi Annex",
           "url": "https://www.sponichi.co.jp/battle/news/2026/10/22/articles/20261022s00003000301000c.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/3a57c1b85677a028ba0938753ad1bc86bfd887e6/images/000"
         }
       ]
     },
@@ -590,35 +627,6 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/4b44ec4015653ca242b30a6a45faa5742b758490"
-        }
-      ]
-    },
-    {
-      "id": "34f25f912c372e1f",
-      "published_at": "2026-10-21T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "バルテック",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [],
-      "sources": [
-        {
-          "name": "朝日新聞",
-          "url": "https://www.asahi.com/articles/ASVBQ05W9VBQUTIL005M.html"
-        },
-        {
-          "name": "INTERNET Watch",
-          "url": "https://internet.watch.impress.co.jp/docs/news/2150396.html"
-        },
-        {
-          "name": "朝日新聞",
-          "url": "https://www.asahi.com/articles/ASVBQ23Q9VBQUTIL01RM.html"
         }
       ]
     },
@@ -1070,6 +1078,36 @@
         {
           "name": "デジタル庁 / Digital Agency",
           "url": "https://www.digital.go.jp/press/a0a8f66c-b32d-4695-9372-bcd5d4280f22"
+        }
+      ]
+    },
+    {
+      "id": "fb9e1d5ed6cbaaa8",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "台東区",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.taito.lg.jp/kusei/zaisei/kifu/furusatoinfo.html",
+          "evidence_urls": [
+            "https://www.city.taito.lg.jp/kusei/zaisei/kifu/furusatoinfo.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "台東区 / Taito",
+          "url": "https://www.city.taito.lg.jp/kusei/zaisei/kifu/furusatoinfo.html"
         }
       ]
     },
@@ -1793,6 +1831,64 @@
         {
           "name": "plasticjournal.net",
           "url": "https://plasticjournal.net/news/25490.html"
+        }
+      ]
+    },
+    {
+      "id": "600682fb24fe75cc",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "長崎市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.ncctv.co.jp/news/article/16981760",
+          "evidence_urls": [
+            "https://www.ncctv.co.jp/news/article/16981760"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "NCC長崎文化放送",
+          "url": "https://www.ncctv.co.jp/news/article/16981760"
+        }
+      ]
+    },
+    {
+      "id": "7d1ab66c3b3e4e78",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "小田急電鉄",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.ncctv.co.jp/news/article/16981760",
+          "evidence_urls": [
+            "https://www.ncctv.co.jp/news/article/16981760"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "NCC長崎文化放送",
+          "url": "https://www.ncctv.co.jp/news/article/16981760"
         }
       ]
     },
@@ -2650,6 +2746,14 @@
           "evidence_url": "https://www.r-yuuki.jp/2026/10/35582/",
           "evidence_urls": [
             "https://www.r-yuuki.jp/2026/10/35582/"
+          ]
+        },
+        {
+          "incident_id": "fb9e1d5ed6cbaaa8",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.taito.lg.jp/kusei/zaisei/kifu/furusatoinfo.html",
+          "evidence_urls": [
+            "https://www.city.taito.lg.jp/kusei/zaisei/kifu/furusatoinfo.html"
           ]
         }
       ],
@@ -6230,6 +6334,14 @@
           ]
         },
         {
+          "incident_id": "600682fb24fe75cc",
+          "relationship": "affects",
+          "evidence_url": "https://www.ncctv.co.jp/news/article/16981760",
+          "evidence_urls": [
+            "https://www.ncctv.co.jp/news/article/16981760"
+          ]
+        },
+        {
           "incident_id": "658df23c9dccd4ae",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/ff0bd5e966aaaab250e12442965d0b3ca333904a",
@@ -6244,6 +6356,14 @@
           "evidence_urls": [
             "https://news.yahoo.co.jp/articles/6add434cf419b442e53ccfc9a124468888ae09f0",
             "https://news.yahoo.co.jp/articles/761bc962528d093f827e2bc6f6c332fc5aa34e8c"
+          ]
+        },
+        {
+          "incident_id": "7d1ab66c3b3e4e78",
+          "relationship": "affects",
+          "evidence_url": "https://www.ncctv.co.jp/news/article/16981760",
+          "evidence_urls": [
+            "https://www.ncctv.co.jp/news/article/16981760"
           ]
         },
         {
