@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-22T21:15:57+00:00",
+  "updated_at": "2026-10-22T21:24:57+00:00",
   "total": 325,
   "date_range": {
     "start": "2026-08-09",
@@ -481,6 +481,86 @@
       ]
     },
     {
+      "id": "21292bd9a729dc5c",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "新日本プロレス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/3a57c1b85677a028ba0938753ad1bc86bfd887e6",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/3a57c1b85677a028ba0938753ad1bc86bfd887e6"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/3a57c1b85677a028ba0938753ad1bc86bfd887e6"
+        },
+        {
+          "name": "スポニチ Sponichi Annex",
+          "url": "https://www.sponichi.co.jp/battle/news/2026/10/22/articles/20261022s00003000301000c.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/3a57c1b85677a028ba0938753ad1bc86bfd887e6/images/000"
+        },
+        {
+          "name": "スポニチ Sponichi Annex",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOOTk3UU44TTk2TnJlZndFSE9meEloSG82dHhNcm1HbE9FcEt3Vm8zeW9sVXJCZkdId3d5S3ZCc1k1UUVQdE1KLVBmUWJUQ25UNW9MSkF3Q2pURkJ4Q1gtdXNyMHZMSFBFNml4azNfdDYxRVl3ZGN6X0FGdkF3czRPSG84WkJpMHk1bnlpQQ?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "bbea7fcc586198f2",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "JR四国",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 30000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/69cea2bef958d7cd93c31562574963d0d731b52b",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/69cea2bef958d7cd93c31562574963d0d731b52b"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/69cea2bef958d7cd93c31562574963d0d731b52b"
+        },
+        {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp/n/jrt/category/society/jrede2e1f7e1ed425996d27148f4f4984e"
+        },
+        {
+          "name": "JR四国 / JR Shikoku",
+          "url": "https://www.jr-shikoku.co.jp/emc_info/assets/2026/10/22/0d2c20563ba3a1dafd421b6e36d48dad53dcd273.pdf"
+        }
+      ]
+    },
+    {
       "id": "34f25f912c372e1f",
       "published_at": "2026-10-21T15:00:00+00:00",
       "disclosed_at": null,
@@ -510,44 +590,6 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/6a0552f2b7553e9dcba4a3f3770aab26b04bf3be"
-        }
-      ]
-    },
-    {
-      "id": "21292bd9a729dc5c",
-      "published_at": "2026-10-21T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "新日本プロレス",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [
-        {
-          "incident_id": "7e647fcc0bac0b06",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/3a57c1b85677a028ba0938753ad1bc86bfd887e6",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/3a57c1b85677a028ba0938753ad1bc86bfd887e6"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/3a57c1b85677a028ba0938753ad1bc86bfd887e6"
-        },
-        {
-          "name": "スポニチ Sponichi Annex",
-          "url": "https://www.sponichi.co.jp/battle/news/2026/10/22/articles/20261022s00003000301000c.html"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/3a57c1b85677a028ba0938753ad1bc86bfd887e6/images/000"
         }
       ]
     },
@@ -627,40 +669,6 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/4b44ec4015653ca242b30a6a45faa5742b758490"
-        }
-      ]
-    },
-    {
-      "id": "bbea7fcc586198f2",
-      "published_at": "2026-10-21T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "JR四国",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 30000,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [
-        {
-          "incident_id": "7e647fcc0bac0b06",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/69cea2bef958d7cd93c31562574963d0d731b52b",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/69cea2bef958d7cd93c31562574963d0d731b52b"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/69cea2bef958d7cd93c31562574963d0d731b52b"
-        },
-        {
-          "name": "日テレNEWS NNN",
-          "url": "https://news.ntv.co.jp/n/jrt/category/society/jrede2e1f7e1ed425996d27148f4f4984e"
         }
       ]
     },
