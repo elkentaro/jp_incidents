@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-22T02:31:52+00:00",
-  "total": 264,
+  "updated_at": "2026-10-22T02:50:49+00:00",
+  "total": 265,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-21"
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-10-21",
-      "count": 22
+      "count": 23
     },
     {
       "date": "2026-10-22",
@@ -705,6 +705,36 @@
         {
           "name": "plasticjournal.net",
           "url": "https://plasticjournal.net/news/25490.html"
+        }
+      ]
+    },
+    {
+      "id": "a5f8cce4df6763e2",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "いすみ市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.isumi.lg.jp/soshikikarasagasu/suisanshokoka/1_5/7870.html",
+          "evidence_urls": [
+            "https://www.city.isumi.lg.jp/soshikikarasagasu/suisanshokoka/1_5/7870.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "いすみ市",
+          "url": "https://www.city.isumi.lg.jp/soshikikarasagasu/suisanshokoka/1_5/7870.html"
         }
       ]
     },
@@ -1154,6 +1184,14 @@
           "evidence_url": "https://www.pref.saga.lg.jp/kiji003121567/index.html",
           "evidence_urls": [
             "https://www.pref.saga.lg.jp/kiji003121567/index.html"
+          ]
+        },
+        {
+          "incident_id": "a5f8cce4df6763e2",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.isumi.lg.jp/soshikikarasagasu/suisanshokoka/1_5/7870.html",
+          "evidence_urls": [
+            "https://www.city.isumi.lg.jp/soshikikarasagasu/suisanshokoka/1_5/7870.html"
           ]
         },
         {
