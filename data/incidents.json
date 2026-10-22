@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-22T07:28:30+00:00",
-  "total": 276,
+  "updated_at": "2026-10-22T07:38:51+00:00",
+  "total": 282,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-22"
@@ -361,11 +361,11 @@
     },
     {
       "date": "2026-10-21",
-      "count": 23
+      "count": 27
     },
     {
       "date": "2026-10-22",
-      "count": 9
+      "count": 11
     }
   ],
   "incidents": [
@@ -426,6 +426,35 @@
         {
           "name": "Civic Force",
           "url": "https://www.civic-force.org/info/news/20261022.html"
+        }
+      ]
+    },
+    {
+      "id": "89396fd727ea99eb",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "鮭川村",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.vill.sakegawa.yamagata.jp/topics/1775",
+          "evidence_urls": [
+            "https://www.vill.sakegawa.yamagata.jp/topics/1775"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "鮭川村",
+          "url": "https://www.vill.sakegawa.yamagata.jp/topics/1775"
         }
       ]
     },
@@ -619,6 +648,36 @@
       ]
     },
     {
+      "id": "cd710c0242b6096a",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "北海道沼田町",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.town.numata.hokkaido.jp/section/soumu/c77jgl0000001ovk.html",
+          "evidence_urls": [
+            "https://www.town.numata.hokkaido.jp/section/soumu/c77jgl0000001ovk.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "北海道沼田町",
+          "url": "https://www.town.numata.hokkaido.jp/section/soumu/c77jgl0000001ovk.html"
+        }
+      ]
+    },
+    {
       "id": "5132d5e78b41b9cf",
       "published_at": "2026-10-20T15:00:00+00:00",
       "disclosed_at": null,
@@ -648,6 +707,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/db882f7966a26fb369f6e051358b5f64a516f0fe"
+        },
+        {
+          "name": "Yahoo!ファイナンス",
+          "url": "https://finance.yahoo.co.jp/news/detail/3fda530ef01a7a101117a391a457223943a293ad"
         }
       ]
     },
@@ -986,6 +1049,36 @@
       ]
     },
     {
+      "id": "9213e2bce6dbf686",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "那珂市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.naka.lg.jp/gyousei/kifu/page011868.html",
+          "evidence_urls": [
+            "https://www.city.naka.lg.jp/gyousei/kifu/page011868.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "那珂市",
+          "url": "https://www.city.naka.lg.jp/gyousei/kifu/page011868.html"
+        }
+      ]
+    },
+    {
       "id": "a5f8cce4df6763e2",
       "published_at": "2026-10-20T15:00:00+00:00",
       "disclosed_at": null,
@@ -1042,6 +1135,36 @@
         {
           "name": "大分県 / Oita",
           "url": "https://www.pref.oita.jp/soshiki/12520/kosodateouen-passport.html"
+        }
+      ]
+    },
+    {
+      "id": "e4b28407cb928318",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "上富田町",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "http://www.town.kamitonda.lg.jp/soshiki/shinkou/kifukin/5433.html",
+          "evidence_urls": [
+            "http://www.town.kamitonda.lg.jp/soshiki/shinkou/kifukin/5433.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "上富田町",
+          "url": "http://www.town.kamitonda.lg.jp/soshiki/shinkou/kifukin/5433.html"
         }
       ]
     },
@@ -1361,6 +1484,73 @@
       ]
     },
     {
+      "id": "6d11da96173d448e",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "立山町",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.town.tateyama.toyama.jp/soshikikarasagasu/kikakuseisakuka/kikakukohogakari/3/2_1/12351.html",
+          "evidence_urls": [
+            "https://www.town.tateyama.toyama.jp/soshikikarasagasu/kikakuseisakuka/kikakukohogakari/3/2_1/12351.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "立山町",
+          "url": "https://www.town.tateyama.toyama.jp/soshikikarasagasu/kikakuseisakuka/kikakukohogakari/3/2_1/12351.html"
+        }
+      ]
+    },
+    {
+      "id": "9ecfafb6c9298236",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "八戸市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/kohotokeika/cp_g/4/26929.html",
+          "evidence_urls": [
+            "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/kohotokeika/cp_g/4/26929.html"
+          ]
+        },
+        {
+          "incident_id": "43869c04573b5c1b",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/kohotokeika/cp_g/4/26929.html",
+          "evidence_urls": [
+            "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/kohotokeika/cp_g/4/26929.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "八戸市",
+          "url": "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/kohotokeika/cp_g/4/26929.html"
+        }
+      ]
+    },
+    {
       "id": "0eaef1bd861f21f3",
       "published_at": "2026-10-19T15:00:00+00:00",
       "disclosed_at": null,
@@ -1456,6 +1646,14 @@
           ]
         },
         {
+          "incident_id": "6d11da96173d448e",
+          "relationship": "affects",
+          "evidence_url": "https://www.town.tateyama.toyama.jp/soshikikarasagasu/kikakuseisakuka/kikakukohogakari/3/2_1/12351.html",
+          "evidence_urls": [
+            "https://www.town.tateyama.toyama.jp/soshikikarasagasu/kikakuseisakuka/kikakukohogakari/3/2_1/12351.html"
+          ]
+        },
+        {
           "incident_id": "7689ffc7a793d1f6",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE42c1ExSDl4UmppbXRLUHV2Yl84Rk83cEpfbFUwYmt3ZVo4MVowOG85bjBTUGtwcnRNVURYcVJKQ0dzUzdLeFFzTFNial9rNllvWUNfa1F2cUZnajlFR19iSmZFNy1SaHNVZkU3QUN0OTRYRXlvdFRMM2JMNi11T1E?oc=5",
@@ -1472,11 +1670,35 @@
           ]
         },
         {
+          "incident_id": "89396fd727ea99eb",
+          "relationship": "affects",
+          "evidence_url": "https://www.vill.sakegawa.yamagata.jp/topics/1775",
+          "evidence_urls": [
+            "https://www.vill.sakegawa.yamagata.jp/topics/1775"
+          ]
+        },
+        {
           "incident_id": "8d27708b585ad449",
           "relationship": "affects",
           "evidence_url": "https://www.pref.saga.lg.jp/kiji003121567/index.html",
           "evidence_urls": [
             "https://www.pref.saga.lg.jp/kiji003121567/index.html"
+          ]
+        },
+        {
+          "incident_id": "9213e2bce6dbf686",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.naka.lg.jp/gyousei/kifu/page011868.html",
+          "evidence_urls": [
+            "https://www.city.naka.lg.jp/gyousei/kifu/page011868.html"
+          ]
+        },
+        {
+          "incident_id": "9ecfafb6c9298236",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/kohotokeika/cp_g/4/26929.html",
+          "evidence_urls": [
+            "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/kohotokeika/cp_g/4/26929.html"
           ]
         },
         {
@@ -1536,6 +1758,14 @@
           ]
         },
         {
+          "incident_id": "cd710c0242b6096a",
+          "relationship": "affects",
+          "evidence_url": "https://www.town.numata.hokkaido.jp/section/soumu/c77jgl0000001ovk.html",
+          "evidence_urls": [
+            "https://www.town.numata.hokkaido.jp/section/soumu/c77jgl0000001ovk.html"
+          ]
+        },
+        {
           "incident_id": "cf4d93f326f1b4fa",
           "relationship": "affects",
           "evidence_url": "https://www.town.hatoyama.saitama.jp/gyousei/furusato/page004623.html",
@@ -1549,6 +1779,14 @@
           "evidence_url": "https://www.pref.gunma.jp/site/furusatozei/779930.html",
           "evidence_urls": [
             "https://www.pref.gunma.jp/site/furusatozei/779930.html"
+          ]
+        },
+        {
+          "incident_id": "e4b28407cb928318",
+          "relationship": "affects",
+          "evidence_url": "http://www.town.kamitonda.lg.jp/soshiki/shinkou/kifukin/5433.html",
+          "evidence_urls": [
+            "http://www.town.kamitonda.lg.jp/soshiki/shinkou/kifukin/5433.html"
           ]
         },
         {
@@ -2560,6 +2798,14 @@
           "evidence_url": "https://news.yahoo.co.jp/articles/434f6dc5432e1698132bdb51dc82357782859e64",
           "evidence_urls": [
             "https://news.yahoo.co.jp/articles/434f6dc5432e1698132bdb51dc82357782859e64"
+          ]
+        },
+        {
+          "incident_id": "9ecfafb6c9298236",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/kohotokeika/cp_g/4/26929.html",
+          "evidence_urls": [
+            "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/kohotokeika/cp_g/4/26929.html"
           ]
         }
       ],
