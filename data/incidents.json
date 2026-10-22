@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-22T01:18:03+00:00",
+  "updated_at": "2026-10-22T01:21:26+00:00",
   "total": 264,
   "date_range": {
     "start": "2026-08-09",
@@ -443,6 +443,39 @@
       ]
     },
     {
+      "id": "3cb01ea2dcb770b4",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "熊本日日新聞社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 1125,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "aa78266df70136da",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/5361a6f9b98c0ba4da2cde8ebd87c49a999c0074",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/5361a6f9b98c0ba4da2cde8ebd87c49a999c0074"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/5361a6f9b98c0ba4da2cde8ebd87c49a999c0074"
+        },
+        {
+          "name": "熊本日日新聞社",
+          "url": "https://kumanichi.com/articles/2048643"
+        }
+      ]
+    },
+    {
       "id": "6435a5b4842e2abd",
       "published_at": "2026-10-20T15:00:00+00:00",
       "disclosed_at": null,
@@ -732,35 +765,6 @@
         {
           "name": "月刊「事業構想」オンライン",
           "url": "https://www.projectdesign.jp/articles/news/df304f2c-22fc-4ae1-b40e-7a17d9e63959"
-        }
-      ]
-    },
-    {
-      "id": "3cb01ea2dcb770b4",
-      "published_at": "2026-10-20T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "熊本日日新聞社",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 1125,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "aa78266df70136da",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/5361a6f9b98c0ba4da2cde8ebd87c49a999c0074",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/5361a6f9b98c0ba4da2cde8ebd87c49a999c0074"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/5361a6f9b98c0ba4da2cde8ebd87c49a999c0074"
         }
       ]
     },
