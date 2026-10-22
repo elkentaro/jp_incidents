@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-22T09:27:30+00:00",
-  "total": 292,
+  "updated_at": "2026-10-22T09:48:09+00:00",
+  "total": 293,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-22"
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-10-22",
-      "count": 18
+      "count": 19
     }
   ],
   "incidents": [
@@ -775,6 +775,36 @@
       ]
     },
     {
+      "id": "bbea7fcc586198f2",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "JR四国",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 30000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/69cea2bef958d7cd93c31562574963d0d731b52b",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/69cea2bef958d7cd93c31562574963d0d731b52b"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/69cea2bef958d7cd93c31562574963d0d731b52b"
+        }
+      ]
+    },
+    {
       "id": "c49459f90410b9a4",
       "published_at": "2026-10-21T15:00:00+00:00",
       "disclosed_at": null,
@@ -1001,6 +1031,14 @@
           "evidence_url": "https://www.pref.wakayama.lg.jp/prefg/022200/d00223187.html",
           "evidence_urls": [
             "https://www.pref.wakayama.lg.jp/prefg/022200/d00223187.html"
+          ]
+        },
+        {
+          "incident_id": "bbea7fcc586198f2",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/69cea2bef958d7cd93c31562574963d0d731b52b",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/69cea2bef958d7cd93c31562574963d0d731b52b"
           ]
         },
         {
