@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-22T10:31:22+00:00",
+  "updated_at": "2026-10-22T10:39:16+00:00",
   "total": 297,
   "date_range": {
     "start": "2026-08-09",
@@ -403,6 +403,10 @@
         {
           "name": "インサイド",
           "url": "https://www.inside-games.jp/article/2026/10/22/189640_2.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/2d939740c0efb71fc512085f57c33005f6978bba"
         }
       ]
     },
@@ -437,6 +441,73 @@
         {
           "name": "スポニチ Sponichi Annex",
           "url": "https://www.sponichi.co.jp/battle/news/2026/10/22/articles/20261022s00003000301000c.html"
+        }
+      ]
+    },
+    {
+      "id": "2addd531b34f4660",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "長崎県警",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 3500,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "0a08a3f6bcd30b82",
+          "relationship": "affected_by",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/nbc/3031156",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/nbc/3031156"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/nbc/3031156"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/8dd6e50d2a4efaed0e1f3fca3f852e08238726b2"
+        }
+      ]
+    },
+    {
+      "id": "bbea7fcc586198f2",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "JR四国",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 30000,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/69cea2bef958d7cd93c31562574963d0d731b52b",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/69cea2bef958d7cd93c31562574963d0d731b52b"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/69cea2bef958d7cd93c31562574963d0d731b52b"
+        },
+        {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp/n/jrt/category/society/jrede2e1f7e1ed425996d27148f4f4984e"
         }
       ]
     },
@@ -841,65 +912,6 @@
         {
           "name": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2026/10/22/56537.html"
-        }
-      ]
-    },
-    {
-      "id": "2addd531b34f4660",
-      "published_at": "2026-10-21T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "長崎県警",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 3500,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "0a08a3f6bcd30b82",
-          "relationship": "affected_by",
-          "evidence_url": "https://newsdig.tbs.co.jp/articles/nbc/3031156",
-          "evidence_urls": [
-            "https://newsdig.tbs.co.jp/articles/nbc/3031156"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "TBS NEWS DIG",
-          "url": "https://newsdig.tbs.co.jp/articles/nbc/3031156"
-        }
-      ]
-    },
-    {
-      "id": "bbea7fcc586198f2",
-      "published_at": "2026-10-21T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "JR四国",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 30000,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "7e647fcc0bac0b06",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/69cea2bef958d7cd93c31562574963d0d731b52b",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/69cea2bef958d7cd93c31562574963d0d731b52b"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/69cea2bef958d7cd93c31562574963d0d731b52b"
         }
       ]
     },
@@ -2783,6 +2795,48 @@
       ]
     },
     {
+      "id": "43869c04573b5c1b",
+      "published_at": "2026-10-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "八戸市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 49,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/434f6dc5432e1698132bdb51dc82357782859e64",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/434f6dc5432e1698132bdb51dc82357782859e64"
+          ]
+        },
+        {
+          "incident_id": "9ecfafb6c9298236",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/kohotokeika/cp_g/4/26929.html",
+          "evidence_urls": [
+            "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/kohotokeika/cp_g/4/26929.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/434f6dc5432e1698132bdb51dc82357782859e64"
+        },
+        {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp/n/rab/category/society/ra66059c3f7bfa4b13a956d477c966bf77"
+        }
+      ]
+    },
+    {
       "id": "04791f78ba6dd08b",
       "published_at": "2026-10-19T15:00:00+00:00",
       "disclosed_at": null,
@@ -3262,44 +3316,6 @@
         {
           "name": "朝日新聞",
           "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1GcW1nckdnWXBXanZCUlowbFU4Mm1XWXRIc2JlcW5pVkxNUjhfdDdWbnQ5ZFJ2WjNwX3Y0SGtBLU9LX1R1NWNhWmNReEhQa19xc0tIX0dHa2F6M0JibF9QWDBENW5YX0U?oc=5"
-        }
-      ]
-    },
-    {
-      "id": "43869c04573b5c1b",
-      "published_at": "2026-10-19T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "八戸市",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 49,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "671c427eadb6fc63",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/434f6dc5432e1698132bdb51dc82357782859e64",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/434f6dc5432e1698132bdb51dc82357782859e64"
-          ]
-        },
-        {
-          "incident_id": "9ecfafb6c9298236",
-          "relationship": "same_organization",
-          "evidence_url": "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/kohotokeika/cp_g/4/26929.html",
-          "evidence_urls": [
-            "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/kohotokeika/cp_g/4/26929.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/434f6dc5432e1698132bdb51dc82357782859e64"
         }
       ]
     },
