@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-22T19:17:51+00:00",
-  "total": 321,
+  "updated_at": "2026-10-22T20:15:59+00:00",
+  "total": 322,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-22"
@@ -357,7 +357,7 @@
     },
     {
       "date": "2026-10-21",
-      "count": 33
+      "count": 34
     },
     {
       "date": "2026-10-22",
@@ -1499,6 +1499,14 @@
           ]
         },
         {
+          "incident_id": "a1c2068a299d91fb",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.oita.jp/site/kenkozyumyo-nipponichi-oita/altokoita-kyoryokutenn.html",
+          "evidence_urls": [
+            "https://www.pref.oita.jp/site/kenkozyumyo-nipponichi-oita/altokoita-kyoryokutenn.html"
+          ]
+        },
+        {
           "incident_id": "b20f594030b7930a",
           "relationship": "affects",
           "evidence_url": "https://www.pref.oita.jp/soshiki/12520/kosodateouen-passport.html",
@@ -1919,6 +1927,35 @@
         {
           "name": "那珂市",
           "url": "https://www.city.naka.lg.jp/gyousei/kifu/page011868.html"
+        }
+      ]
+    },
+    {
+      "id": "a1c2068a299d91fb",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大分県：あるとっく",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.oita.jp/site/kenkozyumyo-nipponichi-oita/altokoita-kyoryokutenn.html",
+          "evidence_urls": [
+            "https://www.pref.oita.jp/site/kenkozyumyo-nipponichi-oita/altokoita-kyoryokutenn.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "大分県 / Oita",
+          "url": "https://www.pref.oita.jp/site/kenkozyumyo-nipponichi-oita/altokoita-kyoryokutenn.html"
         }
       ]
     },
