@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-22T06:56:59+00:00",
-  "total": 270,
+  "updated_at": "2026-10-22T07:20:00+00:00",
+  "total": 273,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-22"
@@ -337,7 +337,7 @@
     },
     {
       "date": "2026-10-15",
-      "count": 21
+      "count": 22
     },
     {
       "date": "2026-10-16",
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-10-22",
-      "count": 4
+      "count": 6
     }
   ],
   "incidents": [
@@ -467,6 +467,66 @@
         {
           "name": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2026/10/22/56537.html"
+        }
+      ]
+    },
+    {
+      "id": "21292bd9a729dc5c",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "新日本プロレス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/3a57c1b85677a028ba0938753ad1bc86bfd887e6",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/3a57c1b85677a028ba0938753ad1bc86bfd887e6"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/3a57c1b85677a028ba0938753ad1bc86bfd887e6"
+        }
+      ]
+    },
+    {
+      "id": "87cff2bff2e55c4c",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": "2026-10-21T15:00:00+00:00",
+      "organization": "十日町市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 599,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://tokamachi.yukiguni.town/l-news/238042.html",
+          "evidence_urls": [
+            "https://tokamachi.yukiguni.town/l-news/238042.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "十日町タウン情報",
+          "url": "https://tokamachi.yukiguni.town/l-news/238042.html"
         }
       ]
     },
@@ -782,11 +842,27 @@
       "confidence_score": 60,
       "related": [
         {
+          "incident_id": "21292bd9a729dc5c",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/3a57c1b85677a028ba0938753ad1bc86bfd887e6",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/3a57c1b85677a028ba0938753ad1bc86bfd887e6"
+          ]
+        },
+        {
           "incident_id": "53ec72ba13cb644f",
           "relationship": "affects",
           "evidence_url": "https://plasticjournal.net/news/25490.html",
           "evidence_urls": [
             "https://plasticjournal.net/news/25490.html"
+          ]
+        },
+        {
+          "incident_id": "87cff2bff2e55c4c",
+          "relationship": "affects",
+          "evidence_url": "https://tokamachi.yukiguni.town/l-news/238042.html",
+          "evidence_urls": [
+            "https://tokamachi.yukiguni.town/l-news/238042.html"
           ]
         },
         {
@@ -5130,7 +5206,16 @@
       "potential_records": 8800,
       "confidence": "high",
       "confidence_score": 100,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "114f15196d2af53c",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/7ca27418cd7e005d4b3fa421929e302e7addd758",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/7ca27418cd7e005d4b3fa421929e302e7addd758"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "朝日新聞",
@@ -5712,6 +5797,35 @@
       ],
       "affected_system": "Highway-bus reservations through 発車オーライネット",
       "date_basis": "existing_record"
+    },
+    {
+      "id": "114f15196d2af53c",
+      "published_at": "2026-10-14T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ビジネステック",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "79d92ec417a38b35",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/7ca27418cd7e005d4b3fa421929e302e7addd758",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/7ca27418cd7e005d4b3fa421929e302e7addd758"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/7ca27418cd7e005d4b3fa421929e302e7addd758"
+        }
+      ]
     },
     {
       "id": "1724168d5a2f170a",
