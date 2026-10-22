@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-22T00:22:09+00:00",
-  "total": 262,
+  "updated_at": "2026-10-22T00:31:01+00:00",
+  "total": 263,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-21"
@@ -345,7 +345,7 @@
     },
     {
       "date": "2026-10-17",
-      "count": 3
+      "count": 4
     },
     {
       "date": "2026-10-18",
@@ -3770,6 +3770,35 @@
       ]
     },
     {
+      "id": "2bd09dcb30dc5388",
+      "published_at": "2026-10-16T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社ハッピーキャット",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "6f24606e570c922b",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.with-necochan.com/news/4582",
+          "evidence_urls": [
+            "https://www.with-necochan.com/news/4582"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.with-necochan.com/news/4582"
+        }
+      ]
+    },
+    {
       "id": "4468d7a7262d01e6",
       "published_at": "2026-10-16T15:00:00+00:00",
       "disclosed_at": null,
@@ -5976,7 +6005,16 @@
       "potential_records": 1536322,
       "confidence": "high",
       "confidence_score": 90,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "2bd09dcb30dc5388",
+          "relationship": "affects",
+          "evidence_url": "https://www.with-necochan.com/news/4582",
+          "evidence_urls": [
+            "https://www.with-necochan.com/news/4582"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "ScanNetSecurity",
