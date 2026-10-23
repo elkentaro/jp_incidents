@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-23T02:16:18+00:00",
-  "total": 340,
+  "updated_at": "2026-10-23T03:15:49+00:00",
+  "total": 342,
   "date_range": {
     "start": "2026-08-09",
-    "end": "2026-10-22"
+    "end": "2026-10-23"
   },
   "daily_counts_90d": [
     {
@@ -353,7 +353,7 @@
     },
     {
       "date": "2026-10-20",
-      "count": 39
+      "count": 40
     },
     {
       "date": "2026-10-21",
@@ -365,10 +365,40 @@
     },
     {
       "date": "2026-10-23",
-      "count": 0
+      "count": 1
     }
   ],
   "incidents": [
+    {
+      "id": "a0b6cf2aa39c1ce9",
+      "published_at": "2026-10-22T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "埼玉県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1200,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.saitama.lg.jp/b0617/nenrin-saitama2026/1022hodohappyo.html",
+          "evidence_urls": [
+            "https://www.pref.saitama.lg.jp/b0617/nenrin-saitama2026/1022hodohappyo.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "埼玉県 / Saitama",
+          "url": "https://www.pref.saitama.lg.jp/b0617/nenrin-saitama2026/1022hodohappyo.html"
+        }
+      ]
+    },
     {
       "id": "2addd531b34f4660",
       "published_at": "2026-10-21T15:00:00+00:00",
@@ -748,6 +778,40 @@
       ]
     },
     {
+      "id": "f1a05e615645403f",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "デジタル庁",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.digital.go.jp/press/a0a8f66c-b32d-4695-9372-bcd5d4280f22",
+          "evidence_urls": [
+            "https://www.digital.go.jp/press/a0a8f66c-b32d-4695-9372-bcd5d4280f22"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "デジタル庁 / Digital Agency",
+          "url": "https://www.digital.go.jp/press/a0a8f66c-b32d-4695-9372-bcd5d4280f22"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/1774eab73da3c6dc342341b89cf0a0e75ae27430"
+        }
+      ]
+    },
+    {
       "id": "0e5a446a7fed35c0",
       "published_at": "2026-10-21T15:00:00+00:00",
       "disclosed_at": null,
@@ -795,6 +859,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5xc0dlNzRieE9FYk9JdG9ocXBuNnZfS0FKTVdjVUotczEtVGtBcW5yZmM2VzNlRF9ENDYxeXhzSlB4RFJIU3VfcUkybFpfT3N0ZFVQT0hWaG5yN0FtOUZ6TnB2c2J5b1BFV2h5RFhoMGJhbXE1WHdKYUpHNzZlRjA?oc=5"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3030223"
         }
       ]
     },
@@ -1401,35 +1469,6 @@
       ]
     },
     {
-      "id": "f1a05e615645403f",
-      "published_at": "2026-10-21T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "デジタル庁",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "671c427eadb6fc63",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.digital.go.jp/press/a0a8f66c-b32d-4695-9372-bcd5d4280f22",
-          "evidence_urls": [
-            "https://www.digital.go.jp/press/a0a8f66c-b32d-4695-9372-bcd5d4280f22"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "デジタル庁 / Digital Agency",
-          "url": "https://www.digital.go.jp/press/a0a8f66c-b32d-4695-9372-bcd5d4280f22"
-        }
-      ]
-    },
-    {
       "id": "fb9e1d5ed6cbaaa8",
       "published_at": "2026-10-21T15:00:00+00:00",
       "disclosed_at": null,
@@ -1863,6 +1902,14 @@
           "evidence_url": "https://www.city.nanjo.okinawa.jp/topics/1792646187/",
           "evidence_urls": [
             "https://www.city.nanjo.okinawa.jp/topics/1792646187/"
+          ]
+        },
+        {
+          "incident_id": "a0b6cf2aa39c1ce9",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.saitama.lg.jp/b0617/nenrin-saitama2026/1022hodohappyo.html",
+          "evidence_urls": [
+            "https://www.pref.saitama.lg.jp/b0617/nenrin-saitama2026/1022hodohappyo.html"
           ]
         },
         {
@@ -3122,6 +3169,14 @@
           ]
         },
         {
+          "incident_id": "3451e3d72659e6f6",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.yamaguchi.lg.jp/soshiki/5/367338.html",
+          "evidence_urls": [
+            "https://www.pref.yamaguchi.lg.jp/soshiki/5/367338.html"
+          ]
+        },
+        {
           "incident_id": "35199c11de392f0c",
           "relationship": "affects",
           "evidence_url": "https://www.city.gojo.lg.jp/juuyou/19902.html",
@@ -3999,6 +4054,36 @@
         {
           "name": "島根県 / Shimane",
           "url": "https://www.pref.shimane.lg.jp/admin/seisaku/keikaku/furusato/"
+        }
+      ]
+    },
+    {
+      "id": "3451e3d72659e6f6",
+      "published_at": "2026-10-19T15:00:00+00:00",
+      "disclosed_at": "2026-10-19T15:00:00+00:00",
+      "organization": "山口県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.yamaguchi.lg.jp/soshiki/5/367338.html",
+          "evidence_urls": [
+            "https://www.pref.yamaguchi.lg.jp/soshiki/5/367338.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "山口県 / Yamaguchi",
+          "url": "https://www.pref.yamaguchi.lg.jp/soshiki/5/367338.html"
         }
       ]
     },
@@ -12581,7 +12666,7 @@
       ],
       "potential_records": null,
       "confidence": "high",
-      "confidence_score": 65,
+      "confidence_score": 80,
       "related": [
         {
           "incident_id": "415606b392ad65f5",
@@ -12600,6 +12685,10 @@
         {
           "name": "piyolog",
           "url": "https://piyolog.hatenadiary.jp/entry/2026/10/22/114426"
+        },
+        {
+          "name": "Infoseek",
+          "url": "https://news.infoseek.co.jp/article/abcnews_63170/"
         }
       ]
     },
