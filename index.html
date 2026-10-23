@@ -36,6 +36,7 @@
           <p class="lede" data-i18n="description">Publicly reported cybersecurity incidents affecting Japanese organizations, collected from news, security publications, and official notices.</p>
           <p class="disclaimer" data-i18n="disclaimer">This index is collected automatically and analyzed with AI. It may contain omissions or errors and should not be regarded as a complete or authoritative record. Verify details with the linked sources.</p>
           <p id="confidence-guide" class="disclaimer" data-i18n="confidenceDisclaimer">Confidence is a source-based score, not incident severity, an AI certainty rating, or a probability of accuracy. The highest source tier sets the base: official/government 60, news/security press 50, aggregator 35, other 30, and social media 10 (no sources: 0). Each additional distinct non-social domain adds 15 points, capped at 100; search/news wrapper URLs use the recorded outlet name instead. High: 60–100; Medium: 30–59; Low: 0–29. Tiers are assigned automatically from domains, outlet names and notice-style titles/URLs and may be misclassified. Different domains can repeat the same report, so higher scores do not guarantee independent confirmation. Even 100 does not mean 100% accuracy. Verify the linked sources.</p>
+          <p id="date-guide" class="disclaimer" data-i18n="dateDisclaimer">Date shows the incident date, or the reported date when the incident date is unavailable.</p>
         </div>
         <div class="overview-panel">
           <section class="trend" aria-labelledby="trend-title">
@@ -92,7 +93,7 @@
         <table>
           <thead>
             <tr>
-              <th scope="col" data-sort="published_at" aria-sort="descending"><button class="sort-button" type="button"><span data-i18n="date">Incident date</span><span class="sort-indicator" aria-hidden="true"></span></button></th>
+              <th scope="col" data-sort="published_at" aria-sort="descending"><button class="sort-button" type="button"><span data-i18n="date">Date</span><span class="sort-indicator" aria-hidden="true"></span></button></th>
               <th scope="col" data-sort="organization"><button class="sort-button" type="button"><span data-i18n="organization">Organization</span><span class="sort-indicator" aria-hidden="true"></span></button></th>
               <th scope="col" data-sort="incident_type"><button class="sort-button" type="button"><span data-i18n="incidentType">Incident type</span><span class="sort-indicator" aria-hidden="true"></span></button></th>
               <th scope="col" class="numeric" data-sort="potential_records"><button class="sort-button" type="button"><span data-i18n="potentialRecords">Potential records</span><span class="sort-indicator" aria-hidden="true"></span></button></th>
@@ -128,6 +129,6 @@
     </div>
   </footer>
 
-  <script src="app.js?v=20261022-1" defer></script>
+  <script src="app.js?v=20261023-1" defer></script>
 </body>
 </html>

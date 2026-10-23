@@ -17,6 +17,7 @@ function replaceContent(node, children) {
 
 const copy = {
   en: {
+    dateDisclaimer: "Date shows the incident date, or the reported date when the incident date is unavailable.",
     supporters: "Supporters",
     confidenceDisclaimer: "Confidence is a source-based score, not incident severity, an AI certainty rating, or a probability of accuracy. The highest source tier sets the base: official/government 60, news/security press 50, aggregator 35, other 30, and social media 10 (no sources: 0). Each additional distinct non-social domain adds 15 points, capped at 100; search/news wrapper URLs use the recorded outlet name instead. High: 60–100; Medium: 30–59; Low: 0–29. Tiers are assigned automatically from domains, outlet names and notice-style titles/URLs and may be misclassified. Different domains can repeat the same report, so higher scores do not guarantee independent confirmation. Even 100 does not mean 100% accuracy. Verify the linked sources.",
     eyebrow: "OPEN-SOURCE INCIDENT INDEX",
@@ -37,7 +38,7 @@ const copy = {
     searchPlaceholder: "Search…",
     typeLabel: "Incident type",
     confidenceLabel: "Confidence",
-    date: "Incident date",
+    date: "Date",
     disclosed: "First disclosed",
     organization: "Organization",
     incidentType: "Incident type",
@@ -70,6 +71,7 @@ const copy = {
     levels: { high: "High", medium: "Medium", low: "Low" }
   },
   ja: {
+    dateDisclaimer: "日付はインシデントの日付を示し、不明な場合は報道・発表された日付を使用します。",
     supporters: "サポーター",
     confidenceDisclaimer: "信頼度は情報源に基づく点数であり、被害の深刻度、AIの確信度、正確である確率ではありません。最も高い情報源区分を基礎点とし、公式・行政発表60点、報道・セキュリティ専門メディア50点、情報集約サイト35点、その他30点、SNS10点（情報源なしは0点）とします。SNS以外の異なるドメインが1つ増えるごとに15点を加算し、100点を上限とします。検索・ニュース配信の中継URLは、記録された媒体名で数えます。高：60〜100点／中：30〜59点／低：0〜29点。区分はドメイン・媒体名・発表らしい見出しやURLで自動判定するため、誤分類の可能性があります。別ドメインでも同じ報道の転載の場合があり、高得点でも独立した裏付けを保証しません。100点でも正確性100%を意味しません。リンク先の情報源をご確認ください。",
     eyebrow: "公開情報に基づくインシデント一覧",
@@ -90,7 +92,7 @@ const copy = {
     searchPlaceholder: "検索…",
     typeLabel: "インシデント種別",
     confidenceLabel: "信頼度",
-    date: "インシデント日",
+    date: "日付",
     disclosed: "初公表日",
     organization: "組織",
     incidentType: "インシデント種別",
