@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-23T01:00:27+00:00",
-  "total": 338,
+  "updated_at": "2026-10-23T02:16:18+00:00",
+  "total": 340,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-22"
@@ -357,7 +357,7 @@
     },
     {
       "date": "2026-10-21",
-      "count": 37
+      "count": 39
     },
     {
       "date": "2026-10-22",
@@ -681,6 +681,40 @@
       ]
     },
     {
+      "id": "56e41e1e6b527bf1",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東北電力フロンティア",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 100000,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.tohoku-frontier.co.jp/news/1960/",
+          "evidence_urls": [
+            "https://www.tohoku-frontier.co.jp/news/1960/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.tohoku-frontier.co.jp/news/1960/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/a0f47335a145bdc1e99280c244c811b12af6b669"
+        }
+      ]
+    },
+    {
       "id": "c8b639990853a423",
       "published_at": "2026-10-21T15:00:00+00:00",
       "disclosed_at": null,
@@ -880,36 +914,6 @@
         {
           "name": "Civic Force",
           "url": "https://www.civic-force.org/info/news/20261022.html"
-        }
-      ]
-    },
-    {
-      "id": "56e41e1e6b527bf1",
-      "published_at": "2026-10-21T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "東北電力フロンティア",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 100000,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "7e647fcc0bac0b06",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.tohoku-frontier.co.jp/news/1960/",
-          "evidence_urls": [
-            "https://www.tohoku-frontier.co.jp/news/1960/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.tohoku-frontier.co.jp/news/1960/"
         }
       ]
     },
@@ -1798,6 +1802,14 @@
           ]
         },
         {
+          "incident_id": "2dc160527ae7970a",
+          "relationship": "affects",
+          "evidence_url": "https://373news.com/corporation/notice/press/id_bfcd6f6b-43d6-4d48-931c-d9cac9dae279",
+          "evidence_urls": [
+            "https://373news.com/corporation/notice/press/id_bfcd6f6b-43d6-4d48-931c-d9cac9dae279"
+          ]
+        },
+        {
           "incident_id": "53ec72ba13cb644f",
           "relationship": "affects",
           "evidence_url": "https://plasticjournal.net/news/25490.html",
@@ -2176,6 +2188,36 @@
       ]
     },
     {
+      "id": "2dc160527ae7970a",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": "2026-10-21T15:00:00+00:00",
+      "organization": "南日本新聞社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 66500,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://373news.com/corporation/notice/press/id_bfcd6f6b-43d6-4d48-931c-d9cac9dae279",
+          "evidence_urls": [
+            "https://373news.com/corporation/notice/press/id_bfcd6f6b-43d6-4d48-931c-d9cac9dae279"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "南日本新聞",
+          "url": "https://373news.com/corporation/notice/press/id_bfcd6f6b-43d6-4d48-931c-d9cac9dae279"
+        }
+      ]
+    },
+    {
       "id": "30be55b8dfc1bf4b",
       "published_at": "2026-10-20T15:00:00+00:00",
       "disclosed_at": null,
@@ -2469,6 +2511,36 @@
         {
           "name": "大分県 / Oita",
           "url": "https://www.pref.oita.jp/soshiki/12520/kosodateouen-passport.html"
+        }
+      ]
+    },
+    {
+      "id": "bbd94d0ac13294d9",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "神奈川県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.kanagawa.jp/docs/v6g/potalrenraku.html",
+          "evidence_urls": [
+            "https://www.pref.kanagawa.jp/docs/v6g/potalrenraku.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "神奈川県 / Kanagawa",
+          "url": "https://www.pref.kanagawa.jp/docs/v6g/potalrenraku.html"
         }
       ]
     },
@@ -3215,6 +3287,14 @@
           "evidence_url": "https://www.pref.shiga.lg.jp/bj00/press-release/34359.html",
           "evidence_urls": [
             "https://www.pref.shiga.lg.jp/bj00/press-release/34359.html"
+          ]
+        },
+        {
+          "incident_id": "bbd94d0ac13294d9",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.kanagawa.jp/docs/v6g/potalrenraku.html",
+          "evidence_urls": [
+            "https://www.pref.kanagawa.jp/docs/v6g/potalrenraku.html"
           ]
         },
         {
