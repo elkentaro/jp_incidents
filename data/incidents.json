@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-23T15:15:34+00:00",
-  "total": 359,
+  "updated_at": "2026-10-23T21:15:16+00:00",
+  "total": 360,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-23"
@@ -353,7 +353,7 @@
     },
     {
       "date": "2026-10-21",
-      "count": 40
+      "count": 41
     },
     {
       "date": "2026-10-22",
@@ -772,6 +772,48 @@
       ]
     },
     {
+      "id": "7d7f0620312f96fd",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "名鉄観光サービス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 130000,
+      "confidence": "high",
+      "confidence_score": 95,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/920da4572aee81b666040e9017b659c964e4672d",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/920da4572aee81b666040e9017b659c964e4672d"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ファイナンス",
+          "url": "https://finance.yahoo.co.jp/news/detail/c46ace2b09854fe4469e6efc387539953b89a387"
+        },
+        {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp/n/ctv/category/society/ct51e6a643cc0343ed844cedba4d7001d8"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261022de63734"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/920da4572aee81b666040e9017b659c964e4672d"
+        }
+      ]
+    },
+    {
       "id": "0d8b0ee2d5e58c38",
       "published_at": "2026-10-21T15:00:00+00:00",
       "disclosed_at": null,
@@ -969,35 +1011,6 @@
         {
           "name": "北國新聞",
           "url": "https://www.hokkoku.co.jp/articles/-/2267273"
-        }
-      ]
-    },
-    {
-      "id": "7d7f0620312f96fd",
-      "published_at": "2026-10-21T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "名鉄観光サービス",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 130000,
-      "confidence": "high",
-      "confidence_score": 80,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ファイナンス",
-          "url": "https://finance.yahoo.co.jp/news/detail/c46ace2b09854fe4469e6efc387539953b89a387"
-        },
-        {
-          "name": "日テレNEWS NNN",
-          "url": "https://news.ntv.co.jp/n/ctv/category/society/ct51e6a643cc0343ed844cedba4d7001d8"
-        },
-        {
-          "name": "NHKニュース",
-          "url": "https://news.web.nhk/newsweb/na/nd-20261022de63734"
         }
       ]
     },
@@ -2205,6 +2218,14 @@
           ]
         },
         {
+          "incident_id": "7d7f0620312f96fd",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/920da4572aee81b666040e9017b659c964e4672d",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/920da4572aee81b666040e9017b659c964e4672d"
+          ]
+        },
+        {
           "incident_id": "87cff2bff2e55c4c",
           "relationship": "affects",
           "evidence_url": "https://tokamachi.yukiguni.town/l-news/238042.html",
@@ -2266,6 +2287,14 @@
           "evidence_url": "https://news.yahoo.co.jp/articles/69cea2bef958d7cd93c31562574963d0d731b52b",
           "evidence_urls": [
             "https://news.yahoo.co.jp/articles/69cea2bef958d7cd93c31562574963d0d731b52b"
+          ]
+        },
+        {
+          "incident_id": "bca1b95c9db0ae16",
+          "relationship": "affects",
+          "evidence_url": "https://jinjibu.jp/info/detl/2012/",
+          "evidence_urls": [
+            "https://jinjibu.jp/info/detl/2012/"
           ]
         },
         {
@@ -2920,6 +2949,36 @@
         {
           "name": "神奈川県 / Kanagawa",
           "url": "https://www.pref.kanagawa.jp/docs/v6g/potalrenraku.html"
+        }
+      ]
+    },
+    {
+      "id": "bca1b95c9db0ae16",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "日本の人事部",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 212243,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://jinjibu.jp/info/detl/2012/",
+          "evidence_urls": [
+            "https://jinjibu.jp/info/detl/2012/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本の人事部",
+          "url": "https://jinjibu.jp/info/detl/2012/"
         }
       ]
     },
