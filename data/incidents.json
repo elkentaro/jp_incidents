@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-23T08:33:10+00:00",
+  "updated_at": "2026-10-23T09:15:56+00:00",
   "total": 359,
   "date_range": {
     "start": "2026-08-09",
@@ -843,6 +843,48 @@
       ]
     },
     {
+      "id": "3b4432bc847a1336",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "佐川急便",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "de9a0397ae6b57cd",
+          "relationship": "affects",
+          "evidence_url": "https://www.sakigake.jp/news/article/20261022AK0034/",
+          "evidence_urls": [
+            "https://www.sakigake.jp/news/article/20261022AK0034/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "秋田魁新報電子版",
+          "url": "https://www.sakigake.jp/news/article/20261022AK0034/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/pickup/6599819"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/69ee130592cbe6650cc4ebfa88c6153f9a715132"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1mYXZmcGtqRVBjVEVLMDRWUklUR2xONG1vYmdTTjMwRUtnSmo1R3YtUWVUZmJsamFORUJmNEJIdE9aQjNEaEM1aTRMOV9la1hnVzlqZ19wUWR4NjNuU1g4?oc=5"
+        }
+      ]
+    },
+    {
       "id": "bbea7fcc586198f2",
       "published_at": "2026-10-21T15:00:00+00:00",
       "disclosed_at": null,
@@ -956,44 +998,6 @@
         {
           "name": "NHKニュース",
           "url": "https://news.web.nhk/newsweb/na/nd-20261022de63734"
-        }
-      ]
-    },
-    {
-      "id": "3b4432bc847a1336",
-      "published_at": "2026-10-21T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "佐川急便",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [
-        {
-          "incident_id": "de9a0397ae6b57cd",
-          "relationship": "affects",
-          "evidence_url": "https://www.sakigake.jp/news/article/20261022AK0034/",
-          "evidence_urls": [
-            "https://www.sakigake.jp/news/article/20261022AK0034/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "秋田魁新報電子版",
-          "url": "https://www.sakigake.jp/news/article/20261022AK0034/"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/pickup/6599819"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/69ee130592cbe6650cc4ebfa88c6153f9a715132"
         }
       ]
     },
