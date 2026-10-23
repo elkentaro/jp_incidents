@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-23T08:16:11+00:00",
-  "total": 352,
+  "updated_at": "2026-10-23T08:33:10+00:00",
+  "total": 359,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-23"
@@ -325,7 +325,7 @@
     },
     {
       "date": "2026-10-13",
-      "count": 35
+      "count": 36
     },
     {
       "date": "2026-10-14",
@@ -337,11 +337,11 @@
     },
     {
       "date": "2026-10-16",
-      "count": 25
+      "count": 26
     },
     {
       "date": "2026-10-17",
-      "count": 4
+      "count": 5
     },
     {
       "date": "2026-10-18",
@@ -357,15 +357,15 @@
     },
     {
       "date": "2026-10-21",
-      "count": 39
+      "count": 40
     },
     {
       "date": "2026-10-22",
-      "count": 46
+      "count": 47
     },
     {
       "date": "2026-10-23",
-      "count": 6
+      "count": 8
     }
   ],
   "incidents": [
@@ -396,6 +396,36 @@
         {
           "name": "ARTnews JAPAN",
           "url": "https://artnewsjapan.com/article/90648"
+        }
+      ]
+    },
+    {
+      "id": "941d870a2e4cfaa5",
+      "published_at": "2026-10-22T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "公益財団法人千葉県スポーツ協会",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.chiba.lg.jp/kyousupo/press/2026/jouhou.html",
+          "evidence_urls": [
+            "https://www.pref.chiba.lg.jp/kyousupo/press/2026/jouhou.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "千葉県 / Chiba",
+          "url": "https://www.pref.chiba.lg.jp/kyousupo/press/2026/jouhou.html"
         }
       ]
     },
@@ -527,6 +557,44 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/fb99ee37a175ad1ea90cfba38835181ebdede1a8"
+        }
+      ]
+    },
+    {
+      "id": "88fcfa1a565e7d12",
+      "published_at": "2026-10-22T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "志摩市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 3,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.shima.mie.jp/kakuka/sangyoshinkobu/shoko/kigyouyuuchi/9840.html",
+          "evidence_urls": [
+            "https://www.city.shima.mie.jp/kakuka/sangyoshinkobu/shoko/kigyouyuuchi/9840.html"
+          ]
+        },
+        {
+          "incident_id": "aff60e65bbd8c3d5",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.city.shima.mie.jp/kakuka/sangyoshinkobu/shoko/kigyouyuuchi/9840.html",
+          "evidence_urls": [
+            "https://www.city.shima.mie.jp/kakuka/sangyoshinkobu/shoko/kigyouyuuchi/9840.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "志摩市ホームページ",
+          "url": "https://www.city.shima.mie.jp/kakuka/sangyoshinkobu/shoko/kigyouyuuchi/9840.html"
         }
       ]
     },
@@ -892,6 +960,44 @@
       ]
     },
     {
+      "id": "3b4432bc847a1336",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "佐川急便",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "de9a0397ae6b57cd",
+          "relationship": "affects",
+          "evidence_url": "https://www.sakigake.jp/news/article/20261022AK0034/",
+          "evidence_urls": [
+            "https://www.sakigake.jp/news/article/20261022AK0034/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "秋田魁新報電子版",
+          "url": "https://www.sakigake.jp/news/article/20261022AK0034/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/pickup/6599819"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/69ee130592cbe6650cc4ebfa88c6153f9a715132"
+        }
+      ]
+    },
+    {
       "id": "56e41e1e6b527bf1",
       "published_at": "2026-10-21T15:00:00+00:00",
       "disclosed_at": null,
@@ -1074,35 +1180,6 @@
       ]
     },
     {
-      "id": "3b4432bc847a1336",
-      "published_at": "2026-10-21T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "佐川急便",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "de9a0397ae6b57cd",
-          "relationship": "affects",
-          "evidence_url": "https://www.sakigake.jp/news/article/20261022AK0034/",
-          "evidence_urls": [
-            "https://www.sakigake.jp/news/article/20261022AK0034/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "秋田魁新報電子版",
-          "url": "https://www.sakigake.jp/news/article/20261022AK0034/"
-        }
-      ]
-    },
-    {
       "id": "41bddacedb87f195",
       "published_at": "2026-10-21T15:00:00+00:00",
       "disclosed_at": null,
@@ -1187,6 +1264,27 @@
         {
           "name": "三重県 / Mie",
           "url": "https://www.pref.mie.lg.jp/TOPICS/m0346800027.htm"
+        }
+      ]
+    },
+    {
+      "id": "6271b51819752092",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社アンドエスティHD",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 2500000,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261023555489.pdf"
         }
       ]
     },
@@ -2878,6 +2976,36 @@
         {
           "name": "月刊「事業構想」オンライン",
           "url": "https://www.projectdesign.jp/articles/news/df304f2c-22fc-4ae1-b40e-7a17d9e63959"
+        }
+      ]
+    },
+    {
+      "id": "f409430e72f11f3d",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社レスキューナウ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.rescuenow.co.jp/release/20261021",
+          "evidence_urls": [
+            "https://www.rescuenow.co.jp/release/20261021"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "株式会社レスキューナウ",
+          "url": "https://www.rescuenow.co.jp/release/20261021"
         }
       ]
     },
@@ -4968,6 +5096,14 @@
           "evidence_urls": [
             "https://www.city.shima.mie.jp/kakuka/sangyoshinkobu/shoko/furusato/9831.html"
           ]
+        },
+        {
+          "incident_id": "88fcfa1a565e7d12",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.city.shima.mie.jp/kakuka/sangyoshinkobu/shoko/kigyouyuuchi/9840.html",
+          "evidence_urls": [
+            "https://www.city.shima.mie.jp/kakuka/sangyoshinkobu/shoko/kigyouyuuchi/9840.html"
+          ]
         }
       ],
       "sources": [
@@ -6399,6 +6535,36 @@
       ]
     },
     {
+      "id": "f79da71dcbbd2196",
+      "published_at": "2026-10-16T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社GALLERY・2",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 128000,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "6c9f7d0a75ad7f1c",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.release.tdnet.info/inbs/140120261022554661.pdf",
+          "evidence_urls": [
+            "https://www.release.tdnet.info/inbs/140120261022554661.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261022554661.pdf"
+        }
+      ]
+    },
+    {
       "id": "4468d7a7262d01e6",
       "published_at": "2026-10-16T15:00:00+00:00",
       "disclosed_at": null,
@@ -7106,6 +7272,35 @@
       ]
     },
     {
+      "id": "6c9f7d0a75ad7f1c",
+      "published_at": "2026-10-15T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社Commerble",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "f79da71dcbbd2196",
+          "relationship": "affects",
+          "evidence_url": "https://www.release.tdnet.info/inbs/140120261022554661.pdf",
+          "evidence_urls": [
+            "https://www.release.tdnet.info/inbs/140120261022554661.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261022554661.pdf"
+        }
+      ]
+    },
+    {
       "id": "83b61a3db8b6680d",
       "published_at": "2026-10-15T15:00:00+00:00",
       "disclosed_at": null,
@@ -7421,6 +7616,14 @@
           ]
         },
         {
+          "incident_id": "732834d76e92a4bf",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.fukuoka.lg.jp/contents/kyoryokutai-attention.html",
+          "evidence_urls": [
+            "https://www.pref.fukuoka.lg.jp/contents/kyoryokutai-attention.html"
+          ]
+        },
+        {
           "incident_id": "7bc70bf6108ea4bc",
           "relationship": "affects",
           "evidence_url": "https://smarthr.co.jp/news/info/20261022/",
@@ -7454,6 +7657,14 @@
           ]
         },
         {
+          "incident_id": "88fcfa1a565e7d12",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.shima.mie.jp/kakuka/sangyoshinkobu/shoko/kigyouyuuchi/9840.html",
+          "evidence_urls": [
+            "https://www.city.shima.mie.jp/kakuka/sangyoshinkobu/shoko/kigyouyuuchi/9840.html"
+          ]
+        },
+        {
           "incident_id": "8eb537cea3c59b2e",
           "relationship": "affects",
           "evidence_url": "https://www.pref.niigata.lg.jp/sec/sangyoritchi/challenge-niigata-husei.html",
@@ -7483,6 +7694,14 @@
           "evidence_url": "https://www.town.yuzawa.lg.jp/soshikikarasagasu/kikkakusangyoukankoubu/kikakukankouka/4/4/8110.html",
           "evidence_urls": [
             "https://www.town.yuzawa.lg.jp/soshikikarasagasu/kikkakusangyoukankoubu/kikakukankouka/4/4/8110.html"
+          ]
+        },
+        {
+          "incident_id": "941d870a2e4cfaa5",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.chiba.lg.jp/kyousupo/press/2026/jouhou.html",
+          "evidence_urls": [
+            "https://www.pref.chiba.lg.jp/kyousupo/press/2026/jouhou.html"
           ]
         },
         {
@@ -7622,6 +7841,14 @@
           "evidence_url": "https://www.digital.go.jp/press/a0a8f66c-b32d-4695-9372-bcd5d4280f22",
           "evidence_urls": [
             "https://www.digital.go.jp/press/a0a8f66c-b32d-4695-9372-bcd5d4280f22"
+          ]
+        },
+        {
+          "incident_id": "f409430e72f11f3d",
+          "relationship": "affects",
+          "evidence_url": "https://www.rescuenow.co.jp/release/20261021",
+          "evidence_urls": [
+            "https://www.rescuenow.co.jp/release/20261021"
           ]
         },
         {
@@ -10536,6 +10763,36 @@
         {
           "name": "東京都 / Tokyo Metropolitan Government",
           "url": "https://www.metro.tokyo.lg.jp/information/press/2026/10/2026101605"
+        }
+      ]
+    },
+    {
+      "id": "732834d76e92a4bf",
+      "published_at": "2026-10-12T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "福岡県「福岡県地域おこし協力隊サポーターズConeru」",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.fukuoka.lg.jp/contents/kyoryokutai-attention.html",
+          "evidence_urls": [
+            "https://www.pref.fukuoka.lg.jp/contents/kyoryokutai-attention.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "福岡県 / Fukuoka",
+          "url": "https://www.pref.fukuoka.lg.jp/contents/kyoryokutai-attention.html"
         }
       ]
     },
