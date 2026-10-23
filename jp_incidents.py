@@ -63,6 +63,7 @@ from decimal import Decimal, InvalidOperation
 from email.utils import format_datetime, parsedate_to_datetime
 from zoneinfo import ZoneInfo
 import operations as ops
+import incident_services
 import incident_categories as categories
 
 DB_PATH = os.environ.get("JPI_DB", "jp_incidents.db")
@@ -2829,6 +2830,7 @@ def all_public_incidents():
     """Return the complete, newest-first dataset exposed by the static site."""
     c = db()
     relationships = incident_relationships(c)
+    service_scopes = incident_services.read_all(c)
     rows = []
     for row in c.execute(
         "SELECT id,published,org,kind,records,score,confidence,disclosed_at "
@@ -2855,6 +2857,7 @@ def all_public_incidents():
         annotation = c.execute("SELECT affected_system,date_basis FROM incident_annotations WHERE incident_id=?", (row["id"],)).fetchone()
         if annotation:
             incident.update(dict(annotation))
+        incident.update(service_scopes.get(row["id"], {}))
         rows.append(incident)
     c.close()
     return rows
@@ -3047,7 +3050,7 @@ def write_public_rss(path=RSS_PATH, incidents=None):
     confidence_labels = {"high": "High / 高", "medium": "Medium / 中", "low": "Low / 低"}
     for incident in incidents:
         item = ET.SubElement(channel, "item")
-        org = _xml_safe(incident["organization"] or "Unknown organization")
+        org = _xml_safe(incident_services.label(incident["organization"] or "Unknown organization", incident.get("affected_service")))
         kind = type_labels.get(incident["incident_type"], _xml_safe(incident["incident_type"]))
         ET.SubElement(item, "title").text = f"{org} — {kind}"
         sources = [s for s in incident.get("sources", []) if _http(s.get("url", ""))]

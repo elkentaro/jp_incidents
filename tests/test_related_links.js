@@ -121,3 +121,11 @@ assert.equal(focused, "incident-id-101");
 state.language = "ja";
 assert.equal(context.incidentRow(state.incidents[0]).children[2].children[0].textContent, "ランサムウェア");
 console.log("PASS: independent ransomware tags/filters, Other retained, system/role/evidence, alias redirects");
+
+state.incidents[0].affected_service = "Citizen Portal";
+state.incidents[0].service_aliases = ["Old Portal Name"];
+assert.equal(context.incidentRow(state.incidents[0]).children[1].textContent, state.incidents[0].organization + " : Citizen Portal");
+elements.search.value = "Old Portal Name";
+assert.equal(context.filteredIncidents().length, 1);
+assert.equal(state.incidents[0].organization.includes(" : Citizen Portal"), false);
+console.log("PASS: affected-service label and alias search preserve organization identity");

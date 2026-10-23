@@ -44,6 +44,13 @@ affected municipalities or customers can be linked to the directly breached
 provider without implying that their own infrastructure was compromised.
 Separate incidents affecting the same organization remain separate records.
 
+Distinct affected end-user services are also separate cases, even when the organization
+and upstream incident are the same. They display as **Victim : Affected Service**
+and link to the shared upstream record. The JSON preserves `organization` and adds
+optional `affected_service` and `service_aliases` fields. Names are combined only
+when evidence establishes that they identify the same service. Shared organization
+or provider identity alone does not merge service cases.
+
 The directory displays **Related 1**, **Related 2**, and so on (関連 1, 関連 2
 in Japanese). These links open the specific record, including across pages or
 active filters. Hover or focus a link to see the relationship description.

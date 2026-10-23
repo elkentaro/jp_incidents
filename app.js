@@ -315,6 +315,8 @@ function filteredIncidents() {
       incident.organization,
       ...(incident.incident_categories || [incident.incident_type]).map(v => text("types")[v]),
       incident.affected_system,
+      incident.affected_service,
+      ...(incident.service_aliases || []),
       ...(incident.sources || []).reduce((values, source) => values.concat([source.name, source.url]), [])
     ].filter(Boolean).join(" ").toLocaleLowerCase(state.language);
     return searchable.includes(query);
@@ -403,7 +405,7 @@ function incidentRow(incident) {
   const organization = document.createElement("td");
   organization.className = "org-cell";
   organization.dataset.label = text("organization");
-  organization.textContent = incident.organization || text("unknown");
+  organization.textContent = (incident.organization || text("unknown")) + (incident.affected_service ? ` : ${incident.affected_service}` : "");
   if (incident.affected_system) {
     const system = document.createElement("small"); system.className = "affected-system";
     system.textContent = incident.affected_system; organization.append(system);
