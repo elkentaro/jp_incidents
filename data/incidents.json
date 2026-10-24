@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-24T03:15:36+00:00",
+  "updated_at": "2026-10-24T04:15:46+00:00",
   "total": 364,
   "date_range": {
     "start": "2026-08-09",
@@ -1116,6 +1116,31 @@
       ]
     },
     {
+      "id": "6271b51819752092",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社アンドエスティHD",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 2500000,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261023555489.pdf"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://www2.jpx.co.jp/disc/26850/140120261023555489.pdf"
+        }
+      ]
+    },
+    {
       "id": "c8b639990853a423",
       "published_at": "2026-10-21T15:00:00+00:00",
       "disclosed_at": null,
@@ -1348,27 +1373,6 @@
         {
           "name": "三重県 / Mie",
           "url": "https://www.pref.mie.lg.jp/TOPICS/m0346800027.htm"
-        }
-      ]
-    },
-    {
-      "id": "6271b51819752092",
-      "published_at": "2026-10-21T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "株式会社アンドエスティHD",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 2500000,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [],
-      "sources": [
-        {
-          "name": "日本取引所グループ TDnet / JPX TDnet",
-          "url": "https://www.release.tdnet.info/inbs/140120261023555489.pdf"
         }
       ]
     },
