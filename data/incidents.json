@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-24T15:15:38+00:00",
-  "total": 365,
+  "updated_at": "2026-10-24T20:15:24+00:00",
+  "total": 371,
   "date_range": {
     "start": "2026-08-09",
-    "end": "2026-10-23"
+    "end": "2026-10-24"
   },
   "daily_counts_90d": [
     {
@@ -357,11 +357,11 @@
     },
     {
       "date": "2026-10-23",
-      "count": 11
+      "count": 16
     },
     {
       "date": "2026-10-24",
-      "count": 0
+      "count": 1
     },
     {
       "date": "2026-10-25",
@@ -369,6 +369,62 @@
     }
   ],
   "incidents": [
+    {
+      "id": "5e4d34fb8591d186",
+      "published_at": "2026-10-23T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "農林水産省",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 4500,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本共産党",
+          "url": "https://www.jcp.or.jp/akahata/aik26/2026-10-24/2026102401_04_0.php"
+        }
+      ],
+      "added_at": "2026-10-24T20:15:24+00:00",
+      "updated_at": "2026-10-24T20:15:24+00:00"
+    },
+    {
+      "id": "243caeca6a120b79",
+      "published_at": "2026-10-22T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "おおいたボランティア・ＮＰＯセンター",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.oita.jp/soshiki/13110/onnpo20261023.html",
+          "evidence_urls": [
+            "https://www.pref.oita.jp/soshiki/13110/onnpo20261023.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "大分県 / Oita",
+          "url": "https://www.pref.oita.jp/soshiki/13110/onnpo20261023.html"
+        }
+      ],
+      "affected_service": "メルマガ 週イチくん",
+      "service_aliases": [],
+      "added_at": "2026-10-24T20:15:24+00:00",
+      "updated_at": "2026-10-24T20:15:24+00:00"
+    },
     {
       "id": "2d5c0c635a1e28ca",
       "published_at": "2026-10-22T15:00:00+00:00",
@@ -544,6 +600,97 @@
       "updated_at": "2026-10-23T04:16:00+00:00"
     },
     {
+      "id": "d6084d7d19ab35c8",
+      "published_at": "2026-10-22T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "環境新聞社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.kankyo-news.co.jp/news/021fb29e-9e73-4625-acf2-ed75d6beab34",
+          "evidence_urls": [
+            "https://www.kankyo-news.co.jp/news/021fb29e-9e73-4625-acf2-ed75d6beab34"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "環境新聞オンライン",
+          "url": "https://www.kankyo-news.co.jp/news/021fb29e-9e73-4625-acf2-ed75d6beab34"
+        }
+      ],
+      "affected_service": "「環境新聞」と「シルバー新報」のメールマガジン",
+      "service_aliases": [],
+      "added_at": "2026-10-24T20:15:24+00:00",
+      "updated_at": "2026-10-24T20:15:24+00:00"
+    },
+    {
+      "id": "d6ce5bec5816f41c",
+      "published_at": "2026-10-22T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東京都農林水産振興財団",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 16000,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.metro.tokyo.lg.jp/information/press/2026/10/2026102317",
+          "evidence_urls": [
+            "https://www.metro.tokyo.lg.jp/information/press/2026/10/2026102317"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "東京都 / Tokyo Metropolitan Government",
+          "url": "https://www.metro.tokyo.lg.jp/information/press/2026/10/2026102317"
+        }
+      ],
+      "affected_service": "東京広域援農ボランティア事業",
+      "service_aliases": [],
+      "added_at": "2026-10-24T20:15:24+00:00",
+      "updated_at": "2026-10-24T20:15:24+00:00"
+    },
+    {
+      "id": "460925589cd58fb7",
+      "published_at": "2026-10-22T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "NHK出版",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 120000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261023de64585"
+        }
+      ],
+      "added_at": "2026-10-24T20:15:24+00:00",
+      "updated_at": "2026-10-24T20:15:24+00:00"
+    },
+    {
       "id": "74291f13ce26e5dd",
       "published_at": "2026-10-22T15:00:00+00:00",
       "disclosed_at": null,
@@ -612,6 +759,31 @@
       ],
       "added_at": "2026-10-23T22:15:25+00:00",
       "updated_at": "2026-10-23T22:15:25+00:00"
+    },
+    {
+      "id": "b46e3020e19d722d",
+      "published_at": "2026-10-22T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "モスフードサービス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1130000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3035086"
+        }
+      ],
+      "affected_service": "モスカード",
+      "service_aliases": [],
+      "added_at": "2026-10-24T20:15:24+00:00",
+      "updated_at": "2026-10-24T20:15:24+00:00"
     },
     {
       "id": "dd83c4bfa1fb5b6c",
@@ -1036,6 +1208,37 @@
       "updated_at": "2026-10-22T21:24:57+00:00"
     },
     {
+      "id": "6271b51819752092",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社アンドエスティHD",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 2500000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261023555489.pdf"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://www2.jpx.co.jp/disc/26850/140120261023555489.pdf"
+        },
+        {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp/15128223.html"
+        }
+      ],
+      "added_at": "2026-10-23T08:33:10+00:00",
+      "updated_at": "2026-10-24T20:15:24+00:00"
+    },
+    {
       "id": "bbea7fcc586198f2",
       "published_at": "2026-10-21T15:00:00+00:00",
       "disclosed_at": null,
@@ -1164,33 +1367,6 @@
       "updated_at": "2026-10-23T02:16:18+00:00"
     },
     {
-      "id": "6271b51819752092",
-      "published_at": "2026-10-21T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "株式会社アンドエスティHD",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 2500000,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [],
-      "sources": [
-        {
-          "name": "日本取引所グループ TDnet / JPX TDnet",
-          "url": "https://www.release.tdnet.info/inbs/140120261023555489.pdf"
-        },
-        {
-          "name": "satimo list",
-          "url": "https://www2.jpx.co.jp/disc/26850/140120261023555489.pdf"
-        }
-      ],
-      "added_at": "2026-10-23T08:33:10+00:00",
-      "updated_at": "2026-10-24T04:15:46+00:00"
-    },
-    {
       "id": "c8b639990853a423",
       "published_at": "2026-10-21T15:00:00+00:00",
       "disclosed_at": null,
@@ -1252,6 +1428,41 @@
       ],
       "added_at": "2026-10-22T04:31:30+00:00",
       "updated_at": "2026-10-22T23:16:33+00:00"
+    },
+    {
+      "id": "58f233626c3adaad",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": "2026-10-21T15:00:00+00:00",
+      "organization": "新潟日報社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 253000,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.asahi.com/articles/ASVBQ35VTVBQUOHB00DM.html",
+          "evidence_urls": [
+            "https://www.asahi.com/articles/ASVBQ35VTVBQUOHB00DM.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVBQ35VTVBQUOHB00DM.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/2dfc87b3435d1454890df434cbe3636479cfcba7"
+        }
+      ],
+      "added_at": "2026-10-22T14:23:58+00:00",
+      "updated_at": "2026-10-24T20:15:24+00:00"
     },
     {
       "id": "cbbe8cc7947fddd4",
@@ -2048,37 +2259,6 @@
       "updated_at": "2026-10-23T01:00:27+00:00"
     },
     {
-      "id": "58f233626c3adaad",
-      "published_at": "2026-10-21T15:00:00+00:00",
-      "disclosed_at": "2026-10-21T15:00:00+00:00",
-      "organization": "新潟日報社",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 253000,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "7e647fcc0bac0b06",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.asahi.com/articles/ASVBQ35VTVBQUOHB00DM.html",
-          "evidence_urls": [
-            "https://www.asahi.com/articles/ASVBQ35VTVBQUOHB00DM.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "朝日新聞",
-          "url": "https://www.asahi.com/articles/ASVBQ35VTVBQUOHB00DM.html"
-        }
-      ],
-      "added_at": "2026-10-22T14:23:58+00:00",
-      "updated_at": "2026-10-22T14:23:58+00:00"
-    },
-    {
       "id": "c49459f90410b9a4",
       "published_at": "2026-10-21T15:00:00+00:00",
       "disclosed_at": null,
@@ -2355,6 +2535,14 @@
           ]
         },
         {
+          "incident_id": "243caeca6a120b79",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.oita.jp/soshiki/13110/onnpo20261023.html",
+          "evidence_urls": [
+            "https://www.pref.oita.jp/soshiki/13110/onnpo20261023.html"
+          ]
+        },
+        {
           "incident_id": "2d5c0c635a1e28ca",
           "relationship": "affects",
           "evidence_url": "https://artnewsjapan.com/article/90648",
@@ -2499,6 +2687,22 @@
           ]
         },
         {
+          "incident_id": "d6084d7d19ab35c8",
+          "relationship": "affects",
+          "evidence_url": "https://www.kankyo-news.co.jp/news/021fb29e-9e73-4625-acf2-ed75d6beab34",
+          "evidence_urls": [
+            "https://www.kankyo-news.co.jp/news/021fb29e-9e73-4625-acf2-ed75d6beab34"
+          ]
+        },
+        {
+          "incident_id": "d6ce5bec5816f41c",
+          "relationship": "affects",
+          "evidence_url": "https://www.metro.tokyo.lg.jp/information/press/2026/10/2026102317",
+          "evidence_urls": [
+            "https://www.metro.tokyo.lg.jp/information/press/2026/10/2026102317"
+          ]
+        },
+        {
           "incident_id": "d9c0ed98d13e8801",
           "relationship": "affects",
           "evidence_url": "https://nulab.com/ja/info/20261022-1-nulab/",
@@ -2562,7 +2766,7 @@
         }
       ],
       "added_at": "2026-10-21T19:22:12+00:00",
-      "updated_at": "2026-10-24T06:15:32+00:00"
+      "updated_at": "2026-10-24T20:15:24+00:00"
     },
     {
       "id": "6435a5b4842e2abd",
