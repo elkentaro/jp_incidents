@@ -36,7 +36,7 @@ state.incidents[0].related = [
   {incident_id: "id-1", relationship: "same_organization"},
   {incident_id: "withdrawn", relationship: "affects"},
 ];
-const elements = {search: {value: "restrictive"}, type: {value: "data leak"}, confidence: {value: "low"}};
+const elements = {recent: {checked: false}, search: {value: "restrictive"}, type: {value: "data leak"}, confidence: {value: "low"}};
 const location = {hash: ""};
 const history = {pushState(_, __, hash) { location.hash = hash; }};
 const handlers = {};

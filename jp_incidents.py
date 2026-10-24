@@ -65,6 +65,7 @@ from zoneinfo import ZoneInfo
 import operations as ops
 import incident_services
 import incident_categories as categories
+import incident_activity
 
 DB_PATH = os.environ.get("JPI_DB", "jp_incidents.db")
 JSON_PATH = os.environ.get("JPI_JSON_PATH", "data/incidents.json")
@@ -2911,6 +2912,7 @@ def write_public_json(path=JSON_PATH):
             old = json.load(f)
     except (FileNotFoundError, json.JSONDecodeError, OSError):
         pass
+    incidents = incident_activity.stamp_incidents(incidents, old, now_iso())
     if (isinstance(old, dict) and old.get("schema_version") == 2
             and old.get("incidents") == incidents and old.get("total") == len(incidents)
             and old.get("aliases") == aliases

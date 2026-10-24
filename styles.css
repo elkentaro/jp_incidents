@@ -158,6 +158,12 @@ h2 { margin-bottom: 5px; font-size: 27px; letter-spacing: -0.025em; }
 }
 .filters input:focus, .filters select:focus { border-color: var(--ink); box-shadow: 0 0 0 1px var(--ink); }
 
+.recent-filter-field { grid-column: 1 / -1; }
+.filters .recent-filter-label { display: flex; align-items: center; gap: 9px; cursor: pointer; width: fit-content; }
+.filters .recent-filter-label input { width: 18px; height: 18px; min-height: 0; margin: 0; padding: 0; flex: 0 0 18px; accent-color: var(--ink); }
+.filters .recent-filter-label input:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+#recent-filter-help { margin: 5px 0 0 27px; color: var(--muted); font-size: 12px; }
+
 .table-frame { position: relative; border-top: 1px solid var(--ink); overflow-x: auto; }
 table { width: 100%; min-width: 980px; border-collapse: collapse; font-size: 13px; }
 th { padding: 13px 12px; color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: 0.035em; text-align: left; text-transform: uppercase; white-space: nowrap; }

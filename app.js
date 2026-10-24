@@ -18,6 +18,7 @@ function replaceContent(node, children) {
 
 const copy = {
   es: {
+    recentOnly: "Añadidos o actualizados en las últimas 24 horas", recentHelp: "Según cuándo se añadió o modificó un incidente en este índice, no cuándo ocurrió.",
     sourceLimitDisclaimer: "Para ayudar a mantener la calidad de las fuentes, la recopilación se limita a 6 fuentes confirmadas por incidente. Los registros antiguos pueden conservar fuentes adicionales.",
     dateDisclaimer: "La fecha corresponde al incidente o, si se desconoce, a su publicación.",
     supporters: "Colaboradores",
@@ -57,6 +58,7 @@ const copy = {
     evidence: (number) => `Prueba ${number}`
   },
   en: {
+    recentOnly: "Added or updated in the last 24 hours", recentHelp: "Based on when an incident was added to or changed in this index, not when it occurred.",
     sourceLimitDisclaimer: "To help maintain source quality, source collection is capped at 6 confirmed sources per incident. Older records may retain additional sources.",
     disclosureDate: "Disclosure date; occurrence unknown", discoveryDate: "Discovery / notification date",
     affectedOrganization: "Affected organization", upstreamIncident: "Upstream incident", whyLinked: "Why linked?",
@@ -115,6 +117,7 @@ const copy = {
     levels: { high: "High", medium: "Medium", low: "Low" }
   },
   ja: {
+    recentOnly: "過去24時間に追加・更新された事案のみ", recentHelp: "インシデントの発生日ではなく、この一覧への追加・更新日時に基づきます。",
     sourceLimitDisclaimer: "情報源の品質を維持するため、収集する確認済み情報源は1件のインシデントにつき6件を上限としています。上限導入前の記録には、6件を超える情報源が残っている場合があります。",
     disclosureDate: "公表日（発生日不明）", discoveryDate: "発覚・通知日",
     affectedOrganization: "影響を受けた組織", upstreamIncident: "影響の起点となる事案", whyLinked: "関連の根拠",
@@ -188,6 +191,7 @@ const elements = {
   search: document.querySelector("#search"),
   type: document.querySelector("#type-filter"),
   confidence: document.querySelector("#confidence-filter"),
+  recent: document.querySelector("#recent-filter"),
   reset: document.querySelector("#reset-filters"),
   rows: document.querySelector("#incident-rows"),
   loading: document.querySelector("#loading-state"),
@@ -355,9 +359,19 @@ function renderTrend() {
   elements.trendEnd.textContent = shortDate.format(days[days.length - 1].date);
 }
 
+function recentlyChanged(incident, now = Date.now()) {
+  return [incident.added_at, incident.updated_at].some((value) => {
+    if (typeof value !== "string" || !/(Z|[+-]\d{2}:\d{2})$/.test(value)) return false;
+    const timestamp = Date.parse(value);
+    return Number.isFinite(timestamp) && timestamp > now - 24 * 60 * 60 * 1000 && timestamp <= now;
+  });
+}
+
 function filteredIncidents() {
   const query = elements.search.value.trim().toLocaleLowerCase(state.language);
+  const now = Date.now();
   return state.incidents.filter((incident) => {
+    if (elements.recent.checked && !recentlyChanged(incident, now)) return false;
     if (elements.type.value && !(incident.incident_categories || [incident.incident_type]).includes(elements.type.value)) return false;
     if (elements.confidence.value && incident.confidence !== elements.confidence.value) return false;
     if (!query) return true;
@@ -565,6 +579,7 @@ function showLinkedIncident() {
   elements.search.value = "";
   elements.type.value = "";
   elements.confidence.value = "";
+  elements.recent.checked = false;
   const index = sortedIncidents(state.incidents).findIndex((incident) => incident.id === id);
   state.page = Math.floor(index / PAGE_SIZE) + 1;
   render();
@@ -657,10 +672,12 @@ elements.language.addEventListener("click", (event) => {
 elements.search.addEventListener("input", filtersChanged);
 elements.type.addEventListener("change", filtersChanged);
 elements.confidence.addEventListener("change", filtersChanged);
+elements.recent.addEventListener("change", filtersChanged);
 elements.reset.addEventListener("click", () => {
   elements.search.value = "";
   elements.type.value = "";
   elements.confidence.value = "";
+  elements.recent.checked = false;
   filtersChanged();
   elements.search.focus();
 });
@@ -704,3 +721,7 @@ loadData();
 
 
 setInterval(() => { if (state.loaded) renderUpdateTimes(); }, 60 * 1000);
+
+// Keep the rolling window current for a page left open across the cutoff.
+setInterval(() => { if (state.loaded && elements.recent.checked && !document.hidden) render(); }, 60000);
+document.addEventListener("visibilitychange", () => { if (state.loaded && elements.recent.checked && !document.hidden) render(); });

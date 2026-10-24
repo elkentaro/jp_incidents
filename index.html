@@ -15,7 +15,7 @@
   <meta name="description" content="A continuously updated index of publicly reported cybersecurity incidents affecting organizations in Japan.">
   <title>JP Incident Monitor</title>
   <link rel="alternate" type="application/rss+xml" title="JP Incident Monitor RSS" href="feed.xml">
-  <link rel="stylesheet" href="styles.css?v=20261024-language-buttons">
+  <link rel="stylesheet" href="styles.css?v=20261024-recent">
 </head>
 <body>
   <header class="site-header">
@@ -98,6 +98,13 @@
           <span data-i18n="confidenceLabel">Confidence</span>
           <select id="confidence-filter"></select>
         </label>
+        <div class="recent-filter-field">
+          <label class="recent-filter-label" for="recent-filter">
+            <input id="recent-filter" type="checkbox" aria-describedby="recent-filter-help">
+            <span data-i18n="recentOnly">Added or updated in the last 24 hours</span>
+          </label>
+          <p id="recent-filter-help" data-i18n="recentHelp">Based on when an incident was added to or changed in this index, not when it occurred.</p>
+        </div>
       </div>
 
       <p class="linkage-guide" data-i18n="linkageGuide">One incident can have several category tags. Open “Why linked?” for relationship evidence.</p>
@@ -141,6 +148,6 @@
     </div>
   </footer>
 
-  <script src="app.js?v=20261024-source-limit" defer></script>
+  <script src="app.js?v=20261024-recent" defer></script>
 </body>
 </html>
