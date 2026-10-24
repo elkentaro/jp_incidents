@@ -2,8 +2,8 @@
 .supporters-page main { flex: 1; }
 .supporters-content { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(260px, .7fr); gap: clamp(40px, 8vw, 120px); padding: 48px 0 80px; align-items: start; }
 .supporters-content h2 { margin-bottom: 22px; font-size: 22px; font-weight: 620; letter-spacing: -.025em; }
-.supporter-list { margin: 0; padding: 0 0 0 24px; list-style: disc; border-top: 1px solid var(--line-strong); }
-.supporter-list li::marker { color: var(--ink); font-size: 20px; }
+.supporter-list { margin: 0; padding: 0 0 0 36px; list-style: disc; border-top: 1px solid var(--line-strong); }
+.supporter-list li::marker { content: "☕️ "; font-size: 20px; }
 .supporter-list li { border-bottom: 1px solid var(--line); }
 .supporter-link { display: flex; justify-content: space-between; gap: 24px; align-items: baseline; padding: 12px 0; text-decoration: none; }
 .supporter-name { font-size: 25px; font-weight: 620; letter-spacing: -.025em; }
