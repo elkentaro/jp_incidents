@@ -234,7 +234,11 @@ function applyLanguage() {
     node.setAttribute("aria-label", languageCopy[node.dataset.i18nAria]);
   });
   elements.language.setAttribute("aria-label", languageCopy.switchLanguage);
-  elements.language.value = state.language;
+  elements.language.querySelectorAll("[data-language-option]").forEach((button) => {
+    const active = button.dataset.languageOption === state.language;
+    button.classList.toggle("is-active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
   setOptions(elements.type, [
     ["", languageCopy.allTypes],
     ["data leak", languageCopy.types["data leak"]],
@@ -640,8 +644,10 @@ function filtersChanged() {
   render();
 }
 
-elements.language.addEventListener("change", () => {
-  state.language = elements.language.value;
+elements.language.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-language-option]");
+  if (!button) return;
+  state.language = button.dataset.languageOption;
   try { localStorage.setItem("jp-incidents-language", state.language); } catch (_) { /* Safari private mode */ }
   applyLanguage();
 });

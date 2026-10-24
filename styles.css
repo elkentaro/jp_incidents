@@ -66,19 +66,28 @@ a:hover { text-decoration-thickness: 2px; }
 }
 
 .language-switch {
-  border: 0;
-  background: transparent;
-  padding: 8px 0;
-  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
   color: var(--subtle);
   font-size: 13px;
 }
+.language-option {
+  border: 0;
+  background: transparent;
+  padding: 8px 2px;
+  cursor: pointer;
+  color: var(--muted);
+}
+.language-option.is-active { color: var(--ink); font-weight: 700; }
+.language-option:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 .header-actions { display: flex; align-items: center; gap: 26px; }
 .coverage-range { color: var(--muted); font-size: 12px; white-space: nowrap; }
 .coverage-range strong { margin-left: 4px; color: var(--ink); font-weight: 650; }
 .rss-link { font-size: 13px; font-weight: 650; text-decoration: none; border-bottom: 1px solid var(--ink); }
-.language-switch:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+.language-option:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
 
 .intro { padding: 72px 0 64px; border-bottom: 1px solid var(--ink); }
 .eyebrow { margin: 0 0 22px; font-size: 11px; font-weight: 750; letter-spacing: 0.16em; }

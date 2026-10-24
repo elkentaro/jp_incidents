@@ -43,10 +43,16 @@ function applyLanguage() {
   document.querySelectorAll("[data-i18n]").forEach(node => { node.textContent = text[node.dataset.i18n]; });
   document.querySelectorAll("[data-i18n-aria]").forEach(node => { node.setAttribute("aria-label", text[node.dataset.i18nAria]); });
   toggle.setAttribute("aria-label", text.switchLanguage);
-  toggle.value = language;
+  toggle.querySelectorAll("[data-language-option]").forEach((button) => {
+    const active = button.dataset.languageOption === language;
+    button.classList.toggle("is-active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
 }
-toggle.addEventListener("change", () => {
-  language = toggle.value;
+toggle.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-language-option]");
+  if (!button) return;
+  language = button.dataset.languageOption;
   try { localStorage.setItem("jp-incidents-language", language); } catch (_) { /* Storage can be disabled. */ }
   applyLanguage();
 });
