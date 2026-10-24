@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-24T01:15:24+00:00",
-  "total": 362,
+  "updated_at": "2026-10-24T03:15:36+00:00",
+  "total": 364,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-23"
@@ -349,7 +349,7 @@
     },
     {
       "date": "2026-10-20",
-      "count": 41
+      "count": 42
     },
     {
       "date": "2026-10-21",
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-10-23",
-      "count": 10
+      "count": 11
     },
     {
       "date": "2026-10-24",
@@ -530,6 +530,29 @@
           "url": "https://www.city.minato.tokyo.jp/furusatotan/access.html"
         }
       ]
+    },
+    {
+      "id": "74291f13ce26e5dd",
+      "published_at": "2026-10-22T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "野村証券",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE92THBNM1JHWUt6R3d4LU5GcENWRHhiZF9wcVdLVVNVZ3EtT1ozRHA5aV81eWN5VWtfWmh3UUlxdk5kbnJPRGtRU0Q1UEV4SHp6RjloblB5MlZIOGtyWWYzV1IwcllqUFRpaEtrVC1aX1llTEZ5QmV2V3dNcjBHbWc?oc=5"
+        }
+      ],
+      "affected_service": "法人向けサービス",
+      "service_aliases": []
     },
     {
       "id": "967beb6470df049c",
@@ -2163,7 +2186,7 @@
       ],
       "potential_records": null,
       "confidence": "high",
-      "confidence_score": 90,
+      "confidence_score": 100,
       "related": [
         {
           "incident_id": "02677189737a9470",
@@ -2402,6 +2425,10 @@
         {
           "name": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2026/10/23/56554.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE94eks1TGVKZF9BTDQ0NzlsWXpWSC1NUVhlS0ZqLTBZY1ZFYi1hYkR3ejYtSGZkNy16cmlSbE40LVUxakR3TXdJc3pEd0sxRDdzeC1KMnFoM1VBMHM4SldXWGRLMFlha2F6d2ViZHFmMWxBWDVBclpERDgtTDdYVnM?oc=5"
         }
       ]
     },
@@ -4807,6 +4834,31 @@
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261023555328.pdf"
         }
+      ]
+    },
+    {
+      "id": "af78cc70916e014d",
+      "published_at": "2026-10-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "オトトイ株式会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 480000,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "OTOTOY",
+          "url": "https://ototoy.jp/feature/maintenance_20261020"
+        }
+      ],
+      "affected_service": "OTOTOY",
+      "service_aliases": [
+        "オトトイ"
       ]
     },
     {
