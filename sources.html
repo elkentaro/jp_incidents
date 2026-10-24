@@ -15,7 +15,7 @@
   <meta name="description" content="Polling sources used by JP Incident Monitor.">
   <title>Sources — JP Incident Monitor</title>
   <link rel="alternate" type="application/rss+xml" title="JP Incident Monitor RSS" href="feed.xml">
-  <link rel="stylesheet" href="styles.css?v=20261020-1">
+  <link rel="stylesheet" href="styles.css?v=20261024-es">
 </head>
 <body class="sources-page">
   <header class="site-header">
@@ -27,11 +27,11 @@
       <div class="header-actions">
         <a class="rss-link" href="./" data-i18n="incidents">Incidents</a>
         <a class="rss-link" href="feed.xml" data-i18n="rssFeed" type="application/rss+xml">RSS feed</a>
-        <button class="language-switch" id="language-switch" type="button" aria-label="日本語に切り替える">
-          <span class="language-option is-active" data-language-option="en">EN</span>
-          <span aria-hidden="true">/</span>
-          <span class="language-option" data-language-option="ja">日本語</span>
-        </button>
+        <select class="language-switch" id="language-switch" aria-label="Language">
+          <option value="en" lang="en">English</option>
+          <option value="ja" lang="ja">日本語</option>
+          <option value="es" lang="es">Español</option>
+        </select>
       </div>
     </div>
   </header>
@@ -76,6 +76,6 @@
     </div>
   </footer>
 
-  <script src="sources.js?v=20261022-1" defer></script>
+  <script src="sources.js?v=20261024-es" defer></script>
 </body>
 </html>

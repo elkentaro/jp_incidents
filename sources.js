@@ -1,7 +1,8 @@
 "use strict";
 
 function savedLanguage() {
-  try { return localStorage.getItem("jp-incidents-language"); } catch (_) { return null; }
+  try { const saved = localStorage.getItem("jp-incidents-language");
+    return ["en", "ja", "es"].includes(saved) ? saved : null; } catch (_) { return null; }
 }
 
 function replaceContent(node, children) {
@@ -10,6 +11,26 @@ function replaceContent(node, children) {
 }
 
 const copy = {
+  es: {
+    supporters: "Colaboradores", eyebrow: "TRANSPARENCIA DE LAS FUENTES", title: "Fuentes consultadas",
+    description: "Los canales públicos, sitios oficiales, sistemas de divulgación y búsquedas de noticias que consulta el recopilador automático.",
+    note: "Las fuentes incluidas se consultan para detectar noticias relevantes; su inclusión no implica que cada página o aviso se convierta en un registro de incidente.",
+    total: "Fuentes configuradas", updated: "Directorio actualizado", directory: "Directorio de fuentes",
+    searchLabel: "Buscar fuentes", searchPlaceholder: "Buscar…", categoryLabel: "Categoría",
+    loading: "Cargando fuentes…", error: "No se pudo cargar el directorio de fuentes.",
+    empty: "Ninguna fuente coincide con estos filtros.", incidents: "Incidentes", rssFeed: "Canal RSS",
+    footerNote: "Las URL de las fuentes se publican para facilitar la transparencia y la verificación.", project: "Ver el proyecto en GitHub",
+    all: "Todas las categorías", switchLanguage: "Idioma",
+    groups: {
+      discovery: "Noticias, búsquedas y medios especializados", government: "Tokio y ciudades designadas",
+      prefecture: "Gobiernos de las prefecturas", national: "Autoridades nacionales",
+      disclosure: "Comunicados de empresas cotizadas", transport: "Operadores y grupos de transporte",
+      it: "Proveedores de soluciones informáticas y servicios en la nube", retail: "Comercio minorista", distribution: "Distribución y logística",
+      healthcare: "Organizaciones sanitarias", telecom: "Operadores de telecomunicaciones y proveedores de Internet",
+      finance: "Banca, seguros y pagos", education: "Universidades y educación", utilities: "Servicios de energía y agua",
+      manufacturing: "Industria manufacturera y farmacéutica", wholesale: "Proveedores mayoristas"
+    }
+  },
   en: {
     supporters: "Supporters",
     eyebrow: "SOURCE TRANSPARENCY", title: "Polling sources",
@@ -20,7 +41,7 @@ const copy = {
     loading: "Loading sources…", error: "The source directory could not be loaded.",
     empty: "No sources match these filters.", incidents: "Incidents", rssFeed: "RSS feed",
     footerNote: "Source URLs are published for transparency and verification.", project: "View project on GitHub",
-    all: "All categories", switchLanguage: "日本語に切り替える",
+    all: "All categories", switchLanguage: "Language",
     groups: {
       discovery: "News, search & specialist media", government: "Tokyo & designated cities",
       prefecture: "Prefectural governments", national: "National authorities",
@@ -42,7 +63,7 @@ const copy = {
     loading: "情報源を読み込んでいます…", error: "情報源一覧を読み込めませんでした。",
     empty: "条件に一致する情報源はありません。", incidents: "インシデント一覧", rssFeed: "RSSフィード",
     footerNote: "透明性と検証のため、監視対象のURLを公開しています。", project: "GitHubでプロジェクトを見る",
-    all: "すべての分類", switchLanguage: "Switch to English",
+    all: "すべての分類", switchLanguage: "言語",
     groups: {
       discovery: "ニュース・検索・専門メディア", government: "東京都・特別区・政令指定都市",
       prefecture: "都道府県", national: "国の機関",
@@ -63,7 +84,7 @@ const elements = {
   empty: document.querySelector("#source-empty")
 };
 
-const state = { language: savedLanguage() || (navigator.language.startsWith("ja") ? "ja" : "en"), sources: [], updatedAt: null };
+const state = { language: savedLanguage() || ({ en: "en", ja: "ja", es: "es" }[navigator.language.split("-")[0]] || "en"), sources: [], updatedAt: null };
 const groupOrder = ["discovery", "disclosure", "national", "prefecture", "government", "transport", "it", "retail", "distribution", "healthcare", "telecom", "finance", "education", "utilities", "manufacturing", "wholesale"];
 
 function text(key) { return copy[state.language][key]; }
@@ -71,7 +92,7 @@ function text(key) { return copy[state.language][key]; }
 function applyLanguage() {
   const languageCopy = copy[state.language];
   document.documentElement.lang = state.language;
-  document.title = state.language === "ja" ? "情報源一覧｜JP Incident Monitor" : "Sources — JP Incident Monitor";
+  document.title = state.language === "ja" ? "情報源一覧｜JP Incident Monitor" : state.language === "es" ? "Fuentes — JP Incident Monitor" : "Sources — JP Incident Monitor";
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     const value = languageCopy[node.dataset.i18n];
     if (typeof value === "string") node.textContent = value;
@@ -80,9 +101,7 @@ function applyLanguage() {
     node.placeholder = languageCopy[node.dataset.i18nPlaceholder];
   });
   elements.language.setAttribute("aria-label", languageCopy.switchLanguage);
-  document.querySelectorAll("[data-language-option]").forEach((node) => {
-    node.classList.toggle("is-active", node.dataset.languageOption === state.language);
-  });
+  elements.language.value = state.language;
   const selected = elements.category.value;
   const options = [["", languageCopy.all]].concat(groupOrder.map((group) => [group, languageCopy.groups[group]]));
   replaceContent(elements.category, options.map((entry) => {
@@ -95,7 +114,7 @@ function applyLanguage() {
 function formatUpdated(value) {
   const date = new Date(value);
   if (Number.isNaN(date.valueOf())) return "—";
-  return new Intl.DateTimeFormat(state.language === "ja" ? "ja-JP" : "en-US", {
+  return new Intl.DateTimeFormat(state.language === "ja" ? "ja-JP" : state.language === "es" ? "es" : "en-US", {
     year: "numeric", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit",
     timeZone: "Asia/Tokyo", timeZoneName: "short"
   }).format(date);
@@ -131,7 +150,7 @@ function render() {
     const heading = document.createElement("div"); heading.className = "source-group-heading";
     const title = document.createElement("h2"); title.textContent = text("groups")[group];
     const count = document.createElement("span"); count.className = "source-group-count";
-    count.textContent = rows.length.toLocaleString(state.language === "ja" ? "ja-JP" : "en-US");
+    count.textContent = rows.length.toLocaleString(state.language === "ja" ? "ja-JP" : state.language === "es" ? "es" : "en-US");
     heading.appendChild(title); heading.appendChild(count); section.appendChild(heading);
     const grid = document.createElement("div"); grid.className = "source-list-grid";
     rows.sort((a, b) => a.name.localeCompare(b.name, state.language)).forEach((source) => grid.appendChild(sourceCard(source)));
@@ -139,12 +158,12 @@ function render() {
   }).filter(Boolean);
   replaceContent(elements.groups, sections);
   elements.empty.hidden = filtered.length !== 0;
-  elements.total.textContent = state.sources.length.toLocaleString(state.language === "ja" ? "ja-JP" : "en-US");
+  elements.total.textContent = state.sources.length.toLocaleString(state.language === "ja" ? "ja-JP" : state.language === "es" ? "es" : "en-US");
   elements.updated.textContent = formatUpdated(state.updatedAt);
 }
 
-elements.language.addEventListener("click", () => {
-  state.language = state.language === "en" ? "ja" : "en";
+elements.language.addEventListener("change", () => {
+  state.language = elements.language.value;
   try { localStorage.setItem("jp-incidents-language", state.language); } catch (_) { /* Safari private mode */ }
   applyLanguage();
 });

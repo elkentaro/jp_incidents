@@ -129,3 +129,16 @@ elements.search.value = "Old Portal Name";
 assert.equal(context.filteredIncidents().length, 1);
 assert.equal(state.incidents[0].organization.includes(" : Citizen Portal"), false);
 console.log("PASS: affected-service label and alias search preserve organization identity");
+
+state.language = "es";
+state.incidents[0].date_basis = "disclosure";
+const spanish = context.incidentRow(state.incidents[0]);
+assert.equal(spanish.children[0].children[0].textContent, "Fecha de divulgación; fecha del incidente desconocida");
+assert.equal(spanish.children[1].children[1].textContent, "Organización afectada");
+assert.equal(spanish.children[2].children[1].textContent, "Filtración de datos");
+assert.equal(spanish.children[6].children[0].children[0].textContent, "Relacionado 1");
+assert.equal(spanish.children[6].children[1].children[0].textContent, "¿Por qué están relacionados?");
+assert.equal(spanish.children[6].children[1].children[1].children[1].textContent, "Prueba 1");
+elements.search.value = "filtración";
+assert.equal(context.filteredIncidents().length, 1);
+console.log("PASS: Spanish date basis, role, category, relationship/evidence labels, translated category search");

@@ -4,7 +4,8 @@ const PAGE_SIZE = 100;
 
 function savedLanguage() {
   try {
-    return localStorage.getItem("jp-incidents-language");
+    const saved = localStorage.getItem("jp-incidents-language");
+    return ["en", "ja", "es"].includes(saved) ? saved : null;
   } catch (_) {
     return null;
   }
@@ -16,7 +17,48 @@ function replaceContent(node, children) {
 }
 
 const copy = {
+  es: {
+    dateDisclaimer: "La fecha corresponde al incidente o, si se desconoce, a su publicación.",
+    supporters: "Colaboradores",
+    confidenceDisclaimer: "La confianza es una puntuación basada en las fuentes, no en la gravedad del incidente, la certeza de la IA ni la probabilidad de que la información sea correcta. La categoría de fuente más alta determina la base: fuentes oficiales o gubernamentales, 60; prensa general o especializada en seguridad, 50; agregadores, 35; otras, 30; redes sociales, 10 (sin fuentes: 0). Cada dominio adicional distinto que no sea una red social suma 15 puntos, hasta un máximo de 100; para las URL intermediarias de buscadores o noticias se utiliza el nombre del medio registrado. Alta: 60–100; media: 30–59; baja: 0–29. Las categorías se asignan automáticamente a partir de los dominios, nombres de medios y títulos o URL con formato de aviso, y pueden ser incorrectas. Distintos dominios pueden repetir la misma noticia, por lo que una puntuación mayor no garantiza una confirmación independiente. Ni siquiera 100 significa una exactitud del 100 %. Compruebe las fuentes enlazadas.",
+    eyebrow: "ÍNDICE DE INCIDENTES DE CÓDIGO ABIERTO",
+    title: "Incidentes de ciberseguridad en Japón",
+    description: "Incidentes de ciberseguridad comunicados públicamente que afectan a organizaciones japonesas, recopilados de noticias, publicaciones de seguridad y avisos oficiales.",
+    disclaimer: "Este índice se recopila automáticamente y se analiza con IA. Puede contener omisiones o errores y no debe considerarse un registro completo ni definitivo. Compruebe los detalles en las fuentes enlazadas.",
+    totalIncidents: "Total de incidentes", lastUpdated: "Datos actualizados",
+    nextPlannedUpdate: (date) => `Próxima actualización prevista: ${date}`,
+    coverage: "Período", trendTitle: "Tendencia de incidentes de los últimos 90 días",
+    trendCount: (count, peak) => `${count.toLocaleString("es")} registrados · máximo de ${peak.toLocaleString("es")}/día`,
+    trendAria: (total, peak) => `Incidentes diarios de los últimos 90 días. ${total} incidentes en total; máximo diario de ${peak}.`,
+    directoryTitle: "Directorio de incidentes",
+    linkageGuide: "Un incidente puede tener varias categorías. Los enlaces relacionados conectan organizaciones afectadas, incidentes de origen o sucesos distintos en la misma organización; abra «¿Por qué están relacionados?» para consultar las pruebas.",
+    reset: "Restablecer filtros", searchLabel: "Buscar organizaciones o fuentes", searchPlaceholder: "Buscar…",
+    typeLabel: "Tipo de incidente", confidenceLabel: "Confianza", date: "Fecha", disclosed: "Primera divulgación",
+    organization: "Organización", incidentType: "Tipo de incidente", potentialRecords: "Registros potencialmente afectados",
+    confidence: "Confianza", sources: "Fuentes", related: "Registros relacionados",
+    relatedLink: (number) => `Relacionado ${number}`,
+    relationships: { affected_by: "Afectado por este incidente", affects: "Registro afectado por este incidente", same_organization: "Otro incidente en la misma organización" },
+    noResults: "Ningún incidente coincide con estos filtros.", loading: "Cargando datos de incidentes…",
+    loadErrorTitle: "No se pudieron cargar los datos de incidentes.", loadErrorBody: "Actualice la página o vuelva a intentarlo más tarde.",
+    paginationLabel: "Páginas de incidentes",
+    methodNote: "Recopilación automática de fuentes públicas. La confianza refleja la calidad de las fuentes, no la gravedad del incidente.",
+    viewSource: "Ver el proyecto en GitHub", sourceDirectory: "Fuentes", rssFeed: "Canal RSS",
+    allTypes: "Todos los tipos de incidente", allConfidence: "Todos los niveles de confianza",
+    results: (shown, total) => `${shown.toLocaleString("es")} de ${total.toLocaleString("es")} incidentes`,
+    page: (page, pages) => `Página ${page} de ${pages}`, previous: "Anterior", next: "Siguiente",
+    switchLanguage: "Idioma",
+    sortAscending: (label) => `Ordenar por ${label}, ascendente`, sortDescending: (label) => `Ordenar por ${label}, descendente`,
+    unknown: "No indicado",
+    types: { "data leak": "Filtración de datos", "unauthorized access": "Acceso no autorizado", ransomware: "Ransomware", other: "Otros" },
+    levels: { high: "Alta", medium: "Media", low: "Baja" },
+    disclosureDate: "Fecha de divulgación; fecha del incidente desconocida", discoveryDate: "Fecha de detección o notificación",
+    affectedOrganization: "Organización afectada", upstreamIncident: "Incidente de origen", whyLinked: "¿Por qué están relacionados?",
+    evidence: (number) => `Prueba ${number}`
+  },
   en: {
+    disclosureDate: "Disclosure date; occurrence unknown", discoveryDate: "Discovery / notification date",
+    affectedOrganization: "Affected organization", upstreamIncident: "Upstream incident", whyLinked: "Why linked?",
+    evidence: (number) => `Evidence ${number}`,
     dateDisclaimer: "Date shows the incident date, or the reported date when the incident date is unavailable.",
     supporters: "Supporters",
     confidenceDisclaimer: "Confidence is a source-based score, not incident severity, an AI certainty rating, or a probability of accuracy. The highest source tier sets the base: official/government 60, news/security press 50, aggregator 35, other 30, and social media 10 (no sources: 0). Each additional distinct non-social domain adds 15 points, capped at 100; search/news wrapper URLs use the recorded outlet name instead. High: 60–100; Medium: 30–59; Low: 0–29. Tiers are assigned automatically from domains, outlet names and notice-style titles/URLs and may be misclassified. Different domains can repeat the same report, so higher scores do not guarantee independent confirmation. Even 100 does not mean 100% accuracy. Verify the linked sources.",
@@ -63,7 +105,7 @@ const copy = {
     page: (page, pages) => `Page ${page} of ${pages}`,
     previous: "Previous",
     next: "Next",
-    switchLanguage: "日本語に切り替える",
+    switchLanguage: "Language",
     sortAscending: (label) => `Sort by ${label}, ascending`,
     sortDescending: (label) => `Sort by ${label}, descending`,
     unknown: "Not stated",
@@ -71,6 +113,9 @@ const copy = {
     levels: { high: "High", medium: "Medium", low: "Low" }
   },
   ja: {
+    disclosureDate: "公表日（発生日不明）", discoveryDate: "発覚・通知日",
+    affectedOrganization: "影響を受けた組織", upstreamIncident: "影響の起点となる事案", whyLinked: "関連の根拠",
+    evidence: (number) => `根拠 ${number}`,
     dateDisclaimer: "日付はインシデントの日付を示し、不明な場合は報道・発表された日付を使用します。",
     supporters: "サポーター",
     confidenceDisclaimer: "信頼度は情報源に基づく点数であり、被害の深刻度、AIの確信度、正確である確率ではありません。最も高い情報源区分を基礎点とし、公式・行政発表60点、報道・セキュリティ専門メディア50点、情報集約サイト35点、その他30点、SNS10点（情報源なしは0点）とします。SNS以外の異なるドメインが1つ増えるごとに15点を加算し、100点を上限とします。検索・ニュース配信の中継URLは、記録された媒体名で数えます。高：60〜100点／中：30〜59点／低：0〜29点。区分はドメイン・媒体名・発表らしい見出しやURLで自動判定するため、誤分類の可能性があります。別ドメインでも同じ報道の転載の場合があり、高得点でも独立した裏付けを保証しません。100点でも正確性100%を意味しません。リンク先の情報源をご確認ください。",
@@ -117,7 +162,7 @@ const copy = {
     page: (page, pages) => `${pages}ページ中 ${page}ページ`,
     previous: "前へ",
     next: "次へ",
-    switchLanguage: "Switch to English",
+    switchLanguage: "言語",
     sortAscending: (label) => `${label}を昇順で並べ替え`,
     sortDescending: (label) => `${label}を降順で並べ替え`,
     unknown: "記載なし",
@@ -149,7 +194,7 @@ const elements = {
 };
 
 const state = {
-  language: savedLanguage() || (navigator.language.startsWith("ja") ? "ja" : "en"),
+  language: savedLanguage() || ({ en: "en", ja: "ja", es: "es" }[navigator.language.split("-")[0]] || "en"),
   incidents: [],
   aliases: {},
   dailyCounts: [],
@@ -177,7 +222,7 @@ function setOptions(select, options) {
 function applyLanguage() {
   const languageCopy = copy[state.language];
   document.documentElement.lang = state.language;
-  document.title = state.language === "ja" ? "JP Incident Monitor｜日本のサイバーインシデント" : "JP Incident Monitor";
+  document.title = state.language === "ja" ? "JP Incident Monitor｜日本のサイバーインシデント" : state.language === "es" ? "Incidentes de ciberseguridad en Japón — JP Incident Monitor" : "JP Incident Monitor";
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     const value = languageCopy[node.dataset.i18n];
     if (typeof value === "string") node.textContent = value;
@@ -189,9 +234,7 @@ function applyLanguage() {
     node.setAttribute("aria-label", languageCopy[node.dataset.i18nAria]);
   });
   elements.language.setAttribute("aria-label", languageCopy.switchLanguage);
-  document.querySelectorAll("[data-language-option]").forEach((node) => {
-    node.classList.toggle("is-active", node.dataset.languageOption === state.language);
-  });
+  elements.language.value = state.language;
   setOptions(elements.type, [
     ["", languageCopy.allTypes],
     ["data leak", languageCopy.types["data leak"]],
@@ -212,7 +255,7 @@ function applyLanguage() {
 function formatDate(value) {
   const date = new Date(value);
   if (Number.isNaN(date.valueOf())) return "—";
-  return new Intl.DateTimeFormat(state.language === "ja" ? "ja-JP" : "en-CA", {
+  return new Intl.DateTimeFormat(state.language === "ja" ? "ja-JP" : state.language === "es" ? "es" : "en-CA", {
     year: "numeric", month: "2-digit", day: "2-digit", timeZone: "Asia/Tokyo"
   }).format(date);
 }
@@ -220,7 +263,7 @@ function formatDate(value) {
 function formatUpdated(value) {
   const date = new Date(value);
   if (Number.isNaN(date.valueOf())) return "—";
-  return new Intl.DateTimeFormat(state.language === "ja" ? "ja-JP" : "en-US", {
+  return new Intl.DateTimeFormat(state.language === "ja" ? "ja-JP" : state.language === "es" ? "es" : "en-US", {
     year: "numeric", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit",
     timeZone: "Asia/Tokyo", timeZoneName: "short"
   }).format(date);
@@ -248,7 +291,7 @@ function formatCoverageRange() {
     .filter((date) => !Number.isNaN(date.valueOf()))
     .sort((a, b) => a - b);
   if (!dates.length) return "—";
-  const formatter = new Intl.DateTimeFormat(state.language === "ja" ? "ja-JP" : "en-US", {
+  const formatter = new Intl.DateTimeFormat(state.language === "ja" ? "ja-JP" : state.language === "es" ? "es" : "en-US", {
     year: "numeric", month: "short", day: "numeric", timeZone: "Asia/Tokyo"
   });
   const first = formatter.format(dates[0]);
@@ -289,7 +332,7 @@ function renderTrend() {
   const total = days.reduce((sum, day) => sum + day.count, 0);
   const actualPeak = Math.max(...days.map((day) => day.count));
   const peak = Math.max(1, actualPeak);
-  const locale = state.language === "ja" ? "ja-JP" : "en-US";
+  const locale = state.language === "ja" ? "ja-JP" : state.language === "es" ? "es" : "en-US";
   const shortDate = new Intl.DateTimeFormat(locale, { month: "short", day: "numeric", timeZone: "Asia/Tokyo" });
   const bars = days.map((day) => {
     const bar = document.createElement("span");
@@ -332,7 +375,7 @@ function sortValue(incident, key) {
 
 function sortedIncidents(incidents) {
   const direction = state.sortDirection === "asc" ? 1 : -1;
-  const collator = new Intl.Collator(state.language === "ja" ? "ja-JP" : "en-US", {
+  const collator = new Intl.Collator(state.language === "ja" ? "ja-JP" : state.language === "es" ? "es" : "en-US", {
     numeric: true, sensitivity: "base"
   });
   return [...incidents].sort((first, second) => {
@@ -392,7 +435,7 @@ function incidentRow(incident) {
   date.textContent = formatDate(incident.published_at);
   if (incident.date_basis === "disclosure" || incident.date_basis === "discovery_notification") {
     const basis = document.createElement("small"); basis.className = "disclosure-date";
-    basis.textContent = state.language === "ja" ? (incident.date_basis === "disclosure" ? "公表日（発生日不明）" : "発覚・通知日") : (incident.date_basis === "disclosure" ? "Disclosure date; occurrence unknown" : "Discovery / notification date");
+    basis.textContent = text(incident.date_basis === "disclosure" ? "disclosureDate" : "discoveryDate");
     date.append(basis);
   }
   if (incident.disclosed_at && formatDate(incident.disclosed_at) !== formatDate(incident.published_at)) {
@@ -412,8 +455,8 @@ function incidentRow(incident) {
   }
   const relations = (incident.related || []).filter(r => state.incidents.some(i => i.id === r.incident_id));
   const roles = [];
-  if (relations.some(r => r.relationship === "affected_by")) roles.push(state.language === "ja" ? "影響を受けた組織" : "Affected organization");
-  if (relations.some(r => r.relationship === "affects")) roles.push(state.language === "ja" ? "影響の起点となる事案" : "Upstream incident");
+  if (relations.some(r => r.relationship === "affected_by")) roles.push(text("affectedOrganization"));
+  if (relations.some(r => r.relationship === "affects")) roles.push(text("upstreamIncident"));
   if (roles.length) {
     const role = document.createElement("small"); role.className = "incident-role";
     role.textContent = roles.join(" · "); organization.append(role);
@@ -433,7 +476,7 @@ function incidentRow(incident) {
   records.className = "numeric records-cell";
   records.dataset.label = text("potentialRecords");
   records.textContent = Number.isFinite(incident.potential_records)
-    ? incident.potential_records.toLocaleString(state.language === "ja" ? "ja-JP" : "en-US")
+    ? incident.potential_records.toLocaleString(state.language === "ja" ? "ja-JP" : state.language === "es" ? "es" : "en-US")
     : "—";
 
   const confidence = document.createElement("td");
@@ -485,13 +528,13 @@ function incidentRow(incident) {
   related.append(relatedList.childElementCount ? relatedList : document.createTextNode("—"));
   if (relatedList.childElementCount) {
     const details = document.createElement("details"); details.className = "relationship-details";
-    const summary = document.createElement("summary"); summary.textContent = state.language === "ja" ? "関連の根拠" : "Why linked?";
+    const summary = document.createElement("summary"); summary.textContent = text("whyLinked");
     details.append(summary);
     (incident.related || []).filter(r => state.incidents.some(i => i.id === r.incident_id)).forEach((relation, index) => {
       const paragraph = document.createElement("p");
       paragraph.textContent = `${text("relatedLink")(index + 1)} — ${text("relationships")[relation.relationship]}`;
       for (const [i, url] of (relation.evidence_urls || [relation.evidence_url]).entries()) {
-        const proof = safeSourceLink({url, name: state.language === "ja" ? `根拠 ${i + 1}` : `Evidence ${i + 1}`});
+        const proof = safeSourceLink({url, name: text("evidence")(i + 1)});
         if (proof) paragraph.append(document.createTextNode(" "), proof);
       }
       details.append(paragraph);
@@ -581,7 +624,7 @@ function render() {
   const start = (state.page - 1) * PAGE_SIZE;
   const visible = filtered.slice(start, start + PAGE_SIZE);
 
-  elements.total.textContent = state.incidents.length.toLocaleString(state.language === "ja" ? "ja-JP" : "en-US");
+  elements.total.textContent = state.incidents.length.toLocaleString(state.language === "ja" ? "ja-JP" : state.language === "es" ? "es" : "en-US");
   renderUpdateTimes();
   elements.coverage.textContent = formatCoverageRange();
   renderTrend();
@@ -597,8 +640,8 @@ function filtersChanged() {
   render();
 }
 
-elements.language.addEventListener("click", () => {
-  state.language = state.language === "en" ? "ja" : "en";
+elements.language.addEventListener("change", () => {
+  state.language = elements.language.value;
   try { localStorage.setItem("jp-incidents-language", state.language); } catch (_) { /* Safari private mode */ }
   applyLanguage();
 });

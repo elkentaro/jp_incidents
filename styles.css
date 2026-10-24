@@ -68,8 +68,6 @@ a:hover { text-decoration-thickness: 2px; }
 .language-switch {
   border: 0;
   background: transparent;
-  display: inline-flex;
-  gap: 7px;
   padding: 8px 0;
   cursor: pointer;
   color: var(--subtle);
@@ -80,7 +78,7 @@ a:hover { text-decoration-thickness: 2px; }
 .coverage-range { color: var(--muted); font-size: 12px; white-space: nowrap; }
 .coverage-range strong { margin-left: 4px; color: var(--ink); font-weight: 650; }
 .rss-link { font-size: 13px; font-weight: 650; text-decoration: none; border-bottom: 1px solid var(--ink); }
-.language-option.is-active { color: var(--ink); font-weight: 700; }
+.language-switch:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
 
 .intro { padding: 72px 0 64px; border-bottom: 1px solid var(--ink); }
 .eyebrow { margin: 0 0 22px; font-size: 11px; font-weight: 750; letter-spacing: 0.16em; }
@@ -230,8 +228,8 @@ footer { border-top: 1px solid var(--line); }
 .source-summary dd { margin: 6px 0 0; font-size: 22px; font-weight: 620; }
 .source-directory { padding: 48px 0 80px; }
 .source-controls { display: grid; grid-template-columns: minmax(260px, 1fr) minmax(220px, 0.38fr); gap: 16px; margin-bottom: 38px; }
-.source-controls label { display: grid; gap: 7px; color: var(--muted); font-size: 12px; font-weight: 600; }
-.source-controls input, .source-controls select { min-height: 45px; padding: 9px 12px; border: 1px solid var(--line-strong); border-radius: 0; background: var(--paper); color: var(--ink); font: inherit; }
+.source-controls label { display: grid; min-width: 0; gap: 7px; color: var(--muted); font-size: 12px; font-weight: 600; }
+.source-controls input, .source-controls select { min-width: 0; width: 100%; min-height: 45px; padding: 9px 12px; border: 1px solid var(--line-strong); border-radius: 0; background: var(--paper); color: var(--ink); font: inherit; }
 .source-controls input:focus, .source-controls select:focus { border-color: var(--ink); outline: 1px solid var(--ink); }
 .source-group { margin-top: 42px; }
 .source-group:first-child { margin-top: 0; }

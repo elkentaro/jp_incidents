@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="The people supporting JP Incident Monitor, and how to chip in.">
   <title>Supporters — JP Incident Monitor</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20261024-es">
   <link rel="stylesheet" href="supporters.css">
 </head>
 <body class="supporters-page">
@@ -27,11 +27,11 @@
       <nav class="header-actions" aria-label="Main navigation" data-i18n-aria="navigation">
         <a class="rss-link" href="./" data-i18n="incidents">Incidents</a>
         <a class="rss-link" href="sources.html" data-i18n="sources">Sources</a>
-        <button class="language-switch" id="language-switch" type="button" aria-label="日本語に切り替える">
-          <span class="language-option is-active" data-language-option="en">EN</span>
-          <span aria-hidden="true">/</span>
-          <span class="language-option" data-language-option="ja">日本語</span>
-        </button>
+        <select class="language-switch" id="language-switch" aria-label="Language">
+          <option value="en" lang="en">English</option>
+          <option value="ja" lang="ja">日本語</option>
+          <option value="es" lang="es">Español</option>
+        </select>
       </nav>
     </div>
   </header>
@@ -76,6 +76,6 @@
       </div>
     </div>
   </footer>
-  <script src="supporters.js" defer></script>
+  <script src="supporters.js?v=20261024-es" defer></script>
 </body>
 </html>

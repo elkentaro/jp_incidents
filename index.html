@@ -15,7 +15,7 @@
   <meta name="description" content="A continuously updated index of publicly reported cybersecurity incidents affecting organizations in Japan.">
   <title>JP Incident Monitor</title>
   <link rel="alternate" type="application/rss+xml" title="JP Incident Monitor RSS" href="feed.xml">
-  <link rel="stylesheet" href="styles.css?v=20261021-2">
+  <link rel="stylesheet" href="styles.css?v=20261024-es">
 </head>
 <body>
   <header class="site-header">
@@ -27,11 +27,11 @@
       <div class="header-actions">
         <span class="coverage-range"><span data-i18n="coverage">Coverage</span> <strong id="coverage-range">—</strong></span>
         <a class="rss-link" href="feed.xml" data-i18n="rssFeed" type="application/rss+xml">RSS feed</a>
-        <button class="language-switch" id="language-switch" type="button" aria-label="日本語に切り替える">
-          <span class="language-option is-active" data-language-option="en">EN</span>
-          <span aria-hidden="true">/</span>
-          <span class="language-option" data-language-option="ja">日本語</span>
-        </button>
+        <select class="language-switch" id="language-switch" aria-label="Language">
+          <option value="en" lang="en">English</option>
+          <option value="ja" lang="ja">日本語</option>
+          <option value="es" lang="es">Español</option>
+        </select>
       </div>
     </div>
   </header>
@@ -138,6 +138,6 @@
     </div>
   </footer>
 
-  <script src="app.js?v=20261023-2" defer></script>
+  <script src="app.js?v=20261024-es" defer></script>
 </body>
 </html>
