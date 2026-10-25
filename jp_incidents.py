@@ -615,20 +615,25 @@ DOMAIN_BONUS = 15
 CONFIRMED_SOURCE_LIMIT = 6
 
 
-def reference_is_official(c, incident_id, url, source='', title=''):
+def reference_authority_rank(c, incident_id, url, source='', title=''):
     import source_authority
     row = c.execute('SELECT org FROM incidents WHERE id=?', (incident_id,)).fetchone()
     if not row:
-        return False
+        return 2
     proof = c.execute('SELECT issuer,evidence_quote FROM reference_authority WHERE incident_id=? AND url=?',
                       (incident_id, url)).fetchone()
-    return bool(proof and source_authority.valid_proof(dict(proof), row['org']) or
-                source_authority.collected_issuer(url, source, title, row['org'], SOURCES))
+    if proof and source_authority.valid_proof(dict(proof), row['org']):
+        return 0
+    return 1 if source_authority.collected_issuer(url, source, title, row['org'], SOURCES) else 2
+
+
+def reference_is_official(c, incident_id, url, source='', title=''):
+    return reference_authority_rank(c, incident_id, url, source, title) < 2
 
 
 def ordered_references(c, incident_id):
     refs = [dict(r) for r in c.execute('SELECT url,source,title FROM refs WHERE incident_id=? ORDER BY rowid', (incident_id,))]
-    return sorted(refs, key=lambda ref: not reference_is_official(c, incident_id, **ref))
+    return sorted(refs, key=lambda ref: reference_authority_rank(c, incident_id, **ref))
 
 
 def confirmed_source_count(c, incident_id):

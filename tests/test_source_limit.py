@@ -107,6 +107,15 @@ class SourceLimitTests(unittest.TestCase):
         self.assertFalse(source_authority.collected_issuer('https://prtimes.jp/company/2/release',
             'PR TIMES','Another issuer notice','Example Ltd',[source]))
 
+    def test_full_evidence_release_precedes_collector_inferred_notice(self):
+        iid=self.saturated();source=core.DISCLOSURE_SOURCES[0]['name']
+        inferred='https://www.release.tdnet.info/inbs/140120261026123456.pdf'
+        core.add_reference(self.c,iid,inferred,source,'Example Ltd：Incident notice')
+        verified='https://issuer.example/full-release'
+        core.add_reference(self.c,iid,verified,'Example Ltd','Full release',official_release={
+            'issuer':'Example Ltd','evidence_quote':'Example Ltd issued this notice.'})
+        self.assertEqual([r['url'] for r in core.ordered_references(self.c,iid)][:2],[verified,inferred])
+
 
 if __name__ == "__main__":
     unittest.main()
