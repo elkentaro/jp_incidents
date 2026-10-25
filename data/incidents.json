@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-25T11:16:18+00:00",
+  "updated_at": "2026-10-25T13:16:22+00:00",
   "total": 421,
   "date_range": {
     "start": "2026-08-09",
@@ -2686,6 +2686,42 @@
       "updated_at": "2026-10-25T05:47:43+00:00"
     },
     {
+      "id": "65f3107c9b8e0705",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": "2026-10-21T15:00:00+00:00",
+      "organization": "野村證券株式会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/26a27bee503d10aac1db449099d2a2b1f3291297",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/26a27bee503d10aac1db449099d2a2b1f3291297",
+            "https://www.nomuraholdings.com/jp/news/topics/20261023.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "野村ホールディングス / Nomura",
+          "url": "https://www.nomuraholdings.com/jp/news/topics/20261023.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/26a27bee503d10aac1db449099d2a2b1f3291297"
+        }
+      ],
+      "added_at": "2026-10-23T05:16:07+00:00",
+      "updated_at": "2026-10-25T13:16:22+00:00"
+    },
+    {
       "id": "7bc70bf6108ea4bc",
       "published_at": "2026-10-21T15:00:00+00:00",
       "disclosed_at": null,
@@ -3111,37 +3147,6 @@
       ],
       "added_at": "2026-10-22T21:15:57+00:00",
       "updated_at": "2026-10-22T21:15:57+00:00"
-    },
-    {
-      "id": "65f3107c9b8e0705",
-      "published_at": "2026-10-21T15:00:00+00:00",
-      "disclosed_at": "2026-10-21T15:00:00+00:00",
-      "organization": "野村證券株式会社",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "0a86ecb2b2d87e50",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.nomuraholdings.com/jp/news/topics/20261023.html",
-          "evidence_urls": [
-            "https://www.nomuraholdings.com/jp/news/topics/20261023.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "野村ホールディングス / Nomura",
-          "url": "https://www.nomuraholdings.com/jp/news/topics/20261023.html"
-        }
-      ],
-      "added_at": "2026-10-23T05:16:07+00:00",
-      "updated_at": "2026-10-23T05:16:07+00:00"
     },
     {
       "id": "680ce7c1acf96089",
@@ -7660,8 +7665,9 @@
         {
           "incident_id": "65f3107c9b8e0705",
           "relationship": "affects",
-          "evidence_url": "https://www.nomuraholdings.com/jp/news/topics/20261023.html",
+          "evidence_url": "https://news.yahoo.co.jp/articles/26a27bee503d10aac1db449099d2a2b1f3291297",
           "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/26a27bee503d10aac1db449099d2a2b1f3291297",
             "https://www.nomuraholdings.com/jp/news/topics/20261023.html"
           ]
         },
@@ -7711,7 +7717,7 @@
       "affected_system": "メール配信サービスのサーバーシステム",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T13:14:57+00:00",
-      "updated_at": "2026-10-23T05:16:07+00:00"
+      "updated_at": "2026-10-25T13:16:22+00:00"
     },
     {
       "id": "15204b629222c010",
