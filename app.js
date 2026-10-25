@@ -19,7 +19,7 @@ function replaceContent(node, children) {
 const copy = {
   es: {
     recentOnly: "Añadidos o actualizados en las últimas 24 horas", recentHelp: "Según cuándo se añadió o modificó un incidente en este índice, no cuándo ocurrió.",
-    sourceLimitDisclaimer: "Para ayudar a mantener la calidad de las fuentes, la recopilación se limita a 6 fuentes confirmadas por incidente. Los registros antiguos pueden conservar fuentes adicionales.",
+    sourceLimitDisclaimer: "Las noticias se añaden mientras el incidente tenga menos de 6 fuentes confirmadas. Los comunicados verificados emitidos por la organización afectada pueden superar este límite y aparecen primero. Se conservan las fuentes anteriores.",
     dateDisclaimer: "La fecha corresponde al incidente o, si se desconoce, a su publicación.",
     supporters: "Colaboradores",
     confidenceDisclaimer: "La confianza es una puntuación basada en las fuentes, no en la gravedad del incidente, la certeza de la IA ni la probabilidad de que la información sea correcta. La categoría de fuente más alta determina la base: fuentes oficiales o gubernamentales, 60; prensa general o especializada en seguridad, 50; agregadores, 35; otras, 30; redes sociales, 10 (sin fuentes: 0). Cada dominio adicional distinto que no sea una red social suma 15 puntos, hasta un máximo de 100; para las URL intermediarias de buscadores o noticias se utiliza el nombre del medio registrado. Alta: 60–100; media: 30–59; baja: 0–29. Las categorías se asignan automáticamente a partir de los dominios, nombres de medios y títulos o URL con formato de aviso, y pueden ser incorrectas. Distintos dominios pueden repetir la misma noticia, por lo que una puntuación mayor no garantiza una confirmación independiente. Ni siquiera 100 significa una exactitud del 100 %. Compruebe las fuentes enlazadas.",
@@ -59,7 +59,7 @@ const copy = {
   },
   en: {
     recentOnly: "Added or updated in the last 24 hours", recentHelp: "Based on when an incident was added to or changed in this index, not when it occurred.",
-    sourceLimitDisclaimer: "To help maintain source quality, source collection is capped at 6 confirmed sources per incident. Older records may retain additional sources.",
+    sourceLimitDisclaimer: "Ordinary reports are added while an incident has fewer than 6 confirmed sources. Verified releases issued by the affected organization can exceed this limit and appear first. Older references are preserved.",
     disclosureDate: "Disclosure date; occurrence unknown", discoveryDate: "Discovery / notification date",
     affectedOrganization: "Affected organization", upstreamIncident: "Upstream incident", whyLinked: "Why linked?",
     evidence: (number) => `Evidence ${number}`,
@@ -118,7 +118,7 @@ const copy = {
   },
   ja: {
     recentOnly: "過去24時間に追加・更新された事案のみ", recentHelp: "インシデントの発生日ではなく、この一覧への追加・更新日時に基づきます。",
-    sourceLimitDisclaimer: "情報源の品質を維持するため、収集する確認済み情報源は1件のインシデントにつき6件を上限としています。上限導入前の記録には、6件を超える情報源が残っている場合があります。",
+    sourceLimitDisclaimer: "通常の報道は確認済み情報源が6件未満の場合に追加します。被害組織自身が発表したと確認できる公式リリースは上限を超えて追加し、先頭に表示します。既存の情報源は保持します。",
     disclosureDate: "公表日（発生日不明）", discoveryDate: "発覚・通知日",
     affectedOrganization: "影響を受けた組織", upstreamIncident: "影響の起点となる事案", whyLinked: "関連の根拠",
     evidence: (number) => `根拠 ${number}`,

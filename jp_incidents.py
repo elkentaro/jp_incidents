@@ -615,23 +615,47 @@ DOMAIN_BONUS = 15
 CONFIRMED_SOURCE_LIMIT = 6
 
 
+def reference_is_official(c, incident_id, url, source='', title=''):
+    import source_authority
+    row = c.execute('SELECT org FROM incidents WHERE id=?', (incident_id,)).fetchone()
+    if not row:
+        return False
+    proof = c.execute('SELECT issuer,evidence_quote FROM reference_authority WHERE incident_id=? AND url=?',
+                      (incident_id, url)).fetchone()
+    return bool(proof and source_authority.valid_proof(dict(proof), row['org']) or
+                source_authority.collected_issuer(url, source, title, row['org'], SOURCES))
+
+
+def ordered_references(c, incident_id):
+    refs = [dict(r) for r in c.execute('SELECT url,source,title FROM refs WHERE incident_id=? ORDER BY rowid', (incident_id,))]
+    return sorted(refs, key=lambda ref: not reference_is_official(c, incident_id, **ref))
+
+
 def confirmed_source_count(c, incident_id):
     """Count accepted reference URLs for one event, never an organization."""
     return c.execute("SELECT count(*) FROM refs WHERE incident_id=?", (incident_id,)).fetchone()[0]
 
 
-def add_reference(c, incident_id, url, source, title):
-    """Add corroboration up to the per-incident limit; preserve historical references.
+def add_reference(c, incident_id, url, source, title, *, official_release=None):
+    """Add up to six sources, with an exception for verified victim-issued releases.
 
     Category and relationship evidence have their own provenance tables and must
     still be saved when a report supplies new facts after this limit is reached.
     The check and insert are one statement so concurrent writers cannot exceed it.
     """
-    return bool(c.execute(
+    import source_authority
+    target = c.execute('SELECT org FROM incidents WHERE id=?', (incident_id,)).fetchone()
+    proof = bool(target and source_authority.valid_proof(official_release, target['org']))
+    official = proof or reference_is_official(c, incident_id, url, source, title)
+    inserted = bool(c.execute(
         "INSERT OR IGNORE INTO refs(incident_id,url,source,title) "
-        "SELECT ?,?,?,? WHERE (SELECT count(*) FROM refs WHERE incident_id=?)<?",
-        (incident_id, url, source, title, incident_id, CONFIRMED_SOURCE_LIMIT),
+        "SELECT ?,?,?,? WHERE ? OR (SELECT count(*) FROM refs WHERE incident_id=?)<?",
+        (incident_id, url, source, title, official, incident_id, CONFIRMED_SOURCE_LIMIT),
     ).rowcount)
+    if proof:
+        c.execute('INSERT OR REPLACE INTO reference_authority VALUES(?,?,?,?)',
+                  (incident_id, url, official_release['issuer'], official_release['evidence_quote']))
+    return inserted
 
 
 def ref_tier(url, outlet="", title=""):
@@ -720,7 +744,8 @@ CREATE TABLE IF NOT EXISTS manual_reviews(
 def db():
     c = sqlite3.connect(DB_PATH, timeout=10)
     c.row_factory = sqlite3.Row
-    c.executescript(SCHEMA + ops.SCHEMA)
+    import source_authority
+    c.executescript(SCHEMA + ops.SCHEMA + source_authority.SCHEMA)
     cols = {r["name"] for r in c.execute("PRAGMA table_info(incidents)")}
     for col, typ in (("org", "TEXT"), ("kind", "TEXT"), ("records", "INTEGER"),
                      ("score", "INTEGER DEFAULT 0"), ("confidence", "TEXT DEFAULT 'low'"),
@@ -2748,8 +2773,8 @@ def recent(days=28, kind=None, min_score=0):
         args.extend([kind, kind])
     rows = [dict(r) for r in c.execute(sql + " ORDER BY published DESC, score DESC", args)]
     for r in rows:
-        r["refs"] = [dict(x) for x in c.execute(
-            "SELECT url, source FROM refs WHERE incident_id=? ORDER BY rowid", (r["id"],))]
+        r["refs"] = [{key: ref[key] for key in ('url', 'source')}
+                     for ref in ordered_references(c, r['id'])]
     c.close()
     return rows
 
@@ -2850,9 +2875,7 @@ def all_public_incidents():
             "related": relationships.get(row["id"], []),
             "sources": [
                 {"name": ref["source"] or "Source", "url": ref["url"]}
-                for ref in c.execute(
-                    "SELECT source,url FROM refs WHERE incident_id=? ORDER BY rowid", (row["id"],)
-                )
+                for ref in ordered_references(c, row['id'])
             ],
         }
         annotation = c.execute("SELECT affected_system,date_basis FROM incident_annotations WHERE incident_id=?", (row["id"],)).fetchone()
