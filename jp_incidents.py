@@ -3172,6 +3172,10 @@ def publish_public_json(path=JSON_PATH, rss_path=RSS_PATH, sources_path=SOURCES_
             target.write('\n')
         os.replace(temporary, health_path)
         absolute_paths.append(health_path)
+    if os.environ.get("JPI_LINKAGE_MAP", "0") == "1":
+        import linkage_map
+        changed = linkage_map.refresh(path, repo) or changed
+        absolute_paths.extend(os.path.join(repo, name) for name in linkage_map.OUTPUTS)
     for output_path in absolute_paths:
         if os.path.commonpath((repo, output_path)) != repo:
             raise RuntimeError(f"Published output must be inside the Git repository: {output_path}")

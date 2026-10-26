@@ -18,6 +18,7 @@ function replaceContent(node, children) {
 
 const copy = {
   es: {
+    linkageMap: 'Mapa de relaciones',
     recentOnly: "Añadidos o actualizados en las últimas 24 horas", recentHelp: "Según cuándo se añadió o modificó un incidente en este índice, no cuándo ocurrió.",
     sourceLimitDisclaimer: "Las noticias se añaden mientras el incidente tenga menos de 6 fuentes confirmadas. Los comunicados verificados emitidos por la organización afectada pueden superar este límite y aparecen primero. Se conservan las fuentes anteriores.",
     dateDisclaimer: "La fecha corresponde al incidente o, si se desconoce, a su publicación.",
@@ -58,6 +59,7 @@ const copy = {
     evidence: (number) => `Prueba ${number}`
   },
   en: {
+    linkageMap: 'Linkage map',
     recentOnly: "Added or updated in the last 24 hours", recentHelp: "Based on when an incident was added to or changed in this index, not when it occurred.",
     sourceLimitDisclaimer: "Ordinary reports are added while an incident has fewer than 6 confirmed sources. Verified releases issued by the affected organization can exceed this limit and appear first. Older references are preserved.",
     disclosureDate: "Disclosure date; occurrence unknown", discoveryDate: "Discovery / notification date",
@@ -117,6 +119,7 @@ const copy = {
     levels: { high: "High", medium: "Medium", low: "Low" }
   },
   ja: {
+    linkageMap: '関連マップ',
     recentOnly: "過去24時間に追加・更新された事案のみ", recentHelp: "インシデントの発生日ではなく、この一覧への追加・更新日時に基づきます。",
     sourceLimitDisclaimer: "通常の報道は確認済み情報源が6件未満の場合に追加します。被害組織自身が発表したと確認できる公式リリースは上限を超えて追加し、先頭に表示します。既存の情報源は保持します。",
     disclosureDate: "公表日（発生日不明）", discoveryDate: "発覚・通知日",

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An anonymized daily snapshot of recorded relationships between cyber incidents in Japan.">
+  <title>Linkage map — JP Incident Monitor</title>
+  <link rel="stylesheet" href="styles.css?v=20261024-recent">
+  <link rel="stylesheet" href="linkage.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="./" aria-label="JP Incident Monitor home"><span class="brand-mark" aria-hidden="true">JP</span><span>Incident Monitor</span></a>
+      <nav class="header-actions" aria-label="Main navigation">
+        <a class="rss-link" href="./" data-copy="incidents">Incidents</a>
+        <a class="rss-link" href="sources.html" data-copy="sources">Sources</a>
+        <div class="language-switch" id="language-switch" role="group" aria-label="Language">
+          <button class="language-option is-active" type="button" data-lang="en" lang="en" aria-pressed="true">EN</button><span aria-hidden="true">|</span>
+          <button class="language-option" type="button" data-lang="ja" lang="ja" aria-pressed="false">JA</button><span aria-hidden="true">|</span>
+          <button class="language-option" type="button" data-lang="es" lang="es" aria-pressed="false">ES</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="shell linkage-page">
+    <section class="map-intro" aria-labelledby="page-title">
+      <p class="eyebrow" data-copy="eyebrow">THE CONNECTIONS BEHIND THE INCIDENTS</p>
+      <div class="map-heading"><h1 id="page-title" data-copy="title">Incident linkage map</h1><span class="snapshot-badge" data-copy="badge">Daily snapshot</span></div>
+      <p class="lede" data-copy="intro">A view of how publicly reported incidents connect, with organization names and identifiers removed.</p>
+      <p class="map-note" data-copy="explanation">Each dot is an incident. Solid lines show recorded relationships; node colors distinguish upstream, downstream and standalone incidents. Positions show connections, not geography or severity.</p>
+    </section>
+    <dl class="map-stats">
+      <div><dt data-copy="total">Incidents in snapshot</dt><dd>424</dd></div>
+      <div><dt data-copy="linked">With recorded connections</dt><dd>280</dd></div>
+      <div><dt data-copy="links">Recorded connections</dt><dd>259</dd></div>
+      <div><dt data-copy="networks">Connected networks</dt><dd>24</dd></div>
+    </dl>
+    <figure class="map-figure">
+      <div class="map-image">
+        <img src="data/linkage-map.png" width="2400" height="1440" alt="Anonymized incident map. Orange upstream hubs connect to blue downstream incidents; purple standalone incidents appear throughout the same map without connecting lines." data-copy-alt="alt">
+      </div>
+      <figcaption>
+        <div class="map-caption-meta"><span><span data-copy="updated">Last updated</span>: <time datetime="2026-10-26T01:07:30.403349+00:00">2026-10-26 01:07 UTC</time></span><a href="data/linkage-map.png" target="_blank" rel="noopener" data-copy="open">Open full-resolution image ↗</a></div>
+        <div class="map-key-section">
+          <strong id="map-key-title" data-copy="key">Key</strong>
+          <ul class="map-key" aria-labelledby="map-key-title">
+            <li><span class="key-dot upstream" aria-hidden="true"></span><span data-copy="keyUpstream">Upstream</span></li>
+            <li><span class="key-dot downstream" aria-hidden="true"></span><span data-copy="keyDownstream">Downstream</span></li>
+            <li><span class="key-dot standalone" aria-hidden="true"></span><span data-copy="keyStandalone">Standalone</span><span>(144)</span></li>
+            <li><span class="key-dot both" aria-hidden="true"></span><span data-copy="keyBoth">Both roles</span></li>
+            <li><span class="key-dot related" aria-hidden="true"></span><span data-copy="keyRelated">Other related</span></li>
+            <li><span class="key-line" aria-hidden="true"></span><span data-copy="keyRelationship">Recorded relationship</span></li>
+          </ul>
+          <p class="map-key-note" data-copy="proximity">Standalone nodes have no recorded connection; proximity does not imply a relationship.</p>
+        </div>
+      </figcaption>
+    </figure>
+    <div class="map-notes">
+      <section><h2 data-copy="readingTitle">Reading the map</h2><p data-copy="reading">Orange marks upstream incidents, blue downstream incidents, and purple standalone incidents with no recorded connection. Teal marks incidents with both upstream and downstream roles; charcoal marks other related incidents. A missing connection does not establish that two incidents are unrelated.</p></section>
+      <section><h2 data-copy="snapshotTitle">About this snapshot</h2><p data-copy="snapshot">The static image is refreshed every 24 hours from the public incident index. Names, incident IDs, source links and incident dates are omitted; the connection pattern is retained. It is an overview of recorded relationships, not a complete map of cyber incidents in Japan.</p></section>
+    </div>
+    <p class="map-source"><span data-copy="sourceUpdated">Source data updated</span>: <time datetime="2026-10-26T00:17:15+00:00">2026-10-26T00:17:15+00:00</time> · <a href="./" data-copy="browse">Browse the incident index</a></p>
+  </main>
+  <footer><div class="shell footer-inner"><p data-copy="footer">Public reports. Recorded relationships. An anonymized overview.</p><a href="./" data-copy="back">Back to incidents</a></div></footer>
+  <script src="linkage.js" defer></script>
+</body>
+</html>

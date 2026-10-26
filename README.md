@@ -717,6 +717,31 @@ resolved item. No review reasons, extraction snapshots, or decision notes are
 exported to the public site. Existing rejected history is not automatically
 reopened; this workflow applies to newly processed candidates.
 
+## Anonymized linkage map
+
+The [linkage map](https://elkentaro.github.io/jp_incidents/linkage.html) shows
+recorded public relationships as a static PNG. Upstream, downstream, standalone,
+and mixed-role incidents use distinct colors. Standalone incidents appear in the
+same map without connections. Names, incident IDs, source URLs and incident dates
+are omitted; the connection pattern remains visible. The page's legend and
+last-updated caption follow its English, Japanese or Spanish language selection.
+
+To enable daily snapshots in a collector installation, install the optional
+renderer dependency and set `JPI_LINKAGE_MAP=1` in private runtime configuration:
+
+```bash
+python -m pip install -r requirements-linkage.txt
+python linkage_map.py
+```
+
+The normal publication cycle regenerates the image when 24 hours have elapsed
+since its last generation, then publishes the PNG, caption page and snapshot
+metadata together. Failed or delayed publication retries on the next cycle.
+Missing or corrupt artifacts are repaired immediately. `--force` regenerates a
+snapshot for a deliberate design update. The renderer reads only the public
+incident JSON and never queries the private review database. Image generation
+does not run collection, AI review, or network requests.
+
 ## Monitoring, recovery, and operating limits
 
 Collection and publication are separate failure boundaries: failed Git publishing
