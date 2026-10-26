@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-26T08:15:38+00:00",
-  "total": 439,
+  "updated_at": "2026-10-26T09:16:19+00:00",
+  "total": 442,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-26"
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-10-26",
-      "count": 4
+      "count": 7
     }
   ],
   "incidents": [
@@ -402,6 +402,62 @@
       "service_aliases": [],
       "added_at": "2026-10-26T05:15:47+00:00",
       "updated_at": "2026-10-26T05:15:47+00:00"
+    },
+    {
+      "id": "15e60c32657aa57d",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "名古屋銀行",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE41M19uaV90Z0NBZTdvM29sVTNsNXhIalBjMTF2ZVlpOGdkTHpTdW9tS3JPTU5tWTFuWnAyMDZ4NUQyaFY3QXhibk1za21uUjRBNE8zWVhSZEFETTAyLUFyTVZuSktPcGlZWVhyXw?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMibEFVX3lxTE41M19uaV90Z0NBZTdvM29sVTNsNXhIalBjMTF2ZVlpOGdkTHpTdW9tS3JPTU5tWTFuWnAyMDZ4NUQyaFY3QXhibk1za21uUjRBNE8zWVhSZEFETTAyLUFyTVZuSktPcGlZWVhyXw?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE41M19uaV90Z0NBZTdvM29sVTNsNXhIalBjMTF2ZVlpOGdkTHpTdW9tS3JPTU5tWTFuWnAyMDZ4NUQyaFY3QXhibk1za21uUjRBNE8zWVhSZEFETTAyLUFyTVZuSktPcGlZWVhyXw?oc=5"
+        }
+      ],
+      "added_at": "2026-10-26T09:16:19+00:00",
+      "updated_at": "2026-10-26T09:16:19+00:00"
+    },
+    {
+      "id": "8bc67780a7774ac9",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "読宣WEST",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1700,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/a77616124c67df742156fb60fcb1e1b5d9cd5802"
+        }
+      ],
+      "affected_service": "ヨミポスト",
+      "service_aliases": [],
+      "added_at": "2026-10-26T09:16:19+00:00",
+      "updated_at": "2026-10-26T09:16:19+00:00"
     },
     {
       "id": "025ab3a749442b95",
@@ -464,6 +520,38 @@
       ],
       "added_at": "2026-10-26T06:15:53+00:00",
       "updated_at": "2026-10-26T06:15:53+00:00"
+    },
+    {
+      "id": "93d09b9e5634f16a",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "eヘルスケア",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://pnb.jiho.jp/article/251794",
+          "evidence_urls": [
+            "https://pnb.jiho.jp/article/251794"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "PHARMACY NEWSBREAK",
+          "url": "https://pnb.jiho.jp/article/251794"
+        }
+      ],
+      "added_at": "2026-10-26T09:16:19+00:00",
+      "updated_at": "2026-10-26T09:16:19+00:00"
     },
     {
       "id": "fc970efadd8aa2ca",
@@ -809,8 +897,9 @@
         {
           "incident_id": "508c78a138a65801",
           "relationship": "affected_by",
-          "evidence_url": "https://ssl4.eir-parts.net/doc/8153/tdnet/2898082/00.pdf",
+          "evidence_url": "https://news.yahoo.co.jp/articles/5a4c74bfe4f4cbe931a28b73d2d9489cfc90b3b5",
           "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/5a4c74bfe4f4cbe931a28b73d2d9489cfc90b3b5",
             "https://ssl4.eir-parts.net/doc/8153/tdnet/2898082/00.pdf"
           ]
         }
@@ -835,12 +924,16 @@
         {
           "name": "ASCII.jp",
           "url": "https://ascii.jp/elem/000/004/445/4445546/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/5a4c74bfe4f4cbe931a28b73d2d9489cfc90b3b5"
         }
       ],
       "affected_service": "モスカード",
       "service_aliases": [],
       "added_at": "2026-10-24T20:15:24+00:00",
-      "updated_at": "2026-10-26T03:15:33+00:00"
+      "updated_at": "2026-10-26T09:16:19+00:00"
     },
     {
       "id": "dd83c4bfa1fb5b6c",
@@ -4610,6 +4703,14 @@
           ]
         },
         {
+          "incident_id": "15e60c32657aa57d",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE41M19uaV90Z0NBZTdvM29sVTNsNXhIalBjMTF2ZVlpOGdkTHpTdW9tS3JPTU5tWTFuWnAyMDZ4NUQyaFY3QXhibk1za21uUjRBNE8zWVhSZEFETTAyLUFyTVZuSktPcGlZWVhyXw?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMibEFVX3lxTE41M19uaV90Z0NBZTdvM29sVTNsNXhIalBjMTF2ZVlpOGdkTHpTdW9tS3JPTU5tWTFuWnAyMDZ4NUQyaFY3QXhibk1za21uUjRBNE8zWVhSZEFETTAyLUFyTVZuSktPcGlZWVhyXw?oc=5"
+          ]
+        },
+        {
           "incident_id": "1653745dc5fd0b31",
           "relationship": "affects",
           "evidence_url": "https://www.city.koto.lg.jp/102000/kotomise___.html",
@@ -4842,6 +4943,14 @@
           ]
         },
         {
+          "incident_id": "93d09b9e5634f16a",
+          "relationship": "affects",
+          "evidence_url": "https://pnb.jiho.jp/article/251794",
+          "evidence_urls": [
+            "https://pnb.jiho.jp/article/251794"
+          ]
+        },
+        {
           "incident_id": "98ddf9fd18af84c0",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/c68f5f84e7b1c840560acc3fd2d7250e768329c3",
@@ -5058,7 +5167,7 @@
         }
       ],
       "added_at": "2026-10-21T19:22:12+00:00",
-      "updated_at": "2026-10-26T08:15:38+00:00"
+      "updated_at": "2026-10-26T09:16:19+00:00"
     },
     {
       "id": "2dc160527ae7970a",
@@ -6959,6 +7068,7 @@
       "incident_type": "data leak",
       "incident_categories": [
         "data leak",
+        "ransomware",
         "unauthorized access"
       ],
       "potential_records": null,
@@ -7018,7 +7128,7 @@
       "affected_service": "お名前.com デスクトップクラウド",
       "service_aliases": [],
       "added_at": "2026-10-21T00:23:43+00:00",
-      "updated_at": "2026-10-26T01:27:18+00:00"
+      "updated_at": "2026-10-26T09:16:19+00:00"
     },
     {
       "id": "790f2d74f04c4ba6",
@@ -9155,8 +9265,9 @@
         {
           "incident_id": "b46e3020e19d722d",
           "relationship": "affects",
-          "evidence_url": "https://ssl4.eir-parts.net/doc/8153/tdnet/2898082/00.pdf",
+          "evidence_url": "https://news.yahoo.co.jp/articles/5a4c74bfe4f4cbe931a28b73d2d9489cfc90b3b5",
           "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/5a4c74bfe4f4cbe931a28b73d2d9489cfc90b3b5",
             "https://ssl4.eir-parts.net/doc/8153/tdnet/2898082/00.pdf"
           ]
         }
@@ -9172,7 +9283,7 @@
         }
       ],
       "added_at": "2026-10-23T08:16:11+00:00",
-      "updated_at": "2026-10-25T05:15:56+00:00"
+      "updated_at": "2026-10-26T09:16:19+00:00"
     },
     {
       "id": "b83660330dc63273",
