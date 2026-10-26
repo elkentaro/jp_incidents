@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-26T00:17:15+00:00",
-  "total": 424,
+  "updated_at": "2026-10-26T01:27:18+00:00",
+  "total": 426,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-24"
@@ -345,7 +345,7 @@
     },
     {
       "date": "2026-10-21",
-      "count": 44
+      "count": 45
     },
     {
       "date": "2026-10-22",
@@ -357,7 +357,7 @@
     },
     {
       "date": "2026-10-24",
-      "count": 2
+      "count": 3
     },
     {
       "date": "2026-10-25",
@@ -462,6 +462,40 @@
       ],
       "added_at": "2026-10-24T21:12:22+00:00",
       "updated_at": "2026-10-25T00:15:40+00:00"
+    },
+    {
+      "id": "d8d5bf4a9468775d",
+      "published_at": "2026-10-23T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "カカオピッコマ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1002404,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.kakaopiccoma.com/info/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%A9%E3%82%AF%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%88%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E3%81%AE%E3%83%A1%E3%83%BC%E3%83%AB%E9%85%8D%E4%BF%A1%E3%82%B7%E3%82%B9.html",
+          "evidence_urls": [
+            "https://www.kakaopiccoma.com/info/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%A9%E3%82%AF%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%88%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E3%81%AE%E3%83%A1%E3%83%BC%E3%83%AB%E9%85%8D%E4%BF%A1%E3%82%B7%E3%82%B9.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.kakaopiccoma.com/info/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%A9%E3%82%AF%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%88%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E3%81%AE%E3%83%A1%E3%83%BC%E3%83%AB%E9%85%8D%E4%BF%A1%E3%82%B7%E3%82%B9.html"
+        }
+      ],
+      "affected_service": "メールマガジン",
+      "service_aliases": [],
+      "added_at": "2026-10-26T01:27:18+00:00",
+      "updated_at": "2026-10-26T01:27:18+00:00"
     },
     {
       "id": "b46e3020e19d722d",
@@ -2538,6 +2572,10 @@
           "url": "https://www.andst-hd.co.jp/news/notice/entry-17234/"
         },
         {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/117692"
+        },
+        {
           "name": "47NEWS",
           "url": "https://www.47news.jp/15128223.html"
         },
@@ -2555,7 +2593,7 @@
         }
       ],
       "added_at": "2026-10-23T08:33:10+00:00",
-      "updated_at": "2026-10-26T00:08:36+00:00"
+      "updated_at": "2026-10-26T01:27:18+00:00"
     },
     {
       "id": "f1a05e615645403f",
@@ -4483,8 +4521,9 @@
         {
           "incident_id": "bca1b95c9db0ae16",
           "relationship": "affects",
-          "evidence_url": "https://jinjibu.jp/info/detl/2012/",
+          "evidence_url": "https://jinjibu.jp/hrvision/",
           "evidence_urls": [
+            "https://jinjibu.jp/hrvision/",
             "https://jinjibu.jp/info/detl/2012/"
           ]
         },
@@ -4526,6 +4565,14 @@
           "evidence_url": "https://www.metro.tokyo.lg.jp/information/press/2026/10/2026102317",
           "evidence_urls": [
             "https://www.metro.tokyo.lg.jp/information/press/2026/10/2026102317"
+          ]
+        },
+        {
+          "incident_id": "d8d5bf4a9468775d",
+          "relationship": "affects",
+          "evidence_url": "https://www.kakaopiccoma.com/info/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%A9%E3%82%AF%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%88%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E3%81%AE%E3%83%A1%E3%83%BC%E3%83%AB%E9%85%8D%E4%BF%A1%E3%82%B7%E3%82%B9.html",
+          "evidence_urls": [
+            "https://www.kakaopiccoma.com/info/%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%E3%83%A9%E3%82%AF%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%88%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E3%81%AE%E3%83%A1%E3%83%BC%E3%83%AB%E9%85%8D%E4%BF%A1%E3%82%B7%E3%82%B9.html"
           ]
         },
         {
@@ -4640,7 +4687,7 @@
         }
       ],
       "added_at": "2026-10-21T19:22:12+00:00",
-      "updated_at": "2026-10-25T05:47:43+00:00"
+      "updated_at": "2026-10-26T01:27:18+00:00"
     },
     {
       "id": "2dc160527ae7970a",
@@ -5185,6 +5232,31 @@
       "updated_at": "2026-10-22T19:17:51+00:00"
     },
     {
+      "id": "6f2d360f03a9dc58",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "チャリ・ロト",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 373,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://chariloto.jp/news/20261024/index.html"
+        }
+      ],
+      "affected_service": "チャリロトアプリ",
+      "service_aliases": [],
+      "added_at": "2026-10-26T01:27:18+00:00",
+      "updated_at": "2026-10-26T01:27:18+00:00"
+    },
+    {
       "id": "76c4f6f310f271f2",
       "published_at": "2026-10-20T15:00:00+00:00",
       "disclosed_at": null,
@@ -5425,8 +5497,9 @@
         {
           "incident_id": "7e647fcc0bac0b06",
           "relationship": "affected_by",
-          "evidence_url": "https://jinjibu.jp/info/detl/2012/",
+          "evidence_url": "https://jinjibu.jp/hrvision/",
           "evidence_urls": [
+            "https://jinjibu.jp/hrvision/",
             "https://jinjibu.jp/info/detl/2012/"
           ]
         }
@@ -5435,10 +5508,14 @@
         {
           "name": "日本の人事部",
           "url": "https://jinjibu.jp/info/detl/2012/"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://jinjibu.jp/hrvision/"
         }
       ],
       "added_at": "2026-10-23T21:15:16+00:00",
-      "updated_at": "2026-10-23T21:15:16+00:00"
+      "updated_at": "2026-10-26T01:27:18+00:00"
     },
     {
       "id": "e4b28407cb928318",
@@ -6478,6 +6555,10 @@
           "url": "https://www.onamae.com/news/article/11595"
         },
         {
+          "name": "satimo list",
+          "url": "https://www.onamae.com/news/article/11598"
+        },
+        {
           "name": "INTERNET Watch",
           "url": "https://internet.watch.impress.co.jp/docs/news/2149829.html"
         },
@@ -6497,7 +6578,7 @@
       "affected_service": "お名前.com デスクトップクラウド",
       "service_aliases": [],
       "added_at": "2026-10-21T00:23:43+00:00",
-      "updated_at": "2026-10-26T00:08:36+00:00"
+      "updated_at": "2026-10-26T01:27:18+00:00"
     },
     {
       "id": "790f2d74f04c4ba6",
