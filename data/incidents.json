@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-26T10:15:39+00:00",
-  "total": 442,
+  "updated_at": "2026-10-26T10:46:27+00:00",
+  "total": 443,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-26"
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-10-26",
-      "count": 7
+      "count": 8
     }
   ],
   "incidents": [
@@ -402,6 +402,40 @@
       "service_aliases": [],
       "added_at": "2026-10-26T05:15:47+00:00",
       "updated_at": "2026-10-26T05:15:47+00:00"
+    },
+    {
+      "id": "b57531b27eff42d1",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "台東区",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 120,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "421fc74f1b6a7fee",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.taito.lg.jp/bunka_kanko/other/tsutaju.html",
+          "evidence_urls": [
+            "https://www.city.taito.lg.jp/bunka_kanko/other/tsutaju.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "台東区 / Taito",
+          "url": "https://www.city.taito.lg.jp/bunka_kanko/other/tsutaju.html"
+        }
+      ],
+      "affected_service": "「蔦重ゆかりの地 台東区」公式サイト",
+      "service_aliases": [],
+      "added_at": "2026-10-26T10:46:27+00:00",
+      "updated_at": "2026-10-26T10:46:27+00:00"
     },
     {
       "id": "15e60c32657aa57d",
@@ -1495,6 +1529,14 @@
           "evidence_urls": [
             "https://www.city.taito.lg.jp/bunka_kanko/other/houkoku1023.html"
           ]
+        },
+        {
+          "incident_id": "b57531b27eff42d1",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.taito.lg.jp/bunka_kanko/other/tsutaju.html",
+          "evidence_urls": [
+            "https://www.city.taito.lg.jp/bunka_kanko/other/tsutaju.html"
+          ]
         }
       ],
       "sources": [
@@ -1504,7 +1546,7 @@
         }
       ],
       "added_at": "2026-10-25T05:47:43+00:00",
-      "updated_at": "2026-10-25T05:47:43+00:00"
+      "updated_at": "2026-10-26T10:46:27+00:00"
     },
     {
       "id": "4aa0b50acb6d2b97",
