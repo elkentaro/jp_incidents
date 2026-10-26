@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-26T15:15:34+00:00",
-  "total": 452,
+  "updated_at": "2026-10-26T20:15:50+00:00",
+  "total": 463,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-26"
@@ -357,11 +357,11 @@
     },
     {
       "date": "2026-10-25",
-      "count": 2
+      "count": 3
     },
     {
       "date": "2026-10-26",
-      "count": 12
+      "count": 22
     },
     {
       "date": "2026-10-27",
@@ -421,7 +421,7 @@
       ],
       "potential_records": 2600000,
       "confidence": "high",
-      "confidence_score": 65,
+      "confidence_score": 80,
       "related": [
         {
           "incident_id": "9b763823178eb170",
@@ -440,10 +440,82 @@
         {
           "name": "Impress Watch",
           "url": "https://www.watch.impress.co.jp/docs/news/2151286.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/580c338d028f505c10d6bc8d6fa5c5ee27b88105"
         }
       ],
+      "affected_service": "海外ホテル予約ページ",
+      "service_aliases": [],
       "added_at": "2026-10-26T13:16:27+00:00",
-      "updated_at": "2026-10-26T13:16:27+00:00"
+      "updated_at": "2026-10-26T20:15:50+00:00"
+    },
+    {
+      "id": "1306a0c62a3f2f3a",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東海旅客鉄道",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf",
+          "evidence_urls": [
+            "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "JR九州 / JR Kyushu",
+          "url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf"
+        }
+      ],
+      "affected_service": "エクスプレス予約",
+      "service_aliases": [],
+      "added_at": "2026-10-26T20:15:50+00:00",
+      "updated_at": "2026-10-26T20:15:50+00:00"
+    },
+    {
+      "id": "1c0b1a1a98899138",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "西日本旅客鉄道",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf",
+          "evidence_urls": [
+            "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "JR九州 / JR Kyushu",
+          "url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf"
+        }
+      ],
+      "affected_service": "エクスプレス予約",
+      "service_aliases": [],
+      "added_at": "2026-10-26T20:15:50+00:00",
+      "updated_at": "2026-10-26T20:15:50+00:00"
     },
     {
       "id": "20a5defaa0a897ab",
@@ -514,6 +586,104 @@
       "updated_at": "2026-10-26T13:16:27+00:00"
     },
     {
+      "id": "3e0ead8cb817bdc1",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "JR西日本",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.westjr.co.jp/press/article/2026/10/26/page_31158.html",
+          "evidence_urls": [
+            "https://www.westjr.co.jp/press/article/2026/10/26/page_31158.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "JR西日本 / JR West",
+          "url": "https://www.westjr.co.jp/press/article/2026/10/26/page_31158.html"
+        }
+      ],
+      "added_at": "2026-10-26T20:15:50+00:00",
+      "updated_at": "2026-10-26T20:15:50+00:00"
+    },
+    {
+      "id": "41cec81677237776",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "西日本旅客鉄道",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf",
+          "evidence_urls": [
+            "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "JR九州 / JR Kyushu",
+          "url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf"
+        }
+      ],
+      "affected_service": "スマートEX",
+      "service_aliases": [],
+      "added_at": "2026-10-26T20:15:50+00:00",
+      "updated_at": "2026-10-26T20:15:50+00:00"
+    },
+    {
+      "id": "460b3d6449fdf1e9",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "九州旅客鉄道",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf",
+          "evidence_urls": [
+            "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "JR九州 / JR Kyushu",
+          "url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf"
+        }
+      ],
+      "affected_service": "スマートEX",
+      "service_aliases": [],
+      "added_at": "2026-10-26T20:15:50+00:00",
+      "updated_at": "2026-10-26T20:15:50+00:00"
+    },
+    {
       "id": "697b58a7f0dc43fe",
       "published_at": "2026-10-25T15:00:00+00:00",
       "disclosed_at": "2026-10-25T15:00:00+00:00",
@@ -580,6 +750,138 @@
       "updated_at": "2026-10-26T10:46:27+00:00"
     },
     {
+      "id": "db7624f99ed07c86",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東海旅客鉄道",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf",
+          "evidence_urls": [
+            "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "JR九州 / JR Kyushu",
+          "url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf"
+        }
+      ],
+      "affected_service": "スマートEX",
+      "service_aliases": [],
+      "added_at": "2026-10-26T20:15:50+00:00",
+      "updated_at": "2026-10-26T20:15:50+00:00"
+    },
+    {
+      "id": "faa0f8805f4ba30d",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "九州旅客鉄道",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf",
+          "evidence_urls": [
+            "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "JR九州 / JR Kyushu",
+          "url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf"
+        }
+      ],
+      "affected_service": "エクスプレス予約",
+      "service_aliases": [],
+      "added_at": "2026-10-26T20:15:50+00:00",
+      "updated_at": "2026-10-26T20:15:50+00:00"
+    },
+    {
+      "id": "15df050b8f084cda",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "JR九州",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/3ce37470beef51d89a7514fbeb118878310f61fe",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/3ce37470beef51d89a7514fbeb118878310f61fe"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/3ce37470beef51d89a7514fbeb118878310f61fe"
+        }
+      ],
+      "affected_service": "新幹線のネット予約サービス",
+      "service_aliases": [],
+      "added_at": "2026-10-26T20:15:50+00:00",
+      "updated_at": "2026-10-26T20:15:50+00:00"
+    },
+    {
+      "id": "3e30cc389d783bdf",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "JR東海",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/3ce37470beef51d89a7514fbeb118878310f61fe",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/3ce37470beef51d89a7514fbeb118878310f61fe"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/3ce37470beef51d89a7514fbeb118878310f61fe"
+        }
+      ],
+      "affected_service": "新幹線のネット予約サービス",
+      "service_aliases": [],
+      "added_at": "2026-10-26T20:15:50+00:00",
+      "updated_at": "2026-10-26T20:15:50+00:00"
+    },
+    {
       "id": "8bc67780a7774ac9",
       "published_at": "2026-10-25T15:00:00+00:00",
       "disclosed_at": null,
@@ -603,6 +905,39 @@
       "service_aliases": [],
       "added_at": "2026-10-26T09:16:19+00:00",
       "updated_at": "2026-10-26T09:16:19+00:00"
+    },
+    {
+      "id": "e7ff5721005eb68e",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "JR西日本",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/3ce37470beef51d89a7514fbeb118878310f61fe",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/3ce37470beef51d89a7514fbeb118878310f61fe"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/3ce37470beef51d89a7514fbeb118878310f61fe"
+        }
+      ],
+      "affected_service": "新幹線のネット予約サービス",
+      "service_aliases": [],
+      "added_at": "2026-10-26T20:15:50+00:00",
+      "updated_at": "2026-10-26T20:15:50+00:00"
     },
     {
       "id": "025ab3a749442b95",
@@ -763,7 +1098,7 @@
       ],
       "potential_records": null,
       "confidence": "high",
-      "confidence_score": 60,
+      "confidence_score": 75,
       "related": [
         {
           "incident_id": "680ce7c1acf96089",
@@ -778,10 +1113,14 @@
         {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261026556413.pdf"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/1b2f115bac2548fbb98d6fbf27b1e2f27c9f21f4"
         }
       ],
       "added_at": "2026-10-26T13:16:27+00:00",
-      "updated_at": "2026-10-26T13:16:27+00:00"
+      "updated_at": "2026-10-26T20:15:50+00:00"
     },
     {
       "id": "0bfef460037e666a",
@@ -817,6 +1156,31 @@
       "updated_at": "2026-10-26T06:15:53+00:00"
     },
     {
+      "id": "c062d62cd0e55290",
+      "published_at": "2026-10-24T15:00:00+00:00",
+      "disclosed_at": "2026-10-25T15:00:00+00:00",
+      "organization": "未来アセット生命",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "재경일보",
+          "url": "https://news.jkn.co.kr/editions/japanese/post/1050741"
+        }
+      ],
+      "affected_service": "顧客の申込システム",
+      "service_aliases": [],
+      "added_at": "2026-10-26T20:15:50+00:00",
+      "updated_at": "2026-10-26T20:15:50+00:00"
+    },
+    {
       "id": "07575f3125a12f31",
       "published_at": "2026-10-23T15:00:00+00:00",
       "disclosed_at": null,
@@ -826,7 +1190,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 7900000000,
       "confidence": "high",
       "confidence_score": 100,
       "related": [],
@@ -877,7 +1241,7 @@
         }
       ],
       "added_at": "2026-10-25T00:15:40+00:00",
-      "updated_at": "2026-10-26T13:16:27+00:00"
+      "updated_at": "2026-10-26T20:15:50+00:00"
     },
     {
       "id": "d8d5bf4a9468775d",
@@ -3114,6 +3478,10 @@
           "url": "https://netshop.impress.co.jp/n/2026/10/26/16922"
         },
         {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/db810a880659a50f9856a14ae55a91c4cea62943"
+        },
+        {
           "name": "秋田魁新報電子版",
           "url": "https://www.sakigake.jp/news/article/20261022AK0034/"
         },
@@ -3141,7 +3509,7 @@
       "affected_service": "お荷物問い合わせサービス",
       "service_aliases": [],
       "added_at": "2026-10-22T10:24:30+00:00",
-      "updated_at": "2026-10-26T13:16:27+00:00"
+      "updated_at": "2026-10-26T20:15:50+00:00"
     },
     {
       "id": "4220c745782e4b6d",
@@ -5421,10 +5789,14 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE94eks1TGVKZF9BTDQ0NzlsWXpWSC1NUVhlS0ZqLTBZY1ZFYi1hYkR3ejYtSGZkNy16cmlSbE40LVUxakR3TXdJc3pEd0sxRDdzeC1KMnFoM1VBMHM4SldXWGRLMFlha2F6d2ViZHFmMWxBWDVBclpERDgtTDdYVnM?oc=5"
+        },
+        {
+          "name": "Security NEXT",
+          "url": "https://www.security-next.com/191846"
         }
       ],
       "added_at": "2026-10-21T19:22:12+00:00",
-      "updated_at": "2026-10-26T13:16:27+00:00"
+      "updated_at": "2026-10-26T20:15:50+00:00"
     },
     {
       "id": "2dc160527ae7970a",
@@ -5460,6 +5832,10 @@
           "url": "https://373news.com/corporation/notice/press/id_bf3929e6-1d90-4183-9aa5-4bbcf70f5d84"
         },
         {
+          "name": "南日本新聞",
+          "url": "https://373news.com/corporation/notice/minamipass/id_bf3929e6-1d90-4183-9aa5-4bbcf70f5d84"
+        },
+        {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/054ab82f5fea745805f274d38ec75e5fb5fb019a"
         },
@@ -5469,7 +5845,7 @@
         }
       ],
       "added_at": "2026-10-23T02:16:18+00:00",
-      "updated_at": "2026-10-26T13:16:27+00:00"
+      "updated_at": "2026-10-26T20:15:50+00:00"
     },
     {
       "id": "3cb01ea2dcb770b4",
@@ -7995,6 +8371,44 @@
       "updated_at": "2026-10-22T10:39:16+00:00"
     },
     {
+      "id": "9b763823178eb170",
+      "published_at": "2026-10-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "楽天トラベル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 860000,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "d41f5779f643dfe8",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.watch.impress.co.jp/docs/news/2151286.html",
+          "evidence_urls": [
+            "https://www.watch.impress.co.jp/docs/news/2151286.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Impress Watch",
+          "url": "https://www.watch.impress.co.jp/docs/news/2151286.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/580c338d028f505c10d6bc8d6fa5c5ee27b88105"
+        }
+      ],
+      "affected_service": "多言語予約サイト",
+      "service_aliases": [],
+      "added_at": "2026-10-26T13:16:27+00:00",
+      "updated_at": "2026-10-26T20:15:50+00:00"
+    },
+    {
       "id": "04791f78ba6dd08b",
       "published_at": "2026-10-19T15:00:00+00:00",
       "disclosed_at": null,
@@ -8605,40 +9019,6 @@
       "updated_at": "2026-10-22T12:31:57+00:00"
     },
     {
-      "id": "9b763823178eb170",
-      "published_at": "2026-10-19T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "楽天トラベル",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 860000,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "d41f5779f643dfe8",
-          "relationship": "same_organization",
-          "evidence_url": "https://www.watch.impress.co.jp/docs/news/2151286.html",
-          "evidence_urls": [
-            "https://www.watch.impress.co.jp/docs/news/2151286.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Impress Watch",
-          "url": "https://www.watch.impress.co.jp/docs/news/2151286.html"
-        }
-      ],
-      "affected_service": "多言語予約サイト",
-      "service_aliases": [],
-      "added_at": "2026-10-26T13:16:27+00:00",
-      "updated_at": "2026-10-26T13:16:27+00:00"
-    },
-    {
       "id": "c2642f919cdf226a",
       "published_at": "2026-10-19T15:00:00+00:00",
       "disclosed_at": null,
@@ -8906,6 +9286,62 @@
       "confidence_score": 100,
       "related": [
         {
+          "incident_id": "1306a0c62a3f2f3a",
+          "relationship": "affects",
+          "evidence_url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf",
+          "evidence_urls": [
+            "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf"
+          ]
+        },
+        {
+          "incident_id": "15df050b8f084cda",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/3ce37470beef51d89a7514fbeb118878310f61fe",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/3ce37470beef51d89a7514fbeb118878310f61fe"
+          ]
+        },
+        {
+          "incident_id": "1c0b1a1a98899138",
+          "relationship": "affects",
+          "evidence_url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf",
+          "evidence_urls": [
+            "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf"
+          ]
+        },
+        {
+          "incident_id": "3e0ead8cb817bdc1",
+          "relationship": "affects",
+          "evidence_url": "https://www.westjr.co.jp/press/article/2026/10/26/page_31158.html",
+          "evidence_urls": [
+            "https://www.westjr.co.jp/press/article/2026/10/26/page_31158.html"
+          ]
+        },
+        {
+          "incident_id": "3e30cc389d783bdf",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/3ce37470beef51d89a7514fbeb118878310f61fe",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/3ce37470beef51d89a7514fbeb118878310f61fe"
+          ]
+        },
+        {
+          "incident_id": "41cec81677237776",
+          "relationship": "affects",
+          "evidence_url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf",
+          "evidence_urls": [
+            "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf"
+          ]
+        },
+        {
+          "incident_id": "460b3d6449fdf1e9",
+          "relationship": "affects",
+          "evidence_url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf",
+          "evidence_urls": [
+            "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf"
+          ]
+        },
+        {
           "incident_id": "65f3107c9b8e0705",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/26a27bee503d10aac1db449099d2a2b1f3291297",
@@ -8929,9 +9365,37 @@
           "evidence_urls": [
             "https://www.sakuranbo.co.jp/news/2026/10/20/2026102000000003.html"
           ]
+        },
+        {
+          "incident_id": "db7624f99ed07c86",
+          "relationship": "affects",
+          "evidence_url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf",
+          "evidence_urls": [
+            "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf"
+          ]
+        },
+        {
+          "incident_id": "e7ff5721005eb68e",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/3ce37470beef51d89a7514fbeb118878310f61fe",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/3ce37470beef51d89a7514fbeb118878310f61fe"
+          ]
+        },
+        {
+          "incident_id": "faa0f8805f4ba30d",
+          "relationship": "affects",
+          "evidence_url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf",
+          "evidence_urls": [
+            "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf"
+          ]
         }
       ],
       "sources": [
+        {
+          "name": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2151309.html"
+        },
         {
           "name": "日本経済新聞",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9EenE1dVRhZGV5WkNWMVIwazIxTEdfU2pVX1F3ZFE0djczaHFJVC1DdXdCdVV4cG0tcU11YnVSM3dzMnpUTGFqM19CUWl6Q1lIb2JYYWYxUWFfME15NVQtamgwNlZ2TmJoU1Bqbg?oc=5"
@@ -8960,7 +9424,7 @@
       "affected_system": "メール配信サービスのサーバーシステム",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T13:14:57+00:00",
-      "updated_at": "2026-10-25T13:16:22+00:00"
+      "updated_at": "2026-10-26T20:15:50+00:00"
     },
     {
       "id": "15204b629222c010",
