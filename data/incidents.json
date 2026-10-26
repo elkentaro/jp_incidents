@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-26T04:15:45+00:00",
-  "total": 428,
+  "updated_at": "2026-10-26T05:15:47+00:00",
+  "total": 429,
   "date_range": {
     "start": "2026-08-09",
-    "end": "2026-10-24"
+    "end": "2026-10-26"
   },
   "daily_counts_90d": [
     {
@@ -365,10 +365,44 @@
     },
     {
       "date": "2026-10-26",
-      "count": 0
+      "count": 1
     }
   ],
   "incidents": [
+    {
+      "id": "20a5defaa0a897ab",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "MMDLabo株式会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://mmdlabo.jp/press_release/detail_2582.html",
+          "evidence_urls": [
+            "https://mmdlabo.jp/press_release/detail_2582.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "MMD研究所",
+          "url": "https://mmdlabo.jp/press_release/detail_2582.html"
+        }
+      ],
+      "affected_service": "メールマガジン",
+      "service_aliases": [],
+      "added_at": "2026-10-26T05:15:47+00:00",
+      "updated_at": "2026-10-26T05:15:47+00:00"
+    },
     {
       "id": "07575f3125a12f31",
       "published_at": "2026-10-23T15:00:00+00:00",
@@ -2474,6 +2508,10 @@
           "url": "https://news.yahoo.co.jp/articles/b1b86a54214ff4218f4949e2d15dfee1d2e2dcdc"
         },
         {
+          "name": "ネットショップ担当者フォーラム",
+          "url": "https://netshop.impress.co.jp/n/2026/10/26/16922"
+        },
+        {
           "name": "秋田魁新報電子版",
           "url": "https://www.sakigake.jp/news/article/20261022AK0034/"
         },
@@ -2501,7 +2539,7 @@
       "affected_service": "お荷物問い合わせサービス",
       "service_aliases": [],
       "added_at": "2026-10-22T10:24:30+00:00",
-      "updated_at": "2026-10-26T04:15:45+00:00"
+      "updated_at": "2026-10-26T05:15:47+00:00"
     },
     {
       "id": "4220c745782e4b6d",
@@ -4303,6 +4341,14 @@
           ]
         },
         {
+          "incident_id": "20a5defaa0a897ab",
+          "relationship": "affects",
+          "evidence_url": "https://mmdlabo.jp/press_release/detail_2582.html",
+          "evidence_urls": [
+            "https://mmdlabo.jp/press_release/detail_2582.html"
+          ]
+        },
+        {
           "incident_id": "21292bd9a729dc5c",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/3a57c1b85677a028ba0938753ad1bc86bfd887e6",
@@ -4695,7 +4741,7 @@
         }
       ],
       "added_at": "2026-10-21T19:22:12+00:00",
-      "updated_at": "2026-10-26T01:27:18+00:00"
+      "updated_at": "2026-10-26T05:15:47+00:00"
     },
     {
       "id": "2dc160527ae7970a",
