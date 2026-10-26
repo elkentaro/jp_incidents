@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-26T20:15:50+00:00",
-  "total": 463,
+  "updated_at": "2026-10-26T21:15:43+00:00",
+  "total": 466,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-26"
@@ -313,7 +313,7 @@
     },
     {
       "date": "2026-10-14",
-      "count": 33
+      "count": 34
     },
     {
       "date": "2026-10-15",
@@ -341,7 +341,7 @@
     },
     {
       "date": "2026-10-21",
-      "count": 47
+      "count": 48
     },
     {
       "date": "2026-10-22",
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-10-26",
-      "count": 22
+      "count": 23
     },
     {
       "date": "2026-10-27",
@@ -369,6 +369,60 @@
     }
   ],
   "incidents": [
+    {
+      "id": "d41f5779f643dfe8",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "楽天トラベル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 2600000,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "9b763823178eb170",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.watch.impress.co.jp/docs/news/2151286.html",
+          "evidence_urls": [
+            "https://www.watch.impress.co.jp/docs/news/2151286.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9UYlNUUFJiYkRqODFFUjRVUWdieVRaR0lFUE1uRjU4aGNnTDlodHdyczVicVpvR0prUjduWnFlMVpqR0VYNWRtdllrYm9Wc0dHZ1dzQXR3UXl4b19EYVBRQXNnTEVoY1p1OHhWUg?oc=5"
+        },
+        {
+          "name": "Impress Watch",
+          "url": "https://www.watch.impress.co.jp/docs/news/2151286.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/580c338d028f505c10d6bc8d6fa5c5ee27b88105"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5oWlZFVTE0cjhPTlRRRUVkRGhrbkMxc1dsVjZsLWJXRGxkS0x6VGthNS1qdl80ZlJpZmJ2ZjFNUW5yRjYtQnNhV2xhMXV4cDI4WUh3eU9MNTk5Z1pxTWhIZTdZSVp3czA?oc=5"
+        },
+        {
+          "name": "ビジネス+IT",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9kTjNRSW85RnMwQ2YwTEhRNEwtWHhiZTA1RUtZVHZMR3o0a3FQd2Y2MTNYWmd4VWhKQXJlbHVWeXBoc0kxS2FURDBRTVJQT29UUmg0?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE53SkhlRHNKcWpXaFJDWnRJWXhoQXVTaGcxYmc0Vkc2bjNaZnJHVHlSYmtuMEJTZUpOeVZKMmZXTGJ0bFFQajMtbVlYZW8tb1Y3UHVKRngzb0o3anhPOW1ZaG1HdUsyODlnQ3ZvMnJFTTdxNWx5ZHFTa1pfYW9laDQ?oc=5"
+        }
+      ],
+      "affected_service": "海外ホテル予約ページ",
+      "service_aliases": [],
+      "added_at": "2026-10-26T13:16:27+00:00",
+      "updated_at": "2026-10-26T21:15:43+00:00"
+    },
     {
       "id": "15e60c32657aa57d",
       "published_at": "2026-10-25T15:00:00+00:00",
@@ -408,48 +462,6 @@
       ],
       "added_at": "2026-10-26T09:16:19+00:00",
       "updated_at": "2026-10-26T14:16:10+00:00"
-    },
-    {
-      "id": "d41f5779f643dfe8",
-      "published_at": "2026-10-25T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "楽天トラベル",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 2600000,
-      "confidence": "high",
-      "confidence_score": 80,
-      "related": [
-        {
-          "incident_id": "9b763823178eb170",
-          "relationship": "same_organization",
-          "evidence_url": "https://www.watch.impress.co.jp/docs/news/2151286.html",
-          "evidence_urls": [
-            "https://www.watch.impress.co.jp/docs/news/2151286.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "日本経済新聞",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9UYlNUUFJiYkRqODFFUjRVUWdieVRaR0lFUE1uRjU4aGNnTDlodHdyczVicVpvR0prUjduWnFlMVpqR0VYNWRtdllrYm9Wc0dHZ1dzQXR3UXl4b19EYVBRQXNnTEVoY1p1OHhWUg?oc=5"
-        },
-        {
-          "name": "Impress Watch",
-          "url": "https://www.watch.impress.co.jp/docs/news/2151286.html"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/580c338d028f505c10d6bc8d6fa5c5ee27b88105"
-        }
-      ],
-      "affected_service": "海外ホテル予約ページ",
-      "service_aliases": [],
-      "added_at": "2026-10-26T13:16:27+00:00",
-      "updated_at": "2026-10-26T20:15:50+00:00"
     },
     {
       "id": "1306a0c62a3f2f3a",
@@ -882,6 +894,40 @@
       "updated_at": "2026-10-26T20:15:50+00:00"
     },
     {
+      "id": "6a68d54a22d2547d",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "毎日新聞社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/cc03dcc4cb9614aad1a6029175ddcb0693e1e64f",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/cc03dcc4cb9614aad1a6029175ddcb0693e1e64f"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/cc03dcc4cb9614aad1a6029175ddcb0693e1e64f"
+        }
+      ],
+      "affected_service": "メールマガジン",
+      "service_aliases": [],
+      "added_at": "2026-10-26T21:15:43+00:00",
+      "updated_at": "2026-10-26T21:15:43+00:00"
+    },
+    {
       "id": "8bc67780a7774ac9",
       "published_at": "2026-10-25T15:00:00+00:00",
       "disclosed_at": null,
@@ -1098,7 +1144,7 @@
       ],
       "potential_records": null,
       "confidence": "high",
-      "confidence_score": 75,
+      "confidence_score": 100,
       "related": [
         {
           "incident_id": "680ce7c1acf96089",
@@ -1117,10 +1163,22 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/1b2f115bac2548fbb98d6fbf27b1e2f27c9f21f4"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1aRDlaUFlZMERTUm1rUmZ0S0RSNlRGMHQ3T2QwWFFDcC1NUDRZbXkwdHZfc01BcEFGcFNqemZZTFUyQ2VVOEhPSVZFZlJ1NzJRbUJEOFV5VlZZbVduSkxIUmp3VVkybXpqMjZuUA?oc=5"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9oM3QwdGJHbWwyOTNkbFRlcjFpUUFjUkJ1cjV3d2RvVFRCd3ZPTTUzd3pIS0R6VWtTbFJHLWJwMmdMZHViQ05raFQ1ellaVFd2UGZuVVBDc1ZscmZHYWdr?oc=5"
+        },
+        {
+          "name": "時事ドットコム",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5IdWMxSElTWnBTeFJ2TkdwWkxFRzdrUUozZUlreHJpOHFRWDhDRER1SVNpYnpkNHVNaXhEWWxvRktNQjNNLUEzSGtjd0NJNnBhNVRUVmUwTEM4WVdLcGtLX3o5RQ?oc=5"
         }
       ],
       "added_at": "2026-10-26T13:16:27+00:00",
-      "updated_at": "2026-10-26T20:15:50+00:00"
+      "updated_at": "2026-10-26T21:15:43+00:00"
     },
     {
       "id": "0bfef460037e666a",
@@ -6083,6 +6141,35 @@
       "updated_at": "2026-10-26T00:08:36+00:00"
     },
     {
+      "id": "b622f37f0e066837",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": "2026-10-25T15:00:00+00:00",
+      "organization": "株 式会社バンダイロジパル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "株式会社バンダイナムコホールディングス",
+          "url": "https://www.bandainamco.co.jp/files/2026102620HPE794A820E4B88DE6ADA3E382A2E382AFE382BB.pdf"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBZVEJoRHlPTWM4b2hOSEc0eDh0UkQ4eGZZLUl1VFdYWjVwd3BYck44a183NEZPZGRkYkp0OW9MaE9KZmZpRHlnZkNuamFza1dHdzh1MXJtRDB5VHo5emRIdFJYbEVkQlVobmtxeQ?oc=5"
+        }
+      ],
+      "affected_service": "一番くじ ONLINE",
+      "service_aliases": [],
+      "added_at": "2026-10-26T21:15:43+00:00",
+      "updated_at": "2026-10-26T21:15:43+00:00"
+    },
+    {
       "id": "654874bcf5011b28",
       "published_at": "2026-10-20T15:00:00+00:00",
       "disclosed_at": null,
@@ -8095,6 +8182,52 @@
       "updated_at": "2026-10-22T01:18:03+00:00"
     },
     {
+      "id": "9b763823178eb170",
+      "published_at": "2026-10-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "楽天トラベル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 860000,
+      "confidence": "high",
+      "confidence_score": 95,
+      "related": [
+        {
+          "incident_id": "d41f5779f643dfe8",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.watch.impress.co.jp/docs/news/2151286.html",
+          "evidence_urls": [
+            "https://www.watch.impress.co.jp/docs/news/2151286.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Impress Watch",
+          "url": "https://www.watch.impress.co.jp/docs/news/2151286.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/580c338d028f505c10d6bc8d6fa5c5ee27b88105"
+        },
+        {
+          "name": "CNET Japan",
+          "url": "https://japan.cnet.com/article/35253979/"
+        },
+        {
+          "name": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2151305.html"
+        }
+      ],
+      "affected_service": "多言語予約サイト",
+      "service_aliases": [],
+      "added_at": "2026-10-26T13:16:27+00:00",
+      "updated_at": "2026-10-26T21:15:43+00:00"
+    },
+    {
       "id": "1ad4af4d81083790",
       "published_at": "2026-10-19T15:00:00+00:00",
       "disclosed_at": null,
@@ -8369,44 +8502,6 @@
       ],
       "added_at": "2026-10-21T00:23:43+00:00",
       "updated_at": "2026-10-22T10:39:16+00:00"
-    },
-    {
-      "id": "9b763823178eb170",
-      "published_at": "2026-10-19T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "楽天トラベル",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 860000,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [
-        {
-          "incident_id": "d41f5779f643dfe8",
-          "relationship": "same_organization",
-          "evidence_url": "https://www.watch.impress.co.jp/docs/news/2151286.html",
-          "evidence_urls": [
-            "https://www.watch.impress.co.jp/docs/news/2151286.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Impress Watch",
-          "url": "https://www.watch.impress.co.jp/docs/news/2151286.html"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/580c338d028f505c10d6bc8d6fa5c5ee27b88105"
-        }
-      ],
-      "affected_service": "多言語予約サイト",
-      "service_aliases": [],
-      "added_at": "2026-10-26T13:16:27+00:00",
-      "updated_at": "2026-10-26T20:15:50+00:00"
     },
     {
       "id": "04791f78ba6dd08b",
@@ -9351,6 +9446,14 @@
           ]
         },
         {
+          "incident_id": "6a68d54a22d2547d",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/cc03dcc4cb9614aad1a6029175ddcb0693e1e64f",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/cc03dcc4cb9614aad1a6029175ddcb0693e1e64f"
+          ]
+        },
+        {
           "incident_id": "86807dbbb186f280",
           "relationship": "affects",
           "evidence_url": "https://www.pref.saitama.lg.jp/a0903/news/page/news2026102001.html",
@@ -9424,7 +9527,7 @@
       "affected_system": "メール配信サービスのサーバーシステム",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T13:14:57+00:00",
-      "updated_at": "2026-10-26T20:15:50+00:00"
+      "updated_at": "2026-10-26T21:15:43+00:00"
     },
     {
       "id": "15204b629222c010",
@@ -13994,6 +14097,39 @@
       ],
       "added_at": "2026-10-19T09:06:44+00:00",
       "updated_at": "2026-10-22T00:31:01+00:00"
+    },
+    {
+      "id": "90ecc3da69887001",
+      "published_at": "2026-10-13T15:00:00+00:00",
+      "disclosed_at": "2026-10-25T15:00:00+00:00",
+      "organization": "古河電工パワーシステムズ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "古河電工パワーシステムズ",
+          "url": "https://www.feps.co.jp/news/20261026/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/20a9072b9934084510c12ffb66fc45975cb72338"
+        },
+        {
+          "name": "ビジネス+IT",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBsYTUybEszbHFiVkFYa3IyTms1aWNqV0ZuMG5oV1VET0cwV0FkU21sSWVIUWRkcE5tdHV2M0ZRWkRYWmRsOEdlTktYNzNUNUE?oc=5"
+        }
+      ],
+      "affected_service": "出荷管理用Webシステム",
+      "service_aliases": [],
+      "added_at": "2026-10-26T21:15:43+00:00",
+      "updated_at": "2026-10-26T21:15:43+00:00"
     },
     {
       "id": "0440d0e3aa68448d",
