@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-26T00:08:36+00:00",
+  "updated_at": "2026-10-26T00:17:15+00:00",
   "total": 424,
   "date_range": {
     "start": "2026-08-09",
@@ -3189,6 +3189,44 @@
       "updated_at": "2026-10-26T00:08:36+00:00"
     },
     {
+      "id": "d3f8753ec87b615e",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": "2026-10-21T15:00:00+00:00",
+      "organization": "厚生労働省",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 595,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "9c19fba1984ad5e0",
+          "relationship": "affected_by",
+          "evidence_url": "https://scan.netsecurity.ne.jp/article/2026/10/26/56565.html",
+          "evidence_urls": [
+            "https://scan.netsecurity.ne.jp/article/2026/10/26/56565.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "厚生労働省（公式発表）",
+          "url": "https://www.mhlw.go.jp/stf/newpage_76892.html"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/26/56565.html"
+        }
+      ],
+      "affected_service": "1FEdu",
+      "service_aliases": [],
+      "added_at": "2026-10-26T00:08:36+00:00",
+      "updated_at": "2026-10-26T00:17:15+00:00"
+    },
+    {
       "id": "0e5a446a7fed35c0",
       "published_at": "2026-10-21T15:00:00+00:00",
       "disclosed_at": null,
@@ -3969,40 +4007,6 @@
       ],
       "added_at": "2026-10-22T07:28:30+00:00",
       "updated_at": "2026-10-22T07:28:30+00:00"
-    },
-    {
-      "id": "d3f8753ec87b615e",
-      "published_at": "2026-10-21T15:00:00+00:00",
-      "disclosed_at": "2026-10-21T15:00:00+00:00",
-      "organization": "厚生労働省",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 595,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "9c19fba1984ad5e0",
-          "relationship": "affected_by",
-          "evidence_url": "https://scan.netsecurity.ne.jp/article/2026/10/26/56565.html",
-          "evidence_urls": [
-            "https://scan.netsecurity.ne.jp/article/2026/10/26/56565.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "ScanNetSecurity",
-          "url": "https://scan.netsecurity.ne.jp/article/2026/10/26/56565.html"
-        }
-      ],
-      "affected_service": "1FEdu",
-      "service_aliases": [],
-      "added_at": "2026-10-26T00:08:36+00:00",
-      "updated_at": "2026-10-26T00:08:36+00:00"
     },
     {
       "id": "1d158fe3f3b7357b",
