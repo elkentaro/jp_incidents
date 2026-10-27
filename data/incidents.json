@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-27T22:15:42+00:00",
-  "total": 534,
+  "updated_at": "2026-10-27T23:15:46+00:00",
+  "total": 536,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-28"
@@ -361,11 +361,11 @@
     },
     {
       "date": "2026-10-27",
-      "count": 21
+      "count": 22
     },
     {
       "date": "2026-10-28",
-      "count": 1
+      "count": 2
     }
   ],
   "incidents": [
@@ -405,6 +405,37 @@
       "service_aliases": [],
       "added_at": "2026-10-27T19:09:26+00:00",
       "updated_at": "2026-10-27T20:15:55+00:00"
+    },
+    {
+      "id": "6b3806fcd0cb28b4",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "野々市市",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "c1d402e81a850636",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/f2d765f298b4915c6354dcec203504e83b8d6aaa",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/f2d765f298b4915c6354dcec203504e83b8d6aaa"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/f2d765f298b4915c6354dcec203504e83b8d6aaa"
+        }
+      ],
+      "added_at": "2026-10-27T23:15:46+00:00",
+      "updated_at": "2026-10-27T23:15:46+00:00"
     },
     {
       "id": "1aff1533ceffa14a",
@@ -1054,6 +1085,37 @@
       "updated_at": "2026-10-27T19:09:26+00:00"
     },
     {
+      "id": "c1d402e81a850636",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": "2026-10-26T15:00:00+00:00",
+      "organization": "石川コンピュータ・センター",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "6b3806fcd0cb28b4",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/f2d765f298b4915c6354dcec203504e83b8d6aaa",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/f2d765f298b4915c6354dcec203504e83b8d6aaa"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/f2d765f298b4915c6354dcec203504e83b8d6aaa"
+        }
+      ],
+      "added_at": "2026-10-27T23:15:46+00:00",
+      "updated_at": "2026-10-27T23:15:46+00:00"
+    },
+    {
       "id": "d3104c3ae4442eac",
       "published_at": "2026-10-26T15:00:00+00:00",
       "disclosed_at": null,
@@ -1491,6 +1553,52 @@
       "updated_at": "2026-10-27T21:16:27+00:00"
     },
     {
+      "id": "ab9faa92dde90cf8",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "NTTドコモ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 443495,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "bbaf38f307a869ce",
+          "relationship": "affected_by",
+          "evidence_url": "https://k-tai.watch.impress.co.jp/docs/news/2151662.html",
+          "evidence_urls": [
+            "https://k-tai.watch.impress.co.jp/docs/news/2151662.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "ケータイ Watch",
+          "url": "https://k-tai.watch.impress.co.jp/docs/news/2151662.html"
+        },
+        {
+          "name": "NTTドコモ お知らせ / NTT DOCOMO notices",
+          "url": "https://www.docomo.ne.jp/info/notice/page/261027_05_m.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBwckwtNXZDWjZJVlFrMWF6SWtLX05vVFJFQjVyUVF5bWY4VzBXWmtmaEdKemh5b1Jzejk0XzdiaWoyQmtoYTVvQmtHcXBRZ2pvTGlTelI0VmxGZ09OUDhGVEo3LVliUHMtWWx3OVBDblNRWEFRWWVFbW12WENYTU0?oc=5"
+        },
+        {
+          "name": "CNET Japan",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE85MXgzQ2Y1Z1lfYXhzZ3NWUnc4QUNvN3FqUEZZT21CcXNJMFdhZXNiRV94OVlfUF85SHdSbHJHcF9GMVJrbzlfU3E4Z1hrRFFJcVE?oc=5"
+        }
+      ],
+      "affected_service": "ドコモ光「plala(Sコース)」",
+      "service_aliases": [],
+      "added_at": "2026-10-27T19:09:26+00:00",
+      "updated_at": "2026-10-27T23:15:46+00:00"
+    },
+    {
       "id": "d41f5779f643dfe8",
       "published_at": "2026-10-25T15:00:00+00:00",
       "disclosed_at": null,
@@ -1732,48 +1840,6 @@
       ],
       "added_at": "2026-10-27T03:15:45+00:00",
       "updated_at": "2026-10-27T19:09:26+00:00"
-    },
-    {
-      "id": "ab9faa92dde90cf8",
-      "published_at": "2026-10-25T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "NTTドコモ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 443495,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [
-        {
-          "incident_id": "bbaf38f307a869ce",
-          "relationship": "affected_by",
-          "evidence_url": "https://k-tai.watch.impress.co.jp/docs/news/2151662.html",
-          "evidence_urls": [
-            "https://k-tai.watch.impress.co.jp/docs/news/2151662.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "ケータイ Watch",
-          "url": "https://k-tai.watch.impress.co.jp/docs/news/2151662.html"
-        },
-        {
-          "name": "NTTドコモ お知らせ / NTT DOCOMO notices",
-          "url": "https://www.docomo.ne.jp/info/notice/page/261027_05_m.html"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBwckwtNXZDWjZJVlFrMWF6SWtLX05vVFJFQjVyUVF5bWY4VzBXWmtmaEdKemh5b1Jzejk0XzdiaWoyQmtoYTVvQmtHcXBRZ2pvTGlTelI0VmxGZ09OUDhGVEo3LVliUHMtWWx3OVBDblNRWEFRWWVFbW12WENYTU0?oc=5"
-        }
-      ],
-      "affected_service": "ドコモ光「plala(Sコース)」",
-      "service_aliases": [],
-      "added_at": "2026-10-27T19:09:26+00:00",
-      "updated_at": "2026-10-27T22:15:42+00:00"
     },
     {
       "id": "ac919f55052b2d67",
