@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-27T20:15:55+00:00",
-  "total": 528,
+  "updated_at": "2026-10-27T21:16:27+00:00",
+  "total": 532,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-28"
@@ -289,7 +289,7 @@
     },
     {
       "date": "2026-10-09",
-      "count": 8
+      "count": 9
     },
     {
       "date": "2026-10-10",
@@ -357,11 +357,11 @@
     },
     {
       "date": "2026-10-26",
-      "count": 31
+      "count": 32
     },
     {
       "date": "2026-10-27",
-      "count": 18
+      "count": 20
     },
     {
       "date": "2026-10-28",
@@ -719,6 +719,72 @@
       "updated_at": "2026-10-27T19:09:26+00:00"
     },
     {
+      "id": "cb16bec4edad0c15",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "Warhorse Studios",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [],
+      "sources": [
+        {
+          "name": "Game*Spark",
+          "url": "https://www.gamespark.jp/article/2026/10/27/174151.html"
+        },
+        {
+          "name": "Infoseek",
+          "url": "https://news.infoseek.co.jp/topics/gamespark_174151/"
+        },
+        {
+          "name": "千葉テレビ放送株式会社",
+          "url": "https://www.chiba-tv.com/plus/detail/2026102165892"
+        }
+      ],
+      "added_at": "2026-10-27T19:09:26+00:00",
+      "updated_at": "2026-10-27T21:16:27+00:00"
+    },
+    {
+      "id": "249f996eeac0e23c",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社palan",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "ce585c6dafc8e785",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.miyazaki.lg.jp/kanko-suishin/press/2026/10/20261027100338.html",
+          "evidence_urls": [
+            "https://www.pref.miyazaki.lg.jp/kanko-suishin/press/2026/10/20261027100338.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "www.pref.miyazaki.lg.jp",
+          "url": "https://www.pref.miyazaki.lg.jp/kanko-suishin/press/2026/10/20261027100338.html"
+        },
+        {
+          "name": "palan.co.jp",
+          "url": "https://palan.co.jp/news/20261026"
+        }
+      ],
+      "added_at": "2026-10-27T21:16:27+00:00",
+      "updated_at": "2026-10-27T21:16:27+00:00"
+    },
+    {
       "id": "0c9314ca30f7015a",
       "published_at": "2026-10-26T15:00:00+00:00",
       "disclosed_at": null,
@@ -745,30 +811,42 @@
       "updated_at": "2026-10-27T19:09:26+00:00"
     },
     {
-      "id": "cb16bec4edad0c15",
+      "id": "c89620912f4fe178",
       "published_at": "2026-10-26T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "Warhorse Studios",
-      "incident_type": "unauthorized access",
+      "disclosed_at": "2026-10-26T15:00:00+00:00",
+      "organization": "ダイハツ工業",
+      "incident_type": "data leak",
       "incident_categories": [
+        "data leak",
         "unauthorized access"
       ],
       "potential_records": null,
       "confidence": "high",
       "confidence_score": 65,
-      "related": [],
-      "sources": [
+      "related": [
         {
-          "name": "Game*Spark",
-          "url": "https://www.gamespark.jp/article/2026/10/27/174151.html"
-        },
-        {
-          "name": "Infoseek",
-          "url": "https://news.infoseek.co.jp/topics/gamespark_174151/"
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/e9d8aa728cca03476a3cbd2e95d923ce1553934f",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/e9d8aa728cca03476a3cbd2e95d923ce1553934f"
+          ]
         }
       ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/e9d8aa728cca03476a3cbd2e95d923ce1553934f"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUF277DU0X21C26A0000000/"
+        }
+      ],
+      "affected_service": "ダイハツメディアサイト",
+      "service_aliases": [],
       "added_at": "2026-10-27T19:09:26+00:00",
-      "updated_at": "2026-10-27T19:09:26+00:00"
+      "updated_at": "2026-10-27T21:16:27+00:00"
     },
     {
       "id": "aaada5eac76d7500",
@@ -945,38 +1023,35 @@
       "updated_at": "2026-10-27T19:09:26+00:00"
     },
     {
-      "id": "c89620912f4fe178",
+      "id": "d3104c3ae4442eac",
       "published_at": "2026-10-26T15:00:00+00:00",
-      "disclosed_at": "2026-10-26T15:00:00+00:00",
-      "organization": "ダイハツ工業",
+      "disclosed_at": null,
+      "organization": "資さんうどん",
       "incident_type": "data leak",
       "incident_categories": [
-        "data leak",
-        "unauthorized access"
+        "data leak"
       ],
-      "potential_records": null,
+      "potential_records": 20000,
       "confidence": "medium",
       "confidence_score": 50,
       "related": [
         {
-          "incident_id": "7e647fcc0bac0b06",
+          "incident_id": "aacc7975501819fc",
           "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/e9d8aa728cca03476a3cbd2e95d923ce1553934f",
+          "evidence_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1YMUFPTWZqZUdSRXpuYkRKWjAzVXhpTmtjbzJnRnJ0a2ZyQVdVbFJldzZjdzAtdUFRMHZnbVVqVlZJNmgybzJGblJqUXN6SGI2Qnk0WGlwM3dOOHBMMGhUTlZYcW0xNHpFQm9fcw?oc=5",
           "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/e9d8aa728cca03476a3cbd2e95d923ce1553934f"
+            "https://news.google.com/rss/articles/CBMibEFVX3lxTE1YMUFPTWZqZUdSRXpuYkRKWjAzVXhpTmtjbzJnRnJ0a2ZyQVdVbFJldzZjdzAtdUFRMHZnbVVqVlZJNmgybzJGblJqUXN6SGI2Qnk0WGlwM3dOOHBMMGhUTlZYcW0xNHpFQm9fcw?oc=5"
           ]
         }
       ],
       "sources": [
         {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/e9d8aa728cca03476a3cbd2e95d923ce1553934f"
+          "name": "日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1YMUFPTWZqZUdSRXpuYkRKWjAzVXhpTmtjbzJnRnJ0a2ZyQVdVbFJldzZjdzAtdUFRMHZnbVVqVlZJNmgybzJGblJqUXN6SGI2Qnk0WGlwM3dOOHBMMGhUTlZYcW0xNHpFQm9fcw?oc=5"
         }
       ],
-      "affected_service": "ダイハツメディアサイト",
-      "service_aliases": [],
-      "added_at": "2026-10-27T19:09:26+00:00",
-      "updated_at": "2026-10-27T19:09:26+00:00"
+      "added_at": "2026-10-27T21:16:27+00:00",
+      "updated_at": "2026-10-27T21:16:27+00:00"
     },
     {
       "id": "d8155168d32faca7",
@@ -1352,8 +1427,9 @@
         {
           "incident_id": "0a86ecb2b2d87e50",
           "relationship": "affected_by",
-          "evidence_url": "https://prtimes.jp/main/html/rd/p/000000856.000002888.html",
+          "evidence_url": "https://news.nicovideo.jp/watch/nw19925820?news_ref=20_20",
           "evidence_urls": [
+            "https://news.nicovideo.jp/watch/nw19925820?news_ref=20_20",
             "https://prtimes.jp/main/html/rd/p/000000856.000002888.html"
           ]
         }
@@ -1372,12 +1448,16 @@
           "url": "https://news.infoseek.co.jp/article/prtimes_000000856_000002888/"
         },
         {
+          "name": "ニコニコニュース",
+          "url": "https://news.nicovideo.jp/watch/nw19925820?news_ref=20_20"
+        },
+        {
           "name": "ライブドアニュース",
           "url": "https://news.livedoor.com/pr_topics/detail/32669486/"
         }
       ],
       "added_at": "2026-10-27T08:15:54+00:00",
-      "updated_at": "2026-10-27T19:09:26+00:00"
+      "updated_at": "2026-10-27T21:16:27+00:00"
     },
     {
       "id": "d41f5779f643dfe8",
@@ -1855,6 +1935,40 @@
       "service_aliases": [],
       "added_at": "2026-10-26T10:46:27+00:00",
       "updated_at": "2026-10-26T10:46:27+00:00"
+    },
+    {
+      "id": "ce585c6dafc8e785",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "宮崎県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 551,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "249f996eeac0e23c",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.miyazaki.lg.jp/kanko-suishin/press/2026/10/20261027100338.html",
+          "evidence_urls": [
+            "https://www.pref.miyazaki.lg.jp/kanko-suishin/press/2026/10/20261027100338.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "宮崎県 / Miyazaki",
+          "url": "https://www.pref.miyazaki.lg.jp/kanko-suishin/press/2026/10/20261027100338.html"
+        }
+      ],
+      "affected_service": "みやざき神話さんぽ-キキタビ観光ガイド-",
+      "service_aliases": [],
+      "added_at": "2026-10-27T21:16:27+00:00",
+      "updated_at": "2026-10-27T21:16:27+00:00"
     },
     {
       "id": "e5c9be9f0373c5f8",
@@ -11445,8 +11559,9 @@
         {
           "incident_id": "86af8ecab6ec9130",
           "relationship": "affects",
-          "evidence_url": "https://prtimes.jp/main/html/rd/p/000000856.000002888.html",
+          "evidence_url": "https://news.nicovideo.jp/watch/nw19925820?news_ref=20_20",
           "evidence_urls": [
+            "https://news.nicovideo.jp/watch/nw19925820?news_ref=20_20",
             "https://prtimes.jp/main/html/rd/p/000000856.000002888.html"
           ]
         },
@@ -11537,7 +11652,7 @@
       "affected_system": "メール配信サービスのサーバーシステム",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T13:14:57+00:00",
-      "updated_at": "2026-10-27T19:09:26+00:00"
+      "updated_at": "2026-10-27T21:16:27+00:00"
     },
     {
       "id": "15204b629222c010",
@@ -11772,6 +11887,10 @@
       ],
       "sources": [
         {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC277HE0X21C26A0000000/"
+        },
+        {
           "name": "ケータイ Watch",
           "url": "https://k-tai.watch.impress.co.jp/docs/news/2151581.html"
         },
@@ -11797,7 +11916,7 @@
         }
       ],
       "added_at": "2026-10-27T19:09:26+00:00",
-      "updated_at": "2026-10-27T19:09:26+00:00"
+      "updated_at": "2026-10-27T21:16:27+00:00"
     },
     {
       "id": "e57d47bb72ea6543",
@@ -19687,6 +19806,41 @@
       ],
       "added_at": "2026-10-19T09:06:44+00:00",
       "updated_at": "2026-10-27T00:15:41+00:00"
+    },
+    {
+      "id": "aacc7975501819fc",
+      "published_at": "2026-10-08T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "カホエンタープライズ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "d3104c3ae4442eac",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1YMUFPTWZqZUdSRXpuYkRKWjAzVXhpTmtjbzJnRnJ0a2ZyQVdVbFJldzZjdzAtdUFRMHZnbVVqVlZJNmgybzJGblJqUXN6SGI2Qnk0WGlwM3dOOHBMMGhUTlZYcW0xNHpFQm9fcw?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMibEFVX3lxTE1YMUFPTWZqZUdSRXpuYkRKWjAzVXhpTmtjbzJnRnJ0a2ZyQVdVbFJldzZjdzAtdUFRMHZnbVVqVlZJNmgybzJGblJqUXN6SGI2Qnk0WGlwM3dOOHBMMGhUTlZYcW0xNHpFQm9fcw?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "news.google.com",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1YMUFPTWZqZUdSRXpuYkRKWjAzVXhpTmtjbzJnRnJ0a2ZyQVdVbFJldzZjdzAtdUFRMHZnbVVqVlZJNmgybzJGblJqUXN6SGI2Qnk0WGlwM3dOOHBMMGhUTlZYcW0xNHpFQm9fcw?oc=5"
+        },
+        {
+          "name": "kaho-enterprise.co.jp",
+          "url": "https://kaho-enterprise.co.jp/202610-01/"
+        }
+      ],
+      "added_at": "2026-10-27T21:16:27+00:00",
+      "updated_at": "2026-10-27T21:16:27+00:00"
     },
     {
       "id": "bab27c57bcae574b",
