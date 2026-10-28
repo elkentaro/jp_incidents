@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-28T13:16:27+00:00",
-  "total": 571,
+  "updated_at": "2026-10-28T14:15:45+00:00",
+  "total": 573,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-28"
@@ -361,11 +361,11 @@
     },
     {
       "date": "2026-10-27",
-      "count": 27
+      "count": 28
     },
     {
       "date": "2026-10-28",
-      "count": 19
+      "count": 20
     }
   ],
   "incidents": [
@@ -381,7 +381,7 @@
       ],
       "potential_records": null,
       "confidence": "high",
-      "confidence_score": 95,
+      "confidence_score": 100,
       "related": [
         {
           "incident_id": "0cd8a1c184390c84",
@@ -408,10 +408,18 @@
         {
           "name": "読売新聞",
           "url": "https://www.yomiuri.co.jp/national/20261028-GYT1T00334/"
+        },
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/economy/20261028-GYT1T00334/"
+        },
+        {
+          "name": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/10/28/214917"
         }
       ],
       "added_at": "2026-10-28T11:16:00+00:00",
-      "updated_at": "2026-10-28T13:16:27+00:00"
+      "updated_at": "2026-10-28T14:15:45+00:00"
     },
     {
       "id": "72df1904dc4263a0",
@@ -552,6 +560,33 @@
       ],
       "added_at": "2026-10-28T11:16:00+00:00",
       "updated_at": "2026-10-28T12:16:05+00:00"
+    },
+    {
+      "id": "306e3cb8d37abc69",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "花キューピット",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 4230000,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/economy/20261028-GYT1T00383/"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261028de67215"
+        }
+      ],
+      "added_at": "2026-10-28T10:15:54+00:00",
+      "updated_at": "2026-10-28T14:15:45+00:00"
     },
     {
       "id": "9d4780283d6bf8d9",
@@ -791,29 +826,6 @@
       "updated_at": "2026-10-28T13:16:27+00:00"
     },
     {
-      "id": "306e3cb8d37abc69",
-      "published_at": "2026-10-27T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "花キューピット",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 4230000,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "NHKニュース",
-          "url": "https://news.web.nhk/newsweb/na/nd-20261028de67215"
-        }
-      ],
-      "added_at": "2026-10-28T10:15:54+00:00",
-      "updated_at": "2026-10-28T10:15:54+00:00"
-    },
-    {
       "id": "397ff8cd4e4501d0",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": null,
@@ -907,6 +919,29 @@
       ],
       "added_at": "2026-10-27T23:15:46+00:00",
       "updated_at": "2026-10-27T23:15:46+00:00"
+    },
+    {
+      "id": "7f27b603ddf5083a",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ソニー生命",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 385000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/0659bd683154eceeba6b924330d499c4a42b7447"
+        }
+      ],
+      "added_at": "2026-10-28T14:15:45+00:00",
+      "updated_at": "2026-10-28T14:15:45+00:00"
     },
     {
       "id": "8c89a786a368a245",
@@ -2007,6 +2042,40 @@
       "service_aliases": [],
       "added_at": "2026-10-28T01:15:55+00:00",
       "updated_at": "2026-10-28T01:15:55+00:00"
+    },
+    {
+      "id": "f18aa75770e360bd",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "アニメイト",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.nicovideo.jp/watch/nw19929481?news_ref=watch_70_nw19613121",
+          "evidence_urls": [
+            "https://news.nicovideo.jp/watch/nw19929481?news_ref=watch_70_nw19613121"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "ニコニコニュース",
+          "url": "https://news.nicovideo.jp/watch/nw19929481?news_ref=watch_70_nw19613121"
+        }
+      ],
+      "affected_service": "メールマガジン",
+      "service_aliases": [],
+      "added_at": "2026-10-28T14:15:45+00:00",
+      "updated_at": "2026-10-28T14:15:45+00:00"
     },
     {
       "id": "1306a0c62a3f2f3a",
@@ -12799,6 +12868,14 @@
           ]
         },
         {
+          "incident_id": "f18aa75770e360bd",
+          "relationship": "affects",
+          "evidence_url": "https://news.nicovideo.jp/watch/nw19929481?news_ref=watch_70_nw19613121",
+          "evidence_urls": [
+            "https://news.nicovideo.jp/watch/nw19929481?news_ref=watch_70_nw19613121"
+          ]
+        },
+        {
           "incident_id": "faa0f8805f4ba30d",
           "relationship": "affects",
           "evidence_url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf",
@@ -12848,7 +12925,7 @@
       "affected_system": "メール配信サービスのサーバーシステム",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T13:14:57+00:00",
-      "updated_at": "2026-10-28T13:16:27+00:00"
+      "updated_at": "2026-10-28T14:15:45+00:00"
     },
     {
       "id": "15204b629222c010",
