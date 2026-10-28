@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-28T20:16:45+00:00",
-  "total": 575,
+  "updated_at": "2026-10-28T22:15:41+00:00",
+  "total": 576,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-29"
@@ -357,7 +357,7 @@
     },
     {
       "date": "2026-10-27",
-      "count": 29
+      "count": 30
     },
     {
       "date": "2026-10-28",
@@ -434,10 +434,14 @@
         {
           "name": "ASCII.jp",
           "url": "https://ascii.jp/elem/000/004/446/4446479/"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC285ZR0Y6A021C2000000/"
         }
       ],
       "added_at": "2026-10-28T11:16:00+00:00",
-      "updated_at": "2026-10-28T18:16:27+00:00"
+      "updated_at": "2026-10-28T22:15:41+00:00"
     },
     {
       "id": "306e3cb8d37abc69",
@@ -569,6 +573,74 @@
       ],
       "added_at": "2026-10-28T11:16:00+00:00",
       "updated_at": "2026-10-28T18:16:27+00:00"
+    },
+    {
+      "id": "44e7187878fd515f",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": "2026-10-27T15:00:00+00:00",
+      "organization": "株式会社コックス",
+      "incident_type": "ransomware",
+      "incident_categories": [
+        "ransomware",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [
+        {
+          "incident_id": "00708cad4ca58f78",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
+            "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
+          ]
+        },
+        {
+          "incident_id": "19b3132af335af7b",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
+            "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
+          ]
+        },
+        {
+          "incident_id": "9d4780283d6bf8d9",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
+            "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
+          ]
+        },
+        {
+          "incident_id": "d54f4e82616816d3",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
+            "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
+        },
+        {
+          "name": "株式会社アクト",
+          "url": "https://act1.co.jp/2026-10-28-05/"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC285ZR0Y6A021C2000000/"
+        }
+      ],
+      "added_at": "2026-10-28T11:16:00+00:00",
+      "updated_at": "2026-10-28T22:15:41+00:00"
     },
     {
       "id": "72df1904dc4263a0",
@@ -1088,70 +1160,6 @@
       "service_aliases": [],
       "added_at": "2026-10-28T13:16:27+00:00",
       "updated_at": "2026-10-28T13:16:27+00:00"
-    },
-    {
-      "id": "44e7187878fd515f",
-      "published_at": "2026-10-27T15:00:00+00:00",
-      "disclosed_at": "2026-10-27T15:00:00+00:00",
-      "organization": "株式会社コックス",
-      "incident_type": "ransomware",
-      "incident_categories": [
-        "ransomware",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 45,
-      "related": [
-        {
-          "incident_id": "00708cad4ca58f78",
-          "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
-            "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
-          ]
-        },
-        {
-          "incident_id": "19b3132af335af7b",
-          "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
-            "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
-          ]
-        },
-        {
-          "incident_id": "9d4780283d6bf8d9",
-          "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
-            "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
-          ]
-        },
-        {
-          "incident_id": "d54f4e82616816d3",
-          "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
-            "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
-        },
-        {
-          "name": "株式会社アクト",
-          "url": "https://act1.co.jp/2026-10-28-05/"
-        }
-      ],
-      "added_at": "2026-10-28T11:16:00+00:00",
-      "updated_at": "2026-10-28T18:16:27+00:00"
     },
     {
       "id": "c509397cdd014ce0",
@@ -1829,6 +1837,47 @@
       ],
       "added_at": "2026-10-27T19:09:26+00:00",
       "updated_at": "2026-10-28T02:15:45+00:00"
+    },
+    {
+      "id": "51641984e8525f2f",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": "2026-10-27T15:00:00+00:00",
+      "organization": "宮城県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 2271,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "48fd0a4669f5fc2b",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.pref.miyagi.jp/soshiki/sinkou/zyouhourouei-miyagiizyuukouryuugaido.html",
+          "evidence_urls": [
+            "https://www.pref.miyagi.jp/soshiki/sinkou/zyouhourouei-miyagiizyuukouryuugaido.html"
+          ]
+        },
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.miyagi.jp/soshiki/sinkou/zyouhourouei-miyagiizyuukouryuugaido.html",
+          "evidence_urls": [
+            "https://www.pref.miyagi.jp/soshiki/sinkou/zyouhourouei-miyagiizyuukouryuugaido.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "宮城県 / Miyagi",
+          "url": "https://www.pref.miyagi.jp/soshiki/sinkou/zyouhourouei-miyagiizyuukouryuugaido.html"
+        }
+      ],
+      "affected_service": "みやぎ移住・交流ガイドメールマガジン",
+      "service_aliases": [],
+      "added_at": "2026-10-28T22:15:41+00:00",
+      "updated_at": "2026-10-28T22:15:41+00:00"
     },
     {
       "id": "53dc18b52ebf633f",
@@ -8432,6 +8481,14 @@
           ]
         },
         {
+          "incident_id": "51641984e8525f2f",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.miyagi.jp/soshiki/sinkou/zyouhourouei-miyagiizyuukouryuugaido.html",
+          "evidence_urls": [
+            "https://www.pref.miyagi.jp/soshiki/sinkou/zyouhourouei-miyagiizyuukouryuugaido.html"
+          ]
+        },
+        {
           "incident_id": "53ec72ba13cb644f",
           "relationship": "affects",
           "evidence_url": "https://plasticjournal.net/news/25490.html",
@@ -8876,7 +8933,7 @@
         }
       ],
       "added_at": "2026-10-21T19:22:12+00:00",
-      "updated_at": "2026-10-28T07:15:47+00:00"
+      "updated_at": "2026-10-28T22:15:41+00:00"
     },
     {
       "id": "a2cf60a92a1ad65c",
@@ -18283,6 +18340,14 @@
       "confidence_score": 50,
       "related": [
         {
+          "incident_id": "51641984e8525f2f",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.pref.miyagi.jp/soshiki/sinkou/zyouhourouei-miyagiizyuukouryuugaido.html",
+          "evidence_urls": [
+            "https://www.pref.miyagi.jp/soshiki/sinkou/zyouhourouei-miyagiizyuukouryuugaido.html"
+          ]
+        },
+        {
           "incident_id": "9de8f1dd55c27abb",
           "relationship": "same_organization",
           "evidence_url": "https://www.pref.miyagi.jp/soshiki/sinkou/ritou_20261028.html",
@@ -18298,7 +18363,7 @@
         }
       ],
       "added_at": "2026-10-20T05:45:53+00:00",
-      "updated_at": "2026-10-28T11:16:00+00:00"
+      "updated_at": "2026-10-28T22:15:41+00:00"
     },
     {
       "id": "69636466e27bd9cc",
