@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-28T10:15:54+00:00",
-  "total": 556,
+  "updated_at": "2026-10-28T11:16:00+00:00",
+  "total": 565,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-28"
@@ -317,7 +317,7 @@
     },
     {
       "date": "2026-10-16",
-      "count": 31
+      "count": 32
     },
     {
       "date": "2026-10-17",
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-10-28",
-      "count": 7
+      "count": 15
     }
   ],
   "incidents": [
@@ -469,6 +469,46 @@
       "updated_at": "2026-10-28T10:15:54+00:00"
     },
     {
+      "id": "a4c6a8cdac85f9f4",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "品川区",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "2070de02126b55ea",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.shinagawa.tokyo.jp/kurashi/zeikin/1009363/1011842.html",
+          "evidence_urls": [
+            "https://www.city.shinagawa.tokyo.jp/kurashi/zeikin/1009363/1011842.html"
+          ]
+        },
+        {
+          "incident_id": "7fcebaa1e08d58e8",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.city.shinagawa.tokyo.jp/kurashi/zeikin/1009363/1011842.html",
+          "evidence_urls": [
+            "https://www.city.shinagawa.tokyo.jp/kurashi/zeikin/1009363/1011842.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "品川区 / Shinagawa",
+          "url": "https://www.city.shinagawa.tokyo.jp/kurashi/zeikin/1009363/1011842.html"
+        }
+      ],
+      "added_at": "2026-10-28T11:16:00+00:00",
+      "updated_at": "2026-10-28T11:16:00+00:00"
+    },
+    {
       "id": "306e3cb8d37abc69",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": null,
@@ -490,6 +530,38 @@
       ],
       "added_at": "2026-10-28T10:15:54+00:00",
       "updated_at": "2026-10-28T10:15:54+00:00"
+    },
+    {
+      "id": "397ff8cd4e4501d0",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "宮城県大和町",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 90,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "83b61a3db8b6680d",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/38042e43a79b690a17d3fb813c07fa517a613c12",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/38042e43a79b690a17d3fb813c07fa517a613c12"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/38042e43a79b690a17d3fb813c07fa517a613c12"
+        }
+      ],
+      "added_at": "2026-10-28T11:16:00+00:00",
+      "updated_at": "2026-10-28T11:16:00+00:00"
     },
     {
       "id": "6b3806fcd0cb28b4",
@@ -545,6 +617,29 @@
       "updated_at": "2026-10-28T07:15:47+00:00"
     },
     {
+      "id": "a3c09650fe9bed69",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "日本航空",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6744eb828d8b2862899737eeeb6e97664277159e"
+        }
+      ],
+      "added_at": "2026-10-28T11:16:00+00:00",
+      "updated_at": "2026-10-28T11:16:00+00:00"
+    },
+    {
       "id": "ee85d429e61b3b99",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": null,
@@ -574,6 +669,186 @@
       ],
       "added_at": "2026-10-28T10:15:54+00:00",
       "updated_at": "2026-10-28T10:15:54+00:00"
+    },
+    {
+      "id": "00708cad4ca58f78",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": "2026-10-27T15:00:00+00:00",
+      "organization": "ドン・キホーテ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "44e7187878fd515f",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
+        }
+      ],
+      "added_at": "2026-10-28T11:16:00+00:00",
+      "updated_at": "2026-10-28T11:16:00+00:00"
+    },
+    {
+      "id": "19b3132af335af7b",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": "2026-10-27T15:00:00+00:00",
+      "organization": "長崎屋",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "44e7187878fd515f",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
+        }
+      ],
+      "added_at": "2026-10-28T11:16:00+00:00",
+      "updated_at": "2026-10-28T11:16:00+00:00"
+    },
+    {
+      "id": "44e7187878fd515f",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": "2026-10-27T15:00:00+00:00",
+      "organization": "株式会社コックス",
+      "incident_type": "ransomware",
+      "incident_categories": [
+        "ransomware",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "00708cad4ca58f78",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
+          ]
+        },
+        {
+          "incident_id": "19b3132af335af7b",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
+          ]
+        },
+        {
+          "incident_id": "9d4780283d6bf8d9",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
+          ]
+        },
+        {
+          "incident_id": "d54f4e82616816d3",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
+        }
+      ],
+      "added_at": "2026-10-28T11:16:00+00:00",
+      "updated_at": "2026-10-28T11:16:00+00:00"
+    },
+    {
+      "id": "9d4780283d6bf8d9",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": "2026-10-27T15:00:00+00:00",
+      "organization": "橘百貨店",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "44e7187878fd515f",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
+        }
+      ],
+      "added_at": "2026-10-28T11:16:00+00:00",
+      "updated_at": "2026-10-28T11:16:00+00:00"
+    },
+    {
+      "id": "d54f4e82616816d3",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": "2026-10-27T15:00:00+00:00",
+      "organization": "UDリテール",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "44e7187878fd515f",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
+        }
+      ],
+      "added_at": "2026-10-28T11:16:00+00:00",
+      "updated_at": "2026-10-28T11:16:00+00:00"
     },
     {
       "id": "1aff1533ceffa14a",
@@ -980,6 +1255,14 @@
           "evidence_urls": [
             "https://www.pref.oita.jp/soshiki/10112/2026-satofull-notice01.html"
           ]
+        },
+        {
+          "incident_id": "a4c6a8cdac85f9f4",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.shinagawa.tokyo.jp/kurashi/zeikin/1009363/1011842.html",
+          "evidence_urls": [
+            "https://www.city.shinagawa.tokyo.jp/kurashi/zeikin/1009363/1011842.html"
+          ]
         }
       ],
       "sources": [
@@ -993,7 +1276,7 @@
         }
       ],
       "added_at": "2026-10-28T06:15:40+00:00",
-      "updated_at": "2026-10-28T07:15:47+00:00"
+      "updated_at": "2026-10-28T11:16:00+00:00"
     },
     {
       "id": "249f996eeac0e23c",
@@ -10883,6 +11166,37 @@
       "updated_at": "2026-10-25T05:15:56+00:00"
     },
     {
+      "id": "38d621781f18e6c4",
+      "published_at": "2026-10-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ドトールコーヒー",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 951,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/7d8df809b6004bf6e0a27d86e8bbe86a8256b101"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://www.doutor.co.jp/news/newsrelease/detail/20261026144748.html"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC2895C0Y6A021C2000000/"
+        }
+      ],
+      "added_at": "2026-10-27T08:15:54+00:00",
+      "updated_at": "2026-10-28T11:16:00+00:00"
+    },
+    {
       "id": "d5c8ca9a2bb82307",
       "published_at": "2026-10-19T15:00:00+00:00",
       "disclosed_at": null,
@@ -10939,33 +11253,6 @@
       ],
       "added_at": "2026-10-21T03:42:01+00:00",
       "updated_at": "2026-10-22T01:18:03+00:00"
-    },
-    {
-      "id": "38d621781f18e6c4",
-      "published_at": "2026-10-19T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ドトールコーヒー",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 951,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/7d8df809b6004bf6e0a27d86e8bbe86a8256b101"
-        },
-        {
-          "name": "satimo list",
-          "url": "https://www.doutor.co.jp/news/newsrelease/detail/20261026144748.html"
-        }
-      ],
-      "added_at": "2026-10-27T08:15:54+00:00",
-      "updated_at": "2026-10-28T01:15:55+00:00"
     },
     {
       "id": "7f1b0048e5679d7e",
@@ -11363,6 +11650,14 @@
           "evidence_urls": [
             "https://www.city.shinagawa.tokyo.jp/kurashi/zeikin/1009363/1011744.html"
           ]
+        },
+        {
+          "incident_id": "a4c6a8cdac85f9f4",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.city.shinagawa.tokyo.jp/kurashi/zeikin/1009363/1011842.html",
+          "evidence_urls": [
+            "https://www.city.shinagawa.tokyo.jp/kurashi/zeikin/1009363/1011842.html"
+          ]
         }
       ],
       "sources": [
@@ -11372,7 +11667,7 @@
         }
       ],
       "added_at": "2026-10-21T19:59:31+00:00",
-      "updated_at": "2026-10-21T19:59:31+00:00"
+      "updated_at": "2026-10-28T11:16:00+00:00"
     },
     {
       "id": "822674a60857d714",
@@ -15004,6 +15299,14 @@
       "confidence_score": 60,
       "related": [
         {
+          "incident_id": "397ff8cd4e4501d0",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/38042e43a79b690a17d3fb813c07fa517a613c12",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/38042e43a79b690a17d3fb813c07fa517a613c12"
+          ]
+        },
+        {
           "incident_id": "5138df0eb7399ed1",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAzeXk4eC0tSHdqU3dGdnhfaVlYOVdZVG5LbHptWFJFTUNUdk1HN25FSVlrTElWYWpkLUpwcTV3V3BHUk9MLTFmdk56WmNMekVCV2pmcDZxbUVFSWtlQXhnNWNvVDJ4VlJKNHQzY1A5N0x2eEpvV2wxamNJT1VNWUE?oc=5",
@@ -15036,6 +15339,14 @@
           ]
         },
         {
+          "incident_id": "9de8f1dd55c27abb",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.miyagi.jp/soshiki/sinkou/ritou_20261028.html",
+          "evidence_urls": [
+            "https://www.pref.miyagi.jp/soshiki/sinkou/ritou_20261028.html"
+          ]
+        },
+        {
           "incident_id": "cae0aec6a4257955",
           "relationship": "affects",
           "evidence_url": "https://www.pref.hiroshima.lg.jp/dayori/notice-20261023.html",
@@ -15051,7 +15362,7 @@
         }
       ],
       "added_at": "2026-10-22T21:15:57+00:00",
-      "updated_at": "2026-10-26T06:15:53+00:00"
+      "updated_at": "2026-10-28T11:16:00+00:00"
     },
     {
       "id": "912b38db2059ec17",
@@ -15124,6 +15435,46 @@
       ],
       "added_at": "2026-10-21T00:43:04+00:00",
       "updated_at": "2026-10-22T01:57:26+00:00"
+    },
+    {
+      "id": "9de8f1dd55c27abb",
+      "published_at": "2026-10-15T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "宮城県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 18,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "48fd0a4669f5fc2b",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.pref.miyagi.jp/soshiki/sinkou/ritou_20261028.html",
+          "evidence_urls": [
+            "https://www.pref.miyagi.jp/soshiki/sinkou/ritou_20261028.html"
+          ]
+        },
+        {
+          "incident_id": "83b61a3db8b6680d",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.miyagi.jp/soshiki/sinkou/ritou_20261028.html",
+          "evidence_urls": [
+            "https://www.pref.miyagi.jp/soshiki/sinkou/ritou_20261028.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "宮城県 / Miyagi",
+          "url": "https://www.pref.miyagi.jp/soshiki/sinkou/ritou_20261028.html"
+        }
+      ],
+      "added_at": "2026-10-28T11:16:00+00:00",
+      "updated_at": "2026-10-28T11:16:00+00:00"
     },
     {
       "id": "a494ba6c950a8007",
@@ -17496,7 +17847,16 @@
       "potential_records": 129968,
       "confidence": "medium",
       "confidence_score": 50,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "9de8f1dd55c27abb",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.pref.miyagi.jp/soshiki/sinkou/ritou_20261028.html",
+          "evidence_urls": [
+            "https://www.pref.miyagi.jp/soshiki/sinkou/ritou_20261028.html"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "読売新聞",
@@ -17504,7 +17864,7 @@
         }
       ],
       "added_at": "2026-10-20T05:45:53+00:00",
-      "updated_at": "2026-10-20T07:24:24+00:00"
+      "updated_at": "2026-10-28T11:16:00+00:00"
     },
     {
       "id": "b2ea0e525c16e077",
