@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-27T23:15:46+00:00",
+  "updated_at": "2026-10-28T00:15:35+00:00",
   "total": 536,
   "date_range": {
     "start": "2026-08-09",
@@ -750,6 +750,48 @@
       "updated_at": "2026-10-27T19:09:26+00:00"
     },
     {
+      "id": "c89620912f4fe178",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": "2026-10-26T15:00:00+00:00",
+      "organization": "ダイハツ工業",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/e9d8aa728cca03476a3cbd2e95d923ce1553934f",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/e9d8aa728cca03476a3cbd2e95d923ce1553934f"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/e9d8aa728cca03476a3cbd2e95d923ce1553934f"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUF277DU0X21C26A0000000/"
+        },
+        {
+          "name": "レスポンス（Response.jp）",
+          "url": "https://response.jp/article/2026/10/27/418277.html"
+        }
+      ],
+      "affected_service": "ダイハツメディアサイト",
+      "service_aliases": [],
+      "added_at": "2026-10-27T19:09:26+00:00",
+      "updated_at": "2026-10-28T00:15:35+00:00"
+    },
+    {
       "id": "cb16bec4edad0c15",
       "published_at": "2026-10-26T15:00:00+00:00",
       "disclosed_at": null,
@@ -850,42 +892,39 @@
       "updated_at": "2026-10-27T19:09:26+00:00"
     },
     {
-      "id": "c89620912f4fe178",
+      "id": "19667cbf1f62a90a",
       "published_at": "2026-10-26T15:00:00+00:00",
-      "disclosed_at": "2026-10-26T15:00:00+00:00",
-      "organization": "ダイハツ工業",
+      "disclosed_at": null,
+      "organization": "東京消防庁",
       "incident_type": "data leak",
       "incident_categories": [
-        "data leak",
-        "unauthorized access"
+        "data leak"
       ],
-      "potential_records": null,
+      "potential_records": 198,
       "confidence": "high",
       "confidence_score": 65,
       "related": [
         {
-          "incident_id": "7e647fcc0bac0b06",
+          "incident_id": "de5f35a8192411cd",
           "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/e9d8aa728cca03476a3cbd2e95d923ce1553934f",
+          "evidence_url": "https://news.yahoo.co.jp/articles/5832bb821b9ea89d9f76e9d78f1fcadf2ac5e47e",
           "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/e9d8aa728cca03476a3cbd2e95d923ce1553934f"
+            "https://news.yahoo.co.jp/articles/5832bb821b9ea89d9f76e9d78f1fcadf2ac5e47e"
           ]
         }
       ],
       "sources": [
         {
           "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/e9d8aa728cca03476a3cbd2e95d923ce1553934f"
+          "url": "https://news.yahoo.co.jp/articles/5832bb821b9ea89d9f76e9d78f1fcadf2ac5e47e"
         },
         {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUF277DU0X21C26A0000000/"
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/national/20261027-GYT1T00429/"
         }
       ],
-      "affected_service": "ダイハツメディアサイト",
-      "service_aliases": [],
       "added_at": "2026-10-27T19:09:26+00:00",
-      "updated_at": "2026-10-27T21:16:27+00:00"
+      "updated_at": "2026-10-28T00:15:35+00:00"
     },
     {
       "id": "aaada5eac76d7500",
@@ -940,37 +979,6 @@
       ],
       "affected_service": "スタートアップ成長支援事業",
       "service_aliases": [],
-      "added_at": "2026-10-27T19:09:26+00:00",
-      "updated_at": "2026-10-27T19:09:26+00:00"
-    },
-    {
-      "id": "19667cbf1f62a90a",
-      "published_at": "2026-10-26T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "東京消防庁",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 198,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "de5f35a8192411cd",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/5832bb821b9ea89d9f76e9d78f1fcadf2ac5e47e",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/5832bb821b9ea89d9f76e9d78f1fcadf2ac5e47e"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/5832bb821b9ea89d9f76e9d78f1fcadf2ac5e47e"
-        }
-      ],
       "added_at": "2026-10-27T19:09:26+00:00",
       "updated_at": "2026-10-27T19:09:26+00:00"
     },
