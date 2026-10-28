@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-28T12:16:05+00:00",
-  "total": 567,
+  "updated_at": "2026-10-28T13:16:27+00:00",
+  "total": 571,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-28"
@@ -361,14 +361,58 @@
     },
     {
       "date": "2026-10-27",
-      "count": 26
+      "count": 27
     },
     {
       "date": "2026-10-28",
-      "count": 16
+      "count": 19
     }
   ],
   "incidents": [
+    {
+      "id": "a3c09650fe9bed69",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "日本航空",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 95,
+      "related": [
+        {
+          "incident_id": "0cd8a1c184390c84",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.yomiuri.co.jp/national/20261028-GYT1T00334/",
+          "evidence_urls": [
+            "https://www.yomiuri.co.jp/national/20261028-GYT1T00334/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6744eb828d8b2862899737eeeb6e97664277159e"
+        },
+        {
+          "name": "テレ朝NEWS",
+          "url": "https://news.tv-asahi.co.jp/news_economy/articles/000543514.html"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC288G50Y6A021C2000000/"
+        },
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/national/20261028-GYT1T00334/"
+        }
+      ],
+      "added_at": "2026-10-28T11:16:00+00:00",
+      "updated_at": "2026-10-28T13:16:27+00:00"
+    },
     {
       "id": "72df1904dc4263a0",
       "published_at": "2026-10-27T15:00:00+00:00",
@@ -546,33 +590,6 @@
       "updated_at": "2026-10-28T12:16:05+00:00"
     },
     {
-      "id": "a3c09650fe9bed69",
-      "published_at": "2026-10-27T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "日本航空",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/6744eb828d8b2862899737eeeb6e97664277159e"
-        },
-        {
-          "name": "テレ朝NEWS",
-          "url": "https://news.tv-asahi.co.jp/news_economy/articles/000543514.html"
-        }
-      ],
-      "added_at": "2026-10-28T11:16:00+00:00",
-      "updated_at": "2026-10-28T12:16:05+00:00"
-    },
-    {
       "id": "d54f4e82616816d3",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": "2026-10-27T15:00:00+00:00",
@@ -735,6 +752,45 @@
       "updated_at": "2026-10-28T12:16:05+00:00"
     },
     {
+      "id": "0cd8a1c184390c84",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "アマデウスＩＴグループ",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "3e7fccadd50bfba0",
+          "relationship": "affects",
+          "evidence_url": "https://www.yomiuri.co.jp/national/20261028-GYT1T00334/",
+          "evidence_urls": [
+            "https://www.yomiuri.co.jp/national/20261028-GYT1T00334/"
+          ]
+        },
+        {
+          "incident_id": "a3c09650fe9bed69",
+          "relationship": "affects",
+          "evidence_url": "https://www.yomiuri.co.jp/national/20261028-GYT1T00334/",
+          "evidence_urls": [
+            "https://www.yomiuri.co.jp/national/20261028-GYT1T00334/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/national/20261028-GYT1T00334/"
+        }
+      ],
+      "added_at": "2026-10-28T13:16:27+00:00",
+      "updated_at": "2026-10-28T13:16:27+00:00"
+    },
+    {
       "id": "306e3cb8d37abc69",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": null,
@@ -790,6 +846,38 @@
       "updated_at": "2026-10-28T11:16:00+00:00"
     },
     {
+      "id": "3e7fccadd50bfba0",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "日本トランスオーシャン航空",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "0cd8a1c184390c84",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.yomiuri.co.jp/national/20261028-GYT1T00334/",
+          "evidence_urls": [
+            "https://www.yomiuri.co.jp/national/20261028-GYT1T00334/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/national/20261028-GYT1T00334/"
+        }
+      ],
+      "added_at": "2026-10-28T13:16:27+00:00",
+      "updated_at": "2026-10-28T13:16:27+00:00"
+    },
+    {
       "id": "6b3806fcd0cb28b4",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": null,
@@ -819,6 +907,31 @@
       ],
       "added_at": "2026-10-27T23:15:46+00:00",
       "updated_at": "2026-10-27T23:15:46+00:00"
+    },
+    {
+      "id": "8c89a786a368a245",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "広島県警",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 5700,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/259ad347868ce7d1a69595c9b1d26a3e76f88089"
+        }
+      ],
+      "affected_service": "安否確認システム",
+      "service_aliases": [],
+      "added_at": "2026-10-28T13:16:27+00:00",
+      "updated_at": "2026-10-28T13:16:27+00:00"
     },
     {
       "id": "ee85d429e61b3b99",
@@ -1556,6 +1669,30 @@
       ],
       "added_at": "2026-10-27T07:15:28+00:00",
       "updated_at": "2026-10-27T07:15:28+00:00"
+    },
+    {
+      "id": "c509397cdd014ce0",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "電力・ガス取引監視等委員会",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "経済産業省 / Ministry of Economy, Trade and Industry",
+          "url": "https://www.meti.go.jp/press/2026/10/20261028003.html"
+        }
+      ],
+      "affected_service": "デントリネット",
+      "service_aliases": [],
+      "added_at": "2026-10-28T13:16:27+00:00",
+      "updated_at": "2026-10-28T13:16:27+00:00"
     },
     {
       "id": "f02398e77ea0385a",
@@ -10796,6 +10933,10 @@
           "url": "https://news.yahoo.co.jp/articles/aab3a934f8a537c3026b862eeca7bf730a7e8e92"
         },
         {
+          "name": "legalagent list",
+          "url": "https://group.gmo/info/alert/20261028/"
+        },
+        {
           "name": "INTERNET Watch",
           "url": "https://internet.watch.impress.co.jp/docs/news/2149829.html"
         },
@@ -10815,7 +10956,7 @@
       "affected_service": "お名前.com デスクトップクラウド",
       "service_aliases": [],
       "added_at": "2026-10-21T00:23:43+00:00",
-      "updated_at": "2026-10-27T19:09:26+00:00"
+      "updated_at": "2026-10-28T13:16:27+00:00"
     },
     {
       "id": "790f2d74f04c4ba6",
@@ -12676,6 +12817,10 @@
           "url": "https://japanir.jp/wp-content/uploads/2026/10/4372-20261026-01.pdf"
         },
         {
+          "name": "legalagent list",
+          "url": "https://ymir.co.jp/info/ymir-information20261027.html"
+        },
+        {
           "name": "日本経済新聞",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9EenE1dVRhZGV5WkNWMVIwazIxTEdfU2pVX1F3ZFE0djczaHFJVC1DdXdCdVV4cG0tcU11YnVSM3dzMnpUTGFqM19CUWl6Q1lIb2JYYWYxUWFfME15NVQtamgwNlZ2TmJoU1Bqbg?oc=5"
         },
@@ -12703,7 +12848,7 @@
       "affected_system": "メール配信サービスのサーバーシステム",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T13:14:57+00:00",
-      "updated_at": "2026-10-28T10:15:54+00:00"
+      "updated_at": "2026-10-28T13:16:27+00:00"
     },
     {
       "id": "15204b629222c010",
@@ -22625,10 +22770,14 @@
         {
           "name": "INTERNET Watch",
           "url": "https://internet.watch.impress.co.jp/docs/news/2149135.html"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVBX3HFQVBXULFA02XM.html"
         }
       ],
       "added_at": "2026-10-20T23:55:01+00:00",
-      "updated_at": "2026-10-28T10:15:54+00:00"
+      "updated_at": "2026-10-28T13:16:27+00:00"
     },
     {
       "id": "5e7167bf3d6672b5",
