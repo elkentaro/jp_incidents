@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-28T02:15:45+00:00",
-  "total": 546,
+  "updated_at": "2026-10-28T03:15:38+00:00",
+  "total": 547,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-28"
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-10-27",
-      "count": 23
+      "count": 24
     },
     {
       "date": "2026-10-28",
@@ -927,6 +927,33 @@
       "updated_at": "2026-10-28T00:15:35+00:00"
     },
     {
+      "id": "88eebfefa467e285",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "UPSIDER（アップサイダー）ホールディングス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE01YXRDYWlnbUJiOFoxaGNBbHdObVpidGVNRTZWQ3ZRZk9aSFE2WlRWUlJveXhyQUUydVVJS3Z3eGQ5aW9wODZMV2JtRjZNOVN5SWRlcDYwdVhhalFnNFFiYUJFajlJZTJQbXN6eQ?oc=5"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://corp-news.up-sider.com/261027-pr-2/"
+        }
+      ],
+      "added_at": "2026-10-27T22:15:42+00:00",
+      "updated_at": "2026-10-28T03:15:38+00:00"
+    },
+    {
       "id": "d8155168d32faca7",
       "published_at": "2026-10-26T15:00:00+00:00",
       "disclosed_at": null,
@@ -1078,27 +1105,37 @@
       "updated_at": "2026-10-27T19:09:26+00:00"
     },
     {
-      "id": "88eebfefa467e285",
+      "id": "4e6fb0bb590cb959",
       "published_at": "2026-10-26T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "UPSIDER（アップサイダー）ホールディングス",
+      "disclosed_at": "2026-10-26T15:00:00+00:00",
+      "organization": "静岡市",
       "incident_type": "data leak",
       "incident_categories": [
-        "data leak",
-        "unauthorized access"
+        "data leak"
       ],
       "potential_records": null,
       "confidence": "medium",
       "confidence_score": 50,
-      "related": [],
-      "sources": [
+      "related": [
         {
-          "name": "日本経済新聞",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE01YXRDYWlnbUJiOFoxaGNBbHdObVpidGVNRTZWQ3ZRZk9aSFE2WlRWUlJveXhyQUUydVVJS3Z3eGQ5aW9wODZMV2JtRjZNOVN5SWRlcDYwdVhhalFnNFFiYUJFajlJZTJQbXN6eQ?oc=5"
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.asahi.com/articles/ASVBW41HJVBWUTPB008M.html",
+          "evidence_urls": [
+            "https://www.asahi.com/articles/ASVBW41HJVBWUTPB008M.html"
+          ]
         }
       ],
-      "added_at": "2026-10-27T22:15:42+00:00",
-      "updated_at": "2026-10-27T22:15:42+00:00"
+      "sources": [
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVBW41HJVBWUTPB008M.html"
+        }
+      ],
+      "affected_service": "ふるさとチョイス",
+      "service_aliases": [],
+      "added_at": "2026-10-28T03:15:38+00:00",
+      "updated_at": "2026-10-28T03:15:38+00:00"
     },
     {
       "id": "a454d45cdce12811",
@@ -1398,6 +1435,49 @@
       "updated_at": "2026-10-27T19:09:26+00:00"
     },
     {
+      "id": "3b2a073b7265fb6c",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "関西みらい銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf",
+          "evidence_urls": [
+            "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "りそなホールディングス / Resona",
+          "url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf"
+        },
+        {
+          "name": "ニッキンONLINE",
+          "url": "https://www.nikkinonline.com/article/434231"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/withbloomberg/3040416?display=1"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/117831"
+        }
+      ],
+      "added_at": "2026-10-27T03:15:45+00:00",
+      "updated_at": "2026-10-28T03:15:38+00:00"
+    },
+    {
       "id": "41cec81677237776",
       "published_at": "2026-10-25T15:00:00+00:00",
       "disclosed_at": null,
@@ -1545,10 +1625,14 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/7b871e60fb5b3549d1afec2322b067f9ebc0105a"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/117831"
         }
       ],
       "added_at": "2026-10-27T03:15:45+00:00",
-      "updated_at": "2026-10-27T19:09:26+00:00"
+      "updated_at": "2026-10-28T03:15:38+00:00"
     },
     {
       "id": "86af8ecab6ec9130",
@@ -1649,6 +1733,49 @@
       "service_aliases": [],
       "added_at": "2026-10-27T19:09:26+00:00",
       "updated_at": "2026-10-28T01:15:55+00:00"
+    },
+    {
+      "id": "ac919f55052b2d67",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "埼玉りそな銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf",
+          "evidence_urls": [
+            "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "りそなホールディングス / Resona",
+          "url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf"
+        },
+        {
+          "name": "ニッキンONLINE",
+          "url": "https://www.nikkinonline.com/article/434231"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/withbloomberg/3040416?display=1"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/117831"
+        }
+      ],
+      "added_at": "2026-10-27T03:15:45+00:00",
+      "updated_at": "2026-10-28T03:15:38+00:00"
     },
     {
       "id": "d41f5779f643dfe8",
@@ -1855,45 +1982,6 @@
       "updated_at": "2026-10-27T01:15:59+00:00"
     },
     {
-      "id": "3b2a073b7265fb6c",
-      "published_at": "2026-10-25T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "関西みらい銀行",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [
-        {
-          "incident_id": "0a86ecb2b2d87e50",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf",
-          "evidence_urls": [
-            "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "りそなホールディングス / Resona",
-          "url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf"
-        },
-        {
-          "name": "ニッキンONLINE",
-          "url": "https://www.nikkinonline.com/article/434231"
-        },
-        {
-          "name": "TBS NEWS DIG",
-          "url": "https://newsdig.tbs.co.jp/articles/withbloomberg/3040416?display=1"
-        }
-      ],
-      "added_at": "2026-10-27T03:15:45+00:00",
-      "updated_at": "2026-10-27T19:09:26+00:00"
-    },
-    {
       "id": "8bc67780a7774ac9",
       "published_at": "2026-10-25T15:00:00+00:00",
       "disclosed_at": null,
@@ -1925,45 +2013,6 @@
       "service_aliases": [],
       "added_at": "2026-10-26T09:16:19+00:00",
       "updated_at": "2026-10-28T01:15:55+00:00"
-    },
-    {
-      "id": "ac919f55052b2d67",
-      "published_at": "2026-10-25T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "埼玉りそな銀行",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [
-        {
-          "incident_id": "0a86ecb2b2d87e50",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf",
-          "evidence_urls": [
-            "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "りそなホールディングス / Resona",
-          "url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf"
-        },
-        {
-          "name": "ニッキンONLINE",
-          "url": "https://www.nikkinonline.com/article/434231"
-        },
-        {
-          "name": "TBS NEWS DIG",
-          "url": "https://newsdig.tbs.co.jp/articles/withbloomberg/3040416?display=1"
-        }
-      ],
-      "added_at": "2026-10-27T03:15:45+00:00",
-      "updated_at": "2026-10-27T19:09:26+00:00"
     },
     {
       "id": "d297c3de7762326e",
@@ -9688,6 +9737,14 @@
           ]
         },
         {
+          "incident_id": "4e6fb0bb590cb959",
+          "relationship": "affects",
+          "evidence_url": "https://www.asahi.com/articles/ASVBW41HJVBWUTPB008M.html",
+          "evidence_urls": [
+            "https://www.asahi.com/articles/ASVBW41HJVBWUTPB008M.html"
+          ]
+        },
+        {
           "incident_id": "5014a88e2f6bb6b3",
           "relationship": "affects",
           "evidence_url": "https://www.city.fujiidera.lg.jp/topics/21539.html",
@@ -10039,7 +10096,7 @@
         "ふるさとちょいす"
       ],
       "added_at": "2026-10-20T23:46:03+00:00",
-      "updated_at": "2026-10-27T02:16:16+00:00"
+      "updated_at": "2026-10-28T03:15:38+00:00"
     },
     {
       "id": "2a737208d01cfe10",
@@ -13929,6 +13986,10 @@
           "url": "https://prtimes.jp/main/html/rd/p/000000259.000019448.html"
         },
         {
+          "name": "ニコニコニュース",
+          "url": "https://news.nicovideo.jp/watch/nw19925817?news_ref=20_20"
+        },
+        {
           "name": "ライブドアニュース",
           "url": "https://news.livedoor.com/pr_topics/detail/32669492/"
         }
@@ -13936,7 +13997,7 @@
       "affected_service": "OWNLY",
       "service_aliases": [],
       "added_at": "2026-10-27T19:09:26+00:00",
-      "updated_at": "2026-10-27T20:15:55+00:00"
+      "updated_at": "2026-10-28T03:15:38+00:00"
     },
     {
       "id": "8ffddfc96aa3ce97",
@@ -16896,6 +16957,45 @@
       "updated_at": "2026-10-22T00:31:01+00:00"
     },
     {
+      "id": "8eb379ec321f94fe",
+      "published_at": "2026-10-13T15:00:00+00:00",
+      "disclosed_at": "2026-10-13T15:00:00+00:00",
+      "organization": "静岡市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 34336,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "0a08a3f6bcd30b82",
+          "relationship": "affected_by",
+          "evidence_url": "https://topics.smt.docomo.ne.jp/article/tvsdt/region/tvsdt-2026101403936341?page=1",
+          "evidence_urls": [
+            "https://topics.smt.docomo.ne.jp/article/tvsdt/region/tvsdt-2026101403936341?page=1"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "静岡市（公式発表）",
+          "url": "https://www.city.shizuoka.lg.jp/s4268/s000347.html"
+        },
+        {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp/article/tvsdt/region/tvsdt-2026101403936341?page=1"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVBW41HJVBWUTPB008M.html"
+        }
+      ],
+      "added_at": "2026-10-22T19:09:21+00:00",
+      "updated_at": "2026-10-28T03:15:38+00:00"
+    },
+    {
       "id": "0440d0e3aa68448d",
       "published_at": "2026-10-13T15:00:00+00:00",
       "disclosed_at": null,
@@ -16988,41 +17088,6 @@
       ],
       "added_at": "2026-10-19T09:06:44+00:00",
       "updated_at": "2026-10-27T01:15:59+00:00"
-    },
-    {
-      "id": "8eb379ec321f94fe",
-      "published_at": "2026-10-13T15:00:00+00:00",
-      "disclosed_at": "2026-10-13T15:00:00+00:00",
-      "organization": "静岡市",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 34336,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [
-        {
-          "incident_id": "0a08a3f6bcd30b82",
-          "relationship": "affected_by",
-          "evidence_url": "https://topics.smt.docomo.ne.jp/article/tvsdt/region/tvsdt-2026101403936341?page=1",
-          "evidence_urls": [
-            "https://topics.smt.docomo.ne.jp/article/tvsdt/region/tvsdt-2026101403936341?page=1"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "静岡市（公式発表）",
-          "url": "https://www.city.shizuoka.lg.jp/s4268/s000347.html"
-        },
-        {
-          "name": "ｄメニューニュース",
-          "url": "https://topics.smt.docomo.ne.jp/article/tvsdt/region/tvsdt-2026101403936341?page=1"
-        }
-      ],
-      "added_at": "2026-10-22T19:09:21+00:00",
-      "updated_at": "2026-10-26T00:08:36+00:00"
     },
     {
       "id": "3150f01a132d2054",
