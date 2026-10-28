@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-28T00:15:35+00:00",
-  "total": 536,
+  "updated_at": "2026-10-28T01:15:55+00:00",
+  "total": 539,
   "date_range": {
     "start": "2026-08-09",
     "end": "2026-10-28"
@@ -293,7 +293,7 @@
     },
     {
       "date": "2026-10-10",
-      "count": 0
+      "count": 1
     },
     {
       "date": "2026-10-11",
@@ -337,7 +337,7 @@
     },
     {
       "date": "2026-10-21",
-      "count": 52
+      "count": 53
     },
     {
       "date": "2026-10-22",
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-10-27",
-      "count": 22
+      "count": 23
     },
     {
       "date": "2026-10-28",
@@ -1253,6 +1253,39 @@
       "updated_at": "2026-10-27T19:09:26+00:00"
     },
     {
+      "id": "8df9663851cbb3a5",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ミナオシ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 40026,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://3naoshi.com/announcements/20261027",
+          "evidence_urls": [
+            "https://3naoshi.com/announcements/20261027"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://3naoshi.com/announcements/20261027"
+        }
+      ],
+      "affected_service": "メールマガジン",
+      "service_aliases": [],
+      "added_at": "2026-10-28T01:15:55+00:00",
+      "updated_at": "2026-10-28T01:15:55+00:00"
+    },
+    {
       "id": "1306a0c62a3f2f3a",
       "published_at": "2026-10-25T15:00:00+00:00",
       "disclosed_at": null,
@@ -1577,9 +1610,10 @@
         {
           "incident_id": "bbaf38f307a869ce",
           "relationship": "affected_by",
-          "evidence_url": "https://k-tai.watch.impress.co.jp/docs/news/2151662.html",
+          "evidence_url": "https://news.yahoo.co.jp/articles/e612bf8c51427ec51079d88471fddf43c5262a15",
           "evidence_urls": [
-            "https://k-tai.watch.impress.co.jp/docs/news/2151662.html"
+            "https://k-tai.watch.impress.co.jp/docs/news/2151662.html",
+            "https://news.yahoo.co.jp/articles/e612bf8c51427ec51079d88471fddf43c5262a15"
           ]
         }
       ],
@@ -1599,12 +1633,16 @@
         {
           "name": "CNET Japan",
           "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE85MXgzQ2Y1Z1lfYXhzZ3NWUnc4QUNvN3FqUEZZT21CcXNJMFdhZXNiRV94OVlfUF85SHdSbHJHcF9GMVJrbzlfU3E4Z1hrRFFJcVE?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/e612bf8c51427ec51079d88471fddf43c5262a15"
         }
       ],
       "affected_service": "ドコモ光「plala(Sコース)」",
       "service_aliases": [],
       "added_at": "2026-10-27T19:09:26+00:00",
-      "updated_at": "2026-10-27T23:15:46+00:00"
+      "updated_at": "2026-10-28T01:15:55+00:00"
     },
     {
       "id": "d41f5779f643dfe8",
@@ -1850,6 +1888,39 @@
       "updated_at": "2026-10-27T19:09:26+00:00"
     },
     {
+      "id": "8bc67780a7774ac9",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "読宣WEST",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1700,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.yomisen.co.jp/news/info/2603.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/a77616124c67df742156fb60fcb1e1b5d9cd5802"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/yomisen-west-shikoku-yomipost-1700-data-breach-risk/"
+        }
+      ],
+      "affected_service": "ヨミポスト",
+      "service_aliases": [],
+      "added_at": "2026-10-26T09:16:19+00:00",
+      "updated_at": "2026-10-28T01:15:55+00:00"
+    },
+    {
       "id": "ac919f55052b2d67",
       "published_at": "2026-10-25T15:00:00+00:00",
       "disclosed_at": null,
@@ -1952,35 +2023,6 @@
       "service_aliases": [],
       "added_at": "2026-10-27T20:15:55+00:00",
       "updated_at": "2026-10-27T22:15:42+00:00"
-    },
-    {
-      "id": "8bc67780a7774ac9",
-      "published_at": "2026-10-25T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "読宣WEST",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 1700,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/a77616124c67df742156fb60fcb1e1b5d9cd5802"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/yomisen-west-shikoku-yomipost-1700-data-breach-risk/"
-        }
-      ],
-      "affected_service": "ヨミポスト",
-      "service_aliases": [],
-      "added_at": "2026-10-26T09:16:19+00:00",
-      "updated_at": "2026-10-27T07:15:28+00:00"
     },
     {
       "id": "20a5defaa0a897ab",
@@ -3229,6 +3271,34 @@
       "updated_at": "2026-10-25T05:15:56+00:00"
     },
     {
+      "id": "4aa0b50acb6d2b97",
+      "published_at": "2026-10-22T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ヤマダデンキ",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.yamada-denki.jp/information/pdf/261023_3.pdf"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/28/56609.html"
+        }
+      ],
+      "affected_service": "ヤマダビデオ",
+      "service_aliases": [],
+      "added_at": "2026-10-25T01:15:29+00:00",
+      "updated_at": "2026-10-28T01:15:55+00:00"
+    },
+    {
       "id": "84ccea53e8b0de73",
       "published_at": "2026-10-22T15:00:00+00:00",
       "disclosed_at": null,
@@ -3473,6 +3543,34 @@
       "updated_at": "2026-10-26T00:08:36+00:00"
     },
     {
+      "id": "f772b3d33bd13864",
+      "published_at": "2026-10-22T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ヤマダデンキ",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.yamada-denki.jp/information/pdf/261023_3.pdf"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/28/56609.html"
+        }
+      ],
+      "affected_service": "スマホゴールド会員",
+      "service_aliases": [],
+      "added_at": "2026-10-25T01:15:29+00:00",
+      "updated_at": "2026-10-28T01:15:55+00:00"
+    },
+    {
       "id": "6631ba0260ce793e",
       "published_at": "2026-10-22T15:00:00+00:00",
       "disclosed_at": null,
@@ -3711,30 +3809,6 @@
       ],
       "added_at": "2026-10-25T05:47:43+00:00",
       "updated_at": "2026-10-27T19:09:26+00:00"
-    },
-    {
-      "id": "4aa0b50acb6d2b97",
-      "published_at": "2026-10-22T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ヤマダデンキ",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.yamada-denki.jp/information/pdf/261023_3.pdf"
-        }
-      ],
-      "affected_service": "ヤマダビデオ",
-      "service_aliases": [],
-      "added_at": "2026-10-25T01:15:29+00:00",
-      "updated_at": "2026-10-25T01:15:29+00:00"
     },
     {
       "id": "5f9d9985180a51cf",
@@ -4158,30 +4232,6 @@
       "service_aliases": [],
       "added_at": "2026-10-24T20:15:24+00:00",
       "updated_at": "2026-10-24T20:15:24+00:00"
-    },
-    {
-      "id": "f772b3d33bd13864",
-      "published_at": "2026-10-22T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ヤマダデンキ",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.yamada-denki.jp/information/pdf/261023_3.pdf"
-        }
-      ],
-      "affected_service": "スマホゴールド会員",
-      "service_aliases": [],
-      "added_at": "2026-10-25T01:15:29+00:00",
-      "updated_at": "2026-10-25T01:15:29+00:00"
     },
     {
       "id": "fb9ff40cfdead956",
@@ -7242,6 +7292,14 @@
           ]
         },
         {
+          "incident_id": "0dbb912a0f5a5494",
+          "relationship": "affects",
+          "evidence_url": "https://www.shizuokagas.co.jp/news/documents/20261026_1.pdf",
+          "evidence_urls": [
+            "https://www.shizuokagas.co.jp/news/documents/20261026_1.pdf"
+          ]
+        },
+        {
           "incident_id": "15e60c32657aa57d",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE41M19uaV90Z0NBZTdvM29sVTNsNXhIalBjMTF2ZVlpOGdkTHpTdW9tS3JPTU5tWTFuWnAyMDZ4NUQyaFY3QXhibk1za21uUjRBNE8zWVhSZEFETTAyLUFyTVZuSktPcGlZWVhyXw?oc=5",
@@ -7496,6 +7554,14 @@
           "evidence_url": "https://www.city.nanjo.okinawa.jp/topics/1792646187/",
           "evidence_urls": [
             "https://www.city.nanjo.okinawa.jp/topics/1792646187/"
+          ]
+        },
+        {
+          "incident_id": "8df9663851cbb3a5",
+          "relationship": "affects",
+          "evidence_url": "https://3naoshi.com/announcements/20261027",
+          "evidence_urls": [
+            "https://3naoshi.com/announcements/20261027"
           ]
         },
         {
@@ -7791,7 +7857,7 @@
         }
       ],
       "added_at": "2026-10-21T19:22:12+00:00",
-      "updated_at": "2026-10-27T19:09:26+00:00"
+      "updated_at": "2026-10-28T01:15:55+00:00"
     },
     {
       "id": "a2cf60a92a1ad65c",
@@ -8021,6 +8087,33 @@
       ],
       "added_at": "2026-10-21T21:25:20+00:00",
       "updated_at": "2026-10-26T00:08:36+00:00"
+    },
+    {
+      "id": "3f651a563439c846",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": "2026-10-25T15:00:00+00:00",
+      "organization": "Gunosy",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 132,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/gunosy-business-account-unauthorized-access-132/"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://gunosy.co.jp/news/464"
+        }
+      ],
+      "added_at": "2026-10-27T19:09:26+00:00",
+      "updated_at": "2026-10-28T01:15:55+00:00"
     },
     {
       "id": "658df23c9dccd4ae",
@@ -8322,6 +8415,39 @@
       ],
       "added_at": "2026-10-23T01:00:27+00:00",
       "updated_at": "2026-10-23T01:00:27+00:00"
+    },
+    {
+      "id": "0dbb912a0f5a5494",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "静岡ガス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 95412,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.shizuokagas.co.jp/news/documents/20261026_1.pdf",
+          "evidence_urls": [
+            "https://www.shizuokagas.co.jp/news/documents/20261026_1.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.shizuokagas.co.jp/news/documents/20261026_1.pdf"
+        }
+      ],
+      "affected_service": "Webエネリア",
+      "service_aliases": [],
+      "added_at": "2026-10-28T01:15:55+00:00",
+      "updated_at": "2026-10-28T01:15:55+00:00"
     },
     {
       "id": "1653745dc5fd0b31",
@@ -9197,29 +9323,6 @@
       ],
       "added_at": "2026-10-21T19:59:31+00:00",
       "updated_at": "2026-10-22T01:18:03+00:00"
-    },
-    {
-      "id": "3f651a563439c846",
-      "published_at": "2026-10-20T15:00:00+00:00",
-      "disclosed_at": "2026-10-25T15:00:00+00:00",
-      "organization": "Gunosy",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 132,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/gunosy-business-account-unauthorized-access-132/"
-        }
-      ],
-      "added_at": "2026-10-27T19:09:26+00:00",
-      "updated_at": "2026-10-27T19:09:26+00:00"
     },
     {
       "id": "59eee1a08772ea39",
@@ -10464,6 +10567,33 @@
       "updated_at": "2026-10-22T01:18:03+00:00"
     },
     {
+      "id": "38d621781f18e6c4",
+      "published_at": "2026-10-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ドトールコーヒー",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 951,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/7d8df809b6004bf6e0a27d86e8bbe86a8256b101"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://www.doutor.co.jp/news/newsrelease/detail/20261026144748.html"
+        }
+      ],
+      "added_at": "2026-10-27T08:15:54+00:00",
+      "updated_at": "2026-10-28T01:15:55+00:00"
+    },
+    {
       "id": "7f1b0048e5679d7e",
       "published_at": "2026-10-19T15:00:00+00:00",
       "disclosed_at": "2026-10-19T15:00:00+00:00",
@@ -11132,29 +11262,6 @@
       ],
       "added_at": "2026-10-21T07:55:13+00:00",
       "updated_at": "2026-10-21T09:41:58+00:00"
-    },
-    {
-      "id": "38d621781f18e6c4",
-      "published_at": "2026-10-19T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ドトールコーヒー",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 951,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/7d8df809b6004bf6e0a27d86e8bbe86a8256b101"
-        }
-      ],
-      "added_at": "2026-10-27T08:15:54+00:00",
-      "updated_at": "2026-10-27T08:15:54+00:00"
     },
     {
       "id": "431fb33928affc8c",
@@ -12033,9 +12140,10 @@
         {
           "incident_id": "ab9faa92dde90cf8",
           "relationship": "affects",
-          "evidence_url": "https://k-tai.watch.impress.co.jp/docs/news/2151662.html",
+          "evidence_url": "https://news.yahoo.co.jp/articles/e612bf8c51427ec51079d88471fddf43c5262a15",
           "evidence_urls": [
-            "https://k-tai.watch.impress.co.jp/docs/news/2151662.html"
+            "https://k-tai.watch.impress.co.jp/docs/news/2151662.html",
+            "https://news.yahoo.co.jp/articles/e612bf8c51427ec51079d88471fddf43c5262a15"
           ]
         }
       ],
@@ -12070,7 +12178,7 @@
         }
       ],
       "added_at": "2026-10-27T19:09:26+00:00",
-      "updated_at": "2026-10-27T21:16:27+00:00"
+      "updated_at": "2026-10-28T01:15:55+00:00"
     },
     {
       "id": "e57d47bb72ea6543",
@@ -15273,6 +15381,10 @@
           "url": "https://corporate.m3.com/assets.ctfassets.net/1pwj74siywcy/4YBQ3JACTocGVgQmIVkSHe/c7865f094fe436292d7c81e1116a9c7f/20261015_Public_J.pdf"
         },
         {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/28/56604.html"
+        },
+        {
           "name": "日本経済新聞",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5qMWNyZUxtelZVS2h2M2JOV015VEdhWC1zR0VKd3dEdWZHamRfdTFiMERaR2R0akd1dmtYS2lNU3hyZ1IwR21FTzgwVjUyeFRLWkhubTFlazdteDRqelhmcVRLcld3QjZvbnJ6aw?oc=5"
         },
@@ -15294,7 +15406,7 @@
         }
       ],
       "added_at": "2026-10-19T08:49:15+00:00",
-      "updated_at": "2026-10-25T00:15:40+00:00"
+      "updated_at": "2026-10-28T01:15:55+00:00"
     },
     {
       "id": "cbdf6f7224141cb8",
@@ -19796,6 +19908,29 @@
       ],
       "added_at": "2026-10-21T03:57:34+00:00",
       "updated_at": "2026-10-21T03:57:34+00:00"
+    },
+    {
+      "id": "544b28758c9997db",
+      "published_at": "2026-10-09T15:00:00+00:00",
+      "disclosed_at": "2026-10-14T15:00:00+00:00",
+      "organization": "アイラッシュガレージ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 49191,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/28/56603.html"
+        }
+      ],
+      "added_at": "2026-10-28T01:15:55+00:00",
+      "updated_at": "2026-10-28T01:15:55+00:00"
     },
     {
       "id": "0f8f44a58aa6e552",
