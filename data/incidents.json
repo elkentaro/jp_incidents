@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-28T22:15:41+00:00",
-  "total": 576,
+  "updated_at": "2026-10-28T23:15:49+00:00",
+  "total": 580,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-29"
@@ -341,7 +341,7 @@
     },
     {
       "date": "2026-10-23",
-      "count": 60
+      "count": 61
     },
     {
       "date": "2026-10-24",
@@ -353,7 +353,7 @@
     },
     {
       "date": "2026-10-26",
-      "count": 34
+      "count": 35
     },
     {
       "date": "2026-10-27",
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-10-28",
-      "count": 20
+      "count": 22
     },
     {
       "date": "2026-10-29",
@@ -533,6 +533,92 @@
       ],
       "added_at": "2026-10-28T11:16:00+00:00",
       "updated_at": "2026-10-28T14:15:45+00:00"
+    },
+    {
+      "id": "3e7fccadd50bfba0",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "日本トランスオーシャン航空",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 95,
+      "related": [
+        {
+          "incident_id": "0cd8a1c184390c84",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.yomiuri.co.jp/national/20261028-GYT1T00334/",
+          "evidence_urls": [
+            "https://www.yomiuri.co.jp/national/20261028-GYT1T00334/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/national/20261028-GYT1T00334/"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2610/28/2000002687/"
+        },
+        {
+          "name": "沖縄タイムス社",
+          "url": "https://www.okinawatimes.co.jp/articles/-/1954530"
+        },
+        {
+          "name": "トラベルボイス",
+          "url": "https://www.travelvoice.jp/20261028-160759"
+        }
+      ],
+      "added_at": "2026-10-28T13:16:27+00:00",
+      "updated_at": "2026-10-28T23:15:49+00:00"
+    },
+    {
+      "id": "e9aee8b5e4ee9ebb",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "九州大学",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 9999,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.kyushu-u.ac.jp/ja/notices/view/3198",
+          "evidence_urls": [
+            "https://www.kyushu-u.ac.jp/ja/notices/view/3198"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "九州大学 / Kyushu University",
+          "url": "https://www.kyushu-u.ac.jp/ja/notices/view/3198"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9vdWJoMDg2WWk1VDIyUl9nZ25VTFhXdkNjNVozZGI4R0t5OE55OUxDQ2VKYmo5OElYZFA1Sk9DRDNlc0Jod3dDc2w3TzY5YXp1TzhXVGdrdkdBRFpRYnBoUV9xWWNZbzNJUmJ0QmRTZmlJb3FHemFPelhNa0J4VXc?oc=5"
+        },
+        {
+          "name": "京都新聞デジタル",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1iZUdoMzRjQmxLSzBIYUEtU0thWUluQmtjWk1JSS1YblF1azZJRnVHc0FfdWttUE5ZMFlPYnl2eXpiSUxhRVVXZVlzMDQ0NV9qWDZjQVc2TEI?oc=5"
+        }
+      ],
+      "affected_service": "九州大学校友会のメール配信サービス",
+      "service_aliases": [],
+      "added_at": "2026-10-28T07:15:47+00:00",
+      "updated_at": "2026-10-28T23:15:49+00:00"
     },
     {
       "id": "19b3132af335af7b",
@@ -792,44 +878,6 @@
       "updated_at": "2026-10-28T18:16:27+00:00"
     },
     {
-      "id": "e9aee8b5e4ee9ebb",
-      "published_at": "2026-10-27T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "九州大学",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 9999,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [
-        {
-          "incident_id": "7e647fcc0bac0b06",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.kyushu-u.ac.jp/ja/notices/view/3198",
-          "evidence_urls": [
-            "https://www.kyushu-u.ac.jp/ja/notices/view/3198"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "九州大学 / Kyushu University",
-          "url": "https://www.kyushu-u.ac.jp/ja/notices/view/3198"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9vdWJoMDg2WWk1VDIyUl9nZ25VTFhXdkNjNVozZGI4R0t5OE55OUxDQ2VKYmo5OElYZFA1Sk9DRDNlc0Jod3dDc2w3TzY5YXp1TzhXVGdrdkdBRFpRYnBoUV9xWWNZbzNJUmJ0QmRTZmlJb3FHemFPelhNa0J4VXc?oc=5"
-        }
-      ],
-      "affected_service": "九州大学校友会のメール配信サービス",
-      "service_aliases": [],
-      "added_at": "2026-10-28T07:15:47+00:00",
-      "updated_at": "2026-10-28T07:15:47+00:00"
-    },
-    {
       "id": "09d9b28fff52841e",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": null,
@@ -857,42 +905,6 @@
       "service_aliases": [],
       "added_at": "2026-10-28T12:16:05+00:00",
       "updated_at": "2026-10-28T18:16:27+00:00"
-    },
-    {
-      "id": "3e7fccadd50bfba0",
-      "published_at": "2026-10-27T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "日本トランスオーシャン航空",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [
-        {
-          "incident_id": "0cd8a1c184390c84",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.yomiuri.co.jp/national/20261028-GYT1T00334/",
-          "evidence_urls": [
-            "https://www.yomiuri.co.jp/national/20261028-GYT1T00334/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "読売新聞",
-          "url": "https://www.yomiuri.co.jp/national/20261028-GYT1T00334/"
-        },
-        {
-          "name": "ITmedia",
-          "url": "https://www.itmedia.co.jp/news/article/2610/28/2000002687/"
-        }
-      ],
-      "added_at": "2026-10-28T13:16:27+00:00",
-      "updated_at": "2026-10-28T16:15:50+00:00"
     },
     {
       "id": "decf799bcee862b6",
@@ -995,6 +1007,30 @@
       "updated_at": "2026-10-28T10:15:54+00:00"
     },
     {
+      "id": "2e6aed23a224e058",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "渋谷区",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "渋谷区 / Shibuya",
+          "url": "https://www.city.shibuya.tokyo.jp/kusei/koho/shibuya-portal/unauthorized_access_202610.html"
+        }
+      ],
+      "affected_service": "渋谷マイポータル",
+      "service_aliases": [],
+      "added_at": "2026-10-28T23:15:49+00:00",
+      "updated_at": "2026-10-28T23:15:49+00:00"
+    },
+    {
       "id": "a4c6a8cdac85f9f4",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": null,
@@ -1033,6 +1069,39 @@
       ],
       "added_at": "2026-10-28T11:16:00+00:00",
       "updated_at": "2026-10-28T11:16:00+00:00"
+    },
+    {
+      "id": "de768175f15cf014",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "台東区",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 737,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.taito.lg.jp/kenkohukusi/korei/ryusenfuseiaccess.html",
+          "evidence_urls": [
+            "https://www.city.taito.lg.jp/kenkohukusi/korei/ryusenfuseiaccess.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "台東区 / Taito",
+          "url": "https://www.city.taito.lg.jp/kenkohukusi/korei/ryusenfuseiaccess.html"
+        }
+      ],
+      "affected_service": "竜泉福祉センター「いきいきてらす」で実施する事業の申し込みフォーム",
+      "service_aliases": [],
+      "added_at": "2026-10-28T23:15:49+00:00",
+      "updated_at": "2026-10-28T23:15:49+00:00"
     },
     {
       "id": "0cd8a1c184390c84",
@@ -1160,6 +1229,58 @@
       "service_aliases": [],
       "added_at": "2026-10-28T13:16:27+00:00",
       "updated_at": "2026-10-28T13:16:27+00:00"
+    },
+    {
+      "id": "2070de02126b55ea",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "さとふる",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.oita.jp/soshiki/10112/2026-satofull-notice01.html",
+          "evidence_urls": [
+            "https://www.pref.oita.jp/soshiki/10112/2026-satofull-notice01.html"
+          ]
+        },
+        {
+          "incident_id": "a4c6a8cdac85f9f4",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.shinagawa.tokyo.jp/kurashi/zeikin/1009363/1011842.html",
+          "evidence_urls": [
+            "https://www.city.shinagawa.tokyo.jp/kurashi/zeikin/1009363/1011842.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "大分県 / Oita",
+          "url": "https://www.pref.oita.jp/soshiki/10112/2026-satofull-notice01.html"
+        },
+        {
+          "name": "佐野市",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNRzMtY2ZzQ1MtMVRfZ2ktN0FOdkdOWVgyUGY1bnFqR01DWDJBank1clNLNmxWNFd3clVCcFNsLUhPZXlUSXBPVUJua1BIRXBWcTh2N3A2UkVjSDBoZUl0bXZlb0FpTjV3T1BkQ2F5TmFmTHhqV0tham85R2lKNHhlekY4eWkwMWg4RXl5d3BVNTZfdmo4Z1ExV2NDRVZ3LVE?oc=5"
+        },
+        {
+          "name": "飯能市",
+          "url": "https://www.city.hanno.lg.jp/sangyo_jigyoshamuke/furusatonozei/furusatonozei/14578.html"
+        },
+        {
+          "name": "福岡県 / Fukuoka",
+          "url": "https://www.pref.fukuoka.lg.jp/contents/furusato-attention2.html"
+        }
+      ],
+      "added_at": "2026-10-28T06:15:40+00:00",
+      "updated_at": "2026-10-28T23:15:49+00:00"
     },
     {
       "id": "c509397cdd014ce0",
@@ -1508,54 +1629,6 @@
       ],
       "added_at": "2026-10-27T04:15:43+00:00",
       "updated_at": "2026-10-27T19:09:26+00:00"
-    },
-    {
-      "id": "2070de02126b55ea",
-      "published_at": "2026-10-26T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "さとふる",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [
-        {
-          "incident_id": "0a86ecb2b2d87e50",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.pref.oita.jp/soshiki/10112/2026-satofull-notice01.html",
-          "evidence_urls": [
-            "https://www.pref.oita.jp/soshiki/10112/2026-satofull-notice01.html"
-          ]
-        },
-        {
-          "incident_id": "a4c6a8cdac85f9f4",
-          "relationship": "affects",
-          "evidence_url": "https://www.city.shinagawa.tokyo.jp/kurashi/zeikin/1009363/1011842.html",
-          "evidence_urls": [
-            "https://www.city.shinagawa.tokyo.jp/kurashi/zeikin/1009363/1011842.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "大分県 / Oita",
-          "url": "https://www.pref.oita.jp/soshiki/10112/2026-satofull-notice01.html"
-        },
-        {
-          "name": "佐野市",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNRzMtY2ZzQ1MtMVRfZ2ktN0FOdkdOWVgyUGY1bnFqR01DWDJBank1clNLNmxWNFd3clVCcFNsLUhPZXlUSXBPVUJua1BIRXBWcTh2N3A2UkVjSDBoZUl0bXZlb0FpTjV3T1BkQ2F5TmFmTHhqV0tham85R2lKNHhlekY4eWkwMWg4RXl5d3BVNTZfdmo4Z1ExV2NDRVZ3LVE?oc=5"
-        },
-        {
-          "name": "飯能市",
-          "url": "https://www.city.hanno.lg.jp/sangyo_jigyoshamuke/furusatonozei/furusatonozei/14578.html"
-        }
-      ],
-      "added_at": "2026-10-28T06:15:40+00:00",
-      "updated_at": "2026-10-28T16:15:50+00:00"
     },
     {
       "id": "c89620912f4fe178",
@@ -2257,13 +2330,17 @@
       "sources": [
         {
           "name": "ニコニコニュース",
+          "url": "https://news.nicovideo.jp/watch/nw19929481"
+        },
+        {
+          "name": "ニコニコニュース",
           "url": "https://news.nicovideo.jp/watch/nw19929481?news_ref=watch_70_nw19613121"
         }
       ],
       "affected_service": "メールマガジン",
       "service_aliases": [],
       "added_at": "2026-10-28T14:15:45+00:00",
-      "updated_at": "2026-10-28T14:15:45+00:00"
+      "updated_at": "2026-10-28T23:15:49+00:00"
     },
     {
       "id": "1306a0c62a3f2f3a",
@@ -3119,6 +3196,39 @@
       ],
       "added_at": "2026-10-26T20:15:50+00:00",
       "updated_at": "2026-10-26T20:15:50+00:00"
+    },
+    {
+      "id": "4d36bb235ee98a3f",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": "2026-10-27T15:00:00+00:00",
+      "organization": "埼玉県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 39,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.saitama.lg.jp/f2207/news/page/news2026102801.html",
+          "evidence_urls": [
+            "https://www.pref.saitama.lg.jp/f2207/news/page/news2026102801.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "埼玉県 / Saitama",
+          "url": "https://www.pref.saitama.lg.jp/f2207/news/page/news2026102801.html"
+        }
+      ],
+      "affected_service": "県立川越高等学校",
+      "service_aliases": [],
+      "added_at": "2026-10-28T23:15:49+00:00",
+      "updated_at": "2026-10-28T23:15:49+00:00"
     },
     {
       "id": "697b58a7f0dc43fe",
@@ -5093,6 +5203,30 @@
       "service_aliases": [],
       "added_at": "2026-10-27T07:15:28+00:00",
       "updated_at": "2026-10-27T07:15:28+00:00"
+    },
+    {
+      "id": "afafc315a013764c",
+      "published_at": "2026-10-22T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "図研",
+      "incident_type": "other",
+      "incident_categories": [
+        "other"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261027557047.pdf"
+        }
+      ],
+      "affected_service": "Zuken GmbH",
+      "service_aliases": [],
+      "added_at": "2026-10-28T23:15:49+00:00",
+      "updated_at": "2026-10-28T23:15:49+00:00"
     },
     {
       "id": "b0a66ea011b963fb",
@@ -15073,6 +15207,10 @@
           "url": "https://news.nicovideo.jp/watch/nw19925817?news_ref=20_20"
         },
         {
+          "name": "ニコニコニュース",
+          "url": "https://news.nicovideo.jp/watch/nw19925817"
+        },
+        {
           "name": "ライブドアニュース",
           "url": "https://news.livedoor.com/pr_topics/detail/32669492/"
         }
@@ -15080,7 +15218,7 @@
       "affected_service": "OWNLY",
       "service_aliases": [],
       "added_at": "2026-10-27T19:09:26+00:00",
-      "updated_at": "2026-10-28T03:15:38+00:00"
+      "updated_at": "2026-10-28T23:15:49+00:00"
     },
     {
       "id": "8ffddfc96aa3ce97",
@@ -16254,6 +16392,14 @@
           ]
         },
         {
+          "incident_id": "4d36bb235ee98a3f",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.saitama.lg.jp/f2207/news/page/news2026102801.html",
+          "evidence_urls": [
+            "https://www.pref.saitama.lg.jp/f2207/news/page/news2026102801.html"
+          ]
+        },
+        {
           "incident_id": "600682fb24fe75cc",
           "relationship": "affects",
           "evidence_url": "https://www.ncctv.co.jp/news/article/16981760",
@@ -16547,6 +16693,14 @@
           ]
         },
         {
+          "incident_id": "de768175f15cf014",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.taito.lg.jp/kenkohukusi/korei/ryusenfuseiaccess.html",
+          "evidence_urls": [
+            "https://www.city.taito.lg.jp/kenkohukusi/korei/ryusenfuseiaccess.html"
+          ]
+        },
+        {
           "incident_id": "ea57489c9b0b7b63",
           "relationship": "affects",
           "evidence_url": "https://www.xmile.co.jp/news/release328",
@@ -16630,7 +16784,7 @@
       "affected_system": "Studio cloud environment",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T11:10:22+00:00",
-      "updated_at": "2026-10-28T02:15:45+00:00"
+      "updated_at": "2026-10-28T23:15:49+00:00"
     },
     {
       "id": "79d92ec417a38b35",
