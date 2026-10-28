@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-28T03:15:38+00:00",
-  "total": 547,
+  "updated_at": "2026-10-28T06:15:40+00:00",
+  "total": 548,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-28"
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-10-27",
-      "count": 24
+      "count": 25
     },
     {
       "date": "2026-10-28",
@@ -991,6 +991,38 @@
       ],
       "added_at": "2026-10-27T19:09:26+00:00",
       "updated_at": "2026-10-28T02:15:45+00:00"
+    },
+    {
+      "id": "2070de02126b55ea",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "さとふる",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.oita.jp/soshiki/10112/2026-satofull-notice01.html",
+          "evidence_urls": [
+            "https://www.pref.oita.jp/soshiki/10112/2026-satofull-notice01.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "大分県 / Oita",
+          "url": "https://www.pref.oita.jp/soshiki/10112/2026-satofull-notice01.html"
+        }
+      ],
+      "added_at": "2026-10-28T06:15:40+00:00",
+      "updated_at": "2026-10-28T06:15:40+00:00"
     },
     {
       "id": "aaada5eac76d7500",
@@ -7479,8 +7511,9 @@
         {
           "incident_id": "2dc160527ae7970a",
           "relationship": "affects",
-          "evidence_url": "https://373news.com/corporation/notice/press/id_bf3929e6-1d90-4183-9aa5-4bbcf70f5d84",
+          "evidence_url": "https://373news.com/corporation/notice/minamipass/id_bfcd6f6b-43d6-4d48-931c-d9cac9dae279",
           "evidence_urls": [
+            "https://373news.com/corporation/notice/minamipass/id_bfcd6f6b-43d6-4d48-931c-d9cac9dae279",
             "https://373news.com/corporation/notice/press/id_bf3929e6-1d90-4183-9aa5-4bbcf70f5d84",
             "https://373news.com/corporation/notice/press/id_bfcd6f6b-43d6-4d48-931c-d9cac9dae279"
           ]
@@ -7954,7 +7987,7 @@
         }
       ],
       "added_at": "2026-10-21T19:22:12+00:00",
-      "updated_at": "2026-10-28T01:15:55+00:00"
+      "updated_at": "2026-10-28T06:15:40+00:00"
     },
     {
       "id": "a2cf60a92a1ad65c",
@@ -8064,8 +8097,9 @@
         {
           "incident_id": "7e647fcc0bac0b06",
           "relationship": "affected_by",
-          "evidence_url": "https://373news.com/corporation/notice/press/id_bf3929e6-1d90-4183-9aa5-4bbcf70f5d84",
+          "evidence_url": "https://373news.com/corporation/notice/minamipass/id_bfcd6f6b-43d6-4d48-931c-d9cac9dae279",
           "evidence_urls": [
+            "https://373news.com/corporation/notice/minamipass/id_bfcd6f6b-43d6-4d48-931c-d9cac9dae279",
             "https://373news.com/corporation/notice/press/id_bf3929e6-1d90-4183-9aa5-4bbcf70f5d84",
             "https://373news.com/corporation/notice/press/id_bfcd6f6b-43d6-4d48-931c-d9cac9dae279"
           ]
@@ -8089,6 +8123,10 @@
           "url": "https://373news.com/corporation/notice/press/id_6bc5b036-e82d-4901-9cf1-c6b6ef8ac399"
         },
         {
+          "name": "南日本新聞",
+          "url": "https://373news.com/corporation/notice/minamipass/id_bfcd6f6b-43d6-4d48-931c-d9cac9dae279"
+        },
+        {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/054ab82f5fea745805f274d38ec75e5fb5fb019a"
         },
@@ -8098,7 +8136,7 @@
         }
       ],
       "added_at": "2026-10-23T02:16:18+00:00",
-      "updated_at": "2026-10-27T19:09:26+00:00"
+      "updated_at": "2026-10-28T06:15:40+00:00"
     },
     {
       "id": "342cec18ac250c44",
@@ -11874,6 +11912,14 @@
           ]
         },
         {
+          "incident_id": "2070de02126b55ea",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.oita.jp/soshiki/10112/2026-satofull-notice01.html",
+          "evidence_urls": [
+            "https://www.pref.oita.jp/soshiki/10112/2026-satofull-notice01.html"
+          ]
+        },
+        {
           "incident_id": "3af225d6bc57b16b",
           "relationship": "affects",
           "evidence_url": "https://research.impress.co.jp/info/735",
@@ -12058,7 +12104,7 @@
       "affected_system": "メール配信サービスのサーバーシステム",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T13:14:57+00:00",
-      "updated_at": "2026-10-28T02:15:45+00:00"
+      "updated_at": "2026-10-28T06:15:40+00:00"
     },
     {
       "id": "15204b629222c010",
