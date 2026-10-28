@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-28T06:15:40+00:00",
-  "total": 548,
+  "updated_at": "2026-10-28T07:15:47+00:00",
+  "total": 552,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-28"
@@ -305,7 +305,7 @@
     },
     {
       "date": "2026-10-13",
-      "count": 37
+      "count": 38
     },
     {
       "date": "2026-10-14",
@@ -337,7 +337,7 @@
     },
     {
       "date": "2026-10-21",
-      "count": 53
+      "count": 54
     },
     {
       "date": "2026-10-22",
@@ -365,10 +365,48 @@
     },
     {
       "date": "2026-10-28",
-      "count": 2
+      "count": 4
     }
   ],
   "incidents": [
+    {
+      "id": "e9aee8b5e4ee9ebb",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "九州大学",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 9999,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.kyushu-u.ac.jp/ja/notices/view/3198",
+          "evidence_urls": [
+            "https://www.kyushu-u.ac.jp/ja/notices/view/3198"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "九州大学 / Kyushu University",
+          "url": "https://www.kyushu-u.ac.jp/ja/notices/view/3198"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9vdWJoMDg2WWk1VDIyUl9nZ25VTFhXdkNjNVozZGI4R0t5OE55OUxDQ2VKYmo5OElYZFA1Sk9DRDNlc0Jod3dDc2w3TzY5YXp1TzhXVGdrdkdBRFpRYnBoUV9xWWNZbzNJUmJ0QmRTZmlJb3FHemFPelhNa0J4VXc?oc=5"
+        }
+      ],
+      "affected_service": "九州大学校友会のメール配信サービス",
+      "service_aliases": [],
+      "added_at": "2026-10-28T07:15:47+00:00",
+      "updated_at": "2026-10-28T07:15:47+00:00"
+    },
     {
       "id": "decf799bcee862b6",
       "published_at": "2026-10-27T15:00:00+00:00",
@@ -436,6 +474,28 @@
       ],
       "added_at": "2026-10-27T23:15:46+00:00",
       "updated_at": "2026-10-27T23:15:46+00:00"
+    },
+    {
+      "id": "72df1904dc4263a0",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ヤクルト本社",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2610/28/2000002657/"
+        }
+      ],
+      "added_at": "2026-10-28T07:15:47+00:00",
+      "updated_at": "2026-10-28T07:15:47+00:00"
     },
     {
       "id": "1aff1533ceffa14a",
@@ -822,6 +882,42 @@
       "updated_at": "2026-10-27T21:16:27+00:00"
     },
     {
+      "id": "2070de02126b55ea",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "さとふる",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.oita.jp/soshiki/10112/2026-satofull-notice01.html",
+          "evidence_urls": [
+            "https://www.pref.oita.jp/soshiki/10112/2026-satofull-notice01.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "大分県 / Oita",
+          "url": "https://www.pref.oita.jp/soshiki/10112/2026-satofull-notice01.html"
+        },
+        {
+          "name": "佐野市",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNRzMtY2ZzQ1MtMVRfZ2ktN0FOdkdOWVgyUGY1bnFqR01DWDJBank1clNLNmxWNFd3clVCcFNsLUhPZXlUSXBPVUJua1BIRXBWcTh2N3A2UkVjSDBoZUl0bXZlb0FpTjV3T1BkQ2F5TmFmTHhqV0tham85R2lKNHhlekY4eWkwMWg4RXl5d3BVNTZfdmo4Z1ExV2NDRVZ3LVE?oc=5"
+        }
+      ],
+      "added_at": "2026-10-28T06:15:40+00:00",
+      "updated_at": "2026-10-28T07:15:47+00:00"
+    },
+    {
       "id": "249f996eeac0e23c",
       "published_at": "2026-10-26T15:00:00+00:00",
       "disclosed_at": null,
@@ -991,38 +1087,6 @@
       ],
       "added_at": "2026-10-27T19:09:26+00:00",
       "updated_at": "2026-10-28T02:15:45+00:00"
-    },
-    {
-      "id": "2070de02126b55ea",
-      "published_at": "2026-10-26T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "さとふる",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "0a86ecb2b2d87e50",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.pref.oita.jp/soshiki/10112/2026-satofull-notice01.html",
-          "evidence_urls": [
-            "https://www.pref.oita.jp/soshiki/10112/2026-satofull-notice01.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "大分県 / Oita",
-          "url": "https://www.pref.oita.jp/soshiki/10112/2026-satofull-notice01.html"
-        }
-      ],
-      "added_at": "2026-10-28T06:15:40+00:00",
-      "updated_at": "2026-10-28T06:15:40+00:00"
     },
     {
       "id": "aaada5eac76d7500",
@@ -3696,6 +3760,32 @@
       "updated_at": "2026-10-28T01:15:55+00:00"
     },
     {
+      "id": "1b11fc1289acb0fa",
+      "published_at": "2026-10-22T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "MICIN",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/e9cba5a97b7f882d88d2e6b47288064de7c78a83"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVBW35RWVBWDIFI022M.html"
+        }
+      ],
+      "added_at": "2026-10-27T19:09:26+00:00",
+      "updated_at": "2026-10-28T07:15:47+00:00"
+    },
+    {
       "id": "6631ba0260ce793e",
       "published_at": "2026-10-22T15:00:00+00:00",
       "disclosed_at": null,
@@ -4468,28 +4558,6 @@
       "service_aliases": [],
       "added_at": "2026-10-25T05:15:56+00:00",
       "updated_at": "2026-10-25T05:15:56+00:00"
-    },
-    {
-      "id": "1b11fc1289acb0fa",
-      "published_at": "2026-10-22T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "MICIN",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "朝日新聞",
-          "url": "https://www.asahi.com/articles/ASVBW35RWVBWDIFI022M.html"
-        }
-      ],
-      "added_at": "2026-10-27T19:09:26+00:00",
-      "updated_at": "2026-10-27T19:09:26+00:00"
     },
     {
       "id": "240314d24b3f72b5",
@@ -7759,6 +7827,14 @@
           ]
         },
         {
+          "incident_id": "b66f7bc8814b7db2",
+          "relationship": "affects",
+          "evidence_url": "https://cloudcircus.jp/media/release/20261023",
+          "evidence_urls": [
+            "https://cloudcircus.jp/media/release/20261023"
+          ]
+        },
+        {
           "incident_id": "b90eec58c51955ab",
           "relationship": "affects",
           "evidence_url": "https://www.pref.wakayama.lg.jp/prefg/022200/d00223187.html",
@@ -7888,6 +7964,14 @@
           ]
         },
         {
+          "incident_id": "e9aee8b5e4ee9ebb",
+          "relationship": "affects",
+          "evidence_url": "https://www.kyushu-u.ac.jp/ja/notices/view/3198",
+          "evidence_urls": [
+            "https://www.kyushu-u.ac.jp/ja/notices/view/3198"
+          ]
+        },
+        {
           "incident_id": "eb15ae0fa850187c",
           "relationship": "affects",
           "evidence_url": "https://www.city.setagaya.lg.jp/02428/36615.html",
@@ -7987,7 +8071,7 @@
         }
       ],
       "added_at": "2026-10-21T19:22:12+00:00",
-      "updated_at": "2026-10-28T06:15:40+00:00"
+      "updated_at": "2026-10-28T07:15:47+00:00"
     },
     {
       "id": "a2cf60a92a1ad65c",
@@ -8293,6 +8377,35 @@
       ],
       "added_at": "2026-10-21T08:22:16+00:00",
       "updated_at": "2026-10-27T19:09:26+00:00"
+    },
+    {
+      "id": "6f2d360f03a9dc58",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "チャリ・ロト",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 373,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://chariloto.jp/news/20261024/index.html"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/117812"
+        }
+      ],
+      "affected_service": "チャリロトアプリ",
+      "service_aliases": [],
+      "added_at": "2026-10-26T01:27:18+00:00",
+      "updated_at": "2026-10-28T07:15:47+00:00"
     },
     {
       "id": "b065bc7081e203e4",
@@ -8811,31 +8924,6 @@
       "updated_at": "2026-10-22T19:17:51+00:00"
     },
     {
-      "id": "6f2d360f03a9dc58",
-      "published_at": "2026-10-20T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "チャリ・ロト",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 373,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://chariloto.jp/news/20261024/index.html"
-        }
-      ],
-      "affected_service": "チャリロトアプリ",
-      "service_aliases": [],
-      "added_at": "2026-10-26T01:27:18+00:00",
-      "updated_at": "2026-10-26T01:27:18+00:00"
-    },
-    {
       "id": "76c4f6f310f271f2",
       "published_at": "2026-10-20T15:00:00+00:00",
       "disclosed_at": null,
@@ -8994,6 +9082,37 @@
       ],
       "added_at": "2026-10-22T02:50:49+00:00",
       "updated_at": "2026-10-22T02:50:49+00:00"
+    },
+    {
+      "id": "b66f7bc8814b7db2",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "クラウドサーカス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://cloudcircus.jp/media/release/20261023",
+          "evidence_urls": [
+            "https://cloudcircus.jp/media/release/20261023"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://cloudcircus.jp/media/release/20261023"
+        }
+      ],
+      "added_at": "2026-10-28T07:15:47+00:00",
+      "updated_at": "2026-10-28T07:15:47+00:00"
     },
     {
       "id": "bbd94d0ac13294d9",
@@ -12142,6 +12261,10 @@
           "url": "https://www.47news.jp/15141696.html"
         },
         {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/21e3e478694f6b4055baa9bc5413af7becffc2c8"
+        },
+        {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261019552813.pdf"
         },
@@ -12187,7 +12310,7 @@
         }
       ],
       "added_at": "2026-10-19T08:49:15+00:00",
-      "updated_at": "2026-10-26T13:16:27+00:00"
+      "updated_at": "2026-10-28T07:15:47+00:00"
     },
     {
       "id": "28dda472e3ea05fc",
@@ -13643,6 +13766,46 @@
       "updated_at": "2026-10-22T01:18:03+00:00"
     },
     {
+      "id": "7009e47e3afdc08b",
+      "published_at": "2026-10-16T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社フューチャーショップ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "a35fd2ed6e8be3c8",
+          "relationship": "affects",
+          "evidence_url": "https://www.lindt.jp/contents/chocolat-cafe/notice_20261023/",
+          "evidence_urls": [
+            "https://www.lindt.jp/contents/chocolat-cafe/notice_20261023/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "株式会社フューチャーショップ（公式発表）",
+          "url": "https://www.future-shop.jp/news/2026/10/23.html"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://www.lindt.jp/contents/chocolat-cafe/notice_20261023/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/117820"
+        }
+      ],
+      "added_at": "2026-10-25T05:15:56+00:00",
+      "updated_at": "2026-10-28T07:15:47+00:00"
+    },
+    {
       "id": "4468d7a7262d01e6",
       "published_at": "2026-10-16T15:00:00+00:00",
       "disclosed_at": null,
@@ -13666,42 +13829,6 @@
         }
       ],
       "added_at": "2026-10-19T22:05:10+00:00",
-      "updated_at": "2026-10-26T00:08:36+00:00"
-    },
-    {
-      "id": "7009e47e3afdc08b",
-      "published_at": "2026-10-16T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "株式会社フューチャーショップ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [
-        {
-          "incident_id": "a35fd2ed6e8be3c8",
-          "relationship": "affects",
-          "evidence_url": "https://www.lindt.jp/contents/chocolat-cafe/notice_20261023/",
-          "evidence_urls": [
-            "https://www.lindt.jp/contents/chocolat-cafe/notice_20261023/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "株式会社フューチャーショップ（公式発表）",
-          "url": "https://www.future-shop.jp/news/2026/10/23.html"
-        },
-        {
-          "name": "satimo list",
-          "url": "https://www.lindt.jp/contents/chocolat-cafe/notice_20261023/"
-        }
-      ],
-      "added_at": "2026-10-25T05:15:56+00:00",
       "updated_at": "2026-10-26T00:08:36+00:00"
     },
     {
@@ -18700,6 +18827,33 @@
       "date_basis": "existing_record",
       "added_at": "2026-10-20T07:24:24+00:00",
       "updated_at": "2026-10-26T00:08:36+00:00"
+    },
+    {
+      "id": "016f6d7ed567c3fb",
+      "published_at": "2026-10-12T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社PIECE",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "株式会社PIECE",
+          "url": "https://corp.piecehotel.com/news/FZLr6hv1"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/28/56597.html"
+        }
+      ],
+      "added_at": "2026-10-28T07:15:47+00:00",
+      "updated_at": "2026-10-28T07:15:47+00:00"
     },
     {
       "id": "08e7b21d1f804144",
