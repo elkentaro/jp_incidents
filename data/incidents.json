@@ -1,16 +1,12 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-28T14:15:45+00:00",
-  "total": 573,
+  "updated_at": "2026-10-28T15:15:17+00:00",
+  "total": 574,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-28"
   },
   "daily_counts_90d": [
-    {
-      "date": "2026-07-31",
-      "count": 0
-    },
     {
       "date": "2026-08-01",
       "count": 0
@@ -361,11 +357,15 @@
     },
     {
       "date": "2026-10-27",
-      "count": 28
+      "count": 29
     },
     {
       "date": "2026-10-28",
       "count": 20
+    },
+    {
+      "date": "2026-10-29",
+      "count": 0
     }
   ],
   "incidents": [
@@ -420,6 +420,85 @@
       ],
       "added_at": "2026-10-28T11:16:00+00:00",
       "updated_at": "2026-10-28T14:15:45+00:00"
+    },
+    {
+      "id": "00708cad4ca58f78",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": "2026-10-27T15:00:00+00:00",
+      "organization": "ドン・キホーテ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 95,
+      "related": [
+        {
+          "incident_id": "44e7187878fd515f",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
+            "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9"
+        },
+        {
+          "name": "新潟日報",
+          "url": "https://www.niigata-nippo.co.jp/articles/-/932928"
+        },
+        {
+          "name": "ASCII.jp",
+          "url": "https://ascii.jp/elem/000/004/446/4446479/"
+        }
+      ],
+      "added_at": "2026-10-28T11:16:00+00:00",
+      "updated_at": "2026-10-28T15:15:17+00:00"
+    },
+    {
+      "id": "306e3cb8d37abc69",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "花キューピット",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 4230000,
+      "confidence": "high",
+      "confidence_score": 95,
+      "related": [],
+      "sources": [
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/economy/20261028-GYT1T00383/"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261028de67215"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3045841?display=1"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/af909a9fd27dabe2538d95ad8784fdb9a758a745"
+        }
+      ],
+      "added_at": "2026-10-28T10:15:54+00:00",
+      "updated_at": "2026-10-28T15:15:17+00:00"
     },
     {
       "id": "72df1904dc4263a0",
@@ -490,42 +569,6 @@
       "updated_at": "2026-10-28T07:15:47+00:00"
     },
     {
-      "id": "00708cad4ca58f78",
-      "published_at": "2026-10-27T15:00:00+00:00",
-      "disclosed_at": "2026-10-27T15:00:00+00:00",
-      "organization": "ドン・キホーテ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [
-        {
-          "incident_id": "44e7187878fd515f",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
-            "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9"
-        }
-      ],
-      "added_at": "2026-10-28T11:16:00+00:00",
-      "updated_at": "2026-10-28T12:16:05+00:00"
-    },
-    {
       "id": "19b3132af335af7b",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": "2026-10-27T15:00:00+00:00",
@@ -560,33 +603,6 @@
       ],
       "added_at": "2026-10-28T11:16:00+00:00",
       "updated_at": "2026-10-28T12:16:05+00:00"
-    },
-    {
-      "id": "306e3cb8d37abc69",
-      "published_at": "2026-10-27T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "花キューピット",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 4230000,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [],
-      "sources": [
-        {
-          "name": "読売新聞",
-          "url": "https://www.yomiuri.co.jp/economy/20261028-GYT1T00383/"
-        },
-        {
-          "name": "NHKニュース",
-          "url": "https://news.web.nhk/newsweb/na/nd-20261028de67215"
-        }
-      ],
-      "added_at": "2026-10-28T10:15:54+00:00",
-      "updated_at": "2026-10-28T14:15:45+00:00"
     },
     {
       "id": "9d4780283d6bf8d9",
@@ -696,6 +712,41 @@
       "service_aliases": [],
       "added_at": "2026-10-27T19:09:26+00:00",
       "updated_at": "2026-10-27T20:15:55+00:00"
+    },
+    {
+      "id": "ee85d429e61b3b99",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ペルソナ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 28052,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/1526272c322752cf3cfc00c26e065953aae624bc",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/1526272c322752cf3cfc00c26e065953aae624bc"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/1526272c322752cf3cfc00c26e065953aae624bc"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/mbs/3044544?display=1"
+        }
+      ],
+      "added_at": "2026-10-28T10:15:54+00:00",
+      "updated_at": "2026-10-28T15:15:17+00:00"
     },
     {
       "id": "2169c56f9058ef97",
@@ -938,10 +989,14 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/0659bd683154eceeba6b924330d499c4a42b7447"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/f939e687d6721b9ee717b8cbccc8acd9a77b001f"
         }
       ],
       "added_at": "2026-10-28T14:15:45+00:00",
-      "updated_at": "2026-10-28T14:15:45+00:00"
+      "updated_at": "2026-10-28T15:15:17+00:00"
     },
     {
       "id": "8c89a786a368a245",
@@ -967,37 +1022,6 @@
       "service_aliases": [],
       "added_at": "2026-10-28T13:16:27+00:00",
       "updated_at": "2026-10-28T13:16:27+00:00"
-    },
-    {
-      "id": "ee85d429e61b3b99",
-      "published_at": "2026-10-27T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ペルソナ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 28052,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "0a86ecb2b2d87e50",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/1526272c322752cf3cfc00c26e065953aae624bc",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/1526272c322752cf3cfc00c26e065953aae624bc"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/1526272c322752cf3cfc00c26e065953aae624bc"
-        }
-      ],
-      "added_at": "2026-10-28T10:15:54+00:00",
-      "updated_at": "2026-10-28T10:15:54+00:00"
     },
     {
       "id": "44e7187878fd515f",
@@ -1532,6 +1556,44 @@
       "updated_at": "2026-10-27T22:15:42+00:00"
     },
     {
+      "id": "f02398e77ea0385a",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": "2026-10-26T15:00:00+00:00",
+      "organization": "兵庫県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 847,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.kobe-np.co.jp/news/society/202610/0020973748.shtml",
+          "evidence_urls": [
+            "https://www.kobe-np.co.jp/news/society/202610/0020973748.shtml"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "神戸新聞",
+          "url": "https://www.kobe-np.co.jp/news/society/202610/0020973748.shtml"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/a40eb5b65a7774a75dced3be48adecdff837855b"
+        }
+      ],
+      "affected_service": "スタートアップ成長支援事業",
+      "service_aliases": [],
+      "added_at": "2026-10-27T19:09:26+00:00",
+      "updated_at": "2026-10-28T15:15:17+00:00"
+    },
+    {
       "id": "0c9314ca30f7015a",
       "published_at": "2026-10-26T15:00:00+00:00",
       "disclosed_at": null,
@@ -1684,6 +1746,31 @@
       "updated_at": "2026-10-28T08:16:11+00:00"
     },
     {
+      "id": "725512c99939d7b8",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "サーティワン アイスクリーム",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 8174,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "オリコンニュース",
+          "url": "https://www.oricon.co.jp/news/2489456/full/"
+        }
+      ],
+      "affected_service": "31モバイルオーダー",
+      "service_aliases": [],
+      "added_at": "2026-10-28T15:15:17+00:00",
+      "updated_at": "2026-10-28T15:15:17+00:00"
+    },
+    {
       "id": "aaada5eac76d7500",
       "published_at": "2026-10-26T15:00:00+00:00",
       "disclosed_at": null,
@@ -1728,40 +1815,6 @@
       "service_aliases": [],
       "added_at": "2026-10-28T13:16:27+00:00",
       "updated_at": "2026-10-28T13:16:27+00:00"
-    },
-    {
-      "id": "f02398e77ea0385a",
-      "published_at": "2026-10-26T15:00:00+00:00",
-      "disclosed_at": "2026-10-26T15:00:00+00:00",
-      "organization": "兵庫県",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 847,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "7e647fcc0bac0b06",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.kobe-np.co.jp/news/society/202610/0020973748.shtml",
-          "evidence_urls": [
-            "https://www.kobe-np.co.jp/news/society/202610/0020973748.shtml"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "神戸新聞",
-          "url": "https://www.kobe-np.co.jp/news/society/202610/0020973748.shtml"
-        }
-      ],
-      "affected_service": "スタートアップ成長支援事業",
-      "service_aliases": [],
-      "added_at": "2026-10-27T19:09:26+00:00",
-      "updated_at": "2026-10-27T19:09:26+00:00"
     },
     {
       "id": "2d06e3ad7d44bc3f",
