@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-28T15:15:17+00:00",
+  "updated_at": "2026-10-28T16:15:50+00:00",
   "total": 574,
   "date_range": {
     "start": "2026-07-09",
@@ -605,6 +605,42 @@
       "updated_at": "2026-10-28T12:16:05+00:00"
     },
     {
+      "id": "3e7fccadd50bfba0",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "日本トランスオーシャン航空",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "0cd8a1c184390c84",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.yomiuri.co.jp/national/20261028-GYT1T00334/",
+          "evidence_urls": [
+            "https://www.yomiuri.co.jp/national/20261028-GYT1T00334/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/national/20261028-GYT1T00334/"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2610/28/2000002687/"
+        }
+      ],
+      "added_at": "2026-10-28T13:16:27+00:00",
+      "updated_at": "2026-10-28T16:15:50+00:00"
+    },
+    {
       "id": "9d4780283d6bf8d9",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": "2026-10-27T15:00:00+00:00",
@@ -907,38 +943,6 @@
       ],
       "added_at": "2026-10-28T11:16:00+00:00",
       "updated_at": "2026-10-28T11:16:00+00:00"
-    },
-    {
-      "id": "3e7fccadd50bfba0",
-      "published_at": "2026-10-27T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "日本トランスオーシャン航空",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "0cd8a1c184390c84",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.yomiuri.co.jp/national/20261028-GYT1T00334/",
-          "evidence_urls": [
-            "https://www.yomiuri.co.jp/national/20261028-GYT1T00334/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "読売新聞",
-          "url": "https://www.yomiuri.co.jp/national/20261028-GYT1T00334/"
-        }
-      ],
-      "added_at": "2026-10-28T13:16:27+00:00",
-      "updated_at": "2026-10-28T13:16:27+00:00"
     },
     {
       "id": "6b3806fcd0cb28b4",
@@ -1396,6 +1400,54 @@
       "updated_at": "2026-10-27T19:09:26+00:00"
     },
     {
+      "id": "2070de02126b55ea",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "さとふる",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.oita.jp/soshiki/10112/2026-satofull-notice01.html",
+          "evidence_urls": [
+            "https://www.pref.oita.jp/soshiki/10112/2026-satofull-notice01.html"
+          ]
+        },
+        {
+          "incident_id": "a4c6a8cdac85f9f4",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.shinagawa.tokyo.jp/kurashi/zeikin/1009363/1011842.html",
+          "evidence_urls": [
+            "https://www.city.shinagawa.tokyo.jp/kurashi/zeikin/1009363/1011842.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "大分県 / Oita",
+          "url": "https://www.pref.oita.jp/soshiki/10112/2026-satofull-notice01.html"
+        },
+        {
+          "name": "佐野市",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNRzMtY2ZzQ1MtMVRfZ2ktN0FOdkdOWVgyUGY1bnFqR01DWDJBank1clNLNmxWNFd3clVCcFNsLUhPZXlUSXBPVUJua1BIRXBWcTh2N3A2UkVjSDBoZUl0bXZlb0FpTjV3T1BkQ2F5TmFmTHhqV0tham85R2lKNHhlekY4eWkwMWg4RXl5d3BVNTZfdmo4Z1ExV2NDRVZ3LVE?oc=5"
+        },
+        {
+          "name": "飯能市",
+          "url": "https://www.city.hanno.lg.jp/sangyo_jigyoshamuke/furusatonozei/furusatonozei/14578.html"
+        }
+      ],
+      "added_at": "2026-10-28T06:15:40+00:00",
+      "updated_at": "2026-10-28T16:15:50+00:00"
+    },
+    {
       "id": "c89620912f4fe178",
       "published_at": "2026-10-26T15:00:00+00:00",
       "disclosed_at": "2026-10-26T15:00:00+00:00",
@@ -1466,50 +1518,6 @@
       ],
       "added_at": "2026-10-27T19:09:26+00:00",
       "updated_at": "2026-10-27T21:16:27+00:00"
-    },
-    {
-      "id": "2070de02126b55ea",
-      "published_at": "2026-10-26T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "さとふる",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [
-        {
-          "incident_id": "0a86ecb2b2d87e50",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.pref.oita.jp/soshiki/10112/2026-satofull-notice01.html",
-          "evidence_urls": [
-            "https://www.pref.oita.jp/soshiki/10112/2026-satofull-notice01.html"
-          ]
-        },
-        {
-          "incident_id": "a4c6a8cdac85f9f4",
-          "relationship": "affects",
-          "evidence_url": "https://www.city.shinagawa.tokyo.jp/kurashi/zeikin/1009363/1011842.html",
-          "evidence_urls": [
-            "https://www.city.shinagawa.tokyo.jp/kurashi/zeikin/1009363/1011842.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "大分県 / Oita",
-          "url": "https://www.pref.oita.jp/soshiki/10112/2026-satofull-notice01.html"
-        },
-        {
-          "name": "佐野市",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNRzMtY2ZzQ1MtMVRfZ2ktN0FOdkdOWVgyUGY1bnFqR01DWDJBank1clNLNmxWNFd3clVCcFNsLUhPZXlUSXBPVUJua1BIRXBWcTh2N3A2UkVjSDBoZUl0bXZlb0FpTjV3T1BkQ2F5TmFmTHhqV0tham85R2lKNHhlekY4eWkwMWg4RXl5d3BVNTZfdmo4Z1ExV2NDRVZ3LVE?oc=5"
-        }
-      ],
-      "added_at": "2026-10-28T06:15:40+00:00",
-      "updated_at": "2026-10-28T11:16:00+00:00"
     },
     {
       "id": "249f996eeac0e23c",
