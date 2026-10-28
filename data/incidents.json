@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-28T08:16:11+00:00",
-  "total": 553,
+  "updated_at": "2026-10-28T10:15:54+00:00",
+  "total": 556,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-28"
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-10-28",
-      "count": 4
+      "count": 7
     }
   ],
   "incidents": [
@@ -445,6 +445,53 @@
       "updated_at": "2026-10-27T20:15:55+00:00"
     },
     {
+      "id": "2169c56f9058ef97",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "モイ",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261028558252.pdf"
+        }
+      ],
+      "affected_service": "ツイキャス",
+      "service_aliases": [],
+      "added_at": "2026-10-28T10:15:54+00:00",
+      "updated_at": "2026-10-28T10:15:54+00:00"
+    },
+    {
+      "id": "306e3cb8d37abc69",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "花キューピット",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 4230000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261028de67215"
+        }
+      ],
+      "added_at": "2026-10-28T10:15:54+00:00",
+      "updated_at": "2026-10-28T10:15:54+00:00"
+    },
+    {
       "id": "6b3806fcd0cb28b4",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": null,
@@ -496,6 +543,37 @@
       ],
       "added_at": "2026-10-28T07:15:47+00:00",
       "updated_at": "2026-10-28T07:15:47+00:00"
+    },
+    {
+      "id": "ee85d429e61b3b99",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ペルソナ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 28052,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/1526272c322752cf3cfc00c26e065953aae624bc",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/1526272c322752cf3cfc00c26e065953aae624bc"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/1526272c322752cf3cfc00c26e065953aae624bc"
+        }
+      ],
+      "added_at": "2026-10-28T10:15:54+00:00",
+      "updated_at": "2026-10-28T10:15:54+00:00"
     },
     {
       "id": "1aff1533ceffa14a",
@@ -2823,6 +2901,44 @@
       "updated_at": "2026-10-27T08:15:54+00:00"
     },
     {
+      "id": "0bfef460037e666a",
+      "published_at": "2026-10-24T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "福島県双葉町",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "36ab902f4b0599f2",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5UNl91dXVneU1SMmdYMjd6cDY0RXJTZHl3cVJ6QXhvVWh1RnRGd0hVYUQzMUNqSVA3RUY1N0dOU29IMmc0Yndia2JUNGZ6T1prNEttQi1BODlMTmE4Vk14MVdGdGFfeFZn?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5UNl91dXVneU1SMmdYMjd6cDY0RXJTZHl3cVJ6QXhvVWh1RnRGd0hVYUQzMUNqSVA3RUY1N0dOU29IMmc0Yndia2JUNGZ6T1prNEttQi1BODlMTmE4Vk14MVdGdGFfeFZn?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "福島民友新聞社",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5UNl91dXVneU1SMmdYMjd6cDY0RXJTZHl3cVJ6QXhvVWh1RnRGd0hVYUQzMUNqSVA3RUY1N0dOU29IMmc0Yndia2JUNGZ6T1prNEttQi1BODlMTmE4Vk14MVdGdGFfeFZn?oc=5"
+        },
+        {
+          "name": "福島民友新聞社",
+          "url": "https://www.minyu-net.com/news/detail/2026102809425156547"
+        }
+      ],
+      "affected_service": "双葉町MM",
+      "service_aliases": [],
+      "added_at": "2026-10-26T06:15:53+00:00",
+      "updated_at": "2026-10-28T10:15:54+00:00"
+    },
+    {
       "id": "9335355ef8703565",
       "published_at": "2026-10-24T15:00:00+00:00",
       "disclosed_at": "2026-10-24T15:00:00+00:00",
@@ -2886,39 +3002,6 @@
       "service_aliases": [],
       "added_at": "2026-10-27T19:09:26+00:00",
       "updated_at": "2026-10-27T19:09:26+00:00"
-    },
-    {
-      "id": "0bfef460037e666a",
-      "published_at": "2026-10-24T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "福島県双葉町",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "36ab902f4b0599f2",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5UNl91dXVneU1SMmdYMjd6cDY0RXJTZHl3cVJ6QXhvVWh1RnRGd0hVYUQzMUNqSVA3RUY1N0dOU29IMmc0Yndia2JUNGZ6T1prNEttQi1BODlMTmE4Vk14MVdGdGFfeFZn?oc=5",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5UNl91dXVneU1SMmdYMjd6cDY0RXJTZHl3cVJ6QXhvVWh1RnRGd0hVYUQzMUNqSVA3RUY1N0dOU29IMmc0Yndia2JUNGZ6T1prNEttQi1BODlMTmE4Vk14MVdGdGFfeFZn?oc=5"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "福島民友新聞社",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5UNl91dXVneU1SMmdYMjd6cDY0RXJTZHl3cVJ6QXhvVWh1RnRGd0hVYUQzMUNqSVA3RUY1N0dOU29IMmc0Yndia2JUNGZ6T1prNEttQi1BODlMTmE4Vk14MVdGdGFfeFZn?oc=5"
-        }
-      ],
-      "affected_service": "双葉町MM",
-      "service_aliases": [],
-      "added_at": "2026-10-26T06:15:53+00:00",
-      "updated_at": "2026-10-26T06:15:53+00:00"
     },
     {
       "id": "c062d62cd0e55290",
@@ -10193,6 +10276,10 @@
           "url": "https://www.trustbank.co.jp/newsroom/news/news261020/"
         },
         {
+          "name": "株式会社トラストバンク",
+          "url": "https://www.trustbank.co.jp/newsroom/newsrelease/news20261028/"
+        },
+        {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261020553586.pdf"
         },
@@ -10278,7 +10365,7 @@
         "ふるさとちょいす"
       ],
       "added_at": "2026-10-20T23:46:03+00:00",
-      "updated_at": "2026-10-28T03:15:38+00:00"
+      "updated_at": "2026-10-28T10:15:54+00:00"
     },
     {
       "id": "2a737208d01cfe10",
@@ -12203,6 +12290,14 @@
           ]
         },
         {
+          "incident_id": "ee85d429e61b3b99",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/1526272c322752cf3cfc00c26e065953aae624bc",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/1526272c322752cf3cfc00c26e065953aae624bc"
+          ]
+        },
+        {
           "incident_id": "faa0f8805f4ba30d",
           "relationship": "affects",
           "evidence_url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf",
@@ -12248,7 +12343,7 @@
       "affected_system": "メール配信サービスのサーバーシステム",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T13:14:57+00:00",
-      "updated_at": "2026-10-28T06:15:40+00:00"
+      "updated_at": "2026-10-28T10:15:54+00:00"
     },
     {
       "id": "15204b629222c010",
@@ -13158,6 +13253,33 @@
       "updated_at": "2026-10-26T00:08:36+00:00"
     },
     {
+      "id": "e683068d3c6e94a5",
+      "published_at": "2026-10-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "JFEケミカル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/28/56607.html"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://s.netsecurity.ne.jp/article/img/2026/10/28/56607/55758.html"
+        }
+      ],
+      "added_at": "2026-10-28T02:15:45+00:00",
+      "updated_at": "2026-10-28T10:15:54+00:00"
+    },
+    {
       "id": "8eb537cea3c59b2e",
       "published_at": "2026-10-18T15:00:00+00:00",
       "disclosed_at": null,
@@ -13492,29 +13614,6 @@
       ],
       "added_at": "2026-10-21T08:25:16+00:00",
       "updated_at": "2026-10-21T08:25:16+00:00"
-    },
-    {
-      "id": "e683068d3c6e94a5",
-      "published_at": "2026-10-18T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "JFEケミカル",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "ScanNetSecurity",
-          "url": "https://scan.netsecurity.ne.jp/article/2026/10/28/56607.html"
-        }
-      ],
-      "added_at": "2026-10-28T02:15:45+00:00",
-      "updated_at": "2026-10-28T02:15:45+00:00"
     },
     {
       "id": "cf4d93f326f1b4fa",
@@ -22046,7 +22145,7 @@
       ],
       "potential_records": 6140,
       "confidence": "high",
-      "confidence_score": 90,
+      "confidence_score": 100,
       "related": [],
       "sources": [
         {
@@ -22062,12 +22161,16 @@
           "url": "https://skyticket.jp/news/maintenance/67603"
         },
         {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261027557101.pdf"
+        },
+        {
           "name": "INTERNET Watch",
           "url": "https://internet.watch.impress.co.jp/docs/news/2149135.html"
         }
       ],
       "added_at": "2026-10-20T23:55:01+00:00",
-      "updated_at": "2026-10-26T00:08:36+00:00"
+      "updated_at": "2026-10-28T10:15:54+00:00"
     },
     {
       "id": "5e7167bf3d6672b5",
