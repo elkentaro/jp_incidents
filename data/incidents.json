@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-29T08:15:57+00:00",
-  "total": 600,
+  "updated_at": "2026-10-29T09:15:28+00:00",
+  "total": 603,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-29"
@@ -325,7 +325,7 @@
     },
     {
       "date": "2026-10-19",
-      "count": 37
+      "count": 38
     },
     {
       "date": "2026-10-20",
@@ -361,11 +361,11 @@
     },
     {
       "date": "2026-10-28",
-      "count": 27
+      "count": 28
     },
     {
       "date": "2026-10-29",
-      "count": 4
+      "count": 5
     }
   ],
   "incidents": [
@@ -381,7 +381,7 @@
       ],
       "potential_records": null,
       "confidence": "high",
-      "confidence_score": 80,
+      "confidence_score": 95,
       "related": [
         {
           "incident_id": "0cd8a1c184390c84",
@@ -408,12 +408,80 @@
         {
           "name": "中国新聞デジタル",
           "url": "https://www.chugoku-np.co.jp/articles/-/916726"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC295CD0Z21C26A0000000/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/14711e28c7325dc119deba9987437d0570ba7005"
         }
       ],
       "affected_service": "旅客サービスシステム",
       "service_aliases": [],
       "added_at": "2026-10-29T06:16:15+00:00",
-      "updated_at": "2026-10-29T08:15:57+00:00"
+      "updated_at": "2026-10-29T09:15:28+00:00"
+    },
+    {
+      "id": "c0695d18cd2d0c0a",
+      "published_at": "2026-10-28T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "Payどん",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/3a669dc2bb6c4fd899a90b961900d1aaeefa4971"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3047481?display=1"
+        }
+      ],
+      "affected_service": "Payどん",
+      "service_aliases": [],
+      "added_at": "2026-10-29T08:15:57+00:00",
+      "updated_at": "2026-10-29T09:15:28+00:00"
+    },
+    {
+      "id": "2f7b77dc9492c5df",
+      "published_at": "2026-10-28T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "スターフライヤー",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0cd8a1c184390c84",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.starflyer.jp/news/2026/news_20261029_info.html",
+          "evidence_urls": [
+            "https://www.starflyer.jp/news/2026/news_20261029_info.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "スターフライヤー / StarFlyer",
+          "url": "https://www.starflyer.jp/news/2026/news_20261029_info.html"
+        }
+      ],
+      "added_at": "2026-10-29T09:15:28+00:00",
+      "updated_at": "2026-10-29T09:15:28+00:00"
     },
     {
       "id": "f0e4b0125217c533",
@@ -473,30 +541,6 @@
         }
       ],
       "affected_service": "松弁ネット",
-      "service_aliases": [],
-      "added_at": "2026-10-29T08:15:57+00:00",
-      "updated_at": "2026-10-29T08:15:57+00:00"
-    },
-    {
-      "id": "c0695d18cd2d0c0a",
-      "published_at": "2026-10-28T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "Payどん",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/3a669dc2bb6c4fd899a90b961900d1aaeefa4971"
-        }
-      ],
-      "affected_service": "Payどん",
       "service_aliases": [],
       "added_at": "2026-10-29T08:15:57+00:00",
       "updated_at": "2026-10-29T08:15:57+00:00"
@@ -604,6 +648,46 @@
       ],
       "added_at": "2026-10-28T11:16:00+00:00",
       "updated_at": "2026-10-29T02:16:03+00:00"
+    },
+    {
+      "id": "2169c56f9058ef97",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "モイ",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261028558252.pdf"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261029559851.pdf"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2610/29/2000002692/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA1RUk0bEVWd3IyQi1kM0FOcTBCcDUzaU1CTmVVNHRkam0tX1hsdUpablBJM2Fsbkg2R0R5TWN1b1FmNmZUOE55S3QwMkxMdUppRy1EVXlWN0VIVDh2V3dRdVM3MzE3S3AzOG82ZlJHdmRwblhoTEhDY2hCUUw5S0U?oc=5"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC295I20Z21C26A0000000/"
+        }
+      ],
+      "affected_service": "ツイキャス",
+      "service_aliases": [],
+      "added_at": "2026-10-28T10:15:54+00:00",
+      "updated_at": "2026-10-29T09:15:28+00:00"
     },
     {
       "id": "306e3cb8d37abc69",
@@ -963,38 +1047,6 @@
       "service_aliases": [],
       "added_at": "2026-10-28T07:15:47+00:00",
       "updated_at": "2026-10-29T06:16:15+00:00"
-    },
-    {
-      "id": "2169c56f9058ef97",
-      "published_at": "2026-10-27T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "モイ",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [],
-      "sources": [
-        {
-          "name": "日本取引所グループ TDnet / JPX TDnet",
-          "url": "https://www.release.tdnet.info/inbs/140120261028558252.pdf"
-        },
-        {
-          "name": "ITmedia",
-          "url": "https://www.itmedia.co.jp/news/article/2610/29/2000002692/"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA1RUk0bEVWd3IyQi1kM0FOcTBCcDUzaU1CTmVVNHRkam0tX1hsdUpablBJM2Fsbkg2R0R5TWN1b1FmNmZUOE55S3QwMkxMdUppRy1EVXlWN0VIVDh2V3dRdVM3MzE3S3AzOG82ZlJHdmRwblhoTEhDY2hCUUw5S0U?oc=5"
-        }
-      ],
-      "affected_service": "ツイキャス",
-      "service_aliases": [],
-      "added_at": "2026-10-28T10:15:54+00:00",
-      "updated_at": "2026-10-29T04:15:31+00:00"
     },
     {
       "id": "4f7424f2e6653ddf",
@@ -1408,6 +1460,14 @@
       "confidence_score": 50,
       "related": [
         {
+          "incident_id": "2f7b77dc9492c5df",
+          "relationship": "affects",
+          "evidence_url": "https://www.starflyer.jp/news/2026/news_20261029_info.html",
+          "evidence_urls": [
+            "https://www.starflyer.jp/news/2026/news_20261029_info.html"
+          ]
+        },
+        {
           "incident_id": "3e7fccadd50bfba0",
           "relationship": "affects",
           "evidence_url": "https://japan.cnet.com/article/35254142/",
@@ -1445,7 +1505,7 @@
         }
       ],
       "added_at": "2026-10-28T13:16:27+00:00",
-      "updated_at": "2026-10-29T06:16:15+00:00"
+      "updated_at": "2026-10-29T09:15:28+00:00"
     },
     {
       "id": "397ff8cd4e4501d0",
@@ -1478,6 +1538,40 @@
       ],
       "added_at": "2026-10-28T11:16:00+00:00",
       "updated_at": "2026-10-28T11:16:00+00:00"
+    },
+    {
+      "id": "4c23f72a23a37172",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": "2026-10-27T15:00:00+00:00",
+      "organization": "クレディセゾン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 29465,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "cce9bdde2676d4b4",
+          "relationship": "affected_by",
+          "evidence_url": "https://cybersecurity-jp.com/news/117893",
+          "evidence_urls": [
+            "https://cybersecurity-jp.com/news/117893"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/117893"
+        }
+      ],
+      "affected_service": "トク買",
+      "service_aliases": [],
+      "added_at": "2026-10-29T09:15:28+00:00",
+      "updated_at": "2026-10-29T09:15:28+00:00"
     },
     {
       "id": "6b3806fcd0cb28b4",
@@ -9056,6 +9150,52 @@
       "updated_at": "2026-10-26T00:08:36+00:00"
     },
     {
+      "id": "6b35a32424d608a0",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社ベネフィット・ワン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 29465,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "cce9bdde2676d4b4",
+          "relationship": "affected_by",
+          "evidence_url": "https://corp.benefit-one.co.jp/company/news/news/2026/20261028/20261028.pdf",
+          "evidence_urls": [
+            "https://corp.benefit-one.co.jp/company/news/news/2026/20261028/20261028.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://corp.benefit-one.co.jp/company/news/news/2026/20261028/20261028.pdf"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2610/29/2000002707/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/benefit_one_tokugai_forestec_29465_data_breach_20261028/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/117893"
+        }
+      ],
+      "affected_service": "トク買",
+      "service_aliases": [],
+      "added_at": "2026-10-29T04:15:31+00:00",
+      "updated_at": "2026-10-29T09:15:28+00:00"
+    },
+    {
       "id": "7e647fcc0bac0b06",
       "published_at": "2026-10-20T15:00:00+00:00",
       "disclosed_at": null,
@@ -9927,48 +10067,6 @@
       ],
       "added_at": "2026-10-21T21:25:20+00:00",
       "updated_at": "2026-10-26T00:08:36+00:00"
-    },
-    {
-      "id": "6b35a32424d608a0",
-      "published_at": "2026-10-20T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "株式会社ベネフィット・ワン",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 29465,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [
-        {
-          "incident_id": "cce9bdde2676d4b4",
-          "relationship": "affected_by",
-          "evidence_url": "https://corp.benefit-one.co.jp/company/news/news/2026/20261028/20261028.pdf",
-          "evidence_urls": [
-            "https://corp.benefit-one.co.jp/company/news/news/2026/20261028/20261028.pdf"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://corp.benefit-one.co.jp/company/news/news/2026/20261028/20261028.pdf"
-        },
-        {
-          "name": "ITmedia",
-          "url": "https://www.itmedia.co.jp/news/article/2610/29/2000002707/"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/benefit_one_tokugai_forestec_29465_data_breach_20261028/"
-        }
-      ],
-      "affected_service": "トク買",
-      "service_aliases": [],
-      "added_at": "2026-10-29T04:15:31+00:00",
-      "updated_at": "2026-10-29T06:16:15+00:00"
     },
     {
       "id": "3f651a563439c846",
@@ -12093,10 +12191,14 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/d48c8d0257878cbb15fc81a7a75635df1748bef6"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/117894"
         }
       ],
       "added_at": "2026-10-27T08:15:54+00:00",
-      "updated_at": "2026-10-29T06:16:15+00:00"
+      "updated_at": "2026-10-29T09:15:28+00:00"
     },
     {
       "id": "790f2d74f04c4ba6",
@@ -15186,6 +15288,45 @@
       ],
       "added_at": "2026-10-19T09:10:53+00:00",
       "updated_at": "2026-10-21T05:30:04+00:00"
+    },
+    {
+      "id": "73b3b222badf3b8f",
+      "published_at": "2026-10-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ENEOS Power",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 57,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/117895"
+        }
+      ],
+      "affected_service": "ENEOSでんき / でんきサービス",
+      "service_aliases": [],
+      "affected_services": [
+        "ENEOSでんき",
+        "でんきサービス"
+      ],
+      "service_details": [
+        {
+          "name": "ENEOSでんき",
+          "aliases": []
+        },
+        {
+          "name": "でんきサービス",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-10-29T09:15:28+00:00",
+      "updated_at": "2026-10-29T09:15:28+00:00"
     },
     {
       "id": "c150c9d47bd537d6",
@@ -19302,6 +19443,14 @@
       "confidence_score": 60,
       "related": [
         {
+          "incident_id": "4c23f72a23a37172",
+          "relationship": "affects",
+          "evidence_url": "https://cybersecurity-jp.com/news/117893",
+          "evidence_urls": [
+            "https://cybersecurity-jp.com/news/117893"
+          ]
+        },
+        {
           "incident_id": "6b35a32424d608a0",
           "relationship": "affects",
           "evidence_url": "https://corp.benefit-one.co.jp/company/news/news/2026/20261028/20261028.pdf",
@@ -19317,7 +19466,7 @@
         }
       ],
       "added_at": "2026-10-29T04:15:31+00:00",
-      "updated_at": "2026-10-29T04:15:31+00:00"
+      "updated_at": "2026-10-29T09:15:28+00:00"
     },
     {
       "id": "393599c45109c37a",
