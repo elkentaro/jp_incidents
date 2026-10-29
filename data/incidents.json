@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-28T23:15:49+00:00",
-  "total": 580,
+  "updated_at": "2026-10-29T00:15:51+00:00",
+  "total": 581,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-29"
@@ -313,7 +313,7 @@
     },
     {
       "date": "2026-10-16",
-      "count": 32
+      "count": 33
     },
     {
       "date": "2026-10-17",
@@ -13412,6 +13412,55 @@
       "updated_at": "2026-10-26T00:08:36+00:00"
     },
     {
+      "id": "52a9123f709ddb12",
+      "published_at": "2026-10-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "フジテレビ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 730,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/29/56619.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6881017bd0bacdec3dad5b9f5a3324bb31414aba"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/79410195dc408628bf73e452ea5e3e9b8a835907"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/1329fed12faeb2723987259a50ff7da0a7a704fd"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/92f9c9f338f7abb5a78973569a0ba1ec99f8ff78"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2610/21/2000002449/"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://www.fujitv.co.jp/company/news/r20261020_4814149391.pdf"
+        }
+      ],
+      "affected_service": "番組宣伝システム(フジテレビ広報情報急便)",
+      "service_aliases": [],
+      "added_at": "2026-10-21T03:53:47+00:00",
+      "updated_at": "2026-10-29T00:15:51+00:00"
+    },
+    {
       "id": "71726a8f3e54da81",
       "published_at": "2026-10-18T15:00:00+00:00",
       "disclosed_at": null,
@@ -13704,51 +13753,6 @@
       "service_aliases": [],
       "added_at": "2026-10-25T05:47:43+00:00",
       "updated_at": "2026-10-26T03:15:33+00:00"
-    },
-    {
-      "id": "52a9123f709ddb12",
-      "published_at": "2026-10-18T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "フジテレビ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 730,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/6881017bd0bacdec3dad5b9f5a3324bb31414aba"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/79410195dc408628bf73e452ea5e3e9b8a835907"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/1329fed12faeb2723987259a50ff7da0a7a704fd"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/92f9c9f338f7abb5a78973569a0ba1ec99f8ff78"
-        },
-        {
-          "name": "ITmedia",
-          "url": "https://www.itmedia.co.jp/news/article/2610/21/2000002449/"
-        },
-        {
-          "name": "satimo list",
-          "url": "https://www.fujitv.co.jp/company/news/r20261020_4814149391.pdf"
-        }
-      ],
-      "affected_service": "番組宣伝システム(フジテレビ広報情報急便)",
-      "service_aliases": [],
-      "added_at": "2026-10-21T03:53:47+00:00",
-      "updated_at": "2026-10-25T01:15:29+00:00"
     },
     {
       "id": "d15b4ef4c598e641",
@@ -15796,6 +15800,37 @@
       "updated_at": "2026-10-20T07:24:24+00:00"
     },
     {
+      "id": "05d3dac3e47e2bee",
+      "published_at": "2026-10-15T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社モニクル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 14,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://monicle.co.jp/news/mo/20261023",
+          "evidence_urls": [
+            "https://monicle.co.jp/news/mo/20261023"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "モニクル",
+          "url": "https://monicle.co.jp/news/mo/20261023"
+        }
+      ],
+      "added_at": "2026-10-29T00:15:51+00:00",
+      "updated_at": "2026-10-29T00:15:51+00:00"
+    },
+    {
       "id": "2c7973528a7563ec",
       "published_at": "2026-10-15T15:00:00+00:00",
       "disclosed_at": null,
@@ -16322,6 +16357,40 @@
       "updated_at": "2026-10-20T07:24:24+00:00"
     },
     {
+      "id": "2cd643706e47a750",
+      "published_at": "2026-10-14T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "三井住友DS投信直販ネット",
+      "incident_type": "other",
+      "incident_categories": [
+        "other"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.smd-am.co.jp/news/news/2026/news_20261016/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/117424"
+        },
+        {
+          "name": "legalagent list",
+          "url": "https://direct.smd-am.co.jp/news/2026/1016"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/29/56621.html"
+        }
+      ],
+      "added_at": "2026-10-19T09:06:44+00:00",
+      "updated_at": "2026-10-29T00:15:51+00:00"
+    },
+    {
       "id": "671c427eadb6fc63",
       "published_at": "2026-10-14T15:00:00+00:00",
       "disclosed_at": null,
@@ -16335,6 +16404,14 @@
       "confidence": "high",
       "confidence_score": 100,
       "related": [
+        {
+          "incident_id": "05d3dac3e47e2bee",
+          "relationship": "affects",
+          "evidence_url": "https://monicle.co.jp/news/mo/20261023",
+          "evidence_urls": [
+            "https://monicle.co.jp/news/mo/20261023"
+          ]
+        },
         {
           "incident_id": "0e5a5f861e9983dc",
           "relationship": "affects",
@@ -16784,7 +16861,7 @@
       "affected_system": "Studio cloud environment",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T11:10:22+00:00",
-      "updated_at": "2026-10-28T23:15:49+00:00"
+      "updated_at": "2026-10-29T00:15:51+00:00"
     },
     {
       "id": "79d92ec417a38b35",
@@ -17108,36 +17185,6 @@
       ],
       "added_at": "2026-10-19T08:49:15+00:00",
       "updated_at": "2026-10-21T03:28:46+00:00"
-    },
-    {
-      "id": "2cd643706e47a750",
-      "published_at": "2026-10-14T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "三井住友DS投信直販ネット",
-      "incident_type": "other",
-      "incident_categories": [
-        "other"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.smd-am.co.jp/news/news/2026/news_20261016/"
-        },
-        {
-          "name": "Cybersecurity.jp",
-          "url": "https://cybersecurity-jp.com/news/117424"
-        },
-        {
-          "name": "legalagent list",
-          "url": "https://direct.smd-am.co.jp/news/2026/1016"
-        }
-      ],
-      "added_at": "2026-10-19T09:06:44+00:00",
-      "updated_at": "2026-10-20T07:24:24+00:00"
     },
     {
       "id": "37955bf0ddd48074",
@@ -17472,6 +17519,32 @@
       "updated_at": "2026-10-23T01:00:27+00:00"
     },
     {
+      "id": "a6f9c3c71db7a820",
+      "published_at": "2026-10-14T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "丸木医科器械株式会社",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://maruki-ms.co.jp/archives/8428"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/29/56614.html"
+        }
+      ],
+      "added_at": "2026-10-27T01:15:59+00:00",
+      "updated_at": "2026-10-29T00:15:51+00:00"
+    },
+    {
       "id": "d57a1f6a0e6e0ef2",
       "published_at": "2026-10-14T15:00:00+00:00",
       "disclosed_at": null,
@@ -17670,28 +17743,6 @@
       ],
       "added_at": "2026-10-21T03:55:18+00:00",
       "updated_at": "2026-10-21T03:55:18+00:00"
-    },
-    {
-      "id": "a6f9c3c71db7a820",
-      "published_at": "2026-10-14T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "丸木医科器械株式会社",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://maruki-ms.co.jp/archives/8428"
-        }
-      ],
-      "added_at": "2026-10-27T01:15:59+00:00",
-      "updated_at": "2026-10-27T01:15:59+00:00"
     },
     {
       "id": "a379a449d7179ed9",
@@ -18383,6 +18434,35 @@
       "updated_at": "2026-10-27T01:15:59+00:00"
     },
     {
+      "id": "69636466e27bd9cc",
+      "published_at": "2026-10-13T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ネットプロテクションズ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 28884,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/c06607f0aaa4cc726fadb887b5e3f597d6a4eefc"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/29/56616.html"
+        }
+      ],
+      "affected_service": "NP後払い",
+      "service_aliases": [],
+      "added_at": "2026-10-28T12:16:05+00:00",
+      "updated_at": "2026-10-29T00:15:51+00:00"
+    },
+    {
       "id": "3150f01a132d2054",
       "published_at": "2026-10-13T15:00:00+00:00",
       "disclosed_at": null,
@@ -18518,31 +18598,6 @@
       ],
       "added_at": "2026-10-20T05:45:53+00:00",
       "updated_at": "2026-10-28T22:15:41+00:00"
-    },
-    {
-      "id": "69636466e27bd9cc",
-      "published_at": "2026-10-13T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ネットプロテクションズ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 28884,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/c06607f0aaa4cc726fadb887b5e3f597d6a4eefc"
-        }
-      ],
-      "affected_service": "NP後払い",
-      "service_aliases": [],
-      "added_at": "2026-10-28T12:16:05+00:00",
-      "updated_at": "2026-10-28T12:16:05+00:00"
     },
     {
       "id": "b2ea0e525c16e077",
