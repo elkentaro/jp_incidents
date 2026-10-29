@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-29T20:56:59+00:00",
-  "total": 613,
+  "updated_at": "2026-10-29T21:16:09+00:00",
+  "total": 614,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-29"
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-10-29",
-      "count": 15
+      "count": 16
     },
     {
       "date": "2026-10-30",
@@ -724,6 +724,40 @@
       ],
       "added_at": "2026-10-29T10:15:51+00:00",
       "updated_at": "2026-10-29T10:15:51+00:00"
+    },
+    {
+      "id": "915eb61aa950a311",
+      "published_at": "2026-10-28T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "沖縄県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 2560,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.okinawa.jp/kensei/shinko/1017087/1017118/1041801.html",
+          "evidence_urls": [
+            "https://www.pref.okinawa.jp/kensei/shinko/1017087/1017118/1041801.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "沖縄県 / Okinawa",
+          "url": "https://www.pref.okinawa.jp/kensei/shinko/1017087/1017118/1041801.html"
+        }
+      ],
+      "affected_service": "離島とのつながり促進事業(島まーる)",
+      "service_aliases": [],
+      "added_at": "2026-10-29T21:16:09+00:00",
+      "updated_at": "2026-10-29T21:16:09+00:00"
     },
     {
       "id": "9dcda190358f32c1",
@@ -1444,7 +1478,16 @@
       "potential_records": 3010000,
       "confidence": "high",
       "confidence_score": 100,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "915eb61aa950a311",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.okinawa.jp/kensei/shinko/1017087/1017118/1041801.html",
+          "evidence_urls": [
+            "https://www.pref.okinawa.jp/kensei/shinko/1017087/1017118/1041801.html"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "satimo list",
@@ -1468,7 +1511,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-10-29T20:56:59+00:00"
+      "updated_at": "2026-10-29T21:16:09+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
