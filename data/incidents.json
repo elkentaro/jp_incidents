@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-29T00:15:51+00:00",
-  "total": 581,
+  "updated_at": "2026-10-29T01:16:22+00:00",
+  "total": 585,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-29"
@@ -333,7 +333,7 @@
     },
     {
       "date": "2026-10-21",
-      "count": 54
+      "count": 55
     },
     {
       "date": "2026-10-22",
@@ -353,15 +353,15 @@
     },
     {
       "date": "2026-10-26",
-      "count": 35
+      "count": 36
     },
     {
       "date": "2026-10-27",
-      "count": 30
+      "count": 31
     },
     {
       "date": "2026-10-28",
-      "count": 22
+      "count": 23
     },
     {
       "date": "2026-10-29",
@@ -467,6 +467,10 @@
           "url": "https://internet.watch.impress.co.jp/docs/news/2152032.html"
         },
         {
+          "name": "satimo list",
+          "url": "https://www.hana-cupid.co.jp/news/news/20261028/"
+        },
+        {
           "name": "NHKニュース",
           "url": "https://news.web.nhk/newsweb/na/nd-20261028de67215"
         },
@@ -480,7 +484,7 @@
         }
       ],
       "added_at": "2026-10-28T10:15:54+00:00",
-      "updated_at": "2026-10-28T18:16:27+00:00"
+      "updated_at": "2026-10-29T01:16:22+00:00"
     },
     {
       "id": "a3c09650fe9bed69",
@@ -1102,6 +1106,29 @@
       "service_aliases": [],
       "added_at": "2026-10-28T23:15:49+00:00",
       "updated_at": "2026-10-28T23:15:49+00:00"
+    },
+    {
+      "id": "e0bf7f8e71d6ba85",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "アララ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 3010000,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://am.arara.com/news/2026102802"
+        }
+      ],
+      "added_at": "2026-10-29T01:16:22+00:00",
+      "updated_at": "2026-10-29T01:16:22+00:00"
     },
     {
       "id": "0cd8a1c184390c84",
@@ -2023,6 +2050,31 @@
       ],
       "added_at": "2026-10-27T07:15:28+00:00",
       "updated_at": "2026-10-27T07:15:28+00:00"
+    },
+    {
+      "id": "de2476dc6e0af323",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": "2026-10-27T15:00:00+00:00",
+      "organization": "WATAMI FAST CASUAL MANAGEMENT",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 7,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://subway.co.jp/news/bhi2h9kf00mf/"
+        }
+      ],
+      "affected_service": "SUBWAY公式モバイルオーダー",
+      "service_aliases": [],
+      "added_at": "2026-10-29T01:16:22+00:00",
+      "updated_at": "2026-10-29T01:16:22+00:00"
     },
     {
       "id": "2d06e3ad7d44bc3f",
@@ -3363,6 +3415,39 @@
       "service_aliases": [],
       "added_at": "2026-10-27T21:16:27+00:00",
       "updated_at": "2026-10-27T21:16:27+00:00"
+    },
+    {
+      "id": "e4c2c9b879e0ecb8",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": "2026-10-27T15:00:00+00:00",
+      "organization": "ライフカード",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 339610,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.lifecard.co.jp/info/important-notice.html",
+          "evidence_urls": [
+            "https://www.lifecard.co.jp/info/important-notice.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.lifecard.co.jp/info/important-notice.html"
+        }
+      ],
+      "affected_service": "Cuenote FC",
+      "service_aliases": [],
+      "added_at": "2026-10-29T01:16:22+00:00",
+      "updated_at": "2026-10-29T01:16:22+00:00"
     },
     {
       "id": "e5c9be9f0373c5f8",
@@ -9016,6 +9101,14 @@
           ]
         },
         {
+          "incident_id": "f3b0243fe7e7a5f9",
+          "relationship": "affects",
+          "evidence_url": "https://scan.netsecurity.ne.jp/article/2026/10/29/56615.html",
+          "evidence_urls": [
+            "https://scan.netsecurity.ne.jp/article/2026/10/29/56615.html"
+          ]
+        },
+        {
           "incident_id": "f5b517ac31f8a282",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBVbjc3VHJxbDJEVXN4WWVyb3RLWnB1d3Zza3FVcVdYajB3Q0JsVjRpY2tMRWM4X1dlWjM5WUtNSzR1Wm5JajlXZWppR0FpT0o1dnJhN3IzOEFXelluY2lSSEM1cGRmdEJKQVJJeW9uOUxtM1JJSEp6c1RlWDZrb3M?oc=5",
@@ -9067,7 +9160,7 @@
         }
       ],
       "added_at": "2026-10-21T19:22:12+00:00",
-      "updated_at": "2026-10-28T22:15:41+00:00"
+      "updated_at": "2026-10-29T01:16:22+00:00"
     },
     {
       "id": "a2cf60a92a1ad65c",
@@ -10509,6 +10602,37 @@
       ],
       "added_at": "2026-10-21T19:22:12+00:00",
       "updated_at": "2026-10-21T19:22:12+00:00"
+    },
+    {
+      "id": "f3b0243fe7e7a5f9",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "石油資源開発",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://scan.netsecurity.ne.jp/article/2026/10/29/56615.html",
+          "evidence_urls": [
+            "https://scan.netsecurity.ne.jp/article/2026/10/29/56615.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/29/56615.html"
+        }
+      ],
+      "added_at": "2026-10-29T01:16:22+00:00",
+      "updated_at": "2026-10-29T01:16:22+00:00"
     },
     {
       "id": "2668891b9e24dbd7",
@@ -13186,6 +13310,14 @@
           ]
         },
         {
+          "incident_id": "e4c2c9b879e0ecb8",
+          "relationship": "affects",
+          "evidence_url": "https://www.lifecard.co.jp/info/important-notice.html",
+          "evidence_urls": [
+            "https://www.lifecard.co.jp/info/important-notice.html"
+          ]
+        },
+        {
           "incident_id": "e7ff5721005eb68e",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/3ce37470beef51d89a7514fbeb118878310f61fe",
@@ -13259,7 +13391,7 @@
       "affected_system": "メール配信サービスのサーバーシステム",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T13:14:57+00:00",
-      "updated_at": "2026-10-28T14:15:45+00:00"
+      "updated_at": "2026-10-29T01:16:22+00:00"
     },
     {
       "id": "15204b629222c010",
