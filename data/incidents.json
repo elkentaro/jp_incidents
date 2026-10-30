@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-30T19:16:20+00:00",
-  "total": 658,
+  "updated_at": "2026-10-30T20:15:36+00:00",
+  "total": 659,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-30"
@@ -357,7 +357,7 @@
     },
     {
       "date": "2026-10-29",
-      "count": 22
+      "count": 23
     },
     {
       "date": "2026-10-30",
@@ -500,6 +500,47 @@
       "updated_at": "2026-10-30T10:15:57+00:00"
     },
     {
+      "id": "7c84af49b4716f42",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "佐賀大学",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "ransomware"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 95,
+      "related": [],
+      "sources": [
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261030de68360"
+        },
+        {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp/amp/article/kbc/region/kbc-18432148"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261030de68690"
+        },
+        {
+          "name": "KBC九州朝日放送",
+          "url": "https://kbc.co.jp/news/article.php?id=18432148&ymd=2026-10-30"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/de7833ddc416e47eb74facde2fa7c312a42b3961"
+        }
+      ],
+      "affected_service": "大学の事務情報システム",
+      "service_aliases": [],
+      "added_at": "2026-10-30T05:15:51+00:00",
+      "updated_at": "2026-10-30T20:15:36+00:00"
+    },
+    {
       "id": "84eb1336a89d7356",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": "2026-10-29T15:00:00+00:00",
@@ -564,6 +605,51 @@
       ],
       "added_at": "2026-10-30T11:16:03+00:00",
       "updated_at": "2026-10-30T14:15:52+00:00"
+    },
+    {
+      "id": "63433d06e39c322e",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "日本交通",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 290000,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [
+        {
+          "incident_id": "3e1934d6b0454ad9",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/6db55f05be0d9faf3209ba361f49251d0e95a295",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/6db55f05be0d9faf3209ba361f49251d0e95a295",
+            "https://newsdig.tbs.co.jp/articles/-/3052635?display=1"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3052635?display=1"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6db55f05be0d9faf3209ba361f49251d0e95a295"
+        },
+        {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp/15163536.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/c6301ef558c6548f8902c8519b9153c64f177aa1"
+        }
+      ],
+      "added_at": "2026-10-30T15:02:16+00:00",
+      "updated_at": "2026-10-30T20:15:36+00:00"
     },
     {
       "id": "7b687057653f55b3",
@@ -672,6 +758,37 @@
       "updated_at": "2026-10-30T09:16:10+00:00"
     },
     {
+      "id": "1eff65d7da989b18",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ワールド",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1200000,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/86ca2067ce200631d1dc8d7b3636ce95cb3e1cd5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b12ab260a1e66abbad67c2063ba9480a9711bed4"
+        },
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/national/20261030-GYT1T00377/"
+        }
+      ],
+      "added_at": "2026-10-30T09:16:10+00:00",
+      "updated_at": "2026-10-30T20:15:36+00:00"
+    },
+    {
       "id": "4abc615ec3fea0d6",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": "2026-10-29T15:00:00+00:00",
@@ -696,76 +813,6 @@
         }
       ],
       "added_at": "2026-10-30T11:16:03+00:00",
-      "updated_at": "2026-10-30T14:15:52+00:00"
-    },
-    {
-      "id": "63433d06e39c322e",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "日本交通",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 290000,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [
-        {
-          "incident_id": "3e1934d6b0454ad9",
-          "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/6db55f05be0d9faf3209ba361f49251d0e95a295",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/6db55f05be0d9faf3209ba361f49251d0e95a295",
-            "https://newsdig.tbs.co.jp/articles/-/3052635?display=1"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "TBS NEWS DIG",
-          "url": "https://newsdig.tbs.co.jp/articles/-/3052635?display=1"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/6db55f05be0d9faf3209ba361f49251d0e95a295"
-        }
-      ],
-      "added_at": "2026-10-30T15:02:16+00:00",
-      "updated_at": "2026-10-30T15:02:16+00:00"
-    },
-    {
-      "id": "7c84af49b4716f42",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "佐賀大学",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "ransomware"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [],
-      "sources": [
-        {
-          "name": "NHKニュース",
-          "url": "https://news.web.nhk/newsweb/na/nd-20261030de68360"
-        },
-        {
-          "name": "ｄメニューニュース",
-          "url": "https://topics.smt.docomo.ne.jp/amp/article/kbc/region/kbc-18432148"
-        },
-        {
-          "name": "NHKニュース",
-          "url": "https://news.web.nhk/newsweb/na/nd-20261030de68690"
-        }
-      ],
-      "affected_service": "大学の事務情報システム",
-      "service_aliases": [],
-      "added_at": "2026-10-30T05:15:51+00:00",
       "updated_at": "2026-10-30T14:15:52+00:00"
     },
     {
@@ -915,33 +962,6 @@
       "service_aliases": [],
       "added_at": "2026-10-30T03:15:54+00:00",
       "updated_at": "2026-10-30T03:15:54+00:00"
-    },
-    {
-      "id": "1eff65d7da989b18",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ワールド",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 1200000,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/86ca2067ce200631d1dc8d7b3636ce95cb3e1cd5"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/b12ab260a1e66abbad67c2063ba9480a9711bed4"
-        }
-      ],
-      "added_at": "2026-10-30T09:16:10+00:00",
-      "updated_at": "2026-10-30T15:02:16+00:00"
     },
     {
       "id": "d596ddaea3a9b78e",
@@ -1097,7 +1117,7 @@
           "url": "https://news.yahoo.co.jp/articles/e1caa030b2d0aba937bac295e761a824b3b731d1"
         }
       ],
-      "affected_service": "松弁ネット / アプリ / クーポン / ホームページ / モバイルオーダー / 松弁デリバリー",
+      "affected_service": "松弁ネット / アプリ / クーポン / ホームページ / モバイルオーダー / 公式アプリ / 松弁デリバリー",
       "service_aliases": [],
       "affected_services": [
         "松弁ネット",
@@ -1105,6 +1125,7 @@
         "クーポン",
         "ホームページ",
         "モバイルオーダー",
+        "公式アプリ",
         "松弁デリバリー"
       ],
       "service_details": [
@@ -1129,12 +1150,16 @@
           "aliases": []
         },
         {
+          "name": "公式アプリ",
+          "aliases": []
+        },
+        {
           "name": "松弁デリバリー",
           "aliases": []
         }
       ],
       "added_at": "2026-10-29T08:15:57+00:00",
-      "updated_at": "2026-10-30T09:16:10+00:00"
+      "updated_at": "2026-10-30T20:15:36+00:00"
     },
     {
       "id": "1b1d22880df99131",
@@ -1507,6 +1532,28 @@
       "service_aliases": [],
       "added_at": "2026-10-29T08:15:57+00:00",
       "updated_at": "2026-10-29T20:16:15+00:00"
+    },
+    {
+      "id": "019d775b72e2c08c",
+      "published_at": "2026-10-28T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "TOBEMORI SEEDS",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 11,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "愛媛県 / Ehime",
+          "url": "https://www.pref.ehime.jp/page/163068.html"
+        }
+      ],
+      "added_at": "2026-10-30T20:15:36+00:00",
+      "updated_at": "2026-10-30T20:15:36+00:00"
     },
     {
       "id": "2f7b77dc9492c5df",
@@ -18425,6 +18472,10 @@
           "url": "https://news.nicovideo.jp/watch/nw19925817"
         },
         {
+          "name": "イザ！",
+          "url": "https://www.iza.ne.jp/pressrelease/prtimes/VLBBAKZFONLMHOAUGSN47O3LM4/"
+        },
+        {
           "name": "ライブドアニュース",
           "url": "https://news.livedoor.com/pr_topics/detail/32669492/"
         }
@@ -18432,7 +18483,7 @@
       "affected_service": "OWNLY",
       "service_aliases": [],
       "added_at": "2026-10-27T19:09:26+00:00",
-      "updated_at": "2026-10-28T23:15:49+00:00"
+      "updated_at": "2026-10-30T20:15:36+00:00"
     },
     {
       "id": "8ffddfc96aa3ce97",
