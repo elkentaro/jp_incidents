@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-30T15:02:16+00:00",
+  "updated_at": "2026-10-30T15:15:26+00:00",
   "total": 658,
   "date_range": {
     "start": "2026-07-09",
@@ -1286,12 +1286,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/2d35005edc8e826515a3be238107deda7ef5606d"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/3ad58a24765fa046864803222cdd63459a88f2a7"
         }
       ],
       "affected_service": "アイリスオーヤマ公式通販サイト「アイリスプラザ」",
       "service_aliases": [],
       "added_at": "2026-10-30T01:13:09+00:00",
-      "updated_at": "2026-10-30T15:02:16+00:00"
+      "updated_at": "2026-10-30T15:15:26+00:00"
     },
     {
       "id": "d109208bc96667b7",
@@ -6774,6 +6778,54 @@
       "updated_at": "2026-10-26T06:15:53+00:00"
     },
     {
+      "id": "4f9469d8ac7f711b",
+      "published_at": "2026-10-22T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "KDDI",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "ff420be6e3ecc8ab",
+          "relationship": "affected_by",
+          "evidence_url": "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-82_4796/kddi_nr_s-82_4796_pdf_01.pdf",
+          "evidence_urls": [
+            "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-82_4796/kddi_nr_s-82_4796_pdf_01.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "KDDI",
+          "url": "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-82_4796/kddi_nr_s-82_4796_pdf_01.pdf"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/96e3c45f22506b331d9bb22e054c25150ba49841"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3052428?display=1"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261030de68756"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b07346bf49b6c94abceaf7e21c8da88cb767d5aa"
+        }
+      ],
+      "added_at": "2026-10-30T11:16:03+00:00",
+      "updated_at": "2026-10-30T15:15:26+00:00"
+    },
+    {
       "id": "b46e3020e19d722d",
       "published_at": "2026-10-22T15:00:00+00:00",
       "disclosed_at": null,
@@ -6959,46 +7011,6 @@
       "service_aliases": [],
       "added_at": "2026-10-25T00:15:40+00:00",
       "updated_at": "2026-10-28T02:15:45+00:00"
-    },
-    {
-      "id": "4f9469d8ac7f711b",
-      "published_at": "2026-10-22T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "KDDI",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [
-        {
-          "incident_id": "ff420be6e3ecc8ab",
-          "relationship": "affected_by",
-          "evidence_url": "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-82_4796/kddi_nr_s-82_4796_pdf_01.pdf",
-          "evidence_urls": [
-            "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-82_4796/kddi_nr_s-82_4796_pdf_01.pdf"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "KDDI",
-          "url": "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-82_4796/kddi_nr_s-82_4796_pdf_01.pdf"
-        },
-        {
-          "name": "TBS NEWS DIG",
-          "url": "https://newsdig.tbs.co.jp/articles/-/3052428?display=1"
-        },
-        {
-          "name": "NHKニュース",
-          "url": "https://news.web.nhk/newsweb/na/nd-20261030de68756"
-        }
-      ],
-      "added_at": "2026-10-30T11:16:03+00:00",
-      "updated_at": "2026-10-30T14:15:52+00:00"
     },
     {
       "id": "dd83c4bfa1fb5b6c",
@@ -7447,6 +7459,41 @@
       "service_aliases": [],
       "added_at": "2026-10-25T01:15:29+00:00",
       "updated_at": "2026-10-28T01:15:55+00:00"
+    },
+    {
+      "id": "ff420be6e3ecc8ab",
+      "published_at": "2026-10-22T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ライフネット生命保険",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "4f9469d8ac7f711b",
+          "relationship": "affects",
+          "evidence_url": "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-82_4796/kddi_nr_s-82_4796_pdf_01.pdf",
+          "evidence_urls": [
+            "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-82_4796/kddi_nr_s-82_4796_pdf_01.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "KDDI",
+          "url": "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-82_4796/kddi_nr_s-82_4796_pdf_01.pdf"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b07346bf49b6c94abceaf7e21c8da88cb767d5aa"
+        }
+      ],
+      "added_at": "2026-10-30T11:16:03+00:00",
+      "updated_at": "2026-10-30T15:15:26+00:00"
     },
     {
       "id": "6631ba0260ce793e",
@@ -8191,37 +8238,6 @@
       ],
       "added_at": "2026-10-25T05:47:43+00:00",
       "updated_at": "2026-10-25T05:47:43+00:00"
-    },
-    {
-      "id": "ff420be6e3ecc8ab",
-      "published_at": "2026-10-22T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ライフネット生命保険",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "4f9469d8ac7f711b",
-          "relationship": "affects",
-          "evidence_url": "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-82_4796/kddi_nr_s-82_4796_pdf_01.pdf",
-          "evidence_urls": [
-            "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-82_4796/kddi_nr_s-82_4796_pdf_01.pdf"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "KDDI",
-          "url": "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-82_4796/kddi_nr_s-82_4796_pdf_01.pdf"
-        }
-      ],
-      "added_at": "2026-10-30T11:16:03+00:00",
-      "updated_at": "2026-10-30T11:16:03+00:00"
     },
     {
       "id": "03baf9fc73990c56",
@@ -17974,10 +17990,14 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/117952"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/93794cd353aaad801cd0693609418104e9b57df6"
         }
       ],
       "added_at": "2026-10-30T01:13:09+00:00",
-      "updated_at": "2026-10-30T11:16:03+00:00"
+      "updated_at": "2026-10-30T15:15:26+00:00"
     },
     {
       "id": "7009e47e3afdc08b",
