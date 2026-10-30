@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-30T01:13:09+00:00",
-  "total": 623,
+  "updated_at": "2026-10-30T02:15:42+00:00",
+  "total": 629,
   "date_range": {
     "start": "2026-07-09",
-    "end": "2026-10-29"
+    "end": "2026-10-30"
   },
   "daily_counts_90d": [
     {
@@ -337,7 +337,7 @@
     },
     {
       "date": "2026-10-23",
-      "count": 64
+      "count": 65
     },
     {
       "date": "2026-10-24",
@@ -357,7 +357,7 @@
     },
     {
       "date": "2026-10-28",
-      "count": 29
+      "count": 33
     },
     {
       "date": "2026-10-29",
@@ -365,10 +365,44 @@
     },
     {
       "date": "2026-10-30",
-      "count": 0
+      "count": 1
     }
   ],
   "incidents": [
+    {
+      "id": "81ace1ca432c9aa9",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": "2026-10-29T15:00:00+00:00",
+      "organization": "jinjer",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 173,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://prtimes.jp/main/html/rd/p/000000493.000089626.html",
+          "evidence_urls": [
+            "https://prtimes.jp/main/html/rd/p/000000493.000089626.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "PR TIMES",
+          "url": "https://prtimes.jp/main/html/rd/p/000000493.000089626.html"
+        }
+      ],
+      "affected_service": "ジンジャー福利厚生 お問い合わせフォーム",
+      "service_aliases": [],
+      "added_at": "2026-10-30T02:15:42+00:00",
+      "updated_at": "2026-10-30T02:15:42+00:00"
+    },
     {
       "id": "2639da70d5b68f2c",
       "published_at": "2026-10-28T15:00:00+00:00",
@@ -442,6 +476,71 @@
       "updated_at": "2026-10-29T22:16:02+00:00"
     },
     {
+      "id": "169f51ce1c38ad8b",
+      "published_at": "2026-10-28T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "松屋フーズ",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 95,
+      "related": [],
+      "sources": [
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2610/29/2000002714/"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC298BS0Z21C26A0000000/"
+        },
+        {
+          "name": "ビジネス+IT",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBKVUszTk9fMFN5aWNYU2dEanRQa1ZCOW14WDVjeEZZUVdsNFlfNnJ0OXN0akZfVDZBSTdnUnVZRjhqX1JoWVU3OFlkQzlmWGJ0U2Y0?oc=5"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/117905"
+        }
+      ],
+      "affected_service": "松弁ネット / アプリ / クーポン / ホームページ / モバイルオーダー",
+      "service_aliases": [],
+      "affected_services": [
+        "松弁ネット",
+        "アプリ",
+        "クーポン",
+        "ホームページ",
+        "モバイルオーダー"
+      ],
+      "service_details": [
+        {
+          "name": "松弁ネット",
+          "aliases": []
+        },
+        {
+          "name": "アプリ",
+          "aliases": []
+        },
+        {
+          "name": "クーポン",
+          "aliases": []
+        },
+        {
+          "name": "ホームページ",
+          "aliases": []
+        },
+        {
+          "name": "モバイルオーダー",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-10-29T08:15:57+00:00",
+      "updated_at": "2026-10-30T02:15:42+00:00"
+    },
+    {
       "id": "1b1d22880df99131",
       "published_at": "2026-10-28T15:00:00+00:00",
       "disclosed_at": null,
@@ -466,6 +565,10 @@
       ],
       "sources": [
         {
+          "name": "satimo list",
+          "url": "https://www.asahi.com/corporate/info/16995713"
+        },
+        {
           "name": "朝日新聞",
           "url": "https://www.asahi.com/articles/ASVBY2GF1VBYULFA00WM.html"
         },
@@ -485,7 +588,7 @@
       "affected_service": "Cuenote FC",
       "service_aliases": [],
       "added_at": "2026-10-29T10:15:51+00:00",
-      "updated_at": "2026-10-29T20:56:59+00:00"
+      "updated_at": "2026-10-30T02:15:42+00:00"
     },
     {
       "id": "b34703c922a10ef8",
@@ -540,67 +643,6 @@
       "service_aliases": [],
       "added_at": "2026-10-29T10:15:51+00:00",
       "updated_at": "2026-10-29T20:56:59+00:00"
-    },
-    {
-      "id": "169f51ce1c38ad8b",
-      "published_at": "2026-10-28T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "松屋フーズ",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 80,
-      "related": [],
-      "sources": [
-        {
-          "name": "ITmedia",
-          "url": "https://www.itmedia.co.jp/news/article/2610/29/2000002714/"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUC298BS0Z21C26A0000000/"
-        },
-        {
-          "name": "ビジネス+IT",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBKVUszTk9fMFN5aWNYU2dEanRQa1ZCOW14WDVjeEZZUVdsNFlfNnJ0OXN0akZfVDZBSTdnUnVZRjhqX1JoWVU3OFlkQzlmWGJ0U2Y0?oc=5"
-        }
-      ],
-      "affected_service": "松弁ネット / アプリ / クーポン / ホームページ / モバイルオーダー",
-      "service_aliases": [],
-      "affected_services": [
-        "松弁ネット",
-        "アプリ",
-        "クーポン",
-        "ホームページ",
-        "モバイルオーダー"
-      ],
-      "service_details": [
-        {
-          "name": "松弁ネット",
-          "aliases": []
-        },
-        {
-          "name": "アプリ",
-          "aliases": []
-        },
-        {
-          "name": "クーポン",
-          "aliases": []
-        },
-        {
-          "name": "ホームページ",
-          "aliases": []
-        },
-        {
-          "name": "モバイルオーダー",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-10-29T08:15:57+00:00",
-      "updated_at": "2026-10-30T00:18:40+00:00"
     },
     {
       "id": "39d454b50a8624c2",
@@ -1677,6 +1719,38 @@
       "confidence_score": 100,
       "related": [
         {
+          "incident_id": "03a18bdd6715ff75",
+          "relationship": "affects",
+          "evidence_url": "https://www.kagin.co.jp/important/emergency_20261029_3.html",
+          "evidence_urls": [
+            "https://www.kagin.co.jp/important/emergency_20261029_3.html"
+          ]
+        },
+        {
+          "incident_id": "14eaf28a942cd643",
+          "relationship": "affects",
+          "evidence_url": "https://www.kagin.co.jp/important/emergency_20261029_3.html",
+          "evidence_urls": [
+            "https://www.kagin.co.jp/important/emergency_20261029_3.html"
+          ]
+        },
+        {
+          "incident_id": "3ce6612226b3c800",
+          "relationship": "affects",
+          "evidence_url": "https://www.kagin.co.jp/important/emergency_20261029_3.html",
+          "evidence_urls": [
+            "https://www.kagin.co.jp/important/emergency_20261029_3.html"
+          ]
+        },
+        {
+          "incident_id": "8ebd5d925ed1dcd6",
+          "relationship": "affects",
+          "evidence_url": "https://www.kagin.co.jp/important/emergency_20261029_3.html",
+          "evidence_urls": [
+            "https://www.kagin.co.jp/important/emergency_20261029_3.html"
+          ]
+        },
+        {
           "incident_id": "915eb61aa950a311",
           "relationship": "affects",
           "evidence_url": "https://www.pref.okinawa.jp/kensei/shinko/1017087/1017118/1041801.html",
@@ -1705,10 +1779,14 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUC29A9Q0Z21C26A0000000/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/117904"
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-10-29T21:16:09+00:00"
+      "updated_at": "2026-10-30T02:15:42+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -2015,6 +2093,74 @@
       "updated_at": "2026-10-27T20:15:55+00:00"
     },
     {
+      "id": "03a18bdd6715ff75",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "鹿児島信用金庫",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.kagin.co.jp/important/emergency_20261029_3.html",
+          "evidence_urls": [
+            "https://www.kagin.co.jp/important/emergency_20261029_3.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.kagin.co.jp/important/emergency_20261029_3.html"
+        }
+      ],
+      "affected_service": "Payどん",
+      "service_aliases": [],
+      "added_at": "2026-10-30T02:15:42+00:00",
+      "updated_at": "2026-10-30T02:15:42+00:00"
+    },
+    {
+      "id": "14eaf28a942cd643",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "鹿児島銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.kagin.co.jp/important/emergency_20261029_3.html",
+          "evidence_urls": [
+            "https://www.kagin.co.jp/important/emergency_20261029_3.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.kagin.co.jp/important/emergency_20261029_3.html"
+        }
+      ],
+      "affected_service": "Payどん",
+      "service_aliases": [],
+      "added_at": "2026-10-30T02:15:42+00:00",
+      "updated_at": "2026-10-30T02:15:42+00:00"
+    },
+    {
       "id": "2e6aed23a224e058",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": null,
@@ -2037,6 +2183,74 @@
       "service_aliases": [],
       "added_at": "2026-10-28T23:15:49+00:00",
       "updated_at": "2026-10-28T23:15:49+00:00"
+    },
+    {
+      "id": "3ce6612226b3c800",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "鹿児島相互信用金庫",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.kagin.co.jp/important/emergency_20261029_3.html",
+          "evidence_urls": [
+            "https://www.kagin.co.jp/important/emergency_20261029_3.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.kagin.co.jp/important/emergency_20261029_3.html"
+        }
+      ],
+      "affected_service": "Payどん",
+      "service_aliases": [],
+      "added_at": "2026-10-30T02:15:42+00:00",
+      "updated_at": "2026-10-30T02:15:42+00:00"
+    },
+    {
+      "id": "8ebd5d925ed1dcd6",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "南日本銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.kagin.co.jp/important/emergency_20261029_3.html",
+          "evidence_urls": [
+            "https://www.kagin.co.jp/important/emergency_20261029_3.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.kagin.co.jp/important/emergency_20261029_3.html"
+        }
+      ],
+      "affected_service": "Payどん",
+      "service_aliases": [],
+      "added_at": "2026-10-30T02:15:42+00:00",
+      "updated_at": "2026-10-30T02:15:42+00:00"
     },
     {
       "id": "a4c6a8cdac85f9f4",
@@ -6377,6 +6591,40 @@
       "updated_at": "2026-10-23T05:16:07+00:00"
     },
     {
+      "id": "49b975ab2dfa7017",
+      "published_at": "2026-10-22T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ブロードリーフ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.broadleaf.co.jp/company/news/news_detail/?dispmid=1001&itemid=371",
+          "evidence_urls": [
+            "https://www.broadleaf.co.jp/company/news/news_detail/?dispmid=1001&itemid=371"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.broadleaf.co.jp/company/news/news_detail/?dispmid=1001&itemid=371"
+        }
+      ],
+      "affected_service": "ものづくりドットコム",
+      "service_aliases": [],
+      "added_at": "2026-10-30T02:15:42+00:00",
+      "updated_at": "2026-10-30T02:15:42+00:00"
+    },
+    {
       "id": "7449a36148e781ea",
       "published_at": "2026-10-22T15:00:00+00:00",
       "disclosed_at": null,
@@ -10127,6 +10375,14 @@
           ]
         },
         {
+          "incident_id": "49b975ab2dfa7017",
+          "relationship": "affects",
+          "evidence_url": "https://www.broadleaf.co.jp/company/news/news_detail/?dispmid=1001&itemid=371",
+          "evidence_urls": [
+            "https://www.broadleaf.co.jp/company/news/news_detail/?dispmid=1001&itemid=371"
+          ]
+        },
+        {
           "incident_id": "51641984e8525f2f",
           "relationship": "affects",
           "evidence_url": "https://www.pref.miyagi.jp/soshiki/sinkou/zyouhourouei-miyagiizyuukouryuugaido.html",
@@ -10619,7 +10875,7 @@
         }
       ],
       "added_at": "2026-10-21T19:22:12+00:00",
-      "updated_at": "2026-10-30T01:13:09+00:00"
+      "updated_at": "2026-10-30T02:15:42+00:00"
     },
     {
       "id": "a2cf60a92a1ad65c",
@@ -17468,6 +17724,44 @@
       "updated_at": "2026-10-29T20:16:15+00:00"
     },
     {
+      "id": "2c7973528a7563ec",
+      "published_at": "2026-10-15T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社アイシン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 3396,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://cybersecurity-jp.com/news/117903",
+          "evidence_urls": [
+            "https://cybersecurity-jp.com/news/117903",
+            "https://www.aisin.com/jp/news/2026/010729.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "アイシン / AISIN",
+          "url": "https://www.aisin.com/jp/news/2026/010729.html"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/117903"
+        }
+      ],
+      "affected_service": "YYSystem",
+      "service_aliases": [],
+      "added_at": "2026-10-22T10:44:10+00:00",
+      "updated_at": "2026-10-30T02:15:42+00:00"
+    },
+    {
       "id": "a9fc43978c7c6f14",
       "published_at": "2026-10-15T15:00:00+00:00",
       "disclosed_at": "2026-10-19T15:00:00+00:00",
@@ -17627,37 +17921,6 @@
       ],
       "added_at": "2026-10-29T00:15:51+00:00",
       "updated_at": "2026-10-29T00:15:51+00:00"
-    },
-    {
-      "id": "2c7973528a7563ec",
-      "published_at": "2026-10-15T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "株式会社アイシン",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 3396,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "671c427eadb6fc63",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.aisin.com/jp/news/2026/010729.html",
-          "evidence_urls": [
-            "https://www.aisin.com/jp/news/2026/010729.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "アイシン / AISIN",
-          "url": "https://www.aisin.com/jp/news/2026/010729.html"
-        }
-      ],
-      "added_at": "2026-10-22T10:44:10+00:00",
-      "updated_at": "2026-10-22T10:44:10+00:00"
     },
     {
       "id": "3d2fe2bcdce0a7f6",
@@ -18206,8 +18469,9 @@
         {
           "incident_id": "2c7973528a7563ec",
           "relationship": "affects",
-          "evidence_url": "https://www.aisin.com/jp/news/2026/010729.html",
+          "evidence_url": "https://cybersecurity-jp.com/news/117903",
           "evidence_urls": [
+            "https://cybersecurity-jp.com/news/117903",
             "https://www.aisin.com/jp/news/2026/010729.html"
           ]
         },
@@ -18298,6 +18562,14 @@
           "evidence_url": "https://www.ncctv.co.jp/news/article/16981760",
           "evidence_urls": [
             "https://www.ncctv.co.jp/news/article/16981760"
+          ]
+        },
+        {
+          "incident_id": "81ace1ca432c9aa9",
+          "relationship": "affects",
+          "evidence_url": "https://prtimes.jp/main/html/rd/p/000000493.000089626.html",
+          "evidence_urls": [
+            "https://prtimes.jp/main/html/rd/p/000000493.000089626.html"
           ]
         },
         {
@@ -18636,7 +18908,7 @@
       "affected_system": "Studio cloud environment",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T11:10:22+00:00",
-      "updated_at": "2026-10-29T20:56:59+00:00"
+      "updated_at": "2026-10-30T02:15:42+00:00"
     },
     {
       "id": "79d92ec417a38b35",
