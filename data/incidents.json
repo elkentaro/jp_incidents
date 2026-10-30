@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-30T05:15:51+00:00",
-  "total": 633,
+  "updated_at": "2026-10-30T06:16:03+00:00",
+  "total": 635,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-30"
@@ -361,11 +361,11 @@
     },
     {
       "date": "2026-10-29",
-      "count": 20
+      "count": 21
     },
     {
       "date": "2026-10-30",
-      "count": 5
+      "count": 6
     }
   ],
   "incidents": [
@@ -485,6 +485,28 @@
       "updated_at": "2026-10-30T05:15:51+00:00"
     },
     {
+      "id": "7df1aaca37664867",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "バイナンス",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "CoinPost",
+          "url": "https://coinpost.jp/?p=745459"
+        }
+      ],
+      "added_at": "2026-10-30T06:16:03+00:00",
+      "updated_at": "2026-10-30T06:16:03+00:00"
+    },
+    {
       "id": "84eb1336a89d7356",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": "2026-10-29T15:00:00+00:00",
@@ -506,6 +528,81 @@
       ],
       "added_at": "2026-10-30T05:15:51+00:00",
       "updated_at": "2026-10-30T05:15:51+00:00"
+    },
+    {
+      "id": "169f51ce1c38ad8b",
+      "published_at": "2026-10-28T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "松屋フーズ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [],
+      "sources": [
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2610/29/2000002714/"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC298BS0Z21C26A0000000/"
+        },
+        {
+          "name": "ビジネス+IT",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBKVUszTk9fMFN5aWNYU2dEanRQa1ZCOW14WDVjeEZZUVdsNFlfNnJ0OXN0akZfVDZBSTdnUnVZRjhqX1JoWVU3OFlkQzlmWGJ0U2Y0?oc=5"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/117905"
+        },
+        {
+          "name": "Impress Watch",
+          "url": "https://www.watch.impress.co.jp/docs/news/2152625.html"
+        }
+      ],
+      "affected_service": "松弁ネット / アプリ / クーポン / ホームページ / モバイルオーダー / 松弁デリバリー",
+      "service_aliases": [],
+      "affected_services": [
+        "松弁ネット",
+        "アプリ",
+        "クーポン",
+        "ホームページ",
+        "モバイルオーダー",
+        "松弁デリバリー"
+      ],
+      "service_details": [
+        {
+          "name": "松弁ネット",
+          "aliases": []
+        },
+        {
+          "name": "アプリ",
+          "aliases": []
+        },
+        {
+          "name": "クーポン",
+          "aliases": []
+        },
+        {
+          "name": "ホームページ",
+          "aliases": []
+        },
+        {
+          "name": "モバイルオーダー",
+          "aliases": []
+        },
+        {
+          "name": "松弁デリバリー",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-10-29T08:15:57+00:00",
+      "updated_at": "2026-10-30T06:16:03+00:00"
     },
     {
       "id": "2639da70d5b68f2c",
@@ -579,71 +676,6 @@
       "service_aliases": [],
       "added_at": "2026-10-29T22:16:02+00:00",
       "updated_at": "2026-10-30T04:15:40+00:00"
-    },
-    {
-      "id": "169f51ce1c38ad8b",
-      "published_at": "2026-10-28T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "松屋フーズ",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 95,
-      "related": [],
-      "sources": [
-        {
-          "name": "ITmedia",
-          "url": "https://www.itmedia.co.jp/news/article/2610/29/2000002714/"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUC298BS0Z21C26A0000000/"
-        },
-        {
-          "name": "ビジネス+IT",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBKVUszTk9fMFN5aWNYU2dEanRQa1ZCOW14WDVjeEZZUVdsNFlfNnJ0OXN0akZfVDZBSTdnUnVZRjhqX1JoWVU3OFlkQzlmWGJ0U2Y0?oc=5"
-        },
-        {
-          "name": "Cybersecurity.jp",
-          "url": "https://cybersecurity-jp.com/news/117905"
-        }
-      ],
-      "affected_service": "松弁ネット / アプリ / クーポン / ホームページ / モバイルオーダー",
-      "service_aliases": [],
-      "affected_services": [
-        "松弁ネット",
-        "アプリ",
-        "クーポン",
-        "ホームページ",
-        "モバイルオーダー"
-      ],
-      "service_details": [
-        {
-          "name": "松弁ネット",
-          "aliases": []
-        },
-        {
-          "name": "アプリ",
-          "aliases": []
-        },
-        {
-          "name": "クーポン",
-          "aliases": []
-        },
-        {
-          "name": "ホームページ",
-          "aliases": []
-        },
-        {
-          "name": "モバイルオーダー",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-10-29T08:15:57+00:00",
-      "updated_at": "2026-10-30T02:15:42+00:00"
     },
     {
       "id": "1b1d22880df99131",
@@ -750,6 +782,37 @@
       "updated_at": "2026-10-29T20:56:59+00:00"
     },
     {
+      "id": "d109208bc96667b7",
+      "published_at": "2026-10-28T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "グッドスマイルカンパニー",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 2800,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [],
+      "sources": [
+        {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp/category/economy/59fbbe4141e74005ab5d3f6ee545c90c"
+        },
+        {
+          "name": "産経ニュース",
+          "url": "https://www.sankei.com/article/20261029-TVDSE46PZRMSLOU5KJ4AXFX57A/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b95bbe79d218e557ec05bef28659ee8811cc88e9"
+        }
+      ],
+      "added_at": "2026-10-29T20:16:15+00:00",
+      "updated_at": "2026-10-30T06:16:03+00:00"
+    },
+    {
       "id": "39d454b50a8624c2",
       "published_at": "2026-10-28T15:00:00+00:00",
       "disclosed_at": "2026-10-28T15:00:00+00:00",
@@ -850,33 +913,6 @@
       "service_aliases": [],
       "added_at": "2026-10-29T08:15:57+00:00",
       "updated_at": "2026-10-29T20:16:15+00:00"
-    },
-    {
-      "id": "d109208bc96667b7",
-      "published_at": "2026-10-28T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "グッドスマイルカンパニー",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 2800,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [],
-      "sources": [
-        {
-          "name": "日テレNEWS NNN",
-          "url": "https://news.ntv.co.jp/category/economy/59fbbe4141e74005ab5d3f6ee545c90c"
-        },
-        {
-          "name": "産経ニュース",
-          "url": "https://www.sankei.com/article/20261029-TVDSE46PZRMSLOU5KJ4AXFX57A/"
-        }
-      ],
-      "added_at": "2026-10-29T20:16:15+00:00",
-      "updated_at": "2026-10-29T22:16:02+00:00"
     },
     {
       "id": "2f7b77dc9492c5df",
@@ -1213,6 +1249,30 @@
       "service_aliases": [],
       "added_at": "2026-10-29T20:16:15+00:00",
       "updated_at": "2026-10-29T20:16:15+00:00"
+    },
+    {
+      "id": "47393192da302a95",
+      "published_at": "2026-10-28T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社HKC",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 58573,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/tokyo_himitsukichi_mumeinokai_leak_warning-20261029-2/"
+        }
+      ],
+      "affected_service": "東京秘密基地",
+      "service_aliases": [],
+      "added_at": "2026-10-30T06:16:03+00:00",
+      "updated_at": "2026-10-30T06:16:03+00:00"
     },
     {
       "id": "575cc9ef529313b5",
@@ -1803,10 +1863,14 @@
         {
           "name": "ビジネス+IT",
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBKVUszTk9fMFN5aWNYU2dEanRQa1ZCOW14WDVjeEZZUVdsNFlfNnJ0OXN0akZfVDZBSTdnUnVZRjhqX1JoWVU3OFlkQzlmWGJ0U2Y0?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/7d2e1428908ea6a41846bb2194664d6dbaab5670"
         }
       ],
       "added_at": "2026-10-29T08:15:57+00:00",
-      "updated_at": "2026-10-30T05:15:51+00:00"
+      "updated_at": "2026-10-30T06:16:03+00:00"
     },
     {
       "id": "d54f4e82616816d3",
@@ -16941,6 +17005,37 @@
       "updated_at": "2026-10-22T01:18:03+00:00"
     },
     {
+      "id": "044369c0a0df5877",
+      "published_at": "2026-10-16T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ティンパンアレイ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1200000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261030560364.pdf"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/fb7a50c95432d1762b201df21eb9f3eb15a3cb1b"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC303310Q6A031C2000000/"
+        }
+      ],
+      "added_at": "2026-10-30T01:13:09+00:00",
+      "updated_at": "2026-10-30T06:16:03+00:00"
+    },
+    {
       "id": "7009e47e3afdc08b",
       "published_at": "2026-10-16T15:00:00+00:00",
       "disclosed_at": null,
@@ -16979,33 +17074,6 @@
       ],
       "added_at": "2026-10-25T05:15:56+00:00",
       "updated_at": "2026-10-28T07:15:47+00:00"
-    },
-    {
-      "id": "044369c0a0df5877",
-      "published_at": "2026-10-16T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ティンパンアレイ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 1200000,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [],
-      "sources": [
-        {
-          "name": "日本取引所グループ TDnet / JPX TDnet",
-          "url": "https://www.release.tdnet.info/inbs/140120261030560364.pdf"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/fb7a50c95432d1762b201df21eb9f3eb15a3cb1b"
-        }
-      ],
-      "added_at": "2026-10-30T01:13:09+00:00",
-      "updated_at": "2026-10-30T05:15:51+00:00"
     },
     {
       "id": "4468d7a7262d01e6",
