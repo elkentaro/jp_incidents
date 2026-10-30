@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-30T21:53:42+00:00",
-  "total": 660,
+  "updated_at": "2026-10-30T22:15:37+00:00",
+  "total": 661,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-31"
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-10-30",
-      "count": 18
+      "count": 19
     },
     {
       "date": "2026-10-31",
@@ -677,6 +677,41 @@
       "updated_at": "2026-10-30T16:16:32+00:00"
     },
     {
+      "id": "1eff65d7da989b18",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ワールド",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1200000,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/86ca2067ce200631d1dc8d7b3636ce95cb3e1cd5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b12ab260a1e66abbad67c2063ba9480a9711bed4"
+        },
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/national/20261030-GYT1T00377/"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8wcXBFT0E4bmhxRl9BY1dvU3kzRnUtQWpFWnVyc1RybW1MNER5R2c0dFJqNVFsZnRfQ3c5d0h5amNqZmg4STZTd2pkcjFRd3habTNtMzJCdUtKU0EwSi04?oc=5"
+        }
+      ],
+      "added_at": "2026-10-30T09:16:10+00:00",
+      "updated_at": "2026-10-30T22:15:37+00:00"
+    },
+    {
       "id": "63433d06e39c322e",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": null,
@@ -835,37 +870,6 @@
       "updated_at": "2026-10-30T21:53:42+00:00"
     },
     {
-      "id": "1eff65d7da989b18",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ワールド",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 1200000,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/86ca2067ce200631d1dc8d7b3636ce95cb3e1cd5"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/b12ab260a1e66abbad67c2063ba9480a9711bed4"
-        },
-        {
-          "name": "読売新聞",
-          "url": "https://www.yomiuri.co.jp/national/20261030-GYT1T00377/"
-        }
-      ],
-      "added_at": "2026-10-30T09:16:10+00:00",
-      "updated_at": "2026-10-30T20:15:36+00:00"
-    },
-    {
       "id": "3e1934d6b0454ad9",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": null,
@@ -1012,6 +1016,54 @@
       "service_aliases": [],
       "added_at": "2026-10-30T03:15:54+00:00",
       "updated_at": "2026-10-30T03:15:54+00:00"
+    },
+    {
+      "id": "7d4a8e7c0b6678d9",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "沖縄県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.okinawa.jp/shigoto/ringyo/1010912/1041813.html",
+          "evidence_urls": [
+            "https://www.pref.okinawa.jp/shigoto/ringyo/1010912/1041813.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "沖縄県 / Okinawa",
+          "url": "https://www.pref.okinawa.jp/shigoto/ringyo/1010912/1041813.html"
+        }
+      ],
+      "affected_service": "沖縄文化スポーツイノベーション / キャンプ場予約サービス",
+      "service_aliases": [],
+      "affected_services": [
+        "沖縄文化スポーツイノベーション",
+        "キャンプ場予約サービス"
+      ],
+      "service_details": [
+        {
+          "name": "沖縄文化スポーツイノベーション",
+          "aliases": []
+        },
+        {
+          "name": "キャンプ場予約サービス",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-10-30T22:15:37+00:00",
+      "updated_at": "2026-10-30T22:15:37+00:00"
     },
     {
       "id": "d596ddaea3a9b78e",
@@ -11762,6 +11814,14 @@
           ]
         },
         {
+          "incident_id": "7d4a8e7c0b6678d9",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.okinawa.jp/shigoto/ringyo/1010912/1041813.html",
+          "evidence_urls": [
+            "https://www.pref.okinawa.jp/shigoto/ringyo/1010912/1041813.html"
+          ]
+        },
+        {
           "incident_id": "7d7f0620312f96fd",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/920da4572aee81b666040e9017b659c964e4672d",
@@ -12150,7 +12210,7 @@
         }
       ],
       "added_at": "2026-10-21T19:22:12+00:00",
-      "updated_at": "2026-10-30T10:15:57+00:00"
+      "updated_at": "2026-10-30T22:15:37+00:00"
     },
     {
       "id": "a2cf60a92a1ad65c",
