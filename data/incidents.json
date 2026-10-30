@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-30T09:16:10+00:00",
-  "total": 641,
+  "updated_at": "2026-10-30T10:15:57+00:00",
+  "total": 647,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-30"
@@ -353,11 +353,11 @@
     },
     {
       "date": "2026-10-27",
-      "count": 33
+      "count": 34
     },
     {
       "date": "2026-10-28",
-      "count": 33
+      "count": 37
     },
     {
       "date": "2026-10-29",
@@ -365,10 +365,55 @@
     },
     {
       "date": "2026-10-30",
-      "count": 12
+      "count": 13
     }
   ],
   "incidents": [
+    {
+      "id": "69811a793a09d11f",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "良品計画",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 27260000,
+      "confidence": "high",
+      "confidence_score": 95,
+      "related": [],
+      "sources": [
+        {
+          "name": "PR TIMES",
+          "url": "https://prtimes.jp/main/html/rd/p/000001877.000000987.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6250a52485cad61ac5d9637ed6dbfcf7db9a4074"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/129a9812a9509108494e79336c760288641c84a7"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2610/30/2000002756/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/eacb84da6253cb31434b5883f9fdbba5b82de01b"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/117949"
+        }
+      ],
+      "affected_service": "MUJIアプリ",
+      "service_aliases": [],
+      "added_at": "2026-10-30T09:16:10+00:00",
+      "updated_at": "2026-10-30T10:15:57+00:00"
+    },
     {
       "id": "7df1aaca37664867",
       "published_at": "2026-10-29T15:00:00+00:00",
@@ -401,39 +446,6 @@
         }
       ],
       "added_at": "2026-10-30T06:16:03+00:00",
-      "updated_at": "2026-10-30T09:16:10+00:00"
-    },
-    {
-      "id": "69811a793a09d11f",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "良品計画",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 27260000,
-      "confidence": "high",
-      "confidence_score": 80,
-      "related": [],
-      "sources": [
-        {
-          "name": "PR TIMES",
-          "url": "https://prtimes.jp/main/html/rd/p/000001877.000000987.html"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/129a9812a9509108494e79336c760288641c84a7"
-        },
-        {
-          "name": "ITmedia",
-          "url": "https://www.itmedia.co.jp/news/article/2610/30/2000002756/"
-        }
-      ],
-      "affected_service": "MUJIアプリ",
-      "service_aliases": [],
-      "added_at": "2026-10-30T09:16:10+00:00",
       "updated_at": "2026-10-30T09:16:10+00:00"
     },
     {
@@ -523,6 +535,88 @@
       ],
       "added_at": "2026-10-30T03:15:54+00:00",
       "updated_at": "2026-10-30T03:15:54+00:00"
+    },
+    {
+      "id": "6060c1559cd87ea6",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "埼玉県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 2900,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "4d36bb235ee98a3f",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf",
+          "evidence_urls": [
+            "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf"
+          ]
+        },
+        {
+          "incident_id": "6ee73b17043229be",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf",
+          "evidence_urls": [
+            "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf"
+          ]
+        },
+        {
+          "incident_id": "7449a36148e781ea",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf",
+          "evidence_urls": [
+            "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf"
+          ]
+        },
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf",
+          "evidence_urls": [
+            "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf"
+          ]
+        },
+        {
+          "incident_id": "8309247f1ad2ce04",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf",
+          "evidence_urls": [
+            "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf"
+          ]
+        },
+        {
+          "incident_id": "86807dbbb186f280",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf",
+          "evidence_urls": [
+            "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf"
+          ]
+        },
+        {
+          "incident_id": "a0b6cf2aa39c1ce9",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf",
+          "evidence_urls": [
+            "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "埼玉県 / Saitama",
+          "url": "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf"
+        }
+      ],
+      "affected_service": "シニア活躍推進宣言企業へのメールマガジン配信",
+      "service_aliases": [],
+      "added_at": "2026-10-30T10:15:57+00:00",
+      "updated_at": "2026-10-30T10:15:57+00:00"
     },
     {
       "id": "63501d67ec214e3e",
@@ -917,6 +1011,43 @@
       "updated_at": "2026-10-30T04:15:40+00:00"
     },
     {
+      "id": "8132159128c70bb6",
+      "published_at": "2026-10-28T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "アイリスプラザ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.irisohyama.co.jp/news/2026/?date=1029"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2610/30/2000002737/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/c988ef48a5615fd26243b1863401c5bc6f363935"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/117953"
+        }
+      ],
+      "affected_service": "アイリスオーヤマ公式通販サイト「アイリスプラザ」",
+      "service_aliases": [],
+      "added_at": "2026-10-30T01:13:09+00:00",
+      "updated_at": "2026-10-30T10:15:57+00:00"
+    },
+    {
       "id": "b34703c922a10ef8",
       "published_at": "2026-10-28T15:00:00+00:00",
       "disclosed_at": null,
@@ -969,39 +1100,6 @@
       "service_aliases": [],
       "added_at": "2026-10-29T10:15:51+00:00",
       "updated_at": "2026-10-29T20:56:59+00:00"
-    },
-    {
-      "id": "8132159128c70bb6",
-      "published_at": "2026-10-28T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "アイリスプラザ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.irisohyama.co.jp/news/2026/?date=1029"
-        },
-        {
-          "name": "ITmedia",
-          "url": "https://www.itmedia.co.jp/news/article/2610/30/2000002737/"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/c988ef48a5615fd26243b1863401c5bc6f363935"
-        }
-      ],
-      "affected_service": "アイリスオーヤマ公式通販サイト「アイリスプラザ」",
-      "service_aliases": [],
-      "added_at": "2026-10-30T01:13:09+00:00",
-      "updated_at": "2026-10-30T09:16:10+00:00"
     },
     {
       "id": "d109208bc96667b7",
@@ -2548,6 +2646,31 @@
       "updated_at": "2026-10-30T02:15:42+00:00"
     },
     {
+      "id": "1ab3d4097c2748bd",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": "2026-10-28T15:00:00+00:00",
+      "organization": "NTTスマイルエナジー",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "NTTグループ / NTT Group",
+          "url": "https://nttse.com/news/pressrelease/2026/10-30/3288/"
+        }
+      ],
+      "affected_service": "エコめがね",
+      "service_aliases": [],
+      "added_at": "2026-10-30T10:15:57+00:00",
+      "updated_at": "2026-10-30T10:15:57+00:00"
+    },
+    {
       "id": "2e6aed23a224e058",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": null,
@@ -2638,6 +2761,31 @@
       "service_aliases": [],
       "added_at": "2026-10-30T02:15:42+00:00",
       "updated_at": "2026-10-30T02:15:42+00:00"
+    },
+    {
+      "id": "9fa62f7bc43145a4",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": "2026-10-28T15:00:00+00:00",
+      "organization": "株式会社NTTスマイルエナジー",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "PR TIMES",
+          "url": "https://prtimes.jp/main/html/rd/p/000000141.000005498.html"
+        }
+      ],
+      "affected_service": "エコめがね",
+      "service_aliases": [],
+      "added_at": "2026-10-30T10:15:57+00:00",
+      "updated_at": "2026-10-30T10:15:57+00:00"
     },
     {
       "id": "a4c6a8cdac85f9f4",
@@ -2818,6 +2966,30 @@
       "updated_at": "2026-10-30T04:15:40+00:00"
     },
     {
+      "id": "24b890b61e3bb1e6",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "DHC",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/1f08db7ee3570602c23840f4d201c75669ffd1a0"
+        }
+      ],
+      "affected_service": "公式オンラインショップ",
+      "service_aliases": [],
+      "added_at": "2026-10-30T10:15:57+00:00",
+      "updated_at": "2026-10-30T10:15:57+00:00"
+    },
+    {
       "id": "397ff8cd4e4501d0",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": null,
@@ -2848,6 +3020,30 @@
       ],
       "added_at": "2026-10-28T11:16:00+00:00",
       "updated_at": "2026-10-28T11:16:00+00:00"
+    },
+    {
+      "id": "3f9647cdc55cfd86",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": "2026-10-29T15:00:00+00:00",
+      "organization": "DHC",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/68bfaa65203182b3d5b312c7e8d343021de2c92a"
+        }
+      ],
+      "affected_service": "オンラインショップ",
+      "service_aliases": [],
+      "added_at": "2026-10-30T10:15:57+00:00",
+      "updated_at": "2026-10-30T10:15:57+00:00"
     },
     {
       "id": "4c23f72a23a37172",
@@ -4151,6 +4347,31 @@
       "updated_at": "2026-10-27T19:09:26+00:00"
     },
     {
+      "id": "198ac537f252eb31",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": "2026-10-29T15:00:00+00:00",
+      "organization": "両備システムズ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/ryobi_aitel_778_unauthorized_access_20261030/"
+        }
+      ],
+      "affected_service": "健診予約システム「AITEL」",
+      "service_aliases": [],
+      "added_at": "2026-10-30T10:15:57+00:00",
+      "updated_at": "2026-10-30T10:15:57+00:00"
+    },
+    {
       "id": "397f1927d9801ddd",
       "published_at": "2026-10-26T15:00:00+00:00",
       "disclosed_at": null,
@@ -5180,6 +5401,14 @@
       "confidence_score": 60,
       "related": [
         {
+          "incident_id": "6060c1559cd87ea6",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf",
+          "evidence_urls": [
+            "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf"
+          ]
+        },
+        {
           "incident_id": "671c427eadb6fc63",
           "relationship": "affected_by",
           "evidence_url": "https://www.pref.saitama.lg.jp/f2207/news/page/news2026102801.html",
@@ -5197,7 +5426,7 @@
       "affected_service": "県立川越高等学校",
       "service_aliases": [],
       "added_at": "2026-10-28T23:15:49+00:00",
-      "updated_at": "2026-10-28T23:15:49+00:00"
+      "updated_at": "2026-10-30T10:15:57+00:00"
     },
     {
       "id": "697b58a7f0dc43fe",
@@ -7029,7 +7258,16 @@
       "potential_records": null,
       "confidence": "high",
       "confidence_score": 60,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "6060c1559cd87ea6",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf",
+          "evidence_urls": [
+            "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "埼玉県 / Saitama",
@@ -7037,7 +7275,7 @@
         }
       ],
       "added_at": "2026-10-23T23:15:25+00:00",
-      "updated_at": "2026-10-23T23:15:25+00:00"
+      "updated_at": "2026-10-30T10:15:57+00:00"
     },
     {
       "id": "746c3f0e41978e3b",
@@ -7189,6 +7427,14 @@
       "confidence_score": 60,
       "related": [
         {
+          "incident_id": "6060c1559cd87ea6",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf",
+          "evidence_urls": [
+            "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf"
+          ]
+        },
+        {
           "incident_id": "7e647fcc0bac0b06",
           "relationship": "affected_by",
           "evidence_url": "https://www.pref.saitama.lg.jp/b0617/nenrin-saitama2026/1022hodohappyo.html",
@@ -7204,7 +7450,7 @@
         }
       ],
       "added_at": "2026-10-23T03:15:49+00:00",
-      "updated_at": "2026-10-23T03:15:49+00:00"
+      "updated_at": "2026-10-30T10:15:57+00:00"
     },
     {
       "id": "aa9bc3fcfc85d71d",
@@ -9760,6 +10006,14 @@
       "confidence_score": 60,
       "related": [
         {
+          "incident_id": "6060c1559cd87ea6",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf",
+          "evidence_urls": [
+            "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf"
+          ]
+        },
+        {
           "incident_id": "7e647fcc0bac0b06",
           "relationship": "affected_by",
           "evidence_url": "https://www.pref.saitama.lg.jp/b0616/news/page/news2026102202.html",
@@ -9775,7 +10029,7 @@
         }
       ],
       "added_at": "2026-10-22T08:57:32+00:00",
-      "updated_at": "2026-10-22T08:57:32+00:00"
+      "updated_at": "2026-10-30T10:15:57+00:00"
     },
     {
       "id": "6fe3d3da0413d292",
@@ -10815,6 +11069,14 @@
           ]
         },
         {
+          "incident_id": "6060c1559cd87ea6",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf",
+          "evidence_urls": [
+            "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf"
+          ]
+        },
+        {
           "incident_id": "64b8133110825d41",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/f97a83c5f7279b9ef903a01ba5b6e8c04ddf6430",
@@ -11267,7 +11529,7 @@
         }
       ],
       "added_at": "2026-10-21T19:22:12+00:00",
-      "updated_at": "2026-10-30T02:15:42+00:00"
+      "updated_at": "2026-10-30T10:15:57+00:00"
     },
     {
       "id": "a2cf60a92a1ad65c",
@@ -14622,6 +14884,14 @@
           "evidence_urls": [
             "https://www.pref.saitama.lg.jp/a0903/news/page/news2026102001.html"
           ]
+        },
+        {
+          "incident_id": "6060c1559cd87ea6",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf",
+          "evidence_urls": [
+            "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf"
+          ]
         }
       ],
       "sources": [
@@ -14631,7 +14901,7 @@
         }
       ],
       "added_at": "2026-10-21T03:33:36+00:00",
-      "updated_at": "2026-10-21T03:33:36+00:00"
+      "updated_at": "2026-10-30T10:15:57+00:00"
     },
     {
       "id": "8d27708b585ad449",
@@ -17547,6 +17817,14 @@
           ]
         },
         {
+          "incident_id": "6060c1559cd87ea6",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf",
+          "evidence_urls": [
+            "https://www.pref.saitama.lg.jp/documents/289765/news2016103001.pdf"
+          ]
+        },
+        {
           "incident_id": "671c427eadb6fc63",
           "relationship": "affected_by",
           "evidence_url": "https://studio.design/ja/whats-new/unauthorized-access-2026-10",
@@ -17565,7 +17843,7 @@
       "affected_system": "さいたま緑の森博物館の申込・問い合わせフォーム",
       "date_basis": "discovery_notification",
       "added_at": "2026-10-20T07:24:24+00:00",
-      "updated_at": "2026-10-20T07:24:24+00:00"
+      "updated_at": "2026-10-30T10:15:57+00:00"
     },
     {
       "id": "0e85b6a78789d2b4",
