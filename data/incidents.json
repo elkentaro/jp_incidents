@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-30T02:15:42+00:00",
-  "total": 629,
+  "updated_at": "2026-10-30T03:15:54+00:00",
+  "total": 631,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-30"
@@ -365,10 +365,66 @@
     },
     {
       "date": "2026-10-30",
-      "count": 1
+      "count": 3
     }
   ],
   "incidents": [
+    {
+      "id": "3e1934d6b0454ad9",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東京電力ホールディングス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "東京電力ホールディングス / TEPCO",
+          "url": "https://www.tepco.co.jp/press/news/2026/pdf/261030j0101.pdf"
+        }
+      ],
+      "added_at": "2026-10-30T03:15:54+00:00",
+      "updated_at": "2026-10-30T03:15:54+00:00"
+    },
+    {
+      "id": "63501d67ec214e3e",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "JERA",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.jera.co.jp/news/notice/20261030_2567",
+          "evidence_urls": [
+            "https://www.jera.co.jp/news/notice/20261030_2567"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "JERA",
+          "url": "https://www.jera.co.jp/news/notice/20261030_2567"
+        }
+      ],
+      "affected_service": "JERAサンデイ",
+      "service_aliases": [],
+      "added_at": "2026-10-30T03:15:54+00:00",
+      "updated_at": "2026-10-30T03:15:54+00:00"
+    },
     {
       "id": "81ace1ca432c9aa9",
       "published_at": "2026-10-29T15:00:00+00:00",
@@ -674,6 +730,35 @@
       "updated_at": "2026-10-30T01:13:09+00:00"
     },
     {
+      "id": "8132159128c70bb6",
+      "published_at": "2026-10-28T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "アイリスプラザ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.irisohyama.co.jp/news/2026/?date=1029"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2610/30/2000002737/"
+        }
+      ],
+      "affected_service": "アイリスオーヤマ公式通販サイト「アイリスプラザ」",
+      "service_aliases": [],
+      "added_at": "2026-10-30T01:13:09+00:00",
+      "updated_at": "2026-10-30T03:15:54+00:00"
+    },
+    {
       "id": "c0695d18cd2d0c0a",
       "published_at": "2026-10-28T15:00:00+00:00",
       "disclosed_at": null,
@@ -809,31 +894,6 @@
       "service_aliases": [],
       "added_at": "2026-10-29T20:16:15+00:00",
       "updated_at": "2026-10-29T20:16:15+00:00"
-    },
-    {
-      "id": "8132159128c70bb6",
-      "published_at": "2026-10-28T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "アイリスプラザ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.irisohyama.co.jp/news/2026/?date=1029"
-        }
-      ],
-      "affected_service": "アイリスオーヤマ公式通販サイト「アイリスプラザ」",
-      "service_aliases": [],
-      "added_at": "2026-10-30T01:13:09+00:00",
-      "updated_at": "2026-10-30T01:13:09+00:00"
     },
     {
       "id": "862f0a5454308701",
@@ -1491,10 +1551,14 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/ce8b1608435f019aba49c82762de6e0a22a25760"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC300SA0Q6A031C2000000/"
         }
       ],
       "added_at": "2026-10-28T07:15:47+00:00",
-      "updated_at": "2026-10-30T01:13:09+00:00"
+      "updated_at": "2026-10-30T03:15:54+00:00"
     },
     {
       "id": "7f27b603ddf5083a",
@@ -1743,6 +1807,14 @@
           ]
         },
         {
+          "incident_id": "63501d67ec214e3e",
+          "relationship": "affects",
+          "evidence_url": "https://www.jera.co.jp/news/notice/20261030_2567",
+          "evidence_urls": [
+            "https://www.jera.co.jp/news/notice/20261030_2567"
+          ]
+        },
+        {
           "incident_id": "8ebd5d925ed1dcd6",
           "relationship": "affects",
           "evidence_url": "https://www.kagin.co.jp/important/emergency_20261029_3.html",
@@ -1786,7 +1858,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-10-30T02:15:42+00:00"
+      "updated_at": "2026-10-30T03:15:54+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -4472,12 +4544,16 @@
         {
           "name": "読売新聞",
           "url": "https://www.yomiuri.co.jp/national/20261029-GYT1T00411/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/117906"
         }
       ],
       "affected_service": "Cuenote FC",
       "service_aliases": [],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-10-29T20:56:59+00:00"
+      "updated_at": "2026-10-30T03:15:54+00:00"
     },
     {
       "id": "faa0f8805f4ba30d",
@@ -15491,6 +15567,10 @@
           "url": "https://www.so-net.ne.jp/info/2026/20261027_0001.html"
         },
         {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/30/56633.html"
+        },
+        {
           "name": "ケータイ Watch",
           "url": "https://k-tai.watch.impress.co.jp/docs/news/2151581.html"
         },
@@ -15516,7 +15596,7 @@
         }
       ],
       "added_at": "2026-10-27T19:09:26+00:00",
-      "updated_at": "2026-10-28T02:15:45+00:00"
+      "updated_at": "2026-10-30T03:15:54+00:00"
     },
     {
       "id": "e57d47bb72ea6543",
