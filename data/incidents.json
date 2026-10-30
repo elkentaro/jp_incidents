@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-30T22:15:37+00:00",
-  "total": 661,
+  "updated_at": "2026-10-30T23:03:16+00:00",
+  "total": 662,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-31"
@@ -365,10 +365,33 @@
     },
     {
       "date": "2026-10-31",
-      "count": 2
+      "count": 3
     }
   ],
   "incidents": [
+    {
+      "id": "498482a809a4a553",
+      "published_at": "2026-10-30T15:00:00+00:00",
+      "disclosed_at": "2026-10-30T15:00:00+00:00",
+      "organization": "近鉄グループホールディングス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 2678,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/5e97e631fb8dbb2522e294fe50e407adf15f0b8a"
+        }
+      ],
+      "added_at": "2026-10-30T23:03:16+00:00",
+      "updated_at": "2026-10-30T23:03:16+00:00"
+    },
     {
       "id": "747ff37bca4130bd",
       "published_at": "2026-10-30T15:00:00+00:00",
@@ -435,48 +458,6 @@
       "updated_at": "2026-10-30T21:53:42+00:00"
     },
     {
-      "id": "7df1aaca37664867",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "バイナンス",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 100,
-      "related": [],
-      "sources": [
-        {
-          "name": "CoinPost",
-          "url": "https://coinpost.jp/?p=745459"
-        },
-        {
-          "name": "産経ニュース",
-          "url": "https://www.sankei.com/article/20261030-3IKJCNTV25OK3DDFHASP5PXV5M/"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/2c8de535bdb9411ae8157427338c261730f56069"
-        },
-        {
-          "name": "Informat.ro",
-          "url": "https://informat.ro/ja/international-ja/binance-announces-cyberattack-causing-63-billion-in-losses-145960-ja"
-        },
-        {
-          "name": "産経ニュース",
-          "url": "https://www.sankei.com/article/20261030-R3IRKV23FRMFRIYBOGUXMRGSRE/"
-        },
-        {
-          "name": "TBS NEWS DIG",
-          "url": "https://newsdig.tbs.co.jp/articles/-/3051495?display=1"
-        }
-      ],
-      "added_at": "2026-10-30T06:16:03+00:00",
-      "updated_at": "2026-10-30T11:16:03+00:00"
-    },
-    {
       "id": "1ff227f049a0de08",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": "2026-10-29T15:00:00+00:00",
@@ -488,7 +469,7 @@
       ],
       "potential_records": 3600,
       "confidence": "high",
-      "confidence_score": 95,
+      "confidence_score": 100,
       "related": [],
       "sources": [
         {
@@ -549,7 +530,102 @@
         }
       ],
       "added_at": "2026-10-30T11:16:03+00:00",
-      "updated_at": "2026-10-30T21:53:42+00:00"
+      "updated_at": "2026-10-30T23:03:16+00:00"
+    },
+    {
+      "id": "63433d06e39c322e",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "日本交通",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 290000,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "3e1934d6b0454ad9",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/6db55f05be0d9faf3209ba361f49251d0e95a295",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/6db55f05be0d9faf3209ba361f49251d0e95a295",
+            "https://newsdig.tbs.co.jp/articles/-/3052635?display=1"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本交通 / Nihon Kotsu",
+          "url": "https://www.nihon-kotsu.co.jp/news/20261030-3479/"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3052635?display=1"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6db55f05be0d9faf3209ba361f49251d0e95a295"
+        },
+        {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp/15163536.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/c6301ef558c6548f8902c8519b9153c64f177aa1"
+        },
+        {
+          "name": "QAB 琉球朝日放送",
+          "url": "https://www.qab.co.jp/quebee/video/000544192/"
+        }
+      ],
+      "added_at": "2026-10-30T15:02:16+00:00",
+      "updated_at": "2026-10-30T23:03:16+00:00"
+    },
+    {
+      "id": "7df1aaca37664867",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "バイナンス",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [],
+      "sources": [
+        {
+          "name": "CoinPost",
+          "url": "https://coinpost.jp/?p=745459"
+        },
+        {
+          "name": "産経ニュース",
+          "url": "https://www.sankei.com/article/20261030-3IKJCNTV25OK3DDFHASP5PXV5M/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/2c8de535bdb9411ae8157427338c261730f56069"
+        },
+        {
+          "name": "Informat.ro",
+          "url": "https://informat.ro/ja/international-ja/binance-announces-cyberattack-causing-63-billion-in-losses-145960-ja"
+        },
+        {
+          "name": "産経ニュース",
+          "url": "https://www.sankei.com/article/20261030-R3IRKV23FRMFRIYBOGUXMRGSRE/"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3051495?display=1"
+        }
+      ],
+      "added_at": "2026-10-30T06:16:03+00:00",
+      "updated_at": "2026-10-30T11:16:03+00:00"
     },
     {
       "id": "69811a793a09d11f",
@@ -712,51 +788,6 @@
       "updated_at": "2026-10-30T22:15:37+00:00"
     },
     {
-      "id": "63433d06e39c322e",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "日本交通",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 290000,
-      "confidence": "high",
-      "confidence_score": 80,
-      "related": [
-        {
-          "incident_id": "3e1934d6b0454ad9",
-          "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/6db55f05be0d9faf3209ba361f49251d0e95a295",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/6db55f05be0d9faf3209ba361f49251d0e95a295",
-            "https://newsdig.tbs.co.jp/articles/-/3052635?display=1"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "TBS NEWS DIG",
-          "url": "https://newsdig.tbs.co.jp/articles/-/3052635?display=1"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/6db55f05be0d9faf3209ba361f49251d0e95a295"
-        },
-        {
-          "name": "47NEWS",
-          "url": "https://www.47news.jp/15163536.html"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/c6301ef558c6548f8902c8519b9153c64f177aa1"
-        }
-      ],
-      "added_at": "2026-10-30T15:02:16+00:00",
-      "updated_at": "2026-10-30T20:15:36+00:00"
-    },
-    {
       "id": "7b687057653f55b3",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": null,
@@ -792,6 +823,43 @@
       "service_aliases": [],
       "added_at": "2026-10-30T09:16:10+00:00",
       "updated_at": "2026-10-30T16:16:32+00:00"
+    },
+    {
+      "id": "3e1934d6b0454ad9",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東京電力ホールディングス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "63433d06e39c322e",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/6db55f05be0d9faf3209ba361f49251d0e95a295",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/6db55f05be0d9faf3209ba361f49251d0e95a295",
+            "https://newsdig.tbs.co.jp/articles/-/3052635?display=1"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "東京電力ホールディングス / TEPCO",
+          "url": "https://www.tepco.co.jp/press/news/2026/pdf/261030j0101.pdf"
+        },
+        {
+          "name": "QAB 琉球朝日放送",
+          "url": "https://www.qab.co.jp/quebee/video/000544192/"
+        }
+      ],
+      "added_at": "2026-10-30T03:15:54+00:00",
+      "updated_at": "2026-10-30T23:03:16+00:00"
     },
     {
       "id": "81ace1ca432c9aa9",
@@ -868,39 +936,6 @@
       "service_aliases": [],
       "added_at": "2026-10-30T21:53:42+00:00",
       "updated_at": "2026-10-30T21:53:42+00:00"
-    },
-    {
-      "id": "3e1934d6b0454ad9",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "東京電力ホールディングス",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "63433d06e39c322e",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/6db55f05be0d9faf3209ba361f49251d0e95a295",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/6db55f05be0d9faf3209ba361f49251d0e95a295",
-            "https://newsdig.tbs.co.jp/articles/-/3052635?display=1"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "東京電力ホールディングス / TEPCO",
-          "url": "https://www.tepco.co.jp/press/news/2026/pdf/261030j0101.pdf"
-        }
-      ],
-      "added_at": "2026-10-30T03:15:54+00:00",
-      "updated_at": "2026-10-30T15:02:16+00:00"
     },
     {
       "id": "6060c1559cd87ea6",
@@ -1043,6 +1078,10 @@
       "sources": [
         {
           "name": "沖縄県 / Okinawa",
+          "url": "https://www.pref.okinawa.jp/machizukuri/park/1041826.html"
+        },
+        {
+          "name": "沖縄県 / Okinawa",
           "url": "https://www.pref.okinawa.jp/shigoto/ringyo/1010912/1041813.html"
         }
       ],
@@ -1063,7 +1102,7 @@
         }
       ],
       "added_at": "2026-10-30T22:15:37+00:00",
-      "updated_at": "2026-10-30T22:15:37+00:00"
+      "updated_at": "2026-10-30T23:03:16+00:00"
     },
     {
       "id": "d596ddaea3a9b78e",
@@ -2934,6 +2973,42 @@
       "updated_at": "2026-10-30T01:13:09+00:00"
     },
     {
+      "id": "3f9647cdc55cfd86",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": "2026-10-29T15:00:00+00:00",
+      "organization": "DHC",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/68bfaa65203182b3d5b312c7e8d343021de2c92a"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b12ab260a1e66abbad67c2063ba9480a9711bed4"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3052434?display=1"
+        },
+        {
+          "name": "時事ドットコム",
+          "url": "https://www.jiji.com/jc/article?k=2026103000993&g=eco"
+        }
+      ],
+      "affected_service": "オンラインショップ",
+      "service_aliases": [],
+      "added_at": "2026-10-30T10:15:57+00:00",
+      "updated_at": "2026-10-30T23:03:16+00:00"
+    },
+    {
       "id": "44e7187878fd515f",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": "2026-10-27T15:00:00+00:00",
@@ -3029,38 +3104,6 @@
       "service_aliases": [],
       "added_at": "2026-10-28T12:16:05+00:00",
       "updated_at": "2026-10-28T18:16:27+00:00"
-    },
-    {
-      "id": "3f9647cdc55cfd86",
-      "published_at": "2026-10-27T15:00:00+00:00",
-      "disclosed_at": "2026-10-29T15:00:00+00:00",
-      "organization": "DHC",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/68bfaa65203182b3d5b312c7e8d343021de2c92a"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/b12ab260a1e66abbad67c2063ba9480a9711bed4"
-        },
-        {
-          "name": "TBS NEWS DIG",
-          "url": "https://newsdig.tbs.co.jp/articles/-/3052434?display=1"
-        }
-      ],
-      "affected_service": "オンラインショップ",
-      "service_aliases": [],
-      "added_at": "2026-10-30T10:15:57+00:00",
-      "updated_at": "2026-10-30T19:16:20+00:00"
     },
     {
       "id": "decf799bcee862b6",
@@ -7017,10 +7060,14 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/b07346bf49b6c94abceaf7e21c8da88cb767d5aa"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/9519ddc212aea53384a8743bce032048f15785c2"
         }
       ],
       "added_at": "2026-10-30T11:16:03+00:00",
-      "updated_at": "2026-10-30T15:15:26+00:00"
+      "updated_at": "2026-10-30T23:03:16+00:00"
     },
     {
       "id": "b46e3020e19d722d",
