@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-30T10:15:57+00:00",
-  "total": 647,
+  "updated_at": "2026-10-30T11:16:03+00:00",
+  "total": 657,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-30"
@@ -337,7 +337,7 @@
     },
     {
       "date": "2026-10-23",
-      "count": 65
+      "count": 67
     },
     {
       "date": "2026-10-24",
@@ -353,22 +353,64 @@
     },
     {
       "date": "2026-10-27",
-      "count": 34
+      "count": 35
     },
     {
       "date": "2026-10-28",
-      "count": 37
+      "count": 38
     },
     {
       "date": "2026-10-29",
-      "count": 21
+      "count": 22
     },
     {
       "date": "2026-10-30",
-      "count": 13
+      "count": 18
     }
   ],
   "incidents": [
+    {
+      "id": "7df1aaca37664867",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "バイナンス",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [],
+      "sources": [
+        {
+          "name": "CoinPost",
+          "url": "https://coinpost.jp/?p=745459"
+        },
+        {
+          "name": "産経ニュース",
+          "url": "https://www.sankei.com/article/20261030-3IKJCNTV25OK3DDFHASP5PXV5M/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/2c8de535bdb9411ae8157427338c261730f56069"
+        },
+        {
+          "name": "Informat.ro",
+          "url": "https://informat.ro/ja/international-ja/binance-announces-cyberattack-causing-63-billion-in-losses-145960-ja"
+        },
+        {
+          "name": "産経ニュース",
+          "url": "https://www.sankei.com/article/20261030-R3IRKV23FRMFRIYBOGUXMRGSRE/"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3051495?display=1"
+        }
+      ],
+      "added_at": "2026-10-30T06:16:03+00:00",
+      "updated_at": "2026-10-30T11:16:03+00:00"
+    },
     {
       "id": "69811a793a09d11f",
       "published_at": "2026-10-29T15:00:00+00:00",
@@ -415,40 +457,6 @@
       "updated_at": "2026-10-30T10:15:57+00:00"
     },
     {
-      "id": "7df1aaca37664867",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "バイナンス",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 95,
-      "related": [],
-      "sources": [
-        {
-          "name": "CoinPost",
-          "url": "https://coinpost.jp/?p=745459"
-        },
-        {
-          "name": "産経ニュース",
-          "url": "https://www.sankei.com/article/20261030-3IKJCNTV25OK3DDFHASP5PXV5M/"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/2c8de535bdb9411ae8157427338c261730f56069"
-        },
-        {
-          "name": "Informat.ro",
-          "url": "https://informat.ro/ja/international-ja/binance-announces-cyberattack-causing-63-billion-in-losses-145960-ja"
-        }
-      ],
-      "added_at": "2026-10-30T06:16:03+00:00",
-      "updated_at": "2026-10-30T09:16:10+00:00"
-    },
-    {
       "id": "81ace1ca432c9aa9",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": "2026-10-29T15:00:00+00:00",
@@ -485,6 +493,35 @@
       "service_aliases": [],
       "added_at": "2026-10-30T02:15:42+00:00",
       "updated_at": "2026-10-30T09:16:10+00:00"
+    },
+    {
+      "id": "7c84af49b4716f42",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "佐賀大学",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "ransomware"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261030de68360"
+        },
+        {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp/amp/article/kbc/region/kbc-18432148"
+        }
+      ],
+      "affected_service": "大学の事務情報システム",
+      "service_aliases": [],
+      "added_at": "2026-10-30T05:15:51+00:00",
+      "updated_at": "2026-10-30T11:16:03+00:00"
     },
     {
       "id": "84eb1336a89d7356",
@@ -669,10 +706,14 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/86ca2067ce200631d1dc8d7b3636ce95cb3e1cd5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/7af76fdc97d10f7ee75dec8b1ed009b3ee44693b"
         }
       ],
       "added_at": "2026-10-30T09:16:10+00:00",
-      "updated_at": "2026-10-30T09:16:10+00:00"
+      "updated_at": "2026-10-30T11:16:03+00:00"
     },
     {
       "id": "1eff65d7da989b18",
@@ -696,6 +737,52 @@
       ],
       "added_at": "2026-10-30T09:16:10+00:00",
       "updated_at": "2026-10-30T09:16:10+00:00"
+    },
+    {
+      "id": "1ff227f049a0de08",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": "2026-10-29T15:00:00+00:00",
+      "organization": "外務省",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 3600,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3051776?display=1"
+        }
+      ],
+      "added_at": "2026-10-30T11:16:03+00:00",
+      "updated_at": "2026-10-30T11:16:03+00:00"
+    },
+    {
+      "id": "2953260f7715fc59",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "外務省",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 3600,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/3871add838c388f16bdf8c00f9e0c4ad4516c692"
+        }
+      ],
+      "added_at": "2026-10-30T11:16:03+00:00",
+      "updated_at": "2026-10-30T11:16:03+00:00"
     },
     {
       "id": "7b687057653f55b3",
@@ -723,29 +810,84 @@
       "updated_at": "2026-10-30T09:16:10+00:00"
     },
     {
-      "id": "7c84af49b4716f42",
+      "id": "a1047c4800d8333b",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": null,
-      "organization": "佐賀大学",
+      "organization": "外務省",
       "incident_type": "data leak",
       "incident_categories": [
         "data leak",
-        "ransomware"
+        "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 3600,
       "confidence": "medium",
       "confidence_score": 50,
       "related": [],
       "sources": [
         {
-          "name": "NHKニュース",
-          "url": "https://news.web.nhk/newsweb/na/nd-20261030de68360"
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/national/20261030-GYT1T00232/"
         }
       ],
-      "affected_service": "大学の事務情報システム",
+      "added_at": "2026-10-30T11:16:03+00:00",
+      "updated_at": "2026-10-30T11:16:03+00:00"
+    },
+    {
+      "id": "d596ddaea3a9b78e",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "熊本市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1084,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "249f996eeac0e23c",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/7a85a93dde3aca573c7cbd8304dfd9c3d8bf3ebe",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/7a85a93dde3aca573c7cbd8304dfd9c3d8bf3ebe"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/7a85a93dde3aca573c7cbd8304dfd9c3d8bf3ebe"
+        }
+      ],
+      "affected_service": "AR式デジタルスタンプラリー",
       "service_aliases": [],
-      "added_at": "2026-10-30T05:15:51+00:00",
-      "updated_at": "2026-10-30T05:15:51+00:00"
+      "added_at": "2026-10-30T11:16:03+00:00",
+      "updated_at": "2026-10-30T11:16:03+00:00"
+    },
+    {
+      "id": "4abc615ec3fea0d6",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": "2026-10-29T15:00:00+00:00",
+      "organization": "外務省",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 3600,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "京都新聞デジタル",
+          "url": "https://www.kyoto-np.co.jp/articles/-/1817940"
+        }
+      ],
+      "added_at": "2026-10-30T11:16:03+00:00",
+      "updated_at": "2026-10-30T11:16:03+00:00"
     },
     {
       "id": "a9fd6c70338f6c75",
@@ -1472,6 +1614,33 @@
       "service_aliases": [],
       "added_at": "2026-10-29T02:16:03+00:00",
       "updated_at": "2026-10-29T02:16:03+00:00"
+    },
+    {
+      "id": "8cd5cffc22bc0c66",
+      "published_at": "2026-10-28T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "岩手県立大学",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 5300,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp/n/tvi/category/society/tvc48cbb78433843869ab361739a445521"
+        }
+      ],
+      "affected_service": "ANPIC",
+      "service_aliases": [
+        "アンピック"
+      ],
+      "added_at": "2026-10-30T11:16:03+00:00",
+      "updated_at": "2026-10-30T11:16:03+00:00"
     },
     {
       "id": "959f7535300d523e",
@@ -2671,6 +2840,40 @@
       "updated_at": "2026-10-30T10:15:57+00:00"
     },
     {
+      "id": "1d5248e7b99abd87",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "中央区",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 14,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.chuo.lg.jp/a0016/shigoto/koyouroudou/mensetsukai/shuuroukoyoushienhuseiakusesu.html",
+          "evidence_urls": [
+            "https://www.city.chuo.lg.jp/a0016/shigoto/koyouroudou/mensetsukai/shuuroukoyoushienhuseiakusesu.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "中央区 / Chuo",
+          "url": "https://www.city.chuo.lg.jp/a0016/shigoto/koyouroudou/mensetsukai/shuuroukoyoushienhuseiakusesu.html"
+        }
+      ],
+      "affected_service": "中央区おしごとWEB(お問い合わせフォーム)",
+      "service_aliases": [],
+      "added_at": "2026-10-30T11:16:03+00:00",
+      "updated_at": "2026-10-30T11:16:03+00:00"
+    },
+    {
       "id": "2e6aed23a224e058",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": null,
@@ -3806,6 +4009,22 @@
           "evidence_urls": [
             "https://www.pref.gifu.lg.jp/site/pressrelease/524450.html"
           ]
+        },
+        {
+          "incident_id": "d596ddaea3a9b78e",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/7a85a93dde3aca573c7cbd8304dfd9c3d8bf3ebe",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/7a85a93dde3aca573c7cbd8304dfd9c3d8bf3ebe"
+          ]
+        },
+        {
+          "incident_id": "e80bff11b2197b98",
+          "relationship": "affects",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/rkk/3051472?display=1",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/rkk/3051472?display=1"
+          ]
         }
       ],
       "sources": [
@@ -3819,7 +4038,7 @@
         }
       ],
       "added_at": "2026-10-27T21:16:27+00:00",
-      "updated_at": "2026-10-27T22:15:42+00:00"
+      "updated_at": "2026-10-30T11:16:03+00:00"
     },
     {
       "id": "de2476dc6e0af323",
@@ -4312,6 +4531,40 @@
       ],
       "added_at": "2026-10-27T19:09:26+00:00",
       "updated_at": "2026-10-27T19:09:26+00:00"
+    },
+    {
+      "id": "e80bff11b2197b98",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "熊本市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1084,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "249f996eeac0e23c",
+          "relationship": "affected_by",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/rkk/3051472?display=1",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/rkk/3051472?display=1"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/rkk/3051472?display=1"
+        }
+      ],
+      "affected_service": "AR式デジタルスタンプラリー",
+      "service_aliases": [],
+      "added_at": "2026-10-30T11:16:03+00:00",
+      "updated_at": "2026-10-30T11:16:03+00:00"
     },
     {
       "id": "edc85974e0fc21f3",
@@ -7246,6 +7499,38 @@
       "updated_at": "2026-10-30T02:15:42+00:00"
     },
     {
+      "id": "4f9469d8ac7f711b",
+      "published_at": "2026-10-22T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "KDDI",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "ff420be6e3ecc8ab",
+          "relationship": "affected_by",
+          "evidence_url": "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-82_4796/kddi_nr_s-82_4796_pdf_01.pdf",
+          "evidence_urls": [
+            "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-82_4796/kddi_nr_s-82_4796_pdf_01.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "KDDI",
+          "url": "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-82_4796/kddi_nr_s-82_4796_pdf_01.pdf"
+        }
+      ],
+      "added_at": "2026-10-30T11:16:03+00:00",
+      "updated_at": "2026-10-30T11:16:03+00:00"
+    },
+    {
       "id": "7449a36148e781ea",
       "published_at": "2026-10-22T15:00:00+00:00",
       "disclosed_at": null,
@@ -7762,6 +8047,37 @@
       ],
       "added_at": "2026-10-25T05:47:43+00:00",
       "updated_at": "2026-10-25T05:47:43+00:00"
+    },
+    {
+      "id": "ff420be6e3ecc8ab",
+      "published_at": "2026-10-22T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ライフネット生命保険",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "4f9469d8ac7f711b",
+          "relationship": "affects",
+          "evidence_url": "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-82_4796/kddi_nr_s-82_4796_pdf_01.pdf",
+          "evidence_urls": [
+            "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-82_4796/kddi_nr_s-82_4796_pdf_01.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "KDDI",
+          "url": "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-82_4796/kddi_nr_s-82_4796_pdf_01.pdf"
+        }
+      ],
+      "added_at": "2026-10-30T11:16:03+00:00",
+      "updated_at": "2026-10-30T11:16:03+00:00"
     },
     {
       "id": "03baf9fc73990c56",
@@ -17510,10 +17826,14 @@
         {
           "name": "産経ニュース",
           "url": "https://www.sankei.com/article/20261030-NZGFB72YRVNE5OTCS5VH4DPTY4/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/117952"
         }
       ],
       "added_at": "2026-10-30T01:13:09+00:00",
-      "updated_at": "2026-10-30T09:16:10+00:00"
+      "updated_at": "2026-10-30T11:16:03+00:00"
     },
     {
       "id": "7009e47e3afdc08b",
@@ -19162,6 +19482,14 @@
           ]
         },
         {
+          "incident_id": "1d5248e7b99abd87",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.chuo.lg.jp/a0016/shigoto/koyouroudou/mensetsukai/shuuroukoyoushienhuseiakusesu.html",
+          "evidence_urls": [
+            "https://www.city.chuo.lg.jp/a0016/shigoto/koyouroudou/mensetsukai/shuuroukoyoushienhuseiakusesu.html"
+          ]
+        },
+        {
           "incident_id": "2c7973528a7563ec",
           "relationship": "affects",
           "evidence_url": "https://cybersecurity-jp.com/news/117903",
@@ -19603,7 +19931,7 @@
       "affected_system": "Studio cloud environment",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T11:10:22+00:00",
-      "updated_at": "2026-10-30T02:15:42+00:00"
+      "updated_at": "2026-10-30T11:16:03+00:00"
     },
     {
       "id": "79d92ec417a38b35",
