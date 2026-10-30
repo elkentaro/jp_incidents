@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-30T04:15:40+00:00",
-  "total": 631,
+  "updated_at": "2026-10-30T05:15:51+00:00",
+  "total": 633,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-30"
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-10-30",
-      "count": 3
+      "count": 5
     }
   ],
   "incidents": [
@@ -458,6 +458,54 @@
       "service_aliases": [],
       "added_at": "2026-10-30T02:15:42+00:00",
       "updated_at": "2026-10-30T02:15:42+00:00"
+    },
+    {
+      "id": "7c84af49b4716f42",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "佐賀大学",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "ransomware"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261030de68360"
+        }
+      ],
+      "affected_service": "大学の事務情報システム",
+      "service_aliases": [],
+      "added_at": "2026-10-30T05:15:51+00:00",
+      "updated_at": "2026-10-30T05:15:51+00:00"
+    },
+    {
+      "id": "84eb1336a89d7356",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": "2026-10-29T15:00:00+00:00",
+      "organization": "佐賀大",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "ransomware"
+      ],
+      "potential_records": 80000,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "佐賀新聞",
+          "url": "https://www.saga-s.co.jp/articles/-/1820568"
+        }
+      ],
+      "added_at": "2026-10-30T05:15:51+00:00",
+      "updated_at": "2026-10-30T05:15:51+00:00"
     },
     {
       "id": "2639da70d5b68f2c",
@@ -1722,6 +1770,45 @@
       "updated_at": "2026-10-29T10:15:51+00:00"
     },
     {
+      "id": "c4ad7e975ccef6a7",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "松屋フーズホールディングス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261030561172.pdf"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261029de67623"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/37e41092677e1b08c7fc1e1153e91dd6b1e9dd1b"
+        },
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/national/20261029-GYT1T00411/"
+        },
+        {
+          "name": "ビジネス+IT",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBKVUszTk9fMFN5aWNYU2dEanRQa1ZCOW14WDVjeEZZUVdsNFlfNnJ0OXN0akZfVDZBSTdnUnVZRjhqX1JoWVU3OFlkQzlmWGJ0U2Y0?oc=5"
+        }
+      ],
+      "added_at": "2026-10-29T08:15:57+00:00",
+      "updated_at": "2026-10-30T05:15:51+00:00"
+    },
+    {
       "id": "d54f4e82616816d3",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": "2026-10-27T15:00:00+00:00",
@@ -1914,40 +2001,6 @@
       "service_aliases": [],
       "added_at": "2026-10-28T07:15:47+00:00",
       "updated_at": "2026-10-29T06:16:15+00:00"
-    },
-    {
-      "id": "c4ad7e975ccef6a7",
-      "published_at": "2026-10-27T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "松屋フーズホールディングス",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 95,
-      "related": [],
-      "sources": [
-        {
-          "name": "NHKニュース",
-          "url": "https://news.web.nhk/newsweb/na/nd-20261029de67623"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/37e41092677e1b08c7fc1e1153e91dd6b1e9dd1b"
-        },
-        {
-          "name": "読売新聞",
-          "url": "https://www.yomiuri.co.jp/national/20261029-GYT1T00411/"
-        },
-        {
-          "name": "ビジネス+IT",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBKVUszTk9fMFN5aWNYU2dEanRQa1ZCOW14WDVjeEZZUVdsNFlfNnJ0OXN0akZfVDZBSTdnUnVZRjhqX1JoWVU3OFlkQzlmWGJ0U2Y0?oc=5"
-        }
-      ],
-      "added_at": "2026-10-29T08:15:57+00:00",
-      "updated_at": "2026-10-30T00:18:40+00:00"
     },
     {
       "id": "d9329d858045f5f7",
@@ -16928,6 +16981,33 @@
       "updated_at": "2026-10-28T07:15:47+00:00"
     },
     {
+      "id": "044369c0a0df5877",
+      "published_at": "2026-10-16T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ティンパンアレイ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1200000,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261030560364.pdf"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/fb7a50c95432d1762b201df21eb9f3eb15a3cb1b"
+        }
+      ],
+      "added_at": "2026-10-30T01:13:09+00:00",
+      "updated_at": "2026-10-30T05:15:51+00:00"
+    },
+    {
       "id": "4468d7a7262d01e6",
       "published_at": "2026-10-16T15:00:00+00:00",
       "disclosed_at": null,
@@ -16952,29 +17032,6 @@
       ],
       "added_at": "2026-10-19T22:05:10+00:00",
       "updated_at": "2026-10-26T00:08:36+00:00"
-    },
-    {
-      "id": "044369c0a0df5877",
-      "published_at": "2026-10-16T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ティンパンアレイ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 1200000,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [],
-      "sources": [
-        {
-          "name": "日本取引所グループ TDnet / JPX TDnet",
-          "url": "https://www.release.tdnet.info/inbs/140120261030560364.pdf"
-        }
-      ],
-      "added_at": "2026-10-30T01:13:09+00:00",
-      "updated_at": "2026-10-30T01:13:09+00:00"
     },
     {
       "id": "2bd09dcb30dc5388",
@@ -21090,9 +21147,10 @@
         {
           "incident_id": "0a08a3f6bcd30b82",
           "relationship": "affected_by",
-          "evidence_url": "https://www.townnews.co.jp/0101/2026/10/28/859307.html",
+          "evidence_url": "https://www.townnews.co.jp/0116/2026/10/29/859339.html",
           "evidence_urls": [
-            "https://www.townnews.co.jp/0101/2026/10/28/859307.html"
+            "https://www.townnews.co.jp/0101/2026/10/28/859307.html",
+            "https://www.townnews.co.jp/0116/2026/10/29/859339.html"
           ]
         }
       ],
@@ -21104,12 +21162,16 @@
         {
           "name": "タウンニュース",
           "url": "https://www.townnews.co.jp/0113/2026/10/29/859232.html"
+        },
+        {
+          "name": "タウンニュース",
+          "url": "https://www.townnews.co.jp/0116/2026/10/29/859339.html"
         }
       ],
       "affected_service": "緊急情報伝達システム",
       "service_aliases": [],
       "added_at": "2026-10-27T19:09:26+00:00",
-      "updated_at": "2026-10-28T18:16:27+00:00"
+      "updated_at": "2026-10-30T05:15:51+00:00"
     },
     {
       "id": "7d6722ce071d7a66",
@@ -21594,9 +21656,10 @@
         {
           "incident_id": "6f9033b1fa6e68f8",
           "relationship": "affects",
-          "evidence_url": "https://www.townnews.co.jp/0101/2026/10/28/859307.html",
+          "evidence_url": "https://www.townnews.co.jp/0116/2026/10/29/859339.html",
           "evidence_urls": [
-            "https://www.townnews.co.jp/0101/2026/10/28/859307.html"
+            "https://www.townnews.co.jp/0101/2026/10/28/859307.html",
+            "https://www.townnews.co.jp/0116/2026/10/29/859339.html"
           ]
         },
         {
@@ -21949,7 +22012,7 @@
       "affected_service": "SpeeCAN RAIDEN",
       "service_aliases": [],
       "added_at": "2026-10-19T08:49:15+00:00",
-      "updated_at": "2026-10-30T00:18:40+00:00"
+      "updated_at": "2026-10-30T05:15:51+00:00"
     },
     {
       "id": "0ede24c087f14aff",
