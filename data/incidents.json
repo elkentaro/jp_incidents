@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-31T05:15:23+00:00",
+  "updated_at": "2026-10-31T07:15:43+00:00",
   "total": 671,
   "date_range": {
     "start": "2026-07-09",
@@ -562,6 +562,51 @@
       "updated_at": "2026-10-31T01:15:24+00:00"
     },
     {
+      "id": "3e1934d6b0454ad9",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東京電力ホールディングス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "63433d06e39c322e",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/6db55f05be0d9faf3209ba361f49251d0e95a295",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/6db55f05be0d9faf3209ba361f49251d0e95a295",
+            "https://newsdig.tbs.co.jp/articles/-/3052635?display=1"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "東京電力ホールディングス / TEPCO",
+          "url": "https://www.tepco.co.jp/press/news/2026/pdf/261030j0101.pdf"
+        },
+        {
+          "name": "QAB 琉球朝日放送",
+          "url": "https://www.qab.co.jp/quebee/video/000544192/"
+        },
+        {
+          "name": "HOME広島ホームテレビ",
+          "url": "https://www.home-tv.co.jp/news/content/?news_id=000544192"
+        },
+        {
+          "name": "BigGo ファイナンス",
+          "url": "https://finance.biggo.jp/news/aea3585e-34d5-4d79-ab06-d5e5113bd390"
+        }
+      ],
+      "added_at": "2026-10-30T03:15:54+00:00",
+      "updated_at": "2026-10-31T07:15:43+00:00"
+    },
+    {
       "id": "63433d06e39c322e",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": null,
@@ -788,47 +833,6 @@
       "service_aliases": [],
       "added_at": "2026-10-30T05:15:51+00:00",
       "updated_at": "2026-10-30T21:16:25+00:00"
-    },
-    {
-      "id": "3e1934d6b0454ad9",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "東京電力ホールディングス",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [
-        {
-          "incident_id": "63433d06e39c322e",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/6db55f05be0d9faf3209ba361f49251d0e95a295",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/6db55f05be0d9faf3209ba361f49251d0e95a295",
-            "https://newsdig.tbs.co.jp/articles/-/3052635?display=1"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "東京電力ホールディングス / TEPCO",
-          "url": "https://www.tepco.co.jp/press/news/2026/pdf/261030j0101.pdf"
-        },
-        {
-          "name": "QAB 琉球朝日放送",
-          "url": "https://www.qab.co.jp/quebee/video/000544192/"
-        },
-        {
-          "name": "HOME広島ホームテレビ",
-          "url": "https://www.home-tv.co.jp/news/content/?news_id=000544192"
-        }
-      ],
-      "added_at": "2026-10-30T03:15:54+00:00",
-      "updated_at": "2026-10-31T04:15:30+00:00"
     },
     {
       "id": "1eff65d7da989b18",
