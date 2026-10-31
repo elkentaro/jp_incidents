@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-31T03:15:15+00:00",
-  "total": 669,
+  "updated_at": "2026-10-31T04:15:30+00:00",
+  "total": 670,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-31"
@@ -365,10 +365,35 @@
     },
     {
       "date": "2026-10-31",
-      "count": 3
+      "count": 4
     }
   ],
   "incidents": [
+    {
+      "id": "29879c71c8cc2650",
+      "published_at": "2026-10-30T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "NTTデータ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "NTTデータ / NTT DATA",
+          "url": "https://www.nttdata.com/global/ja/news/release/2026/103101/"
+        }
+      ],
+      "affected_service": "STdirectServices",
+      "service_aliases": [],
+      "added_at": "2026-10-31T04:15:30+00:00",
+      "updated_at": "2026-10-31T04:15:30+00:00"
+    },
     {
       "id": "498482a809a4a553",
       "published_at": "2026-10-30T15:00:00+00:00",
@@ -675,6 +700,51 @@
       "updated_at": "2026-10-31T00:15:53+00:00"
     },
     {
+      "id": "7b687057653f55b3",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "良品計画",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 27260000,
+      "confidence": "high",
+      "confidence_score": 95,
+      "related": [],
+      "sources": [
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261030de68460"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3051519?display=1"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b12ab260a1e66abbad67c2063ba9480a9711bed4"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/d6e6078b7991546214f304f683e1e53f8a560d6b"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6c8f1f149b859897346d217362105c8a3a95dd3c"
+        },
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/economy/20261030-GYT1T00205/"
+        }
+      ],
+      "affected_service": "公式アプリ",
+      "service_aliases": [],
+      "added_at": "2026-10-30T09:16:10+00:00",
+      "updated_at": "2026-10-31T04:15:30+00:00"
+    },
+    {
       "id": "7c84af49b4716f42",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": null,
@@ -720,6 +790,47 @@
       "updated_at": "2026-10-30T21:16:25+00:00"
     },
     {
+      "id": "3e1934d6b0454ad9",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東京電力ホールディングス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "63433d06e39c322e",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/6db55f05be0d9faf3209ba361f49251d0e95a295",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/6db55f05be0d9faf3209ba361f49251d0e95a295",
+            "https://newsdig.tbs.co.jp/articles/-/3052635?display=1"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "東京電力ホールディングス / TEPCO",
+          "url": "https://www.tepco.co.jp/press/news/2026/pdf/261030j0101.pdf"
+        },
+        {
+          "name": "QAB 琉球朝日放送",
+          "url": "https://www.qab.co.jp/quebee/video/000544192/"
+        },
+        {
+          "name": "HOME広島ホームテレビ",
+          "url": "https://www.home-tv.co.jp/news/content/?news_id=000544192"
+        }
+      ],
+      "added_at": "2026-10-30T03:15:54+00:00",
+      "updated_at": "2026-10-31T04:15:30+00:00"
+    },
+    {
       "id": "1eff65d7da989b18",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": null,
@@ -753,84 +864,6 @@
       ],
       "added_at": "2026-10-30T09:16:10+00:00",
       "updated_at": "2026-10-30T22:15:37+00:00"
-    },
-    {
-      "id": "7b687057653f55b3",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "良品計画",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 27260000,
-      "confidence": "high",
-      "confidence_score": 80,
-      "related": [],
-      "sources": [
-        {
-          "name": "NHKニュース",
-          "url": "https://news.web.nhk/newsweb/na/nd-20261030de68460"
-        },
-        {
-          "name": "TBS NEWS DIG",
-          "url": "https://newsdig.tbs.co.jp/articles/-/3051519?display=1"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/b12ab260a1e66abbad67c2063ba9480a9711bed4"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/d6e6078b7991546214f304f683e1e53f8a560d6b"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/6c8f1f149b859897346d217362105c8a3a95dd3c"
-        }
-      ],
-      "affected_service": "公式アプリ",
-      "service_aliases": [],
-      "added_at": "2026-10-30T09:16:10+00:00",
-      "updated_at": "2026-10-31T03:15:15+00:00"
-    },
-    {
-      "id": "3e1934d6b0454ad9",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "東京電力ホールディングス",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [
-        {
-          "incident_id": "63433d06e39c322e",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/6db55f05be0d9faf3209ba361f49251d0e95a295",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/6db55f05be0d9faf3209ba361f49251d0e95a295",
-            "https://newsdig.tbs.co.jp/articles/-/3052635?display=1"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "東京電力ホールディングス / TEPCO",
-          "url": "https://www.tepco.co.jp/press/news/2026/pdf/261030j0101.pdf"
-        },
-        {
-          "name": "QAB 琉球朝日放送",
-          "url": "https://www.qab.co.jp/quebee/video/000544192/"
-        }
-      ],
-      "added_at": "2026-10-30T03:15:54+00:00",
-      "updated_at": "2026-10-30T23:03:16+00:00"
     },
     {
       "id": "81ace1ca432c9aa9",
@@ -3056,12 +3089,16 @@
         {
           "name": "時事ドットコム",
           "url": "https://www.jiji.com/jc/article?k=2026103000993&g=eco"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/cc1a89debf27cf4190c736a1cb7e7fd73d5ce0e1"
         }
       ],
       "affected_service": "オンラインショップ",
       "service_aliases": [],
       "added_at": "2026-10-30T10:15:57+00:00",
-      "updated_at": "2026-10-30T23:03:16+00:00"
+      "updated_at": "2026-10-31T04:15:30+00:00"
     },
     {
       "id": "44e7187878fd515f",
@@ -3648,12 +3685,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/1f08db7ee3570602c23840f4d201c75669ffd1a0"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/cc1a89debf27cf4190c736a1cb7e7fd73d5ce0e1"
         }
       ],
       "affected_service": "公式オンラインショップ",
       "service_aliases": [],
       "added_at": "2026-10-30T10:15:57+00:00",
-      "updated_at": "2026-10-30T15:02:16+00:00"
+      "updated_at": "2026-10-31T04:15:30+00:00"
     },
     {
       "id": "397ff8cd4e4501d0",
@@ -7487,6 +7528,45 @@
       "updated_at": "2026-10-26T00:08:36+00:00"
     },
     {
+      "id": "ff420be6e3ecc8ab",
+      "published_at": "2026-10-22T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ライフネット生命保険",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "4f9469d8ac7f711b",
+          "relationship": "affects",
+          "evidence_url": "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-82_4796/kddi_nr_s-82_4796_pdf_01.pdf",
+          "evidence_urls": [
+            "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-82_4796/kddi_nr_s-82_4796_pdf_01.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "KDDI",
+          "url": "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-82_4796/kddi_nr_s-82_4796_pdf_01.pdf"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b07346bf49b6c94abceaf7e21c8da88cb767d5aa"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/117974"
+        }
+      ],
+      "added_at": "2026-10-30T11:16:03+00:00",
+      "updated_at": "2026-10-31T04:15:30+00:00"
+    },
+    {
       "id": "460925589cd58fb7",
       "published_at": "2026-10-22T15:00:00+00:00",
       "disclosed_at": null,
@@ -7862,41 +7942,6 @@
       "service_aliases": [],
       "added_at": "2026-10-25T01:15:29+00:00",
       "updated_at": "2026-10-28T01:15:55+00:00"
-    },
-    {
-      "id": "ff420be6e3ecc8ab",
-      "published_at": "2026-10-22T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ライフネット生命保険",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [
-        {
-          "incident_id": "4f9469d8ac7f711b",
-          "relationship": "affects",
-          "evidence_url": "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-82_4796/kddi_nr_s-82_4796_pdf_01.pdf",
-          "evidence_urls": [
-            "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-82_4796/kddi_nr_s-82_4796_pdf_01.pdf"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "KDDI",
-          "url": "https://newsroom.kddi.com/news/assets/2026/kddi_nr_s-82_4796/kddi_nr_s-82_4796_pdf_01.pdf"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/b07346bf49b6c94abceaf7e21c8da88cb767d5aa"
-        }
-      ],
-      "added_at": "2026-10-30T11:16:03+00:00",
-      "updated_at": "2026-10-30T15:15:26+00:00"
     },
     {
       "id": "6631ba0260ce793e",
