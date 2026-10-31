@@ -1,16 +1,12 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-31T14:15:53+00:00",
+  "updated_at": "2026-10-31T15:15:53+00:00",
   "total": 673,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-31"
   },
   "daily_counts_90d": [
-    {
-      "date": "2026-08-03",
-      "count": 0
-    },
     {
       "date": "2026-08-04",
       "count": 0
@@ -366,9 +362,52 @@
     {
       "date": "2026-10-31",
       "count": 6
+    },
+    {
+      "date": "2026-11-01",
+      "count": 0
     }
   ],
   "incidents": [
+    {
+      "id": "09ba28525670dac9",
+      "published_at": "2026-10-30T15:00:00+00:00",
+      "disclosed_at": "2026-10-30T15:00:00+00:00",
+      "organization": "クラブツーリズム",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 4320000,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/5c72c695d75207177fe1a63bf549c1c8577a9108"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/0fae2ee960e930bb179ea3e1003e4dd8f155646b"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/1898782d086563c01d62d9ef4b0162fc738e6ba6"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3053523?display=1"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVB04F36VB0UTIL00XM.html"
+        }
+      ],
+      "added_at": "2026-10-31T14:15:53+00:00",
+      "updated_at": "2026-10-31T15:15:53+00:00"
+    },
     {
       "id": "498482a809a4a553",
       "published_at": "2026-10-30T15:00:00+00:00",
@@ -381,7 +420,7 @@
       ],
       "potential_records": 2678,
       "confidence": "high",
-      "confidence_score": 65,
+      "confidence_score": 80,
       "related": [
         {
           "incident_id": "29879c71c8cc2650",
@@ -404,10 +443,14 @@
         {
           "name": "NHKニュース",
           "url": "https://news.web.nhk/newsweb/na/nd-20261031de68967"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/361642338838d20de07b2b03215187339704200e"
         }
       ],
       "added_at": "2026-10-30T23:03:16+00:00",
-      "updated_at": "2026-10-31T12:09:49+00:00"
+      "updated_at": "2026-10-31T15:15:53+00:00"
     },
     {
       "id": "29879c71c8cc2650",
@@ -483,29 +526,6 @@
       "service_aliases": [],
       "added_at": "2026-10-31T13:16:25+00:00",
       "updated_at": "2026-10-31T13:16:25+00:00"
-    },
-    {
-      "id": "09ba28525670dac9",
-      "published_at": "2026-10-30T15:00:00+00:00",
-      "disclosed_at": "2026-10-30T15:00:00+00:00",
-      "organization": "クラブツーリズム",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 4320000,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/5c72c695d75207177fe1a63bf549c1c8577a9108"
-        }
-      ],
-      "added_at": "2026-10-31T14:15:53+00:00",
-      "updated_at": "2026-10-31T14:15:53+00:00"
     },
     {
       "id": "747ff37bca4130bd",
@@ -1355,12 +1375,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/7a85a93dde3aca573c7cbd8304dfd9c3d8bf3ebe"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/d132ea720be20f6b86d991f381b36e8799b14dae"
         }
       ],
       "affected_service": "AR式デジタルスタンプラリー",
       "service_aliases": [],
       "added_at": "2026-10-30T11:16:03+00:00",
-      "updated_at": "2026-10-30T11:16:03+00:00"
+      "updated_at": "2026-10-31T15:15:53+00:00"
     },
     {
       "id": "ffa02bc513933f27",
@@ -14957,6 +14981,10 @@
           "url": "https://internet.gmo/news/article/262/"
         },
         {
+          "name": "GMOインターネットグループ株式会社",
+          "url": "https://group.gmo/info/alert/2026102704/"
+        },
+        {
           "name": "INTERNET Watch",
           "url": "https://internet.watch.impress.co.jp/docs/news/2149829.html"
         },
@@ -14976,7 +15004,7 @@
       "affected_service": "お名前.com デスクトップクラウド",
       "service_aliases": [],
       "added_at": "2026-10-21T00:23:43+00:00",
-      "updated_at": "2026-10-29T20:16:15+00:00"
+      "updated_at": "2026-10-31T15:15:53+00:00"
     },
     {
       "id": "38d621781f18e6c4",
