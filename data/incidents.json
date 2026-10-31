@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-31T12:09:49+00:00",
-  "total": 671,
+  "updated_at": "2026-10-31T13:16:25+00:00",
+  "total": 672,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-31"
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-10-31",
-      "count": 4
+      "count": 5
     }
   ],
   "incidents": [
@@ -430,6 +430,14 @@
           "evidence_urls": [
             "https://news.yahoo.co.jp/articles/5e97e631fb8dbb2522e294fe50e407adf15f0b8a"
           ]
+        },
+        {
+          "incident_id": "c4ae42924805f3fd",
+          "relationship": "affects",
+          "evidence_url": "https://www.westjr.co.jp/press/article/2026/10/31/page_31177.html",
+          "evidence_urls": [
+            "https://www.westjr.co.jp/press/article/2026/10/31/page_31177.html"
+          ]
         }
       ],
       "sources": [
@@ -441,7 +449,40 @@
       "affected_service": "STdirectServices",
       "service_aliases": [],
       "added_at": "2026-10-31T04:15:30+00:00",
-      "updated_at": "2026-10-31T12:09:49+00:00"
+      "updated_at": "2026-10-31T13:16:25+00:00"
+    },
+    {
+      "id": "c4ae42924805f3fd",
+      "published_at": "2026-10-30T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "西日本旅客鉄道株式会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "29879c71c8cc2650",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.westjr.co.jp/press/article/2026/10/31/page_31177.html",
+          "evidence_urls": [
+            "https://www.westjr.co.jp/press/article/2026/10/31/page_31177.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "JR西日本 / JR West",
+          "url": "https://www.westjr.co.jp/press/article/2026/10/31/page_31177.html"
+        }
+      ],
+      "affected_service": "投資家様情報",
+      "service_aliases": [],
+      "added_at": "2026-10-31T13:16:25+00:00",
+      "updated_at": "2026-10-31T13:16:25+00:00"
     },
     {
       "id": "747ff37bca4130bd",
