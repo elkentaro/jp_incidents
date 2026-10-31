@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-31T20:15:52+00:00",
-  "total": 674,
+  "updated_at": "2026-10-31T20:30:43+00:00",
+  "total": 675,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-10-31"
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-10-31",
-      "count": 6
+      "count": 7
     },
     {
       "date": "2026-11-01",
@@ -479,6 +479,14 @@
           ]
         },
         {
+          "incident_id": "62e7efc40d4f6d44",
+          "relationship": "affects",
+          "evidence_url": "https://www.rakuten-sec.co.jp/web/info/info20261031-01.html",
+          "evidence_urls": [
+            "https://www.rakuten-sec.co.jp/web/info/info20261031-01.html"
+          ]
+        },
+        {
           "incident_id": "c4ae42924805f3fd",
           "relationship": "affects",
           "evidence_url": "https://www.westjr.co.jp/press/article/2026/10/31/page_31177.html",
@@ -496,7 +504,41 @@
       "affected_service": "STdirectServices",
       "service_aliases": [],
       "added_at": "2026-10-31T04:15:30+00:00",
-      "updated_at": "2026-10-31T13:16:25+00:00"
+      "updated_at": "2026-10-31T20:30:43+00:00"
+    },
+    {
+      "id": "62e7efc40d4f6d44",
+      "published_at": "2026-10-30T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "楽天証券",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "29879c71c8cc2650",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.rakuten-sec.co.jp/web/info/info20261031-01.html",
+          "evidence_urls": [
+            "https://www.rakuten-sec.co.jp/web/info/info20261031-01.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "楽天証券",
+          "url": "https://www.rakuten-sec.co.jp/web/info/info20261031-01.html"
+        }
+      ],
+      "affected_service": "デジタル特典付き社債",
+      "service_aliases": [],
+      "added_at": "2026-10-31T20:30:43+00:00",
+      "updated_at": "2026-10-31T20:30:43+00:00"
     },
     {
       "id": "c4ae42924805f3fd",
@@ -20978,8 +21020,10 @@
           "url": "https://news.yahoo.co.jp/articles/73dc731ec92903f1b4e72b972150d24c13e2698b"
         }
       ],
+      "affected_service": "MR君",
+      "service_aliases": [],
       "added_at": "2026-10-19T08:49:15+00:00",
-      "updated_at": "2026-10-28T01:15:55+00:00"
+      "updated_at": "2026-10-31T20:30:43+00:00"
     },
     {
       "id": "cbdf6f7224141cb8",
