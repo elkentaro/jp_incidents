@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-30T23:03:16+00:00",
-  "total": 662,
+  "updated_at": "2026-10-31T00:15:53+00:00",
+  "total": 664,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-31"
@@ -349,7 +349,7 @@
     },
     {
       "date": "2026-10-27",
-      "count": 35
+      "count": 36
     },
     {
       "date": "2026-10-28",
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-10-30",
-      "count": 19
+      "count": 20
     },
     {
       "date": "2026-10-31",
@@ -628,6 +628,49 @@
       "updated_at": "2026-10-30T11:16:03+00:00"
     },
     {
+      "id": "84eb1336a89d7356",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": "2026-10-29T15:00:00+00:00",
+      "organization": "佐賀大",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "ransomware"
+      ],
+      "potential_records": 80000,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [],
+      "sources": [
+        {
+          "name": "佐賀新聞",
+          "url": "https://www.saga-s.co.jp/articles/-/1820568"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/c2f011758ce3afe5c65a44faa78cab55d80df65d"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVBZ3PM1VBZTTHB006M.html"
+        },
+        {
+          "name": "西日本新聞me",
+          "url": "https://www.nishinippon.co.jp/item/1555270/"
+        },
+        {
+          "name": "テレ朝NEWS",
+          "url": "https://news.tv-asahi.co.jp/news_economy/articles/000544272.html"
+        },
+        {
+          "name": "佐賀新聞",
+          "url": "https://www.saga-s.co.jp/articles/-/1821097"
+        }
+      ],
+      "added_at": "2026-10-30T05:15:51+00:00",
+      "updated_at": "2026-10-31T00:15:53+00:00"
+    },
+    {
       "id": "69811a793a09d11f",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": null,
@@ -716,41 +759,6 @@
       "service_aliases": [],
       "added_at": "2026-10-30T05:15:51+00:00",
       "updated_at": "2026-10-30T21:16:25+00:00"
-    },
-    {
-      "id": "84eb1336a89d7356",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": "2026-10-29T15:00:00+00:00",
-      "organization": "佐賀大",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "ransomware"
-      ],
-      "potential_records": 80000,
-      "confidence": "high",
-      "confidence_score": 95,
-      "related": [],
-      "sources": [
-        {
-          "name": "佐賀新聞",
-          "url": "https://www.saga-s.co.jp/articles/-/1820568"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/c2f011758ce3afe5c65a44faa78cab55d80df65d"
-        },
-        {
-          "name": "朝日新聞",
-          "url": "https://www.asahi.com/articles/ASVBZ3PM1VBZTTHB006M.html"
-        },
-        {
-          "name": "西日本新聞me",
-          "url": "https://www.nishinippon.co.jp/item/1555270/"
-        }
-      ],
-      "added_at": "2026-10-30T05:15:51+00:00",
-      "updated_at": "2026-10-30T16:16:32+00:00"
     },
     {
       "id": "1eff65d7da989b18",
@@ -1103,6 +1111,40 @@
       ],
       "added_at": "2026-10-30T22:15:37+00:00",
       "updated_at": "2026-10-30T23:03:16+00:00"
+    },
+    {
+      "id": "ae1529561ab00842",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "沖縄県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 8152,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.okinawa.jp/bunkakoryu/sport/1009786/1041818.html",
+          "evidence_urls": [
+            "https://www.pref.okinawa.jp/bunkakoryu/sport/1009786/1041818.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "沖縄県 / Okinawa",
+          "url": "https://www.pref.okinawa.jp/bunkakoryu/sport/1009786/1041818.html"
+        }
+      ],
+      "affected_service": "令和7年度戦略的 MICE 誘致促進事業委託業務",
+      "service_aliases": [],
+      "added_at": "2026-10-31T00:15:53+00:00",
+      "updated_at": "2026-10-31T00:15:53+00:00"
     },
     {
       "id": "d596ddaea3a9b78e",
@@ -3523,6 +3565,14 @@
           ]
         },
         {
+          "incident_id": "32a2533c752be7d3",
+          "relationship": "affects",
+          "evidence_url": "https://www.traicy.com/posts/20261027386024/",
+          "evidence_urls": [
+            "https://www.traicy.com/posts/20261027386024/"
+          ]
+        },
+        {
           "incident_id": "3e7fccadd50bfba0",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/5b2d712fc43b2136c85bad4ec97c9b4309b1fa11",
@@ -3562,7 +3612,7 @@
         }
       ],
       "added_at": "2026-10-28T13:16:27+00:00",
-      "updated_at": "2026-10-30T04:15:40+00:00"
+      "updated_at": "2026-10-31T00:15:53+00:00"
     },
     {
       "id": "24b890b61e3bb1e6",
@@ -4999,6 +5049,38 @@
       "service_aliases": [],
       "added_at": "2026-10-30T10:15:57+00:00",
       "updated_at": "2026-10-30T10:15:57+00:00"
+    },
+    {
+      "id": "32a2533c752be7d3",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大韓航空",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "0cd8a1c184390c84",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.traicy.com/posts/20261027386024/",
+          "evidence_urls": [
+            "https://www.traicy.com/posts/20261027386024/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "TRAICY（トライシー）",
+          "url": "https://www.traicy.com/posts/20261027386024/"
+        }
+      ],
+      "added_at": "2026-10-31T00:15:53+00:00",
+      "updated_at": "2026-10-31T00:15:53+00:00"
     },
     {
       "id": "397f1927d9801ddd",
@@ -11981,6 +12063,14 @@
           ]
         },
         {
+          "incident_id": "ae1529561ab00842",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.okinawa.jp/bunkakoryu/sport/1009786/1041818.html",
+          "evidence_urls": [
+            "https://www.pref.okinawa.jp/bunkakoryu/sport/1009786/1041818.html"
+          ]
+        },
+        {
           "incident_id": "b20f594030b7930a",
           "relationship": "affects",
           "evidence_url": "https://www.pref.oita.jp/soshiki/12520/kosodateouen-passport.html",
@@ -12257,7 +12347,7 @@
         }
       ],
       "added_at": "2026-10-21T19:22:12+00:00",
-      "updated_at": "2026-10-30T22:15:37+00:00"
+      "updated_at": "2026-10-31T00:15:53+00:00"
     },
     {
       "id": "a2cf60a92a1ad65c",
