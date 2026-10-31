@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-31T04:15:30+00:00",
-  "total": 670,
+  "updated_at": "2026-10-31T05:15:23+00:00",
+  "total": 671,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-31"
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-10-30",
-      "count": 20
+      "count": 21
     },
     {
       "date": "2026-10-31",
@@ -1107,6 +1107,40 @@
       ],
       "added_at": "2026-10-30T22:15:37+00:00",
       "updated_at": "2026-10-30T23:03:16+00:00"
+    },
+    {
+      "id": "80f5997301665f70",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "野村證券株式会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "65f3107c9b8e0705",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.nomuraholdings.com/jp/news/topics/20261031.html",
+          "evidence_urls": [
+            "https://www.nomuraholdings.com/jp/news/topics/20261031.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "野村ホールディングス / Nomura",
+          "url": "https://www.nomuraholdings.com/jp/news/topics/20261031.html"
+        }
+      ],
+      "affected_service": "デジタル証券プラットフォーム",
+      "service_aliases": [],
+      "added_at": "2026-10-31T05:15:23+00:00",
+      "updated_at": "2026-10-31T05:15:23+00:00"
     },
     {
       "id": "ae1529561ab00842",
@@ -10284,6 +10318,14 @@
             "https://news.yahoo.co.jp/articles/26a27bee503d10aac1db449099d2a2b1f3291297",
             "https://www.nomuraholdings.com/jp/news/topics/20261023.html"
           ]
+        },
+        {
+          "incident_id": "80f5997301665f70",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.nomuraholdings.com/jp/news/topics/20261031.html",
+          "evidence_urls": [
+            "https://www.nomuraholdings.com/jp/news/topics/20261031.html"
+          ]
         }
       ],
       "sources": [
@@ -10299,7 +10341,7 @@
       "affected_service": "i-Port",
       "service_aliases": [],
       "added_at": "2026-10-23T05:16:07+00:00",
-      "updated_at": "2026-10-25T18:16:17+00:00"
+      "updated_at": "2026-10-31T05:15:23+00:00"
     },
     {
       "id": "7bc70bf6108ea4bc",
@@ -26941,6 +26983,45 @@
       "updated_at": "2026-10-29T20:16:15+00:00"
     },
     {
+      "id": "b9ad267832dfcb4c",
+      "published_at": "2026-10-04T15:00:00+00:00",
+      "disclosed_at": "2026-10-04T15:00:00+00:00",
+      "organization": "大和証券",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 219978,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [
+        {
+          "incident_id": "de4fa38ca8fe407b",
+          "relationship": "affected_by",
+          "evidence_url": "https://scan.netsecurity.ne.jp/article/2026/10/27/56573.html",
+          "evidence_urls": [
+            "https://scan.netsecurity.ne.jp/article/2026/10/27/56573.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/27/56573.html"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1IUzJQMVpGM1l0TDFDTHE5VnhZcWxGUFRvT3NuVTF3bm1nZTZMSFJwdGtRdjRESTVOWmVDQll6clh4bFdrcVFaSVlROU9teEU3dHIwZ0pTeVg2WGxOX3k4?oc=5"
+        },
+        {
+          "name": "ニッキンONLINE",
+          "url": "https://www.nikkinonline.com/article/435863"
+        }
+      ],
+      "added_at": "2026-10-27T00:15:41+00:00",
+      "updated_at": "2026-10-31T05:15:23+00:00"
+    },
+    {
       "id": "d5bab8d16155ea22",
       "published_at": "2026-10-04T15:00:00+00:00",
       "disclosed_at": "2026-10-05T15:00:00+00:00",
@@ -26967,41 +27048,6 @@
       "service_aliases": [],
       "added_at": "2026-10-27T00:15:41+00:00",
       "updated_at": "2026-10-27T00:15:41+00:00"
-    },
-    {
-      "id": "b9ad267832dfcb4c",
-      "published_at": "2026-10-04T15:00:00+00:00",
-      "disclosed_at": "2026-10-04T15:00:00+00:00",
-      "organization": "大和証券",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 219978,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [
-        {
-          "incident_id": "de4fa38ca8fe407b",
-          "relationship": "affected_by",
-          "evidence_url": "https://scan.netsecurity.ne.jp/article/2026/10/27/56573.html",
-          "evidence_urls": [
-            "https://scan.netsecurity.ne.jp/article/2026/10/27/56573.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "ScanNetSecurity",
-          "url": "https://scan.netsecurity.ne.jp/article/2026/10/27/56573.html"
-        },
-        {
-          "name": "NHKニュース",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1IUzJQMVpGM1l0TDFDTHE5VnhZcWxGUFRvT3NuVTF3bm1nZTZMSFJwdGtRdjRESTVOWmVDQll6clh4bFdrcVFaSVlROU9teEU3dHIwZ0pTeVg2WGxOX3k4?oc=5"
-        }
-      ],
-      "added_at": "2026-10-27T00:15:41+00:00",
-      "updated_at": "2026-10-30T21:53:42+00:00"
     },
     {
       "id": "433e28e53acb64b1",
