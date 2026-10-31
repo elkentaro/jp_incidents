@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-31T00:15:53+00:00",
-  "total": 664,
+  "updated_at": "2026-10-31T01:15:24+00:00",
+  "total": 666,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-31"
@@ -317,7 +317,7 @@
     },
     {
       "date": "2026-10-19",
-      "count": 38
+      "count": 39
     },
     {
       "date": "2026-10-20",
@@ -345,7 +345,7 @@
     },
     {
       "date": "2026-10-26",
-      "count": 36
+      "count": 37
     },
     {
       "date": "2026-10-27",
@@ -473,6 +473,10 @@
       "related": [],
       "sources": [
         {
+          "name": "satimo list",
+          "url": "https://www.mofa.go.jp/mofaj/press/release/pressit_000001_04395.html"
+        },
+        {
           "name": "TBS NEWS DIG",
           "url": "https://newsdig.tbs.co.jp/articles/-/3051776?display=1"
         },
@@ -530,7 +534,7 @@
         }
       ],
       "added_at": "2026-10-30T11:16:03+00:00",
-      "updated_at": "2026-10-30T23:03:16+00:00"
+      "updated_at": "2026-10-31T01:15:24+00:00"
     },
     {
       "id": "63433d06e39c322e",
@@ -4323,6 +4327,10 @@
           "url": "https://www.sukesanudon.com/news/news-8014/"
         },
         {
+          "name": "satimo list",
+          "url": "https://www.sukesanudon.com/news/news-8023/"
+        },
+        {
           "name": "日本経済新聞",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1YMUFPTWZqZUdSRXpuYkRKWjAzVXhpTmtjbzJnRnJ0a2ZyQVdVbFJldzZjdzAtdUFRMHZnbVVqVlZJNmgybzJGblJqUXN6SGI2Qnk0WGlwM3dOOHBMMGhUTlZYcW0xNHpFQm9fcw?oc=5"
         },
@@ -4332,7 +4340,7 @@
         }
       ],
       "added_at": "2026-10-27T21:16:27+00:00",
-      "updated_at": "2026-10-29T22:16:02+00:00"
+      "updated_at": "2026-10-31T01:15:24+00:00"
     },
     {
       "id": "c89620912f4fe178",
@@ -5997,6 +6005,39 @@
       "service_aliases": [],
       "added_at": "2026-10-27T20:15:55+00:00",
       "updated_at": "2026-10-27T22:15:42+00:00"
+    },
+    {
+      "id": "057f822d645443ee",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "日本製薬工業協会",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 30750,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.jpma.or.jp/news_room/release/2026/261030.html",
+          "evidence_urls": [
+            "https://www.jpma.or.jp/news_room/release/2026/261030.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.jpma.or.jp/news_room/release/2026/261030.html"
+        }
+      ],
+      "affected_service": "PRAISE-NET",
+      "service_aliases": [],
+      "added_at": "2026-10-31T01:15:24+00:00",
+      "updated_at": "2026-10-31T01:15:24+00:00"
     },
     {
       "id": "20a5defaa0a897ab",
@@ -16402,6 +16443,14 @@
       "confidence_score": 100,
       "related": [
         {
+          "incident_id": "057f822d645443ee",
+          "relationship": "affects",
+          "evidence_url": "https://www.jpma.or.jp/news_room/release/2026/261030.html",
+          "evidence_urls": [
+            "https://www.jpma.or.jp/news_room/release/2026/261030.html"
+          ]
+        },
+        {
           "incident_id": "1306a0c62a3f2f3a",
           "relationship": "affects",
           "evidence_url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf",
@@ -16681,7 +16730,7 @@
       "affected_system": "メール配信サービスのサーバーシステム",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T13:14:57+00:00",
-      "updated_at": "2026-10-30T07:15:49+00:00"
+      "updated_at": "2026-10-31T01:15:24+00:00"
     },
     {
       "id": "15204b629222c010",
@@ -18052,6 +18101,29 @@
       ],
       "added_at": "2026-10-21T09:41:58+00:00",
       "updated_at": "2026-10-21T09:41:58+00:00"
+    },
+    {
+      "id": "db7bbc833020b566",
+      "published_at": "2026-10-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "料理王国",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 8000,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://cuisine-kingdom.com/pdf/202610.pdf"
+        }
+      ],
+      "added_at": "2026-10-31T01:15:24+00:00",
+      "updated_at": "2026-10-31T01:15:24+00:00"
     },
     {
       "id": "ea57489c9b0b7b63",
@@ -27022,6 +27094,10 @@
           "url": "https://cybersecurity-jp.com/news/117849"
         },
         {
+          "name": "satimo list",
+          "url": "https://jp.adventurekk.com/news/security-incident-update-3/"
+        },
+        {
           "name": "INTERNET Watch",
           "url": "https://internet.watch.impress.co.jp/docs/news/2149135.html"
         },
@@ -27030,8 +27106,10 @@
           "url": "https://www.asahi.com/articles/ASVBX3HFQVBXULFA02XM.html"
         }
       ],
+      "affected_service": "skyticket",
+      "service_aliases": [],
       "added_at": "2026-10-20T23:55:01+00:00",
-      "updated_at": "2026-10-29T02:16:03+00:00"
+      "updated_at": "2026-10-31T01:15:24+00:00"
     },
     {
       "id": "b209c133e3d77d32",
