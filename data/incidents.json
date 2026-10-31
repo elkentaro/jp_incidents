@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-31T01:15:24+00:00",
-  "total": 666,
+  "updated_at": "2026-10-31T02:16:08+00:00",
+  "total": 669,
   "date_range": {
     "start": "2026-07-09",
     "end": "2026-10-31"
@@ -317,7 +317,7 @@
     },
     {
       "date": "2026-10-19",
-      "count": 39
+      "count": 40
     },
     {
       "date": "2026-10-20",
@@ -349,7 +349,7 @@
     },
     {
       "date": "2026-10-27",
-      "count": 36
+      "count": 37
     },
     {
       "date": "2026-10-28",
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-10-30",
-      "count": 20
+      "count": 21
     },
     {
       "date": "2026-10-31",
@@ -1149,6 +1149,31 @@
       "service_aliases": [],
       "added_at": "2026-10-31T00:15:53+00:00",
       "updated_at": "2026-10-31T00:15:53+00:00"
+    },
+    {
+      "id": "afcfe4585d0dbcf0",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東急不動産",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 4079,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.tokyu-land.co.jp/news/uploads/4e81382e895fcd779559705843fcb56f83846c28.pdf"
+        }
+      ],
+      "affected_service": "GREEN CROSS PARK 公式サイト",
+      "service_aliases": [],
+      "added_at": "2026-10-31T02:16:08+00:00",
+      "updated_at": "2026-10-31T02:16:08+00:00"
     },
     {
       "id": "d596ddaea3a9b78e",
@@ -5114,6 +5139,28 @@
       "updated_at": "2026-10-29T06:16:15+00:00"
     },
     {
+      "id": "6fb7085ea024fe90",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東建コーポレーション",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.token.co.jp/20261028.html"
+        }
+      ],
+      "added_at": "2026-10-31T02:16:08+00:00",
+      "updated_at": "2026-10-31T02:16:08+00:00"
+    },
+    {
       "id": "8df9663851cbb3a5",
       "published_at": "2026-10-26T15:00:00+00:00",
       "disclosed_at": null,
@@ -6436,6 +6483,42 @@
       "updated_at": "2026-10-26T20:15:50+00:00"
     },
     {
+      "id": "fc970efadd8aa2ca",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大都開発",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 45,
+      "related": [
+        {
+          "incident_id": "36ab902f4b0599f2",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/ymail_igreks_unauthorized_access_phishing_affected_organizations_20261026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/ymail_igreks_unauthorized_access_phishing_affected_organizations_20261026/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://katashinakogen.co.jp/20261030topics/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/ymail_igreks_unauthorized_access_phishing_affected_organizations_20261026/"
+        }
+      ],
+      "added_at": "2026-10-26T06:15:53+00:00",
+      "updated_at": "2026-10-31T02:16:08+00:00"
+    },
+    {
       "id": "025ab3a749442b95",
       "published_at": "2026-10-25T15:00:00+00:00",
       "disclosed_at": null,
@@ -6585,37 +6668,6 @@
       ],
       "added_at": "2026-10-26T09:16:19+00:00",
       "updated_at": "2026-10-26T09:16:19+00:00"
-    },
-    {
-      "id": "fc970efadd8aa2ca",
-      "published_at": "2026-10-25T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "大都開発",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "36ab902f4b0599f2",
-          "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/ymail_igreks_unauthorized_access_phishing_affected_organizations_20261026/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/ymail_igreks_unauthorized_access_phishing_affected_organizations_20261026/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/ymail_igreks_unauthorized_access_phishing_affected_organizations_20261026/"
-        }
-      ],
-      "added_at": "2026-10-26T06:15:53+00:00",
-      "updated_at": "2026-10-26T06:15:53+00:00"
     },
     {
       "id": "e606da96168d8cd5",
@@ -16500,6 +16552,14 @@
           ]
         },
         {
+          "incident_id": "3b1d3d2f74953a20",
+          "relationship": "affects",
+          "evidence_url": "https://www.syuppin.co.jp/20261030",
+          "evidence_urls": [
+            "https://www.syuppin.co.jp/20261030"
+          ]
+        },
+        {
           "incident_id": "3b2a073b7265fb6c",
           "relationship": "affects",
           "evidence_url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf",
@@ -16730,7 +16790,7 @@
       "affected_system": "メール配信サービスのサーバーシステム",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T13:14:57+00:00",
-      "updated_at": "2026-10-31T01:15:24+00:00"
+      "updated_at": "2026-10-31T02:16:08+00:00"
     },
     {
       "id": "15204b629222c010",
@@ -18070,6 +18130,42 @@
       ],
       "added_at": "2026-10-21T08:25:16+00:00",
       "updated_at": "2026-10-21T08:25:16+00:00"
+    },
+    {
+      "id": "3b1d3d2f74953a20",
+      "published_at": "2026-10-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "シュッピン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 77204,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.syuppin.co.jp/20261030",
+          "evidence_urls": [
+            "https://www.syuppin.co.jp/20261030"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.syuppin.co.jp/20261030"
+        }
+      ],
+      "affected_service": "マップカメラ(Map Camera)",
+      "service_aliases": [
+        "マップカメラ",
+        "Map Camera"
+      ],
+      "added_at": "2026-10-31T02:16:08+00:00",
+      "updated_at": "2026-10-31T02:16:08+00:00"
     },
     {
       "id": "cf4d93f326f1b4fa",
