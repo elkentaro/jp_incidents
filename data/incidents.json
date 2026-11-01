@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-01T13:16:31+00:00",
+  "updated_at": "2026-11-01T14:16:05+00:00",
   "total": 673,
   "date_range": {
     "start": "2025-10-16",
@@ -370,6 +370,68 @@
   ],
   "incidents": [
     {
+      "id": "29879c71c8cc2650",
+      "published_at": "2026-10-30T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "NTTデータ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "498482a809a4a553",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/5e97e631fb8dbb2522e294fe50e407adf15f0b8a",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/5e97e631fb8dbb2522e294fe50e407adf15f0b8a"
+          ]
+        },
+        {
+          "incident_id": "62e7efc40d4f6d44",
+          "relationship": "affects",
+          "evidence_url": "https://www.rakuten-sec.co.jp/web/info/info20261031-01.html",
+          "evidence_urls": [
+            "https://www.rakuten-sec.co.jp/web/info/info20261031-01.html"
+          ]
+        },
+        {
+          "incident_id": "c4ae42924805f3fd",
+          "relationship": "affects",
+          "evidence_url": "https://www.westjr.co.jp/press/article/2026/10/31/page_31177.html",
+          "evidence_urls": [
+            "https://www.westjr.co.jp/press/article/2026/10/31/page_31177.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "NTTデータ / NTT DATA",
+          "url": "https://www.nttdata.com/global/ja/news/release/2026/103101/"
+        },
+        {
+          "name": "ビジネス+IT",
+          "url": "https://www.sbbit.jp/article/cont1/187990"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC010BF0R01C26A1000000/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/f556f83829f09eb742f97055f07ddda2a458ba1d"
+        }
+      ],
+      "affected_service": "STdirectServices",
+      "service_aliases": [],
+      "added_at": "2026-10-31T04:15:30+00:00",
+      "updated_at": "2026-11-01T14:16:05+00:00"
+    },
+    {
       "id": "62e7efc40d4f6d44",
       "published_at": "2026-10-30T15:00:00+00:00",
       "disclosed_at": null,
@@ -505,64 +567,6 @@
       ],
       "added_at": "2026-10-30T23:03:16+00:00",
       "updated_at": "2026-11-01T09:15:49+00:00"
-    },
-    {
-      "id": "29879c71c8cc2650",
-      "published_at": "2026-10-30T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "NTTデータ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [
-        {
-          "incident_id": "498482a809a4a553",
-          "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/5e97e631fb8dbb2522e294fe50e407adf15f0b8a",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/5e97e631fb8dbb2522e294fe50e407adf15f0b8a"
-          ]
-        },
-        {
-          "incident_id": "62e7efc40d4f6d44",
-          "relationship": "affects",
-          "evidence_url": "https://www.rakuten-sec.co.jp/web/info/info20261031-01.html",
-          "evidence_urls": [
-            "https://www.rakuten-sec.co.jp/web/info/info20261031-01.html"
-          ]
-        },
-        {
-          "incident_id": "c4ae42924805f3fd",
-          "relationship": "affects",
-          "evidence_url": "https://www.westjr.co.jp/press/article/2026/10/31/page_31177.html",
-          "evidence_urls": [
-            "https://www.westjr.co.jp/press/article/2026/10/31/page_31177.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "NTTデータ / NTT DATA",
-          "url": "https://www.nttdata.com/global/ja/news/release/2026/103101/"
-        },
-        {
-          "name": "ビジネス+IT",
-          "url": "https://www.sbbit.jp/article/cont1/187990"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUC010BF0R01C26A1000000/"
-        }
-      ],
-      "affected_service": "STdirectServices",
-      "service_aliases": [],
-      "added_at": "2026-10-31T04:15:30+00:00",
-      "updated_at": "2026-11-01T08:15:49+00:00"
     },
     {
       "id": "747ff37bca4130bd",
