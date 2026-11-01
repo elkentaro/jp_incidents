@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-01T06:35:58+00:00",
-  "total": 674,
+  "updated_at": "2026-11-01T08:15:49+00:00",
+  "total": 673,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-10-31"
@@ -349,7 +349,7 @@
     },
     {
       "date": "2026-10-28",
-      "count": 37
+      "count": 36
     },
     {
       "date": "2026-10-29",
@@ -411,6 +411,64 @@
       ],
       "added_at": "2026-10-31T14:15:53+00:00",
       "updated_at": "2026-10-31T16:15:21+00:00"
+    },
+    {
+      "id": "29879c71c8cc2650",
+      "published_at": "2026-10-30T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "NTTデータ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "498482a809a4a553",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/5e97e631fb8dbb2522e294fe50e407adf15f0b8a",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/5e97e631fb8dbb2522e294fe50e407adf15f0b8a"
+          ]
+        },
+        {
+          "incident_id": "62e7efc40d4f6d44",
+          "relationship": "affects",
+          "evidence_url": "https://www.rakuten-sec.co.jp/web/info/info20261031-01.html",
+          "evidence_urls": [
+            "https://www.rakuten-sec.co.jp/web/info/info20261031-01.html"
+          ]
+        },
+        {
+          "incident_id": "c4ae42924805f3fd",
+          "relationship": "affects",
+          "evidence_url": "https://www.westjr.co.jp/press/article/2026/10/31/page_31177.html",
+          "evidence_urls": [
+            "https://www.westjr.co.jp/press/article/2026/10/31/page_31177.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "NTTデータ / NTT DATA",
+          "url": "https://www.nttdata.com/global/ja/news/release/2026/103101/"
+        },
+        {
+          "name": "ビジネス+IT",
+          "url": "https://www.sbbit.jp/article/cont1/187990"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC010BF0R01C26A1000000/"
+        }
+      ],
+      "affected_service": "STdirectServices",
+      "service_aliases": [],
+      "added_at": "2026-10-31T04:15:30+00:00",
+      "updated_at": "2026-11-01T08:15:49+00:00"
     },
     {
       "id": "62e7efc40d4f6d44",
@@ -497,60 +555,6 @@
       ],
       "added_at": "2026-10-30T23:03:16+00:00",
       "updated_at": "2026-10-31T15:15:53+00:00"
-    },
-    {
-      "id": "29879c71c8cc2650",
-      "published_at": "2026-10-30T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "NTTデータ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [
-        {
-          "incident_id": "498482a809a4a553",
-          "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/5e97e631fb8dbb2522e294fe50e407adf15f0b8a",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/5e97e631fb8dbb2522e294fe50e407adf15f0b8a"
-          ]
-        },
-        {
-          "incident_id": "62e7efc40d4f6d44",
-          "relationship": "affects",
-          "evidence_url": "https://www.rakuten-sec.co.jp/web/info/info20261031-01.html",
-          "evidence_urls": [
-            "https://www.rakuten-sec.co.jp/web/info/info20261031-01.html"
-          ]
-        },
-        {
-          "incident_id": "c4ae42924805f3fd",
-          "relationship": "affects",
-          "evidence_url": "https://www.westjr.co.jp/press/article/2026/10/31/page_31177.html",
-          "evidence_urls": [
-            "https://www.westjr.co.jp/press/article/2026/10/31/page_31177.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "NTTデータ / NTT DATA",
-          "url": "https://www.nttdata.com/global/ja/news/release/2026/103101/"
-        },
-        {
-          "name": "ビジネス+IT",
-          "url": "https://www.sbbit.jp/article/cont1/187990"
-        }
-      ],
-      "affected_service": "STdirectServices",
-      "service_aliases": [],
-      "added_at": "2026-10-31T04:15:30+00:00",
-      "updated_at": "2026-10-31T23:15:47+00:00"
     },
     {
       "id": "c4ae42924805f3fd",
@@ -3571,31 +3575,6 @@
       "updated_at": "2026-10-30T02:15:42+00:00"
     },
     {
-      "id": "1ab3d4097c2748bd",
-      "published_at": "2026-10-27T15:00:00+00:00",
-      "disclosed_at": "2026-10-28T15:00:00+00:00",
-      "organization": "NTTスマイルエナジー",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [],
-      "sources": [
-        {
-          "name": "NTTグループ / NTT Group",
-          "url": "https://nttse.com/news/pressrelease/2026/10-30/3288/"
-        }
-      ],
-      "affected_service": "エコめがね",
-      "service_aliases": [],
-      "added_at": "2026-10-30T10:15:57+00:00",
-      "updated_at": "2026-10-30T10:15:57+00:00"
-    },
-    {
       "id": "1d5248e7b99abd87",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": null,
@@ -3739,12 +3718,16 @@
         {
           "name": "PR TIMES",
           "url": "https://prtimes.jp/main/html/rd/p/000000141.000005498.html"
+        },
+        {
+          "name": "NTTグループ / NTT Group",
+          "url": "https://nttse.com/news/pressrelease/2026/10-30/3288/"
         }
       ],
       "affected_service": "エコめがね",
       "service_aliases": [],
       "added_at": "2026-10-30T10:15:57+00:00",
-      "updated_at": "2026-10-30T10:15:57+00:00"
+      "updated_at": "2026-11-01T08:15:49+00:00"
     },
     {
       "id": "a4c6a8cdac85f9f4",
@@ -28060,6 +28043,7 @@
     "2953260f7715fc59": "1ff227f049a0de08",
     "4abc615ec3fea0d6": "1ff227f049a0de08",
     "a1047c4800d8333b": "1ff227f049a0de08",
-    "24b890b61e3bb1e6": "3f9647cdc55cfd86"
+    "24b890b61e3bb1e6": "3f9647cdc55cfd86",
+    "1ab3d4097c2748bd": "9fa62f7bc43145a4"
   }
 }
