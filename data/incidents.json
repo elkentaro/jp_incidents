@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-01T09:15:49+00:00",
+  "updated_at": "2026-11-01T10:15:46+00:00",
   "total": 673,
   "date_range": {
     "start": "2025-10-16",
@@ -974,6 +974,52 @@
       "updated_at": "2026-10-31T00:15:53+00:00"
     },
     {
+      "id": "d6d292a6112076a6",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "山梨県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 264000,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "7426faef7c02541b",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1keVhRYU1OZGNEYVc1bDd2Uk0xNERGcXNVSG41NEpCczBQSE4tanpFM2NNRlM2RDFjYUlnRXpRbi10S2dqM2x0NzRfSEtxbTVJTk1TQnJiNy1wNkRvLTNN?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1keVhRYU1OZGNEYVc1bDd2Uk0xNERGcXNVSG41NEpCczBQSE4tanpFM2NNRlM2RDFjYUlnRXpRbi10S2dqM2x0NzRfSEtxbTVJTk1TQnJiNy1wNkRvLTNN?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "山梨県",
+          "url": "https://www.pref.yamanashi.jp/fujisan/261030.html"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1keVhRYU1OZGNEYVc1bDd2Uk0xNERGcXNVSG41NEpCczBQSE4tanpFM2NNRlM2RDFjYUlnRXpRbi10S2dqM2x0NzRfSEtxbTVJTk1TQnJiNy1wNkRvLTNN?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/7250fccedebcec1af44b0ccdfd3e3d53f826580e"
+        },
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/national/20261031-GYT1T00263/"
+        }
+      ],
+      "affected_service": "吉田ルートの通行予約",
+      "service_aliases": [],
+      "added_at": "2026-10-30T21:53:42+00:00",
+      "updated_at": "2026-11-01T10:15:46+00:00"
+    },
+    {
       "id": "7b687057653f55b3",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": null,
@@ -1050,48 +1096,6 @@
       "service_aliases": [],
       "added_at": "2026-10-30T09:16:10+00:00",
       "updated_at": "2026-11-01T01:15:58+00:00"
-    },
-    {
-      "id": "d6d292a6112076a6",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "山梨県",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 264000,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [
-        {
-          "incident_id": "7426faef7c02541b",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1keVhRYU1OZGNEYVc1bDd2Uk0xNERGcXNVSG41NEpCczBQSE4tanpFM2NNRlM2RDFjYUlnRXpRbi10S2dqM2x0NzRfSEtxbTVJTk1TQnJiNy1wNkRvLTNN?oc=5",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1keVhRYU1OZGNEYVc1bDd2Uk0xNERGcXNVSG41NEpCczBQSE4tanpFM2NNRlM2RDFjYUlnRXpRbi10S2dqM2x0NzRfSEtxbTVJTk1TQnJiNy1wNkRvLTNN?oc=5"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "山梨県",
-          "url": "https://www.pref.yamanashi.jp/fujisan/261030.html"
-        },
-        {
-          "name": "NHKニュース",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1keVhRYU1OZGNEYVc1bDd2Uk0xNERGcXNVSG41NEpCczBQSE4tanpFM2NNRlM2RDFjYUlnRXpRbi10S2dqM2x0NzRfSEtxbTVJTk1TQnJiNy1wNkRvLTNN?oc=5"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/7250fccedebcec1af44b0ccdfd3e3d53f826580e"
-        }
-      ],
-      "affected_service": "吉田ルートの通行予約",
-      "service_aliases": [],
-      "added_at": "2026-10-30T21:53:42+00:00",
-      "updated_at": "2026-11-01T09:15:49+00:00"
     },
     {
       "id": "1eff65d7da989b18",
