@@ -13,7 +13,7 @@ import os
 from pathlib import Path
 import tempfile
 
-VERSION = 6
+VERSION = 7
 SITE_URL = 'https://elkentaro.github.io/jp_incidents/'
 OUTPUTS = ('data/linkage-map.png', 'linkage.html', 'data/linkage-map.json')
 COLORS = {'upstream': '#d55e00', 'downstream': '#0072b2', 'both': '#008568',
@@ -79,8 +79,16 @@ def describe(nodes, edges):
                 continue
             visited.add(item)
             stack.extend(neighbors[item] - visited)
+    role_counts = Counter(roles.values())
+    # A downstream record is excluded even when it also affects other records.
+    # Non-causal links do not turn an otherwise standalone incident into a victim
+    # of another incident, or collapse separate events at the same organization.
+    standalone = role_counts['unlinked'] + role_counts['related']
+    direct = role_counts['upstream'] + standalone
     return neighbors, roles, downstream, dict(incidents=len(nodes), linked=len(visited),
-        unlinked=len(nodes)-len(visited), links=len(edges), networks=networks)
+        unlinked=len(nodes)-len(visited), links=len(edges), networks=networks,
+        direct=direct, upstream=role_counts['upstream'], standalone=standalone,
+        downstream=role_counts['downstream'] + role_counts['both'])
 
 
 def layout(nodes, edges, neighbors, downstream):

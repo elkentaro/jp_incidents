@@ -38,8 +38,33 @@ class LinkageMapTests(unittest.TestCase):
         nodes, edges = module.topology(self.document)
         self.assertEqual(edges, [(0, 1, 'affects'), (1, 2, 'same_organization')])
         neighbors, roles, downstream, counts = module.describe(nodes, edges)
-        self.assertEqual(counts, dict(incidents=4, linked=3, unlinked=1, links=2, networks=1))
+        self.assertEqual(counts, dict(incidents=4, linked=3, unlinked=1, links=2, networks=1,
+                                     direct=3, upstream=1, standalone=2, downstream=1))
         self.assertEqual(roles, {0:'upstream', 1:'downstream', 2:'related', 3:'unlinked'})
+
+    def test_direct_count_excludes_intermediates_and_counts_each_record_once(self):
+        # Two roots share victims; a downstream incident is also an upstream.
+        # Separate events linked without causation remain standalone incidents.
+        edges = [(0, 2, 'affects'), (1, 2, 'affects'), (2, 3, 'affects'),
+                 (0, 3, 'affects'), (4, 5, 'same_organization'), (5, 6, 'same_event')]
+        _, roles, _, counts = module.describe(list(range(8)), edges)
+        self.assertEqual(roles[2], 'both')
+        self.assertEqual(counts['upstream'], 2)
+        self.assertEqual(counts['standalone'], 4)
+        self.assertEqual(counts['unlinked'], 1)
+        self.assertEqual(counts['direct'], 6)
+        self.assertEqual(counts['downstream'], 2)
+        self.assertEqual(counts['direct'] + counts['downstream'], counts['incidents'])
+        self.assertEqual(counts['upstream'] + counts['standalone'], counts['direct'])
+
+    def test_direct_counts_for_empty_unlinked_and_cyclic_graphs(self):
+        for nodes, edges, expected in [
+                ([], [], (0, 0, 0, 0)),
+                ([0, 1, 2], [], (3, 0, 3, 0)),
+                ([0, 1], [(0, 1, 'affects'), (1, 0, 'affects')], (0, 0, 0, 2))]:
+            with self.subTest(nodes=nodes, edges=edges):
+                _, _, _, counts = module.describe(nodes, edges)
+                self.assertEqual(tuple(counts[k] for k in ('direct', 'upstream', 'standalone', 'downstream')), expected)
 
     def test_standalone_nodes_share_map_without_invented_connections(self):
         for document in [self.document, dict(self.document, incidents=[{'id':str(i)} for i in range(20)])]:
@@ -70,6 +95,9 @@ class LinkageMapTests(unittest.TestCase):
         self.assertEqual(image.size, (2400, 1440))
         metadata = json.loads((self.root/'data/linkage-map.json').read_text())
         self.assertEqual(set(metadata), {'version','generated_at','source_updated_at','counts','image_sha256','page_sha256'})
+        page = (self.root/'linkage.html').read_text()
+        for key in ('direct', 'upstream', 'standalone', 'downstream'):
+            self.assertIn(f'id="{key}-count">{metadata["counts"][key]}<', page)
         for name in module.OUTPUTS:
             content = (self.root/name).read_bytes()
             for secret in [b'SECRET', b'PRIVATE', b'private.example', b'WITHDRAWN']:
@@ -91,6 +119,19 @@ class LinkageMapTests(unittest.TestCase):
         (self.root/'data/linkage-map.png').write_bytes(b'broken')
         self.assertTrue(module.refresh(self.source, self.root, self.now+timedelta(minutes=10)))
         Image.open(self.root/'data/linkage-map.png').verify()
+
+    def test_version_upgrade_refreshes_counts_before_daily_deadline(self):
+        module.refresh(self.source, self.root, self.now)
+        path = self.root/'data/linkage-map.json'
+        previous = json.loads(path.read_text())
+        previous['version'] = module.VERSION - 1
+        for key in ('direct', 'upstream', 'standalone', 'downstream'):
+            previous['counts'].pop(key)
+        path.write_text(json.dumps(previous))
+        self.assertTrue(module.refresh(self.source, self.root, self.now+timedelta(minutes=1)))
+        current = json.loads(path.read_text())
+        self.assertEqual(current['version'], module.VERSION)
+        self.assertEqual(current['counts']['direct'], 3)
 
     def test_invalid_source_does_not_replace_previous_snapshot(self):
         module.refresh(self.source, self.root, self.now)

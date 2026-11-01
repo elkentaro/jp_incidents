@@ -4,6 +4,15 @@
 .snapshot-badge { white-space: nowrap; border: 1px solid #c9d9d0; color: #22645b; border-radius: 30px; padding: 7px 13px; font-size: 12px; font-weight: 650; }
 .map-intro .lede { max-width: 850px; margin: 0 0 14px; }
 .map-note { color: var(--muted); max-width: 930px; font-size: 14px; margin: 0; }
+.direct-summary { margin-top: 28px; padding: 22px 24px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--wash); }
+.direct-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: center; gap: 24px; margin: 0; }
+.direct-stats > div + div { border-left: 1px solid var(--line); padding-left: 24px; }
+.direct-stats dt { color: var(--muted); font-size: 13px; }
+.direct-stats dd { margin: 3px 0 0; font-size: 36px; font-weight: 650; line-height: 1.2; letter-spacing: -.035em; }
+.direct-total dt { color: var(--ink); font-weight: 650; }
+.direct-total dd { font-size: 48px; }
+.direct-excluded { margin: 18px 0 6px; font-size: 13px; }
+.direct-definition { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.7; max-width: 1000px; }
 .map-stats { display: grid; grid-template-columns: repeat(4, 1fr); margin: 32px 0 24px; border-block: 1px solid var(--line); }
 .map-stats div { padding: 18px 0; }
 .map-stats dt { color: var(--muted); font-size: 12px; }
@@ -33,6 +42,13 @@
   .linkage-page { padding-block: 30px 36px; }
   .map-heading { align-items: flex-start; flex-direction: column; gap: 0; margin-bottom: 16px; }
   .map-heading h1 { margin-bottom: 13px; }
+  .direct-summary { padding: 18px; }
+  .direct-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .direct-total { grid-column: 1 / -1; border-bottom: 1px solid var(--line); padding-bottom: 16px; }
+  .direct-stats > div:nth-child(2) { border-left: 0; padding-left: 0; }
+  .direct-stats > div:nth-child(3) { padding-left: 16px; }
+  .direct-stats dd { font-size: 30px; }
+  .direct-total dd { font-size: 42px; }
   .map-stats { grid-template-columns: 1fr 1fr; }
   .map-stats div { padding-block: 12px; }
   .map-stats dd { font-size: 27px; }
