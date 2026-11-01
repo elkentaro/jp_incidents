@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-31T23:15:47+00:00",
+  "updated_at": "2026-11-01T01:15:58+00:00",
   "total": 675,
   "date_range": {
     "start": "2025-10-16",
@@ -820,6 +820,55 @@
       "updated_at": "2026-10-30T23:03:16+00:00"
     },
     {
+      "id": "7c84af49b4716f42",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "佐賀大学",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "ransomware"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.saga-u.ac.jp/koho/press/2026103041773"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261030de68360"
+        },
+        {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp/amp/article/kbc/region/kbc-18432148"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261030de68690"
+        },
+        {
+          "name": "KBC九州朝日放送",
+          "url": "https://kbc.co.jp/news/article.php?id=18432148&ymd=2026-10-30"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/de7833ddc416e47eb74facde2fa7c312a42b3961"
+        },
+        {
+          "name": "KBC九州朝日放送",
+          "url": "https://kbc.co.jp/news/article.php?id=18432148"
+        }
+      ],
+      "affected_service": "大学の事務情報システム",
+      "service_aliases": [],
+      "added_at": "2026-10-30T05:15:51+00:00",
+      "updated_at": "2026-11-01T01:15:58+00:00"
+    },
+    {
       "id": "7df1aaca37664867",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": null,
@@ -950,49 +999,37 @@
       "updated_at": "2026-10-31T04:15:30+00:00"
     },
     {
-      "id": "7c84af49b4716f42",
+      "id": "a9fd6c70338f6c75",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": null,
-      "organization": "佐賀大学",
+      "organization": "コアデ",
       "incident_type": "data leak",
       "incident_categories": [
         "data leak",
-        "ransomware"
+        "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 7622,
       "confidence": "high",
-      "confidence_score": 95,
+      "confidence_score": 90,
       "related": [],
       "sources": [
         {
-          "name": "NHKニュース",
-          "url": "https://news.web.nhk/newsweb/na/nd-20261030de68360"
+          "name": "satimo list",
+          "url": "https://www.coade-net.co.jp/blog/topics/38538/"
         },
         {
-          "name": "ｄメニューニュース",
-          "url": "https://topics.smt.docomo.ne.jp/amp/article/kbc/region/kbc-18432148"
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/coade_hanikuji_land_unauthorized_access_7622_20261030/"
         },
         {
-          "name": "NHKニュース",
-          "url": "https://news.web.nhk/newsweb/na/nd-20261030de68690"
-        },
-        {
-          "name": "KBC九州朝日放送",
-          "url": "https://kbc.co.jp/news/article.php?id=18432148&ymd=2026-10-30"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/de7833ddc416e47eb74facde2fa7c312a42b3961"
-        },
-        {
-          "name": "KBC九州朝日放送",
-          "url": "https://kbc.co.jp/news/article.php?id=18432148"
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/117989"
         }
       ],
-      "affected_service": "大学の事務情報システム",
+      "affected_service": "はにくじランド",
       "service_aliases": [],
-      "added_at": "2026-10-30T05:15:51+00:00",
-      "updated_at": "2026-10-30T21:16:25+00:00"
+      "added_at": "2026-10-30T09:16:10+00:00",
+      "updated_at": "2026-11-01T01:15:58+00:00"
     },
     {
       "id": "1eff65d7da989b18",
@@ -1133,35 +1170,6 @@
       "service_aliases": [],
       "added_at": "2026-10-30T21:53:42+00:00",
       "updated_at": "2026-10-30T21:53:42+00:00"
-    },
-    {
-      "id": "a9fd6c70338f6c75",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "コアデ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 7622,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/coade_hanikuji_land_unauthorized_access_7622_20261030/"
-        },
-        {
-          "name": "Cybersecurity.jp",
-          "url": "https://cybersecurity-jp.com/news/117989"
-        }
-      ],
-      "affected_service": "はにくじランド",
-      "service_aliases": [],
-      "added_at": "2026-10-30T09:16:10+00:00",
-      "updated_at": "2026-10-31T08:16:00+00:00"
     },
     {
       "id": "6060c1559cd87ea6",
@@ -4691,6 +4699,35 @@
       "updated_at": "2026-10-28T00:15:35+00:00"
     },
     {
+      "id": "198ac537f252eb31",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": "2026-10-29T15:00:00+00:00",
+      "organization": "両備システムズ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.ryobi.co.jp/news/2026/202061030"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/ryobi_aitel_778_unauthorized_access_20261030/"
+        }
+      ],
+      "affected_service": "健診予約システム「AITEL」",
+      "service_aliases": [],
+      "added_at": "2026-10-30T10:15:57+00:00",
+      "updated_at": "2026-11-01T01:15:58+00:00"
+    },
+    {
       "id": "249f996eeac0e23c",
       "published_at": "2026-10-26T15:00:00+00:00",
       "disclosed_at": null,
@@ -5308,31 +5345,6 @@
       "service_aliases": [],
       "added_at": "2026-10-27T19:09:26+00:00",
       "updated_at": "2026-10-27T19:09:26+00:00"
-    },
-    {
-      "id": "198ac537f252eb31",
-      "published_at": "2026-10-26T15:00:00+00:00",
-      "disclosed_at": "2026-10-29T15:00:00+00:00",
-      "organization": "両備システムズ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/ryobi_aitel_778_unauthorized_access_20261030/"
-        }
-      ],
-      "affected_service": "健診予約システム「AITEL」",
-      "service_aliases": [],
-      "added_at": "2026-10-30T10:15:57+00:00",
-      "updated_at": "2026-10-30T10:15:57+00:00"
     },
     {
       "id": "32a2533c752be7d3",
