@@ -636,6 +636,15 @@ def ordered_references(c, incident_id):
     return sorted(refs, key=lambda ref: reference_authority_rank(c, incident_id, **ref))
 
 
+def public_references(c, incident_id):
+    """Public report links; private reference URLs remain available for review."""
+    import reference_copies
+    refs = ordered_references(c, incident_id)
+    protected = [r['url'] for r in refs if reference_is_official(
+        c, incident_id, r['url'], r['source'] or '', r['title'] or '')]
+    return reference_copies.public_references(c, incident_id, refs, protected=protected)
+
+
 def confirmed_source_count(c, incident_id):
     """Count accepted reference URLs for one event, never an organization."""
     return c.execute("SELECT count(*) FROM refs WHERE incident_id=?", (incident_id,)).fetchone()[0]
@@ -2783,7 +2792,7 @@ def recent(days=28, kind=None, min_score=0):
     rows = [dict(r) for r in c.execute(sql + " ORDER BY published DESC, score DESC", args)]
     for r in rows:
         r["refs"] = [{key: ref[key] for key in ('url', 'source')}
-                     for ref in ordered_references(c, r['id'])]
+                     for ref in public_references(c, r['id'])]
     c.close()
     return rows
 
@@ -2884,7 +2893,7 @@ def all_public_incidents():
             "related": relationships.get(row["id"], []),
             "sources": [
                 {"name": ref["source"] or "Source", "url": ref["url"]}
-                for ref in ordered_references(c, row['id'])
+                for ref in public_references(c, row['id'])
             ],
         }
         annotation = c.execute("SELECT affected_system,date_basis FROM incident_annotations WHERE incident_id=?", (row["id"],)).fetchone()
