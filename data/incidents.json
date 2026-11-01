@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-01T03:15:27+00:00",
-  "total": 675,
+  "updated_at": "2026-11-01T06:35:58+00:00",
+  "total": 674,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-10-31"
@@ -349,7 +349,7 @@
     },
     {
       "date": "2026-10-28",
-      "count": 38
+      "count": 37
     },
     {
       "date": "2026-10-29",
@@ -411,6 +411,48 @@
       ],
       "added_at": "2026-10-31T14:15:53+00:00",
       "updated_at": "2026-10-31T16:15:21+00:00"
+    },
+    {
+      "id": "62e7efc40d4f6d44",
+      "published_at": "2026-10-30T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "楽天証券",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "29879c71c8cc2650",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.rakuten-sec.co.jp/web/info/info20261031-01.html",
+          "evidence_urls": [
+            "https://www.rakuten-sec.co.jp/web/info/info20261031-01.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "楽天証券",
+          "url": "https://www.rakuten-sec.co.jp/web/info/info20261031-01.html"
+        },
+        {
+          "name": "CNET Japan",
+          "url": "https://japan.cnet.com/article/35254251/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/005b8b559abd8087bf6998381fecfc02882aa2e1"
+        }
+      ],
+      "affected_service": "デジタル特典付き社債",
+      "service_aliases": [],
+      "added_at": "2026-10-31T20:30:43+00:00",
+      "updated_at": "2026-11-01T06:35:58+00:00"
     },
     {
       "id": "498482a809a4a553",
@@ -509,44 +551,6 @@
       "service_aliases": [],
       "added_at": "2026-10-31T04:15:30+00:00",
       "updated_at": "2026-10-31T23:15:47+00:00"
-    },
-    {
-      "id": "62e7efc40d4f6d44",
-      "published_at": "2026-10-30T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "楽天証券",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [
-        {
-          "incident_id": "29879c71c8cc2650",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.rakuten-sec.co.jp/web/info/info20261031-01.html",
-          "evidence_urls": [
-            "https://www.rakuten-sec.co.jp/web/info/info20261031-01.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "楽天証券",
-          "url": "https://www.rakuten-sec.co.jp/web/info/info20261031-01.html"
-        },
-        {
-          "name": "CNET Japan",
-          "url": "https://japan.cnet.com/article/35254251/"
-        }
-      ],
-      "affected_service": "デジタル特典付き社債",
-      "service_aliases": [],
-      "added_at": "2026-10-31T20:30:43+00:00",
-      "updated_at": "2026-11-01T02:15:39+00:00"
     },
     {
       "id": "c4ae42924805f3fd",
@@ -3310,6 +3314,10 @@
       "sources": [
         {
           "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/41dd60e55bfd329727dcf9963ff3e64adc291f45"
+        },
+        {
+          "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/68bfaa65203182b3d5b312c7e8d343021de2c92a"
         },
         {
@@ -3327,12 +3335,38 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/cc1a89debf27cf4190c736a1cb7e7fd73d5ce0e1"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/117992"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://dhc-corporate.co.jp/cms_dH8vjpRq/wp-content/uploads/2026/10/0deb6f2426f1d5ab2b2b1824288b374d.pdf"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/1f08db7ee3570602c23840f4d201c75669ffd1a0"
         }
       ],
-      "affected_service": "オンラインショップ",
+      "affected_service": "オンラインショップ / 公式オンラインショップ",
       "service_aliases": [],
+      "affected_services": [
+        "オンラインショップ",
+        "公式オンラインショップ"
+      ],
+      "service_details": [
+        {
+          "name": "オンラインショップ",
+          "aliases": []
+        },
+        {
+          "name": "公式オンラインショップ",
+          "aliases": []
+        }
+      ],
       "added_at": "2026-10-30T10:15:57+00:00",
-      "updated_at": "2026-10-31T04:15:30+00:00"
+      "updated_at": "2026-11-01T06:35:58+00:00"
     },
     {
       "id": "44e7187878fd515f",
@@ -3430,42 +3464,6 @@
       "service_aliases": [],
       "added_at": "2026-10-28T12:16:05+00:00",
       "updated_at": "2026-10-28T18:16:27+00:00"
-    },
-    {
-      "id": "24b890b61e3bb1e6",
-      "published_at": "2026-10-27T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "DHC",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/41dd60e55bfd329727dcf9963ff3e64adc291f45"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/1f08db7ee3570602c23840f4d201c75669ffd1a0"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/cc1a89debf27cf4190c736a1cb7e7fd73d5ce0e1"
-        },
-        {
-          "name": "Cybersecurity.jp",
-          "url": "https://cybersecurity-jp.com/news/117992"
-        }
-      ],
-      "affected_service": "公式オンラインショップ",
-      "service_aliases": [],
-      "added_at": "2026-10-30T10:15:57+00:00",
-      "updated_at": "2026-10-31T08:16:00+00:00"
     },
     {
       "id": "decf799bcee862b6",
@@ -28061,6 +28059,7 @@
     "4cc0594ace8794e0": "2639da70d5b68f2c",
     "2953260f7715fc59": "1ff227f049a0de08",
     "4abc615ec3fea0d6": "1ff227f049a0de08",
-    "a1047c4800d8333b": "1ff227f049a0de08"
+    "a1047c4800d8333b": "1ff227f049a0de08",
+    "24b890b61e3bb1e6": "3f9647cdc55cfd86"
   }
 }
