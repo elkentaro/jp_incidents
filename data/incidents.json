@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-01T19:15:29+00:00",
+  "updated_at": "2026-11-01T20:15:18+00:00",
   "total": 673,
   "date_range": {
     "start": "2025-10-16",
@@ -1073,6 +1073,52 @@
       "updated_at": "2026-10-31T04:15:30+00:00"
     },
     {
+      "id": "81ace1ca432c9aa9",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": "2026-10-29T15:00:00+00:00",
+      "organization": "jinjer",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 173,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://prtimes.jp/main/html/rd/p/000000493.000089626.html",
+          "evidence_urls": [
+            "https://prtimes.jp/main/html/rd/p/000000493.000089626.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "ニコニコニュース",
+          "url": "https://news.nicovideo.jp/watch/nw19937627"
+        },
+        {
+          "name": "Infoseek",
+          "url": "https://news.infoseek.co.jp/article/prtimes_000000493_000089626/"
+        },
+        {
+          "name": "PR TIMES",
+          "url": "https://prtimes.jp/main/html/rd/p/000000493.000089626.html"
+        },
+        {
+          "name": "ニコニコニュース",
+          "url": "https://news.nicovideo.jp/watch/nw19937627?news_ref=top_newComments"
+        }
+      ],
+      "affected_service": "ジンジャー福利厚生 お問い合わせフォーム",
+      "service_aliases": [],
+      "added_at": "2026-10-30T02:15:42+00:00",
+      "updated_at": "2026-11-01T20:15:18+00:00"
+    },
+    {
       "id": "a9fd6c70338f6c75",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": null,
@@ -1139,48 +1185,6 @@
       ],
       "added_at": "2026-10-30T09:16:10+00:00",
       "updated_at": "2026-10-30T22:15:37+00:00"
-    },
-    {
-      "id": "81ace1ca432c9aa9",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": "2026-10-29T15:00:00+00:00",
-      "organization": "jinjer",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 173,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [
-        {
-          "incident_id": "671c427eadb6fc63",
-          "relationship": "affected_by",
-          "evidence_url": "https://prtimes.jp/main/html/rd/p/000000493.000089626.html",
-          "evidence_urls": [
-            "https://prtimes.jp/main/html/rd/p/000000493.000089626.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "ニコニコニュース",
-          "url": "https://news.nicovideo.jp/watch/nw19937627"
-        },
-        {
-          "name": "PR TIMES",
-          "url": "https://prtimes.jp/main/html/rd/p/000000493.000089626.html"
-        },
-        {
-          "name": "ニコニコニュース",
-          "url": "https://news.nicovideo.jp/watch/nw19937627?news_ref=top_newComments"
-        }
-      ],
-      "affected_service": "ジンジャー福利厚生 お問い合わせフォーム",
-      "service_aliases": [],
-      "added_at": "2026-10-30T02:15:42+00:00",
-      "updated_at": "2026-11-01T03:15:27+00:00"
     },
     {
       "id": "afcfe4585d0dbcf0",
