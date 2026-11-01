@@ -1250,7 +1250,8 @@ def fetch_body(url, limit=12000):
     return strip_html(page)[:limit]
 
 
-def load_items(src, fetcher=fetch):
+def load_items(src, fetcher=None):
+    fetcher = fetch if fetcher is None else fetcher
     if src.get("type") == "json_news":
         # Public JSON backing a news index, including the previous year when
         # the collection window crosses New Year. Never execute page scripts.
@@ -1890,8 +1891,9 @@ def _org_match_text(value):
     )
 
 
-def corroborate_finding(finding, record, fetcher=fetch):
+def corroborate_finding(finding, record, fetcher=None):
     """Find independent monitored-news evidence for one secondary AI finding."""
+    fetcher = fetch if fetcher is None else fetcher
     org_key = _org_match_text(finding["org"])
     if len(org_key) < 2:
         return []
@@ -2348,7 +2350,8 @@ def recheck_article(c, rec, source, fetch_body_fn):
     return True
 
 
-def poll(notify=False, fetcher=fetch, fetch_body_fn=fetch_body):
+def poll(notify=False, fetcher=None, fetch_body_fn=fetch_body):
+    fetcher = fetch if fetcher is None else fetcher
     c = db()
     new_rows = promote_reviewed(c)
     source_errors = []
@@ -2546,8 +2549,9 @@ def audit_rejected(source_db_path, apply=False, fetch_body_fn=fetch_body):
     return {"total": total, "restored": len(restored), "rejected": len(rejected)}
 
 
-def test_sources(fetcher=fetch, name_match=None, group=None):
+def test_sources(fetcher=None, name_match=None, group=None):
     """Fetch every source once, no DB writes: shows which URLs work and what they yield."""
+    fetcher = fetch if fetcher is None else fetcher
     for src in load_sources():
         if name_match and name_match.casefold() not in src["name"].casefold():
             continue
