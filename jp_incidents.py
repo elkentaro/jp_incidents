@@ -73,7 +73,7 @@ RSS_PATH = os.environ.get("JPI_RSS_PATH", "feed.xml")
 SOURCES_PATH = os.environ.get("JPI_SOURCES_PATH", "data/sources.json")
 ALERT_STATE_PATH = os.environ.get("JPI_ALERT_STATE_PATH", ".jpi-alert-state.json")
 COLLECTION_DAYS = max(1, int(os.environ.get("JPI_COLLECTION_DAYS", "14")))
-UA = "Mozilla/5.0 (compatible; jp-incidents-collector/2.0; +security research)"
+UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
 JST = ZoneInfo("Asia/Tokyo")
 
 
@@ -3208,7 +3208,9 @@ def publish_public_json(path=JSON_PATH, rss_path=RSS_PATH, sources_path=SOURCES_
 
 
 def run_cycle(args):
-    with ops.lock(DB_PATH, 'collector') as acquired:
+    # Short housekeeping jobs can acquire this lock at the same timer tick.
+    # Give them time to finish instead of missing an entire collection hour.
+    with ops.lock(DB_PATH, 'collector', timeout=30) as acquired:
         if not acquired:
             print('Another collector/review process is active; skipping overlapping run')
             return

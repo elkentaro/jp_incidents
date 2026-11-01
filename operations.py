@@ -10,6 +10,7 @@ import sqlite3
 import subprocess
 import tarfile
 import tempfile
+import time
 from datetime import datetime, timezone
 
 
@@ -46,15 +47,21 @@ def get_state(path, key, default=None):
 
 
 @contextlib.contextmanager
-def lock(path, scope):
+def lock(path, scope, *, timeout=0):
     target = Path(str(path) + '.' + scope + '.lock')
     with target.open('a') as handle:
         os.chmod(target, 0o600)
-        try:
-            fcntl.flock(handle, fcntl.LOCK_EX | fcntl.LOCK_NB)
-        except BlockingIOError:
-            yield False
-            return
+        deadline = time.monotonic() + max(0, timeout)
+        while True:
+            try:
+                fcntl.flock(handle, fcntl.LOCK_EX | fcntl.LOCK_NB)
+                break
+            except BlockingIOError:
+                remaining = deadline - time.monotonic()
+                if remaining <= 0:
+                    yield False
+                    return
+                time.sleep(min(0.1, remaining))
         try:
             yield True
         finally:
