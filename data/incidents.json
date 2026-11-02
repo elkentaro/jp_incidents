@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-02T20:15:44+00:00",
-  "total": 730,
+  "updated_at": "2026-11-02T21:15:57+00:00",
+  "total": 732,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-02"
@@ -257,7 +257,7 @@
     },
     {
       "date": "2026-10-07",
-      "count": 7
+      "count": 8
     },
     {
       "date": "2026-10-08",
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-11-02",
-      "count": 15
+      "count": 16
     },
     {
       "date": "2026-11-03",
@@ -516,6 +516,48 @@
       "service_aliases": [],
       "added_at": "2026-11-02T10:00:14+00:00",
       "updated_at": "2026-11-02T20:15:44+00:00"
+    },
+    {
+      "id": "a58b4c17e32d9c67",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "丸井グループ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 9086,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [
+        {
+          "incident_id": "778f4a05cc80a4bd",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUC028RZ0S6A101C2000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUC028RZ0S6A101C2000000/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp/15175013.html"
+        },
+        {
+          "name": "デイリースポーツ",
+          "url": "https://www.daily.co.jp/society/main/2026/11/02/0020995036.shtml"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC028RZ0S6A101C2000000/"
+        }
+      ],
+      "affected_service": "デジタル社債の管理業務",
+      "service_aliases": [],
+      "added_at": "2026-11-02T13:16:55+00:00",
+      "updated_at": "2026-11-02T21:15:57+00:00"
     },
     {
       "id": "24fbcc3575cc868a",
@@ -721,6 +763,14 @@
           "evidence_urls": [
             "https://www.nttdata.com/global/ja/news/release/2026/110200/"
           ]
+        },
+        {
+          "incident_id": "a58b4c17e32d9c67",
+          "relationship": "affects",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUC028RZ0S6A101C2000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUC028RZ0S6A101C2000000/"
+          ]
         }
       ],
       "sources": [
@@ -730,7 +780,7 @@
         }
       ],
       "added_at": "2026-11-02T10:00:14+00:00",
-      "updated_at": "2026-11-02T13:16:55+00:00"
+      "updated_at": "2026-11-02T21:15:57+00:00"
     },
     {
       "id": "c8e247004bb4b522",
@@ -858,6 +908,29 @@
       "updated_at": "2026-11-02T13:16:55+00:00"
     },
     {
+      "id": "14733f1165b3b833",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ペイクラウドホールディングス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 77000000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/895ee455f19952c0931183c36b3ea4df86d3f7cc"
+        }
+      ],
+      "added_at": "2026-11-02T21:15:57+00:00",
+      "updated_at": "2026-11-02T21:15:57+00:00"
+    },
+    {
       "id": "a480effd49107e26",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
@@ -880,31 +953,6 @@
       "service_aliases": [],
       "added_at": "2026-11-02T14:16:34+00:00",
       "updated_at": "2026-11-02T14:16:34+00:00"
-    },
-    {
-      "id": "a58b4c17e32d9c67",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "丸井グループ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 9086,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "47NEWS",
-          "url": "https://www.47news.jp/15175013.html"
-        }
-      ],
-      "affected_service": "デジタル社債の管理業務",
-      "service_aliases": [],
-      "added_at": "2026-11-02T13:16:55+00:00",
-      "updated_at": "2026-11-02T13:16:55+00:00"
     },
     {
       "id": "1337ad1619d32570",
@@ -6456,6 +6504,14 @@
       "confidence_score": 75,
       "related": [
         {
+          "incident_id": "10b632dbac87cb2a",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9ScmxVanA3aDZvX3ZQaHVCZWtYNHItUy13eEc2b19qVlg3QnZxTk1ZeS13b3lRdS1JWmkzZmdBdWRXeW51TDFaaVA1UlpVSFlsSnpRNXZ3?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9ScmxVanA3aDZvX3ZQaHVCZWtYNHItUy13eEc2b19qVlg3QnZxTk1ZeS13b3lRdS1JWmkzZmdBdWRXeW51TDFaaVA1UlpVSFlsSnpRNXZ3?oc=5"
+          ]
+        },
+        {
           "incident_id": "ce585c6dafc8e785",
           "relationship": "affects",
           "evidence_url": "https://www.pref.miyazaki.lg.jp/kanko-suishin/press/2026/10/20261027100338.html",
@@ -6499,7 +6555,7 @@
         }
       ],
       "added_at": "2026-10-27T21:16:27+00:00",
-      "updated_at": "2026-10-30T11:16:03+00:00"
+      "updated_at": "2026-11-02T21:15:57+00:00"
     },
     {
       "id": "de2476dc6e0af323",
@@ -29089,6 +29145,40 @@
       "date_basis": "existing_record",
       "added_at": "2026-10-19T09:32:18+00:00",
       "updated_at": "2026-10-20T07:24:24+00:00"
+    },
+    {
+      "id": "10b632dbac87cb2a",
+      "published_at": "2026-10-06T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "熊本県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 478,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "249f996eeac0e23c",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9ScmxVanA3aDZvX3ZQaHVCZWtYNHItUy13eEc2b19qVlg3QnZxTk1ZeS13b3lRdS1JWmkzZmdBdWRXeW51TDFaaVA1UlpVSFlsSnpRNXZ3?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9ScmxVanA3aDZvX3ZQaHVCZWtYNHItUy13eEc2b19qVlg3QnZxTk1ZeS13b3lRdS1JWmkzZmdBdWRXeW51TDFaaVA1UlpVSFlsSnpRNXZ3?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "KAB 熊本朝日放送",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9ScmxVanA3aDZvX3ZQaHVCZWtYNHItUy13eEc2b19qVlg3QnZxTk1ZeS13b3lRdS1JWmkzZmdBdWRXeW51TDFaaVA1UlpVSFlsSnpRNXZ3?oc=5"
+        }
+      ],
+      "affected_service": "ARスタンプラリー「くまモンテクテク」",
+      "service_aliases": [],
+      "added_at": "2026-11-02T21:15:57+00:00",
+      "updated_at": "2026-11-02T21:15:57+00:00"
     },
     {
       "id": "39ad7e559743a043",
