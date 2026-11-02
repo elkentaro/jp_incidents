@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-02T21:15:57+00:00",
-  "total": 732,
+  "updated_at": "2026-11-02T22:16:00+00:00",
+  "total": 733,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-02"
@@ -353,7 +353,7 @@
     },
     {
       "date": "2026-10-31",
-      "count": 9
+      "count": 10
     },
     {
       "date": "2026-11-01",
@@ -560,6 +560,34 @@
       "updated_at": "2026-11-02T21:15:57+00:00"
     },
     {
+      "id": "081d56728e0a654a",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": "2026-11-01T15:00:00+00:00",
+      "organization": "島根県物産協会",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 7,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "島根県 / Shimane",
+          "url": "https://www.pref.shimane.lg.jp/press_release/2026/eubcg9i5kolv.html"
+        },
+        {
+          "name": "47NEWS",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBkUER3Z1hhc1hPRXRlU3JwVkUxYVhPQ0I3RmpxOEVlY3AxS25mRUpDMTB4Yi1nQ2xzdHpSNUxEOHQxRkZrdVRJam1maw?oc=5"
+        }
+      ],
+      "affected_service": "しまねのふるさと直送便",
+      "service_aliases": [],
+      "added_at": "2026-11-02T13:16:55+00:00",
+      "updated_at": "2026-11-02T22:16:00+00:00"
+    },
+    {
       "id": "24fbcc3575cc868a",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
@@ -634,30 +662,6 @@
       "service_aliases": [],
       "added_at": "2026-11-02T20:15:44+00:00",
       "updated_at": "2026-11-02T20:15:44+00:00"
-    },
-    {
-      "id": "081d56728e0a654a",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": "2026-11-01T15:00:00+00:00",
-      "organization": "島根県物産協会",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 7,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [],
-      "sources": [
-        {
-          "name": "島根県 / Shimane",
-          "url": "https://www.pref.shimane.lg.jp/press_release/2026/eubcg9i5kolv.html"
-        }
-      ],
-      "affected_service": "しまねのふるさと直送便",
-      "service_aliases": [],
-      "added_at": "2026-11-02T13:16:55+00:00",
-      "updated_at": "2026-11-02T13:16:55+00:00"
     },
     {
       "id": "19cce63ebf03c536",
@@ -1423,6 +1427,31 @@
       "updated_at": "2026-11-02T19:15:40+00:00"
     },
     {
+      "id": "b6df345a8b3f2910",
+      "published_at": "2026-10-30T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "川崎市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "47NEWS",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBqZEdZR1NiZEREYU16cFBwNTI2STlZRUJ6bFpQc19OdWktakMyRU9sZmI2ZDVsbElFbG1ibzJyQ25jcm4yUjJJRXVqbw?oc=5"
+        }
+      ],
+      "affected_service": "オンライン手続かわさき",
+      "service_aliases": [],
+      "added_at": "2026-11-02T22:16:00+00:00",
+      "updated_at": "2026-11-02T22:16:00+00:00"
+    },
+    {
       "id": "a37bbd0dd41fad67",
       "published_at": "2026-10-30T15:00:00+00:00",
       "disclosed_at": null,
@@ -2062,12 +2091,20 @@
         {
           "name": "文化放送",
           "url": "https://www.joqr.co.jp/news/article/185169/"
+        },
+        {
+          "name": "INTERNET Watch",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5QaTV1M2hoNnVqUndmOTViSml4NzBNeGJsMmpLY3pxcy12NzBGa3lKZ05JX0NlVy0zbkpxcGpOZ2xOMUpzMjlJYl9zdnF6U2ZQellXV2FtcVV2LVhqNlRNUnV0aER1RG5DOG13?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE14X2NTS0luQzgxRnpnMzlpcXZaMm80aGVGWDJNWjJKby1UX3RJSlBNOFJsQk4wTUlrS3d0X0ZaZUFqUkxma0xhbHR3T3NfblBjTUNoU2h4Vk5SVGFITEJrSnB3VlpGYTRhQk5hdTlnWjRFc2I3Q3g1RFNWbndkVEE?oc=5"
         }
       ],
       "affected_service": "GMOグローバルサイン",
       "service_aliases": [],
       "added_at": "2026-11-01T21:15:27+00:00",
-      "updated_at": "2026-11-02T20:15:44+00:00"
+      "updated_at": "2026-11-02T22:16:00+00:00"
     },
     {
       "id": "81ace1ca432c9aa9",
