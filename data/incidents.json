@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-02T06:15:48+00:00",
-  "total": 691,
+  "updated_at": "2026-11-02T07:16:38+00:00",
+  "total": 696,
   "date_range": {
     "start": "2025-10-16",
-    "end": "2026-10-31"
+    "end": "2026-11-02"
   },
   "daily_counts_90d": [
     {
@@ -317,11 +317,11 @@
     },
     {
       "date": "2026-10-21",
-      "count": 59
+      "count": 60
     },
     {
       "date": "2026-10-22",
-      "count": 59
+      "count": 60
     },
     {
       "date": "2026-10-23",
@@ -345,7 +345,7 @@
     },
     {
       "date": "2026-10-28",
-      "count": 37
+      "count": 38
     },
     {
       "date": "2026-10-29",
@@ -353,7 +353,7 @@
     },
     {
       "date": "2026-10-30",
-      "count": 25
+      "count": 26
     },
     {
       "date": "2026-10-31",
@@ -365,10 +365,43 @@
     },
     {
       "date": "2026-11-02",
-      "count": 0
+      "count": 1
     }
   ],
   "incidents": [
+    {
+      "id": "d028329a3ac53751",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "UCC上島珈琲",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 5529,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "aa9bc3fcfc85d71d",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.ucc.co.jp/press/20261102.html",
+          "evidence_urls": [
+            "https://www.ucc.co.jp/press/20261102.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "UCC上島珈琲",
+          "url": "https://www.ucc.co.jp/press/20261102.html"
+        }
+      ],
+      "affected_service": "COMSBI エンタープライズ基盤",
+      "service_aliases": [],
+      "added_at": "2026-11-02T07:16:38+00:00",
+      "updated_at": "2026-11-02T07:16:38+00:00"
+    },
     {
       "id": "09ba28525670dac9",
       "published_at": "2026-10-30T15:00:00+00:00",
@@ -382,7 +415,16 @@
       "potential_records": 4320000,
       "confidence": "high",
       "confidence_score": 100,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "b4a085f090389b88",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.shimane.lg.jp/press_release/2026/fvlltw2tl4sn.html",
+          "evidence_urls": [
+            "https://www.pref.shimane.lg.jp/press_release/2026/fvlltw2tl4sn.html"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "legalagent list",
@@ -414,7 +456,7 @@
         }
       ],
       "added_at": "2026-10-31T14:15:53+00:00",
-      "updated_at": "2026-11-02T01:16:01+00:00"
+      "updated_at": "2026-11-02T07:16:38+00:00"
     },
     {
       "id": "29879c71c8cc2650",
@@ -1616,6 +1658,40 @@
       "service_aliases": [],
       "added_at": "2026-10-31T00:15:53+00:00",
       "updated_at": "2026-10-31T00:15:53+00:00"
+    },
+    {
+      "id": "b4a085f090389b88",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "島根県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 150,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "09ba28525670dac9",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.shimane.lg.jp/press_release/2026/fvlltw2tl4sn.html",
+          "evidence_urls": [
+            "https://www.pref.shimane.lg.jp/press_release/2026/fvlltw2tl4sn.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "島根県 / Shimane",
+          "url": "https://www.pref.shimane.lg.jp/press_release/2026/fvlltw2tl4sn.html"
+        }
+      ],
+      "affected_service": "しまねの古代文化探訪ツアー企画造成業務",
+      "service_aliases": [],
+      "added_at": "2026-11-02T07:16:38+00:00",
+      "updated_at": "2026-11-02T07:16:38+00:00"
     },
     {
       "id": "d596ddaea3a9b78e",
@@ -4029,6 +4105,31 @@
       "service_aliases": [],
       "added_at": "2026-10-30T02:15:42+00:00",
       "updated_at": "2026-10-30T02:15:42+00:00"
+    },
+    {
+      "id": "6902b70d37d5ae9e",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "アイスタイル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 3000000,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "アイスタイル",
+          "url": "https://www.istyle.co.jp/news/info/2026/11/1102.html"
+        }
+      ],
+      "affected_service": "@cosme",
+      "service_aliases": [],
+      "added_at": "2026-11-02T07:16:38+00:00",
+      "updated_at": "2026-11-02T07:16:38+00:00"
     },
     {
       "id": "8ebd5d925ed1dcd6",
@@ -9068,7 +9169,16 @@
       "potential_records": null,
       "confidence": "high",
       "confidence_score": 60,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "d028329a3ac53751",
+          "relationship": "affects",
+          "evidence_url": "https://www.ucc.co.jp/press/20261102.html",
+          "evidence_urls": [
+            "https://www.ucc.co.jp/press/20261102.html"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "Howl.Link",
@@ -9078,7 +9188,7 @@
       "affected_service": "COMSBI エンタープライズ基盤",
       "service_aliases": [],
       "added_at": "2026-10-27T07:15:28+00:00",
-      "updated_at": "2026-10-27T07:15:28+00:00"
+      "updated_at": "2026-11-02T07:16:38+00:00"
     },
     {
       "id": "afafc315a013764c",
@@ -12270,6 +12380,40 @@
       "updated_at": "2026-10-23T01:00:27+00:00"
     },
     {
+      "id": "5f3d3547b4557f5a",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": "2026-10-21T15:00:00+00:00",
+      "organization": "静岡県伊東市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.ito.shizuoka.jp/gyosei/soshikikarasagasu/sangyoka/shiseijoho/2/furusato/14777.html",
+          "evidence_urls": [
+            "https://www.city.ito.shizuoka.jp/gyosei/soshikikarasagasu/sangyoka/shiseijoho/2/furusato/14777.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "www.city.ito.shizuoka.jp",
+          "url": "https://www.city.ito.shizuoka.jp/gyosei/soshikikarasagasu/sangyoka/shiseijoho/2/furusato/14777.html"
+        }
+      ],
+      "affected_service": "ふるさとチョイス",
+      "service_aliases": [],
+      "added_at": "2026-11-02T07:16:38+00:00",
+      "updated_at": "2026-11-02T07:16:38+00:00"
+    },
+    {
       "id": "6b2e656b79222355",
       "published_at": "2026-10-21T15:00:00+00:00",
       "disclosed_at": null,
@@ -13895,6 +14039,40 @@
       "updated_at": "2026-10-23T01:00:27+00:00"
     },
     {
+      "id": "0319a88a3345d53c",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東京都杉並区",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0eaef1bd861f21f3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.suginami.tokyo.jp/s028/news/29784.html",
+          "evidence_urls": [
+            "https://www.city.suginami.tokyo.jp/s028/news/29784.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "www.city.suginami.tokyo.jp",
+          "url": "https://www.city.suginami.tokyo.jp/s028/news/29784.html"
+        }
+      ],
+      "affected_service": "ふるさとチョイス",
+      "service_aliases": [],
+      "added_at": "2026-11-02T07:16:38+00:00",
+      "updated_at": "2026-11-02T07:16:38+00:00"
+    },
+    {
       "id": "0dbb912a0f5a5494",
       "published_at": "2026-10-20T15:00:00+00:00",
       "disclosed_at": null,
@@ -15091,6 +15269,14 @@
       "confidence_score": 100,
       "related": [
         {
+          "incident_id": "0319a88a3345d53c",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.suginami.tokyo.jp/s028/news/29784.html",
+          "evidence_urls": [
+            "https://www.city.suginami.tokyo.jp/s028/news/29784.html"
+          ]
+        },
+        {
           "incident_id": "0e7688ff6d7f03d6",
           "relationship": "affects",
           "evidence_url": "https://www.town.ashoro.hokkaido.jp/kurashi/important-news/entry_288.html",
@@ -15201,6 +15387,14 @@
           "evidence_url": "https://www.city.osaki.miyagi.jp/shisei/soshikikarasagasu/shiminkyodousuishimbu/seisakuka/4/23136.html",
           "evidence_urls": [
             "https://www.city.osaki.miyagi.jp/shisei/soshikikarasagasu/shiminkyodousuishimbu/seisakuka/4/23136.html"
+          ]
+        },
+        {
+          "incident_id": "5f3d3547b4557f5a",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.ito.shizuoka.jp/gyosei/soshikikarasagasu/sangyoka/shiseijoho/2/furusato/14777.html",
+          "evidence_urls": [
+            "https://www.city.ito.shizuoka.jp/gyosei/soshikikarasagasu/sangyoka/shiseijoho/2/furusato/14777.html"
           ]
         },
         {
@@ -15551,7 +15745,7 @@
         "ふるさとちょいす"
       ],
       "added_at": "2026-10-20T23:46:03+00:00",
-      "updated_at": "2026-10-30T09:16:10+00:00"
+      "updated_at": "2026-11-02T07:16:38+00:00"
     },
     {
       "id": "2a737208d01cfe10",
