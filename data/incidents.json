@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-02T13:26:00+00:00",
-  "total": 724,
+  "updated_at": "2026-11-02T13:52:40+00:00",
+  "total": 723,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-02"
@@ -365,10 +365,70 @@
     },
     {
       "date": "2026-11-02",
-      "count": 13
+      "count": 12
     }
   ],
   "incidents": [
+    {
+      "id": "c43cf10975841a94",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ノジマ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 7000000,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [],
+      "sources": [
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261102de69780"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVC23HL9VC2ULFA01PM.html"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC028Y90S6A101C2000000/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/743e16ce8d8b3f48908d0248d48f4d15c913b90e"
+        },
+        {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp/15175234.html"
+        }
+      ],
+      "affected_service": "ネット通販サイトの会員管理システム / ノジマオンライン / 中古スマホ買取サイト",
+      "service_aliases": [],
+      "affected_services": [
+        "ネット通販サイトの会員管理システム",
+        "ノジマオンライン",
+        "中古スマホ買取サイト"
+      ],
+      "service_details": [
+        {
+          "name": "ネット通販サイトの会員管理システム",
+          "aliases": []
+        },
+        {
+          "name": "ノジマオンライン",
+          "aliases": []
+        },
+        {
+          "name": "中古スマホ買取サイト",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-02T12:16:29+00:00",
+      "updated_at": "2026-11-02T13:52:40+00:00"
+    },
     {
       "id": "58e85aa5a6aa2f68",
       "published_at": "2026-11-01T15:00:00+00:00",
@@ -410,53 +470,6 @@
         }
       ],
       "added_at": "2026-11-02T09:16:16+00:00",
-      "updated_at": "2026-11-02T13:16:55+00:00"
-    },
-    {
-      "id": "c43cf10975841a94",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ノジマ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 7000000,
-      "confidence": "high",
-      "confidence_score": 80,
-      "related": [],
-      "sources": [
-        {
-          "name": "NHKニュース",
-          "url": "https://news.web.nhk/newsweb/na/nd-20261102de69780"
-        },
-        {
-          "name": "朝日新聞",
-          "url": "https://www.asahi.com/articles/ASVC23HL9VC2ULFA01PM.html"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUC028Y90S6A101C2000000/"
-        }
-      ],
-      "affected_service": "ネット通販サイトの会員管理システム / ノジマオンライン",
-      "service_aliases": [],
-      "affected_services": [
-        "ネット通販サイトの会員管理システム",
-        "ノジマオンライン"
-      ],
-      "service_details": [
-        {
-          "name": "ネット通販サイトの会員管理システム",
-          "aliases": []
-        },
-        {
-          "name": "ノジマオンライン",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-02T12:16:29+00:00",
       "updated_at": "2026-11-02T13:16:55+00:00"
     },
     {
@@ -788,30 +801,6 @@
       "service_aliases": [],
       "added_at": "2026-11-02T13:16:55+00:00",
       "updated_at": "2026-11-02T13:16:55+00:00"
-    },
-    {
-      "id": "db20d28385431f77",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "株式会社SpicyCompany",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "PR TIMES",
-          "url": "https://prtimes.jp/main/html/rd/p/000000039.000090708.html"
-        }
-      ],
-      "affected_service": "みんなの純金",
-      "service_aliases": [],
-      "added_at": "2026-11-02T12:16:29+00:00",
-      "updated_at": "2026-11-02T12:16:29+00:00"
     },
     {
       "id": "590917c47f5ba4f5",
