@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-02T19:15:40+00:00",
-  "total": 728,
+  "updated_at": "2026-11-02T20:15:44+00:00",
+  "total": 730,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-02"
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-11-02",
-      "count": 13
+      "count": 15
     },
     {
       "date": "2026-11-03",
@@ -477,6 +477,47 @@
       "updated_at": "2026-11-02T13:16:55+00:00"
     },
     {
+      "id": "6ce8d002dff5f408",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大阪ガス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 34489,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.osakagas.co.jp/company/press/pr2026/1828107_60967.html",
+          "evidence_urls": [
+            "https://www.osakagas.co.jp/company/press/pr2026/1828107_60967.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "大阪ガス / Osaka Gas",
+          "url": "https://www.osakagas.co.jp/company/press/pr2026/1828107_60967.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/55c4518725133b7cbb7eff3766dab174d68f0129"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUF029DM0S6A101C2000000/"
+        }
+      ],
+      "affected_service": "FitDish",
+      "service_aliases": [],
+      "added_at": "2026-11-02T10:00:14+00:00",
+      "updated_at": "2026-11-02T20:15:44+00:00"
+    },
+    {
       "id": "24fbcc3575cc868a",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
@@ -514,41 +555,43 @@
       "updated_at": "2026-11-02T13:16:55+00:00"
     },
     {
-      "id": "6ce8d002dff5f408",
+      "id": "5fa1320f5cec460c",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
-      "organization": "大阪ガス",
+      "organization": "姫路市",
       "incident_type": "data leak",
       "incident_categories": [
-        "data leak"
+        "data leak",
+        "unauthorized access"
       ],
-      "potential_records": 34489,
+      "potential_records": null,
       "confidence": "high",
       "confidence_score": 75,
       "related": [
         {
           "incident_id": "e0bf7f8e71d6ba85",
           "relationship": "affected_by",
-          "evidence_url": "https://www.osakagas.co.jp/company/press/pr2026/1828107_60967.html",
+          "evidence_url": "https://www.kobe-np.co.jp/news/society/202611/0020995366.shtml",
           "evidence_urls": [
-            "https://www.osakagas.co.jp/company/press/pr2026/1828107_60967.html"
+            "https://news.yahoo.co.jp/articles/2e096c54d430a266f0b4312f3b0319f8b4f1e289",
+            "https://www.kobe-np.co.jp/news/society/202611/0020995366.shtml"
           ]
         }
       ],
       "sources": [
         {
-          "name": "大阪ガス / Osaka Gas",
-          "url": "https://www.osakagas.co.jp/company/press/pr2026/1828107_60967.html"
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/2e096c54d430a266f0b4312f3b0319f8b4f1e289"
         },
         {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/55c4518725133b7cbb7eff3766dab174d68f0129"
+          "name": "神戸新聞",
+          "url": "https://www.kobe-np.co.jp/news/society/202611/0020995366.shtml"
         }
       ],
-      "affected_service": "FitDish",
+      "affected_service": "姫路市オンライン手続ポータルサイト",
       "service_aliases": [],
-      "added_at": "2026-11-02T10:00:14+00:00",
-      "updated_at": "2026-11-02T12:16:29+00:00"
+      "added_at": "2026-11-02T20:15:44+00:00",
+      "updated_at": "2026-11-02T20:15:44+00:00"
     },
     {
       "id": "081d56728e0a654a",
@@ -757,6 +800,39 @@
       "updated_at": "2026-11-02T07:16:38+00:00"
     },
     {
+      "id": "e9811136a68c506f",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ユーコープ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 210495,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.ucoop.or.jp/info/2026/info_34571.html",
+          "evidence_urls": [
+            "https://www.ucoop.or.jp/info/2026/info_34571.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "ユーコープ",
+          "url": "https://www.ucoop.or.jp/info/2026/info_34571.html"
+        }
+      ],
+      "affected_service": "メール配信サービス",
+      "service_aliases": [],
+      "added_at": "2026-11-02T20:15:44+00:00",
+      "updated_at": "2026-11-02T20:15:44+00:00"
+    },
+    {
       "id": "fa6c90af8f34017d",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
@@ -831,6 +907,42 @@
       "updated_at": "2026-11-02T13:16:55+00:00"
     },
     {
+      "id": "1337ad1619d32570",
+      "published_at": "2026-10-31T15:00:00+00:00",
+      "disclosed_at": "2026-10-31T15:00:00+00:00",
+      "organization": "セガ フェイブ",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [],
+      "sources": [
+        {
+          "name": "4Gamer.net",
+          "url": "https://www.4gamer.net/games/999/G999905/20261102022/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/1cbff9f9f84955934682dbc4387e27cb13c7906c"
+        },
+        {
+          "name": "ニコニコニュース",
+          "url": "https://news.nicovideo.jp/watch/nw19949594?news_ref=dic_topics_topic"
+        },
+        {
+          "name": "ニコニコニュース",
+          "url": "https://news.nicovideo.jp/watch/nw19949594?news_ref=top_newComments"
+        }
+      ],
+      "affected_service": "ALL.Net",
+      "service_aliases": [],
+      "added_at": "2026-11-02T13:16:55+00:00",
+      "updated_at": "2026-11-02T20:15:44+00:00"
+    },
+    {
       "id": "590917c47f5ba4f5",
       "published_at": "2026-10-31T15:00:00+00:00",
       "disclosed_at": "2026-11-01T15:00:00+00:00",
@@ -854,30 +966,6 @@
       "service_aliases": [],
       "added_at": "2026-11-02T10:00:14+00:00",
       "updated_at": "2026-11-02T10:00:14+00:00"
-    },
-    {
-      "id": "1337ad1619d32570",
-      "published_at": "2026-10-31T15:00:00+00:00",
-      "disclosed_at": "2026-10-31T15:00:00+00:00",
-      "organization": "セガ フェイブ",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "4Gamer.net",
-          "url": "https://www.4gamer.net/games/999/G999905/20261102022/"
-        }
-      ],
-      "affected_service": "ALL.Net",
-      "service_aliases": [],
-      "added_at": "2026-11-02T13:16:55+00:00",
-      "updated_at": "2026-11-02T13:16:55+00:00"
     },
     {
       "id": "958dfe59049e808e",
@@ -1147,6 +1235,62 @@
       "updated_at": "2026-11-02T02:15:58+00:00"
     },
     {
+      "id": "c22568994fef58b0",
+      "published_at": "2026-10-30T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "西日本旅客鉄道株式会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "29879c71c8cc2650",
+          "relationship": "affected_by",
+          "evidence_url": "https://cybersecurity-jp.com/news/118030",
+          "evidence_urls": [
+            "https://cybersecurity-jp.com/news/118030",
+            "https://www.westjr.co.jp/press/article/2026/10/31/page_31177.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118030"
+        },
+        {
+          "name": "JR西日本 / JR West",
+          "url": "https://www.westjr.co.jp/press/article/2026/10/31/page_31177.html"
+        },
+        {
+          "name": "ASCII.jp",
+          "url": "https://ascii.jp/elem/000/004/447/4447736/"
+        }
+      ],
+      "affected_service": "投資家情報 / 投資家様情報",
+      "service_aliases": [],
+      "affected_services": [
+        "投資家情報",
+        "投資家様情報"
+      ],
+      "service_details": [
+        {
+          "name": "投資家情報",
+          "aliases": []
+        },
+        {
+          "name": "投資家様情報",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-02T06:15:48+00:00",
+      "updated_at": "2026-11-02T20:15:44+00:00"
+    },
+    {
       "id": "747ff37bca4130bd",
       "published_at": "2026-10-30T15:00:00+00:00",
       "disclosed_at": null,
@@ -1229,58 +1373,6 @@
       "service_aliases": [],
       "added_at": "2026-11-02T09:16:16+00:00",
       "updated_at": "2026-11-02T19:15:40+00:00"
-    },
-    {
-      "id": "c22568994fef58b0",
-      "published_at": "2026-10-30T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "西日本旅客鉄道株式会社",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "29879c71c8cc2650",
-          "relationship": "affected_by",
-          "evidence_url": "https://cybersecurity-jp.com/news/118030",
-          "evidence_urls": [
-            "https://cybersecurity-jp.com/news/118030",
-            "https://www.westjr.co.jp/press/article/2026/10/31/page_31177.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Cybersecurity.jp",
-          "url": "https://cybersecurity-jp.com/news/118030"
-        },
-        {
-          "name": "JR西日本 / JR West",
-          "url": "https://www.westjr.co.jp/press/article/2026/10/31/page_31177.html"
-        }
-      ],
-      "affected_service": "投資家情報 / 投資家様情報",
-      "service_aliases": [],
-      "affected_services": [
-        "投資家情報",
-        "投資家様情報"
-      ],
-      "service_details": [
-        {
-          "name": "投資家情報",
-          "aliases": []
-        },
-        {
-          "name": "投資家様情報",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-02T06:15:48+00:00",
-      "updated_at": "2026-11-02T09:16:16+00:00"
     },
     {
       "id": "a37bbd0dd41fad67",
@@ -1721,6 +1813,52 @@
       "updated_at": "2026-10-30T11:16:03+00:00"
     },
     {
+      "id": "80f5997301665f70",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "野村證券株式会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "65f3107c9b8e0705",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.nomuraholdings.com/jp/news/topics/20261031.html",
+          "evidence_urls": [
+            "https://www.nomuraholdings.com/jp/news/topics/20261031.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "野村ホールディングス / Nomura",
+          "url": "https://www.nomuraholdings.com/jp/news/topics/20261031.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/ba9de31a4fd3783e2b92b13d855ab2825ea2e87e"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9MT0ozbXU5MGdCQ2ZtbDZFR2ZfX0ZickFhWWpmSVotYzlDYkRBcDZyaEhPSmlDRFpYT2tXRi05SzA3YWd3UXRnU3lNTDFWV3FhWjQwdDlHTVM5ZmNlcEFwcVNJOV9YMktTMVVITVUzdnJNamRhQ183cWVUd0JUd2M?oc=5"
+        },
+        {
+          "name": "ASCII.jp",
+          "url": "https://ascii.jp/elem/000/004/447/4447736/"
+        }
+      ],
+      "affected_service": "デジタル証券プラットフォーム",
+      "service_aliases": [],
+      "added_at": "2026-10-31T05:15:23+00:00",
+      "updated_at": "2026-11-02T20:15:44+00:00"
+    },
+    {
       "id": "84eb1336a89d7356",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": "2026-10-29T15:00:00+00:00",
@@ -1847,46 +1985,41 @@
       "updated_at": "2026-11-01T10:15:46+00:00"
     },
     {
-      "id": "80f5997301665f70",
+      "id": "f029efe1fece299f",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": null,
-      "organization": "野村證券株式会社",
+      "organization": "GMOインターネットグループ",
       "incident_type": "data leak",
       "incident_categories": [
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 45000,
       "confidence": "high",
-      "confidence_score": 90,
-      "related": [
-        {
-          "incident_id": "65f3107c9b8e0705",
-          "relationship": "same_organization",
-          "evidence_url": "https://www.nomuraholdings.com/jp/news/topics/20261031.html",
-          "evidence_urls": [
-            "https://www.nomuraholdings.com/jp/news/topics/20261031.html"
-          ]
-        }
-      ],
+      "confidence_score": 100,
+      "related": [],
       "sources": [
         {
-          "name": "野村ホールディングス / Nomura",
-          "url": "https://www.nomuraholdings.com/jp/news/topics/20261031.html"
+          "name": "NHKニュース",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9LZS1McmFLUHVlS2xBVFJSS2VWdEt3N3pGWEQ0eXpMYnphLWZORC0wLTJfMlExMjRkM3hrcUo1dkRHRkRhR0M3d1dkcWtFMFhmRnlfRW5STzdJMkd4Z1FN?oc=5"
+        },
+        {
+          "name": "時事ドットコム",
+          "url": "https://www.jiji.com/jc/article?k=2026110200432&g=eco"
         },
         {
           "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/ba9de31a4fd3783e2b92b13d855ab2825ea2e87e"
+          "url": "https://news.yahoo.co.jp/articles/765fe1231d79425187107b8c6513666d438ab54e"
         },
         {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9MT0ozbXU5MGdCQ2ZtbDZFR2ZfX0ZickFhWWpmSVotYzlDYkRBcDZyaEhPSmlDRFpYT2tXRi05SzA3YWd3UXRnU3lNTDFWV3FhWjQwdDlHTVM5ZmNlcEFwcVNJOV9YMktTMVVITVUzdnJNamRhQ183cWVUd0JUd2M?oc=5"
+          "name": "文化放送",
+          "url": "https://www.joqr.co.jp/news/article/185169/"
         }
       ],
-      "affected_service": "デジタル証券プラットフォーム",
+      "affected_service": "GMOグローバルサイン",
       "service_aliases": [],
-      "added_at": "2026-10-31T05:15:23+00:00",
-      "updated_at": "2026-11-02T13:26:00+00:00"
+      "added_at": "2026-11-01T21:15:27+00:00",
+      "updated_at": "2026-11-02T20:15:44+00:00"
     },
     {
       "id": "81ace1ca432c9aa9",
@@ -1974,39 +2107,6 @@
       "updated_at": "2026-11-02T13:16:55+00:00"
     },
     {
-      "id": "f029efe1fece299f",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "GMOインターネットグループ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 45000,
-      "confidence": "high",
-      "confidence_score": 80,
-      "related": [],
-      "sources": [
-        {
-          "name": "NHKニュース",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9LZS1McmFLUHVlS2xBVFJSS2VWdEt3N3pGWEQ0eXpMYnphLWZORC0wLTJfMlExMjRkM3hrcUo1dkRHRkRhR0M3d1dkcWtFMFhmRnlfRW5STzdJMkd4Z1FN?oc=5"
-        },
-        {
-          "name": "時事ドットコム",
-          "url": "https://www.jiji.com/jc/article?k=2026110200432&g=eco"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/765fe1231d79425187107b8c6513666d438ab54e"
-        }
-      ],
-      "affected_service": "GMOグローバルサイン",
-      "service_aliases": [],
-      "added_at": "2026-11-01T21:15:27+00:00",
-      "updated_at": "2026-11-02T09:16:16+00:00"
-    },
-    {
       "id": "afcfe4585d0dbcf0",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": null,
@@ -2034,6 +2134,42 @@
       "service_aliases": [],
       "added_at": "2026-10-31T02:16:08+00:00",
       "updated_at": "2026-10-31T08:16:00+00:00"
+    },
+    {
+      "id": "02bcae1c03c3df84",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "GMOペイメントゲートウェイ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 69,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "f1d14e7cd283aedb",
+          "relationship": "affects",
+          "evidence_url": "https://www.asahi.com/articles/ASVC23WNKVC2ULFA01SM.html",
+          "evidence_urls": [
+            "https://www.asahi.com/articles/ASVC23WNKVC2ULFA01SM.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVC23WNKVC2ULFA01SM.html"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC029TX0S6A101C2000000/"
+        }
+      ],
+      "added_at": "2026-11-02T19:15:40+00:00",
+      "updated_at": "2026-11-02T20:15:44+00:00"
     },
     {
       "id": "0b0acaaeb4439273",
@@ -2347,38 +2483,6 @@
       "service_aliases": [],
       "added_at": "2026-11-02T07:16:38+00:00",
       "updated_at": "2026-11-02T07:16:38+00:00"
-    },
-    {
-      "id": "02bcae1c03c3df84",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "GMOペイメントゲートウェイ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 69,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "f1d14e7cd283aedb",
-          "relationship": "affects",
-          "evidence_url": "https://www.asahi.com/articles/ASVC23WNKVC2ULFA01SM.html",
-          "evidence_urls": [
-            "https://www.asahi.com/articles/ASVC23WNKVC2ULFA01SM.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "朝日新聞",
-          "url": "https://www.asahi.com/articles/ASVC23WNKVC2ULFA01SM.html"
-        }
-      ],
-      "added_at": "2026-11-02T19:15:40+00:00",
-      "updated_at": "2026-11-02T19:15:40+00:00"
     },
     {
       "id": "d596ddaea3a9b78e",
@@ -2908,12 +3012,20 @@
         {
           "name": "朝日新聞",
           "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1XWE1tWER2QnhUc3ZVazU4N1ROd1hnQTlOc1hvUHEzai1ZVGJFVDkxck9iVkFheWtTZ0w3QlQ0TVVQdklNT0xTOXJMZTludEJaYS1hLVJBd01BZl9WYjNEZmxjY1Bld0U?oc=5"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC02A8X0S6A101C2000000/"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3057449?display=1"
         }
       ],
       "affected_service": "ロードサービス等の受付・手配業務に使用する業務システム",
       "service_aliases": [],
       "added_at": "2026-11-02T10:00:14+00:00",
-      "updated_at": "2026-11-02T13:26:00+00:00"
+      "updated_at": "2026-11-02T20:15:44+00:00"
     },
     {
       "id": "8132159128c70bb6",
@@ -4527,6 +4639,15 @@
           ]
         },
         {
+          "incident_id": "5fa1320f5cec460c",
+          "relationship": "affects",
+          "evidence_url": "https://www.kobe-np.co.jp/news/society/202611/0020995366.shtml",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/2e096c54d430a266f0b4312f3b0319f8b4f1e289",
+            "https://www.kobe-np.co.jp/news/society/202611/0020995366.shtml"
+          ]
+        },
+        {
           "incident_id": "63501d67ec214e3e",
           "relationship": "affects",
           "evidence_url": "https://www.jera.co.jp/news/notice/20261030_2567",
@@ -4573,6 +4694,14 @@
           "evidence_urls": [
             "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5lOFJlUnpUdjNFUFhIaG5SMEtjZ0FucnpaR3hwWl9CZVF0S3Y2SmlDWEdIcXM5Y2V5R1lIVzZKb0UyNHFlNWpPUV8yYlV6MVRKSXZLN3p1QUd1NnFpWHc?oc=5"
           ]
+        },
+        {
+          "incident_id": "e9811136a68c506f",
+          "relationship": "affects",
+          "evidence_url": "https://www.ucoop.or.jp/info/2026/info_34571.html",
+          "evidence_urls": [
+            "https://www.ucoop.or.jp/info/2026/info_34571.html"
+          ]
         }
       ],
       "sources": [
@@ -4606,7 +4735,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-02T13:26:00+00:00"
+      "updated_at": "2026-11-02T20:15:44+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
