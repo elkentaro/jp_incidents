@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-02T15:16:08+00:00",
-  "total": 724,
+  "updated_at": "2026-11-02T19:15:40+00:00",
+  "total": 728,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-02"
@@ -341,7 +341,7 @@
     },
     {
       "date": "2026-10-28",
-      "count": 40
+      "count": 43
     },
     {
       "date": "2026-10-29",
@@ -349,7 +349,7 @@
     },
     {
       "date": "2026-10-30",
-      "count": 32
+      "count": 33
     },
     {
       "date": "2026-10-31",
@@ -1185,6 +1185,52 @@
       "updated_at": "2026-11-01T13:16:31+00:00"
     },
     {
+      "id": "f1d14e7cd283aedb",
+      "published_at": "2026-10-30T15:00:00+00:00",
+      "disclosed_at": "2026-10-30T15:00:00+00:00",
+      "organization": "ライフカード",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "02bcae1c03c3df84",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.asahi.com/articles/ASVC23WNKVC2ULFA01SM.html",
+          "evidence_urls": [
+            "https://www.asahi.com/articles/ASVC23WNKVC2ULFA01SM.html"
+          ]
+        },
+        {
+          "incident_id": "e4c2c9b879e0ecb8",
+          "relationship": "same_organization",
+          "evidence_url": "https://cybersecurity-jp.com/news/118065",
+          "evidence_urls": [
+            "https://cybersecurity-jp.com/news/118065"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118065"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVC23WNKVC2ULFA01SM.html"
+        }
+      ],
+      "affected_service": "Vプリカ",
+      "service_aliases": [],
+      "added_at": "2026-11-02T09:16:16+00:00",
+      "updated_at": "2026-11-02T19:15:40+00:00"
+    },
+    {
       "id": "c22568994fef58b0",
       "published_at": "2026-10-30T15:00:00+00:00",
       "disclosed_at": null,
@@ -1234,40 +1280,6 @@
         }
       ],
       "added_at": "2026-11-02T06:15:48+00:00",
-      "updated_at": "2026-11-02T09:16:16+00:00"
-    },
-    {
-      "id": "f1d14e7cd283aedb",
-      "published_at": "2026-10-30T15:00:00+00:00",
-      "disclosed_at": "2026-10-30T15:00:00+00:00",
-      "organization": "ライフカード",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "e4c2c9b879e0ecb8",
-          "relationship": "same_organization",
-          "evidence_url": "https://cybersecurity-jp.com/news/118065",
-          "evidence_urls": [
-            "https://cybersecurity-jp.com/news/118065"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Cybersecurity.jp",
-          "url": "https://cybersecurity-jp.com/news/118065"
-        }
-      ],
-      "affected_service": "Vプリカ",
-      "service_aliases": [],
-      "added_at": "2026-11-02T09:16:16+00:00",
       "updated_at": "2026-11-02T09:16:16+00:00"
     },
     {
@@ -2335,6 +2347,38 @@
       "service_aliases": [],
       "added_at": "2026-11-02T07:16:38+00:00",
       "updated_at": "2026-11-02T07:16:38+00:00"
+    },
+    {
+      "id": "02bcae1c03c3df84",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "GMOペイメントゲートウェイ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 69,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "f1d14e7cd283aedb",
+          "relationship": "affects",
+          "evidence_url": "https://www.asahi.com/articles/ASVC23WNKVC2ULFA01SM.html",
+          "evidence_urls": [
+            "https://www.asahi.com/articles/ASVC23WNKVC2ULFA01SM.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVC23WNKVC2ULFA01SM.html"
+        }
+      ],
+      "added_at": "2026-11-02T19:15:40+00:00",
+      "updated_at": "2026-11-02T19:15:40+00:00"
     },
     {
       "id": "d596ddaea3a9b78e",
@@ -4027,7 +4071,32 @@
       "potential_records": 106038,
       "confidence": "high",
       "confidence_score": 100,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "35872e4d31a72a51",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/95612e4ef1923ccb61673b75a44442c9bf575eaa",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/95612e4ef1923ccb61673b75a44442c9bf575eaa"
+          ]
+        },
+        {
+          "incident_id": "be3234687a3be3d9",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/95612e4ef1923ccb61673b75a44442c9bf575eaa",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/95612e4ef1923ccb61673b75a44442c9bf575eaa"
+          ]
+        },
+        {
+          "incident_id": "dc15595102d7025a",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/95612e4ef1923ccb61673b75a44442c9bf575eaa",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/95612e4ef1923ccb61673b75a44442c9bf575eaa"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "サントリーホールディングス株式会社",
@@ -4055,7 +4124,7 @@
         }
       ],
       "added_at": "2026-11-02T09:16:16+00:00",
-      "updated_at": "2026-11-02T13:16:55+00:00"
+      "updated_at": "2026-11-02T19:15:40+00:00"
     },
     {
       "id": "6902b70d37d5ae9e",
@@ -5321,6 +5390,38 @@
       "updated_at": "2026-10-31T00:15:53+00:00"
     },
     {
+      "id": "35872e4d31a72a51",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "サントリービバレッジソリューション",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1097,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "539e668e17a51d84",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/95612e4ef1923ccb61673b75a44442c9bf575eaa",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/95612e4ef1923ccb61673b75a44442c9bf575eaa"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/95612e4ef1923ccb61673b75a44442c9bf575eaa"
+        }
+      ],
+      "added_at": "2026-11-02T19:15:40+00:00",
+      "updated_at": "2026-11-02T19:15:40+00:00"
+    },
+    {
       "id": "397ff8cd4e4501d0",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": null,
@@ -5441,6 +5542,70 @@
       "service_aliases": [],
       "added_at": "2026-10-28T13:16:27+00:00",
       "updated_at": "2026-10-28T13:16:27+00:00"
+    },
+    {
+      "id": "be3234687a3be3d9",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "モンテ物産",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 324,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "539e668e17a51d84",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/95612e4ef1923ccb61673b75a44442c9bf575eaa",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/95612e4ef1923ccb61673b75a44442c9bf575eaa"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/95612e4ef1923ccb61673b75a44442c9bf575eaa"
+        }
+      ],
+      "added_at": "2026-11-02T19:15:40+00:00",
+      "updated_at": "2026-11-02T19:15:40+00:00"
+    },
+    {
+      "id": "dc15595102d7025a",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "井筒まい泉",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 96,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "539e668e17a51d84",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/95612e4ef1923ccb61673b75a44442c9bf575eaa",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/95612e4ef1923ccb61673b75a44442c9bf575eaa"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/95612e4ef1923ccb61673b75a44442c9bf575eaa"
+        }
+      ],
+      "added_at": "2026-11-02T19:15:40+00:00",
+      "updated_at": "2026-11-02T19:15:40+00:00"
     },
     {
       "id": "7364b338d85ed5d1",
