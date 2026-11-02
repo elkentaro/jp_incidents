@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-02T05:15:53+00:00",
-  "total": 688,
+  "updated_at": "2026-11-02T06:15:48+00:00",
+  "total": 691,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-10-31"
@@ -317,7 +317,7 @@
     },
     {
       "date": "2026-10-21",
-      "count": 58
+      "count": 59
     },
     {
       "date": "2026-10-22",
@@ -337,7 +337,7 @@
     },
     {
       "date": "2026-10-26",
-      "count": 37
+      "count": 38
     },
     {
       "date": "2026-10-27",
@@ -357,7 +357,7 @@
     },
     {
       "date": "2026-10-31",
-      "count": 7
+      "count": 8
     },
     {
       "date": "2026-11-01",
@@ -448,6 +448,14 @@
           ]
         },
         {
+          "incident_id": "c22568994fef58b0",
+          "relationship": "affects",
+          "evidence_url": "https://cybersecurity-jp.com/news/118030",
+          "evidence_urls": [
+            "https://cybersecurity-jp.com/news/118030"
+          ]
+        },
+        {
           "incident_id": "c4ae42924805f3fd",
           "relationship": "affects",
           "evidence_url": "https://www.westjr.co.jp/press/article/2026/10/31/page_31177.html",
@@ -481,7 +489,7 @@
       "affected_service": "STdirectServices",
       "service_aliases": [],
       "added_at": "2026-10-31T04:15:30+00:00",
-      "updated_at": "2026-11-02T02:15:58+00:00"
+      "updated_at": "2026-11-02T06:15:48+00:00"
     },
     {
       "id": "62e7efc40d4f6d44",
@@ -652,6 +660,39 @@
       "service_aliases": [],
       "added_at": "2026-10-31T13:16:25+00:00",
       "updated_at": "2026-10-31T13:16:25+00:00"
+    },
+    {
+      "id": "c22568994fef58b0",
+      "published_at": "2026-10-30T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "西日本旅客鉄道株式会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "29879c71c8cc2650",
+          "relationship": "affected_by",
+          "evidence_url": "https://cybersecurity-jp.com/news/118030",
+          "evidence_urls": [
+            "https://cybersecurity-jp.com/news/118030"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118030"
+        }
+      ],
+      "affected_service": "投資家情報",
+      "service_aliases": [],
+      "added_at": "2026-11-02T06:15:48+00:00",
+      "updated_at": "2026-11-02T06:15:48+00:00"
     },
     {
       "id": "a37bbd0dd41fad67",
@@ -1260,6 +1301,35 @@
       "updated_at": "2026-10-31T08:16:00+00:00"
     },
     {
+      "id": "f029efe1fece299f",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "GMOインターネットグループ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 45000,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "NHKニュース",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9LZS1McmFLUHVlS2xBVFJSS2VWdEt3N3pGWEQ0eXpMYnphLWZORC0wLTJfMlExMjRkM3hrcUo1dkRHRkRhR0M3d1dkcWtFMFhmRnlfRW5STzdJMkd4Z1FN?oc=5"
+        },
+        {
+          "name": "時事ドットコム",
+          "url": "https://www.jiji.com/jc/article?k=2026110200432&g=eco"
+        }
+      ],
+      "affected_service": "GMOグローバルサイン",
+      "service_aliases": [],
+      "added_at": "2026-11-01T21:15:27+00:00",
+      "updated_at": "2026-11-02T06:15:48+00:00"
+    },
+    {
       "id": "6060c1559cd87ea6",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": null,
@@ -1584,31 +1654,6 @@
       "service_aliases": [],
       "added_at": "2026-10-30T11:16:03+00:00",
       "updated_at": "2026-10-31T15:15:53+00:00"
-    },
-    {
-      "id": "f029efe1fece299f",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "GMOインターネットグループ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 45000,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "NHKニュース",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9LZS1McmFLUHVlS2xBVFJSS2VWdEt3N3pGWEQ0eXpMYnphLWZORC0wLTJfMlExMjRkM3hrcUo1dkRHRkRhR0M3d1dkcWtFMFhmRnlfRW5STzdJMkd4Z1FN?oc=5"
-        }
-      ],
-      "affected_service": "GMOグローバルサイン",
-      "service_aliases": [],
-      "added_at": "2026-11-01T21:15:27+00:00",
-      "updated_at": "2026-11-01T21:15:27+00:00"
     },
     {
       "id": "ffa02bc513933f27",
@@ -6686,6 +6731,40 @@
       "service_aliases": [],
       "added_at": "2026-10-26T05:15:47+00:00",
       "updated_at": "2026-10-26T05:15:47+00:00"
+    },
+    {
+      "id": "22f19b00f0a5418d",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ＤＣＭホールディングス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 753272,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.dcm-hc.co.jp/news/news_file/file/20261030news.pdf",
+          "evidence_urls": [
+            "https://www.dcm-hc.co.jp/news/news_file/file/20261030news.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.dcm-hc.co.jp/news/news_file/file/20261030news.pdf"
+        }
+      ],
+      "affected_service": "マイボ",
+      "service_aliases": [],
+      "added_at": "2026-11-02T06:15:48+00:00",
+      "updated_at": "2026-11-02T06:15:48+00:00"
     },
     {
       "id": "349735446211a601",
@@ -13480,6 +13559,49 @@
       "updated_at": "2026-11-02T01:16:01+00:00"
     },
     {
+      "id": "83db978a801210d8",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": "2026-10-20T15:00:00+00:00",
+      "organization": "Sally",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 908,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "株式会社Sally",
+          "url": "https://sally-inc.jp/news/2026-10-incident"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56641.html"
+        }
+      ],
+      "affected_service": "ウズ / 同社Webサイトの問い合わせフォーム",
+      "service_aliases": [],
+      "affected_services": [
+        "ウズ",
+        "同社Webサイトの問い合わせフォーム"
+      ],
+      "service_details": [
+        {
+          "name": "ウズ",
+          "aliases": []
+        },
+        {
+          "name": "同社Webサイトの問い合わせフォーム",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-02T06:15:48+00:00",
+      "updated_at": "2026-11-02T06:15:48+00:00"
+    },
+    {
       "id": "b065bc7081e203e4",
       "published_at": "2026-10-20T15:00:00+00:00",
       "disclosed_at": "2026-10-20T15:00:00+00:00",
@@ -17312,6 +17434,14 @@
           ]
         },
         {
+          "incident_id": "22f19b00f0a5418d",
+          "relationship": "affects",
+          "evidence_url": "https://www.dcm-hc.co.jp/news/news_file/file/20261030news.pdf",
+          "evidence_urls": [
+            "https://www.dcm-hc.co.jp/news/news_file/file/20261030news.pdf"
+          ]
+        },
+        {
           "incident_id": "3af225d6bc57b16b",
           "relationship": "affects",
           "evidence_url": "https://research.impress.co.jp/info/735",
@@ -17574,7 +17704,7 @@
         }
       ],
       "added_at": "2026-10-19T13:14:57+00:00",
-      "updated_at": "2026-11-02T00:16:33+00:00"
+      "updated_at": "2026-11-02T06:15:48+00:00"
     },
     {
       "id": "15204b629222c010",
@@ -23069,10 +23199,14 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/117406"
+        },
+        {
+          "name": "legalagent list",
+          "url": "https://incident-support.wasabi-inc.biz/news/14"
         }
       ],
       "added_at": "2026-10-19T09:06:44+00:00",
-      "updated_at": "2026-10-27T01:15:59+00:00"
+      "updated_at": "2026-11-02T06:15:48+00:00"
     },
     {
       "id": "cce9bdde2676d4b4",
