@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-02T11:50:03+00:00",
-  "total": 713,
+  "updated_at": "2026-11-02T12:16:29+00:00",
+  "total": 715,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-02"
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-11-02",
-      "count": 5
+      "count": 7
     }
   ],
   "incidents": [
@@ -409,6 +409,43 @@
       "updated_at": "2026-11-02T11:15:42+00:00"
     },
     {
+      "id": "6ce8d002dff5f408",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大阪ガス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 34489,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.osakagas.co.jp/company/press/pr2026/1828107_60967.html",
+          "evidence_urls": [
+            "https://www.osakagas.co.jp/company/press/pr2026/1828107_60967.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "大阪ガス / Osaka Gas",
+          "url": "https://www.osakagas.co.jp/company/press/pr2026/1828107_60967.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/55c4518725133b7cbb7eff3766dab174d68f0129"
+        }
+      ],
+      "affected_service": "FitDish",
+      "service_aliases": [],
+      "added_at": "2026-11-02T10:00:14+00:00",
+      "updated_at": "2026-11-02T12:16:29+00:00"
+    },
+    {
       "id": "24fbcc3575cc868a",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
@@ -437,39 +474,6 @@
         }
       ],
       "affected_service": "デジタル社債管理システム",
-      "service_aliases": [],
-      "added_at": "2026-11-02T10:00:14+00:00",
-      "updated_at": "2026-11-02T10:00:14+00:00"
-    },
-    {
-      "id": "6ce8d002dff5f408",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "大阪ガス",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 34489,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.osakagas.co.jp/company/press/pr2026/1828107_60967.html",
-          "evidence_urls": [
-            "https://www.osakagas.co.jp/company/press/pr2026/1828107_60967.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "大阪ガス / Osaka Gas",
-          "url": "https://www.osakagas.co.jp/company/press/pr2026/1828107_60967.html"
-        }
-      ],
-      "affected_service": "FitDish",
       "service_aliases": [],
       "added_at": "2026-11-02T10:00:14+00:00",
       "updated_at": "2026-11-02T10:00:14+00:00"
@@ -537,6 +541,55 @@
       "service_aliases": [],
       "added_at": "2026-11-02T07:16:38+00:00",
       "updated_at": "2026-11-02T07:16:38+00:00"
+    },
+    {
+      "id": "c43cf10975841a94",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ノジマ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 7000000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261102de69780"
+        }
+      ],
+      "affected_service": "ネット通販サイトの会員管理システム",
+      "service_aliases": [],
+      "added_at": "2026-11-02T12:16:29+00:00",
+      "updated_at": "2026-11-02T12:16:29+00:00"
+    },
+    {
+      "id": "db20d28385431f77",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社SpicyCompany",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "PR TIMES",
+          "url": "https://prtimes.jp/main/html/rd/p/000000039.000090708.html"
+        }
+      ],
+      "affected_service": "みんなの純金",
+      "service_aliases": [],
+      "added_at": "2026-11-02T12:16:29+00:00",
+      "updated_at": "2026-11-02T12:16:29+00:00"
     },
     {
       "id": "590917c47f5ba4f5",
@@ -730,12 +783,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/ba9de31a4fd3783e2b92b13d855ab2825ea2e87e"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b70a230fc1341fb9b6ac5de003678544bee286c5"
         }
       ],
       "affected_service": "デジタル特典付き社債",
       "service_aliases": [],
       "added_at": "2026-10-31T20:30:43+00:00",
-      "updated_at": "2026-11-02T09:16:16+00:00"
+      "updated_at": "2026-11-02T12:16:29+00:00"
     },
     {
       "id": "498482a809a4a553",
@@ -4068,6 +4125,10 @@
           "url": "https://www.release.tdnet.info/inbs/140120261029558961.pdf"
         },
         {
+          "name": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2153174.html"
+        },
+        {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/34ae3d666093759da0bff0eacd2764cefe3db4f4"
         },
@@ -4085,7 +4146,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-02T10:00:14+00:00"
+      "updated_at": "2026-11-02T12:16:29+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -5427,8 +5488,9 @@
         {
           "incident_id": "0a86ecb2b2d87e50",
           "relationship": "affected_by",
-          "evidence_url": "https://newsdig.tbs.co.jp/articles/-/3040524",
+          "evidence_url": "https://news.yahoo.co.jp/articles/2989ebacf661839891be14e80a1d81c1b83b3b78",
           "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/2989ebacf661839891be14e80a1d81c1b83b3b78",
             "https://news.yahoo.co.jp/articles/df6e21d865d7e7df1825f456f894b9819fe11b78",
             "https://newsdig.tbs.co.jp/articles/-/3040524"
           ]
@@ -5461,7 +5523,7 @@
         }
       ],
       "added_at": "2026-10-27T07:15:28+00:00",
-      "updated_at": "2026-10-27T19:09:26+00:00"
+      "updated_at": "2026-11-02T12:16:29+00:00"
     },
     {
       "id": "f01cdb6cea85fd7d",
@@ -6554,8 +6616,9 @@
         {
           "incident_id": "0a86ecb2b2d87e50",
           "relationship": "affected_by",
-          "evidence_url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf",
+          "evidence_url": "https://news.yahoo.co.jp/articles/2989ebacf661839891be14e80a1d81c1b83b3b78",
           "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/2989ebacf661839891be14e80a1d81c1b83b3b78",
             "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf"
           ]
         }
@@ -6576,10 +6639,14 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/117831"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/2989ebacf661839891be14e80a1d81c1b83b3b78"
         }
       ],
       "added_at": "2026-10-27T03:15:45+00:00",
-      "updated_at": "2026-10-28T03:15:38+00:00"
+      "updated_at": "2026-11-02T12:16:29+00:00"
     },
     {
       "id": "41cec81677237776",
@@ -6703,8 +6770,9 @@
         {
           "incident_id": "0a86ecb2b2d87e50",
           "relationship": "affected_by",
-          "evidence_url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf",
+          "evidence_url": "https://news.yahoo.co.jp/articles/2989ebacf661839891be14e80a1d81c1b83b3b78",
           "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/2989ebacf661839891be14e80a1d81c1b83b3b78",
             "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf"
           ]
         }
@@ -6736,7 +6804,7 @@
         }
       ],
       "added_at": "2026-10-27T03:15:45+00:00",
-      "updated_at": "2026-10-28T03:15:38+00:00"
+      "updated_at": "2026-11-02T12:16:29+00:00"
     },
     {
       "id": "86af8ecab6ec9130",
@@ -6858,8 +6926,9 @@
         {
           "incident_id": "0a86ecb2b2d87e50",
           "relationship": "affected_by",
-          "evidence_url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf",
+          "evidence_url": "https://news.yahoo.co.jp/articles/2989ebacf661839891be14e80a1d81c1b83b3b78",
           "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/2989ebacf661839891be14e80a1d81c1b83b3b78",
             "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf"
           ]
         }
@@ -6880,10 +6949,14 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/117831"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/2989ebacf661839891be14e80a1d81c1b83b3b78"
         }
       ],
       "added_at": "2026-10-27T03:15:45+00:00",
-      "updated_at": "2026-10-28T03:15:38+00:00"
+      "updated_at": "2026-11-02T12:16:29+00:00"
     },
     {
       "id": "c12424e705515c5a",
@@ -18251,8 +18324,9 @@
         {
           "incident_id": "3b2a073b7265fb6c",
           "relationship": "affects",
-          "evidence_url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf",
+          "evidence_url": "https://news.yahoo.co.jp/articles/2989ebacf661839891be14e80a1d81c1b83b3b78",
           "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/2989ebacf661839891be14e80a1d81c1b83b3b78",
             "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf"
           ]
         },
@@ -18291,8 +18365,9 @@
         {
           "incident_id": "554a0e00aac931e2",
           "relationship": "affects",
-          "evidence_url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf",
+          "evidence_url": "https://news.yahoo.co.jp/articles/2989ebacf661839891be14e80a1d81c1b83b3b78",
           "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/2989ebacf661839891be14e80a1d81c1b83b3b78",
             "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf"
           ]
         },
@@ -18349,8 +18424,9 @@
         {
           "incident_id": "ac919f55052b2d67",
           "relationship": "affects",
-          "evidence_url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf",
+          "evidence_url": "https://news.yahoo.co.jp/articles/2989ebacf661839891be14e80a1d81c1b83b3b78",
           "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/2989ebacf661839891be14e80a1d81c1b83b3b78",
             "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261027_1t.pdf"
           ]
         },
@@ -18375,8 +18451,9 @@
         {
           "incident_id": "ccfc0020429cdb06",
           "relationship": "affects",
-          "evidence_url": "https://newsdig.tbs.co.jp/articles/-/3040524",
+          "evidence_url": "https://news.yahoo.co.jp/articles/2989ebacf661839891be14e80a1d81c1b83b3b78",
           "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/2989ebacf661839891be14e80a1d81c1b83b3b78",
             "https://news.yahoo.co.jp/articles/df6e21d865d7e7df1825f456f894b9819fe11b78",
             "https://newsdig.tbs.co.jp/articles/-/3040524"
           ]
@@ -18495,7 +18572,7 @@
         }
       ],
       "added_at": "2026-10-19T13:14:57+00:00",
-      "updated_at": "2026-11-02T06:15:48+00:00"
+      "updated_at": "2026-11-02T12:16:29+00:00"
     },
     {
       "id": "15204b629222c010",
