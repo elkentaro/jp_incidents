@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-01T23:24:18+00:00",
-  "total": 675,
+  "updated_at": "2026-11-02T00:16:33+00:00",
+  "total": 678,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-10-31"
@@ -237,7 +237,7 @@
     },
     {
       "date": "2026-10-01",
-      "count": 1
+      "count": 2
     },
     {
       "date": "2026-10-02",
@@ -301,7 +301,7 @@
     },
     {
       "date": "2026-10-17",
-      "count": 10
+      "count": 11
     },
     {
       "date": "2026-10-18",
@@ -321,7 +321,7 @@
     },
     {
       "date": "2026-10-22",
-      "count": 58
+      "count": 59
     },
     {
       "date": "2026-10-23",
@@ -11740,6 +11740,30 @@
       "updated_at": "2026-10-23T01:00:27+00:00"
     },
     {
+      "id": "2f7765d4fa16d2a1",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": "2026-10-21T15:00:00+00:00",
+      "organization": "Free Standard株式会社",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56643.html"
+        }
+      ],
+      "affected_service": "SHIPS CYCLE MARKET",
+      "service_aliases": [],
+      "added_at": "2026-11-02T00:16:33+00:00",
+      "updated_at": "2026-11-02T00:16:33+00:00"
+    },
+    {
       "id": "5138df0eb7399ed1",
       "published_at": "2026-10-21T15:00:00+00:00",
       "disclosed_at": null,
@@ -13363,6 +13387,33 @@
       "updated_at": "2026-10-21T20:25:47+00:00"
     },
     {
+      "id": "d29124e16dcce18b",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "フジッコ株式会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 15500,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.fujicco.co.jp/upload/pr_261022.pdf"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56644.html"
+        }
+      ],
+      "added_at": "2026-10-23T01:00:27+00:00",
+      "updated_at": "2026-11-02T00:16:33+00:00"
+    },
+    {
       "id": "dd69de1ee65ccd7d",
       "published_at": "2026-10-20T15:00:00+00:00",
       "disclosed_at": null,
@@ -14605,29 +14656,6 @@
       ],
       "added_at": "2026-10-24T08:15:35+00:00",
       "updated_at": "2026-10-24T08:15:35+00:00"
-    },
-    {
-      "id": "d29124e16dcce18b",
-      "published_at": "2026-10-20T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "フジッコ株式会社",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 15500,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.fujicco.co.jp/upload/pr_261022.pdf"
-        }
-      ],
-      "added_at": "2026-10-23T01:00:27+00:00",
-      "updated_at": "2026-10-23T01:00:27+00:00"
     },
     {
       "id": "0eaef1bd861f21f3",
@@ -17228,8 +17256,24 @@
       ],
       "affected_system": "メール配信サービスのサーバーシステム",
       "date_basis": "existing_record",
+      "affected_service": "Cuenote FC / Cuenote BASE",
+      "service_aliases": [],
+      "affected_services": [
+        "Cuenote FC",
+        "Cuenote BASE"
+      ],
+      "service_details": [
+        {
+          "name": "Cuenote FC",
+          "aliases": []
+        },
+        {
+          "name": "Cuenote BASE",
+          "aliases": []
+        }
+      ],
       "added_at": "2026-10-19T13:14:57+00:00",
-      "updated_at": "2026-10-31T02:16:08+00:00"
+      "updated_at": "2026-11-02T00:16:33+00:00"
     },
     {
       "id": "15204b629222c010",
@@ -18886,9 +18930,13 @@
       ],
       "potential_records": 301,
       "confidence": "high",
-      "confidence_score": 75,
+      "confidence_score": 90,
       "related": [],
       "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56638.html"
+        },
         {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261019553141.pdf"
@@ -18903,7 +18951,7 @@
         }
       ],
       "added_at": "2026-10-19T09:32:18+00:00",
-      "updated_at": "2026-10-22T01:18:03+00:00"
+      "updated_at": "2026-11-02T00:16:33+00:00"
     },
     {
       "id": "044369c0a0df5877",
@@ -19141,6 +19189,28 @@
       ],
       "added_at": "2026-10-23T08:33:10+00:00",
       "updated_at": "2026-10-23T08:33:10+00:00"
+    },
+    {
+      "id": "40514554fef6a47a",
+      "published_at": "2026-10-16T15:00:00+00:00",
+      "disclosed_at": "2026-10-20T15:00:00+00:00",
+      "organization": "新菱冷熱工業",
+      "incident_type": "other",
+      "incident_categories": [
+        "other"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56642.html"
+        }
+      ],
+      "added_at": "2026-11-02T00:16:33+00:00",
+      "updated_at": "2026-11-02T00:16:33+00:00"
     },
     {
       "id": "49d6065797d6272a",
@@ -26849,10 +26919,14 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/117593"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56640.html"
         }
       ],
       "added_at": "2026-10-21T07:48:26+00:00",
-      "updated_at": "2026-10-26T00:08:36+00:00"
+      "updated_at": "2026-11-02T00:16:33+00:00"
     },
     {
       "id": "f764fcd74c2c165e",
@@ -27828,6 +27902,31 @@
       ],
       "added_at": "2026-10-21T07:57:40+00:00",
       "updated_at": "2026-10-25T05:47:43+00:00"
+    },
+    {
+      "id": "80f23a54384289ac",
+      "published_at": "2026-09-30T15:00:00+00:00",
+      "disclosed_at": "2026-10-19T15:00:00+00:00",
+      "organization": "アイドマ・ホールディングス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/02/56639.html"
+        }
+      ],
+      "affected_service": "ママワークス",
+      "service_aliases": [],
+      "added_at": "2026-11-02T00:16:33+00:00",
+      "updated_at": "2026-11-02T00:16:33+00:00"
     },
     {
       "id": "f587bd286fd60bcb",
