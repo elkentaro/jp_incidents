@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-02T01:16:01+00:00",
-  "total": 682,
+  "updated_at": "2026-11-02T02:15:58+00:00",
+  "total": 686,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-10-31"
@@ -325,7 +325,7 @@
     },
     {
       "date": "2026-10-23",
-      "count": 67
+      "count": 68
     },
     {
       "date": "2026-10-24",
@@ -341,7 +341,7 @@
     },
     {
       "date": "2026-10-27",
-      "count": 37
+      "count": 38
     },
     {
       "date": "2026-10-28",
@@ -353,7 +353,7 @@
     },
     {
       "date": "2026-10-30",
-      "count": 23
+      "count": 25
     },
     {
       "date": "2026-10-31",
@@ -433,9 +433,10 @@
         {
           "incident_id": "498482a809a4a553",
           "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/5e97e631fb8dbb2522e294fe50e407adf15f0b8a",
+          "evidence_url": "https://news.yahoo.co.jp/articles/f069637071b95fc2d9d210e18fba89fc80766ecd",
           "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/5e97e631fb8dbb2522e294fe50e407adf15f0b8a"
+            "https://news.yahoo.co.jp/articles/5e97e631fb8dbb2522e294fe50e407adf15f0b8a",
+            "https://news.yahoo.co.jp/articles/f069637071b95fc2d9d210e18fba89fc80766ecd"
           ]
         },
         {
@@ -471,12 +472,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/f556f83829f09eb742f97055f07ddda2a458ba1d"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/f069637071b95fc2d9d210e18fba89fc80766ecd"
         }
       ],
       "affected_service": "STdirectServices",
       "service_aliases": [],
       "added_at": "2026-10-31T04:15:30+00:00",
-      "updated_at": "2026-11-01T14:16:05+00:00"
+      "updated_at": "2026-11-02T02:15:58+00:00"
     },
     {
       "id": "62e7efc40d4f6d44",
@@ -541,9 +546,10 @@
         {
           "incident_id": "29879c71c8cc2650",
           "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/5e97e631fb8dbb2522e294fe50e407adf15f0b8a",
+          "evidence_url": "https://news.yahoo.co.jp/articles/f069637071b95fc2d9d210e18fba89fc80766ecd",
           "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/5e97e631fb8dbb2522e294fe50e407adf15f0b8a"
+            "https://news.yahoo.co.jp/articles/5e97e631fb8dbb2522e294fe50e407adf15f0b8a",
+            "https://news.yahoo.co.jp/articles/f069637071b95fc2d9d210e18fba89fc80766ecd"
           ]
         }
       ],
@@ -567,10 +573,14 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118013"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/f069637071b95fc2d9d210e18fba89fc80766ecd"
         }
       ],
       "added_at": "2026-10-30T23:03:16+00:00",
-      "updated_at": "2026-11-01T09:15:49+00:00"
+      "updated_at": "2026-11-02T02:15:58+00:00"
     },
     {
       "id": "747ff37bca4130bd",
@@ -673,6 +683,45 @@
       ],
       "added_at": "2026-10-30T21:53:42+00:00",
       "updated_at": "2026-10-30T21:53:42+00:00"
+    },
+    {
+      "id": "1eff65d7da989b18",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ワールド",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1200000,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://corp.world.co.jp/company/notice/pdf/20261030_%E4%B8%8D%E6%AD%A3%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%81%AB%E3%82%88%E3%82%8B%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1%E6%B5%81%E5%87%BA_%E9%96%8B%E7%A4%BA.pdf"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/86ca2067ce200631d1dc8d7b3636ce95cb3e1cd5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b12ab260a1e66abbad67c2063ba9480a9711bed4"
+        },
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/national/20261030-GYT1T00377/"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8wcXBFT0E4bmhxRl9BY1dvU3kzRnUtQWpFWnVyc1RybW1MNER5R2c0dFJqNVFsZnRfQ3c5d0h5amNqZmg4STZTd2pkcjFRd3habTNtMzJCdUtKU0EwSi04?oc=5"
+        }
+      ],
+      "added_at": "2026-10-30T09:16:10+00:00",
+      "updated_at": "2026-11-02T02:15:58+00:00"
     },
     {
       "id": "1ff227f049a0de08",
@@ -1182,41 +1231,6 @@
       "updated_at": "2026-11-01T20:15:18+00:00"
     },
     {
-      "id": "1eff65d7da989b18",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ワールド",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 1200000,
-      "confidence": "high",
-      "confidence_score": 80,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/86ca2067ce200631d1dc8d7b3636ce95cb3e1cd5"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/b12ab260a1e66abbad67c2063ba9480a9711bed4"
-        },
-        {
-          "name": "読売新聞",
-          "url": "https://www.yomiuri.co.jp/national/20261030-GYT1T00377/"
-        },
-        {
-          "name": "NHKニュース",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8wcXBFT0E4bmhxRl9BY1dvU3kzRnUtQWpFWnVyc1RybW1MNER5R2c0dFJqNVFsZnRfQ3c5d0h5amNqZmg4STZTd2pkcjFRd3habTNtMzJCdUtKU0EwSi04?oc=5"
-        }
-      ],
-      "added_at": "2026-10-30T09:16:10+00:00",
-      "updated_at": "2026-10-30T22:15:37+00:00"
-    },
-    {
       "id": "afcfe4585d0dbcf0",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": null,
@@ -1359,6 +1373,30 @@
       "service_aliases": [],
       "added_at": "2026-10-30T03:15:54+00:00",
       "updated_at": "2026-10-30T03:15:54+00:00"
+    },
+    {
+      "id": "7c8fccaa8469ed10",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "全日空商事",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.anatc-gift.com/news/all-20261030/"
+        }
+      ],
+      "affected_service": "選べるe-GIFT",
+      "service_aliases": [],
+      "added_at": "2026-11-02T02:15:58+00:00",
+      "updated_at": "2026-11-02T02:15:58+00:00"
     },
     {
       "id": "7d4a8e7c0b6678d9",
@@ -1627,6 +1665,29 @@
       ],
       "added_at": "2026-10-30T21:53:42+00:00",
       "updated_at": "2026-10-30T21:53:42+00:00"
+    },
+    {
+      "id": "d45d9724990cec95",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": "2026-10-29T15:00:00+00:00",
+      "organization": "チェイナリシス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "CoinPost",
+          "url": "https://coinpost.jp/?p=745824"
+        }
+      ],
+      "added_at": "2026-11-02T02:15:58+00:00",
+      "updated_at": "2026-11-02T02:15:58+00:00"
     },
     {
       "id": "e731d81859c8eab0",
@@ -5297,6 +5358,31 @@
       "updated_at": "2026-10-28T08:16:11+00:00"
     },
     {
+      "id": "548f0aa4fbe64e20",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社DIRIGIO",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 8312,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://dirigio.jp/news/release20261030"
+        }
+      ],
+      "affected_service": "PICKS",
+      "service_aliases": [],
+      "added_at": "2026-11-02T02:15:58+00:00",
+      "updated_at": "2026-11-02T02:15:58+00:00"
+    },
+    {
       "id": "725512c99939d7b8",
       "published_at": "2026-10-26T15:00:00+00:00",
       "disclosed_at": null,
@@ -7170,6 +7256,10 @@
       ],
       "sources": [
         {
+          "name": "legalagent list",
+          "url": "https://giftee.co.jp/press/news/info20261027/"
+        },
+        {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261026556413.pdf"
         },
@@ -7195,7 +7285,7 @@
         }
       ],
       "added_at": "2026-10-26T13:16:27+00:00",
-      "updated_at": "2026-10-27T08:15:54+00:00"
+      "updated_at": "2026-11-02T02:15:58+00:00"
     },
     {
       "id": "0bfef460037e666a",
@@ -8515,6 +8605,40 @@
       ],
       "added_at": "2026-10-23T22:15:25+00:00",
       "updated_at": "2026-10-25T05:15:56+00:00"
+    },
+    {
+      "id": "1820ec2c852e64a2",
+      "published_at": "2026-10-22T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "メディアナビ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 110000,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.medianavi.co.jp/info/info_20261030.html",
+          "evidence_urls": [
+            "https://www.medianavi.co.jp/info/info_20261030.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.medianavi.co.jp/info/info_20261030.html"
+        }
+      ],
+      "affected_service": "メールマガジン",
+      "service_aliases": [],
+      "added_at": "2026-11-02T02:15:58+00:00",
+      "updated_at": "2026-11-02T02:15:58+00:00"
     },
     {
       "id": "1bc13d595ad5b33c",
@@ -12353,6 +12477,14 @@
           ]
         },
         {
+          "incident_id": "1820ec2c852e64a2",
+          "relationship": "affects",
+          "evidence_url": "https://www.medianavi.co.jp/info/info_20261030.html",
+          "evidence_urls": [
+            "https://www.medianavi.co.jp/info/info_20261030.html"
+          ]
+        },
+        {
           "incident_id": "194c6a74e197c2a3",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/ec5f631bba0f6d7d1773e52cec07c05147ccbfbf",
@@ -12999,7 +13131,7 @@
         }
       ],
       "added_at": "2026-10-21T19:22:12+00:00",
-      "updated_at": "2026-11-01T22:08:03+00:00"
+      "updated_at": "2026-11-02T02:15:58+00:00"
     },
     {
       "id": "a2cf60a92a1ad65c",
@@ -17681,8 +17813,75 @@
           "url": "https://news.yahoo.co.jp/articles/e509742927cbbd475baae6336da3b7817fb13b2a"
         }
       ],
+      "affected_service": "カーセンサーnet / C-MATCH",
+      "service_aliases": [],
+      "affected_services": [
+        "カーセンサーnet",
+        "C-MATCH"
+      ],
+      "service_details": [
+        {
+          "name": "カーセンサーnet",
+          "aliases": []
+        },
+        {
+          "name": "C-MATCH",
+          "aliases": []
+        }
+      ],
       "added_at": "2026-10-19T15:15:09+00:00",
-      "updated_at": "2026-10-22T01:18:03+00:00"
+      "updated_at": "2026-11-02T02:15:58+00:00"
+    },
+    {
+      "id": "73b3b222badf3b8f",
+      "published_at": "2026-10-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ENEOS Power",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 57,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/eneos-power-denki-57-customer-data-breach-20261028/"
+        },
+        {
+          "name": "legalagent list",
+          "url": "https://www.eneos-power.co.jp/denkigas/information/uploads/denki-important-20261028-394.pdf"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/117895"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC293YO0Z21C26A0000000/"
+        }
+      ],
+      "affected_service": "ENEOSでんき / でんきサービス",
+      "service_aliases": [],
+      "affected_services": [
+        "ENEOSでんき",
+        "でんきサービス"
+      ],
+      "service_details": [
+        {
+          "name": "ENEOSでんき",
+          "aliases": []
+        },
+        {
+          "name": "でんきサービス",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-10-29T09:15:28+00:00",
+      "updated_at": "2026-11-02T02:15:58+00:00"
     },
     {
       "id": "bbaf38f307a869ce",
@@ -17722,6 +17921,10 @@
           "url": "https://scan.netsecurity.ne.jp/article/2026/10/30/56633.html"
         },
         {
+          "name": "legalagent list",
+          "url": "https://www.sonynetwork.co.jp/corporation/release/2026/v5e5u00000000zwj-att/20261027.pdf"
+        },
+        {
           "name": "ケータイ Watch",
           "url": "https://k-tai.watch.impress.co.jp/docs/news/2151581.html"
         },
@@ -17747,7 +17950,7 @@
         }
       ],
       "added_at": "2026-10-27T19:09:26+00:00",
-      "updated_at": "2026-10-30T03:15:54+00:00"
+      "updated_at": "2026-11-02T02:15:58+00:00"
     },
     {
       "id": "e57d47bb72ea6543",
@@ -18033,53 +18236,6 @@
       "service_aliases": [],
       "added_at": "2026-10-25T01:15:29+00:00",
       "updated_at": "2026-10-27T02:16:16+00:00"
-    },
-    {
-      "id": "73b3b222badf3b8f",
-      "published_at": "2026-10-18T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ENEOS Power",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 57,
-      "confidence": "high",
-      "confidence_score": 80,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/eneos-power-denki-57-customer-data-breach-20261028/"
-        },
-        {
-          "name": "Cybersecurity.jp",
-          "url": "https://cybersecurity-jp.com/news/117895"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUC293YO0Z21C26A0000000/"
-        }
-      ],
-      "affected_service": "ENEOSでんき / でんきサービス",
-      "service_aliases": [],
-      "affected_services": [
-        "ENEOSでんき",
-        "でんきサービス"
-      ],
-      "service_details": [
-        {
-          "name": "ENEOSでんき",
-          "aliases": []
-        },
-        {
-          "name": "でんきサービス",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-10-29T09:15:28+00:00",
-      "updated_at": "2026-10-29T20:16:15+00:00"
     },
     {
       "id": "e20815863b5a1380",
@@ -27854,6 +28010,43 @@
       "updated_at": "2026-10-29T22:16:02+00:00"
     },
     {
+      "id": "b209c133e3d77d32",
+      "published_at": "2026-10-01T15:00:00+00:00",
+      "disclosed_at": "2026-10-04T15:00:00+00:00",
+      "organization": "焼肉きんぐ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 10788963,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.yakiniku-king.jp/news/6875/"
+        },
+        {
+          "name": "legalagent list",
+          "url": "https://www.monogatari.co.jp/news/261020_news/"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/26/56563.html"
+        },
+        {
+          "name": "Impress Watch",
+          "url": "https://www.watch.impress.co.jp/docs/news/2152535.html"
+        }
+      ],
+      "affected_service": "アプリ",
+      "service_aliases": [],
+      "added_at": "2026-10-24T21:12:22+00:00",
+      "updated_at": "2026-11-02T02:15:58+00:00"
+    },
+    {
       "id": "f1d48c9239de81fa",
       "published_at": "2026-10-01T15:00:00+00:00",
       "disclosed_at": "2026-10-08T15:00:00+00:00",
@@ -27905,39 +28098,6 @@
       "service_aliases": [],
       "added_at": "2026-10-20T23:55:01+00:00",
       "updated_at": "2026-10-31T01:15:24+00:00"
-    },
-    {
-      "id": "b209c133e3d77d32",
-      "published_at": "2026-10-01T15:00:00+00:00",
-      "disclosed_at": "2026-10-04T15:00:00+00:00",
-      "organization": "焼肉きんぐ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 10788963,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.yakiniku-king.jp/news/6875/"
-        },
-        {
-          "name": "ScanNetSecurity",
-          "url": "https://scan.netsecurity.ne.jp/article/2026/10/26/56563.html"
-        },
-        {
-          "name": "Impress Watch",
-          "url": "https://www.watch.impress.co.jp/docs/news/2152535.html"
-        }
-      ],
-      "affected_service": "アプリ",
-      "service_aliases": [],
-      "added_at": "2026-10-24T21:12:22+00:00",
-      "updated_at": "2026-10-30T04:15:40+00:00"
     },
     {
       "id": "5e7167bf3d6672b5",
