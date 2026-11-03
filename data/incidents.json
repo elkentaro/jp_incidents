@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-03T20:15:56+00:00",
-  "total": 755,
+  "updated_at": "2026-11-03T20:36:46+00:00",
+  "total": 756,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-03"
@@ -357,7 +357,7 @@
     },
     {
       "date": "2026-11-02",
-      "count": 18
+      "count": 19
     },
     {
       "date": "2026-11-03",
@@ -381,7 +381,7 @@
       ],
       "potential_records": 169151,
       "confidence": "high",
-      "confidence_score": 95,
+      "confidence_score": 100,
       "related": [],
       "sources": [
         {
@@ -399,6 +399,14 @@
         {
           "name": "47NEWS",
           "url": "https://www.47news.jp/15179237.html"
+        },
+        {
+          "name": "テレ朝NEWS",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9NQi1nZ0ZxNlR2LXpFU0xvaTNMNVREenBRWHhpUkdXQ1F4RTJ0VFFWN29icXBCZ0JmRHFJRGs0ZWQ3REJwVDVza0RwX2VkdTZMZFdWOFZPRDBNZzh3dUhGS3Q1eVQ5Szh5a0RrSEZLbWduUQ?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4zQkc1Tl9XMXdVcTlFWnZfc004RHAybzFFRUUyWjBTYUp6NEdFTy1uald5X3NMTmxsSktCRjQ4dWtLZXAzYkFGdHlOd2Y2RVV6M0dsZlRHcmJUMGxnTlJxdnZKdTR6YlNHOF9rLTZYSWlhUnBRZ1QzZW8yMjdHRFk?oc=5"
         }
       ],
       "affected_service": "7NOW",
@@ -406,7 +414,7 @@
         "セブンナウ"
       ],
       "added_at": "2026-11-03T13:17:19+00:00",
-      "updated_at": "2026-11-03T20:15:56+00:00"
+      "updated_at": "2026-11-03T20:36:46+00:00"
     },
     {
       "id": "cade75ef66ccbad6",
@@ -448,6 +456,44 @@
       "service_aliases": [],
       "added_at": "2026-11-03T11:46:37+00:00",
       "updated_at": "2026-11-03T20:15:56+00:00"
+    },
+    {
+      "id": "04ce6a7e8398548e",
+      "published_at": "2026-11-02T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "富山県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 290,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/94e22d911ce0fb96edf31909ecfa6a79b81bcba2",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/94e22d911ce0fb96edf31909ecfa6a79b81bcba2"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/94e22d911ce0fb96edf31909ecfa6a79b81bcba2"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE94dmJyVlhOdnlxM3RjYUF3Y3o5RnFYcGRCWlRQVzZTZXF6bnNNRWFjeHdxcnNuSzdEN05GeC1EbUxxRjl6WlhQdUNBS05JdzBmSGFLcXNEZE9DWWNQdUxVSDdFOVExdkE?oc=5"
+        }
+      ],
+      "affected_service": "とやま食材マッチング",
+      "service_aliases": [],
+      "added_at": "2026-11-03T13:17:19+00:00",
+      "updated_at": "2026-11-03T20:36:46+00:00"
     },
     {
       "id": "f5d6fe1d857ff47b",
@@ -507,40 +553,6 @@
       ],
       "added_at": "2026-11-03T03:16:30+00:00",
       "updated_at": "2026-11-03T03:16:30+00:00"
-    },
-    {
-      "id": "04ce6a7e8398548e",
-      "published_at": "2026-11-02T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "富山県",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 290,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "7e647fcc0bac0b06",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/94e22d911ce0fb96edf31909ecfa6a79b81bcba2",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/94e22d911ce0fb96edf31909ecfa6a79b81bcba2"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/94e22d911ce0fb96edf31909ecfa6a79b81bcba2"
-        }
-      ],
-      "affected_service": "とやま食材マッチング",
-      "service_aliases": [],
-      "added_at": "2026-11-03T13:17:19+00:00",
-      "updated_at": "2026-11-03T13:17:19+00:00"
     },
     {
       "id": "8a2a8d13a22fe810",
@@ -712,10 +724,14 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/043488f9a2e621eaae645bd17242931081138547"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/ad712c4689e5e013ad035276e4969be5ffbc9025"
         }
       ],
       "added_at": "2026-11-03T16:15:47+00:00",
-      "updated_at": "2026-11-03T20:15:56+00:00"
+      "updated_at": "2026-11-03T20:36:46+00:00"
     },
     {
       "id": "cb2d0380ac0a4897",
@@ -1189,6 +1205,34 @@
       "service_aliases": [],
       "added_at": "2026-11-02T10:00:14+00:00",
       "updated_at": "2026-11-02T13:16:55+00:00"
+    },
+    {
+      "id": "4daeb8965b6e424d",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "スマートニュース株式会社",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "スマートニュース株式会社",
+          "url": "https://about.smartnews.com/ja/news/2619.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE53YWJUZjFHbHAyRkhSWm1ydVlvVnc5RGtTYnJEYzlzRlBMNVplNzhwTTRrTUV5N1oxQzJXTW16UnRxemZiQ3VORkNpS2xRUmoweDY4OU5Rd2l1aFgxWFFTUkdaRXA5M3dCTjBrRHlabnJkVXF0WngxVmMtUHVhMUE?oc=5"
+        }
+      ],
+      "affected_service": "アプリ",
+      "service_aliases": [],
+      "added_at": "2026-11-03T20:36:46+00:00",
+      "updated_at": "2026-11-03T20:36:46+00:00"
     },
     {
       "id": "19cce63ebf03c536",
