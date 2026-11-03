@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-03T01:15:51+00:00",
-  "total": 734,
+  "updated_at": "2026-11-03T02:16:05+00:00",
+  "total": 740,
   "date_range": {
     "start": "2025-10-16",
-    "end": "2026-11-02"
+    "end": "2026-11-03"
   },
   "daily_counts_90d": [
     {
@@ -261,7 +261,7 @@
     },
     {
       "date": "2026-10-08",
-      "count": 9
+      "count": 10
     },
     {
       "date": "2026-10-09",
@@ -293,7 +293,7 @@
     },
     {
       "date": "2026-10-16",
-      "count": 33
+      "count": 34
     },
     {
       "date": "2026-10-17",
@@ -305,11 +305,11 @@
     },
     {
       "date": "2026-10-19",
-      "count": 41
+      "count": 42
     },
     {
       "date": "2026-10-20",
-      "count": 50
+      "count": 51
     },
     {
       "date": "2026-10-21",
@@ -341,7 +341,7 @@
     },
     {
       "date": "2026-10-28",
-      "count": 44
+      "count": 45
     },
     {
       "date": "2026-10-29",
@@ -365,10 +365,41 @@
     },
     {
       "date": "2026-11-03",
-      "count": 0
+      "count": 1
     }
   ],
   "incidents": [
+    {
+      "id": "dbbe8d656dd3d6d1",
+      "published_at": "2026-11-02T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "FXTF",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "07575f3125a12f31",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.nicovideo.jp/watch/nw19950642?news_ref=search_search",
+          "evidence_urls": [
+            "https://news.nicovideo.jp/watch/nw19950642?news_ref=search_search"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "ニコニコニュース",
+          "url": "https://news.nicovideo.jp/watch/nw19950642?news_ref=search_search"
+        }
+      ],
+      "added_at": "2026-11-03T02:16:05+00:00",
+      "updated_at": "2026-11-03T02:16:05+00:00"
+    },
     {
       "id": "c43cf10975841a94",
       "published_at": "2026-11-01T15:00:00+00:00",
@@ -387,6 +418,10 @@
         {
           "name": "GAME Watch",
           "url": "https://game.watch.impress.co.jp/docs/news/2153243.html"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118080"
         },
         {
           "name": "NHKニュース",
@@ -435,7 +470,7 @@
         }
       ],
       "added_at": "2026-11-02T12:16:29+00:00",
-      "updated_at": "2026-11-02T23:15:36+00:00"
+      "updated_at": "2026-11-03T02:16:05+00:00"
     },
     {
       "id": "58e85aa5a6aa2f68",
@@ -481,6 +516,49 @@
       "updated_at": "2026-11-02T13:16:55+00:00"
     },
     {
+      "id": "5fa1320f5cec460c",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "姫路市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.kobe-np.co.jp/news/society/202611/0020995366.shtml",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/2e096c54d430a266f0b4312f3b0319f8b4f1e289",
+            "https://www.kobe-np.co.jp/news/society/202611/0020995366.shtml"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/2e096c54d430a266f0b4312f3b0319f8b4f1e289"
+        },
+        {
+          "name": "神戸新聞",
+          "url": "https://www.kobe-np.co.jp/news/society/202611/0020995366.shtml"
+        },
+        {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp/15175799.html"
+        }
+      ],
+      "affected_service": "姫路市オンライン手続ポータルサイト",
+      "service_aliases": [],
+      "added_at": "2026-11-02T20:15:44+00:00",
+      "updated_at": "2026-11-03T02:16:05+00:00"
+    },
+    {
       "id": "6ce8d002dff5f408",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
@@ -514,12 +592,16 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUF029DM0S6A101C2000000/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6ca3e1c121aa0fb4cb0d582ff45fd1bff0c4a46a"
         }
       ],
       "affected_service": "FitDish",
       "service_aliases": [],
       "added_at": "2026-11-02T10:00:14+00:00",
-      "updated_at": "2026-11-02T20:15:44+00:00"
+      "updated_at": "2026-11-03T02:16:05+00:00"
     },
     {
       "id": "a58b4c17e32d9c67",
@@ -627,45 +709,6 @@
       "service_aliases": [],
       "added_at": "2026-11-02T10:00:14+00:00",
       "updated_at": "2026-11-02T13:16:55+00:00"
-    },
-    {
-      "id": "5fa1320f5cec460c",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "姫路市",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.kobe-np.co.jp/news/society/202611/0020995366.shtml",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/2e096c54d430a266f0b4312f3b0319f8b4f1e289",
-            "https://www.kobe-np.co.jp/news/society/202611/0020995366.shtml"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/2e096c54d430a266f0b4312f3b0319f8b4f1e289"
-        },
-        {
-          "name": "神戸新聞",
-          "url": "https://www.kobe-np.co.jp/news/society/202611/0020995366.shtml"
-        }
-      ],
-      "affected_service": "姫路市オンライン手続ポータルサイト",
-      "service_aliases": [],
-      "added_at": "2026-11-02T20:15:44+00:00",
-      "updated_at": "2026-11-02T20:15:44+00:00"
     },
     {
       "id": "19cce63ebf03c536",
@@ -4765,6 +4808,14 @@
           ]
         },
         {
+          "incident_id": "8aa4a531a94a16f1",
+          "relationship": "affects",
+          "evidence_url": "https://www.suzuki.co.jp/release/d/2026/1030/",
+          "evidence_urls": [
+            "https://www.suzuki.co.jp/release/d/2026/1030/"
+          ]
+        },
+        {
           "incident_id": "8ebd5d925ed1dcd6",
           "relationship": "affects",
           "evidence_url": "https://www.kagin.co.jp/important/emergency_20261029_3.html",
@@ -4778,6 +4829,14 @@
           "evidence_url": "https://www.pref.okinawa.jp/kensei/shinko/1017087/1017118/1041801.html",
           "evidence_urls": [
             "https://www.pref.okinawa.jp/kensei/shinko/1017087/1017118/1041801.html"
+          ]
+        },
+        {
+          "incident_id": "95a4f1c77a4a322c",
+          "relationship": "affects",
+          "evidence_url": "https://www.odakyu-travel.co.jp/web/info_20261102.html",
+          "evidence_urls": [
+            "https://www.odakyu-travel.co.jp/web/info_20261102.html"
           ]
         },
         {
@@ -4819,6 +4878,10 @@
           "url": "https://internet.watch.impress.co.jp/docs/news/2153174.html"
         },
         {
+          "name": "satimo list",
+          "url": "https://www.arara.com/dcms_media/other/arara_20261102__.pdf"
+        },
+        {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/34ae3d666093759da0bff0eacd2764cefe3db4f4"
         },
@@ -4836,7 +4899,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-03T01:15:51+00:00"
+      "updated_at": "2026-11-03T02:16:05+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -5432,6 +5495,40 @@
       "service_aliases": [],
       "added_at": "2026-11-03T01:15:51+00:00",
       "updated_at": "2026-11-03T01:15:51+00:00"
+    },
+    {
+      "id": "8aa4a531a94a16f1",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "スズキ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 2575,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.suzuki.co.jp/release/d/2026/1030/",
+          "evidence_urls": [
+            "https://www.suzuki.co.jp/release/d/2026/1030/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.suzuki.co.jp/release/d/2026/1030/"
+        }
+      ],
+      "affected_service": "スズキメディアサイト",
+      "service_aliases": [],
+      "added_at": "2026-11-03T02:16:05+00:00",
+      "updated_at": "2026-11-03T02:16:05+00:00"
     },
     {
       "id": "8ebd5d925ed1dcd6",
@@ -9110,6 +9207,14 @@
           ]
         },
         {
+          "incident_id": "dbbe8d656dd3d6d1",
+          "relationship": "affects",
+          "evidence_url": "https://news.nicovideo.jp/watch/nw19950642?news_ref=search_search",
+          "evidence_urls": [
+            "https://news.nicovideo.jp/watch/nw19950642?news_ref=search_search"
+          ]
+        },
+        {
           "incident_id": "f01cdb6cea85fd7d",
           "relationship": "affects",
           "evidence_url": "https://newsdig.tbs.co.jp/articles/-/3039883?display=1",
@@ -9172,7 +9277,7 @@
       "affected_service": "外国為替取引サービス",
       "service_aliases": [],
       "added_at": "2026-10-25T00:15:40+00:00",
-      "updated_at": "2026-10-31T17:15:51+00:00"
+      "updated_at": "2026-11-03T02:16:05+00:00"
     },
     {
       "id": "d8d5bf4a9468775d",
@@ -18953,10 +19058,14 @@
         {
           "name": "志摩市",
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAzbnlfSEdrTEE1TGtNd25ZLWZjZG5ER0pUcy1aRWhvVjRvX1diUWJzNUZGcUJFbnZvRHJITDRBREh0RUVwUV81dEs4QmQxRWRldVpwSFoxNEVYT2xfWG9uNjhsMWZ1dUZiZTU5ZkNR?oc=5"
+        },
+        {
+          "name": "志摩市",
+          "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNZXdPUnR0R3hrZXR2YUpsblFqRnVzaWxTSVBrTUxlb3l6S0JwVHVPSVNreno3UjJVNDBYWDdaSl9HUVFDck9GUGxUUHJ3MVM0Z3lRZVJ1MFUtbzg1NlpXeE00dEFIQ0xlRTVZT2lUUG9lNjJQaWhoVFZoekJPY09kSlVR?oc=5"
         }
       ],
       "added_at": "2026-10-21T03:56:03+00:00",
-      "updated_at": "2026-11-02T13:26:00+00:00"
+      "updated_at": "2026-11-03T02:16:05+00:00"
     },
     {
       "id": "0c4e7f887bcc2d3d",
@@ -19055,6 +19164,31 @@
       ],
       "added_at": "2026-10-21T04:06:40+00:00",
       "updated_at": "2026-10-21T04:06:40+00:00"
+    },
+    {
+      "id": "f8122967435d2bb4",
+      "published_at": "2026-10-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ネットドリーマーズ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 152500,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.uma36.com/?pid=news_uma36alert"
+        }
+      ],
+      "affected_service": "競馬新聞デイリー馬三郎",
+      "service_aliases": [],
+      "added_at": "2026-11-03T02:16:05+00:00",
+      "updated_at": "2026-11-03T02:16:05+00:00"
     },
     {
       "id": "09cdb8aa26783f15",
@@ -19300,6 +19434,14 @@
           ]
         },
         {
+          "incident_id": "bff05c589967607d",
+          "relationship": "affects",
+          "evidence_url": "https://www.valuecommerce.co.jp/news/c_news/6819/",
+          "evidence_urls": [
+            "https://www.valuecommerce.co.jp/news/c_news/6819/"
+          ]
+        },
+        {
           "incident_id": "c12424e705515c5a",
           "relationship": "affects",
           "evidence_url": "https://news.nicovideo.jp/watch/nw19925193",
@@ -19433,7 +19575,7 @@
         }
       ],
       "added_at": "2026-10-19T13:14:57+00:00",
-      "updated_at": "2026-11-02T12:16:29+00:00"
+      "updated_at": "2026-11-03T02:16:05+00:00"
     },
     {
       "id": "15204b629222c010",
@@ -20881,6 +21023,89 @@
       "service_aliases": [],
       "added_at": "2026-11-02T10:00:14+00:00",
       "updated_at": "2026-11-02T10:00:14+00:00"
+    },
+    {
+      "id": "cce61eb169237e94",
+      "published_at": "2026-10-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社BuySell Technologies",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1369,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "5380e66962dde50e",
+          "relationship": "affected_by",
+          "evidence_url": "https://buysell-technologies.com/announcement/202610295550/",
+          "evidence_urls": [
+            "https://buysell-technologies.com/announcement/202610295550/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://buysell-technologies.com/announcement/202610295550/"
+        }
+      ],
+      "affected_service": "リユースセレクトショップバイセル オンライン / BUYSELL brandchée ebay店 / バイセルブランシェ / バイセル メルカリ店 / バイセル ヤフオク!店 / バイセル ラクマ店 / リユースセレクトショップバイセル au PAYマーケット店 / リユースセレクトショップバイセル Yahoo!店 / リユースセレクトショップバイセル 楽天市場店",
+      "service_aliases": [],
+      "affected_services": [
+        "リユースセレクトショップバイセル オンライン",
+        "BUYSELL brandchée ebay店",
+        "バイセルブランシェ",
+        "バイセル メルカリ店",
+        "バイセル ヤフオク!店",
+        "バイセル ラクマ店",
+        "リユースセレクトショップバイセル au PAYマーケット店",
+        "リユースセレクトショップバイセル Yahoo!店",
+        "リユースセレクトショップバイセル 楽天市場店"
+      ],
+      "service_details": [
+        {
+          "name": "リユースセレクトショップバイセル オンライン",
+          "aliases": []
+        },
+        {
+          "name": "BUYSELL brandchée ebay店",
+          "aliases": []
+        },
+        {
+          "name": "バイセルブランシェ",
+          "aliases": []
+        },
+        {
+          "name": "バイセル メルカリ店",
+          "aliases": []
+        },
+        {
+          "name": "バイセル ヤフオク!店",
+          "aliases": []
+        },
+        {
+          "name": "バイセル ラクマ店",
+          "aliases": []
+        },
+        {
+          "name": "リユースセレクトショップバイセル au PAYマーケット店",
+          "aliases": []
+        },
+        {
+          "name": "リユースセレクトショップバイセル Yahoo!店",
+          "aliases": []
+        },
+        {
+          "name": "リユースセレクトショップバイセル 楽天市場店",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-03T02:16:05+00:00",
+      "updated_at": "2026-11-03T02:16:05+00:00"
     },
     {
       "id": "cf4d93f326f1b4fa",
@@ -22657,6 +22882,40 @@
       ],
       "added_at": "2026-10-25T05:15:56+00:00",
       "updated_at": "2026-10-25T05:15:56+00:00"
+    },
+    {
+      "id": "bff05c589967607d",
+      "published_at": "2026-10-15T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "バリューコマース",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 6096,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.valuecommerce.co.jp/news/c_news/6819/",
+          "evidence_urls": [
+            "https://www.valuecommerce.co.jp/news/c_news/6819/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.valuecommerce.co.jp/news/c_news/6819/"
+        }
+      ],
+      "affected_service": "Cuenote FC",
+      "service_aliases": [],
+      "added_at": "2026-11-03T02:16:05+00:00",
+      "updated_at": "2026-11-03T02:16:05+00:00"
     },
     {
       "id": "f173c3a3ee0fb4ea",
@@ -24877,6 +25136,14 @@
             "https://komehyohds.com/2026/10/23/%E5%BD%93%E7%A4%BE%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E3%81%8C%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B%E5%A4%96%E9%83%A8%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E5%A7%94%E8%A8%97%E5%85%88%E3%81%B8%E3%81%AE/",
             "https://rocket-boys.co.jp/security-measures-lab/komehyo_wasabi_switch_473_orders_leak_20261025/"
           ]
+        },
+        {
+          "incident_id": "cce61eb169237e94",
+          "relationship": "affects",
+          "evidence_url": "https://buysell-technologies.com/announcement/202610295550/",
+          "evidence_urls": [
+            "https://buysell-technologies.com/announcement/202610295550/"
+          ]
         }
       ],
       "sources": [
@@ -24898,7 +25165,7 @@
         }
       ],
       "added_at": "2026-10-19T09:06:44+00:00",
-      "updated_at": "2026-11-02T06:15:48+00:00"
+      "updated_at": "2026-11-03T02:16:05+00:00"
     },
     {
       "id": "cce9bdde2676d4b4",
@@ -28865,6 +29132,38 @@
       ],
       "added_at": "2026-10-19T09:55:20+00:00",
       "updated_at": "2026-10-20T07:24:24+00:00"
+    },
+    {
+      "id": "95a4f1c77a4a322c",
+      "published_at": "2026-10-07T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "小田急トラベル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 63006,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.odakyu-travel.co.jp/web/info_20261102.html",
+          "evidence_urls": [
+            "https://www.odakyu-travel.co.jp/web/info_20261102.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.odakyu-travel.co.jp/web/info_20261102.html"
+        }
+      ],
+      "added_at": "2026-11-03T02:16:05+00:00",
+      "updated_at": "2026-11-03T02:16:05+00:00"
     },
     {
       "id": "0eba91331516b1bd",
