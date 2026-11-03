@@ -1408,12 +1408,14 @@ FOLLOWUP_RE = re.compile(
 )
 ORG_TITLE_NOISE_RE = re.compile(
     r"お客様情報|個人情報(?:漏|流)|不正アクセス|サイバー攻撃|ランサムウェア|"
-    r"お詫び|お知らせ|で発生した|ニュース|情報(?:漏えい|漏洩|流出)",
+    r"お詫び|お知らせ|で発生した|情報(?:漏えい|漏洩|流出)",
     re.I,
 )
 GENERIC_ORGS = {
     "一連", "自治体", "複数自治体", "大手スーパー", "都内の税理士法人",
     "ネット通販サイト支援の会社", "産婦人科など利用のシステム",
+    # News labels are generic on their own, but ニュース can be part of a company name.
+    "ニュース", "最新ニュース", "ニュース速報", "ニュース記事",
 }
 
 
