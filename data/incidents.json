@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-03T20:36:46+00:00",
-  "total": 756,
+  "updated_at": "2026-11-03T22:15:33+00:00",
+  "total": 758,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-03"
@@ -353,7 +353,7 @@
     },
     {
       "date": "2026-11-01",
-      "count": 3
+      "count": 4
     },
     {
       "date": "2026-11-02",
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-11-03",
-      "count": 11
+      "count": 12
     },
     {
       "date": "2026-11-04",
@@ -382,7 +382,17 @@
       "potential_records": 169151,
       "confidence": "high",
       "confidence_score": 100,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "d290a8fda51abad3",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/seven-eleven-7now-cbcloud-pickgo-data-breach/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/cbcloud-pickgo-data-breach-seven-eleven-demaecan/",
+            "https://rocket-boys.co.jp/security-measures-lab/seven-eleven-7now-cbcloud-pickgo-data-breach/"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "読売新聞",
@@ -414,7 +424,7 @@
         "セブンナウ"
       ],
       "added_at": "2026-11-03T13:17:19+00:00",
-      "updated_at": "2026-11-03T20:36:46+00:00"
+      "updated_at": "2026-11-03T22:15:33+00:00"
     },
     {
       "id": "cade75ef66ccbad6",
@@ -732,6 +742,43 @@
       ],
       "added_at": "2026-11-03T16:15:47+00:00",
       "updated_at": "2026-11-03T20:36:46+00:00"
+    },
+    {
+      "id": "71354d482c0b8faa",
+      "published_at": "2026-11-02T15:00:00+00:00",
+      "disclosed_at": "2026-11-02T15:00:00+00:00",
+      "organization": "出前館",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "d290a8fda51abad3",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/seven-eleven-7now-cbcloud-pickgo-data-breach/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/cbcloud-pickgo-data-breach-seven-eleven-demaecan/",
+            "https://rocket-boys.co.jp/security-measures-lab/seven-eleven-7now-cbcloud-pickgo-data-breach/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/cbcloud-pickgo-data-breach-seven-eleven-demaecan/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/seven-eleven-7now-cbcloud-pickgo-data-breach/"
+        }
+      ],
+      "added_at": "2026-11-03T22:15:33+00:00",
+      "updated_at": "2026-11-03T22:15:33+00:00"
     },
     {
       "id": "cb2d0380ac0a4897",
@@ -1620,6 +1667,54 @@
       "service_aliases": [],
       "added_at": "2026-11-02T13:16:55+00:00",
       "updated_at": "2026-11-03T11:46:37+00:00"
+    },
+    {
+      "id": "d290a8fda51abad3",
+      "published_at": "2026-10-31T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "CBcloud株式会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "39ff62b6be63f819",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/seven-eleven-7now-cbcloud-pickgo-data-breach/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/cbcloud-pickgo-data-breach-seven-eleven-demaecan/",
+            "https://rocket-boys.co.jp/security-measures-lab/seven-eleven-7now-cbcloud-pickgo-data-breach/"
+          ]
+        },
+        {
+          "incident_id": "71354d482c0b8faa",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/seven-eleven-7now-cbcloud-pickgo-data-breach/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/cbcloud-pickgo-data-breach-seven-eleven-demaecan/",
+            "https://rocket-boys.co.jp/security-measures-lab/seven-eleven-7now-cbcloud-pickgo-data-breach/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/cbcloud-pickgo-data-breach-seven-eleven-demaecan/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/seven-eleven-7now-cbcloud-pickgo-data-breach/"
+        }
+      ],
+      "affected_service": "ピックゴー",
+      "service_aliases": [],
+      "added_at": "2026-11-03T22:15:33+00:00",
+      "updated_at": "2026-11-03T22:15:33+00:00"
     },
     {
       "id": "09ba28525670dac9",
