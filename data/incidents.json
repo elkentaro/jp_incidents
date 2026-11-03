@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-03T11:46:37+00:00",
-  "total": 745,
+  "updated_at": "2026-11-03T12:17:45+00:00",
+  "total": 747,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-03"
@@ -361,11 +361,11 @@
     },
     {
       "date": "2026-11-02",
-      "count": 17
+      "count": 18
     },
     {
       "date": "2026-11-03",
-      "count": 3
+      "count": 4
     }
   ],
   "incidents": [
@@ -428,6 +428,39 @@
       ],
       "added_at": "2026-11-03T03:16:30+00:00",
       "updated_at": "2026-11-03T03:16:30+00:00"
+    },
+    {
+      "id": "a2f2cbe2ef453ee8",
+      "published_at": "2026-11-02T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "宇都宮市",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "3d4ac3f77a219dbf",
+          "relationship": "affected_by",
+          "evidence_url": "https://cybersecurity-jp.com/news/118103",
+          "evidence_urls": [
+            "https://cybersecurity-jp.com/news/118103"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118103"
+        }
+      ],
+      "affected_service": "電子申請システム",
+      "service_aliases": [],
+      "added_at": "2026-11-03T12:17:45+00:00",
+      "updated_at": "2026-11-03T12:17:45+00:00"
     },
     {
       "id": "b89d07366359c1c3",
@@ -715,6 +748,39 @@
       "updated_at": "2026-11-03T02:16:05+00:00"
     },
     {
+      "id": "a8e44ce2aed59169",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": "2026-11-01T15:00:00+00:00",
+      "organization": "ウィルズ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 5490000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://www.wills-net.co.jp/pdf/ir-news/uploads/e88675137464940b8b98c8c999d7c452f63571e7.pdf"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118082"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/wills-netmile-5490000-possible-data-breach/"
+        }
+      ],
+      "affected_service": "ネットマイル",
+      "service_aliases": [],
+      "added_at": "2026-11-03T03:16:30+00:00",
+      "updated_at": "2026-11-03T12:17:45+00:00"
+    },
+    {
       "id": "a480effd49107e26",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
@@ -810,35 +876,6 @@
       "service_aliases": [],
       "added_at": "2026-11-02T10:00:14+00:00",
       "updated_at": "2026-11-02T13:16:55+00:00"
-    },
-    {
-      "id": "a8e44ce2aed59169",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": "2026-11-01T15:00:00+00:00",
-      "organization": "ウィルズ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 5490000,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [],
-      "sources": [
-        {
-          "name": "legalagent list",
-          "url": "https://www.wills-net.co.jp/pdf/ir-news/uploads/e88675137464940b8b98c8c999d7c452f63571e7.pdf"
-        },
-        {
-          "name": "Cybersecurity.jp",
-          "url": "https://cybersecurity-jp.com/news/118082"
-        }
-      ],
-      "affected_service": "ネットマイル",
-      "service_aliases": [],
-      "added_at": "2026-11-03T03:16:30+00:00",
-      "updated_at": "2026-11-03T03:16:30+00:00"
     },
     {
       "id": "fa6c90af8f34017d",
@@ -1123,6 +1160,40 @@
       ],
       "added_at": "2026-11-02T21:15:57+00:00",
       "updated_at": "2026-11-02T21:15:57+00:00"
+    },
+    {
+      "id": "6fa988fa2a0728fb",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "下野市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "3d4ac3f77a219dbf",
+          "relationship": "affected_by",
+          "evidence_url": "https://cybersecurity-jp.com/news/118103",
+          "evidence_urls": [
+            "https://cybersecurity-jp.com/news/118103"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118103"
+        }
+      ],
+      "affected_service": "しもつけオンラインサービス",
+      "service_aliases": [],
+      "added_at": "2026-11-03T12:17:45+00:00",
+      "updated_at": "2026-11-03T12:17:45+00:00"
     },
     {
       "id": "1337ad1619d32570",
@@ -1566,12 +1637,16 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118104"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/94ff865c13826663c526b4632a9f1c929d132731"
         }
       ],
       "affected_service": "行政オンラインシステム",
       "service_aliases": [],
       "added_at": "2026-11-03T06:05:56+00:00",
-      "updated_at": "2026-11-03T11:46:37+00:00"
+      "updated_at": "2026-11-03T12:17:45+00:00"
     },
     {
       "id": "747ff37bca4130bd",
@@ -3490,6 +3565,38 @@
       "updated_at": "2026-10-29T20:56:59+00:00"
     },
     {
+      "id": "47393192da302a95",
+      "published_at": "2026-10-28T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社HKC",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 58573,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/tokyo_himitsukichi_mumeinokai_leak_warning-20261029-2/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUW90aGRoU2E3cVh2YUw1VGx6ejdYcTZjWU43a1pZNjdmOWtDY2ZKMUE3eFRoSm5vZFpSdGljc1NkWWVOcjdPenVwRVQxRWRRZG15REtxa3JSVTFWajN4RE1pQmpVb3F2cnJQOUEyaTdRSjRpdzJkZkF6VWl0QVUxd0dkUHhHb1ZDdGNwVVFUNHROOWdpX3BPemNMMjVJYlU?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE42cVhjQUVFWEVTWUZ2aHhFc0M1UlN6a19mUFROcWFTX1k5Z3B3aXdVWUxTMTAzZG9pX0RocHlNTDQyYVBFWElRUEtBdGgwa013LUdGZWdhbk8zSmE0WnhmU3lYb1J3UVhza0hnMDBOVDA0a2haRkFTSjlRc2p6M2M?oc=5"
+        }
+      ],
+      "affected_service": "東京秘密基地",
+      "service_aliases": [],
+      "added_at": "2026-10-30T06:16:03+00:00",
+      "updated_at": "2026-11-03T12:17:45+00:00"
+    },
+    {
       "id": "39d454b50a8624c2",
       "published_at": "2026-10-28T15:00:00+00:00",
       "disclosed_at": "2026-10-28T15:00:00+00:00",
@@ -4000,34 +4107,6 @@
       "service_aliases": [],
       "added_at": "2026-10-29T20:16:15+00:00",
       "updated_at": "2026-10-29T20:16:15+00:00"
-    },
-    {
-      "id": "47393192da302a95",
-      "published_at": "2026-10-28T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "株式会社HKC",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 58573,
-      "confidence": "medium",
-      "confidence_score": 45,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/tokyo_himitsukichi_mumeinokai_leak_warning-20261029-2/"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUW90aGRoU2E3cVh2YUw1VGx6ejdYcTZjWU43a1pZNjdmOWtDY2ZKMUE3eFRoSm5vZFpSdGljc1NkWWVOcjdPenVwRVQxRWRRZG15REtxa3JSVTFWajN4RE1pQmpVb3F2cnJQOUEyaTdRSjRpdzJkZkF6VWl0QVUxd0dkUHhHb1ZDdGNwVVFUNHROOWdpX3BPemNMMjVJYlU?oc=5"
-        }
-      ],
-      "affected_service": "東京秘密基地",
-      "service_aliases": [],
-      "added_at": "2026-10-30T06:16:03+00:00",
-      "updated_at": "2026-10-31T08:16:00+00:00"
     },
     {
       "id": "575cc9ef529313b5",
@@ -5402,6 +5481,76 @@
       "updated_at": "2026-10-28T22:15:41+00:00"
     },
     {
+      "id": "3d4ac3f77a219dbf",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "TKC",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 2230812,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "6fa988fa2a0728fb",
+          "relationship": "affects",
+          "evidence_url": "https://cybersecurity-jp.com/news/118103",
+          "evidence_urls": [
+            "https://cybersecurity-jp.com/news/118103"
+          ]
+        },
+        {
+          "incident_id": "a2f2cbe2ef453ee8",
+          "relationship": "affects",
+          "evidence_url": "https://cybersecurity-jp.com/news/118103",
+          "evidence_urls": [
+            "https://cybersecurity-jp.com/news/118103"
+          ]
+        },
+        {
+          "incident_id": "cade75ef66ccbad6",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/somu/2026/1103denshishinsei.html",
+          "evidence_urls": [
+            "https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/somu/2026/1103denshishinsei.html"
+          ]
+        },
+        {
+          "incident_id": "d1625f0ac45d3d6b",
+          "relationship": "affects",
+          "evidence_url": "https://lgpos.task-asp.net/cu/271004/ea/residents/portal/notice/2/4e963c8c-0ad5-f111-bafe-0050568e04c4/detail",
+          "evidence_urls": [
+            "https://lgpos.task-asp.net/cu/271004/ea/residents/portal/notice/2/4e963c8c-0ad5-f111-bafe-0050568e04c4/detail"
+          ]
+        },
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.tkc.jp/news/2026/20261102_2/",
+          "evidence_urls": [
+            "https://www.tkc.jp/news/2026/20261102_2/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.tkc.jp/news/2026/20261102_2/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118103"
+        }
+      ],
+      "affected_service": "アララメッセージ",
+      "service_aliases": [],
+      "added_at": "2026-11-03T01:15:51+00:00",
+      "updated_at": "2026-11-03T12:17:45+00:00"
+    },
+    {
       "id": "09d9b28fff52841e",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": null,
@@ -5654,56 +5803,6 @@
       "service_aliases": [],
       "added_at": "2026-10-30T02:15:42+00:00",
       "updated_at": "2026-10-30T02:15:42+00:00"
-    },
-    {
-      "id": "3d4ac3f77a219dbf",
-      "published_at": "2026-10-27T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "TKC",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 2230812,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "cade75ef66ccbad6",
-          "relationship": "affects",
-          "evidence_url": "https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/somu/2026/1103denshishinsei.html",
-          "evidence_urls": [
-            "https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/somu/2026/1103denshishinsei.html"
-          ]
-        },
-        {
-          "incident_id": "d1625f0ac45d3d6b",
-          "relationship": "affects",
-          "evidence_url": "https://lgpos.task-asp.net/cu/271004/ea/residents/portal/notice/2/4e963c8c-0ad5-f111-bafe-0050568e04c4/detail",
-          "evidence_urls": [
-            "https://lgpos.task-asp.net/cu/271004/ea/residents/portal/notice/2/4e963c8c-0ad5-f111-bafe-0050568e04c4/detail"
-          ]
-        },
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.tkc.jp/news/2026/20261102_2/",
-          "evidence_urls": [
-            "https://www.tkc.jp/news/2026/20261102_2/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.tkc.jp/news/2026/20261102_2/"
-        }
-      ],
-      "affected_service": "アララメッセージ",
-      "service_aliases": [],
-      "added_at": "2026-11-03T01:15:51+00:00",
-      "updated_at": "2026-11-03T11:46:37+00:00"
     },
     {
       "id": "8aa4a531a94a16f1",
