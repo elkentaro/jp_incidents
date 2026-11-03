@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-03T05:16:25+00:00",
-  "total": 745,
+  "updated_at": "2026-11-03T06:05:56+00:00",
+  "total": 746,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-03"
@@ -353,7 +353,7 @@
     },
     {
       "date": "2026-10-31",
-      "count": 10
+      "count": 11
     },
     {
       "date": "2026-11-01",
@@ -1516,6 +1516,44 @@
       ],
       "added_at": "2026-11-02T06:15:48+00:00",
       "updated_at": "2026-11-02T20:15:44+00:00"
+    },
+    {
+      "id": "d1625f0ac45d3d6b",
+      "published_at": "2026-10-30T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大阪市",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "other",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "3d4ac3f77a219dbf",
+          "relationship": "affected_by",
+          "evidence_url": "https://lgpos.task-asp.net/cu/271004/ea/residents/portal/notice/2/4e963c8c-0ad5-f111-bafe-0050568e04c4/detail",
+          "evidence_urls": [
+            "https://lgpos.task-asp.net/cu/271004/ea/residents/portal/notice/2/4e963c8c-0ad5-f111-bafe-0050568e04c4/detail"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "大阪市",
+          "url": "https://lgpos.task-asp.net/cu/271004/ea/residents/portal/notice/2/4e963c8c-0ad5-f111-bafe-0050568e04c4/detail"
+        },
+        {
+          "name": "news.yahoo.co.jp",
+          "url": "https://news.yahoo.co.jp/articles/2ac42ccca5b40dec8a526e2200aeea3dfc02164f"
+        }
+      ],
+      "affected_service": "行政オンラインシステム",
+      "service_aliases": [],
+      "added_at": "2026-11-03T06:05:56+00:00",
+      "updated_at": "2026-11-03T06:05:56+00:00"
     },
     {
       "id": "747ff37bca4130bd",
@@ -5605,6 +5643,14 @@
       "confidence_score": 60,
       "related": [
         {
+          "incident_id": "d1625f0ac45d3d6b",
+          "relationship": "affects",
+          "evidence_url": "https://lgpos.task-asp.net/cu/271004/ea/residents/portal/notice/2/4e963c8c-0ad5-f111-bafe-0050568e04c4/detail",
+          "evidence_urls": [
+            "https://lgpos.task-asp.net/cu/271004/ea/residents/portal/notice/2/4e963c8c-0ad5-f111-bafe-0050568e04c4/detail"
+          ]
+        },
+        {
           "incident_id": "e0bf7f8e71d6ba85",
           "relationship": "affected_by",
           "evidence_url": "https://www.tkc.jp/news/2026/20261102_2/",
@@ -5622,7 +5668,7 @@
       "affected_service": "アララメッセージ",
       "service_aliases": [],
       "added_at": "2026-11-03T01:15:51+00:00",
-      "updated_at": "2026-11-03T01:15:51+00:00"
+      "updated_at": "2026-11-03T06:05:56+00:00"
     },
     {
       "id": "8aa4a531a94a16f1",
