@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-03T16:15:47+00:00",
-  "total": 752,
+  "updated_at": "2026-11-03T20:15:56+00:00",
+  "total": 755,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-03"
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-11-03",
-      "count": 8
+      "count": 11
     },
     {
       "date": "2026-11-04",
@@ -369,6 +369,45 @@
     }
   ],
   "incidents": [
+    {
+      "id": "39ff62b6be63f819",
+      "published_at": "2026-11-02T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "セブン―イレブン・ジャパン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 169151,
+      "confidence": "high",
+      "confidence_score": 95,
+      "related": [],
+      "sources": [
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/economy/20261103-GYT1T00192/"
+        },
+        {
+          "name": "京都新聞デジタル",
+          "url": "https://www.kyoto-np.co.jp/articles/-/1819931"
+        },
+        {
+          "name": "時事ドットコム",
+          "url": "https://www.jiji.com/jc/article?k=2026110300709&g=eco"
+        },
+        {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp/15179237.html"
+        }
+      ],
+      "affected_service": "7NOW",
+      "service_aliases": [
+        "セブンナウ"
+      ],
+      "added_at": "2026-11-03T13:17:19+00:00",
+      "updated_at": "2026-11-03T20:15:56+00:00"
+    },
     {
       "id": "cade75ef66ccbad6",
       "published_at": "2026-11-02T15:00:00+00:00",
@@ -380,7 +419,7 @@
       ],
       "potential_records": 820000,
       "confidence": "high",
-      "confidence_score": 75,
+      "confidence_score": 90,
       "related": [
         {
           "incident_id": "3d4ac3f77a219dbf",
@@ -399,12 +438,52 @@
         {
           "name": "news.yahoo.co.jp",
           "url": "https://news.yahoo.co.jp/articles/3a125c046dd04b29689e7d010d4b53281cbde5cb"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261103de70016"
         }
       ],
       "affected_service": "電子申請・届出システム",
       "service_aliases": [],
       "added_at": "2026-11-03T11:46:37+00:00",
-      "updated_at": "2026-11-03T11:46:37+00:00"
+      "updated_at": "2026-11-03T20:15:56+00:00"
+    },
+    {
+      "id": "f5d6fe1d857ff47b",
+      "published_at": "2026-11-02T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "福井県立恐竜博物館",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "cc83cfb44abbac15",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.fukui-tv.co.jp/?post_type=fukui_news&p=203341",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/043488f9a2e621eaae645bd17242931081138547",
+            "https://www.fukui-tv.co.jp/?post_type=fukui_news&p=203341"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/043488f9a2e621eaae645bd17242931081138547"
+        },
+        {
+          "name": "福井テレビ",
+          "url": "https://www.fukui-tv.co.jp/?post_type=fukui_news&p=203341"
+        }
+      ],
+      "added_at": "2026-11-03T20:15:56+00:00",
+      "updated_at": "2026-11-03T20:15:56+00:00"
     },
     {
       "id": "f8219056db68a509",
@@ -464,31 +543,36 @@
       "updated_at": "2026-11-03T13:17:19+00:00"
     },
     {
-      "id": "39ff62b6be63f819",
+      "id": "8a2a8d13a22fe810",
       "published_at": "2026-11-02T15:00:00+00:00",
       "disclosed_at": null,
-      "organization": "セブン―イレブン・ジャパン",
+      "organization": "福井県",
       "incident_type": "data leak",
       "incident_categories": [
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": 169151,
+      "potential_records": null,
       "confidence": "medium",
       "confidence_score": 50,
-      "related": [],
-      "sources": [
+      "related": [
         {
-          "name": "読売新聞",
-          "url": "https://www.yomiuri.co.jp/economy/20261103-GYT1T00192/"
+          "incident_id": "cc83cfb44abbac15",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.ntv.co.jp/n/fbc/category/society/fbea70c8e8a7614fc09ba47e8379dd6f31",
+          "evidence_urls": [
+            "https://news.ntv.co.jp/n/fbc/category/society/fbea70c8e8a7614fc09ba47e8379dd6f31"
+          ]
         }
       ],
-      "affected_service": "7NOW",
-      "service_aliases": [
-        "セブンナウ"
+      "sources": [
+        {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp/n/fbc/category/society/fbea70c8e8a7614fc09ba47e8379dd6f31"
+        }
       ],
-      "added_at": "2026-11-03T13:17:19+00:00",
-      "updated_at": "2026-11-03T13:17:19+00:00"
+      "added_at": "2026-11-03T20:15:56+00:00",
+      "updated_at": "2026-11-03T20:15:56+00:00"
     },
     {
       "id": "a2f2cbe2ef453ee8",
@@ -593,15 +677,71 @@
       "potential_records": 15821184,
       "confidence": "medium",
       "confidence_score": 50,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "8a2a8d13a22fe810",
+          "relationship": "affects",
+          "evidence_url": "https://news.ntv.co.jp/n/fbc/category/society/fbea70c8e8a7614fc09ba47e8379dd6f31",
+          "evidence_urls": [
+            "https://news.ntv.co.jp/n/fbc/category/society/fbea70c8e8a7614fc09ba47e8379dd6f31"
+          ]
+        },
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/043488f9a2e621eaae645bd17242931081138547",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/043488f9a2e621eaae645bd17242931081138547"
+          ]
+        },
+        {
+          "incident_id": "f5d6fe1d857ff47b",
+          "relationship": "affects",
+          "evidence_url": "https://www.fukui-tv.co.jp/?post_type=fukui_news&p=203341",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/043488f9a2e621eaae645bd17242931081138547",
+            "https://www.fukui-tv.co.jp/?post_type=fukui_news&p=203341"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/0082b9c3fa0fd46283f2b70a3b56fb7210eba65f"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/043488f9a2e621eaae645bd17242931081138547"
         }
       ],
       "added_at": "2026-11-03T16:15:47+00:00",
-      "updated_at": "2026-11-03T16:15:47+00:00"
+      "updated_at": "2026-11-03T20:15:56+00:00"
+    },
+    {
+      "id": "cb2d0380ac0a4897",
+      "published_at": "2026-11-02T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "京都市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "other",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "京都新聞デジタル",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5kWUZENnJvVkYyUklrdjBPby1SQ0ZEWDQ4akt4eF81RWlXelAtVVFzdG85N2wyTEhhemxiWmRCbXhGTXlvUzFuVmw4UFFRdVBxQjNqYll1d1c?oc=5"
+        }
+      ],
+      "affected_service": "東本願寺前市民緑地「お東さん広場」",
+      "service_aliases": [],
+      "added_at": "2026-11-03T20:15:56+00:00",
+      "updated_at": "2026-11-03T20:15:56+00:00"
     },
     {
       "id": "6ce8d002dff5f408",
@@ -5302,6 +5442,14 @@
           ]
         },
         {
+          "incident_id": "cc83cfb44abbac15",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/043488f9a2e621eaae645bd17242931081138547",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/043488f9a2e621eaae645bd17242931081138547"
+          ]
+        },
+        {
           "incident_id": "d7d0276c81864e2b",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5lOFJlUnpUdjNFUFhIaG5SMEtjZ0FucnpaR3hwWl9CZVF0S3Y2SmlDWEdIcXM5Y2V5R1lIVzZKb0UyNHFlNWpPUV8yYlV6MVRKSXZLN3p1QUd1NnFpWHc?oc=5",
@@ -5362,7 +5510,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-03T13:17:19+00:00"
+      "updated_at": "2026-11-03T20:15:56+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
