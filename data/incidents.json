@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-02T23:15:36+00:00",
-  "total": 733,
+  "updated_at": "2026-11-03T01:15:51+00:00",
+  "total": 734,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-02"
@@ -341,7 +341,7 @@
     },
     {
       "date": "2026-10-28",
-      "count": 43
+      "count": 44
     },
     {
       "date": "2026-10-29",
@@ -1712,6 +1712,10 @@
           "url": "https://www.nihon-kotsu.co.jp/news/20261030-3479/"
         },
         {
+          "name": "satimo list",
+          "url": "https://nihon-kotsu-hire.jp/news/261030/"
+        },
+        {
           "name": "TBS NEWS DIG",
           "url": "https://newsdig.tbs.co.jp/articles/-/3052635?display=1"
         },
@@ -1733,7 +1737,7 @@
         }
       ],
       "added_at": "2026-10-30T15:02:16+00:00",
-      "updated_at": "2026-10-30T23:03:16+00:00"
+      "updated_at": "2026-11-03T01:15:51+00:00"
     },
     {
       "id": "7b687057653f55b3",
@@ -4728,6 +4732,14 @@
           ]
         },
         {
+          "incident_id": "3d4ac3f77a219dbf",
+          "relationship": "affects",
+          "evidence_url": "https://www.tkc.jp/news/2026/20261102_2/",
+          "evidence_urls": [
+            "https://www.tkc.jp/news/2026/20261102_2/"
+          ]
+        },
+        {
           "incident_id": "5fa1320f5cec460c",
           "relationship": "affects",
           "evidence_url": "https://www.kobe-np.co.jp/news/society/202611/0020995366.shtml",
@@ -4824,7 +4836,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-02T20:15:44+00:00"
+      "updated_at": "2026-11-03T01:15:51+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -5386,6 +5398,40 @@
       "service_aliases": [],
       "added_at": "2026-10-30T02:15:42+00:00",
       "updated_at": "2026-10-30T02:15:42+00:00"
+    },
+    {
+      "id": "3d4ac3f77a219dbf",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "TKC",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 2230812,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.tkc.jp/news/2026/20261102_2/",
+          "evidence_urls": [
+            "https://www.tkc.jp/news/2026/20261102_2/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.tkc.jp/news/2026/20261102_2/"
+        }
+      ],
+      "affected_service": "アララメッセージ",
+      "service_aliases": [],
+      "added_at": "2026-11-03T01:15:51+00:00",
+      "updated_at": "2026-11-03T01:15:51+00:00"
     },
     {
       "id": "8ebd5d925ed1dcd6",
@@ -16391,6 +16437,35 @@
       "updated_at": "2026-10-29T01:16:22+00:00"
     },
     {
+      "id": "881be4944d803081",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": "2026-10-21T15:00:00+00:00",
+      "organization": "ストラテジックマーケティング",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 42900,
+      "confidence": "medium",
+      "confidence_score": 45,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/tokumoni_42900_data_leak_phishing/"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://www.strategic-m.jp/pr/notice_20261022.html"
+        }
+      ],
+      "affected_service": "覆面調査・モニターサイト「とくモニ!」",
+      "service_aliases": [],
+      "added_at": "2026-11-02T05:15:53+00:00",
+      "updated_at": "2026-11-03T01:15:51+00:00"
+    },
+    {
       "id": "2668891b9e24dbd7",
       "published_at": "2026-10-20T15:00:00+00:00",
       "disclosed_at": null,
@@ -16571,31 +16646,6 @@
       ],
       "added_at": "2026-10-22T07:38:51+00:00",
       "updated_at": "2026-10-22T07:38:51+00:00"
-    },
-    {
-      "id": "881be4944d803081",
-      "published_at": "2026-10-20T15:00:00+00:00",
-      "disclosed_at": "2026-10-21T15:00:00+00:00",
-      "organization": "ストラテジックマーケティング",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 42900,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/tokumoni_42900_data_leak_phishing/"
-        }
-      ],
-      "affected_service": "覆面調査・モニターサイト「とくモニ!」",
-      "service_aliases": [],
-      "added_at": "2026-11-02T05:15:53+00:00",
-      "updated_at": "2026-11-02T05:15:53+00:00"
     },
     {
       "id": "9ecfafb6c9298236",
