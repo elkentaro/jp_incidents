@@ -64,6 +64,7 @@ from decimal import Decimal, InvalidOperation
 from email.utils import format_datetime, parsedate_to_datetime
 from zoneinfo import ZoneInfo
 import operations as ops
+import publication
 import incident_services
 import incident_categories as categories
 import incident_activity
@@ -3169,21 +3170,14 @@ def write_public_rss(path=RSS_PATH, incidents=None):
 
 
 def _run_git(args, cwd, check=True):
-    result = subprocess.run(
-        ["git", *args], cwd=cwd, text=True, stdout=subprocess.PIPE,
-        stderr=subprocess.STDOUT, check=False
-    )
-    if check and result.returncode:
-        raise RuntimeError(f"git {' '.join(args)} failed: {result.stdout.strip()}")
-    return result
+    return publication.run_git(args, cwd, check=check)
 
 
 def publish_public_json(path=JSON_PATH, rss_path=RSS_PATH, sources_path=SOURCES_PATH):
     """Refresh public JSON/RSS/source files, commit them if needed, and push."""
-    json_changed = write_public_json(path)
-    rss_changed = write_public_rss(rss_path)
-    sources_changed = write_public_sources(sources_path)
-    changed = json_changed or rss_changed or sources_changed
+    write_public_json(path)
+    write_public_rss(rss_path)
+    write_public_sources(sources_path)
     root_result = _run_git(["rev-parse", "--show-toplevel"], os.getcwd())
     repo = root_result.stdout.strip()
     absolute_paths = [os.path.abspath(path), os.path.abspath(rss_path), os.path.abspath(sources_path)]
@@ -3198,7 +3192,7 @@ def publish_public_json(path=JSON_PATH, rss_path=RSS_PATH, sources_path=SOURCES_
         absolute_paths.append(health_path)
     if os.environ.get("JPI_LINKAGE_MAP", "0") == "1":
         import linkage_map
-        changed = linkage_map.refresh(path, repo) or changed
+        linkage_map.refresh(path, repo)
         absolute_paths.extend(os.path.join(repo, name) for name in linkage_map.OUTPUTS)
     for output_path in absolute_paths:
         if os.path.commonpath((repo, output_path)) != repo:
@@ -3216,19 +3210,18 @@ def publish_public_json(path=JSON_PATH, rss_path=RSS_PATH, sources_path=SOURCES_
         committed = True
         print(f"Committed updated feeds: {', '.join(relative_paths)}")
 
-    tracking_ref = f"refs/remotes/{remote}/{branch}"
-    ahead = _run_git(["rev-list", "--count", f"{tracking_ref}..HEAD"], repo, check=False)
-    pending = ahead.returncode != 0 or int(ahead.stdout.strip() or "0") > 0
-    if committed or pending:
-        _run_git(["push", "--set-upstream", remote, f"HEAD:{branch}"], repo)
-        print(f"Pushed incident data to {remote}/{branch}")
-        return True
-    if changed:
-        # This should only occur if another process committed the file first.
-        print("JSON was updated but no Git commit is pending")
-    else:
-        print("GitHub publish skipped: no data changes")
-    return False
+    return publication.push_pending(DB_PATH, repo, remote, branch, committed=committed, git=_run_git)
+
+
+def retry_publication():
+    """Retry saved commits without collecting, exporting or invoking AI."""
+    with ops.lock(DB_PATH, 'collector') as acquired:
+        if not acquired:
+            print('Collection/review active; publication retry will wait for the next timer tick')
+            return
+        repo = _run_git(['rev-parse', '--show-toplevel'], os.getcwd()).stdout.strip()
+        return publication.push_pending(DB_PATH, repo, os.environ.get('JPI_GIT_REMOTE', 'origin'),
+                                        os.environ.get('JPI_GIT_BRANCH', 'main'), git=_run_git)
 
 
 def run_cycle(args):
@@ -3267,7 +3260,8 @@ def run_cycle(args):
             except Exception as error:
                 errors.append(('alerts', error))
         ops.set_state(DB_PATH, 'cycle', {'started_at': started, 'finished_at': now_iso(),
-                                       'status': 'failed' if errors else 'success'})
+                                       'status': 'failed' if errors else 'success',
+                                       'publication_pending': bool((ops.get_state(DB_PATH, 'publication') or {}).get('pending'))})
         if errors:
             raise RuntimeError('; '.join(f'{phase}: {type(error).__name__}: {error}' for phase,error in errors))
 
@@ -3444,6 +3438,7 @@ def main():
     v.add_argument("--publish", action="store_true", help="publish JSON/RSS after restoring valid incidents")
     sub.add_parser("review-pending", help="AI-review private candidates for promotion next cycle")
     sub.add_parser('deliver-alerts', help='retry private alerts independently of collection/publication')
+    sub.add_parser('retry-publication', help='retry saved Git commits without collection or AI work')
     sub.add_parser('watchdog', help='check collection and verified backup freshness')
     sub.add_parser('backup', help='create private snapshot and test a full restore')
     links = sub.add_parser('link', help='link affected/provider records or distinct incidents of one organization')
@@ -3496,6 +3491,8 @@ def main():
         test_sources(name_match=a.match, group=a.group)
     elif a.cmd == 'deliver-alerts':
         deliver_alerts()
+    elif a.cmd == 'retry-publication':
+        retry_publication()
     elif a.cmd == 'watchdog':
         watchdog()
     elif a.cmd == 'backup':

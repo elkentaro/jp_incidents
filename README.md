@@ -623,15 +623,16 @@ Then install and enable the units:
 
 ```bash
 sudo cp systemd/jp-incidents.service systemd/jp-incidents.timer /etc/systemd/system/
+sudo cp systemd/jp-incidents-publication.service systemd/jp-incidents-publication.timer /etc/systemd/system/
 sudo systemctl daemon-reload
-sudo systemctl enable --now jp-incidents.timer
+sudo systemctl enable --now jp-incidents.timer jp-incidents-publication.timer
 ```
 
 The timer runs two minutes after boot and at 13 minutes past every hour in the `Asia/Tokyo` timezone. Before changing collection state, the process waits up to 10 minutes for external connectivity, checking every 30 seconds. If connectivity is still unavailable, systemd retries the failed run after five minutes (up to four starts per 30 minutes). The service loads optional secrets and overrides from `.env`, which is ignored by Git. `JPI_NETWORK_WAIT_SECONDS`, `JPI_NETWORK_RETRY_SECONDS`, and comma-separated `JPI_NETWORK_CHECK_URLS` can override the defaults.
 
 ## Private Discord operations alerts
 
-Operational alerts are sent only to a locally configured Discord webhook. They are never written to the public JSON, RSS feed, dashboard, or Git history. The collector alerts on AI billing/credit, spend-limit, authentication, rate-limit, and provider failures; fatal collector or Git publication failures; a missing AI key; and aggregated source polling errors. Sources returning no usable articles do not trigger Discord alerts. Private `source-health` diagnostics retain item counts, article estimates, empty streaks, and fetch errors. Potential incident articles with unreadable or questionable PDFs enter private human review and send an actionable Discord alert. Actual fetch failures and AI failures still alert; failed AI batches retain pending candidates for retry.
+Operational alerts are sent only to a locally configured Discord webhook. They are never written to the public JSON, RSS feed, dashboard, or Git history. The collector alerts on AI billing/credit, spend-limit, authentication, rate-limit, and provider failures; fatal collector or local export/commit failures; deferred Git publication and recovery; a missing AI key; and aggregated source polling errors. Sources returning no usable articles do not trigger Discord alerts. Private `source-health` diagnostics retain item counts, article estimates, empty streaks, and fetch errors. Potential incident articles with unreadable or questionable PDFs enter private human review and send an actionable Discord alert. Actual fetch failures and AI failures still alert; failed AI batches retain pending candidates for retry.
 
 Identical alerts are suppressed for 12 hours by default using the ignored local `.jpi-alert-state.json` file. Incident notifications continue to use `WEBHOOK_URL`; private operations alerts use `JPI_ALERT_WEBHOOK_URL` when set and otherwise fall back to `WEBHOOK_URL`.
 
@@ -744,8 +745,19 @@ does not run collection, AI review, or network requests.
 
 ## Monitoring, recovery, and operating limits
 
-Collection and publication are separate failure boundaries: failed Git publishing
-does not skip private AI review or alert delivery. The `deliver-alerts` command
+Collection and publication are separate failure boundaries: a failed Git push
+keeps commits locally and lets collection, private AI review, and alert delivery
+finish successfully. The publication timer checks every minute and retries due
+pushes after 5, 10, 20, then every 30 minutes, without collecting feeds or calling
+AI. Retry state survives process restarts; pushes time out after two minutes.
+An outage queues one publication warning and a successful retry queues a recovery
+notice. Local export/commit failures and actual collection errors still fail the
+collector. The `retry-publication` command uses the same backoff and shared lock;
+it never force-pushes or rewrites history. Persistent access or branch conflicts
+remain queued and require operator attention; details are in the service journal
+and private `ops_state` entry `publication`.
+
+The `deliver-alerts` command
 retries durable operational alerts and held-item notices without collecting
 articles or calling AI. Install the additional `jp-incidents-alerts`,
 `jp-incidents-watchdog`, and `jp-incidents-backup` service/timer pairs alongside

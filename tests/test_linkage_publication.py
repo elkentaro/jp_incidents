@@ -37,6 +37,7 @@ class LinkagePublicationTests(unittest.TestCase):
                     return SimpleNamespace(stdout='0', returncode=0)
                 return SimpleNamespace(stdout='', returncode=0)
             with patch.object(core, 'write_public_json', side_effect=write_json), \
+                 patch.object(core, 'DB_PATH', str(root/'private.db')), \
                  patch.object(core, 'write_public_rss', return_value=False), \
                  patch.object(core, 'write_public_sources', return_value=False), \
                  patch.object(core.ops, 'get_state', return_value=None), \
