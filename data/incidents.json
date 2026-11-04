@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-04T10:47:15+00:00",
-  "total": 792,
+  "updated_at": "2026-11-04T10:55:03+00:00",
+  "total": 793,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-04"
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-11-04",
-      "count": 15
+      "count": 16
     }
   ],
   "incidents": [
@@ -781,6 +781,40 @@
       ],
       "added_at": "2026-11-04T05:16:39+00:00",
       "updated_at": "2026-11-04T05:16:39+00:00"
+    },
+    {
+      "id": "a4887886b298b562",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大阪府警察",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 4800,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "3d4ac3f77a219dbf",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.asahi.com/articles/ASVC43CCHVC4PTIL012M.html",
+          "evidence_urls": [
+            "https://www.asahi.com/articles/ASVC43CCHVC4PTIL012M.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVC43CCHVC4PTIL012M.html"
+        }
+      ],
+      "affected_service": "大阪府警察スマート申請システム",
+      "service_aliases": [],
+      "added_at": "2026-11-04T10:55:03+00:00",
+      "updated_at": "2026-11-04T10:55:03+00:00"
     },
     {
       "id": "ae87ad473c1decd3",
@@ -7259,6 +7293,14 @@
           ]
         },
         {
+          "incident_id": "a4887886b298b562",
+          "relationship": "affects",
+          "evidence_url": "https://www.asahi.com/articles/ASVC43CCHVC4PTIL012M.html",
+          "evidence_urls": [
+            "https://www.asahi.com/articles/ASVC43CCHVC4PTIL012M.html"
+          ]
+        },
+        {
           "incident_id": "cade75ef66ccbad6",
           "relationship": "affects",
           "evidence_url": "https://cybersecurity-jp.com/news/118118",
@@ -7298,7 +7340,7 @@
       "affected_service": "アララメッセージ",
       "service_aliases": [],
       "added_at": "2026-11-03T01:15:51+00:00",
-      "updated_at": "2026-11-04T10:47:15+00:00"
+      "updated_at": "2026-11-04T10:55:03+00:00"
     },
     {
       "id": "c41156f61dbf6bc1",
