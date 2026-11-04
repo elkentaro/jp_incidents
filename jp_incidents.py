@@ -56,6 +56,7 @@ Source entry format (JPI_SOURCES JSON, list of objects):
   municipal/official: scan the official homepage's latest links and every RSS/Atom feed it advertises
 """
 import argparse, csv, hashlib, html, io, json, os, re, shlex, sqlite3, subprocess, sys, time
+import http.client
 import urllib.request, urllib.error, urllib.parse
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
@@ -1060,7 +1061,7 @@ def load_tdnet_items(raw, src, fetcher):
     for first_url in first_pages[:day_limit]:
         try:
             first_raw = fetcher(first_url)
-        except (urllib.error.URLError, TimeoutError, OSError, ValueError):
+        except (urllib.error.URLError, http.client.HTTPException, TimeoutError, OSError, ValueError):
             continue
         page_urls = [first_url]
         for filename in re.findall(r'I_list_\d{3}_\d{8}\.html', decode(first_raw), re.I):
@@ -1071,7 +1072,7 @@ def load_tdnet_items(raw, src, fetcher):
             try:
                 page_raw = first_raw if page_url == first_url else fetcher(page_url)
                 page_items = parse_tdnet_page(page_raw, page_url)
-            except (urllib.error.URLError, TimeoutError, OSError, ValueError):
+            except (urllib.error.URLError, http.client.HTTPException, TimeoutError, OSError, ValueError):
                 continue
             for item in page_items:
                 if item["url"] not in seen_urls:
@@ -1112,7 +1113,7 @@ def load_official_items(raw, src, fetcher):
     for feed_url in feed_urls:
         try:
             items.extend(parse_feed(fetcher(feed_url)))
-        except (urllib.error.URLError, ET.ParseError, TimeoutError, OSError, ValueError):
+        except (urllib.error.URLError, http.client.HTTPException, ET.ParseError, TimeoutError, OSError, ValueError):
             continue  # one stale feed link must not suppress the municipality's homepage
 
     base_host = (urllib.parse.urlsplit(src["url"]).hostname or "").removeprefix("www.")
@@ -1163,7 +1164,7 @@ def network_ready(urls=None, timeout=10):
             request = urllib.request.Request(url.strip(), headers={"User-Agent": UA}, method="HEAD")
             with urllib.request.urlopen(request, timeout=timeout):
                 return True
-        except (urllib.error.URLError, TimeoutError, OSError, ValueError):
+        except (urllib.error.URLError, http.client.HTTPException, TimeoutError, OSError, ValueError):
             continue
     return False
 
@@ -1903,7 +1904,7 @@ def corroborate_finding(finding, record, fetcher=None):
     source = {"name": "GNews corroboration", "url": gnews(query)}
     try:
         items = parse_feed(fetcher(source["url"]))
-    except (urllib.error.URLError, ET.ParseError, TimeoutError, OSError, ValueError):
+    except (urllib.error.URLError, http.client.HTTPException, ET.ParseError, TimeoutError, OSError, ValueError):
         return []
     evidence, seen_outlets = [], set()
     original_url = norm_url(record["url"])
@@ -2427,7 +2428,7 @@ def poll(notify=False, fetcher=None, fetch_body_fn=fetch_body):
                 queue_for_review(c, rec.get("outlet") or src["name"], iid, rec)
                 c.execute("INSERT OR IGNORE INTO skipped VALUES(?)", (iid,))
                 c.commit()
-        except (urllib.error.URLError, ET.ParseError, TimeoutError, OSError, ValueError) as e:
+        except (urllib.error.URLError, http.client.HTTPException, ET.ParseError, TimeoutError, OSError, ValueError) as e:
             err = f"{type(e).__name__}: {e}"
             source_error = e
             print(f"[warn] {src['name']}: {err}", file=sys.stderr)
