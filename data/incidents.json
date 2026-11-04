@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-04T17:15:42+00:00",
+  "updated_at": "2026-11-04T18:16:46+00:00",
   "total": 807,
   "date_range": {
     "start": "2025-10-16",
@@ -407,6 +407,46 @@
       "updated_at": "2026-11-04T13:16:52+00:00"
     },
     {
+      "id": "1347fc9d85287a5a",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ビックカメラ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/00808525e5a5fb4e665e4942a9a0181fed694aba",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/00808525e5a5fb4e665e4942a9a0181fed694aba"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/00808525e5a5fb4e665e4942a9a0181fed694aba"
+        },
+        {
+          "name": "産経ニュース",
+          "url": "https://www.sankei.com/article/20261104-HIQENYBUWVLGNBG5SXVAC2ICJM/"
+        },
+        {
+          "name": "khb東日本放送",
+          "url": "https://www.khb-tv.co.jp/news/17023412"
+        }
+      ],
+      "added_at": "2026-11-04T01:16:30+00:00",
+      "updated_at": "2026-11-04T18:16:46+00:00"
+    },
+    {
       "id": "5aad8865a350a69d",
       "published_at": "2026-11-03T15:00:00+00:00",
       "disclosed_at": null,
@@ -601,42 +641,6 @@
       "service_aliases": [],
       "added_at": "2026-11-04T12:25:20+00:00",
       "updated_at": "2026-11-04T12:25:20+00:00"
-    },
-    {
-      "id": "1347fc9d85287a5a",
-      "published_at": "2026-11-03T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ビックカメラ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/00808525e5a5fb4e665e4942a9a0181fed694aba",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/00808525e5a5fb4e665e4942a9a0181fed694aba"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/00808525e5a5fb4e665e4942a9a0181fed694aba"
-        },
-        {
-          "name": "産経ニュース",
-          "url": "https://www.sankei.com/article/20261104-HIQENYBUWVLGNBG5SXVAC2ICJM/"
-        }
-      ],
-      "added_at": "2026-11-04T01:16:30+00:00",
-      "updated_at": "2026-11-04T09:16:15+00:00"
     },
     {
       "id": "56a3d2457cb3a538",
@@ -1626,6 +1630,42 @@
       "updated_at": "2026-11-04T02:15:58+00:00"
     },
     {
+      "id": "b89d07366359c1c3",
+      "published_at": "2026-11-02T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "横浜ゴム",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 4242,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUC040W10U6A101C2000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUC040W10U6A101C2000000/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261103de70021"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC040W10U6A101C2000000/"
+        }
+      ],
+      "added_at": "2026-11-03T11:46:37+00:00",
+      "updated_at": "2026-11-04T18:16:46+00:00"
+    },
+    {
       "id": "cb2d0380ac0a4897",
       "published_at": "2026-11-02T15:00:00+00:00",
       "disclosed_at": null,
@@ -1778,29 +1818,6 @@
       "service_aliases": [],
       "added_at": "2026-11-03T13:17:19+00:00",
       "updated_at": "2026-11-03T13:17:19+00:00"
-    },
-    {
-      "id": "b89d07366359c1c3",
-      "published_at": "2026-11-02T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "横浜ゴム",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 4242,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "NHKニュース",
-          "url": "https://news.web.nhk/newsweb/na/nd-20261103de70021"
-        }
-      ],
-      "added_at": "2026-11-03T11:46:37+00:00",
-      "updated_at": "2026-11-03T11:46:37+00:00"
     },
     {
       "id": "4ae714ea4b465c28",
@@ -7423,6 +7440,14 @@
           ]
         },
         {
+          "incident_id": "b89d07366359c1c3",
+          "relationship": "affects",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUC040W10U6A101C2000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUC040W10U6A101C2000000/"
+          ]
+        },
+        {
           "incident_id": "c0fbbb0ab3173161",
           "relationship": "affects",
           "evidence_url": "https://www.sofmap.com/contents/?id=info&sid=261102b",
@@ -7574,7 +7599,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-04T15:16:11+00:00"
+      "updated_at": "2026-11-04T18:16:46+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
