@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-04T11:03:06+00:00",
-  "total": 793,
+  "updated_at": "2026-11-04T11:16:06+00:00",
+  "total": 794,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-04"
@@ -357,7 +357,7 @@
     },
     {
       "date": "2026-11-02",
-      "count": 28
+      "count": 29
     },
     {
       "date": "2026-11-03",
@@ -369,6 +369,39 @@
     }
   ],
   "incidents": [
+    {
+      "id": "ae87ad473c1decd3",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "デニーズ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [],
+      "sources": [
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261104de70279"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002878/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/f9fabacd473d14b2ef880748b00e829dd9a74334"
+        }
+      ],
+      "affected_service": "過去に提供していたアプリ",
+      "service_aliases": [],
+      "added_at": "2026-11-04T06:13:31+00:00",
+      "updated_at": "2026-11-04T11:16:06+00:00"
+    },
     {
       "id": "d95558503bcc21eb",
       "published_at": "2026-11-03T15:00:00+00:00",
@@ -480,6 +513,109 @@
       ],
       "added_at": "2026-11-04T01:16:30+00:00",
       "updated_at": "2026-11-04T09:16:15+00:00"
+    },
+    {
+      "id": "9c6e4483b2d9de8c",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "バンダイナムコエクスペリエンス",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "1337ad1619d32570",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.itmedia.co.jp/news/article/2611/04/2000002870/",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903",
+            "https://www.itmedia.co.jp/news/article/2611/04/2000002870/"
+          ]
+        },
+        {
+          "incident_id": "bab27c57bcae574b",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002870/"
+        }
+      ],
+      "affected_service": "太鼓の達人 / マリオカート アーケードグランプリ デラックス / 機動戦士ガンダム エクストリームバーサス2 インフィニットブースト",
+      "service_aliases": [],
+      "affected_services": [
+        "太鼓の達人",
+        "マリオカート アーケードグランプリ デラックス",
+        "機動戦士ガンダム エクストリームバーサス2 インフィニットブースト"
+      ],
+      "service_details": [
+        {
+          "name": "太鼓の達人",
+          "aliases": []
+        },
+        {
+          "name": "マリオカート アーケードグランプリ デラックス",
+          "aliases": []
+        },
+        {
+          "name": "機動戦士ガンダム エクストリームバーサス2 インフィニットブースト",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-04T05:16:39+00:00",
+      "updated_at": "2026-11-04T11:16:06+00:00"
+    },
+    {
+      "id": "a4887886b298b562",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大阪府警察",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 4800,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "3d4ac3f77a219dbf",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.asahi.com/articles/ASVC43CCHVC4PTIL012M.html",
+          "evidence_urls": [
+            "https://www.asahi.com/articles/ASVC43CCHVC4PTIL012M.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVC43CCHVC4PTIL012M.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/e714dbd33c480503b97bc51cde54e20172a435d6"
+        }
+      ],
+      "affected_service": "大阪府警察スマート申請システム",
+      "service_aliases": [],
+      "added_at": "2026-11-04T10:55:03+00:00",
+      "updated_at": "2026-11-04T11:16:06+00:00"
     },
     {
       "id": "e27e591c34fddbd2",
@@ -721,125 +857,6 @@
       ],
       "added_at": "2026-11-04T10:38:56+00:00",
       "updated_at": "2026-11-04T10:38:56+00:00"
-    },
-    {
-      "id": "9c6e4483b2d9de8c",
-      "published_at": "2026-11-03T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "バンダイナムコエクスペリエンス",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "1337ad1619d32570",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903"
-          ]
-        },
-        {
-          "incident_id": "bab27c57bcae574b",
-          "relationship": "same_organization",
-          "evidence_url": "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903"
-        }
-      ],
-      "affected_service": "太鼓の達人 / マリオカート アーケードグランプリ デラックス / 機動戦士ガンダム エクストリームバーサス2 インフィニットブースト",
-      "service_aliases": [],
-      "affected_services": [
-        "太鼓の達人",
-        "マリオカート アーケードグランプリ デラックス",
-        "機動戦士ガンダム エクストリームバーサス2 インフィニットブースト"
-      ],
-      "service_details": [
-        {
-          "name": "太鼓の達人",
-          "aliases": []
-        },
-        {
-          "name": "マリオカート アーケードグランプリ デラックス",
-          "aliases": []
-        },
-        {
-          "name": "機動戦士ガンダム エクストリームバーサス2 インフィニットブースト",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-04T05:16:39+00:00",
-      "updated_at": "2026-11-04T05:16:39+00:00"
-    },
-    {
-      "id": "a4887886b298b562",
-      "published_at": "2026-11-03T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "大阪府警察",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 4800,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "3d4ac3f77a219dbf",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.asahi.com/articles/ASVC43CCHVC4PTIL012M.html",
-          "evidence_urls": [
-            "https://www.asahi.com/articles/ASVC43CCHVC4PTIL012M.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "朝日新聞",
-          "url": "https://www.asahi.com/articles/ASVC43CCHVC4PTIL012M.html"
-        }
-      ],
-      "affected_service": "大阪府警察スマート申請システム",
-      "service_aliases": [],
-      "added_at": "2026-11-04T10:55:03+00:00",
-      "updated_at": "2026-11-04T10:55:03+00:00"
-    },
-    {
-      "id": "ae87ad473c1decd3",
-      "published_at": "2026-11-03T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "デニーズ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "NHKニュース",
-          "url": "https://news.web.nhk/newsweb/na/nd-20261104de70279"
-        }
-      ],
-      "affected_service": "過去に提供していたアプリ",
-      "service_aliases": [],
-      "added_at": "2026-11-04T06:13:31+00:00",
-      "updated_at": "2026-11-04T06:13:31+00:00"
     },
     {
       "id": "f9e4b6e71c05bb9e",
@@ -1724,10 +1741,14 @@
         {
           "name": "ITmedia",
           "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002866/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/c7b13dcec044f0ecc7c93e9e66e221e7c9e98a6a"
         }
       ],
       "added_at": "2026-11-04T01:16:30+00:00",
-      "updated_at": "2026-11-04T05:16:39+00:00"
+      "updated_at": "2026-11-04T11:16:06+00:00"
     },
     {
       "id": "c43cf10975841a94",
@@ -2496,6 +2517,30 @@
       "updated_at": "2026-11-04T10:15:52+00:00"
     },
     {
+      "id": "4db4f495803f89ea",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "高知放送",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/22cdd54298d7781d380c606423eb0a72ec24e1a1"
+        }
+      ],
+      "affected_service": "RKCアプリのポイントサービス",
+      "service_aliases": [],
+      "added_at": "2026-11-04T11:16:06+00:00",
+      "updated_at": "2026-11-04T11:16:06+00:00"
+    },
+    {
       "id": "57a40b2bf2b57970",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
@@ -2600,9 +2645,10 @@
         {
           "incident_id": "9c6e4483b2d9de8c",
           "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903",
+          "evidence_url": "https://www.itmedia.co.jp/news/article/2611/04/2000002870/",
           "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903"
+            "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903",
+            "https://www.itmedia.co.jp/news/article/2611/04/2000002870/"
           ]
         }
       ],
@@ -2649,7 +2695,7 @@
         }
       ],
       "added_at": "2026-11-02T13:16:55+00:00",
-      "updated_at": "2026-11-04T05:16:39+00:00"
+      "updated_at": "2026-11-04T11:16:06+00:00"
     },
     {
       "id": "590917c47f5ba4f5",
