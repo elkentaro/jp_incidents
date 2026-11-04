@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-04T10:15:52+00:00",
-  "total": 788,
+  "updated_at": "2026-11-04T10:38:56+00:00",
+  "total": 791,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-04"
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-11-04",
-      "count": 11
+      "count": 14
     }
   ],
   "incidents": [
@@ -480,6 +480,31 @@
       ],
       "added_at": "2026-11-04T01:16:30+00:00",
       "updated_at": "2026-11-04T09:16:15+00:00"
+    },
+    {
+      "id": "e27e591c34fddbd2",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "板橋区",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "板橋区 / Itabashi",
+          "url": "https://www.city.itabashi.tokyo.jp/bunka/1061832/1062076/1066763/1066767.html"
+        }
+      ],
+      "affected_service": "いたばしPay",
+      "service_aliases": [],
+      "added_at": "2026-11-04T10:38:56+00:00",
+      "updated_at": "2026-11-04T10:38:56+00:00"
     },
     {
       "id": "03ec9333584e44dd",
@@ -626,6 +651,76 @@
       ],
       "added_at": "2026-11-04T00:14:16+00:00",
       "updated_at": "2026-11-04T00:14:16+00:00"
+    },
+    {
+      "id": "62c21edce1ba88de",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ダスキン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 657886,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.ntv.co.jp/n/ytv/category/economy/yt39f330fe1d6546b6b96c7e3928a4b7d7",
+          "evidence_urls": [
+            "https://news.ntv.co.jp/n/ytv/category/economy/yt39f330fe1d6546b6b96c7e3928a4b7d7"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp/n/ytv/category/economy/yt39f330fe1d6546b6b96c7e3928a4b7d7"
+        }
+      ],
+      "affected_service": "DDuet",
+      "service_aliases": [],
+      "added_at": "2026-11-04T10:38:56+00:00",
+      "updated_at": "2026-11-04T10:38:56+00:00"
+    },
+    {
+      "id": "7f8e650bc1610ab8",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ダスキン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 657886,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/5b88a435d588fcd8470392c83bb08eb775524abd",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/5b88a435d588fcd8470392c83bb08eb775524abd"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/5b88a435d588fcd8470392c83bb08eb775524abd"
+        }
+      ],
+      "affected_service": "DDuet(ディーデュエット)",
+      "service_aliases": [
+        "DDuet",
+        "ディーデュエット"
+      ],
+      "added_at": "2026-11-04T10:38:56+00:00",
+      "updated_at": "2026-11-04T10:38:56+00:00"
     },
     {
       "id": "9c6e4483b2d9de8c",
@@ -6592,6 +6687,14 @@
           ]
         },
         {
+          "incident_id": "62c21edce1ba88de",
+          "relationship": "affects",
+          "evidence_url": "https://news.ntv.co.jp/n/ytv/category/economy/yt39f330fe1d6546b6b96c7e3928a4b7d7",
+          "evidence_urls": [
+            "https://news.ntv.co.jp/n/ytv/category/economy/yt39f330fe1d6546b6b96c7e3928a4b7d7"
+          ]
+        },
+        {
           "incident_id": "63501d67ec214e3e",
           "relationship": "affects",
           "evidence_url": "https://www.jera.co.jp/news/notice/20261030_2567",
@@ -6606,6 +6709,14 @@
           "evidence_urls": [
             "https://cybersecurity-jp.com/news/118102",
             "https://www.osakagas.co.jp/company/press/pr2026/1828107_60967.html"
+          ]
+        },
+        {
+          "incident_id": "7f8e650bc1610ab8",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/5b88a435d588fcd8470392c83bb08eb775524abd",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/5b88a435d588fcd8470392c83bb08eb775524abd"
           ]
         },
         {
@@ -6800,7 +6911,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-04T10:15:52+00:00"
+      "updated_at": "2026-11-04T10:38:56+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
