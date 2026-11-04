@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-04T03:16:06+00:00",
+  "updated_at": "2026-11-04T04:16:21+00:00",
   "total": 777,
   "date_range": {
     "start": "2025-10-16",
@@ -697,6 +697,14 @@
             "https://cybersecurity-jp.com/news/118118",
             "https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/somu/2026/1103denshishinsei.html"
           ]
+        },
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/85adcfe5e242b0139561ca3d253820b6184205ad",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/85adcfe5e242b0139561ca3d253820b6184205ad"
+          ]
         }
       ],
       "sources": [
@@ -728,7 +736,7 @@
       "affected_service": "電子申請・届出システム",
       "service_aliases": [],
       "added_at": "2026-11-03T11:46:37+00:00",
-      "updated_at": "2026-11-04T02:15:58+00:00"
+      "updated_at": "2026-11-04T04:16:21+00:00"
     },
     {
       "id": "cc83cfb44abbac15",
@@ -1613,6 +1621,46 @@
       "updated_at": "2026-11-04T03:16:06+00:00"
     },
     {
+      "id": "c0fbbb0ab3173161",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ビックカメラ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.sofmap.com/contents/?id=info&sid=261102b",
+          "evidence_urls": [
+            "https://www.sofmap.com/contents/?id=info&sid=261102b"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.sofmap.com/contents/?id=info&sid=261102b"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118117"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC041CT0U6A101C2000000/"
+        }
+      ],
+      "added_at": "2026-11-04T01:16:30+00:00",
+      "updated_at": "2026-11-04T04:16:21+00:00"
+    },
+    {
       "id": "081d56728e0a654a",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": "2026-11-01T15:00:00+00:00",
@@ -1704,42 +1752,6 @@
       "service_aliases": [],
       "added_at": "2026-11-03T20:36:46+00:00",
       "updated_at": "2026-11-03T20:36:46+00:00"
-    },
-    {
-      "id": "c0fbbb0ab3173161",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ビックカメラ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.sofmap.com/contents/?id=info&sid=261102b",
-          "evidence_urls": [
-            "https://www.sofmap.com/contents/?id=info&sid=261102b"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.sofmap.com/contents/?id=info&sid=261102b"
-        },
-        {
-          "name": "Cybersecurity.jp",
-          "url": "https://cybersecurity-jp.com/news/118117"
-        }
-      ],
-      "added_at": "2026-11-04T01:16:30+00:00",
-      "updated_at": "2026-11-04T02:15:58+00:00"
     },
     {
       "id": "f6d525de9624b10f",
@@ -2761,6 +2773,44 @@
       "updated_at": "2026-11-01T13:16:31+00:00"
     },
     {
+      "id": "b6df345a8b3f2910",
+      "published_at": "2026-10-30T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "川崎市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/85adcfe5e242b0139561ca3d253820b6184205ad",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/85adcfe5e242b0139561ca3d253820b6184205ad"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "47NEWS",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBqZEdZR1NiZEREYU16cFBwNTI2STlZRUJ6bFpQc19OdWktakMyRU9sZmI2ZDVsbElFbG1ibzJyQ25jcm4yUjJJRXVqbw?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/85adcfe5e242b0139561ca3d253820b6184205ad"
+        }
+      ],
+      "affected_service": "オンライン手続かわさき",
+      "service_aliases": [],
+      "added_at": "2026-11-02T22:16:00+00:00",
+      "updated_at": "2026-11-04T04:16:21+00:00"
+    },
+    {
       "id": "42560da6b1cfdf94",
       "published_at": "2026-10-30T15:00:00+00:00",
       "disclosed_at": "2026-11-01T15:00:00+00:00",
@@ -2793,31 +2843,6 @@
       "service_aliases": [],
       "added_at": "2026-11-03T13:17:19+00:00",
       "updated_at": "2026-11-03T13:17:19+00:00"
-    },
-    {
-      "id": "b6df345a8b3f2910",
-      "published_at": "2026-10-30T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "川崎市",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "47NEWS",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBqZEdZR1NiZEREYU16cFBwNTI2STlZRUJ6bFpQc19OdWktakMyRU9sZmI2ZDVsbElFbG1ibzJyQ25jcm4yUjJJRXVqbw?oc=5"
-        }
-      ],
-      "affected_service": "オンライン手続かわさき",
-      "service_aliases": [],
-      "added_at": "2026-11-02T22:16:00+00:00",
-      "updated_at": "2026-11-02T22:16:00+00:00"
     },
     {
       "id": "a37bbd0dd41fad67",
@@ -6304,6 +6329,14 @@
           ]
         },
         {
+          "incident_id": "b6df345a8b3f2910",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/85adcfe5e242b0139561ca3d253820b6184205ad",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/85adcfe5e242b0139561ca3d253820b6184205ad"
+          ]
+        },
+        {
           "incident_id": "c0fbbb0ab3173161",
           "relationship": "affects",
           "evidence_url": "https://www.sofmap.com/contents/?id=info&sid=261102b",
@@ -6325,6 +6358,14 @@
           "evidence_url": "https://www.city.setagaya.lg.jp/01004/36866.html",
           "evidence_urls": [
             "https://www.city.setagaya.lg.jp/01004/36866.html"
+          ]
+        },
+        {
+          "incident_id": "cade75ef66ccbad6",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/85adcfe5e242b0139561ca3d253820b6184205ad",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/85adcfe5e242b0139561ca3d253820b6184205ad"
           ]
         },
         {
@@ -6420,7 +6461,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-04T01:16:30+00:00"
+      "updated_at": "2026-11-04T04:16:21+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
