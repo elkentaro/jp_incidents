@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-04T01:16:30+00:00",
-  "total": 774,
+  "updated_at": "2026-11-04T02:15:58+00:00",
+  "total": 776,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-04"
@@ -337,7 +337,7 @@
     },
     {
       "date": "2026-10-28",
-      "count": 45
+      "count": 46
     },
     {
       "date": "2026-10-29",
@@ -357,7 +357,7 @@
     },
     {
       "date": "2026-11-02",
-      "count": 24
+      "count": 25
     },
     {
       "date": "2026-11-03",
@@ -369,6 +369,42 @@
     }
   ],
   "incidents": [
+    {
+      "id": "d95558503bcc21eb",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "コジマ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/00808525e5a5fb4e665e4942a9a0181fed694aba",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/00808525e5a5fb4e665e4942a9a0181fed694aba"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/00808525e5a5fb4e665e4942a9a0181fed694aba"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118117"
+        }
+      ],
+      "added_at": "2026-11-04T01:16:30+00:00",
+      "updated_at": "2026-11-04T02:15:58+00:00"
+    },
     {
       "id": "03ec9333584e44dd",
       "published_at": "2026-11-03T15:00:00+00:00",
@@ -552,38 +588,6 @@
       "updated_at": "2026-11-04T01:16:30+00:00"
     },
     {
-      "id": "d95558503bcc21eb",
-      "published_at": "2026-11-03T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "コジマ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/00808525e5a5fb4e665e4942a9a0181fed694aba",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/00808525e5a5fb4e665e4942a9a0181fed694aba"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/00808525e5a5fb4e665e4942a9a0181fed694aba"
-        }
-      ],
-      "added_at": "2026-11-04T01:16:30+00:00",
-      "updated_at": "2026-11-04T01:16:30+00:00"
-    },
-    {
       "id": "f9e4b6e71c05bb9e",
       "published_at": "2026-11-03T15:00:00+00:00",
       "disclosed_at": null,
@@ -678,17 +682,19 @@
       "organization": "横浜市",
       "incident_type": "data leak",
       "incident_categories": [
-        "data leak"
+        "data leak",
+        "unauthorized access"
       ],
       "potential_records": 820000,
       "confidence": "high",
-      "confidence_score": 90,
+      "confidence_score": 100,
       "related": [
         {
           "incident_id": "3d4ac3f77a219dbf",
           "relationship": "affected_by",
-          "evidence_url": "https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/somu/2026/1103denshishinsei.html",
+          "evidence_url": "https://cybersecurity-jp.com/news/118118",
           "evidence_urls": [
+            "https://cybersecurity-jp.com/news/118118",
             "https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/somu/2026/1103denshishinsei.html"
           ]
         }
@@ -705,12 +711,24 @@
         {
           "name": "NHKニュース",
           "url": "https://news.web.nhk/newsweb/na/nd-20261103de70016"
+        },
+        {
+          "name": "khb東日本放送",
+          "url": "https://www.khb-tv.co.jp/news/17020588"
+        },
+        {
+          "name": "テレ朝NEWS",
+          "url": "https://news.tv-asahi.co.jp/news_society/articles/000545055.html"
+        },
+        {
+          "name": "KSBニュース",
+          "url": "https://news.ksb.co.jp/ann/article/17020586"
         }
       ],
       "affected_service": "電子申請・届出システム",
       "service_aliases": [],
       "added_at": "2026-11-03T11:46:37+00:00",
-      "updated_at": "2026-11-03T20:15:56+00:00"
+      "updated_at": "2026-11-04T02:15:58+00:00"
     },
     {
       "id": "04ce6a7e8398548e",
@@ -755,48 +773,6 @@
       "updated_at": "2026-11-04T00:21:48+00:00"
     },
     {
-      "id": "71354d482c0b8faa",
-      "published_at": "2026-11-02T15:00:00+00:00",
-      "disclosed_at": "2026-11-02T15:00:00+00:00",
-      "organization": "出前館",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [
-        {
-          "incident_id": "d290a8fda51abad3",
-          "relationship": "affected_by",
-          "evidence_url": "https://corporate.demae-can.co.jp/pr/info/20261103.html",
-          "evidence_urls": [
-            "https://corporate.demae-can.co.jp/pr/info/20261103.html",
-            "https://rocket-boys.co.jp/security-measures-lab/cbcloud-pickgo-data-breach-seven-eleven-demaecan/",
-            "https://rocket-boys.co.jp/security-measures-lab/seven-eleven-7now-cbcloud-pickgo-data-breach/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://corporate.demae-can.co.jp/pr/info/20261103.html"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/cbcloud-pickgo-data-breach-seven-eleven-demaecan/"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/seven-eleven-7now-cbcloud-pickgo-data-breach/"
-        }
-      ],
-      "added_at": "2026-11-03T22:15:33+00:00",
-      "updated_at": "2026-11-04T01:16:30+00:00"
-    },
-    {
       "id": "cc83cfb44abbac15",
       "published_at": "2026-11-02T15:00:00+00:00",
       "disclosed_at": null,
@@ -808,7 +784,7 @@
       ],
       "potential_records": 15821184,
       "confidence": "high",
-      "confidence_score": 65,
+      "confidence_score": 80,
       "related": [
         {
           "incident_id": "8a2a8d13a22fe810",
@@ -852,10 +828,14 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/ad712c4689e5e013ad035276e4969be5ffbc9025"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118116"
         }
       ],
       "added_at": "2026-11-03T16:15:47+00:00",
-      "updated_at": "2026-11-04T01:16:30+00:00"
+      "updated_at": "2026-11-04T02:15:58+00:00"
     },
     {
       "id": "f5d6fe1d857ff47b",
@@ -868,7 +848,7 @@
       ],
       "potential_records": null,
       "confidence": "high",
-      "confidence_score": 65,
+      "confidence_score": 80,
       "related": [
         {
           "incident_id": "cc83cfb44abbac15",
@@ -888,10 +868,122 @@
         {
           "name": "福井テレビ",
           "url": "https://www.fukui-tv.co.jp/?post_type=fukui_news&p=203341"
+        },
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/national/20261104-GYT1T00078/"
         }
       ],
       "added_at": "2026-11-03T20:15:56+00:00",
-      "updated_at": "2026-11-03T20:15:56+00:00"
+      "updated_at": "2026-11-04T02:15:58+00:00"
+    },
+    {
+      "id": "71354d482c0b8faa",
+      "published_at": "2026-11-02T15:00:00+00:00",
+      "disclosed_at": "2026-11-02T15:00:00+00:00",
+      "organization": "出前館",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "d290a8fda51abad3",
+          "relationship": "affected_by",
+          "evidence_url": "https://corporate.demae-can.co.jp/pr/info/20261103.html",
+          "evidence_urls": [
+            "https://corporate.demae-can.co.jp/pr/info/20261103.html",
+            "https://rocket-boys.co.jp/security-measures-lab/cbcloud-pickgo-data-breach-seven-eleven-demaecan/",
+            "https://rocket-boys.co.jp/security-measures-lab/seven-eleven-7now-cbcloud-pickgo-data-breach/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://corporate.demae-can.co.jp/pr/info/20261103.html"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/cbcloud-pickgo-data-breach-seven-eleven-demaecan/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/seven-eleven-7now-cbcloud-pickgo-data-breach/"
+        }
+      ],
+      "added_at": "2026-11-03T22:15:33+00:00",
+      "updated_at": "2026-11-04T01:16:30+00:00"
+    },
+    {
+      "id": "8a2a8d13a22fe810",
+      "published_at": "2026-11-02T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "福井県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "cc83cfb44abbac15",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.ntv.co.jp/n/fbc/category/society/fbea70c8e8a7614fc09ba47e8379dd6f31",
+          "evidence_urls": [
+            "https://news.ntv.co.jp/n/fbc/category/society/fbea70c8e8a7614fc09ba47e8379dd6f31"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp/n/fbc/category/society/fbea70c8e8a7614fc09ba47e8379dd6f31"
+        },
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/national/20261104-GYT1T00078/"
+        }
+      ],
+      "added_at": "2026-11-03T20:15:56+00:00",
+      "updated_at": "2026-11-04T02:15:58+00:00"
+    },
+    {
+      "id": "cb2d0380ac0a4897",
+      "published_at": "2026-11-02T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "京都市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "other",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "京都新聞デジタル",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5kWUZENnJvVkYyUklrdjBPby1SQ0ZEWDQ4akt4eF81RWlXelAtVVFzdG85N2wyTEhhemxiWmRCbXhGTXlvUzFuVmw4UFFRdVBxQjNqYll1d1c?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/0333a9003f9309e0cfa4fe7781dd7ca02bb807ed"
+        }
+      ],
+      "affected_service": "東本願寺前市民緑地「お東さん広場」",
+      "service_aliases": [],
+      "added_at": "2026-11-03T20:15:56+00:00",
+      "updated_at": "2026-11-04T02:15:58+00:00"
     },
     {
       "id": "0fb7c31537090579",
@@ -949,38 +1041,6 @@
       ],
       "added_at": "2026-11-03T03:16:30+00:00",
       "updated_at": "2026-11-03T03:16:30+00:00"
-    },
-    {
-      "id": "8a2a8d13a22fe810",
-      "published_at": "2026-11-02T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "福井県",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "cc83cfb44abbac15",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.ntv.co.jp/n/fbc/category/society/fbea70c8e8a7614fc09ba47e8379dd6f31",
-          "evidence_urls": [
-            "https://news.ntv.co.jp/n/fbc/category/society/fbea70c8e8a7614fc09ba47e8379dd6f31"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "日テレNEWS NNN",
-          "url": "https://news.ntv.co.jp/n/fbc/category/society/fbea70c8e8a7614fc09ba47e8379dd6f31"
-        }
-      ],
-      "added_at": "2026-11-03T20:15:56+00:00",
-      "updated_at": "2026-11-03T20:15:56+00:00"
     },
     {
       "id": "a2f2cbe2ef453ee8",
@@ -1104,32 +1164,6 @@
       "service_aliases": [],
       "added_at": "2026-11-04T01:16:30+00:00",
       "updated_at": "2026-11-04T01:16:30+00:00"
-    },
-    {
-      "id": "cb2d0380ac0a4897",
-      "published_at": "2026-11-02T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "京都市",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "other",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "京都新聞デジタル",
-          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5kWUZENnJvVkYyUklrdjBPby1SQ0ZEWDQ4akt4eF81RWlXelAtVVFzdG85N2wyTEhhemxiWmRCbXhGTXlvUzFuVmw4UFFRdVBxQjNqYll1d1c?oc=5"
-        }
-      ],
-      "affected_service": "東本願寺前市民緑地「お東さん広場」",
-      "service_aliases": [],
-      "added_at": "2026-11-03T20:15:56+00:00",
-      "updated_at": "2026-11-03T20:15:56+00:00"
     },
     {
       "id": "6ce8d002dff5f408",
@@ -1611,6 +1645,78 @@
       "updated_at": "2026-11-03T20:36:46+00:00"
     },
     {
+      "id": "c0fbbb0ab3173161",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ビックカメラ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.sofmap.com/contents/?id=info&sid=261102b",
+          "evidence_urls": [
+            "https://www.sofmap.com/contents/?id=info&sid=261102b"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.sofmap.com/contents/?id=info&sid=261102b"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118117"
+        }
+      ],
+      "added_at": "2026-11-04T01:16:30+00:00",
+      "updated_at": "2026-11-04T02:15:58+00:00"
+    },
+    {
+      "id": "f6d525de9624b10f",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ソフマップ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.sofmap.com/contents/?id=info&sid=261102b",
+          "evidence_urls": [
+            "https://www.sofmap.com/contents/?id=info&sid=261102b"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.sofmap.com/contents/?id=info&sid=261102b"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118117"
+        }
+      ],
+      "added_at": "2026-11-04T01:16:30+00:00",
+      "updated_at": "2026-11-04T02:15:58+00:00"
+    },
+    {
       "id": "19cce63ebf03c536",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
@@ -1835,6 +1941,31 @@
       "updated_at": "2026-11-02T07:16:38+00:00"
     },
     {
+      "id": "d050177e1bfb19cf",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "野村インベスター・リレーションズ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "野村ホールディングス / Nomura",
+          "url": "https://www.nomuraholdings.com/jp/news/topics/20261104.html"
+        }
+      ],
+      "affected_service": "機関Navi",
+      "service_aliases": [],
+      "added_at": "2026-11-04T02:15:58+00:00",
+      "updated_at": "2026-11-04T02:15:58+00:00"
+    },
+    {
       "id": "d56f89db8ff00015",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
@@ -1960,70 +2091,6 @@
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
       "organization": "コジマ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.sofmap.com/contents/?id=info&sid=261102b",
-          "evidence_urls": [
-            "https://www.sofmap.com/contents/?id=info&sid=261102b"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.sofmap.com/contents/?id=info&sid=261102b"
-        }
-      ],
-      "added_at": "2026-11-04T01:16:30+00:00",
-      "updated_at": "2026-11-04T01:16:30+00:00"
-    },
-    {
-      "id": "c0fbbb0ab3173161",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ビックカメラ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.sofmap.com/contents/?id=info&sid=261102b",
-          "evidence_urls": [
-            "https://www.sofmap.com/contents/?id=info&sid=261102b"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.sofmap.com/contents/?id=info&sid=261102b"
-        }
-      ],
-      "added_at": "2026-11-04T01:16:30+00:00",
-      "updated_at": "2026-11-04T01:16:30+00:00"
-    },
-    {
-      "id": "f6d525de9624b10f",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ソフマップ",
       "incident_type": "data leak",
       "incident_categories": [
         "data leak",
@@ -6620,8 +6687,9 @@
         {
           "incident_id": "cade75ef66ccbad6",
           "relationship": "affects",
-          "evidence_url": "https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/somu/2026/1103denshishinsei.html",
+          "evidence_url": "https://cybersecurity-jp.com/news/118118",
           "evidence_urls": [
+            "https://cybersecurity-jp.com/news/118118",
             "https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/somu/2026/1103denshishinsei.html"
           ]
         },
@@ -6656,7 +6724,7 @@
       "affected_service": "アララメッセージ",
       "service_aliases": [],
       "added_at": "2026-11-03T01:15:51+00:00",
-      "updated_at": "2026-11-03T14:16:25+00:00"
+      "updated_at": "2026-11-04T02:15:58+00:00"
     },
     {
       "id": "dc15595102d7025a",
@@ -7330,6 +7398,29 @@
       ],
       "added_at": "2026-10-27T23:15:46+00:00",
       "updated_at": "2026-10-27T23:15:46+00:00"
+    },
+    {
+      "id": "6bf3b8c89f7b4b39",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "豊橋市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/92e4a0e9bef8a26583bb832fcbd41cf8d1bfeed2"
+        }
+      ],
+      "added_at": "2026-11-04T02:15:58+00:00",
+      "updated_at": "2026-11-04T02:15:58+00:00"
     },
     {
       "id": "8c89a786a368a245",
@@ -9695,6 +9786,59 @@
       "updated_at": "2026-10-28T01:15:55+00:00"
     },
     {
+      "id": "b57531b27eff42d1",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "台東区",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 120,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "421fc74f1b6a7fee",
+          "relationship": "affected_by",
+          "evidence_url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56654.html",
+          "evidence_urls": [
+            "https://scan.netsecurity.ne.jp/article/2026/11/04/56654.html",
+            "https://www.city.taito.lg.jp/bunka_kanko/other/tsutaju.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "台東区 / Taito",
+          "url": "https://www.city.taito.lg.jp/bunka_kanko/other/tsutaju.html"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56654.html"
+        }
+      ],
+      "affected_service": "「蔦重ゆかりの地 台東区」公式サイト / 蔦重ゆかりの地 台東区",
+      "service_aliases": [],
+      "affected_services": [
+        "「蔦重ゆかりの地 台東区」公式サイト",
+        "蔦重ゆかりの地 台東区"
+      ],
+      "service_details": [
+        {
+          "name": "「蔦重ゆかりの地 台東区」公式サイト",
+          "aliases": []
+        },
+        {
+          "name": "蔦重ゆかりの地 台東区",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-10-26T10:46:27+00:00",
+      "updated_at": "2026-11-04T02:15:58+00:00"
+    },
+    {
       "id": "d297c3de7762326e",
       "published_at": "2026-10-25T15:00:00+00:00",
       "disclosed_at": null,
@@ -9998,40 +10142,6 @@
       ],
       "added_at": "2026-10-26T13:16:27+00:00",
       "updated_at": "2026-10-26T13:16:27+00:00"
-    },
-    {
-      "id": "b57531b27eff42d1",
-      "published_at": "2026-10-25T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "台東区",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 120,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "421fc74f1b6a7fee",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.city.taito.lg.jp/bunka_kanko/other/tsutaju.html",
-          "evidence_urls": [
-            "https://www.city.taito.lg.jp/bunka_kanko/other/tsutaju.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "台東区 / Taito",
-          "url": "https://www.city.taito.lg.jp/bunka_kanko/other/tsutaju.html"
-        }
-      ],
-      "affected_service": "「蔦重ゆかりの地 台東区」公式サイト",
-      "service_aliases": [],
-      "added_at": "2026-10-26T10:46:27+00:00",
-      "updated_at": "2026-10-26T10:46:27+00:00"
     },
     {
       "id": "ce585c6dafc8e785",
@@ -10980,16 +11090,18 @@
         {
           "incident_id": "5f9d9985180a51cf",
           "relationship": "affects",
-          "evidence_url": "https://www.city.taito.lg.jp/bunka_kanko/other/houkoku1023.html",
+          "evidence_url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56654.html",
           "evidence_urls": [
+            "https://scan.netsecurity.ne.jp/article/2026/11/04/56654.html",
             "https://www.city.taito.lg.jp/bunka_kanko/other/houkoku1023.html"
           ]
         },
         {
           "incident_id": "b57531b27eff42d1",
           "relationship": "affects",
-          "evidence_url": "https://www.city.taito.lg.jp/bunka_kanko/other/tsutaju.html",
+          "evidence_url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56654.html",
           "evidence_urls": [
+            "https://scan.netsecurity.ne.jp/article/2026/11/04/56654.html",
             "https://www.city.taito.lg.jp/bunka_kanko/other/tsutaju.html"
           ]
         },
@@ -11021,7 +11133,7 @@
         }
       ],
       "added_at": "2026-10-25T05:47:43+00:00",
-      "updated_at": "2026-11-04T00:14:16+00:00"
+      "updated_at": "2026-11-04T02:15:58+00:00"
     },
     {
       "id": "4f9469d8ac7f711b",
@@ -11262,6 +11374,48 @@
       "updated_at": "2026-10-28T02:15:45+00:00"
     },
     {
+      "id": "5f9d9985180a51cf",
+      "published_at": "2026-10-22T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "台東区",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 5500,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "421fc74f1b6a7fee",
+          "relationship": "affected_by",
+          "evidence_url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56654.html",
+          "evidence_urls": [
+            "https://scan.netsecurity.ne.jp/article/2026/11/04/56654.html",
+            "https://www.city.taito.lg.jp/bunka_kanko/other/houkoku1023.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "台東区 / Taito",
+          "url": "https://www.city.taito.lg.jp/bunka_kanko/other/houkoku1023.html"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQbmgtZVNWSVhJYUREWXNSOG8zWElrWTRRUGMtanRRNnRhcUIyaW1ZN0xzSFlfZFpaSlBUZUpWTTBDVmx2N2hwdTFlQmNUUXJDUEphd3pLMmo2eEUtakcxaHVWS3pMNEp0SE9sWmZ4cmZMYmlUWTZLRnhQZkNKeVN4TFFyendral9QN1NYS1FGbzR5bldfMWozcw?oc=5"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56654.html"
+        }
+      ],
+      "affected_service": "TAITOおでかけナビ",
+      "service_aliases": [],
+      "added_at": "2026-10-25T05:47:43+00:00",
+      "updated_at": "2026-11-04T02:15:58+00:00"
+    },
+    {
       "id": "dd83c4bfa1fb5b6c",
       "published_at": "2026-10-22T15:00:00+00:00",
       "disclosed_at": null,
@@ -11442,43 +11596,6 @@
       "service_aliases": [],
       "added_at": "2026-10-25T01:15:29+00:00",
       "updated_at": "2026-10-28T01:15:55+00:00"
-    },
-    {
-      "id": "5f9d9985180a51cf",
-      "published_at": "2026-10-22T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "台東区",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 5500,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [
-        {
-          "incident_id": "421fc74f1b6a7fee",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.city.taito.lg.jp/bunka_kanko/other/houkoku1023.html",
-          "evidence_urls": [
-            "https://www.city.taito.lg.jp/bunka_kanko/other/houkoku1023.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "台東区 / Taito",
-          "url": "https://www.city.taito.lg.jp/bunka_kanko/other/houkoku1023.html"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQbmgtZVNWSVhJYUREWXNSOG8zWElrWTRRUGMtanRRNnRhcUIyaW1ZN0xzSFlfZFpaSlBUZUpWTTBDVmx2N2hwdTFlQmNUUXJDUEphd3pLMmo2eEUtakcxaHVWS3pMNEp0SE9sWmZ4cmZMYmlUWTZLRnhQZkNKeVN4TFFyendral9QN1NYS1FGbzR5bldfMWozcw?oc=5"
-        }
-      ],
-      "affected_service": "TAITOおでかけナビ",
-      "service_aliases": [],
-      "added_at": "2026-10-25T05:47:43+00:00",
-      "updated_at": "2026-10-29T08:15:57+00:00"
     },
     {
       "id": "84ccea53e8b0de73",
@@ -14077,6 +14194,38 @@
       "updated_at": "2026-11-01T23:24:18+00:00"
     },
     {
+      "id": "0e5a446a7fed35c0",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社ジャパンタイムズ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "ransomware",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/22/56537.html"
+        },
+        {
+          "name": "legalagent list",
+          "url": "https://www.japantimes.co.jp/press/2026/10/16/notice-ransomware-incident-second-report-jp/"
+        },
+        {
+          "name": "Media Innovation",
+          "url": "https://media-innovation.jp/article/2026/11/04/143934.html"
+        }
+      ],
+      "added_at": "2026-10-22T04:31:30+00:00",
+      "updated_at": "2026-11-04T02:15:58+00:00"
+    },
+    {
       "id": "58f233626c3adaad",
       "published_at": "2026-10-21T15:00:00+00:00",
       "disclosed_at": "2026-10-21T15:00:00+00:00",
@@ -14489,34 +14638,6 @@
       "service_aliases": [],
       "added_at": "2026-10-26T00:08:36+00:00",
       "updated_at": "2026-10-26T00:17:15+00:00"
-    },
-    {
-      "id": "0e5a446a7fed35c0",
-      "published_at": "2026-10-21T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "株式会社ジャパンタイムズ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "ransomware",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [],
-      "sources": [
-        {
-          "name": "ScanNetSecurity",
-          "url": "https://scan.netsecurity.ne.jp/article/2026/10/22/56537.html"
-        },
-        {
-          "name": "legalagent list",
-          "url": "https://www.japantimes.co.jp/press/2026/10/16/notice-ransomware-incident-second-report-jp/"
-        }
-      ],
-      "added_at": "2026-10-22T04:31:30+00:00",
-      "updated_at": "2026-10-22T23:16:33+00:00"
     },
     {
       "id": "98ddf9fd18af84c0",
