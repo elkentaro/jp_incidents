@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-04T18:16:46+00:00",
-  "total": 807,
+  "updated_at": "2026-11-04T20:15:12+00:00",
+  "total": 809,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-04"
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-11-04",
-      "count": 26
+      "count": 28
     },
     {
       "date": "2026-11-05",
@@ -862,6 +862,40 @@
       "updated_at": "2026-11-04T15:16:11+00:00"
     },
     {
+      "id": "6b47dd535557f391",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "九州旅客鉄道",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 13000,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/11/04/20261104_info_data_breach.pdf",
+          "evidence_urls": [
+            "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/11/04/20261104_info_data_breach.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "JR九州 / JR Kyushu",
+          "url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/11/04/20261104_info_data_breach.pdf"
+        }
+      ],
+      "affected_service": "メールマガジン",
+      "service_aliases": [],
+      "added_at": "2026-11-04T20:15:12+00:00",
+      "updated_at": "2026-11-04T20:15:12+00:00"
+    },
+    {
       "id": "c6e18300950d9c1d",
       "published_at": "2026-11-03T15:00:00+00:00",
       "disclosed_at": "2026-11-03T15:00:00+00:00",
@@ -1275,6 +1309,64 @@
       "service_aliases": [],
       "added_at": "2026-11-04T10:47:15+00:00",
       "updated_at": "2026-11-04T10:47:15+00:00"
+    },
+    {
+      "id": "f3883b8aa5eb7693",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "カタリバ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1230,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1vNGoyWmszTGYxcExfckJILXYzc3lNR3FGRXBvNjE3WldoVEN2MDJzZEJhd1YzSDl2WVFBWG8yVmVUbGhGeXdYdFY2YmM4MTlZM2ltWGxJbkM3OTRaM3c?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1vNGoyWmszTGYxcExfckJILXYzc3lNR3FGRXBvNjE3WldoVEN2MDJzZEJhd1YzSDl2WVFBWG8yVmVUbGhGeXdYdFY2YmM4MTlZM2ltWGxJbkM3OTRaM3c?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "KATARiBA",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1vNGoyWmszTGYxcExfckJILXYzc3lNR3FGRXBvNjE3WldoVEN2MDJzZEJhd1YzSDl2WVFBWG8yVmVUbGhGeXdYdFY2YmM4MTlZM2ltWGxJbkM3OTRaM3c?oc=5"
+        }
+      ],
+      "affected_service": "不登校支援フォーラム2025 お申込みフォーム / Rootsプロジェクト お問い合わせフォーム(Rootsプロジェクトサイト、#meet5000サイト) / ルールメイキング・サミット2023 観覧お申込みフォーム / 全国高校生マイプロジェクトアワード2023 全国Summit 観覧お申込みフォーム",
+      "service_aliases": [],
+      "affected_services": [
+        "不登校支援フォーラム2025 お申込みフォーム",
+        "Rootsプロジェクト お問い合わせフォーム(Rootsプロジェクトサイト、#meet5000サイト)",
+        "ルールメイキング・サミット2023 観覧お申込みフォーム",
+        "全国高校生マイプロジェクトアワード2023 全国Summit 観覧お申込みフォーム"
+      ],
+      "service_details": [
+        {
+          "name": "不登校支援フォーラム2025 お申込みフォーム",
+          "aliases": []
+        },
+        {
+          "name": "Rootsプロジェクト お問い合わせフォーム(Rootsプロジェクトサイト、#meet5000サイト)",
+          "aliases": []
+        },
+        {
+          "name": "ルールメイキング・サミット2023 観覧お申込みフォーム",
+          "aliases": []
+        },
+        {
+          "name": "全国高校生マイプロジェクトアワード2023 全国Summit 観覧お申込みフォーム",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-04T20:15:12+00:00",
+      "updated_at": "2026-11-04T20:15:12+00:00"
     },
     {
       "id": "39ff62b6be63f819",
@@ -7335,6 +7427,14 @@
           ]
         },
         {
+          "incident_id": "6b47dd535557f391",
+          "relationship": "affects",
+          "evidence_url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/11/04/20261104_info_data_breach.pdf",
+          "evidence_urls": [
+            "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/11/04/20261104_info_data_breach.pdf"
+          ]
+        },
+        {
           "incident_id": "6ce8d002dff5f408",
           "relationship": "affects",
           "evidence_url": "https://cybersecurity-jp.com/news/118102",
@@ -7599,7 +7699,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-04T18:16:46+00:00"
+      "updated_at": "2026-11-04T20:15:12+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -26616,6 +26716,14 @@
           ]
         },
         {
+          "incident_id": "f3883b8aa5eb7693",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1vNGoyWmszTGYxcExfckJILXYzc3lNR3FGRXBvNjE3WldoVEN2MDJzZEJhd1YzSDl2WVFBWG8yVmVUbGhGeXdYdFY2YmM4MTlZM2ltWGxJbkM3OTRaM3c?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1vNGoyWmszTGYxcExfckJILXYzc3lNR3FGRXBvNjE3WldoVEN2MDJzZEJhd1YzSDl2WVFBWG8yVmVUbGhGeXdYdFY2YmM4MTlZM2ltWGxJbkM3OTRaM3c?oc=5"
+          ]
+        },
+        {
           "incident_id": "f409430e72f11f3d",
           "relationship": "affects",
           "evidence_url": "https://www.rescuenow.co.jp/release/20261021",
@@ -26675,7 +26783,7 @@
       "affected_system": "Studio cloud environment",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T11:10:22+00:00",
-      "updated_at": "2026-10-30T11:16:03+00:00"
+      "updated_at": "2026-11-04T20:15:12+00:00"
     },
     {
       "id": "79d92ec417a38b35",
