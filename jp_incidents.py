@@ -948,8 +948,17 @@ def _http(u):
     return u.lower().startswith(("http://", "https://"))
 
 
+class SourceAccessBlocked(ValueError):
+    """A source returned a browser-verification page instead of its listing."""
+
+
 def parse_feed(xml_bytes):
     """RSS 2.0 / RSS 1.0 (RDF) / Atom -> [{title,url,summary,published,outlet}]"""
+    prefix = decode(xml_bytes[:4096]) if isinstance(xml_bytes, bytes) else xml_bytes[:4096]
+    if re.match(r'\s*(?:<!doctype\s+html[^>]*>\s*)?<html\b', prefix, re.I) and re.search(
+        r'<(?:script|iframe)\b[^>]*\bsrc\s*=\s*["\'][^"\']*/_Incapsula_Resource(?:[?"\'])', prefix, re.I
+    ):
+        raise SourceAccessBlocked('Source returned an Incapsula browser-verification page instead of RSS')
     if isinstance(xml_bytes, bytes):
         encoding = re.match(br'\s*<\?xml[^>]*encoding=[\"\x27]([^\"\x27]+)', xml_bytes, re.I)
         if encoding:
@@ -1146,11 +1155,19 @@ class FetchedBytes(bytes):
 
 def fetch(url, timeout=25, max_bytes=8_000_000):
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*", "Accept-Language": "ja,en"})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        raw = r.read(max_bytes + 1)
-        if len(raw) > max_bytes:
-            raise ValueError(f"Response exceeds {max_bytes} bytes")
-        return FetchedBytes(raw, r.url)
+    for attempt in range(2):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                raw = r.read(max_bytes + 1)
+                if len(raw) > max_bytes:
+                    raise ValueError(f"Response exceeds {max_bytes} bytes")
+                return FetchedBytes(raw, r.url)
+        except (urllib.error.URLError, http.client.HTTPException, OSError) as error:
+            reason = error.reason if isinstance(error, urllib.error.URLError) else error
+            if attempt or not isinstance(reason, (http.client.IncompleteRead, TimeoutError, ConnectionError)):
+                raise
+            # Start a fresh GET; partial response bytes are never usable evidence.
+            time.sleep(1)
 
 
 def network_ready(urls=None, timeout=10):
@@ -2270,13 +2287,13 @@ def review_pending(fetch_body_fn=fetch_body, corroborate_fn=corroborate_finding)
 
 
 def handle_expected_source_block(connection, source, error, fetched):
-    """Mute configured HTTP 403s and notify once when usable source items return."""
+    """Mute configured access blocks and notify once when usable source items return."""
     expected = {url.strip() for url in os.environ.get("JPI_EXPECTED_403_SOURCES", "").split(",")
                 if url.strip()}
     url = source["url"]
     if url not in expected:
         return False
-    if isinstance(error, urllib.error.HTTPError) and error.code == 403:
+    if (isinstance(error, urllib.error.HTTPError) and error.code == 403) or isinstance(error, SourceAccessBlocked):
         connection.execute(
             "INSERT INTO source_alert_state(url,blocked) VALUES(?,1) "
             "ON CONFLICT(url) DO UPDATE SET blocked=1", (url,),

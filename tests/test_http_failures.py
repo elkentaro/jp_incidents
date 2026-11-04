@@ -3,8 +3,11 @@ import http.client
 import os
 from pathlib import Path
 import sqlite3
+import ssl
 import tempfile
 import unittest
+import urllib.error
+import xml.etree.ElementTree as ET
 from unittest.mock import MagicMock, patch
 
 import jp_incidents as app
@@ -26,6 +29,7 @@ class HttpFailureTests(unittest.TestCase):
         for patcher in (
             patch.object(app, "DB_PATH", str(Path(temp.name) / "test.db")),
             patch.dict(os.environ, {"JPI_EXPECTED_403_SOURCES": "", "JPI_FETCH_BODY": "1"}),
+            patch.object(app.time, "sleep"),
         ):
             patcher.start()
             self.addCleanup(patcher.stop)
@@ -127,6 +131,80 @@ class HttpFailureTests(unittest.TestCase):
             self.assertEqual(str(body), "")
             if url.endswith(".pdf"):
                 self.assertTrue(body.problem)
+
+    def test_interrupted_fetch_retries_once_with_fresh_response(self):
+        url = "https://example.jp/feed"
+        for error in (http.client.IncompleteRead(b"partial data"),
+                      urllib.error.URLError(TimeoutError("TLS handshake timed out")),
+                      ConnectionResetError("connection reset")):
+            with self.subTest(error=error), patch.object(app.urllib.request, "urlopen", side_effect=[
+                response(url, error=error), response(url + ".xml", b"complete response")
+            ]) as open_url:
+                result = app.fetch(url, timeout=2, max_bytes=100)
+            self.assertEqual(result, b"complete response")
+            self.assertEqual(result.url, url + ".xml")
+            self.assertEqual(open_url.call_count, 2)
+            self.assertTrue(all(call.kwargs['timeout'] == 2 for call in open_url.call_args_list))
+
+    def test_retry_limit_preserves_failure_and_closes_each_response(self):
+        url = "https://example.jp/feed"
+        failed = response(url, error=http.client.IncompleteRead(b"partial data"))
+        with patch.object(app.urllib.request, "urlopen", return_value=failed) as open_url:
+            with self.assertRaises(http.client.IncompleteRead):
+                app.fetch(url)
+        self.assertEqual(open_url.call_count, 2)
+        self.assertEqual(failed.__exit__.call_count, 2)
+        app.time.sleep.assert_called_once_with(1)
+
+    def test_permanent_http_tls_and_response_size_errors_are_not_retried(self):
+        url = "https://example.jp/feed"
+        for error in (urllib.error.HTTPError(url, 403, "Forbidden", {}, None),
+                      urllib.error.HTTPError(url, 302, "redirect loop", {}, None),
+                      urllib.error.URLError(ssl.SSLCertVerificationError("certificate invalid"))):
+            with self.subTest(error=error), patch.object(app.urllib.request, "urlopen", side_effect=error) as open_url:
+                with self.assertRaises(type(error)):
+                    app.fetch(url)
+                open_url.assert_called_once()
+        with patch.object(app.urllib.request, "urlopen", return_value=response(url, b"too large")) as open_url:
+            with self.assertRaisesRegex(ValueError, "Response exceeds"):
+                app.fetch(url, max_bytes=2)
+            open_url.assert_called_once()
+        app.time.sleep.assert_not_called()
+
+    def test_known_browser_challenge_stays_blocked_until_useful_feed_returns(self):
+        source = {"name": "Known blocked source", "type": "rss", "url": "https://example.jp/feed"}
+        challenge = b'<html><head><script src="/_Incapsula_Resource?token=example"></script><body></body></html>'
+        feed = ('<rss><channel><item><title>Example株式会社への不正アクセス</title>'
+                '<link>https://example.jp/notice.html</link></item></channel></rss>').encode()
+        with patch.dict(os.environ, {"JPI_EXPECTED_403_SOURCES": source['url']}), \
+                patch.object(app, "load_sources", return_value=[source]), \
+                patch.object(app, "promote_reviewed", return_value=[]), \
+                patch.object(app, "send_local_alert", return_value=True) as alert:
+            app.poll(fetcher=lambda _: challenge, fetch_body_fn=lambda _: "")
+            app.poll(fetcher=lambda _: b'<rss><channel></channel></rss>', fetch_body_fn=lambda _: "")
+            alert.assert_not_called()
+            with sqlite3.connect(app.DB_PATH) as connection:
+                self.assertEqual(connection.execute('SELECT blocked FROM source_alert_state').fetchone()[0], 1)
+                self.assertIn('SourceAccessBlocked', connection.execute('SELECT error FROM runs ORDER BY rowid LIMIT 1').fetchone()[0])
+                self.assertIsNone(connection.execute('SELECT last_success FROM source_health').fetchone()[0])
+            app.poll(fetcher=lambda _: feed, fetch_body_fn=lambda _: "")
+            app.poll(fetcher=lambda _: feed, fetch_body_fn=lambda _: "")
+            alert.assert_called_once()
+            self.assertEqual(alert.call_args.args[1], 'Source access restored')
+
+    def test_unconfigured_challenge_alerts_and_rss_mentions_are_not_blocked(self):
+        source = {"name": "Other source", "type": "rss", "url": "https://example.jp/feed"}
+        challenge = b'<html><script src="/_Incapsula_Resource?token=example"></script></html>'
+        with patch.object(app, "load_sources", return_value=[source]), \
+                patch.object(app, "promote_reviewed", return_value=[]), \
+                patch.object(app, "send_local_alert") as alert:
+            app.poll(fetcher=lambda _: challenge, fetch_body_fn=lambda _: "")
+        alert.assert_called_once()
+        self.assertEqual(alert.call_args.args[0], 'source-errors')
+        self.assertIn('browser-verification', alert.call_args.args[2])
+        self.assertEqual(app.parse_feed(b'<rss><channel><description><![CDATA[<script src="/_Incapsula_Resource?x"></script>]]></description></channel></rss>'), [])
+        with self.assertRaises(ET.ParseError):
+            app.parse_feed(b'<rss><channel></rss>')
 
 
 if __name__ == "__main__":
