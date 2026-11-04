@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-04T11:16:06+00:00",
-  "total": 794,
+  "updated_at": "2026-11-04T12:25:20+00:00",
+  "total": 796,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-04"
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-11-04",
-      "count": 16
+      "count": 18
     }
   ],
   "incidents": [
@@ -441,6 +441,43 @@
       ],
       "added_at": "2026-11-04T01:16:30+00:00",
       "updated_at": "2026-11-04T09:16:15+00:00"
+    },
+    {
+      "id": "d88380e47ae0f8b8",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "伊丹市",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1zQ3hUS2VCcEhvY255Vi01VUdzeWphLUNNZ1FKU1MyWUV3U1U2cnpXcEx3MjR4YlpfbXdBejNXckp6RkVjVUFnQkd6TGx1RHdUQW9VZkY1cGx5MXZncXJDN1c3Z1RwUGo5Q3ZV?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMia0FVX3lxTE1zQ3hUS2VCcEhvY255Vi01VUdzeWphLUNNZ1FKU1MyWUV3U1U2cnpXcEx3MjR4YlpfbXdBejNXckp6RkVjVUFnQkd6TGx1RHdUQW9VZkY1cGx5MXZncXJDN1c3Z1RwUGo5Q3ZV?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "伊丹市",
+          "url": "https://www.city.itami.lg.jp/oshirase/50668.html"
+        },
+        {
+          "name": "伊丹市上下水道局",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1zQ3hUS2VCcEhvY255Vi01VUdzeWphLUNNZ1FKU1MyWUV3U1U2cnpXcEx3MjR4YlpfbXdBejNXckp6RkVjVUFnQkd6TGx1RHdUQW9VZkY1cGx5MXZncXJDN1c3Z1RwUGo5Q3ZV?oc=5"
+        }
+      ],
+      "affected_service": "伊丹市メールマガジンシステム",
+      "service_aliases": [],
+      "added_at": "2026-11-04T12:25:20+00:00",
+      "updated_at": "2026-11-04T12:25:20+00:00"
     },
     {
       "id": "1347fc9d85287a5a",
@@ -756,6 +793,40 @@
       ],
       "added_at": "2026-11-04T00:14:16+00:00",
       "updated_at": "2026-11-04T00:14:16+00:00"
+    },
+    {
+      "id": "56a3d2457cb3a538",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大阪府",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.asahi.com/articles/ASVC42QBHVC4OXIE02DM.html",
+          "evidence_urls": [
+            "https://www.asahi.com/articles/ASVC42QBHVC4OXIE02DM.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVC42QBHVC4OXIE02DM.html"
+        }
+      ],
+      "affected_service": "行政オンラインシステム",
+      "service_aliases": [],
+      "added_at": "2026-11-04T12:25:20+00:00",
+      "updated_at": "2026-11-04T12:25:20+00:00"
     },
     {
       "id": "5d5d3d080fa4a4dd",
@@ -3688,11 +3759,12 @@
           "url": "https://www.yomiuri.co.jp/economy/20261030-GYT1T00205/"
         }
       ],
-      "affected_service": "公式アプリ / MUJIアプリ",
+      "affected_service": "公式アプリ / MUJIアプリ / 無印良品ネットストア",
       "service_aliases": [],
       "affected_services": [
         "公式アプリ",
-        "MUJIアプリ"
+        "MUJIアプリ",
+        "無印良品ネットストア"
       ],
       "service_details": [
         {
@@ -3702,10 +3774,14 @@
         {
           "name": "MUJIアプリ",
           "aliases": []
+        },
+        {
+          "name": "無印良品ネットストア",
+          "aliases": []
         }
       ],
       "added_at": "2026-10-30T09:16:10+00:00",
-      "updated_at": "2026-11-04T09:16:15+00:00"
+      "updated_at": "2026-11-04T12:25:20+00:00"
     },
     {
       "id": "7c84af49b4716f42",
@@ -6795,6 +6871,14 @@
           ]
         },
         {
+          "incident_id": "56a3d2457cb3a538",
+          "relationship": "affects",
+          "evidence_url": "https://www.asahi.com/articles/ASVC42QBHVC4OXIE02DM.html",
+          "evidence_urls": [
+            "https://www.asahi.com/articles/ASVC42QBHVC4OXIE02DM.html"
+          ]
+        },
+        {
           "incident_id": "5fa1320f5cec460c",
           "relationship": "affects",
           "evidence_url": "https://www.kobe-np.co.jp/news/society/202611/0020995366.shtml",
@@ -6960,6 +7044,14 @@
           ]
         },
         {
+          "incident_id": "d88380e47ae0f8b8",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1zQ3hUS2VCcEhvY255Vi01VUdzeWphLUNNZ1FKU1MyWUV3U1U2cnpXcEx3MjR4YlpfbXdBejNXckp6RkVjVUFnQkd6TGx1RHdUQW9VZkY1cGx5MXZncXJDN1c3Z1RwUGo5Q3ZV?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMia0FVX3lxTE1zQ3hUS2VCcEhvY255Vi01VUdzeWphLUNNZ1FKU1MyWUV3U1U2cnpXcEx3MjR4YlpfbXdBejNXckp6RkVjVUFnQkd6TGx1RHdUQW9VZkY1cGx5MXZncXJDN1c3Z1RwUGo5Q3ZV?oc=5"
+          ]
+        },
+        {
           "incident_id": "d95558503bcc21eb",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/00808525e5a5fb4e665e4942a9a0181fed694aba",
@@ -7028,7 +7120,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-04T10:38:56+00:00"
+      "updated_at": "2026-11-04T12:25:20+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
