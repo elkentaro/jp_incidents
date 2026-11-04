@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-04T10:38:56+00:00",
-  "total": 791,
+  "updated_at": "2026-11-04T10:47:15+00:00",
+  "total": 792,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-04"
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-11-04",
-      "count": 14
+      "count": 15
     }
   ],
   "incidents": [
@@ -837,6 +837,39 @@
       ],
       "added_at": "2026-11-04T00:14:16+00:00",
       "updated_at": "2026-11-04T00:14:16+00:00"
+    },
+    {
+      "id": "0dad8d48c2bd0181",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "長泉町",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "3d4ac3f77a219dbf",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE51ZGZwX0pCaTZBN2tGRGRUdlRsb0E2N3pJSzB1VGIzVmRTT1FBekFPQ05CWEtaRG9NLWRubzBub2VlbmZ1anF5OHBZM1VwcnFxUUNLT0phcUJsVmhmVFBQTzRQemd2SEo2YUxlQ2NDY2UyQQ?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMickFVX3lxTE51ZGZwX0pCaTZBN2tGRGRUdlRsb0E2N3pJSzB1VGIzVmRTT1FBekFPQ05CWEtaRG9NLWRubzBub2VlbmZ1anF5OHBZM1VwcnFxUUNLT0phcUJsVmhmVFBQTzRQemd2SEo2YUxlQ2NDY2UyQQ?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "長泉町",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE51ZGZwX0pCaTZBN2tGRGRUdlRsb0E2N3pJSzB1VGIzVmRTT1FBekFPQ05CWEtaRG9NLWRubzBub2VlbmZ1anF5OHBZM1VwcnFxUUNLT0phcUJsVmhmVFBQTzRQemd2SEo2YUxlQ2NDY2UyQQ?oc=5"
+        }
+      ],
+      "affected_service": "マイナンバーカード交付予約システム",
+      "service_aliases": [],
+      "added_at": "2026-11-04T10:47:15+00:00",
+      "updated_at": "2026-11-04T10:47:15+00:00"
     },
     {
       "id": "39ff62b6be63f819",
@@ -7202,6 +7235,14 @@
       "confidence_score": 75,
       "related": [
         {
+          "incident_id": "0dad8d48c2bd0181",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE51ZGZwX0pCaTZBN2tGRGRUdlRsb0E2N3pJSzB1VGIzVmRTT1FBekFPQ05CWEtaRG9NLWRubzBub2VlbmZ1anF5OHBZM1VwcnFxUUNLT0phcUJsVmhmVFBQTzRQemd2SEo2YUxlQ2NDY2UyQQ?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMickFVX3lxTE51ZGZwX0pCaTZBN2tGRGRUdlRsb0E2N3pJSzB1VGIzVmRTT1FBekFPQ05CWEtaRG9NLWRubzBub2VlbmZ1anF5OHBZM1VwcnFxUUNLT0phcUJsVmhmVFBQTzRQemd2SEo2YUxlQ2NDY2UyQQ?oc=5"
+          ]
+        },
+        {
           "incident_id": "6fa988fa2a0728fb",
           "relationship": "affects",
           "evidence_url": "https://cybersecurity-jp.com/news/118103",
@@ -7257,7 +7298,7 @@
       "affected_service": "アララメッセージ",
       "service_aliases": [],
       "added_at": "2026-11-03T01:15:51+00:00",
-      "updated_at": "2026-11-04T02:15:58+00:00"
+      "updated_at": "2026-11-04T10:47:15+00:00"
     },
     {
       "id": "c41156f61dbf6bc1",
