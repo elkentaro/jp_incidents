@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-04T05:16:39+00:00",
-  "total": 780,
+  "updated_at": "2026-11-04T06:13:31+00:00",
+  "total": 783,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-04"
@@ -353,11 +353,11 @@
     },
     {
       "date": "2026-11-01",
-      "count": 4
+      "count": 5
     },
     {
       "date": "2026-11-02",
-      "count": 25
+      "count": 26
     },
     {
       "date": "2026-11-03",
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-11-04",
-      "count": 10
+      "count": 11
     }
   ],
   "incidents": [
@@ -670,6 +670,31 @@
       ],
       "added_at": "2026-11-04T05:16:39+00:00",
       "updated_at": "2026-11-04T05:16:39+00:00"
+    },
+    {
+      "id": "ae87ad473c1decd3",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "デニーズ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261104de70279"
+        }
+      ],
+      "affected_service": "過去に提供していたアプリ",
+      "service_aliases": [],
+      "added_at": "2026-11-04T06:13:31+00:00",
+      "updated_at": "2026-11-04T06:13:31+00:00"
     },
     {
       "id": "f9e4b6e71c05bb9e",
@@ -1723,6 +1748,39 @@
       "updated_at": "2026-11-03T12:17:45+00:00"
     },
     {
+      "id": "d050177e1bfb19cf",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "野村インベスター・リレーションズ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "野村ホールディングス / Nomura",
+          "url": "https://www.nomuraholdings.com/jp/news/topics/20261104.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b9e45983a72b11d143643fe20eb593b7e0db38ce"
+        },
+        {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp/15181392.html"
+        }
+      ],
+      "affected_service": "機関Navi",
+      "service_aliases": [],
+      "added_at": "2026-11-04T02:15:58+00:00",
+      "updated_at": "2026-11-04T06:13:31+00:00"
+    },
+    {
       "id": "14733f1165b3b833",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
@@ -2106,12 +2164,16 @@
         {
           "name": "世田谷区 / Setagaya",
           "url": "https://www.city.setagaya.lg.jp/01004/36866.html"
+        },
+        {
+          "name": "世田谷区 / Setagaya",
+          "url": "https://www.city.setagaya.lg.jp/01004/36870.html"
         }
       ],
       "affected_service": "せたがやPay",
       "service_aliases": [],
       "added_at": "2026-11-02T13:16:55+00:00",
-      "updated_at": "2026-11-02T13:16:55+00:00"
+      "updated_at": "2026-11-04T06:13:31+00:00"
     },
     {
       "id": "d028329a3ac53751",
@@ -2145,31 +2207,6 @@
       "service_aliases": [],
       "added_at": "2026-11-02T07:16:38+00:00",
       "updated_at": "2026-11-02T07:16:38+00:00"
-    },
-    {
-      "id": "d050177e1bfb19cf",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "野村インベスター・リレーションズ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [],
-      "sources": [
-        {
-          "name": "野村ホールディングス / Nomura",
-          "url": "https://www.nomuraholdings.com/jp/news/topics/20261104.html"
-        }
-      ],
-      "affected_service": "機関Navi",
-      "service_aliases": [],
-      "added_at": "2026-11-04T02:15:58+00:00",
-      "updated_at": "2026-11-04T02:15:58+00:00"
     },
     {
       "id": "d56f89db8ff00015",
@@ -2268,6 +2305,39 @@
       "service_aliases": [],
       "added_at": "2026-11-03T12:17:45+00:00",
       "updated_at": "2026-11-03T12:17:45+00:00"
+    },
+    {
+      "id": "3cf70001eb2ecd04",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "コーヒースタイルユーシーシー株式会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 449442,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "aa9bc3fcfc85d71d",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.coffeestyleucc.co.jp/news202610/",
+          "evidence_urls": [
+            "https://www.coffeestyleucc.co.jp/news202610/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.coffeestyleucc.co.jp/news202610/"
+        }
+      ],
+      "affected_service": "UCCカフェメルカード",
+      "service_aliases": [],
+      "added_at": "2026-11-04T06:13:31+00:00",
+      "updated_at": "2026-11-04T06:13:31+00:00"
     },
     {
       "id": "1337ad1619d32570",
@@ -2437,6 +2507,31 @@
       "service_aliases": [],
       "added_at": "2026-11-03T22:15:33+00:00",
       "updated_at": "2026-11-04T01:16:30+00:00"
+    },
+    {
+      "id": "da81f1de130037ec",
+      "published_at": "2026-10-31T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "Shippio",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "LOGI-BIZ online",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1wWVdia1dUZ0lmNWF6eEZLUl8yd0xwVTljREFEVkd3b2t5blBPUHI2ZmJkZE43V1JuV2dTR2RXSnBvak5yVndyU0FWSQ?oc=5"
+        }
+      ],
+      "affected_service": "Shippio Platform",
+      "service_aliases": [],
+      "added_at": "2026-11-04T06:13:31+00:00",
+      "updated_at": "2026-11-04T06:13:31+00:00"
     },
     {
       "id": "09ba28525670dac9",
@@ -3806,6 +3901,35 @@
       "updated_at": "2026-10-31T08:16:00+00:00"
     },
     {
+      "id": "6eb1b96dbf3f9915",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ライフコーポレーション",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 298,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "流通ニュース",
+          "url": "https://www.ryutsuu.biz/strategy/s110249.html"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC043PL0U6A101C2000000/"
+        }
+      ],
+      "affected_service": "ライフ公式アプリ",
+      "service_aliases": [],
+      "added_at": "2026-11-02T09:16:16+00:00",
+      "updated_at": "2026-11-04T06:13:31+00:00"
+    },
+    {
       "id": "6060c1559cd87ea6",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": null,
@@ -4189,31 +4313,6 @@
         }
       ],
       "affected_service": "公式アプリ",
-      "service_aliases": [],
-      "added_at": "2026-11-02T09:16:16+00:00",
-      "updated_at": "2026-11-02T09:16:16+00:00"
-    },
-    {
-      "id": "6eb1b96dbf3f9915",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ライフコーポレーション",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 298,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "流通ニュース",
-          "url": "https://www.ryutsuu.biz/strategy/s110249.html"
-        }
-      ],
-      "affected_service": "ライフ公式アプリ",
       "service_aliases": [],
       "added_at": "2026-11-02T09:16:16+00:00",
       "updated_at": "2026-11-02T09:16:16+00:00"
@@ -12593,6 +12692,14 @@
       "confidence_score": 60,
       "related": [
         {
+          "incident_id": "3cf70001eb2ecd04",
+          "relationship": "affects",
+          "evidence_url": "https://www.coffeestyleucc.co.jp/news202610/",
+          "evidence_urls": [
+            "https://www.coffeestyleucc.co.jp/news202610/"
+          ]
+        },
+        {
           "incident_id": "d028329a3ac53751",
           "relationship": "affects",
           "evidence_url": "https://www.ucc.co.jp/press/20261102.html",
@@ -12610,7 +12717,7 @@
       "affected_service": "COMSBI エンタープライズ基盤",
       "service_aliases": [],
       "added_at": "2026-10-27T07:15:28+00:00",
-      "updated_at": "2026-11-02T07:16:38+00:00"
+      "updated_at": "2026-11-04T06:13:31+00:00"
     },
     {
       "id": "afafc315a013764c",
