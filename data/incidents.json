@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-04T04:16:21+00:00",
-  "total": 777,
+  "updated_at": "2026-11-04T05:16:39+00:00",
+  "total": 780,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-04"
@@ -269,7 +269,7 @@
     },
     {
       "date": "2026-10-11",
-      "count": 14
+      "count": 15
     },
     {
       "date": "2026-10-12",
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-11-04",
-      "count": 8
+      "count": 10
     }
   ],
   "incidents": [
@@ -494,6 +494,30 @@
       "updated_at": "2026-11-04T00:14:16+00:00"
     },
     {
+      "id": "409670b65540c00c",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "SHIFT UP",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/3dbd6d20d1087de0aa8badcd3c5b13890a98d459"
+        }
+      ],
+      "affected_service": "勝利の女神:NIKKE",
+      "service_aliases": [],
+      "added_at": "2026-11-04T05:16:39+00:00",
+      "updated_at": "2026-11-04T05:16:39+00:00"
+    },
+    {
       "id": "5266bf64f1fb4a19",
       "published_at": "2026-11-03T15:00:00+00:00",
       "disclosed_at": null,
@@ -586,6 +610,66 @@
       ],
       "added_at": "2026-11-04T01:16:30+00:00",
       "updated_at": "2026-11-04T01:16:30+00:00"
+    },
+    {
+      "id": "9c6e4483b2d9de8c",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "バンダイナムコエクスペリエンス",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "1337ad1619d32570",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903"
+          ]
+        },
+        {
+          "incident_id": "bab27c57bcae574b",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903"
+        }
+      ],
+      "affected_service": "太鼓の達人 / マリオカート アーケードグランプリ デラックス / 機動戦士ガンダム エクストリームバーサス2 インフィニットブースト",
+      "service_aliases": [],
+      "affected_services": [
+        "太鼓の達人",
+        "マリオカート アーケードグランプリ デラックス",
+        "機動戦士ガンダム エクストリームバーサス2 インフィニットブースト"
+      ],
+      "service_details": [
+        {
+          "name": "太鼓の達人",
+          "aliases": []
+        },
+        {
+          "name": "マリオカート アーケードグランプリ デラックス",
+          "aliases": []
+        },
+        {
+          "name": "機動戦士ガンダム エクストリームバーサス2 インフィニットブースト",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-04T05:16:39+00:00",
+      "updated_at": "2026-11-04T05:16:39+00:00"
     },
     {
       "id": "f9e4b6e71c05bb9e",
@@ -763,9 +847,10 @@
         {
           "incident_id": "e0bf7f8e71d6ba85",
           "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/043488f9a2e621eaae645bd17242931081138547",
+          "evidence_url": "https://news.yahoo.co.jp/articles/f5eb23ffa68e079276ef1dc142b3fb024f346c1d",
           "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/043488f9a2e621eaae645bd17242931081138547"
+            "https://news.yahoo.co.jp/articles/043488f9a2e621eaae645bd17242931081138547",
+            "https://news.yahoo.co.jp/articles/f5eb23ffa68e079276ef1dc142b3fb024f346c1d"
           ]
         },
         {
@@ -805,7 +890,7 @@
         }
       ],
       "added_at": "2026-11-03T16:15:47+00:00",
-      "updated_at": "2026-11-04T03:16:06+00:00"
+      "updated_at": "2026-11-04T05:16:39+00:00"
     },
     {
       "id": "04ce6a7e8398548e",
@@ -1391,6 +1476,54 @@
       "updated_at": "2026-11-03T13:17:19+00:00"
     },
     {
+      "id": "c0fbbb0ab3173161",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ビックカメラ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.sofmap.com/contents/?id=info&sid=261102b",
+          "evidence_urls": [
+            "https://www.sofmap.com/contents/?id=info&sid=261102b"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.sofmap.com/contents/?id=info&sid=261102b"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118117"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC041CT0U6A101C2000000/"
+        },
+        {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp/15181440.html"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002866/"
+        }
+      ],
+      "added_at": "2026-11-04T01:16:30+00:00",
+      "updated_at": "2026-11-04T05:16:39+00:00"
+    },
+    {
       "id": "c43cf10975841a94",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
@@ -1621,10 +1754,10 @@
       "updated_at": "2026-11-04T03:16:06+00:00"
     },
     {
-      "id": "c0fbbb0ab3173161",
+      "id": "f6d525de9624b10f",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
-      "organization": "ビックカメラ",
+      "organization": "ソフマップ",
       "incident_type": "data leak",
       "incident_categories": [
         "data leak",
@@ -1653,12 +1786,12 @@
           "url": "https://cybersecurity-jp.com/news/118117"
         },
         {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUC041CT0U6A101C2000000/"
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002866/"
         }
       ],
       "added_at": "2026-11-04T01:16:30+00:00",
-      "updated_at": "2026-11-04T04:16:21+00:00"
+      "updated_at": "2026-11-04T05:16:39+00:00"
     },
     {
       "id": "081d56728e0a654a",
@@ -1754,10 +1887,10 @@
       "updated_at": "2026-11-03T20:36:46+00:00"
     },
     {
-      "id": "f6d525de9624b10f",
+      "id": "3976a3e35b3d87f6",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
-      "organization": "ソフマップ",
+      "organization": "コジマ",
       "incident_type": "data leak",
       "incident_categories": [
         "data leak",
@@ -1782,12 +1915,12 @@
           "url": "https://www.sofmap.com/contents/?id=info&sid=261102b"
         },
         {
-          "name": "Cybersecurity.jp",
-          "url": "https://cybersecurity-jp.com/news/118117"
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002866/"
         }
       ],
       "added_at": "2026-11-04T01:16:30+00:00",
-      "updated_at": "2026-11-04T02:15:58+00:00"
+      "updated_at": "2026-11-04T05:16:39+00:00"
     },
     {
       "id": "19cce63ebf03c536",
@@ -2137,38 +2270,6 @@
       "updated_at": "2026-11-03T12:17:45+00:00"
     },
     {
-      "id": "3976a3e35b3d87f6",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "コジマ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.sofmap.com/contents/?id=info&sid=261102b",
-          "evidence_urls": [
-            "https://www.sofmap.com/contents/?id=info&sid=261102b"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.sofmap.com/contents/?id=info&sid=261102b"
-        }
-      ],
-      "added_at": "2026-11-04T01:16:30+00:00",
-      "updated_at": "2026-11-04T01:16:30+00:00"
-    },
-    {
       "id": "1337ad1619d32570",
       "published_at": "2026-10-31T15:00:00+00:00",
       "disclosed_at": "2026-10-31T15:00:00+00:00",
@@ -2179,8 +2280,17 @@
       ],
       "potential_records": null,
       "confidence": "high",
-      "confidence_score": 80,
-      "related": [],
+      "confidence_score": 95,
+      "related": [
+        {
+          "incident_id": "9c6e4483b2d9de8c",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "4Gamer.net",
@@ -2201,6 +2311,10 @@
         {
           "name": "ニコニコニュース",
           "url": "https://news.nicovideo.jp/watch/nw19949594"
+        },
+        {
+          "name": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2153346.html"
         }
       ],
       "affected_service": "ALL.Net / Aime",
@@ -2220,7 +2334,7 @@
         }
       ],
       "added_at": "2026-11-02T13:16:55+00:00",
-      "updated_at": "2026-11-03T11:46:37+00:00"
+      "updated_at": "2026-11-04T05:16:39+00:00"
     },
     {
       "id": "590917c47f5ba4f5",
@@ -6371,9 +6485,10 @@
         {
           "incident_id": "cc83cfb44abbac15",
           "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/043488f9a2e621eaae645bd17242931081138547",
+          "evidence_url": "https://news.yahoo.co.jp/articles/f5eb23ffa68e079276ef1dc142b3fb024f346c1d",
           "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/043488f9a2e621eaae645bd17242931081138547"
+            "https://news.yahoo.co.jp/articles/043488f9a2e621eaae645bd17242931081138547",
+            "https://news.yahoo.co.jp/articles/f5eb23ffa68e079276ef1dc142b3fb024f346c1d"
           ]
         },
         {
@@ -6461,7 +6576,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-04T04:16:21+00:00"
+      "updated_at": "2026-11-04T05:16:39+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -11957,6 +12072,35 @@
       "updated_at": "2026-10-28T01:15:55+00:00"
     },
     {
+      "id": "3a0da9e6a1e89a3f",
+      "published_at": "2026-10-22T15:00:00+00:00",
+      "disclosed_at": "2026-10-22T15:00:00+00:00",
+      "organization": "タイムズカー",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/27/56586.html"
+        },
+        {
+          "name": "乗りものニュース",
+          "url": "https://trafficnews.jp/post/723998"
+        }
+      ],
+      "affected_service": "タイムズクラブ",
+      "service_aliases": [],
+      "added_at": "2026-10-27T20:15:55+00:00",
+      "updated_at": "2026-11-04T05:16:39+00:00"
+    },
+    {
       "id": "41ee5e46723f8a2c",
       "published_at": "2026-10-22T15:00:00+00:00",
       "disclosed_at": null,
@@ -12867,31 +13011,6 @@
       "service_aliases": [],
       "added_at": "2026-10-25T05:15:56+00:00",
       "updated_at": "2026-10-25T05:15:56+00:00"
-    },
-    {
-      "id": "3a0da9e6a1e89a3f",
-      "published_at": "2026-10-22T15:00:00+00:00",
-      "disclosed_at": "2026-10-22T15:00:00+00:00",
-      "organization": "タイムズカー",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "ScanNetSecurity",
-          "url": "https://scan.netsecurity.ne.jp/article/2026/10/27/56586.html"
-        }
-      ],
-      "affected_service": "タイムズクラブ",
-      "service_aliases": [],
-      "added_at": "2026-10-27T20:15:55+00:00",
-      "updated_at": "2026-10-27T20:15:55+00:00"
     },
     {
       "id": "40b447c85f808320",
@@ -30259,6 +30378,31 @@
       "updated_at": "2026-10-21T03:57:34+00:00"
     },
     {
+      "id": "a4e458de3c712e56",
+      "published_at": "2026-10-10T15:00:00+00:00",
+      "disclosed_at": "2026-10-29T15:00:00+00:00",
+      "organization": "イープラス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 3571,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/eplus-fes-app-porno-chotokkyu-2021-3571-brute-force-breach/"
+        }
+      ],
+      "affected_service": "FESアプリ",
+      "service_aliases": [],
+      "added_at": "2026-11-04T05:16:39+00:00",
+      "updated_at": "2026-11-04T05:16:39+00:00"
+    },
+    {
       "id": "544b28758c9997db",
       "published_at": "2026-10-09T15:00:00+00:00",
       "disclosed_at": "2026-10-14T15:00:00+00:00",
@@ -30497,7 +30641,16 @@
       "potential_records": 1694,
       "confidence": "high",
       "confidence_score": 60,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "9c6e4483b2d9de8c",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "satimo list",
@@ -30505,7 +30658,7 @@
         }
       ],
       "added_at": "2026-10-19T09:06:44+00:00",
-      "updated_at": "2026-10-20T07:24:24+00:00"
+      "updated_at": "2026-11-04T05:16:39+00:00"
     },
     {
       "id": "f68ccb87f64b153d",
