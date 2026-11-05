@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-05T08:16:08+00:00",
-  "total": 850,
+  "updated_at": "2026-11-05T09:15:53+00:00",
+  "total": 854,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-05"
@@ -333,7 +333,7 @@
     },
     {
       "date": "2026-10-28",
-      "count": 51
+      "count": 52
     },
     {
       "date": "2026-10-29",
@@ -361,11 +361,11 @@
     },
     {
       "date": "2026-11-04",
-      "count": 34
+      "count": 35
     },
     {
       "date": "2026-11-05",
-      "count": 17
+      "count": 19
     }
   ],
   "incidents": [
@@ -433,6 +433,48 @@
       "updated_at": "2026-11-05T08:16:07+00:00"
     },
     {
+      "id": "ce7d32fd4e6c1d66",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "三井住友銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 227000,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/-/3064287?display=1",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/-/3064287?display=1"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3064287?display=1"
+        },
+        {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp/category/economy/yt06ffb6b366864dd785debcc9abd8d498"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVC52GV3VC5ULFA01BM.html"
+        }
+      ],
+      "affected_service": "メール配信サービス",
+      "service_aliases": [],
+      "added_at": "2026-11-05T08:16:07+00:00",
+      "updated_at": "2026-11-05T09:15:53+00:00"
+    },
+    {
       "id": "024b3401d64a391b",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": null,
@@ -468,6 +510,52 @@
       "service_aliases": [],
       "added_at": "2026-11-05T04:16:40+00:00",
       "updated_at": "2026-11-05T05:15:40+00:00"
+    },
+    {
+      "id": "74f0b0ed8eb3946e",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "NTTドコモ",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/444f21d5c481e67833664fee2c7c24e83673af97"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/a01129358096c0f0cb1fb6ff629517d2ec4c61b9"
+        },
+        {
+          "name": "新潟日報",
+          "url": "https://www.niigata-nippo.co.jp/articles/-/937221"
+        }
+      ],
+      "affected_service": "ドコモオンラインショップ / My docomo",
+      "service_aliases": [],
+      "affected_services": [
+        "ドコモオンラインショップ",
+        "My docomo"
+      ],
+      "service_details": [
+        {
+          "name": "ドコモオンラインショップ",
+          "aliases": []
+        },
+        {
+          "name": "My docomo",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-05T06:16:23+00:00",
+      "updated_at": "2026-11-05T09:15:53+00:00"
     },
     {
       "id": "84b1fdc78e8cfefb",
@@ -642,6 +730,28 @@
       "updated_at": "2026-11-05T07:17:31+00:00"
     },
     {
+      "id": "43ffe25b8d12d791",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東洋大学",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "東洋大学",
+          "url": "https://www.toyo.ac.jp/news/20261105-20479.html"
+        }
+      ],
+      "added_at": "2026-11-05T09:15:53+00:00",
+      "updated_at": "2026-11-05T09:15:53+00:00"
+    },
+    {
       "id": "718329b513f93046",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": null,
@@ -737,44 +847,6 @@
       "service_aliases": [],
       "added_at": "2026-11-05T07:17:31+00:00",
       "updated_at": "2026-11-05T07:17:31+00:00"
-    },
-    {
-      "id": "74f0b0ed8eb3946e",
-      "published_at": "2026-11-04T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "NTTドコモ",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/444f21d5c481e67833664fee2c7c24e83673af97"
-        }
-      ],
-      "affected_service": "ドコモオンラインショップ / My docomo",
-      "service_aliases": [],
-      "affected_services": [
-        "ドコモオンラインショップ",
-        "My docomo"
-      ],
-      "service_details": [
-        {
-          "name": "ドコモオンラインショップ",
-          "aliases": []
-        },
-        {
-          "name": "My docomo",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-05T06:16:23+00:00",
-      "updated_at": "2026-11-05T06:16:23+00:00"
     },
     {
       "id": "82453d9671204d4b",
@@ -927,37 +999,38 @@
       "updated_at": "2026-11-05T08:16:07+00:00"
     },
     {
-      "id": "ce7d32fd4e6c1d66",
+      "id": "d25c9c78031ecccc",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": null,
-      "organization": "三井住友銀行",
+      "organization": "栗原市",
       "incident_type": "data leak",
       "incident_categories": [
-        "data leak"
+        "data leak",
+        "unauthorized access"
       ],
-      "potential_records": 227000,
+      "potential_records": 2379,
       "confidence": "medium",
       "confidence_score": 50,
       "related": [
         {
-          "incident_id": "e0bf7f8e71d6ba85",
+          "incident_id": "3d4ac3f77a219dbf",
           "relationship": "affected_by",
-          "evidence_url": "https://newsdig.tbs.co.jp/articles/-/3064287?display=1",
+          "evidence_url": "https://news.yahoo.co.jp/articles/129111ad72297afc82d04c4ed07d9a0db5cc1e2a",
           "evidence_urls": [
-            "https://newsdig.tbs.co.jp/articles/-/3064287?display=1"
+            "https://news.yahoo.co.jp/articles/129111ad72297afc82d04c4ed07d9a0db5cc1e2a"
           ]
         }
       ],
       "sources": [
         {
-          "name": "TBS NEWS DIG",
-          "url": "https://newsdig.tbs.co.jp/articles/-/3064287?display=1"
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/129111ad72297afc82d04c4ed07d9a0db5cc1e2a"
         }
       ],
-      "affected_service": "メール配信サービス",
+      "affected_service": "電子申請システム",
       "service_aliases": [],
-      "added_at": "2026-11-05T08:16:07+00:00",
-      "updated_at": "2026-11-05T08:16:07+00:00"
+      "added_at": "2026-11-05T09:15:53+00:00",
+      "updated_at": "2026-11-05T09:15:53+00:00"
     },
     {
       "id": "ddc337c648916610",
@@ -2095,6 +2168,47 @@
       "service_aliases": [],
       "added_at": "2026-11-04T23:15:16+00:00",
       "updated_at": "2026-11-04T23:15:16+00:00"
+    },
+    {
+      "id": "c04caacb5a38eecf",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "楽天証券",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 2109,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "62e7efc40d4f6d44",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/27d61e68b7727854a9c8eea8cca3d3410bb97c28",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/27d61e68b7727854a9c8eea8cca3d3410bb97c28"
+          ]
+        },
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/27d61e68b7727854a9c8eea8cca3d3410bb97c28",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/27d61e68b7727854a9c8eea8cca3d3410bb97c28"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/27d61e68b7727854a9c8eea8cca3d3410bb97c28"
+        }
+      ],
+      "affected_service": "経済指標アラートメール",
+      "service_aliases": [],
+      "added_at": "2026-11-05T09:15:53+00:00",
+      "updated_at": "2026-11-05T09:15:53+00:00"
     },
     {
       "id": "de73cb7eab25a4c0",
@@ -3431,10 +3545,14 @@
         {
           "name": "ITmedia",
           "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002861/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/3f4bc73bd479865938845f45819fc644b29778b8"
         }
       ],
       "added_at": "2026-11-02T21:15:57+00:00",
-      "updated_at": "2026-11-04T11:03:06+00:00"
+      "updated_at": "2026-11-05T09:15:53+00:00"
     },
     {
       "id": "58e85aa5a6aa2f68",
@@ -3788,6 +3906,43 @@
       "service_aliases": [],
       "added_at": "2026-11-04T13:16:52+00:00",
       "updated_at": "2026-11-05T03:16:04+00:00"
+    },
+    {
+      "id": "ef09c13430d4ac73",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "Zaif",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 380536,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://corp.zaif.jp/info/20261104-1",
+          "evidence_urls": [
+            "https://corp.zaif.jp/info/20261104-1"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://corp.zaif.jp/info/20261104-1"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/5c91a67002cd60848f81b51978559512af1f5341"
+        }
+      ],
+      "affected_service": "アララ メッセージ",
+      "service_aliases": [],
+      "added_at": "2026-11-05T01:16:21+00:00",
+      "updated_at": "2026-11-05T09:15:53+00:00"
     },
     {
       "id": "3976a3e35b3d87f6",
@@ -4249,39 +4404,6 @@
       "service_aliases": [],
       "added_at": "2026-11-02T20:15:44+00:00",
       "updated_at": "2026-11-02T20:15:44+00:00"
-    },
-    {
-      "id": "ef09c13430d4ac73",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "Zaif",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 380536,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://corp.zaif.jp/info/20261104-1",
-          "evidence_urls": [
-            "https://corp.zaif.jp/info/20261104-1"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://corp.zaif.jp/info/20261104-1"
-        }
-      ],
-      "affected_service": "アララ メッセージ",
-      "service_aliases": [],
-      "added_at": "2026-11-05T01:16:21+00:00",
-      "updated_at": "2026-11-05T01:16:21+00:00"
     },
     {
       "id": "6fa988fa2a0728fb",
@@ -4835,6 +4957,14 @@
           "evidence_urls": [
             "https://www.rakuten-sec.co.jp/web/info/info20261031-01.html"
           ]
+        },
+        {
+          "incident_id": "c04caacb5a38eecf",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/27d61e68b7727854a9c8eea8cca3d3410bb97c28",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/27d61e68b7727854a9c8eea8cca3d3410bb97c28"
+          ]
         }
       ],
       "sources": [
@@ -4866,7 +4996,7 @@
       "affected_service": "デジタル特典付き社債",
       "service_aliases": [],
       "added_at": "2026-10-31T20:30:43+00:00",
-      "updated_at": "2026-11-02T12:16:29+00:00"
+      "updated_at": "2026-11-05T09:15:53+00:00"
     },
     {
       "id": "d1625f0ac45d3d6b",
@@ -9123,6 +9253,14 @@
           ]
         },
         {
+          "incident_id": "c04caacb5a38eecf",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/27d61e68b7727854a9c8eea8cca3d3410bb97c28",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/27d61e68b7727854a9c8eea8cca3d3410bb97c28"
+          ]
+        },
+        {
           "incident_id": "c0fbbb0ab3173161",
           "relationship": "affects",
           "evidence_url": "https://www.sofmap.com/contents/?id=info&sid=261102b",
@@ -9338,7 +9476,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-05T08:16:07+00:00"
+      "updated_at": "2026-11-05T09:15:53+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -9776,6 +9914,14 @@
           ]
         },
         {
+          "incident_id": "d25c9c78031ecccc",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/129111ad72297afc82d04c4ed07d9a0db5cc1e2a",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/129111ad72297afc82d04c4ed07d9a0db5cc1e2a"
+          ]
+        },
+        {
           "incident_id": "e0bf7f8e71d6ba85",
           "relationship": "affected_by",
           "evidence_url": "https://www.tkc.jp/news/2026/20261102_2/",
@@ -9797,7 +9943,7 @@
       "affected_service": "アララメッセージ",
       "service_aliases": [],
       "added_at": "2026-11-03T01:15:51+00:00",
-      "updated_at": "2026-11-04T23:15:16+00:00"
+      "updated_at": "2026-11-05T09:15:53+00:00"
     },
     {
       "id": "dc15595102d7025a",
@@ -10068,6 +10214,28 @@
       "service_aliases": [],
       "added_at": "2026-10-28T23:15:49+00:00",
       "updated_at": "2026-10-28T23:15:49+00:00"
+    },
+    {
+      "id": "3c1baa348f2229d9",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "岐阜産業保健総合支援センター",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "労働者健康安全機構 / JOHAS",
+          "url": "https://www.johas.go.jp/news/gifusanpo-unauthorizedaccess/"
+        }
+      ],
+      "added_at": "2026-11-05T09:15:53+00:00",
+      "updated_at": "2026-11-05T09:15:53+00:00"
     },
     {
       "id": "3ce6612226b3c800",
