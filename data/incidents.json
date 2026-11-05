@@ -1,16 +1,12 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-05T14:17:23+00:00",
-  "total": 868,
+  "updated_at": "2026-11-05T15:15:51+00:00",
+  "total": 875,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-05"
   },
   "daily_counts_90d": [
-    {
-      "date": "2026-08-08",
-      "count": 0
-    },
     {
       "date": "2026-08-09",
       "count": 1
@@ -333,7 +329,7 @@
     },
     {
       "date": "2026-10-28",
-      "count": 52
+      "count": 53
     },
     {
       "date": "2026-10-29",
@@ -353,11 +349,11 @@
     },
     {
       "date": "2026-11-02",
-      "count": 40
+      "count": 41
     },
     {
       "date": "2026-11-03",
-      "count": 17
+      "count": 18
     },
     {
       "date": "2026-11-04",
@@ -365,7 +361,11 @@
     },
     {
       "date": "2026-11-05",
-      "count": 29
+      "count": 33
+    },
+    {
+      "date": "2026-11-06",
+      "count": 0
     }
   ],
   "incidents": [
@@ -627,12 +627,70 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUA05B2N0V01C26A1000000/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/5c1c1a6725ce8e845a3e43642c67a607e39771c9"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/41eb18c751caceba242a441f44e4124e06f411d2"
         }
       ],
       "affected_service": "武力攻撃事態等における安否情報収集・提供システム",
       "service_aliases": [],
       "added_at": "2026-11-05T11:16:39+00:00",
-      "updated_at": "2026-11-05T14:17:23+00:00"
+      "updated_at": "2026-11-05T15:15:51+00:00"
+    },
+    {
+      "id": "74f0b0ed8eb3946e",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "NTTドコモ",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/444f21d5c481e67833664fee2c7c24e83673af97"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/a01129358096c0f0cb1fb6ff629517d2ec4c61b9"
+        },
+        {
+          "name": "新潟日報",
+          "url": "https://www.niigata-nippo.co.jp/articles/-/937221"
+        },
+        {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp/category/economy/c6b7420179a749d195ce3e1c07c3e024"
+        }
+      ],
+      "affected_service": "ドコモオンラインショップ / My docomo",
+      "service_aliases": [],
+      "affected_services": [
+        "ドコモオンラインショップ",
+        "My docomo"
+      ],
+      "service_details": [
+        {
+          "name": "ドコモオンラインショップ",
+          "aliases": []
+        },
+        {
+          "name": "My docomo",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-05T06:16:23+00:00",
+      "updated_at": "2026-11-05T15:15:51+00:00"
     },
     {
       "id": "024b3401d64a391b",
@@ -670,52 +728,6 @@
       "service_aliases": [],
       "added_at": "2026-11-05T04:16:40+00:00",
       "updated_at": "2026-11-05T05:15:40+00:00"
-    },
-    {
-      "id": "74f0b0ed8eb3946e",
-      "published_at": "2026-11-04T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "NTTドコモ",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/444f21d5c481e67833664fee2c7c24e83673af97"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/a01129358096c0f0cb1fb6ff629517d2ec4c61b9"
-        },
-        {
-          "name": "新潟日報",
-          "url": "https://www.niigata-nippo.co.jp/articles/-/937221"
-        }
-      ],
-      "affected_service": "ドコモオンラインショップ / My docomo",
-      "service_aliases": [],
-      "affected_services": [
-        "ドコモオンラインショップ",
-        "My docomo"
-      ],
-      "service_details": [
-        {
-          "name": "ドコモオンラインショップ",
-          "aliases": []
-        },
-        {
-          "name": "My docomo",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-05T06:16:23+00:00",
-      "updated_at": "2026-11-05T09:15:53+00:00"
     },
     {
       "id": "84b1fdc78e8cfefb",
@@ -950,6 +962,39 @@
       "updated_at": "2026-11-05T09:15:53+00:00"
     },
     {
+      "id": "4db0935db17b18e4",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "日本郵便",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "de1f53de576e9f74",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.post.japanpost.jp/newsrelease/pressrelease/1342644881.html",
+          "evidence_urls": [
+            "https://www.post.japanpost.jp/newsrelease/pressrelease/1342644881.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本郵便 / Japan Post",
+          "url": "https://www.post.japanpost.jp/newsrelease/pressrelease/1342644881.html"
+        }
+      ],
+      "affected_service": "防災ゆうストレージ",
+      "service_aliases": [],
+      "added_at": "2026-11-05T15:15:51+00:00",
+      "updated_at": "2026-11-05T15:15:51+00:00"
+    },
+    {
       "id": "6f8b01ebda0dcc79",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": null,
@@ -1155,6 +1200,37 @@
       ],
       "added_at": "2026-11-05T11:16:39+00:00",
       "updated_at": "2026-11-05T11:16:39+00:00"
+    },
+    {
+      "id": "de1f53de576e9f74",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "寺田倉庫",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "4db0935db17b18e4",
+          "relationship": "affects",
+          "evidence_url": "https://www.post.japanpost.jp/newsrelease/pressrelease/1342644881.html",
+          "evidence_urls": [
+            "https://www.post.japanpost.jp/newsrelease/pressrelease/1342644881.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "www.terrada.co.jp",
+          "url": "https://www.terrada.co.jp/ja/news/17123/"
+        }
+      ],
+      "added_at": "2026-11-05T15:15:51+00:00",
+      "updated_at": "2026-11-05T15:15:51+00:00"
     },
     {
       "id": "32623d2c5b058c4e",
@@ -1532,6 +1608,92 @@
       "service_aliases": [],
       "added_at": "2026-11-05T08:16:07+00:00",
       "updated_at": "2026-11-05T08:16:07+00:00"
+    },
+    {
+      "id": "64d1bee3ebeecc43",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "学研ホールディングス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "株式会社学研ホールディングス",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5YRkFQVzE0SkJScTUza3drTzBRbDVyaWUtS3RkQ1hjOWpPWFdPdlcyeHlwdVVQRFRRemFUb2hFZV94VVdLUElkanFSWXd1RTVNaF9wQjVXZnhOeUJTdENpV05QVGdRdw?oc=5"
+        }
+      ],
+      "added_at": "2026-11-05T15:15:51+00:00",
+      "updated_at": "2026-11-05T15:15:51+00:00"
+    },
+    {
+      "id": "c8e69c216a70e86b",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "カカクコム",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 5700000,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://prtimes.jp/main/html/rd/p/000001064.000001455.html",
+          "evidence_urls": [
+            "https://prtimes.jp/main/html/rd/p/000001064.000001455.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "PR TIMES",
+          "url": "https://prtimes.jp/main/html/rd/p/000001064.000001455.html"
+        }
+      ],
+      "affected_service": "食べログ / icotto / スマイティ / 価格.com / 求人ボックス",
+      "service_aliases": [],
+      "affected_services": [
+        "食べログ",
+        "icotto",
+        "スマイティ",
+        "価格.com",
+        "求人ボックス"
+      ],
+      "service_details": [
+        {
+          "name": "食べログ",
+          "aliases": []
+        },
+        {
+          "name": "icotto",
+          "aliases": []
+        },
+        {
+          "name": "スマイティ",
+          "aliases": []
+        },
+        {
+          "name": "価格.com",
+          "aliases": []
+        },
+        {
+          "name": "求人ボックス",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-05T15:15:51+00:00",
+      "updated_at": "2026-11-05T15:15:51+00:00"
     },
     {
       "id": "ae87ad473c1decd3",
@@ -3180,6 +3342,14 @@
           ]
         },
         {
+          "incident_id": "bd31831676ce0e1f",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d"
+          ]
+        },
+        {
           "incident_id": "e0bf7f8e71d6ba85",
           "relationship": "affected_by",
           "evidence_url": "https://www.travelvoice.jp/20261104-160788",
@@ -3228,7 +3398,7 @@
       "affected_service": "アソビュー!",
       "service_aliases": [],
       "added_at": "2026-11-03T16:15:47+00:00",
-      "updated_at": "2026-11-04T10:15:52+00:00"
+      "updated_at": "2026-11-05T15:15:51+00:00"
     },
     {
       "id": "8a2a8d13a22fe810",
@@ -3586,6 +3756,48 @@
       "service_aliases": [],
       "added_at": "2026-11-03T13:17:19+00:00",
       "updated_at": "2026-11-05T11:16:39+00:00"
+    },
+    {
+      "id": "bd31831676ce0e1f",
+      "published_at": "2026-11-02T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "山梨県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 200000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "cc83cfb44abbac15",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d"
+          ]
+        },
+        {
+          "incident_id": "d6d292a6112076a6",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d"
+        }
+      ],
+      "affected_service": "富士山吉田ルートの通行予約システム",
+      "service_aliases": [],
+      "added_at": "2026-11-05T15:15:51+00:00",
+      "updated_at": "2026-11-05T15:15:51+00:00"
     },
     {
       "id": "4ae714ea4b465c28",
@@ -5126,6 +5338,31 @@
       "service_aliases": [],
       "added_at": "2026-11-03T12:17:45+00:00",
       "updated_at": "2026-11-03T12:17:45+00:00"
+    },
+    {
+      "id": "ea44bdc85b4b2bea",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "八王子市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 2,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5URVhvTnFKdnJLWUNRZzJ0WHVpbFZCcUZoOXJjTzFCem94akphWGNfQXk3bFpKRzRwYlNmSENtTl9IZ2NfV3FwWEVodVZldi1LMHRxOG9YcmVySjlxaFI1all2ZG10Wm8wY3V6RWRXUFBuWkRYSXBiVEFaZ1F3QWc?oc=5"
+        }
+      ],
+      "affected_service": "日本遺産『桑都物語』",
+      "service_aliases": [],
+      "added_at": "2026-11-05T15:15:51+00:00",
+      "updated_at": "2026-11-05T15:15:51+00:00"
     },
     {
       "id": "f945606df6d28bc9",
@@ -6761,6 +6998,14 @@
           "evidence_urls": [
             "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1keVhRYU1OZGNEYVc1bDd2Uk0xNERGcXNVSG41NEpCczBQSE4tanpFM2NNRlM2RDFjYUlnRXpRbi10S2dqM2x0NzRfSEtxbTVJTk1TQnJiNy1wNkRvLTNN?oc=5"
           ]
+        },
+        {
+          "incident_id": "bd31831676ce0e1f",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d"
+          ]
         }
       ],
       "sources": [
@@ -6784,7 +7029,7 @@
       "affected_service": "吉田ルートの通行予約",
       "service_aliases": [],
       "added_at": "2026-10-30T21:53:42+00:00",
-      "updated_at": "2026-11-01T10:15:46+00:00"
+      "updated_at": "2026-11-05T15:15:51+00:00"
     },
     {
       "id": "f029efe1fece299f",
@@ -6946,6 +7191,44 @@
       "updated_at": "2026-11-03T13:17:19+00:00"
     },
     {
+      "id": "1ff5db5f85b18422",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ウェルネス・コミュニケーションズ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 209,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "8c09a77637fff3f8",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.release.tdnet.info/inbs/140120261104564889.pdf",
+          "evidence_urls": [
+            "https://www.release.tdnet.info/inbs/140120261104564889.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261104564889.pdf"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC059K30V01C26A1000000/"
+        }
+      ],
+      "affected_service": "あしたのサーベイ",
+      "service_aliases": [],
+      "added_at": "2026-11-05T01:16:21+00:00",
+      "updated_at": "2026-11-05T15:15:51+00:00"
+    },
+    {
       "id": "afcfe4585d0dbcf0",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": null,
@@ -7002,40 +7285,6 @@
       "service_aliases": [],
       "added_at": "2026-11-02T09:16:16+00:00",
       "updated_at": "2026-11-04T06:13:31+00:00"
-    },
-    {
-      "id": "1ff5db5f85b18422",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ウェルネス・コミュニケーションズ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 209,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "8c09a77637fff3f8",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.release.tdnet.info/inbs/140120261104564889.pdf",
-          "evidence_urls": [
-            "https://www.release.tdnet.info/inbs/140120261104564889.pdf"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "日本取引所グループ TDnet / JPX TDnet",
-          "url": "https://www.release.tdnet.info/inbs/140120261104564889.pdf"
-        }
-      ],
-      "affected_service": "あしたのサーベイ",
-      "service_aliases": [],
-      "added_at": "2026-11-05T01:16:21+00:00",
-      "updated_at": "2026-11-05T01:16:21+00:00"
     },
     {
       "id": "6060c1559cd87ea6",
@@ -10038,6 +10287,14 @@
           ]
         },
         {
+          "incident_id": "c8e69c216a70e86b",
+          "relationship": "affects",
+          "evidence_url": "https://prtimes.jp/main/html/rd/p/000001064.000001455.html",
+          "evidence_urls": [
+            "https://prtimes.jp/main/html/rd/p/000001064.000001455.html"
+          ]
+        },
+        {
           "incident_id": "cade75ef66ccbad6",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/85adcfe5e242b0139561ca3d253820b6184205ad",
@@ -10229,7 +10486,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-05T11:16:39+00:00"
+      "updated_at": "2026-11-05T15:15:51+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -11565,6 +11822,31 @@
       "updated_at": "2026-11-02T19:15:40+00:00"
     },
     {
+      "id": "eabeef8122751e9d",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "アイリスオーヤマ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 7700000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/19cc02e2bcf6b32f29a2ac9b9dc561741b2ed8e5"
+        }
+      ],
+      "affected_service": "アイリスプラザ",
+      "service_aliases": [],
+      "added_at": "2026-11-05T15:15:51+00:00",
+      "updated_at": "2026-11-05T15:15:51+00:00"
+    },
+    {
       "id": "01254e0808af698e",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": "2026-11-01T15:00:00+00:00",
@@ -11776,6 +12058,54 @@
       ],
       "added_at": "2026-10-27T19:09:26+00:00",
       "updated_at": "2026-10-31T22:16:05+00:00"
+    },
+    {
+      "id": "d3104c3ae4442eac",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "資さんうどん",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 20000,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "aacc7975501819fc",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.sukesanudon.com/news/news-8014/",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMibEFVX3lxTE1YMUFPTWZqZUdSRXpuYkRKWjAzVXhpTmtjbzJnRnJ0a2ZyQVdVbFJldzZjdzAtdUFRMHZnbVVqVlZJNmgybzJGblJqUXN6SGI2Qnk0WGlwM3dOOHBMMGhUTlZYcW0xNHpFQm9fcw?oc=5",
+            "https://www.sukesanudon.com/news/news-8014/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.sukesanudon.com/news/news-8014/"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://www.sukesanudon.com/news/news-8023/"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1YMUFPTWZqZUdSRXpuYkRKWjAzVXhpTmtjbzJnRnJ0a2ZyQVdVbFJldzZjdzAtdUFRMHZnbVVqVlZJNmgybzJGblJqUXN6SGI2Qnk0WGlwM3dOOHBMMGhUTlZYcW0xNHpFQm9fcw?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/f9cdd5e23dd4ce46876b0b20c4ca816037d8037c"
+        },
+        {
+          "name": "Security NEXT",
+          "url": "https://www.security-next.com/192260"
+        }
+      ],
+      "added_at": "2026-10-27T21:16:27+00:00",
+      "updated_at": "2026-11-05T15:15:51+00:00"
     },
     {
       "id": "f18aa75770e360bd",
@@ -12182,50 +12512,6 @@
       ],
       "added_at": "2026-10-27T19:09:26+00:00",
       "updated_at": "2026-10-30T01:13:09+00:00"
-    },
-    {
-      "id": "d3104c3ae4442eac",
-      "published_at": "2026-10-26T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "資さんうどん",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 20000,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [
-        {
-          "incident_id": "aacc7975501819fc",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.sukesanudon.com/news/news-8014/",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMibEFVX3lxTE1YMUFPTWZqZUdSRXpuYkRKWjAzVXhpTmtjbzJnRnJ0a2ZyQVdVbFJldzZjdzAtdUFRMHZnbVVqVlZJNmgybzJGblJqUXN6SGI2Qnk0WGlwM3dOOHBMMGhUTlZYcW0xNHpFQm9fcw?oc=5",
-            "https://www.sukesanudon.com/news/news-8014/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.sukesanudon.com/news/news-8014/"
-        },
-        {
-          "name": "satimo list",
-          "url": "https://www.sukesanudon.com/news/news-8023/"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1YMUFPTWZqZUdSRXpuYkRKWjAzVXhpTmtjbzJnRnJ0a2ZyQVdVbFJldzZjdzAtdUFRMHZnbVVqVlZJNmgybzJGblJqUXN6SGI2Qnk0WGlwM3dOOHBMMGhUTlZYcW0xNHpFQm9fcw?oc=5"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/f9cdd5e23dd4ce46876b0b20c4ca816037d8037c"
-        }
-      ],
-      "added_at": "2026-10-27T21:16:27+00:00",
-      "updated_at": "2026-10-31T01:15:24+00:00"
     },
     {
       "id": "832c90a535a1d08d",
