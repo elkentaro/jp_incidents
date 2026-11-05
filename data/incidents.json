@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-05T02:16:25+00:00",
-  "total": 827,
+  "updated_at": "2026-11-05T03:16:04+00:00",
+  "total": 830,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-04"
@@ -333,7 +333,7 @@
     },
     {
       "date": "2026-10-28",
-      "count": 48
+      "count": 49
     },
     {
       "date": "2026-10-29",
@@ -353,7 +353,7 @@
     },
     {
       "date": "2026-11-02",
-      "count": 36
+      "count": 37
     },
     {
       "date": "2026-11-03",
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-11-04",
-      "count": 33
+      "count": 34
     },
     {
       "date": "2026-11-05",
@@ -593,6 +593,47 @@
       "service_aliases": [],
       "added_at": "2026-11-04T13:16:52+00:00",
       "updated_at": "2026-11-04T15:16:11+00:00"
+    },
+    {
+      "id": "814579689134026b",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "福岡市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBEOXlzYjlVQVpadGpKdU95ZEx2N0YwaTJBU0NCTHVSVWlpMlhiRFR6NDBuU083NXJpSVJSYUxXcmZoNUxHelJFOC1OYVM3dFJaSE12Y2JR?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBEOXlzYjlVQVpadGpKdU95ZEx2N0YwaTJBU0NCTHVSVWlpMlhiRFR6NDBuU083NXJpSVJSYUxXcmZoNUxHelJFOC1OYVM3dFJaSE12Y2JR?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "福岡市 / Fukuoka",
+          "url": "https://www.city.fukuoka.lg.jp/shimin/kusei/myna_yoyaku_kojinjohorouei.html"
+        },
+        {
+          "name": "西日本新聞me",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBEOXlzYjlVQVpadGpKdU95ZEx2N0YwaTJBU0NCTHVSVWlpMlhiRFR6NDBuU083NXJpSVJSYUxXcmZoNUxHelJFOC1OYVM3dFJaSE12Y2JR?oc=5"
+        },
+        {
+          "name": "news.yahoo.co.jp",
+          "url": "https://news.yahoo.co.jp/articles/8a73fc4e2e411aedcf328a88b19b24f18f6bac1a"
+        }
+      ],
+      "affected_service": "マイナンバーカードのシステム",
+      "service_aliases": [],
+      "added_at": "2026-11-04T21:15:31+00:00",
+      "updated_at": "2026-11-05T03:16:04+00:00"
     },
     {
       "id": "9c6e4483b2d9de8c",
@@ -989,43 +1030,6 @@
       "updated_at": "2026-11-04T17:15:42+00:00"
     },
     {
-      "id": "814579689134026b",
-      "published_at": "2026-11-03T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "福岡市",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBEOXlzYjlVQVpadGpKdU95ZEx2N0YwaTJBU0NCTHVSVWlpMlhiRFR6NDBuU083NXJpSVJSYUxXcmZoNUxHelJFOC1OYVM3dFJaSE12Y2JR?oc=5",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBEOXlzYjlVQVpadGpKdU95ZEx2N0YwaTJBU0NCTHVSVWlpMlhiRFR6NDBuU083NXJpSVJSYUxXcmZoNUxHelJFOC1OYVM3dFJaSE12Y2JR?oc=5"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "西日本新聞me",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBEOXlzYjlVQVpadGpKdU95ZEx2N0YwaTJBU0NCTHVSVWlpMlhiRFR6NDBuU083NXJpSVJSYUxXcmZoNUxHelJFOC1OYVM3dFJaSE12Y2JR?oc=5"
-        },
-        {
-          "name": "news.yahoo.co.jp",
-          "url": "https://news.yahoo.co.jp/articles/8a73fc4e2e411aedcf328a88b19b24f18f6bac1a"
-        }
-      ],
-      "affected_service": "マイナンバーカードのシステム",
-      "service_aliases": [],
-      "added_at": "2026-11-04T21:15:31+00:00",
-      "updated_at": "2026-11-04T21:50:48+00:00"
-    },
-    {
       "id": "910104a73dd80f53",
       "published_at": "2026-11-03T15:00:00+00:00",
       "disclosed_at": null,
@@ -1271,6 +1275,39 @@
       ],
       "added_at": "2026-11-04T00:14:16+00:00",
       "updated_at": "2026-11-04T00:14:16+00:00"
+    },
+    {
+      "id": "2b35e6ad4e9ceea8",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "郡山市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 50000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/850f5c830aae299f097cf962896c57bc50db6730",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/850f5c830aae299f097cf962896c57bc50db6730"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/850f5c830aae299f097cf962896c57bc50db6730"
+        }
+      ],
+      "affected_service": "メール配信サービス",
+      "service_aliases": [],
+      "added_at": "2026-11-05T03:16:04+00:00",
+      "updated_at": "2026-11-05T03:16:04+00:00"
     },
     {
       "id": "3dc47788c92a0a1b",
@@ -2980,6 +3017,82 @@
       "updated_at": "2026-11-03T20:36:46+00:00"
     },
     {
+      "id": "6a1a313caf6aba02",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "福島市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 4700,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.kfb.co.jp/news/article/17023488",
+          "evidence_urls": [
+            "https://www.kfb.co.jp/news/article/17023488"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "KFB福島放送",
+          "url": "https://www.kfb.co.jp/news/article/17023488"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/a6e6be5b18ee9be8818ade9cf007134818b51bbf"
+        }
+      ],
+      "affected_service": "マイナンバーカード交付予約",
+      "service_aliases": [],
+      "added_at": "2026-11-04T15:16:11+00:00",
+      "updated_at": "2026-11-05T03:16:04+00:00"
+    },
+    {
+      "id": "c5286701125111b4",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": "2026-11-01T15:00:00+00:00",
+      "organization": "NTTPCコミュニケーションズ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 60929,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/nttpc_cuenote_fc_email_data_leak_60929_20261104/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/nttpc_cuenote_fc_email_data_leak_60929_20261104/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/nttpc_cuenote_fc_email_data_leak_60929_20261104/"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://www.nttpc.co.jp/press/info/2026/11/202611021600.html"
+        }
+      ],
+      "affected_service": "Cuenote FC",
+      "service_aliases": [],
+      "added_at": "2026-11-04T13:16:52+00:00",
+      "updated_at": "2026-11-05T03:16:04+00:00"
+    },
+    {
       "id": "3976a3e35b3d87f6",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
@@ -3150,6 +3263,39 @@
       "updated_at": "2026-11-04T09:16:15+00:00"
     },
     {
+      "id": "538a9c07939efeb0",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "都ホテルズ＆リゾーツ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 129153,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.miyakohotels.ne.jp/topic/information/238/",
+          "evidence_urls": [
+            "https://www.miyakohotels.ne.jp/topic/information/238/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.miyakohotels.ne.jp/topic/information/238/"
+        }
+      ],
+      "affected_service": "都プラス",
+      "service_aliases": [],
+      "added_at": "2026-11-05T03:16:04+00:00",
+      "updated_at": "2026-11-05T03:16:04+00:00"
+    },
+    {
       "id": "5d24de7057a2640a",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
@@ -3181,40 +3327,6 @@
       "service_aliases": [],
       "added_at": "2026-11-05T01:16:21+00:00",
       "updated_at": "2026-11-05T01:16:21+00:00"
-    },
-    {
-      "id": "6a1a313caf6aba02",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "福島市",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 4700,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.kfb.co.jp/news/article/17023488",
-          "evidence_urls": [
-            "https://www.kfb.co.jp/news/article/17023488"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "KFB福島放送",
-          "url": "https://www.kfb.co.jp/news/article/17023488"
-        }
-      ],
-      "affected_service": "マイナンバーカード交付予約",
-      "service_aliases": [],
-      "added_at": "2026-11-04T15:16:11+00:00",
-      "updated_at": "2026-11-04T15:16:11+00:00"
     },
     {
       "id": "778f4a05cc80a4bd",
@@ -3639,40 +3751,6 @@
       ],
       "added_at": "2026-11-05T01:16:21+00:00",
       "updated_at": "2026-11-05T01:16:21+00:00"
-    },
-    {
-      "id": "c5286701125111b4",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": "2026-11-01T15:00:00+00:00",
-      "organization": "NTTPCコミュニケーションズ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 60929,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "0a86ecb2b2d87e50",
-          "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/nttpc_cuenote_fc_email_data_leak_60929_20261104/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/nttpc_cuenote_fc_email_data_leak_60929_20261104/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/nttpc_cuenote_fc_email_data_leak_60929_20261104/"
-        }
-      ],
-      "affected_service": "Cuenote FC",
-      "service_aliases": [],
-      "added_at": "2026-11-04T13:16:52+00:00",
-      "updated_at": "2026-11-04T13:16:52+00:00"
     },
     {
       "id": "1337ad1619d32570",
@@ -7980,6 +8058,14 @@
           ]
         },
         {
+          "incident_id": "2b35e6ad4e9ceea8",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/850f5c830aae299f097cf962896c57bc50db6730",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/850f5c830aae299f097cf962896c57bc50db6730"
+          ]
+        },
+        {
           "incident_id": "3976a3e35b3d87f6",
           "relationship": "affects",
           "evidence_url": "https://www.sofmap.com/contents/?id=info&sid=261102b",
@@ -8017,6 +8103,14 @@
           "evidence_url": "https://www.coop-mie.jp/2026/11/03/mail_owabi/",
           "evidence_urls": [
             "https://www.coop-mie.jp/2026/11/03/mail_owabi/"
+          ]
+        },
+        {
+          "incident_id": "538a9c07939efeb0",
+          "relationship": "affects",
+          "evidence_url": "https://www.miyakohotels.ne.jp/topic/information/238/",
+          "evidence_urls": [
+            "https://www.miyakohotels.ne.jp/topic/information/238/"
           ]
         },
         {
@@ -8416,7 +8510,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-05T02:16:25+00:00"
+      "updated_at": "2026-11-05T03:16:04+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -9595,6 +9689,31 @@
       ],
       "added_at": "2026-11-02T19:15:40+00:00",
       "updated_at": "2026-11-02T19:15:40+00:00"
+    },
+    {
+      "id": "01254e0808af698e",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": "2026-11-01T15:00:00+00:00",
+      "organization": "株式会社サンステージ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/belluna-notis-sunstage-19853-customer-data-unauthorized-access/"
+        }
+      ],
+      "affected_service": "ベルーナノーティス",
+      "service_aliases": [],
+      "added_at": "2026-11-05T03:16:04+00:00",
+      "updated_at": "2026-11-05T03:16:04+00:00"
     },
     {
       "id": "7364b338d85ed5d1",
@@ -34567,12 +34686,16 @@
         {
           "name": "legalagent list",
           "url": "https://mamaworks.jp/files/notice_20261020.pdf"
+        },
+        {
+          "name": "legalagent list",
+          "url": "https://mamaworks.jp/files/notice_20261104.pdf"
         }
       ],
       "affected_service": "ママワークス",
       "service_aliases": [],
       "added_at": "2026-11-02T00:16:33+00:00",
-      "updated_at": "2026-11-03T04:15:41+00:00"
+      "updated_at": "2026-11-05T03:16:04+00:00"
     },
     {
       "id": "b8bee2a2c2418dca",
@@ -34842,7 +34965,7 @@
       ],
       "potential_records": 390000,
       "confidence": "high",
-      "confidence_score": 60,
+      "confidence_score": 75,
       "related": [
         {
           "incident_id": "1d31f267af87c931",
@@ -34857,10 +34980,14 @@
         {
           "name": "applynow.co.jp",
           "url": "https://applynow.co.jp/news/20260909"
+        },
+        {
+          "name": "legalagent list",
+          "url": "https://www.kichiri.co.jp/wp-content/uploads/2026/11/2611041111.pdf"
         }
       ],
       "added_at": "2026-10-21T00:07:38+00:00",
-      "updated_at": "2026-10-22T01:57:26+00:00"
+      "updated_at": "2026-11-05T03:16:04+00:00"
     },
     {
       "id": "31c76cc0c11d1aab",
