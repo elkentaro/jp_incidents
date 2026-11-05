@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-05T21:15:39+00:00",
+  "updated_at": "2026-11-05T22:15:12+00:00",
   "total": 885,
   "date_range": {
     "start": "2025-10-16",
@@ -638,6 +638,45 @@
       "updated_at": "2026-11-05T15:15:51+00:00"
     },
     {
+      "id": "8720f3e6c09263ff",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "富士ソフト株式会社",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "02383edd7ab2669c",
+          "relationship": "affects",
+          "evidence_url": "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001304.html",
+          "evidence_urls": [
+            "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001304.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "総務省 / Ministry of Internal Affairs and Communications",
+          "url": "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001304.html"
+        },
+        {
+          "name": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2154132.html"
+        },
+        {
+          "name": "ビジネス+IT",
+          "url": "https://www.sbbit.jp/article/cont1/188127"
+        }
+      ],
+      "added_at": "2026-11-05T11:16:39+00:00",
+      "updated_at": "2026-11-05T22:15:11+00:00"
+    },
+    {
       "id": "224c7b4f2c222ae9",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": null,
@@ -730,41 +769,6 @@
       "service_aliases": [],
       "added_at": "2026-11-05T21:15:39+00:00",
       "updated_at": "2026-11-05T21:15:39+00:00"
-    },
-    {
-      "id": "8720f3e6c09263ff",
-      "published_at": "2026-11-04T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "富士ソフト株式会社",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [
-        {
-          "incident_id": "02383edd7ab2669c",
-          "relationship": "affects",
-          "evidence_url": "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001304.html",
-          "evidence_urls": [
-            "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001304.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "総務省 / Ministry of Internal Affairs and Communications",
-          "url": "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001304.html"
-        },
-        {
-          "name": "INTERNET Watch",
-          "url": "https://internet.watch.impress.co.jp/docs/news/2154132.html"
-        }
-      ],
-      "added_at": "2026-11-05T11:16:39+00:00",
-      "updated_at": "2026-11-05T19:15:25+00:00"
     },
     {
       "id": "ddc337c648916610",
@@ -2102,6 +2106,83 @@
       "updated_at": "2026-11-05T19:15:25+00:00"
     },
     {
+      "id": "9c6e4483b2d9de8c",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "バンダイナムコエクスペリエンス",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 95,
+      "related": [
+        {
+          "incident_id": "1337ad1619d32570",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.itmedia.co.jp/news/article/2611/04/2000002870/",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903",
+            "https://www.itmedia.co.jp/news/article/2611/04/2000002870/"
+          ]
+        },
+        {
+          "incident_id": "bab27c57bcae574b",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002870/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/3e210a8b98f1647c12ddac3b2f8cd249f6c98c54"
+        },
+        {
+          "name": "ビジネス+IT",
+          "url": "https://www.sbbit.jp/article/cont1/188058"
+        },
+        {
+          "name": "インサイド",
+          "url": "https://www.inside-games.jp/article/2026/11/05/190416.html"
+        }
+      ],
+      "affected_service": "太鼓の達人 / マリオカート アーケードグランプリ デラックス / 機動戦士ガンダム エクストリームバーサス2 インフィニットブースト",
+      "service_aliases": [],
+      "affected_services": [
+        "太鼓の達人",
+        "マリオカート アーケードグランプリ デラックス",
+        "機動戦士ガンダム エクストリームバーサス2 インフィニットブースト"
+      ],
+      "service_details": [
+        {
+          "name": "太鼓の達人",
+          "aliases": []
+        },
+        {
+          "name": "マリオカート アーケードグランプリ デラックス",
+          "aliases": []
+        },
+        {
+          "name": "機動戦士ガンダム エクストリームバーサス2 インフィニットブースト",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-04T05:16:39+00:00",
+      "updated_at": "2026-11-05T22:15:11+00:00"
+    },
+    {
       "id": "a4887886b298b562",
       "published_at": "2026-11-03T15:00:00+00:00",
       "disclosed_at": null,
@@ -2330,79 +2411,6 @@
       "service_aliases": [],
       "added_at": "2026-11-04T21:15:31+00:00",
       "updated_at": "2026-11-05T03:16:04+00:00"
-    },
-    {
-      "id": "9c6e4483b2d9de8c",
-      "published_at": "2026-11-03T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "バンダイナムコエクスペリエンス",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 80,
-      "related": [
-        {
-          "incident_id": "1337ad1619d32570",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.itmedia.co.jp/news/article/2611/04/2000002870/",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903",
-            "https://www.itmedia.co.jp/news/article/2611/04/2000002870/"
-          ]
-        },
-        {
-          "incident_id": "bab27c57bcae574b",
-          "relationship": "same_organization",
-          "evidence_url": "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903"
-        },
-        {
-          "name": "ITmedia",
-          "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002870/"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/3e210a8b98f1647c12ddac3b2f8cd249f6c98c54"
-        },
-        {
-          "name": "ビジネス+IT",
-          "url": "https://www.sbbit.jp/article/cont1/188058"
-        }
-      ],
-      "affected_service": "太鼓の達人 / マリオカート アーケードグランプリ デラックス / 機動戦士ガンダム エクストリームバーサス2 インフィニットブースト",
-      "service_aliases": [],
-      "affected_services": [
-        "太鼓の達人",
-        "マリオカート アーケードグランプリ デラックス",
-        "機動戦士ガンダム エクストリームバーサス2 インフィニットブースト"
-      ],
-      "service_details": [
-        {
-          "name": "太鼓の達人",
-          "aliases": []
-        },
-        {
-          "name": "マリオカート アーケードグランプリ デラックス",
-          "aliases": []
-        },
-        {
-          "name": "機動戦士ガンダム エクストリームバーサス2 インフィニットブースト",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-04T05:16:39+00:00",
-      "updated_at": "2026-11-04T16:15:45+00:00"
     },
     {
       "id": "305d3b04facc7f7c",
