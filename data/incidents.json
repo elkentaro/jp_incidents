@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-05T11:16:39+00:00",
+  "updated_at": "2026-11-05T12:16:48+00:00",
   "total": 860,
   "date_range": {
     "start": "2025-10-16",
@@ -509,12 +509,16 @@
         {
           "name": "TBS NEWS DIG",
           "url": "https://newsdig.tbs.co.jp/articles/mbs/3064754?display=1"
+        },
+        {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp/n/ytv/category/economy/yt06ffb6b366864dd785debcc9abd8d498"
         }
       ],
       "affected_service": "メール配信サービス",
       "service_aliases": [],
       "added_at": "2026-11-05T08:16:07+00:00",
-      "updated_at": "2026-11-05T11:16:39+00:00"
+      "updated_at": "2026-11-05T12:16:48+00:00"
     },
     {
       "id": "024b3401d64a391b",
@@ -1994,6 +1998,51 @@
       "updated_at": "2026-11-04T09:16:15+00:00"
     },
     {
+      "id": "c04caacb5a38eecf",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "楽天証券",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 2109,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "62e7efc40d4f6d44",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/27d61e68b7727854a9c8eea8cca3d3410bb97c28",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/27d61e68b7727854a9c8eea8cca3d3410bb97c28"
+          ]
+        },
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/27d61e68b7727854a9c8eea8cca3d3410bb97c28",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/27d61e68b7727854a9c8eea8cca3d3410bb97c28"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/27d61e68b7727854a9c8eea8cca3d3410bb97c28"
+        },
+        {
+          "name": "CNET Japan",
+          "url": "https://japan.cnet.com/article/35254434/"
+        }
+      ],
+      "affected_service": "経済指標アラートメール",
+      "service_aliases": [],
+      "added_at": "2026-11-05T09:15:53+00:00",
+      "updated_at": "2026-11-05T12:16:48+00:00"
+    },
+    {
       "id": "4f58b474833ecee9",
       "published_at": "2026-11-03T15:00:00+00:00",
       "disclosed_at": "2026-11-03T15:00:00+00:00",
@@ -2386,47 +2435,6 @@
       "service_aliases": [],
       "added_at": "2026-11-04T23:15:16+00:00",
       "updated_at": "2026-11-04T23:15:16+00:00"
-    },
-    {
-      "id": "c04caacb5a38eecf",
-      "published_at": "2026-11-03T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "楽天証券",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 2109,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "62e7efc40d4f6d44",
-          "relationship": "same_organization",
-          "evidence_url": "https://news.yahoo.co.jp/articles/27d61e68b7727854a9c8eea8cca3d3410bb97c28",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/27d61e68b7727854a9c8eea8cca3d3410bb97c28"
-          ]
-        },
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/27d61e68b7727854a9c8eea8cca3d3410bb97c28",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/27d61e68b7727854a9c8eea8cca3d3410bb97c28"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/27d61e68b7727854a9c8eea8cca3d3410bb97c28"
-        }
-      ],
-      "affected_service": "経済指標アラートメール",
-      "service_aliases": [],
-      "added_at": "2026-11-05T09:15:53+00:00",
-      "updated_at": "2026-11-05T09:15:53+00:00"
     },
     {
       "id": "ce9458d4e66bdde4",
@@ -10404,6 +10412,35 @@
       "updated_at": "2026-11-05T08:16:07+00:00"
     },
     {
+      "id": "b1657fd76d2069cb",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "プレナス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 7000000,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/plenus_hottomotto_newsletter_data_leak_20261104/"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC054QF0V01C26A1000000/"
+        }
+      ],
+      "affected_service": "ほっともっとのメールマガジン配信サービス",
+      "service_aliases": [],
+      "added_at": "2026-11-05T07:17:31+00:00",
+      "updated_at": "2026-11-05T12:16:48+00:00"
+    },
+    {
       "id": "decf799bcee862b6",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": null,
@@ -11202,31 +11239,6 @@
       "service_aliases": [],
       "added_at": "2026-10-30T01:13:09+00:00",
       "updated_at": "2026-10-30T01:13:09+00:00"
-    },
-    {
-      "id": "b1657fd76d2069cb",
-      "published_at": "2026-10-27T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "プレナス",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 7000000,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/plenus_hottomotto_newsletter_data_leak_20261104/"
-        }
-      ],
-      "affected_service": "ほっともっとのメールマガジン配信サービス",
-      "service_aliases": [],
-      "added_at": "2026-11-05T07:17:31+00:00",
-      "updated_at": "2026-11-05T07:17:31+00:00"
     },
     {
       "id": "2070de02126b55ea",
@@ -33514,7 +33526,7 @@
       ],
       "potential_records": 27667,
       "confidence": "high",
-      "confidence_score": 90,
+      "confidence_score": 100,
       "related": [],
       "sources": [
         {
@@ -33532,12 +33544,16 @@
         {
           "name": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2026/10/16/56482.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/fcaf82b6d024d4080cb2c6dee0fbb2d0dad6ded5"
         }
       ],
       "affected_system": "県民安全・安心メール等配信システム",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T09:06:44+00:00",
-      "updated_at": "2026-10-26T00:08:36+00:00"
+      "updated_at": "2026-11-05T12:16:48+00:00"
     },
     {
       "id": "1751138a6213f568",
