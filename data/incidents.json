@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-04T23:15:16+00:00",
-  "total": 813,
+  "updated_at": "2026-11-05T00:15:44+00:00",
+  "total": 814,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-04"
@@ -325,7 +325,7 @@
     },
     {
       "date": "2026-10-26",
-      "count": 38
+      "count": 39
     },
     {
       "date": "2026-10-27",
@@ -4188,6 +4188,55 @@
       "updated_at": "2026-11-02T13:26:00+00:00"
     },
     {
+      "id": "02bcae1c03c3df84",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "GMOペイメントゲートウェイ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 69,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "f1d14e7cd283aedb",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/cd31bcf3d647bafae077a2a2374f8abbaa4a96c1",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/cd31bcf3d647bafae077a2a2374f8abbaa4a96c1",
+            "https://www.asahi.com/articles/ASVC23WNKVC2ULFA01SM.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVC23WNKVC2ULFA01SM.html"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC029TX0S6A101C2000000/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/cd31bcf3d647bafae077a2a2374f8abbaa4a96c1"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/gmo-payment-gateway-lifecard-vpreca-69/"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/05/56680.html"
+        }
+      ],
+      "added_at": "2026-11-02T19:15:40+00:00",
+      "updated_at": "2026-11-05T00:15:44+00:00"
+    },
+    {
       "id": "1eff65d7da989b18",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": null,
@@ -4794,51 +4843,6 @@
       "service_aliases": [],
       "added_at": "2026-11-01T21:15:27+00:00",
       "updated_at": "2026-11-02T22:16:00+00:00"
-    },
-    {
-      "id": "02bcae1c03c3df84",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "GMOペイメントゲートウェイ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 69,
-      "confidence": "high",
-      "confidence_score": 95,
-      "related": [
-        {
-          "incident_id": "f1d14e7cd283aedb",
-          "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/cd31bcf3d647bafae077a2a2374f8abbaa4a96c1",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/cd31bcf3d647bafae077a2a2374f8abbaa4a96c1",
-            "https://www.asahi.com/articles/ASVC23WNKVC2ULFA01SM.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "朝日新聞",
-          "url": "https://www.asahi.com/articles/ASVC23WNKVC2ULFA01SM.html"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUC029TX0S6A101C2000000/"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/cd31bcf3d647bafae077a2a2374f8abbaa4a96c1"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/gmo-payment-gateway-lifecard-vpreca-69/"
-        }
-      ],
-      "added_at": "2026-11-02T19:15:40+00:00",
-      "updated_at": "2026-11-04T01:16:30+00:00"
     },
     {
       "id": "81ace1ca432c9aa9",
@@ -6821,10 +6825,14 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/117847"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/05/56678.html"
         }
       ],
       "added_at": "2026-10-28T11:16:00+00:00",
-      "updated_at": "2026-10-29T02:16:03+00:00"
+      "updated_at": "2026-11-05T00:15:44+00:00"
     },
     {
       "id": "2169c56f9058ef97",
@@ -7270,10 +7278,14 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/117847"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/05/56678.html"
         }
       ],
       "added_at": "2026-10-28T11:16:00+00:00",
-      "updated_at": "2026-10-29T02:16:03+00:00"
+      "updated_at": "2026-11-05T00:15:44+00:00"
     },
     {
       "id": "9fa62f7bc43145a4",
@@ -7458,10 +7470,14 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/117847"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/05/56678.html"
         }
       ],
       "added_at": "2026-10-28T11:16:00+00:00",
-      "updated_at": "2026-10-29T02:16:03+00:00"
+      "updated_at": "2026-11-05T00:15:44+00:00"
     },
     {
       "id": "e0bf7f8e71d6ba85",
@@ -7979,6 +7995,78 @@
       "updated_at": "2026-10-29T06:16:15+00:00"
     },
     {
+      "id": "44e7187878fd515f",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": "2026-10-27T15:00:00+00:00",
+      "organization": "株式会社コックス",
+      "incident_type": "ransomware",
+      "incident_categories": [
+        "ransomware",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 95,
+      "related": [
+        {
+          "incident_id": "00708cad4ca58f78",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
+            "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
+          ]
+        },
+        {
+          "incident_id": "19b3132af335af7b",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
+            "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
+          ]
+        },
+        {
+          "incident_id": "9d4780283d6bf8d9",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
+            "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
+          ]
+        },
+        {
+          "incident_id": "d54f4e82616816d3",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
+            "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
+        },
+        {
+          "name": "株式会社アクト",
+          "url": "https://act1.co.jp/2026-10-28-05/"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC285ZR0Y6A021C2000000/"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/05/56678.html"
+        }
+      ],
+      "added_at": "2026-10-28T11:16:00+00:00",
+      "updated_at": "2026-11-05T00:15:44+00:00"
+    },
+    {
       "id": "c41156f61dbf6bc1",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": "2026-11-03T15:00:00+00:00",
@@ -8176,74 +8264,6 @@
       ],
       "added_at": "2026-10-30T10:15:57+00:00",
       "updated_at": "2026-11-01T06:35:58+00:00"
-    },
-    {
-      "id": "44e7187878fd515f",
-      "published_at": "2026-10-27T15:00:00+00:00",
-      "disclosed_at": "2026-10-27T15:00:00+00:00",
-      "organization": "株式会社コックス",
-      "incident_type": "ransomware",
-      "incident_categories": [
-        "ransomware",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 80,
-      "related": [
-        {
-          "incident_id": "00708cad4ca58f78",
-          "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
-            "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
-          ]
-        },
-        {
-          "incident_id": "19b3132af335af7b",
-          "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
-            "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
-          ]
-        },
-        {
-          "incident_id": "9d4780283d6bf8d9",
-          "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
-            "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
-          ]
-        },
-        {
-          "incident_id": "d54f4e82616816d3",
-          "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/8cdfa52994d8c8f48e14ef0889b75294f0673bc9",
-            "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/donki-watch-repair-cox-ransomware-customer-data-20261028/"
-        },
-        {
-          "name": "株式会社アクト",
-          "url": "https://act1.co.jp/2026-10-28-05/"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUC285ZR0Y6A021C2000000/"
-        }
-      ],
-      "added_at": "2026-10-28T11:16:00+00:00",
-      "updated_at": "2026-10-28T22:15:41+00:00"
     },
     {
       "id": "14eaf28a942cd643",
@@ -11447,6 +11467,42 @@
       "updated_at": "2026-10-28T01:15:55+00:00"
     },
     {
+      "id": "697b58a7f0dc43fe",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": "2026-10-25T15:00:00+00:00",
+      "organization": "株式会社ミラボ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "349735446211a601",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.taito.lg.jp/kenkohukusi/shogai/osirase/0000000000.html",
+          "evidence_urls": [
+            "https://www.city.taito.lg.jp/kenkohukusi/shogai/osirase/0000000000.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "www.city.taito.lg.jp",
+          "url": "https://www.city.taito.lg.jp/kenkohukusi/shogai/osirase/0000000000.html"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/05/56676.html"
+        }
+      ],
+      "added_at": "2026-10-26T13:16:27+00:00",
+      "updated_at": "2026-11-05T00:15:44+00:00"
+    },
+    {
       "id": "b57531b27eff42d1",
       "published_at": "2026-10-25T15:00:00+00:00",
       "disclosed_at": null,
@@ -11773,38 +11829,6 @@
       "updated_at": "2026-10-30T10:15:57+00:00"
     },
     {
-      "id": "697b58a7f0dc43fe",
-      "published_at": "2026-10-25T15:00:00+00:00",
-      "disclosed_at": "2026-10-25T15:00:00+00:00",
-      "organization": "株式会社ミラボ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "349735446211a601",
-          "relationship": "affects",
-          "evidence_url": "https://www.city.taito.lg.jp/kenkohukusi/shogai/osirase/0000000000.html",
-          "evidence_urls": [
-            "https://www.city.taito.lg.jp/kenkohukusi/shogai/osirase/0000000000.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "www.city.taito.lg.jp",
-          "url": "https://www.city.taito.lg.jp/kenkohukusi/shogai/osirase/0000000000.html"
-        }
-      ],
-      "added_at": "2026-10-26T13:16:27+00:00",
-      "updated_at": "2026-10-26T13:16:27+00:00"
-    },
-    {
       "id": "ce585c6dafc8e785",
       "published_at": "2026-10-25T15:00:00+00:00",
       "disclosed_at": null,
@@ -11859,6 +11883,29 @@
       ],
       "added_at": "2026-10-27T01:15:59+00:00",
       "updated_at": "2026-10-27T01:15:59+00:00"
+    },
+    {
+      "id": "1321ef3b6b29e940",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": "2026-10-25T15:00:00+00:00",
+      "organization": "日本郵政グループ労働組合",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 40000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/05/56677.html"
+        }
+      ],
+      "added_at": "2026-11-05T00:15:44+00:00",
+      "updated_at": "2026-11-05T00:15:44+00:00"
     },
     {
       "id": "15df050b8f084cda",
@@ -12884,6 +12931,10 @@
           "url": "https://ssl4.eir-parts.net/doc/8153/tdnet/2898082/00.pdf"
         },
         {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/05/56672.html"
+        },
+        {
           "name": "TBS NEWS DIG",
           "url": "https://newsdig.tbs.co.jp/articles/-/3035086"
         },
@@ -12907,7 +12958,7 @@
       "affected_service": "モスカード",
       "service_aliases": [],
       "added_at": "2026-10-24T20:15:24+00:00",
-      "updated_at": "2026-10-26T09:16:19+00:00"
+      "updated_at": "2026-11-05T00:15:44+00:00"
     },
     {
       "id": "ff420be6e3ecc8ab",
@@ -13327,6 +13378,52 @@
       "service_aliases": [],
       "added_at": "2026-10-23T08:16:11+00:00",
       "updated_at": "2026-10-25T05:15:56+00:00"
+    },
+    {
+      "id": "aa9bc3fcfc85d71d",
+      "published_at": "2026-10-22T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社ソニックムーブ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "3cf70001eb2ecd04",
+          "relationship": "affects",
+          "evidence_url": "https://www.coffeestyleucc.co.jp/news202610/",
+          "evidence_urls": [
+            "https://www.coffeestyleucc.co.jp/news202610/"
+          ]
+        },
+        {
+          "incident_id": "d028329a3ac53751",
+          "relationship": "affects",
+          "evidence_url": "https://www.ucc.co.jp/press/20261102.html",
+          "evidence_urls": [
+            "https://www.ucc.co.jp/press/20261102.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Howl.Link",
+          "url": "https://sonicmoov.com/news/xr5qdn-cnfsn"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/05/56673.html"
+        }
+      ],
+      "affected_service": "COMSBI エンタープライズ基盤",
+      "service_aliases": [],
+      "added_at": "2026-10-27T07:15:28+00:00",
+      "updated_at": "2026-11-05T00:15:44+00:00"
     },
     {
       "id": "af7b771bb23be504",
@@ -14040,48 +14137,6 @@
       ],
       "added_at": "2026-10-23T03:15:49+00:00",
       "updated_at": "2026-10-30T10:15:57+00:00"
-    },
-    {
-      "id": "aa9bc3fcfc85d71d",
-      "published_at": "2026-10-22T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "株式会社ソニックムーブ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "3cf70001eb2ecd04",
-          "relationship": "affects",
-          "evidence_url": "https://www.coffeestyleucc.co.jp/news202610/",
-          "evidence_urls": [
-            "https://www.coffeestyleucc.co.jp/news202610/"
-          ]
-        },
-        {
-          "incident_id": "d028329a3ac53751",
-          "relationship": "affects",
-          "evidence_url": "https://www.ucc.co.jp/press/20261102.html",
-          "evidence_urls": [
-            "https://www.ucc.co.jp/press/20261102.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Howl.Link",
-          "url": "https://sonicmoov.com/news/xr5qdn-cnfsn"
-        }
-      ],
-      "affected_service": "COMSBI エンタープライズ基盤",
-      "service_aliases": [],
-      "added_at": "2026-10-27T07:15:28+00:00",
-      "updated_at": "2026-11-04T06:13:31+00:00"
     },
     {
       "id": "afafc315a013764c",
