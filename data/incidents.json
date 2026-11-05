@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-05T05:15:40+00:00",
-  "total": 835,
+  "updated_at": "2026-11-05T06:16:23+00:00",
+  "total": 836,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-05"
@@ -365,10 +365,60 @@
     },
     {
       "date": "2026-11-05",
-      "count": 5
+      "count": 6
     }
   ],
   "incidents": [
+    {
+      "id": "4e61125aed51dbcb",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "NTTドコモ",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 95,
+      "related": [],
+      "sources": [
+        {
+          "name": "テレ朝NEWS",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE83NmlNT2lnS3hPb19GYXFwQ0ZyVmlWRS1SWkE3dTMzZU9DeHZpakx3SXlZa21QVmxBLWRnMGdGdWdDS2ZCNG8wQXgzeFZJUF9PR19NZkhnZzJuUXMyX0s3OHdSbFBzdW03MTFsbkhhdzQ4Zw?oc=5"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC052N30V01C26A1000000/"
+        },
+        {
+          "name": "テレ朝NEWS",
+          "url": "https://news.tv-asahi.co.jp/news_economy/articles/000545491.html"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/docomo-online-shop-my-docomo-suspected-unauthorized-access-maintenance/"
+        }
+      ],
+      "affected_service": "ドコモオンラインショップ / my docomo",
+      "service_aliases": [],
+      "affected_services": [
+        "ドコモオンラインショップ",
+        "my docomo"
+      ],
+      "service_details": [
+        {
+          "name": "ドコモオンラインショップ",
+          "aliases": []
+        },
+        {
+          "name": "my docomo",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-05T04:16:40+00:00",
+      "updated_at": "2026-11-05T06:16:23+00:00"
+    },
     {
       "id": "024b3401d64a391b",
       "published_at": "2026-11-04T15:00:00+00:00",
@@ -403,48 +453,6 @@
       ],
       "affected_service": "スマート申請システム",
       "service_aliases": [],
-      "added_at": "2026-11-05T04:16:40+00:00",
-      "updated_at": "2026-11-05T05:15:40+00:00"
-    },
-    {
-      "id": "4e61125aed51dbcb",
-      "published_at": "2026-11-04T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "NTTドコモ",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [],
-      "sources": [
-        {
-          "name": "テレ朝NEWS",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE83NmlNT2lnS3hPb19GYXFwQ0ZyVmlWRS1SWkE3dTMzZU9DeHZpakx3SXlZa21QVmxBLWRnMGdGdWdDS2ZCNG8wQXgzeFZJUF9PR19NZkhnZzJuUXMyX0s3OHdSbFBzdW03MTFsbkhhdzQ4Zw?oc=5"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUC052N30V01C26A1000000/"
-        }
-      ],
-      "affected_service": "ドコモオンラインショップ / my docomo",
-      "service_aliases": [],
-      "affected_services": [
-        "ドコモオンラインショップ",
-        "my docomo"
-      ],
-      "service_details": [
-        {
-          "name": "ドコモオンラインショップ",
-          "aliases": []
-        },
-        {
-          "name": "my docomo",
-          "aliases": []
-        }
-      ],
       "added_at": "2026-11-05T04:16:40+00:00",
       "updated_at": "2026-11-05T05:15:40+00:00"
     },
@@ -560,6 +568,44 @@
       ],
       "added_at": "2026-11-05T04:16:40+00:00",
       "updated_at": "2026-11-05T04:16:40+00:00"
+    },
+    {
+      "id": "74f0b0ed8eb3946e",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "NTTドコモ",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/444f21d5c481e67833664fee2c7c24e83673af97"
+        }
+      ],
+      "affected_service": "ドコモオンラインショップ / My docomo",
+      "service_aliases": [],
+      "affected_services": [
+        "ドコモオンラインショップ",
+        "My docomo"
+      ],
+      "service_details": [
+        {
+          "name": "ドコモオンラインショップ",
+          "aliases": []
+        },
+        {
+          "name": "My docomo",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-05T06:16:23+00:00",
+      "updated_at": "2026-11-05T06:16:23+00:00"
     },
     {
       "id": "ae87ad473c1decd3",
@@ -1740,7 +1786,7 @@
       ],
       "potential_records": 7517087,
       "confidence": "medium",
-      "confidence_score": 30,
+      "confidence_score": 45,
       "related": [
         {
           "incident_id": "e0bf7f8e71d6ba85",
@@ -1755,12 +1801,16 @@
         {
           "name": "satimo list",
           "url": "https://www.mos.co.jp/company/pr_pdf/pr_261104_2.pdf"
+        },
+        {
+          "name": "流通ニュース",
+          "url": "https://www.ryutsuu.biz/it/s110511.html"
         }
       ],
       "affected_service": "モス WEB 会員",
       "service_aliases": [],
       "added_at": "2026-11-05T01:16:21+00:00",
-      "updated_at": "2026-11-05T01:16:21+00:00"
+      "updated_at": "2026-11-05T06:16:23+00:00"
     },
     {
       "id": "0dad8d48c2bd0181",
