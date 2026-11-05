@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-05T09:15:53+00:00",
+  "updated_at": "2026-11-05T10:15:40+00:00",
   "total": 854,
   "date_range": {
     "start": "2025-10-16",
@@ -512,6 +512,35 @@
       "updated_at": "2026-11-05T05:15:40+00:00"
     },
     {
+      "id": "543647eb8eb3b259",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "損保ジャパン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 65000,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6abdf2a78cb38059de1465293daace16cc3990b1"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUB053QJ0V01C26A1000000/"
+        }
+      ],
+      "affected_service": "自動車保険の問い合わせや受付管理",
+      "service_aliases": [],
+      "added_at": "2026-11-05T07:17:31+00:00",
+      "updated_at": "2026-11-05T10:15:40+00:00"
+    },
+    {
       "id": "74f0b0ed8eb3946e",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": null,
@@ -822,31 +851,6 @@
       ],
       "added_at": "2026-11-05T04:16:40+00:00",
       "updated_at": "2026-11-05T04:16:40+00:00"
-    },
-    {
-      "id": "543647eb8eb3b259",
-      "published_at": "2026-11-04T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "損保ジャパン",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 65000,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/6abdf2a78cb38059de1465293daace16cc3990b1"
-        }
-      ],
-      "affected_service": "自動車保険の問い合わせや受付管理",
-      "service_aliases": [],
-      "added_at": "2026-11-05T07:17:31+00:00",
-      "updated_at": "2026-11-05T07:17:31+00:00"
     },
     {
       "id": "82453d9671204d4b",
