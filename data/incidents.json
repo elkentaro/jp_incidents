@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-05T07:17:31+00:00",
-  "total": 844,
+  "updated_at": "2026-11-05T08:16:08+00:00",
+  "total": 850,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-05"
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-11-05",
-      "count": 11
+      "count": 17
     }
   ],
   "incidents": [
@@ -408,11 +408,12 @@
           "url": "https://news.yahoo.co.jp/articles/6981a35cc79350921e681e3114e85e79eece5dab"
         }
       ],
-      "affected_service": "ドコモオンラインショップ / my docomo",
+      "affected_service": "ドコモオンラインショップ / my docomo / オンラインショップ",
       "service_aliases": [],
       "affected_services": [
         "ドコモオンラインショップ",
-        "my docomo"
+        "my docomo",
+        "オンラインショップ"
       ],
       "service_details": [
         {
@@ -422,10 +423,14 @@
         {
           "name": "my docomo",
           "aliases": []
+        },
+        {
+          "name": "オンラインショップ",
+          "aliases": []
         }
       ],
       "added_at": "2026-11-05T04:16:40+00:00",
-      "updated_at": "2026-11-05T07:17:31+00:00"
+      "updated_at": "2026-11-05T08:16:07+00:00"
     },
     {
       "id": "024b3401d64a391b",
@@ -772,6 +777,97 @@
       "updated_at": "2026-11-05T06:16:23+00:00"
     },
     {
+      "id": "82453d9671204d4b",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "三井不動産",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 133323,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/9e1c8c7bc8f9831315dc69730da58835ff2d35ed",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/9e1c8c7bc8f9831315dc69730da58835ff2d35ed"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/9e1c8c7bc8f9831315dc69730da58835ff2d35ed"
+        }
+      ],
+      "affected_service": "メールマガジン「&BIZ」",
+      "service_aliases": [],
+      "added_at": "2026-11-05T08:16:07+00:00",
+      "updated_at": "2026-11-05T08:16:07+00:00"
+    },
+    {
+      "id": "89daed31e3dba05b",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "Fanplus",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/4dcb753a85642355a838a6c3c59cef2b3a7da5a1?source=rss",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/4dcb753a85642355a838a6c3c59cef2b3a7da5a1?source=rss"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/4dcb753a85642355a838a6c3c59cef2b3a7da5a1?source=rss"
+        }
+      ],
+      "affected_service": "アララメッセージ",
+      "service_aliases": [],
+      "added_at": "2026-11-05T08:16:07+00:00",
+      "updated_at": "2026-11-05T08:16:07+00:00"
+    },
+    {
+      "id": "a8b6d5a8016e0283",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "SMBCコンシューマーファイナンス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 320118,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVC523XJVC5ULFA01DM.html"
+        }
+      ],
+      "added_at": "2026-11-05T08:16:07+00:00",
+      "updated_at": "2026-11-05T08:16:07+00:00"
+    },
+    {
       "id": "b8347963d4368d00",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": null,
@@ -795,6 +891,107 @@
       "service_aliases": [],
       "added_at": "2026-11-05T07:17:31+00:00",
       "updated_at": "2026-11-05T07:17:31+00:00"
+    },
+    {
+      "id": "cd71aceb5c7b95e3",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "NTTタウンページ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 142126,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.yomiuri.co.jp/economy/20261105-GYT1T00313/",
+          "evidence_urls": [
+            "https://www.yomiuri.co.jp/economy/20261105-GYT1T00313/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/economy/20261105-GYT1T00313/"
+        }
+      ],
+      "affected_service": "メールマガジン",
+      "service_aliases": [],
+      "added_at": "2026-11-05T08:16:07+00:00",
+      "updated_at": "2026-11-05T08:16:07+00:00"
+    },
+    {
+      "id": "ce7d32fd4e6c1d66",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "三井住友銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 227000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/-/3064287?display=1",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/-/3064287?display=1"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3064287?display=1"
+        }
+      ],
+      "affected_service": "メール配信サービス",
+      "service_aliases": [],
+      "added_at": "2026-11-05T08:16:07+00:00",
+      "updated_at": "2026-11-05T08:16:07+00:00"
+    },
+    {
+      "id": "ddc337c648916610",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "三井住友銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 227000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/e25d5ad4671b446bafefe4d7db8bbfd80c301be8",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/e25d5ad4671b446bafefe4d7db8bbfd80c301be8"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/e25d5ad4671b446bafefe4d7db8bbfd80c301be8"
+        }
+      ],
+      "affected_service": "メール配信",
+      "service_aliases": [],
+      "added_at": "2026-11-05T08:16:07+00:00",
+      "updated_at": "2026-11-05T08:16:07+00:00"
     },
     {
       "id": "ae87ad473c1decd3",
@@ -5637,6 +5834,43 @@
       "updated_at": "2026-10-31T00:15:53+00:00"
     },
     {
+      "id": "8621ca175cd6ffbc",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ソニー銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://sonybank.jp/info/2026/1030-01.html"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUB033KO0T01C26A1000000/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6eac064227b637dfd3e1b8ef8d5923298c1c8095"
+        },
+        {
+          "name": "CoinPost",
+          "url": "https://coinpost.jp/?p=746467"
+        }
+      ],
+      "affected_service": "デジタル証券",
+      "service_aliases": [],
+      "added_at": "2026-11-02T01:16:01+00:00",
+      "updated_at": "2026-11-05T08:16:07+00:00"
+    },
+    {
       "id": "a9fd6c70338f6c75",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": null,
@@ -5809,39 +6043,6 @@
       "service_aliases": [],
       "added_at": "2026-10-30T02:15:42+00:00",
       "updated_at": "2026-11-01T20:15:18+00:00"
-    },
-    {
-      "id": "8621ca175cd6ffbc",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ソニー銀行",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://sonybank.jp/info/2026/1030-01.html"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUB033KO0T01C26A1000000/"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/6eac064227b637dfd3e1b8ef8d5923298c1c8095"
-        }
-      ],
-      "affected_service": "デジタル証券",
-      "service_aliases": [],
-      "added_at": "2026-11-02T01:16:01+00:00",
-      "updated_at": "2026-11-04T13:16:52+00:00"
     },
     {
       "id": "e731d81859c8eab0",
@@ -8793,10 +8994,19 @@
           ]
         },
         {
+          "incident_id": "82453d9671204d4b",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/9e1c8c7bc8f9831315dc69730da58835ff2d35ed",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/9e1c8c7bc8f9831315dc69730da58835ff2d35ed"
+          ]
+        },
+        {
           "incident_id": "8359871b1e7e813f",
           "relationship": "affects",
-          "evidence_url": "https://workman.jp/pdf/oshirase_20261104.pdf",
+          "evidence_url": "https://news.yahoo.co.jp/articles/f999aa7507d93ac2670ccaa3be3591eb6cb14cba",
           "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/f999aa7507d93ac2670ccaa3be3591eb6cb14cba",
             "https://workman.jp/pdf/oshirase_20261104.pdf"
           ]
         },
@@ -8814,6 +9024,14 @@
           "evidence_url": "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1",
           "evidence_urls": [
             "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1"
+          ]
+        },
+        {
+          "incident_id": "89daed31e3dba05b",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/4dcb753a85642355a838a6c3c59cef2b3a7da5a1?source=rss",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/4dcb753a85642355a838a6c3c59cef2b3a7da5a1?source=rss"
           ]
         },
         {
@@ -8956,6 +9174,22 @@
           ]
         },
         {
+          "incident_id": "cd71aceb5c7b95e3",
+          "relationship": "affects",
+          "evidence_url": "https://www.yomiuri.co.jp/economy/20261105-GYT1T00313/",
+          "evidence_urls": [
+            "https://www.yomiuri.co.jp/economy/20261105-GYT1T00313/"
+          ]
+        },
+        {
+          "incident_id": "ce7d32fd4e6c1d66",
+          "relationship": "affects",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/-/3064287?display=1",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/-/3064287?display=1"
+          ]
+        },
+        {
           "incident_id": "cff2b19ef6f0d60b",
           "relationship": "affects",
           "evidence_url": "https://chobirich.co.jp/1sgvii4gv9/",
@@ -9001,6 +9235,14 @@
           "evidence_url": "https://www.kracie.co.jp/release/10193700_3833.html",
           "evidence_urls": [
             "https://www.kracie.co.jp/release/10193700_3833.html"
+          ]
+        },
+        {
+          "incident_id": "ddc337c648916610",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/e25d5ad4671b446bafefe4d7db8bbfd80c301be8",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/e25d5ad4671b446bafefe4d7db8bbfd80c301be8"
           ]
         },
         {
@@ -9096,7 +9338,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-05T07:17:31+00:00"
+      "updated_at": "2026-11-05T08:16:07+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -9621,6 +9863,45 @@
       "service_aliases": [],
       "added_at": "2026-10-28T12:16:05+00:00",
       "updated_at": "2026-10-28T18:16:27+00:00"
+    },
+    {
+      "id": "8359871b1e7e813f",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": "2026-11-03T15:00:00+00:00",
+      "organization": "ワークマン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1450000,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/f999aa7507d93ac2670ccaa3be3591eb6cb14cba",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/f999aa7507d93ac2670ccaa3be3591eb6cb14cba",
+            "https://workman.jp/pdf/oshirase_20261104.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "workman.jp",
+          "url": "https://workman.jp/pdf/oshirase_20261104.pdf"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/f999aa7507d93ac2670ccaa3be3591eb6cb14cba"
+        }
+      ],
+      "affected_service": "ワークマンオンラインストア メールマガジン",
+      "service_aliases": [],
+      "added_at": "2026-11-04T09:16:15+00:00",
+      "updated_at": "2026-11-05T08:16:07+00:00"
     },
     {
       "id": "decf799bcee862b6",
@@ -10374,40 +10655,6 @@
       "service_aliases": [],
       "added_at": "2026-11-02T13:16:55+00:00",
       "updated_at": "2026-11-02T13:16:55+00:00"
-    },
-    {
-      "id": "8359871b1e7e813f",
-      "published_at": "2026-10-27T15:00:00+00:00",
-      "disclosed_at": "2026-11-03T15:00:00+00:00",
-      "organization": "ワークマン",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 1450000,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://workman.jp/pdf/oshirase_20261104.pdf",
-          "evidence_urls": [
-            "https://workman.jp/pdf/oshirase_20261104.pdf"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "workman.jp",
-          "url": "https://workman.jp/pdf/oshirase_20261104.pdf"
-        }
-      ],
-      "affected_service": "ワークマンオンラインストア メールマガジン",
-      "service_aliases": [],
-      "added_at": "2026-11-04T09:16:15+00:00",
-      "updated_at": "2026-11-04T09:16:15+00:00"
     },
     {
       "id": "b1055210151a3fa6",
@@ -12685,6 +12932,10 @@
           "url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/10/26/261026_info_ex-service_data_breach.pdf"
         },
         {
+          "name": "JR九州 / JR Kyushu",
+          "url": "https://www.jrkyushu.co.jp/common/inc/news/newtopics/__icsFiles/afieldfile/2026/11/05/261105_info_ex-service_data_breach_2.pdf"
+        },
+        {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/87405f0ee004f0619780eaf6f625bd1f7bef892c"
         },
@@ -12708,7 +12959,7 @@
       "affected_service": "エクスプレス予約",
       "service_aliases": [],
       "added_at": "2026-10-26T20:15:50+00:00",
-      "updated_at": "2026-10-27T19:09:26+00:00"
+      "updated_at": "2026-11-05T08:16:07+00:00"
     },
     {
       "id": "15e60c32657aa57d",
