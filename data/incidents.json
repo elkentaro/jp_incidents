@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-05T04:16:40+00:00",
+  "updated_at": "2026-11-05T05:15:40+00:00",
   "total": 835,
   "date_range": {
     "start": "2025-10-16",
@@ -379,8 +379,8 @@
         "data leak"
       ],
       "potential_records": 722,
-      "confidence": "medium",
-      "confidence_score": 50,
+      "confidence": "high",
+      "confidence_score": 65,
       "related": [
         {
           "incident_id": "e0bf7f8e71d6ba85",
@@ -395,12 +395,140 @@
         {
           "name": "TBS NEWS DIG",
           "url": "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6a19ef8156c704de8bc16415c760b780f9b99ad4"
         }
       ],
       "affected_service": "スマート申請システム",
       "service_aliases": [],
       "added_at": "2026-11-05T04:16:40+00:00",
-      "updated_at": "2026-11-05T04:16:40+00:00"
+      "updated_at": "2026-11-05T05:15:40+00:00"
+    },
+    {
+      "id": "4e61125aed51dbcb",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "NTTドコモ",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "テレ朝NEWS",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE83NmlNT2lnS3hPb19GYXFwQ0ZyVmlWRS1SWkE3dTMzZU9DeHZpakx3SXlZa21QVmxBLWRnMGdGdWdDS2ZCNG8wQXgzeFZJUF9PR19NZkhnZzJuUXMyX0s3OHdSbFBzdW03MTFsbkhhdzQ4Zw?oc=5"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC052N30V01C26A1000000/"
+        }
+      ],
+      "affected_service": "ドコモオンラインショップ / my docomo",
+      "service_aliases": [],
+      "affected_services": [
+        "ドコモオンラインショップ",
+        "my docomo"
+      ],
+      "service_details": [
+        {
+          "name": "ドコモオンラインショップ",
+          "aliases": []
+        },
+        {
+          "name": "my docomo",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-05T04:16:40+00:00",
+      "updated_at": "2026-11-05T05:15:40+00:00"
+    },
+    {
+      "id": "84b1fdc78e8cfefb",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "宮崎市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 39412,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "1afe5711501497af",
+          "relationship": "same_organization",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1"
+          ]
+        },
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6a19ef8156c704de8bc16415c760b780f9b99ad4"
+        }
+      ],
+      "affected_service": "スマート申請システム",
+      "service_aliases": [],
+      "added_at": "2026-11-05T04:16:40+00:00",
+      "updated_at": "2026-11-05T05:15:40+00:00"
+    },
+    {
+      "id": "f896022778d48ba6",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "西都市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 677,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6a19ef8156c704de8bc16415c760b780f9b99ad4"
+        }
+      ],
+      "affected_service": "スマート申請システム",
+      "service_aliases": [],
+      "added_at": "2026-11-05T04:16:40+00:00",
+      "updated_at": "2026-11-05T05:15:40+00:00"
     },
     {
       "id": "36ed892d8fd238ed",
@@ -430,118 +558,6 @@
           "url": "https://news.yahoo.co.jp/articles/f95bdce85654ab1f363b29342ae584c49a4fdd56"
         }
       ],
-      "added_at": "2026-11-05T04:16:40+00:00",
-      "updated_at": "2026-11-05T04:16:40+00:00"
-    },
-    {
-      "id": "4e61125aed51dbcb",
-      "published_at": "2026-11-04T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "NTTドコモ",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "テレ朝NEWS",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE83NmlNT2lnS3hPb19GYXFwQ0ZyVmlWRS1SWkE3dTMzZU9DeHZpakx3SXlZa21QVmxBLWRnMGdGdWdDS2ZCNG8wQXgzeFZJUF9PR19NZkhnZzJuUXMyX0s3OHdSbFBzdW03MTFsbkhhdzQ4Zw?oc=5"
-        }
-      ],
-      "affected_service": "ドコモオンラインショップ / my docomo",
-      "service_aliases": [],
-      "affected_services": [
-        "ドコモオンラインショップ",
-        "my docomo"
-      ],
-      "service_details": [
-        {
-          "name": "ドコモオンラインショップ",
-          "aliases": []
-        },
-        {
-          "name": "my docomo",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-05T04:16:40+00:00",
-      "updated_at": "2026-11-05T04:16:40+00:00"
-    },
-    {
-      "id": "84b1fdc78e8cfefb",
-      "published_at": "2026-11-04T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "宮崎市",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 39412,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "1afe5711501497af",
-          "relationship": "same_organization",
-          "evidence_url": "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1",
-          "evidence_urls": [
-            "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1"
-          ]
-        },
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1",
-          "evidence_urls": [
-            "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "TBS NEWS DIG",
-          "url": "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1"
-        }
-      ],
-      "affected_service": "スマート申請システム",
-      "service_aliases": [],
-      "added_at": "2026-11-05T04:16:40+00:00",
-      "updated_at": "2026-11-05T04:16:40+00:00"
-    },
-    {
-      "id": "f896022778d48ba6",
-      "published_at": "2026-11-04T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "西都市",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 677,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1",
-          "evidence_urls": [
-            "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "TBS NEWS DIG",
-          "url": "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1"
-        }
-      ],
-      "affected_service": "スマート申請システム",
-      "service_aliases": [],
       "added_at": "2026-11-05T04:16:40+00:00",
       "updated_at": "2026-11-05T04:16:40+00:00"
     },
@@ -767,12 +783,16 @@
         {
           "name": "TBS NEWS DIG",
           "url": "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6a19ef8156c704de8bc16415c760b780f9b99ad4"
         }
       ],
       "affected_service": "メール配信サービス",
       "service_aliases": [],
       "added_at": "2026-11-04T13:16:52+00:00",
-      "updated_at": "2026-11-05T04:16:40+00:00"
+      "updated_at": "2026-11-05T05:15:40+00:00"
     },
     {
       "id": "814579689134026b",
@@ -1936,10 +1956,16 @@
         {
           "name": "INTERNET Watch",
           "url": "https://internet.watch.impress.co.jp/docs/news/2153737.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/51c418ad3221d516d89cf5becb554ca0ad8da77c"
         }
       ],
+      "affected_service": "出前館",
+      "service_aliases": [],
       "added_at": "2026-11-03T22:15:33+00:00",
-      "updated_at": "2026-11-05T01:16:21+00:00"
+      "updated_at": "2026-11-05T05:15:40+00:00"
     },
     {
       "id": "cade75ef66ccbad6",
@@ -3277,12 +3303,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/f95bdce85654ab1f363b29342ae584c49a4fdd56"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/ddfd4f19178bf8191456cf6a79d07447d97e16a0"
         }
       ],
       "affected_service": "マイナンバーカード交付予約",
       "service_aliases": [],
       "added_at": "2026-11-04T15:16:11+00:00",
-      "updated_at": "2026-11-05T04:16:40+00:00"
+      "updated_at": "2026-11-05T05:15:40+00:00"
     },
     {
       "id": "c5286701125111b4",
@@ -13823,9 +13853,10 @@
         {
           "incident_id": "508c78a138a65801",
           "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/5a4c74bfe4f4cbe931a28b73d2d9489cfc90b3b5",
+          "evidence_url": "https://scan.netsecurity.ne.jp/article/2026/11/05/56672.html",
           "evidence_urls": [
             "https://news.yahoo.co.jp/articles/5a4c74bfe4f4cbe931a28b73d2d9489cfc90b3b5",
+            "https://scan.netsecurity.ne.jp/article/2026/11/05/56672.html",
             "https://ssl4.eir-parts.net/doc/8153/tdnet/2898082/00.pdf"
           ]
         }
@@ -13863,7 +13894,7 @@
       "affected_service": "モスカード",
       "service_aliases": [],
       "added_at": "2026-10-24T20:15:24+00:00",
-      "updated_at": "2026-11-05T00:15:44+00:00"
+      "updated_at": "2026-11-05T05:15:40+00:00"
     },
     {
       "id": "ff420be6e3ecc8ab",
@@ -21558,6 +21589,10 @@
           "url": "https://www.trustbank.co.jp/newsroom/newsrelease/news20261028/"
         },
         {
+          "name": "株式会社トラストバンク",
+          "url": "https://www.trustbank.co.jp/newsroom/newsrelease/news20261105/"
+        },
+        {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261020553586.pdf"
         },
@@ -21643,7 +21678,7 @@
         "ふるさとちょいす"
       ],
       "added_at": "2026-10-20T23:46:03+00:00",
-      "updated_at": "2026-11-02T07:16:38+00:00"
+      "updated_at": "2026-11-05T05:15:40+00:00"
     },
     {
       "id": "2a737208d01cfe10",
@@ -24524,9 +24559,10 @@
         {
           "incident_id": "b46e3020e19d722d",
           "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/5a4c74bfe4f4cbe931a28b73d2d9489cfc90b3b5",
+          "evidence_url": "https://scan.netsecurity.ne.jp/article/2026/11/05/56672.html",
           "evidence_urls": [
             "https://news.yahoo.co.jp/articles/5a4c74bfe4f4cbe931a28b73d2d9489cfc90b3b5",
+            "https://scan.netsecurity.ne.jp/article/2026/11/05/56672.html",
             "https://ssl4.eir-parts.net/doc/8153/tdnet/2898082/00.pdf"
           ]
         }
@@ -24543,10 +24579,14 @@
         {
           "name": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2026/11/04/56655.html"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/05/56672.html"
         }
       ],
       "added_at": "2026-10-23T08:16:11+00:00",
-      "updated_at": "2026-11-04T00:14:16+00:00"
+      "updated_at": "2026-11-05T05:15:40+00:00"
     },
     {
       "id": "cd35876112660d05",
