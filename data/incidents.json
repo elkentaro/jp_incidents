@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-05T01:16:21+00:00",
-  "total": 825,
+  "updated_at": "2026-11-05T02:16:25+00:00",
+  "total": 827,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-04"
@@ -353,11 +353,11 @@
     },
     {
       "date": "2026-11-02",
-      "count": 35
+      "count": 36
     },
     {
       "date": "2026-11-03",
-      "count": 16
+      "count": 17
     },
     {
       "date": "2026-11-04",
@@ -369,6 +369,51 @@
     }
   ],
   "incidents": [
+    {
+      "id": "ae87ad473c1decd3",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "デニーズ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://www.dennys.co.jp/dennys-japan/pdf/261103.pdf"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261104de70279"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002878/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/f9fabacd473d14b2ef880748b00e829dd9a74334"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC04AHN0U6A101C2000000/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118129"
+        }
+      ],
+      "affected_service": "過去に提供していたアプリ",
+      "service_aliases": [],
+      "added_at": "2026-11-04T06:13:31+00:00",
+      "updated_at": "2026-11-05T02:16:25+00:00"
+    },
     {
       "id": "a4887886b298b562",
       "published_at": "2026-11-03T15:00:00+00:00",
@@ -414,43 +459,6 @@
       "service_aliases": [],
       "added_at": "2026-11-04T10:55:03+00:00",
       "updated_at": "2026-11-04T21:50:48+00:00"
-    },
-    {
-      "id": "ae87ad473c1decd3",
-      "published_at": "2026-11-03T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "デニーズ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 95,
-      "related": [],
-      "sources": [
-        {
-          "name": "NHKニュース",
-          "url": "https://news.web.nhk/newsweb/na/nd-20261104de70279"
-        },
-        {
-          "name": "ITmedia",
-          "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002878/"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/f9fabacd473d14b2ef880748b00e829dd9a74334"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUC04AHN0U6A101C2000000/"
-        }
-      ],
-      "affected_service": "過去に提供していたアプリ",
-      "service_aliases": [],
-      "added_at": "2026-11-04T06:13:31+00:00",
-      "updated_at": "2026-11-04T13:16:52+00:00"
     },
     {
       "id": "d95558503bcc21eb",
@@ -531,10 +539,14 @@
         {
           "name": "khb東日本放送",
           "url": "https://www.khb-tv.co.jp/news/17023412"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/242ccb04d5f32f6d4dd6d1f2f447e7b7434b2245"
         }
       ],
       "added_at": "2026-11-04T01:16:30+00:00",
-      "updated_at": "2026-11-04T18:16:46+00:00"
+      "updated_at": "2026-11-05T02:16:25+00:00"
     },
     {
       "id": "5aad8865a350a69d",
@@ -2013,6 +2025,38 @@
       "updated_at": "2026-11-04T01:16:30+00:00"
     },
     {
+      "id": "7b94dd491fc09b58",
+      "published_at": "2026-11-02T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "駅探",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://ekitan.co.jp/corp/news/20261103-01/",
+          "evidence_urls": [
+            "https://ekitan.co.jp/corp/news/20261103-01/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://ekitan.co.jp/corp/news/20261103-01/"
+        }
+      ],
+      "added_at": "2026-11-05T02:16:25+00:00",
+      "updated_at": "2026-11-05T02:16:25+00:00"
+    },
+    {
       "id": "a228e827359fd001",
       "published_at": "2026-11-02T15:00:00+00:00",
       "disclosed_at": null,
@@ -2585,6 +2629,10 @@
           "url": "https://rocket-boys.co.jp/security-measures-lab/nomura_ir_kikan_navi_unauthorized_access_confirmed_data_leak/"
         },
         {
+          "name": "legalagent list",
+          "url": "https://www.nomura-ir.co.jp/ja/news/news/news20261104/main/00/link/20261104.pdf"
+        },
+        {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/b9e45983a72b11d143643fe20eb593b7e0db38ce"
         },
@@ -2608,7 +2656,7 @@
       "affected_service": "機関Navi",
       "service_aliases": [],
       "added_at": "2026-11-04T02:15:58+00:00",
-      "updated_at": "2026-11-04T21:15:31+00:00"
+      "updated_at": "2026-11-05T02:16:25+00:00"
     },
     {
       "id": "fa6c90af8f34017d",
@@ -2736,6 +2784,36 @@
       "updated_at": "2026-11-02T13:16:55+00:00"
     },
     {
+      "id": "1213e7eea2108340",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "三井住友海上火災保険",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.ms-ins.com/information/2026/information_1103_1.pdf"
+        },
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/economy/20261104-GYT1T00280/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118127"
+        }
+      ],
+      "added_at": "2026-11-04T10:15:52+00:00",
+      "updated_at": "2026-11-05T02:16:25+00:00"
+    },
+    {
       "id": "a8e44ce2aed59169",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": "2026-11-01T15:00:00+00:00",
@@ -2835,32 +2913,6 @@
       "service_aliases": [],
       "added_at": "2026-11-02T13:16:55+00:00",
       "updated_at": "2026-11-02T22:16:00+00:00"
-    },
-    {
-      "id": "1213e7eea2108340",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "三井住友海上火災保険",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.ms-ins.com/information/2026/information_1103_1.pdf"
-        },
-        {
-          "name": "読売新聞",
-          "url": "https://www.yomiuri.co.jp/economy/20261104-GYT1T00280/"
-        }
-      ],
-      "added_at": "2026-11-04T10:15:52+00:00",
-      "updated_at": "2026-11-05T01:16:21+00:00"
     },
     {
       "id": "24fbcc3575cc868a",
@@ -2990,6 +3042,32 @@
       "service_aliases": [],
       "added_at": "2026-11-04T11:16:06+00:00",
       "updated_at": "2026-11-04T15:16:11+00:00"
+    },
+    {
+      "id": "57a40b2bf2b57970",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "あいおいニッセイ同和損害保険",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/economy/20261104-GYT1T00280/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118127"
+        }
+      ],
+      "added_at": "2026-11-04T10:15:52+00:00",
+      "updated_at": "2026-11-05T02:16:25+00:00"
     },
     {
       "id": "19cce63ebf03c536",
@@ -3322,6 +3400,41 @@
       "updated_at": "2026-11-04T01:16:30+00:00"
     },
     {
+      "id": "dc9c96985afbdb4a",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": "2026-11-01T15:00:00+00:00",
+      "organization": "クラシエ薬品",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 59428,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.kracie.co.jp/release/10193700_3833.html",
+          "evidence_urls": [
+            "https://www.kracie.co.jp/release/10193700_3833.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.kracie.co.jp/release/10193700_3833.html"
+        }
+      ],
+      "affected_service": "Kampoful Life",
+      "service_aliases": [
+        "カンポフルライフ"
+      ],
+      "added_at": "2026-11-05T02:16:25+00:00",
+      "updated_at": "2026-11-05T02:16:25+00:00"
+    },
+    {
       "id": "e9811136a68c506f",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
@@ -3386,28 +3499,6 @@
       "service_aliases": [],
       "added_at": "2026-11-05T01:16:21+00:00",
       "updated_at": "2026-11-05T01:16:21+00:00"
-    },
-    {
-      "id": "57a40b2bf2b57970",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "あいおいニッセイ同和損害保険",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "読売新聞",
-          "url": "https://www.yomiuri.co.jp/economy/20261104-GYT1T00280/"
-        }
-      ],
-      "added_at": "2026-11-04T10:15:52+00:00",
-      "updated_at": "2026-11-04T10:15:52+00:00"
     },
     {
       "id": "6fa988fa2a0728fb",
@@ -7462,6 +7553,10 @@
           "url": "https://www.yakult.co.jp/maintenance/"
         },
         {
+          "name": "legalagent list",
+          "url": "https://www.yakult.co.jp/maintenance/news/pdf/20261104.pdf"
+        },
+        {
           "name": "ITmedia",
           "url": "https://www.itmedia.co.jp/news/article/2610/28/2000002657/"
         },
@@ -7482,8 +7577,24 @@
           "url": "https://www.nikkei.com/article/DGXZQOUC300SA0Q6A031C2000000/"
         }
       ],
+      "affected_service": "当社ホームページ / 給食サイト「たのしい給食」",
+      "service_aliases": [],
+      "affected_services": [
+        "当社ホームページ",
+        "給食サイト「たのしい給食」"
+      ],
+      "service_details": [
+        {
+          "name": "当社ホームページ",
+          "aliases": []
+        },
+        {
+          "name": "給食サイト「たのしい給食」",
+          "aliases": []
+        }
+      ],
       "added_at": "2026-10-28T07:15:47+00:00",
-      "updated_at": "2026-10-30T14:15:52+00:00"
+      "updated_at": "2026-11-05T02:16:25+00:00"
     },
     {
       "id": "7f27b603ddf5083a",
@@ -8010,6 +8121,14 @@
           ]
         },
         {
+          "incident_id": "7b94dd491fc09b58",
+          "relationship": "affects",
+          "evidence_url": "https://ekitan.co.jp/corp/news/20261103-01/",
+          "evidence_urls": [
+            "https://ekitan.co.jp/corp/news/20261103-01/"
+          ]
+        },
+        {
           "incident_id": "814579689134026b",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBEOXlzYjlVQVpadGpKdU95ZEx2N0YwaTJBU0NCTHVSVWlpMlhiRFR6NDBuU083NXJpSVJSYUxXcmZoNUxHelJFOC1OYVM3dFJaSE12Y2JR?oc=5",
@@ -8205,6 +8324,14 @@
           ]
         },
         {
+          "incident_id": "dc9c96985afbdb4a",
+          "relationship": "affects",
+          "evidence_url": "https://www.kracie.co.jp/release/10193700_3833.html",
+          "evidence_urls": [
+            "https://www.kracie.co.jp/release/10193700_3833.html"
+          ]
+        },
+        {
           "incident_id": "de73cb7eab25a4c0",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/9f08f9c7062374855e87294787a811d85c37ddd4",
@@ -8289,7 +8416,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-05T01:16:21+00:00"
+      "updated_at": "2026-11-05T02:16:25+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -12008,6 +12135,33 @@
       "updated_at": "2026-10-27T22:15:42+00:00"
     },
     {
+      "id": "1321ef3b6b29e940",
+      "published_at": "2026-10-25T15:00:00+00:00",
+      "disclosed_at": "2026-10-25T15:00:00+00:00",
+      "organization": "日本郵政グループ労働組合",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 40000,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://www.jprouso.or.jp/system/servlet/yusei.UserMain?method=show_detail&clause_id=18457"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/05/56677.html"
+        }
+      ],
+      "added_at": "2026-11-05T00:15:44+00:00",
+      "updated_at": "2026-11-05T02:16:25+00:00"
+    },
+    {
       "id": "47caed1a44ff8f86",
       "published_at": "2026-10-25T15:00:00+00:00",
       "disclosed_at": null,
@@ -12298,29 +12452,6 @@
       ],
       "added_at": "2026-10-27T01:15:59+00:00",
       "updated_at": "2026-10-27T01:15:59+00:00"
-    },
-    {
-      "id": "1321ef3b6b29e940",
-      "published_at": "2026-10-25T15:00:00+00:00",
-      "disclosed_at": "2026-10-25T15:00:00+00:00",
-      "organization": "日本郵政グループ労働組合",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 40000,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "ScanNetSecurity",
-          "url": "https://scan.netsecurity.ne.jp/article/2026/11/05/56677.html"
-        }
-      ],
-      "added_at": "2026-11-05T00:15:44+00:00",
-      "updated_at": "2026-11-05T00:15:44+00:00"
     },
     {
       "id": "15df050b8f084cda",
@@ -16017,6 +16148,10 @@
           "url": "https://cybersecurity-jp.com/news/117692"
         },
         {
+          "name": "legalagent list",
+          "url": "https://www.andst-hd.co.jp/news/notice/entry-17245/"
+        },
+        {
           "name": "47NEWS",
           "url": "https://www.47news.jp/15128223.html"
         },
@@ -16034,7 +16169,7 @@
         }
       ],
       "added_at": "2026-10-23T08:33:10+00:00",
-      "updated_at": "2026-10-26T01:27:18+00:00"
+      "updated_at": "2026-11-05T02:16:25+00:00"
     },
     {
       "id": "f1a05e615645403f",
@@ -16910,13 +17045,17 @@
       "sources": [
         {
           "name": "legalagent list",
+          "url": "https://ships-cycle-market.jp/blogs/news/swym-security-notice-20261104"
+        },
+        {
+          "name": "legalagent list",
           "url": "https://ships-cycle-market.jp/blogs/news/swym-security-notice-20261022"
         }
       ],
       "affected_service": "お気に入り機能",
       "service_aliases": [],
       "added_at": "2026-11-03T04:15:41+00:00",
-      "updated_at": "2026-11-03T04:15:41+00:00"
+      "updated_at": "2026-11-05T02:16:25+00:00"
     },
     {
       "id": "41bddacedb87f195",
@@ -24061,6 +24200,10 @@
           "url": "https://2nd-rtl.com/news/82032"
         },
         {
+          "name": "legalagent list",
+          "url": "https://2nd-rtl.com/news/82189/"
+        },
+        {
           "name": "流通ニュース",
           "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBJV3hMSjZJMUxzNE84VEhVRDd3WmVLWU5qdkRaaTQ3OGJvd3NsWkV6NzJrSXFDaWhXVkxTV1F5NzRxSld3TFBneEN6OWV6WGgwOHJWanlTNjI?oc=5"
         },
@@ -24078,7 +24221,7 @@
         }
       ],
       "added_at": "2026-10-19T08:49:15+00:00",
-      "updated_at": "2026-11-03T03:16:30+00:00"
+      "updated_at": "2026-11-05T02:16:25+00:00"
     },
     {
       "id": "d15b4ef4c598e641",
@@ -34779,17 +34922,25 @@
         "ransomware"
       ],
       "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
+      "confidence": "high",
+      "confidence_score": 90,
       "related": [],
       "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/uchicomi_ransomware_142591_accounts_20261105/"
+        },
+        {
+          "name": "legalagent list",
+          "url": "https://uchicomi.co.jp/news/647"
+        },
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118131"
         }
       ],
       "added_at": "2026-11-05T01:16:21+00:00",
-      "updated_at": "2026-11-05T01:16:21+00:00"
+      "updated_at": "2026-11-05T02:16:25+00:00"
     },
     {
       "id": "6c2dfbdab31a21b4",
