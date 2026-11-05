@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-05T16:16:05+00:00",
+  "updated_at": "2026-11-05T17:15:44+00:00",
   "total": 876,
   "date_range": {
     "start": "2025-10-16",
@@ -775,6 +775,73 @@
       "updated_at": "2026-11-05T05:15:40+00:00"
     },
     {
+      "id": "c8e69c216a70e86b",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "カカクコム",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 5700000,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://prtimes.jp/main/html/rd/p/000001064.000001455.html",
+          "evidence_urls": [
+            "https://prtimes.jp/main/html/rd/p/000001064.000001455.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "PR TIMES",
+          "url": "https://prtimes.jp/main/html/rd/p/000001064.000001455.html"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC056Q10V01C26A1000000/"
+        }
+      ],
+      "affected_service": "食べログ / icotto / スマイティ / 価格.com / 求人ボックス",
+      "service_aliases": [],
+      "affected_services": [
+        "食べログ",
+        "icotto",
+        "スマイティ",
+        "価格.com",
+        "求人ボックス"
+      ],
+      "service_details": [
+        {
+          "name": "食べログ",
+          "aliases": []
+        },
+        {
+          "name": "icotto",
+          "aliases": []
+        },
+        {
+          "name": "スマイティ",
+          "aliases": []
+        },
+        {
+          "name": "価格.com",
+          "aliases": []
+        },
+        {
+          "name": "求人ボックス",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-05T15:15:51+00:00",
+      "updated_at": "2026-11-05T17:15:44+00:00"
+    },
+    {
       "id": "cd71aceb5c7b95e3",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": null,
@@ -1493,12 +1560,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/f137c2ae420b179496461fa08cceebac6be044bc"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/a9b9e18c97646f2556d405b9971e36731e023986"
         }
       ],
       "affected_service": "au自転車サポート",
       "service_aliases": [],
       "added_at": "2026-11-05T14:17:23+00:00",
-      "updated_at": "2026-11-05T14:17:23+00:00"
+      "updated_at": "2026-11-05T17:15:44+00:00"
     },
     {
       "id": "b8347963d4368d00",
@@ -1652,69 +1723,6 @@
         {
           "name": "株式会社学研ホールディングス",
           "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5YRkFQVzE0SkJScTUza3drTzBRbDVyaWUtS3RkQ1hjOWpPWFdPdlcyeHlwdVVQRFRRemFUb2hFZV94VVdLUElkanFSWXd1RTVNaF9wQjVXZnhOeUJTdENpV05QVGdRdw?oc=5"
-        }
-      ],
-      "added_at": "2026-11-05T15:15:51+00:00",
-      "updated_at": "2026-11-05T15:15:51+00:00"
-    },
-    {
-      "id": "c8e69c216a70e86b",
-      "published_at": "2026-11-04T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "カカクコム",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 5700000,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://prtimes.jp/main/html/rd/p/000001064.000001455.html",
-          "evidence_urls": [
-            "https://prtimes.jp/main/html/rd/p/000001064.000001455.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "PR TIMES",
-          "url": "https://prtimes.jp/main/html/rd/p/000001064.000001455.html"
-        }
-      ],
-      "affected_service": "食べログ / icotto / スマイティ / 価格.com / 求人ボックス",
-      "service_aliases": [],
-      "affected_services": [
-        "食べログ",
-        "icotto",
-        "スマイティ",
-        "価格.com",
-        "求人ボックス"
-      ],
-      "service_details": [
-        {
-          "name": "食べログ",
-          "aliases": []
-        },
-        {
-          "name": "icotto",
-          "aliases": []
-        },
-        {
-          "name": "スマイティ",
-          "aliases": []
-        },
-        {
-          "name": "価格.com",
-          "aliases": []
-        },
-        {
-          "name": "求人ボックス",
-          "aliases": []
         }
       ],
       "added_at": "2026-11-05T15:15:51+00:00",
@@ -4896,6 +4904,35 @@
       "updated_at": "2026-11-04T15:16:11+00:00"
     },
     {
+      "id": "ea44bdc85b4b2bea",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "八王子市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 2,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5URVhvTnFKdnJLWUNRZzJ0WHVpbFZCcUZoOXJjTzFCem94akphWGNfQXk3bFpKRzRwYlNmSENtTl9IZ2NfV3FwWEVodVZldi1LMHRxOG9YcmVySjlxaFI1all2ZG10Wm8wY3V6RWRXUFBuWkRYSXBiVEFaZ1F3QWc?oc=5"
+        },
+        {
+          "name": "毎日新聞",
+          "url": "https://mainichi.jp/articles/20261105/k00/00m/310/346000c"
+        }
+      ],
+      "affected_service": "日本遺産『桑都物語』",
+      "service_aliases": [],
+      "added_at": "2026-11-05T15:15:51+00:00",
+      "updated_at": "2026-11-05T17:15:44+00:00"
+    },
+    {
       "id": "19cce63ebf03c536",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
@@ -5363,31 +5400,6 @@
       "service_aliases": [],
       "added_at": "2026-11-03T12:17:45+00:00",
       "updated_at": "2026-11-03T12:17:45+00:00"
-    },
-    {
-      "id": "ea44bdc85b4b2bea",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "八王子市",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 2,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5URVhvTnFKdnJLWUNRZzJ0WHVpbFZCcUZoOXJjTzFCem94akphWGNfQXk3bFpKRzRwYlNmSENtTl9IZ2NfV3FwWEVodVZldi1LMHRxOG9YcmVySjlxaFI1all2ZG10Wm8wY3V6RWRXUFBuWkRYSXBiVEFaZ1F3QWc?oc=5"
-        }
-      ],
-      "affected_service": "日本遺産『桑都物語』",
-      "service_aliases": [],
-      "added_at": "2026-11-05T15:15:51+00:00",
-      "updated_at": "2026-11-05T15:15:51+00:00"
     },
     {
       "id": "f945606df6d28bc9",
