@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-05T17:15:44+00:00",
+  "updated_at": "2026-11-05T19:15:25+00:00",
   "total": 876,
   "date_range": {
     "start": "2025-10-16",
@@ -693,6 +693,41 @@
       "updated_at": "2026-11-05T15:15:51+00:00"
     },
     {
+      "id": "8720f3e6c09263ff",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "富士ソフト株式会社",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "02383edd7ab2669c",
+          "relationship": "affects",
+          "evidence_url": "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001304.html",
+          "evidence_urls": [
+            "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001304.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "総務省 / Ministry of Internal Affairs and Communications",
+          "url": "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001304.html"
+        },
+        {
+          "name": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2154132.html"
+        }
+      ],
+      "added_at": "2026-11-05T11:16:39+00:00",
+      "updated_at": "2026-11-05T19:15:25+00:00"
+    },
+    {
       "id": "024b3401d64a391b",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": null,
@@ -1172,37 +1207,6 @@
       ],
       "added_at": "2026-11-05T14:17:23+00:00",
       "updated_at": "2026-11-05T14:17:23+00:00"
-    },
-    {
-      "id": "8720f3e6c09263ff",
-      "published_at": "2026-11-04T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "富士ソフト株式会社",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "02383edd7ab2669c",
-          "relationship": "affects",
-          "evidence_url": "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001304.html",
-          "evidence_urls": [
-            "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001304.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "総務省 / Ministry of Internal Affairs and Communications",
-          "url": "https://www.soumu.go.jp/menu_news/s-news/01shoubo01_02001304.html"
-        }
-      ],
-      "added_at": "2026-11-05T11:16:39+00:00",
-      "updated_at": "2026-11-05T11:16:39+00:00"
     },
     {
       "id": "a0d8c4de6432447d",
@@ -1772,10 +1776,24 @@
           "url": "https://cybersecurity-jp.com/news/118129"
         }
       ],
-      "affected_service": "過去に提供していたアプリ",
+      "affected_service": "過去に提供していたアプリ / 旧デニーズアプリ",
       "service_aliases": [],
+      "affected_services": [
+        "過去に提供していたアプリ",
+        "旧デニーズアプリ"
+      ],
+      "service_details": [
+        {
+          "name": "過去に提供していたアプリ",
+          "aliases": []
+        },
+        {
+          "name": "旧デニーズアプリ",
+          "aliases": []
+        }
+      ],
       "added_at": "2026-11-04T06:13:31+00:00",
-      "updated_at": "2026-11-05T11:16:39+00:00"
+      "updated_at": "2026-11-05T19:15:25+00:00"
     },
     {
       "id": "a4887886b298b562",
