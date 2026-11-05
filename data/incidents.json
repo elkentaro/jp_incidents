@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-05T22:15:12+00:00",
+  "updated_at": "2026-11-05T23:15:43+00:00",
   "total": 885,
   "date_range": {
     "start": "2025-10-16",
@@ -675,6 +675,62 @@
       ],
       "added_at": "2026-11-05T11:16:39+00:00",
       "updated_at": "2026-11-05T22:15:11+00:00"
+    },
+    {
+      "id": "936adcbd7bc057e8",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "KDDI",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [
+        {
+          "incident_id": "36d105653c0ed4da",
+          "relationship": "affected_by",
+          "evidence_url": "https://k-tai.watch.impress.co.jp/docs/news/2154147.html",
+          "evidence_urls": [
+            "https://k-tai.watch.impress.co.jp/docs/news/2154147.html",
+            "https://news.yahoo.co.jp/articles/f137c2ae420b179496461fa08cceebac6be044bc",
+            "https://newsdig.tbs.co.jp/articles/-/3065602?display=1"
+          ]
+        },
+        {
+          "incident_id": "4f9469d8ac7f711b",
+          "relationship": "same_organization",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/-/3065602?display=1",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/-/3065602?display=1"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/f137c2ae420b179496461fa08cceebac6be044bc"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/a9b9e18c97646f2556d405b9971e36731e023986"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3065602?display=1"
+        },
+        {
+          "name": "ケータイ Watch",
+          "url": "https://k-tai.watch.impress.co.jp/docs/news/2154147.html"
+        }
+      ],
+      "affected_service": "au自転車サポート",
+      "service_aliases": [],
+      "added_at": "2026-11-05T14:17:23+00:00",
+      "updated_at": "2026-11-05T23:15:43+00:00"
     },
     {
       "id": "224c7b4f2c222ae9",
@@ -1825,57 +1881,6 @@
       ],
       "added_at": "2026-11-05T20:15:22+00:00",
       "updated_at": "2026-11-05T20:15:22+00:00"
-    },
-    {
-      "id": "936adcbd7bc057e8",
-      "published_at": "2026-11-04T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "KDDI",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "36d105653c0ed4da",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/f137c2ae420b179496461fa08cceebac6be044bc",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/f137c2ae420b179496461fa08cceebac6be044bc",
-            "https://newsdig.tbs.co.jp/articles/-/3065602?display=1"
-          ]
-        },
-        {
-          "incident_id": "4f9469d8ac7f711b",
-          "relationship": "same_organization",
-          "evidence_url": "https://newsdig.tbs.co.jp/articles/-/3065602?display=1",
-          "evidence_urls": [
-            "https://newsdig.tbs.co.jp/articles/-/3065602?display=1"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/f137c2ae420b179496461fa08cceebac6be044bc"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/a9b9e18c97646f2556d405b9971e36731e023986"
-        },
-        {
-          "name": "TBS NEWS DIG",
-          "url": "https://newsdig.tbs.co.jp/articles/-/3065602?display=1"
-        }
-      ],
-      "affected_service": "au自転車サポート",
-      "service_aliases": [],
-      "added_at": "2026-11-05T14:17:23+00:00",
-      "updated_at": "2026-11-05T21:15:39+00:00"
     },
     {
       "id": "b8347963d4368d00",
@@ -8523,8 +8528,9 @@
         {
           "incident_id": "936adcbd7bc057e8",
           "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/f137c2ae420b179496461fa08cceebac6be044bc",
+          "evidence_url": "https://k-tai.watch.impress.co.jp/docs/news/2154147.html",
           "evidence_urls": [
+            "https://k-tai.watch.impress.co.jp/docs/news/2154147.html",
             "https://news.yahoo.co.jp/articles/f137c2ae420b179496461fa08cceebac6be044bc",
             "https://newsdig.tbs.co.jp/articles/-/3065602?display=1"
           ]
@@ -8567,7 +8573,7 @@
       "affected_service": "ロードサービス等の受付・手配業務に使用する業務システム",
       "service_aliases": [],
       "added_at": "2026-11-02T10:00:14+00:00",
-      "updated_at": "2026-11-05T21:15:39+00:00"
+      "updated_at": "2026-11-05T23:15:43+00:00"
     },
     {
       "id": "8132159128c70bb6",
