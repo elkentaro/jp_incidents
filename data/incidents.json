@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-06T11:16:38+00:00",
-  "total": 918,
+  "updated_at": "2026-11-06T12:16:44+00:00",
+  "total": 919,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-06"
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-11-06",
-      "count": 12
+      "count": 13
     }
   ],
   "incidents": [
@@ -701,6 +701,40 @@
       "service_aliases": [],
       "added_at": "2026-11-06T08:15:41+00:00",
       "updated_at": "2026-11-06T08:15:41+00:00"
+    },
+    {
+      "id": "d308686b92e683f1",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "日産フィナンシャルサービス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 236000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "36d105653c0ed4da",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.yomiuri.co.jp/economy/20261106-GYT1T00218/",
+          "evidence_urls": [
+            "https://www.yomiuri.co.jp/economy/20261106-GYT1T00218/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/economy/20261106-GYT1T00218/"
+        }
+      ],
+      "affected_service": "ロードサービス",
+      "service_aliases": [],
+      "added_at": "2026-11-06T12:16:44+00:00",
+      "updated_at": "2026-11-06T12:16:44+00:00"
     },
     {
       "id": "5161f27853dab246",
@@ -2649,12 +2683,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/e251bcda65c485599d3018742904ce619c62ad5d"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/40ad239283b81075c1f505a46e77e6644f412d1b"
         }
       ],
       "affected_service": "ひめぎんクイックカードローン",
       "service_aliases": [],
       "added_at": "2026-11-06T00:16:04+00:00",
-      "updated_at": "2026-11-06T00:16:04+00:00"
+      "updated_at": "2026-11-06T12:16:44+00:00"
     },
     {
       "id": "d25c9c78031ecccc",
@@ -6416,6 +6454,22 @@
           ]
         },
         {
+          "incident_id": "7d79740f39a9db07",
+          "relationship": "affects",
+          "evidence_url": "https://internet.watch.impress.co.jp/docs/news/2154378.html",
+          "evidence_urls": [
+            "https://internet.watch.impress.co.jp/docs/news/2154378.html"
+          ]
+        },
+        {
+          "incident_id": "8621ca175cd6ffbc",
+          "relationship": "affects",
+          "evidence_url": "https://internet.watch.impress.co.jp/docs/news/2154378.html",
+          "evidence_urls": [
+            "https://internet.watch.impress.co.jp/docs/news/2154378.html"
+          ]
+        },
+        {
           "incident_id": "a58b4c17e32d9c67",
           "relationship": "affects",
           "evidence_url": "https://www.nikkei.com/article/DGXZQOUC028RZ0S6A101C2000000/",
@@ -6439,7 +6493,7 @@
         }
       ],
       "added_at": "2026-11-02T10:00:14+00:00",
-      "updated_at": "2026-11-06T08:15:41+00:00"
+      "updated_at": "2026-11-06T12:16:44+00:00"
     },
     {
       "id": "90fd2d303f334214",
@@ -8509,7 +8563,16 @@
       "potential_records": null,
       "confidence": "high",
       "confidence_score": 100,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "778f4a05cc80a4bd",
+          "relationship": "affected_by",
+          "evidence_url": "https://internet.watch.impress.co.jp/docs/news/2154378.html",
+          "evidence_urls": [
+            "https://internet.watch.impress.co.jp/docs/news/2154378.html"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "satimo list",
@@ -8530,12 +8593,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/6e4b43358ec493a4d6f89a2f272bb3300bae2dcb"
+        },
+        {
+          "name": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2154378.html"
         }
       ],
       "affected_service": "デジタル証券",
       "service_aliases": [],
       "added_at": "2026-11-02T01:16:01+00:00",
-      "updated_at": "2026-11-06T08:15:41+00:00"
+      "updated_at": "2026-11-06T12:16:44+00:00"
     },
     {
       "id": "a9fd6c70338f6c75",
@@ -8720,6 +8787,39 @@
       "updated_at": "2026-11-01T20:15:18+00:00"
     },
     {
+      "id": "0431dd98133dc204",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": "2026-11-05T15:00:00+00:00",
+      "organization": "日本ネットワークセキュリティ協会",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 15128,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [],
+      "sources": [
+        {
+          "name": "www.jnsa.org",
+          "url": "https://www.jnsa.org/dl/annual/20261106.pdf"
+        },
+        {
+          "name": "news.yahoo.co.jp",
+          "url": "https://news.yahoo.co.jp/articles/7d27c99efa470f0930524fb5e1d58e6088bab8d8"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2611/06/2000002978/"
+        }
+      ],
+      "affected_service": "情報セキュリティ理解度チェックサービス",
+      "service_aliases": [],
+      "added_at": "2026-11-06T05:15:44+00:00",
+      "updated_at": "2026-11-06T12:16:44+00:00"
+    },
+    {
       "id": "e731d81859c8eab0",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": null,
@@ -8853,35 +8953,6 @@
       "service_aliases": [],
       "added_at": "2026-10-31T02:16:08+00:00",
       "updated_at": "2026-10-31T08:16:00+00:00"
-    },
-    {
-      "id": "0431dd98133dc204",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": "2026-11-05T15:00:00+00:00",
-      "organization": "日本ネットワークセキュリティ協会",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 15128,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [],
-      "sources": [
-        {
-          "name": "www.jnsa.org",
-          "url": "https://www.jnsa.org/dl/annual/20261106.pdf"
-        },
-        {
-          "name": "news.yahoo.co.jp",
-          "url": "https://news.yahoo.co.jp/articles/7d27c99efa470f0930524fb5e1d58e6088bab8d8"
-        }
-      ],
-      "affected_service": "情報セキュリティ理解度チェックサービス",
-      "service_aliases": [],
-      "added_at": "2026-11-06T05:15:44+00:00",
-      "updated_at": "2026-11-06T08:36:04+00:00"
     },
     {
       "id": "6eb1b96dbf3f9915",
@@ -9766,6 +9837,14 @@
           ]
         },
         {
+          "incident_id": "d308686b92e683f1",
+          "relationship": "affects",
+          "evidence_url": "https://www.yomiuri.co.jp/economy/20261106-GYT1T00218/",
+          "evidence_urls": [
+            "https://www.yomiuri.co.jp/economy/20261106-GYT1T00218/"
+          ]
+        },
+        {
           "incident_id": "e2171f91d8a46945",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/89ee578c4645507d2a7bec1b647d613ffa5d704a",
@@ -9811,7 +9890,7 @@
       "affected_service": "ロードサービス等の受付・手配業務に使用する業務システム",
       "service_aliases": [],
       "added_at": "2026-11-02T10:00:14+00:00",
-      "updated_at": "2026-11-06T06:15:41+00:00"
+      "updated_at": "2026-11-06T12:16:44+00:00"
     },
     {
       "id": "8132159128c70bb6",
@@ -9995,6 +10074,48 @@
       "updated_at": "2026-10-29T20:56:59+00:00"
     },
     {
+      "id": "7d79740f39a9db07",
+      "published_at": "2026-10-28T15:00:00+00:00",
+      "disclosed_at": "2026-10-30T15:00:00+00:00",
+      "organization": "スターツ証券",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "778f4a05cc80a4bd",
+          "relationship": "affected_by",
+          "evidence_url": "https://internet.watch.impress.co.jp/docs/news/2154378.html",
+          "evidence_urls": [
+            "https://internet.watch.impress.co.jp/docs/news/2154378.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.starts-sc.com/info/20261031.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6e4b43358ec493a4d6f89a2f272bb3300bae2dcb"
+        },
+        {
+          "name": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2154378.html"
+        }
+      ],
+      "affected_service": "スターツ・アセット・トークン~両国・千鳥町~",
+      "service_aliases": [],
+      "added_at": "2026-11-02T01:16:01+00:00",
+      "updated_at": "2026-11-06T12:16:44+00:00"
+    },
+    {
       "id": "47393192da302a95",
       "published_at": "2026-10-28T15:00:00+00:00",
       "disclosed_at": null,
@@ -10054,35 +10175,6 @@
       "service_aliases": [],
       "added_at": "2026-10-29T10:15:51+00:00",
       "updated_at": "2026-10-30T01:13:09+00:00"
-    },
-    {
-      "id": "7d79740f39a9db07",
-      "published_at": "2026-10-28T15:00:00+00:00",
-      "disclosed_at": "2026-10-30T15:00:00+00:00",
-      "organization": "スターツ証券",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.starts-sc.com/info/20261031.html"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/6e4b43358ec493a4d6f89a2f272bb3300bae2dcb"
-        }
-      ],
-      "affected_service": "スターツ・アセット・トークン~両国・千鳥町~",
-      "service_aliases": [],
-      "added_at": "2026-11-02T01:16:01+00:00",
-      "updated_at": "2026-11-06T08:15:41+00:00"
     },
     {
       "id": "c0695d18cd2d0c0a",
@@ -25763,6 +25855,14 @@
           "url": "https://group.gmo/info/alert/2026102704/"
         },
         {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261106567874.pdf"
+        },
+        {
+          "name": "GMOインターネット / GMO Internet",
+          "url": "https://internet.gmo/ir/pdf/irlibrary/gmointernet_j_disclose_20261106.pdf"
+        },
+        {
           "name": "INTERNET Watch",
           "url": "https://internet.watch.impress.co.jp/docs/news/2149829.html"
         },
@@ -25782,7 +25882,7 @@
       "affected_service": "お名前.com デスクトップクラウド",
       "service_aliases": [],
       "added_at": "2026-10-21T00:23:43+00:00",
-      "updated_at": "2026-10-31T15:15:53+00:00"
+      "updated_at": "2026-11-06T12:16:44+00:00"
     },
     {
       "id": "38d621781f18e6c4",
