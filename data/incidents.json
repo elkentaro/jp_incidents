@@ -1,16 +1,12 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-06T14:16:57+00:00",
-  "total": 935,
+  "updated_at": "2026-11-06T15:16:04+00:00",
+  "total": 936,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-06"
   },
   "daily_counts_90d": [
-    {
-      "date": "2026-08-09",
-      "count": 1
-    },
     {
       "date": "2026-08-10",
       "count": 0
@@ -337,7 +333,7 @@
     },
     {
       "date": "2026-10-30",
-      "count": 38
+      "count": 39
     },
     {
       "date": "2026-10-31",
@@ -366,6 +362,10 @@
     {
       "date": "2026-11-06",
       "count": 25
+    },
+    {
+      "date": "2026-11-07",
+      "count": 0
     }
   ],
   "incidents": [
@@ -485,10 +485,14 @@
         {
           "name": "NHKニュース",
           "url": "https://news.web.nhk/newsweb/na/nd-20261106de71619"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2611/06/2000002984/"
         }
       ],
       "added_at": "2026-11-06T00:16:04+00:00",
-      "updated_at": "2026-11-06T14:16:57+00:00"
+      "updated_at": "2026-11-06T15:16:04+00:00"
     },
     {
       "id": "8419a6aecdeccbf5",
@@ -1243,12 +1247,20 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/0d247a21ffd78352b6c7aea0f012bc2c1b3eb090"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/00ae3e1318fe8cfc4717da9726bb2261e37d94ac"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/e6bd01fc8f75a8812a0712dfbffaec513f6154a7"
         }
       ],
       "affected_service": "球団公式サイト",
       "service_aliases": [],
       "added_at": "2026-11-06T13:16:53+00:00",
-      "updated_at": "2026-11-06T13:16:53+00:00"
+      "updated_at": "2026-11-06T15:16:04+00:00"
     },
     {
       "id": "5161f27853dab246",
@@ -9958,6 +9970,40 @@
       ],
       "added_at": "2026-11-06T01:16:14+00:00",
       "updated_at": "2026-11-06T01:16:14+00:00"
+    },
+    {
+      "id": "963a8269049e209d",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ミツカン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 487,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "41ee5e46723f8a2c",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.jiji.com/jc/article?k=2026110601065&g=eco",
+          "evidence_urls": [
+            "https://www.jiji.com/jc/article?k=2026110601065&g=eco"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "時事ドットコム",
+          "url": "https://www.jiji.com/jc/article?k=2026110601065&g=eco"
+        }
+      ],
+      "affected_service": "ミツカン365",
+      "service_aliases": [],
+      "added_at": "2026-11-06T15:16:04+00:00",
+      "updated_at": "2026-11-06T15:16:04+00:00"
     },
     {
       "id": "d596ddaea3a9b78e",
@@ -19381,6 +19427,14 @@
           "evidence_urls": [
             "https://www.risktaisaku.com/articles/-/116811"
           ]
+        },
+        {
+          "incident_id": "963a8269049e209d",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.jiji.com/jc/article?k=2026110601065&g=eco",
+          "evidence_urls": [
+            "https://www.jiji.com/jc/article?k=2026110601065&g=eco"
+          ]
         }
       ],
       "sources": [
@@ -19394,7 +19448,7 @@
         }
       ],
       "added_at": "2026-10-25T18:16:17+00:00",
-      "updated_at": "2026-11-03T13:17:19+00:00"
+      "updated_at": "2026-11-06T15:16:04+00:00"
     },
     {
       "id": "6631ba0260ce793e",
