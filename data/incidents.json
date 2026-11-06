@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-06T03:15:44+00:00",
+  "updated_at": "2026-11-06T04:15:24+00:00",
   "total": 897,
   "date_range": {
     "start": "2025-10-16",
@@ -370,6 +370,43 @@
   ],
   "incidents": [
     {
+      "id": "581973ec197708b9",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大垣共立銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "27c6fe562fd0baae",
+          "relationship": "affected_by",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/-/3065710?display=1",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/-/3065710?display=1"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3065710?display=1"
+        },
+        {
+          "name": "岐阜新聞デジタル",
+          "url": "https://www.gifu-np.co.jp/articles/-/795439"
+        }
+      ],
+      "affected_service": "カードローン",
+      "service_aliases": [],
+      "added_at": "2026-11-06T00:16:04+00:00",
+      "updated_at": "2026-11-06T04:15:24+00:00"
+    },
+    {
       "id": "0637e6a7a26c2543",
       "published_at": "2026-11-05T15:00:00+00:00",
       "disclosed_at": null,
@@ -401,39 +438,6 @@
       "service_aliases": [],
       "added_at": "2026-11-06T03:15:43+00:00",
       "updated_at": "2026-11-06T03:15:43+00:00"
-    },
-    {
-      "id": "581973ec197708b9",
-      "published_at": "2026-11-05T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "大垣共立銀行",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "27c6fe562fd0baae",
-          "relationship": "affected_by",
-          "evidence_url": "https://newsdig.tbs.co.jp/articles/-/3065710?display=1",
-          "evidence_urls": [
-            "https://newsdig.tbs.co.jp/articles/-/3065710?display=1"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "TBS NEWS DIG",
-          "url": "https://newsdig.tbs.co.jp/articles/-/3065710?display=1"
-        }
-      ],
-      "affected_service": "カードローン",
-      "service_aliases": [],
-      "added_at": "2026-11-06T00:16:04+00:00",
-      "updated_at": "2026-11-06T00:16:04+00:00"
     },
     {
       "id": "5161f27853dab246",
