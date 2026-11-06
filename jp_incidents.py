@@ -106,6 +106,8 @@ SOURCES = [
     {"name": "Security NEXT",   "url": "https://www.security-next.com/feed"},
     {"name": "ScanNetSecurity", "url": "https://scan.netsecurity.ne.jp/rss/index.rdf"},
     {"name": "Cybersecurity.jp", "url": "https://cybersecurity-jp.com/feed"},
+    {"name": "Cybersecurity.jp news", "type": "html", "url": "https://cybersecurity-jp.com/news",
+     "link_re": r"^https://cybersecurity-jp\.com/news/\d+/?(?:\?.*)?$"},
     {"name": "piyolog",         "url": "https://piyolog.hatenadiary.jp/rss"},
     {"name": "JPCERT/CC",       "url": "https://www.jpcert.or.jp/rss/jpcert.rdf"},
     # --- aggregator listing pages (HTML; selectors are loose on purpose) ---

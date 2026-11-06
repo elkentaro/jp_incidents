@@ -80,10 +80,10 @@ keep private review notes out of them.
 <!-- source-registry:begin -->
 ## Complete source registry
 
-The collector currently polls **366 configured sources**. This list is generated from [`data/sources.json`](data/sources.json); run `python3 scripts/update_readme_sources.py` after changing the registry.
+The collector currently polls **367 configured sources**. This list is generated from [`data/sources.json`](data/sources.json); run `python3 scripts/update_readme_sources.py` after changing the registry.
 
 <details>
-<summary><strong>News, search, and specialist publications (21)</strong></summary>
+<summary><strong>News, search, and specialist publications (22)</strong></summary>
 
 - [GNews 不正アクセス](https://news.google.com/rss/search?q=%E4%B8%8D%E6%AD%A3%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%20when%3A7d&hl=ja&gl=JP&ceid=JP:ja)
 - [GNews 情報漏えい](https://news.google.com/rss/search?q=%E6%83%85%E5%A0%B1%E6%BC%8F%E3%81%88%E3%81%84%20OR%20%E6%83%85%E5%A0%B1%E6%BC%8F%E6%B4%A9%20when%3A7d&hl=ja&gl=JP&ceid=JP:ja)
@@ -99,6 +99,7 @@ The collector currently polls **366 configured sources**. This list is generated
 - [Security NEXT](https://www.security-next.com/feed)
 - [ScanNetSecurity](https://scan.netsecurity.ne.jp/rss/index.rdf)
 - [Cybersecurity.jp](https://cybersecurity-jp.com/feed)
+- [Cybersecurity.jp news](https://cybersecurity-jp.com/news)
 - [piyolog](https://piyolog.hatenadiary.jp/rss)
 - [JPCERT/CC](https://www.jpcert.or.jp/rss/jpcert.rdf)
 - [Westeria list](https://westeria.jp/security-incidents/2026/)
