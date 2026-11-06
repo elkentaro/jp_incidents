@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-06T00:16:04+00:00",
-  "total": 890,
+  "updated_at": "2026-11-06T01:16:14+00:00",
+  "total": 894,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-06"
@@ -337,7 +337,7 @@
     },
     {
       "date": "2026-10-30",
-      "count": 34
+      "count": 35
     },
     {
       "date": "2026-10-31",
@@ -349,7 +349,7 @@
     },
     {
       "date": "2026-11-02",
-      "count": 43
+      "count": 45
     },
     {
       "date": "2026-11-03",
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-11-05",
-      "count": 42
+      "count": 43
     },
     {
       "date": "2026-11-06",
@@ -1315,6 +1315,40 @@
       "service_aliases": [],
       "added_at": "2026-11-05T15:15:51+00:00",
       "updated_at": "2026-11-05T15:15:51+00:00"
+    },
+    {
+      "id": "5ab603a107654652",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "松井証券",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 830000,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.matsui.co.jp/company/press/pdf/pr261105.pdf",
+          "evidence_urls": [
+            "https://www.matsui.co.jp/company/press/pdf/pr261105.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.matsui.co.jp/company/press/pdf/pr261105.pdf"
+        }
+      ],
+      "affected_service": "メール配信サービス",
+      "service_aliases": [],
+      "added_at": "2026-11-06T01:16:14+00:00",
+      "updated_at": "2026-11-06T01:16:14+00:00"
     },
     {
       "id": "6f8b01ebda0dcc79",
@@ -2603,6 +2637,64 @@
       "updated_at": "2026-11-05T04:16:40+00:00"
     },
     {
+      "id": "ce9458d4e66bdde4",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": "2026-11-03T15:00:00+00:00",
+      "organization": "IIJmio",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 983458,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.iij.ad.jp/news/information/2026/1104.html",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/d76f8a5199fd33498356122d7f0c3d0a2e6f91d6",
+            "https://www.iij.ad.jp/news/information/2026/1104.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.iij.ad.jp/news/information/2026/1104.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/d76f8a5199fd33498356122d7f0c3d0a2e6f91d6"
+        }
+      ],
+      "affected_service": "IIJmio / BIC SIM powered by IIJ / JALモバイル powered by IIJmio",
+      "service_aliases": [],
+      "affected_services": [
+        "IIJmio",
+        "BIC SIM powered by IIJ",
+        "JALモバイル powered by IIJmio"
+      ],
+      "service_details": [
+        {
+          "name": "IIJmio",
+          "aliases": []
+        },
+        {
+          "name": "BIC SIM powered by IIJ",
+          "aliases": []
+        },
+        {
+          "name": "JALモバイル powered by IIJmio",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-05T11:16:39+00:00",
+      "updated_at": "2026-11-06T01:16:14+00:00"
+    },
+    {
       "id": "d88380e47ae0f8b8",
       "published_at": "2026-11-03T15:00:00+00:00",
       "disclosed_at": null,
@@ -3381,59 +3473,6 @@
       "service_aliases": [],
       "added_at": "2026-11-04T23:15:16+00:00",
       "updated_at": "2026-11-04T23:15:16+00:00"
-    },
-    {
-      "id": "ce9458d4e66bdde4",
-      "published_at": "2026-11-03T15:00:00+00:00",
-      "disclosed_at": "2026-11-03T15:00:00+00:00",
-      "organization": "IIJmio",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 983458,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/d76f8a5199fd33498356122d7f0c3d0a2e6f91d6",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/d76f8a5199fd33498356122d7f0c3d0a2e6f91d6"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/d76f8a5199fd33498356122d7f0c3d0a2e6f91d6"
-        }
-      ],
-      "affected_service": "IIJmio / BIC SIM powered by IIJ / JALモバイル powered by IIJmio",
-      "service_aliases": [],
-      "affected_services": [
-        "IIJmio",
-        "BIC SIM powered by IIJ",
-        "JALモバイル powered by IIJmio"
-      ],
-      "service_details": [
-        {
-          "name": "IIJmio",
-          "aliases": []
-        },
-        {
-          "name": "BIC SIM powered by IIJ",
-          "aliases": []
-        },
-        {
-          "name": "JALモバイル powered by IIJmio",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-05T11:16:39+00:00",
-      "updated_at": "2026-11-05T11:16:39+00:00"
     },
     {
       "id": "de73cb7eab25a4c0",
@@ -5886,6 +5925,53 @@
       "updated_at": "2026-11-02T20:15:44+00:00"
     },
     {
+      "id": "eddb63a9766c497d",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "GMOメイクショップ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 12600000,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.makeshop.co.jp/news/info/2026-11-05_2/",
+          "evidence_urls": [
+            "https://www.makeshop.co.jp/news/info/2026-11-05_2/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.makeshop.co.jp/news/info/2026-11-05_2/"
+        }
+      ],
+      "affected_service": "メール配信プラス / MakeRepeater byGMO",
+      "service_aliases": [],
+      "affected_services": [
+        "メール配信プラス",
+        "MakeRepeater byGMO"
+      ],
+      "service_details": [
+        {
+          "name": "メール配信プラス",
+          "aliases": []
+        },
+        {
+          "name": "MakeRepeater byGMO",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-06T01:16:14+00:00",
+      "updated_at": "2026-11-06T01:16:14+00:00"
+    },
+    {
       "id": "47e339e61d1ed872",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
@@ -6027,6 +6113,40 @@
       "service_aliases": [],
       "added_at": "2026-11-04T06:13:31+00:00",
       "updated_at": "2026-11-04T06:13:31+00:00"
+    },
+    {
+      "id": "6e8b9e8b6fe37033",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "モンテローザ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 625429,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.monteroza.co.jp/wp-content/uploads/2026/11/news261104mm.pdf",
+          "evidence_urls": [
+            "https://www.monteroza.co.jp/wp-content/uploads/2026/11/news261104mm.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.monteroza.co.jp/wp-content/uploads/2026/11/news261104mm.pdf"
+        }
+      ],
+      "affected_service": "メールマガジン",
+      "service_aliases": [],
+      "added_at": "2026-11-06T01:16:14+00:00",
+      "updated_at": "2026-11-06T01:16:14+00:00"
     },
     {
       "id": "8c7c37b1537ea3b7",
@@ -8147,6 +8267,29 @@
       "service_aliases": [],
       "added_at": "2026-11-02T07:16:38+00:00",
       "updated_at": "2026-11-02T07:16:38+00:00"
+    },
+    {
+      "id": "f91bfdf4a2294519",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": "2026-11-01T15:00:00+00:00",
+      "organization": "ファンくる",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1030741,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.fancrew.co.jp/news/news-press-release/26114_maintenance.html"
+        }
+      ],
+      "added_at": "2026-11-06T01:16:14+00:00",
+      "updated_at": "2026-11-06T01:16:14+00:00"
     },
     {
       "id": "d596ddaea3a9b78e",
@@ -10605,6 +10748,14 @@
           ]
         },
         {
+          "incident_id": "5ab603a107654652",
+          "relationship": "affects",
+          "evidence_url": "https://www.matsui.co.jp/company/press/pdf/pr261105.pdf",
+          "evidence_urls": [
+            "https://www.matsui.co.jp/company/press/pdf/pr261105.pdf"
+          ]
+        },
+        {
           "incident_id": "5d24de7057a2640a",
           "relationship": "affects",
           "evidence_url": "https://www.ryugin.co.jp/corporate/news/100767/",
@@ -10669,6 +10820,14 @@
           "evidence_urls": [
             "https://cybersecurity-jp.com/news/118102",
             "https://www.osakagas.co.jp/company/press/pr2026/1828107_60967.html"
+          ]
+        },
+        {
+          "incident_id": "6e8b9e8b6fe37033",
+          "relationship": "affects",
+          "evidence_url": "https://www.monteroza.co.jp/wp-content/uploads/2026/11/news261104mm.pdf",
+          "evidence_urls": [
+            "https://www.monteroza.co.jp/wp-content/uploads/2026/11/news261104mm.pdf"
           ]
         },
         {
@@ -10986,9 +11145,10 @@
         {
           "incident_id": "ce9458d4e66bdde4",
           "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/d76f8a5199fd33498356122d7f0c3d0a2e6f91d6",
+          "evidence_url": "https://www.iij.ad.jp/news/information/2026/1104.html",
           "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/d76f8a5199fd33498356122d7f0c3d0a2e6f91d6"
+            "https://news.yahoo.co.jp/articles/d76f8a5199fd33498356122d7f0c3d0a2e6f91d6",
+            "https://www.iij.ad.jp/news/information/2026/1104.html"
           ]
         },
         {
@@ -11072,6 +11232,14 @@
           ]
         },
         {
+          "incident_id": "eddb63a9766c497d",
+          "relationship": "affects",
+          "evidence_url": "https://www.makeshop.co.jp/news/info/2026-11-05_2/",
+          "evidence_urls": [
+            "https://www.makeshop.co.jp/news/info/2026-11-05_2/"
+          ]
+        },
+        {
           "incident_id": "ef09c13430d4ac73",
           "relationship": "affects",
           "evidence_url": "https://corp.zaif.jp/info/20261104-1",
@@ -11148,7 +11316,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-05T21:15:39+00:00"
+      "updated_at": "2026-11-06T01:16:14+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -11476,6 +11644,39 @@
       "updated_at": "2026-11-01T06:35:58+00:00"
     },
     {
+      "id": "b1657fd76d2069cb",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "プレナス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 7000000,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/plenus_hottomotto_newsletter_data_leak_20261104/"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://www.plenus.co.jp/files/optionallink/00003434_file.pdf"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC054QF0V01C26A1000000/"
+        }
+      ],
+      "affected_service": "ほっともっとのメールマガジン配信サービス",
+      "service_aliases": [],
+      "added_at": "2026-11-05T07:17:31+00:00",
+      "updated_at": "2026-11-06T01:16:14+00:00"
+    },
+    {
       "id": "eabeef8122751e9d",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": null,
@@ -11761,35 +11962,6 @@
       "service_aliases": [],
       "added_at": "2026-11-04T09:16:15+00:00",
       "updated_at": "2026-11-05T08:16:07+00:00"
-    },
-    {
-      "id": "b1657fd76d2069cb",
-      "published_at": "2026-10-27T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "プレナス",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 7000000,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/plenus_hottomotto_newsletter_data_leak_20261104/"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUC054QF0V01C26A1000000/"
-        }
-      ],
-      "affected_service": "ほっともっとのメールマガジン配信サービス",
-      "service_aliases": [],
-      "added_at": "2026-11-05T07:17:31+00:00",
-      "updated_at": "2026-11-05T12:16:48+00:00"
     },
     {
       "id": "decf799bcee862b6",
