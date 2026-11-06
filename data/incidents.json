@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-06T09:15:42+00:00",
-  "total": 912,
+  "updated_at": "2026-11-06T10:15:48+00:00",
+  "total": 915,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-06"
@@ -349,7 +349,7 @@
     },
     {
       "date": "2026-11-02",
-      "count": 46
+      "count": 47
     },
     {
       "date": "2026-11-03",
@@ -357,11 +357,11 @@
     },
     {
       "date": "2026-11-04",
-      "count": 39
+      "count": 40
     },
     {
       "date": "2026-11-05",
-      "count": 45
+      "count": 46
     },
     {
       "date": "2026-11-06",
@@ -369,6 +369,67 @@
     }
   ],
   "incidents": [
+    {
+      "id": "8419a6aecdeccbf5",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "福岡ソフトバンクホークス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 10723,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/25e643d2d9e6af8b11491e32e260fee9ab320d4d",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/25e643d2d9e6af8b11491e32e260fee9ab320d4d",
+            "https://topics.smt.docomo.ne.jp/article/sponichi/sports/sponichi-spngoo-20261106-0245"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/25e643d2d9e6af8b11491e32e260fee9ab320d4d"
+        },
+        {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp/article/sponichi/sports/sponichi-spngoo-20261106-0245"
+        },
+        {
+          "name": "毎日新聞",
+          "url": "https://mainichi.jp/articles/20261106/spp/sp0/001/237000c"
+        },
+        {
+          "name": "ライブドアニュース",
+          "url": "https://news.livedoor.com/topics/detail/32749626/"
+        }
+      ],
+      "affected_service": "タカコレ / タカコレくじ",
+      "service_aliases": [],
+      "affected_services": [
+        "タカコレ",
+        "タカコレくじ"
+      ],
+      "service_details": [
+        {
+          "name": "タカコレ",
+          "aliases": []
+        },
+        {
+          "name": "タカコレくじ",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-06T08:36:04+00:00",
+      "updated_at": "2026-11-06T10:15:48+00:00"
+    },
     {
       "id": "581973ec197708b9",
       "published_at": "2026-11-05T15:00:00+00:00",
@@ -504,59 +565,6 @@
       "updated_at": "2026-11-06T03:15:43+00:00"
     },
     {
-      "id": "8419a6aecdeccbf5",
-      "published_at": "2026-11-05T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "福岡ソフトバンクホークス",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 10723,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/25e643d2d9e6af8b11491e32e260fee9ab320d4d",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/25e643d2d9e6af8b11491e32e260fee9ab320d4d",
-            "https://topics.smt.docomo.ne.jp/article/sponichi/sports/sponichi-spngoo-20261106-0245"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/25e643d2d9e6af8b11491e32e260fee9ab320d4d"
-        },
-        {
-          "name": "ｄメニューニュース",
-          "url": "https://topics.smt.docomo.ne.jp/article/sponichi/sports/sponichi-spngoo-20261106-0245"
-        }
-      ],
-      "affected_service": "タカコレ / タカコレくじ",
-      "service_aliases": [],
-      "affected_services": [
-        "タカコレ",
-        "タカコレくじ"
-      ],
-      "service_details": [
-        {
-          "name": "タカコレ",
-          "aliases": []
-        },
-        {
-          "name": "タカコレくじ",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-06T08:36:04+00:00",
-      "updated_at": "2026-11-06T09:15:42+00:00"
-    },
-    {
       "id": "ba3f717106e365ae",
       "published_at": "2026-11-05T15:00:00+00:00",
       "disclosed_at": null,
@@ -684,9 +692,10 @@
         {
           "incident_id": "d6ec815fc89551e9",
           "relationship": "affects",
-          "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBvMUN1ZjFnSWM0U1Rya1J6RkQwazFoQ2ZIVzE0RWpRd3RQRHB1QkdweHU1WmhvU1JfM0dxTW1WZTRXM1ptMklnS3h1RHFQTU9IYnZ2MnFOVkpQeUJKVXZwbk1Oal9Oc1hCUmQ3OFhBNVh1eWctMnU3eVlPdFN0Y2s?oc=5",
+          "evidence_url": "https://www.fukui-tv.co.jp/?post_type=fukui_news&p=203402",
           "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMif0FVX3lxTFBvMUN1ZjFnSWM0U1Rya1J6RkQwazFoQ2ZIVzE0RWpRd3RQRHB1QkdweHU1WmhvU1JfM0dxTW1WZTRXM1ptMklnS3h1RHFQTU9IYnZ2MnFOVkpQeUJKVXZwbk1Oal9Oc1hCUmQ3OFhBNVh1eWctMnU3eVlPdFN0Y2s?oc=5"
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTFBvMUN1ZjFnSWM0U1Rya1J6RkQwazFoQ2ZIVzE0RWpRd3RQRHB1QkdweHU1WmhvU1JfM0dxTW1WZTRXM1ptMklnS3h1RHFQTU9IYnZ2MnFOVkpQeUJKVXZwbk1Oal9Oc1hCUmQ3OFhBNVh1eWctMnU3eVlPdFN0Y2s?oc=5",
+            "https://www.fukui-tv.co.jp/?post_type=fukui_news&p=203402"
           ]
         }
       ],
@@ -697,7 +706,7 @@
         }
       ],
       "added_at": "2026-11-06T08:36:04+00:00",
-      "updated_at": "2026-11-06T08:36:04+00:00"
+      "updated_at": "2026-11-06T10:15:48+00:00"
     },
     {
       "id": "4e61125aed51dbcb",
@@ -2104,6 +2113,40 @@
       ],
       "added_at": "2026-11-05T11:16:39+00:00",
       "updated_at": "2026-11-05T11:16:39+00:00"
+    },
+    {
+      "id": "c89b09432d3c8d61",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "秋田ノーザンハピネッツ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 9530,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://northern-happinets.com/news/detail/id=23087",
+          "evidence_urls": [
+            "https://northern-happinets.com/news/detail/id=23087"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "northern-happinets.com",
+          "url": "https://northern-happinets.com/news/detail/id=23087"
+        }
+      ],
+      "affected_service": "ファンクラブ「クラブハピネッツ」",
+      "service_aliases": [],
+      "added_at": "2026-11-06T10:15:48+00:00",
+      "updated_at": "2026-11-06T10:15:48+00:00"
     },
     {
       "id": "32623d2c5b058c4e",
@@ -3611,6 +3654,39 @@
       "updated_at": "2026-11-04T10:38:56+00:00"
     },
     {
+      "id": "e6dec13f9e6cc672",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": "2026-11-03T15:00:00+00:00",
+      "organization": "株式会社アクセルエンターメディア",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 1086098,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.axelentermedia.co.jp/notice_20261104.html",
+          "evidence_urls": [
+            "https://www.axelentermedia.co.jp/notice_20261104.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "www.axelentermedia.co.jp",
+          "url": "https://www.axelentermedia.co.jp/notice_20261104.html"
+        }
+      ],
+      "affected_service": "メール配信サービス",
+      "service_aliases": [],
+      "added_at": "2026-11-06T10:15:48+00:00",
+      "updated_at": "2026-11-06T10:15:48+00:00"
+    },
+    {
       "id": "03ec9333584e44dd",
       "published_at": "2026-11-03T15:00:00+00:00",
       "disclosed_at": null,
@@ -4918,10 +4994,57 @@
         {
           "name": "NHKニュース",
           "url": "https://news.web.nhk/newsweb/na/nd-20261106de71530"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/0a96ce718751c60a8d8d9f042411e413bd47a4f7"
         }
       ],
       "added_at": "2026-11-04T10:15:52+00:00",
-      "updated_at": "2026-11-06T07:15:40+00:00"
+      "updated_at": "2026-11-06T10:15:48+00:00"
+    },
+    {
+      "id": "14733f1165b3b833",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ペイクラウドホールディングス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 77000000,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261106568143.pdf"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/895ee455f19952c0931183c36b3ea4df86d3f7cc"
+        },
+        {
+          "name": "Yahoo!ファイナンス",
+          "url": "https://finance.yahoo.co.jp/news/detail/1ccc51a589997e0f0b23fdd862dc7bffd8e9a6e5"
+        },
+        {
+          "name": "佐賀新聞",
+          "url": "https://www.saga-s.co.jp/articles/-/1822602"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002861/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/3f4bc73bd479865938845f45819fc644b29778b8"
+        }
+      ],
+      "added_at": "2026-11-02T21:15:57+00:00",
+      "updated_at": "2026-11-06T10:15:48+00:00"
     },
     {
       "id": "57a40b2bf2b57970",
@@ -4957,10 +5080,14 @@
         {
           "name": "NHKニュース",
           "url": "https://news.web.nhk/newsweb/na/nd-20261106de71530"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/0a96ce718751c60a8d8d9f042411e413bd47a4f7"
         }
       ],
       "added_at": "2026-11-04T10:15:52+00:00",
-      "updated_at": "2026-11-06T07:15:40+00:00"
+      "updated_at": "2026-11-06T10:15:48+00:00"
     },
     {
       "id": "5fa1320f5cec460c",
@@ -5388,45 +5515,6 @@
       "service_aliases": [],
       "added_at": "2026-11-02T13:16:55+00:00",
       "updated_at": "2026-11-03T13:17:19+00:00"
-    },
-    {
-      "id": "14733f1165b3b833",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ペイクラウドホールディングス",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 77000000,
-      "confidence": "high",
-      "confidence_score": 95,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/895ee455f19952c0931183c36b3ea4df86d3f7cc"
-        },
-        {
-          "name": "Yahoo!ファイナンス",
-          "url": "https://finance.yahoo.co.jp/news/detail/1ccc51a589997e0f0b23fdd862dc7bffd8e9a6e5"
-        },
-        {
-          "name": "佐賀新聞",
-          "url": "https://www.saga-s.co.jp/articles/-/1822602"
-        },
-        {
-          "name": "ITmedia",
-          "url": "https://www.itmedia.co.jp/news/article/2611/04/2000002861/"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/3f4bc73bd479865938845f45819fc644b29778b8"
-        }
-      ],
-      "added_at": "2026-11-02T21:15:57+00:00",
-      "updated_at": "2026-11-05T09:15:53+00:00"
     },
     {
       "id": "27c6fe562fd0baae",
@@ -6067,6 +6155,40 @@
       "service_aliases": [],
       "added_at": "2026-11-02T13:16:55+00:00",
       "updated_at": "2026-11-05T11:16:39+00:00"
+    },
+    {
+      "id": "4be01a6f83093664",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "仙台市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 12211,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.sendai.jp/kosekijumin/20261106.html",
+          "evidence_urls": [
+            "https://www.city.sendai.jp/kosekijumin/20261106.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "仙台市 / Sendai",
+          "url": "https://www.city.sendai.jp/kosekijumin/20261106.html"
+        }
+      ],
+      "affected_service": "マイナンバーカード交付予約・管理システム",
+      "service_aliases": [],
+      "added_at": "2026-11-06T10:15:48+00:00",
+      "updated_at": "2026-11-06T10:15:48+00:00"
     },
     {
       "id": "538a9c07939efeb0",
@@ -9838,6 +9960,44 @@
       "updated_at": "2026-11-01T23:24:18+00:00"
     },
     {
+      "id": "d6ec815fc89551e9",
+      "published_at": "2026-10-28T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "福井県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 368,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "ef9a6c327405f613",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.fukui-tv.co.jp/?post_type=fukui_news&p=203402",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTFBvMUN1ZjFnSWM0U1Rya1J6RkQwazFoQ2ZIVzE0RWpRd3RQRHB1QkdweHU1WmhvU1JfM0dxTW1WZTRXM1ptMklnS3h1RHFQTU9IYnZ2MnFOVkpQeUJKVXZwbk1Oal9Oc1hCUmQ3OFhBNVh1eWctMnU3eVlPdFN0Y2s?oc=5",
+            "https://www.fukui-tv.co.jp/?post_type=fukui_news&p=203402"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBvMUN1ZjFnSWM0U1Rya1J6RkQwazFoQ2ZIVzE0RWpRd3RQRHB1QkdweHU1WmhvU1JfM0dxTW1WZTRXM1ptMklnS3h1RHFQTU9IYnZ2MnFOVkpQeUJKVXZwbk1Oal9Oc1hCUmQ3OFhBNVh1eWctMnU3eVlPdFN0Y2s?oc=5"
+        },
+        {
+          "name": "福井テレビ",
+          "url": "https://www.fukui-tv.co.jp/?post_type=fukui_news&p=203402"
+        }
+      ],
+      "affected_service": "291JOBS",
+      "service_aliases": [],
+      "added_at": "2026-11-06T08:36:04+00:00",
+      "updated_at": "2026-11-06T10:15:48+00:00"
+    },
+    {
       "id": "019d775b72e2c08c",
       "published_at": "2026-10-28T15:00:00+00:00",
       "disclosed_at": null,
@@ -10263,39 +10423,6 @@
       "service_aliases": [],
       "added_at": "2026-11-06T06:15:41+00:00",
       "updated_at": "2026-11-06T06:15:41+00:00"
-    },
-    {
-      "id": "d6ec815fc89551e9",
-      "published_at": "2026-10-28T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "福井県",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 368,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "ef9a6c327405f613",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBvMUN1ZjFnSWM0U1Rya1J6RkQwazFoQ2ZIVzE0RWpRd3RQRHB1QkdweHU1WmhvU1JfM0dxTW1WZTRXM1ptMklnS3h1RHFQTU9IYnZ2MnFOVkpQeUJKVXZwbk1Oal9Oc1hCUmQ3OFhBNVh1eWctMnU3eVlPdFN0Y2s?oc=5",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMif0FVX3lxTFBvMUN1ZjFnSWM0U1Rya1J6RkQwazFoQ2ZIVzE0RWpRd3RQRHB1QkdweHU1WmhvU1JfM0dxTW1WZTRXM1ptMklnS3h1RHFQTU9IYnZ2MnFOVkpQeUJKVXZwbk1Oal9Oc1hCUmQ3OFhBNVh1eWctMnU3eVlPdFN0Y2s?oc=5"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBvMUN1ZjFnSWM0U1Rya1J6RkQwazFoQ2ZIVzE0RWpRd3RQRHB1QkdweHU1WmhvU1JfM0dxTW1WZTRXM1ptMklnS3h1RHFQTU9IYnZ2MnFOVkpQeUJKVXZwbk1Oal9Oc1hCUmQ3OFhBNVh1eWctMnU3eVlPdFN0Y2s?oc=5"
-        }
-      ],
-      "affected_service": "291JOBS",
-      "service_aliases": [],
-      "added_at": "2026-11-06T08:36:04+00:00",
-      "updated_at": "2026-11-06T08:36:04+00:00"
     },
     {
       "id": "e2171f91d8a46945",
@@ -11526,6 +11653,14 @@
           ]
         },
         {
+          "incident_id": "4be01a6f83093664",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.sendai.jp/kosekijumin/20261106.html",
+          "evidence_urls": [
+            "https://www.city.sendai.jp/kosekijumin/20261106.html"
+          ]
+        },
+        {
           "incident_id": "51fc582f23003b4c",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9NVjVmTHpjU2ZxaEdPc3VRTDYybEN1THNscHhTUUNBTmhWX3hSMVRsdjU3a3NpOHltOXZuZWJXcGZtSUNkUDUzSDh4N0dBdHNiMDdCTktqTVJKT1ZsdWpqQWFB?oc=5",
@@ -11938,6 +12073,14 @@
           ]
         },
         {
+          "incident_id": "c89b09432d3c8d61",
+          "relationship": "affects",
+          "evidence_url": "https://northern-happinets.com/news/detail/id=23087",
+          "evidence_urls": [
+            "https://northern-happinets.com/news/detail/id=23087"
+          ]
+        },
+        {
           "incident_id": "c8e247004bb4b522",
           "relationship": "affects",
           "evidence_url": "https://www.city.setagaya.lg.jp/01004/36866.html",
@@ -12070,6 +12213,14 @@
           ]
         },
         {
+          "incident_id": "e6dec13f9e6cc672",
+          "relationship": "affects",
+          "evidence_url": "https://www.axelentermedia.co.jp/notice_20261104.html",
+          "evidence_urls": [
+            "https://www.axelentermedia.co.jp/notice_20261104.html"
+          ]
+        },
+        {
           "incident_id": "e9811136a68c506f",
           "relationship": "affects",
           "evidence_url": "https://www.ucoop.or.jp/info/2026/info_34571.html",
@@ -12162,7 +12313,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-06T09:15:42+00:00"
+      "updated_at": "2026-11-06T10:15:48+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
