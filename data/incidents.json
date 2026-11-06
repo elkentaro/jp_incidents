@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-06T07:15:40+00:00",
-  "total": 902,
+  "updated_at": "2026-11-06T08:15:41+00:00",
+  "total": 904,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-06"
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-11-06",
-      "count": 5
+      "count": 7
     }
   ],
   "incidents": [
@@ -438,6 +438,39 @@
       "updated_at": "2026-11-06T07:15:40+00:00"
     },
     {
+      "id": "050087310ec0737d",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "LIFULL Investment",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 238,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "778f4a05cc80a4bd",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/6e4b43358ec493a4d6f89a2f272bb3300bae2dcb",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/6e4b43358ec493a4d6f89a2f272bb3300bae2dcb"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6e4b43358ec493a4d6f89a2f272bb3300bae2dcb"
+        }
+      ],
+      "affected_service": "LIFULL不動産クラウドファンディング",
+      "service_aliases": [],
+      "added_at": "2026-11-06T08:15:41+00:00",
+      "updated_at": "2026-11-06T08:15:41+00:00"
+    },
+    {
       "id": "0637e6a7a26c2543",
       "published_at": "2026-11-05T15:00:00+00:00",
       "disclosed_at": null,
@@ -469,6 +502,39 @@
       "service_aliases": [],
       "added_at": "2026-11-06T03:15:43+00:00",
       "updated_at": "2026-11-06T03:15:43+00:00"
+    },
+    {
+      "id": "ba3f717106e365ae",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "リムズキャピタル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "778f4a05cc80a4bd",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/6e4b43358ec493a4d6f89a2f272bb3300bae2dcb",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/6e4b43358ec493a4d6f89a2f272bb3300bae2dcb"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6e4b43358ec493a4d6f89a2f272bb3300bae2dcb"
+        }
+      ],
+      "affected_service": "BATSUNAGU",
+      "service_aliases": [],
+      "added_at": "2026-11-06T08:15:41+00:00",
+      "updated_at": "2026-11-06T08:15:41+00:00"
     },
     {
       "id": "5161f27853dab246",
@@ -5268,6 +5334,47 @@
       "updated_at": "2026-11-02T13:16:55+00:00"
     },
     {
+      "id": "24fbcc3575cc868a",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社パン・パシフィック・インターナショナルホールディングス",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "778f4a05cc80a4bd",
+          "relationship": "affected_by",
+          "evidence_url": "https://ppih.co.jp/news/pdf/4e630f1d37e8a69c0c33fa66a61c74ee.pdf",
+          "evidence_urls": [
+            "https://ppih.co.jp/news/pdf/4e630f1d37e8a69c0c33fa66a61c74ee.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "パン・パシフィック・インターナショナルホールディングス / PPIH",
+          "url": "https://ppih.co.jp/news/pdf/4e630f1d37e8a69c0c33fa66a61c74ee.pdf"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC0281E0S6A101C2000000/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6e4b43358ec493a4d6f89a2f272bb3300bae2dcb"
+        }
+      ],
+      "affected_service": "デジタル社債管理システム",
+      "service_aliases": [],
+      "added_at": "2026-11-02T10:00:14+00:00",
+      "updated_at": "2026-11-06T08:15:41+00:00"
+    },
+    {
       "id": "6a1a313caf6aba02",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
@@ -5454,43 +5561,6 @@
       "service_aliases": [],
       "added_at": "2026-11-02T13:16:55+00:00",
       "updated_at": "2026-11-02T22:16:00+00:00"
-    },
-    {
-      "id": "24fbcc3575cc868a",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "株式会社パン・パシフィック・インターナショナルホールディングス",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [
-        {
-          "incident_id": "778f4a05cc80a4bd",
-          "relationship": "affected_by",
-          "evidence_url": "https://ppih.co.jp/news/pdf/4e630f1d37e8a69c0c33fa66a61c74ee.pdf",
-          "evidence_urls": [
-            "https://ppih.co.jp/news/pdf/4e630f1d37e8a69c0c33fa66a61c74ee.pdf"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "パン・パシフィック・インターナショナルホールディングス / PPIH",
-          "url": "https://ppih.co.jp/news/pdf/4e630f1d37e8a69c0c33fa66a61c74ee.pdf"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUC0281E0S6A101C2000000/"
-        }
-      ],
-      "affected_service": "デジタル社債管理システム",
-      "service_aliases": [],
-      "added_at": "2026-11-02T10:00:14+00:00",
-      "updated_at": "2026-11-02T13:16:55+00:00"
     },
     {
       "id": "4daeb8965b6e424d",
@@ -5861,6 +5931,14 @@
       "confidence_score": 60,
       "related": [
         {
+          "incident_id": "050087310ec0737d",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/6e4b43358ec493a4d6f89a2f272bb3300bae2dcb",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/6e4b43358ec493a4d6f89a2f272bb3300bae2dcb"
+          ]
+        },
+        {
           "incident_id": "24fbcc3575cc868a",
           "relationship": "affects",
           "evidence_url": "https://ppih.co.jp/news/pdf/4e630f1d37e8a69c0c33fa66a61c74ee.pdf",
@@ -5883,6 +5961,14 @@
           "evidence_urls": [
             "https://www.nikkei.com/article/DGXZQOUC028RZ0S6A101C2000000/"
           ]
+        },
+        {
+          "incident_id": "ba3f717106e365ae",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/6e4b43358ec493a4d6f89a2f272bb3300bae2dcb",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/6e4b43358ec493a4d6f89a2f272bb3300bae2dcb"
+          ]
         }
       ],
       "sources": [
@@ -5892,7 +5978,7 @@
         }
       ],
       "added_at": "2026-11-02T10:00:14+00:00",
-      "updated_at": "2026-11-02T21:15:57+00:00"
+      "updated_at": "2026-11-06T08:15:41+00:00"
     },
     {
       "id": "9bd9f6eaf1f4cf2c",
@@ -7866,12 +7952,16 @@
         {
           "name": "CoinPost",
           "url": "https://coinpost.jp/?p=746467"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6e4b43358ec493a4d6f89a2f272bb3300bae2dcb"
         }
       ],
       "affected_service": "デジタル証券",
       "service_aliases": [],
       "added_at": "2026-11-02T01:16:01+00:00",
-      "updated_at": "2026-11-05T08:16:07+00:00"
+      "updated_at": "2026-11-06T08:15:41+00:00"
     },
     {
       "id": "a9fd6c70338f6c75",
@@ -9384,6 +9474,35 @@
       "updated_at": "2026-10-30T01:13:09+00:00"
     },
     {
+      "id": "7d79740f39a9db07",
+      "published_at": "2026-10-28T15:00:00+00:00",
+      "disclosed_at": "2026-10-30T15:00:00+00:00",
+      "organization": "スターツ証券",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.starts-sc.com/info/20261031.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6e4b43358ec493a4d6f89a2f272bb3300bae2dcb"
+        }
+      ],
+      "affected_service": "スターツ・アセット・トークン~両国・千鳥町~",
+      "service_aliases": [],
+      "added_at": "2026-11-02T01:16:01+00:00",
+      "updated_at": "2026-11-06T08:15:41+00:00"
+    },
+    {
       "id": "c0695d18cd2d0c0a",
       "published_at": "2026-10-28T15:00:00+00:00",
       "disclosed_at": null,
@@ -9539,31 +9658,6 @@
       "service_aliases": [],
       "added_at": "2026-10-29T20:16:15+00:00",
       "updated_at": "2026-10-29T20:16:15+00:00"
-    },
-    {
-      "id": "7d79740f39a9db07",
-      "published_at": "2026-10-28T15:00:00+00:00",
-      "disclosed_at": "2026-10-30T15:00:00+00:00",
-      "organization": "スターツ証券",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.starts-sc.com/info/20261031.html"
-        }
-      ],
-      "affected_service": "スターツ・アセット・トークン~両国・千鳥町~",
-      "service_aliases": [],
-      "added_at": "2026-11-02T01:16:01+00:00",
-      "updated_at": "2026-11-02T01:16:01+00:00"
     },
     {
       "id": "862f0a5454308701",
@@ -10734,6 +10828,10 @@
           "url": "https://prtimes.jp/main/html/rd/p/000000143.000005498.html"
         },
         {
+          "name": "NTTグループ / NTT Group",
+          "url": "https://nttse.com/news/pressrelease/2026/11-06/3292/"
+        },
+        {
           "name": "日経BP",
           "url": "https://project.nikkeibp.co.jp/ms/atcl/19/news/00001/06168/?ST=msb"
         }
@@ -10755,7 +10853,7 @@
         }
       ],
       "added_at": "2026-10-30T10:15:57+00:00",
-      "updated_at": "2026-11-06T07:15:40+00:00"
+      "updated_at": "2026-11-06T08:15:41+00:00"
     },
     {
       "id": "a3c09650fe9bed69",
@@ -12537,8 +12635,9 @@
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": null,
       "organization": "岐阜産業保健総合支援センター",
-      "incident_type": "unauthorized access",
+      "incident_type": "data leak",
       "incident_categories": [
+        "data leak",
         "unauthorized access"
       ],
       "potential_records": null,
@@ -12549,10 +12648,14 @@
         {
           "name": "労働者健康安全機構 / JOHAS",
           "url": "https://www.johas.go.jp/news/gifusanpo-unauthorizedaccess/"
+        },
+        {
+          "name": "労働者健康安全機構 / JOHAS",
+          "url": "https://www.johas.go.jp/wp-content/uploads/2026/11/R8personal-information-leak.pdf"
         }
       ],
       "added_at": "2026-11-05T09:15:53+00:00",
-      "updated_at": "2026-11-05T09:15:53+00:00"
+      "updated_at": "2026-11-06T08:15:41+00:00"
     },
     {
       "id": "3ce6612226b3c800",
@@ -36601,6 +36704,10 @@
           "url": "https://ssl4.eir-parts.net/doc/9278/tdnet/2893077/00.pdf"
         },
         {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261106567372.pdf"
+        },
+        {
           "name": "ニコニコニュース",
           "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5aek41RHRpbDBvVXo1b2lwWEZBM1VNbjN6LUJZRWhHVUllMFVTWkN1Q2pGR2ZEd0VCbmYxZ296QWF3NEd5YXAtVkV6dThGTi16cjVheg?oc=5"
         },
@@ -36633,8 +36740,10 @@
           "url": "https://westeria.jp/security-incidents/cases/bookoff-2026/"
         }
       ],
+      "affected_service": "ブックオフ会員管理システム",
+      "service_aliases": [],
       "added_at": "2026-10-19T09:06:44+00:00",
-      "updated_at": "2026-10-20T07:24:24+00:00"
+      "updated_at": "2026-11-06T08:15:41+00:00"
     },
     {
       "id": "fbcea66f6aec2733",
