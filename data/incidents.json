@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-06T08:36:04+00:00",
-  "total": 913,
+  "updated_at": "2026-11-06T09:15:42+00:00",
+  "total": 912,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-06"
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-11-06",
-      "count": 11
+      "count": 10
     }
   ],
   "incidents": [
@@ -436,54 +436,6 @@
       ],
       "added_at": "2026-11-06T07:15:40+00:00",
       "updated_at": "2026-11-06T07:15:40+00:00"
-    },
-    {
-      "id": "eaf462ad3680c52b",
-      "published_at": "2026-11-05T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "福岡ソフトバンクホークス",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 10723,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://topics.smt.docomo.ne.jp/article/sponichi/sports/sponichi-spngoo-20261106-0245",
-          "evidence_urls": [
-            "https://topics.smt.docomo.ne.jp/article/sponichi/sports/sponichi-spngoo-20261106-0245"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "ｄメニューニュース",
-          "url": "https://topics.smt.docomo.ne.jp/article/sponichi/sports/sponichi-spngoo-20261106-0245"
-        }
-      ],
-      "affected_service": "タカコレ / タカコレくじ",
-      "service_aliases": [],
-      "affected_services": [
-        "タカコレ",
-        "タカコレくじ"
-      ],
-      "service_details": [
-        {
-          "name": "タカコレ",
-          "aliases": []
-        },
-        {
-          "name": "タカコレくじ",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-06T08:36:04+00:00",
-      "updated_at": "2026-11-06T08:36:04+00:00"
     },
     {
       "id": "050087310ec0737d",
@@ -570,7 +522,8 @@
           "relationship": "affected_by",
           "evidence_url": "https://news.yahoo.co.jp/articles/25e643d2d9e6af8b11491e32e260fee9ab320d4d",
           "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/25e643d2d9e6af8b11491e32e260fee9ab320d4d"
+            "https://news.yahoo.co.jp/articles/25e643d2d9e6af8b11491e32e260fee9ab320d4d",
+            "https://topics.smt.docomo.ne.jp/article/sponichi/sports/sponichi-spngoo-20261106-0245"
           ]
         }
       ],
@@ -578,6 +531,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/25e643d2d9e6af8b11491e32e260fee9ab320d4d"
+        },
+        {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp/article/sponichi/sports/sponichi-spngoo-20261106-0245"
         }
       ],
       "affected_service": "タカコレ / タカコレくじ",
@@ -597,7 +554,7 @@
         }
       ],
       "added_at": "2026-11-06T08:36:04+00:00",
-      "updated_at": "2026-11-06T08:36:04+00:00"
+      "updated_at": "2026-11-06T09:15:42+00:00"
     },
     {
       "id": "ba3f717106e365ae",
@@ -1266,6 +1223,44 @@
       "updated_at": "2026-11-05T21:15:39+00:00"
     },
     {
+      "id": "4db0935db17b18e4",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "日本郵便",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "de1f53de576e9f74",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.post.japanpost.jp/newsrelease/pressrelease/1342644881.html",
+          "evidence_urls": [
+            "https://www.post.japanpost.jp/newsrelease/pressrelease/1342644881.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本郵便 / Japan Post",
+          "url": "https://www.post.japanpost.jp/newsrelease/pressrelease/1342644881.html"
+        },
+        {
+          "name": "物流ニュースのLNEWS",
+          "url": "https://www.lnews.jp/2026/11/s1106102.html"
+        }
+      ],
+      "affected_service": "防災ゆうストレージ",
+      "service_aliases": [],
+      "added_at": "2026-11-05T15:15:51+00:00",
+      "updated_at": "2026-11-06T09:15:42+00:00"
+    },
+    {
       "id": "5ab603a107654652",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": null,
@@ -1379,6 +1374,49 @@
       "updated_at": "2026-11-05T21:15:39+00:00"
     },
     {
+      "id": "de1f53de576e9f74",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "寺田倉庫",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "4db0935db17b18e4",
+          "relationship": "affects",
+          "evidence_url": "https://www.post.japanpost.jp/newsrelease/pressrelease/1342644881.html",
+          "evidence_urls": [
+            "https://www.post.japanpost.jp/newsrelease/pressrelease/1342644881.html"
+          ]
+        },
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.terrada.co.jp/ja/news/17123/",
+          "evidence_urls": [
+            "https://www.terrada.co.jp/ja/news/17123/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "www.terrada.co.jp",
+          "url": "https://www.terrada.co.jp/ja/news/17123/"
+        },
+        {
+          "name": "物流ニュースのLNEWS",
+          "url": "https://www.lnews.jp/2026/11/s1106102.html"
+        }
+      ],
+      "added_at": "2026-11-05T15:15:51+00:00",
+      "updated_at": "2026-11-06T09:15:42+00:00"
+    },
+    {
       "id": "024b3401d64a391b",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": null,
@@ -1456,6 +1494,35 @@
       ],
       "added_at": "2026-11-05T21:15:39+00:00",
       "updated_at": "2026-11-06T06:15:41+00:00"
+    },
+    {
+      "id": "16730e4996307750",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東京海上ダイレクト損害保険",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 74,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b5f5db2b4b10f9218ff2aa8eace6c2a71e2664b8"
+        },
+        {
+          "name": "ニッキンONLINE",
+          "url": "https://www.nikkinonline.com/article/437732"
+        }
+      ],
+      "affected_service": "マイページ",
+      "service_aliases": [],
+      "added_at": "2026-11-05T16:16:05+00:00",
+      "updated_at": "2026-11-06T09:15:42+00:00"
     },
     {
       "id": "84b1fdc78e8cfefb",
@@ -1829,39 +1896,6 @@
       "updated_at": "2026-11-05T09:15:53+00:00"
     },
     {
-      "id": "4db0935db17b18e4",
-      "published_at": "2026-11-04T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "日本郵便",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "de1f53de576e9f74",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.post.japanpost.jp/newsrelease/pressrelease/1342644881.html",
-          "evidence_urls": [
-            "https://www.post.japanpost.jp/newsrelease/pressrelease/1342644881.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "日本郵便 / Japan Post",
-          "url": "https://www.post.japanpost.jp/newsrelease/pressrelease/1342644881.html"
-        }
-      ],
-      "affected_service": "防災ゆうストレージ",
-      "service_aliases": [],
-      "added_at": "2026-11-05T15:15:51+00:00",
-      "updated_at": "2026-11-05T15:15:51+00:00"
-    },
-    {
       "id": "6f8b01ebda0dcc79",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": null,
@@ -2070,70 +2104,6 @@
       ],
       "added_at": "2026-11-05T11:16:39+00:00",
       "updated_at": "2026-11-05T11:16:39+00:00"
-    },
-    {
-      "id": "de1f53de576e9f74",
-      "published_at": "2026-11-04T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "寺田倉庫",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "4db0935db17b18e4",
-          "relationship": "affects",
-          "evidence_url": "https://www.post.japanpost.jp/newsrelease/pressrelease/1342644881.html",
-          "evidence_urls": [
-            "https://www.post.japanpost.jp/newsrelease/pressrelease/1342644881.html"
-          ]
-        },
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.terrada.co.jp/ja/news/17123/",
-          "evidence_urls": [
-            "https://www.terrada.co.jp/ja/news/17123/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "www.terrada.co.jp",
-          "url": "https://www.terrada.co.jp/ja/news/17123/"
-        }
-      ],
-      "added_at": "2026-11-05T15:15:51+00:00",
-      "updated_at": "2026-11-05T21:15:39+00:00"
-    },
-    {
-      "id": "16730e4996307750",
-      "published_at": "2026-11-04T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "東京海上ダイレクト損害保険",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 74,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/b5f5db2b4b10f9218ff2aa8eace6c2a71e2664b8"
-        }
-      ],
-      "affected_service": "マイページ",
-      "service_aliases": [],
-      "added_at": "2026-11-05T16:16:05+00:00",
-      "updated_at": "2026-11-05T16:16:05+00:00"
     },
     {
       "id": "32623d2c5b058c4e",
@@ -3168,6 +3138,50 @@
       "updated_at": "2026-11-05T04:16:40+00:00"
     },
     {
+      "id": "ae02e60df8c74aed",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "日本郵便",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "01b9a3bb946f0daf",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.post.japanpost.jp/newsrelease/pressrelease/414336381813.html",
+          "evidence_urls": [
+            "https://www.post.japanpost.jp/newsrelease/pressrelease/414336381813.html"
+          ]
+        },
+        {
+          "incident_id": "d290a8fda51abad3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.post.japanpost.jp/newsrelease/pressrelease/414336381813.html",
+          "evidence_urls": [
+            "https://www.post.japanpost.jp/newsrelease/pressrelease/414336381813.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本郵便 / Japan Post",
+          "url": "https://www.post.japanpost.jp/newsrelease/pressrelease/414336381813.html"
+        },
+        {
+          "name": "物流ニュースのLNEWS",
+          "url": "https://www.lnews.jp/2026/11/s1106102.html"
+        }
+      ],
+      "added_at": "2026-11-05T14:17:23+00:00",
+      "updated_at": "2026-11-06T09:15:42+00:00"
+    },
+    {
       "id": "ce9458d4e66bdde4",
       "published_at": "2026-11-03T15:00:00+00:00",
       "disclosed_at": "2026-11-03T15:00:00+00:00",
@@ -3547,46 +3561,6 @@
       "service_aliases": [],
       "added_at": "2026-11-04T20:15:12+00:00",
       "updated_at": "2026-11-04T20:15:12+00:00"
-    },
-    {
-      "id": "ae02e60df8c74aed",
-      "published_at": "2026-11-03T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "日本郵便",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "01b9a3bb946f0daf",
-          "relationship": "same_organization",
-          "evidence_url": "https://www.post.japanpost.jp/newsrelease/pressrelease/414336381813.html",
-          "evidence_urls": [
-            "https://www.post.japanpost.jp/newsrelease/pressrelease/414336381813.html"
-          ]
-        },
-        {
-          "incident_id": "d290a8fda51abad3",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.post.japanpost.jp/newsrelease/pressrelease/414336381813.html",
-          "evidence_urls": [
-            "https://www.post.japanpost.jp/newsrelease/pressrelease/414336381813.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "日本郵便 / Japan Post",
-          "url": "https://www.post.japanpost.jp/newsrelease/pressrelease/414336381813.html"
-        }
-      ],
-      "added_at": "2026-11-05T14:17:23+00:00",
-      "updated_at": "2026-11-05T14:17:23+00:00"
     },
     {
       "id": "c6e18300950d9c1d",
@@ -4304,6 +4278,10 @@
           "url": "https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/somu/2026/1103denshishinsei.files/0001_20261103.pdf"
         },
         {
+          "name": "横浜市 / Yokohama",
+          "url": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/yokohamadx/notice/notice20261106.html"
+        },
+        {
           "name": "news.yahoo.co.jp",
           "url": "https://news.yahoo.co.jp/articles/3a125c046dd04b29689e7d010d4b53281cbde5cb"
         },
@@ -4327,7 +4305,7 @@
       "affected_service": "電子申請・届出システム",
       "service_aliases": [],
       "added_at": "2026-11-03T11:46:37+00:00",
-      "updated_at": "2026-11-04T04:16:21+00:00"
+      "updated_at": "2026-11-06T09:15:42+00:00"
     },
     {
       "id": "cc83cfb44abbac15",
@@ -11743,7 +11721,8 @@
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/25e643d2d9e6af8b11491e32e260fee9ab320d4d",
           "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/25e643d2d9e6af8b11491e32e260fee9ab320d4d"
+            "https://news.yahoo.co.jp/articles/25e643d2d9e6af8b11491e32e260fee9ab320d4d",
+            "https://topics.smt.docomo.ne.jp/article/sponichi/sports/sponichi-spngoo-20261106-0245"
           ]
         },
         {
@@ -12099,14 +12078,6 @@
           ]
         },
         {
-          "incident_id": "eaf462ad3680c52b",
-          "relationship": "affects",
-          "evidence_url": "https://topics.smt.docomo.ne.jp/article/sponichi/sports/sponichi-spngoo-20261106-0245",
-          "evidence_urls": [
-            "https://topics.smt.docomo.ne.jp/article/sponichi/sports/sponichi-spngoo-20261106-0245"
-          ]
-        },
-        {
           "incident_id": "eddb63a9766c497d",
           "relationship": "affects",
           "evidence_url": "https://www.makeshop.co.jp/news/info/2026-11-05_2/",
@@ -12191,7 +12162,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-06T08:36:04+00:00"
+      "updated_at": "2026-11-06T09:15:42+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -39176,6 +39147,7 @@
     "d6671f2e366c9ed2": "936adcbd7bc057e8",
     "543647eb8eb3b259": "b8347963d4368d00",
     "74f0b0ed8eb3946e": "4e61125aed51dbcb",
-    "65bad253fb96954d": "0431dd98133dc204"
+    "65bad253fb96954d": "0431dd98133dc204",
+    "eaf462ad3680c52b": "8419a6aecdeccbf5"
   }
 }
