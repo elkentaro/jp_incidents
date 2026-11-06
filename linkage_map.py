@@ -1,4 +1,4 @@
-"""Render an anonymous, daily PNG snapshot from the public incident JSON only.
+"""Render an anonymous PNG snapshot from the public incident JSON only.
 
 Requires Pillow >= 10.2. No database, network, browser, or private admin imports.
 """
@@ -13,7 +13,7 @@ import os
 from pathlib import Path
 import tempfile
 
-VERSION = 7
+VERSION = 8
 SITE_URL = 'https://elkentaro.github.io/jp_incidents/'
 OUTPUTS = ('data/linkage-map.png', 'linkage.html', 'data/linkage-map.json')
 COLORS = {'upstream': '#d55e00', 'downstream': '#0072b2', 'both': '#008568',
@@ -114,7 +114,11 @@ def layout(nodes, edges, neighbors, downstream):
         for index, child in enumerate(children):
             angle = -math.pi/2 + 2*math.pi*index/len(children)
             points[child] = (radius*math.cos(angle), radius*math.sin(angle))
-        clusters.append((radius+15, node, points))
+        # Reserve breathing room around multi-victim clusters, including space
+        # for their outermost victim nodes. Larger clusters need wider margins;
+        # standalone nodes must not fill that reserved space on later passes.
+        padding = 54 + radius * 0.25 if len(children) >= 2 else 15
+        clusters.append((radius+padding, node, points))
     placed, positions = [], {}
     for radius, node, points in sorted(clusters, key=lambda c: (-c[0], c[1])):
         for step in range(100000):
@@ -142,7 +146,7 @@ def render(nodes, edges, now):
         scale = min(2110/max(max(xs)-min(xs), 1), 1220/max(max(ys)-min(ys), 1), 6)
         mx, my = (max(xs)+min(xs))/2, (max(ys)+min(ys))/2
         positions = {i: (1200+(x-mx)*scale, 720+(y-my)*scale) for i, (x, y) in positions.items()}
-        radii = {i: min(20, max(12, 5*scale)) if downstream[i] else min(10, max(6, 3.5*scale)) for i in positions}
+        radii = {i: min(20, 12*scale) if downstream[i] else min(10, 5*scale) for i in positions}
         for a, b, kind in edges:
             ax, ay = positions[a]; bx, by = positions[b]
             distance = math.hypot(bx-ax, by-ay)
@@ -154,7 +158,7 @@ def render(nodes, edges, now):
             draw.line((*start, *end), fill='#a9b5bb', width=2)
         for i, (x, y) in positions.items():
             r = radii[i]
-            draw.ellipse((x-r, y-r, x+r, y+r), fill=COLORS[roles[i]], outline='#fafbf8', width=2)
+            draw.ellipse((x-r, y-r, x+r, y+r), fill=COLORS[roles[i]], outline='#fafbf8', width=1)
     draw.text((width-48, height-40), SITE_URL, anchor='rs',
               font=ImageFont.load_default(size=24), fill='#65736d')
     buffer = io.BytesIO()
@@ -182,21 +186,29 @@ def refresh(source, root, now=None, force=False):
         raise ValueError('now must be timezone-aware')
     now = now.astimezone(timezone.utc)
     png_path, page_path, metadata_path = (root/p for p in OUTPUTS)
+    document = json.loads(source.read_text())
+    data_updated = instant(document['updated_at']).isoformat()
+    nodes, edges = topology(document)
+    # Hash only anonymous graph structure: a collection timestamp or source
+    # wording change alone does not require a redraw, but new/removed incidents,
+    # changed relationships and withdrawals must reach the next publication.
+    topology_sha256 = hashlib.sha256(json.dumps([nodes, edges], separators=(',', ':')).encode()).hexdigest()
+    template = (root/'linkage.template.html').read_text()
+    template_sha256 = hashlib.sha256(template.encode()).hexdigest()
     try:
         previous = json.loads(metadata_path.read_text())
         age = now-instant(previous['generated_at'])
         intact = all(hashlib.sha256(p.read_bytes()).hexdigest() == previous[key]
                      for p, key in [(png_path, 'image_sha256'), (page_path, 'page_sha256')])
-        if not force and previous['version'] == VERSION and timedelta(0) <= age < timedelta(hours=24) and intact:
+        if (not force and previous['version'] == VERSION and intact
+                and previous.get('topology_sha256') == topology_sha256
+                and previous.get('template_sha256') == template_sha256
+                and timedelta(0) <= age < timedelta(hours=24)):
             return False
     except (OSError, ValueError, TypeError, KeyError):
         pass
-    document = json.loads(source.read_text())
-    data_updated = instant(document['updated_at']).isoformat()
-    nodes, edges = topology(document)
     png, counts = render(nodes, edges, now)
     stamp = now.isoformat()
-    template = (root/'linkage.template.html').read_text()
     replacements = dict(generated_at=stamp, updated_display=now.strftime('%Y-%m-%d %H:%M UTC'),
                         data_updated=data_updated, **{k: str(v) for k, v in counts.items()})
     for key, value in replacements.items():
@@ -205,6 +217,7 @@ def refresh(source, root, now=None, force=False):
         raise ValueError('Unresolved linkage page template token')
     page = template.encode()
     metadata = dict(version=VERSION, generated_at=stamp, source_updated_at=data_updated, counts=counts,
+                    topology_sha256=topology_sha256, template_sha256=template_sha256,
                     image_sha256=hashlib.sha256(png).hexdigest(), page_sha256=hashlib.sha256(page).hexdigest())
     atomic_write(png_path, png)
     atomic_write(page_path, page)
@@ -219,4 +232,4 @@ if __name__ == '__main__':
     parser.add_argument('--force', action='store_true')
     args = parser.parse_args()
     changed = refresh(args.source or args.root/'data/incidents.json', args.root, force=args.force)
-    print('Linkage snapshot refreshed' if changed else 'Linkage snapshot is less than 24 hours old')
+    print('Linkage snapshot refreshed' if changed else 'Linkage snapshot is current and less than 24 hours old')

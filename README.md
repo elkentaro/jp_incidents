@@ -30,6 +30,17 @@ The displayed date is the incident's occurrence, discovery, or first-disclosure 
 
 One database row represents one affected organization and underlying incident, not one article. A single article can support several distinct incident records. Each record can carry independent **Data leak**, **Unauthorized access**, and **Ransomware** tags; **Other** remains available for actual cyber incidents outside these categories, such as DDoS or defacement. A record with multiple tags appears under each matching filter and is counted once in the overall total. Generic outages and provider attacks do not establish ransomware at an affected client. Follow-up reports, second notices, reactions, remediation, recovery, and impact stories add sources or facts when that organization/incident is already listed. A follow-up may also reveal a previously unidentified victim organization; after secondary AI evaluation confirms the victim, original incident date, relevance, and source corroboration, that organization can receive its own row. A follow-up remains unpublished when its original incident date is unknown, and an underlying incident must meet the incident-date or verified first-disclosure intake rule. A recent follow-up or recovery announcement alone does not qualify.
 
+Reports that identify several new victims of the same upstream incident are
+assessed per affected organization, even when the incident type, date and provider
+are shared. They are not treated as roundups merely because they name multiple
+victims. Each confirmed victim receives a separate record with its own supported
+record count, services and dates; a combined total is not copied into every row.
+Known victims and shared providers reuse their existing records. Where evidence
+establishes an intermediary, links preserve each supported hop from the original
+upstream incident through that intermediary to the affected clients. Background
+examples do not become new victims, and uncertain facts or links remain for review.
+An upstream incident's source limit does not block assessment of a new victim.
+
 Ordinary reports, including syndicated copies of the same article, add source
 URLs while an incident has fewer than six confirmed sources. Verified releases
 issued by the affected organization, including releases hosted by disclosure
@@ -728,7 +739,7 @@ same map without connections. Names, incident IDs, source URLs and incident date
 are omitted; the connection pattern remains visible. The page's legend and
 last-updated caption follow its English, Japanese or Spanish language selection.
 
-To enable daily snapshots in a collector installation, install the optional
+To enable linkage snapshots in a collector installation, install the optional
 renderer dependency and set `JPI_LINKAGE_MAP=1` in private runtime configuration:
 
 ```bash
@@ -736,11 +747,14 @@ python -m pip install -r requirements-linkage.txt
 python linkage_map.py
 ```
 
-The normal publication cycle regenerates the image when 24 hours have elapsed
-since its last generation, then publishes the PNG, caption page and snapshot
-metadata together. Failed or delayed publication retries on the next cycle.
-Missing or corrupt artifacts are repaired immediately. `--force` regenerates a
-snapshot for a deliberate design update. The renderer reads only the public
+The normal publication cycle regenerates the image whenever public incidents or
+relationships change, including newly split victims, intermediary links and
+withdrawals. An unchanged graph is refreshed after 24 hours. The PNG, caption page,
+snapshot metadata and incident data are published together. Multi-victim clusters
+reserve extra space around their outermost nodes, with wider margins for larger
+clusters. Failed or delayed publication retries on the next cycle. Missing or
+corrupt artifacts and template updates are repaired immediately. `--force`
+regenerates a snapshot for a deliberate design update. The renderer reads only the public
 incident JSON and never queries the private review database. Image generation
 does not run collection, AI review, or network requests.
 

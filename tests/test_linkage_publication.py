@@ -1,4 +1,4 @@
-"""Test daily map integration with the real publisher and mocked Git commands."""
+"""Test map integration with the real publisher and mocked Git commands."""
 import contextlib
 import io
 import json
@@ -54,9 +54,18 @@ class LinkagePublicationTests(unittest.TestCase):
                 self.assertEqual(set(commit[commit.index('--')+1:]), expected)
                 before = (root/'data/linkage-map.png').read_bytes()
                 calls.clear()
-                with patch.object(linkage_map, 'render', side_effect=AssertionError('Do not redraw before 24 hours')):
+                with patch.object(linkage_map, 'render', side_effect=AssertionError('Do not redraw an unchanged graph before 24 hours')):
                     publish()
                 self.assertEqual((root/'data/linkage-map.png').read_bytes(), before)
+                calls.clear()
+                document['incidents'] = [{'id':'upstream', 'related':[
+                    {'incident_id':'victim', 'relationship':'affects'}]}, {'id':'victim'}]
+                publish()
+                metadata = json.loads((root/'data/linkage-map.json').read_text())
+                self.assertEqual(metadata['counts']['incidents'], 2)
+                self.assertEqual(metadata['counts']['links'], 1)
+                commit = next(args for args in calls if args[0] == 'commit')
+                self.assertEqual(set(commit[commit.index('--')+1:]), expected)
                 calls.clear()
                 with patch.object(linkage_map, 'refresh', side_effect=ValueError('Invalid graph input')):
                     with self.assertRaises(ValueError):

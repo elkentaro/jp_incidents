@@ -2,6 +2,7 @@ import copy
 from datetime import datetime, timedelta, timezone
 import io
 import json
+import math
 from pathlib import Path
 import tempfile
 import unittest
@@ -94,7 +95,8 @@ class LinkageMapTests(unittest.TestCase):
         self.assertEqual(dict(image.getexif()), {})
         self.assertEqual(image.size, (2400, 1440))
         metadata = json.loads((self.root/'data/linkage-map.json').read_text())
-        self.assertEqual(set(metadata), {'version','generated_at','source_updated_at','counts','image_sha256','page_sha256'})
+        self.assertEqual(set(metadata), {'version','generated_at','source_updated_at','counts',
+                                        'image_sha256','page_sha256','topology_sha256','template_sha256'})
         page = (self.root/'linkage.html').read_text()
         for key in ('direct', 'upstream', 'standalone', 'downstream'):
             self.assertIn(f'id="{key}-count">{metadata["counts"][key]}<', page)
@@ -102,6 +104,59 @@ class LinkageMapTests(unittest.TestCase):
             content = (self.root/name).read_bytes()
             for secret in [b'SECRET', b'PRIVATE', b'private.example', b'WITHDRAWN']:
                 self.assertNotIn(secret, content)
+
+    def test_large_clusters_reserve_space_from_other_clusters_and_standalone_nodes(self):
+        nodes = list(range(260))
+        edges = [(0, i, 'affects') for i in range(2, 102)]
+        edges += [(1, i, 'affects') for i in range(102, 182)]
+        # An intermediary and its clients retain their actual links and roles.
+        edges += [(0, 182, 'affects'), (182, 183, 'affects'), (182, 184, 'affects')]
+        neighbors, roles, downstream, counts = module.describe(nodes, edges)
+        positions = module.layout(nodes, edges, neighbors, downstream)
+        self.assertEqual(positions, module.layout(nodes, edges, neighbors, downstream))
+        self.assertEqual(set(positions), set(nodes))
+        self.assertEqual(roles[182], 'both')
+        self.assertEqual(counts['incidents'], len(nodes))
+        first_radius = math.dist(positions[0], positions[2])
+        second_radius = math.dist(positions[1], positions[102])
+        gap = math.dist(positions[0], positions[1]) - first_radius - second_radius
+        self.assertGreater(gap, 200)
+        for node in range(185, 260):
+            self.assertGreater(math.dist(positions[0], positions[node]) - first_radius, 100)
+
+    def test_graph_changes_refresh_immediately_with_unchanged_source_timestamp(self):
+        module.refresh(self.source, self.root, self.now)
+        # Added victim, changed relationship, removed victim (including withdrawal).
+        for change in ('add', 'link', 'remove'):
+            with self.subTest(change=change):
+                if change == 'add':
+                    self.document['incidents'].append({'id':'SECRET_E'})
+                elif change == 'link':
+                    self.document['incidents'][-1]['related'] = [
+                        {'incident_id':'SECRET_D', 'relationship':'affected_by'}]
+                else:
+                    self.document['incidents'].pop()
+                self.source.write_text(json.dumps(self.document))
+                self.assertTrue(module.refresh(self.source, self.root, self.now+timedelta(minutes=1)))
+                metadata = json.loads((self.root/'data/linkage-map.json').read_text())
+                nodes, edges = module.topology(self.document)
+                self.assertEqual(metadata['counts'], module.describe(nodes, edges)[3])
+
+    def test_timestamp_and_identity_only_changes_do_not_redraw(self):
+        module.refresh(self.source, self.root, self.now)
+        self.document['updated_at'] = (self.now+timedelta(minutes=2)).isoformat()
+        self.document['incidents'][0]['organization'] = 'Corrected name'
+        self.document['incidents'].reverse()
+        self.source.write_text(json.dumps(self.document))
+        with patch.object(module, 'render', side_effect=AssertionError('Unexpected regeneration')):
+            self.assertFalse(module.refresh(self.source, self.root, self.now+timedelta(minutes=2)))
+
+    def test_template_updates_refresh_immediately(self):
+        module.refresh(self.source, self.root, self.now)
+        template = self.root/'linkage.template.html'
+        template.write_text(template.read_text().replace('About this snapshot', 'Snapshot details'))
+        self.assertTrue(module.refresh(self.source, self.root, self.now+timedelta(minutes=1)))
+        self.assertIn('Snapshot details', (self.root/'linkage.html').read_text())
 
     def test_refresh_24_hour_boundary_preserves_caption_between_updates(self):
         self.assertTrue(module.refresh(self.source, self.root, self.now))
@@ -138,7 +193,7 @@ class LinkageMapTests(unittest.TestCase):
         before = {name:(self.root/name).read_bytes() for name in module.OUTPUTS}
         self.source.write_text('{invalid')
         with self.assertRaises(ValueError):
-            module.refresh(self.source, self.root, self.now+timedelta(days=1))
+            module.refresh(self.source, self.root, self.now+timedelta(minutes=1))
         self.assertEqual(before, {name:(self.root/name).read_bytes() for name in module.OUTPUTS})
 
     def test_image_has_no_language_specific_text(self):

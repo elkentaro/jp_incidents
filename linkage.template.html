@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="An anonymized daily snapshot of recorded relationships between cyber incidents in Japan.">
+  <meta name="description" content="An anonymized snapshot of recorded relationships between cyber incidents in Japan.">
   <title>Linkage map — JP Incident Monitor</title>
   <link rel="stylesheet" href="styles.css?v=20261024-recent">
   <link rel="stylesheet" href="linkage.css?v=20261101-direct">
@@ -26,7 +26,7 @@
   <main class="shell linkage-page">
     <section class="map-intro" aria-labelledby="page-title">
       <p class="eyebrow" data-copy="eyebrow">THE CONNECTIONS BEHIND THE INCIDENTS</p>
-      <div class="map-heading"><h1 id="page-title" data-copy="title">Incident linkage map</h1><span class="snapshot-badge" data-copy="badge">Daily snapshot</span></div>
+      <div class="map-heading"><h1 id="page-title" data-copy="title">Incident linkage map</h1><span class="snapshot-badge" data-copy="badge">Published snapshot</span></div>
       <p class="lede" data-copy="intro">A view of how publicly reported incidents connect, with organization names and identifiers removed.</p>
       <p class="map-note" data-copy="explanation">Each dot is an incident. Solid lines show recorded relationships; node colors distinguish upstream, downstream and unlinked incidents. Positions show connections, not geography or severity.</p>
     </section>
@@ -67,11 +67,11 @@
     </figure>
     <div class="map-notes">
       <section><h2 data-copy="readingTitle">Reading the map</h2><p data-copy="reading">Orange marks upstream incidents, blue downstream incidents, and purple unlinked incidents with no recorded connection. Teal marks incidents with both upstream and downstream roles; charcoal marks other related incidents. A missing connection does not establish that two incidents are unrelated.</p></section>
-      <section><h2 data-copy="snapshotTitle">About this snapshot</h2><p data-copy="snapshot">The static image is refreshed every 24 hours from the public incident index. Names, incident IDs, source links and incident dates are omitted; the connection pattern is retained. It is an overview of recorded relationships, not a complete map of cyber incidents in Japan.</p></section>
+      <section><h2 data-copy="snapshotTitle">About this snapshot</h2><p data-copy="snapshot">The static image is refreshed when published incidents or relationships change, and at least every 24 hours during normal publication. Larger upstream clusters have extra spacing to keep their victims apart. Names, incident IDs, source links and incident dates are omitted; the connection pattern is retained. It is an overview of recorded relationships, not a complete map of cyber incidents in Japan.</p></section>
     </div>
     <p class="map-source"><span data-copy="sourceUpdated">Source data updated</span>: <time datetime="{{data_updated}}">{{data_updated}}</time> · <a href="./" data-copy="browse">Browse the incident index</a></p>
   </main>
   <footer><div class="shell footer-inner"><p data-copy="footer">Public reports. Recorded relationships. An anonymized overview.</p><a href="./" data-copy="back">Back to incidents</a></div></footer>
-  <script src="linkage.js?v=20261101-direct" defer></script>
+  <script src="linkage.js?v=20261107-spacing" defer></script>
 </body>
 </html>
