@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-06T05:15:44+00:00",
-  "total": 899,
+  "updated_at": "2026-11-06T06:15:41+00:00",
+  "total": 901,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-06"
@@ -333,7 +333,7 @@
     },
     {
       "date": "2026-10-29",
-      "count": 30
+      "count": 32
     },
     {
       "date": "2026-10-30",
@@ -1121,6 +1121,48 @@
       "updated_at": "2026-11-05T05:15:40+00:00"
     },
     {
+      "id": "07e84febdcebacd7",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "NTTドコモ",
+      "incident_type": "other",
+      "incident_categories": [
+        "other"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "読売新聞",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBPaGZ5VGduWWREeUhsZDRwcEE5dnFSWkxMTW4xV3FjU0hGeFV0M2pDeG1sem1oV1h5YkdBOHZuWEwtMEpSRTA5RGtfd1dXUnZ4dXFsbDRZdFRrMXVJcDJmZzJsWmI?oc=5"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261105de70883"
+        }
+      ],
+      "affected_service": "通話 / データ通信",
+      "service_aliases": [],
+      "affected_services": [
+        "通話",
+        "データ通信"
+      ],
+      "service_details": [
+        {
+          "name": "通話",
+          "aliases": []
+        },
+        {
+          "name": "データ通信",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-05T21:15:39+00:00",
+      "updated_at": "2026-11-06T06:15:41+00:00"
+    },
+    {
       "id": "84b1fdc78e8cfefb",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": null,
@@ -1771,44 +1813,6 @@
         }
       ],
       "added_at": "2026-11-05T15:15:51+00:00",
-      "updated_at": "2026-11-05T21:15:39+00:00"
-    },
-    {
-      "id": "07e84febdcebacd7",
-      "published_at": "2026-11-04T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "NTTドコモ",
-      "incident_type": "other",
-      "incident_categories": [
-        "other"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "読売新聞",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBPaGZ5VGduWWREeUhsZDRwcEE5dnFSWkxMTW4xV3FjU0hGeFV0M2pDeG1sem1oV1h5YkdBOHZuWEwtMEpSRTA5RGtfd1dXUnZ4dXFsbDRZdFRrMXVJcDJmZzJsWmI?oc=5"
-        }
-      ],
-      "affected_service": "通話 / データ通信",
-      "service_aliases": [],
-      "affected_services": [
-        "通話",
-        "データ通信"
-      ],
-      "service_details": [
-        {
-          "name": "通話",
-          "aliases": []
-        },
-        {
-          "name": "データ通信",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-05T21:15:39+00:00",
       "updated_at": "2026-11-05T21:15:39+00:00"
     },
     {
@@ -9036,6 +9040,22 @@
           ]
         },
         {
+          "incident_id": "bc5fdef644578240",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/89ee578c4645507d2a7bec1b647d613ffa5d704a",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/89ee578c4645507d2a7bec1b647d613ffa5d704a"
+          ]
+        },
+        {
+          "incident_id": "e2171f91d8a46945",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/89ee578c4645507d2a7bec1b647d613ffa5d704a",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/89ee578c4645507d2a7bec1b647d613ffa5d704a"
+          ]
+        },
+        {
           "incident_id": "f9e4b6e71c05bb9e",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/3aaee8c515d52b12c335a73fe430f8add4e07be5",
@@ -9073,7 +9093,7 @@
       "affected_service": "ロードサービス等の受付・手配業務に使用する業務システム",
       "service_aliases": [],
       "added_at": "2026-11-02T10:00:14+00:00",
-      "updated_at": "2026-11-06T02:16:04+00:00"
+      "updated_at": "2026-11-06T06:15:41+00:00"
     },
     {
       "id": "8132159128c70bb6",
@@ -9774,6 +9794,74 @@
       "service_aliases": [],
       "added_at": "2026-10-29T20:16:15+00:00",
       "updated_at": "2026-10-29T20:16:15+00:00"
+    },
+    {
+      "id": "bc5fdef644578240",
+      "published_at": "2026-10-28T15:00:00+00:00",
+      "disclosed_at": "2026-11-04T15:00:00+00:00",
+      "organization": "ポルシェジャパン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "36d105653c0ed4da",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/89ee578c4645507d2a7bec1b647d613ffa5d704a",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/89ee578c4645507d2a7bec1b647d613ffa5d704a"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/89ee578c4645507d2a7bec1b647d613ffa5d704a"
+        }
+      ],
+      "affected_service": "ロードサービス",
+      "service_aliases": [],
+      "added_at": "2026-11-06T06:15:41+00:00",
+      "updated_at": "2026-11-06T06:15:41+00:00"
+    },
+    {
+      "id": "e2171f91d8a46945",
+      "published_at": "2026-10-28T15:00:00+00:00",
+      "disclosed_at": "2026-11-04T15:00:00+00:00",
+      "organization": "ポルシェファイナンシャルサービスジャパン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "36d105653c0ed4da",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/89ee578c4645507d2a7bec1b647d613ffa5d704a",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/89ee578c4645507d2a7bec1b647d613ffa5d704a"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/89ee578c4645507d2a7bec1b647d613ffa5d704a"
+        }
+      ],
+      "affected_service": "ロードサービス",
+      "service_aliases": [],
+      "added_at": "2026-11-06T06:15:41+00:00",
+      "updated_at": "2026-11-06T06:15:41+00:00"
     },
     {
       "id": "575cc9ef529313b5",
