@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-06T15:16:04+00:00",
+  "updated_at": "2026-11-06T19:15:31+00:00",
   "total": 936,
   "date_range": {
     "start": "2025-10-16",
@@ -370,6 +370,73 @@
   ],
   "incidents": [
     {
+      "id": "03874becece52044",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "NTTドコモ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 340000,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "4e61125aed51dbcb",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.asahi.com/articles/ASVC62GT1VC6ULFA02WM.html",
+          "evidence_urls": [
+            "https://www.asahi.com/articles/ASVC62GT1VC6ULFA02WM.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVC62GT1VC6ULFA02WM.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/987bd230e9a42af15fee96d26a43a4695be0fa02"
+        },
+        {
+          "name": "時事ドットコム",
+          "url": "https://www.jiji.com/jc/article?k=2026110601132&g=eco"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVC63TS4VC6ULFA03NM.html"
+        },
+        {
+          "name": "CNET Japan",
+          "url": "https://japan.cnet.com/article/35254525/"
+        },
+        {
+          "name": "Impress Watch",
+          "url": "https://www.watch.impress.co.jp/docs/news/2154508.html"
+        }
+      ],
+      "affected_service": "ドコモオンラインショップ / My docomo",
+      "service_aliases": [],
+      "affected_services": [
+        "ドコモオンラインショップ",
+        "My docomo"
+      ],
+      "service_details": [
+        {
+          "name": "ドコモオンラインショップ",
+          "aliases": []
+        },
+        {
+          "name": "My docomo",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-06T11:16:38+00:00",
+      "updated_at": "2026-11-06T19:15:31+00:00"
+    },
+    {
       "id": "1cfabb23afe2945a",
       "published_at": "2026-11-05T15:00:00+00:00",
       "disclosed_at": null,
@@ -565,69 +632,6 @@
         }
       ],
       "added_at": "2026-11-06T08:36:04+00:00",
-      "updated_at": "2026-11-06T14:16:57+00:00"
-    },
-    {
-      "id": "03874becece52044",
-      "published_at": "2026-11-05T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "NTTドコモ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 340000,
-      "confidence": "high",
-      "confidence_score": 95,
-      "related": [
-        {
-          "incident_id": "4e61125aed51dbcb",
-          "relationship": "same_organization",
-          "evidence_url": "https://www.asahi.com/articles/ASVC62GT1VC6ULFA02WM.html",
-          "evidence_urls": [
-            "https://www.asahi.com/articles/ASVC62GT1VC6ULFA02WM.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "朝日新聞",
-          "url": "https://www.asahi.com/articles/ASVC62GT1VC6ULFA02WM.html"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/987bd230e9a42af15fee96d26a43a4695be0fa02"
-        },
-        {
-          "name": "時事ドットコム",
-          "url": "https://www.jiji.com/jc/article?k=2026110601132&g=eco"
-        },
-        {
-          "name": "朝日新聞",
-          "url": "https://www.asahi.com/articles/ASVC63TS4VC6ULFA03NM.html"
-        },
-        {
-          "name": "CNET Japan",
-          "url": "https://japan.cnet.com/article/35254525/"
-        }
-      ],
-      "affected_service": "ドコモオンラインショップ / My docomo",
-      "service_aliases": [],
-      "affected_services": [
-        "ドコモオンラインショップ",
-        "My docomo"
-      ],
-      "service_details": [
-        {
-          "name": "ドコモオンラインショップ",
-          "aliases": []
-        },
-        {
-          "name": "My docomo",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-06T11:16:38+00:00",
       "updated_at": "2026-11-06T14:16:57+00:00"
     },
     {
