@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-07T11:15:54+00:00",
-  "total": 960,
+  "updated_at": "2026-11-07T11:39:00+00:00",
+  "total": 961,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-07"
@@ -321,7 +321,7 @@
     },
     {
       "date": "2026-10-27",
-      "count": 40
+      "count": 41
     },
     {
       "date": "2026-10-28",
@@ -380,14 +380,15 @@
       ],
       "potential_records": null,
       "confidence": "high",
-      "confidence_score": 75,
+      "confidence_score": 90,
       "related": [
         {
           "incident_id": "671c427eadb6fc63",
           "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/1b210f4d29a86c558a66af241165d649edb62831",
+          "evidence_url": "https://www.fnn.jp/articles/-/1147894",
           "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/1b210f4d29a86c558a66af241165d649edb62831"
+            "https://news.yahoo.co.jp/articles/1b210f4d29a86c558a66af241165d649edb62831",
+            "https://www.fnn.jp/articles/-/1147894"
           ]
         }
       ],
@@ -399,12 +400,16 @@
         {
           "name": "福岡TNCニュース",
           "url": "https://news.tnc.co.jp/news/articles/NID2026110732749"
+        },
+        {
+          "name": "FNNプライムオンライン",
+          "url": "https://www.fnn.jp/articles/-/1147894"
         }
       ],
       "affected_service": "ビジネスコンテストの入力フォーム",
       "service_aliases": [],
       "added_at": "2026-11-06T21:40:24+00:00",
-      "updated_at": "2026-11-07T00:20:52+00:00"
+      "updated_at": "2026-11-07T11:39:00+00:00"
     },
     {
       "id": "3fc9faedf3d1794d",
@@ -775,12 +780,16 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUC06BFA0W6A101C2000000/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118178"
         }
       ],
       "affected_service": "ロードサービス",
       "service_aliases": [],
       "added_at": "2026-11-06T12:16:44+00:00",
-      "updated_at": "2026-11-07T06:16:29+00:00"
+      "updated_at": "2026-11-07T11:39:00+00:00"
     },
     {
       "id": "08725c90714959de",
@@ -10259,6 +10268,43 @@
       "updated_at": "2026-11-02T22:16:00+00:00"
     },
     {
+      "id": "0431dd98133dc204",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": "2026-11-05T15:00:00+00:00",
+      "organization": "日本ネットワークセキュリティ協会",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 15128,
+      "confidence": "high",
+      "confidence_score": 95,
+      "related": [],
+      "sources": [
+        {
+          "name": "www.jnsa.org",
+          "url": "https://www.jnsa.org/dl/annual/20261106.pdf"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118177"
+        },
+        {
+          "name": "news.yahoo.co.jp",
+          "url": "https://news.yahoo.co.jp/articles/7d27c99efa470f0930524fb5e1d58e6088bab8d8"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2611/06/2000002978/"
+        }
+      ],
+      "affected_service": "情報セキュリティ理解度チェックサービス",
+      "service_aliases": [],
+      "added_at": "2026-11-06T05:15:44+00:00",
+      "updated_at": "2026-11-07T11:39:00+00:00"
+    },
+    {
       "id": "81ace1ca432c9aa9",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": "2026-10-29T15:00:00+00:00",
@@ -10303,39 +10349,6 @@
       "service_aliases": [],
       "added_at": "2026-10-30T02:15:42+00:00",
       "updated_at": "2026-11-01T20:15:18+00:00"
-    },
-    {
-      "id": "0431dd98133dc204",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": "2026-11-05T15:00:00+00:00",
-      "organization": "日本ネットワークセキュリティ協会",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 15128,
-      "confidence": "high",
-      "confidence_score": 80,
-      "related": [],
-      "sources": [
-        {
-          "name": "www.jnsa.org",
-          "url": "https://www.jnsa.org/dl/annual/20261106.pdf"
-        },
-        {
-          "name": "news.yahoo.co.jp",
-          "url": "https://news.yahoo.co.jp/articles/7d27c99efa470f0930524fb5e1d58e6088bab8d8"
-        },
-        {
-          "name": "ITmedia",
-          "url": "https://www.itmedia.co.jp/news/article/2611/06/2000002978/"
-        }
-      ],
-      "affected_service": "情報セキュリティ理解度チェックサービス",
-      "service_aliases": [],
-      "added_at": "2026-11-06T05:15:44+00:00",
-      "updated_at": "2026-11-06T12:16:44+00:00"
     },
     {
       "id": "e731d81859c8eab0",
@@ -16418,6 +16431,35 @@
       "service_aliases": [],
       "added_at": "2026-10-30T10:15:57+00:00",
       "updated_at": "2026-11-01T01:15:58+00:00"
+    },
+    {
+      "id": "20ffbede1b1d6781",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "チームスピリット",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 28824,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "チームスピリット",
+          "url": "https://corp.teamspirit.com/news/information/2026/11/2026_1106_01/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118179"
+        }
+      ],
+      "affected_service": "ソフトウェア開発用サーバー",
+      "service_aliases": [],
+      "added_at": "2026-11-07T11:39:00+00:00",
+      "updated_at": "2026-11-07T11:39:00+00:00"
     },
     {
       "id": "249f996eeac0e23c",
@@ -33467,9 +33509,10 @@
         {
           "incident_id": "30cd420408abcfa9",
           "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/1b210f4d29a86c558a66af241165d649edb62831",
+          "evidence_url": "https://www.fnn.jp/articles/-/1147894",
           "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/1b210f4d29a86c558a66af241165d649edb62831"
+            "https://news.yahoo.co.jp/articles/1b210f4d29a86c558a66af241165d649edb62831",
+            "https://www.fnn.jp/articles/-/1147894"
           ]
         },
         {
@@ -33913,7 +33956,7 @@
       "affected_system": "Studio cloud environment",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T11:10:22+00:00",
-      "updated_at": "2026-11-06T21:40:24+00:00"
+      "updated_at": "2026-11-07T11:39:00+00:00"
     },
     {
       "id": "79d92ec417a38b35",
