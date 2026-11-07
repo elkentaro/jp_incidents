@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-07T06:16:29+00:00",
+  "updated_at": "2026-11-07T07:15:54+00:00",
   "total": 956,
   "date_range": {
     "start": "2025-10-16",
@@ -6719,6 +6719,10 @@
           "url": "https://www.tx-direct.co.jp/pdf/20261102.pdf"
         },
         {
+          "name": "legalagent list",
+          "url": "https://www.tx-direct.co.jp/pdf/20261106.pdf"
+        },
+        {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/7cb5bce7426a0e17920e573728dea10df0f3c85f"
         },
@@ -6734,7 +6738,7 @@
       "affected_service": "テレ東マート",
       "service_aliases": [],
       "added_at": "2026-11-02T14:16:34+00:00",
-      "updated_at": "2026-11-04T01:16:30+00:00"
+      "updated_at": "2026-11-07T07:15:54+00:00"
     },
     {
       "id": "a58b4c17e32d9c67",
@@ -34858,6 +34862,49 @@
       "updated_at": "2026-10-26T00:08:36+00:00"
     },
     {
+      "id": "8eb379ec321f94fe",
+      "published_at": "2026-10-13T15:00:00+00:00",
+      "disclosed_at": "2026-10-13T15:00:00+00:00",
+      "organization": "静岡市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 34336,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "0a08a3f6bcd30b82",
+          "relationship": "affected_by",
+          "evidence_url": "https://topics.smt.docomo.ne.jp/article/tvsdt/region/tvsdt-2026101403936341?page=1",
+          "evidence_urls": [
+            "https://topics.smt.docomo.ne.jp/article/tvsdt/region/tvsdt-2026101403936341?page=1"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "静岡市（公式発表）",
+          "url": "https://www.city.shizuoka.lg.jp/s4268/s000347.html"
+        },
+        {
+          "name": "ｄメニューニュース",
+          "url": "https://topics.smt.docomo.ne.jp/article/tvsdt/region/tvsdt-2026101403936341?page=1"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVBW41HJVBWUTPB008M.html"
+        },
+        {
+          "name": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/column/netliteracy/2153541.html"
+        }
+      ],
+      "added_at": "2026-10-22T19:09:21+00:00",
+      "updated_at": "2026-11-07T07:15:54+00:00"
+    },
+    {
       "id": "90ecc3da69887001",
       "published_at": "2026-10-13T15:00:00+00:00",
       "disclosed_at": "2026-10-25T15:00:00+00:00",
@@ -35346,45 +35393,6 @@
       ],
       "added_at": "2026-10-19T09:06:44+00:00",
       "updated_at": "2026-11-02T01:16:01+00:00"
-    },
-    {
-      "id": "8eb379ec321f94fe",
-      "published_at": "2026-10-13T15:00:00+00:00",
-      "disclosed_at": "2026-10-13T15:00:00+00:00",
-      "organization": "静岡市",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 34336,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [
-        {
-          "incident_id": "0a08a3f6bcd30b82",
-          "relationship": "affected_by",
-          "evidence_url": "https://topics.smt.docomo.ne.jp/article/tvsdt/region/tvsdt-2026101403936341?page=1",
-          "evidence_urls": [
-            "https://topics.smt.docomo.ne.jp/article/tvsdt/region/tvsdt-2026101403936341?page=1"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "静岡市（公式発表）",
-          "url": "https://www.city.shizuoka.lg.jp/s4268/s000347.html"
-        },
-        {
-          "name": "ｄメニューニュース",
-          "url": "https://topics.smt.docomo.ne.jp/article/tvsdt/region/tvsdt-2026101403936341?page=1"
-        },
-        {
-          "name": "朝日新聞",
-          "url": "https://www.asahi.com/articles/ASVBW41HJVBWUTPB008M.html"
-        }
-      ],
-      "added_at": "2026-10-22T19:09:21+00:00",
-      "updated_at": "2026-10-28T03:15:38+00:00"
     },
     {
       "id": "0440d0e3aa68448d",
