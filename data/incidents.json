@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-07T11:39:00+00:00",
-  "total": 961,
+  "updated_at": "2026-11-07T12:17:10+00:00",
+  "total": 963,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-07"
@@ -353,7 +353,7 @@
     },
     {
       "date": "2026-11-04",
-      "count": 41
+      "count": 42
     },
     {
       "date": "2026-11-05",
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-11-06",
-      "count": 38
+      "count": 39
     },
     {
       "date": "2026-11-07",
@@ -536,6 +536,57 @@
       "updated_at": "2026-11-06T19:15:31+00:00"
     },
     {
+      "id": "08725c90714959de",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "りそな銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 139,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "27c6fe562fd0baae",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf",
+          "evidence_urls": [
+            "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf"
+          ]
+        },
+        {
+          "incident_id": "554a0e00aac931e2",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf",
+          "evidence_urls": [
+            "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "りそなホールディングス / Resona",
+          "url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf"
+        },
+        {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp/15194677.html"
+        },
+        {
+          "name": "47NEWS",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9vQUZsY2lsVW9WSUQzeW5aNGdPWGV4cFpiX1BaVlFHVWdlVHVhWDhZZmxuT1ZMRVNJR01MeDAwYzJTU2VlbzBDMjdKSQ?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/f3d81552335bca859e2c977af546759de3a03502"
+        }
+      ],
+      "added_at": "2026-11-06T14:16:57+00:00",
+      "updated_at": "2026-11-07T12:17:10+00:00"
+    },
+    {
       "id": "1cfabb23afe2945a",
       "published_at": "2026-11-05T15:00:00+00:00",
       "disclosed_at": null,
@@ -637,6 +688,10 @@
       "related": [],
       "sources": [
         {
+          "name": "satimo list",
+          "url": "https://www.rohto.co.jp/news/whatsnew/2026/1106_01"
+        },
+        {
           "name": "ウェルネスデイリーニュース",
           "url": "https://wellness-news.co.jp/posts/261106-1/"
         },
@@ -662,7 +717,7 @@
         }
       ],
       "added_at": "2026-11-06T00:16:04+00:00",
-      "updated_at": "2026-11-06T15:16:04+00:00"
+      "updated_at": "2026-11-07T12:17:10+00:00"
     },
     {
       "id": "8419a6aecdeccbf5",
@@ -792,15 +847,54 @@
       "updated_at": "2026-11-07T11:39:00+00:00"
     },
     {
-      "id": "08725c90714959de",
+      "id": "bea05426f67e9585",
       "published_at": "2026-11-05T15:00:00+00:00",
       "disclosed_at": null,
-      "organization": "りそな銀行",
+      "organization": "みなと銀行",
       "incident_type": "data leak",
       "incident_categories": [
         "data leak"
       ],
-      "potential_records": 139,
+      "potential_records": 3,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "27c6fe562fd0baae",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf",
+          "evidence_urls": [
+            "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "りそなホールディングス / Resona",
+          "url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf"
+        },
+        {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp/15194677.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/f3d81552335bca859e2c977af546759de3a03502"
+        }
+      ],
+      "added_at": "2026-11-06T14:16:57+00:00",
+      "updated_at": "2026-11-07T12:17:10+00:00"
+    },
+    {
+      "id": "c9169a37657680cc",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "関西みらい銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 5793,
       "confidence": "high",
       "confidence_score": 90,
       "related": [
@@ -813,7 +907,7 @@
           ]
         },
         {
-          "incident_id": "554a0e00aac931e2",
+          "incident_id": "3b2a073b7265fb6c",
           "relationship": "same_organization",
           "evidence_url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf",
           "evidence_urls": [
@@ -831,12 +925,12 @@
           "url": "https://www.47news.jp/15194677.html"
         },
         {
-          "name": "47NEWS",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9vQUZsY2lsVW9WSUQzeW5aNGdPWGV4cFpiX1BaVlFHVWdlVHVhWDhZZmxuT1ZMRVNJR01MeDAwYzJTU2VlbzBDMjdKSQ?oc=5"
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/f3d81552335bca859e2c977af546759de3a03502"
         }
       ],
       "added_at": "2026-11-06T14:16:57+00:00",
-      "updated_at": "2026-11-06T21:40:24+00:00"
+      "updated_at": "2026-11-07T12:17:10+00:00"
     },
     {
       "id": "496adeebce3149c2",
@@ -1063,82 +1157,33 @@
       "updated_at": "2026-11-07T01:15:32+00:00"
     },
     {
-      "id": "bea05426f67e9585",
+      "id": "72b700cb0445fe71",
       "published_at": "2026-11-05T15:00:00+00:00",
       "disclosed_at": null,
-      "organization": "みなと銀行",
+      "organization": "松江市",
       "incident_type": "data leak",
       "incident_categories": [
-        "data leak"
+        "data leak",
+        "unauthorized access"
       ],
-      "potential_records": 3,
+      "potential_records": null,
       "confidence": "high",
-      "confidence_score": 75,
-      "related": [
-        {
-          "incident_id": "27c6fe562fd0baae",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf",
-          "evidence_urls": [
-            "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf"
-          ]
-        }
-      ],
+      "confidence_score": 65,
+      "related": [],
       "sources": [
         {
-          "name": "りそなホールディングス / Resona",
-          "url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf"
+          "name": "山陰中央新報デジタル",
+          "url": "https://www.sanin-chuo.co.jp/articles/-/1111349"
         },
         {
-          "name": "47NEWS",
-          "url": "https://www.47news.jp/15194677.html"
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/81a200d558a4e9341b8efc1b82e4e04a56a77be3"
         }
       ],
-      "added_at": "2026-11-06T14:16:57+00:00",
-      "updated_at": "2026-11-06T20:15:40+00:00"
-    },
-    {
-      "id": "c9169a37657680cc",
-      "published_at": "2026-11-05T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "関西みらい銀行",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 5793,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [
-        {
-          "incident_id": "27c6fe562fd0baae",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf",
-          "evidence_urls": [
-            "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf"
-          ]
-        },
-        {
-          "incident_id": "3b2a073b7265fb6c",
-          "relationship": "same_organization",
-          "evidence_url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf",
-          "evidence_urls": [
-            "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "りそなホールディングス / Resona",
-          "url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf"
-        },
-        {
-          "name": "47NEWS",
-          "url": "https://www.47news.jp/15194677.html"
-        }
-      ],
-      "added_at": "2026-11-06T14:16:57+00:00",
-      "updated_at": "2026-11-06T20:15:40+00:00"
+      "affected_service": "市公式LINE",
+      "service_aliases": [],
+      "added_at": "2026-11-06T20:15:40+00:00",
+      "updated_at": "2026-11-07T12:17:10+00:00"
     },
     {
       "id": "a95b04d0e23bdb4f",
@@ -1497,6 +1542,40 @@
       "updated_at": "2026-11-06T08:15:41+00:00"
     },
     {
+      "id": "052be340c0ce1186",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": "2026-11-05T15:00:00+00:00",
+      "organization": "釧路市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE16NGdXcVBpQVBVRm1WMXF4OFRJd1drMHBVNmVRSVBycUMzVmVBZU5Ud2Z3enlKekhWNk9kNmN5UFI4VGN3R1c5Ul9xTUNJV2ZIVDdVemtLU1R2eFUzTWZxQk9teERLZVRQZ0gtRFd2MlNoTDdUZkRDZkdXc25ZdVE?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE16NGdXcVBpQVBVRm1WMXF4OFRJd1drMHBVNmVRSVBycUMzVmVBZU5Ud2Z3enlKekhWNk9kNmN5UFI4VGN3R1c5Ul9xTUNJV2ZIVDdVemtLU1R2eFUzTWZxQk9teERLZVRQZ0gtRFd2MlNoTDdUZkRDZkdXc25ZdVE?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE16NGdXcVBpQVBVRm1WMXF4OFRJd1drMHBVNmVRSVBycUMzVmVBZU5Ud2Z3enlKekhWNk9kNmN5UFI4VGN3R1c5Ul9xTUNJV2ZIVDdVemtLU1R2eFUzTWZxQk9teERLZVRQZ0gtRFd2MlNoTDdUZkRDZkdXc25ZdVE?oc=5"
+        }
+      ],
+      "affected_service": "マイナンバーカードの予約",
+      "service_aliases": [],
+      "added_at": "2026-11-07T12:17:10+00:00",
+      "updated_at": "2026-11-07T12:17:10+00:00"
+    },
+    {
       "id": "0637e6a7a26c2543",
       "published_at": "2026-11-05T15:00:00+00:00",
       "disclosed_at": null,
@@ -1788,31 +1867,6 @@
       "service_aliases": [],
       "added_at": "2026-11-06T00:16:04+00:00",
       "updated_at": "2026-11-06T00:16:04+00:00"
-    },
-    {
-      "id": "72b700cb0445fe71",
-      "published_at": "2026-11-05T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "松江市",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "山陰中央新報デジタル",
-          "url": "https://www.sanin-chuo.co.jp/articles/-/1111349"
-        }
-      ],
-      "affected_service": "市公式LINE",
-      "service_aliases": [],
-      "added_at": "2026-11-06T20:15:40+00:00",
-      "updated_at": "2026-11-06T20:15:40+00:00"
     },
     {
       "id": "7e9f2251a4fe0a24",
@@ -5192,6 +5246,31 @@
       "service_aliases": [],
       "added_at": "2026-11-06T10:15:48+00:00",
       "updated_at": "2026-11-06T10:15:48+00:00"
+    },
+    {
+      "id": "f3e1f7cf44a9ab84",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社シグナルトーク",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1855578,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "PR TIMES",
+          "url": "https://prtimes.jp/main/html/rd/p/000000136.000009867.html"
+        }
+      ],
+      "affected_service": "Maru-Jan",
+      "service_aliases": [],
+      "added_at": "2026-11-07T12:17:10+00:00",
+      "updated_at": "2026-11-07T12:17:10+00:00"
     },
     {
       "id": "03ec9333584e44dd",
@@ -10351,6 +10430,48 @@
       "updated_at": "2026-11-01T20:15:18+00:00"
     },
     {
+      "id": "963a8269049e209d",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ミツカン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 487,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [
+        {
+          "incident_id": "41ee5e46723f8a2c",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.jiji.com/jc/article?k=2026110601065&g=eco",
+          "evidence_urls": [
+            "https://www.jiji.com/jc/article?k=2026110601065&g=eco"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "時事ドットコム",
+          "url": "https://www.jiji.com/jc/article?k=2026110601065&g=eco"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/44b0243cb0aadc923a049a414040c608b5286ef4"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118180"
+        }
+      ],
+      "affected_service": "ミツカン365",
+      "service_aliases": [],
+      "added_at": "2026-11-06T15:16:04+00:00",
+      "updated_at": "2026-11-07T12:17:10+00:00"
+    },
+    {
       "id": "e731d81859c8eab0",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": null,
@@ -10513,44 +10634,6 @@
       "service_aliases": [],
       "added_at": "2026-11-02T09:16:16+00:00",
       "updated_at": "2026-11-04T06:13:31+00:00"
-    },
-    {
-      "id": "963a8269049e209d",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ミツカン",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 487,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [
-        {
-          "incident_id": "41ee5e46723f8a2c",
-          "relationship": "same_organization",
-          "evidence_url": "https://www.jiji.com/jc/article?k=2026110601065&g=eco",
-          "evidence_urls": [
-            "https://www.jiji.com/jc/article?k=2026110601065&g=eco"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "時事ドットコム",
-          "url": "https://www.jiji.com/jc/article?k=2026110601065&g=eco"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/44b0243cb0aadc923a049a414040c608b5286ef4"
-        }
-      ],
-      "affected_service": "ミツカン365",
-      "service_aliases": [],
-      "added_at": "2026-11-06T15:16:04+00:00",
-      "updated_at": "2026-11-06T20:15:40+00:00"
     },
     {
       "id": "2a43a2f542033fd9",
@@ -13359,6 +13442,14 @@
           ]
         },
         {
+          "incident_id": "052be340c0ce1186",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE16NGdXcVBpQVBVRm1WMXF4OFRJd1drMHBVNmVRSVBycUMzVmVBZU5Ud2Z3enlKekhWNk9kNmN5UFI4VGN3R1c5Ul9xTUNJV2ZIVDdVemtLU1R2eFUzTWZxQk9teERLZVRQZ0gtRFd2MlNoTDdUZkRDZkdXc25ZdVE?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE16NGdXcVBpQVBVRm1WMXF4OFRJd1drMHBVNmVRSVBycUMzVmVBZU5Ud2Z3enlKekhWNk9kNmN5UFI4VGN3R1c5Ul9xTUNJV2ZIVDdVemtLU1R2eFUzTWZxQk9teERLZVRQZ0gtRFd2MlNoTDdUZkRDZkdXc25ZdVE?oc=5"
+          ]
+        },
+        {
           "incident_id": "08f81b2c1a1c8810",
           "relationship": "affects",
           "evidence_url": "https://www.mos.co.jp/company/pr_pdf/pr_261104_2.pdf",
@@ -14260,7 +14351,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-07T05:15:22+00:00"
+      "updated_at": "2026-11-07T12:17:10+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
