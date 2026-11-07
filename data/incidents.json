@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-07T02:16:11+00:00",
+  "updated_at": "2026-11-07T04:15:57+00:00",
   "total": 955,
   "date_range": {
     "start": "2025-10-16",
@@ -1085,6 +1085,57 @@
       "updated_at": "2026-11-06T14:16:57+00:00"
     },
     {
+      "id": "f896195c466e5909",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "沖縄県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 15820000,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "cc83cfb44abbac15",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1FOUswUzc4eEdFQWRNNUt0a0xNUmlpQ1dHX3A1OHd1NGJ0eTdvNWNFTkVVXzhtTVp6V0RBTUUtQjJDaFItZWRsWE9zNWdIOFdIV1p0UlBxMXd0b2kyQmJ6X2pxMXY1TW1NVGhOWmtsZV81dzBEQ0c3bGxyQzBCajA?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE1FOUswUzc4eEdFQWRNNUt0a0xNUmlpQ1dHX3A1OHd1NGJ0eTdvNWNFTkVVXzhtTVp6V0RBTUUtQjJDaFItZWRsWE9zNWdIOFdIV1p0UlBxMXd0b2kyQmJ6X2pxMXY1TW1NVGhOWmtsZV81dzBEQ0c3bGxyQzBCajA?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1FOUswUzc4eEdFQWRNNUt0a0xNUmlpQ1dHX3A1OHd1NGJ0eTdvNWNFTkVVXzhtTVp6V0RBTUUtQjJDaFItZWRsWE9zNWdIOFdIV1p0UlBxMXd0b2kyQmJ6X2pxMXY1TW1NVGhOWmtsZV81dzBEQ0c3bGxyQzBCajA?oc=5"
+        },
+        {
+          "name": "琉球新報デジタル",
+          "url": "https://ryukyushimpo.jp/politics/entry-5592311.html"
+        }
+      ],
+      "affected_service": "首里城公園のチケット購入者 / 美ら海水族館のチケット購入者",
+      "service_aliases": [],
+      "affected_services": [
+        "首里城公園のチケット購入者",
+        "美ら海水族館のチケット購入者"
+      ],
+      "service_details": [
+        {
+          "name": "首里城公園のチケット購入者",
+          "aliases": []
+        },
+        {
+          "name": "美ら海水族館のチケット購入者",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-06T21:40:24+00:00",
+      "updated_at": "2026-11-07T04:15:57+00:00"
+    },
+    {
       "id": "0789d15d2c5c732b",
       "published_at": "2026-11-05T15:00:00+00:00",
       "disclosed_at": null,
@@ -1591,53 +1642,6 @@
       "service_aliases": [],
       "added_at": "2026-11-06T13:16:53+00:00",
       "updated_at": "2026-11-06T15:16:04+00:00"
-    },
-    {
-      "id": "f896195c466e5909",
-      "published_at": "2026-11-05T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "沖縄県",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 15820000,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "cc83cfb44abbac15",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1FOUswUzc4eEdFQWRNNUt0a0xNUmlpQ1dHX3A1OHd1NGJ0eTdvNWNFTkVVXzhtTVp6V0RBTUUtQjJDaFItZWRsWE9zNWdIOFdIV1p0UlBxMXd0b2kyQmJ6X2pxMXY1TW1NVGhOWmtsZV81dzBEQ0c3bGxyQzBCajA?oc=5",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMif0FVX3lxTE1FOUswUzc4eEdFQWRNNUt0a0xNUmlpQ1dHX3A1OHd1NGJ0eTdvNWNFTkVVXzhtTVp6V0RBTUUtQjJDaFItZWRsWE9zNWdIOFdIV1p0UlBxMXd0b2kyQmJ6X2pxMXY1TW1NVGhOWmtsZV81dzBEQ0c3bGxyQzBCajA?oc=5"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1FOUswUzc4eEdFQWRNNUt0a0xNUmlpQ1dHX3A1OHd1NGJ0eTdvNWNFTkVVXzhtTVp6V0RBTUUtQjJDaFItZWRsWE9zNWdIOFdIV1p0UlBxMXd0b2kyQmJ6X2pxMXY1TW1NVGhOWmtsZV81dzBEQ0c3bGxyQzBCajA?oc=5"
-        }
-      ],
-      "affected_service": "首里城公園のチケット購入者 / 美ら海水族館のチケット購入者",
-      "service_aliases": [],
-      "affected_services": [
-        "首里城公園のチケット購入者",
-        "美ら海水族館のチケット購入者"
-      ],
-      "service_details": [
-        {
-          "name": "首里城公園のチケット購入者",
-          "aliases": []
-        },
-        {
-          "name": "美ら海水族館のチケット購入者",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-06T21:40:24+00:00",
-      "updated_at": "2026-11-06T21:40:24+00:00"
     },
     {
       "id": "4c4efaf9334d234c",
