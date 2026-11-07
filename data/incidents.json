@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-07T00:20:52+00:00",
-  "total": 948,
+  "updated_at": "2026-11-07T01:15:32+00:00",
+  "total": 950,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-07"
@@ -345,7 +345,7 @@
     },
     {
       "date": "2026-11-02",
-      "count": 48
+      "count": 49
     },
     {
       "date": "2026-11-03",
@@ -357,7 +357,7 @@
     },
     {
       "date": "2026-11-05",
-      "count": 49
+      "count": 50
     },
     {
       "date": "2026-11-06",
@@ -908,6 +908,43 @@
       "service_aliases": [],
       "added_at": "2026-11-06T13:16:53+00:00",
       "updated_at": "2026-11-06T13:16:53+00:00"
+    },
+    {
+      "id": "b311b7098dd402a5",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "リバスタ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 120000,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPbG9MQ1I5Umt3MWNzaWZhU0J5TTZ0Zm81bUdaVWF5UkZOVnYxbnhTcjd3bkJkdUpWY0Z5cUh5WU1TaHdNVUYxX2tKUEVlOURydUJwQm1DbUgyQWIxb3dTMzJORkw0UGo4Y3cxeWFFX0VTM0NkR3NHbXBXaG9nWUxyRHE2MktFOHdmdzh6RXdEVWtlZUVjTUFpRjg1OG5xZHczd0txMlFB?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMipgFBVV95cUxPbG9MQ1I5Umt3MWNzaWZhU0J5TTZ0Zm81bUdaVWF5UkZOVnYxbnhTcjd3bkJkdUpWY0Z5cUh5WU1TaHdNVUYxX2tKUEVlOURydUJwQm1DbUgyQWIxb3dTMzJORkw0UGo4Y3cxeWFFX0VTM0NkR3NHbXBXaG9nWUxyRHE2MktFOHdmdzh6RXdEVWtlZUVjTUFpRjg1OG5xZHczd0txMlFB?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.rvsta.co.jp/news/20261105/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPbG9MQ1I5Umt3MWNzaWZhU0J5TTZ0Zm81bUdaVWF5UkZOVnYxbnhTcjd3bkJkdUpWY0Z5cUh5WU1TaHdNVUYxX2tKUEVlOURydUJwQm1DbUgyQWIxb3dTMzJORkw0UGo4Y3cxeWFFX0VTM0NkR3NHbXBXaG9nWUxyRHE2MktFOHdmdzh6RXdEVWtlZUVjTUFpRjg1OG5xZHczd0txMlFB?oc=5"
+        }
+      ],
+      "affected_service": "e-reverse.com",
+      "service_aliases": [],
+      "added_at": "2026-11-06T08:36:04+00:00",
+      "updated_at": "2026-11-07T01:15:32+00:00"
     },
     {
       "id": "bea05426f67e9585",
@@ -1708,39 +1745,6 @@
       "service_aliases": [],
       "added_at": "2026-11-06T21:40:24+00:00",
       "updated_at": "2026-11-06T21:40:24+00:00"
-    },
-    {
-      "id": "b311b7098dd402a5",
-      "published_at": "2026-11-05T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "リバスタ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 120000,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "7e647fcc0bac0b06",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPbG9MQ1I5Umt3MWNzaWZhU0J5TTZ0Zm81bUdaVWF5UkZOVnYxbnhTcjd3bkJkdUpWY0Z5cUh5WU1TaHdNVUYxX2tKUEVlOURydUJwQm1DbUgyQWIxb3dTMzJORkw0UGo4Y3cxeWFFX0VTM0NkR3NHbXBXaG9nWUxyRHE2MktFOHdmdzh6RXdEVWtlZUVjTUFpRjg1OG5xZHczd0txMlFB?oc=5",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMipgFBVV95cUxPbG9MQ1I5Umt3MWNzaWZhU0J5TTZ0Zm81bUdaVWF5UkZOVnYxbnhTcjd3bkJkdUpWY0Z5cUh5WU1TaHdNVUYxX2tKUEVlOURydUJwQm1DbUgyQWIxb3dTMzJORkw0UGo4Y3cxeWFFX0VTM0NkR3NHbXBXaG9nWUxyRHE2MktFOHdmdzh6RXdEVWtlZUVjTUFpRjg1OG5xZHczd0txMlFB?oc=5"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPbG9MQ1I5Umt3MWNzaWZhU0J5TTZ0Zm81bUdaVWF5UkZOVnYxbnhTcjd3bkJkdUpWY0Z5cUh5WU1TaHdNVUYxX2tKUEVlOURydUJwQm1DbUgyQWIxb3dTMzJORkw0UGo4Y3cxeWFFX0VTM0NkR3NHbXBXaG9nWUxyRHE2MktFOHdmdzh6RXdEVWtlZUVjTUFpRjg1OG5xZHczd0txMlFB?oc=5"
-        }
-      ],
-      "affected_service": "e-reverse.com",
-      "service_aliases": [],
-      "added_at": "2026-11-06T08:36:04+00:00",
-      "updated_at": "2026-11-06T08:36:04+00:00"
     },
     {
       "id": "ef9a6c327405f613",
@@ -3754,6 +3758,40 @@
       "service_aliases": [],
       "added_at": "2026-11-05T09:15:53+00:00",
       "updated_at": "2026-11-05T09:15:53+00:00"
+    },
+    {
+      "id": "d5aefd9c66cf9b57",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "朝日生命保険",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.asahi-life.co.jp/company/newsrelease/20261105.pdf",
+          "evidence_urls": [
+            "https://www.asahi-life.co.jp/company/newsrelease/20261105.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.asahi-life.co.jp/company/newsrelease/20261105.pdf"
+        }
+      ],
+      "affected_service": "メール配信システム",
+      "service_aliases": [],
+      "added_at": "2026-11-07T01:15:32+00:00",
+      "updated_at": "2026-11-07T01:15:32+00:00"
     },
     {
       "id": "51fc582f23003b4c",
@@ -5822,6 +5860,52 @@
       "updated_at": "2026-11-04T02:15:58+00:00"
     },
     {
+      "id": "bd31831676ce0e1f",
+      "published_at": "2026-11-02T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "山梨県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 200000,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "cc83cfb44abbac15",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d"
+          ]
+        },
+        {
+          "incident_id": "d6d292a6112076a6",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.pref.yamanashi.jp/fujisan/20261104/20261104tsuukouyoyakuryuusyutu.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d"
+        }
+      ],
+      "affected_service": "富士山吉田ルートの通行予約システム",
+      "service_aliases": [],
+      "added_at": "2026-11-05T15:15:51+00:00",
+      "updated_at": "2026-11-07T01:15:32+00:00"
+    },
+    {
       "id": "b89d07366359c1c3",
       "published_at": "2026-11-02T15:00:00+00:00",
       "disclosed_at": null,
@@ -6099,48 +6183,6 @@
       "updated_at": "2026-11-05T11:16:39+00:00"
     },
     {
-      "id": "bd31831676ce0e1f",
-      "published_at": "2026-11-02T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "山梨県",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 200000,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "cc83cfb44abbac15",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d"
-          ]
-        },
-        {
-          "incident_id": "d6d292a6112076a6",
-          "relationship": "same_organization",
-          "evidence_url": "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d"
-        }
-      ],
-      "affected_service": "富士山吉田ルートの通行予約システム",
-      "service_aliases": [],
-      "added_at": "2026-11-05T15:15:51+00:00",
-      "updated_at": "2026-11-05T15:15:51+00:00"
-    },
-    {
       "id": "4ae714ea4b465c28",
       "published_at": "2026-11-02T15:00:00+00:00",
       "disclosed_at": null,
@@ -6335,6 +6377,10 @@
       "related": [],
       "sources": [
         {
+          "name": "satimo list",
+          "url": "https://www.aioinissaydowa.co.jp/corporate/about/news/pdf/2026/news_2026110601531.pdf"
+        },
+        {
           "name": "読売新聞",
           "url": "https://www.yomiuri.co.jp/economy/20261104-GYT1T00280/"
         },
@@ -6360,7 +6406,7 @@
         }
       ],
       "added_at": "2026-11-04T10:15:52+00:00",
-      "updated_at": "2026-11-06T10:15:48+00:00"
+      "updated_at": "2026-11-07T01:15:32+00:00"
     },
     {
       "id": "5fa1320f5cec460c",
@@ -7559,6 +7605,50 @@
       "service_aliases": [],
       "added_at": "2026-11-05T03:16:04+00:00",
       "updated_at": "2026-11-05T03:16:04+00:00"
+    },
+    {
+      "id": "545e13bb4d1d456c",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ecoco",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://ecoco.cloud/blogs/important/1"
+        }
+      ],
+      "affected_service": "公式オンラインショップ / ecoco公式オンラインショップ / ecoco楽天市場店",
+      "service_aliases": [],
+      "affected_services": [
+        "公式オンラインショップ",
+        "ecoco公式オンラインショップ",
+        "ecoco楽天市場店"
+      ],
+      "service_details": [
+        {
+          "name": "公式オンラインショップ",
+          "aliases": []
+        },
+        {
+          "name": "ecoco公式オンラインショップ",
+          "aliases": []
+        },
+        {
+          "name": "ecoco楽天市場店",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-07T01:15:32+00:00",
+      "updated_at": "2026-11-07T01:15:32+00:00"
     },
     {
       "id": "5d24de7057a2640a",
@@ -13699,6 +13789,14 @@
           ]
         },
         {
+          "incident_id": "d5aefd9c66cf9b57",
+          "relationship": "affects",
+          "evidence_url": "https://www.asahi-life.co.jp/company/newsrelease/20261105.pdf",
+          "evidence_urls": [
+            "https://www.asahi-life.co.jp/company/newsrelease/20261105.pdf"
+          ]
+        },
+        {
           "incident_id": "d7d0276c81864e2b",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5lOFJlUnpUdjNFUFhIaG5SMEtjZ0FucnpaR3hwWl9CZVF0S3Y2SmlDWEdIcXM5Y2V5R1lIVzZKb0UyNHFlNWpPUV8yYlV6MVRKSXZLN3p1QUd1NnFpWHc?oc=5",
@@ -13855,7 +13953,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-06T23:08:21+00:00"
+      "updated_at": "2026-11-07T01:15:32+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
