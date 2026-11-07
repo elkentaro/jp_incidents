@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-07T15:15:47+00:00",
+  "updated_at": "2026-11-07T18:16:12+00:00",
   "total": 964,
   "date_range": {
     "start": "2025-10-16",
@@ -1205,6 +1205,44 @@
       "updated_at": "2026-11-07T01:15:32+00:00"
     },
     {
+      "id": "12f762969ef520a0",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大阪市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 1460000,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/-/3068957?display=1",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE5GTElKMVphd1Z4QlNuUmtUeks4SDQxRUFaZXlfS3AxX1AzZGZPalJGS1JjQ3RfOUhKRHkzUTFWbUFKMVEyV3ZvTWt1ZVJRZW85VExSeDVXNThFNEd5VzJhNlJwczBUVG5MZTlOT0RkQ0FIbDBndjJyZ3RMbTBkczQ?oc=5",
+            "https://newsdig.tbs.co.jp/articles/-/3068957?display=1"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5GTElKMVphd1Z4QlNuUmtUeks4SDQxRUFaZXlfS3AxX1AzZGZPalJGS1JjQ3RfOUhKRHkzUTFWbUFKMVEyV3ZvTWt1ZVJRZW85VExSeDVXNThFNEd5VzJhNlJwczBUVG5MZTlOT0RkQ0FIbDBndjJyZ3RMbTBkczQ?oc=5"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3068957?display=1"
+        }
+      ],
+      "affected_service": "大阪市プレミアム付商品券",
+      "service_aliases": [],
+      "added_at": "2026-11-06T21:40:24+00:00",
+      "updated_at": "2026-11-07T18:16:12+00:00"
+    },
+    {
       "id": "72b700cb0445fe71",
       "published_at": "2026-11-05T15:00:00+00:00",
       "disclosed_at": null,
@@ -1685,39 +1723,6 @@
         }
       ],
       "affected_service": "安否確認システム",
-      "service_aliases": [],
-      "added_at": "2026-11-06T21:40:24+00:00",
-      "updated_at": "2026-11-06T21:40:24+00:00"
-    },
-    {
-      "id": "12f762969ef520a0",
-      "published_at": "2026-11-05T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "大阪市",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 1460000,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5GTElKMVphd1Z4QlNuUmtUeks4SDQxRUFaZXlfS3AxX1AzZGZPalJGS1JjQ3RfOUhKRHkzUTFWbUFKMVEyV3ZvTWt1ZVJRZW85VExSeDVXNThFNEd5VzJhNlJwczBUVG5MZTlOT0RkQ0FIbDBndjJyZ3RMbTBkczQ?oc=5",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMif0FVX3lxTE5GTElKMVphd1Z4QlNuUmtUeks4SDQxRUFaZXlfS3AxX1AzZGZPalJGS1JjQ3RfOUhKRHkzUTFWbUFKMVEyV3ZvTWt1ZVJRZW85VExSeDVXNThFNEd5VzJhNlJwczBUVG5MZTlOT0RkQ0FIbDBndjJyZ3RMbTBkczQ?oc=5"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5GTElKMVphd1Z4QlNuUmtUeks4SDQxRUFaZXlfS3AxX1AzZGZPalJGS1JjQ3RfOUhKRHkzUTFWbUFKMVEyV3ZvTWt1ZVJRZW85VExSeDVXNThFNEd5VzJhNlJwczBUVG5MZTlOT0RkQ0FIbDBndjJyZ3RMbTBkczQ?oc=5"
-        }
-      ],
-      "affected_service": "大阪市プレミアム付商品券",
       "service_aliases": [],
       "added_at": "2026-11-06T21:40:24+00:00",
       "updated_at": "2026-11-06T21:40:24+00:00"
@@ -13556,9 +13561,10 @@
         {
           "incident_id": "12f762969ef520a0",
           "relationship": "affects",
-          "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5GTElKMVphd1Z4QlNuUmtUeks4SDQxRUFaZXlfS3AxX1AzZGZPalJGS1JjQ3RfOUhKRHkzUTFWbUFKMVEyV3ZvTWt1ZVJRZW85VExSeDVXNThFNEd5VzJhNlJwczBUVG5MZTlOT0RkQ0FIbDBndjJyZ3RMbTBkczQ?oc=5",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/-/3068957?display=1",
           "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMif0FVX3lxTE5GTElKMVphd1Z4QlNuUmtUeks4SDQxRUFaZXlfS3AxX1AzZGZPalJGS1JjQ3RfOUhKRHkzUTFWbUFKMVEyV3ZvTWt1ZVJRZW85VExSeDVXNThFNEd5VzJhNlJwczBUVG5MZTlOT0RkQ0FIbDBndjJyZ3RMbTBkczQ?oc=5"
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE5GTElKMVphd1Z4QlNuUmtUeks4SDQxRUFaZXlfS3AxX1AzZGZPalJGS1JjQ3RfOUhKRHkzUTFWbUFKMVEyV3ZvTWt1ZVJRZW85VExSeDVXNThFNEd5VzJhNlJwczBUVG5MZTlOT0RkQ0FIbDBndjJyZ3RMbTBkczQ?oc=5",
+            "https://newsdig.tbs.co.jp/articles/-/3068957?display=1"
           ]
         },
         {
@@ -14415,7 +14421,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-07T12:17:10+00:00"
+      "updated_at": "2026-11-07T18:16:12+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
