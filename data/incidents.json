@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-07T13:17:32+00:00",
-  "total": 963,
+  "updated_at": "2026-11-07T14:16:22+00:00",
+  "total": 964,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-07"
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-11-07",
-      "count": 3
+      "count": 4
     }
   ],
   "incidents": [
@@ -444,6 +444,54 @@
       "service_aliases": [],
       "added_at": "2026-11-07T05:15:22+00:00",
       "updated_at": "2026-11-07T05:15:22+00:00"
+    },
+    {
+      "id": "3bff01875ea101cd",
+      "published_at": "2026-11-06T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "山陰合同銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1585,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "27c6fe562fd0baae",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/fdf017e23f4b5ce7f76600fbe7452afad475931b",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/fdf017e23f4b5ce7f76600fbe7452afad475931b"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/fdf017e23f4b5ce7f76600fbe7452afad475931b"
+        }
+      ],
+      "affected_service": "ごうぎんポケットローン / ごうぎんポケットローンワイド",
+      "service_aliases": [],
+      "affected_services": [
+        "ごうぎんポケットローン",
+        "ごうぎんポケットローンワイド"
+      ],
+      "service_details": [
+        {
+          "name": "ごうぎんポケットローン",
+          "aliases": []
+        },
+        {
+          "name": "ごうぎんポケットローンワイド",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-07T14:16:22+00:00",
+      "updated_at": "2026-11-07T14:16:22+00:00"
     },
     {
       "id": "70af91eead1ee810",
@@ -7202,6 +7250,14 @@
           ]
         },
         {
+          "incident_id": "3bff01875ea101cd",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/fdf017e23f4b5ce7f76600fbe7452afad475931b",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/fdf017e23f4b5ce7f76600fbe7452afad475931b"
+          ]
+        },
+        {
           "incident_id": "581973ec197708b9",
           "relationship": "affects",
           "evidence_url": "https://newsdig.tbs.co.jp/articles/-/3065710?display=1",
@@ -7271,7 +7327,7 @@
       "affected_service": "保証業務に使っているシステム",
       "service_aliases": [],
       "added_at": "2026-11-05T11:16:39+00:00",
-      "updated_at": "2026-11-06T14:16:57+00:00"
+      "updated_at": "2026-11-07T14:16:22+00:00"
     },
     {
       "id": "58e85aa5a6aa2f68",
