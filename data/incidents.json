@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-08T04:15:52+00:00",
+  "updated_at": "2026-11-08T05:15:21+00:00",
   "total": 968,
   "date_range": {
     "start": "2025-10-16",
@@ -4677,6 +4677,54 @@
       "updated_at": "2026-11-05T03:16:04+00:00"
     },
     {
+      "id": "ae02e60df8c74aed",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "日本郵便",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "01b9a3bb946f0daf",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.post.japanpost.jp/newsrelease/pressrelease/414336381813.html",
+          "evidence_urls": [
+            "https://www.post.japanpost.jp/newsrelease/pressrelease/414336381813.html"
+          ]
+        },
+        {
+          "incident_id": "d290a8fda51abad3",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.post.japanpost.jp/newsrelease/pressrelease/414336381813.html",
+          "evidence_urls": [
+            "https://www.post.japanpost.jp/newsrelease/pressrelease/414336381813.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本郵便 / Japan Post",
+          "url": "https://www.post.japanpost.jp/newsrelease/pressrelease/414336381813.html"
+        },
+        {
+          "name": "物流ニュースのLNEWS",
+          "url": "https://www.lnews.jp/2026/11/s1106102.html"
+        },
+        {
+          "name": "LOGISTICS TODAY",
+          "url": "https://www.logi-today.com/1019257"
+        }
+      ],
+      "added_at": "2026-11-05T14:17:23+00:00",
+      "updated_at": "2026-11-08T05:15:21+00:00"
+    },
+    {
       "id": "c04caacb5a38eecf",
       "published_at": "2026-11-03T15:00:00+00:00",
       "disclosed_at": null,
@@ -4838,50 +4886,6 @@
       ],
       "added_at": "2026-11-04T15:16:11+00:00",
       "updated_at": "2026-11-05T04:16:40+00:00"
-    },
-    {
-      "id": "ae02e60df8c74aed",
-      "published_at": "2026-11-03T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "日本郵便",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [
-        {
-          "incident_id": "01b9a3bb946f0daf",
-          "relationship": "same_organization",
-          "evidence_url": "https://www.post.japanpost.jp/newsrelease/pressrelease/414336381813.html",
-          "evidence_urls": [
-            "https://www.post.japanpost.jp/newsrelease/pressrelease/414336381813.html"
-          ]
-        },
-        {
-          "incident_id": "d290a8fda51abad3",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.post.japanpost.jp/newsrelease/pressrelease/414336381813.html",
-          "evidence_urls": [
-            "https://www.post.japanpost.jp/newsrelease/pressrelease/414336381813.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "日本郵便 / Japan Post",
-          "url": "https://www.post.japanpost.jp/newsrelease/pressrelease/414336381813.html"
-        },
-        {
-          "name": "物流ニュースのLNEWS",
-          "url": "https://www.lnews.jp/2026/11/s1106102.html"
-        }
-      ],
-      "added_at": "2026-11-05T14:17:23+00:00",
-      "updated_at": "2026-11-06T09:15:42+00:00"
     },
     {
       "id": "ce9458d4e66bdde4",
