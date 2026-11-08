@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-08T05:15:21+00:00",
+  "updated_at": "2026-11-08T07:15:19+00:00",
   "total": 968,
   "date_range": {
     "start": "2025-10-16",
@@ -2594,6 +2594,62 @@
       "updated_at": "2026-11-08T01:16:16+00:00"
     },
     {
+      "id": "32623d2c5b058c4e",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": "2026-11-04T15:00:00+00:00",
+      "organization": "北洋銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [
+        {
+          "incident_id": "27c6fe562fd0baae",
+          "relationship": "affected_by",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/-/3065819?display=1",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/85b8057c59b14fb0a7fa9cb3dcad5b895aedccaa",
+            "https://news.yahoo.co.jp/articles/ec68ec8da05046b613a3c20de443955a5dfdf7c0",
+            "https://newsdig.tbs.co.jp/articles/-/3065819?display=1"
+          ]
+        },
+        {
+          "incident_id": "47e339e61d1ed872",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/de81e21bc8f62236196771ea5d7e7bc96dd044e5",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/de81e21bc8f62236196771ea5d7e7bc96dd044e5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/85b8057c59b14fb0a7fa9cb3dcad5b895aedccaa"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/ec68ec8da05046b613a3c20de443955a5dfdf7c0"
+        },
+        {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp/n/stv/category/society/st6f80378cc1a64b8c922cb6fc676e6457"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3065819?display=1"
+        }
+      ],
+      "affected_service": "スーパーアルカ",
+      "service_aliases": [],
+      "added_at": "2026-11-05T14:17:23+00:00",
+      "updated_at": "2026-11-08T07:15:19+00:00"
+    },
+    {
       "id": "84b1fdc78e8cfefb",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": null,
@@ -3146,57 +3202,6 @@
       ],
       "added_at": "2026-11-05T21:15:39+00:00",
       "updated_at": "2026-11-06T06:15:41+00:00"
-    },
-    {
-      "id": "32623d2c5b058c4e",
-      "published_at": "2026-11-04T15:00:00+00:00",
-      "disclosed_at": "2026-11-04T15:00:00+00:00",
-      "organization": "北洋銀行",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [
-        {
-          "incident_id": "27c6fe562fd0baae",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/ec68ec8da05046b613a3c20de443955a5dfdf7c0",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/85b8057c59b14fb0a7fa9cb3dcad5b895aedccaa",
-            "https://news.yahoo.co.jp/articles/ec68ec8da05046b613a3c20de443955a5dfdf7c0"
-          ]
-        },
-        {
-          "incident_id": "47e339e61d1ed872",
-          "relationship": "same_organization",
-          "evidence_url": "https://news.yahoo.co.jp/articles/de81e21bc8f62236196771ea5d7e7bc96dd044e5",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/de81e21bc8f62236196771ea5d7e7bc96dd044e5"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/85b8057c59b14fb0a7fa9cb3dcad5b895aedccaa"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/ec68ec8da05046b613a3c20de443955a5dfdf7c0"
-        },
-        {
-          "name": "日テレNEWS NNN",
-          "url": "https://news.ntv.co.jp/n/stv/category/society/st6f80378cc1a64b8c922cb6fc676e6457"
-        }
-      ],
-      "affected_service": "スーパーアルカ",
-      "service_aliases": [],
-      "added_at": "2026-11-05T14:17:23+00:00",
-      "updated_at": "2026-11-06T20:15:40+00:00"
     },
     {
       "id": "9f7e10d4ea180a0c",
@@ -7363,10 +7368,11 @@
         {
           "incident_id": "32623d2c5b058c4e",
           "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/ec68ec8da05046b613a3c20de443955a5dfdf7c0",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/-/3065819?display=1",
           "evidence_urls": [
             "https://news.yahoo.co.jp/articles/85b8057c59b14fb0a7fa9cb3dcad5b895aedccaa",
-            "https://news.yahoo.co.jp/articles/ec68ec8da05046b613a3c20de443955a5dfdf7c0"
+            "https://news.yahoo.co.jp/articles/ec68ec8da05046b613a3c20de443955a5dfdf7c0",
+            "https://newsdig.tbs.co.jp/articles/-/3065819?display=1"
           ]
         },
         {
@@ -7447,7 +7453,7 @@
       "affected_service": "保証業務に使っているシステム",
       "service_aliases": [],
       "added_at": "2026-11-05T11:16:39+00:00",
-      "updated_at": "2026-11-07T14:16:22+00:00"
+      "updated_at": "2026-11-08T07:15:19+00:00"
     },
     {
       "id": "58e85aa5a6aa2f68",
