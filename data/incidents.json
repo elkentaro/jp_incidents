@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-08T07:15:19+00:00",
-  "total": 968,
+  "updated_at": "2026-11-08T08:15:28+00:00",
+  "total": 970,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-07"
@@ -357,7 +357,7 @@
     },
     {
       "date": "2026-11-06",
-      "count": 39
+      "count": 41
     },
     {
       "date": "2026-11-07",
@@ -1862,6 +1862,80 @@
       "service_aliases": [],
       "added_at": "2026-11-06T21:40:24+00:00",
       "updated_at": "2026-11-06T22:15:20+00:00"
+    },
+    {
+      "id": "0c3842bf13a18701",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "富士通株式会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "370d932c88ef3790",
+          "relationship": "affects",
+          "evidence_url": "https://www.lifecorp.jp/vc-files/pdf/newsrelease/others/20261106.pdf",
+          "evidence_urls": [
+            "https://www.lifecorp.jp/vc-files/pdf/newsrelease/others/20261106.pdf"
+          ]
+        },
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.lifecorp.jp/vc-files/pdf/newsrelease/others/20261106.pdf",
+          "evidence_urls": [
+            "https://www.lifecorp.jp/vc-files/pdf/newsrelease/others/20261106.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "www.lifecorp.jp",
+          "url": "https://www.lifecorp.jp/vc-files/pdf/newsrelease/others/20261106.pdf"
+        }
+      ],
+      "added_at": "2026-11-08T08:15:28+00:00",
+      "updated_at": "2026-11-08T08:15:28+00:00"
+    },
+    {
+      "id": "370d932c88ef3790",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ライフコーポレーション",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 133330,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "0c3842bf13a18701",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.lifecorp.jp/vc-files/pdf/newsrelease/others/20261106.pdf",
+          "evidence_urls": [
+            "https://www.lifecorp.jp/vc-files/pdf/newsrelease/others/20261106.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.lifecorp.jp/vc-files/pdf/newsrelease/others/20261106.pdf"
+        }
+      ],
+      "affected_service": "ライフネットスーパー",
+      "service_aliases": [],
+      "added_at": "2026-11-08T08:15:28+00:00",
+      "updated_at": "2026-11-08T08:15:28+00:00"
     },
     {
       "id": "5053a44c99ba4928",
@@ -6934,6 +7008,10 @@
         {
           "name": "legalagent list",
           "url": "https://www.city.himeji.lg.jp/shisei/0000034645.html"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOeXQ5U0FlblZaYk1NLU9mbzNjcGJ1RE5zZnRDVHk2ZERhclpETTlxeWZuX3I5bjZPQnVoZTAtdkwyWC1XZFRGVVROSzl3TU12UFozRnFOaWNfUlgtUUk0UHIyeHZNSUdpOXhkRUlONzNvVHZSYmEtSE91WVJFalVQYTRiRDBSOUhwMDlXUC01TndSUWRiT3cyMGxrR202aDZJTWpMdU50cEZMLTVFbWc?oc=5"
         }
       ],
       "affected_service": "姫路市オンライン手続ポータルサイト / マイナンバーカード交付予約・管理システム",
@@ -6953,7 +7031,7 @@
         }
       ],
       "added_at": "2026-11-02T20:15:44+00:00",
-      "updated_at": "2026-11-08T01:16:16+00:00"
+      "updated_at": "2026-11-08T08:15:28+00:00"
     },
     {
       "id": "6ce8d002dff5f408",
@@ -13703,6 +13781,14 @@
           ]
         },
         {
+          "incident_id": "0c3842bf13a18701",
+          "relationship": "affects",
+          "evidence_url": "https://www.lifecorp.jp/vc-files/pdf/newsrelease/others/20261106.pdf",
+          "evidence_urls": [
+            "https://www.lifecorp.jp/vc-files/pdf/newsrelease/others/20261106.pdf"
+          ]
+        },
+        {
           "incident_id": "0fb7c31537090579",
           "relationship": "affects",
           "evidence_url": "https://www.stcousair.co.jp/company/news/36892",
@@ -14597,7 +14683,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-08T01:16:16+00:00"
+      "updated_at": "2026-11-08T08:15:28+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
