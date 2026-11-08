@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-08T09:15:34+00:00",
-  "total": 970,
+  "updated_at": "2026-11-08T10:15:44+00:00",
+  "total": 972,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-07"
@@ -329,7 +329,7 @@
     },
     {
       "date": "2026-10-30",
-      "count": 39
+      "count": 40
     },
     {
       "date": "2026-10-31",
@@ -353,7 +353,7 @@
     },
     {
       "date": "2026-11-05",
-      "count": 50
+      "count": 51
     },
     {
       "date": "2026-11-06",
@@ -3912,6 +3912,31 @@
       ],
       "added_at": "2026-11-05T11:16:39+00:00",
       "updated_at": "2026-11-05T11:16:39+00:00"
+    },
+    {
+      "id": "c18e54cb9abd1cae",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社teket",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "corporate.teket.jp",
+          "url": "https://corporate.teket.jp/news/privacy_261108"
+        }
+      ],
+      "affected_service": "teket",
+      "service_aliases": [],
+      "added_at": "2026-11-08T10:15:44+00:00",
+      "updated_at": "2026-11-08T10:15:44+00:00"
     },
     {
       "id": "c89b09432d3c8d61",
@@ -11217,6 +11242,38 @@
       ],
       "added_at": "2026-10-30T22:15:37+00:00",
       "updated_at": "2026-10-30T23:03:16+00:00"
+    },
+    {
+      "id": "9279a49371cfeb52",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": "2026-10-29T15:00:00+00:00",
+      "organization": "株式会社teket",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 2842,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://corporate.teket.jp/news/Privacy_studio_261030",
+          "evidence_urls": [
+            "https://corporate.teket.jp/news/Privacy_studio_261030"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "corporate.teket.jp",
+          "url": "https://corporate.teket.jp/news/Privacy_studio_261030"
+        }
+      ],
+      "added_at": "2026-11-08T10:15:44+00:00",
+      "updated_at": "2026-11-08T10:15:44+00:00"
     },
     {
       "id": "ae1529561ab00842",
@@ -34146,6 +34203,14 @@
           ]
         },
         {
+          "incident_id": "9279a49371cfeb52",
+          "relationship": "affects",
+          "evidence_url": "https://corporate.teket.jp/news/Privacy_studio_261030",
+          "evidence_urls": [
+            "https://corporate.teket.jp/news/Privacy_studio_261030"
+          ]
+        },
+        {
           "incident_id": "939b08f2c6d29308",
           "relationship": "affects",
           "evidence_url": "https://www.town.yuzawa.lg.jp/soshikikarasagasu/kikkakusangyoukankoubu/kikakukankouka/4/4/8110.html",
@@ -34424,7 +34489,7 @@
       "affected_system": "Studio cloud environment",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T11:10:22+00:00",
-      "updated_at": "2026-11-07T11:39:00+00:00"
+      "updated_at": "2026-11-08T10:15:44+00:00"
     },
     {
       "id": "79d92ec417a38b35",
