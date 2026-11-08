@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-08T08:15:28+00:00",
+  "updated_at": "2026-11-08T09:15:34+00:00",
   "total": 970,
   "date_range": {
     "start": "2025-10-16",
@@ -895,6 +895,56 @@
       "updated_at": "2026-11-07T11:39:00+00:00"
     },
     {
+      "id": "69e3aca1139a6c35",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "堺商工会議所",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 296000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "4a42b9ed0126d93c",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.sakai.lg.jp/shisei/koho/hodo/hodoteikyoshiryo/kakohodo/r8/r811/081106_06.html",
+          "evidence_urls": [
+            "https://www.city.sakai.lg.jp/shisei/koho/hodo/hodoteikyoshiryo/kakohodo/r8/r811/081106_06.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "堺商工会議所",
+          "url": "https://www.city.sakai.lg.jp/shisei/koho/hodo/hodoteikyoshiryo/kakohodo/r8/r811/081106_06.files/1106_06.pdf"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/sakai_premium_coupon_2026_arara_290000/"
+        },
+        {
+          "name": "堺市 / Sakai",
+          "url": "https://www.city.sakai.lg.jp/shisei/koho/hodo/hodoteikyoshiryo/kakohodo/r8/r811/081106_06.html"
+        },
+        {
+          "name": "堺市 / Sakai",
+          "url": "https://www.city.sakai.lg.jp/sangyo/shienyuushi/shien/premium.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1nMkNUMTFud2xMVnFaWkFFMi1HUWlSb3RwRF9xQ0ExZFc3Y056UFA0QlN0NzJvLVd6NFFMNVVhMkJGUGtMVjZhMF9Jc20taGZjRGpDNzRURnZvVnpqU0RzNjliaUFEdUFBVXhVb0JuS1NNVXNpUVJkdWozbG9xVTQ?oc=5"
+        }
+      ],
+      "affected_service": "さかいプレミアム商品券2026",
+      "service_aliases": [],
+      "added_at": "2026-11-06T13:16:53+00:00",
+      "updated_at": "2026-11-08T09:15:34+00:00"
+    },
+    {
       "id": "bea05426f67e9585",
       "published_at": "2026-11-05T15:00:00+00:00",
       "disclosed_at": null,
@@ -1120,52 +1170,6 @@
       "service_aliases": [],
       "added_at": "2026-11-06T13:16:53+00:00",
       "updated_at": "2026-11-06T13:16:53+00:00"
-    },
-    {
-      "id": "69e3aca1139a6c35",
-      "published_at": "2026-11-05T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "堺商工会議所",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 296000,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [
-        {
-          "incident_id": "4a42b9ed0126d93c",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.city.sakai.lg.jp/shisei/koho/hodo/hodoteikyoshiryo/kakohodo/r8/r811/081106_06.html",
-          "evidence_urls": [
-            "https://www.city.sakai.lg.jp/shisei/koho/hodo/hodoteikyoshiryo/kakohodo/r8/r811/081106_06.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "堺商工会議所",
-          "url": "https://www.city.sakai.lg.jp/shisei/koho/hodo/hodoteikyoshiryo/kakohodo/r8/r811/081106_06.files/1106_06.pdf"
-        },
-        {
-          "name": "堺市 / Sakai",
-          "url": "https://www.city.sakai.lg.jp/shisei/koho/hodo/hodoteikyoshiryo/kakohodo/r8/r811/081106_06.html"
-        },
-        {
-          "name": "堺市 / Sakai",
-          "url": "https://www.city.sakai.lg.jp/sangyo/shienyuushi/shien/premium.html"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1nMkNUMTFud2xMVnFaWkFFMi1HUWlSb3RwRF9xQ0ExZFc3Y056UFA0QlN0NzJvLVd6NFFMNVVhMkJGUGtMVjZhMF9Jc20taGZjRGpDNzRURnZvVnpqU0RzNjliaUFEdUFBVXhVb0JuS1NNVXNpUVJkdWozbG9xVTQ?oc=5"
-        }
-      ],
-      "affected_service": "さかいプレミアム商品券2026",
-      "service_aliases": [],
-      "added_at": "2026-11-06T13:16:53+00:00",
-      "updated_at": "2026-11-07T11:15:54+00:00"
     },
     {
       "id": "b311b7098dd402a5",
@@ -1827,6 +1831,44 @@
       "updated_at": "2026-11-06T15:16:04+00:00"
     },
     {
+      "id": "370d932c88ef3790",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ライフコーポレーション",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 133330,
+      "confidence": "medium",
+      "confidence_score": 45,
+      "related": [
+        {
+          "incident_id": "0c3842bf13a18701",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.lifecorp.jp/vc-files/pdf/newsrelease/others/20261106.pdf",
+          "evidence_urls": [
+            "https://www.lifecorp.jp/vc-files/pdf/newsrelease/others/20261106.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.lifecorp.jp/vc-files/pdf/newsrelease/others/20261106.pdf"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/life_netsuper_133330_arara_20261106_article_updated_personal_corporate_seo/"
+        }
+      ],
+      "affected_service": "ライフネットスーパー",
+      "service_aliases": [],
+      "added_at": "2026-11-08T08:15:28+00:00",
+      "updated_at": "2026-11-08T09:15:34+00:00"
+    },
+    {
       "id": "4c4efaf9334d234c",
       "published_at": "2026-11-05T15:00:00+00:00",
       "disclosed_at": null,
@@ -1900,40 +1942,6 @@
           "url": "https://www.lifecorp.jp/vc-files/pdf/newsrelease/others/20261106.pdf"
         }
       ],
-      "added_at": "2026-11-08T08:15:28+00:00",
-      "updated_at": "2026-11-08T08:15:28+00:00"
-    },
-    {
-      "id": "370d932c88ef3790",
-      "published_at": "2026-11-05T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ライフコーポレーション",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 133330,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "0c3842bf13a18701",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.lifecorp.jp/vc-files/pdf/newsrelease/others/20261106.pdf",
-          "evidence_urls": [
-            "https://www.lifecorp.jp/vc-files/pdf/newsrelease/others/20261106.pdf"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.lifecorp.jp/vc-files/pdf/newsrelease/others/20261106.pdf"
-        }
-      ],
-      "affected_service": "ライフネットスーパー",
-      "service_aliases": [],
       "added_at": "2026-11-08T08:15:28+00:00",
       "updated_at": "2026-11-08T08:15:28+00:00"
     },
@@ -2521,6 +2529,59 @@
       "updated_at": "2026-11-06T02:16:04+00:00"
     },
     {
+      "id": "84b1fdc78e8cfefb",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "宮崎市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 39412,
+      "confidence": "high",
+      "confidence_score": 95,
+      "related": [
+        {
+          "incident_id": "1afe5711501497af",
+          "relationship": "same_organization",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1"
+          ]
+        },
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.city.miyazaki.miyazaki.jp/city/public_relations/press_material/419117.html"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6a19ef8156c704de8bc16415c760b780f9b99ad4"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/miyazaki_city_arara_smart_application_39412_registered_20261107/"
+        }
+      ],
+      "affected_service": "スマート申請システム",
+      "service_aliases": [],
+      "added_at": "2026-11-05T04:16:40+00:00",
+      "updated_at": "2026-11-08T09:15:34+00:00"
+    },
+    {
       "id": "02383edd7ab2669c",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": null,
@@ -2722,55 +2783,6 @@
       "service_aliases": [],
       "added_at": "2026-11-05T14:17:23+00:00",
       "updated_at": "2026-11-08T07:15:19+00:00"
-    },
-    {
-      "id": "84b1fdc78e8cfefb",
-      "published_at": "2026-11-04T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "宮崎市",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 39412,
-      "confidence": "high",
-      "confidence_score": 80,
-      "related": [
-        {
-          "incident_id": "1afe5711501497af",
-          "relationship": "same_organization",
-          "evidence_url": "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1",
-          "evidence_urls": [
-            "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1"
-          ]
-        },
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1",
-          "evidence_urls": [
-            "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.city.miyazaki.miyazaki.jp/city/public_relations/press_material/419117.html"
-        },
-        {
-          "name": "TBS NEWS DIG",
-          "url": "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/6a19ef8156c704de8bc16415c760b780f9b99ad4"
-        }
-      ],
-      "affected_service": "スマート申請システム",
-      "service_aliases": [],
-      "added_at": "2026-11-05T04:16:40+00:00",
-      "updated_at": "2026-11-08T01:16:16+00:00"
     },
     {
       "id": "936adcbd7bc057e8",
@@ -3425,6 +3437,10 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUC056Q10V01C26A1000000/"
+        },
+        {
+          "name": "PR TIMES",
+          "url": "https://prtimes.jp/a/?c=1455&r=1064&f=d1455-1064-2fe86b4e48b3d1ee417afe7a716da15c.pdf"
         }
       ],
       "affected_service": "食べログ / icotto / スマイティ / 価格.com / 求人ボックス",
@@ -3459,7 +3475,7 @@
         }
       ],
       "added_at": "2026-11-05T15:15:51+00:00",
-      "updated_at": "2026-11-05T17:15:44+00:00"
+      "updated_at": "2026-11-08T09:15:34+00:00"
     },
     {
       "id": "cd71aceb5c7b95e3",
@@ -4804,6 +4820,39 @@
       "updated_at": "2026-11-08T05:15:21+00:00"
     },
     {
+      "id": "f3e1f7cf44a9ab84",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社シグナルトーク",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1855578,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "PR TIMES",
+          "url": "https://prtimes.jp/main/html/rd/p/000000136.000009867.html"
+        },
+        {
+          "name": "株式会社シグナルトーク",
+          "url": "https://www.signaltalk.com/press/20261107.php"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118198"
+        }
+      ],
+      "affected_service": "Maru-Jan",
+      "service_aliases": [],
+      "added_at": "2026-11-07T12:17:10+00:00",
+      "updated_at": "2026-11-08T09:15:34+00:00"
+    },
+    {
       "id": "c04caacb5a38eecf",
       "published_at": "2026-11-03T15:00:00+00:00",
       "disclosed_at": null,
@@ -5060,35 +5109,6 @@
       "service_aliases": [],
       "added_at": "2026-11-04T12:25:20+00:00",
       "updated_at": "2026-11-04T12:25:20+00:00"
-    },
-    {
-      "id": "f3e1f7cf44a9ab84",
-      "published_at": "2026-11-03T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "株式会社シグナルトーク",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 1855578,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [],
-      "sources": [
-        {
-          "name": "PR TIMES",
-          "url": "https://prtimes.jp/main/html/rd/p/000000136.000009867.html"
-        },
-        {
-          "name": "株式会社シグナルトーク",
-          "url": "https://www.signaltalk.com/press/20261107.php"
-        }
-      ],
-      "affected_service": "Maru-Jan",
-      "service_aliases": [],
-      "added_at": "2026-11-07T12:17:10+00:00",
-      "updated_at": "2026-11-08T04:15:52+00:00"
     },
     {
       "id": "f565d4025213af60",
