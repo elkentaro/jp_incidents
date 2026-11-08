@@ -1,16 +1,12 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-08T14:16:28+00:00",
-  "total": 977,
+  "updated_at": "2026-11-08T15:16:16+00:00",
+  "total": 979,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-07"
   },
   "daily_counts_90d": [
-    {
-      "date": "2026-08-11",
-      "count": 0
-    },
     {
       "date": "2026-08-12",
       "count": 0
@@ -341,7 +337,7 @@
     },
     {
       "date": "2026-11-02",
-      "count": 50
+      "count": 51
     },
     {
       "date": "2026-11-03",
@@ -357,7 +353,7 @@
     },
     {
       "date": "2026-11-06",
-      "count": 42
+      "count": 43
     },
     {
       "date": "2026-11-07",
@@ -365,6 +361,10 @@
     },
     {
       "date": "2026-11-08",
+      "count": 0
+    },
+    {
+      "date": "2026-11-09",
       "count": 0
     }
   ],
@@ -1242,6 +1242,43 @@
       "updated_at": "2026-11-08T13:17:18+00:00"
     },
     {
+      "id": "f27a29f5766d17aa",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ロッテ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 11875,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/0d247a21ffd78352b6c7aea0f012bc2c1b3eb090"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/00ae3e1318fe8cfc4717da9726bb2261e37d94ac"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/e6bd01fc8f75a8812a0712dfbffaec513f6154a7"
+        },
+        {
+          "name": "khb東日本放送",
+          "url": "https://www.khb-tv.co.jp/news/17033136"
+        }
+      ],
+      "affected_service": "球団公式サイト",
+      "service_aliases": [],
+      "added_at": "2026-11-06T13:16:53+00:00",
+      "updated_at": "2026-11-08T15:16:16+00:00"
+    },
+    {
       "id": "12f762969ef520a0",
       "published_at": "2026-11-05T15:00:00+00:00",
       "disclosed_at": null,
@@ -1806,39 +1843,6 @@
       "updated_at": "2026-11-06T21:40:24+00:00"
     },
     {
-      "id": "f27a29f5766d17aa",
-      "published_at": "2026-11-05T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ロッテ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 11875,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/0d247a21ffd78352b6c7aea0f012bc2c1b3eb090"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/00ae3e1318fe8cfc4717da9726bb2261e37d94ac"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/e6bd01fc8f75a8812a0712dfbffaec513f6154a7"
-        }
-      ],
-      "affected_service": "球団公式サイト",
-      "service_aliases": [],
-      "added_at": "2026-11-06T13:16:53+00:00",
-      "updated_at": "2026-11-06T15:16:04+00:00"
-    },
-    {
       "id": "370d932c88ef3790",
       "published_at": "2026-11-05T15:00:00+00:00",
       "disclosed_at": null,
@@ -2010,6 +2014,37 @@
       "service_aliases": [],
       "added_at": "2026-11-06T00:16:04+00:00",
       "updated_at": "2026-11-06T00:16:04+00:00"
+    },
+    {
+      "id": "7407a5e6cc664bce",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "MERY",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 10110,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/shogakukan-id-arara-leak-1993665/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/shogakukan-id-arara-leak-1993665/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/shogakukan-id-arara-leak-1993665/"
+        }
+      ],
+      "added_at": "2026-11-08T15:16:16+00:00",
+      "updated_at": "2026-11-08T15:16:16+00:00"
     },
     {
       "id": "7e9f2251a4fe0a24",
@@ -9128,6 +9163,37 @@
       "updated_at": "2026-11-05T07:17:31+00:00"
     },
     {
+      "id": "bd2d832f478781fb",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "小学館",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 1993665,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/shogakukan-id-arara-leak-1993665/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/shogakukan-id-arara-leak-1993665/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/shogakukan-id-arara-leak-1993665/"
+        }
+      ],
+      "added_at": "2026-11-08T15:16:16+00:00",
+      "updated_at": "2026-11-08T15:16:16+00:00"
+    },
+    {
       "id": "1337ad1619d32570",
       "published_at": "2026-10-31T15:00:00+00:00",
       "disclosed_at": "2026-10-31T15:00:00+00:00",
@@ -14306,6 +14372,14 @@
           ]
         },
         {
+          "incident_id": "7407a5e6cc664bce",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/shogakukan-id-arara-leak-1993665/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/shogakukan-id-arara-leak-1993665/"
+          ]
+        },
+        {
           "incident_id": "743bfaf25b2a5781",
           "relationship": "affects",
           "evidence_url": "https://cybersecurity-jp.com/news/118145",
@@ -14547,6 +14621,14 @@
           "evidence_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9tZm9POWFWczcwV0JLSkxyMFRpdEVmaU9BcU55VW5oeXRNOUFPMklOSUhUUXRsUjhXdVVBU1hMcW5hTG5lV29STUxYS1dtaDlmX0pPa2l1a2ZtQ28?oc=5",
           "evidence_urls": [
             "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9tZm9POWFWczcwV0JLSkxyMFRpdEVmaU9BcU55VW5oeXRNOUFPMklOSUhUUXRsUjhXdVVBU1hMcW5hTG5lV29STUxYS1dtaDlmX0pPa2l1a2ZtQ28?oc=5"
+          ]
+        },
+        {
+          "incident_id": "bd2d832f478781fb",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/shogakukan-id-arara-leak-1993665/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/shogakukan-id-arara-leak-1993665/"
           ]
         },
         {
@@ -14865,7 +14947,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-08T08:15:28+00:00"
+      "updated_at": "2026-11-08T15:16:16+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
