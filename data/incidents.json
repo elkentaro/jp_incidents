@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-08T12:12:51+00:00",
-  "total": 973,
+  "updated_at": "2026-11-08T13:17:18+00:00",
+  "total": 976,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-07"
@@ -329,7 +329,7 @@
     },
     {
       "date": "2026-10-30",
-      "count": 40
+      "count": 41
     },
     {
       "date": "2026-10-31",
@@ -349,7 +349,7 @@
     },
     {
       "date": "2026-11-04",
-      "count": 44
+      "count": 45
     },
     {
       "date": "2026-11-05",
@@ -357,7 +357,7 @@
     },
     {
       "date": "2026-11-06",
-      "count": 41
+      "count": 42
     },
     {
       "date": "2026-11-07",
@@ -1213,6 +1213,35 @@
       "updated_at": "2026-11-07T01:15:32+00:00"
     },
     {
+      "id": "e369c4162eab9e16",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "エディオン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 13685,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "エディオン / EDION",
+          "url": "https://www.edion.co.jp/system/files/news-release/pdf/ja/2026-11/20261106_pr_1.pdf"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/edion_ec_server_log_unauthorized_access_9554/"
+        }
+      ],
+      "affected_service": "EC サイト",
+      "service_aliases": [],
+      "added_at": "2026-11-06T13:16:53+00:00",
+      "updated_at": "2026-11-08T13:17:18+00:00"
+    },
+    {
       "id": "12f762969ef520a0",
       "published_at": "2026-11-05T15:00:00+00:00",
       "disclosed_at": null,
@@ -1576,31 +1605,6 @@
       "service_aliases": [],
       "added_at": "2026-11-06T14:16:57+00:00",
       "updated_at": "2026-11-06T14:16:57+00:00"
-    },
-    {
-      "id": "e369c4162eab9e16",
-      "published_at": "2026-11-05T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "エディオン",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 13685,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [],
-      "sources": [
-        {
-          "name": "エディオン / EDION",
-          "url": "https://www.edion.co.jp/system/files/news-release/pdf/ja/2026-11/20261106_pr_1.pdf"
-        }
-      ],
-      "affected_service": "EC サイト",
-      "service_aliases": [],
-      "added_at": "2026-11-06T13:16:53+00:00",
-      "updated_at": "2026-11-06T13:16:53+00:00"
     },
     {
       "id": "050087310ec0737d",
@@ -2112,6 +2116,31 @@
       "service_aliases": [],
       "added_at": "2026-11-06T21:40:24+00:00",
       "updated_at": "2026-11-06T21:40:24+00:00"
+    },
+    {
+      "id": "e17cb4d370ffdb62",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ビットキャッシュ株式会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/webmoney-unauthorized-access-payment-information/"
+        }
+      ],
+      "affected_service": "WebMoney",
+      "service_aliases": [],
+      "added_at": "2026-11-08T13:17:18+00:00",
+      "updated_at": "2026-11-08T13:17:18+00:00"
     },
     {
       "id": "ef9a6c327405f613",
@@ -5992,6 +6021,39 @@
       "service_aliases": [],
       "added_at": "2026-11-04T10:47:15+00:00",
       "updated_at": "2026-11-04T10:47:15+00:00"
+    },
+    {
+      "id": "3b6af9a23426883f",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": "2026-11-04T15:00:00+00:00",
+      "organization": "森永乳業",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "952e2c6c9cc4af56",
+          "relationship": "same_organization",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/morinaga_milk_group_sites_unauthorized_access/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/morinaga_milk_group_sites_unauthorized_access/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/morinaga_milk_group_sites_unauthorized_access/"
+        }
+      ],
+      "affected_service": "関係会社のWebサイト",
+      "service_aliases": [],
+      "added_at": "2026-11-08T13:17:18+00:00",
+      "updated_at": "2026-11-08T13:17:18+00:00"
     },
     {
       "id": "8e5216fb3af59e3a",
@@ -11479,6 +11541,31 @@
       "service_aliases": [],
       "added_at": "2026-11-02T09:16:16+00:00",
       "updated_at": "2026-11-02T09:16:16+00:00"
+    },
+    {
+      "id": "6baf45047357de22",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": "2026-11-04T15:00:00+00:00",
+      "organization": "駿河屋",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/surugaya_affiliate_5500_data_tampering_possible_leak_20261106/"
+        }
+      ],
+      "affected_service": "アフィリエイトシステム",
+      "service_aliases": [],
+      "added_at": "2026-11-08T13:17:18+00:00",
+      "updated_at": "2026-11-08T13:17:18+00:00"
     },
     {
       "id": "7426faef7c02541b",
@@ -20605,6 +20692,54 @@
       "updated_at": "2026-11-04T00:14:16+00:00"
     },
     {
+      "id": "3997d3c58a441f60",
+      "published_at": "2026-10-22T15:00:00+00:00",
+      "disclosed_at": "2026-11-06T15:00:00+00:00",
+      "organization": "ステップゴルフ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 215000,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "www.stepgolf.co.jp",
+          "url": "https://www.stepgolf.co.jp/news/261107"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/2d07d23ceee8739ab9704593997283fb541bff0c"
+        }
+      ],
+      "affected_service": "業務システムおよび予約システム / 予約システム / 業務システム",
+      "service_aliases": [],
+      "affected_services": [
+        "業務システムおよび予約システム",
+        "予約システム",
+        "業務システム"
+      ],
+      "service_details": [
+        {
+          "name": "業務システムおよび予約システム",
+          "aliases": []
+        },
+        {
+          "name": "予約システム",
+          "aliases": []
+        },
+        {
+          "name": "業務システム",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-08T12:12:51+00:00",
+      "updated_at": "2026-11-08T13:17:18+00:00"
+    },
+    {
       "id": "4aa0b50acb6d2b97",
       "published_at": "2026-10-22T15:00:00+00:00",
       "disclosed_at": null,
@@ -21202,50 +21337,6 @@
       ],
       "added_at": "2026-10-23T05:16:07+00:00",
       "updated_at": "2026-10-23T05:16:07+00:00"
-    },
-    {
-      "id": "3997d3c58a441f60",
-      "published_at": "2026-10-22T15:00:00+00:00",
-      "disclosed_at": "2026-11-06T15:00:00+00:00",
-      "organization": "ステップゴルフ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 215000,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [],
-      "sources": [
-        {
-          "name": "www.stepgolf.co.jp",
-          "url": "https://www.stepgolf.co.jp/news/261107"
-        }
-      ],
-      "affected_service": "業務システムおよび予約システム / 予約システム / 業務システム",
-      "service_aliases": [],
-      "affected_services": [
-        "業務システムおよび予約システム",
-        "予約システム",
-        "業務システム"
-      ],
-      "service_details": [
-        {
-          "name": "業務システムおよび予約システム",
-          "aliases": []
-        },
-        {
-          "name": "予約システム",
-          "aliases": []
-        },
-        {
-          "name": "業務システム",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-08T12:12:51+00:00",
-      "updated_at": "2026-11-08T12:12:51+00:00"
     },
     {
       "id": "49b975ab2dfa7017",
@@ -40959,6 +41050,14 @@
       "confidence_score": 60,
       "related": [
         {
+          "incident_id": "3b6af9a23426883f",
+          "relationship": "same_organization",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/morinaga_milk_group_sites_unauthorized_access/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/morinaga_milk_group_sites_unauthorized_access/"
+          ]
+        },
+        {
           "incident_id": "5361b8a858516f2f",
           "relationship": "affected_by",
           "evidence_url": "https://www.morinagamilk.co.jp/information/newsentry-4168.html",
@@ -40976,7 +41075,7 @@
       "affected_system": "マウントカフェ部",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T09:06:44+00:00",
-      "updated_at": "2026-10-20T07:24:24+00:00"
+      "updated_at": "2026-11-08T13:17:18+00:00"
     },
     {
       "id": "a9a5d385a16257b2",
