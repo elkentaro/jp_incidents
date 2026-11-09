@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-09T02:16:13+00:00",
+  "updated_at": "2026-11-09T05:16:13+00:00",
   "total": 990,
   "date_range": {
     "start": "2025-10-16",
@@ -631,7 +631,8 @@
       "organization": "NTTドコモ",
       "incident_type": "data leak",
       "incident_categories": [
-        "data leak"
+        "data leak",
+        "unauthorized access"
       ],
       "potential_records": 340000,
       "confidence": "high",
@@ -689,7 +690,7 @@
         }
       ],
       "added_at": "2026-11-06T11:16:38+00:00",
-      "updated_at": "2026-11-06T19:15:31+00:00"
+      "updated_at": "2026-11-09T05:16:13+00:00"
     },
     {
       "id": "08725c90714959de",
@@ -737,10 +738,14 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/f3d81552335bca859e2c977af546759de3a03502"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/resona_3banks_smbc_consumer_finance_5935_leaked/"
         }
       ],
       "added_at": "2026-11-06T14:16:57+00:00",
-      "updated_at": "2026-11-07T12:17:10+00:00"
+      "updated_at": "2026-11-09T05:16:13+00:00"
     },
     {
       "id": "1cfabb23afe2945a",
@@ -848,6 +853,10 @@
           "url": "https://www.ms-ad-hd.com/ja/news_group/20261106_mitsui_direct/main/0/link/20261106_mitsuidirect.pdf"
         },
         {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/mitsui-direct-insurance-234000-customer-data-breach/"
+        },
+        {
           "name": "NHKニュース",
           "url": "https://news.web.nhk/newsweb/na/nd-20261106de71809"
         },
@@ -865,7 +874,7 @@
         }
       ],
       "added_at": "2026-11-06T13:16:53+00:00",
-      "updated_at": "2026-11-09T01:16:50+00:00"
+      "updated_at": "2026-11-09T05:16:13+00:00"
     },
     {
       "id": "69e3aca1139a6c35",
@@ -1042,6 +1051,100 @@
       "updated_at": "2026-11-06T14:16:57+00:00"
     },
     {
+      "id": "bea05426f67e9585",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "みなと銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 3,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "27c6fe562fd0baae",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf",
+          "evidence_urls": [
+            "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "りそなホールディングス / Resona",
+          "url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf"
+        },
+        {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp/15194677.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/f3d81552335bca859e2c977af546759de3a03502"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/resona_3banks_smbc_consumer_finance_5935_leaked/"
+        }
+      ],
+      "added_at": "2026-11-06T14:16:57+00:00",
+      "updated_at": "2026-11-09T05:16:13+00:00"
+    },
+    {
+      "id": "c9169a37657680cc",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "関西みらい銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 5793,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "27c6fe562fd0baae",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf",
+          "evidence_urls": [
+            "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf"
+          ]
+        },
+        {
+          "incident_id": "3b2a073b7265fb6c",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf",
+          "evidence_urls": [
+            "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "りそなホールディングス / Resona",
+          "url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf"
+        },
+        {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp/15194677.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/f3d81552335bca859e2c977af546759de3a03502"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/resona_3banks_smbc_consumer_finance_5935_leaked/"
+        }
+      ],
+      "added_at": "2026-11-06T14:16:57+00:00",
+      "updated_at": "2026-11-09T05:16:13+00:00"
+    },
+    {
       "id": "d308686b92e683f1",
       "published_at": "2026-11-05T15:00:00+00:00",
       "disclosed_at": null,
@@ -1100,90 +1203,56 @@
       "updated_at": "2026-11-09T01:16:50+00:00"
     },
     {
-      "id": "bea05426f67e9585",
+      "id": "599d36c0c1bea1ea",
       "published_at": "2026-11-05T15:00:00+00:00",
       "disclosed_at": null,
-      "organization": "みなと銀行",
+      "organization": "使えるねっと",
       "incident_type": "data leak",
       "incident_categories": [
-        "data leak"
+        "data leak",
+        "unauthorized access"
       ],
-      "potential_records": 3,
+      "potential_records": null,
       "confidence": "high",
       "confidence_score": 90,
-      "related": [
-        {
-          "incident_id": "27c6fe562fd0baae",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf",
-          "evidence_urls": [
-            "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf"
-          ]
-        }
-      ],
+      "related": [],
       "sources": [
         {
-          "name": "りそなホールディングス / Resona",
-          "url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf"
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/tsukaeru-net-portal-data-breach-shared-server-mail-loss/"
         },
         {
-          "name": "47NEWS",
-          "url": "https://www.47news.jp/15194677.html"
+          "name": "satimo list",
+          "url": "https://www.tsukaeru.net/news/20261107/"
         },
         {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/f3d81552335bca859e2c977af546759de3a03502"
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118209"
         }
       ],
-      "added_at": "2026-11-06T14:16:57+00:00",
-      "updated_at": "2026-11-07T12:17:10+00:00"
-    },
-    {
-      "id": "c9169a37657680cc",
-      "published_at": "2026-11-05T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "関西みらい銀行",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
+      "affected_service": "使えるポータル / VPS / 共有サーバー",
+      "service_aliases": [],
+      "affected_services": [
+        "使えるポータル",
+        "VPS",
+        "共有サーバー"
       ],
-      "potential_records": 5793,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [
+      "service_details": [
         {
-          "incident_id": "27c6fe562fd0baae",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf",
-          "evidence_urls": [
-            "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf"
-          ]
+          "name": "使えるポータル",
+          "aliases": []
         },
         {
-          "incident_id": "3b2a073b7265fb6c",
-          "relationship": "same_organization",
-          "evidence_url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf",
-          "evidence_urls": [
-            "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf"
-          ]
+          "name": "VPS",
+          "aliases": []
+        },
+        {
+          "name": "共有サーバー",
+          "aliases": []
         }
       ],
-      "sources": [
-        {
-          "name": "りそなホールディングス / Resona",
-          "url": "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf"
-        },
-        {
-          "name": "47NEWS",
-          "url": "https://www.47news.jp/15194677.html"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/f3d81552335bca859e2c977af546759de3a03502"
-        }
-      ],
-      "added_at": "2026-11-06T14:16:57+00:00",
-      "updated_at": "2026-11-07T12:17:10+00:00"
+      "added_at": "2026-11-09T01:16:50+00:00",
+      "updated_at": "2026-11-09T05:16:13+00:00"
     },
     {
       "id": "581973ec197708b9",
@@ -1290,54 +1359,6 @@
       "service_aliases": [],
       "added_at": "2026-11-06T13:16:53+00:00",
       "updated_at": "2026-11-06T13:16:53+00:00"
-    },
-    {
-      "id": "599d36c0c1bea1ea",
-      "published_at": "2026-11-05T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "使えるねっと",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.tsukaeru.net/news/20261107/"
-        },
-        {
-          "name": "Cybersecurity.jp",
-          "url": "https://cybersecurity-jp.com/news/118209"
-        }
-      ],
-      "affected_service": "使えるポータル / VPS / 共有サーバー",
-      "service_aliases": [],
-      "affected_services": [
-        "使えるポータル",
-        "VPS",
-        "共有サーバー"
-      ],
-      "service_details": [
-        {
-          "name": "使えるポータル",
-          "aliases": []
-        },
-        {
-          "name": "VPS",
-          "aliases": []
-        },
-        {
-          "name": "共有サーバー",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-09T01:16:50+00:00",
-      "updated_at": "2026-11-09T02:16:13+00:00"
     },
     {
       "id": "b311b7098dd402a5",
@@ -11098,6 +11119,56 @@
       "updated_at": "2026-11-09T01:16:50+00:00"
     },
     {
+      "id": "963a8269049e209d",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ミツカン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 487,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "41ee5e46723f8a2c",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.jiji.com/jc/article?k=2026110601065&g=eco",
+          "evidence_urls": [
+            "https://www.jiji.com/jc/article?k=2026110601065&g=eco"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "時事ドットコム",
+          "url": "https://www.jiji.com/jc/article?k=2026110601065&g=eco"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/44b0243cb0aadc923a049a414040c608b5286ef4"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118180"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE12TjhiOUZLY2VPSjdyVUItWHVacXlMbnJNUFRVVjFDT2k4aGFCZlJjdGY5LU9nN1VTZHVBdUZhRDdNQUhIZVlqT3dTTzByTy1uaVNzQUFoWXpTcExZOTRER3Y4YWg0bzBwZm5kdGRFUG84bjNBalEycG1iM0NwNE0?oc=5"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/mizkan365-487-profile-tampering-29-data-leak/"
+        }
+      ],
+      "affected_service": "ミツカン365",
+      "service_aliases": [],
+      "added_at": "2026-11-06T15:16:04+00:00",
+      "updated_at": "2026-11-09T05:16:13+00:00"
+    },
+    {
       "id": "a9fd6c70338f6c75",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": null,
@@ -11232,52 +11303,6 @@
       "service_aliases": [],
       "added_at": "2026-11-01T21:15:27+00:00",
       "updated_at": "2026-11-02T22:16:00+00:00"
-    },
-    {
-      "id": "963a8269049e209d",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ミツカン",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 487,
-      "confidence": "high",
-      "confidence_score": 95,
-      "related": [
-        {
-          "incident_id": "41ee5e46723f8a2c",
-          "relationship": "same_organization",
-          "evidence_url": "https://www.jiji.com/jc/article?k=2026110601065&g=eco",
-          "evidence_urls": [
-            "https://www.jiji.com/jc/article?k=2026110601065&g=eco"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "時事ドットコム",
-          "url": "https://www.jiji.com/jc/article?k=2026110601065&g=eco"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/44b0243cb0aadc923a049a414040c608b5286ef4"
-        },
-        {
-          "name": "Cybersecurity.jp",
-          "url": "https://cybersecurity-jp.com/news/118180"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE12TjhiOUZLY2VPSjdyVUItWHVacXlMbnJNUFRVVjFDT2k4aGFCZlJjdGY5LU9nN1VTZHVBdUZhRDdNQUhIZVlqT3dTTzByTy1uaVNzQUFoWXpTcExZOTRER3Y4YWg0bzBwZm5kdGRFUG84bjNBalEycG1iM0NwNE0?oc=5"
-        }
-      ],
-      "affected_service": "ミツカン365",
-      "service_aliases": [],
-      "added_at": "2026-11-06T15:16:04+00:00",
-      "updated_at": "2026-11-08T20:15:32+00:00"
     },
     {
       "id": "81ace1ca432c9aa9",
@@ -12558,12 +12583,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/3ad58a24765fa046864803222cdd63459a88f2a7"
+        },
+        {
+          "name": "ネットショップ担当者フォーラム",
+          "url": "https://netshop.impress.co.jp/n/2026/11/09/17001"
         }
       ],
       "affected_service": "アイリスオーヤマ公式通販サイト「アイリスプラザ」",
       "service_aliases": [],
       "added_at": "2026-10-30T01:13:09+00:00",
-      "updated_at": "2026-10-30T15:15:26+00:00"
+      "updated_at": "2026-11-09T05:16:13+00:00"
     },
     {
       "id": "9dcda190358f32c1",
@@ -17004,6 +17033,43 @@
       "updated_at": "2026-10-29T20:16:15+00:00"
     },
     {
+      "id": "20ffbede1b1d6781",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "チームスピリット",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 28824,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [],
+      "sources": [
+        {
+          "name": "チームスピリット",
+          "url": "https://corp.teamspirit.com/news/information/2026/11/2026_1106_01/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118179"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/teamspirit_dev_server_data_leak_28824_20261107/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/8a436f4262bb3ae0af20d8a19f5161ab384d4c0b"
+        }
+      ],
+      "affected_service": "ソフトウェア開発用サーバー",
+      "service_aliases": [],
+      "added_at": "2026-11-07T11:39:00+00:00",
+      "updated_at": "2026-11-09T05:16:13+00:00"
+    },
+    {
       "id": "c509397cdd014ce0",
       "published_at": "2026-10-26T15:00:00+00:00",
       "disclosed_at": null,
@@ -17646,35 +17712,6 @@
       "service_aliases": [],
       "added_at": "2026-10-30T10:15:57+00:00",
       "updated_at": "2026-11-01T01:15:58+00:00"
-    },
-    {
-      "id": "20ffbede1b1d6781",
-      "published_at": "2026-10-26T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "チームスピリット",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 28824,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [],
-      "sources": [
-        {
-          "name": "チームスピリット",
-          "url": "https://corp.teamspirit.com/news/information/2026/11/2026_1106_01/"
-        },
-        {
-          "name": "Cybersecurity.jp",
-          "url": "https://cybersecurity-jp.com/news/118179"
-        }
-      ],
-      "affected_service": "ソフトウェア開発用サーバー",
-      "service_aliases": [],
-      "added_at": "2026-11-07T11:39:00+00:00",
-      "updated_at": "2026-11-07T11:39:00+00:00"
     },
     {
       "id": "249f996eeac0e23c",
@@ -28748,12 +28785,16 @@
           "url": "https://www.trustbank.co.jp/newsroom/newsrelease/news20261105/"
         },
         {
+          "name": "株式会社トラストバンク",
+          "url": "https://www.trustbank.co.jp/newsroom/newsrelease/news20261109/"
+        },
+        {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261020553586.pdf"
         },
         {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/d68fd773bdb006bcce6d67a0f5cb5eadfd52b397"
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261109568473.pdf"
         },
         {
           "name": "NHKニュース",
@@ -28833,7 +28874,7 @@
         "ふるさとちょいす"
       ],
       "added_at": "2026-10-20T23:46:03+00:00",
-      "updated_at": "2026-11-05T05:15:40+00:00"
+      "updated_at": "2026-11-09T05:16:13+00:00"
     },
     {
       "id": "2a737208d01cfe10",
