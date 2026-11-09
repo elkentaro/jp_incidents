@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-09T01:16:50+00:00",
-  "total": 989,
+  "updated_at": "2026-11-09T02:16:13+00:00",
+  "total": 990,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-09"
@@ -321,7 +321,7 @@
     },
     {
       "date": "2026-10-29",
-      "count": 34
+      "count": 35
     },
     {
       "date": "2026-10-30",
@@ -380,8 +380,8 @@
         "unauthorized access"
       ],
       "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
+      "confidence": "high",
+      "confidence_score": 65,
       "related": [
         {
           "incident_id": "e0bf7f8e71d6ba85",
@@ -396,10 +396,14 @@
         {
           "name": "ScanNetSecurity",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9xZ2lCbk1rbmlwQlkwb09SVW5EVmtxa3VRUGs5aXpzTXUyUFozWnJ4MnVlVjZwVHJmcTFqSTd3bUZXZUtqek51STloUG51cVo2eWZZVFhsa3RlbE1vZVJKTXNhMVRweVliS3BtNQ?oc=5"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/09/56707.html"
         }
       ],
       "added_at": "2026-11-09T01:16:50+00:00",
-      "updated_at": "2026-11-09T01:16:50+00:00"
+      "updated_at": "2026-11-09T02:16:13+00:00"
     },
     {
       "id": "d25e97a3448ca2da",
@@ -1288,6 +1292,54 @@
       "updated_at": "2026-11-06T13:16:53+00:00"
     },
     {
+      "id": "599d36c0c1bea1ea",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "使えるねっと",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.tsukaeru.net/news/20261107/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118209"
+        }
+      ],
+      "affected_service": "使えるポータル / VPS / 共有サーバー",
+      "service_aliases": [],
+      "affected_services": [
+        "使えるポータル",
+        "VPS",
+        "共有サーバー"
+      ],
+      "service_details": [
+        {
+          "name": "使えるポータル",
+          "aliases": []
+        },
+        {
+          "name": "VPS",
+          "aliases": []
+        },
+        {
+          "name": "共有サーバー",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-09T01:16:50+00:00",
+      "updated_at": "2026-11-09T02:16:13+00:00"
+    },
+    {
       "id": "b311b7098dd402a5",
       "published_at": "2026-11-05T15:00:00+00:00",
       "disclosed_at": null,
@@ -1381,6 +1433,47 @@
       "service_aliases": [],
       "added_at": "2026-11-06T13:16:53+00:00",
       "updated_at": "2026-11-08T13:17:18+00:00"
+    },
+    {
+      "id": "f09ce0baa42bc9e2",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": "2026-11-05T15:00:00+00:00",
+      "organization": "スバルファイナンス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 3117,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "36d105653c0ed4da",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/subaru-finance-hotline-3117-pcs-data-breach/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/subaru-finance-hotline-3117-pcs-data-breach/",
+            "https://rocket-boys.co.jp/security-measures-lab/subaru_228734_pcs_roadside_oil_maintenance_possible_data_leak/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://sfc.subaru.co.jp/topics/20261105175142/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/subaru_228734_pcs_roadside_oil_maintenance_possible_data_leak/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/subaru-finance-hotline-3117-pcs-data-breach/"
+        }
+      ],
+      "added_at": "2026-11-08T20:15:32+00:00",
+      "updated_at": "2026-11-09T02:16:13+00:00"
     },
     {
       "id": "f27a29f5766d17aa",
@@ -1718,50 +1811,6 @@
       ],
       "added_at": "2026-11-06T13:16:53+00:00",
       "updated_at": "2026-11-06T14:16:57+00:00"
-    },
-    {
-      "id": "599d36c0c1bea1ea",
-      "published_at": "2026-11-05T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "使えるねっと",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.tsukaeru.net/news/20261107/"
-        }
-      ],
-      "affected_service": "使えるポータル / VPS / 共有サーバー",
-      "service_aliases": [],
-      "affected_services": [
-        "使えるポータル",
-        "VPS",
-        "共有サーバー"
-      ],
-      "service_details": [
-        {
-          "name": "使えるポータル",
-          "aliases": []
-        },
-        {
-          "name": "VPS",
-          "aliases": []
-        },
-        {
-          "name": "共有サーバー",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-09T01:16:50+00:00",
-      "updated_at": "2026-11-09T01:16:50+00:00"
     },
     {
       "id": "a85592637c48cd4a",
@@ -2370,38 +2419,6 @@
       "updated_at": "2026-11-06T10:15:48+00:00"
     },
     {
-      "id": "f09ce0baa42bc9e2",
-      "published_at": "2026-11-05T15:00:00+00:00",
-      "disclosed_at": "2026-11-05T15:00:00+00:00",
-      "organization": "スバルファイナンス",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 3117,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "36d105653c0ed4da",
-          "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/subaru_228734_pcs_roadside_oil_maintenance_possible_data_leak/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/subaru_228734_pcs_roadside_oil_maintenance_possible_data_leak/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/subaru_228734_pcs_roadside_oil_maintenance_possible_data_leak/"
-        }
-      ],
-      "added_at": "2026-11-08T20:15:32+00:00",
-      "updated_at": "2026-11-08T20:15:32+00:00"
-    },
-    {
       "id": "4e61125aed51dbcb",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": null,
@@ -2991,6 +3008,41 @@
       "updated_at": "2026-11-08T01:16:16+00:00"
     },
     {
+      "id": "c18e54cb9abd1cae",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社teket",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "corporate.teket.jp",
+          "url": "https://corporate.teket.jp/news/privacy_261108"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/teket_unauthorized_access_all_members_ticket_codes/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118208"
+        }
+      ],
+      "affected_service": "teket",
+      "service_aliases": [
+        "テケト"
+      ],
+      "added_at": "2026-11-08T10:15:44+00:00",
+      "updated_at": "2026-11-09T02:16:13+00:00"
+    },
+    {
       "id": "32623d2c5b058c4e",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": "2026-11-04T15:00:00+00:00",
@@ -3465,37 +3517,6 @@
       "service_aliases": [],
       "added_at": "2026-11-05T21:15:39+00:00",
       "updated_at": "2026-11-06T03:15:43+00:00"
-    },
-    {
-      "id": "c18e54cb9abd1cae",
-      "published_at": "2026-11-04T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "株式会社teket",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [],
-      "sources": [
-        {
-          "name": "corporate.teket.jp",
-          "url": "https://corporate.teket.jp/news/privacy_261108"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/teket_unauthorized_access_all_members_ticket_codes/"
-        }
-      ],
-      "affected_service": "teket",
-      "service_aliases": [
-        "テケト"
-      ],
-      "added_at": "2026-11-08T10:15:44+00:00",
-      "updated_at": "2026-11-08T12:12:51+00:00"
     },
     {
       "id": "ddc337c648916610",
@@ -6768,6 +6789,56 @@
       "updated_at": "2026-11-06T21:40:24+00:00"
     },
     {
+      "id": "bd31831676ce0e1f",
+      "published_at": "2026-11-02T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "山梨県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 200000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "cc83cfb44abbac15",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d"
+          ]
+        },
+        {
+          "incident_id": "d6d292a6112076a6",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.pref.yamanashi.jp/fujisan/20261104/20261104tsuukouyoyakuryuusyutu.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3063725?display=1"
+        }
+      ],
+      "affected_service": "富士山吉田ルートの通行予約システム",
+      "service_aliases": [],
+      "added_at": "2026-11-05T15:15:51+00:00",
+      "updated_at": "2026-11-09T02:16:13+00:00"
+    },
+    {
       "id": "8a2a8d13a22fe810",
       "published_at": "2026-11-02T15:00:00+00:00",
       "disclosed_at": null,
@@ -6846,52 +6917,6 @@
       ],
       "added_at": "2026-11-03T20:15:56+00:00",
       "updated_at": "2026-11-04T02:15:58+00:00"
-    },
-    {
-      "id": "bd31831676ce0e1f",
-      "published_at": "2026-11-02T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "山梨県",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 200000,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [
-        {
-          "incident_id": "cc83cfb44abbac15",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d"
-          ]
-        },
-        {
-          "incident_id": "d6d292a6112076a6",
-          "relationship": "same_organization",
-          "evidence_url": "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.pref.yamanashi.jp/fujisan/20261104/20261104tsuukouyoyakuryuusyutu.html"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/7ae6293b178ff152cd2f29f9cead7444ee734f9d"
-        }
-      ],
-      "affected_service": "富士山吉田ルートの通行予約システム",
-      "service_aliases": [],
-      "added_at": "2026-11-05T15:15:51+00:00",
-      "updated_at": "2026-11-07T01:15:32+00:00"
     },
     {
       "id": "b89d07366359c1c3",
@@ -12449,8 +12474,9 @@
         {
           "incident_id": "f09ce0baa42bc9e2",
           "relationship": "affects",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/subaru_228734_pcs_roadside_oil_maintenance_possible_data_leak/",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/subaru-finance-hotline-3117-pcs-data-breach/",
           "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/subaru-finance-hotline-3117-pcs-data-breach/",
             "https://rocket-boys.co.jp/security-measures-lab/subaru_228734_pcs_roadside_oil_maintenance_possible_data_leak/"
           ]
         },
@@ -12492,7 +12518,7 @@
       "affected_service": "ロードサービス等の受付・手配業務に使用する業務システム",
       "service_aliases": [],
       "added_at": "2026-11-02T10:00:14+00:00",
-      "updated_at": "2026-11-08T23:15:59+00:00"
+      "updated_at": "2026-11-09T02:16:13+00:00"
     },
     {
       "id": "8132159128c70bb6",
@@ -13349,6 +13375,40 @@
       "service_aliases": [],
       "added_at": "2026-11-06T06:15:41+00:00",
       "updated_at": "2026-11-06T06:15:41+00:00"
+    },
+    {
+      "id": "f66acc4e9a8a273b",
+      "published_at": "2026-10-28T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "セレス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 11100,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "433e28e53acb64b1",
+          "relationship": "same_organization",
+          "evidence_url": "https://scan.netsecurity.ne.jp/article/2026/11/09/56707.html",
+          "evidence_urls": [
+            "https://scan.netsecurity.ne.jp/article/2026/11/09/56707.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/09/56707.html"
+        }
+      ],
+      "affected_service": "ポイントインカム",
+      "service_aliases": [],
+      "added_at": "2026-11-09T02:16:13+00:00",
+      "updated_at": "2026-11-09T02:16:13+00:00"
     },
     {
       "id": "575cc9ef529313b5",
@@ -41928,7 +41988,16 @@
       "potential_records": 195,
       "confidence": "high",
       "confidence_score": 60,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "f66acc4e9a8a273b",
+          "relationship": "same_organization",
+          "evidence_url": "https://scan.netsecurity.ne.jp/article/2026/11/09/56707.html",
+          "evidence_urls": [
+            "https://scan.netsecurity.ne.jp/article/2026/11/09/56707.html"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "satimo list",
@@ -41936,7 +42005,7 @@
         }
       ],
       "added_at": "2026-10-19T09:06:44+00:00",
-      "updated_at": "2026-10-20T07:24:24+00:00"
+      "updated_at": "2026-11-09T02:16:13+00:00"
     },
     {
       "id": "c5f2c880068ece17",
