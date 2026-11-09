@@ -15,7 +15,7 @@
   <meta name="description" content="A continuously updated index of publicly reported cybersecurity incidents affecting organizations in Japan.">
   <title>JP Incident Monitor</title>
   <link rel="alternate" type="application/rss+xml" title="JP Incident Monitor RSS" href="feed.xml">
-  <link rel="stylesheet" href="styles.css?v=20261024-recent">
+  <link rel="stylesheet" href="styles.css?v=20261109-counts">
 </head>
 <body>
   <header class="site-header">
@@ -57,12 +57,13 @@
               <h2 id="trend-title" data-i18n="trendTitle">90-day incident trend</h2>
               <span id="trend-total" class="trend-total"></span>
             </div>
-            <div id="trend-chart" class="trend-chart" role="img"></div>
+            <div id="trend-chart" class="trend-chart" role="img" aria-describedby="trend-scope"></div>
             <div class="trend-dates" aria-hidden="true"><span id="trend-start"></span><span id="trend-end"></span></div>
+            <p id="trend-scope" class="trend-scope"></p>
           </section>
           <dl class="summary" aria-live="polite">
             <div>
-              <dt data-i18n="totalIncidents">Total incidents</dt>
+              <dt data-i18n="totalIncidents">Total incidents · all dates</dt>
               <dd id="total-count">—</dd>
             </div>
             <div>
@@ -149,6 +150,6 @@
     </div>
   </footer>
 
-  <script src="app.js?v=20261026-linkage" defer></script>
+  <script src="app.js?v=20261109-counts" defer></script>
 </body>
 </html>

@@ -28,10 +28,11 @@ const copy = {
     title: "Incidentes de ciberseguridad en Japón",
     description: "Incidentes de ciberseguridad comunicados públicamente que afectan a organizaciones japonesas, recopilados de noticias, publicaciones de seguridad y avisos oficiales.",
     disclaimer: "Este índice se recopila automáticamente y se analiza con IA. Puede contener omisiones o errores y no debe considerarse un registro completo ni definitivo. Compruebe los detalles en las fuentes enlazadas.",
-    totalIncidents: "Total de incidentes", lastUpdated: "Datos actualizados",
+    totalIncidents: "Total de incidentes · todas las fechas", lastUpdated: "Datos actualizados",
     nextPlannedUpdate: (date) => `Próxima actualización prevista: ${date}`,
     coverage: "Período", trendTitle: "Tendencia de incidentes de los últimos 90 días",
-    trendCount: (count, peak) => `${count.toLocaleString("es")} registrados · máximo de ${peak.toLocaleString("es")}/día`,
+    trendCount: (count, peak) => `${count.toLocaleString("es")} en el gráfico · máximo de ${peak.toLocaleString("es")}/día`,
+    trendScope: (total, outside) => `${total.toLocaleString("es")} incidentes coinciden en todas las fechas; ${outside.toLocaleString("es")} fuera de este período o sin fecha. El gráfico y el directorio usan los mismos filtros. Fechas en hora de Japón.`,
     trendAria: (total, peak) => `Incidentes diarios de los últimos 90 días. ${total} incidentes en total; máximo diario de ${peak}.`,
     directoryTitle: "Directorio de incidentes",
     linkageGuide: "Un incidente puede tener varias categorías. Los enlaces relacionados conectan organizaciones afectadas, incidentes de origen o sucesos distintos en la misma organización; abra «¿Por qué están relacionados?» para consultar las pruebas.",
@@ -72,12 +73,13 @@ const copy = {
     title: "Cyber incidents in Japan",
     description: "Publicly reported cybersecurity incidents affecting Japanese organizations, collected from news, security publications, and official notices.",
     disclaimer: "This index is collected automatically and analyzed with AI. It may contain omissions or errors and should not be regarded as a complete or authoritative record. Verify details with the linked sources.",
-    totalIncidents: "Total incidents",
+    totalIncidents: "Total incidents · all dates",
     lastUpdated: "Data updated",
     nextPlannedUpdate: (date) => `Next planned update: ${date}`,
     coverage: "Coverage",
     trendTitle: "90-day incident trend",
-    trendCount: (count, peak) => `${count.toLocaleString("en-US")} reported · peak ${peak.toLocaleString("en-US")}/day`,
+    trendCount: (count, peak) => `${count.toLocaleString("en-US")} in chart · peak ${peak.toLocaleString("en-US")}/day`,
+    trendScope: (total, outside) => `${total.toLocaleString("en-US")} matching incidents across all dates; ${outside.toLocaleString("en-US")} outside this window or undated. Chart and directory use the same filters. Dates use Japan time.`,
     trendAria: (total, peak) => `Daily incident counts for the last 90 days. ${total} incidents total; highest daily count ${peak}.`,
     directoryTitle: "Incident directory",
     linkageGuide: "One incident can have several category tags. Related links connect affected organizations, upstream incidents, or separate events at the same organization; open Why linked? for evidence.",
@@ -132,12 +134,13 @@ const copy = {
     title: "日本のサイバーインシデント",
     description: "ニュース、セキュリティ専門メディア、公式発表から収集した、日本の組織に影響する公表済みサイバーインシデントです。",
     disclaimer: "本一覧は公開情報を自動収集し、AIを用いて分析しています。情報の欠落や誤りが含まれる可能性があり、完全または権威ある記録として扱わないでください。詳細はリンク先の情報源でご確認ください。",
-    totalIncidents: "インシデント総数",
+    totalIncidents: "インシデント総数（全期間）",
     lastUpdated: "データ更新日時",
     nextPlannedUpdate: (date) => `次回更新予定：${date}`,
     coverage: "収録期間",
     trendTitle: "過去90日間のインシデント推移",
-    trendCount: (count, peak) => `${count.toLocaleString("ja-JP")}件 · 最大${peak.toLocaleString("ja-JP")}件/日`,
+    trendCount: (count, peak) => `グラフ内${count.toLocaleString("ja-JP")}件 · 最大${peak.toLocaleString("ja-JP")}件/日`,
+    trendScope: (total, outside) => `全期間で条件に一致する${total.toLocaleString("ja-JP")}件のうち、${outside.toLocaleString("ja-JP")}件は期間外または日付不明です。グラフと一覧には同じ絞り込み条件を適用します。日付は日本時間です。`,
     trendAria: (total, peak) => `過去90日間の日別インシデント件数。合計${total}件、1日の最大件数${peak}件。`,
     directoryTitle: "インシデント一覧",
     linkageGuide: "1件の事案に複数の種別が付く場合があります。関連リンクは影響を受けた組織、起点となる事案、同一組織の別事案を結びます。「関連の根拠」で証拠を確認できます。",
@@ -188,6 +191,7 @@ const elements = {
   coverage: document.querySelector("#coverage-range"),
   trend: document.querySelector("#trend-chart"),
   trendTotal: document.querySelector("#trend-total"),
+  trendScope: document.querySelector("#trend-scope"),
   trendStart: document.querySelector("#trend-start"),
   trendEnd: document.querySelector("#trend-end"),
   results: document.querySelector("#result-count"),
@@ -207,7 +211,6 @@ const state = {
   language: savedLanguage() || ({ en: "en", ja: "ja", es: "es" }[navigator.language.split("-")[0]] || "en"),
   incidents: [],
   aliases: {},
-  dailyCounts: [],
   dateRange: null,
   updatedAt: null,
   page: 1,
@@ -322,28 +325,29 @@ function tokyoDateKey(date) {
   return `${values.year}-${values.month}-${values.day}`;
 }
 
-function renderTrend() {
-  let days = state.dailyCounts.map((day) => ({
-    date: new Date(`${day.date}T00:00:00+09:00`), key: day.date, count: day.count
-  }));
-  if (days.length !== 90) {
-    const dayMs = 24 * 60 * 60 * 1000;
-    const now = Date.now();
-    days = Array.from({ length: 90 }, (_, index) => {
-      const date = new Date(now - (89 - index) * dayMs);
-      return { date, key: tokyoDateKey(date), count: 0 };
-    });
-    const byKey = new Map(days.map((day) => [day.key, day]));
-    state.incidents.forEach((incident) => {
-      const date = new Date(incident.published_at);
-      if (!Number.isNaN(date.valueOf())) {
-        const day = byKey.get(tokyoDateKey(date));
-        if (day) day.count += 1;
-      }
-    });
-  }
-
+function incidentTrend(incidents, updatedAt = state.updatedAt) {
+  // Anchor to the published snapshot, so a delayed update cannot move the window.
+  const updated = Date.parse(updatedAt);
+  const end = Number.isFinite(updated) ? updated : Date.now();
+  const dayMs = 24 * 60 * 60 * 1000;
+  const days = Array.from({ length: 90 }, (_, index) => {
+    const date = new Date(end - (89 - index) * dayMs);
+    return { date, key: tokyoDateKey(date), count: 0 };
+  });
+  const byKey = new Map(days.map((day) => [day.key, day]));
+  // Count the same records as the directory, once per incident regardless of tags.
+  incidents.forEach((incident) => {
+    const timestamp = Date.parse(incident.published_at);
+    if (!Number.isFinite(timestamp)) return;
+    const day = byKey.get(tokyoDateKey(new Date(timestamp)));
+    if (day) day.count += 1;
+  });
   const total = days.reduce((sum, day) => sum + day.count, 0);
+  return { days, total, outside: incidents.length - total };
+}
+
+function renderTrend(incidents) {
+  const { days, total, outside } = incidentTrend(incidents);
   const actualPeak = Math.max(...days.map((day) => day.count));
   const peak = Math.max(1, actualPeak);
   const locale = state.language === "ja" ? "ja-JP" : state.language === "es" ? "es" : "en-US";
@@ -358,6 +362,7 @@ function renderTrend() {
   replaceContent(elements.trend, bars);
   elements.trend.setAttribute("aria-label", text("trendAria")(total, actualPeak));
   elements.trendTotal.textContent = text("trendCount")(total, actualPeak);
+  if (elements.trendScope) elements.trendScope.textContent = text("trendScope")(incidents.length, outside);
   elements.trendStart.textContent = shortDate.format(days[0].date);
   elements.trendEnd.textContent = shortDate.format(days[days.length - 1].date);
 }
@@ -652,7 +657,7 @@ function render() {
   elements.total.textContent = state.incidents.length.toLocaleString(state.language === "ja" ? "ja-JP" : state.language === "es" ? "es" : "en-US");
   renderUpdateTimes();
   elements.coverage.textContent = formatCoverageRange();
-  renderTrend();
+  renderTrend(filtered);
   elements.results.textContent = `${text("results")(filtered.length, state.incidents.length)} · ${text("page")(state.page, totalPages)}`;
   replaceContent(elements.rows, visible.map(incidentRow));
   elements.empty.hidden = filtered.length !== 0;
@@ -706,7 +711,6 @@ async function loadData() {
     if (!Array.isArray(data.incidents)) throw new Error("Invalid data document");
     state.incidents = data.incidents;
     state.aliases = data.aliases || {};
-    state.dailyCounts = Array.isArray(data.daily_counts_90d) ? data.daily_counts_90d : [];
     state.dateRange = data.date_range || null;
     state.updatedAt = data.updated_at;
     state.loaded = true;
