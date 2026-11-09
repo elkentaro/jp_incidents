@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-09T06:16:50+00:00",
-  "total": 996,
+  "updated_at": "2026-11-09T07:08:09+00:00",
+  "total": 998,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-09"
@@ -85,7 +85,7 @@
     },
     {
       "date": "2026-08-31",
-      "count": 0
+      "count": 1
     },
     {
       "date": "2026-09-01",
@@ -357,7 +357,7 @@
     },
     {
       "date": "2026-11-07",
-      "count": 4
+      "count": 5
     },
     {
       "date": "2026-11-08",
@@ -480,8 +480,8 @@
         "unauthorized access"
       ],
       "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
+      "confidence": "high",
+      "confidence_score": 100,
       "related": [
         {
           "incident_id": "f58940476d597124",
@@ -496,12 +496,32 @@
         {
           "name": "ITmedia",
           "url": "https://www.itmedia.co.jp/news/article/2611/09/2000003004/"
+        },
+        {
+          "name": "INTERNET Watch",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB6Njg5dzdGYWRFc2JfeDFpX0tEdlV3UGttV0pXLW9WQk1NOGxGdzA3bEctaHhVTkJTQ09RaXRlQnlBTnF1cHRZdVliVW9GempiVXF6dVBUd0MwWGNxaWUwUEdxSjNTajVTd3FN?oc=5"
+        },
+        {
+          "name": "CNET Japan",
+          "url": "https://japan.cnet.com/article/35254596/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/7c7558ba77dd55c95ff53ebbe7d9777cc71f73aa"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261109de72879"
+        },
+        {
+          "name": "NOVAIST",
+          "url": "https://novaist.jp/articles/raksul-possible-data-breach/"
         }
       ],
       "affected_service": "ラクスル",
       "service_aliases": [],
       "added_at": "2026-11-09T06:16:50+00:00",
-      "updated_at": "2026-11-09T06:16:50+00:00"
+      "updated_at": "2026-11-09T07:08:09+00:00"
     },
     {
       "id": "cb69602b79e76443",
@@ -514,8 +534,8 @@
         "unauthorized access"
       ],
       "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
+      "confidence": "high",
+      "confidence_score": 65,
       "related": [
         {
           "incident_id": "f58940476d597124",
@@ -530,10 +550,14 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/raksul-print-data-unauthorized-access/"
+        },
+        {
+          "name": "テレ朝NEWS",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBXcVpQVnR0clZDazRVWGFLbG1vTW1TUnpreHp2WW83YVpjd2VTYXYzcHlIdUNUUWN5eU5MaThFTWRtNExNZmtjOEJUTmdYbnhudXkwU05LOVVIb2NpSmtIWTRhWmlxYXhWcS10OGtLOExSdw?oc=5"
         }
       ],
       "added_at": "2026-11-09T06:16:50+00:00",
-      "updated_at": "2026-11-09T06:16:50+00:00"
+      "updated_at": "2026-11-09T07:08:09+00:00"
     },
     {
       "id": "30cd420408abcfa9",
@@ -689,6 +713,30 @@
       ],
       "added_at": "2026-11-07T02:16:11+00:00",
       "updated_at": "2026-11-07T02:16:11+00:00"
+    },
+    {
+      "id": "d47afbe7e699beaf",
+      "published_at": "2026-11-06T15:00:00+00:00",
+      "disclosed_at": "2026-11-08T15:00:00+00:00",
+      "organization": "FWD生命保険",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 9000,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/fwdlife_fwd_navi_9000_customer_contracts_unauthorized_access_2026/"
+        }
+      ],
+      "affected_service": "FWD navi",
+      "service_aliases": [],
+      "added_at": "2026-11-09T07:08:09+00:00",
+      "updated_at": "2026-11-09T07:08:09+00:00"
     },
     {
       "id": "03874becece52044",
@@ -1358,6 +1406,39 @@
       "updated_at": "2026-11-09T05:16:13+00:00"
     },
     {
+      "id": "e369c4162eab9e16",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "エディオン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 13685,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "エディオン / EDION",
+          "url": "https://www.edion.co.jp/system/files/news-release/pdf/ja/2026-11/20261106_pr_1.pdf"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/edion_ec_server_log_unauthorized_access_9554/"
+        },
+        {
+          "name": "ASCII.jp",
+          "url": "https://ascii.jp/elem/000/004/449/4449766/"
+        }
+      ],
+      "affected_service": "EC サイト",
+      "service_aliases": [],
+      "added_at": "2026-11-06T13:16:53+00:00",
+      "updated_at": "2026-11-09T07:08:09+00:00"
+    },
+    {
       "id": "581973ec197708b9",
       "published_at": "2026-11-05T15:00:00+00:00",
       "disclosed_at": null,
@@ -1500,35 +1581,6 @@
       "service_aliases": [],
       "added_at": "2026-11-08T13:17:18+00:00",
       "updated_at": "2026-11-09T01:16:50+00:00"
-    },
-    {
-      "id": "e369c4162eab9e16",
-      "published_at": "2026-11-05T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "エディオン",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 13685,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [],
-      "sources": [
-        {
-          "name": "エディオン / EDION",
-          "url": "https://www.edion.co.jp/system/files/news-release/pdf/ja/2026-11/20261106_pr_1.pdf"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/edion_ec_server_log_unauthorized_access_9554/"
-        }
-      ],
-      "affected_service": "EC サイト",
-      "service_aliases": [],
-      "added_at": "2026-11-06T13:16:53+00:00",
-      "updated_at": "2026-11-08T13:17:18+00:00"
     },
     {
       "id": "f09ce0baa42bc9e2",
@@ -2877,6 +2929,45 @@
       "updated_at": "2026-11-06T02:16:04+00:00"
     },
     {
+      "id": "c18e54cb9abd1cae",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社teket",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [],
+      "sources": [
+        {
+          "name": "corporate.teket.jp",
+          "url": "https://corporate.teket.jp/news/privacy_261108"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/teket_unauthorized_access_all_members_ticket_codes/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118208"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2611/09/2000003009/"
+        }
+      ],
+      "affected_service": "teket",
+      "service_aliases": [
+        "テケト"
+      ],
+      "added_at": "2026-11-08T10:15:44+00:00",
+      "updated_at": "2026-11-09T07:08:09+00:00"
+    },
+    {
       "id": "ce7d32fd4e6c1d66",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": null,
@@ -3135,41 +3226,6 @@
       "service_aliases": [],
       "added_at": "2026-11-05T08:16:07+00:00",
       "updated_at": "2026-11-08T01:16:16+00:00"
-    },
-    {
-      "id": "c18e54cb9abd1cae",
-      "published_at": "2026-11-04T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "株式会社teket",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [],
-      "sources": [
-        {
-          "name": "corporate.teket.jp",
-          "url": "https://corporate.teket.jp/news/privacy_261108"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/teket_unauthorized_access_all_members_ticket_codes/"
-        },
-        {
-          "name": "Cybersecurity.jp",
-          "url": "https://cybersecurity-jp.com/news/118208"
-        }
-      ],
-      "affected_service": "teket",
-      "service_aliases": [
-        "テケト"
-      ],
-      "added_at": "2026-11-08T10:15:44+00:00",
-      "updated_at": "2026-11-09T02:16:13+00:00"
     },
     {
       "id": "32623d2c5b058c4e",
@@ -7957,9 +8013,10 @@
         {
           "incident_id": "e0bf7f8e71d6ba85",
           "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/shogakukan-id-arara-leak-1993665/",
+          "evidence_url": "https://www.sankei.com/article/20261109-PCPIAMPU2FAVDP4KDNYRKCOA6U/",
           "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/shogakukan-id-arara-leak-1993665/"
+            "https://rocket-boys.co.jp/security-measures-lab/shogakukan-id-arara-leak-1993665/",
+            "https://www.sankei.com/article/20261109-PCPIAMPU2FAVDP4KDNYRKCOA6U/"
           ]
         }
       ],
@@ -7979,10 +8036,14 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/5eebd10a1f76bceb3bd38f1e0e1b41bd7d4e04dd"
+        },
+        {
+          "name": "産経ニュース",
+          "url": "https://www.sankei.com/article/20261109-PCPIAMPU2FAVDP4KDNYRKCOA6U/"
         }
       ],
       "added_at": "2026-11-08T15:16:16+00:00",
-      "updated_at": "2026-11-09T06:16:50+00:00"
+      "updated_at": "2026-11-09T07:08:09+00:00"
     },
     {
       "id": "c0fbbb0ab3173161",
@@ -15391,9 +15452,10 @@
         {
           "incident_id": "bd2d832f478781fb",
           "relationship": "affects",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/shogakukan-id-arara-leak-1993665/",
+          "evidence_url": "https://www.sankei.com/article/20261109-PCPIAMPU2FAVDP4KDNYRKCOA6U/",
           "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/shogakukan-id-arara-leak-1993665/"
+            "https://rocket-boys.co.jp/security-measures-lab/shogakukan-id-arara-leak-1993665/",
+            "https://www.sankei.com/article/20261109-PCPIAMPU2FAVDP4KDNYRKCOA6U/"
           ]
         },
         {
@@ -15736,7 +15798,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-09T01:16:50+00:00"
+      "updated_at": "2026-11-09T07:08:09+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -17327,12 +17389,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/8a436f4262bb3ae0af20d8a19f5161ab384d4c0b"
+        },
+        {
+          "name": "NOVAIST",
+          "url": "https://novaist.jp/articles/teamspirit-data-breach/"
         }
       ],
       "affected_service": "ソフトウェア開発用サーバー",
       "service_aliases": [],
       "added_at": "2026-11-07T11:39:00+00:00",
-      "updated_at": "2026-11-09T05:16:13+00:00"
+      "updated_at": "2026-11-09T07:08:09+00:00"
     },
     {
       "id": "c509397cdd014ce0",
@@ -42959,6 +43025,31 @@
       ],
       "added_at": "2026-10-21T21:25:20+00:00",
       "updated_at": "2026-10-26T00:08:36+00:00"
+    },
+    {
+      "id": "9dc51df1da2fcdfa",
+      "published_at": "2026-08-30T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "早稲田大学",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 3400,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "早稲田大学 / Waseda University",
+          "url": "https://www.waseda.jp/top/news/topic/124183"
+        }
+      ],
+      "affected_service": "MyWaseda",
+      "service_aliases": [],
+      "added_at": "2026-11-09T07:08:09+00:00",
+      "updated_at": "2026-11-09T07:08:09+00:00"
     },
     {
       "id": "771d425a095483bb",
