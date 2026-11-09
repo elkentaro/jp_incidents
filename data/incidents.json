@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-09T21:16:19+00:00",
-  "total": 1026,
+  "updated_at": "2026-11-09T22:15:20+00:00",
+  "total": 1028,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-09"
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-11-09",
-      "count": 18
+      "count": 20
     },
     {
       "date": "2026-11-10",
@@ -543,6 +543,104 @@
       "updated_at": "2026-11-09T11:04:22+00:00"
     },
     {
+      "id": "d9cd031bdf50865e",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "MS＆AD",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 296000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "MS&AD ホールディングス",
+          "url": "https://www.ms-ad-hd.com/ja/important_notice/notice-06.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5fcGdQRFBMRWN6MTRmN2FTVmRnODNSVDdUR2phbHZYckVFMjQ4Yi0welltbllBNHBjVGJGM1lwUjVNZ0lBcHRiQjNPcHJxQUdDSlRQWU1ZZlgzblZhYXoyemF1V0s5bzY4ajNfSUhXN1FDaURWYmVVam42cFJSS1k?oc=5"
+        },
+        {
+          "name": "BigGo ファイナンス",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1CMUo2OTRtdzdIN3puYVlBdVM4UUFWeGVsaVRWY2ZyVVQtOVNDWWEwbUprT1BQWmlwRjFKdE8zQ0JETXNWeXY3blp2aG51M0ZYZ0tVOFQza085U1NRQU5VN05VN2NJa0pTQkZQSmxfd19UX3Jm?oc=5"
+        }
+      ],
+      "affected_service": "三井住友海上火災保険 / あいおいニッセイ同和損害保険株式会社 / 三井ダイレクト損害保険 / 三井住友海上あいおい生命保険株式会社",
+      "service_aliases": [],
+      "affected_services": [
+        "三井住友海上火災保険",
+        "あいおいニッセイ同和損害保険株式会社",
+        "三井ダイレクト損害保険",
+        "三井住友海上あいおい生命保険株式会社"
+      ],
+      "service_details": [
+        {
+          "name": "三井住友海上火災保険",
+          "aliases": []
+        },
+        {
+          "name": "あいおいニッセイ同和損害保険株式会社",
+          "aliases": []
+        },
+        {
+          "name": "三井ダイレクト損害保険",
+          "aliases": []
+        },
+        {
+          "name": "三井住友海上あいおい生命保険株式会社",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-09T22:15:19+00:00",
+      "updated_at": "2026-11-09T22:15:19+00:00"
+    },
+    {
+      "id": "bf2e2e5ef81fe5ed",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "倉敷市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [
+        {
+          "incident_id": "c18e54cb9abd1cae",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5GeG9VUm9mc2o1QzVUeTFXYzk2cHltTmNVcnY2UnFLSWxOYnBaYmRlX0JHTXJJMVlJYUFwNWpqcDlqTTFUQm52RDh6VnJ4cnFNakE?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5GeG9VUm9mc2o1QzVUeTFXYzk2cHltTmNVcnY2UnFLSWxOYnBaYmRlX0JHTXJJMVlJYUFwNWpqcDlqTTFUQm52RDh6VnJ4cnFNakE?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "山陽新聞",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5GeG9VUm9mc2o1QzVUeTFXYzk2cHltTmNVcnY2UnFLSWxOYnBaYmRlX0JHTXJJMVlJYUFwNWpqcDlqTTFUQm52RDh6VnJ4cnFNakE?oc=5"
+        },
+        {
+          "name": "47NEWS",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9TTTZuQmlyZWdmMnQwR3lZRlB4cjFTZk42ajN3c1RSdW1XYk5Vd1UtMFR0U1BXX2hPUWZ1MHJQU2g1YVRma2RuN3VqNA?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBzNm8ybW5JSVY3Vmd2cHZZVnlVTTBKOEFpcVFkMGxqVUdhdmY3LVJfdHprR1BzeXBZamwteTRMM2JPRnFmSXc0ektVVU1zbUZZb3ZuM2Y1SUU5SzdUaHQ5R2RKVENzQzRYUDh3OUFLNzJ3MGl6RkVfTnZjbnFTQkE?oc=5"
+        }
+      ],
+      "affected_service": "玉島市民交流センター",
+      "service_aliases": [],
+      "added_at": "2026-11-09T21:16:19+00:00",
+      "updated_at": "2026-11-09T22:15:19+00:00"
+    },
+    {
       "id": "dd965d5ae113728b",
       "published_at": "2026-11-08T15:00:00+00:00",
       "disclosed_at": null,
@@ -707,6 +805,37 @@
       "service_aliases": [],
       "added_at": "2026-11-09T11:39:07+00:00",
       "updated_at": "2026-11-09T11:39:07+00:00"
+    },
+    {
+      "id": "3ace403cf66f51b6",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "沖縄県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "09ba28525670dac9",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB6RG1xbHR1dl9YaS1QYkdQbjJxb2lpTkRpeTRVaTNlSEYtVURWWmpQWUVmSEhzSTdVRk5yamNRdDZvYnM1aHpMd2ZlOEtYakhXMURYaXVxUkY0RnVrVE9pNlFYaHdTOUl3Ym9uS0s0aXZHTVVUQ1A4Q2ZTZHBrc1U?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTFB6RG1xbHR1dl9YaS1QYkdQbjJxb2lpTkRpeTRVaTNlSEYtVURWWmpQWUVmSEhzSTdVRk5yamNRdDZvYnM1aHpMd2ZlOEtYakhXMURYaXVxUkY0RnVrVE9pNlFYaHdTOUl3Ym9uS0s0aXZHTVVUQ1A4Q2ZTZHBrc1U?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB6RG1xbHR1dl9YaS1QYkdQbjJxb2lpTkRpeTRVaTNlSEYtVURWWmpQWUVmSEhzSTdVRk5yamNRdDZvYnM1aHpMd2ZlOEtYakhXMURYaXVxUkY0RnVrVE9pNlFYaHdTOUl3Ym9uS0s0aXZHTVVUQ1A4Q2ZTZHBrc1U?oc=5"
+        }
+      ],
+      "added_at": "2026-11-09T22:15:19+00:00",
+      "updated_at": "2026-11-09T22:15:19+00:00"
     },
     {
       "id": "805db770edc2faee",
@@ -927,39 +1056,6 @@
         }
       ],
       "affected_service": "選べるゴールド優待",
-      "service_aliases": [],
-      "added_at": "2026-11-09T21:16:19+00:00",
-      "updated_at": "2026-11-09T21:16:19+00:00"
-    },
-    {
-      "id": "bf2e2e5ef81fe5ed",
-      "published_at": "2026-11-08T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "倉敷市",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "c18e54cb9abd1cae",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5GeG9VUm9mc2o1QzVUeTFXYzk2cHltTmNVcnY2UnFLSWxOYnBaYmRlX0JHTXJJMVlJYUFwNWpqcDlqTTFUQm52RDh6VnJ4cnFNakE?oc=5",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5GeG9VUm9mc2o1QzVUeTFXYzk2cHltTmNVcnY2UnFLSWxOYnBaYmRlX0JHTXJJMVlJYUFwNWpqcDlqTTFUQm52RDh6VnJ4cnFNakE?oc=5"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "山陽新聞",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5GeG9VUm9mc2o1QzVUeTFXYzk2cHltTmNVcnY2UnFLSWxOYnBaYmRlX0JHTXJJMVlJYUFwNWpqcDlqTTFUQm52RDh6VnJ4cnFNakE?oc=5"
-        }
-      ],
-      "affected_service": "玉島市民交流センター",
       "service_aliases": [],
       "added_at": "2026-11-09T21:16:19+00:00",
       "updated_at": "2026-11-09T21:16:19+00:00"
@@ -9548,6 +9644,56 @@
       "updated_at": "2026-11-05T14:17:23+00:00"
     },
     {
+      "id": "a99204c7fb0a8fea",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "NTTデータ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 80000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "19d5816230daca6f",
+          "relationship": "affects",
+          "evidence_url": "https://www.nttdata.com/global/ja/news/release/2026/110900/",
+          "evidence_urls": [
+            "https://www.nttdata.com/global/ja/news/release/2026/110900/"
+          ]
+        },
+        {
+          "incident_id": "29879c71c8cc2650",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.nttdata.com/global/ja/news/release/2026/110900/",
+          "evidence_urls": [
+            "https://www.nttdata.com/global/ja/news/release/2026/110900/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "NTTデータ / NTT DATA",
+          "url": "https://www.nttdata.com/global/ja/news/release/2026/110900/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/sumitomo-life-vitality-ntt-data-unauthorized-access-80000/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/3fefea37a1fe804549018fff9c2caefb52b299c4"
+        }
+      ],
+      "affected_service": "住友生命Vitality体験版・企業型、Vitalityスマート(福利厚生タイプ含む)の申込みに係るサービス",
+      "service_aliases": [],
+      "added_at": "2026-11-09T08:16:45+00:00",
+      "updated_at": "2026-11-09T22:15:19+00:00"
+    },
+    {
       "id": "c70726cc989a1966",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
@@ -9755,52 +9901,6 @@
       ],
       "added_at": "2026-11-06T08:36:04+00:00",
       "updated_at": "2026-11-06T13:16:53+00:00"
-    },
-    {
-      "id": "a99204c7fb0a8fea",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "NTTデータ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 80000,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [
-        {
-          "incident_id": "19d5816230daca6f",
-          "relationship": "affects",
-          "evidence_url": "https://www.nttdata.com/global/ja/news/release/2026/110900/",
-          "evidence_urls": [
-            "https://www.nttdata.com/global/ja/news/release/2026/110900/"
-          ]
-        },
-        {
-          "incident_id": "29879c71c8cc2650",
-          "relationship": "same_organization",
-          "evidence_url": "https://www.nttdata.com/global/ja/news/release/2026/110900/",
-          "evidence_urls": [
-            "https://www.nttdata.com/global/ja/news/release/2026/110900/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "NTTデータ / NTT DATA",
-          "url": "https://www.nttdata.com/global/ja/news/release/2026/110900/"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/sumitomo-life-vitality-ntt-data-unauthorized-access-80000/"
-        }
-      ],
-      "affected_service": "住友生命Vitality体験版・企業型、Vitalityスマート(福利厚生タイプ含む)の申込みに係るサービス",
-      "service_aliases": [],
-      "added_at": "2026-11-09T08:16:45+00:00",
-      "updated_at": "2026-11-09T11:39:07+00:00"
     },
     {
       "id": "c5286701125111b4",
@@ -11168,6 +11268,14 @@
       "confidence_score": 100,
       "related": [
         {
+          "incident_id": "3ace403cf66f51b6",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB6RG1xbHR1dl9YaS1QYkdQbjJxb2lpTkRpeTRVaTNlSEYtVURWWmpQWUVmSEhzSTdVRk5yamNRdDZvYnM1aHpMd2ZlOEtYakhXMURYaXVxUkY0RnVrVE9pNlFYaHdTOUl3Ym9uS0s0aXZHTVVUQ1A4Q2ZTZHBrc1U?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTFB6RG1xbHR1dl9YaS1QYkdQbjJxb2lpTkRpeTRVaTNlSEYtVURWWmpQWUVmSEhzSTdVRk5yamNRdDZvYnM1aHpMd2ZlOEtYakhXMURYaXVxUkY0RnVrVE9pNlFYaHdTOUl3Ym9uS0s0aXZHTVVUQ1A4Q2ZTZHBrc1U?oc=5"
+          ]
+        },
+        {
           "incident_id": "b4a085f090389b88",
           "relationship": "affects",
           "evidence_url": "https://www.pref.shimane.lg.jp/press_release/2026/fvlltw2tl4sn.html",
@@ -11213,7 +11321,7 @@
       "affected_service": "インターネット会員",
       "service_aliases": [],
       "added_at": "2026-10-31T14:15:53+00:00",
-      "updated_at": "2026-11-07T02:16:11+00:00"
+      "updated_at": "2026-11-09T22:15:19+00:00"
     },
     {
       "id": "29879c71c8cc2650",
@@ -19977,6 +20085,35 @@
       "updated_at": "2026-10-27T19:09:26+00:00"
     },
     {
+      "id": "5b98033b51c77bbc",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": "2026-11-05T15:00:00+00:00",
+      "organization": "資生堂",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 2515,
+      "confidence": "medium",
+      "confidence_score": 45,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/shiseido-fca-skin-analysis-2515-confirmed-data-breach/"
+        },
+        {
+          "name": "WWDJAPAN",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5EclRtSmxhRVIwX1dCWmdZbFhwS2szc0JFM3U4V1g0c05BTXFZOVJsZ053NUg3Zy12VGdFc2UzRXprT0o1WjgzNkVISnNLV19oM2xF?oc=5"
+        }
+      ],
+      "affected_service": "Beauty Alive Circulation Check",
+      "service_aliases": [],
+      "added_at": "2026-11-08T14:16:28+00:00",
+      "updated_at": "2026-11-09T22:15:19+00:00"
+    },
+    {
       "id": "32a2533c752be7d3",
       "published_at": "2026-10-26T15:00:00+00:00",
       "disclosed_at": null,
@@ -20030,31 +20167,6 @@
       ],
       "added_at": "2026-10-29T06:16:15+00:00",
       "updated_at": "2026-10-29T06:16:15+00:00"
-    },
-    {
-      "id": "5b98033b51c77bbc",
-      "published_at": "2026-10-26T15:00:00+00:00",
-      "disclosed_at": "2026-11-05T15:00:00+00:00",
-      "organization": "資生堂",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 2515,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/shiseido-fca-skin-analysis-2515-confirmed-data-breach/"
-        }
-      ],
-      "affected_service": "Beauty Alive Circulation Check",
-      "service_aliases": [],
-      "added_at": "2026-11-08T14:16:28+00:00",
-      "updated_at": "2026-11-08T14:16:28+00:00"
     },
     {
       "id": "6fb7085ea024fe90",
