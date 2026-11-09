@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-09T09:16:47+00:00",
-  "total": 1011,
+  "updated_at": "2026-11-09T10:16:41+00:00",
+  "total": 1021,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-09"
@@ -157,7 +157,7 @@
     },
     {
       "date": "2026-09-18",
-      "count": 0
+      "count": 1
     },
     {
       "date": "2026-09-19",
@@ -317,7 +317,7 @@
     },
     {
       "date": "2026-10-28",
-      "count": 54
+      "count": 55
     },
     {
       "date": "2026-10-29",
@@ -337,7 +337,7 @@
     },
     {
       "date": "2026-11-02",
-      "count": 54
+      "count": 55
     },
     {
       "date": "2026-11-03",
@@ -353,7 +353,7 @@
     },
     {
       "date": "2026-11-06",
-      "count": 48
+      "count": 49
     },
     {
       "date": "2026-11-07",
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-11-09",
-      "count": 8
+      "count": 14
     }
   ],
   "incidents": [
@@ -473,6 +473,39 @@
       "updated_at": "2026-11-09T08:16:45+00:00"
     },
     {
+      "id": "ac478163eca04533",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "北九州市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.kitakyushu.lg.jp/contents/14900233_00004.html",
+          "evidence_urls": [
+            "https://www.city.kitakyushu.lg.jp/contents/14900233_00004.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "北九州市 / Kitakyushu",
+          "url": "https://www.city.kitakyushu.lg.jp/contents/14900233_00004.html"
+        }
+      ],
+      "affected_service": "マイナンバーカード交付予約・管理システム",
+      "service_aliases": [],
+      "added_at": "2026-11-09T10:16:41+00:00",
+      "updated_at": "2026-11-09T10:16:41+00:00"
+    },
+    {
       "id": "dd965d5ae113728b",
       "published_at": "2026-11-08T15:00:00+00:00",
       "disclosed_at": null,
@@ -498,6 +531,29 @@
       "updated_at": "2026-11-09T09:16:47+00:00"
     },
     {
+      "id": "a87c15f226fbfcbd",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ニトリホールディングス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 37620000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261109de73045"
+        }
+      ],
+      "added_at": "2026-11-09T10:16:41+00:00",
+      "updated_at": "2026-11-09T10:16:41+00:00"
+    },
+    {
       "id": "ad8e61391ba8d480",
       "published_at": "2026-11-08T15:00:00+00:00",
       "disclosed_at": null,
@@ -520,6 +576,29 @@
       "service_aliases": [],
       "added_at": "2026-11-09T09:16:47+00:00",
       "updated_at": "2026-11-09T09:16:47+00:00"
+    },
+    {
+      "id": "cf567958fbf8b1b3",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ニトリホールディングス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 37620000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/af9a7d06c21c647e1d9c1530fdde0fed732a5a40"
+        }
+      ],
+      "added_at": "2026-11-09T10:16:41+00:00",
+      "updated_at": "2026-11-09T10:16:41+00:00"
     },
     {
       "id": "d25e97a3448ca2da",
@@ -584,6 +663,76 @@
       ],
       "added_at": "2026-11-09T01:16:50+00:00",
       "updated_at": "2026-11-09T01:16:50+00:00"
+    },
+    {
+      "id": "4f4910cf84c927a3",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": "2026-11-08T15:00:00+00:00",
+      "organization": "ニトリホールディングス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 37000000,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "京都新聞デジタル",
+          "url": "https://www.kyoto-np.co.jp/articles/biz/1823084"
+        }
+      ],
+      "added_at": "2026-11-09T10:16:41+00:00",
+      "updated_at": "2026-11-09T10:16:41+00:00"
+    },
+    {
+      "id": "73072a099cf303fd",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ニトリＨＤ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 37620000,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "ニューズウィーク日本版",
+          "url": "https://www.newsweekjapan.jp/articles/-/339520"
+        }
+      ],
+      "added_at": "2026-11-09T10:16:41+00:00",
+      "updated_at": "2026-11-09T10:16:41+00:00"
+    },
+    {
+      "id": "a10eb16d6baf2fb2",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": "2026-11-08T15:00:00+00:00",
+      "organization": "明治座",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/meijiza-online-ticket-unauthorized-access-suspension/"
+        }
+      ],
+      "affected_service": "明治座オンラインチケット",
+      "service_aliases": [],
+      "added_at": "2026-11-09T10:16:41+00:00",
+      "updated_at": "2026-11-09T10:16:41+00:00"
     },
     {
       "id": "cdbfdf07e5673cd9",
@@ -744,6 +893,62 @@
       "updated_at": "2026-11-07T11:39:00+00:00"
     },
     {
+      "id": "3bff01875ea101cd",
+      "published_at": "2026-11-06T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "山陰合同銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1585,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "27c6fe562fd0baae",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/fdf017e23f4b5ce7f76600fbe7452afad475931b",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/fdf017e23f4b5ce7f76600fbe7452afad475931b"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/fdf017e23f4b5ce7f76600fbe7452afad475931b"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/39cbce46836a8fb35d3b531b864e527f1eb5ff3b"
+        },
+        {
+          "name": "ニッキンONLINE",
+          "url": "https://www.nikkinonline.com/article/438092"
+        }
+      ],
+      "affected_service": "ごうぎんポケットローン / ごうぎんポケットローンワイド",
+      "service_aliases": [],
+      "affected_services": [
+        "ごうぎんポケットローン",
+        "ごうぎんポケットローンワイド"
+      ],
+      "service_details": [
+        {
+          "name": "ごうぎんポケットローン",
+          "aliases": []
+        },
+        {
+          "name": "ごうぎんポケットローンワイド",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-07T14:16:22+00:00",
+      "updated_at": "2026-11-09T10:16:41+00:00"
+    },
+    {
       "id": "3fc9faedf3d1794d",
       "published_at": "2026-11-06T15:00:00+00:00",
       "disclosed_at": null,
@@ -780,58 +985,6 @@
       "service_aliases": [],
       "added_at": "2026-11-07T05:15:22+00:00",
       "updated_at": "2026-11-09T01:16:50+00:00"
-    },
-    {
-      "id": "3bff01875ea101cd",
-      "published_at": "2026-11-06T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "山陰合同銀行",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 1585,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "27c6fe562fd0baae",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/fdf017e23f4b5ce7f76600fbe7452afad475931b",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/fdf017e23f4b5ce7f76600fbe7452afad475931b"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/fdf017e23f4b5ce7f76600fbe7452afad475931b"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/39cbce46836a8fb35d3b531b864e527f1eb5ff3b"
-        }
-      ],
-      "affected_service": "ごうぎんポケットローン / ごうぎんポケットローンワイド",
-      "service_aliases": [],
-      "affected_services": [
-        "ごうぎんポケットローン",
-        "ごうぎんポケットローンワイド"
-      ],
-      "service_details": [
-        {
-          "name": "ごうぎんポケットローン",
-          "aliases": []
-        },
-        {
-          "name": "ごうぎんポケットローンワイド",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-07T14:16:22+00:00",
-      "updated_at": "2026-11-08T12:12:51+00:00"
     },
     {
       "id": "70af91eead1ee810",
@@ -905,6 +1058,10 @@
       ],
       "sources": [
         {
+          "name": "NTTドコモ お知らせ / NTT DOCOMO notices",
+          "url": "https://www.docomo.ne.jp/info/notice/page/261109_00_m.html"
+        },
+        {
           "name": "朝日新聞",
           "url": "https://www.asahi.com/articles/ASVC62GT1VC6ULFA02WM.html"
         },
@@ -946,7 +1103,7 @@
         }
       ],
       "added_at": "2026-11-06T11:16:38+00:00",
-      "updated_at": "2026-11-09T05:16:13+00:00"
+      "updated_at": "2026-11-09T10:16:41+00:00"
     },
     {
       "id": "08725c90714959de",
@@ -2389,6 +2546,45 @@
       "updated_at": "2026-11-06T21:40:24+00:00"
     },
     {
+      "id": "53104c066ce8eb19",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ニトリホールディングス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 37620000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261109569598/"
+        }
+      ],
+      "affected_service": "ニトリネット / ニトリ公式ショップ",
+      "service_aliases": [],
+      "affected_services": [
+        "ニトリネット",
+        "ニトリ公式ショップ"
+      ],
+      "service_details": [
+        {
+          "name": "ニトリネット",
+          "aliases": []
+        },
+        {
+          "name": "ニトリ公式ショップ",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-09T10:16:41+00:00",
+      "updated_at": "2026-11-09T10:16:41+00:00"
+    },
+    {
       "id": "ba3f717106e365ae",
       "published_at": "2026-11-05T15:00:00+00:00",
       "disclosed_at": null,
@@ -3188,6 +3384,10 @@
         {
           "name": "ITmedia",
           "url": "https://www.itmedia.co.jp/news/article/2611/09/2000003009/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/470bd32d1250512d1eb3933e82216c5627b9024b"
         }
       ],
       "affected_service": "teket",
@@ -3195,7 +3395,7 @@
         "テケト"
       ],
       "added_at": "2026-11-08T10:15:44+00:00",
-      "updated_at": "2026-11-09T07:08:09+00:00"
+      "updated_at": "2026-11-09T10:16:41+00:00"
     },
     {
       "id": "ce7d32fd4e6c1d66",
@@ -8942,6 +9142,48 @@
       "updated_at": "2026-11-05T14:17:23+00:00"
     },
     {
+      "id": "c70726cc989a1966",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "南会津町",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "3d4ac3f77a219dbf",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.town.minamiaizu.lg.jp/official/soshikikarasagasu/sogoseisakuka/oshirase/1/4090.html",
+          "evidence_urls": [
+            "https://www.town.minamiaizu.lg.jp/official/soshikikarasagasu/sogoseisakuka/oshirase/1/4090.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "南会津町",
+          "url": "https://www.town.minamiaizu.lg.jp/official/soshikikarasagasu/sogoseisakuka/oshirase/1/4090.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6ea4dfd121e2cd003f6347c4100cee4c3b3b74c8"
+        },
+        {
+          "name": "KFB福島放送",
+          "url": "https://www.kfb.co.jp/news/article/17033828"
+        }
+      ],
+      "affected_service": "マイナンバーカード交付予約システム",
+      "service_aliases": [],
+      "added_at": "2026-11-05T14:17:23+00:00",
+      "updated_at": "2026-11-09T10:16:41+00:00"
+    },
+    {
       "id": "82f8fca5e6eaee4e",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
@@ -9145,44 +9387,6 @@
       "service_aliases": [],
       "added_at": "2026-11-04T13:16:52+00:00",
       "updated_at": "2026-11-05T03:16:04+00:00"
-    },
-    {
-      "id": "c70726cc989a1966",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "南会津町",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [
-        {
-          "incident_id": "3d4ac3f77a219dbf",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.town.minamiaizu.lg.jp/official/soshikikarasagasu/sogoseisakuka/oshirase/1/4090.html",
-          "evidence_urls": [
-            "https://www.town.minamiaizu.lg.jp/official/soshikikarasagasu/sogoseisakuka/oshirase/1/4090.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "南会津町",
-          "url": "https://www.town.minamiaizu.lg.jp/official/soshikikarasagasu/sogoseisakuka/oshirase/1/4090.html"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/6ea4dfd121e2cd003f6347c4100cee4c3b3b74c8"
-        }
-      ],
-      "affected_service": "マイナンバーカード交付予約システム",
-      "service_aliases": [],
-      "added_at": "2026-11-05T14:17:23+00:00",
-      "updated_at": "2026-11-09T06:16:50+00:00"
     },
     {
       "id": "ef09c13430d4ac73",
@@ -10168,6 +10372,40 @@
       "service_aliases": [],
       "added_at": "2026-11-04T06:13:31+00:00",
       "updated_at": "2026-11-04T06:13:31+00:00"
+    },
+    {
+      "id": "69e127ff7e87f715",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": "2026-11-01T15:00:00+00:00",
+      "organization": "キンコーズ・ジャパン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 266395,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/kinkos_arara_message_smart_membership_266395_confirmed_20261109/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/kinkos_arara_message_smart_membership_266395_confirmed_20261109/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/kinkos_arara_message_smart_membership_266395_confirmed_20261109/"
+        }
+      ],
+      "affected_service": "スマートメンバーシップ",
+      "service_aliases": [],
+      "added_at": "2026-11-09T10:16:41+00:00",
+      "updated_at": "2026-11-09T10:16:41+00:00"
     },
     {
       "id": "8c7c37b1537ea3b7",
@@ -15571,6 +15809,14 @@
           ]
         },
         {
+          "incident_id": "69e127ff7e87f715",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/kinkos_arara_message_smart_membership_266395_confirmed_20261109/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/kinkos_arara_message_smart_membership_266395_confirmed_20261109/"
+          ]
+        },
+        {
           "incident_id": "6a1a313caf6aba02",
           "relationship": "affects",
           "evidence_url": "https://www.kfb.co.jp/news/article/17023488",
@@ -15864,11 +16110,27 @@
           ]
         },
         {
+          "incident_id": "ac478163eca04533",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.kitakyushu.lg.jp/contents/14900233_00004.html",
+          "evidence_urls": [
+            "https://www.city.kitakyushu.lg.jp/contents/14900233_00004.html"
+          ]
+        },
+        {
           "incident_id": "af5b9a2a47782b11",
           "relationship": "affects",
           "evidence_url": "https://www.pref.saitama.lg.jp/a0806/news/page/news2026110601.html",
           "evidence_urls": [
             "https://www.pref.saitama.lg.jp/a0806/news/page/news2026110601.html"
+          ]
+        },
+        {
+          "incident_id": "b033203af5359691",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/jdl_arara_28475_customer_information_possible_leak_20261109/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/jdl_arara_28475_customer_information_possible_leak_20261109/"
           ]
         },
         {
@@ -16261,7 +16523,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-09T08:16:45+00:00"
+      "updated_at": "2026-11-09T10:16:41+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -17266,6 +17528,40 @@
       ],
       "added_at": "2026-10-28T11:16:00+00:00",
       "updated_at": "2026-10-28T11:16:00+00:00"
+    },
+    {
+      "id": "b033203af5359691",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "日本デジタル研究所",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 28475,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/jdl_arara_28475_customer_information_possible_leak_20261109/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/jdl_arara_28475_customer_information_possible_leak_20261109/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/jdl_arara_28475_customer_information_possible_leak_20261109/"
+        }
+      ],
+      "affected_service": "アララメッセージ",
+      "service_aliases": [],
+      "added_at": "2026-11-09T10:16:41+00:00",
+      "updated_at": "2026-11-09T10:16:41+00:00"
     },
     {
       "id": "bcd0b994f1f4708b",
@@ -43403,6 +43699,31 @@
       ],
       "added_at": "2026-11-09T01:16:50+00:00",
       "updated_at": "2026-11-09T06:16:50+00:00"
+    },
+    {
+      "id": "266fed36ee65f711",
+      "published_at": "2026-09-17T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大阪市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 415,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBjOXJ4Z0pyMVBVdEVkY0F4ZGYxWDAwd3ctTWx6cmVtMzNSUmd6eUpvdUhLbEVMU2NGMlppVVlhWVo1SUw2S3RiVzVycUZGSk5RZWpkS3ZyTkllY3RZSzlpMjZZc1FNdWlZNkx6WmwyMzdPanBIcnctNkhwbUtwVWc?oc=5"
+        }
+      ],
+      "affected_service": "児童いきいき放課後事業",
+      "service_aliases": [],
+      "added_at": "2026-11-09T10:16:41+00:00",
+      "updated_at": "2026-11-09T10:16:41+00:00"
     },
     {
       "id": "54787feba481fe18",
