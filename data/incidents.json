@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-08T20:15:32+00:00",
-  "total": 981,
+  "updated_at": "2026-11-08T23:15:59+00:00",
+  "total": 982,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-07"
@@ -345,7 +345,7 @@
     },
     {
       "date": "2026-11-04",
-      "count": 45
+      "count": 46
     },
     {
       "date": "2026-11-05",
@@ -6164,6 +6164,58 @@
       "updated_at": "2026-11-06T08:36:04+00:00"
     },
     {
+      "id": "e04510b5cc7cd2b5",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ENEOS",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 11900,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "36d105653c0ed4da",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMGREdWdTRF9nUC12Q29Ia050MTBGRjQ2RUFJUVpsdkJ6SkYwdF84Z29sdVhoWmY0QW9fdWFzNHNSckc5M3VWOTBadGNHODBVWW4tamJHOVVHVWc4ek9Na0wxSHNYV2tYWVJUN2dJblpMU0tvRERJLWNDeV94eDZsQ3BaajBDaEZTX3lpNlF2a1UxQS1Ndjd3Nk9zZFJLWEd0TW0xY1ZfTl9BUzNZMXJn?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMGREdWdTRF9nUC12Q29Ia050MTBGRjQ2RUFJUVpsdkJ6SkYwdF84Z29sdVhoWmY0QW9fdWFzNHNSckc5M3VWOTBadGNHODBVWW4tamJHOVVHVWc4ek9Na0wxSHNYV2tYWVJUN2dJblpMU0tvRERJLWNDeV94eDZsQ3BaajBDaEZTX3lpNlF2a1UxQS1Ndjd3Nk9zZFJLWEd0TW0xY1ZfTl9BUzNZMXJn?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMGREdWdTRF9nUC12Q29Ia050MTBGRjQ2RUFJUVpsdkJ6SkYwdF84Z29sdVhoWmY0QW9fdWFzNHNSckc5M3VWOTBadGNHODBVWW4tamJHOVVHVWc4ek9Na0wxSHNYV2tYWVJUN2dJblpMU0tvRERJLWNDeV94eDZsQ3BaajBDaEZTX3lpNlF2a1UxQS1Ndjd3Nk9zZFJLWEd0TW0xY1ZfTl9BUzNZMXJn?oc=5"
+        }
+      ],
+      "affected_service": "ENEOSカーリース / Charge Plus / 法人用充電会員",
+      "service_aliases": [],
+      "affected_services": [
+        "ENEOSカーリース",
+        "Charge Plus",
+        "法人用充電会員"
+      ],
+      "service_details": [
+        {
+          "name": "ENEOSカーリース",
+          "aliases": []
+        },
+        {
+          "name": "Charge Plus",
+          "aliases": []
+        },
+        {
+          "name": "法人用充電会員",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-08T23:15:59+00:00",
+      "updated_at": "2026-11-08T23:15:59+00:00"
+    },
+    {
       "id": "f3883b8aa5eb7693",
       "published_at": "2026-11-03T15:00:00+00:00",
       "disclosed_at": null,
@@ -7114,6 +7166,52 @@
       "updated_at": "2026-11-06T14:16:57+00:00"
     },
     {
+      "id": "4be01a6f83093664",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "仙台市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 12211,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.sendai.jp/kosekijumin/20261106.html",
+          "evidence_urls": [
+            "https://www.city.sendai.jp/kosekijumin/20261106.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "仙台市 / Sendai",
+          "url": "https://www.city.sendai.jp/kosekijumin/20261106.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/cb219146e580193259b48763074cab659b6c35ec"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBJY3p5cG1mcEROTkFvelQ1cUVqYkZabXd4TVF5b2h0eldiaDNmYnBpM0tFR3lBVm9rU3BSMzNnVnJxUkpxdG40MXd1dTY0UENxS3VsM2hwMDUwcFgzN2N1YVJDYXVXazFGWWRxUlNEQ3hvNDV0UjNISlFFYUFGcnc?oc=5"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3068899?display=1"
+        }
+      ],
+      "affected_service": "マイナンバーカード交付予約・管理システム",
+      "service_aliases": [],
+      "added_at": "2026-11-06T10:15:48+00:00",
+      "updated_at": "2026-11-08T22:15:20+00:00"
+    },
+    {
       "id": "57a40b2bf2b57970",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
@@ -8000,44 +8098,6 @@
       "service_aliases": [],
       "added_at": "2026-11-02T13:16:55+00:00",
       "updated_at": "2026-11-02T22:16:00+00:00"
-    },
-    {
-      "id": "4be01a6f83093664",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "仙台市",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 12211,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.city.sendai.jp/kosekijumin/20261106.html",
-          "evidence_urls": [
-            "https://www.city.sendai.jp/kosekijumin/20261106.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "仙台市 / Sendai",
-          "url": "https://www.city.sendai.jp/kosekijumin/20261106.html"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/cb219146e580193259b48763074cab659b6c35ec"
-        }
-      ],
-      "affected_service": "マイナンバーカード交付予約・管理システム",
-      "service_aliases": [],
-      "added_at": "2026-11-06T10:15:48+00:00",
-      "updated_at": "2026-11-06T14:16:57+00:00"
     },
     {
       "id": "4daeb8965b6e424d",
@@ -12132,6 +12192,14 @@
           ]
         },
         {
+          "incident_id": "e04510b5cc7cd2b5",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMGREdWdTRF9nUC12Q29Ia050MTBGRjQ2RUFJUVpsdkJ6SkYwdF84Z29sdVhoWmY0QW9fdWFzNHNSckc5M3VWOTBadGNHODBVWW4tamJHOVVHVWc4ek9Na0wxSHNYV2tYWVJUN2dJblpMU0tvRERJLWNDeV94eDZsQ3BaajBDaEZTX3lpNlF2a1UxQS1Ndjd3Nk9zZFJLWEd0TW0xY1ZfTl9BUzNZMXJn?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMGREdWdTRF9nUC12Q29Ia050MTBGRjQ2RUFJUVpsdkJ6SkYwdF84Z29sdVhoWmY0QW9fdWFzNHNSckc5M3VWOTBadGNHODBVWW4tamJHOVVHVWc4ek9Na0wxSHNYV2tYWVJUN2dJblpMU0tvRERJLWNDeV94eDZsQ3BaajBDaEZTX3lpNlF2a1UxQS1Ndjd3Nk9zZFJLWEd0TW0xY1ZfTl9BUzNZMXJn?oc=5"
+          ]
+        },
+        {
           "incident_id": "e2171f91d8a46945",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/89ee578c4645507d2a7bec1b647d613ffa5d704a",
@@ -12193,7 +12261,7 @@
       "affected_service": "ロードサービス等の受付・手配業務に使用する業務システム",
       "service_aliases": [],
       "added_at": "2026-11-02T10:00:14+00:00",
-      "updated_at": "2026-11-08T20:15:32+00:00"
+      "updated_at": "2026-11-08T23:15:59+00:00"
     },
     {
       "id": "8132159128c70bb6",
@@ -20128,6 +20196,44 @@
       "updated_at": "2026-10-29T04:15:31+00:00"
     },
     {
+      "id": "e326c4854c0fbf66",
+      "published_at": "2026-10-23T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ドトールコーヒー",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 24771,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "38d621781f18e6c4",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.doutor.co.jp/news/newsrelease/detail/20261106150715.html",
+          "evidence_urls": [
+            "https://www.doutor.co.jp/news/newsrelease/detail/20261106150715.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://www.doutor.co.jp/news/newsrelease/detail/20261106150715.html"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/doutor_online_shop_24771_customer_data_leak_risk_20261107/"
+        }
+      ],
+      "affected_service": "ドトール オンラインショップ",
+      "service_aliases": [],
+      "added_at": "2026-11-07T02:16:11+00:00",
+      "updated_at": "2026-11-08T22:15:20+00:00"
+    },
+    {
       "id": "8dbbba7627d15aa3",
       "published_at": "2026-10-23T15:00:00+00:00",
       "disclosed_at": null,
@@ -20218,40 +20324,6 @@
       ],
       "added_at": "2026-10-26T06:15:53+00:00",
       "updated_at": "2026-10-26T06:15:53+00:00"
-    },
-    {
-      "id": "e326c4854c0fbf66",
-      "published_at": "2026-10-23T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ドトールコーヒー",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 24771,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "38d621781f18e6c4",
-          "relationship": "same_organization",
-          "evidence_url": "https://www.doutor.co.jp/news/newsrelease/detail/20261106150715.html",
-          "evidence_urls": [
-            "https://www.doutor.co.jp/news/newsrelease/detail/20261106150715.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "legalagent list",
-          "url": "https://www.doutor.co.jp/news/newsrelease/detail/20261106150715.html"
-        }
-      ],
-      "affected_service": "ドトール オンラインショップ",
-      "service_aliases": [],
-      "added_at": "2026-11-07T02:16:11+00:00",
-      "updated_at": "2026-11-07T02:16:11+00:00"
     },
     {
       "id": "36ab902f4b0599f2",
@@ -20351,6 +20423,62 @@
       ],
       "added_at": "2026-10-26T06:15:53+00:00",
       "updated_at": "2026-10-26T06:15:53+00:00"
+    },
+    {
+      "id": "3997d3c58a441f60",
+      "published_at": "2026-10-22T15:00:00+00:00",
+      "disclosed_at": "2026-11-06T15:00:00+00:00",
+      "organization": "ステップゴルフ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 215000,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [],
+      "sources": [
+        {
+          "name": "www.stepgolf.co.jp",
+          "url": "https://www.stepgolf.co.jp/news/261107"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/2d07d23ceee8739ab9704593997283fb541bff0c"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxORjR4cVF4aWNSbEhlWnhydXZodkstR0wwWTVQYUVKWWxiclBpUGQ4RUNDTnc1WHMyeENfVEx3eDNpSWVldU1WN1JZR3FTQVNtWFdqeVZGREVQZUNNYlk1eXg2YjlEQkJZUkhXT09aZTREbWpGYUdZSHIwVWVHMmNDaDdmX0RibHhxQ1ZsZm9yUG5Sa1lUYUN1QnNTQ0pOd1k5TmM3TnNYNEVtWlNIME1CdE5n?oc=5"
+        },
+        {
+          "name": "テレ朝NEWS",
+          "url": "https://news.tv-asahi.co.jp/news_economy/articles/000546200.html"
+        }
+      ],
+      "affected_service": "業務システムおよび予約システム / 予約システム / 業務システム",
+      "service_aliases": [],
+      "affected_services": [
+        "業務システムおよび予約システム",
+        "予約システム",
+        "業務システム"
+      ],
+      "service_details": [
+        {
+          "name": "業務システムおよび予約システム",
+          "aliases": []
+        },
+        {
+          "name": "予約システム",
+          "aliases": []
+        },
+        {
+          "name": "業務システム",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-08T12:12:51+00:00",
+      "updated_at": "2026-11-08T22:15:20+00:00"
     },
     {
       "id": "421fc74f1b6a7fee",
@@ -20631,58 +20759,6 @@
       ],
       "added_at": "2026-10-27T19:09:26+00:00",
       "updated_at": "2026-10-30T14:15:52+00:00"
-    },
-    {
-      "id": "3997d3c58a441f60",
-      "published_at": "2026-10-22T15:00:00+00:00",
-      "disclosed_at": "2026-11-06T15:00:00+00:00",
-      "organization": "ステップゴルフ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 215000,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [],
-      "sources": [
-        {
-          "name": "www.stepgolf.co.jp",
-          "url": "https://www.stepgolf.co.jp/news/261107"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/2d07d23ceee8739ab9704593997283fb541bff0c"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxORjR4cVF4aWNSbEhlWnhydXZodkstR0wwWTVQYUVKWWxiclBpUGQ4RUNDTnc1WHMyeENfVEx3eDNpSWVldU1WN1JZR3FTQVNtWFdqeVZGREVQZUNNYlk1eXg2YjlEQkJZUkhXT09aZTREbWpGYUdZSHIwVWVHMmNDaDdmX0RibHhxQ1ZsZm9yUG5Sa1lUYUN1QnNTQ0pOd1k5TmM3TnNYNEVtWlNIME1CdE5n?oc=5"
-        }
-      ],
-      "affected_service": "業務システムおよび予約システム / 予約システム / 業務システム",
-      "service_aliases": [],
-      "affected_services": [
-        "業務システムおよび予約システム",
-        "予約システム",
-        "業務システム"
-      ],
-      "service_details": [
-        {
-          "name": "業務システムおよび予約システム",
-          "aliases": []
-        },
-        {
-          "name": "予約システム",
-          "aliases": []
-        },
-        {
-          "name": "業務システム",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-08T12:12:51+00:00",
-      "updated_at": "2026-11-08T20:15:32+00:00"
     },
     {
       "id": "478fd4973890bc66",
