@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-09T08:16:45+00:00",
-  "total": 1005,
+  "updated_at": "2026-11-09T09:16:47+00:00",
+  "total": 1011,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-09"
@@ -125,7 +125,7 @@
     },
     {
       "date": "2026-09-10",
-      "count": 1
+      "count": 3
     },
     {
       "date": "2026-09-11",
@@ -353,7 +353,7 @@
     },
     {
       "date": "2026-11-06",
-      "count": 47
+      "count": 48
     },
     {
       "date": "2026-11-07",
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-11-09",
-      "count": 5
+      "count": 8
     }
   ],
   "incidents": [
@@ -473,6 +473,55 @@
       "updated_at": "2026-11-09T08:16:45+00:00"
     },
     {
+      "id": "dd965d5ae113728b",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "オープンドア",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 381926,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261107568333.pdf"
+        }
+      ],
+      "affected_service": "トラベルコ",
+      "service_aliases": [],
+      "added_at": "2026-11-09T09:16:47+00:00",
+      "updated_at": "2026-11-09T09:16:47+00:00"
+    },
+    {
+      "id": "ad8e61391ba8d480",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "札幌市",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/7ce11666460487f5c4e973bd86b98b0b13e7730f"
+        }
+      ],
+      "affected_service": "さっぽろえきバスナビ",
+      "service_aliases": [],
+      "added_at": "2026-11-09T09:16:47+00:00",
+      "updated_at": "2026-11-09T09:16:47+00:00"
+    },
+    {
       "id": "d25e97a3448ca2da",
       "published_at": "2026-11-08T15:00:00+00:00",
       "disclosed_at": null,
@@ -535,6 +584,28 @@
       ],
       "added_at": "2026-11-09T01:16:50+00:00",
       "updated_at": "2026-11-09T01:16:50+00:00"
+    },
+    {
+      "id": "cdbfdf07e5673cd9",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "上越市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 116,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "上越妙高タウン情報",
+          "url": "https://joetsu.yukiguni.town/l-news/341668/"
+        }
+      ],
+      "added_at": "2026-11-09T09:16:47+00:00",
+      "updated_at": "2026-11-09T09:16:47+00:00"
     },
     {
       "id": "022ce2ef5805e4dd",
@@ -602,7 +673,7 @@
       ],
       "potential_records": null,
       "confidence": "high",
-      "confidence_score": 65,
+      "confidence_score": 80,
       "related": [
         {
           "incident_id": "f58940476d597124",
@@ -621,10 +692,14 @@
         {
           "name": "テレ朝NEWS",
           "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBXcVpQVnR0clZDazRVWGFLbG1vTW1TUnpreHp2WW83YVpjd2VTYXYzcHlIdUNUUWN5eU5MaThFTWRtNExNZmtjOEJUTmdYbnhudXkwU05LOVVIb2NpSmtIWTRhWmlxYXhWcS10OGtLOExSdw?oc=5"
+        },
+        {
+          "name": "QAB 琉球朝日放送",
+          "url": "https://www.qab.co.jp/quebee/video/000546354/"
         }
       ],
       "added_at": "2026-11-09T06:16:50+00:00",
-      "updated_at": "2026-11-09T07:08:09+00:00"
+      "updated_at": "2026-11-09T09:16:47+00:00"
     },
     {
       "id": "30cd420408abcfa9",
@@ -961,6 +1036,10 @@
           "url": "https://news.nicovideo.jp/watch/nw19966130?news_ref=watch_20_nw19084204"
         },
         {
+          "name": "ニコニコニュース",
+          "url": "https://news.nicovideo.jp/watch/nw19966130?news_ref=watch_20_nw19213942"
+        },
+        {
           "name": "Yahoo!ニュース",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB5ZFNod1Rha0JjMm1jS0ZqcVo4MjYzU0lPak1kQlY0LXVMOGgzWnpnY0FCU1pEVk5KdUJQZlZ2RWk0LWw3NEJ4UHFpYllKVVZqVWswUUIzWkExUmFNTjc0SFlRcWV5clpZQWJpN20yLTZ3bloySlRoX3JEbVQ4N3M?oc=5"
         },
@@ -1017,7 +1096,7 @@
         }
       ],
       "added_at": "2026-11-06T11:16:38+00:00",
-      "updated_at": "2026-11-09T06:16:50+00:00"
+      "updated_at": "2026-11-09T09:16:47+00:00"
     },
     {
       "id": "496adeebce3149c2",
@@ -1219,6 +1298,10 @@
         {
           "name": "Infoseek",
           "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9GLVpqb1dCZmthX0JHOGdUS1FZN3JNT0M4bXV6ZzJ2LWNzckgtQ3EwWHpoSjh5UjZrM3N6REs1RzhLeDRULS1NNWUyR0FoYUNISHBaMUFuSGVtZzRtaFJtN1Y0YU9HZjNKLTVUMHBDazg1RnPSAXhBVV95cUxQS3JjZ1Vqc3JEZTZIWVBNZkMzempxV3ViX0tnSWVLVHB5RFBHX2xXQUFDajNiSVJyTHlDQTIzWUZLVHRMWEhibW01ZFZaMHE1dnpmbDFVbWJlRUNsNkpyWDFqaDE0YnFSdWdDUl8wSXpUTThSNmJTenY?oc=5"
+        },
+        {
+          "name": "ニコニコニュース",
+          "url": "https://news.nicovideo.jp/watch/nw19966130?news_ref=watch_20_nw19213942"
         }
       ],
       "affected_service": "タカコレ / タカコレくじ",
@@ -1238,7 +1321,7 @@
         }
       ],
       "added_at": "2026-11-06T08:36:04+00:00",
-      "updated_at": "2026-11-06T14:16:57+00:00"
+      "updated_at": "2026-11-09T09:16:47+00:00"
     },
     {
       "id": "bea05426f67e9585",
@@ -1510,6 +1593,47 @@
       "updated_at": "2026-11-09T07:08:09+00:00"
     },
     {
+      "id": "f27a29f5766d17aa",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ロッテ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 11875,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/0d247a21ffd78352b6c7aea0f012bc2c1b3eb090"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/00ae3e1318fe8cfc4717da9726bb2261e37d94ac"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/e6bd01fc8f75a8812a0712dfbffaec513f6154a7"
+        },
+        {
+          "name": "khb東日本放送",
+          "url": "https://www.khb-tv.co.jp/news/17033136"
+        },
+        {
+          "name": "ニコニコニュース",
+          "url": "https://news.nicovideo.jp/watch/nw19966130?news_ref=watch_20_nw19213942"
+        }
+      ],
+      "affected_service": "球団公式サイト",
+      "service_aliases": [],
+      "added_at": "2026-11-06T13:16:53+00:00",
+      "updated_at": "2026-11-09T09:16:47+00:00"
+    },
+    {
       "id": "581973ec197708b9",
       "published_at": "2026-11-05T15:00:00+00:00",
       "disclosed_at": null,
@@ -1693,43 +1817,6 @@
       ],
       "added_at": "2026-11-08T20:15:32+00:00",
       "updated_at": "2026-11-09T02:16:13+00:00"
-    },
-    {
-      "id": "f27a29f5766d17aa",
-      "published_at": "2026-11-05T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ロッテ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 11875,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/0d247a21ffd78352b6c7aea0f012bc2c1b3eb090"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/00ae3e1318fe8cfc4717da9726bb2261e37d94ac"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/e6bd01fc8f75a8812a0712dfbffaec513f6154a7"
-        },
-        {
-          "name": "khb東日本放送",
-          "url": "https://www.khb-tv.co.jp/news/17033136"
-        }
-      ],
-      "affected_service": "球団公式サイト",
-      "service_aliases": [],
-      "added_at": "2026-11-06T13:16:53+00:00",
-      "updated_at": "2026-11-08T15:16:16+00:00"
     },
     {
       "id": "12f762969ef520a0",
@@ -1982,6 +2069,45 @@
       "service_aliases": [],
       "added_at": "2026-11-06T23:08:21+00:00",
       "updated_at": "2026-11-06T23:08:21+00:00"
+    },
+    {
+      "id": "3e8426d0f8f8deeb",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": "2026-11-05T15:00:00+00:00",
+      "organization": "三井住友海上あいおい生命保険",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 5300,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "1213e7eea2108340",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.msa-life.co.jp/news/assets/pdf/20261106_newsrelease_huseiausesukaizi.pdf",
+          "evidence_urls": [
+            "https://www.msa-life.co.jp/news/assets/pdf/20261106_newsrelease_huseiausesukaizi.pdf"
+          ]
+        },
+        {
+          "incident_id": "57a40b2bf2b57970",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.msa-life.co.jp/news/assets/pdf/20261106_newsrelease_huseiausesukaizi.pdf",
+          "evidence_urls": [
+            "https://www.msa-life.co.jp/news/assets/pdf/20261106_newsrelease_huseiausesukaizi.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "www.msa-life.co.jp",
+          "url": "https://www.msa-life.co.jp/news/assets/pdf/20261106_newsrelease_huseiausesukaizi.pdf"
+        }
+      ],
+      "added_at": "2026-11-09T09:16:47+00:00",
+      "updated_at": "2026-11-09T09:16:47+00:00"
     },
     {
       "id": "4a42b9ed0126d93c",
@@ -5633,6 +5759,53 @@
       "updated_at": "2026-11-06T07:15:40+00:00"
     },
     {
+      "id": "e246d65f8923cb2a",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "三井住友海上火災保険",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 228000,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [
+        {
+          "incident_id": "1213e7eea2108340",
+          "relationship": "same_organization",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/msig_pcs_228000_roadside_data_leak_20261109/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/msig_pcs_228000_roadside_data_leak_20261109/"
+          ]
+        },
+        {
+          "incident_id": "36d105653c0ed4da",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/msig_pcs_228000_roadside_data_leak_20261109/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/msig_pcs_228000_roadside_data_leak_20261109/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/msig_pcs_228000_roadside_data_leak_20261109/"
+        },
+        {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp/15204028.html"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118220"
+        }
+      ],
+      "added_at": "2026-11-09T06:16:50+00:00",
+      "updated_at": "2026-11-09T09:16:47+00:00"
+    },
+    {
       "id": "2b35e6ad4e9ceea8",
       "published_at": "2026-11-03T15:00:00+00:00",
       "disclosed_at": null,
@@ -6032,49 +6205,6 @@
       ],
       "added_at": "2026-11-04T15:16:11+00:00",
       "updated_at": "2026-11-04T17:15:42+00:00"
-    },
-    {
-      "id": "e246d65f8923cb2a",
-      "published_at": "2026-11-03T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "三井住友海上火災保険",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 228000,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [
-        {
-          "incident_id": "1213e7eea2108340",
-          "relationship": "same_organization",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/msig_pcs_228000_roadside_data_leak_20261109/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/msig_pcs_228000_roadside_data_leak_20261109/"
-          ]
-        },
-        {
-          "incident_id": "36d105653c0ed4da",
-          "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/msig_pcs_228000_roadside_data_leak_20261109/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/msig_pcs_228000_roadside_data_leak_20261109/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/msig_pcs_228000_roadside_data_leak_20261109/"
-        },
-        {
-          "name": "47NEWS",
-          "url": "https://www.47news.jp/15204028.html"
-        }
-      ],
-      "added_at": "2026-11-09T06:16:50+00:00",
-      "updated_at": "2026-11-09T08:16:45+00:00"
     },
     {
       "id": "21f29b333963a3ce",
@@ -7719,6 +7849,14 @@
       "confidence_score": 100,
       "related": [
         {
+          "incident_id": "3e8426d0f8f8deeb",
+          "relationship": "affects",
+          "evidence_url": "https://www.msa-life.co.jp/news/assets/pdf/20261106_newsrelease_huseiausesukaizi.pdf",
+          "evidence_urls": [
+            "https://www.msa-life.co.jp/news/assets/pdf/20261106_newsrelease_huseiausesukaizi.pdf"
+          ]
+        },
+        {
           "incident_id": "82f8fca5e6eaee4e",
           "relationship": "same_organization",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/msig_pcs_228000_roadside_data_leak_20261109/",
@@ -7768,7 +7906,7 @@
       "affected_service": "ご契約者さま専用ページ",
       "service_aliases": [],
       "added_at": "2026-11-04T10:15:52+00:00",
-      "updated_at": "2026-11-09T06:16:50+00:00"
+      "updated_at": "2026-11-09T09:16:47+00:00"
     },
     {
       "id": "14733f1165b3b833",
@@ -7876,7 +8014,16 @@
       "potential_records": null,
       "confidence": "high",
       "confidence_score": 100,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "3e8426d0f8f8deeb",
+          "relationship": "affects",
+          "evidence_url": "https://www.msa-life.co.jp/news/assets/pdf/20261106_newsrelease_huseiausesukaizi.pdf",
+          "evidence_urls": [
+            "https://www.msa-life.co.jp/news/assets/pdf/20261106_newsrelease_huseiausesukaizi.pdf"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "satimo list",
@@ -7908,7 +8055,7 @@
         }
       ],
       "added_at": "2026-11-04T10:15:52+00:00",
-      "updated_at": "2026-11-07T01:15:32+00:00"
+      "updated_at": "2026-11-09T09:16:47+00:00"
     },
     {
       "id": "5fa1320f5cec460c",
@@ -8795,6 +8942,48 @@
       "updated_at": "2026-11-05T14:17:23+00:00"
     },
     {
+      "id": "82f8fca5e6eaee4e",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "三井住友海上火災保険",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 23000,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [
+        {
+          "incident_id": "1213e7eea2108340",
+          "relationship": "same_organization",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/msig_pcs_228000_roadside_data_leak_20261109/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/msig_pcs_228000_roadside_data_leak_20261109/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/msig_pcs_228000_roadside_data_leak_20261109/"
+        },
+        {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp/15204028.html"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261109de72886"
+        }
+      ],
+      "affected_service": "MSコンパス",
+      "service_aliases": [],
+      "added_at": "2026-11-09T06:16:50+00:00",
+      "updated_at": "2026-11-09T09:16:47+00:00"
+    },
+    {
       "id": "ea44bdc85b4b2bea",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
@@ -9097,44 +9286,6 @@
       "service_aliases": [],
       "added_at": "2026-11-06T01:16:14+00:00",
       "updated_at": "2026-11-06T02:16:04+00:00"
-    },
-    {
-      "id": "82f8fca5e6eaee4e",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "三井住友海上火災保険",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 23000,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [
-        {
-          "incident_id": "1213e7eea2108340",
-          "relationship": "same_organization",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/msig_pcs_228000_roadside_data_leak_20261109/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/msig_pcs_228000_roadside_data_leak_20261109/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/msig_pcs_228000_roadside_data_leak_20261109/"
-        },
-        {
-          "name": "47NEWS",
-          "url": "https://www.47news.jp/15204028.html"
-        }
-      ],
-      "affected_service": "MSコンパス",
-      "service_aliases": [],
-      "added_at": "2026-11-09T06:16:50+00:00",
-      "updated_at": "2026-11-09T08:16:45+00:00"
     },
     {
       "id": "19cce63ebf03c536",
@@ -43339,6 +43490,50 @@
       "updated_at": "2026-10-26T00:08:36+00:00"
     },
     {
+      "id": "a178b5edf8848999",
+      "published_at": "2026-09-09T15:00:00+00:00",
+      "disclosed_at": "2026-11-08T15:00:00+00:00",
+      "organization": "キングプリンターズ",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/e9e7bb055998d538402eee6f385c79efb5251e3c"
+        }
+      ],
+      "added_at": "2026-11-09T09:16:47+00:00",
+      "updated_at": "2026-11-09T09:16:47+00:00"
+    },
+    {
+      "id": "c1093d90264e195a",
+      "published_at": "2026-09-09T15:00:00+00:00",
+      "disclosed_at": "2026-11-08T15:00:00+00:00",
+      "organization": "キングプリンターズ",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2611/09/2000003016/"
+        }
+      ],
+      "added_at": "2026-11-09T09:16:47+00:00",
+      "updated_at": "2026-11-09T09:16:47+00:00"
+    },
+    {
       "id": "9dc51df1da2fcdfa",
       "published_at": "2026-08-30T15:00:00+00:00",
       "disclosed_at": null,
@@ -43350,7 +43545,7 @@
       ],
       "potential_records": 3400,
       "confidence": "high",
-      "confidence_score": 75,
+      "confidence_score": 90,
       "related": [],
       "sources": [
         {
@@ -43360,12 +43555,16 @@
         {
           "name": "ITmedia",
           "url": "https://www.itmedia.co.jp/news/article/2611/09/2000003012/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118221"
         }
       ],
       "affected_service": "MyWaseda",
       "service_aliases": [],
       "added_at": "2026-11-09T07:08:09+00:00",
-      "updated_at": "2026-11-09T08:16:45+00:00"
+      "updated_at": "2026-11-09T09:16:47+00:00"
     },
     {
       "id": "771d425a095483bb",
