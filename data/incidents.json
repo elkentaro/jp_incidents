@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-09T11:16:07+00:00",
-  "total": 1021,
+  "updated_at": "2026-11-09T11:39:07+00:00",
+  "total": 1018,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-09"
@@ -341,7 +341,7 @@
     },
     {
       "date": "2026-11-03",
-      "count": 20
+      "count": 18
     },
     {
       "date": "2026-11-04",
@@ -365,10 +365,135 @@
     },
     {
       "date": "2026-11-09",
-      "count": 13
+      "count": 12
     }
   ],
   "incidents": [
+    {
+      "id": "19d5816230daca6f",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "住友生命保険相互会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 80000,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "a99204c7fb0a8fea",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.nttdata.com/global/ja/news/release/2026/110900/",
+          "evidence_urls": [
+            "https://www.nttdata.com/global/ja/news/release/2026/110900/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "NTTデータ / NTT DATA",
+          "url": "https://www.nttdata.com/global/ja/news/release/2026/110900/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9ucGNGVEE3eXNfamxaRVhjNFE0a0pNUy1iTHBTTG9IWjItRXVVUUp0VzlOd0V4ZnBkVG5KZUtDajZGS0NtNy0yOGZ6T3FiU0I1V3Npb2FTcktrMXNuVGp5SFNnWnVrNjNuQXZXdGx1elJ0dFJtYUx0SGt5VENfZmM?oc=5"
+        },
+        {
+          "name": "ニッキンONLINE",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE84M1hfc1lsUGI1VWRUbjBjekoyMlJUVjZtdXJUZktmbzNWVnFFWUc0VXgzeXR6UW03eE5GVFFzUU90dGs2SWlJQlJWTVFIMFBmMEFHbGRn?oc=5"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118235"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE12RXB3Y3dFZTU4bk15UWV3aWZseUttQU1HMHhnODhFVS1ZaEVNRzU3TDdrYS16YlJGWDNPMWJKSU5SaXUwRFE3bkp2U1BJWXlueDZwcklWclNRN2NrMDBN?oc=5"
+        },
+        {
+          "name": "リスク対策.com",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1mdmpaRXZEWkdES2pLb3BFbmRTV0ZUVUxmUVNia252QTNZYjdkYWt1Y19jT1I5SndKWUowNDB3RHh2MDEwMmdqTWNqdHlMY3ZIVURKRDNVVVA?oc=5"
+        }
+      ],
+      "affected_service": "住友生命Vitality体験版・企業型、Vitalityスマート(福利厚生タイプ含む)の申込みに係るサービス",
+      "service_aliases": [],
+      "added_at": "2026-11-09T08:16:45+00:00",
+      "updated_at": "2026-11-09T11:39:07+00:00"
+    },
+    {
+      "id": "73760e3f9e89e045",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": "2026-11-08T15:00:00+00:00",
+      "organization": "セガ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 2196044,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "1337ad1619d32570",
+          "relationship": "same_organization",
+          "evidence_url": "https://cybersecurity-jp.com/news/118219",
+          "evidence_urls": [
+            "https://cybersecurity-jp.com/news/118219"
+          ]
+        },
+        {
+          "incident_id": "958dfe59049e808e",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/639cce05cc08c305b89f7f511c6842404ab19155",
+          "evidence_urls": [
+            "https://cybersecurity-jp.com/news/118219",
+            "https://game.watch.impress.co.jp/docs/news/2154846.html",
+            "https://news.web.nhk/newsweb/na/nd-20261109de72932",
+            "https://news.yahoo.co.jp/articles/639cce05cc08c305b89f7f511c6842404ab19155"
+          ]
+        },
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/639cce05cc08c305b89f7f511c6842404ab19155",
+          "evidence_urls": [
+            "https://cybersecurity-jp.com/news/118219",
+            "https://game.watch.impress.co.jp/docs/news/2154846.html",
+            "https://news.web.nhk/newsweb/na/nd-20261109de72932",
+            "https://news.yahoo.co.jp/articles/639cce05cc08c305b89f7f511c6842404ab19155"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/639cce05cc08c305b89f7f511c6842404ab19155"
+        },
+        {
+          "name": "GAME Watch",
+          "url": "https://game.watch.impress.co.jp/docs/news/2154846.html"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118219"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261109de72932"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPX3AyTTVzX3MyS3RDMWFTejRNT1E4aXRGSkZqVWI0SjJyOWJaUWNfU3EtNFBQbXBHM05CU0FFenI5aWg4aTc3d1IxSmlRSl9CaUMxSHJuTENFajloeUpvRUJseUIzZ0xEaWFjTWRXNHpxa2syRGtsN3JSV28xVWd3amlmUkUzVkJYNTFSQ3BrT0NSZ0R3czRfT09DV1R1dw?oc=5"
+        }
+      ],
+      "affected_service": "アララメッセージ",
+      "service_aliases": [],
+      "added_at": "2026-11-09T11:04:22+00:00",
+      "updated_at": "2026-11-09T11:39:07+00:00"
+    },
     {
       "id": "ad8e61391ba8d480",
       "published_at": "2026-11-08T15:00:00+00:00",
@@ -484,39 +609,6 @@
       "updated_at": "2026-11-09T08:16:45+00:00"
     },
     {
-      "id": "19d5816230daca6f",
-      "published_at": "2026-11-08T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "住友生命保険相互会社",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 80000,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "a99204c7fb0a8fea",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.nttdata.com/global/ja/news/release/2026/110900/",
-          "evidence_urls": [
-            "https://www.nttdata.com/global/ja/news/release/2026/110900/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "NTTデータ / NTT DATA",
-          "url": "https://www.nttdata.com/global/ja/news/release/2026/110900/"
-        }
-      ],
-      "affected_service": "住友生命Vitality体験版・企業型、Vitalityスマート(福利厚生タイプ含む)の申込みに係るサービス",
-      "service_aliases": [],
-      "added_at": "2026-11-09T08:16:45+00:00",
-      "updated_at": "2026-11-09T08:16:45+00:00"
-    },
-    {
       "id": "ac478163eca04533",
       "published_at": "2026-11-08T15:00:00+00:00",
       "disclosed_at": null,
@@ -575,124 +667,38 @@
       "updated_at": "2026-11-09T09:16:47+00:00"
     },
     {
-      "id": "5359e8005b1f39d0",
-      "published_at": "2026-11-08T15:00:00+00:00",
-      "disclosed_at": "2026-11-08T15:00:00+00:00",
-      "organization": "セガ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 2196044,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "958dfe59049e808e",
-          "relationship": "same_organization",
-          "evidence_url": "https://game.watch.impress.co.jp/docs/news/2154846.html",
-          "evidence_urls": [
-            "https://game.watch.impress.co.jp/docs/news/2154846.html"
-          ]
-        },
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://game.watch.impress.co.jp/docs/news/2154846.html",
-          "evidence_urls": [
-            "https://game.watch.impress.co.jp/docs/news/2154846.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "GAME Watch",
-          "url": "https://game.watch.impress.co.jp/docs/news/2154846.html"
-        }
-      ],
-      "added_at": "2026-11-09T11:04:22+00:00",
-      "updated_at": "2026-11-09T11:04:22+00:00"
-    },
-    {
-      "id": "73760e3f9e89e045",
-      "published_at": "2026-11-08T15:00:00+00:00",
-      "disclosed_at": "2026-11-08T15:00:00+00:00",
-      "organization": "セガ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 2196044,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "958dfe59049e808e",
-          "relationship": "same_organization",
-          "evidence_url": "https://news.yahoo.co.jp/articles/639cce05cc08c305b89f7f511c6842404ab19155",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/639cce05cc08c305b89f7f511c6842404ab19155"
-          ]
-        },
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/639cce05cc08c305b89f7f511c6842404ab19155",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/639cce05cc08c305b89f7f511c6842404ab19155"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/639cce05cc08c305b89f7f511c6842404ab19155"
-        }
-      ],
-      "added_at": "2026-11-09T11:04:22+00:00",
-      "updated_at": "2026-11-09T11:04:22+00:00"
-    },
-    {
-      "id": "a9b23cf8c81f91d7",
+      "id": "f675def102ae30f3",
       "published_at": "2026-11-08T15:00:00+00:00",
       "disclosed_at": null,
-      "organization": "セガ",
+      "organization": "埼玉県",
       "incident_type": "data leak",
       "incident_categories": [
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": 2196000,
-      "confidence": "medium",
-      "confidence_score": 50,
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
       "related": [
         {
-          "incident_id": "958dfe59049e808e",
-          "relationship": "same_organization",
-          "evidence_url": "https://news.web.nhk/newsweb/na/nd-20261109de72932",
-          "evidence_urls": [
-            "https://news.web.nhk/newsweb/na/nd-20261109de72932"
-          ]
-        },
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
+          "incident_id": "cc83cfb44abbac15",
           "relationship": "affected_by",
-          "evidence_url": "https://news.web.nhk/newsweb/na/nd-20261109de72932",
+          "evidence_url": "https://www.pref.saitama.lg.jp/f2216/news/page/news2026110901.html",
           "evidence_urls": [
-            "https://news.web.nhk/newsweb/na/nd-20261109de72932"
+            "https://www.pref.saitama.lg.jp/f2216/news/page/news2026110901.html"
           ]
         }
       ],
       "sources": [
         {
-          "name": "NHKニュース",
-          "url": "https://news.web.nhk/newsweb/na/nd-20261109de72932"
+          "name": "埼玉県 / Saitama",
+          "url": "https://www.pref.saitama.lg.jp/f2216/news/page/news2026110901.html"
         }
       ],
-      "added_at": "2026-11-09T11:04:22+00:00",
-      "updated_at": "2026-11-09T11:04:22+00:00"
+      "affected_service": "県立さいたま文学館",
+      "service_aliases": [],
+      "added_at": "2026-11-09T11:39:07+00:00",
+      "updated_at": "2026-11-09T11:39:07+00:00"
     },
     {
       "id": "d25e97a3448ca2da",
@@ -1383,6 +1389,10 @@
           "url": "https://cybersecurity-jp.com/news/118234"
         },
         {
+          "name": "www.nitori-net.jp",
+          "url": "https://www.nitori-net.jp/ec/notices/info261109/"
+        },
+        {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261109569598.pdf"
         },
@@ -1424,7 +1434,7 @@
         }
       ],
       "added_at": "2026-11-09T10:16:41+00:00",
-      "updated_at": "2026-11-09T11:16:07+00:00"
+      "updated_at": "2026-11-09T11:39:07+00:00"
     },
     {
       "id": "69e3aca1139a6c35",
@@ -5327,10 +5337,14 @@
         {
           "name": "月刊私塾界",
           "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5xOV9yUXFLelNxZktkZkJzRmZYQlkyRGZ2N2RYQ0tKeWE2RHQ4ZW9yY3pqSTdNeFo2ektoZlpaX2hhQW9sYkk5YTBocHJFcmN0S0E?oc=5"
+        },
+        {
+          "name": "株式会社学研ホールディングス",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1VODAxS01maHN2OUlERmlMMzV6T0FBVWZFRnJMQkZRT0dpc3p0SXRIMXk2ZXRLUDdqTDFSbDJxWW1COWc1VnViQlpJYU12QmFma3BFR0JhMEgyQm9FTGdDNGJtRGdBZw?oc=5"
         }
       ],
       "added_at": "2026-11-05T15:15:51+00:00",
-      "updated_at": "2026-11-08T12:12:51+00:00"
+      "updated_at": "2026-11-09T11:39:07+00:00"
     },
     {
       "id": "51fc582f23003b4c",
@@ -7567,6 +7581,14 @@
           ]
         },
         {
+          "incident_id": "f675def102ae30f3",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.saitama.lg.jp/f2216/news/page/news2026110901.html",
+          "evidence_urls": [
+            "https://www.pref.saitama.lg.jp/f2216/news/page/news2026110901.html"
+          ]
+        },
+        {
           "incident_id": "f896195c466e5909",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1FOUswUzc4eEdFQWRNNUt0a0xNUmlpQ1dHX3A1OHd1NGJ0eTdvNWNFTkVVXzhtTVp6V0RBTUUtQjJDaFItZWRsWE9zNWdIOFdIV1p0UlBxMXd0b2kyQmJ6X2pxMXY1TW1NVGhOWmtsZV81dzBEQ0c3bGxyQzBCajA?oc=5",
@@ -7604,7 +7626,7 @@
       "affected_service": "アソビュー!",
       "service_aliases": [],
       "added_at": "2026-11-03T16:15:47+00:00",
-      "updated_at": "2026-11-06T21:40:24+00:00"
+      "updated_at": "2026-11-09T11:39:07+00:00"
     },
     {
       "id": "bd31831676ce0e1f",
@@ -7951,47 +7973,6 @@
       "updated_at": "2026-11-09T01:16:50+00:00"
     },
     {
-      "id": "032bad3b55c0d8fb",
-      "published_at": "2026-11-02T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "セガ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "958dfe59049e808e",
-          "relationship": "same_organization",
-          "evidence_url": "https://cybersecurity-jp.com/news/118219",
-          "evidence_urls": [
-            "https://cybersecurity-jp.com/news/118219"
-          ]
-        },
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://cybersecurity-jp.com/news/118219",
-          "evidence_urls": [
-            "https://cybersecurity-jp.com/news/118219"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Cybersecurity.jp",
-          "url": "https://cybersecurity-jp.com/news/118219"
-        }
-      ],
-      "affected_service": "アララメッセージ",
-      "service_aliases": [],
-      "added_at": "2026-11-09T11:04:22+00:00",
-      "updated_at": "2026-11-09T11:04:22+00:00"
-    },
-    {
       "id": "a2f2cbe2ef453ee8",
       "published_at": "2026-11-02T15:00:00+00:00",
       "disclosed_at": null,
@@ -8078,47 +8059,6 @@
       "service_aliases": [],
       "added_at": "2026-11-03T13:17:19+00:00",
       "updated_at": "2026-11-05T11:16:39+00:00"
-    },
-    {
-      "id": "f3e32c8fa0fdc473",
-      "published_at": "2026-11-02T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "セガ フェイブ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "1337ad1619d32570",
-          "relationship": "same_organization",
-          "evidence_url": "https://cybersecurity-jp.com/news/118219",
-          "evidence_urls": [
-            "https://cybersecurity-jp.com/news/118219"
-          ]
-        },
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://cybersecurity-jp.com/news/118219",
-          "evidence_urls": [
-            "https://cybersecurity-jp.com/news/118219"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Cybersecurity.jp",
-          "url": "https://cybersecurity-jp.com/news/118219"
-        }
-      ],
-      "affected_service": "アララメッセージ",
-      "service_aliases": [],
-      "added_at": "2026-11-09T11:04:22+00:00",
-      "updated_at": "2026-11-09T11:04:22+00:00"
     },
     {
       "id": "4ae714ea4b465c28",
@@ -9531,6 +9471,52 @@
       "updated_at": "2026-11-06T13:16:53+00:00"
     },
     {
+      "id": "a99204c7fb0a8fea",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "NTTデータ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 80000,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "19d5816230daca6f",
+          "relationship": "affects",
+          "evidence_url": "https://www.nttdata.com/global/ja/news/release/2026/110900/",
+          "evidence_urls": [
+            "https://www.nttdata.com/global/ja/news/release/2026/110900/"
+          ]
+        },
+        {
+          "incident_id": "29879c71c8cc2650",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.nttdata.com/global/ja/news/release/2026/110900/",
+          "evidence_urls": [
+            "https://www.nttdata.com/global/ja/news/release/2026/110900/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "NTTデータ / NTT DATA",
+          "url": "https://www.nttdata.com/global/ja/news/release/2026/110900/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/sumitomo-life-vitality-ntt-data-unauthorized-access-80000/"
+        }
+      ],
+      "affected_service": "住友生命Vitality体験版・企業型、Vitalityスマート(福利厚生タイプ含む)の申込みに係るサービス",
+      "service_aliases": [],
+      "added_at": "2026-11-09T08:16:45+00:00",
+      "updated_at": "2026-11-09T11:39:07+00:00"
+    },
+    {
       "id": "c5286701125111b4",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": "2026-11-01T15:00:00+00:00",
@@ -9991,48 +9977,6 @@
       ],
       "added_at": "2026-11-05T21:15:39+00:00",
       "updated_at": "2026-11-07T11:15:54+00:00"
-    },
-    {
-      "id": "a99204c7fb0a8fea",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "NTTデータ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 80000,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "19d5816230daca6f",
-          "relationship": "affects",
-          "evidence_url": "https://www.nttdata.com/global/ja/news/release/2026/110900/",
-          "evidence_urls": [
-            "https://www.nttdata.com/global/ja/news/release/2026/110900/"
-          ]
-        },
-        {
-          "incident_id": "29879c71c8cc2650",
-          "relationship": "same_organization",
-          "evidence_url": "https://www.nttdata.com/global/ja/news/release/2026/110900/",
-          "evidence_urls": [
-            "https://www.nttdata.com/global/ja/news/release/2026/110900/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "NTTデータ / NTT DATA",
-          "url": "https://www.nttdata.com/global/ja/news/release/2026/110900/"
-        }
-      ],
-      "affected_service": "住友生命Vitality体験版・企業型、Vitalityスマート(福利厚生タイプ含む)の申込みに係るサービス",
-      "service_aliases": [],
-      "added_at": "2026-11-09T08:16:45+00:00",
-      "updated_at": "2026-11-09T08:16:45+00:00"
     },
     {
       "id": "c68adc122c4c0d2e",
@@ -10697,20 +10641,20 @@
       "confidence_score": 95,
       "related": [
         {
+          "incident_id": "73760e3f9e89e045",
+          "relationship": "same_organization",
+          "evidence_url": "https://cybersecurity-jp.com/news/118219",
+          "evidence_urls": [
+            "https://cybersecurity-jp.com/news/118219"
+          ]
+        },
+        {
           "incident_id": "9c6e4483b2d9de8c",
           "relationship": "affects",
           "evidence_url": "https://www.itmedia.co.jp/news/article/2611/04/2000002870/",
           "evidence_urls": [
             "https://news.yahoo.co.jp/articles/d0c35541a812ab4e90e5c3fb48afdc9176b52903",
             "https://www.itmedia.co.jp/news/article/2611/04/2000002870/"
-          ]
-        },
-        {
-          "incident_id": "f3e32c8fa0fdc473",
-          "relationship": "same_organization",
-          "evidence_url": "https://cybersecurity-jp.com/news/118219",
-          "evidence_urls": [
-            "https://cybersecurity-jp.com/news/118219"
           ]
         }
       ],
@@ -10757,7 +10701,7 @@
         }
       ],
       "added_at": "2026-11-02T13:16:55+00:00",
-      "updated_at": "2026-11-09T11:04:22+00:00"
+      "updated_at": "2026-11-09T11:39:07+00:00"
     },
     {
       "id": "da81f1de130037ec",
@@ -10897,35 +10841,14 @@
       "confidence_score": 45,
       "related": [
         {
-          "incident_id": "032bad3b55c0d8fb",
-          "relationship": "same_organization",
-          "evidence_url": "https://cybersecurity-jp.com/news/118219",
-          "evidence_urls": [
-            "https://cybersecurity-jp.com/news/118219"
-          ]
-        },
-        {
-          "incident_id": "5359e8005b1f39d0",
-          "relationship": "same_organization",
-          "evidence_url": "https://game.watch.impress.co.jp/docs/news/2154846.html",
-          "evidence_urls": [
-            "https://game.watch.impress.co.jp/docs/news/2154846.html"
-          ]
-        },
-        {
           "incident_id": "73760e3f9e89e045",
           "relationship": "same_organization",
           "evidence_url": "https://news.yahoo.co.jp/articles/639cce05cc08c305b89f7f511c6842404ab19155",
           "evidence_urls": [
+            "https://cybersecurity-jp.com/news/118219",
+            "https://game.watch.impress.co.jp/docs/news/2154846.html",
+            "https://news.web.nhk/newsweb/na/nd-20261109de72932",
             "https://news.yahoo.co.jp/articles/639cce05cc08c305b89f7f511c6842404ab19155"
-          ]
-        },
-        {
-          "incident_id": "a9b23cf8c81f91d7",
-          "relationship": "same_organization",
-          "evidence_url": "https://news.web.nhk/newsweb/na/nd-20261109de72932",
-          "evidence_urls": [
-            "https://news.web.nhk/newsweb/na/nd-20261109de72932"
           ]
         }
       ],
@@ -10942,7 +10865,7 @@
       "affected_service": "Aime",
       "service_aliases": [],
       "added_at": "2026-11-02T13:16:55+00:00",
-      "updated_at": "2026-11-09T11:04:22+00:00"
+      "updated_at": "2026-11-09T11:39:07+00:00"
     },
     {
       "id": "09ba28525670dac9",
@@ -15402,10 +15325,14 @@
         {
           "name": "NHKニュース",
           "url": "https://news.web.nhk/newsweb/na/nd-20261028dw67390"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUB097T20Z01C26A1000000/"
         }
       ],
       "added_at": "2026-10-28T14:15:45+00:00",
-      "updated_at": "2026-11-09T01:16:50+00:00"
+      "updated_at": "2026-11-09T11:39:07+00:00"
     },
     {
       "id": "9d4780283d6bf8d9",
@@ -15697,14 +15624,6 @@
           ]
         },
         {
-          "incident_id": "032bad3b55c0d8fb",
-          "relationship": "affects",
-          "evidence_url": "https://cybersecurity-jp.com/news/118219",
-          "evidence_urls": [
-            "https://cybersecurity-jp.com/news/118219"
-          ]
-        },
-        {
           "incident_id": "03a18bdd6715ff75",
           "relationship": "affects",
           "evidence_url": "https://www.kagin.co.jp/important/emergency_20261029_3.html",
@@ -15970,14 +15889,6 @@
           ]
         },
         {
-          "incident_id": "5359e8005b1f39d0",
-          "relationship": "affects",
-          "evidence_url": "https://game.watch.impress.co.jp/docs/news/2154846.html",
-          "evidence_urls": [
-            "https://game.watch.impress.co.jp/docs/news/2154846.html"
-          ]
-        },
-        {
           "incident_id": "538a9c07939efeb0",
           "relationship": "affects",
           "evidence_url": "https://www.miyakohotels.ne.jp/topic/information/238/",
@@ -16124,6 +16035,9 @@
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/639cce05cc08c305b89f7f511c6842404ab19155",
           "evidence_urls": [
+            "https://cybersecurity-jp.com/news/118219",
+            "https://game.watch.impress.co.jp/docs/news/2154846.html",
+            "https://news.web.nhk/newsweb/na/nd-20261109de72932",
             "https://news.yahoo.co.jp/articles/639cce05cc08c305b89f7f511c6842404ab19155"
           ]
         },
@@ -16352,14 +16266,6 @@
           "evidence_url": "https://tv.golfnetwork.co.jp/news/detail/147",
           "evidence_urls": [
             "https://tv.golfnetwork.co.jp/news/detail/147"
-          ]
-        },
-        {
-          "incident_id": "a9b23cf8c81f91d7",
-          "relationship": "affects",
-          "evidence_url": "https://news.web.nhk/newsweb/na/nd-20261109de72932",
-          "evidence_urls": [
-            "https://news.web.nhk/newsweb/na/nd-20261109de72932"
           ]
         },
         {
@@ -16708,14 +16614,6 @@
           ]
         },
         {
-          "incident_id": "f3e32c8fa0fdc473",
-          "relationship": "affects",
-          "evidence_url": "https://cybersecurity-jp.com/news/118219",
-          "evidence_urls": [
-            "https://cybersecurity-jp.com/news/118219"
-          ]
-        },
-        {
           "incident_id": "f6d525de9624b10f",
           "relationship": "affects",
           "evidence_url": "https://www.sofmap.com/contents/?id=info&sid=261102b",
@@ -16784,7 +16682,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-09T11:04:22+00:00"
+      "updated_at": "2026-11-09T11:39:07+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -44376,6 +44274,10 @@
     "4f4910cf84c927a3": "53104c066ce8eb19",
     "73072a099cf303fd": "53104c066ce8eb19",
     "a87c15f226fbfcbd": "53104c066ce8eb19",
-    "cf567958fbf8b1b3": "53104c066ce8eb19"
+    "cf567958fbf8b1b3": "53104c066ce8eb19",
+    "5359e8005b1f39d0": "73760e3f9e89e045",
+    "f3e32c8fa0fdc473": "73760e3f9e89e045",
+    "a9b23cf8c81f91d7": "73760e3f9e89e045",
+    "032bad3b55c0d8fb": "73760e3f9e89e045"
   }
 }
