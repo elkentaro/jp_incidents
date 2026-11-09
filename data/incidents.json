@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-09T15:15:33+00:00",
-  "total": 1018,
+  "updated_at": "2026-11-09T20:16:13+00:00",
+  "total": 1022,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-09"
@@ -353,7 +353,7 @@
     },
     {
       "date": "2026-11-07",
-      "count": 5
+      "count": 6
     },
     {
       "date": "2026-11-08",
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-11-09",
-      "count": 13
+      "count": 15
     },
     {
       "date": "2026-11-10",
@@ -543,6 +543,35 @@
       "updated_at": "2026-11-09T11:04:22+00:00"
     },
     {
+      "id": "dd965d5ae113728b",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "オープンドア",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 381926,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261107568333.pdf"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC095O20Z01C26A1000000/"
+        }
+      ],
+      "affected_service": "トラベルコ",
+      "service_aliases": [],
+      "added_at": "2026-11-09T09:16:47+00:00",
+      "updated_at": "2026-11-09T20:16:13+00:00"
+    },
+    {
       "id": "d034681f0ee00efd",
       "published_at": "2026-11-08T15:00:00+00:00",
       "disclosed_at": null,
@@ -646,31 +675,6 @@
       "updated_at": "2026-11-09T10:16:41+00:00"
     },
     {
-      "id": "dd965d5ae113728b",
-      "published_at": "2026-11-08T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "オープンドア",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 381926,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [],
-      "sources": [
-        {
-          "name": "日本取引所グループ TDnet / JPX TDnet",
-          "url": "https://www.release.tdnet.info/inbs/140120261107568333.pdf"
-        }
-      ],
-      "affected_service": "トラベルコ",
-      "service_aliases": [],
-      "added_at": "2026-11-09T09:16:47+00:00",
-      "updated_at": "2026-11-09T09:16:47+00:00"
-    },
-    {
       "id": "f675def102ae30f3",
       "published_at": "2026-11-08T15:00:00+00:00",
       "disclosed_at": null,
@@ -703,6 +707,40 @@
       "service_aliases": [],
       "added_at": "2026-11-09T11:39:07+00:00",
       "updated_at": "2026-11-09T11:39:07+00:00"
+    },
+    {
+      "id": "805db770edc2faee",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "テレビ新広島",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 5192,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/4b851d6da8680f5c9ce0a8b46f656ce056d1857a",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/4b851d6da8680f5c9ce0a8b46f656ce056d1857a"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/4b851d6da8680f5c9ce0a8b46f656ce056d1857a"
+        }
+      ],
+      "affected_service": "ロハスフラワー",
+      "service_aliases": [],
+      "added_at": "2026-11-09T20:16:13+00:00",
+      "updated_at": "2026-11-09T20:16:13+00:00"
     },
     {
       "id": "d25e97a3448ca2da",
@@ -846,6 +884,28 @@
       ],
       "added_at": "2026-11-09T09:16:47+00:00",
       "updated_at": "2026-11-09T09:16:47+00:00"
+    },
+    {
+      "id": "ee1fd6e381399c9d",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": "2026-11-08T15:00:00+00:00",
+      "organization": "新潟県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "にいがた経済新聞",
+          "url": "https://www.niikei.jp/2084192/"
+        }
+      ],
+      "added_at": "2026-11-09T20:16:13+00:00",
+      "updated_at": "2026-11-09T20:16:13+00:00"
     },
     {
       "id": "cb69602b79e76443",
@@ -1105,6 +1165,29 @@
       "service_aliases": [],
       "added_at": "2026-11-09T07:08:09+00:00",
       "updated_at": "2026-11-09T07:08:09+00:00"
+    },
+    {
+      "id": "f4b56629909c3d7b",
+      "published_at": "2026-11-06T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "よーじや",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 134344,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/yojiya_member_api_unauthorized_access_131557_confirmed_20261109/"
+        }
+      ],
+      "added_at": "2026-11-09T20:16:13+00:00",
+      "updated_at": "2026-11-09T20:16:13+00:00"
     },
     {
       "id": "03874becece52044",
@@ -1884,6 +1967,10 @@
           "url": "https://www.edion.co.jp/system/files/news-release/pdf/ja/2026-11/20261106_pr_1.pdf"
         },
         {
+          "name": "エディオン / EDION",
+          "url": "https://www.edion.co.jp/system/files/news-release/pdf/ja/2026-11/20261109_pr_1_0.pdf"
+        },
+        {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/edion_ec_server_log_unauthorized_access_9554/"
         },
@@ -1895,7 +1982,7 @@
       "affected_service": "EC サイト",
       "service_aliases": [],
       "added_at": "2026-11-06T13:16:53+00:00",
-      "updated_at": "2026-11-09T07:08:09+00:00"
+      "updated_at": "2026-11-09T20:16:13+00:00"
     },
     {
       "id": "f27a29f5766d17aa",
@@ -8662,6 +8749,14 @@
       "confidence_score": 100,
       "related": [
         {
+          "incident_id": "576bb97fd9d583ab",
+          "relationship": "same_organization",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/shogakukan-education-sites-unauthorized-access/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/shogakukan-education-sites-unauthorized-access/"
+          ]
+        },
+        {
           "incident_id": "e0bf7f8e71d6ba85",
           "relationship": "affected_by",
           "evidence_url": "https://www.sankei.com/article/20261109-PCPIAMPU2FAVDP4KDNYRKCOA6U/",
@@ -8698,7 +8793,7 @@
         }
       ],
       "added_at": "2026-11-08T15:16:16+00:00",
-      "updated_at": "2026-11-09T11:04:22+00:00"
+      "updated_at": "2026-11-09T20:16:13+00:00"
     },
     {
       "id": "c0fbbb0ab3173161",
@@ -11692,12 +11787,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/352f6a38dbb3878b1736136679026681f4f1ffb7"
+        },
+        {
+          "name": "Security NEXT",
+          "url": "https://www.security-next.com/192491"
         }
       ],
       "affected_service": "情報セキュリティ理解度チェックサービス",
       "service_aliases": [],
       "added_at": "2026-11-06T05:15:44+00:00",
-      "updated_at": "2026-11-09T06:16:50+00:00"
+      "updated_at": "2026-11-09T20:16:13+00:00"
     },
     {
       "id": "1eff65d7da989b18",
@@ -15351,10 +15450,14 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUB097T20Z01C26A1000000/"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3073174?display=1"
         }
       ],
       "added_at": "2026-10-28T14:15:45+00:00",
-      "updated_at": "2026-11-09T11:39:07+00:00"
+      "updated_at": "2026-11-09T20:16:13+00:00"
     },
     {
       "id": "9d4780283d6bf8d9",
@@ -16104,6 +16207,14 @@
           ]
         },
         {
+          "incident_id": "805db770edc2faee",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/4b851d6da8680f5c9ce0a8b46f656ce056d1857a",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/4b851d6da8680f5c9ce0a8b46f656ce056d1857a"
+          ]
+        },
+        {
           "incident_id": "814579689134026b",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBEOXlzYjlVQVpadGpKdU95ZEx2N0YwaTJBU0NCTHVSVWlpMlhiRFR6NDBuU083NXJpSVJSYUxXcmZoNUxHelJFOC1OYVM3dFJaSE12Y2JR?oc=5",
@@ -16712,7 +16823,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-09T13:16:31+00:00"
+      "updated_at": "2026-11-09T20:16:13+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -42626,12 +42737,16 @@
         {
           "name": "Infoseek",
           "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBBcE52UmFNOExLbHhFWUtENGM3VVJwZE12QXlJMmp4TFo4R1A2b3otZlQzOEh3TVNHUHNDaG51bERkQVdNV3lES1Mxb0N2YXlRMTZlbVNZaWxxTHNyYmlFZVhIbllqYnBQZUEtTHc5b0ZwNVVFUUN5cjZDa9IBe0FVX3lxTFBBcE52UmFNOExLbHhFWUtENGM3VVJwZE12QXlJMmp4TFo4R1A2b3otZlQzOEh3TVNHUHNDaG51bERkQVdNV3lES1Mxb0N2YXlRMTZlbVNZaWxxTHNyYmlFZVhIbllqYnBQZUEtTHc5b0ZwNVVFUUN5cjZDaw?oc=5"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3073091?display=1"
         }
       ],
       "affected_system": "IDCF cloud · East Japan region 1",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T15:15:09+00:00",
-      "updated_at": "2026-10-29T08:15:57+00:00"
+      "updated_at": "2026-11-09T20:16:13+00:00"
     },
     {
       "id": "22f2beedd630c831",
@@ -44168,6 +44283,54 @@
       ],
       "added_at": "2026-10-28T02:15:45+00:00",
       "updated_at": "2026-11-02T01:16:01+00:00"
+    },
+    {
+      "id": "576bb97fd9d583ab",
+      "published_at": "2026-07-16T15:00:00+00:00",
+      "disclosed_at": "2026-11-08T15:00:00+00:00",
+      "organization": "小学館",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "bd2d832f478781fb",
+          "relationship": "same_organization",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/shogakukan-education-sites-unauthorized-access/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/shogakukan-education-sites-unauthorized-access/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/shogakukan-education-sites-unauthorized-access/"
+        }
+      ],
+      "affected_service": "みんなの教育技術 / みんなの幼児と保育",
+      "service_aliases": [],
+      "affected_services": [
+        "みんなの教育技術",
+        "みんなの幼児と保育"
+      ],
+      "service_details": [
+        {
+          "name": "みんなの教育技術",
+          "aliases": []
+        },
+        {
+          "name": "みんなの幼児と保育",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-09T20:16:13+00:00",
+      "updated_at": "2026-11-09T20:16:13+00:00"
     },
     {
       "id": "b16f34dd6c6a5923",
