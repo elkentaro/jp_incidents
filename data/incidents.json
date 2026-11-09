@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-09T11:39:07+00:00",
-  "total": 1018,
+  "updated_at": "2026-11-09T12:00:14+00:00",
+  "total": 1017,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-09"
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-11-08",
-      "count": 2
+      "count": 1
     },
     {
       "date": "2026-11-09",
@@ -811,60 +811,6 @@
       "updated_at": "2026-11-09T09:16:47+00:00"
     },
     {
-      "id": "022ce2ef5805e4dd",
-      "published_at": "2026-11-07T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ラクスル",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 100,
-      "related": [
-        {
-          "incident_id": "f58940476d597124",
-          "relationship": "same_organization",
-          "evidence_url": "https://www.itmedia.co.jp/news/article/2611/09/2000003004/",
-          "evidence_urls": [
-            "https://www.itmedia.co.jp/news/article/2611/09/2000003004/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "ITmedia",
-          "url": "https://www.itmedia.co.jp/news/article/2611/09/2000003004/"
-        },
-        {
-          "name": "INTERNET Watch",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB6Njg5dzdGYWRFc2JfeDFpX0tEdlV3UGttV0pXLW9WQk1NOGxGdzA3bEctaHhVTkJTQ09RaXRlQnlBTnF1cHRZdVliVW9GempiVXF6dVBUd0MwWGNxaWUwUEdxSjNTajVTd3FN?oc=5"
-        },
-        {
-          "name": "CNET Japan",
-          "url": "https://japan.cnet.com/article/35254596/"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/7c7558ba77dd55c95ff53ebbe7d9777cc71f73aa"
-        },
-        {
-          "name": "NHKニュース",
-          "url": "https://news.web.nhk/newsweb/na/nd-20261109de72879"
-        },
-        {
-          "name": "NOVAIST",
-          "url": "https://novaist.jp/articles/raksul-possible-data-breach/"
-        }
-      ],
-      "affected_service": "ラクスル",
-      "service_aliases": [],
-      "added_at": "2026-11-09T06:16:50+00:00",
-      "updated_at": "2026-11-09T07:08:09+00:00"
-    },
-    {
       "id": "cb69602b79e76443",
       "published_at": "2026-11-07T15:00:00+00:00",
       "disclosed_at": null,
@@ -883,7 +829,8 @@
           "relationship": "same_organization",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/raksul-print-data-unauthorized-access/",
           "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/raksul-print-data-unauthorized-access/"
+            "https://rocket-boys.co.jp/security-measures-lab/raksul-print-data-unauthorized-access/",
+            "https://www.itmedia.co.jp/news/article/2611/09/2000003004/"
           ]
         }
       ],
@@ -903,10 +850,36 @@
         {
           "name": "テレ朝NEWS",
           "url": "https://news.tv-asahi.co.jp/news_society/articles/900203809.html"
+        },
+        {
+          "name": "CNET Japan",
+          "url": "https://japan.cnet.com/article/35254596/"
+        },
+        {
+          "name": "INTERNET Watch",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB6Njg5dzdGYWRFc2JfeDFpX0tEdlV3UGttV0pXLW9WQk1NOGxGdzA3bEctaHhVTkJTQ09RaXRlQnlBTnF1cHRZdVliVW9GempiVXF6dVBUd0MwWGNxaWUwUEdxSjNTajVTd3FN?oc=5"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261109de72879"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/7c7558ba77dd55c95ff53ebbe7d9777cc71f73aa"
+        },
+        {
+          "name": "NOVAIST",
+          "url": "https://novaist.jp/articles/raksul-possible-data-breach/"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2611/09/2000003004/"
         }
       ],
+      "affected_service": "ラクスル",
+      "service_aliases": [],
       "added_at": "2026-11-09T06:16:50+00:00",
-      "updated_at": "2026-11-09T11:04:22+00:00"
+      "updated_at": "2026-11-09T12:00:14+00:00"
     },
     {
       "id": "30cd420408abcfa9",
@@ -1393,6 +1366,10 @@
           "url": "https://www.nitori-net.jp/ec/notices/info261109/"
         },
         {
+          "name": "流通スーパーニュース",
+          "url": "https://news.shoninsha.co.jp/system/323709"
+        },
+        {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261109569598.pdf"
         },
@@ -1434,7 +1411,7 @@
         }
       ],
       "added_at": "2026-11-09T10:16:41+00:00",
-      "updated_at": "2026-11-09T11:39:07+00:00"
+      "updated_at": "2026-11-09T12:00:14+00:00"
     },
     {
       "id": "69e3aca1139a6c35",
@@ -6346,6 +6323,44 @@
       "updated_at": "2026-11-04T12:25:20+00:00"
     },
     {
+      "id": "e125a667a9fd8a5b",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ウィル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.wills.co.jp/corp/news/1895/",
+          "evidence_urls": [
+            "https://www.wills.co.jp/corp/news/1895/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.wills.co.jp/corp/news/1895/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/will_real_estate_arara_102369_email_leak_third_report_20261106/"
+        }
+      ],
+      "affected_service": "メール配信サービス「アララメッセージ」",
+      "service_aliases": [],
+      "added_at": "2026-11-08T01:16:16+00:00",
+      "updated_at": "2026-11-09T12:00:14+00:00"
+    },
+    {
       "id": "f565d4025213af60",
       "published_at": "2026-11-03T15:00:00+00:00",
       "disclosed_at": null,
@@ -6676,40 +6691,6 @@
       ],
       "added_at": "2026-11-04T15:16:11+00:00",
       "updated_at": "2026-11-04T15:16:11+00:00"
-    },
-    {
-      "id": "e125a667a9fd8a5b",
-      "published_at": "2026-11-03T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ウィル",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.wills.co.jp/corp/news/1895/",
-          "evidence_urls": [
-            "https://www.wills.co.jp/corp/news/1895/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.wills.co.jp/corp/news/1895/"
-        }
-      ],
-      "affected_service": "メール配信サービス「アララメッセージ」",
-      "service_aliases": [],
-      "added_at": "2026-11-08T01:16:16+00:00",
-      "updated_at": "2026-11-08T01:16:16+00:00"
     },
     {
       "id": "e27e591c34fddbd2",
@@ -37240,14 +37221,6 @@
       "confidence_score": 75,
       "related": [
         {
-          "incident_id": "022ce2ef5805e4dd",
-          "relationship": "same_organization",
-          "evidence_url": "https://www.itmedia.co.jp/news/article/2611/09/2000003004/",
-          "evidence_urls": [
-            "https://www.itmedia.co.jp/news/article/2611/09/2000003004/"
-          ]
-        },
-        {
           "incident_id": "671c427eadb6fc63",
           "relationship": "affected_by",
           "evidence_url": "https://cybersecurity-jp.com/news/117514",
@@ -37262,7 +37235,8 @@
           "relationship": "same_organization",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/raksul-print-data-unauthorized-access/",
           "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/raksul-print-data-unauthorized-access/"
+            "https://rocket-boys.co.jp/security-measures-lab/raksul-print-data-unauthorized-access/",
+            "https://www.itmedia.co.jp/news/article/2611/09/2000003004/"
           ]
         }
       ],
@@ -37279,7 +37253,7 @@
       "affected_system": "Service-information website forms on Studio",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T09:06:44+00:00",
-      "updated_at": "2026-11-09T06:16:50+00:00"
+      "updated_at": "2026-11-09T12:00:14+00:00"
     },
     {
       "id": "1724168d5a2f170a",
@@ -44023,6 +43997,10 @@
           "url": "https://www.waseda.jp/top/news/topic/124183"
         },
         {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/c816d7199abb46da38cf9bccf81ad9846f451fa4"
+        },
+        {
           "name": "ITmedia",
           "url": "https://www.itmedia.co.jp/news/article/2611/09/2000003012/"
         },
@@ -44038,7 +44016,7 @@
       "affected_service": "MyWaseda",
       "service_aliases": [],
       "added_at": "2026-11-09T07:08:09+00:00",
-      "updated_at": "2026-11-09T11:04:22+00:00"
+      "updated_at": "2026-11-09T12:00:14+00:00"
     },
     {
       "id": "771d425a095483bb",
@@ -44278,6 +44256,7 @@
     "5359e8005b1f39d0": "73760e3f9e89e045",
     "f3e32c8fa0fdc473": "73760e3f9e89e045",
     "a9b23cf8c81f91d7": "73760e3f9e89e045",
-    "032bad3b55c0d8fb": "73760e3f9e89e045"
+    "032bad3b55c0d8fb": "73760e3f9e89e045",
+    "022ce2ef5805e4dd": "cb69602b79e76443"
   }
 }
