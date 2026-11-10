@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-10T21:15:31+00:00",
-  "total": 1066,
+  "updated_at": "2026-11-10T22:15:17+00:00",
+  "total": 1067,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-10"
@@ -357,7 +357,7 @@
     },
     {
       "date": "2026-11-09",
-      "count": 28
+      "count": 29
     },
     {
       "date": "2026-11-10",
@@ -584,6 +584,35 @@
       "updated_at": "2026-11-10T13:17:15+00:00"
     },
     {
+      "id": "a4bddfbd43d68938",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "富山県立大学",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 3000,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/a253898167f6e633f0b88c26f65267bd2663c9ae"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1sVmFPXzl0ZkZFejZMZ0pLV2NiY3l3dW12b3hEaTRNOUF5c1J6Z3ljQk5KOEE3T3Q0Zk80aWdCWXYzUzd3SXFXMjMtZllZZmlySmxJVER3UmYtVVpBdEZQeXE3MElKT3FZZ19zTkdzbkVwUWFNZkRSeHFvN2FSQ0U?oc=5"
+        }
+      ],
+      "affected_service": "安否確認のため使用している外部のメール配信システム",
+      "service_aliases": [],
+      "added_at": "2026-11-10T14:16:14+00:00",
+      "updated_at": "2026-11-10T22:15:17+00:00"
+    },
+    {
       "id": "a916e1f197303059",
       "published_at": "2026-11-09T15:00:00+00:00",
       "disclosed_at": null,
@@ -712,31 +741,6 @@
       "service_aliases": [],
       "added_at": "2026-11-10T07:15:34+00:00",
       "updated_at": "2026-11-10T07:15:34+00:00"
-    },
-    {
-      "id": "a4bddfbd43d68938",
-      "published_at": "2026-11-09T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "富山県立大学",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 3000,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/a253898167f6e633f0b88c26f65267bd2663c9ae"
-        }
-      ],
-      "affected_service": "安否確認のため使用している外部のメール配信システム",
-      "service_aliases": [],
-      "added_at": "2026-11-10T14:16:14+00:00",
-      "updated_at": "2026-11-10T14:16:14+00:00"
     },
     {
       "id": "14cc468f9a7f9a3d",
@@ -1510,6 +1514,36 @@
       "service_aliases": [],
       "added_at": "2026-11-09T21:16:19+00:00",
       "updated_at": "2026-11-10T07:15:34+00:00"
+    },
+    {
+      "id": "2f31b97675803cff",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "エディオン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "other",
+        "unauthorized access"
+      ],
+      "potential_records": 6506,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "CNET Japan",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1haTBUWDlXcVdZTzk0UGpvZ1BUd3hlOHh3VlpfVV9TOEdSQzBLUFlBOEk4dzk0WmhsM2ZPQTd1ck8wVjQxMFl1c1hlRTgxZUprQ1E?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/919f76e442cf7d63c23df23c07501e057bfa7c73"
+        }
+      ],
+      "affected_service": "エディオンネットショップ:PC向け決済画面",
+      "service_aliases": [],
+      "added_at": "2026-11-10T22:15:17+00:00",
+      "updated_at": "2026-11-10T22:15:17+00:00"
     },
     {
       "id": "0725fe914c798f25",
