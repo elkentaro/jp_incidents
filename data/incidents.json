@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-10T12:16:52+00:00",
-  "total": 1051,
+  "updated_at": "2026-11-10T13:17:15+00:00",
+  "total": 1060,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-10"
@@ -337,7 +337,7 @@
     },
     {
       "date": "2026-11-03",
-      "count": 18
+      "count": 19
     },
     {
       "date": "2026-11-04",
@@ -361,14 +361,55 @@
     },
     {
       "date": "2026-11-09",
-      "count": 25
+      "count": 27
     },
     {
       "date": "2026-11-10",
-      "count": 11
+      "count": 17
     }
   ],
   "incidents": [
+    {
+      "id": "4af336cfb4255f5a",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "日本商工会議所",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 980000,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/66b7407738d3b68a87c64acc9efc68f4375d6df7"
+        },
+        {
+          "name": "京都新聞デジタル",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE0tOEM3eUNRMm11ZnpHWGNWOEZob2RUNFpDMTlWRjF5c3lLbWVwUnBzcWhZMlFRRGg3NE5vem5JbTBEd2g0OEIzUHJnWFVSdDM3MWxNcDUwRlU?oc=5"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVCB3H0ZVCBULFA021M.html"
+        },
+        {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp/15210798.html"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261110de73779"
+        }
+      ],
+      "affected_service": "簿記などのインターネット試験",
+      "service_aliases": [],
+      "added_at": "2026-11-10T12:16:52+00:00",
+      "updated_at": "2026-11-10T13:17:15+00:00"
+    },
     {
       "id": "5d9388db64d7c7fe",
       "published_at": "2026-11-09T15:00:00+00:00",
@@ -456,10 +497,14 @@
         {
           "name": "読売新聞",
           "url": "https://www.yomiuri.co.jp/economy/20261110-GYT1T00225/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/4c06d6a6357150d1b9cd7f94741c4969b88652fb"
         }
       ],
       "added_at": "2026-11-10T09:15:46+00:00",
-      "updated_at": "2026-11-10T12:16:52+00:00"
+      "updated_at": "2026-11-10T13:17:15+00:00"
     },
     {
       "id": "c4863bee87cbe261",
@@ -483,10 +528,14 @@
         {
           "name": "読売新聞",
           "url": "https://www.yomiuri.co.jp/economy/20261110-GYT1T00225/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/4c06d6a6357150d1b9cd7f94741c4969b88652fb"
         }
       ],
       "added_at": "2026-11-10T09:15:46+00:00",
-      "updated_at": "2026-11-10T12:16:52+00:00"
+      "updated_at": "2026-11-10T13:17:15+00:00"
     },
     {
       "id": "776c20ac8487f4a1",
@@ -544,29 +593,77 @@
       "updated_at": "2026-11-10T07:15:34+00:00"
     },
     {
-      "id": "4af336cfb4255f5a",
+      "id": "a916e1f197303059",
       "published_at": "2026-11-09T15:00:00+00:00",
       "disclosed_at": null,
-      "organization": "日本商工会議所",
+      "organization": "東京都",
       "incident_type": "data leak",
       "incident_categories": [
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": 980000,
+      "potential_records": 475,
       "confidence": "medium",
       "confidence_score": 50,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "19d5816230daca6f",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003"
+          ]
+        },
+        {
+          "incident_id": "2d9120c700879491",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/66b7407738d3b68a87c64acc9efc68f4375d6df7"
+          "url": "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003"
         }
       ],
-      "affected_service": "簿記などのインターネット試験",
+      "added_at": "2026-11-10T13:17:15+00:00",
+      "updated_at": "2026-11-10T13:17:15+00:00"
+    },
+    {
+      "id": "14cc468f9a7f9a3d",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": "2026-11-09T15:00:00+00:00",
+      "organization": "マックスバリュ東海",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "4562efa77d71bf05",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/"
+        }
+      ],
+      "affected_service": "ギフト承りシステム",
       "service_aliases": [],
-      "added_at": "2026-11-10T12:16:52+00:00",
-      "updated_at": "2026-11-10T12:16:52+00:00"
+      "added_at": "2026-11-10T13:17:15+00:00",
+      "updated_at": "2026-11-10T13:17:15+00:00"
     },
     {
       "id": "28326df64c067d2d",
@@ -600,6 +697,104 @@
       "service_aliases": [],
       "added_at": "2026-11-10T07:15:34+00:00",
       "updated_at": "2026-11-10T07:15:34+00:00"
+    },
+    {
+      "id": "4562efa77d71bf05",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "イオンスマートテクノロジー",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 414,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "14cc468f9a7f9a3d",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/"
+          ]
+        },
+        {
+          "incident_id": "731fe307751f589b",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/"
+          ]
+        },
+        {
+          "incident_id": "810614f7152bce97",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/"
+          ]
+        },
+        {
+          "incident_id": "a2cf60a92a1ad65c",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/"
+          ]
+        },
+        {
+          "incident_id": "cbd1ca63a0dd8e28",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/"
+        }
+      ],
+      "affected_service": "ギフト承りシステム",
+      "service_aliases": [],
+      "added_at": "2026-11-10T13:17:15+00:00",
+      "updated_at": "2026-11-10T13:17:15+00:00"
+    },
+    {
+      "id": "731fe307751f589b",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": "2026-11-09T15:00:00+00:00",
+      "organization": "イオンリテール",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "4562efa77d71bf05",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/"
+        }
+      ],
+      "affected_service": "ギフト承りシステム",
+      "service_aliases": [],
+      "added_at": "2026-11-10T13:17:15+00:00",
+      "updated_at": "2026-11-10T13:17:15+00:00"
     },
     {
       "id": "7793461f2c05830c",
@@ -640,6 +835,39 @@
       ],
       "added_at": "2026-11-10T06:15:30+00:00",
       "updated_at": "2026-11-10T06:15:30+00:00"
+    },
+    {
+      "id": "810614f7152bce97",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": "2026-11-09T15:00:00+00:00",
+      "organization": "イオンフードスタイル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "4562efa77d71bf05",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/"
+        }
+      ],
+      "affected_service": "ギフト承りシステム",
+      "service_aliases": [],
+      "added_at": "2026-11-10T13:17:15+00:00",
+      "updated_at": "2026-11-10T13:17:15+00:00"
     },
     {
       "id": "878d7496ea2d4eb9",
@@ -705,18 +933,60 @@
       "updated_at": "2026-11-10T05:16:43+00:00"
     },
     {
+      "id": "cbd1ca63a0dd8e28",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": "2026-11-09T15:00:00+00:00",
+      "organization": "イオン北海道",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "4562efa77d71bf05",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/"
+        }
+      ],
+      "affected_service": "ギフト承りシステム",
+      "service_aliases": [],
+      "added_at": "2026-11-10T13:17:15+00:00",
+      "updated_at": "2026-11-10T13:17:15+00:00"
+    },
+    {
       "id": "19d5816230daca6f",
       "published_at": "2026-11-08T15:00:00+00:00",
       "disclosed_at": null,
       "organization": "住友生命保険相互会社",
       "incident_type": "data leak",
       "incident_categories": [
-        "data leak"
+        "data leak",
+        "unauthorized access"
       ],
       "potential_records": 80000,
       "confidence": "high",
       "confidence_score": 100,
       "related": [
+        {
+          "incident_id": "a916e1f197303059",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003"
+          ]
+        },
         {
           "incident_id": "a99204c7fb0a8fea",
           "relationship": "affected_by",
@@ -759,7 +1029,7 @@
       "affected_service": "住友生命Vitality体験版・企業型、Vitalityスマート(福利厚生タイプ含む)の申込みに係るサービス",
       "service_aliases": [],
       "added_at": "2026-11-09T08:16:45+00:00",
-      "updated_at": "2026-11-10T01:16:02+00:00"
+      "updated_at": "2026-11-10T13:17:15+00:00"
     },
     {
       "id": "73760e3f9e89e045",
@@ -1189,6 +1459,40 @@
       "updated_at": "2026-11-10T06:15:30+00:00"
     },
     {
+      "id": "9090dff535e28d63",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "九州電力",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 978,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.kyuden.co.jp/press/2026/h261110-1.html",
+          "evidence_urls": [
+            "https://www.kyuden.co.jp/press/2026/h261110-1.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "九州電力 / Kyushu Electric Power",
+          "url": "https://www.kyuden.co.jp/press/2026/h261110-1.html"
+        }
+      ],
+      "affected_service": "weev",
+      "service_aliases": [],
+      "added_at": "2026-11-10T13:17:15+00:00",
+      "updated_at": "2026-11-10T13:17:15+00:00"
+    },
+    {
       "id": "ac478163eca04533",
       "published_at": "2026-11-08T15:00:00+00:00",
       "disclosed_at": null,
@@ -1507,6 +1811,40 @@
       "service_aliases": [],
       "added_at": "2026-11-10T00:16:43+00:00",
       "updated_at": "2026-11-10T00:16:43+00:00"
+    },
+    {
+      "id": "4875032745d60b04",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": "2026-11-08T15:00:00+00:00",
+      "organization": "アイスタイル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 288000,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOTF9mUDZXenNpTl9CSnBLVXl5WU55aFA1WGdkbmgzQ0IyN2tlcG85YzJYRzgzYmJTTTh6UXRZSk40LTA3dEpPV1Z5V3BSVmtkNHdheUQ2S0llS2VibEF6cnRfNmNVTFdoTEYzeXNxRk1JeHp3RVpjUFVPdUk5SGdsZ3VRYV9wcGdvYzhXbU4xUU4?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMikAFBVV95cUxOTF9mUDZXenNpTl9CSnBLVXl5WU55aFA1WGdkbmgzQ0IyN2tlcG85YzJYRzgzYmJTTTh6UXRZSk40LTA3dEpPV1Z5V3BSVmtkNHdheUQ2S0llS2VibEF6cnRfNmNVTFdoTEYzeXNxRk1JeHp3RVpjUFVPdUk5SGdsZ3VRYV9wcGdvYzhXbU4xUU4?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOTF9mUDZXenNpTl9CSnBLVXl5WU55aFA1WGdkbmgzQ0IyN2tlcG85YzJYRzgzYmJTTTh6UXRZSk40LTA3dEpPV1Z5V3BSVmtkNHdheUQ2S0llS2VibEF6cnRfNmNVTFdoTEYzeXNxRk1JeHp3RVpjUFVPdUk5SGdsZ3VRYV9wcGdvYzhXbU4xUU4?oc=5"
+        }
+      ],
+      "affected_service": "Cuenote FC",
+      "service_aliases": [],
+      "added_at": "2026-11-10T13:17:15+00:00",
+      "updated_at": "2026-11-10T13:17:15+00:00"
     },
     {
       "id": "7e9d8e6c79f9c419",
@@ -4286,10 +4624,14 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118263"
+        },
+        {
+          "name": "月刊私塾界",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFByTUx3TUloNVE1NTdBTVV0OS1KOVYtYXNwaGdQajJVbE1kMUdDUUtMNjg1UEhvMldVMXhkcWVaZzRnQ0IzNV9FNGEzcjZpTUdhTnc?oc=5"
         }
       ],
       "added_at": "2026-11-05T15:15:51+00:00",
-      "updated_at": "2026-11-10T12:16:52+00:00"
+      "updated_at": "2026-11-10T13:17:15+00:00"
     },
     {
       "id": "8720f3e6c09263ff",
@@ -9164,6 +9506,29 @@
       "updated_at": "2026-11-04T03:16:06+00:00"
     },
     {
+      "id": "8e0a97868a856654",
+      "published_at": "2026-11-02T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社PEPPY",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 6503,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMXN4SUJRazItOWdQTGxLSEkzN0N1dGtDSzZCc1MtUGZySERwQlM4VndoeGtlcV9tdFpiSlFjTjJiYmpPTzVJNGl3Z2thZGc5QzNnQTY5dk9rQmVybUZjRW9kY3EwamJQbVFEd041UHJCa0ZjemVSbjA5LWc5OHdmQTZQRVRGN0NiaEZyT29pYVN0eTJzTHNGd3gxSGRvcHl1Mnh6ZjFuV29YMUY5MlhQQl9POA?oc=5"
+        }
+      ],
+      "added_at": "2026-11-10T13:17:15+00:00",
+      "updated_at": "2026-11-10T13:17:15+00:00"
+    },
+    {
       "id": "cff2b19ef6f0d60b",
       "published_at": "2026-11-02T15:00:00+00:00",
       "disclosed_at": "2026-11-03T15:00:00+00:00",
@@ -10414,12 +10779,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/3fefea37a1fe804549018fff9c2caefb52b299c4"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/2746736db764aa91b3712461c5166e6cea9de3eb"
         }
       ],
       "affected_service": "住友生命Vitality体験版・企業型、Vitalityスマート(福利厚生タイプ含む)の申込みに係るサービス",
       "service_aliases": [],
       "added_at": "2026-11-09T08:16:45+00:00",
-      "updated_at": "2026-11-09T22:15:19+00:00"
+      "updated_at": "2026-11-10T13:17:15+00:00"
     },
     {
       "id": "c70726cc989a1966",
@@ -17414,6 +17783,14 @@
           ]
         },
         {
+          "incident_id": "9090dff535e28d63",
+          "relationship": "affects",
+          "evidence_url": "https://www.kyuden.co.jp/press/2026/h261110-1.html",
+          "evidence_urls": [
+            "https://www.kyuden.co.jp/press/2026/h261110-1.html"
+          ]
+        },
+        {
           "incident_id": "90fd2d303f334214",
           "relationship": "affects",
           "evidence_url": "https://subway.co.jp/news/20261105-01/",
@@ -17915,7 +18292,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-10T12:16:52+00:00"
+      "updated_at": "2026-11-10T13:17:15+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -23201,7 +23578,16 @@
       "potential_records": null,
       "confidence": "high",
       "confidence_score": 60,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "a916e1f197303059",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "東京都 / Tokyo Metropolitan Government",
@@ -23211,7 +23597,7 @@
       "affected_service": "消費者モニターを活用した食品ロス排出実態等調査委託",
       "service_aliases": [],
       "added_at": "2026-10-27T19:09:26+00:00",
-      "updated_at": "2026-10-27T19:09:26+00:00"
+      "updated_at": "2026-11-10T13:17:15+00:00"
     },
     {
       "id": "7425c1918fb8d457",
@@ -29015,14 +29401,24 @@
       "published_at": "2026-10-20T15:00:00+00:00",
       "disclosed_at": "2026-10-20T15:00:00+00:00",
       "organization": "イオン",
-      "incident_type": "unauthorized access",
+      "incident_type": "data leak",
       "incident_categories": [
+        "data leak",
         "unauthorized access"
       ],
       "potential_records": null,
       "confidence": "high",
       "confidence_score": 100,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "4562efa77d71bf05",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "legalagent list",
@@ -29054,7 +29450,7 @@
         }
       ],
       "added_at": "2026-10-21T09:20:20+00:00",
-      "updated_at": "2026-10-27T19:09:26+00:00"
+      "updated_at": "2026-11-10T13:17:15+00:00"
     },
     {
       "id": "b622f37f0e066837",
@@ -33579,6 +33975,14 @@
           ]
         },
         {
+          "incident_id": "4875032745d60b04",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOTF9mUDZXenNpTl9CSnBLVXl5WU55aFA1WGdkbmgzQ0IyN2tlcG85YzJYRzgzYmJTTTh6UXRZSk40LTA3dEpPV1Z5V3BSVmtkNHdheUQ2S0llS2VibEF6cnRfNmNVTFdoTEYzeXNxRk1JeHp3RVpjUFVPdUk5SGdsZ3VRYV9wcGdvYzhXbU4xUU4?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMikAFBVV95cUxOTF9mUDZXenNpTl9CSnBLVXl5WU55aFA1WGdkbmgzQ0IyN2tlcG85YzJYRzgzYmJTTTh6UXRZSk40LTA3dEpPV1Z5V3BSVmtkNHdheUQ2S0llS2VibEF6cnRfNmNVTFdoTEYzeXNxRk1JeHp3RVpjUFVPdUk5SGdsZ3VRYV9wcGdvYzhXbU4xUU4?oc=5"
+          ]
+        },
+        {
           "incident_id": "554a0e00aac931e2",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/2989ebacf661839891be14e80a1d81c1b83b3b78",
@@ -33812,7 +34216,7 @@
         }
       ],
       "added_at": "2026-10-19T13:14:57+00:00",
-      "updated_at": "2026-11-10T00:16:43+00:00"
+      "updated_at": "2026-11-10T13:17:15+00:00"
     },
     {
       "id": "15204b629222c010",
