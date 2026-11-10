@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-10T16:15:26+00:00",
-  "total": 1061,
+  "updated_at": "2026-11-10T20:15:39+00:00",
+  "total": 1066,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-10"
@@ -341,7 +341,7 @@
     },
     {
       "date": "2026-11-05",
-      "count": 55
+      "count": 56
     },
     {
       "date": "2026-11-06",
@@ -357,11 +357,11 @@
     },
     {
       "date": "2026-11-09",
-      "count": 27
+      "count": 28
     },
     {
       "date": "2026-11-10",
-      "count": 18
+      "count": 21
     },
     {
       "date": "2026-11-11",
@@ -455,6 +455,75 @@
       "service_aliases": [],
       "added_at": "2026-11-10T06:15:30+00:00",
       "updated_at": "2026-11-10T12:16:52+00:00"
+    },
+    {
+      "id": "4562efa77d71bf05",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "イオンスマートテクノロジー",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 414,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "14cc468f9a7f9a3d",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/"
+          ]
+        },
+        {
+          "incident_id": "731fe307751f589b",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/"
+          ]
+        },
+        {
+          "incident_id": "810614f7152bce97",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/"
+          ]
+        },
+        {
+          "incident_id": "a2cf60a92a1ad65c",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/"
+          ]
+        },
+        {
+          "incident_id": "cbd1ca63a0dd8e28",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1PSkR3LWFnM1kzcWh4YmVCa0R4U25ENy1LUEx3OFJRZXRkUGZNd1NnTW5reDgtQWUya3RGSUFvVXNZWTZISEpxT2NIcVdJUC0wYUtrb01vZEx5ZEJsSU8xakYzQm44SW1KYlRCY256cTIzTjRnUlJDUElTMEt5N3M?oc=5"
+        }
+      ],
+      "affected_service": "ギフト承りシステム",
+      "service_aliases": [],
+      "added_at": "2026-11-10T13:17:15+00:00",
+      "updated_at": "2026-11-10T20:15:39+00:00"
     },
     {
       "id": "581b234adcc00f32",
@@ -732,69 +801,70 @@
       "updated_at": "2026-11-10T07:15:34+00:00"
     },
     {
-      "id": "4562efa77d71bf05",
+      "id": "3d5e055a118d07cf",
       "published_at": "2026-11-09T15:00:00+00:00",
       "disclosed_at": null,
-      "organization": "イオンスマートテクノロジー",
+      "organization": "十八親和銀行",
       "incident_type": "data leak",
       "incident_categories": [
-        "data leak"
+        "data leak",
+        "unauthorized access"
       ],
-      "potential_records": 414,
+      "potential_records": null,
       "confidence": "medium",
       "confidence_score": 30,
       "related": [
         {
-          "incident_id": "14cc468f9a7f9a3d",
-          "relationship": "affects",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/"
-          ]
-        },
-        {
-          "incident_id": "731fe307751f589b",
-          "relationship": "affects",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/"
-          ]
-        },
-        {
-          "incident_id": "810614f7152bce97",
-          "relationship": "affects",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/"
-          ]
-        },
-        {
-          "incident_id": "a2cf60a92a1ad65c",
+          "incident_id": "27c6fe562fd0baae",
           "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5",
           "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/"
-          ]
-        },
-        {
-          "incident_id": "cbd1ca63a0dd8e28",
-          "relationship": "affects",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/"
+            "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5"
           ]
         }
       ],
       "sources": [
         {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/aeon-summer-gift-414-customer-data-leak/"
+          "name": "熊本日日新聞社",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5"
         }
       ],
-      "affected_service": "ギフト承りシステム",
+      "added_at": "2026-11-10T20:15:39+00:00",
+      "updated_at": "2026-11-10T20:15:39+00:00"
+    },
+    {
+      "id": "490a56648536605f",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "志摩市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "3d4ac3f77a219dbf",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBheU9Kemhuc3E2d2xwWlZWVGtweThuZUpWMHJaV3RRNy1UVGhlTi0xMXRtRWUtMGwwOUljUDRlOUdwNHBMMDViTUg0RkJUS0lsWWJSTDQtcEZQdlI1ZlNJVjNRQWZNTVp3QWhMT2Q3YUlXbU5OYnVwRVNZUWo?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMifEFVX3lxTFBheU9Kemhuc3E2d2xwWlZWVGtweThuZUpWMHJaV3RRNy1UVGhlTi0xMXRtRWUtMGwwOUljUDRlOUdwNHBMMDViTUg0RkJUS0lsWWJSTDQtcEZQdlI1ZlNJVjNRQWZNTVp3QWhMT2Q3YUlXbU5OYnVwRVNZUWo?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "志摩市",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBheU9Kemhuc3E2d2xwWlZWVGtweThuZUpWMHJaV3RRNy1UVGhlTi0xMXRtRWUtMGwwOUljUDRlOUdwNHBMMDViTUg0RkJUS0lsWWJSTDQtcEZQdlI1ZlNJVjNRQWZNTVp3QWhMT2Q3YUlXbU5OYnVwRVNZUWo?oc=5"
+        }
+      ],
+      "affected_service": "交付予約・管理システム",
       "service_aliases": [],
-      "added_at": "2026-11-10T13:17:15+00:00",
-      "updated_at": "2026-11-10T13:17:15+00:00"
+      "added_at": "2026-11-10T20:15:39+00:00",
+      "updated_at": "2026-11-10T20:15:39+00:00"
     },
     {
       "id": "731fe307751f589b",
@@ -997,6 +1067,38 @@
       "service_aliases": [],
       "added_at": "2026-11-10T13:17:15+00:00",
       "updated_at": "2026-11-10T13:17:15+00:00"
+    },
+    {
+      "id": "e3edd2e6f29e759d",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "熊本銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "27c6fe562fd0baae",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "熊本日日新聞社",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5"
+        }
+      ],
+      "added_at": "2026-11-10T20:15:39+00:00",
+      "updated_at": "2026-11-10T20:15:39+00:00"
     },
     {
       "id": "19d5816230daca6f",
@@ -1693,6 +1795,37 @@
       "service_aliases": [],
       "added_at": "2026-11-09T20:16:13+00:00",
       "updated_at": "2026-11-09T20:16:13+00:00"
+    },
+    {
+      "id": "991774c2e13dc84e",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": "2026-11-08T15:00:00+00:00",
+      "organization": "タイ航空",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 60000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "0cd8a1c184390c84",
+          "relationship": "affected_by",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/-/3076253?display=1",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/-/3076253?display=1"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3076253?display=1"
+        }
+      ],
+      "added_at": "2026-11-10T20:15:39+00:00",
+      "updated_at": "2026-11-10T20:15:39+00:00"
     },
     {
       "id": "d25e97a3448ca2da",
@@ -5138,6 +5271,39 @@
       "updated_at": "2026-11-08T01:16:16+00:00"
     },
     {
+      "id": "9a1e2bc21268aad2",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ソフト９９コーポレーション",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 136968,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261110571360.pdf"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261110de73798"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/soft99-online-shop-136968-file-upload-unauthorized-access/"
+        }
+      ],
+      "affected_service": "ソフト99公式オンラインショップ",
+      "service_aliases": [],
+      "added_at": "2026-11-10T12:16:52+00:00",
+      "updated_at": "2026-11-10T20:15:39+00:00"
+    },
+    {
       "id": "32623d2c5b058c4e",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": "2026-11-04T15:00:00+00:00",
@@ -5577,6 +5743,58 @@
       "updated_at": "2026-11-07T02:16:11+00:00"
     },
     {
+      "id": "77e208ace41d8629",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "福岡銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "27c6fe562fd0baae",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5"
+          ]
+        },
+        {
+          "incident_id": "862f0a5454308701",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.fukuokabank.co.jp/announcement/important/y2026/1105.html",
+          "evidence_urls": [
+            "https://www.fukuokabank.co.jp/announcement/important/y2026/1105.html"
+          ]
+        },
+        {
+          "incident_id": "a8b6d5a8016e0283",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.fukuokabank.co.jp/announcement/important/y2026/1105.html",
+          "evidence_urls": [
+            "https://www.fukuokabank.co.jp/announcement/important/y2026/1105.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "福岡銀行 / Bank of Fukuoka",
+          "url": "https://www.fukuokabank.co.jp/announcement/important/y2026/1105.html"
+        },
+        {
+          "name": "熊本日日新聞社",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5"
+        }
+      ],
+      "added_at": "2026-11-05T14:17:23+00:00",
+      "updated_at": "2026-11-10T20:15:39+00:00"
+    },
+    {
       "id": "8335db2347126322",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": null,
@@ -5649,35 +5867,6 @@
       "service_aliases": [],
       "added_at": "2026-11-05T21:15:39+00:00",
       "updated_at": "2026-11-06T03:15:43+00:00"
-    },
-    {
-      "id": "9a1e2bc21268aad2",
-      "published_at": "2026-11-04T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ソフト９９コーポレーション",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 136968,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [],
-      "sources": [
-        {
-          "name": "日本取引所グループ TDnet / JPX TDnet",
-          "url": "https://www.release.tdnet.info/inbs/140120261110571360.pdf"
-        },
-        {
-          "name": "NHKニュース",
-          "url": "https://news.web.nhk/newsweb/na/nd-20261110de73798"
-        }
-      ],
-      "affected_service": "ソフト99公式オンラインショップ",
-      "service_aliases": [],
-      "added_at": "2026-11-10T12:16:52+00:00",
-      "updated_at": "2026-11-10T14:16:14+00:00"
     },
     {
       "id": "ddc337c648916610",
@@ -6317,46 +6506,6 @@
       "updated_at": "2026-11-05T07:17:31+00:00"
     },
     {
-      "id": "77e208ace41d8629",
-      "published_at": "2026-11-04T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "福岡銀行",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "862f0a5454308701",
-          "relationship": "same_organization",
-          "evidence_url": "https://www.fukuokabank.co.jp/announcement/important/y2026/1105.html",
-          "evidence_urls": [
-            "https://www.fukuokabank.co.jp/announcement/important/y2026/1105.html"
-          ]
-        },
-        {
-          "incident_id": "a8b6d5a8016e0283",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.fukuokabank.co.jp/announcement/important/y2026/1105.html",
-          "evidence_urls": [
-            "https://www.fukuokabank.co.jp/announcement/important/y2026/1105.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "福岡銀行 / Bank of Fukuoka",
-          "url": "https://www.fukuokabank.co.jp/announcement/important/y2026/1105.html"
-        }
-      ],
-      "added_at": "2026-11-05T14:17:23+00:00",
-      "updated_at": "2026-11-05T14:17:23+00:00"
-    },
-    {
       "id": "92d3200bcdad1ce3",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": null,
@@ -6752,6 +6901,31 @@
       "service_aliases": [],
       "added_at": "2026-11-07T01:15:32+00:00",
       "updated_at": "2026-11-07T01:15:32+00:00"
+    },
+    {
+      "id": "49c50de559239646",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": "2026-11-09T15:00:00+00:00",
+      "organization": "ビックカメラ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 133039,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNejJyZERMeXdpa3ZXUDIzaGtkQUExY2tfbUEyQlU2R1BjU3pmVjNwQkNmdE1ZZ3dPa2p4X0hHbTk5QmgyNGMwaXUxMGhGX2NuSzBWRjZNM3FFZWt3Tjl6MVIxZzN6V2ZiMFlFanlaRlUwazZaZTlleUtqdnRabC1WTEo2NndnMmJNNG4za3ptcUNvaG9INUNLWTdQSTJoNkltNWRWbWlR?oc=5"
+        }
+      ],
+      "affected_service": "法人顧客向け問い合わせフォーム",
+      "service_aliases": [],
+      "added_at": "2026-11-10T20:15:39+00:00",
+      "updated_at": "2026-11-10T20:15:39+00:00"
     },
     {
       "id": "51fc582f23003b4c",
@@ -10480,11 +10654,27 @@
           ]
         },
         {
+          "incident_id": "3d5e055a118d07cf",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5"
+          ]
+        },
+        {
           "incident_id": "581973ec197708b9",
           "relationship": "affects",
           "evidence_url": "https://newsdig.tbs.co.jp/articles/-/3065710?display=1",
           "evidence_urls": [
             "https://newsdig.tbs.co.jp/articles/-/3065710?display=1"
+          ]
+        },
+        {
+          "incident_id": "77e208ace41d8629",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5"
           ]
         },
         {
@@ -10518,6 +10708,14 @@
           "evidence_urls": [
             "https://www.resona-gr.co.jp/holdings/news/newsrelease_c/2026/files/20261106_1k.pdf"
           ]
+        },
+        {
+          "incident_id": "e3edd2e6f29e759d",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5"
+          ]
         }
       ],
       "sources": [
@@ -10549,7 +10747,7 @@
       "affected_service": "保証業務に使っているシステム",
       "service_aliases": [],
       "added_at": "2026-11-05T11:16:39+00:00",
-      "updated_at": "2026-11-09T11:04:22+00:00"
+      "updated_at": "2026-11-10T20:15:39+00:00"
     },
     {
       "id": "3976a3e35b3d87f6",
@@ -18834,6 +19032,14 @@
           ]
         },
         {
+          "incident_id": "490a56648536605f",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBheU9Kemhuc3E2d2xwWlZWVGtweThuZUpWMHJaV3RRNy1UVGhlTi0xMXRtRWUtMGwwOUljUDRlOUdwNHBMMDViTUg0RkJUS0lsWWJSTDQtcEZQdlI1ZlNJVjNRQWZNTVp3QWhMT2Q3YUlXbU5OYnVwRVNZUWo?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMifEFVX3lxTFBheU9Kemhuc3E2d2xwWlZWVGtweThuZUpWMHJaV3RRNy1UVGhlTi0xMXRtRWUtMGwwOUljUDRlOUdwNHBMMDViTUg0RkJUS0lsWWJSTDQtcEZQdlI1ZlNJVjNRQWZNTVp3QWhMT2Q3YUlXbU5OYnVwRVNZUWo?oc=5"
+          ]
+        },
+        {
           "incident_id": "4fafc038d6f3b252",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/a8f37147c1bfb70dac99129bf21da63f80ba45b6",
@@ -18929,7 +19135,7 @@
       "affected_service": "アララメッセージ",
       "service_aliases": [],
       "added_at": "2026-11-03T01:15:51+00:00",
-      "updated_at": "2026-11-06T11:16:38+00:00"
+      "updated_at": "2026-11-10T20:15:39+00:00"
     },
     {
       "id": "b033203af5359691",
@@ -19506,6 +19712,14 @@
           ]
         },
         {
+          "incident_id": "991774c2e13dc84e",
+          "relationship": "affects",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/-/3076253?display=1",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/-/3076253?display=1"
+          ]
+        },
+        {
           "incident_id": "9e832527d869fc7c",
           "relationship": "affects",
           "evidence_url": "https://www.traicy.com/posts/20261110387552/",
@@ -19533,7 +19747,7 @@
         }
       ],
       "added_at": "2026-10-28T13:16:27+00:00",
-      "updated_at": "2026-11-10T05:16:43+00:00"
+      "updated_at": "2026-11-10T20:15:39+00:00"
     },
     {
       "id": "35872e4d31a72a51",
@@ -32719,10 +32933,14 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/01a54342c71fd3e403712ca64c0e26d0318f5c54"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/c0b71f6cefdc80333b139224f4af9ed61ca2f965"
         }
       ],
       "added_at": "2026-10-20T23:46:03+00:00",
-      "updated_at": "2026-10-21T19:59:31+00:00"
+      "updated_at": "2026-11-10T20:15:39+00:00"
     },
     {
       "id": "386e8293d8ae93e9",
