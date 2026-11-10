@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-10T07:15:34+00:00",
+  "updated_at": "2026-11-10T08:16:04+00:00",
   "total": 1042,
   "date_range": {
     "start": "2025-10-16",
@@ -746,6 +746,10 @@
       "related": [],
       "sources": [
         {
+          "name": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2155064.html"
+        },
+        {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/7ce11666460487f5c4e973bd86b98b0b13e7730f"
         },
@@ -773,7 +777,7 @@
       "affected_service": "さっぽろえきバスナビ",
       "service_aliases": [],
       "added_at": "2026-11-09T09:16:47+00:00",
-      "updated_at": "2026-11-09T11:04:22+00:00"
+      "updated_at": "2026-11-10T08:16:04+00:00"
     },
     {
       "id": "d034681f0ee00efd",
@@ -2467,6 +2471,10 @@
           "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261110571388/"
         },
         {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261110571388.pdf"
+        },
+        {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/edion_ec_server_log_unauthorized_access_9554/"
         },
@@ -2482,7 +2490,7 @@
       "affected_service": "EC サイト",
       "service_aliases": [],
       "added_at": "2026-11-06T13:16:53+00:00",
-      "updated_at": "2026-11-10T06:15:30+00:00"
+      "updated_at": "2026-11-10T08:16:04+00:00"
     },
     {
       "id": "17c81b2eb2f5cc95",
@@ -4449,6 +4457,50 @@
       "updated_at": "2026-11-09T01:16:50+00:00"
     },
     {
+      "id": "64d1bee3ebeecc43",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "学研ホールディングス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/gakken-group-arara-793060-data-leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/gakken-group-arara-793060-data-leak/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/gakken-group-arara-793060-data-leak/"
+        },
+        {
+          "name": "株式会社学研ホールディングス",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5YRkFQVzE0SkJScTUza3drTzBRbDVyaWUtS3RkQ1hjOWpPWFdPdlcyeHlwdVVQRFRRemFUb2hFZV94VVdLUElkanFSWXd1RTVNaF9wQjVXZnhOeUJTdENpV05QVGdRdw?oc=5"
+        },
+        {
+          "name": "月刊私塾界",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5xOV9yUXFLelNxZktkZkJzRmZYQlkyRGZ2N2RYQ0tKeWE2RHQ4ZW9yY3pqSTdNeFo2ektoZlpaX2hhQW9sYkk5YTBocHJFcmN0S0E?oc=5"
+        },
+        {
+          "name": "株式会社学研ホールディングス",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1VODAxS01maHN2OUlERmlMMzV6T0FBVWZFRnJMQkZRT0dpc3p0SXRIMXk2ZXRLUDdqTDFSbDJxWW1COWc1VnViQlpJYU12QmFma3BFR0JhMEgyQm9FTGdDNGJtRGdBZw?oc=5"
+        }
+      ],
+      "added_at": "2026-11-05T15:15:51+00:00",
+      "updated_at": "2026-11-10T08:16:04+00:00"
+    },
+    {
       "id": "89daed31e3dba05b",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": null,
@@ -6081,37 +6133,6 @@
       "service_aliases": [],
       "added_at": "2026-11-07T01:15:32+00:00",
       "updated_at": "2026-11-07T01:15:32+00:00"
-    },
-    {
-      "id": "64d1bee3ebeecc43",
-      "published_at": "2026-11-04T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "学研ホールディングス",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 45,
-      "related": [],
-      "sources": [
-        {
-          "name": "株式会社学研ホールディングス",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5YRkFQVzE0SkJScTUza3drTzBRbDVyaWUtS3RkQ1hjOWpPWFdPdlcyeHlwdVVQRFRRemFUb2hFZV94VVdLUElkanFSWXd1RTVNaF9wQjVXZnhOeUJTdENpV05QVGdRdw?oc=5"
-        },
-        {
-          "name": "月刊私塾界",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5xOV9yUXFLelNxZktkZkJzRmZYQlkyRGZ2N2RYQ0tKeWE2RHQ4ZW9yY3pqSTdNeFo2ektoZlpaX2hhQW9sYkk5YTBocHJFcmN0S0E?oc=5"
-        },
-        {
-          "name": "株式会社学研ホールディングス",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1VODAxS01maHN2OUlERmlMMzV6T0FBVWZFRnJMQkZRT0dpc3p0SXRIMXk2ZXRLUDdqTDFSbDJxWW1COWc1VnViQlpJYU12QmFma3BFR0JhMEgyQm9FTGdDNGJtRGdBZw?oc=5"
-        }
-      ],
-      "added_at": "2026-11-05T15:15:51+00:00",
-      "updated_at": "2026-11-09T11:39:07+00:00"
     },
     {
       "id": "51fc582f23003b4c",
@@ -16892,6 +16913,14 @@
           ]
         },
         {
+          "incident_id": "64d1bee3ebeecc43",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/gakken-group-arara-793060-data-leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/gakken-group-arara-793060-data-leak/"
+          ]
+        },
+        {
           "incident_id": "69e127ff7e87f715",
           "relationship": "affects",
           "evidence_url": "https://www.kinkos.co.jp/corporate/archives/news/20261109/",
@@ -17642,7 +17671,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-10T06:15:30+00:00"
+      "updated_at": "2026-11-10T08:16:04+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
