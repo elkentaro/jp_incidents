@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-10T13:17:15+00:00",
-  "total": 1060,
+  "updated_at": "2026-11-10T14:16:14+00:00",
+  "total": 1061,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-10"
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-11-10",
-      "count": 17
+      "count": 18
     }
   ],
   "incidents": [
@@ -403,12 +403,20 @@
         {
           "name": "NHKニュース",
           "url": "https://news.web.nhk/newsweb/na/nd-20261110de73779"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVCB3H0ZVCBULFA021M.html?iref=comtop_National_01"
+        },
+        {
+          "name": "ビジネス+IT",
+          "url": "https://www.sbbit.jp/article/cont1/188263"
         }
       ],
       "affected_service": "簿記などのインターネット試験",
       "service_aliases": [],
       "added_at": "2026-11-10T12:16:52+00:00",
-      "updated_at": "2026-11-10T13:17:15+00:00"
+      "updated_at": "2026-11-10T14:16:14+00:00"
     },
     {
       "id": "5d9388db64d7c7fe",
@@ -591,6 +599,31 @@
       "service_aliases": [],
       "added_at": "2026-11-10T07:15:34+00:00",
       "updated_at": "2026-11-10T07:15:34+00:00"
+    },
+    {
+      "id": "a4bddfbd43d68938",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "富山県立大学",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 3000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/a253898167f6e633f0b88c26f65267bd2663c9ae"
+        }
+      ],
+      "affected_service": "安否確認のため使用している外部のメール配信システム",
+      "service_aliases": [],
+      "added_at": "2026-11-10T14:16:14+00:00",
+      "updated_at": "2026-11-10T14:16:14+00:00"
     },
     {
       "id": "a916e1f197303059",
@@ -5614,6 +5647,35 @@
       "updated_at": "2026-11-06T03:15:43+00:00"
     },
     {
+      "id": "9a1e2bc21268aad2",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ソフト９９コーポレーション",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 136968,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261110571360.pdf"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261110de73798"
+        }
+      ],
+      "affected_service": "ソフト99公式オンラインショップ",
+      "service_aliases": [],
+      "added_at": "2026-11-10T12:16:52+00:00",
+      "updated_at": "2026-11-10T14:16:14+00:00"
+    },
+    {
       "id": "ddc337c648916610",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": null,
@@ -6323,31 +6385,6 @@
       "service_aliases": [],
       "added_at": "2026-11-05T21:15:39+00:00",
       "updated_at": "2026-11-05T21:15:39+00:00"
-    },
-    {
-      "id": "9a1e2bc21268aad2",
-      "published_at": "2026-11-04T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ソフト９９コーポレーション",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 136968,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [],
-      "sources": [
-        {
-          "name": "日本取引所グループ TDnet / JPX TDnet",
-          "url": "https://www.release.tdnet.info/inbs/140120261110571360.pdf"
-        }
-      ],
-      "affected_service": "ソフト99公式オンラインショップ",
-      "service_aliases": [],
-      "added_at": "2026-11-10T12:16:52+00:00",
-      "updated_at": "2026-11-10T12:16:52+00:00"
     },
     {
       "id": "a0d8c4de6432447d",
@@ -45832,12 +45869,16 @@
         {
           "name": "ABEMA TIMES",
           "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBQUWFMOEphc1dBREZIWHNQOHU2bEpwVm9vRVI4S2RWeXFqMXRHSlcxSWN6Q3I3NUxRZThTS2xpMkg4dFk5aWFxZG1XRm40NXpwdHR6Mg?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/d5693c2eff55a3f2e4f856cde033a4801d919f88"
         }
       ],
       "affected_service": "MyWaseda",
       "service_aliases": [],
       "added_at": "2026-11-09T07:08:09+00:00",
-      "updated_at": "2026-11-09T23:15:27+00:00"
+      "updated_at": "2026-11-10T14:16:14+00:00"
     },
     {
       "id": "771d425a095483bb",
