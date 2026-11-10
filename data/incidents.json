@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-10T05:16:43+00:00",
-  "total": 1036,
+  "updated_at": "2026-11-10T06:15:30+00:00",
+  "total": 1039,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-10"
@@ -361,11 +361,11 @@
     },
     {
       "date": "2026-11-09",
-      "count": 22
+      "count": 23
     },
     {
       "date": "2026-11-10",
-      "count": 2
+      "count": 4
     }
   ],
   "incidents": [
@@ -399,6 +399,80 @@
       ],
       "added_at": "2026-11-10T02:16:08+00:00",
       "updated_at": "2026-11-10T02:16:08+00:00"
+    },
+    {
+      "id": "5d9388db64d7c7fe",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ティーペック株式会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 234753,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "7793461f2c05830c",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWDd4QVFycnE5SER3TzgzWG9MMG4wbWRNaGxiZ1ozQWtEdklGcExuajdSU2ZnSVh1OHl4Y1NfVWtOZ1dyOEs5R0MxUTQ4eG5ZRTRaV2lJSmRuRk1wQVg2N3I4UF9tSXhFM2hUNDBEbW1CUzRfOU5LS1pxOWJITzJMOFRrTkt1VkNRQ0R5NUgxbUxvTENSWUtTUDZtWGZFS1Fvb0JUMTZRX1VSMTJnVlE?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWDd4QVFycnE5SER3TzgzWG9MMG4wbWRNaGxiZ1ozQWtEdklGcExuajdSU2ZnSVh1OHl4Y1NfVWtOZ1dyOEs5R0MxUTQ4eG5ZRTRaV2lJSmRuRk1wQVg2N3I4UF9tSXhFM2hUNDBEbW1CUzRfOU5LS1pxOWJITzJMOFRrTkt1VkNRQ0R5NUgxbUxvTENSWUtTUDZtWGZFS1Fvb0JUMTZRX1VSMTJnVlE?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWDd4QVFycnE5SER3TzgzWG9MMG4wbWRNaGxiZ1ozQWtEdklGcExuajdSU2ZnSVh1OHl4Y1NfVWtOZ1dyOEs5R0MxUTQ4eG5ZRTRaV2lJSmRuRk1wQVg2N3I4UF9tSXhFM2hUNDBEbW1CUzRfOU5LS1pxOWJITzJMOFRrTkt1VkNRQ0R5NUgxbUxvTENSWUtTUDZtWGZFS1Fvb0JUMTZRX1VSMTJnVlE?oc=5"
+        }
+      ],
+      "affected_service": "plus Baton",
+      "service_aliases": [],
+      "added_at": "2026-11-10T06:15:30+00:00",
+      "updated_at": "2026-11-10T06:15:30+00:00"
+    },
+    {
+      "id": "7793461f2c05830c",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社データX",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "5d9388db64d7c7fe",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWDd4QVFycnE5SER3TzgzWG9MMG4wbWRNaGxiZ1ozQWtEdklGcExuajdSU2ZnSVh1OHl4Y1NfVWtOZ1dyOEs5R0MxUTQ4eG5ZRTRaV2lJSmRuRk1wQVg2N3I4UF9tSXhFM2hUNDBEbW1CUzRfOU5LS1pxOWJITzJMOFRrTkt1VkNRQ0R5NUgxbUxvTENSWUtTUDZtWGZFS1Fvb0JUMTZRX1VSMTJnVlE?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWDd4QVFycnE5SER3TzgzWG9MMG4wbWRNaGxiZ1ozQWtEdklGcExuajdSU2ZnSVh1OHl4Y1NfVWtOZ1dyOEs5R0MxUTQ4eG5ZRTRaV2lJSmRuRk1wQVg2N3I4UF9tSXhFM2hUNDBEbW1CUzRfOU5LS1pxOWJITzJMOFRrTkt1VkNRQ0R5NUgxbUxvTENSWUtTUDZtWGZFS1Fvb0JUMTZRX1VSMTJnVlE?oc=5"
+          ]
+        },
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWDd4QVFycnE5SER3TzgzWG9MMG4wbWRNaGxiZ1ozQWtEdklGcExuajdSU2ZnSVh1OHl4Y1NfVWtOZ1dyOEs5R0MxUTQ4eG5ZRTRaV2lJSmRuRk1wQVg2N3I4UF9tSXhFM2hUNDBEbW1CUzRfOU5LS1pxOWJITzJMOFRrTkt1VkNRQ0R5NUgxbUxvTENSWUtTUDZtWGZFS1Fvb0JUMTZRX1VSMTJnVlE?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWDd4QVFycnE5SER3TzgzWG9MMG4wbWRNaGxiZ1ozQWtEdklGcExuajdSU2ZnSVh1OHl4Y1NfVWtOZ1dyOEs5R0MxUTQ4eG5ZRTRaV2lJSmRuRk1wQVg2N3I4UF9tSXhFM2hUNDBEbW1CUzRfOU5LS1pxOWJITzJMOFRrTkt1VkNRQ0R5NUgxbUxvTENSWUtTUDZtWGZFS1Fvb0JUMTZRX1VSMTJnVlE?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "news.google.com",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWDd4QVFycnE5SER3TzgzWG9MMG4wbWRNaGxiZ1ozQWtEdklGcExuajdSU2ZnSVh1OHl4Y1NfVWtOZ1dyOEs5R0MxUTQ4eG5ZRTRaV2lJSmRuRk1wQVg2N3I4UF9tSXhFM2hUNDBEbW1CUzRfOU5LS1pxOWJITzJMOFRrTkt1VkNRQ0R5NUgxbUxvTENSWUtTUDZtWGZFS1Fvb0JUMTZRX1VSMTJnVlE?oc=5"
+        }
+      ],
+      "added_at": "2026-11-10T06:15:30+00:00",
+      "updated_at": "2026-11-10T06:15:30+00:00"
     },
     {
       "id": "9e832527d869fc7c",
@@ -816,6 +890,28 @@
       "service_aliases": [],
       "added_at": "2026-11-09T08:16:45+00:00",
       "updated_at": "2026-11-09T08:16:45+00:00"
+    },
+    {
+      "id": "798fe4d341eeff8b",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "千代田区",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 109,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "千代田区 / Chiyoda",
+          "url": "https://www.city.chiyoda.lg.jp/koho/kuse/koho/pressrelease/r8/r811/20261110-2.html"
+        }
+      ],
+      "added_at": "2026-11-10T06:15:30+00:00",
+      "updated_at": "2026-11-10T06:15:30+00:00"
     },
     {
       "id": "ac478163eca04533",
@@ -2274,6 +2370,10 @@
           "url": "https://www.edion.co.jp/system/files/news-release/pdf/ja/2026-11/20261109_pr_1_1.pdf"
         },
         {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261110571388/"
+        },
+        {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/edion_ec_server_log_unauthorized_access_9554/"
         },
@@ -2289,7 +2389,7 @@
       "affected_service": "EC サイト",
       "service_aliases": [],
       "added_at": "2026-11-06T13:16:53+00:00",
-      "updated_at": "2026-11-10T05:16:43+00:00"
+      "updated_at": "2026-11-10T06:15:30+00:00"
     },
     {
       "id": "17c81b2eb2f5cc95",
@@ -16809,6 +16909,14 @@
           ]
         },
         {
+          "incident_id": "7793461f2c05830c",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWDd4QVFycnE5SER3TzgzWG9MMG4wbWRNaGxiZ1ozQWtEdklGcExuajdSU2ZnSVh1OHl4Y1NfVWtOZ1dyOEs5R0MxUTQ4eG5ZRTRaV2lJSmRuRk1wQVg2N3I4UF9tSXhFM2hUNDBEbW1CUzRfOU5LS1pxOWJITzJMOFRrTkt1VkNRQ0R5NUgxbUxvTENSWUtTUDZtWGZFS1Fvb0JUMTZRX1VSMTJnVlE?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWDd4QVFycnE5SER3TzgzWG9MMG4wbWRNaGxiZ1ozQWtEdklGcExuajdSU2ZnSVh1OHl4Y1NfVWtOZ1dyOEs5R0MxUTQ4eG5ZRTRaV2lJSmRuRk1wQVg2N3I4UF9tSXhFM2hUNDBEbW1CUzRfOU5LS1pxOWJITzJMOFRrTkt1VkNRQ0R5NUgxbUxvTENSWUtTUDZtWGZFS1Fvb0JUMTZRX1VSMTJnVlE?oc=5"
+          ]
+        },
+        {
           "incident_id": "7b94dd491fc09b58",
           "relationship": "affects",
           "evidence_url": "https://ekitan.co.jp/corp/news/20261103-01/",
@@ -17441,7 +17549,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-10T02:16:08+00:00"
+      "updated_at": "2026-11-10T06:15:30+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -19090,6 +19198,50 @@
       "updated_at": "2026-11-09T07:08:09+00:00"
     },
     {
+      "id": "8c09a77637fff3f8",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ラフール",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "1ff5db5f85b18422",
+          "relationship": "affects",
+          "evidence_url": "https://www.release.tdnet.info/inbs/140120261104564889.pdf",
+          "evidence_urls": [
+            "https://www.release.tdnet.info/inbs/140120261104564889.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://corp.lafool.co.jp/news/information/172/"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261104564889.pdf"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/7216a60f86a038c522b2ffcc77228944e70d275f"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2611/10/2000003052/"
+        }
+      ],
+      "added_at": "2026-11-05T01:16:21+00:00",
+      "updated_at": "2026-11-10T06:15:30+00:00"
+    },
+    {
       "id": "c509397cdd014ce0",
       "published_at": "2026-10-26T15:00:00+00:00",
       "disclosed_at": null,
@@ -19703,46 +19855,6 @@
       "service_aliases": [],
       "added_at": "2026-10-28T15:15:17+00:00",
       "updated_at": "2026-11-10T02:16:08+00:00"
-    },
-    {
-      "id": "8c09a77637fff3f8",
-      "published_at": "2026-10-26T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ラフール",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [
-        {
-          "incident_id": "1ff5db5f85b18422",
-          "relationship": "affects",
-          "evidence_url": "https://www.release.tdnet.info/inbs/140120261104564889.pdf",
-          "evidence_urls": [
-            "https://www.release.tdnet.info/inbs/140120261104564889.pdf"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://corp.lafool.co.jp/news/information/172/"
-        },
-        {
-          "name": "日本取引所グループ TDnet / JPX TDnet",
-          "url": "https://www.release.tdnet.info/inbs/140120261104564889.pdf"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/7216a60f86a038c522b2ffcc77228944e70d275f"
-        }
-      ],
-      "added_at": "2026-11-05T01:16:21+00:00",
-      "updated_at": "2026-11-10T05:16:43+00:00"
     },
     {
       "id": "c89620912f4fe178",
