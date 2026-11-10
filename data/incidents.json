@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-10T00:16:43+00:00",
-  "total": 1032,
+  "updated_at": "2026-11-10T01:16:02+00:00",
+  "total": 1033,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-09"
@@ -349,7 +349,7 @@
     },
     {
       "date": "2026-11-06",
-      "count": 49
+      "count": 50
     },
     {
       "date": "2026-11-07",
@@ -393,6 +393,10 @@
       ],
       "sources": [
         {
+          "name": "satimo list",
+          "url": "https://www.sumitomolife.co.jp/news/detail/newsrelease_261109.html"
+        },
+        {
           "name": "NTTデータ / NTT DATA",
           "url": "https://www.nttdata.com/global/ja/news/release/2026/110900/"
         },
@@ -420,7 +424,7 @@
       "affected_service": "住友生命Vitality体験版・企業型、Vitalityスマート(福利厚生タイプ含む)の申込みに係るサービス",
       "service_aliases": [],
       "added_at": "2026-11-09T08:16:45+00:00",
-      "updated_at": "2026-11-09T11:39:07+00:00"
+      "updated_at": "2026-11-10T01:16:02+00:00"
     },
     {
       "id": "73760e3f9e89e045",
@@ -1413,6 +1417,33 @@
       "updated_at": "2026-11-09T01:16:50+00:00"
     },
     {
+      "id": "f4b56629909c3d7b",
+      "published_at": "2026-11-06T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "よーじや",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 134344,
+      "confidence": "medium",
+      "confidence_score": 45,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.yojiya.co.jp/261109-01"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/yojiya_member_api_unauthorized_access_131557_confirmed_20261109/"
+        }
+      ],
+      "added_at": "2026-11-09T20:16:13+00:00",
+      "updated_at": "2026-11-10T01:16:02+00:00"
+    },
+    {
       "id": "70af91eead1ee810",
       "published_at": "2026-11-06T15:00:00+00:00",
       "disclosed_at": null,
@@ -1458,29 +1489,6 @@
       "service_aliases": [],
       "added_at": "2026-11-09T07:08:09+00:00",
       "updated_at": "2026-11-09T07:08:09+00:00"
-    },
-    {
-      "id": "f4b56629909c3d7b",
-      "published_at": "2026-11-06T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "よーじや",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 134344,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/yojiya_member_api_unauthorized_access_131557_confirmed_20261109/"
-        }
-      ],
-      "added_at": "2026-11-09T20:16:13+00:00",
-      "updated_at": "2026-11-09T20:16:13+00:00"
     },
     {
       "id": "03874becece52044",
@@ -3354,6 +3362,31 @@
       ],
       "added_at": "2026-11-08T15:16:16+00:00",
       "updated_at": "2026-11-08T15:16:16+00:00"
+    },
+    {
+      "id": "7e523b34730f50bc",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": "2026-11-08T15:00:00+00:00",
+      "organization": "オープンドア",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 381926,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.opendoor.co.jp/shared/pdf/20261109_info.pdf"
+        }
+      ],
+      "affected_service": "トラベルコ メールマガジン",
+      "service_aliases": [],
+      "added_at": "2026-11-10T01:16:02+00:00",
+      "updated_at": "2026-11-10T01:16:02+00:00"
     },
     {
       "id": "7e9f2251a4fe0a24",
@@ -5899,6 +5932,43 @@
       "updated_at": "2026-11-09T01:16:50+00:00"
     },
     {
+      "id": "21f29b333963a3ce",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "シェアフル株式会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 7500000,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://sharefull.com/information/9480/"
+        },
+        {
+          "name": "PR TIMES",
+          "url": "https://prtimes.jp/main/html/rd/p/000000271.000124219.html"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/sharefull-personal-corporate-data-unauthorized-access/"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261109de73137"
+        }
+      ],
+      "affected_service": "シェアフル",
+      "service_aliases": [],
+      "added_at": "2026-11-09T08:16:45+00:00",
+      "updated_at": "2026-11-10T01:16:02+00:00"
+    },
+    {
       "id": "ae87ad473c1decd3",
       "published_at": "2026-11-03T15:00:00+00:00",
       "disclosed_at": null,
@@ -6160,39 +6230,6 @@
       ],
       "added_at": "2026-11-04T01:16:30+00:00",
       "updated_at": "2026-11-04T21:15:31+00:00"
-    },
-    {
-      "id": "21f29b333963a3ce",
-      "published_at": "2026-11-03T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "シェアフル株式会社",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 7500000,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [],
-      "sources": [
-        {
-          "name": "PR TIMES",
-          "url": "https://prtimes.jp/main/html/rd/p/000000271.000124219.html"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/sharefull-personal-corporate-data-unauthorized-access/"
-        },
-        {
-          "name": "NHKニュース",
-          "url": "https://news.web.nhk/newsweb/na/nd-20261109de73137"
-        }
-      ],
-      "affected_service": "シェアフル",
-      "service_aliases": [],
-      "added_at": "2026-11-09T08:16:45+00:00",
-      "updated_at": "2026-11-09T13:16:31+00:00"
     },
     {
       "id": "5aad8865a350a69d",
@@ -17847,6 +17884,44 @@
       "updated_at": "2026-11-06T11:16:38+00:00"
     },
     {
+      "id": "b033203af5359691",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "日本デジタル研究所",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 28475,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/jdl_arara_28475_customer_information_possible_leak_20261109/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/jdl_arara_28475_customer_information_possible_leak_20261109/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.jdl.co.jp/info/security-info202611-2.html"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/jdl_arara_28475_customer_information_possible_leak_20261109/"
+        }
+      ],
+      "affected_service": "アララメッセージ",
+      "service_aliases": [],
+      "added_at": "2026-11-09T10:16:41+00:00",
+      "updated_at": "2026-11-10T01:16:02+00:00"
+    },
+    {
       "id": "dc15595102d7025a",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": null,
@@ -18257,40 +18332,6 @@
       ],
       "added_at": "2026-10-28T11:16:00+00:00",
       "updated_at": "2026-10-28T11:16:00+00:00"
-    },
-    {
-      "id": "b033203af5359691",
-      "published_at": "2026-10-27T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "日本デジタル研究所",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 28475,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/jdl_arara_28475_customer_information_possible_leak_20261109/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/jdl_arara_28475_customer_information_possible_leak_20261109/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/jdl_arara_28475_customer_information_possible_leak_20261109/"
-        }
-      ],
-      "affected_service": "アララメッセージ",
-      "service_aliases": [],
-      "added_at": "2026-11-09T10:16:41+00:00",
-      "updated_at": "2026-11-09T10:16:41+00:00"
     },
     {
       "id": "bcd0b994f1f4708b",
