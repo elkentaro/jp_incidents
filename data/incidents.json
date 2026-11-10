@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-10T20:15:39+00:00",
+  "updated_at": "2026-11-10T21:15:31+00:00",
   "total": 1066,
   "date_range": {
     "start": "2025-10-16",
@@ -584,6 +584,50 @@
       "updated_at": "2026-11-10T13:17:15+00:00"
     },
     {
+      "id": "a916e1f197303059",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東京都",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 475,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "19d5816230daca6f",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003"
+          ]
+        },
+        {
+          "incident_id": "2d9120c700879491",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003"
+        },
+        {
+          "name": "毎日新聞",
+          "url": "https://mainichi.jp/articles/20261110/k00/00m/310/198000c"
+        }
+      ],
+      "added_at": "2026-11-10T13:17:15+00:00",
+      "updated_at": "2026-11-10T21:15:31+00:00"
+    },
+    {
       "id": "c4863bee87cbe261",
       "published_at": "2026-11-09T15:00:00+00:00",
       "disclosed_at": "2026-11-09T15:00:00+00:00",
@@ -693,46 +737,6 @@
       "service_aliases": [],
       "added_at": "2026-11-10T14:16:14+00:00",
       "updated_at": "2026-11-10T14:16:14+00:00"
-    },
-    {
-      "id": "a916e1f197303059",
-      "published_at": "2026-11-09T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "東京都",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 475,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "19d5816230daca6f",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003"
-          ]
-        },
-        {
-          "incident_id": "2d9120c700879491",
-          "relationship": "same_organization",
-          "evidence_url": "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003"
-        }
-      ],
-      "added_at": "2026-11-10T13:17:15+00:00",
-      "updated_at": "2026-11-10T13:17:15+00:00"
     },
     {
       "id": "14cc468f9a7f9a3d",
