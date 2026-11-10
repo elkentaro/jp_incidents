@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-10T03:15:31+00:00",
-  "total": 1035,
+  "updated_at": "2026-11-10T05:16:43+00:00",
+  "total": 1036,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-10"
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-11-10",
-      "count": 1
+      "count": 2
     }
   ],
   "incidents": [
@@ -399,6 +399,37 @@
       ],
       "added_at": "2026-11-10T02:16:08+00:00",
       "updated_at": "2026-11-10T02:16:08+00:00"
+    },
+    {
+      "id": "9e832527d869fc7c",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "フィンエアー",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 116000,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "0cd8a1c184390c84",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.traicy.com/posts/20261110387552/",
+          "evidence_urls": [
+            "https://www.traicy.com/posts/20261110387552/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "TRAICY（トライシー）",
+          "url": "https://www.traicy.com/posts/20261110387552/"
+        }
+      ],
+      "added_at": "2026-11-10T05:16:43+00:00",
+      "updated_at": "2026-11-10T05:16:43+00:00"
     },
     {
       "id": "19d5816230daca6f",
@@ -2216,6 +2247,51 @@
       "updated_at": "2026-11-09T01:16:50+00:00"
     },
     {
+      "id": "e369c4162eab9e16",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "エディオン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 13685,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [],
+      "sources": [
+        {
+          "name": "エディオン / EDION",
+          "url": "https://www.edion.co.jp/system/files/news-release/pdf/ja/2026-11/20261106_pr_1.pdf"
+        },
+        {
+          "name": "エディオン / EDION",
+          "url": "https://www.edion.co.jp/system/files/news-release/pdf/ja/2026-11/20261109_pr_1_0.pdf"
+        },
+        {
+          "name": "エディオン / EDION",
+          "url": "https://www.edion.co.jp/system/files/news-release/pdf/ja/2026-11/20261109_pr_1_1.pdf"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/edion_ec_server_log_unauthorized_access_9554/"
+        },
+        {
+          "name": "ASCII.jp",
+          "url": "https://ascii.jp/elem/000/004/449/4449766/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6c13c6e6e9a832840b2c4aed4c8bbad98eeff456"
+        }
+      ],
+      "affected_service": "EC サイト",
+      "service_aliases": [],
+      "added_at": "2026-11-06T13:16:53+00:00",
+      "updated_at": "2026-11-10T05:16:43+00:00"
+    },
+    {
       "id": "17c81b2eb2f5cc95",
       "published_at": "2026-11-05T15:00:00+00:00",
       "disclosed_at": null,
@@ -2298,47 +2374,6 @@
       ],
       "added_at": "2026-11-09T01:16:50+00:00",
       "updated_at": "2026-11-09T05:16:13+00:00"
-    },
-    {
-      "id": "e369c4162eab9e16",
-      "published_at": "2026-11-05T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "エディオン",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 13685,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [],
-      "sources": [
-        {
-          "name": "エディオン / EDION",
-          "url": "https://www.edion.co.jp/system/files/news-release/pdf/ja/2026-11/20261106_pr_1.pdf"
-        },
-        {
-          "name": "エディオン / EDION",
-          "url": "https://www.edion.co.jp/system/files/news-release/pdf/ja/2026-11/20261109_pr_1_0.pdf"
-        },
-        {
-          "name": "エディオン / EDION",
-          "url": "https://www.edion.co.jp/system/files/news-release/pdf/ja/2026-11/20261109_pr_1_1.pdf"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/edion_ec_server_log_unauthorized_access_9554/"
-        },
-        {
-          "name": "ASCII.jp",
-          "url": "https://ascii.jp/elem/000/004/449/4449766/"
-        }
-      ],
-      "affected_service": "EC サイト",
-      "service_aliases": [],
-      "added_at": "2026-11-06T13:16:53+00:00",
-      "updated_at": "2026-11-10T02:16:08+00:00"
     },
     {
       "id": "f27a29f5766d17aa",
@@ -4983,6 +5018,34 @@
       "updated_at": "2026-11-06T14:16:57+00:00"
     },
     {
+      "id": "a7f81e4623ebef3c",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "技研製作所",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "ransomware",
+        "unauthorized access"
+      ],
+      "potential_records": 3200,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/giken_ransomware_3200_potential_data_leak_20261109/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118245"
+        }
+      ],
+      "added_at": "2026-11-10T02:16:08+00:00",
+      "updated_at": "2026-11-10T05:16:43+00:00"
+    },
+    {
       "id": "ad5ef3b1b1a0b732",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": null,
@@ -5891,30 +5954,6 @@
       "updated_at": "2026-11-05T21:15:39+00:00"
     },
     {
-      "id": "a7f81e4623ebef3c",
-      "published_at": "2026-11-04T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "技研製作所",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "ransomware",
-        "unauthorized access"
-      ],
-      "potential_records": 3200,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/giken_ransomware_3200_potential_data_leak_20261109/"
-        }
-      ],
-      "added_at": "2026-11-10T02:16:08+00:00",
-      "updated_at": "2026-11-10T02:16:08+00:00"
-    },
-    {
       "id": "bc2f973d5c8a9381",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": null,
@@ -6036,12 +6075,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/4681dff607f26ce0428f4ab923c45de40138b392"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC101A70Q6A111C2000000/"
         }
       ],
       "affected_service": "シェアフル",
       "service_aliases": [],
       "added_at": "2026-11-09T08:16:45+00:00",
-      "updated_at": "2026-11-10T03:15:31+00:00"
+      "updated_at": "2026-11-10T05:16:43+00:00"
     },
     {
       "id": "ae87ad473c1decd3",
@@ -13224,6 +13267,37 @@
       "updated_at": "2026-10-31T08:16:00+00:00"
     },
     {
+      "id": "f91bfdf4a2294519",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": "2026-11-01T15:00:00+00:00",
+      "organization": "ファンくる",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1030741,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.fancrew.co.jp/news/news-press-release/26114_maintenance.html"
+        },
+        {
+          "name": "legalagent list",
+          "url": "https://www.fancrew.co.jp/news/news-press-release/26119_news.html"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/fancrew-4217663-partner-members-data-leak-third-report-2026/"
+        }
+      ],
+      "added_at": "2026-11-06T01:16:14+00:00",
+      "updated_at": "2026-11-10T05:16:43+00:00"
+    },
+    {
       "id": "318211f49e54b88e",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": "2026-10-29T15:00:00+00:00",
@@ -13629,33 +13703,6 @@
       "service_aliases": [],
       "added_at": "2026-11-02T07:16:38+00:00",
       "updated_at": "2026-11-02T07:16:38+00:00"
-    },
-    {
-      "id": "f91bfdf4a2294519",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": "2026-11-01T15:00:00+00:00",
-      "organization": "ファンくる",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 1030741,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.fancrew.co.jp/news/news-press-release/26114_maintenance.html"
-        },
-        {
-          "name": "legalagent list",
-          "url": "https://www.fancrew.co.jp/news/news-press-release/26119_news.html"
-        }
-      ],
-      "added_at": "2026-11-06T01:16:14+00:00",
-      "updated_at": "2026-11-10T00:16:43+00:00"
     },
     {
       "id": "d596ddaea3a9b78e",
@@ -18563,6 +18610,14 @@
           ]
         },
         {
+          "incident_id": "9e832527d869fc7c",
+          "relationship": "affects",
+          "evidence_url": "https://www.traicy.com/posts/20261110387552/",
+          "evidence_urls": [
+            "https://www.traicy.com/posts/20261110387552/"
+          ]
+        },
+        {
           "incident_id": "a3c09650fe9bed69",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/5b2d712fc43b2136c85bad4ec97c9b4309b1fa11",
@@ -18582,7 +18637,7 @@
         }
       ],
       "added_at": "2026-10-28T13:16:27+00:00",
-      "updated_at": "2026-10-31T00:15:53+00:00"
+      "updated_at": "2026-11-10T05:16:43+00:00"
     },
     {
       "id": "35872e4d31a72a51",
@@ -19650,6 +19705,46 @@
       "updated_at": "2026-11-10T02:16:08+00:00"
     },
     {
+      "id": "8c09a77637fff3f8",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ラフール",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "1ff5db5f85b18422",
+          "relationship": "affects",
+          "evidence_url": "https://www.release.tdnet.info/inbs/140120261104564889.pdf",
+          "evidence_urls": [
+            "https://www.release.tdnet.info/inbs/140120261104564889.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://corp.lafool.co.jp/news/information/172/"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261104564889.pdf"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/7216a60f86a038c522b2ffcc77228944e70d275f"
+        }
+      ],
+      "added_at": "2026-11-05T01:16:21+00:00",
+      "updated_at": "2026-11-10T05:16:43+00:00"
+    },
+    {
       "id": "c89620912f4fe178",
       "published_at": "2026-10-26T15:00:00+00:00",
       "disclosed_at": "2026-10-26T15:00:00+00:00",
@@ -19861,42 +19956,6 @@
       "affected_service": "PICKS",
       "service_aliases": [],
       "added_at": "2026-11-02T02:15:58+00:00",
-      "updated_at": "2026-11-10T02:16:08+00:00"
-    },
-    {
-      "id": "8c09a77637fff3f8",
-      "published_at": "2026-10-26T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ラフール",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [
-        {
-          "incident_id": "1ff5db5f85b18422",
-          "relationship": "affects",
-          "evidence_url": "https://www.release.tdnet.info/inbs/140120261104564889.pdf",
-          "evidence_urls": [
-            "https://www.release.tdnet.info/inbs/140120261104564889.pdf"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://corp.lafool.co.jp/news/information/172/"
-        },
-        {
-          "name": "日本取引所グループ TDnet / JPX TDnet",
-          "url": "https://www.release.tdnet.info/inbs/140120261104564889.pdf"
-        }
-      ],
-      "added_at": "2026-11-05T01:16:21+00:00",
       "updated_at": "2026-11-10T02:16:08+00:00"
     },
     {
