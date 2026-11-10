@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-10T06:15:30+00:00",
-  "total": 1039,
+  "updated_at": "2026-11-10T07:15:34+00:00",
+  "total": 1042,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-10"
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-11-10",
-      "count": 4
+      "count": 7
     }
   ],
   "incidents": [
@@ -399,6 +399,63 @@
       ],
       "added_at": "2026-11-10T02:16:08+00:00",
       "updated_at": "2026-11-10T02:16:08+00:00"
+    },
+    {
+      "id": "bcbb174cc6d7da20",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東京都杉並区",
+      "incident_type": "other",
+      "incident_categories": [
+        "other"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "杉並区 / Suginami",
+          "url": "https://www.city.suginami.tokyo.jp/news/index.html?value=4"
+        }
+      ],
+      "affected_service": "証明書コンビニ交付サービス",
+      "service_aliases": [],
+      "added_at": "2026-11-10T07:15:34+00:00",
+      "updated_at": "2026-11-10T07:15:34+00:00"
+    },
+    {
+      "id": "28326df64c067d2d",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社ローソンエンタテインメント",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 27908,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "878d7496ea2d4eb9",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQmhVaEhZc3hHZ3p0VnAtZnd0U0xkVm5FSnp0bUlabmNoX3U1TFk3VnB0bVBrYnhrSmJKdjdtSlFGdzhtSFlMN1htd0c3d3J4dkpBeHBCRmxWa3JlYnJhbzZpOGVRT2ItRE14RmMtMXFzYVlRaGNmQ2VoTGpDT2JBQlAtNUdCWm1xR09xeldKd0tHYVd1OUJ6Y3BVWHQ1cWJxVlRtcA?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQmhVaEhZc3hHZ3p0VnAtZnd0U0xkVm5FSnp0bUlabmNoX3U1TFk3VnB0bVBrYnhrSmJKdjdtSlFGdzhtSFlMN1htd0c3d3J4dkpBeHBCRmxWa3JlYnJhbzZpOGVRT2ItRE14RmMtMXFzYVlRaGNmQ2VoTGpDT2JBQlAtNUdCWm1xR09xeldKd0tHYVd1OUJ6Y3BVWHQ1cWJxVlRtcA?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQmhVaEhZc3hHZ3p0VnAtZnd0U0xkVm5FSnp0bUlabmNoX3U1TFk3VnB0bVBrYnhrSmJKdjdtSlFGdzhtSFlMN1htd0c3d3J4dkpBeHBCRmxWa3JlYnJhbzZpOGVRT2ItRE14RmMtMXFzYVlRaGNmQ2VoTGpDT2JBQlAtNUdCWm1xR09xeldKd0tHYVd1OUJ6Y3BVWHQ1cWJxVlRtcA?oc=5"
+        }
+      ],
+      "affected_service": "LAWSON DO! SPORTS",
+      "service_aliases": [],
+      "added_at": "2026-11-10T07:15:34+00:00",
+      "updated_at": "2026-11-10T07:15:34+00:00"
     },
     {
       "id": "5d9388db64d7c7fe",
@@ -473,6 +530,38 @@
       ],
       "added_at": "2026-11-10T06:15:30+00:00",
       "updated_at": "2026-11-10T06:15:30+00:00"
+    },
+    {
+      "id": "878d7496ea2d4eb9",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社電通総研",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "28326df64c067d2d",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQmhVaEhZc3hHZ3p0VnAtZnd0U0xkVm5FSnp0bUlabmNoX3U1TFk3VnB0bVBrYnhrSmJKdjdtSlFGdzhtSFlMN1htd0c3d3J4dkpBeHBCRmxWa3JlYnJhbzZpOGVRT2ItRE14RmMtMXFzYVlRaGNmQ2VoTGpDT2JBQlAtNUdCWm1xR09xeldKd0tHYVd1OUJ6Y3BVWHQ1cWJxVlRtcA?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQmhVaEhZc3hHZ3p0VnAtZnd0U0xkVm5FSnp0bUlabmNoX3U1TFk3VnB0bVBrYnhrSmJKdjdtSlFGdzhtSFlMN1htd0c3d3J4dkpBeHBCRmxWa3JlYnJhbzZpOGVRT2ItRE14RmMtMXFzYVlRaGNmQ2VoTGpDT2JBQlAtNUdCWm1xR09xeldKd0tHYVd1OUJ6Y3BVWHQ1cWJxVlRtcA?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "news.google.com",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQmhVaEhZc3hHZ3p0VnAtZnd0U0xkVm5FSnp0bUlabmNoX3U1TFk3VnB0bVBrYnhrSmJKdjdtSlFGdzhtSFlMN1htd0c3d3J4dkpBeHBCRmxWa3JlYnJhbzZpOGVRT2ItRE14RmMtMXFzYVlRaGNmQ2VoTGpDT2JBQlAtNUdCWm1xR09xeldKd0tHYVd1OUJ6Y3BVWHQ1cWJxVlRtcA?oc=5"
+        }
+      ],
+      "added_at": "2026-11-10T07:15:34+00:00",
+      "updated_at": "2026-11-10T07:15:34+00:00"
     },
     {
       "id": "9e832527d869fc7c",
@@ -856,6 +945,44 @@
       "service_aliases": [],
       "added_at": "2026-11-09T21:16:19+00:00",
       "updated_at": "2026-11-09T22:15:19+00:00"
+    },
+    {
+      "id": "a7bb0484ab961543",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "クレディセゾン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 198660,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "6b35a32424d608a0",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZktYbGgxOVd0VDF3enRzbnRMMjFpT0s4SURiT0l5RWtSOEZGOVVobUNUMldocXJZV0NYc08zTmk1NW9UM3c0QTdjUkxiN2FPaUg3Rjh6N0NXTWYzUTBkX0Mta0hOM2VDYXZDeHc3QlBlMG0xS1pndjlFZ3ZJaEFtMjdDdi04aDN1dDA0am9xNEhGR1o5QTE4WFVHUG43Tjlu?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZktYbGgxOVd0VDF3enRzbnRMMjFpT0s4SURiT0l5RWtSOEZGOVVobUNUMldocXJZV0NYc08zTmk1NW9UM3c0QTdjUkxiN2FPaUg3Rjh6N0NXTWYzUTBkX0Mta0hOM2VDYXZDeHc3QlBlMG0xS1pndjlFZ3ZJaEFtMjdDdi04aDN1dDA0am9xNEhGR1o5QTE4WFVHUG43Tjlu?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZktYbGgxOVd0VDF3enRzbnRMMjFpT0s4SURiT0l5RWtSOEZGOVVobUNUMldocXJZV0NYc08zTmk1NW9UM3c0QTdjUkxiN2FPaUg3Rjh6N0NXTWYzUTBkX0Mta0hOM2VDYXZDeHc3QlBlMG0xS1pndjlFZ3ZJaEFtMjdDdi04aDN1dDA0am9xNEhGR1o5QTE4WFVHUG43Tjlu?oc=5"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://www.saisoncard.co.jp/customer-support/information/20261109/"
+        }
+      ],
+      "affected_service": "選べるゴールド優待",
+      "service_aliases": [],
+      "added_at": "2026-11-09T21:16:19+00:00",
+      "updated_at": "2026-11-10T07:15:34+00:00"
     },
     {
       "id": "0725fe914c798f25",
@@ -1256,40 +1383,6 @@
       "service_aliases": [],
       "added_at": "2026-11-09T10:16:41+00:00",
       "updated_at": "2026-11-09T10:16:41+00:00"
-    },
-    {
-      "id": "a7bb0484ab961543",
-      "published_at": "2026-11-08T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "クレディセゾン",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 198660,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "6b35a32424d608a0",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZktYbGgxOVd0VDF3enRzbnRMMjFpT0s4SURiT0l5RWtSOEZGOVVobUNUMldocXJZV0NYc08zTmk1NW9UM3c0QTdjUkxiN2FPaUg3Rjh6N0NXTWYzUTBkX0Mta0hOM2VDYXZDeHc3QlBlMG0xS1pndjlFZ3ZJaEFtMjdDdi04aDN1dDA0am9xNEhGR1o5QTE4WFVHUG43Tjlu?oc=5",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZktYbGgxOVd0VDF3enRzbnRMMjFpT0s4SURiT0l5RWtSOEZGOVVobUNUMldocXJZV0NYc08zTmk1NW9UM3c0QTdjUkxiN2FPaUg3Rjh6N0NXTWYzUTBkX0Mta0hOM2VDYXZDeHc3QlBlMG0xS1pndjlFZ3ZJaEFtMjdDdi04aDN1dDA0am9xNEhGR1o5QTE4WFVHUG43Tjlu?oc=5"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZktYbGgxOVd0VDF3enRzbnRMMjFpT0s4SURiT0l5RWtSOEZGOVVobUNUMldocXJZV0NYc08zTmk1NW9UM3c0QTdjUkxiN2FPaUg3Rjh6N0NXTWYzUTBkX0Mta0hOM2VDYXZDeHc3QlBlMG0xS1pndjlFZ3ZJaEFtMjdDdi04aDN1dDA0am9xNEhGR1o5QTE4WFVHUG43Tjlu?oc=5"
-        }
-      ],
-      "affected_service": "選べるゴールド優待",
-      "service_aliases": [],
-      "added_at": "2026-11-09T21:16:19+00:00",
-      "updated_at": "2026-11-09T21:16:19+00:00"
     },
     {
       "id": "cdbfdf07e5673cd9",
