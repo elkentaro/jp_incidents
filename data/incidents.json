@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-11T09:15:59+00:00",
-  "total": 1088,
+  "updated_at": "2026-11-11T10:15:54+00:00",
+  "total": 1090,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-11"
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-11-11",
-      "count": 8
+      "count": 10
     }
   ],
   "incidents": [
@@ -687,13 +687,90 @@
       "sources": [
         {
           "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/5885f9ac80be3f0bc98f2f20bf1823834f5ca2c6"
+        },
+        {
+          "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/8e580d2effb3e25d621f072cafe3db11fa8842e6"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/256c0fdf2428f013bdc3ebb1fa8ffc040f56fca5"
         }
       ],
       "affected_service": "JFA STORE",
       "service_aliases": [],
       "added_at": "2026-11-11T07:16:10+00:00",
-      "updated_at": "2026-11-11T07:16:10+00:00"
+      "updated_at": "2026-11-11T10:15:54+00:00"
+    },
+    {
+      "id": "d3c8cfdfe2497e40",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "三菱UFJフィナンシャル・グループ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 20000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.yomiuri.co.jp/economy/20261111-GYT1T00260/",
+          "evidence_urls": [
+            "https://www.yomiuri.co.jp/economy/20261111-GYT1T00260/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/economy/20261111-GYT1T00260/"
+        }
+      ],
+      "added_at": "2026-11-11T10:15:54+00:00",
+      "updated_at": "2026-11-11T10:15:54+00:00"
+    },
+    {
+      "id": "e359784f18174ef9",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ユーコープ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 13085,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "生活協同組合ユーコープ",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5TQ0YtLVVoNGZxMEM2ZHdVdzFleEVVTHhHS3k5dWdVSy1YZnlpOTdHd2J5UzdDUUZFdEplRkNDNXVqZm5UVk1hdFhfT0JtYkRHZ1JvUGNiYlF3cXhJdFE?oc=5"
+        }
+      ],
+      "affected_service": "HAPPY COLLECTION(ハッピーコレクション) / • カタログ企画「スクロール」",
+      "service_aliases": [],
+      "affected_services": [
+        "HAPPY COLLECTION(ハッピーコレクション)",
+        "• カタログ企画「スクロール」"
+      ],
+      "service_details": [
+        {
+          "name": "HAPPY COLLECTION(ハッピーコレクション)",
+          "aliases": []
+        },
+        {
+          "name": "• カタログ企画「スクロール」",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-11T10:15:54+00:00",
+      "updated_at": "2026-11-11T10:15:54+00:00"
     },
     {
       "id": "4562efa77d71bf05",
@@ -875,6 +952,54 @@
       "updated_at": "2026-11-11T09:15:59+00:00"
     },
     {
+      "id": "a916e1f197303059",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東京都",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 475,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "19d5816230daca6f",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003"
+          ]
+        },
+        {
+          "incident_id": "2d9120c700879491",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "東京都 / Tokyo Metropolitan Government",
+          "url": "https://www.metro.tokyo.lg.jp/information/press/2026/11/2026111101"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003"
+        },
+        {
+          "name": "毎日新聞",
+          "url": "https://mainichi.jp/articles/20261110/k00/00m/310/198000c"
+        }
+      ],
+      "added_at": "2026-11-10T13:17:15+00:00",
+      "updated_at": "2026-11-11T10:15:54+00:00"
+    },
+    {
       "id": "9442ea8cf431d8f4",
       "published_at": "2026-11-09T15:00:00+00:00",
       "disclosed_at": "2026-11-09T15:00:00+00:00",
@@ -1037,50 +1162,6 @@
       "service_aliases": [],
       "added_at": "2026-11-10T14:16:14+00:00",
       "updated_at": "2026-11-10T22:15:17+00:00"
-    },
-    {
-      "id": "a916e1f197303059",
-      "published_at": "2026-11-09T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "東京都",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 475,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [
-        {
-          "incident_id": "19d5816230daca6f",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003"
-          ]
-        },
-        {
-          "incident_id": "2d9120c700879491",
-          "relationship": "same_organization",
-          "evidence_url": "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003"
-        },
-        {
-          "name": "毎日新聞",
-          "url": "https://mainichi.jp/articles/20261110/k00/00m/310/198000c"
-        }
-      ],
-      "added_at": "2026-11-10T13:17:15+00:00",
-      "updated_at": "2026-11-10T21:15:31+00:00"
     },
     {
       "id": "776c20ac8487f4a1",
@@ -6831,6 +6912,35 @@
       "updated_at": "2026-11-06T06:15:41+00:00"
     },
     {
+      "id": "49c50de559239646",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": "2026-11-09T15:00:00+00:00",
+      "organization": "ビックカメラ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 133039,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNejJyZERMeXdpa3ZXUDIzaGtkQUExY2tfbUEyQlU2R1BjU3pmVjNwQkNmdE1ZZ3dPa2p4X0hHbTk5QmgyNGMwaXUxMGhGX2NuSzBWRjZNM3FFZWt3Tjl6MVIxZzN6V2ZiMFlFanlaRlUwazZaZTlleUtqdnRabC1WTEo2NndnMmJNNG4za3ptcUNvaG9INUNLWTdQSTJoNkltNWRWbWlR?oc=5"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261111de74257"
+        }
+      ],
+      "affected_service": "法人顧客向け問い合わせフォーム",
+      "service_aliases": [],
+      "added_at": "2026-11-10T20:15:39+00:00",
+      "updated_at": "2026-11-11T10:15:54+00:00"
+    },
+    {
       "id": "9f7e10d4ea180a0c",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": null,
@@ -7675,31 +7785,6 @@
       "service_aliases": [],
       "added_at": "2026-11-07T01:15:32+00:00",
       "updated_at": "2026-11-07T01:15:32+00:00"
-    },
-    {
-      "id": "49c50de559239646",
-      "published_at": "2026-11-04T15:00:00+00:00",
-      "disclosed_at": "2026-11-09T15:00:00+00:00",
-      "organization": "ビックカメラ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 133039,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNejJyZERMeXdpa3ZXUDIzaGtkQUExY2tfbUEyQlU2R1BjU3pmVjNwQkNmdE1ZZ3dPa2p4X0hHbTk5QmgyNGMwaXUxMGhGX2NuSzBWRjZNM3FFZWt3Tjl6MVIxZzN6V2ZiMFlFanlaRlUwazZaZTlleUtqdnRabC1WTEo2NndnMmJNNG4za3ptcUNvaG9INUNLWTdQSTJoNkltNWRWbWlR?oc=5"
-        }
-      ],
-      "affected_service": "法人顧客向け問い合わせフォーム",
-      "service_aliases": [],
-      "added_at": "2026-11-10T20:15:39+00:00",
-      "updated_at": "2026-11-10T20:15:39+00:00"
     },
     {
       "id": "51fc582f23003b4c",
@@ -19280,6 +19365,14 @@
           ]
         },
         {
+          "incident_id": "d3c8cfdfe2497e40",
+          "relationship": "affects",
+          "evidence_url": "https://www.yomiuri.co.jp/economy/20261111-GYT1T00260/",
+          "evidence_urls": [
+            "https://www.yomiuri.co.jp/economy/20261111-GYT1T00260/"
+          ]
+        },
+        {
           "incident_id": "d56f89db8ff00015",
           "relationship": "affects",
           "evidence_url": "https://www.ryobi-holdings.jp/bus/news-kousoku/20261102/",
@@ -19484,7 +19577,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-11T09:15:59+00:00"
+      "updated_at": "2026-11-11T10:15:54+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -24980,6 +25073,10 @@
         {
           "name": "NHKニュース",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8zWXBNa3RMUFptRUJLdGl0aVdFNEpLRERHYk1LUVhwdVJlQ09SZjEtaWRiUW1nNjViS1pBTjRGWFRySDZ6WG5OMmVYX3U2RFFJQU5hVlFWR05xTEtKaFMw?oc=5"
+        },
+        {
+          "name": "毎日新聞",
+          "url": "https://mainichi.jp/articles/20261111/kyd/00m/020/017000c"
         }
       ],
       "affected_service": "業務システムおよび予約システム / 予約システム / 業務システム",
@@ -25004,7 +25101,7 @@
         }
       ],
       "added_at": "2026-11-08T12:12:51+00:00",
-      "updated_at": "2026-11-11T08:15:58+00:00"
+      "updated_at": "2026-11-11T10:15:54+00:00"
     },
     {
       "id": "421fc74f1b6a7fee",
