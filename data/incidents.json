@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-11T08:15:58+00:00",
-  "total": 1082,
+  "updated_at": "2026-11-11T09:15:59+00:00",
+  "total": 1088,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-11"
@@ -353,7 +353,7 @@
     },
     {
       "date": "2026-11-08",
-      "count": 2
+      "count": 3
     },
     {
       "date": "2026-11-09",
@@ -361,11 +361,11 @@
     },
     {
       "date": "2026-11-10",
-      "count": 25
+      "count": 26
     },
     {
       "date": "2026-11-11",
-      "count": 4
+      "count": 8
     }
   ],
   "incidents": [
@@ -416,12 +416,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/9767f53a1b495b9de43c9572ac91fb6371cc94e4"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/cabinet-office-arara-mailmagazine-data-leak-20261111/"
         }
       ],
       "affected_service": "メールマガジン",
       "service_aliases": [],
       "added_at": "2026-11-11T07:16:10+00:00",
-      "updated_at": "2026-11-11T08:15:58+00:00"
+      "updated_at": "2026-11-11T09:15:59+00:00"
     },
     {
       "id": "e8869a011b42a736",
@@ -457,12 +461,16 @@
         {
           "name": "京都新聞デジタル",
           "url": "https://www.kyoto-np.co.jp/articles/biz/1824221"
+        },
+        {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp/15215184.html"
         }
       ],
       "affected_service": "持ち株会事務受託業務",
       "service_aliases": [],
       "added_at": "2026-11-11T06:15:30+00:00",
-      "updated_at": "2026-11-11T08:15:58+00:00"
+      "updated_at": "2026-11-11T09:15:59+00:00"
     },
     {
       "id": "600545e2cdc0914b",
@@ -516,6 +524,135 @@
       ],
       "added_at": "2026-11-11T08:15:58+00:00",
       "updated_at": "2026-11-11T08:15:58+00:00"
+    },
+    {
+      "id": "674fc8cb330376ee",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社ギフトパッド",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "cf1fdc0264e4b497",
+          "relationship": "affects",
+          "evidence_url": "https://www.nomuraholdings.com/jp/news/topics/20261111.html",
+          "evidence_urls": [
+            "https://www.nomuraholdings.com/jp/news/topics/20261111.html"
+          ]
+        },
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.nomuraholdings.com/jp/news/topics/20261111.html",
+          "evidence_urls": [
+            "https://www.nomuraholdings.com/jp/news/topics/20261111.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "野村ホールディングス / Nomura",
+          "url": "https://www.nomuraholdings.com/jp/news/topics/20261111.html"
+        }
+      ],
+      "added_at": "2026-11-11T09:15:59+00:00",
+      "updated_at": "2026-11-11T09:15:59+00:00"
+    },
+    {
+      "id": "71422f2b8113fd80",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "HUMAN MADE",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "57d15baf7435e548",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.release.tdnet.info/inbs/140120261111574117.pdf",
+          "evidence_urls": [
+            "https://www.release.tdnet.info/inbs/140120261111574117.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261111574117.pdf"
+        }
+      ],
+      "affected_service": "CURRY UP",
+      "service_aliases": [],
+      "added_at": "2026-11-11T09:15:59+00:00",
+      "updated_at": "2026-11-11T09:15:59+00:00"
+    },
+    {
+      "id": "85465f86681e21cc",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "Ｃｏｃｏｌｉｖｅ株式会社",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261111573847.pdf"
+        }
+      ],
+      "affected_service": "KASIKA",
+      "service_aliases": [],
+      "added_at": "2026-11-11T09:15:59+00:00",
+      "updated_at": "2026-11-11T09:15:59+00:00"
+    },
+    {
+      "id": "cf1fdc0264e4b497",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "野村ホールディングス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 13500,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "674fc8cb330376ee",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.nomuraholdings.com/jp/news/topics/20261111.html",
+          "evidence_urls": [
+            "https://www.nomuraholdings.com/jp/news/topics/20261111.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "野村ホールディングス / Nomura",
+          "url": "https://www.nomuraholdings.com/jp/news/topics/20261111.html"
+        }
+      ],
+      "added_at": "2026-11-11T09:15:59+00:00",
+      "updated_at": "2026-11-11T09:15:59+00:00"
     },
     {
       "id": "8e1708341ecca0be",
@@ -689,6 +826,99 @@
       "updated_at": "2026-11-11T01:16:17+00:00"
     },
     {
+      "id": "c4863bee87cbe261",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": "2026-11-09T15:00:00+00:00",
+      "organization": "キリンビバレッジ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "786098113508f19e",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/kirin-ownly-campaign-data-breach-1825-20261110/",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/f96ba630ef82919c3898d5c85908a158951e44b9",
+            "https://rocket-boys.co.jp/security-measures-lab/kirin-ownly-campaign-data-breach-1825-20261110/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "キリンビバレッジ",
+          "url": "https://info.kirinholdings.com/faq_detail.html?id=122837"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/f96ba630ef82919c3898d5c85908a158951e44b9"
+        },
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/economy/20261110-GYT1T00225/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/4c06d6a6357150d1b9cd7f94741c4969b88652fb"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/kirin-ownly-campaign-data-breach-1825-20261110/"
+        }
+      ],
+      "added_at": "2026-11-10T09:15:46+00:00",
+      "updated_at": "2026-11-11T09:15:59+00:00"
+    },
+    {
+      "id": "9442ea8cf431d8f4",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": "2026-11-09T15:00:00+00:00",
+      "organization": "キリンビール",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [
+        {
+          "incident_id": "786098113508f19e",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/kirin-ownly-campaign-data-breach-1825-20261110/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/kirin-ownly-campaign-data-breach-1825-20261110/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/f96ba630ef82919c3898d5c85908a158951e44b9"
+        },
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/economy/20261110-GYT1T00225/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/4c06d6a6357150d1b9cd7f94741c4969b88652fb"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/kirin-ownly-campaign-data-breach-1825-20261110/"
+        }
+      ],
+      "added_at": "2026-11-10T09:15:46+00:00",
+      "updated_at": "2026-11-11T09:15:59+00:00"
+    },
+    {
       "id": "03e4b56172ce7769",
       "published_at": "2026-11-09T15:00:00+00:00",
       "disclosed_at": "2026-11-09T15:00:00+00:00",
@@ -780,37 +1010,6 @@
       "updated_at": "2026-11-10T12:16:52+00:00"
     },
     {
-      "id": "9442ea8cf431d8f4",
-      "published_at": "2026-11-09T15:00:00+00:00",
-      "disclosed_at": "2026-11-09T15:00:00+00:00",
-      "organization": "キリンビール",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/f96ba630ef82919c3898d5c85908a158951e44b9"
-        },
-        {
-          "name": "読売新聞",
-          "url": "https://www.yomiuri.co.jp/economy/20261110-GYT1T00225/"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/4c06d6a6357150d1b9cd7f94741c4969b88652fb"
-        }
-      ],
-      "added_at": "2026-11-10T09:15:46+00:00",
-      "updated_at": "2026-11-10T13:17:15+00:00"
-    },
-    {
       "id": "a4bddfbd43d68938",
       "published_at": "2026-11-09T15:00:00+00:00",
       "disclosed_at": null,
@@ -882,50 +1081,6 @@
       ],
       "added_at": "2026-11-10T13:17:15+00:00",
       "updated_at": "2026-11-10T21:15:31+00:00"
-    },
-    {
-      "id": "c4863bee87cbe261",
-      "published_at": "2026-11-09T15:00:00+00:00",
-      "disclosed_at": "2026-11-09T15:00:00+00:00",
-      "organization": "キリンビバレッジ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [
-        {
-          "incident_id": "786098113508f19e",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/f96ba630ef82919c3898d5c85908a158951e44b9",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/f96ba630ef82919c3898d5c85908a158951e44b9"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "キリンビバレッジ",
-          "url": "https://info.kirinholdings.com/faq_detail.html?id=122837"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/f96ba630ef82919c3898d5c85908a158951e44b9"
-        },
-        {
-          "name": "読売新聞",
-          "url": "https://www.yomiuri.co.jp/economy/20261110-GYT1T00225/"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/4c06d6a6357150d1b9cd7f94741c4969b88652fb"
-        }
-      ],
-      "added_at": "2026-11-10T09:15:46+00:00",
-      "updated_at": "2026-11-11T01:16:17+00:00"
     },
     {
       "id": "776c20ac8487f4a1",
@@ -1304,6 +1459,31 @@
       ],
       "added_at": "2026-11-10T06:15:30+00:00",
       "updated_at": "2026-11-10T06:15:30+00:00"
+    },
+    {
+      "id": "80fe411952caf308",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "電通デジタル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/dentsu_digital_tonariwa_unauthorized_access_20261111/"
+        }
+      ],
+      "affected_service": "TONARIWA",
+      "service_aliases": [],
+      "added_at": "2026-11-11T09:15:59+00:00",
+      "updated_at": "2026-11-11T09:15:59+00:00"
     },
     {
       "id": "810614f7152bce97",
@@ -2639,6 +2819,37 @@
       "updated_at": "2026-11-10T00:16:43+00:00"
     },
     {
+      "id": "57d15baf7435e548",
+      "published_at": "2026-11-07T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "オープンロジ",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "71422f2b8113fd80",
+          "relationship": "affects",
+          "evidence_url": "https://www.release.tdnet.info/inbs/140120261111574117.pdf",
+          "evidence_urls": [
+            "https://www.release.tdnet.info/inbs/140120261111574117.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261111574117.pdf"
+        }
+      ],
+      "added_at": "2026-11-11T09:15:59+00:00",
+      "updated_at": "2026-11-11T09:15:59+00:00"
+    },
+    {
       "id": "a5aba76731b13cfb",
       "published_at": "2026-11-07T15:00:00+00:00",
       "disclosed_at": null,
@@ -2773,6 +2984,37 @@
       "updated_at": "2026-11-09T11:04:22+00:00"
     },
     {
+      "id": "7dc5f8abf578e750",
+      "published_at": "2026-11-06T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "アイル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.ill.co.jp/info/261110/"
+        },
+        {
+          "name": "株式会社アクト",
+          "url": "https://act1.co.jp/2026-11-10-06/"
+        }
+      ],
+      "affected_service": "CROSS POINT",
+      "service_aliases": [
+        "クロスポイント"
+      ],
+      "added_at": "2026-11-11T01:16:17+00:00",
+      "updated_at": "2026-11-11T09:15:59+00:00"
+    },
+    {
       "id": "3fc9faedf3d1794d",
       "published_at": "2026-11-06T15:00:00+00:00",
       "disclosed_at": null,
@@ -2809,33 +3051,6 @@
       "service_aliases": [],
       "added_at": "2026-11-07T05:15:22+00:00",
       "updated_at": "2026-11-09T01:16:50+00:00"
-    },
-    {
-      "id": "7dc5f8abf578e750",
-      "published_at": "2026-11-06T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "アイル",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.ill.co.jp/info/261110/"
-        }
-      ],
-      "affected_service": "CROSS POINT",
-      "service_aliases": [
-        "クロスポイント"
-      ],
-      "added_at": "2026-11-11T01:16:17+00:00",
-      "updated_at": "2026-11-11T01:16:17+00:00"
     },
     {
       "id": "f4b56629909c3d7b",
@@ -18479,6 +18694,14 @@
           ]
         },
         {
+          "incident_id": "674fc8cb330376ee",
+          "relationship": "affects",
+          "evidence_url": "https://www.nomuraholdings.com/jp/news/topics/20261111.html",
+          "evidence_urls": [
+            "https://www.nomuraholdings.com/jp/news/topics/20261111.html"
+          ]
+        },
+        {
           "incident_id": "69e127ff7e87f715",
           "relationship": "affects",
           "evidence_url": "https://www.kinkos.co.jp/corporate/archives/news/20261109/",
@@ -19261,7 +19484,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-11T08:15:58+00:00"
+      "updated_at": "2026-11-11T09:15:59+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -37583,11 +37806,20 @@
       "confidence_score": 100,
       "related": [
         {
+          "incident_id": "9442ea8cf431d8f4",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/kirin-ownly-campaign-data-breach-1825-20261110/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/kirin-ownly-campaign-data-breach-1825-20261110/"
+          ]
+        },
+        {
           "incident_id": "c4863bee87cbe261",
           "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/f96ba630ef82919c3898d5c85908a158951e44b9",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/kirin-ownly-campaign-data-breach-1825-20261110/",
           "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/f96ba630ef82919c3898d5c85908a158951e44b9"
+            "https://news.yahoo.co.jp/articles/f96ba630ef82919c3898d5c85908a158951e44b9",
+            "https://rocket-boys.co.jp/security-measures-lab/kirin-ownly-campaign-data-breach-1825-20261110/"
           ]
         }
       ],
@@ -37632,7 +37864,7 @@
       "affected_service": "OWNLY",
       "service_aliases": [],
       "added_at": "2026-10-27T19:09:26+00:00",
-      "updated_at": "2026-11-11T01:16:17+00:00"
+      "updated_at": "2026-11-11T09:15:59+00:00"
     },
     {
       "id": "8ffddfc96aa3ce97",
