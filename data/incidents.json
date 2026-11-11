@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-11T02:15:49+00:00",
-  "total": 1071,
+  "updated_at": "2026-11-11T03:15:41+00:00",
+  "total": 1073,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-10"
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-11-10",
-      "count": 22
+      "count": 24
     },
     {
       "date": "2026-11-11",
@@ -494,6 +494,32 @@
       "service_aliases": [],
       "added_at": "2026-11-10T13:17:15+00:00",
       "updated_at": "2026-11-10T23:15:29+00:00"
+    },
+    {
+      "id": "03e4b56172ce7769",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": "2026-11-09T15:00:00+00:00",
+      "organization": "パルマ",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/palma-web-service-unauthorized-access-20261110/"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://www.palma.jp/news/2794/"
+        }
+      ],
+      "added_at": "2026-11-11T01:16:17+00:00",
+      "updated_at": "2026-11-11T03:15:41+00:00"
     },
     {
       "id": "5d9388db64d7c7fe",
@@ -764,26 +790,88 @@
       "updated_at": "2026-11-10T07:15:34+00:00"
     },
     {
-      "id": "03e4b56172ce7769",
+      "id": "5961300f0ffbfa38",
       "published_at": "2026-11-09T15:00:00+00:00",
-      "disclosed_at": "2026-11-09T15:00:00+00:00",
-      "organization": "パルマ",
-      "incident_type": "unauthorized access",
+      "disclosed_at": null,
+      "organization": "横浜市",
+      "incident_type": "data leak",
       "incident_categories": [
+        "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 508,
       "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
+      "confidence_score": 50,
+      "related": [
         {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/palma-web-service-unauthorized-access-20261110/"
+          "incident_id": "5ddb90d3124b9e7b",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/d4cda6a55fe3bc4933c78935311a625a31ace17b",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/d4cda6a55fe3bc4933c78935311a625a31ace17b"
+          ]
+        },
+        {
+          "incident_id": "cade75ef66ccbad6",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/d4cda6a55fe3bc4933c78935311a625a31ace17b",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/d4cda6a55fe3bc4933c78935311a625a31ace17b"
+          ]
+        },
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/d4cda6a55fe3bc4933c78935311a625a31ace17b",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/d4cda6a55fe3bc4933c78935311a625a31ace17b"
+          ]
         }
       ],
-      "added_at": "2026-11-11T01:16:17+00:00",
-      "updated_at": "2026-11-11T01:16:17+00:00"
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/d4cda6a55fe3bc4933c78935311a625a31ace17b"
+        }
+      ],
+      "affected_service": "施設予約システム",
+      "service_aliases": [],
+      "added_at": "2026-11-11T03:15:41+00:00",
+      "updated_at": "2026-11-11T03:15:41+00:00"
+    },
+    {
+      "id": "5ddb90d3124b9e7b",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "横浜市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 120,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "5961300f0ffbfa38",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/d4cda6a55fe3bc4933c78935311a625a31ace17b",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/d4cda6a55fe3bc4933c78935311a625a31ace17b"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/d4cda6a55fe3bc4933c78935311a625a31ace17b"
+        }
+      ],
+      "affected_service": "電子チケットサービス",
+      "service_aliases": [],
+      "added_at": "2026-11-11T03:15:41+00:00",
+      "updated_at": "2026-11-11T03:15:41+00:00"
     },
     {
       "id": "14cc468f9a7f9a3d",
@@ -5022,12 +5110,16 @@
         {
           "name": "legalagent list",
           "url": "https://www.soft99.co.jp/important/detail/261110/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118277"
         }
       ],
       "affected_service": "ソフト99公式オンラインショップ",
       "service_aliases": [],
       "added_at": "2026-11-10T12:16:52+00:00",
-      "updated_at": "2026-11-11T00:15:49+00:00"
+      "updated_at": "2026-11-11T03:15:41+00:00"
     },
     {
       "id": "a8b6d5a8016e0283",
@@ -5445,12 +5537,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/4dcb753a85642355a838a6c3c59cef2b3a7da5a1"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/aefcac2ba8d4ecea50cf2e06e4f51aa9f35b0859"
         }
       ],
       "affected_service": "アララメッセージ",
       "service_aliases": [],
       "added_at": "2026-11-05T08:16:07+00:00",
-      "updated_at": "2026-11-08T01:16:16+00:00"
+      "updated_at": "2026-11-11T03:15:41+00:00"
     },
     {
       "id": "a7f81e4623ebef3c",
@@ -8142,6 +8238,43 @@
       "updated_at": "2026-11-09T12:00:14+00:00"
     },
     {
+      "id": "e6dec13f9e6cc672",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": "2026-11-03T15:00:00+00:00",
+      "organization": "株式会社アクセルエンターメディア",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 1086098,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.axelentermedia.co.jp/notice_20261104.html",
+          "evidence_urls": [
+            "https://www.axelentermedia.co.jp/notice_20261104.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "www.axelentermedia.co.jp",
+          "url": "https://www.axelentermedia.co.jp/notice_20261104.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/aefcac2ba8d4ecea50cf2e06e4f51aa9f35b0859"
+        }
+      ],
+      "affected_service": "メール配信サービス",
+      "service_aliases": [],
+      "added_at": "2026-11-06T10:15:48+00:00",
+      "updated_at": "2026-11-11T03:15:41+00:00"
+    },
+    {
       "id": "f565d4025213af60",
       "published_at": "2026-11-03T15:00:00+00:00",
       "disclosed_at": null,
@@ -8497,39 +8630,6 @@
       "service_aliases": [],
       "added_at": "2026-11-04T10:38:56+00:00",
       "updated_at": "2026-11-04T10:38:56+00:00"
-    },
-    {
-      "id": "e6dec13f9e6cc672",
-      "published_at": "2026-11-03T15:00:00+00:00",
-      "disclosed_at": "2026-11-03T15:00:00+00:00",
-      "organization": "株式会社アクセルエンターメディア",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 1086098,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.axelentermedia.co.jp/notice_20261104.html",
-          "evidence_urls": [
-            "https://www.axelentermedia.co.jp/notice_20261104.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "www.axelentermedia.co.jp",
-          "url": "https://www.axelentermedia.co.jp/notice_20261104.html"
-        }
-      ],
-      "affected_service": "メール配信サービス",
-      "service_aliases": [],
-      "added_at": "2026-11-06T10:15:48+00:00",
-      "updated_at": "2026-11-06T10:15:48+00:00"
     },
     {
       "id": "03ec9333584e44dd",
@@ -9233,6 +9333,14 @@
           ]
         },
         {
+          "incident_id": "5961300f0ffbfa38",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/d4cda6a55fe3bc4933c78935311a625a31ace17b",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/d4cda6a55fe3bc4933c78935311a625a31ace17b"
+          ]
+        },
+        {
           "incident_id": "e0bf7f8e71d6ba85",
           "relationship": "affected_by",
           "evidence_url": "https://news.yahoo.co.jp/articles/85adcfe5e242b0139561ca3d253820b6184205ad",
@@ -9274,7 +9382,7 @@
       "affected_service": "電子申請・届出システム",
       "service_aliases": [],
       "added_at": "2026-11-03T11:46:37+00:00",
-      "updated_at": "2026-11-06T09:15:42+00:00"
+      "updated_at": "2026-11-11T03:15:41+00:00"
     },
     {
       "id": "cc83cfb44abbac15",
@@ -11322,6 +11430,42 @@
       "updated_at": "2026-11-03T20:36:46+00:00"
     },
     {
+      "id": "5caeb03a887c6e82",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "千葉興業銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 171260,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://cybersecurity-jp.com/news/118278",
+          "evidence_urls": [
+            "https://cybersecurity-jp.com/news/118278"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.chibakogyo-bank.co.jp/news/important/of_ja_important_2.html"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118278"
+        }
+      ],
+      "added_at": "2026-11-11T01:16:17+00:00",
+      "updated_at": "2026-11-11T03:15:41+00:00"
+    },
+    {
       "id": "69e127ff7e87f715",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": "2026-11-01T15:00:00+00:00",
@@ -12277,38 +12421,6 @@
       "updated_at": "2026-11-06T11:16:38+00:00"
     },
     {
-      "id": "5caeb03a887c6e82",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "千葉興業銀行",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 171260,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://cybersecurity-jp.com/news/118278",
-          "evidence_urls": [
-            "https://cybersecurity-jp.com/news/118278"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Cybersecurity.jp",
-          "url": "https://cybersecurity-jp.com/news/118278"
-        }
-      ],
-      "added_at": "2026-11-11T01:16:17+00:00",
-      "updated_at": "2026-11-11T01:16:17+00:00"
-    },
-    {
       "id": "6fa988fa2a0728fb",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
@@ -12900,12 +13012,16 @@
         {
           "name": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2026/11/11/56744.html"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://s.netsecurity.ne.jp/article/2026/11/11/56744.html"
         }
       ],
       "affected_service": "STdirectServices",
       "service_aliases": [],
       "added_at": "2026-10-31T04:15:30+00:00",
-      "updated_at": "2026-11-11T00:15:49+00:00"
+      "updated_at": "2026-11-11T03:15:41+00:00"
     },
     {
       "id": "62e7efc40d4f6d44",
@@ -17931,6 +18047,14 @@
           ]
         },
         {
+          "incident_id": "5961300f0ffbfa38",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/d4cda6a55fe3bc4933c78935311a625a31ace17b",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/d4cda6a55fe3bc4933c78935311a625a31ace17b"
+          ]
+        },
+        {
           "incident_id": "5aad8865a350a69d",
           "relationship": "affects",
           "evidence_url": "https://www.umk.co.jp/news/?date=20261105&id=35239",
@@ -18756,7 +18880,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-11T01:16:17+00:00"
+      "updated_at": "2026-11-11T03:15:41+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
