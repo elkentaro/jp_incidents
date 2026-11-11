@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-11T01:16:17+00:00",
-  "total": 1070,
+  "updated_at": "2026-11-11T02:15:49+00:00",
+  "total": 1071,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-10"
@@ -349,7 +349,7 @@
     },
     {
       "date": "2026-11-07",
-      "count": 7
+      "count": 8
     },
     {
       "date": "2026-11-08",
@@ -1346,6 +1346,48 @@
       "updated_at": "2026-11-10T08:16:04+00:00"
     },
     {
+      "id": "2f31b97675803cff",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "エディオン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "other",
+        "unauthorized access"
+      ],
+      "potential_records": 6506,
+      "confidence": "high",
+      "confidence_score": 95,
+      "related": [],
+      "sources": [
+        {
+          "name": "CNET Japan",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1haTBUWDlXcVdZTzk0UGpvZ1BUd3hlOHh3VlpfVV9TOEdSQzBLUFlBOEk4dzk0WmhsM2ZPQTd1ck8wVjQxMFl1c1hlRTgxZUprQ1E?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/919f76e442cf7d63c23df23c07501e057bfa7c73"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/3c90de249c2b8852fc75b5f4ce5f51a6c5739560"
+        },
+        {
+          "name": "リスク対策.com",
+          "url": "https://www.risktaisaku.com/articles/-/117078"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118276"
+        }
+      ],
+      "affected_service": "エディオンネットショップ:PC向け決済画面",
+      "service_aliases": [],
+      "added_at": "2026-11-10T22:15:17+00:00",
+      "updated_at": "2026-11-11T02:15:49+00:00"
+    },
+    {
       "id": "bf2e2e5ef81fe5ed",
       "published_at": "2026-11-08T15:00:00+00:00",
       "disclosed_at": null,
@@ -1557,40 +1599,6 @@
       "service_aliases": [],
       "added_at": "2026-11-09T21:16:19+00:00",
       "updated_at": "2026-11-10T07:15:34+00:00"
-    },
-    {
-      "id": "2f31b97675803cff",
-      "published_at": "2026-11-08T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "エディオン",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "other",
-        "unauthorized access"
-      ],
-      "potential_records": 6506,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [],
-      "sources": [
-        {
-          "name": "CNET Japan",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1haTBUWDlXcVdZTzk0UGpvZ1BUd3hlOHh3VlpfVV9TOEdSQzBLUFlBOEk4dzk0WmhsM2ZPQTd1ck8wVjQxMFl1c1hlRTgxZUprQ1E?oc=5"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/919f76e442cf7d63c23df23c07501e057bfa7c73"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/3c90de249c2b8852fc75b5f4ce5f51a6c5739560"
-        }
-      ],
-      "affected_service": "エディオンネットショップ:PC向け決済画面",
-      "service_aliases": [],
-      "added_at": "2026-11-10T22:15:17+00:00",
-      "updated_at": "2026-11-10T23:15:29+00:00"
     },
     {
       "id": "0725fe914c798f25",
@@ -2502,6 +2510,31 @@
       ],
       "added_at": "2026-11-09T20:16:13+00:00",
       "updated_at": "2026-11-10T01:16:02+00:00"
+    },
+    {
+      "id": "2648c7e397e26753",
+      "published_at": "2026-11-06T15:00:00+00:00",
+      "disclosed_at": "2026-11-09T15:00:00+00:00",
+      "organization": "出光興産",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/idemitsu-car-maintenance-reservation-unauthorized-access/"
+        }
+      ],
+      "affected_service": "idemitsu カーメンテ予約",
+      "service_aliases": [],
+      "added_at": "2026-11-11T02:15:49+00:00",
+      "updated_at": "2026-11-11T02:15:49+00:00"
     },
     {
       "id": "70af91eead1ee810",
