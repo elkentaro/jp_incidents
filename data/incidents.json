@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-11T00:15:49+00:00",
-  "total": 1067,
+  "updated_at": "2026-11-11T01:16:17+00:00",
+  "total": 1070,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-10"
@@ -329,7 +329,7 @@
     },
     {
       "date": "2026-11-02",
-      "count": 55
+      "count": 56
     },
     {
       "date": "2026-11-03",
@@ -349,7 +349,7 @@
     },
     {
       "date": "2026-11-07",
-      "count": 6
+      "count": 7
     },
     {
       "date": "2026-11-08",
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-11-10",
-      "count": 21
+      "count": 22
     },
     {
       "date": "2026-11-11",
@@ -387,6 +387,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/66b7407738d3b68a87c64acc9efc68f4375d6df7"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://www.kentei.ne.jp/51816"
         },
         {
           "name": "京都新聞デジタル",
@@ -416,7 +420,7 @@
       "affected_service": "簿記などのインターネット試験",
       "service_aliases": [],
       "added_at": "2026-11-10T12:16:52+00:00",
-      "updated_at": "2026-11-10T14:16:14+00:00"
+      "updated_at": "2026-11-11T01:16:17+00:00"
     },
     {
       "id": "4562efa77d71bf05",
@@ -673,8 +677,21 @@
       "potential_records": null,
       "confidence": "high",
       "confidence_score": 65,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "786098113508f19e",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/f96ba630ef82919c3898d5c85908a158951e44b9",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/f96ba630ef82919c3898d5c85908a158951e44b9"
+          ]
+        }
+      ],
       "sources": [
+        {
+          "name": "キリンビバレッジ",
+          "url": "https://info.kirinholdings.com/faq_detail.html?id=122837"
+        },
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/f96ba630ef82919c3898d5c85908a158951e44b9"
@@ -689,7 +706,7 @@
         }
       ],
       "added_at": "2026-11-10T09:15:46+00:00",
-      "updated_at": "2026-11-10T13:17:15+00:00"
+      "updated_at": "2026-11-11T01:16:17+00:00"
     },
     {
       "id": "776c20ac8487f4a1",
@@ -745,6 +762,28 @@
       "service_aliases": [],
       "added_at": "2026-11-10T07:15:34+00:00",
       "updated_at": "2026-11-10T07:15:34+00:00"
+    },
+    {
+      "id": "03e4b56172ce7769",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": "2026-11-09T15:00:00+00:00",
+      "organization": "パルマ",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/palma-web-service-unauthorized-access-20261110/"
+        }
+      ],
+      "added_at": "2026-11-11T01:16:17+00:00",
+      "updated_at": "2026-11-11T01:16:17+00:00"
     },
     {
       "id": "14cc468f9a7f9a3d",
@@ -2409,6 +2448,33 @@
       "service_aliases": [],
       "added_at": "2026-11-07T05:15:22+00:00",
       "updated_at": "2026-11-09T01:16:50+00:00"
+    },
+    {
+      "id": "7dc5f8abf578e750",
+      "published_at": "2026-11-06T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "アイル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.ill.co.jp/info/261110/"
+        }
+      ],
+      "affected_service": "CROSS POINT",
+      "service_aliases": [
+        "クロスポイント"
+      ],
+      "added_at": "2026-11-11T01:16:17+00:00",
+      "updated_at": "2026-11-11T01:16:17+00:00"
     },
     {
       "id": "f4b56629909c3d7b",
@@ -9724,6 +9790,33 @@
       "updated_at": "2026-11-05T11:16:39+00:00"
     },
     {
+      "id": "8e0a97868a856654",
+      "published_at": "2026-11-02T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社PEPPY",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 6503,
+      "confidence": "medium",
+      "confidence_score": 45,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://peppy.co.jp/%E5%BD%93%E7%A4%BE%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%B8%E3%81%AE%E4%B8%8D%E6%AD%A3%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%81%8A%E8%A9%AB%E3%81%B3%E3%81%A8/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMXN4SUJRazItOWdQTGxLSEkzN0N1dGtDSzZCc1MtUGZySERwQlM4VndoeGtlcV9tdFpiSlFjTjJiYmpPTzVJNGl3Z2thZGc5QzNnQTY5dk9rQmVybUZjRW9kY3EwamJQbVFEd041UHJCa0ZjemVSbjA5LWc5OHdmQTZQRVRGN0NiaEZyT29pYVN0eTJzTHNGd3gxSGRvcHl1Mnh6ZjFuV29YMUY5MlhQQl9POA?oc=5"
+        }
+      ],
+      "added_at": "2026-11-10T13:17:15+00:00",
+      "updated_at": "2026-11-11T01:16:17+00:00"
+    },
+    {
       "id": "4ae714ea4b465c28",
       "published_at": "2026-11-02T15:00:00+00:00",
       "disclosed_at": null,
@@ -9777,29 +9870,6 @@
       ],
       "added_at": "2026-11-04T03:16:06+00:00",
       "updated_at": "2026-11-04T03:16:06+00:00"
-    },
-    {
-      "id": "8e0a97868a856654",
-      "published_at": "2026-11-02T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "株式会社PEPPY",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 6503,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMXN4SUJRazItOWdQTGxLSEkzN0N1dGtDSzZCc1MtUGZySERwQlM4VndoeGtlcV9tdFpiSlFjTjJiYmpPTzVJNGl3Z2thZGc5QzNnQTY5dk9rQmVybUZjRW9kY3EwamJQbVFEd041UHJCa0ZjemVSbjA5LWc5OHdmQTZQRVRGN0NiaEZyT29pYVN0eTJzTHNGd3gxSGRvcHl1Mnh6ZjFuV29YMUY5MlhQQl9POA?oc=5"
-        }
-      ],
-      "added_at": "2026-11-10T13:17:15+00:00",
-      "updated_at": "2026-11-10T13:17:15+00:00"
     },
     {
       "id": "cff2b19ef6f0d60b",
@@ -12172,6 +12242,38 @@
       ],
       "added_at": "2026-11-06T11:16:38+00:00",
       "updated_at": "2026-11-06T11:16:38+00:00"
+    },
+    {
+      "id": "5caeb03a887c6e82",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "千葉興業銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 171260,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://cybersecurity-jp.com/news/118278",
+          "evidence_urls": [
+            "https://cybersecurity-jp.com/news/118278"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118278"
+        }
+      ],
+      "added_at": "2026-11-11T01:16:17+00:00",
+      "updated_at": "2026-11-11T01:16:17+00:00"
     },
     {
       "id": "6fa988fa2a0728fb",
@@ -17813,6 +17915,14 @@
           ]
         },
         {
+          "incident_id": "5caeb03a887c6e82",
+          "relationship": "affects",
+          "evidence_url": "https://cybersecurity-jp.com/news/118278",
+          "evidence_urls": [
+            "https://cybersecurity-jp.com/news/118278"
+          ]
+        },
+        {
           "incident_id": "5d24de7057a2640a",
           "relationship": "affects",
           "evidence_url": "https://www.ryugin.co.jp/corporate/news/100767/",
@@ -18613,7 +18723,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-10T13:17:15+00:00"
+      "updated_at": "2026-11-11T01:16:17+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -36897,7 +37007,16 @@
       "potential_records": null,
       "confidence": "high",
       "confidence_score": 100,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "c4863bee87cbe261",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/f96ba630ef82919c3898d5c85908a158951e44b9",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/f96ba630ef82919c3898d5c85908a158951e44b9"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "時事ドットコム",
@@ -36939,7 +37058,7 @@
       "affected_service": "OWNLY",
       "service_aliases": [],
       "added_at": "2026-10-27T19:09:26+00:00",
-      "updated_at": "2026-11-06T02:16:04+00:00"
+      "updated_at": "2026-11-11T01:16:17+00:00"
     },
     {
       "id": "8ffddfc96aa3ce97",
