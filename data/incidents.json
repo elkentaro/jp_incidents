@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-11T19:15:16+00:00",
-  "total": 1096,
+  "updated_at": "2026-11-11T20:15:52+00:00",
+  "total": 1097,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-11"
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-11-11",
-      "count": 13
+      "count": 14
     },
     {
       "date": "2026-11-12",
@@ -369,6 +369,53 @@
     }
   ],
   "incidents": [
+    {
+      "id": "71422f2b8113fd80",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "HUMAN MADE",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "57d15baf7435e548",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.release.tdnet.info/inbs/140120261111574117.pdf",
+          "evidence_urls": [
+            "https://www.release.tdnet.info/inbs/140120261111574117.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261111574117.pdf"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/82987d2da85daef9c699b6e33958ea2167152172"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC119D10R11C26A1000000/"
+        },
+        {
+          "name": "BigGo ファイナンス",
+          "url": "https://finance.biggo.jp/news/b3278bed-260e-4788-b58f-ee6cc05dd4cd"
+        }
+      ],
+      "affected_service": "CURRY UP",
+      "service_aliases": [
+        "カリーアップ"
+      ],
+      "added_at": "2026-11-11T09:15:59+00:00",
+      "updated_at": "2026-11-11T20:15:52+00:00"
+    },
     {
       "id": "7e675401ba9184a3",
       "published_at": "2026-11-10T15:00:00+00:00",
@@ -473,47 +520,145 @@
       "updated_at": "2026-11-11T09:15:59+00:00"
     },
     {
-      "id": "71422f2b8113fd80",
+      "id": "897523f513769424",
       "published_at": "2026-11-10T15:00:00+00:00",
       "disclosed_at": null,
-      "organization": "HUMAN MADE",
+      "organization": "高知市",
       "incident_type": "data leak",
       "incident_categories": [
-        "data leak"
+        "data leak",
+        "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 1464,
       "confidence": "high",
-      "confidence_score": 90,
+      "confidence_score": 95,
       "related": [
         {
-          "incident_id": "57d15baf7435e548",
+          "incident_id": "f6e739d2d64628d4",
           "relationship": "affected_by",
-          "evidence_url": "https://www.release.tdnet.info/inbs/140120261111574117.pdf",
+          "evidence_url": "https://news.yahoo.co.jp/articles/b62ec42e73df8ed3e2145e8c30120e19931a3181",
           "evidence_urls": [
-            "https://www.release.tdnet.info/inbs/140120261111574117.pdf"
+            "https://news.yahoo.co.jp/articles/b62ec42e73df8ed3e2145e8c30120e19931a3181"
           ]
         }
       ],
       "sources": [
         {
-          "name": "日本取引所グループ TDnet / JPX TDnet",
-          "url": "https://www.release.tdnet.info/inbs/140120261111574117.pdf"
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b62ec42e73df8ed3e2145e8c30120e19931a3181"
+        },
+        {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp/n/rkc/category/society/rca5efaff64e0c42439513fa07c1eda904"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/kutv/3079211?display=1"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261111de74460"
         },
         {
           "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/82987d2da85daef9c699b6e33958ea2167152172"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUC119D10R11C26A1000000/"
+          "url": "https://news.yahoo.co.jp/articles/b62ec42e73df8ed3e2145e8c30120e19931a3181?source=rss"
         }
       ],
-      "affected_service": "CURRY UP",
-      "service_aliases": [
-        "カリーアップ"
+      "affected_service": "録画動画面接",
+      "service_aliases": [],
+      "added_at": "2026-11-11T12:16:21+00:00",
+      "updated_at": "2026-11-11T20:15:52+00:00"
+    },
+    {
+      "id": "08d395a9f3838df8",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": "2026-11-10T15:00:00+00:00",
+      "organization": "岡山県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
       ],
-      "added_at": "2026-11-11T09:15:59+00:00",
-      "updated_at": "2026-11-11T12:16:21+00:00"
+      "potential_records": 25,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "19d5816230daca6f",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.okayama.lg.jp/site/presssystem/1065566.html",
+          "evidence_urls": [
+            "https://www.pref.okayama.lg.jp/site/presssystem/1065566.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "岡山県 / Okayama",
+          "url": "https://www.pref.okayama.lg.jp/site/presssystem/1065566.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/43ced1e08d1a6750b431cee157704d7ba367c1ec"
+        }
+      ],
+      "affected_service": "おかやまVitalityウォーク",
+      "service_aliases": [],
+      "added_at": "2026-11-11T11:15:53+00:00",
+      "updated_at": "2026-11-11T20:15:52+00:00"
+    },
+    {
+      "id": "8e1708341ecca0be",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "JFA",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 11,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "743bfaf25b2a5781",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/8e580d2effb3e25d621f072cafe3db11fa8842e6",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/8e580d2effb3e25d621f072cafe3db11fa8842e6"
+          ]
+        },
+        {
+          "incident_id": "ca35872041127442",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/8e580d2effb3e25d621f072cafe3db11fa8842e6",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/8e580d2effb3e25d621f072cafe3db11fa8842e6"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/5885f9ac80be3f0bc98f2f20bf1823834f5ca2c6"
+        },
+        {
+          "name": "JFA",
+          "url": "https://www.jfa.jp/news/00037015/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/8e580d2effb3e25d621f072cafe3db11fa8842e6"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/256c0fdf2428f013bdc3ebb1fa8ffc040f56fca5"
+        }
+      ],
+      "affected_service": "JFA STORE",
+      "service_aliases": [],
+      "added_at": "2026-11-11T07:16:10+00:00",
+      "updated_at": "2026-11-11T20:15:52+00:00"
     },
     {
       "id": "cf1fdc0264e4b497",
@@ -630,38 +775,46 @@
       "updated_at": "2026-11-11T13:16:39+00:00"
     },
     {
-      "id": "08d395a9f3838df8",
+      "id": "2486bef322523ca4",
       "published_at": "2026-11-10T15:00:00+00:00",
-      "disclosed_at": "2026-11-10T15:00:00+00:00",
-      "organization": "岡山県",
+      "disclosed_at": null,
+      "organization": "日本郵便",
       "incident_type": "data leak",
       "incident_categories": [
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": 25,
+      "potential_records": null,
       "confidence": "high",
       "confidence_score": 60,
       "related": [
         {
-          "incident_id": "19d5816230daca6f",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.pref.okayama.lg.jp/site/presssystem/1065566.html",
+          "incident_id": "01b9a3bb946f0daf",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html",
           "evidence_urls": [
-            "https://www.pref.okayama.lg.jp/site/presssystem/1065566.html"
+            "https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html"
+          ]
+        },
+        {
+          "incident_id": "80fe411952caf308",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html",
+          "evidence_urls": [
+            "https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html"
           ]
         }
       ],
       "sources": [
         {
-          "name": "岡山県 / Okayama",
-          "url": "https://www.pref.okayama.lg.jp/site/presssystem/1065566.html"
+          "name": "日本郵便 / Japan Post",
+          "url": "https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html"
         }
       ],
-      "affected_service": "おかやまVitalityウォーク",
+      "affected_service": "LINEアカウント「郵便局[ぽすくま]」",
       "service_aliases": [],
-      "added_at": "2026-11-11T11:15:53+00:00",
-      "updated_at": "2026-11-11T11:15:53+00:00"
+      "added_at": "2026-11-11T20:15:52+00:00",
+      "updated_at": "2026-11-11T20:15:52+00:00"
     },
     {
       "id": "600545e2cdc0914b",
@@ -779,93 +932,6 @@
       "service_aliases": [],
       "added_at": "2026-11-11T09:15:59+00:00",
       "updated_at": "2026-11-11T09:15:59+00:00"
-    },
-    {
-      "id": "897523f513769424",
-      "published_at": "2026-11-10T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "高知市",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 1464,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "f6e739d2d64628d4",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/b62ec42e73df8ed3e2145e8c30120e19931a3181",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/b62ec42e73df8ed3e2145e8c30120e19931a3181"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/b62ec42e73df8ed3e2145e8c30120e19931a3181"
-        },
-        {
-          "name": "日テレNEWS NNN",
-          "url": "https://news.ntv.co.jp/n/rkc/category/society/rca5efaff64e0c42439513fa07c1eda904"
-        }
-      ],
-      "affected_service": "録画動画面接",
-      "service_aliases": [],
-      "added_at": "2026-11-11T12:16:21+00:00",
-      "updated_at": "2026-11-11T19:15:16+00:00"
-    },
-    {
-      "id": "8e1708341ecca0be",
-      "published_at": "2026-11-10T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "JFA",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 11,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "743bfaf25b2a5781",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/8e580d2effb3e25d621f072cafe3db11fa8842e6",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/8e580d2effb3e25d621f072cafe3db11fa8842e6"
-          ]
-        },
-        {
-          "incident_id": "ca35872041127442",
-          "relationship": "same_organization",
-          "evidence_url": "https://news.yahoo.co.jp/articles/8e580d2effb3e25d621f072cafe3db11fa8842e6",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/8e580d2effb3e25d621f072cafe3db11fa8842e6"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/5885f9ac80be3f0bc98f2f20bf1823834f5ca2c6"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/8e580d2effb3e25d621f072cafe3db11fa8842e6"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/256c0fdf2428f013bdc3ebb1fa8ffc040f56fca5"
-        }
-      ],
-      "affected_service": "JFA STORE",
-      "service_aliases": [],
-      "added_at": "2026-11-11T07:16:10+00:00",
-      "updated_at": "2026-11-11T10:15:54+00:00"
     },
     {
       "id": "e359784f18174ef9",
@@ -1280,7 +1346,16 @@
       "potential_records": null,
       "confidence": "high",
       "confidence_score": 65,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "2486bef322523ca4",
+          "relationship": "affects",
+          "evidence_url": "https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html",
+          "evidence_urls": [
+            "https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "合同会社ロケットボーイズ",
@@ -1296,7 +1371,7 @@
         "トナリワ"
       ],
       "added_at": "2026-11-11T09:15:59+00:00",
-      "updated_at": "2026-11-11T12:16:21+00:00"
+      "updated_at": "2026-11-11T20:15:52+00:00"
     },
     {
       "id": "a4bddfbd43d68938",
@@ -3076,13 +3151,14 @@
       "published_at": "2026-11-07T15:00:00+00:00",
       "disclosed_at": null,
       "organization": "オープンロジ",
-      "incident_type": "unauthorized access",
+      "incident_type": "data leak",
       "incident_categories": [
+        "data leak",
         "unauthorized access"
       ],
       "potential_records": null,
       "confidence": "high",
-      "confidence_score": 60,
+      "confidence_score": 75,
       "related": [
         {
           "incident_id": "71422f2b8113fd80",
@@ -3097,10 +3173,18 @@
         {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261111574117.pdf"
+        },
+        {
+          "name": "LOGISTICS TODAY",
+          "url": "https://www.logi-today.com/1020754"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/openlogi-data-breach-affected-companies/"
         }
       ],
       "added_at": "2026-11-11T09:15:59+00:00",
-      "updated_at": "2026-11-11T09:15:59+00:00"
+      "updated_at": "2026-11-11T20:15:52+00:00"
     },
     {
       "id": "a5aba76731b13cfb",
@@ -20515,6 +20599,35 @@
       "updated_at": "2026-10-28T18:16:27+00:00"
     },
     {
+      "id": "3e46506525fbbc85",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "靖國神社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 14500,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/764ac599c15550a7e20d71c15b116ae33cee2b6c"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/yasukuni-shrine-online-goods-14500-password-hash-leak/"
+        }
+      ],
+      "affected_service": "オンライン授与品・頒布品サイト",
+      "service_aliases": [],
+      "added_at": "2026-11-11T13:16:39+00:00",
+      "updated_at": "2026-11-11T20:15:52+00:00"
+    },
+    {
       "id": "8359871b1e7e813f",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": "2026-11-03T15:00:00+00:00",
@@ -21296,31 +21409,6 @@
       "service_aliases": [],
       "added_at": "2026-11-05T03:16:04+00:00",
       "updated_at": "2026-11-05T03:16:04+00:00"
-    },
-    {
-      "id": "3e46506525fbbc85",
-      "published_at": "2026-10-27T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "靖國神社",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 14500,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/yasukuni-shrine-online-goods-14500-password-hash-leak/"
-        }
-      ],
-      "affected_service": "オンライン授与品・頒布品サイト",
-      "service_aliases": [],
-      "added_at": "2026-11-11T13:16:39+00:00",
-      "updated_at": "2026-11-11T13:16:39+00:00"
     },
     {
       "id": "4c6b74a51ee58ae2",
@@ -38529,6 +38617,14 @@
       "confidence_score": 90,
       "related": [
         {
+          "incident_id": "2486bef322523ca4",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html",
+          "evidence_urls": [
+            "https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html"
+          ]
+        },
+        {
           "incident_id": "8c26ca2c5b511bab",
           "relationship": "same_organization",
           "evidence_url": "https://files.japanpost.jp/assets/34d9d11432734cfaa759e78fe395b688/99a38c8fdea24951b26188d86b797684/20261016_04_01.pdf",
@@ -38563,7 +38659,7 @@
       "affected_system": "国際郵便物の調査請求Web受付サービス",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T08:49:15+00:00",
-      "updated_at": "2026-11-05T14:17:23+00:00"
+      "updated_at": "2026-11-11T20:15:52+00:00"
     },
     {
       "id": "9db6a803851430af",
