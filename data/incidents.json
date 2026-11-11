@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-11T11:15:53+00:00",
-  "total": 1093,
+  "updated_at": "2026-11-11T12:16:21+00:00",
+  "total": 1094,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-11"
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-11-11",
-      "count": 12
+      "count": 13
     }
   ],
   "incidents": [
@@ -483,7 +483,7 @@
       ],
       "potential_records": null,
       "confidence": "high",
-      "confidence_score": 75,
+      "confidence_score": 90,
       "related": [
         {
           "incident_id": "57d15baf7435e548",
@@ -502,6 +502,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/82987d2da85daef9c699b6e33958ea2167152172"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC119D10R11C26A1000000/"
         }
       ],
       "affected_service": "CURRY UP",
@@ -509,7 +513,50 @@
         "カリーアップ"
       ],
       "added_at": "2026-11-11T09:15:59+00:00",
-      "updated_at": "2026-11-11T11:15:53+00:00"
+      "updated_at": "2026-11-11T12:16:21+00:00"
+    },
+    {
+      "id": "3d90624c0b78c561",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "愛媛県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 2039,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp/n/rnb/category/society/rb51dd22b2c3c545cfac87709e3cb106d5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/d550c2e2f9078e28f569e3961dccf2fb56234157"
+        }
+      ],
+      "affected_service": "気軽にスポーツ健康チャレンジ / 子供向けDigSports体験会",
+      "service_aliases": [],
+      "affected_services": [
+        "気軽にスポーツ健康チャレンジ",
+        "子供向けDigSports体験会"
+      ],
+      "service_details": [
+        {
+          "name": "気軽にスポーツ健康チャレンジ",
+          "aliases": []
+        },
+        {
+          "name": "子供向けDigSports体験会",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-11T11:15:53+00:00",
+      "updated_at": "2026-11-11T12:16:21+00:00"
     },
     {
       "id": "08d395a9f3838df8",
@@ -695,43 +742,38 @@
       "updated_at": "2026-11-11T09:15:59+00:00"
     },
     {
-      "id": "3d90624c0b78c561",
+      "id": "897523f513769424",
       "published_at": "2026-11-10T15:00:00+00:00",
       "disclosed_at": null,
-      "organization": "愛媛県",
+      "organization": "高知市",
       "incident_type": "data leak",
       "incident_categories": [
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": 2039,
+      "potential_records": 1464,
       "confidence": "medium",
       "confidence_score": 50,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "f6e739d2d64628d4",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/b62ec42e73df8ed3e2145e8c30120e19931a3181",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/b62ec42e73df8ed3e2145e8c30120e19931a3181"
+          ]
+        }
+      ],
       "sources": [
         {
-          "name": "日テレNEWS NNN",
-          "url": "https://news.ntv.co.jp/n/rnb/category/society/rb51dd22b2c3c545cfac87709e3cb106d5"
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b62ec42e73df8ed3e2145e8c30120e19931a3181"
         }
       ],
-      "affected_service": "気軽にスポーツ健康チャレンジ / 子供向けDigSports体験会",
+      "affected_service": "録画動画面接",
       "service_aliases": [],
-      "affected_services": [
-        "気軽にスポーツ健康チャレンジ",
-        "子供向けDigSports体験会"
-      ],
-      "service_details": [
-        {
-          "name": "気軽にスポーツ健康チャレンジ",
-          "aliases": []
-        },
-        {
-          "name": "子供向けDigSports体験会",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-11T11:15:53+00:00",
-      "updated_at": "2026-11-11T11:15:53+00:00"
+      "added_at": "2026-11-11T12:16:21+00:00",
+      "updated_at": "2026-11-11T12:16:21+00:00"
     },
     {
       "id": "8e1708341ecca0be",
@@ -1214,6 +1256,37 @@
       "updated_at": "2026-11-10T12:16:52+00:00"
     },
     {
+      "id": "80fe411952caf308",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "電通デジタル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/dentsu_digital_tonariwa_unauthorized_access_20261111/"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC11AHR0R11C26A1000000/"
+        }
+      ],
+      "affected_service": "TONARIWA",
+      "service_aliases": [
+        "トナリワ"
+      ],
+      "added_at": "2026-11-11T09:15:59+00:00",
+      "updated_at": "2026-11-11T12:16:21+00:00"
+    },
+    {
       "id": "a4bddfbd43d68938",
       "published_at": "2026-11-09T15:00:00+00:00",
       "disclosed_at": null,
@@ -1619,31 +1692,6 @@
       ],
       "added_at": "2026-11-10T06:15:30+00:00",
       "updated_at": "2026-11-10T06:15:30+00:00"
-    },
-    {
-      "id": "80fe411952caf308",
-      "published_at": "2026-11-09T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "電通デジタル",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/dentsu_digital_tonariwa_unauthorized_access_20261111/"
-        }
-      ],
-      "affected_service": "TONARIWA",
-      "service_aliases": [],
-      "added_at": "2026-11-11T09:15:59+00:00",
-      "updated_at": "2026-11-11T09:15:59+00:00"
     },
     {
       "id": "810614f7152bce97",
@@ -47428,6 +47476,14 @@
           "evidence_urls": [
             "https://news.google.com/rss/articles/CBMif0FVX3lxTFA4UGhleExnQTZaTXp1S28tNERDekdSVEpQWGU3V0h0bXJQQVNIYnd6SFNmTnhHMmNUOXZPeVZEZ1hHMEVIU21RSmZid1ZKbE5rb3pvOHpFY1c4UWRRQ29jMzB5LU5talBVQ2F6WGNwS1FiMTJYQkd0Zk5LaVdYdTQ?oc=5"
           ]
+        },
+        {
+          "incident_id": "897523f513769424",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/b62ec42e73df8ed3e2145e8c30120e19931a3181",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/b62ec42e73df8ed3e2145e8c30120e19931a3181"
+          ]
         }
       ],
       "sources": [
@@ -47441,7 +47497,7 @@
         }
       ],
       "added_at": "2026-10-21T00:07:38+00:00",
-      "updated_at": "2026-11-05T03:16:04+00:00"
+      "updated_at": "2026-11-11T12:16:21+00:00"
     },
     {
       "id": "31c76cc0c11d1aab",
