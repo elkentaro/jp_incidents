@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-11T21:15:33+00:00",
-  "total": 1104,
+  "updated_at": "2026-11-11T21:16:42+00:00",
+  "total": 1105,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-11"
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-11-11",
-      "count": 15
+      "count": 16
     },
     {
       "date": "2026-11-12",
@@ -970,6 +970,53 @@
       "service_aliases": [],
       "added_at": "2026-11-11T21:15:33+00:00",
       "updated_at": "2026-11-11T21:15:33+00:00"
+    },
+    {
+      "id": "3fb461ca8b11e282",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "靖國神社",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.yasukuni.or.jp/news_detail.html?id=735",
+          "evidence_urls": [
+            "https://www.yasukuni.or.jp/news_detail.html?id=735"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "www.yasukuni.or.jp",
+          "url": "https://www.yasukuni.or.jp/news_detail.html?id=735"
+        }
+      ],
+      "affected_service": "メールマガジン / 社報「靖國」デジタル版",
+      "service_aliases": [],
+      "affected_services": [
+        "メールマガジン",
+        "社報「靖國」デジタル版"
+      ],
+      "service_details": [
+        {
+          "name": "メールマガジン",
+          "aliases": []
+        },
+        {
+          "name": "社報「靖國」デジタル版",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-11T21:16:42+00:00",
+      "updated_at": "2026-11-11T21:16:42+00:00"
     },
     {
       "id": "e359784f18174ef9",
@@ -30774,6 +30821,14 @@
           ]
         },
         {
+          "incident_id": "3fb461ca8b11e282",
+          "relationship": "affects",
+          "evidence_url": "https://www.yasukuni.or.jp/news_detail.html?id=735",
+          "evidence_urls": [
+            "https://www.yasukuni.or.jp/news_detail.html?id=735"
+          ]
+        },
+        {
           "incident_id": "4282250a9ee5af4f",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/5a106ad94b9e15f4dd7f82d4cb9954c128f18fd0",
@@ -31347,7 +31402,7 @@
         }
       ],
       "added_at": "2026-10-21T19:22:12+00:00",
-      "updated_at": "2026-11-06T08:36:04+00:00"
+      "updated_at": "2026-11-11T21:16:42+00:00"
     },
     {
       "id": "a2cf60a92a1ad65c",
