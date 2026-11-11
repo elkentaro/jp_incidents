@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-11T10:15:54+00:00",
-  "total": 1090,
+  "updated_at": "2026-11-11T11:15:53+00:00",
+  "total": 1093,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-11"
@@ -329,7 +329,7 @@
     },
     {
       "date": "2026-11-02",
-      "count": 56
+      "count": 57
     },
     {
       "date": "2026-11-03",
@@ -365,7 +365,7 @@
     },
     {
       "date": "2026-11-11",
-      "count": 10
+      "count": 12
     }
   ],
   "incidents": [
@@ -473,6 +473,79 @@
       "updated_at": "2026-11-11T09:15:59+00:00"
     },
     {
+      "id": "71422f2b8113fd80",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "HUMAN MADE",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "57d15baf7435e548",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.release.tdnet.info/inbs/140120261111574117.pdf",
+          "evidence_urls": [
+            "https://www.release.tdnet.info/inbs/140120261111574117.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261111574117.pdf"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/82987d2da85daef9c699b6e33958ea2167152172"
+        }
+      ],
+      "affected_service": "CURRY UP",
+      "service_aliases": [
+        "カリーアップ"
+      ],
+      "added_at": "2026-11-11T09:15:59+00:00",
+      "updated_at": "2026-11-11T11:15:53+00:00"
+    },
+    {
+      "id": "08d395a9f3838df8",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": "2026-11-10T15:00:00+00:00",
+      "organization": "岡山県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 25,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "19d5816230daca6f",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.okayama.lg.jp/site/presssystem/1065566.html",
+          "evidence_urls": [
+            "https://www.pref.okayama.lg.jp/site/presssystem/1065566.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "岡山県 / Okayama",
+          "url": "https://www.pref.okayama.lg.jp/site/presssystem/1065566.html"
+        }
+      ],
+      "affected_service": "おかやまVitalityウォーク",
+      "service_aliases": [],
+      "added_at": "2026-11-11T11:15:53+00:00",
+      "updated_at": "2026-11-11T11:15:53+00:00"
+    },
+    {
       "id": "600545e2cdc0914b",
       "published_at": "2026-11-10T15:00:00+00:00",
       "disclosed_at": null,
@@ -566,39 +639,6 @@
       "updated_at": "2026-11-11T09:15:59+00:00"
     },
     {
-      "id": "71422f2b8113fd80",
-      "published_at": "2026-11-10T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "HUMAN MADE",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "57d15baf7435e548",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.release.tdnet.info/inbs/140120261111574117.pdf",
-          "evidence_urls": [
-            "https://www.release.tdnet.info/inbs/140120261111574117.pdf"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "日本取引所グループ TDnet / JPX TDnet",
-          "url": "https://www.release.tdnet.info/inbs/140120261111574117.pdf"
-        }
-      ],
-      "affected_service": "CURRY UP",
-      "service_aliases": [],
-      "added_at": "2026-11-11T09:15:59+00:00",
-      "updated_at": "2026-11-11T09:15:59+00:00"
-    },
-    {
       "id": "85465f86681e21cc",
       "published_at": "2026-11-10T15:00:00+00:00",
       "disclosed_at": null,
@@ -653,6 +693,45 @@
       ],
       "added_at": "2026-11-11T09:15:59+00:00",
       "updated_at": "2026-11-11T09:15:59+00:00"
+    },
+    {
+      "id": "3d90624c0b78c561",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "愛媛県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 2039,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp/n/rnb/category/society/rb51dd22b2c3c545cfac87709e3cb106d5"
+        }
+      ],
+      "affected_service": "気軽にスポーツ健康チャレンジ / 子供向けDigSports体験会",
+      "service_aliases": [],
+      "affected_services": [
+        "気軽にスポーツ健康チャレンジ",
+        "子供向けDigSports体験会"
+      ],
+      "service_details": [
+        {
+          "name": "気軽にスポーツ健康チャレンジ",
+          "aliases": []
+        },
+        {
+          "name": "子供向けDigSports体験会",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-11T11:15:53+00:00",
+      "updated_at": "2026-11-11T11:15:53+00:00"
     },
     {
       "id": "8e1708341ecca0be",
@@ -1742,6 +1821,14 @@
       "confidence_score": 100,
       "related": [
         {
+          "incident_id": "08d395a9f3838df8",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.okayama.lg.jp/site/presssystem/1065566.html",
+          "evidence_urls": [
+            "https://www.pref.okayama.lg.jp/site/presssystem/1065566.html"
+          ]
+        },
+        {
           "incident_id": "a916e1f197303059",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/0fc57fb183fb60a7fb35b7c46502d3461076e003",
@@ -1791,7 +1878,7 @@
       "affected_service": "住友生命Vitality体験版・企業型、Vitalityスマート(福利厚生タイプ含む)の申込みに係るサービス",
       "service_aliases": [],
       "added_at": "2026-11-09T08:16:45+00:00",
-      "updated_at": "2026-11-10T13:17:15+00:00"
+      "updated_at": "2026-11-11T11:15:53+00:00"
     },
     {
       "id": "73760e3f9e89e045",
@@ -11892,6 +11979,14 @@
           "evidence_urls": [
             "https://www.nttdata.com/global/ja/news/release/2026/110900/"
           ]
+        },
+        {
+          "incident_id": "708c1e97d0a4177b",
+          "relationship": "affects",
+          "evidence_url": "https://www.yomiuri.co.jp/local/ibaraki/news/20261110-GYTNT00252/",
+          "evidence_urls": [
+            "https://www.yomiuri.co.jp/local/ibaraki/news/20261110-GYTNT00252/"
+          ]
         }
       ],
       "sources": [
@@ -11915,7 +12010,7 @@
       "affected_service": "住友生命Vitality体験版・企業型、Vitalityスマート(福利厚生タイプ含む)の申込みに係るサービス",
       "service_aliases": [],
       "added_at": "2026-11-09T08:16:45+00:00",
-      "updated_at": "2026-11-10T13:17:15+00:00"
+      "updated_at": "2026-11-11T11:15:53+00:00"
     },
     {
       "id": "c70726cc989a1966",
@@ -13072,6 +13167,40 @@
       "service_aliases": [],
       "added_at": "2026-11-03T12:17:45+00:00",
       "updated_at": "2026-11-03T12:17:45+00:00"
+    },
+    {
+      "id": "708c1e97d0a4177b",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "鹿嶋市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 4,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "a99204c7fb0a8fea",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.yomiuri.co.jp/local/ibaraki/news/20261110-GYTNT00252/",
+          "evidence_urls": [
+            "https://www.yomiuri.co.jp/local/ibaraki/news/20261110-GYTNT00252/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/local/ibaraki/news/20261110-GYTNT00252/"
+        }
+      ],
+      "affected_service": "Vitality体験版",
+      "service_aliases": [],
+      "added_at": "2026-11-11T11:15:53+00:00",
+      "updated_at": "2026-11-11T11:15:53+00:00"
     },
     {
       "id": "f945606df6d28bc9",
