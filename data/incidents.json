@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-11T21:16:42+00:00",
+  "updated_at": "2026-11-11T22:15:24+00:00",
   "total": 1105,
   "date_range": {
     "start": "2025-10-16",
@@ -744,6 +744,44 @@
       "updated_at": "2026-11-11T13:16:39+00:00"
     },
     {
+      "id": "7758375381d0f124",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "山口県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 42,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "19d5816230daca6f",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB0TU04ODNuQXphQ2xyNTgwTjdtR2hxNmxHdzB4VTlwLUZfSUFFSDhIdURlcTNjSkNvcHJjVUNtaFdiZHFpdWwxYXUwZw?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB0TU04ODNuQXphQ2xyNTgwTjdtR2hxNmxHdzB4VTlwLUZfSUFFSDhIdURlcTNjSkNvcHJjVUNtaFdiZHFpdWwxYXUwZw?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "47NEWS",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB0TU04ODNuQXphQ2xyNTgwTjdtR2hxNmxHdzB4VTlwLUZfSUFFSDhIdURlcTNjSkNvcHJjVUNtaFdiZHFpdWwxYXUwZw?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/bf03e6c44744c82f3b66c0a9c650e9950bd03e33"
+        }
+      ],
+      "affected_service": "やまぐちVitality(バイタリティー)ウォーク",
+      "service_aliases": [],
+      "added_at": "2026-11-11T21:15:33+00:00",
+      "updated_at": "2026-11-11T22:15:24+00:00"
+    },
+    {
       "id": "d3c8cfdfe2497e40",
       "published_at": "2026-11-10T15:00:00+00:00",
       "disclosed_at": null,
@@ -938,40 +976,6 @@
       "updated_at": "2026-11-11T09:15:59+00:00"
     },
     {
-      "id": "7758375381d0f124",
-      "published_at": "2026-11-10T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "山口県",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 42,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "19d5816230daca6f",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB0TU04ODNuQXphQ2xyNTgwTjdtR2hxNmxHdzB4VTlwLUZfSUFFSDhIdURlcTNjSkNvcHJjVUNtaFdiZHFpdWwxYXUwZw?oc=5",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB0TU04ODNuQXphQ2xyNTgwTjdtR2hxNmxHdzB4VTlwLUZfSUFFSDhIdURlcTNjSkNvcHJjVUNtaFdiZHFpdWwxYXUwZw?oc=5"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "47NEWS",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB0TU04ODNuQXphQ2xyNTgwTjdtR2hxNmxHdzB4VTlwLUZfSUFFSDhIdURlcTNjSkNvcHJjVUNtaFdiZHFpdWwxYXUwZw?oc=5"
-        }
-      ],
-      "affected_service": "やまぐちVitality(バイタリティー)ウォーク",
-      "service_aliases": [],
-      "added_at": "2026-11-11T21:15:33+00:00",
-      "updated_at": "2026-11-11T21:15:33+00:00"
-    },
-    {
       "id": "3fb461ca8b11e282",
       "published_at": "2026-11-10T15:00:00+00:00",
       "disclosed_at": null,
@@ -1157,6 +1161,10 @@
           "url": "https://www.kentei.ne.jp/51816"
         },
         {
+          "name": "legalagent list",
+          "url": "https://www.jcci.or.jp/news/news/2026/1110170000.html"
+        },
+        {
           "name": "京都新聞デジタル",
           "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE0tOEM3eUNRMm11ZnpHWGNWOEZob2RUNFpDMTlWRjF5c3lLbWVwUnBzcWhZMlFRRGg3NE5vem5JbTBEd2g0OEIzUHJnWFVSdDM3MWxNcDUwRlU?oc=5"
         },
@@ -1184,7 +1192,7 @@
       "affected_service": "簿記などのインターネット試験",
       "service_aliases": [],
       "added_at": "2026-11-10T12:16:52+00:00",
-      "updated_at": "2026-11-11T01:16:17+00:00"
+      "updated_at": "2026-11-11T22:15:24+00:00"
     },
     {
       "id": "c4863bee87cbe261",
@@ -31381,6 +31389,10 @@
           "url": "https://info.blastmail.jp/information_20261021.html"
         },
         {
+          "name": "legalagent list",
+          "url": "https://www.rakus.co.jp/news/2026/1111.html"
+        },
+        {
           "name": "plasticjournal.net",
           "url": "https://plasticjournal.net/news/25490.html"
         },
@@ -31402,7 +31414,7 @@
         }
       ],
       "added_at": "2026-10-21T19:22:12+00:00",
-      "updated_at": "2026-11-11T21:16:42+00:00"
+      "updated_at": "2026-11-11T22:15:24+00:00"
     },
     {
       "id": "a2cf60a92a1ad65c",
