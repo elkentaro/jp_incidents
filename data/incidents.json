@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-11T05:15:31+00:00",
-  "total": 1074,
+  "updated_at": "2026-11-11T06:15:30+00:00",
+  "total": 1076,
   "date_range": {
     "start": "2025-10-16",
-    "end": "2026-11-10"
+    "end": "2026-11-11"
   },
   "daily_counts_90d": [
     {
@@ -313,7 +313,7 @@
     },
     {
       "date": "2026-10-29",
-      "count": 36
+      "count": 37
     },
     {
       "date": "2026-10-30",
@@ -365,10 +365,35 @@
     },
     {
       "date": "2026-11-11",
-      "count": 0
+      "count": 1
     }
   ],
   "incidents": [
+    {
+      "id": "e8869a011b42a736",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "SMBC日興証券",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 56487,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "リスク対策.com",
+          "url": "https://www.risktaisaku.com/articles/-/117099"
+        }
+      ],
+      "affected_service": "持ち株会事務受託業務",
+      "service_aliases": [],
+      "added_at": "2026-11-11T06:15:30+00:00",
+      "updated_at": "2026-11-11T06:15:30+00:00"
+    },
     {
       "id": "4af336cfb4255f5a",
       "published_at": "2026-11-09T15:00:00+00:00",
@@ -16804,6 +16829,31 @@
       ],
       "added_at": "2026-10-30T01:13:09+00:00",
       "updated_at": "2026-10-30T14:15:52+00:00"
+    },
+    {
+      "id": "1a369c3ba5a19f0b",
+      "published_at": "2026-10-28T15:00:00+00:00",
+      "disclosed_at": "2026-11-10T15:00:00+00:00",
+      "organization": "FABRIC TOKYO",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 699,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/fabric_tokyo_test_system_access_key_699_20261111/"
+        }
+      ],
+      "affected_service": "検証用システム",
+      "service_aliases": [],
+      "added_at": "2026-11-11T06:15:30+00:00",
+      "updated_at": "2026-11-11T06:15:30+00:00"
     },
     {
       "id": "9bcce8ee38db1427",
