@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-11T12:16:21+00:00",
-  "total": 1094,
+  "updated_at": "2026-11-11T13:16:39+00:00",
+  "total": 1096,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-11"
@@ -309,7 +309,7 @@
     },
     {
       "date": "2026-10-28",
-      "count": 55
+      "count": 56
     },
     {
       "date": "2026-10-29",
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-11-10",
-      "count": 26
+      "count": 27
     },
     {
       "date": "2026-11-11",
@@ -516,6 +516,42 @@
       "updated_at": "2026-11-11T12:16:21+00:00"
     },
     {
+      "id": "cf1fdc0264e4b497",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "野村ホールディングス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 13500,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "674fc8cb330376ee",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.nomuraholdings.com/jp/news/topics/20261111.html",
+          "evidence_urls": [
+            "https://www.nomuraholdings.com/jp/news/topics/20261111.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "野村ホールディングス / Nomura",
+          "url": "https://www.nomuraholdings.com/jp/news/topics/20261111.html"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUB118EO0R11C26A1000000/"
+        }
+      ],
+      "added_at": "2026-11-11T09:15:59+00:00",
+      "updated_at": "2026-11-11T13:16:39+00:00"
+    },
+    {
       "id": "3d90624c0b78c561",
       "published_at": "2026-11-10T15:00:00+00:00",
       "disclosed_at": null,
@@ -557,6 +593,41 @@
       ],
       "added_at": "2026-11-11T11:15:53+00:00",
       "updated_at": "2026-11-11T12:16:21+00:00"
+    },
+    {
+      "id": "d3c8cfdfe2497e40",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "三菱UFJフィナンシャル・グループ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 20000,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.yomiuri.co.jp/economy/20261111-GYT1T00260/",
+          "evidence_urls": [
+            "https://www.yomiuri.co.jp/economy/20261111-GYT1T00260/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/economy/20261111-GYT1T00260/"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUB118EO0R11C26A1000000/"
+        }
+      ],
+      "added_at": "2026-11-11T10:15:54+00:00",
+      "updated_at": "2026-11-11T13:16:39+00:00"
     },
     {
       "id": "08d395a9f3838df8",
@@ -710,38 +781,6 @@
       "updated_at": "2026-11-11T09:15:59+00:00"
     },
     {
-      "id": "cf1fdc0264e4b497",
-      "published_at": "2026-11-10T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "野村ホールディングス",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 13500,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "674fc8cb330376ee",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.nomuraholdings.com/jp/news/topics/20261111.html",
-          "evidence_urls": [
-            "https://www.nomuraholdings.com/jp/news/topics/20261111.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "野村ホールディングス / Nomura",
-          "url": "https://www.nomuraholdings.com/jp/news/topics/20261111.html"
-        }
-      ],
-      "added_at": "2026-11-11T09:15:59+00:00",
-      "updated_at": "2026-11-11T09:15:59+00:00"
-    },
-    {
       "id": "897523f513769424",
       "published_at": "2026-11-10T15:00:00+00:00",
       "disclosed_at": null,
@@ -822,37 +861,6 @@
       "affected_service": "JFA STORE",
       "service_aliases": [],
       "added_at": "2026-11-11T07:16:10+00:00",
-      "updated_at": "2026-11-11T10:15:54+00:00"
-    },
-    {
-      "id": "d3c8cfdfe2497e40",
-      "published_at": "2026-11-10T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "三菱UFJフィナンシャル・グループ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 20000,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.yomiuri.co.jp/economy/20261111-GYT1T00260/",
-          "evidence_urls": [
-            "https://www.yomiuri.co.jp/economy/20261111-GYT1T00260/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "読売新聞",
-          "url": "https://www.yomiuri.co.jp/economy/20261111-GYT1T00260/"
-        }
-      ],
-      "added_at": "2026-11-11T10:15:54+00:00",
       "updated_at": "2026-11-11T10:15:54+00:00"
     },
     {
@@ -1487,6 +1495,31 @@
       "service_aliases": [],
       "added_at": "2026-11-11T03:15:41+00:00",
       "updated_at": "2026-11-11T03:15:41+00:00"
+    },
+    {
+      "id": "0c38a8bc1ca4760a",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "トレードワルツ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 130,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "LOGISTICS TODAY",
+          "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1ZV29HeUpYMVpIQmUzMkJmQ2MxMVpBY3d1ck91cF9fd3N0bHFvamFlSG51TjVxc3N6aXoyVEZ1S01MSkJCbmJJSF9R?oc=5"
+        }
+      ],
+      "affected_service": "TradeWaltz",
+      "service_aliases": [],
+      "added_at": "2026-11-11T13:16:39+00:00",
+      "updated_at": "2026-11-11T13:16:39+00:00"
     },
     {
       "id": "14cc468f9a7f9a3d",
@@ -5814,6 +5847,75 @@
       "updated_at": "2026-11-09T01:16:50+00:00"
     },
     {
+      "id": "89daed31e3dba05b",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "Fanplus",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/4dcb753a85642355a838a6c3c59cef2b3a7da5a1",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/4dcb753a85642355a838a6c3c59cef2b3a7da5a1",
+            "https://news.yahoo.co.jp/articles/4dcb753a85642355a838a6c3c59cef2b3a7da5a1?source=rss"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Uru Official Website & Official Fanclub 「SABACAN」",
+          "url": "https://uru-official.com/news/detail/1781"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://fanplus.co.jp/static/fanplus/information/arara_notice_20261102.pdf"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/4dcb753a85642355a838a6c3c59cef2b3a7da5a1?source=rss"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/4dcb753a85642355a838a6c3c59cef2b3a7da5a1"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/aefcac2ba8d4ecea50cf2e06e4f51aa9f35b0859"
+        },
+        {
+          "name": "すとぷり ふぁみりーくらぶ",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1OTnIxYVVlZTRDRVQ4WHhFWENmMUlJY2E1U2l3ckY1eXIwNnBJMlhQWWtXd1ZESEttRmx5dFdOYl9KQlNnVHRkRjBLSFZLMktHR2pWa181UlV4SGNwclNsXw?oc=5"
+        }
+      ],
+      "affected_service": "アララメッセージ / すとぷり ふぁみりーくらぶ",
+      "service_aliases": [],
+      "affected_services": [
+        "アララメッセージ",
+        "すとぷり ふぁみりーくらぶ"
+      ],
+      "service_details": [
+        {
+          "name": "アララメッセージ",
+          "aliases": []
+        },
+        {
+          "name": "すとぷり ふぁみりーくらぶ",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-05T08:16:07+00:00",
+      "updated_at": "2026-11-11T13:16:39+00:00"
+    },
+    {
       "id": "9a1e2bc21268aad2",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": null,
@@ -6229,57 +6331,6 @@
       "service_aliases": [],
       "added_at": "2026-11-05T11:16:39+00:00",
       "updated_at": "2026-11-09T01:16:50+00:00"
-    },
-    {
-      "id": "89daed31e3dba05b",
-      "published_at": "2026-11-04T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "Fanplus",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/4dcb753a85642355a838a6c3c59cef2b3a7da5a1",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/4dcb753a85642355a838a6c3c59cef2b3a7da5a1",
-            "https://news.yahoo.co.jp/articles/4dcb753a85642355a838a6c3c59cef2b3a7da5a1?source=rss"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Uru Official Website & Official Fanclub 「SABACAN」",
-          "url": "https://uru-official.com/news/detail/1781"
-        },
-        {
-          "name": "satimo list",
-          "url": "https://fanplus.co.jp/static/fanplus/information/arara_notice_20261102.pdf"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/4dcb753a85642355a838a6c3c59cef2b3a7da5a1?source=rss"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/4dcb753a85642355a838a6c3c59cef2b3a7da5a1"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/aefcac2ba8d4ecea50cf2e06e4f51aa9f35b0859"
-        }
-      ],
-      "affected_service": "アララメッセージ",
-      "service_aliases": [],
-      "added_at": "2026-11-05T08:16:07+00:00",
-      "updated_at": "2026-11-11T03:15:41+00:00"
     },
     {
       "id": "a7f81e4623ebef3c",
@@ -21241,6 +21292,31 @@
       "service_aliases": [],
       "added_at": "2026-11-05T03:16:04+00:00",
       "updated_at": "2026-11-05T03:16:04+00:00"
+    },
+    {
+      "id": "3e46506525fbbc85",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "靖國神社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 14500,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/yasukuni-shrine-online-goods-14500-password-hash-leak/"
+        }
+      ],
+      "affected_service": "オンライン授与品・頒布品サイト",
+      "service_aliases": [],
+      "added_at": "2026-11-11T13:16:39+00:00",
+      "updated_at": "2026-11-11T13:16:39+00:00"
     },
     {
       "id": "4c6b74a51ee58ae2",
