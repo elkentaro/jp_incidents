@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-11T03:15:41+00:00",
-  "total": 1073,
+  "updated_at": "2026-11-11T04:15:34+00:00",
+  "total": 1074,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-10"
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-11-10",
-      "count": 24
+      "count": 25
     },
     {
       "date": "2026-11-11",
@@ -788,6 +788,40 @@
       "service_aliases": [],
       "added_at": "2026-11-10T07:15:34+00:00",
       "updated_at": "2026-11-10T07:15:34+00:00"
+    },
+    {
+      "id": "bd74a732b59c7f90",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "バルテス・ホールディングス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 47502,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.valtes-hd.co.jp/news/2026/202611101996/",
+          "evidence_urls": [
+            "https://www.valtes-hd.co.jp/news/2026/202611101996/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.valtes-hd.co.jp/news/2026/202611101996/"
+        }
+      ],
+      "affected_service": "「Qbook」会員向けメールマガジン",
+      "service_aliases": [],
+      "added_at": "2026-11-11T04:15:34+00:00",
+      "updated_at": "2026-11-11T04:15:34+00:00"
     },
     {
       "id": "5961300f0ffbfa38",
@@ -2984,6 +3018,10 @@
           "url": "https://www.nitorihd.co.jp/news/items/99443f42169f13af7d13c38e3f879a48.pdf"
         },
         {
+          "name": "innovaTopia",
+          "url": "https://innovatopia.jp/cyber-security/cyber-security-news/119884/"
+        },
+        {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261109569598.pdf"
         },
@@ -3025,7 +3063,7 @@
         }
       ],
       "added_at": "2026-11-09T10:16:41+00:00",
-      "updated_at": "2026-11-10T00:16:43+00:00"
+      "updated_at": "2026-11-11T04:15:34+00:00"
     },
     {
       "id": "69e3aca1139a6c35",
@@ -18533,6 +18571,14 @@
           ]
         },
         {
+          "incident_id": "bd74a732b59c7f90",
+          "relationship": "affects",
+          "evidence_url": "https://www.valtes-hd.co.jp/news/2026/202611101996/",
+          "evidence_urls": [
+            "https://www.valtes-hd.co.jp/news/2026/202611101996/"
+          ]
+        },
+        {
           "incident_id": "bee2e8e6af09f201",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0xc0ZCNnR5WlAwajBTZVZJQXlNTEVzMl93SDlGTEN0cmVVbnRiN1ZMR2trUXlVN0Y1RmJ2QjJjRTVIb1BsUUV0WEZ5X2xSODRiRUVOWDVzUldoUmUwc0JobFMzOGxTQVFtTHNkQ0ZHaWhTZ1ZWWXY4bjBaR1dhTkE?oc=5",
@@ -18880,7 +18926,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-11T03:15:41+00:00"
+      "updated_at": "2026-11-11T04:15:34+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
