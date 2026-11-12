@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-12T03:15:20+00:00",
-  "total": 1108,
+  "updated_at": "2026-11-12T06:16:07+00:00",
+  "total": 1110,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-12"
@@ -337,7 +337,7 @@
     },
     {
       "date": "2026-11-05",
-      "count": 56
+      "count": 57
     },
     {
       "date": "2026-11-06",
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-11-11",
-      "count": 17
+      "count": 18
     },
     {
       "date": "2026-11-12",
@@ -1018,6 +1018,48 @@
       "service_aliases": [],
       "added_at": "2026-11-11T09:15:59+00:00",
       "updated_at": "2026-11-11T09:15:59+00:00"
+    },
+    {
+      "id": "f60345dbc9464f48",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東洋大学",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "43ffe25b8d12d791",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.toyo.ac.jp/news/20261111-20555.html",
+          "evidence_urls": [
+            "https://www.toyo.ac.jp/news/20261111-20555.html"
+          ]
+        },
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.toyo.ac.jp/news/20261111-20555.html",
+          "evidence_urls": [
+            "https://www.toyo.ac.jp/news/20261111-20555.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "東洋大学",
+          "url": "https://www.toyo.ac.jp/news/20261111-20555.html"
+        }
+      ],
+      "affected_service": "メールマガジン",
+      "service_aliases": [],
+      "added_at": "2026-11-12T06:16:07+00:00",
+      "updated_at": "2026-11-12T06:16:07+00:00"
     },
     {
       "id": "3fb461ca8b11e282",
@@ -7858,7 +7900,16 @@
       "potential_records": null,
       "confidence": "high",
       "confidence_score": 60,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "f60345dbc9464f48",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.toyo.ac.jp/news/20261111-20555.html",
+          "evidence_urls": [
+            "https://www.toyo.ac.jp/news/20261111-20555.html"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "東洋大学",
@@ -7866,7 +7917,7 @@
         }
       ],
       "added_at": "2026-11-05T09:15:53+00:00",
-      "updated_at": "2026-11-05T09:15:53+00:00"
+      "updated_at": "2026-11-12T06:16:07+00:00"
     },
     {
       "id": "45d81265e29992d8",
@@ -8106,6 +8157,29 @@
       "service_aliases": [],
       "added_at": "2026-11-06T10:15:48+00:00",
       "updated_at": "2026-11-06T10:15:48+00:00"
+    },
+    {
+      "id": "ca7f37d2cd544aab",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "サイバーセキュリティクラウド",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261112575882.pdf"
+        }
+      ],
+      "added_at": "2026-11-12T06:16:07+00:00",
+      "updated_at": "2026-11-12T06:16:07+00:00"
     },
     {
       "id": "3d6f13e737e7ea78",
@@ -20368,6 +20442,14 @@
           ]
         },
         {
+          "incident_id": "f60345dbc9464f48",
+          "relationship": "affects",
+          "evidence_url": "https://www.toyo.ac.jp/news/20261111-20555.html",
+          "evidence_urls": [
+            "https://www.toyo.ac.jp/news/20261111-20555.html"
+          ]
+        },
+        {
           "incident_id": "f6d525de9624b10f",
           "relationship": "affects",
           "evidence_url": "https://www.sofmap.com/contents/?id=info&sid=261102b",
@@ -20440,7 +20522,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-12T01:16:23+00:00"
+      "updated_at": "2026-11-12T06:16:07+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -20495,6 +20577,43 @@
       "service_aliases": [],
       "added_at": "2026-10-28T07:15:47+00:00",
       "updated_at": "2026-10-29T06:16:15+00:00"
+    },
+    {
+      "id": "3e46506525fbbc85",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "靖國神社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 14500,
+      "confidence": "high",
+      "confidence_score": 95,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/764ac599c15550a7e20d71c15b116ae33cee2b6c"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/yasukuni-shrine-online-goods-14500-password-hash-leak/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118307"
+        },
+        {
+          "name": "ニコニコニュース",
+          "url": "https://news.nicovideo.jp/watch/nw19981011?news_ref=search_search"
+        }
+      ],
+      "affected_service": "オンライン授与品・頒布品サイト",
+      "service_aliases": [],
+      "added_at": "2026-11-11T13:16:39+00:00",
+      "updated_at": "2026-11-12T06:16:07+00:00"
     },
     {
       "id": "44e7187878fd515f",
@@ -20741,39 +20860,6 @@
       ],
       "added_at": "2026-10-28T10:15:54+00:00",
       "updated_at": "2026-10-30T01:13:09+00:00"
-    },
-    {
-      "id": "3e46506525fbbc85",
-      "published_at": "2026-10-27T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "靖國神社",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 14500,
-      "confidence": "high",
-      "confidence_score": 80,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/764ac599c15550a7e20d71c15b116ae33cee2b6c"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/yasukuni-shrine-online-goods-14500-password-hash-leak/"
-        },
-        {
-          "name": "Cybersecurity.jp",
-          "url": "https://cybersecurity-jp.com/news/118307"
-        }
-      ],
-      "affected_service": "オンライン授与品・頒布品サイト",
-      "service_aliases": [],
-      "added_at": "2026-11-11T13:16:39+00:00",
-      "updated_at": "2026-11-12T02:16:22+00:00"
     },
     {
       "id": "3f9647cdc55cfd86",
@@ -30228,10 +30314,14 @@
         {
           "name": "satimo list",
           "url": "https://nulab.com/ja/info/20261022-1-nulab/"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://nulab.com/ja/info/20261111-3-nulab/"
         }
       ],
       "added_at": "2026-10-23T01:00:27+00:00",
-      "updated_at": "2026-10-23T01:00:27+00:00"
+      "updated_at": "2026-11-12T06:16:07+00:00"
     },
     {
       "id": "de9a0397ae6b57cd",
