@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-12T10:15:34+00:00",
-  "total": 1117,
+  "updated_at": "2026-11-12T11:15:59+00:00",
+  "total": 1120,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-12"
@@ -310,7 +310,7 @@
     },
     {
       "date": "2026-10-29",
-      "count": 37
+      "count": 38
     },
     {
       "date": "2026-10-30",
@@ -366,7 +366,7 @@
     },
     {
       "date": "2026-11-12",
-      "count": 4
+      "count": 6
     }
   ],
   "incidents": [
@@ -489,6 +489,63 @@
       "service_aliases": [],
       "added_at": "2026-11-12T10:15:34+00:00",
       "updated_at": "2026-11-12T10:15:34+00:00"
+    },
+    {
+      "id": "36767938e5293e2e",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "二戸市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 240,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "3d4ac3f77a219dbf",
+          "relationship": "affected_by",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/-/3081375?display=1",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/-/3081375?display=1"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3081375?display=1"
+        }
+      ],
+      "affected_service": "マイナンバーカード交付予約・管理システム",
+      "service_aliases": [],
+      "added_at": "2026-11-12T11:15:59+00:00",
+      "updated_at": "2026-11-12T11:15:59+00:00"
+    },
+    {
+      "id": "4e1d08ad7f9919dc",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": "2026-11-11T15:00:00+00:00",
+      "organization": "ワンキャリア",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 2300,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/onecareer-notion-ai-fireworks-2300-personal-information-20261112/"
+        }
+      ],
+      "added_at": "2026-11-12T11:15:59+00:00",
+      "updated_at": "2026-11-12T11:15:59+00:00"
     },
     {
       "id": "08d395a9f3838df8",
@@ -1081,9 +1138,10 @@
         {
           "incident_id": "f6e739d2d64628d4",
           "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/b62ec42e73df8ed3e2145e8c30120e19931a3181",
+          "evidence_url": "https://news.yahoo.co.jp/articles/ba4c026225ef145b98349f3c2af4f846bd143583",
           "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/b62ec42e73df8ed3e2145e8c30120e19931a3181"
+            "https://news.yahoo.co.jp/articles/b62ec42e73df8ed3e2145e8c30120e19931a3181",
+            "https://news.yahoo.co.jp/articles/ba4c026225ef145b98349f3c2af4f846bd143583"
           ]
         }
       ],
@@ -1116,7 +1174,7 @@
       "affected_service": "録画動画面接",
       "service_aliases": [],
       "added_at": "2026-11-11T12:16:21+00:00",
-      "updated_at": "2026-11-12T07:15:39+00:00"
+      "updated_at": "2026-11-12T11:15:59+00:00"
     },
     {
       "id": "a6da8d378141d816",
@@ -1572,12 +1630,16 @@
         {
           "name": "東京ガス / Tokyo Gas",
           "url": "https://www.tokyo-gas.co.jp/news/press/20261112-02.html"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC1274H0S6A111C2000000/"
         }
       ],
       "affected_service": "ガス本管埋設状況確認サービス",
       "service_aliases": [],
       "added_at": "2026-11-12T09:15:21+00:00",
-      "updated_at": "2026-11-12T09:15:21+00:00"
+      "updated_at": "2026-11-12T11:15:59+00:00"
     },
     {
       "id": "80fe411952caf308",
@@ -7306,12 +7368,16 @@
         {
           "name": "northern-happinets.com",
           "url": "https://northern-happinets.com/news/detail/id=23087"
+        },
+        {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp/n/abs/category/society/ab9ed61cc359ae47778d8c914b740c9dee"
         }
       ],
       "affected_service": "ファンクラブ「クラブハピネッツ」",
       "service_aliases": [],
       "added_at": "2026-11-06T10:15:48+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-12T11:15:59+00:00"
     },
     {
       "id": "ca7f37d2cd544aab",
@@ -7343,10 +7409,22 @@
         {
           "name": "Yahoo! JAPAN",
           "url": "https://news.yahoo.co.jp/articles/f517afa56e4fd221c0e6679da3757b084cd2ea09"
+        },
+        {
+          "name": "BigGo ファイナンス",
+          "url": "https://finance.biggo.jp/news/79f553b7-b880-4b95-b80b-17cb2f24410d"
+        },
+        {
+          "name": "テレ朝NEWS",
+          "url": "https://news.tv-asahi.co.jp/news_economy/articles/000547303.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/12a48921b46219a2808af9f027db956feafeab80"
         }
       ],
       "added_at": "2026-11-12T06:16:07+00:00",
-      "updated_at": "2026-11-12T10:15:34+00:00"
+      "updated_at": "2026-11-12T11:15:59+00:00"
     },
     {
       "id": "ce7d32fd4e6c1d66",
@@ -17598,12 +17676,16 @@
         {
           "name": "satimo list",
           "url": "https://yomukama.shirt.co.jp/5374"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC127KO0S6A111C2000000/"
         }
       ],
       "affected_service": "メールマガジン",
       "service_aliases": [],
       "added_at": "2026-11-05T01:16:21+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-12T11:15:59+00:00"
     },
     {
       "id": "b77d3f17dbf0f864",
@@ -18668,6 +18750,31 @@
       "updated_at": "2026-11-01T11:53:03+00:00"
     },
     {
+      "id": "aafe5b0a768df380",
+      "published_at": "2026-10-28T15:00:00+00:00",
+      "disclosed_at": "2026-11-11T15:00:00+00:00",
+      "organization": "マクロミル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 317,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/macromill-monitor-317-data-breach-82-bank-accounts-2026/"
+        }
+      ],
+      "affected_service": "マクロミル モニタサイト",
+      "service_aliases": [],
+      "added_at": "2026-11-12T11:15:59+00:00",
+      "updated_at": "2026-11-12T11:15:59+00:00"
+    },
+    {
       "id": "eef2d85708796d26",
       "published_at": "2026-10-28T15:00:00+00:00",
       "disclosed_at": null,
@@ -18994,6 +19101,14 @@
           ]
         },
         {
+          "incident_id": "36767938e5293e2e",
+          "relationship": "affects",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/-/3081375?display=1",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/-/3081375?display=1"
+          ]
+        },
+        {
           "incident_id": "490a56648536605f",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBheU9Kemhuc3E2d2xwWlZWVGtweThuZUpWMHJaV3RRNy1UVGhlTi0xMXRtRWUtMGwwOUljUDRlOUdwNHBMMDViTUg0RkJUS0lsWWJSTDQtcEZQdlI1ZlNJVjNRQWZNTVp3QWhMT2Q3YUlXbU5OYnVwRVNZUWo?oc=5",
@@ -19105,7 +19220,7 @@
       "affected_service": "アララメッセージ",
       "service_aliases": [],
       "added_at": "2026-11-03T01:15:51+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-12T11:15:59+00:00"
     },
     {
       "id": "3e46506525fbbc85",
@@ -19137,12 +19252,16 @@
         {
           "name": "ニコニコニュース",
           "url": "https://news.nicovideo.jp/watch/nw19981011?news_ref=search_search"
+        },
+        {
+          "name": "ABEMA TIMES",
+          "url": "https://times.abema.tv/articles/-/10288271"
         }
       ],
       "affected_service": "オンライン授与品・頒布品サイト",
       "service_aliases": [],
       "added_at": "2026-11-11T13:16:39+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-12T11:15:59+00:00"
     },
     {
       "id": "3f9647cdc55cfd86",
@@ -48706,9 +48825,10 @@
         {
           "incident_id": "897523f513769424",
           "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/b62ec42e73df8ed3e2145e8c30120e19931a3181",
+          "evidence_url": "https://news.yahoo.co.jp/articles/ba4c026225ef145b98349f3c2af4f846bd143583",
           "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/b62ec42e73df8ed3e2145e8c30120e19931a3181"
+            "https://news.yahoo.co.jp/articles/b62ec42e73df8ed3e2145e8c30120e19931a3181",
+            "https://news.yahoo.co.jp/articles/ba4c026225ef145b98349f3c2af4f846bd143583"
           ]
         }
       ],
@@ -48723,7 +48843,7 @@
         }
       ],
       "added_at": "2026-10-21T00:07:38+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-12T11:15:59+00:00"
     },
     {
       "id": "31c76cc0c11d1aab",
