@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-12T21:15:22+00:00",
-  "total": 1133,
+  "updated_at": "2026-11-12T22:15:17+00:00",
+  "total": 1141,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-12"
@@ -202,7 +202,7 @@
     },
     {
       "date": "2026-10-03",
-      "count": 2
+      "count": 3
     },
     {
       "date": "2026-10-04",
@@ -266,7 +266,7 @@
     },
     {
       "date": "2026-10-19",
-      "count": 42
+      "count": 43
     },
     {
       "date": "2026-10-20",
@@ -274,7 +274,7 @@
     },
     {
       "date": "2026-10-21",
-      "count": 62
+      "count": 63
     },
     {
       "date": "2026-10-22",
@@ -354,7 +354,7 @@
     },
     {
       "date": "2026-11-10",
-      "count": 32
+      "count": 34
     },
     {
       "date": "2026-11-11",
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-12",
-      "count": 12
+      "count": 15
     },
     {
       "date": "2026-11-13",
@@ -399,6 +399,80 @@
       "service_aliases": [],
       "added_at": "2026-11-12T21:15:22+00:00",
       "updated_at": "2026-11-12T21:15:22+00:00"
+    },
+    {
+      "id": "4d5625761a2f2f2c",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "足利市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "3d4ac3f77a219dbf",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1fcFNnQ2psUTNkOXdFYnR3dkl3QW1rd1VtY1g2WVY4UUpIOVZrX2Y1OHBYdTJya05rNHVETGRkYlZ5NzVFSkE0N043SjBudW1mSnlicENGT3NRMmc?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1fcFNnQ2psUTNkOXdFYnR3dkl3QW1rd1VtY1g2WVY4UUpIOVZrX2Y1OHBYdTJya05rNHVETGRkYlZ5NzVFSkE0N043SjBudW1mSnlicENGT3NRMmc?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "足利市",
+          "url": "https://www.city.ashikaga.tochigi.jp/goverment/000080/000981/p008899.html"
+        },
+        {
+          "name": "下野新聞社",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1fcFNnQ2psUTNkOXdFYnR3dkl3QW1rd1VtY1g2WVY4UUpIOVZrX2Y1OHBYdTJya05rNHVETGRkYlZ5NzVFSkE0N043SjBudW1mSnlicENGT3NRMmc?oc=5"
+        }
+      ],
+      "affected_service": "オンライン申請システム",
+      "service_aliases": [],
+      "added_at": "2026-11-12T22:15:17+00:00",
+      "updated_at": "2026-11-12T22:15:17+00:00"
+    },
+    {
+      "id": "5f14db3e89b72105",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "那須塩原市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "3d4ac3f77a219dbf",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1fcFNnQ2psUTNkOXdFYnR3dkl3QW1rd1VtY1g2WVY4UUpIOVZrX2Y1OHBYdTJya05rNHVETGRkYlZ5NzVFSkE0N043SjBudW1mSnlicENGT3NRMmc?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1fcFNnQ2psUTNkOXdFYnR3dkl3QW1rd1VtY1g2WVY4UUpIOVZrX2Y1OHBYdTJya05rNHVETGRkYlZ5NzVFSkE0N043SjBudW1mSnlicENGT3NRMmc?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "那須塩原市",
+          "url": "https://www.city.nasushiobara.tochigi.jp/soshikikarasagasu/digitalsuishinka/huseiakusesu_zyouhourouei/24640.html"
+        },
+        {
+          "name": "下野新聞社",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1fcFNnQ2psUTNkOXdFYnR3dkl3QW1rd1VtY1g2WVY4UUpIOVZrX2Y1OHBYdTJya05rNHVETGRkYlZ5NzVFSkE0N043SjBudW1mSnlicENGT3NRMmc?oc=5"
+        }
+      ],
+      "affected_service": "オンライン申請システム",
+      "service_aliases": [],
+      "added_at": "2026-11-12T22:15:17+00:00",
+      "updated_at": "2026-11-12T22:15:17+00:00"
     },
     {
       "id": "a3e7a1a5599413f7",
@@ -588,6 +662,57 @@
       "service_aliases": [],
       "added_at": "2026-11-12T11:15:59+00:00",
       "updated_at": "2026-11-12T11:15:59+00:00"
+    },
+    {
+      "id": "4a37577646a003ba",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "岡山県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 2241,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE02QzM0eHZVNVdQY185YkY1Q195VUJBSUlXaFA1QXh1S29lS1dZUElCdGdXSlpLaHpBTllZcGVWOHp5OFpfb20zeXJ6THFCaWxL?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiUEFVX3lxTE02QzM0eHZVNVdQY185YkY1Q195VUJBSUlXaFA1QXh1S29lS1dZUElCdGdXSlpLaHpBTllZcGVWOHp5OFpfb20zeXJ6THFCaWxL?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "KSBニュース",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE02QzM0eHZVNVdQY185YkY1Q195VUJBSUlXaFA1QXh1S29lS1dZUElCdGdXSlpLaHpBTllZcGVWOHp5OFpfb20zeXJ6THFCaWxL?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5YVGJjeUhvU2dMeFhRdDl2SXlSSk1VWWpKMkVCNzNWSEFTbU5tZ3lfM0N2SDJfUTFxTjZUenpyOU1vT2p1dk5XTU1Yd0Z4d1VQcjVFQ3JvMUJKMk50NVk0UElvZlFhSDBOdV9mYTI1TVVCd3NiM1F1bVhPREhmdGs?oc=5"
+        }
+      ],
+      "affected_service": "医療安全情報等のお知らせ / 岡山県感染症情報メールマガジン",
+      "service_aliases": [],
+      "affected_services": [
+        "医療安全情報等のお知らせ",
+        "岡山県感染症情報メールマガジン"
+      ],
+      "service_details": [
+        {
+          "name": "医療安全情報等のお知らせ",
+          "aliases": []
+        },
+        {
+          "name": "岡山県感染症情報メールマガジン",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-12T22:15:17+00:00",
+      "updated_at": "2026-11-12T22:15:17+00:00"
     },
     {
       "id": "699c1c4d38a96447",
@@ -1672,6 +1797,29 @@
       "updated_at": "2026-11-12T08:18:15+00:00"
     },
     {
+      "id": "38a9190fca0982ff",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社フェイガー",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "faeger.company",
+          "url": "https://faeger.company/news-security-incident-20261111/"
+        }
+      ],
+      "added_at": "2026-11-12T22:15:17+00:00",
+      "updated_at": "2026-11-12T22:15:17+00:00"
+    },
+    {
       "id": "4562efa77d71bf05",
       "published_at": "2026-11-09T15:00:00+00:00",
       "disclosed_at": null,
@@ -2074,6 +2222,34 @@
       ],
       "added_at": "2026-11-10T09:15:46+00:00",
       "updated_at": "2026-11-12T08:18:15+00:00"
+    },
+    {
+      "id": "e97f70ad6b593e31",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "SecureNavi株式会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "secure-navi-inc.jp",
+          "url": "https://secure-navi-inc.jp/news/news_20261111"
+        },
+        {
+          "name": "www.lrm.jp",
+          "url": "https://www.lrm.jp/info/news/info_20261111/"
+        }
+      ],
+      "affected_service": "Notion AI",
+      "service_aliases": [],
+      "added_at": "2026-11-12T22:15:17+00:00",
+      "updated_at": "2026-11-12T22:15:17+00:00"
     },
     {
       "id": "3342ed54c628efda",
@@ -19605,11 +19781,27 @@
           ]
         },
         {
+          "incident_id": "4d5625761a2f2f2c",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1fcFNnQ2psUTNkOXdFYnR3dkl3QW1rd1VtY1g2WVY4UUpIOVZrX2Y1OHBYdTJya05rNHVETGRkYlZ5NzVFSkE0N043SjBudW1mSnlicENGT3NRMmc?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1fcFNnQ2psUTNkOXdFYnR3dkl3QW1rd1VtY1g2WVY4UUpIOVZrX2Y1OHBYdTJya05rNHVETGRkYlZ5NzVFSkE0N043SjBudW1mSnlicENGT3NRMmc?oc=5"
+          ]
+        },
+        {
           "incident_id": "4fafc038d6f3b252",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/a8f37147c1bfb70dac99129bf21da63f80ba45b6",
           "evidence_urls": [
             "https://news.yahoo.co.jp/articles/a8f37147c1bfb70dac99129bf21da63f80ba45b6"
+          ]
+        },
+        {
+          "incident_id": "5f14db3e89b72105",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1fcFNnQ2psUTNkOXdFYnR3dkl3QW1rd1VtY1g2WVY4UUpIOVZrX2Y1OHBYdTJya05rNHVETGRkYlZ5NzVFSkE0N043SjBudW1mSnlicENGT3NRMmc?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1fcFNnQ2psUTNkOXdFYnR3dkl3QW1rd1VtY1g2WVY4UUpIOVZrX2Y1OHBYdTJya05rNHVETGRkYlZ5NzVFSkE0N043SjBudW1mSnlicENGT3NRMmc?oc=5"
           ]
         },
         {
@@ -19716,7 +19908,7 @@
       "affected_service": "アララメッセージ",
       "service_aliases": [],
       "added_at": "2026-11-03T01:15:51+00:00",
-      "updated_at": "2026-11-12T21:15:22+00:00"
+      "updated_at": "2026-11-12T22:15:17+00:00"
     },
     {
       "id": "3e46506525fbbc85",
@@ -20874,6 +21066,14 @@
           ]
         },
         {
+          "incident_id": "4a37577646a003ba",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE02QzM0eHZVNVdQY185YkY1Q195VUJBSUlXaFA1QXh1S29lS1dZUElCdGdXSlpLaHpBTllZcGVWOHp5OFpfb20zeXJ6THFCaWxL?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiUEFVX3lxTE02QzM0eHZVNVdQY185YkY1Q195VUJBSUlXaFA1QXh1S29lS1dZUElCdGdXSlpLaHpBTllZcGVWOHp5OFpfb20zeXJ6THFCaWxL?oc=5"
+          ]
+        },
+        {
           "incident_id": "4a42b9ed0126d93c",
           "relationship": "affects",
           "evidence_url": "https://www.city.sakai.lg.jp/shisei/koho/hodo/hodoteikyoshiryo/kakohodo/r8/r811/081106_06.html",
@@ -21849,7 +22049,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-12T20:15:40+00:00"
+      "updated_at": "2026-11-12T22:15:17+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -32680,6 +32880,14 @@
           ]
         },
         {
+          "incident_id": "70da001e9ead27bd",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.oita.jp/soshiki/12520/kosodateouen-passport3.html",
+          "evidence_urls": [
+            "https://www.pref.oita.jp/soshiki/12520/kosodateouen-passport3.html"
+          ]
+        },
+        {
           "incident_id": "7425c1918fb8d457",
           "relationship": "affects",
           "evidence_url": "https://ejudo.info/articles/34272",
@@ -32829,14 +33037,6 @@
           "evidence_url": "https://www.pref.okinawa.jp/bunkakoryu/sport/1009786/1041818.html",
           "evidence_urls": [
             "https://www.pref.okinawa.jp/bunkakoryu/sport/1009786/1041818.html"
-          ]
-        },
-        {
-          "incident_id": "b20f594030b7930a",
-          "relationship": "affects",
-          "evidence_url": "https://www.pref.oita.jp/soshiki/12520/kosodateouen-passport.html",
-          "evidence_urls": [
-            "https://www.pref.oita.jp/soshiki/12520/kosodateouen-passport.html"
           ]
         },
         {
@@ -33129,7 +33329,7 @@
         }
       ],
       "added_at": "2026-10-21T19:22:12+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-12T22:15:17+00:00"
     },
     {
       "id": "83db978a801210d8",
@@ -33301,11 +33501,11 @@
       "confidence_score": 90,
       "related": [
         {
-          "incident_id": "7e647fcc0bac0b06",
+          "incident_id": "70da001e9ead27bd",
           "relationship": "affected_by",
-          "evidence_url": "https://www.pref.oita.jp/soshiki/12520/kosodateouen-passport.html",
+          "evidence_url": "https://www.pref.oita.jp/soshiki/12520/kosodateouen-passport3.html",
           "evidence_urls": [
-            "https://www.pref.oita.jp/soshiki/12520/kosodateouen-passport.html"
+            "https://www.pref.oita.jp/soshiki/12520/kosodateouen-passport3.html"
           ]
         }
       ],
@@ -33327,6 +33527,10 @@
           "url": "https://pref.oita.jp/soshiki/12520/kosodateouen-passport2.html"
         },
         {
+          "name": "大分県 / Oita",
+          "url": "https://www.pref.oita.jp/soshiki/12520/kosodateouen-passport3.html"
+        },
+        {
           "name": "TOSオンライン",
           "url": "https://tosonline.jp/news/20261112/00000004.html"
         }
@@ -33334,7 +33538,7 @@
       "affected_service": "おおいた子育て応援パスポート",
       "service_aliases": [],
       "added_at": "2026-10-21T19:59:31+00:00",
-      "updated_at": "2026-11-12T20:15:40+00:00"
+      "updated_at": "2026-11-12T22:15:17+00:00"
     },
     {
       "id": "b622f37f0e066837",
@@ -34407,6 +34611,45 @@
       ],
       "added_at": "2026-10-22T07:38:51+00:00",
       "updated_at": "2026-10-22T07:38:51+00:00"
+    },
+    {
+      "id": "70da001e9ead27bd",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": "2026-10-20T15:00:00+00:00",
+      "organization": "株式会社QTmedia",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.oita.jp/soshiki/12520/kosodateouen-passport3.html",
+          "evidence_urls": [
+            "https://www.pref.oita.jp/soshiki/12520/kosodateouen-passport3.html"
+          ]
+        },
+        {
+          "incident_id": "b20f594030b7930a",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.oita.jp/soshiki/12520/kosodateouen-passport3.html",
+          "evidence_urls": [
+            "https://www.pref.oita.jp/soshiki/12520/kosodateouen-passport3.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "www.pref.oita.jp",
+          "url": "https://www.pref.oita.jp/soshiki/12520/kosodateouen-passport3.html"
+        }
+      ],
+      "added_at": "2026-11-12T22:15:17+00:00",
+      "updated_at": "2026-11-12T22:15:17+00:00"
     },
     {
       "id": "7d1ab66c3b3e4e78",
@@ -39154,6 +39397,40 @@
       ],
       "added_at": "2026-11-02T10:00:14+00:00",
       "updated_at": "2026-11-12T21:15:22+00:00"
+    },
+    {
+      "id": "51826f3405e4bf01",
+      "published_at": "2026-10-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "西都市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "0a08a3f6bcd30b82",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1wZFhsLTIwdUhhUEs5LVVnY0haaEdjWUx2WEx6cU5qOVVQX2s5clQ0Rm12aHhnbHk0ZU5TVkxqRTZ2WWZ3Tk9oRnBFSlNmZTFBQ29Rcnl5VDB6eUdrOGR2SzRwcmo4X3JiNWd5Q29qY2h5dw?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMickFVX3lxTE1wZFhsLTIwdUhhUEs5LVVnY0haaEdjWUx2WEx6cU5qOVVQX2s5clQ0Rm12aHhnbHk0ZU5TVkxqRTZ2WWZ3Tk9oRnBFSlNmZTFBQ29Rcnl5VDB6eUdrOGR2SzRwcmo4X3JiNWd5Q29qY2h5dw?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "西都市",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1wZFhsLTIwdUhhUEs5LVVnY0haaEdjWUx2WEx6cU5qOVVQX2s5clQ0Rm12aHhnbHk0ZU5TVkxqRTZ2WWZ3Tk9oRnBFSlNmZTFBQ29Rcnl5VDB6eUdrOGR2SzRwcmo4X3JiNWd5Q29qY2h5dw?oc=5"
+        }
+      ],
+      "affected_service": "NET119緊急通報システム",
+      "service_aliases": [],
+      "added_at": "2026-11-12T22:15:17+00:00",
+      "updated_at": "2026-11-12T22:15:17+00:00"
     },
     {
       "id": "ad2e55a87bebd619",
@@ -44632,6 +44909,14 @@
           ]
         },
         {
+          "incident_id": "51826f3405e4bf01",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1wZFhsLTIwdUhhUEs5LVVnY0haaEdjWUx2WEx6cU5qOVVQX2s5clQ0Rm12aHhnbHk0ZU5TVkxqRTZ2WWZ3Tk9oRnBFSlNmZTFBQ29Rcnl5VDB6eUdrOGR2SzRwcmo4X3JiNWd5Q29qY2h5dw?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMickFVX3lxTE1wZFhsLTIwdUhhUEs5LVVnY0haaEdjWUx2WEx6cU5qOVVQX2s5clQ0Rm12aHhnbHk0ZU5TVkxqRTZ2WWZ3Tk9oRnBFSlNmZTFBQ29Rcnl5VDB6eUdrOGR2SzRwcmo4X3JiNWd5Q29qY2h5dw?oc=5"
+          ]
+        },
+        {
           "incident_id": "5646507935721ef4",
           "relationship": "affects",
           "evidence_url": "https://www.hokkoku.co.jp/articles/-/2258014",
@@ -45030,7 +45315,7 @@
       "affected_service": "SpeeCAN RAIDEN",
       "service_aliases": [],
       "added_at": "2026-10-19T08:49:15+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-12T22:15:17+00:00"
     },
     {
       "id": "196233ffeb2e2379",
@@ -48765,6 +49050,31 @@
       ],
       "added_at": "2026-10-27T00:15:41+00:00",
       "updated_at": "2026-11-12T08:18:15+00:00"
+    },
+    {
+      "id": "380a65dd227f231b",
+      "published_at": "2026-10-02T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "GMOリサーチ&AI株式会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 894082,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://gmo-research.ai/pressroom/notice/notice-20261111"
+        }
+      ],
+      "affected_service": "infoQ",
+      "service_aliases": [],
+      "added_at": "2026-11-12T22:15:17+00:00",
+      "updated_at": "2026-11-12T22:15:17+00:00"
     },
     {
       "id": "3e3633513c456478",
