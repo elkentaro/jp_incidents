@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-12T01:16:23+00:00",
+  "updated_at": "2026-11-12T02:16:22+00:00",
   "total": 1108,
   "date_range": {
     "start": "2025-10-16",
@@ -691,6 +691,52 @@
       "updated_at": "2026-11-11T20:15:52+00:00"
     },
     {
+      "id": "2486bef322523ca4",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "日本郵便",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [
+        {
+          "incident_id": "01b9a3bb946f0daf",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html",
+          "evidence_urls": [
+            "https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html"
+          ]
+        },
+        {
+          "incident_id": "80fe411952caf308",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html",
+          "evidence_urls": [
+            "https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本郵便 / Japan Post",
+          "url": "https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/9222b6dabaa9c8b41c2c557aee9ba604f70e7ff4"
+        }
+      ],
+      "affected_service": "LINEアカウント「郵便局[ぽすくま]」",
+      "service_aliases": [],
+      "added_at": "2026-11-11T20:15:52+00:00",
+      "updated_at": "2026-11-12T02:16:22+00:00"
+    },
+    {
       "id": "8e1708341ecca0be",
       "published_at": "2026-11-10T15:00:00+00:00",
       "disclosed_at": null,
@@ -851,48 +897,6 @@
       ],
       "added_at": "2026-11-11T10:15:54+00:00",
       "updated_at": "2026-11-11T13:16:39+00:00"
-    },
-    {
-      "id": "2486bef322523ca4",
-      "published_at": "2026-11-10T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "日本郵便",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [
-        {
-          "incident_id": "01b9a3bb946f0daf",
-          "relationship": "same_organization",
-          "evidence_url": "https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html",
-          "evidence_urls": [
-            "https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html"
-          ]
-        },
-        {
-          "incident_id": "80fe411952caf308",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html",
-          "evidence_urls": [
-            "https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "日本郵便 / Japan Post",
-          "url": "https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html"
-        }
-      ],
-      "affected_service": "LINEアカウント「郵便局[ぽすくま]」",
-      "service_aliases": [],
-      "added_at": "2026-11-11T20:15:52+00:00",
-      "updated_at": "2026-11-11T20:15:52+00:00"
     },
     {
       "id": "600545e2cdc0914b",
@@ -1265,6 +1269,54 @@
       "updated_at": "2026-11-11T22:15:24+00:00"
     },
     {
+      "id": "80fe411952caf308",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "電通デジタル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "2486bef322523ca4",
+          "relationship": "affects",
+          "evidence_url": "https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html",
+          "evidence_urls": [
+            "https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.dentsudigital.co.jp/news/updates/services/2026-1111-001111"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/dentsu_digital_tonariwa_unauthorized_access_20261111/"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC11AHR0R11C26A1000000/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/461edb863bfef44b783a3fbe5e0bbb039c5ab3d4"
+        }
+      ],
+      "affected_service": "TONARIWA",
+      "service_aliases": [
+        "トナリワ"
+      ],
+      "added_at": "2026-11-11T09:15:59+00:00",
+      "updated_at": "2026-11-12T02:16:22+00:00"
+    },
+    {
       "id": "c4863bee87cbe261",
       "published_at": "2026-11-09T15:00:00+00:00",
       "disclosed_at": "2026-11-09T15:00:00+00:00",
@@ -1314,10 +1366,10 @@
       "updated_at": "2026-11-11T09:15:59+00:00"
     },
     {
-      "id": "80fe411952caf308",
+      "id": "9442ea8cf431d8f4",
       "published_at": "2026-11-09T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "電通デジタル",
+      "disclosed_at": "2026-11-09T15:00:00+00:00",
+      "organization": "キリンビール",
       "incident_type": "data leak",
       "incident_categories": [
         "data leak",
@@ -1325,37 +1377,41 @@
       ],
       "potential_records": null,
       "confidence": "high",
-      "confidence_score": 90,
+      "confidence_score": 95,
       "related": [
         {
-          "incident_id": "2486bef322523ca4",
-          "relationship": "affects",
-          "evidence_url": "https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html",
+          "incident_id": "786098113508f19e",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/kirin-ownly-campaign-data-breach-1825-20261110/",
           "evidence_urls": [
-            "https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html"
+            "https://rocket-boys.co.jp/security-measures-lab/kirin-ownly-campaign-data-breach-1825-20261110/"
           ]
         }
       ],
       "sources": [
         {
           "name": "satimo list",
-          "url": "https://www.dentsudigital.co.jp/news/updates/services/2026-1111-001111"
+          "url": "https://info.kirinholdings.com/faq_detail.html?id=122837"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/f96ba630ef82919c3898d5c85908a158951e44b9"
+        },
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/economy/20261110-GYT1T00225/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/4c06d6a6357150d1b9cd7f94741c4969b88652fb"
         },
         {
           "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/dentsu_digital_tonariwa_unauthorized_access_20261111/"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUC11AHR0R11C26A1000000/"
+          "url": "https://rocket-boys.co.jp/security-measures-lab/kirin-ownly-campaign-data-breach-1825-20261110/"
         }
       ],
-      "affected_service": "TONARIWA",
-      "service_aliases": [
-        "トナリワ"
-      ],
-      "added_at": "2026-11-11T09:15:59+00:00",
-      "updated_at": "2026-11-12T01:16:23+00:00"
+      "added_at": "2026-11-10T09:15:46+00:00",
+      "updated_at": "2026-11-12T02:16:22+00:00"
     },
     {
       "id": "a916e1f197303059",
@@ -1406,50 +1462,6 @@
       "updated_at": "2026-11-11T10:15:54+00:00"
     },
     {
-      "id": "9442ea8cf431d8f4",
-      "published_at": "2026-11-09T15:00:00+00:00",
-      "disclosed_at": "2026-11-09T15:00:00+00:00",
-      "organization": "キリンビール",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 80,
-      "related": [
-        {
-          "incident_id": "786098113508f19e",
-          "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/kirin-ownly-campaign-data-breach-1825-20261110/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/kirin-ownly-campaign-data-breach-1825-20261110/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/f96ba630ef82919c3898d5c85908a158951e44b9"
-        },
-        {
-          "name": "読売新聞",
-          "url": "https://www.yomiuri.co.jp/economy/20261110-GYT1T00225/"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/4c06d6a6357150d1b9cd7f94741c4969b88652fb"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/kirin-ownly-campaign-data-breach-1825-20261110/"
-        }
-      ],
-      "added_at": "2026-11-10T09:15:46+00:00",
-      "updated_at": "2026-11-11T09:15:59+00:00"
-    },
-    {
       "id": "03e4b56172ce7769",
       "published_at": "2026-11-09T15:00:00+00:00",
       "disclosed_at": "2026-11-09T15:00:00+00:00",
@@ -1474,6 +1486,35 @@
       ],
       "added_at": "2026-11-11T01:16:17+00:00",
       "updated_at": "2026-11-11T03:15:41+00:00"
+    },
+    {
+      "id": "0c38a8bc1ca4760a",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "トレードワルツ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 130,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.tradewaltz.com/news/13816/"
+        },
+        {
+          "name": "LOGISTICS TODAY",
+          "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1ZV29HeUpYMVpIQmUzMkJmQ2MxMVpBY3d1ck91cF9fd3N0bHFvamFlSG51TjVxc3N6aXoyVEZ1S01MSkJCbmJJSF9R?oc=5"
+        }
+      ],
+      "affected_service": "TradeWaltz",
+      "service_aliases": [],
+      "added_at": "2026-11-11T13:16:39+00:00",
+      "updated_at": "2026-11-12T02:16:22+00:00"
     },
     {
       "id": "5d9388db64d7c7fe",
@@ -1813,31 +1854,6 @@
       "service_aliases": [],
       "added_at": "2026-11-11T03:15:41+00:00",
       "updated_at": "2026-11-11T03:15:41+00:00"
-    },
-    {
-      "id": "0c38a8bc1ca4760a",
-      "published_at": "2026-11-09T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "トレードワルツ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 130,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "LOGISTICS TODAY",
-          "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1ZV29HeUpYMVpIQmUzMkJmQ2MxMVpBY3d1ck91cF9fd3N0bHFvamFlSG51TjVxc3N6aXoyVEZ1S01MSkJCbmJJSF9R?oc=5"
-        }
-      ],
-      "affected_service": "TradeWaltz",
-      "service_aliases": [],
-      "added_at": "2026-11-11T13:16:39+00:00",
-      "updated_at": "2026-11-11T13:16:39+00:00"
     },
     {
       "id": "14cc468f9a7f9a3d",
@@ -3302,6 +3318,50 @@
       "updated_at": "2026-11-09T20:16:13+00:00"
     },
     {
+      "id": "57d15baf7435e548",
+      "published_at": "2026-11-07T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "オープンロジ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "71422f2b8113fd80",
+          "relationship": "affects",
+          "evidence_url": "https://www.release.tdnet.info/inbs/140120261111574117.pdf",
+          "evidence_urls": [
+            "https://www.release.tdnet.info/inbs/140120261111574117.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261111574117.pdf"
+        },
+        {
+          "name": "LOGISTICS TODAY",
+          "url": "https://www.logi-today.com/1020754"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/openlogi-data-breach-affected-companies/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118311"
+        }
+      ],
+      "added_at": "2026-11-11T09:15:59+00:00",
+      "updated_at": "2026-11-12T02:16:22+00:00"
+    },
+    {
       "id": "cb69602b79e76443",
       "published_at": "2026-11-07T15:00:00+00:00",
       "disclosed_at": null,
@@ -3375,46 +3435,6 @@
       "service_aliases": [],
       "added_at": "2026-11-09T06:16:50+00:00",
       "updated_at": "2026-11-10T00:16:43+00:00"
-    },
-    {
-      "id": "57d15baf7435e548",
-      "published_at": "2026-11-07T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "オープンロジ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [
-        {
-          "incident_id": "71422f2b8113fd80",
-          "relationship": "affects",
-          "evidence_url": "https://www.release.tdnet.info/inbs/140120261111574117.pdf",
-          "evidence_urls": [
-            "https://www.release.tdnet.info/inbs/140120261111574117.pdf"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "日本取引所グループ TDnet / JPX TDnet",
-          "url": "https://www.release.tdnet.info/inbs/140120261111574117.pdf"
-        },
-        {
-          "name": "LOGISTICS TODAY",
-          "url": "https://www.logi-today.com/1020754"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/openlogi-data-breach-affected-companies/"
-        }
-      ],
-      "added_at": "2026-11-11T09:15:59+00:00",
-      "updated_at": "2026-11-11T20:15:52+00:00"
     },
     {
       "id": "a5aba76731b13cfb",
@@ -4259,6 +4279,10 @@
           "url": "https://news.infoseek.co.jp/article/sponichin_20261106_0222/"
         },
         {
+          "name": "Infoseek",
+          "url": "https://news.infoseek.co.jp/amp/article/sponichin_20261106_0222/"
+        },
+        {
           "name": "ライブドアニュース",
           "url": "https://news.livedoor.com/topics/detail/32749626/"
         },
@@ -4292,7 +4316,7 @@
         }
       ],
       "added_at": "2026-11-06T08:36:04+00:00",
-      "updated_at": "2026-11-09T09:16:47+00:00"
+      "updated_at": "2026-11-12T02:16:22+00:00"
     },
     {
       "id": "bea05426f67e9585",
@@ -17318,6 +17342,39 @@
       "updated_at": "2026-10-29T20:56:59+00:00"
     },
     {
+      "id": "1a369c3ba5a19f0b",
+      "published_at": "2026-10-28T15:00:00+00:00",
+      "disclosed_at": "2026-11-10T15:00:00+00:00",
+      "organization": "FABRIC TOKYO",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 699,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/fabric_tokyo_test_system_access_key_699_20261111/"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://fabric-tokyo.com/news/show/20261111-to-all-customers"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118312"
+        }
+      ],
+      "affected_service": "検証用システム",
+      "service_aliases": [],
+      "added_at": "2026-11-11T06:15:30+00:00",
+      "updated_at": "2026-11-12T02:16:22+00:00"
+    },
+    {
       "id": "7d79740f39a9db07",
       "published_at": "2026-10-28T15:00:00+00:00",
       "disclosed_at": "2026-10-30T15:00:00+00:00",
@@ -17390,35 +17447,6 @@
       "service_aliases": [],
       "added_at": "2026-10-30T06:16:03+00:00",
       "updated_at": "2026-11-03T12:17:45+00:00"
-    },
-    {
-      "id": "1a369c3ba5a19f0b",
-      "published_at": "2026-10-28T15:00:00+00:00",
-      "disclosed_at": "2026-11-10T15:00:00+00:00",
-      "organization": "FABRIC TOKYO",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 699,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/fabric_tokyo_test_system_access_key_699_20261111/"
-        },
-        {
-          "name": "satimo list",
-          "url": "https://fabric-tokyo.com/news/show/20261111-to-all-customers"
-        }
-      ],
-      "affected_service": "検証用システム",
-      "service_aliases": [],
-      "added_at": "2026-11-11T06:15:30+00:00",
-      "updated_at": "2026-11-12T01:16:23+00:00"
     },
     {
       "id": "39d454b50a8624c2",
@@ -20711,6 +20739,39 @@
       "updated_at": "2026-10-30T01:13:09+00:00"
     },
     {
+      "id": "3e46506525fbbc85",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "靖國神社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 14500,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/764ac599c15550a7e20d71c15b116ae33cee2b6c"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/yasukuni-shrine-online-goods-14500-password-hash-leak/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118307"
+        }
+      ],
+      "affected_service": "オンライン授与品・頒布品サイト",
+      "service_aliases": [],
+      "added_at": "2026-11-11T13:16:39+00:00",
+      "updated_at": "2026-11-12T02:16:22+00:00"
+    },
+    {
       "id": "3f9647cdc55cfd86",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": "2026-10-29T15:00:00+00:00",
@@ -21120,35 +21181,6 @@
       "service_aliases": [],
       "added_at": "2026-10-28T12:16:05+00:00",
       "updated_at": "2026-10-28T18:16:27+00:00"
-    },
-    {
-      "id": "3e46506525fbbc85",
-      "published_at": "2026-10-27T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "靖國神社",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 14500,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/764ac599c15550a7e20d71c15b116ae33cee2b6c"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/yasukuni-shrine-online-goods-14500-password-hash-leak/"
-        }
-      ],
-      "affected_service": "オンライン授与品・頒布品サイト",
-      "service_aliases": [],
-      "added_at": "2026-11-11T13:16:39+00:00",
-      "updated_at": "2026-11-11T20:15:52+00:00"
     },
     {
       "id": "8359871b1e7e813f",
@@ -26252,6 +26284,43 @@
       "updated_at": "2026-10-30T14:15:52+00:00"
     },
     {
+      "id": "3a0da9e6a1e89a3f",
+      "published_at": "2026-10-22T15:00:00+00:00",
+      "disclosed_at": "2026-10-22T15:00:00+00:00",
+      "organization": "タイムズカー",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 95,
+      "related": [],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/27/56586.html"
+        },
+        {
+          "name": "乗りものニュース",
+          "url": "https://trafficnews.jp/post/723998"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/0ca0755edfdf2e87a96b76d5283b6808baaf4f72"
+        },
+        {
+          "name": "日経クロステック",
+          "url": "https://xtech.nikkei.com/atcl/nxt/mag/nc/18/020800017/110501522/"
+        }
+      ],
+      "affected_service": "タイムズクラブ",
+      "service_aliases": [],
+      "added_at": "2026-10-27T20:15:55+00:00",
+      "updated_at": "2026-11-12T02:16:22+00:00"
+    },
+    {
       "id": "478fd4973890bc66",
       "published_at": "2026-10-22T15:00:00+00:00",
       "disclosed_at": null,
@@ -26396,39 +26465,6 @@
       ],
       "added_at": "2026-10-25T01:15:29+00:00",
       "updated_at": "2026-10-26T00:08:36+00:00"
-    },
-    {
-      "id": "3a0da9e6a1e89a3f",
-      "published_at": "2026-10-22T15:00:00+00:00",
-      "disclosed_at": "2026-10-22T15:00:00+00:00",
-      "organization": "タイムズカー",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 80,
-      "related": [],
-      "sources": [
-        {
-          "name": "ScanNetSecurity",
-          "url": "https://scan.netsecurity.ne.jp/article/2026/10/27/56586.html"
-        },
-        {
-          "name": "乗りものニュース",
-          "url": "https://trafficnews.jp/post/723998"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/0ca0755edfdf2e87a96b76d5283b6808baaf4f72"
-        }
-      ],
-      "affected_service": "タイムズクラブ",
-      "service_aliases": [],
-      "added_at": "2026-10-27T20:15:55+00:00",
-      "updated_at": "2026-11-05T11:16:39+00:00"
     },
     {
       "id": "460925589cd58fb7",
@@ -33280,6 +33316,33 @@
       "updated_at": "2026-11-03T01:15:51+00:00"
     },
     {
+      "id": "9bbe133abb583a71",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "京都外国語大学",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 5376,
+      "confidence": "medium",
+      "confidence_score": 45,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.kufs.ac.jp/cms_image/file/file_1794271641.pdf"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNbWN1VHZkMzVlLVpXeXVEUzVXNWl2UzZQNXR5NmRGS1BvUXQydEJuTnJ4bHltVGRVLWx2NnMtY3NES1lVblFIT1ZtYW44TExsbXZiMFRFcGREdkVDWXo0XzdqUEtOY1JkNThhVUpCcjRyS1hCc2tkTWhCak1RRzFrQmNRNl84TXIyQXV6dWVRNkdneWxSNm5aV3RfQ2luUlZPYjViczVPSkg?oc=5"
+        }
+      ],
+      "added_at": "2026-11-11T07:16:10+00:00",
+      "updated_at": "2026-11-12T02:16:22+00:00"
+    },
+    {
       "id": "2668891b9e24dbd7",
       "published_at": "2026-10-20T15:00:00+00:00",
       "disclosed_at": null,
@@ -33460,29 +33523,6 @@
       ],
       "added_at": "2026-10-22T07:38:51+00:00",
       "updated_at": "2026-10-22T07:38:51+00:00"
-    },
-    {
-      "id": "9bbe133abb583a71",
-      "published_at": "2026-10-20T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "京都外国語大学",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 5376,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNbWN1VHZkMzVlLVpXeXVEUzVXNWl2UzZQNXR5NmRGS1BvUXQydEJuTnJ4bHltVGRVLWx2NnMtY3NES1lVblFIT1ZtYW44TExsbXZiMFRFcGREdkVDWXo0XzdqUEtOY1JkNThhVUpCcjRyS1hCc2tkTWhCak1RRzFrQmNRNl84TXIyQXV6dWVRNkdneWxSNm5aV3RfQ2luUlZPYjViczVPSkg?oc=5"
-        }
-      ],
-      "added_at": "2026-11-11T07:16:10+00:00",
-      "updated_at": "2026-11-11T07:16:10+00:00"
     },
     {
       "id": "9ecfafb6c9298236",
@@ -36439,6 +36479,14 @@
           "url": "https://ymir.co.jp/info/ymir-information20261027.html"
         },
         {
+          "name": "satimo list",
+          "url": "https://www.cuenote.jp/support/news-incident.html"
+        },
+        {
+          "name": "legalagent list",
+          "url": "https://www.release.tdnet.info/inbs/140120261019553124.pdf"
+        },
+        {
           "name": "日本経済新聞",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9EenE1dVRhZGV5WkNWMVIwazIxTEdfU2pVX1F3ZFE0djczaHFJVC1DdXdCdVV4cG0tcU11YnVSM3dzMnpUTGFqM19CUWl6Q1lIb2JYYWYxUWFfME15NVQtamgwNlZ2TmJoU1Bqbg?oc=5"
         },
@@ -36457,10 +36505,6 @@
         {
           "name": "BigGo ファイナンス",
           "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB6NDBqNHBaTnhqbmlzOUtMaEJGNC1nS3BFQzVrZ3pDOWE3NGdxVElXcnhTY3NuaHFfY1NrRFZrNHRoVVBFQTdnU3dfcDFuTlJiS25Qd09JQWdxRkF1c2dvSnItWWFaM3dhOW5BaGd1cGdWa2U3?oc=5"
-        },
-        {
-          "name": "legalagent list",
-          "url": "https://www.release.tdnet.info/inbs/140120261019553124.pdf"
         }
       ],
       "affected_system": "メール配信サービスのサーバーシステム",
@@ -36482,7 +36526,7 @@
         }
       ],
       "added_at": "2026-10-19T13:14:57+00:00",
-      "updated_at": "2026-11-10T13:17:15+00:00"
+      "updated_at": "2026-11-12T02:16:22+00:00"
     },
     {
       "id": "15204b629222c010",
