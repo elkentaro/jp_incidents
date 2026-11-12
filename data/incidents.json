@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-12T19:15:15+00:00",
-  "total": 1122,
+  "updated_at": "2026-11-12T20:15:40+00:00",
+  "total": 1127,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-12"
@@ -318,7 +318,7 @@
     },
     {
       "date": "2026-11-01",
-      "count": 5
+      "count": 6
     },
     {
       "date": "2026-11-02",
@@ -354,7 +354,7 @@
     },
     {
       "date": "2026-11-10",
-      "count": 29
+      "count": 30
     },
     {
       "date": "2026-11-11",
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-12",
-      "count": 7
+      "count": 10
     },
     {
       "date": "2026-11-13",
@@ -396,10 +396,14 @@
         {
           "name": "読売新聞",
           "url": "https://www.yomiuri.co.jp/economy/20261112-GYT1T00230/"
+        },
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/national/20261112-GYT1T00373/"
         }
       ],
       "added_at": "2026-11-12T10:15:34+00:00",
-      "updated_at": "2026-11-12T10:15:34+00:00"
+      "updated_at": "2026-11-12T20:15:40+00:00"
     },
     {
       "id": "f7cf02a6f5cb3426",
@@ -491,6 +495,37 @@
       "updated_at": "2026-11-12T10:15:34+00:00"
     },
     {
+      "id": "35c35b7a22a842d4",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "icuco株式会社",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "a8be9fad39548f21",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/c78d33bc963d9533bb710e151a9591998e87e7b3",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/c78d33bc963d9533bb710e151a9591998e87e7b3"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/c78d33bc963d9533bb710e151a9591998e87e7b3"
+        }
+      ],
+      "added_at": "2026-11-12T20:15:40+00:00",
+      "updated_at": "2026-11-12T20:15:40+00:00"
+    },
+    {
       "id": "36767938e5293e2e",
       "published_at": "2026-11-11T15:00:00+00:00",
       "disclosed_at": null,
@@ -525,6 +560,30 @@
       "updated_at": "2026-11-12T11:15:59+00:00"
     },
     {
+      "id": "699c1c4d38a96447",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "Nugem Studio",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/381f8913c68051e1e1df40ca88a2b7b015141a90"
+        }
+      ],
+      "affected_service": "タスクバーヒーロー",
+      "service_aliases": [],
+      "added_at": "2026-11-12T20:15:40+00:00",
+      "updated_at": "2026-11-12T20:15:40+00:00"
+    },
+    {
       "id": "c140c5aa9ccc856a",
       "published_at": "2026-11-11T15:00:00+00:00",
       "disclosed_at": null,
@@ -557,6 +616,38 @@
       "service_aliases": [],
       "added_at": "2026-11-12T19:15:15+00:00",
       "updated_at": "2026-11-12T19:15:15+00:00"
+    },
+    {
+      "id": "26c761f006cef9e6",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "百十四銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1500,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.ksb.co.jp/article/17045321",
+          "evidence_urls": [
+            "https://news.ksb.co.jp/article/17045321"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "KSBニュース",
+          "url": "https://news.ksb.co.jp/article/17045321"
+        }
+      ],
+      "added_at": "2026-11-12T20:15:40+00:00",
+      "updated_at": "2026-11-12T20:15:40+00:00"
     },
     {
       "id": "4e1d08ad7f9919dc",
@@ -1083,7 +1174,16 @@
       "potential_records": 2039,
       "confidence": "medium",
       "confidence_score": 50,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/itv/3079226?display=1",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/itv/3079226?display=1"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "日テレNEWS NNN",
@@ -1096,6 +1196,14 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBEVmhWdGlEV0Y3cWZXek1XOWNxYjBCT3pleFNGNTY5b0cxZnZvMm82TU1yenlfN1cwMXMyZGZIQlVWUmJlQjVDd2JqVnVjT1NoY0FBRlZsTm9SZzdaSEplbGRLanFZUmo5NTRWaXZjNFNXZ1AyenRYdFdZR3ZBM1U?oc=5"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/itv/3079226?display=1"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3079226?display=1"
         }
       ],
       "affected_service": "気軽にスポーツ健康チャレンジ / 子供向けDigSports体験会",
@@ -1115,7 +1223,7 @@
         }
       ],
       "added_at": "2026-11-11T11:15:53+00:00",
-      "updated_at": "2026-11-12T07:15:39+00:00"
+      "updated_at": "2026-11-12T20:15:40+00:00"
     },
     {
       "id": "7758375381d0f124",
@@ -1680,12 +1788,16 @@
         {
           "name": "読売新聞",
           "url": "https://www.yomiuri.co.jp/economy/20261112-GYT1T00248/"
+        },
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/national/20261112-GYT1T00373/"
         }
       ],
       "affected_service": "ガス本管埋設状況確認サービス",
       "service_aliases": [],
       "added_at": "2026-11-12T09:15:21+00:00",
-      "updated_at": "2026-11-12T19:15:15+00:00"
+      "updated_at": "2026-11-12T20:15:40+00:00"
     },
     {
       "id": "80fe411952caf308",
@@ -1883,6 +1995,37 @@
       ],
       "added_at": "2026-11-10T09:15:46+00:00",
       "updated_at": "2026-11-12T08:18:15+00:00"
+    },
+    {
+      "id": "3342ed54c628efda",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "清川屋",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 392,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "b8ebe8938e086561",
+          "relationship": "affected_by",
+          "evidence_url": "https://piyolog.hatenadiary.jp/entry/2026/11/12/113829",
+          "evidence_urls": [
+            "https://piyolog.hatenadiary.jp/entry/2026/11/12/113829"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/12/113829"
+        }
+      ],
+      "added_at": "2026-11-12T20:15:40+00:00",
+      "updated_at": "2026-11-12T20:15:40+00:00"
     },
     {
       "id": "3d5e055a118d07cf",
@@ -3245,17 +3388,30 @@
       "potential_records": 27,
       "confidence": "medium",
       "confidence_score": 50,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "35c35b7a22a842d4",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/c78d33bc963d9533bb710e151a9591998e87e7b3",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/c78d33bc963d9533bb710e151a9591998e87e7b3"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/2316fa6e67f637b119ce0f317666371197b1c9c3"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/c78d33bc963d9533bb710e151a9591998e87e7b3"
         }
       ],
       "affected_service": "午睡チェックセンサー",
       "service_aliases": [],
       "added_at": "2026-11-12T19:15:15+00:00",
-      "updated_at": "2026-11-12T19:15:15+00:00"
+      "updated_at": "2026-11-12T20:15:40+00:00"
     },
     {
       "id": "bf2e2e5ef81fe5ed",
@@ -14685,6 +14841,40 @@
       "updated_at": "2026-11-12T07:15:39+00:00"
     },
     {
+      "id": "b8ebe8938e086561",
+      "published_at": "2026-10-31T15:00:00+00:00",
+      "disclosed_at": "2026-11-08T15:00:00+00:00",
+      "organization": "ブランジスタソリューション",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 21873,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "3342ed54c628efda",
+          "relationship": "affects",
+          "evidence_url": "https://piyolog.hatenadiary.jp/entry/2026/11/12/113829",
+          "evidence_urls": [
+            "https://piyolog.hatenadiary.jp/entry/2026/11/12/113829"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/12/113829"
+        }
+      ],
+      "affected_service": "まとまるEC店長",
+      "service_aliases": [],
+      "added_at": "2026-11-12T20:15:40+00:00",
+      "updated_at": "2026-11-12T20:15:40+00:00"
+    },
+    {
       "id": "d290a8fda51abad3",
       "published_at": "2026-10-31T15:00:00+00:00",
       "disclosed_at": null,
@@ -20397,6 +20587,14 @@
           ]
         },
         {
+          "incident_id": "26c761f006cef9e6",
+          "relationship": "affects",
+          "evidence_url": "https://news.ksb.co.jp/article/17045321",
+          "evidence_urls": [
+            "https://news.ksb.co.jp/article/17045321"
+          ]
+        },
+        {
           "incident_id": "2b25cef2acb2ad08",
           "relationship": "affects",
           "evidence_url": "https://www.release.tdnet.info/inbs/140120261104564321.pdf",
@@ -21476,7 +21674,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-12T19:15:15+00:00"
+      "updated_at": "2026-11-12T20:15:40+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -23518,6 +23716,39 @@
       "updated_at": "2026-11-12T07:15:39+00:00"
     },
     {
+      "id": "5b98033b51c77bbc",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": "2026-11-05T15:00:00+00:00",
+      "organization": "資生堂",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 2515,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/shiseido-fca-skin-analysis-2515-confirmed-data-breach/"
+        },
+        {
+          "name": "WWDJAPAN",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5EclRtSmxhRVIwX1dCWmdZbFhwS2szc0JFM3U4V1g0c05BTXFZOVJsZ053NUg3Zy12VGdFc2UzRXprT0o1WjgzNkVISnNLV19oM2xF?oc=5"
+        },
+        {
+          "name": "Security NEXT",
+          "url": "https://www.security-next.com/192582"
+        }
+      ],
+      "affected_service": "Beauty Alive Circulation Check",
+      "service_aliases": [],
+      "added_at": "2026-11-08T14:16:28+00:00",
+      "updated_at": "2026-11-12T20:15:40+00:00"
+    },
+    {
       "id": "725512c99939d7b8",
       "published_at": "2026-10-26T15:00:00+00:00",
       "disclosed_at": null,
@@ -24270,35 +24501,6 @@
       ],
       "added_at": "2026-10-29T06:16:15+00:00",
       "updated_at": "2026-10-29T06:16:15+00:00"
-    },
-    {
-      "id": "5b98033b51c77bbc",
-      "published_at": "2026-10-26T15:00:00+00:00",
-      "disclosed_at": "2026-11-05T15:00:00+00:00",
-      "organization": "資生堂",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 2515,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/shiseido-fca-skin-analysis-2515-confirmed-data-breach/"
-        },
-        {
-          "name": "WWDJAPAN",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5EclRtSmxhRVIwX1dCWmdZbFhwS2szc0JFM3U4V1g0c05BTXFZOVJsZ053NUg3Zy12VGdFc2UzRXprT0o1WjgzNkVISnNLV19oM2xF?oc=5"
-        }
-      ],
-      "affected_service": "Beauty Alive Circulation Check",
-      "service_aliases": [],
-      "added_at": "2026-11-08T14:16:28+00:00",
-      "updated_at": "2026-11-12T07:15:39+00:00"
     },
     {
       "id": "77607217abf8e8da",
@@ -32889,7 +33091,7 @@
       "id": "b20f594030b7930a",
       "published_at": "2026-10-20T15:00:00+00:00",
       "disclosed_at": null,
-      "organization": "大分県（おおいた子育て応援パスポート）",
+      "organization": "大分県",
       "incident_type": "data leak",
       "incident_categories": [
         "data leak",
@@ -32924,10 +33126,16 @@
         {
           "name": "大分県（おおいた子育て応援パスポート）（公式発表）",
           "url": "https://pref.oita.jp/soshiki/12520/kosodateouen-passport2.html"
+        },
+        {
+          "name": "TOSオンライン",
+          "url": "https://tosonline.jp/news/20261112/00000004.html"
         }
       ],
+      "affected_service": "おおいた子育て応援パスポート",
+      "service_aliases": [],
       "added_at": "2026-10-21T19:59:31+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-12T20:15:40+00:00"
     },
     {
       "id": "b622f37f0e066837",
@@ -36269,12 +36477,20 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA5VWxsRWdTT211LVo5OG1scWhkT2c5TTJQdE1Sc3EwWnlEOVk4WkdQM1hEU0dQT0ZXci13R0UyZkZzZExkazBCWFIwdzJCZS03THBkSEFZZE42U1JOT3ZaR0Z0c3A4T2pPYmVkS3N4a0YxelZoNnE1cUlxdVJfY00?oc=5"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/itv/3079226?display=1"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3079226?display=1"
         }
       ],
       "affected_service": "ふるラボ",
       "service_aliases": [],
       "added_at": "2026-11-11T21:15:33+00:00",
-      "updated_at": "2026-11-11T21:15:33+00:00"
+      "updated_at": "2026-11-12T20:15:40+00:00"
     },
     {
       "id": "c2642f919cdf226a",
@@ -41241,6 +41457,14 @@
           ]
         },
         {
+          "incident_id": "3d90624c0b78c561",
+          "relationship": "affects",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/itv/3079226?display=1",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/itv/3079226?display=1"
+          ]
+        },
+        {
           "incident_id": "43869c04573b5c1b",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/434f6dc5432e1698132bdb51dc82357782859e64",
@@ -41689,7 +41913,7 @@
       "affected_system": "Studio cloud environment",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T11:10:22+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-12T20:15:40+00:00"
     },
     {
       "id": "7a4c57d5a37c3971",
