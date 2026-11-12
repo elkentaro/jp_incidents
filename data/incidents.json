@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-12T15:15:24+00:00",
-  "total": 1120,
+  "updated_at": "2026-11-12T19:15:15+00:00",
+  "total": 1122,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-12"
@@ -350,7 +350,7 @@
     },
     {
       "date": "2026-11-09",
-      "count": 31
+      "count": 32
     },
     {
       "date": "2026-11-10",
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-12",
-      "count": 6
+      "count": 7
     },
     {
       "date": "2026-11-13",
@@ -525,6 +525,40 @@
       "updated_at": "2026-11-12T11:15:59+00:00"
     },
     {
+      "id": "c140c5aa9ccc856a",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "太田市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 10800,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/329939d4c4ff1411a71ce4c8bc111ccf1792b4ef",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/329939d4c4ff1411a71ce4c8bc111ccf1792b4ef"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/329939d4c4ff1411a71ce4c8bc111ccf1792b4ef"
+        }
+      ],
+      "affected_service": "はなまる連絡帳",
+      "service_aliases": [],
+      "added_at": "2026-11-12T19:15:15+00:00",
+      "updated_at": "2026-11-12T19:15:15+00:00"
+    },
+    {
       "id": "4e1d08ad7f9919dc",
       "published_at": "2026-11-11T15:00:00+00:00",
       "disclosed_at": "2026-11-11T15:00:00+00:00",
@@ -624,12 +658,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/9222b6dabaa9c8b41c2c557aee9ba604f70e7ff4"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118310"
         }
       ],
       "affected_service": "LINEアカウント「郵便局[ぽすくま]」",
       "service_aliases": [],
       "added_at": "2026-11-11T20:15:52+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-12T19:15:15+00:00"
     },
     {
       "id": "600545e2cdc0914b",
@@ -1540,12 +1578,16 @@
         {
           "name": "栃木県 / Tochigi",
           "url": "https://www.pref.tochigi.lg.jp/c09/syougai/20261112.html"
+        },
+        {
+          "name": "下野新聞社",
+          "url": "https://www.shimotsuke.co.jp/articles/-/1458011"
         }
       ],
       "affected_service": "ぐるとち",
       "service_aliases": [],
       "added_at": "2026-11-12T09:15:21+00:00",
-      "updated_at": "2026-11-12T09:15:21+00:00"
+      "updated_at": "2026-11-12T19:15:15+00:00"
     },
     {
       "id": "4af336cfb4255f5a",
@@ -1634,12 +1676,16 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUC1274H0S6A111C2000000/"
+        },
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/economy/20261112-GYT1T00248/"
         }
       ],
       "affected_service": "ガス本管埋設状況確認サービス",
       "service_aliases": [],
       "added_at": "2026-11-12T09:15:21+00:00",
-      "updated_at": "2026-11-12T11:15:59+00:00"
+      "updated_at": "2026-11-12T19:15:15+00:00"
     },
     {
       "id": "80fe411952caf308",
@@ -1680,6 +1726,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/461edb863bfef44b783a3fbe5e0bbb039c5ab3d4"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118310"
         }
       ],
       "affected_service": "TONARIWA",
@@ -1687,7 +1737,7 @@
         "トナリワ"
       ],
       "added_at": "2026-11-11T09:15:59+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-12T19:15:15+00:00"
     },
     {
       "id": "9442ea8cf431d8f4",
@@ -3181,6 +3231,31 @@
       ],
       "added_at": "2026-11-10T20:15:39+00:00",
       "updated_at": "2026-11-10T20:15:39+00:00"
+    },
+    {
+      "id": "a8be9fad39548f21",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "滑川市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 27,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/2316fa6e67f637b119ce0f317666371197b1c9c3"
+        }
+      ],
+      "affected_service": "午睡チェックセンサー",
+      "service_aliases": [],
+      "added_at": "2026-11-12T19:15:15+00:00",
+      "updated_at": "2026-11-12T19:15:15+00:00"
     },
     {
       "id": "bf2e2e5ef81fe5ed",
@@ -7374,6 +7449,10 @@
           "url": "https://northern-happinets.com/news/detail/id=23087"
         },
         {
+          "name": "秋田ノーザンハピネッツ",
+          "url": "https://northern-happinets.com/news/detail/id=23104"
+        },
+        {
           "name": "日テレNEWS NNN",
           "url": "https://news.ntv.co.jp/n/abs/category/society/ab9ed61cc359ae47778d8c914b740c9dee"
         }
@@ -7381,7 +7460,7 @@
       "affected_service": "ファンクラブ「クラブハピネッツ」",
       "service_aliases": [],
       "added_at": "2026-11-06T10:15:48+00:00",
-      "updated_at": "2026-11-12T11:15:59+00:00"
+      "updated_at": "2026-11-12T19:15:15+00:00"
     },
     {
       "id": "ca7f37d2cd544aab",
@@ -9565,12 +9644,60 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/aefcac2ba8d4ecea50cf2e06e4f51aa9f35b0859"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/axelentermedia-arara-message-data-breach-1086098/"
         }
       ],
-      "affected_service": "メール配信サービス",
+      "affected_service": "メール配信サービス / HomeGround / KAIBA CORPORATION STORE / LOVEBITES INC. / Superfly Official Fanclub「Superconnection」 / 『ヒプノシスマイク -Division Rap Battle-』Rule the Stage Mobile / 望海風斗オフィシャルファンクラブ「nozomist」 / 石原夏織オフィシャルファンクラブ「hand in hand」",
       "service_aliases": [],
+      "affected_services": [
+        "メール配信サービス",
+        "HomeGround",
+        "KAIBA CORPORATION STORE",
+        "LOVEBITES INC.",
+        "Superfly Official Fanclub「Superconnection」",
+        "『ヒプノシスマイク -Division Rap Battle-』Rule the Stage Mobile",
+        "望海風斗オフィシャルファンクラブ「nozomist」",
+        "石原夏織オフィシャルファンクラブ「hand in hand」"
+      ],
+      "service_details": [
+        {
+          "name": "メール配信サービス",
+          "aliases": []
+        },
+        {
+          "name": "HomeGround",
+          "aliases": []
+        },
+        {
+          "name": "KAIBA CORPORATION STORE",
+          "aliases": []
+        },
+        {
+          "name": "LOVEBITES INC.",
+          "aliases": []
+        },
+        {
+          "name": "Superfly Official Fanclub「Superconnection」",
+          "aliases": []
+        },
+        {
+          "name": "『ヒプノシスマイク -Division Rap Battle-』Rule the Stage Mobile",
+          "aliases": []
+        },
+        {
+          "name": "望海風斗オフィシャルファンクラブ「nozomist」",
+          "aliases": []
+        },
+        {
+          "name": "石原夏織オフィシャルファンクラブ「hand in hand」",
+          "aliases": []
+        }
+      ],
       "added_at": "2026-11-06T10:15:48+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-12T19:15:15+00:00"
     },
     {
       "id": "f3e1f7cf44a9ab84",
@@ -20999,6 +21126,14 @@
           ]
         },
         {
+          "incident_id": "c140c5aa9ccc856a",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/329939d4c4ff1411a71ce4c8bc111ccf1792b4ef",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/329939d4c4ff1411a71ce4c8bc111ccf1792b4ef"
+          ]
+        },
+        {
           "incident_id": "c41156f61dbf6bc1",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/6b515e23d28fcbd427753bdd12e25798ef2d355c",
@@ -21341,7 +21476,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-12T10:15:34+00:00"
+      "updated_at": "2026-11-12T19:15:15+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -26622,12 +26757,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/1b81fa26b3636bb2218bdd57b5c4d7c6ededc51f"
+        },
+        {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp/n/ybc/category/society/yb12ee9d9711094421b16b3bfa17ff4901"
         }
       ],
       "affected_service": "県避難者支援情報",
       "service_aliases": [],
       "added_at": "2026-10-24T21:12:22+00:00",
-      "updated_at": "2026-11-12T09:15:21+00:00"
+      "updated_at": "2026-11-12T19:15:15+00:00"
     },
     {
       "id": "2d5c0c635a1e28ca",
