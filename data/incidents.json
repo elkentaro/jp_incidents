@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-12T22:15:17+00:00",
-  "total": 1141,
+  "updated_at": "2026-11-12T23:15:21+00:00",
+  "total": 1144,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-12"
@@ -354,7 +354,7 @@
     },
     {
       "date": "2026-11-10",
-      "count": 34
+      "count": 36
     },
     {
       "date": "2026-11-11",
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-12",
-      "count": 15
+      "count": 16
     },
     {
       "date": "2026-11-13",
@@ -393,12 +393,16 @@
         {
           "name": "中日新聞Web",
           "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5vXzBDTHVvNEF3Q3FRVXdYenNwS2FHcjNTbHdPZGlSS2pKTG1YWl9ETWdsOW5uTmgzMEtBMERka2djLS1BM0xYZWZzTmp3MlNnTlk2TQ?oc=5"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/koka-city-ransomware-voice-broadcast-25000-202611/"
         }
       ],
       "affected_service": "音声放送システム",
       "service_aliases": [],
       "added_at": "2026-11-12T21:15:22+00:00",
-      "updated_at": "2026-11-12T21:15:22+00:00"
+      "updated_at": "2026-11-12T23:15:21+00:00"
     },
     {
       "id": "4d5625761a2f2f2c",
@@ -436,6 +440,32 @@
       "service_aliases": [],
       "added_at": "2026-11-12T22:15:17+00:00",
       "updated_at": "2026-11-12T22:15:17+00:00"
+    },
+    {
+      "id": "4dcd8e8c4a2884e6",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": "2026-11-11T15:00:00+00:00",
+      "organization": "ユナイテッド・スーパーマーケット・ホールディングス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 64003,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/maruetsu_usmh_scan_go_ignica_64003_possible_data_leak/"
+        }
+      ],
+      "affected_service": "Scan&Go ignica",
+      "service_aliases": [
+        "スキャンアンドゴー イグニカ"
+      ],
+      "added_at": "2026-11-12T23:15:21+00:00",
+      "updated_at": "2026-11-12T23:15:21+00:00"
     },
     {
       "id": "5f14db3e89b72105",
@@ -2812,6 +2842,40 @@
       "updated_at": "2026-11-10T13:17:15+00:00"
     },
     {
+      "id": "8214c944e397d81b",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": "2026-11-11T15:00:00+00:00",
+      "organization": "ENSAPIA Tokyo",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "cc83cfb44abbac15",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPS2VWazF6QWw3NDFmN1FMX2JnY3I2RzRPR2JISWVsNVhLMFhwUkhMOTVEN2NqNDhMcUpvQW1rMW5XbkVmZHQyLWxUckgtbm1FMXgwSG8wMmNCRng0M3lhaFE5NlRVTm9YSXBnWlMxSHlfbFhsSTR1cUwxcUVCWGdaTlJER3JpdUxyeFZMS2J1cWNyTmUtdkRUTXBvRk1ZSUZLdnBxcEx3?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMipgFBVV95cUxPS2VWazF6QWw3NDFmN1FMX2JnY3I2RzRPR2JISWVsNVhLMFhwUkhMOTVEN2NqNDhMcUpvQW1rMW5XbkVmZHQyLWxUckgtbm1FMXgwSG8wMmNCRng0M3lhaFE5NlRVTm9YSXBnWlMxSHlfbFhsSTR1cUwxcUVCWGdaTlJER3JpdUxyeFZMS2J1cWNyTmUtdkRUTXBvRk1ZSUZLdnBxcEx3?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPS2VWazF6QWw3NDFmN1FMX2JnY3I2RzRPR2JISWVsNVhLMFhwUkhMOTVEN2NqNDhMcUpvQW1rMW5XbkVmZHQyLWxUckgtbm1FMXgwSG8wMmNCRng0M3lhaFE5NlRVTm9YSXBnWlMxSHlfbFhsSTR1cUwxcUVCWGdaTlJER3JpdUxyeFZMS2J1cWNyTmUtdkRUTXBvRk1ZSUZLdnBxcEx3?oc=5"
+        }
+      ],
+      "affected_service": "アソビューのチケット利用履歴",
+      "service_aliases": [],
+      "added_at": "2026-11-12T23:15:21+00:00",
+      "updated_at": "2026-11-12T23:15:21+00:00"
+    },
+    {
       "id": "878d7496ea2d4eb9",
       "published_at": "2026-11-09T15:00:00+00:00",
       "disclosed_at": null,
@@ -2964,6 +3028,38 @@
       "service_aliases": [],
       "added_at": "2026-11-10T13:17:15+00:00",
       "updated_at": "2026-11-10T13:17:15+00:00"
+    },
+    {
+      "id": "cc5eef77d4b2ab84",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": "2026-11-09T15:00:00+00:00",
+      "organization": "ENSAPIA Tokyo",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "57d15baf7435e548",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPS2VWazF6QWw3NDFmN1FMX2JnY3I2RzRPR2JISWVsNVhLMFhwUkhMOTVEN2NqNDhMcUpvQW1rMW5XbkVmZHQyLWxUckgtbm1FMXgwSG8wMmNCRng0M3lhaFE5NlRVTm9YSXBnWlMxSHlfbFhsSTR1cUwxcUVCWGdaTlJER3JpdUxyeFZMS2J1cWNyTmUtdkRUTXBvRk1ZSUZLdnBxcEx3?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMipgFBVV95cUxPS2VWazF6QWw3NDFmN1FMX2JnY3I2RzRPR2JISWVsNVhLMFhwUkhMOTVEN2NqNDhMcUpvQW1rMW5XbkVmZHQyLWxUckgtbm1FMXgwSG8wMmNCRng0M3lhaFE5NlRVTm9YSXBnWlMxSHlfbFhsSTR1cUwxcUVCWGdaTlJER3JpdUxyeFZMS2J1cWNyTmUtdkRUTXBvRk1ZSUZLdnBxcEx3?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPS2VWazF6QWw3NDFmN1FMX2JnY3I2RzRPR2JISWVsNVhLMFhwUkhMOTVEN2NqNDhMcUpvQW1rMW5XbkVmZHQyLWxUckgtbm1FMXgwSG8wMmNCRng0M3lhaFE5NlRVTm9YSXBnWlMxSHlfbFhsSTR1cUwxcUVCWGdaTlJER3JpdUxyeFZMS2J1cWNyTmUtdkRUTXBvRk1ZSUZLdnBxcEx3?oc=5"
+        }
+      ],
+      "added_at": "2026-11-12T23:15:21+00:00",
+      "updated_at": "2026-11-12T23:15:21+00:00"
     },
     {
       "id": "d96f90b546d827fc",
@@ -4313,6 +4409,14 @@
           "evidence_urls": [
             "https://news.yahoo.co.jp/articles/ac6c5ea351ed511d265ed401a4fbf5c02864fe97"
           ]
+        },
+        {
+          "incident_id": "cc5eef77d4b2ab84",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPS2VWazF6QWw3NDFmN1FMX2JnY3I2RzRPR2JISWVsNVhLMFhwUkhMOTVEN2NqNDhMcUpvQW1rMW5XbkVmZHQyLWxUckgtbm1FMXgwSG8wMmNCRng0M3lhaFE5NlRVTm9YSXBnWlMxSHlfbFhsSTR1cUwxcUVCWGdaTlJER3JpdUxyeFZMS2J1cWNyTmUtdkRUTXBvRk1ZSUZLdnBxcEx3?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMipgFBVV95cUxPS2VWazF6QWw3NDFmN1FMX2JnY3I2RzRPR2JISWVsNVhLMFhwUkhMOTVEN2NqNDhMcUpvQW1rMW5XbkVmZHQyLWxUckgtbm1FMXgwSG8wMmNCRng0M3lhaFE5NlRVTm9YSXBnWlMxSHlfbFhsSTR1cUwxcUVCWGdaTlJER3JpdUxyeFZMS2J1cWNyTmUtdkRUTXBvRk1ZSUZLdnBxcEx3?oc=5"
+          ]
         }
       ],
       "sources": [
@@ -4334,7 +4438,7 @@
         }
       ],
       "added_at": "2026-11-11T09:15:59+00:00",
-      "updated_at": "2026-11-12T10:15:34+00:00"
+      "updated_at": "2026-11-12T23:15:21+00:00"
     },
     {
       "id": "a5aba76731b13cfb",
@@ -11845,6 +11949,14 @@
           ]
         },
         {
+          "incident_id": "8214c944e397d81b",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPS2VWazF6QWw3NDFmN1FMX2JnY3I2RzRPR2JISWVsNVhLMFhwUkhMOTVEN2NqNDhMcUpvQW1rMW5XbkVmZHQyLWxUckgtbm1FMXgwSG8wMmNCRng0M3lhaFE5NlRVTm9YSXBnWlMxSHlfbFhsSTR1cUwxcUVCWGdaTlJER3JpdUxyeFZMS2J1cWNyTmUtdkRUTXBvRk1ZSUZLdnBxcEx3?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMipgFBVV95cUxPS2VWazF6QWw3NDFmN1FMX2JnY3I2RzRPR2JISWVsNVhLMFhwUkhMOTVEN2NqNDhMcUpvQW1rMW5XbkVmZHQyLWxUckgtbm1FMXgwSG8wMmNCRng0M3lhaFE5NlRVTm9YSXBnWlMxSHlfbFhsSTR1cUwxcUVCWGdaTlJER3JpdUxyeFZMS2J1cWNyTmUtdkRUTXBvRk1ZSUZLdnBxcEx3?oc=5"
+          ]
+        },
+        {
           "incident_id": "8a2a8d13a22fe810",
           "relationship": "affects",
           "evidence_url": "https://news.ntv.co.jp/n/fbc/category/society/fbea70c8e8a7614fc09ba47e8379dd6f31",
@@ -11926,7 +12038,7 @@
       "affected_service": "アソビュー!",
       "service_aliases": [],
       "added_at": "2026-11-03T16:15:47+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-12T23:15:21+00:00"
     },
     {
       "id": "39ff62b6be63f819",
