@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-12T00:15:58+00:00",
-  "total": 1106,
+  "updated_at": "2026-11-12T01:16:23+00:00",
+  "total": 1108,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-12"
@@ -345,7 +345,7 @@
     },
     {
       "date": "2026-11-07",
-      "count": 8
+      "count": 9
     },
     {
       "date": "2026-11-08",
@@ -361,7 +361,7 @@
     },
     {
       "date": "2026-11-11",
-      "count": 16
+      "count": 17
     },
     {
       "date": "2026-11-12",
@@ -456,8 +456,9 @@
         {
           "incident_id": "e0bf7f8e71d6ba85",
           "relationship": "affected_by",
-          "evidence_url": "https://www.yomiuri.co.jp/national/20261111-GYT1T00220/",
+          "evidence_url": "https://www.cao.go.jp/others/csi/security/20261111notice.html",
           "evidence_urls": [
+            "https://www.cao.go.jp/others/csi/security/20261111notice.html",
             "https://www.yomiuri.co.jp/national/20261111-GYT1T00220/"
           ]
         }
@@ -466,6 +467,10 @@
         {
           "name": "読売新聞",
           "url": "https://www.yomiuri.co.jp/national/20261111-GYT1T00220/"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://www.cao.go.jp/others/csi/security/20261111notice.html"
         },
         {
           "name": "Yahoo!ニュース",
@@ -495,7 +500,7 @@
       "affected_service": "メールマガジン",
       "service_aliases": [],
       "added_at": "2026-11-11T07:16:10+00:00",
-      "updated_at": "2026-11-11T09:15:59+00:00"
+      "updated_at": "2026-11-12T01:16:23+00:00"
     },
     {
       "id": "e8869a011b42a736",
@@ -512,6 +517,10 @@
       "confidence_score": 100,
       "related": [],
       "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.smbcnikko.co.jp/news/release/2026/pdf/261111_01.pdf"
+        },
         {
           "name": "リスク対策.com",
           "url": "https://www.risktaisaku.com/articles/-/117099"
@@ -540,7 +549,7 @@
       "affected_service": "持ち株会事務受託業務",
       "service_aliases": [],
       "added_at": "2026-11-11T06:15:30+00:00",
-      "updated_at": "2026-11-11T09:15:59+00:00"
+      "updated_at": "2026-11-12T01:16:23+00:00"
     },
     {
       "id": "897523f513769424",
@@ -1050,6 +1059,40 @@
       "updated_at": "2026-11-11T21:16:42+00:00"
     },
     {
+      "id": "a8cb481db54a38a4",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "リナビス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 158960,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://rinavis.com/f/notice_20261111",
+          "evidence_urls": [
+            "https://rinavis.com/f/notice_20261111"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://rinavis.com/f/notice_20261111"
+        }
+      ],
+      "affected_service": "repica",
+      "service_aliases": [],
+      "added_at": "2026-11-12T01:16:23+00:00",
+      "updated_at": "2026-11-12T01:16:23+00:00"
+    },
+    {
       "id": "e359784f18174ef9",
       "published_at": "2026-11-10T15:00:00+00:00",
       "disclosed_at": null,
@@ -1271,6 +1314,50 @@
       "updated_at": "2026-11-11T09:15:59+00:00"
     },
     {
+      "id": "80fe411952caf308",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "電通デジタル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "2486bef322523ca4",
+          "relationship": "affects",
+          "evidence_url": "https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html",
+          "evidence_urls": [
+            "https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.dentsudigital.co.jp/news/updates/services/2026-1111-001111"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/dentsu_digital_tonariwa_unauthorized_access_20261111/"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC11AHR0R11C26A1000000/"
+        }
+      ],
+      "affected_service": "TONARIWA",
+      "service_aliases": [
+        "トナリワ"
+      ],
+      "added_at": "2026-11-11T09:15:59+00:00",
+      "updated_at": "2026-11-12T01:16:23+00:00"
+    },
+    {
       "id": "a916e1f197303059",
       "published_at": "2026-11-09T15:00:00+00:00",
       "disclosed_at": null,
@@ -1488,46 +1575,6 @@
       ],
       "added_at": "2026-11-10T09:15:46+00:00",
       "updated_at": "2026-11-10T12:16:52+00:00"
-    },
-    {
-      "id": "80fe411952caf308",
-      "published_at": "2026-11-09T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "電通デジタル",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 65,
-      "related": [
-        {
-          "incident_id": "2486bef322523ca4",
-          "relationship": "affects",
-          "evidence_url": "https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html",
-          "evidence_urls": [
-            "https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/dentsu_digital_tonariwa_unauthorized_access_20261111/"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUC11AHR0R11C26A1000000/"
-        }
-      ],
-      "affected_service": "TONARIWA",
-      "service_aliases": [
-        "トナリワ"
-      ],
-      "added_at": "2026-11-11T09:15:59+00:00",
-      "updated_at": "2026-11-11T20:15:52+00:00"
     },
     {
       "id": "a4bddfbd43d68938",
@@ -2564,6 +2611,43 @@
       "updated_at": "2026-11-10T07:15:34+00:00"
     },
     {
+      "id": "1cf8acb96247e64e",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ソースネクスト",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 160,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "0f8f44a58aa6e552",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/feb6ef62f7b7a444b61fed542066985892488223",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/feb6ef62f7b7a444b61fed542066985892488223"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.sourcenext.com/support/i/2026/1110_info"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/feb6ef62f7b7a444b61fed542066985892488223"
+        }
+      ],
+      "affected_service": "株主や投資家向けの問い合わせフォーム",
+      "service_aliases": [],
+      "added_at": "2026-11-10T00:16:43+00:00",
+      "updated_at": "2026-11-12T01:16:23+00:00"
+    },
+    {
       "id": "0725fe914c798f25",
       "published_at": "2026-11-08T15:00:00+00:00",
       "disclosed_at": null,
@@ -2787,39 +2871,6 @@
       "service_aliases": [],
       "added_at": "2026-11-09T11:39:07+00:00",
       "updated_at": "2026-11-09T11:39:07+00:00"
-    },
-    {
-      "id": "1cf8acb96247e64e",
-      "published_at": "2026-11-08T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ソースネクスト",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 160,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "0f8f44a58aa6e552",
-          "relationship": "same_organization",
-          "evidence_url": "https://news.yahoo.co.jp/articles/feb6ef62f7b7a444b61fed542066985892488223",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/feb6ef62f7b7a444b61fed542066985892488223"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/feb6ef62f7b7a444b61fed542066985892488223"
-        }
-      ],
-      "affected_service": "株主や投資家向けの問い合わせフォーム",
-      "service_aliases": [],
-      "added_at": "2026-11-10T00:16:43+00:00",
-      "updated_at": "2026-11-10T00:16:43+00:00"
     },
     {
       "id": "3ace403cf66f51b6",
@@ -3500,6 +3551,35 @@
       "updated_at": "2026-11-09T11:04:22+00:00"
     },
     {
+      "id": "2648c7e397e26753",
+      "published_at": "2026-11-06T15:00:00+00:00",
+      "disclosed_at": "2026-11-09T15:00:00+00:00",
+      "organization": "出光興産",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/idemitsu-car-maintenance-reservation-unauthorized-access/"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://www.idemitsu.com/jp/information/2026/261110.pdf"
+        }
+      ],
+      "affected_service": "idemitsu カーメンテ予約",
+      "service_aliases": [],
+      "added_at": "2026-11-11T02:15:49+00:00",
+      "updated_at": "2026-11-12T01:16:23+00:00"
+    },
+    {
       "id": "7dc5f8abf578e750",
       "published_at": "2026-11-06T15:00:00+00:00",
       "disclosed_at": null,
@@ -3569,6 +3649,40 @@
       "updated_at": "2026-11-09T01:16:50+00:00"
     },
     {
+      "id": "6a35ca868d64cf08",
+      "published_at": "2026-11-06T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "河淳",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1214183,
+      "confidence": "high",
+      "confidence_score": 60,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.kawajun.co.jp/news/keyuca/notification-of-unauthorized-access-20261111-2/",
+          "evidence_urls": [
+            "https://www.kawajun.co.jp/news/keyuca/notification-of-unauthorized-access-20261111-2/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.kawajun.co.jp/news/keyuca/notification-of-unauthorized-access-20261111-2/"
+        }
+      ],
+      "affected_service": "ケユカオンラインショップメールマガジン",
+      "service_aliases": [],
+      "added_at": "2026-11-12T01:16:23+00:00",
+      "updated_at": "2026-11-12T01:16:23+00:00"
+    },
+    {
       "id": "f4b56629909c3d7b",
       "published_at": "2026-11-06T15:00:00+00:00",
       "disclosed_at": null,
@@ -3594,31 +3708,6 @@
       ],
       "added_at": "2026-11-09T20:16:13+00:00",
       "updated_at": "2026-11-10T01:16:02+00:00"
-    },
-    {
-      "id": "2648c7e397e26753",
-      "published_at": "2026-11-06T15:00:00+00:00",
-      "disclosed_at": "2026-11-09T15:00:00+00:00",
-      "organization": "出光興産",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/idemitsu-car-maintenance-reservation-unauthorized-access/"
-        }
-      ],
-      "affected_service": "idemitsu カーメンテ予約",
-      "service_aliases": [],
-      "added_at": "2026-11-11T02:15:49+00:00",
-      "updated_at": "2026-11-11T02:15:49+00:00"
     },
     {
       "id": "70af91eead1ee810",
@@ -11718,6 +11807,72 @@
       "updated_at": "2026-11-09T21:16:19+00:00"
     },
     {
+      "id": "a99204c7fb0a8fea",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "NTTデータ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 80000,
+      "confidence": "high",
+      "confidence_score": 100,
+      "related": [
+        {
+          "incident_id": "19d5816230daca6f",
+          "relationship": "affects",
+          "evidence_url": "https://www.nttdata.com/global/ja/news/release/2026/110900/",
+          "evidence_urls": [
+            "https://www.nttdata.com/global/ja/news/release/2026/110900/"
+          ]
+        },
+        {
+          "incident_id": "29879c71c8cc2650",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.nttdata.com/global/ja/news/release/2026/110900/",
+          "evidence_urls": [
+            "https://www.nttdata.com/global/ja/news/release/2026/110900/"
+          ]
+        },
+        {
+          "incident_id": "708c1e97d0a4177b",
+          "relationship": "affects",
+          "evidence_url": "https://www.yomiuri.co.jp/local/ibaraki/news/20261110-GYTNT00252/",
+          "evidence_urls": [
+            "https://www.yomiuri.co.jp/local/ibaraki/news/20261110-GYTNT00252/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "NTTデータ / NTT DATA",
+          "url": "https://www.nttdata.com/global/ja/news/release/2026/110900/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/sumitomo-life-vitality-ntt-data-unauthorized-access-80000/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/3fefea37a1fe804549018fff9c2caefb52b299c4"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/2746736db764aa91b3712461c5166e6cea9de3eb"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/12/56761.html"
+        }
+      ],
+      "affected_service": "住友生命Vitality体験版・企業型、Vitalityスマート(福利厚生タイプ含む)の申込みに係るサービス",
+      "service_aliases": [],
+      "added_at": "2026-11-09T08:16:45+00:00",
+      "updated_at": "2026-11-12T01:16:23+00:00"
+    },
+    {
       "id": "bd2d832f478781fb",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
@@ -12383,68 +12538,6 @@
       "service_aliases": [],
       "added_at": "2026-11-04T15:16:11+00:00",
       "updated_at": "2026-11-05T14:17:23+00:00"
-    },
-    {
-      "id": "a99204c7fb0a8fea",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "NTTデータ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 80000,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [
-        {
-          "incident_id": "19d5816230daca6f",
-          "relationship": "affects",
-          "evidence_url": "https://www.nttdata.com/global/ja/news/release/2026/110900/",
-          "evidence_urls": [
-            "https://www.nttdata.com/global/ja/news/release/2026/110900/"
-          ]
-        },
-        {
-          "incident_id": "29879c71c8cc2650",
-          "relationship": "same_organization",
-          "evidence_url": "https://www.nttdata.com/global/ja/news/release/2026/110900/",
-          "evidence_urls": [
-            "https://www.nttdata.com/global/ja/news/release/2026/110900/"
-          ]
-        },
-        {
-          "incident_id": "708c1e97d0a4177b",
-          "relationship": "affects",
-          "evidence_url": "https://www.yomiuri.co.jp/local/ibaraki/news/20261110-GYTNT00252/",
-          "evidence_urls": [
-            "https://www.yomiuri.co.jp/local/ibaraki/news/20261110-GYTNT00252/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "NTTデータ / NTT DATA",
-          "url": "https://www.nttdata.com/global/ja/news/release/2026/110900/"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/sumitomo-life-vitality-ntt-data-unauthorized-access-80000/"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/3fefea37a1fe804549018fff9c2caefb52b299c4"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/2746736db764aa91b3712461c5166e6cea9de3eb"
-        }
-      ],
-      "affected_service": "住友生命Vitality体験版・企業型、Vitalityスマート(福利厚生タイプ含む)の申込みに係るサービス",
-      "service_aliases": [],
-      "added_at": "2026-11-09T08:16:45+00:00",
-      "updated_at": "2026-11-11T11:15:53+00:00"
     },
     {
       "id": "c70726cc989a1966",
@@ -15925,6 +16018,34 @@
       "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
+      "id": "7c8fccaa8469ed10",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "全日空商事",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.anatc-gift.com/news/all-20261030/"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/12/56755.html"
+        }
+      ],
+      "affected_service": "選べるe-GIFT",
+      "service_aliases": [],
+      "added_at": "2026-11-02T02:15:58+00:00",
+      "updated_at": "2026-11-12T01:16:23+00:00"
+    },
+    {
       "id": "7eaf4a6d5b9ad278",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": null,
@@ -16202,30 +16323,6 @@
       "service_aliases": [],
       "added_at": "2026-10-30T10:15:57+00:00",
       "updated_at": "2026-10-30T10:15:57+00:00"
-    },
-    {
-      "id": "7c8fccaa8469ed10",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "全日空商事",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 60,
-      "related": [],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.anatc-gift.com/news/all-20261030/"
-        }
-      ],
-      "affected_service": "選べるe-GIFT",
-      "service_aliases": [],
-      "added_at": "2026-11-02T02:15:58+00:00",
-      "updated_at": "2026-11-02T02:15:58+00:00"
     },
     {
       "id": "7d4a8e7c0b6678d9",
@@ -17295,6 +17392,35 @@
       "updated_at": "2026-11-03T12:17:45+00:00"
     },
     {
+      "id": "1a369c3ba5a19f0b",
+      "published_at": "2026-10-28T15:00:00+00:00",
+      "disclosed_at": "2026-11-10T15:00:00+00:00",
+      "organization": "FABRIC TOKYO",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 699,
+      "confidence": "high",
+      "confidence_score": 75,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/fabric_tokyo_test_system_access_key_699_20261111/"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://fabric-tokyo.com/news/show/20261111-to-all-customers"
+        }
+      ],
+      "affected_service": "検証用システム",
+      "service_aliases": [],
+      "added_at": "2026-11-11T06:15:30+00:00",
+      "updated_at": "2026-11-12T01:16:23+00:00"
+    },
+    {
       "id": "39d454b50a8624c2",
       "published_at": "2026-10-28T15:00:00+00:00",
       "disclosed_at": "2026-10-28T15:00:00+00:00",
@@ -18045,31 +18171,6 @@
       ],
       "added_at": "2026-10-30T01:13:09+00:00",
       "updated_at": "2026-10-30T14:15:52+00:00"
-    },
-    {
-      "id": "1a369c3ba5a19f0b",
-      "published_at": "2026-10-28T15:00:00+00:00",
-      "disclosed_at": "2026-11-10T15:00:00+00:00",
-      "organization": "FABRIC TOKYO",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 699,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/fabric_tokyo_test_system_access_key_699_20261111/"
-        }
-      ],
-      "affected_service": "検証用システム",
-      "service_aliases": [],
-      "added_at": "2026-11-11T06:15:30+00:00",
-      "updated_at": "2026-11-11T06:15:30+00:00"
     },
     {
       "id": "9bcce8ee38db1427",
@@ -19513,6 +19614,14 @@
           ]
         },
         {
+          "incident_id": "6a35ca868d64cf08",
+          "relationship": "affects",
+          "evidence_url": "https://www.kawajun.co.jp/news/keyuca/notification-of-unauthorized-access-20261111-2/",
+          "evidence_urls": [
+            "https://www.kawajun.co.jp/news/keyuca/notification-of-unauthorized-access-20261111-2/"
+          ]
+        },
+        {
           "incident_id": "6a5be0d4706877ad",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1KUGZmY0RrdzZvY2FTQllpaUdwanc2bThuRE5BdlppRkNMdnVpcURyS1FBeVFYY2RhZ24xNmtkQlJXaGNpanlvSUh1eFVaSXU5dS1NeGNsc1hGUjA5QzVQNzduSXV2dERmZnFkNXBYeElCdnV5bDhVVGtfRlZEeW8?oc=5",
@@ -19632,8 +19741,9 @@
         {
           "incident_id": "7e675401ba9184a3",
           "relationship": "affects",
-          "evidence_url": "https://www.yomiuri.co.jp/national/20261111-GYT1T00220/",
+          "evidence_url": "https://www.cao.go.jp/others/csi/security/20261111notice.html",
           "evidence_urls": [
+            "https://www.cao.go.jp/others/csi/security/20261111notice.html",
             "https://www.yomiuri.co.jp/national/20261111-GYT1T00220/"
           ]
         },
@@ -19854,6 +19964,14 @@
           "evidence_url": "https://tv.golfnetwork.co.jp/news/detail/147",
           "evidence_urls": [
             "https://tv.golfnetwork.co.jp/news/detail/147"
+          ]
+        },
+        {
+          "incident_id": "a8cb481db54a38a4",
+          "relationship": "affects",
+          "evidence_url": "https://rinavis.com/f/notice_20261111",
+          "evidence_urls": [
+            "https://rinavis.com/f/notice_20261111"
           ]
         },
         {
@@ -20290,7 +20408,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-12T00:15:58+00:00"
+      "updated_at": "2026-11-12T01:16:23+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
