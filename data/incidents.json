@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-12T20:15:40+00:00",
-  "total": 1127,
+  "updated_at": "2026-11-12T21:15:22+00:00",
+  "total": 1133,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-12"
@@ -274,7 +274,7 @@
     },
     {
       "date": "2026-10-21",
-      "count": 61
+      "count": 62
     },
     {
       "date": "2026-10-22",
@@ -286,7 +286,7 @@
     },
     {
       "date": "2026-10-24",
-      "count": 8
+      "count": 9
     },
     {
       "date": "2026-10-25",
@@ -354,7 +354,7 @@
     },
     {
       "date": "2026-11-10",
-      "count": 30
+      "count": 32
     },
     {
       "date": "2026-11-11",
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-12",
-      "count": 10
+      "count": 12
     },
     {
       "date": "2026-11-13",
@@ -370,6 +370,36 @@
     }
   ],
   "incidents": [
+    {
+      "id": "2599deba1d9c9654",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "滋賀県甲賀市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "ransomware",
+        "unauthorized access"
+      ],
+      "potential_records": 25000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "滋賀県甲賀市",
+          "url": "https://www.city.koka.lg.jp/item/45076.htm#itemid45076"
+        },
+        {
+          "name": "中日新聞Web",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5vXzBDTHVvNEF3Q3FRVXdYenNwS2FHcjNTbHdPZGlSS2pKTG1YWl9ETWdsOW5uTmgzMEtBMERka2djLS1BM0xYZWZzTmp3MlNnTlk2TQ?oc=5"
+        }
+      ],
+      "affected_service": "音声放送システム",
+      "service_aliases": [],
+      "added_at": "2026-11-12T21:15:22+00:00",
+      "updated_at": "2026-11-12T21:15:22+00:00"
+    },
     {
       "id": "a3e7a1a5599413f7",
       "published_at": "2026-11-11T15:00:00+00:00",
@@ -671,6 +701,55 @@
       ],
       "added_at": "2026-11-12T11:15:59+00:00",
       "updated_at": "2026-11-12T11:15:59+00:00"
+    },
+    {
+      "id": "e9088ded1dd0ae6f",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": "2026-11-11T15:00:00+00:00",
+      "organization": "Yeny",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1332505,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/yeny-ultra-pay-payblend-api-data-leak-1332505-2026/"
+        }
+      ],
+      "affected_service": "ultra pay カード / アスルクラロ沼津Pay / 巫神こんPay / 東芝ブレイブルーパス東京Pay",
+      "service_aliases": [],
+      "affected_services": [
+        "ultra pay カード",
+        "アスルクラロ沼津Pay",
+        "巫神こんPay",
+        "東芝ブレイブルーパス東京Pay"
+      ],
+      "service_details": [
+        {
+          "name": "ultra pay カード",
+          "aliases": []
+        },
+        {
+          "name": "アスルクラロ沼津Pay",
+          "aliases": []
+        },
+        {
+          "name": "巫神こんPay",
+          "aliases": []
+        },
+        {
+          "name": "東芝ブレイブルーパス東京Pay",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-12T21:15:22+00:00",
+      "updated_at": "2026-11-12T21:15:22+00:00"
     },
     {
       "id": "08d395a9f3838df8",
@@ -2340,6 +2419,48 @@
       "updated_at": "2026-11-10T20:15:39+00:00"
     },
     {
+      "id": "4f63ec197293f7ea",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "泉佐野市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "c18e54cb9abd1cae",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOSHRpaTVxRHEzYkstazNjLWJ0dkd4bjFCUnlMMnlkRHc1TEFqb3ppVHFyMG5LX2tfMXNPRmRKRUhhaEJ5alNHbTZmTkpZVmZzN3ByamZYN2VlM3RMdlBXb1MtYmZQLTY0My1KLWNMUTVHTDFxcEI1MmZBcElWR0U5SHd6RGU3SldWa3c?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiigFBVV95cUxOSHRpaTVxRHEzYkstazNjLWJ0dkd4bjFCUnlMMnlkRHc1TEFqb3ppVHFyMG5LX2tfMXNPRmRKRUhhaEJ5alNHbTZmTkpZVmZzN3ByamZYN2VlM3RMdlBXb1MtYmZQLTY0My1KLWNMUTVHTDFxcEI1MmZBcElWR0U5SHd6RGU3SldWa3c?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "泉佐野市",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOSHRpaTVxRHEzYkstazNjLWJ0dkd4bjFCUnlMMnlkRHc1TEFqb3ppVHFyMG5LX2tfMXNPRmRKRUhhaEJ5alNHbTZmTkpZVmZzN3ByamZYN2VlM3RMdlBXb1MtYmZQLTY0My1KLWNMUTVHTDFxcEI1MmZBcElWR0U5SHd6RGU3SldWa3c?oc=5"
+        },
+        {
+          "name": "estadium.co.jp",
+          "url": "https://estadium.co.jp/news/p/1135/"
+        },
+        {
+          "name": "www.nankai.co.jp",
+          "url": "https://www.nankai.co.jp/company/info/261110.html"
+        }
+      ],
+      "affected_service": "スポーツゲームクリエイターアカデミー2026秋のファンミーティング",
+      "service_aliases": [],
+      "added_at": "2026-11-12T21:15:22+00:00",
+      "updated_at": "2026-11-12T21:15:22+00:00"
+    },
+    {
       "id": "5d9388db64d7c7fe",
       "published_at": "2026-11-09T15:00:00+00:00",
       "disclosed_at": null,
@@ -2667,6 +2788,40 @@
       "service_aliases": [],
       "added_at": "2026-11-10T13:17:15+00:00",
       "updated_at": "2026-11-10T13:17:15+00:00"
+    },
+    {
+      "id": "d96f90b546d827fc",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "本庄市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "3d4ac3f77a219dbf",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQYnFwQXZKRVlVRWlCUWNNTXRxN2RDY2JFOGdvUU1Ya2ozYnhRaFp1cFRvbEZ5dTZuUUNIa2pWbFp1eXdHbzltS2hCNk9aWHBUNDR2dkxTQTNHdUJnVEk0ZWU0elpJZmZKUVU3aE9teFNNVFc5WDRVTUhWTEIyWmtrN0ZSWQ?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMigwFBVV95cUxQYnFwQXZKRVlVRWlCUWNNTXRxN2RDY2JFOGdvUU1Ya2ozYnhRaFp1cFRvbEZ5dTZuUUNIa2pWbFp1eXdHbzltS2hCNk9aWHBUNDR2dkxTQTNHdUJnVEk0ZWU0elpJZmZKUVU3aE9teFNNVFc5WDRVTUhWTEIyWmtrN0ZSWQ?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "本庄市ホームページ",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQYnFwQXZKRVlVRWlCUWNNTXRxN2RDY2JFOGdvUU1Ya2ozYnhRaFp1cFRvbEZ5dTZuUUNIa2pWbFp1eXdHbzltS2hCNk9aWHBUNDR2dkxTQTNHdUJnVEk0ZWU0elpJZmZKUVU3aE9teFNNVFc5WDRVTUhWTEIyWmtrN0ZSWQ?oc=5"
+        }
+      ],
+      "affected_service": "マイナンバーカード交付予約・管理システム",
+      "service_aliases": [],
+      "added_at": "2026-11-12T21:15:22+00:00",
+      "updated_at": "2026-11-12T21:15:22+00:00"
     },
     {
       "id": "0725fe914c798f25",
@@ -8800,6 +8955,14 @@
           ]
         },
         {
+          "incident_id": "4f63ec197293f7ea",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOSHRpaTVxRHEzYkstazNjLWJ0dkd4bjFCUnlMMnlkRHc1TEFqb3ppVHFyMG5LX2tfMXNPRmRKRUhhaEJ5alNHbTZmTkpZVmZzN3ByamZYN2VlM3RMdlBXb1MtYmZQLTY0My1KLWNMUTVHTDFxcEI1MmZBcElWR0U5SHd6RGU3SldWa3c?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiigFBVV95cUxOSHRpaTVxRHEzYkstazNjLWJ0dkd4bjFCUnlMMnlkRHc1TEFqb3ppVHFyMG5LX2tfMXNPRmRKRUhhaEJ5alNHbTZmTkpZVmZzN3ByamZYN2VlM3RMdlBXb1MtYmZQLTY0My1KLWNMUTVHTDFxcEI1MmZBcElWR0U5SHd6RGU3SldWa3c?oc=5"
+          ]
+        },
+        {
           "incident_id": "a5aba76731b13cfb",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/9fbab8b764b85169b77fe2c7f3d76e3dda7d8cae",
@@ -8847,7 +9010,7 @@
         "テケト"
       ],
       "added_at": "2026-11-08T10:15:44+00:00",
-      "updated_at": "2026-11-12T07:15:39+00:00"
+      "updated_at": "2026-11-12T21:15:22+00:00"
     },
     {
       "id": "cd71aceb5c7b95e3",
@@ -15359,12 +15522,16 @@
         {
           "name": "news.yahoo.co.jp",
           "url": "https://news.yahoo.co.jp/articles/9b7c2e4acb8a93bce78131b308f912f68139af39"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261112de74785"
         }
       ],
       "affected_service": "オンライン申請システム",
       "service_aliases": [],
       "added_at": "2026-11-04T23:15:16+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-12T21:15:22+00:00"
     },
     {
       "id": "d1625f0ac45d3d6b",
@@ -19520,6 +19687,14 @@
           ]
         },
         {
+          "incident_id": "d96f90b546d827fc",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQYnFwQXZKRVlVRWlCUWNNTXRxN2RDY2JFOGdvUU1Ya2ozYnhRaFp1cFRvbEZ5dTZuUUNIa2pWbFp1eXdHbzltS2hCNk9aWHBUNDR2dkxTQTNHdUJnVEk0ZWU0elpJZmZKUVU3aE9teFNNVFc5WDRVTUhWTEIyWmtrN0ZSWQ?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMigwFBVV95cUxQYnFwQXZKRVlVRWlCUWNNTXRxN2RDY2JFOGdvUU1Ya2ozYnhRaFp1cFRvbEZ5dTZuUUNIa2pWbFp1eXdHbzltS2hCNk9aWHBUNDR2dkxTQTNHdUJnVEk0ZWU0elpJZmZKUVU3aE9teFNNVFc5WDRVTUhWTEIyWmtrN0ZSWQ?oc=5"
+          ]
+        },
+        {
           "incident_id": "e0bf7f8e71d6ba85",
           "relationship": "affected_by",
           "evidence_url": "https://www.tkc.jp/news/2026/20261102_2/",
@@ -19541,7 +19716,7 @@
       "affected_service": "アララメッセージ",
       "service_aliases": [],
       "added_at": "2026-11-03T01:15:51+00:00",
-      "updated_at": "2026-11-12T11:15:59+00:00"
+      "updated_at": "2026-11-12T21:15:22+00:00"
     },
     {
       "id": "3e46506525fbbc85",
@@ -26668,6 +26843,30 @@
       "service_aliases": [],
       "added_at": "2026-11-07T02:16:11+00:00",
       "updated_at": "2026-11-12T08:18:15+00:00"
+    },
+    {
+      "id": "69043094901acb42",
+      "published_at": "2026-10-23T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "福島県田村市",
+      "incident_type": "other",
+      "incident_categories": [
+        "other"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Security NEXT",
+          "url": "https://www.security-next.com/192344"
+        }
+      ],
+      "affected_service": "保育施設職員",
+      "service_aliases": [],
+      "added_at": "2026-11-12T21:15:22+00:00",
+      "updated_at": "2026-11-12T21:15:22+00:00"
     },
     {
       "id": "8dbbba7627d15aa3",
@@ -34495,6 +34694,40 @@
       "updated_at": "2026-11-12T07:15:39+00:00"
     },
     {
+      "id": "eb04db62b7777e62",
+      "published_at": "2026-10-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "河淳",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 77105,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "4fe6405bd7d67ab6",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.kawajun.co.jp/news/keyuca/notification-of-unauthorized-access-20261111/",
+          "evidence_urls": [
+            "https://www.kawajun.co.jp/news/keyuca/notification-of-unauthorized-access-20261111/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.kawajun.co.jp/news/keyuca/notification-of-unauthorized-access-20261111/"
+        }
+      ],
+      "affected_service": "名入れ・刺繍サービス等の受注システム",
+      "service_aliases": [],
+      "added_at": "2026-11-12T21:15:22+00:00",
+      "updated_at": "2026-11-12T21:15:22+00:00"
+    },
+    {
       "id": "04791f78ba6dd08b",
       "published_at": "2026-10-19T15:00:00+00:00",
       "disclosed_at": null,
@@ -38903,6 +39136,14 @@
           "evidence_urls": [
             "https://news.google.com/rss/articles/CBMiakFVX3lxTE1EcEdURmhJTlJVRTQyZGMyU2pBTExXVlFURGtLMXZxWkhLeThRcVpFczdobjdoQ2YxTTNHMm95QUR5WWtDejc5dzVSVmlrS1hPbFEtbmh2Tjg2QWE4Umo2SkFqa0RxQk4za0E?oc=5"
           ]
+        },
+        {
+          "incident_id": "eb04db62b7777e62",
+          "relationship": "affects",
+          "evidence_url": "https://www.kawajun.co.jp/news/keyuca/notification-of-unauthorized-access-20261111/",
+          "evidence_urls": [
+            "https://www.kawajun.co.jp/news/keyuca/notification-of-unauthorized-access-20261111/"
+          ]
         }
       ],
       "sources": [
@@ -38912,7 +39153,7 @@
         }
       ],
       "added_at": "2026-11-02T10:00:14+00:00",
-      "updated_at": "2026-11-02T10:00:14+00:00"
+      "updated_at": "2026-11-12T21:15:22+00:00"
     },
     {
       "id": "ad2e55a87bebd619",
