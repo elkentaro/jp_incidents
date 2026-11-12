@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-12T09:15:21+00:00",
-  "total": 1113,
+  "updated_at": "2026-11-12T10:15:34+00:00",
+  "total": 1117,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-12"
@@ -362,14 +362,45 @@
     },
     {
       "date": "2026-11-11",
-      "count": 18
+      "count": 19
     },
     {
       "date": "2026-11-12",
-      "count": 1
+      "count": 4
     }
   ],
   "incidents": [
+    {
+      "id": "a3e7a1a5599413f7",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "キユーピー",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 125788,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.yomiuri.co.jp/economy/20261112-GYT1T00230/",
+          "evidence_urls": [
+            "https://www.yomiuri.co.jp/economy/20261112-GYT1T00230/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/economy/20261112-GYT1T00230/"
+        }
+      ],
+      "added_at": "2026-11-12T10:15:34+00:00",
+      "updated_at": "2026-11-12T10:15:34+00:00"
+    },
     {
       "id": "f7cf02a6f5cb3426",
       "published_at": "2026-11-11T15:00:00+00:00",
@@ -392,6 +423,72 @@
       ],
       "added_at": "2026-11-12T00:15:58+00:00",
       "updated_at": "2026-11-12T08:18:15+00:00"
+    },
+    {
+      "id": "19c524f25e7331d5",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "REALITY Studios",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "57d15baf7435e548",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/ac6c5ea351ed511d265ed401a4fbf5c02864fe97",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/ac6c5ea351ed511d265ed401a4fbf5c02864fe97"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/ac6c5ea351ed511d265ed401a4fbf5c02864fe97"
+        }
+      ],
+      "affected_service": "REALITY Studios official shop",
+      "service_aliases": [],
+      "added_at": "2026-11-12T10:15:34+00:00",
+      "updated_at": "2026-11-12T10:15:34+00:00"
+    },
+    {
+      "id": "1a1f8be23c6fc269",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "むつ市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.web.nhk/newsweb/na/nd-20261112de74862",
+          "evidence_urls": [
+            "https://news.web.nhk/newsweb/na/nd-20261112de74862"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261112de74862"
+        }
+      ],
+      "affected_service": "市役所の予約システム",
+      "service_aliases": [],
+      "added_at": "2026-11-12T10:15:34+00:00",
+      "updated_at": "2026-11-12T10:15:34+00:00"
     },
     {
       "id": "08d395a9f3838df8",
@@ -1022,6 +1119,39 @@
       "updated_at": "2026-11-12T07:15:39+00:00"
     },
     {
+      "id": "a6da8d378141d816",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": "2026-11-10T15:00:00+00:00",
+      "organization": "jig.jp",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "57d15baf7435e548",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/ac6c5ea351ed511d265ed401a4fbf5c02864fe97",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/ac6c5ea351ed511d265ed401a4fbf5c02864fe97"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/ac6c5ea351ed511d265ed401a4fbf5c02864fe97"
+        }
+      ],
+      "affected_service": "Palette Project OFFICIAL STORE",
+      "service_aliases": [],
+      "added_at": "2026-11-12T10:15:34+00:00",
+      "updated_at": "2026-11-12T10:15:34+00:00"
+    },
+    {
       "id": "d3c8cfdfe2497e40",
       "published_at": "2026-11-10T15:00:00+00:00",
       "disclosed_at": null,
@@ -1051,10 +1181,14 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUB118EO0R11C26A1000000/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6820f1efb2960d63695f0905138a31e5d17561c2"
         }
       ],
       "added_at": "2026-11-11T10:15:54+00:00",
-      "updated_at": "2026-11-12T07:15:39+00:00"
+      "updated_at": "2026-11-12T10:15:34+00:00"
     },
     {
       "id": "3fb461ca8b11e282",
@@ -3529,11 +3663,27 @@
       "confidence_score": 80,
       "related": [
         {
+          "incident_id": "19c524f25e7331d5",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/ac6c5ea351ed511d265ed401a4fbf5c02864fe97",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/ac6c5ea351ed511d265ed401a4fbf5c02864fe97"
+          ]
+        },
+        {
           "incident_id": "71422f2b8113fd80",
           "relationship": "affects",
           "evidence_url": "https://www.release.tdnet.info/inbs/140120261111574117.pdf",
           "evidence_urls": [
             "https://www.release.tdnet.info/inbs/140120261111574117.pdf"
+          ]
+        },
+        {
+          "incident_id": "a6da8d378141d816",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/ac6c5ea351ed511d265ed401a4fbf5c02864fe97",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/ac6c5ea351ed511d265ed401a4fbf5c02864fe97"
           ]
         }
       ],
@@ -3556,7 +3706,7 @@
         }
       ],
       "added_at": "2026-11-11T09:15:59+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-12T10:15:34+00:00"
     },
     {
       "id": "a5aba76731b13cfb",
@@ -7189,10 +7339,14 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118349"
+        },
+        {
+          "name": "Yahoo! JAPAN",
+          "url": "https://news.yahoo.co.jp/articles/f517afa56e4fd221c0e6679da3757b084cd2ea09"
         }
       ],
       "added_at": "2026-11-12T06:16:07+00:00",
-      "updated_at": "2026-11-12T09:15:21+00:00"
+      "updated_at": "2026-11-12T10:15:34+00:00"
     },
     {
       "id": "ce7d32fd4e6c1d66",
@@ -9288,12 +9442,16 @@
         {
           "name": "板橋区 / Itabashi",
           "url": "https://www.city.itabashi.tokyo.jp/bunka/1061832/1062076/1066763/1066767.html"
+        },
+        {
+          "name": "板橋区 / Itabashi",
+          "url": "https://www.city.itabashi.tokyo.jp/bunka/1061832/1062076/1066763/1066938.html"
         }
       ],
       "affected_service": "いたばしPay",
       "service_aliases": [],
       "added_at": "2026-11-04T10:38:56+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-12T10:15:34+00:00"
     },
     {
       "id": "e6dec13f9e6cc672",
@@ -11248,12 +11406,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/da2f61536a2ba743e0ef6a55a5a92021838d398a"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3081338?display=1"
         }
       ],
       "affected_service": "とやま食材マッチング",
       "service_aliases": [],
       "added_at": "2026-11-03T13:17:19+00:00",
-      "updated_at": "2026-11-12T09:15:21+00:00"
+      "updated_at": "2026-11-12T10:15:34+00:00"
     },
     {
       "id": "b89d07366359c1c3",
@@ -19953,6 +20115,14 @@
           ]
         },
         {
+          "incident_id": "1a1f8be23c6fc269",
+          "relationship": "affects",
+          "evidence_url": "https://news.web.nhk/newsweb/na/nd-20261112de74862",
+          "evidence_urls": [
+            "https://news.web.nhk/newsweb/na/nd-20261112de74862"
+          ]
+        },
+        {
           "incident_id": "1cfabb23afe2945a",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFB5ZFNod1Rha0JjMm1jS0ZqcVo4MjYzU0lPak1kQlY0LXVMOGgzWnpnY0FCU1pEVk5KdUJQZlZ2RWk0LWw3NEJ4UHFpYllKVVZqVWswUUIzWkExUmFNTjc0SFlRcWV5clpZQWJpN20yLTZ3bloySlRoX3JEbVQ4N3M?oc=5",
@@ -20591,6 +20761,14 @@
           ]
         },
         {
+          "incident_id": "a3e7a1a5599413f7",
+          "relationship": "affects",
+          "evidence_url": "https://www.yomiuri.co.jp/economy/20261112-GYT1T00230/",
+          "evidence_urls": [
+            "https://www.yomiuri.co.jp/economy/20261112-GYT1T00230/"
+          ]
+        },
+        {
           "incident_id": "a8cb481db54a38a4",
           "relationship": "affects",
           "evidence_url": "https://rinavis.com/f/notice_20261111",
@@ -21040,7 +21218,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-12T09:15:21+00:00"
+      "updated_at": "2026-11-12T10:15:34+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
