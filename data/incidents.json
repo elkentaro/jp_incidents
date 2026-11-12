@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-11T23:15:13+00:00",
-  "total": 1105,
+  "updated_at": "2026-11-12T00:15:58+00:00",
+  "total": 1106,
   "date_range": {
     "start": "2025-10-16",
-    "end": "2026-11-11"
+    "end": "2026-11-12"
   },
   "daily_counts_90d": [
     {
@@ -365,10 +365,33 @@
     },
     {
       "date": "2026-11-12",
-      "count": 0
+      "count": 1
     }
   ],
   "incidents": [
+    {
+      "id": "f7cf02a6f5cb3426",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "明治学院大学",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "other",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/12/56754.html"
+        }
+      ],
+      "added_at": "2026-11-12T00:15:58+00:00",
+      "updated_at": "2026-11-12T00:15:58+00:00"
+    },
     {
       "id": "71422f2b8113fd80",
       "published_at": "2026-11-10T15:00:00+00:00",
@@ -562,12 +585,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/b62ec42e73df8ed3e2145e8c30120e19931a3181?source=rss"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/48a8600b344b58f9bffb8fbcecf48be3728563c1"
         }
       ],
       "affected_service": "録画動画面接",
       "service_aliases": [],
       "added_at": "2026-11-11T12:16:21+00:00",
-      "updated_at": "2026-11-11T20:15:52+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "3d90624c0b78c561",
@@ -1400,6 +1427,42 @@
       "updated_at": "2026-11-10T12:16:52+00:00"
     },
     {
+      "id": "3d5e055a118d07cf",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "十八親和銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "27c6fe562fd0baae",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "熊本日日新聞社",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/657c8096d23498e5297e584f9d4f2c780625cba9"
+        }
+      ],
+      "added_at": "2026-11-10T20:15:39+00:00",
+      "updated_at": "2026-11-12T00:15:58+00:00"
+    },
+    {
       "id": "581b234adcc00f32",
       "published_at": "2026-11-09T15:00:00+00:00",
       "disclosed_at": "2026-11-09T15:00:00+00:00",
@@ -1494,6 +1557,42 @@
       "service_aliases": [],
       "added_at": "2026-11-10T14:16:14+00:00",
       "updated_at": "2026-11-10T22:15:17+00:00"
+    },
+    {
+      "id": "e3edd2e6f29e759d",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "熊本銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [
+        {
+          "incident_id": "27c6fe562fd0baae",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "熊本日日新聞社",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/657c8096d23498e5297e584f9d4f2c780625cba9"
+        }
+      ],
+      "added_at": "2026-11-10T20:15:39+00:00",
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "776c20ac8487f4a1",
@@ -1760,38 +1859,6 @@
       "updated_at": "2026-11-10T07:15:34+00:00"
     },
     {
-      "id": "3d5e055a118d07cf",
-      "published_at": "2026-11-09T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "十八親和銀行",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "27c6fe562fd0baae",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "熊本日日新聞社",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5"
-        }
-      ],
-      "added_at": "2026-11-10T20:15:39+00:00",
-      "updated_at": "2026-11-10T20:15:39+00:00"
-    },
-    {
       "id": "490a56648536605f",
       "published_at": "2026-11-09T15:00:00+00:00",
       "disclosed_at": null,
@@ -2026,38 +2093,6 @@
       "service_aliases": [],
       "added_at": "2026-11-10T13:17:15+00:00",
       "updated_at": "2026-11-10T13:17:15+00:00"
-    },
-    {
-      "id": "e3edd2e6f29e759d",
-      "published_at": "2026-11-09T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "熊本銀行",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "27c6fe562fd0baae",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "熊本日日新聞社",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5"
-        }
-      ],
-      "added_at": "2026-11-10T20:15:39+00:00",
-      "updated_at": "2026-11-10T20:15:39+00:00"
     },
     {
       "id": "19d5816230daca6f",
@@ -3595,7 +3630,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 39000,
       "confidence": "medium",
       "confidence_score": 30,
       "related": [],
@@ -3606,7 +3641,7 @@
         }
       ],
       "added_at": "2026-11-07T02:16:11+00:00",
-      "updated_at": "2026-11-07T02:16:11+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "d47afbe7e699beaf",
@@ -4056,7 +4091,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 2800000,
       "confidence": "high",
       "confidence_score": 100,
       "related": [],
@@ -4091,7 +4126,7 @@
         }
       ],
       "added_at": "2026-11-06T00:16:04+00:00",
-      "updated_at": "2026-11-07T12:17:10+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "8419a6aecdeccbf5",
@@ -4741,7 +4776,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 16740,
       "confidence": "high",
       "confidence_score": 65,
       "related": [],
@@ -4758,7 +4793,7 @@
       "affected_service": "市公式LINE",
       "service_aliases": [],
       "added_at": "2026-11-06T20:15:40+00:00",
-      "updated_at": "2026-11-07T12:17:10+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "a95b04d0e23bdb4f",
@@ -5845,7 +5880,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 300000,
       "confidence": "high",
       "confidence_score": 100,
       "related": [
@@ -5939,7 +5974,7 @@
         }
       ],
       "added_at": "2026-11-05T04:16:40+00:00",
-      "updated_at": "2026-11-06T13:16:53+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "5caa4239be9ca4fa",
@@ -5975,12 +6010,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/a5a5dcfb2dd54eb17096c9b62b8f942e91256939"
+        },
+        {
+          "name": "産経ニュース",
+          "url": "https://www.sankei.com/article/20261112-EP6DO7KSEJICZET3NP7BIISRMA/"
         }
       ],
       "affected_service": "MUJI CARD",
       "service_aliases": [],
       "added_at": "2026-11-05T21:15:39+00:00",
-      "updated_at": "2026-11-06T11:16:38+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "64d1bee3ebeecc43",
@@ -5992,7 +6031,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 793060,
       "confidence": "high",
       "confidence_score": 100,
       "related": [
@@ -6032,7 +6071,7 @@
         }
       ],
       "added_at": "2026-11-05T15:15:51+00:00",
-      "updated_at": "2026-11-10T13:17:15+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "8720f3e6c09263ff",
@@ -6088,7 +6127,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 4430000,
       "confidence": "high",
       "confidence_score": 100,
       "related": [
@@ -6145,7 +6184,7 @@
         }
       ],
       "added_at": "2026-11-05T08:16:07+00:00",
-      "updated_at": "2026-11-11T13:16:39+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "9a1e2bc21268aad2",
@@ -6563,6 +6602,62 @@
       "service_aliases": [],
       "added_at": "2026-11-05T11:16:39+00:00",
       "updated_at": "2026-11-09T01:16:50+00:00"
+    },
+    {
+      "id": "77e208ace41d8629",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "福岡銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "27c6fe562fd0baae",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5"
+          ]
+        },
+        {
+          "incident_id": "862f0a5454308701",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.fukuokabank.co.jp/announcement/important/y2026/1105.html",
+          "evidence_urls": [
+            "https://www.fukuokabank.co.jp/announcement/important/y2026/1105.html"
+          ]
+        },
+        {
+          "incident_id": "a8b6d5a8016e0283",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.fukuokabank.co.jp/announcement/important/y2026/1105.html",
+          "evidence_urls": [
+            "https://www.fukuokabank.co.jp/announcement/important/y2026/1105.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "福岡銀行 / Bank of Fukuoka",
+          "url": "https://www.fukuokabank.co.jp/announcement/important/y2026/1105.html"
+        },
+        {
+          "name": "熊本日日新聞社",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/657c8096d23498e5297e584f9d4f2c780625cba9"
+        }
+      ],
+      "added_at": "2026-11-05T14:17:23+00:00",
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "a7f81e4623ebef3c",
@@ -7050,58 +7145,6 @@
       "service_aliases": [],
       "added_at": "2026-11-06T03:15:43+00:00",
       "updated_at": "2026-11-11T07:16:10+00:00"
-    },
-    {
-      "id": "77e208ace41d8629",
-      "published_at": "2026-11-04T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "福岡銀行",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 75,
-      "related": [
-        {
-          "incident_id": "27c6fe562fd0baae",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5"
-          ]
-        },
-        {
-          "incident_id": "862f0a5454308701",
-          "relationship": "same_organization",
-          "evidence_url": "https://www.fukuokabank.co.jp/announcement/important/y2026/1105.html",
-          "evidence_urls": [
-            "https://www.fukuokabank.co.jp/announcement/important/y2026/1105.html"
-          ]
-        },
-        {
-          "incident_id": "a8b6d5a8016e0283",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.fukuokabank.co.jp/announcement/important/y2026/1105.html",
-          "evidence_urls": [
-            "https://www.fukuokabank.co.jp/announcement/important/y2026/1105.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "福岡銀行 / Bank of Fukuoka",
-          "url": "https://www.fukuokabank.co.jp/announcement/important/y2026/1105.html"
-        },
-        {
-          "name": "熊本日日新聞社",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5"
-        }
-      ],
-      "added_at": "2026-11-05T14:17:23+00:00",
-      "updated_at": "2026-11-10T20:15:39+00:00"
     },
     {
       "id": "8335db2347126322",
@@ -8188,7 +8231,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 19000,
       "confidence": "medium",
       "confidence_score": 50,
       "related": [
@@ -8210,7 +8253,7 @@
       "affected_service": "メール配信システム",
       "service_aliases": [],
       "added_at": "2026-11-07T01:15:32+00:00",
-      "updated_at": "2026-11-07T01:15:32+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "51fc582f23003b4c",
@@ -10359,7 +10402,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 800,
       "confidence": "high",
       "confidence_score": 100,
       "related": [
@@ -10404,7 +10447,7 @@
       "affected_service": "出前館",
       "service_aliases": [],
       "added_at": "2026-11-03T22:15:33+00:00",
-      "updated_at": "2026-11-05T05:15:40+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "cade75ef66ccbad6",
@@ -11320,7 +11363,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 444000,
       "confidence": "high",
       "confidence_score": 100,
       "related": [
@@ -11364,7 +11407,7 @@
         }
       ],
       "added_at": "2026-11-04T10:15:52+00:00",
-      "updated_at": "2026-11-09T09:16:47+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "5fa1320f5cec460c",
@@ -11880,7 +11923,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 2000,
       "confidence": "high",
       "confidence_score": 100,
       "related": [],
@@ -11929,7 +11972,7 @@
       "affected_service": "機関Navi",
       "service_aliases": [],
       "added_at": "2026-11-04T02:15:58+00:00",
-      "updated_at": "2026-11-07T02:16:11+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "fa6c90af8f34017d",
@@ -12413,7 +12456,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 90,
       "confidence": "high",
       "confidence_score": 90,
       "related": [
@@ -12443,7 +12486,7 @@
       "affected_service": "マイナンバーカード交付予約システム",
       "service_aliases": [],
       "added_at": "2026-11-05T14:17:23+00:00",
-      "updated_at": "2026-11-09T10:16:41+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "ea44bdc85b4b2bea",
@@ -12785,6 +12828,58 @@
       "service_aliases": [],
       "added_at": "2026-11-06T01:16:14+00:00",
       "updated_at": "2026-11-06T02:16:04+00:00"
+    },
+    {
+      "id": "a2ca51bcc11183d5",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "MOTEX",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 65,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/motex_lanscope_websites_unauthorized_access_2026/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/motex-lanscope-customer-information-leak-possibility/"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/12/56757.html"
+        }
+      ],
+      "affected_service": "LANSCOPE 製品サイト / LANSCOPE PORTAL / MOTEX PARTNER PORTAL",
+      "service_aliases": [],
+      "affected_services": [
+        "LANSCOPE 製品サイト",
+        "LANSCOPE PORTAL",
+        "MOTEX PARTNER PORTAL"
+      ],
+      "service_details": [
+        {
+          "name": "LANSCOPE 製品サイト",
+          "aliases": []
+        },
+        {
+          "name": "LANSCOPE PORTAL",
+          "aliases": []
+        },
+        {
+          "name": "MOTEX PARTNER PORTAL",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-05T07:17:31+00:00",
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "ecc280d6f760e0e4",
@@ -13802,54 +13897,6 @@
       "updated_at": "2026-11-06T21:40:24+00:00"
     },
     {
-      "id": "a2ca51bcc11183d5",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "MOTEX",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/motex_lanscope_websites_unauthorized_access_2026/"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/motex-lanscope-customer-information-leak-possibility/"
-        }
-      ],
-      "affected_service": "LANSCOPE 製品サイト / LANSCOPE PORTAL / MOTEX PARTNER PORTAL",
-      "service_aliases": [],
-      "affected_services": [
-        "LANSCOPE 製品サイト",
-        "LANSCOPE PORTAL",
-        "MOTEX PARTNER PORTAL"
-      ],
-      "service_details": [
-        {
-          "name": "LANSCOPE 製品サイト",
-          "aliases": []
-        },
-        {
-          "name": "LANSCOPE PORTAL",
-          "aliases": []
-        },
-        {
-          "name": "MOTEX PARTNER PORTAL",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-05T07:17:31+00:00",
-      "updated_at": "2026-11-09T06:16:50+00:00"
-    },
-    {
       "id": "1337ad1619d32570",
       "published_at": "2026-10-31T15:00:00+00:00",
       "disclosed_at": "2026-10-31T15:00:00+00:00",
@@ -14265,7 +14312,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 362,
       "confidence": "high",
       "confidence_score": 100,
       "related": [
@@ -14315,7 +14362,7 @@
       "affected_service": "デジタル特典付き社債",
       "service_aliases": [],
       "added_at": "2026-10-31T20:30:43+00:00",
-      "updated_at": "2026-11-05T09:15:53+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "d1625f0ac45d3d6b",
@@ -14440,7 +14487,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 69,
       "confidence": "high",
       "confidence_score": 95,
       "related": [
@@ -14483,7 +14530,7 @@
       "affected_service": "Vプリカ",
       "service_aliases": [],
       "added_at": "2026-11-02T09:16:16+00:00",
-      "updated_at": "2026-11-04T03:16:06+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "c22568994fef58b0",
@@ -15225,7 +15272,7 @@
         "data leak",
         "ransomware"
       ],
-      "potential_records": null,
+      "potential_records": 80000,
       "confidence": "high",
       "confidence_score": 100,
       "related": [],
@@ -15266,7 +15313,7 @@
       "affected_service": "大学の事務情報システム",
       "service_aliases": [],
       "added_at": "2026-10-30T05:15:51+00:00",
-      "updated_at": "2026-11-02T01:16:01+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "7df1aaca37664867",
@@ -15409,7 +15456,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 621,
       "confidence": "high",
       "confidence_score": 100,
       "related": [
@@ -15455,7 +15502,7 @@
       "affected_service": "デジタル証券",
       "service_aliases": [],
       "added_at": "2026-11-02T01:16:01+00:00",
-      "updated_at": "2026-11-09T01:16:50+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "963a8269049e209d",
@@ -15841,7 +15888,7 @@
       "incident_categories": [
         "data leak"
       ],
-      "potential_records": null,
+      "potential_records": 30337,
       "confidence": "high",
       "confidence_score": 75,
       "related": [
@@ -15875,7 +15922,7 @@
       "affected_service": "JERAサンデイ",
       "service_aliases": [],
       "added_at": "2026-10-30T03:15:54+00:00",
-      "updated_at": "2026-11-08T20:15:32+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "7eaf4a6d5b9ad278",
@@ -16442,7 +16489,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 5500,
       "confidence": "medium",
       "confidence_score": 30,
       "related": [],
@@ -16455,7 +16502,7 @@
       "affected_service": "アフィリエイトシステム",
       "service_aliases": [],
       "added_at": "2026-11-08T13:17:18+00:00",
-      "updated_at": "2026-11-08T13:17:18+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "7426faef7c02541b",
@@ -16998,7 +17045,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 7700000,
       "confidence": "high",
       "confidence_score": 100,
       "related": [],
@@ -17035,7 +17082,7 @@
       "affected_service": "アイリスオーヤマ公式通販サイト「アイリスプラザ」",
       "service_aliases": [],
       "added_at": "2026-10-30T01:13:09+00:00",
-      "updated_at": "2026-11-09T05:16:13+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "9dcda190358f32c1",
@@ -18657,15 +18704,11 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 40000,
       "confidence": "high",
       "confidence_score": 100,
       "related": [],
       "sources": [
-        {
-          "name": "日本取引所グループ TDnet / JPX TDnet",
-          "url": "https://www.release.tdnet.info/inbs/140120261029560120.pdf"
-        },
         {
           "name": "satimo list",
           "url": "https://www.yakult.co.jp/maintenance/"
@@ -18673,6 +18716,14 @@
         {
           "name": "legalagent list",
           "url": "https://www.yakult.co.jp/maintenance/news/pdf/20261104.pdf"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/12/56756.html"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261029560120.pdf"
         },
         {
           "name": "ITmedia",
@@ -18712,7 +18763,7 @@
         }
       ],
       "added_at": "2026-10-28T07:15:47+00:00",
-      "updated_at": "2026-11-05T02:16:25+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "7f27b603ddf5083a",
@@ -18963,7 +19014,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 2380000,
       "confidence": "high",
       "confidence_score": 100,
       "related": [],
@@ -18994,7 +19045,7 @@
         }
       ],
       "added_at": "2026-10-29T08:15:57+00:00",
-      "updated_at": "2026-10-30T06:16:03+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "d54f4e82616816d3",
@@ -20206,16 +20257,16 @@
           "url": "https://am.arara.com/news/2026102802"
         },
         {
-          "name": "日本取引所グループ TDnet / JPX TDnet",
-          "url": "https://www.release.tdnet.info/inbs/140120261029558961.pdf"
-        },
-        {
           "name": "INTERNET Watch",
           "url": "https://internet.watch.impress.co.jp/docs/news/2153174.html"
         },
         {
           "name": "satimo list",
           "url": "https://www.arara.com/dcms_media/other/arara_20261102__.pdf"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261029558961.pdf"
         },
         {
           "name": "Yahoo!ニュース",
@@ -20232,10 +20283,14 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/117904"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/12/56760.html"
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-11T10:15:54+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -20688,7 +20743,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 3058,
       "confidence": "high",
       "confidence_score": 75,
       "related": [],
@@ -20707,7 +20762,7 @@
         }
       ],
       "added_at": "2026-11-05T09:15:53+00:00",
-      "updated_at": "2026-11-09T01:16:50+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "3d4ac3f77a219dbf",
@@ -22697,7 +22752,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 778,
       "confidence": "high",
       "confidence_score": 75,
       "related": [],
@@ -22714,7 +22769,7 @@
       "affected_service": "健診予約システム「AITEL」",
       "service_aliases": [],
       "added_at": "2026-10-30T10:15:57+00:00",
-      "updated_at": "2026-11-01T01:15:58+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "249f996eeac0e23c",
@@ -24943,7 +24998,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 253,
       "confidence": "medium",
       "confidence_score": 45,
       "related": [
@@ -24967,7 +25022,7 @@
         }
       ],
       "added_at": "2026-10-26T06:15:53+00:00",
-      "updated_at": "2026-10-31T02:16:08+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "025ab3a749442b95",
@@ -25870,7 +25925,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 22000,
       "confidence": "high",
       "confidence_score": 100,
       "related": [
@@ -25920,7 +25975,7 @@
       "affected_service": "auの生命ほけん",
       "service_aliases": [],
       "added_at": "2026-10-30T11:16:03+00:00",
-      "updated_at": "2026-11-05T21:15:39+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "b46e3020e19d722d",
@@ -27023,7 +27078,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 335,
       "confidence": "high",
       "confidence_score": 60,
       "related": [
@@ -27049,7 +27104,7 @@
       "affected_service": "関係人口セミナー「北前船で栄えた島根・松江の港町“美保関”の歴史と今」",
       "service_aliases": [],
       "added_at": "2026-10-25T01:15:29+00:00",
-      "updated_at": "2026-10-25T01:15:29+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "941d870a2e4cfaa5",
@@ -27834,7 +27889,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 13000,
       "confidence": "medium",
       "confidence_score": 50,
       "related": [],
@@ -27847,7 +27902,7 @@
       "affected_service": "はじめてばこ",
       "service_aliases": [],
       "added_at": "2026-10-24T21:12:22+00:00",
-      "updated_at": "2026-10-24T21:12:22+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "d077d050fab518d9",
@@ -28845,7 +28900,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 689,
       "confidence": "high",
       "confidence_score": 90,
       "related": [
@@ -28873,7 +28928,7 @@
         }
       ],
       "added_at": "2026-10-23T01:00:27+00:00",
-      "updated_at": "2026-10-26T00:08:36+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "bbea7fcc586198f2",
@@ -30576,7 +30631,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 730000,
       "confidence": "high",
       "confidence_score": 100,
       "related": [],
@@ -30611,7 +30666,7 @@
         }
       ],
       "added_at": "2026-10-21T07:57:40+00:00",
-      "updated_at": "2026-10-26T00:08:36+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "6b35a32424d608a0",
@@ -32856,7 +32911,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 160,
       "confidence": "medium",
       "confidence_score": 50,
       "related": [],
@@ -32867,7 +32922,7 @@
         }
       ],
       "added_at": "2026-11-02T01:16:01+00:00",
-      "updated_at": "2026-11-02T01:16:01+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "51c7b29b419ee197",
@@ -35381,7 +35436,7 @@
       "incident_categories": [
         "data leak"
       ],
-      "potential_records": null,
+      "potential_records": 15000,
       "confidence": "medium",
       "confidence_score": 50,
       "related": [
@@ -35401,7 +35456,7 @@
         }
       ],
       "added_at": "2026-10-21T19:43:05+00:00",
-      "updated_at": "2026-10-21T19:43:05+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "46c40b6fbac32872",
@@ -36852,7 +36907,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 2800,
       "confidence": "high",
       "confidence_score": 95,
       "related": [],
@@ -36893,7 +36948,7 @@
       "affected_service": "グッドスマイルカンパニー公式ショップ",
       "service_aliases": [],
       "added_at": "2026-10-25T05:47:43+00:00",
-      "updated_at": "2026-11-06T02:16:04+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "508c78a138a65801",
@@ -37103,7 +37158,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 230000,
       "confidence": "high",
       "confidence_score": 80,
       "related": [],
@@ -37130,7 +37185,7 @@
         }
       ],
       "added_at": "2026-10-28T02:15:45+00:00",
-      "updated_at": "2026-11-02T09:16:16+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "12e7a20b5ea44b95",
@@ -39264,7 +39319,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 1720000,
       "confidence": "high",
       "confidence_score": 75,
       "related": [
@@ -39336,7 +39391,7 @@
         }
       ],
       "added_at": "2026-10-22T21:15:57+00:00",
-      "updated_at": "2026-11-10T23:15:29+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "a9fc43978c7c6f14",
@@ -40582,7 +40637,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 25775,
       "confidence": "high",
       "confidence_score": 100,
       "related": [],
@@ -40619,7 +40674,7 @@
       "affected_service": "MR君",
       "service_aliases": [],
       "added_at": "2026-10-19T08:49:15+00:00",
-      "updated_at": "2026-10-31T20:30:43+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "cbdf6f7224141cb8",
@@ -41134,7 +41189,7 @@
       "incident_categories": [
         "data leak"
       ],
-      "potential_records": null,
+      "potential_records": 7,
       "confidence": "high",
       "confidence_score": 75,
       "related": [
@@ -41160,7 +41215,7 @@
       "affected_system": "Highway-bus reservations through 発車オーライネット",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T09:32:18+00:00",
-      "updated_at": "2026-10-20T07:24:24+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "f58940476d597124",
@@ -47296,7 +47351,7 @@
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 174933,
       "confidence": "medium",
       "confidence_score": 30,
       "related": [],
@@ -47313,7 +47368,7 @@
       "affected_service": "公式アプリ",
       "service_aliases": [],
       "added_at": "2026-10-19T09:06:44+00:00",
-      "updated_at": "2026-11-01T13:16:31+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "25fd83ac16efb188",
@@ -48186,7 +48241,7 @@
         "data leak",
         "ransomware"
       ],
-      "potential_records": null,
+      "potential_records": 142591,
       "confidence": "high",
       "confidence_score": 90,
       "related": [],
@@ -48205,7 +48260,7 @@
         }
       ],
       "added_at": "2026-11-05T01:16:21+00:00",
-      "updated_at": "2026-11-05T02:16:25+00:00"
+      "updated_at": "2026-11-12T00:15:58+00:00"
     },
     {
       "id": "6c2dfbdab31a21b4",
