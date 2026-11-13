@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-13T09:15:19+00:00",
-  "total": 1182,
+  "updated_at": "2026-11-13T12:16:47+00:00",
+  "total": 1186,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-13"
@@ -262,7 +262,7 @@
     },
     {
       "date": "2026-10-18",
-      "count": 4
+      "count": 5
     },
     {
       "date": "2026-10-19",
@@ -354,7 +354,7 @@
     },
     {
       "date": "2026-11-10",
-      "count": 42
+      "count": 44
     },
     {
       "date": "2026-11-11",
@@ -366,7 +366,7 @@
     },
     {
       "date": "2026-11-13",
-      "count": 7
+      "count": 8
     }
   ],
   "incidents": [
@@ -461,6 +461,32 @@
       "service_aliases": [],
       "added_at": "2026-11-13T07:15:40+00:00",
       "updated_at": "2026-11-13T07:15:40+00:00"
+    },
+    {
+      "id": "ae2489380e589446",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "読売巨人軍",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 807030,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "Infoseek",
+          "url": "https://news.infoseek.co.jp/article/hochi_20261113-OHT1T51327/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "CLUB GIANTS",
+      "service_aliases": [],
+      "added_at": "2026-11-13T12:16:47+00:00",
+      "updated_at": "2026-11-13T12:16:47+00:00"
     },
     {
       "id": "83583b116cd04352",
@@ -2922,6 +2948,45 @@
       "updated_at": "2026-11-12T08:18:15+00:00"
     },
     {
+      "id": "9443ee532ae9709b",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": "2026-11-12T15:00:00+00:00",
+      "organization": "ヒューマンアジャスト",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 58510,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "792c9e594566f60a",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/human-adjust-comsbi-saas-line-data-leak-risk-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/human-adjust-comsbi-saas-line-data-leak-risk-2026/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/human-adjust-comsbi-saas-line-data-leak-risk-2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "COMSBI(SaaS版)",
+      "service_aliases": [
+        "COMSBI",
+        "SaaS版"
+      ],
+      "added_at": "2026-11-13T12:16:47+00:00",
+      "updated_at": "2026-11-13T12:16:47+00:00"
+    },
+    {
       "id": "a6e801e509730f1e",
       "published_at": "2026-11-09T15:00:00+00:00",
       "disclosed_at": null,
@@ -3079,6 +3144,32 @@
       "service_aliases": [],
       "added_at": "2026-11-12T22:15:17+00:00",
       "updated_at": "2026-11-12T22:15:17+00:00"
+    },
+    {
+      "id": "ec31abf8743bfd28",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "フォースタートアップス株式会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "フォースタートアップス",
+          "url": "https://www.forstartups.com/news/20261113"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "Notion AI",
+      "service_aliases": [],
+      "added_at": "2026-11-13T12:16:47+00:00",
+      "updated_at": "2026-11-13T12:16:47+00:00"
     },
     {
       "id": "fb4e0c413bebb40b",
@@ -4397,6 +4488,14 @@
           "evidence_urls": [
             "https://news.yahoo.co.jp/articles/26610fb01eff4c372fe4423756d98334dc1e1acb"
           ]
+        },
+        {
+          "incident_id": "9443ee532ae9709b",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/human-adjust-comsbi-saas-line-data-leak-risk-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/human-adjust-comsbi-saas-line-data-leak-risk-2026/"
+          ]
         }
       ],
       "sources": [
@@ -4411,7 +4510,7 @@
         "SaaS版"
       ],
       "added_at": "2026-11-13T00:16:16+00:00",
-      "updated_at": "2026-11-13T07:15:40+00:00"
+      "updated_at": "2026-11-13T12:16:47+00:00"
     },
     {
       "id": "798fe4d341eeff8b",
@@ -14237,6 +14336,65 @@
       "updated_at": "2026-11-12T08:18:15+00:00"
     },
     {
+      "id": "4fafc038d6f3b252",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "加古川市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "3d4ac3f77a219dbf",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/a8f37147c1bfb70dac99129bf21da63f80ba45b6",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/a8f37147c1bfb70dac99129bf21da63f80ba45b6"
+          ]
+        },
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.kakogawa.lg.jp/soshikikarasagasu/kikakubu/jouhouseisakuka/onlineshinsei/51384.html",
+          "evidence_urls": [
+            "https://www.city.kakogawa.lg.jp/soshikikarasagasu/kikakubu/jouhouseisakuka/onlineshinsei/51384.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "加古川市",
+          "url": "https://www.city.kakogawa.lg.jp/soshikikarasagasu/kikakubu/jouhouseisakuka/onlineshinsei/51384.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/a8f37147c1bfb70dac99129bf21da63f80ba45b6"
+        }
+      ],
+      "affected_service": "かこがわオンライン申請システム / マイナンバーカード交付予約・管理システム",
+      "service_aliases": [],
+      "affected_services": [
+        "かこがわオンライン申請システム",
+        "マイナンバーカード交付予約・管理システム"
+      ],
+      "service_details": [
+        {
+          "name": "かこがわオンライン申請システム",
+          "aliases": []
+        },
+        {
+          "name": "マイナンバーカード交付予約・管理システム",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-06T11:16:38+00:00",
+      "updated_at": "2026-11-13T12:16:47+00:00"
+    },
+    {
       "id": "57a40b2bf2b57970",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
@@ -14816,6 +14974,10 @@
           "url": "https://www.wills-net.co.jp/pdf/ir-news/uploads/e88675137464940b8b98c8c999d7c452f63571e7.pdf"
         },
         {
+          "name": "NOVAIST",
+          "url": "https://novaist.jp/articles/netmile-data-breach/"
+        },
+        {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118082"
         },
@@ -14843,7 +15005,7 @@
       "affected_service": "ネットマイル",
       "service_aliases": [],
       "added_at": "2026-11-03T03:16:30+00:00",
-      "updated_at": "2026-11-13T06:15:30+00:00"
+      "updated_at": "2026-11-13T12:16:47+00:00"
     },
     {
       "id": "a99204c7fb0a8fea",
@@ -15951,53 +16113,6 @@
       "service_aliases": [],
       "added_at": "2026-11-04T11:16:06+00:00",
       "updated_at": "2026-11-12T07:15:39+00:00"
-    },
-    {
-      "id": "4fafc038d6f3b252",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "加古川市",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "3d4ac3f77a219dbf",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/a8f37147c1bfb70dac99129bf21da63f80ba45b6",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/a8f37147c1bfb70dac99129bf21da63f80ba45b6"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/a8f37147c1bfb70dac99129bf21da63f80ba45b6"
-        }
-      ],
-      "affected_service": "かこがわオンライン申請システム / マイナンバーカード交付予約・管理システム",
-      "service_aliases": [],
-      "affected_services": [
-        "かこがわオンライン申請システム",
-        "マイナンバーカード交付予約・管理システム"
-      ],
-      "service_details": [
-        {
-          "name": "かこがわオンライン申請システム",
-          "aliases": []
-        },
-        {
-          "name": "マイナンバーカード交付予約・管理システム",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-06T11:16:38+00:00",
-      "updated_at": "2026-11-06T11:16:38+00:00"
     },
     {
       "id": "58e85aa5a6aa2f68",
@@ -22884,6 +22999,14 @@
           ]
         },
         {
+          "incident_id": "4fafc038d6f3b252",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.kakogawa.lg.jp/soshikikarasagasu/kikakubu/jouhouseisakuka/onlineshinsei/51384.html",
+          "evidence_urls": [
+            "https://www.city.kakogawa.lg.jp/soshikikarasagasu/kikakubu/jouhouseisakuka/onlineshinsei/51384.html"
+          ]
+        },
+        {
           "incident_id": "51fc582f23003b4c",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9NVjVmTHpjU2ZxaEdPc3VRTDYybEN1THNscHhTUUNBTmhWX3hSMVRsdjU3a3NpOHltOXZuZWJXcGZtSUNkUDUzSDh4N0dBdHNiMDdCTktqTVJKT1ZsdWpqQWFB?oc=5",
@@ -23909,7 +24032,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-13T09:15:19+00:00"
+      "updated_at": "2026-11-13T12:16:47+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -41758,6 +41881,33 @@
       ],
       "added_at": "2026-10-19T23:15:39+00:00",
       "updated_at": "2026-11-12T08:18:15+00:00"
+    },
+    {
+      "id": "954016a6d336964c",
+      "published_at": "2026-10-17T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "マネックス証券",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1130000,
+      "confidence": "high",
+      "confidence_score": 70,
+      "related": [],
+      "sources": [
+        {
+          "name": "PR TIMES",
+          "url": "https://prtimes.jp/main/html/rd/p/000000595.000005159.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "口座開設システム",
+      "service_aliases": [],
+      "added_at": "2026-11-13T12:16:47+00:00",
+      "updated_at": "2026-11-13T12:16:47+00:00"
     },
     {
       "id": "4468d7a7262d01e6",
