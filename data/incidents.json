@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-13T21:16:06+00:00",
-  "total": 1205,
+  "updated_at": "2026-11-13T22:16:20+00:00",
+  "total": 1209,
   "date_range": {
     "start": "2025-10-16",
-    "end": "2026-11-13"
+    "end": "2026-11-14"
   },
   "daily_counts_90d": [
     {
@@ -298,7 +298,7 @@
     },
     {
       "date": "2026-10-28",
-      "count": 57
+      "count": 58
     },
     {
       "date": "2026-10-29",
@@ -358,18 +358,54 @@
     },
     {
       "date": "2026-11-12",
-      "count": 23
+      "count": 24
     },
     {
       "date": "2026-11-13",
-      "count": 23
+      "count": 24
     },
     {
       "date": "2026-11-14",
-      "count": 0
+      "count": 1
     }
   ],
   "incidents": [
+    {
+      "id": "307eba6e291c0389",
+      "published_at": "2026-11-13T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "横浜市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 117489,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOCC139RM0T11C26A1000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOCC139RM0T11C26A1000000/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOCC139RM0T11C26A1000000/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "電子申請・届け出システム",
+      "service_aliases": [],
+      "added_at": "2026-11-13T22:16:19+00:00",
+      "updated_at": "2026-11-13T22:16:19+00:00"
+    },
     {
       "id": "104978daf47e55c0",
       "published_at": "2026-11-12T15:00:00+00:00",
@@ -546,12 +582,16 @@
         {
           "name": "北海道電力 / Hokkaido Electric Power",
           "url": "https://www.hepco.co.jp/info/2026/1253239_2073.html"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOFC138VP0T11C26A1000000/"
         }
       ],
       "affected_service": "きらめくストア",
       "service_aliases": [],
       "added_at": "2026-11-13T07:15:40+00:00",
-      "updated_at": "2026-11-13T07:15:40+00:00"
+      "updated_at": "2026-11-13T22:16:19+00:00"
     },
     {
       "id": "ae2489380e589446",
@@ -583,6 +623,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9xV2p5MWFtN19GS1c1dkM5V3J1c1I0SVMzMWQ4ME9ucXFWVnV1WXZOS1c1UGJOOU95eDZBOVhaeks5a3I2TkpUTlN6N18xc0xyYVA5a3phU3N6VTFMM1hRODF2R1U1eTlFWXVBMWpJdW5yLWFXYnlzbjRCSjZ1SmM?oc=5"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVCF4RL1VCFUTQP011M.html"
         }
       ],
       "affected_system": null,
@@ -590,7 +634,7 @@
       "affected_service": "CLUB GIANTS",
       "service_aliases": [],
       "added_at": "2026-11-13T12:16:47+00:00",
-      "updated_at": "2026-11-13T21:16:06+00:00"
+      "updated_at": "2026-11-13T22:16:19+00:00"
     },
     {
       "id": "c2f8a4ca539483fd",
@@ -847,6 +891,48 @@
       "updated_at": "2026-11-13T21:16:06+00:00"
     },
     {
+      "id": "92401d7ee52f9b03",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "内閣府",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 5973,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "7e675401ba9184a3",
+          "relationship": "same_organization",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/cabinet_office_okinawa41_sakura_server_5973_possible_leak_20261113/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/cabinet_office_okinawa41_sakura_server_5973_possible_leak_20261113/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/cabinet_office_okinawa41_sakura_server_5973_possible_leak_20261113/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4tSnJHMjBLTzZxVlZ0UmtsOFFCbDhQRm1mc0c0MzlnbHVncGlfbmViNXQ0eUVrbHFVYVJ5UUZscExpU1VFZV94RldTdjZJdTV5QnkxeW5OY0h5Qk56V1Uzb0toQmliOERma0VNc0pwMXYwUmRHNl92YTZEZlU3Nnc?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/ee0563c4904f7cd28cc7b163dd2bee4c1cef03d1"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-13T19:16:21+00:00",
+      "updated_at": "2026-11-13T22:16:19+00:00"
+    },
+    {
       "id": "a66a3fc2b9f18b4e",
       "published_at": "2026-11-12T15:00:00+00:00",
       "disclosed_at": null,
@@ -1078,40 +1164,6 @@
       "updated_at": "2026-11-13T20:16:21+00:00"
     },
     {
-      "id": "92401d7ee52f9b03",
-      "published_at": "2026-11-12T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "内閣府",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 5973,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "7e675401ba9184a3",
-          "relationship": "same_organization",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/cabinet_office_okinawa41_sakura_server_5973_possible_leak_20261113/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/cabinet_office_okinawa41_sakura_server_5973_possible_leak_20261113/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/cabinet_office_okinawa41_sakura_server_5973_possible_leak_20261113/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "publication",
-      "added_at": "2026-11-13T19:16:21+00:00",
-      "updated_at": "2026-11-13T19:16:21+00:00"
-    },
-    {
       "id": "b43207447bccc1b7",
       "published_at": "2026-11-12T15:00:00+00:00",
       "disclosed_at": null,
@@ -1168,6 +1220,31 @@
       "updated_at": "2026-11-13T21:16:06+00:00"
     },
     {
+      "id": "c315588305545d55",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-12T15:00:00+00:00",
+      "organization": "内閣府",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 5973,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "沖縄タイムス社",
+          "url": "https://www.okinawatimes.co.jp/articles/-/1965771"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "added_at": "2026-11-13T22:16:19+00:00",
+      "updated_at": "2026-11-13T22:16:19+00:00"
+    },
+    {
       "id": "e7db5e739daf7932",
       "published_at": "2026-11-12T15:00:00+00:00",
       "disclosed_at": null,
@@ -1219,6 +1296,14 @@
         {
           "name": "沖縄タイムス社",
           "url": "https://www.okinawatimes.co.jp/articles/-/1965687"
+        },
+        {
+          "name": "福井新聞社",
+          "url": "https://www.fukuishimbun.co.jp/articles/-/2746269"
+        },
+        {
+          "name": "京都新聞デジタル",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE90SUtRV3FVeDIzbFFsTnEzZjVCcDgyVFlwZktsUUtwSFRlZTNmcl82OHMxZFU5MmdpckJsMGVQTVQyWEl1YXBWSzF6WWtuc19BZzA4RmRSQ18?oc=5"
         }
       ],
       "affected_system": null,
@@ -1226,7 +1311,7 @@
       "affected_service": "沖縄県の魅力を発信する広報事業で使用していたレンタルサーバー",
       "service_aliases": [],
       "added_at": "2026-11-13T21:16:06+00:00",
-      "updated_at": "2026-11-13T21:16:06+00:00"
+      "updated_at": "2026-11-13T22:16:19+00:00"
     },
     {
       "id": "2599deba1d9c9654",
@@ -1474,12 +1559,16 @@
         {
           "name": "新潟県 / Niigata",
           "url": "https://www.pref.niigata.lg.jp/site/kankyo/kankyomail-rouei.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b17e3b6ed7f9d2400392446e0f412fc749ab6b66"
         }
       ],
       "affected_service": "にいがた県環境メール",
       "service_aliases": [],
       "added_at": "2026-11-13T07:15:40+00:00",
-      "updated_at": "2026-11-13T07:15:40+00:00"
+      "updated_at": "2026-11-13T22:16:19+00:00"
     },
     {
       "id": "e9088ded1dd0ae6f",
@@ -1902,6 +1991,40 @@
       "service_aliases": [],
       "added_at": "2026-11-13T06:15:30+00:00",
       "updated_at": "2026-11-13T14:16:28+00:00"
+    },
+    {
+      "id": "2501b5ff1c217ae6",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": "2026-11-11T15:00:00+00:00",
+      "organization": "アドベンチャーワールド",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 5709,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "77272e39600de1e2",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/adventure-world-terravie-arara-email-leak-5709-20261112/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/adventure-world-terravie-arara-email-leak-5709-20261112/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/adventure-world-terravie-arara-email-leak-5709-20261112/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "added_at": "2026-11-13T22:16:19+00:00",
+      "updated_at": "2026-11-13T22:16:19+00:00"
     },
     {
       "id": "4a121ba013ca9414",
@@ -3392,6 +3515,10 @@
         {
           "name": "堺市",
           "url": "https://www.city.sakai.lg.jp/shisei/koho/hodo/hodoteikyoshiryo/kakohodo/r8/r811/081113_05.files/1113_05.pdf"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1KRVM3OWRoR1JSSVcyWlctM0ZWMnhhdlVFNExiY0VkcUR6QUZ1akNBV2s2YjdMSlZxcjJTNmYyNmNpeVBBZ1hydVBQNmRzVlNDN3AtTTlFbVJpVjMtalVaU0xfNEtqOGhpZDZ1Y0lpQlcxNHVRU01FeDdRZnpfc1U?oc=5"
         }
       ],
       "affected_system": "大阪府子ども・大学生等への食費支援事業",
@@ -3400,7 +3527,7 @@
       "service_aliases": [],
       "upstream_status": "unknown",
       "added_at": "2026-11-13T08:15:22+00:00",
-      "updated_at": "2026-11-13T08:15:22+00:00"
+      "updated_at": "2026-11-13T22:16:19+00:00"
     },
     {
       "id": "6ef20a36cd1e17d2",
@@ -23617,6 +23744,14 @@
           ]
         },
         {
+          "incident_id": "307eba6e291c0389",
+          "relationship": "affects",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOCC139RM0T11C26A1000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOCC139RM0T11C26A1000000/"
+          ]
+        },
+        {
           "incident_id": "342822201a0d52cc",
           "relationship": "affects",
           "evidence_url": "https://lp.kewpie.com/notices/2026/2026e/",
@@ -24008,6 +24143,14 @@
           "evidence_url": "https://www.asahi.com/articles/ASVC43JXDVC4ULFA02BM.html",
           "evidence_urls": [
             "https://www.asahi.com/articles/ASVC43JXDVC4ULFA02BM.html"
+          ]
+        },
+        {
+          "incident_id": "77272e39600de1e2",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/adventure-world-terravie-arara-email-leak-5709-20261112/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/adventure-world-terravie-arara-email-leak-5709-20261112/"
           ]
         },
         {
@@ -24834,7 +24977,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-13T21:16:06+00:00"
+      "updated_at": "2026-11-13T22:16:19+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -26026,6 +26169,48 @@
       "service_aliases": [],
       "added_at": "2026-11-02T13:16:55+00:00",
       "updated_at": "2026-11-02T13:16:55+00:00"
+    },
+    {
+      "id": "77272e39600de1e2",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": "2026-11-11T15:00:00+00:00",
+      "organization": "Terravie",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "2501b5ff1c217ae6",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/adventure-world-terravie-arara-email-leak-5709-20261112/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/adventure-world-terravie-arara-email-leak-5709-20261112/"
+          ]
+        },
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/adventure-world-terravie-arara-email-leak-5709-20261112/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/adventure-world-terravie-arara-email-leak-5709-20261112/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/adventure-world-terravie-arara-email-leak-5709-20261112/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "added_at": "2026-11-13T22:16:19+00:00",
+      "updated_at": "2026-11-13T22:16:19+00:00"
     },
     {
       "id": "8ebd5d925ed1dcd6",
