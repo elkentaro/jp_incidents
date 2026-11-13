@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-13T04:15:30+00:00",
-  "total": 1158,
+  "updated_at": "2026-11-13T06:15:30+00:00",
+  "total": 1168,
   "date_range": {
     "start": "2025-10-16",
-    "end": "2026-11-12"
+    "end": "2026-11-13"
   },
   "daily_counts_90d": [
     {
@@ -278,7 +278,7 @@
     },
     {
       "date": "2026-10-22",
-      "count": 61
+      "count": 62
     },
     {
       "date": "2026-10-23",
@@ -338,7 +338,7 @@
     },
     {
       "date": "2026-11-06",
-      "count": 52
+      "count": 53
     },
     {
       "date": "2026-11-07",
@@ -354,22 +354,105 @@
     },
     {
       "date": "2026-11-10",
-      "count": 38
+      "count": 41
     },
     {
       "date": "2026-11-11",
-      "count": 20
+      "count": 21
     },
     {
       "date": "2026-11-12",
-      "count": 19
+      "count": 21
     },
     {
       "date": "2026-11-13",
-      "count": 0
+      "count": 2
     }
   ],
   "incidents": [
+    {
+      "id": "9f04a00959566f37",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "渋谷区",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "20a83dbb170abda7",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.city.shibuya.tokyo.jp/kusei/koho/shibuya-portal/unauthorized_access_202611.html",
+          "evidence_urls": [
+            "https://www.city.shibuya.tokyo.jp/kusei/koho/shibuya-portal/unauthorized_access_202611.html"
+          ]
+        },
+        {
+          "incident_id": "2e6aed23a224e058",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.city.shibuya.tokyo.jp/kusei/koho/shibuya-portal/unauthorized_access_202611.html",
+          "evidence_urls": [
+            "https://www.city.shibuya.tokyo.jp/kusei/koho/shibuya-portal/unauthorized_access_202611.html"
+          ]
+        },
+        {
+          "incident_id": "5132d5e78b41b9cf",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.shibuya.tokyo.jp/kusei/koho/shibuya-portal/unauthorized_access_202611.html",
+          "evidence_urls": [
+            "https://www.city.shibuya.tokyo.jp/kusei/koho/shibuya-portal/unauthorized_access_202611.html"
+          ]
+        },
+        {
+          "incident_id": "c7068a40bdf17b39",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.city.shibuya.tokyo.jp/kusei/koho/shibuya-portal/unauthorized_access_202611.html",
+          "evidence_urls": [
+            "https://www.city.shibuya.tokyo.jp/kusei/koho/shibuya-portal/unauthorized_access_202611.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "渋谷区 / Shibuya",
+          "url": "https://www.city.shibuya.tokyo.jp/kusei/koho/shibuya-portal/unauthorized_access_202611.html"
+        }
+      ],
+      "affected_service": "教育ICT基盤",
+      "service_aliases": [],
+      "added_at": "2026-11-13T06:15:30+00:00",
+      "updated_at": "2026-11-13T06:15:30+00:00"
+    },
+    {
+      "id": "f25e2050c3141e4b",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "地域商社やまぐち",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 3287,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/c4611128b9438e7ac2d768012f4fdc6a6fd65c45"
+        }
+      ],
+      "affected_service": "電子商取引サイト",
+      "service_aliases": [],
+      "added_at": "2026-11-13T06:15:30+00:00",
+      "updated_at": "2026-11-13T06:15:30+00:00"
+    },
     {
       "id": "2599deba1d9c9654",
       "published_at": "2026-11-11T15:00:00+00:00",
@@ -530,12 +613,16 @@
         {
           "name": "satimo list",
           "url": "https://giftee.co.jp/press/news/info20261112/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/giftee-prismatix-unauthorized-access-service-suspension-20261112/"
         }
       ],
       "affected_service": "giftee",
       "service_aliases": [],
       "added_at": "2026-11-13T02:15:39+00:00",
-      "updated_at": "2026-11-13T02:15:39+00:00"
+      "updated_at": "2026-11-13T06:15:30+00:00"
     },
     {
       "id": "a3e7a1a5599413f7",
@@ -839,6 +926,38 @@
       "updated_at": "2026-11-12T22:15:17+00:00"
     },
     {
+      "id": "56196a05f6b5b1d6",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": "2026-11-11T15:00:00+00:00",
+      "organization": "Carry On",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "57d15baf7435e548",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/a7f94ceab6af66fe7924ecd288fc8b45992a1d54",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/a7f94ceab6af66fe7924ecd288fc8b45992a1d54"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/a7f94ceab6af66fe7924ecd288fc8b45992a1d54"
+        }
+      ],
+      "added_at": "2026-11-13T06:15:30+00:00",
+      "updated_at": "2026-11-13T06:15:30+00:00"
+    },
+    {
       "id": "699c1c4d38a96447",
       "published_at": "2026-11-11T15:00:00+00:00",
       "disclosed_at": null,
@@ -895,6 +1014,40 @@
       "service_aliases": [],
       "added_at": "2026-11-12T19:15:15+00:00",
       "updated_at": "2026-11-12T19:15:15+00:00"
+    },
+    {
+      "id": "ce6ad7ce0bbe12a0",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": "2026-11-11T15:00:00+00:00",
+      "organization": "サンフレッチェ広島",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 2900,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/7ddc9da48a535060c002c1df329e859e2faad2a9",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/7ddc9da48a535060c002c1df329e859e2faad2a9"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/7ddc9da48a535060c002c1df329e859e2faad2a9"
+        }
+      ],
+      "affected_service": "TSSサンフレッチェ広島公式モバイルサイト",
+      "service_aliases": [],
+      "added_at": "2026-11-13T06:15:30+00:00",
+      "updated_at": "2026-11-13T06:15:30+00:00"
     },
     {
       "id": "26c761f006cef9e6",
@@ -1954,6 +2107,38 @@
       "updated_at": "2026-11-12T07:15:39+00:00"
     },
     {
+      "id": "eaa556d3ab0bbd61",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": "2026-11-10T15:00:00+00:00",
+      "organization": "TOKYO GLOBAL GATEWAY",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 14143,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/tokyo-global-gateway-arara-email-leak-14143/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/tokyo-global-gateway-arara-email-leak-14143/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/tokyo-global-gateway-arara-email-leak-14143/"
+        }
+      ],
+      "added_at": "2026-11-13T06:15:30+00:00",
+      "updated_at": "2026-11-13T06:15:30+00:00"
+    },
+    {
       "id": "03e4b56172ce7769",
       "published_at": "2026-11-09T15:00:00+00:00",
       "disclosed_at": "2026-11-09T15:00:00+00:00",
@@ -2526,6 +2711,46 @@
       "updated_at": "2026-11-13T02:15:39+00:00"
     },
     {
+      "id": "162d0bcb6d6fed86",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "あいおいニッセイ同和損害保険",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 16000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "57a40b2bf2b57970",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1"
+          ]
+        },
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1"
+        }
+      ],
+      "added_at": "2026-11-13T06:15:30+00:00",
+      "updated_at": "2026-11-13T06:15:30+00:00"
+    },
+    {
       "id": "3342ed54c628efda",
       "published_at": "2026-11-09T15:00:00+00:00",
       "disclosed_at": null,
@@ -2704,6 +2929,46 @@
       "updated_at": "2026-11-11T03:15:41+00:00"
     },
     {
+      "id": "8fb0d1022527dbd9",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "三井住友海上火災保険",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 15000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "1213e7eea2108340",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1"
+          ]
+        },
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1"
+        }
+      ],
+      "added_at": "2026-11-13T06:15:30+00:00",
+      "updated_at": "2026-11-13T06:15:30+00:00"
+    },
+    {
       "id": "a4bddfbd43d68938",
       "published_at": "2026-11-09T15:00:00+00:00",
       "disclosed_at": null,
@@ -2731,6 +2996,46 @@
       "service_aliases": [],
       "added_at": "2026-11-10T14:16:14+00:00",
       "updated_at": "2026-11-12T07:15:39+00:00"
+    },
+    {
+      "id": "e24b19c157ff5350",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "三井ダイレクト損害保険",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1200,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "496adeebce3149c2",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1"
+          ]
+        },
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1"
+        }
+      ],
+      "added_at": "2026-11-13T06:15:30+00:00",
+      "updated_at": "2026-11-13T06:15:30+00:00"
     },
     {
       "id": "e3edd2e6f29e759d",
@@ -3509,8 +3814,9 @@
         {
           "incident_id": "e0bf7f8e71d6ba85",
           "relationship": "affected_by",
-          "evidence_url": "https://www.popkit.net/20261109",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/popkit-arara-email-leak-202167-202611/",
           "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/popkit-arara-email-leak-202167-202611/",
             "https://www.popkit.net/20261109"
           ]
         }
@@ -3519,12 +3825,16 @@
         {
           "name": "satimo list",
           "url": "https://www.popkit.net/20261109"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/popkit-arara-email-leak-202167-202611/"
         }
       ],
       "affected_service": "メールマガジン",
       "service_aliases": [],
       "added_at": "2026-11-13T02:15:39+00:00",
-      "updated_at": "2026-11-13T02:15:39+00:00"
+      "updated_at": "2026-11-13T06:15:30+00:00"
     },
     {
       "id": "468104271cd2f851",
@@ -4705,6 +5015,14 @@
           ]
         },
         {
+          "incident_id": "56196a05f6b5b1d6",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/a7f94ceab6af66fe7924ecd288fc8b45992a1d54",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/a7f94ceab6af66fe7924ecd288fc8b45992a1d54"
+          ]
+        },
+        {
           "incident_id": "71422f2b8113fd80",
           "relationship": "affects",
           "evidence_url": "https://www.release.tdnet.info/inbs/140120261111574117.pdf",
@@ -4748,7 +5066,7 @@
         }
       ],
       "added_at": "2026-11-11T09:15:59+00:00",
-      "updated_at": "2026-11-12T23:15:21+00:00"
+      "updated_at": "2026-11-13T06:15:30+00:00"
     },
     {
       "id": "a5aba76731b13cfb",
@@ -5630,7 +5948,16 @@
       "potential_records": 230000,
       "confidence": "high",
       "confidence_score": 90,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "e24b19c157ff5350",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "satimo list",
@@ -5666,7 +5993,7 @@
         }
       ],
       "added_at": "2026-11-06T13:16:53+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-13T06:15:30+00:00"
     },
     {
       "id": "4c4efaf9334d234c",
@@ -6591,6 +6918,33 @@
       "service_aliases": [],
       "added_at": "2026-11-09T08:16:45+00:00",
       "updated_at": "2026-11-13T02:15:39+00:00"
+    },
+    {
+      "id": "b57052511268beb1",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": "2026-11-11T15:00:00+00:00",
+      "organization": "eBay Japan",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003186/"
+        }
+      ],
+      "affected_service": "Qoo10",
+      "service_aliases": [
+        "キューテン"
+      ],
+      "added_at": "2026-11-13T06:15:30+00:00",
+      "updated_at": "2026-11-13T06:15:30+00:00"
     },
     {
       "id": "ba3f717106e365ae",
@@ -12988,6 +13342,14 @@
           ]
         },
         {
+          "incident_id": "8fb0d1022527dbd9",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1"
+          ]
+        },
+        {
           "incident_id": "e246d65f8923cb2a",
           "relationship": "same_organization",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/msig_pcs_228000_roadside_data_leak_20261109/",
@@ -13029,7 +13391,7 @@
       "affected_service": "ご契約者さま専用ページ",
       "service_aliases": [],
       "added_at": "2026-11-04T10:15:52+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-13T06:15:30+00:00"
     },
     {
       "id": "19cce63ebf03c536",
@@ -13245,6 +13607,14 @@
       "confidence_score": 90,
       "related": [
         {
+          "incident_id": "162d0bcb6d6fed86",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1"
+          ]
+        },
+        {
           "incident_id": "3e8426d0f8f8deeb",
           "relationship": "affects",
           "evidence_url": "https://www.msa-life.co.jp/news/assets/pdf/20261106_newsrelease_huseiausesukaizi.pdf",
@@ -13284,7 +13654,7 @@
         }
       ],
       "added_at": "2026-11-04T10:15:52+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-13T06:15:30+00:00"
     },
     {
       "id": "5caeb03a887c6e82",
@@ -13820,12 +14190,16 @@
         {
           "name": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2026/11/13/56773.html"
+        },
+        {
+          "name": "ビジネス+IT",
+          "url": "https://www.sbbit.jp/article/cont1/188369"
         }
       ],
       "affected_service": "ネットマイル",
       "service_aliases": [],
       "added_at": "2026-11-03T03:16:30+00:00",
-      "updated_at": "2026-11-13T02:15:39+00:00"
+      "updated_at": "2026-11-13T06:15:30+00:00"
     },
     {
       "id": "a99204c7fb0a8fea",
@@ -20338,7 +20712,16 @@
       "potential_records": null,
       "confidence": "high",
       "confidence_score": 90,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "9f04a00959566f37",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.city.shibuya.tokyo.jp/kusei/koho/shibuya-portal/unauthorized_access_202611.html",
+          "evidence_urls": [
+            "https://www.city.shibuya.tokyo.jp/kusei/koho/shibuya-portal/unauthorized_access_202611.html"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "渋谷区 / Shibuya",
@@ -20348,7 +20731,7 @@
       "affected_service": "渋谷マイポータル",
       "service_aliases": [],
       "added_at": "2026-10-28T23:15:49+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-13T06:15:30+00:00"
     },
     {
       "id": "306e3cb8d37abc69",
@@ -21604,6 +21987,14 @@
           ]
         },
         {
+          "incident_id": "162d0bcb6d6fed86",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1"
+          ]
+        },
+        {
           "incident_id": "19cce63ebf03c536",
           "relationship": "affects",
           "evidence_url": "https://www.kobe-np.co.jp/news/information/202611/0020994385.shtml",
@@ -21630,8 +22021,9 @@
         {
           "incident_id": "214ea014f03e906c",
           "relationship": "affects",
-          "evidence_url": "https://www.popkit.net/20261109",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/popkit-arara-email-leak-202167-202611/",
           "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/popkit-arara-email-leak-202167-202611/",
             "https://www.popkit.net/20261109"
           ]
         },
@@ -22226,6 +22618,14 @@
           ]
         },
         {
+          "incident_id": "8fb0d1022527dbd9",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1"
+          ]
+        },
+        {
           "incident_id": "9090dff535e28d63",
           "relationship": "affects",
           "evidence_url": "https://www.kyuden.co.jp/press/2026/h261110-1.html",
@@ -22537,6 +22937,14 @@
           ]
         },
         {
+          "incident_id": "ce6ad7ce0bbe12a0",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/7ddc9da48a535060c002c1df329e859e2faad2a9",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/7ddc9da48a535060c002c1df329e859e2faad2a9"
+          ]
+        },
+        {
           "incident_id": "ce7d32fd4e6c1d66",
           "relationship": "affects",
           "evidence_url": "https://newsdig.tbs.co.jp/articles/mbs/3064754?display=1",
@@ -22691,6 +23099,14 @@
           ]
         },
         {
+          "incident_id": "e24b19c157ff5350",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1"
+          ]
+        },
+        {
           "incident_id": "e6dec13f9e6cc672",
           "relationship": "affects",
           "evidence_url": "https://www.axelentermedia.co.jp/notice_20261104.html",
@@ -22704,6 +23120,14 @@
           "evidence_url": "https://www.ucoop.or.jp/info/2026/info_34571.html",
           "evidence_urls": [
             "https://www.ucoop.or.jp/info/2026/info_34571.html"
+          ]
+        },
+        {
+          "incident_id": "eaa556d3ab0bbd61",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/tokyo-global-gateway-arara-email-leak-14143/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/tokyo-global-gateway-arara-email-leak-14143/"
           ]
         },
         {
@@ -22803,7 +23227,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-13T02:15:39+00:00"
+      "updated_at": "2026-11-13T06:15:30+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -32546,6 +32970,31 @@
       "updated_at": "2026-11-12T07:15:39+00:00"
     },
     {
+      "id": "7734e08da94affa8",
+      "published_at": "2026-10-21T15:00:00+00:00",
+      "disclosed_at": "2026-11-12T15:00:00+00:00",
+      "organization": "株式会社サンケイリビング新聞社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 7,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "千葉県 / Chiba",
+          "url": "https://www.pref.chiba.lg.jp/kosodate/press/2026/chi-pass-jouhou.html"
+        }
+      ],
+      "affected_service": "「子育て応援!チーパス事業」協賛店拡大業務委託",
+      "service_aliases": [],
+      "added_at": "2026-11-13T06:15:30+00:00",
+      "updated_at": "2026-11-13T06:15:30+00:00"
+    },
+    {
       "id": "7bc70bf6108ea4bc",
       "published_at": "2026-10-21T15:00:00+00:00",
       "disclosed_at": null,
@@ -33094,7 +33543,16 @@
       "potential_records": 246000,
       "confidence": "high",
       "confidence_score": 90,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "9f04a00959566f37",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.shibuya.tokyo.jp/kusei/koho/shibuya-portal/unauthorized_access_202611.html",
+          "evidence_urls": [
+            "https://www.city.shibuya.tokyo.jp/kusei/koho/shibuya-portal/unauthorized_access_202611.html"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "日本取引所グループ TDnet / JPX TDnet",
@@ -33126,7 +33584,7 @@
         }
       ],
       "added_at": "2026-10-21T08:05:23+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-13T06:15:30+00:00"
     },
     {
       "id": "53ec72ba13cb644f",
@@ -36350,7 +36808,16 @@
       "potential_records": 218,
       "confidence": "high",
       "confidence_score": 90,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "9f04a00959566f37",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.city.shibuya.tokyo.jp/kusei/koho/shibuya-portal/unauthorized_access_202611.html",
+          "evidence_urls": [
+            "https://www.city.shibuya.tokyo.jp/kusei/koho/shibuya-portal/unauthorized_access_202611.html"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "渋谷区 / Shibuya",
@@ -36364,7 +36831,7 @@
       "affected_service": "施設予約システム",
       "service_aliases": [],
       "added_at": "2026-11-10T12:16:52+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-13T06:15:30+00:00"
     },
     {
       "id": "27be42792272ea99",
@@ -46539,7 +47006,16 @@
       "potential_records": null,
       "confidence": "high",
       "confidence_score": 90,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "9f04a00959566f37",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.city.shibuya.tokyo.jp/kusei/koho/shibuya-portal/unauthorized_access_202611.html",
+          "evidence_urls": [
+            "https://www.city.shibuya.tokyo.jp/kusei/koho/shibuya-portal/unauthorized_access_202611.html"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "渋谷区 / Shibuya",
@@ -46549,7 +47025,7 @@
       "affected_system": "防災情報配信サービス（保守・運営事業者が提供）",
       "date_basis": "discovery",
       "added_at": "2026-10-19T16:14:59+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-13T06:15:30+00:00"
     },
     {
       "id": "cd409ce9cda6b92c",
