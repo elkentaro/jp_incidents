@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-13T22:16:20+00:00",
-  "total": 1209,
+  "updated_at": "2026-11-13T23:16:11+00:00",
+  "total": 1212,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-14"
@@ -338,7 +338,7 @@
     },
     {
       "date": "2026-11-07",
-      "count": 9
+      "count": 10
     },
     {
       "date": "2026-11-08",
@@ -362,11 +362,11 @@
     },
     {
       "date": "2026-11-13",
-      "count": 24
+      "count": 25
     },
     {
       "date": "2026-11-14",
-      "count": 1
+      "count": 2
     }
   ],
   "incidents": [
@@ -405,6 +405,39 @@
       "service_aliases": [],
       "added_at": "2026-11-13T22:16:19+00:00",
       "updated_at": "2026-11-13T22:16:19+00:00"
+    },
+    {
+      "id": "4bee839fdffa3e78",
+      "published_at": "2026-11-13T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "高根沢町",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.shimotsuke.co.jp/articles/-/1458681",
+          "evidence_urls": [
+            "https://www.shimotsuke.co.jp/articles/-/1458681"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "下野新聞社",
+          "url": "https://www.shimotsuke.co.jp/articles/-/1458681"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "added_at": "2026-11-13T23:16:11+00:00",
+      "updated_at": "2026-11-13T23:16:11+00:00"
     },
     {
       "id": "104978daf47e55c0",
@@ -891,6 +924,60 @@
       "updated_at": "2026-11-13T21:16:06+00:00"
     },
     {
+      "id": "7b197da5898c13ba",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "内閣府",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 5973,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "7e675401ba9184a3",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUA13BRW0T11C26A1000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUA13BRW0T11C26A1000000/"
+          ]
+        },
+        {
+          "incident_id": "92401d7ee52f9b03",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUA13BRW0T11C26A1000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUA13BRW0T11C26A1000000/"
+          ]
+        },
+        {
+          "incident_id": "fe3955ab5daa9251",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUA13BRW0T11C26A1000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUA13BRW0T11C26A1000000/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUA13BRW0T11C26A1000000/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/3831e0285bc8d5580ebd4742a2f235e7f16412e3"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "added_at": "2026-11-13T23:16:11+00:00",
+      "updated_at": "2026-11-13T23:16:11+00:00"
+    },
+    {
       "id": "92401d7ee52f9b03",
       "published_at": "2026-11-12T15:00:00+00:00",
       "disclosed_at": null,
@@ -904,6 +991,14 @@
       "confidence": "medium",
       "confidence_score": 50,
       "related": [
+        {
+          "incident_id": "7b197da5898c13ba",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUA13BRW0T11C26A1000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUA13BRW0T11C26A1000000/"
+          ]
+        },
         {
           "incident_id": "7e675401ba9184a3",
           "relationship": "same_organization",
@@ -930,7 +1025,7 @@
       "affected_system": null,
       "date_basis": "publication",
       "added_at": "2026-11-13T19:16:21+00:00",
-      "updated_at": "2026-11-13T22:16:19+00:00"
+      "updated_at": "2026-11-13T23:16:11+00:00"
     },
     {
       "id": "a66a3fc2b9f18b4e",
@@ -1017,12 +1112,16 @@
         {
           "name": "北海道新聞デジタル",
           "url": "https://www.hokkaido-np.co.jp/article/1407810/"
+        },
+        {
+          "name": "産経ニュース",
+          "url": "https://www.sankei.com/article/20261113-GHPX37QXHRKTBD2IJ65GJPDWAA/"
         }
       ],
       "affected_service": "トライアルベースボール in 京都",
       "service_aliases": [],
       "added_at": "2026-11-13T07:15:40+00:00",
-      "updated_at": "2026-11-13T21:16:06+00:00"
+      "updated_at": "2026-11-13T23:16:11+00:00"
     },
     {
       "id": "b27cd27961f53374",
@@ -1291,7 +1390,16 @@
       "potential_records": 5973,
       "confidence": "medium",
       "confidence_score": 30,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "7b197da5898c13ba",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUA13BRW0T11C26A1000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUA13BRW0T11C26A1000000/"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "沖縄タイムス社",
@@ -1304,6 +1412,10 @@
         {
           "name": "京都新聞デジタル",
           "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE90SUtRV3FVeDIzbFFsTnEzZjVCcDgyVFlwZktsUUtwSFRlZTNmcl82OHMxZFU5MmdpckJsMGVQTVQyWEl1YXBWSzF6WWtuc19BZzA4RmRSQ18?oc=5"
+        },
+        {
+          "name": "下野新聞社",
+          "url": "https://www.shimotsuke.co.jp/articles/-/1458604"
         }
       ],
       "affected_system": null,
@@ -1311,7 +1423,7 @@
       "affected_service": "沖縄県の魅力を発信する広報事業で使用していたレンタルサーバー",
       "service_aliases": [],
       "added_at": "2026-11-13T21:16:06+00:00",
-      "updated_at": "2026-11-13T22:16:19+00:00"
+      "updated_at": "2026-11-13T23:16:11+00:00"
     },
     {
       "id": "2599deba1d9c9654",
@@ -1762,6 +1874,14 @@
       "confidence_score": 50,
       "related": [
         {
+          "incident_id": "261fda2a43c55d1b",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/shijonawate-icuco-touch-care-unauthorized-access-202611/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/shijonawate-icuco-touch-care-unauthorized-access-202611/"
+          ]
+        },
+        {
           "incident_id": "a8be9fad39548f21",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/c78d33bc963d9533bb710e151a9591998e87e7b3",
@@ -1777,7 +1897,7 @@
         }
       ],
       "added_at": "2026-11-12T20:15:40+00:00",
-      "updated_at": "2026-11-12T20:15:40+00:00"
+      "updated_at": "2026-11-13T23:16:11+00:00"
     },
     {
       "id": "36767938e5293e2e",
@@ -2380,6 +2500,14 @@
       "confidence_score": 90,
       "related": [
         {
+          "incident_id": "7b197da5898c13ba",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUA13BRW0T11C26A1000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUA13BRW0T11C26A1000000/"
+          ]
+        },
+        {
           "incident_id": "92401d7ee52f9b03",
           "relationship": "same_organization",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/cabinet_office_okinawa41_sakura_server_5973_possible_leak_20261113/",
@@ -2434,7 +2562,7 @@
       "affected_service": "メールマガジン",
       "service_aliases": [],
       "added_at": "2026-11-11T07:16:10+00:00",
-      "updated_at": "2026-11-13T19:16:21+00:00"
+      "updated_at": "2026-11-13T23:16:11+00:00"
     },
     {
       "id": "8e1708341ecca0be",
@@ -6961,6 +7089,42 @@
       "updated_at": "2026-11-12T07:15:39+00:00"
     },
     {
+      "id": "261fda2a43c55d1b",
+      "published_at": "2026-11-06T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "四條畷市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 44,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "35c35b7a22a842d4",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/shijonawate-icuco-touch-care-unauthorized-access-202611/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/shijonawate-icuco-touch-care-unauthorized-access-202611/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/shijonawate-icuco-touch-care-unauthorized-access-202611/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "icuco touch&care",
+      "service_aliases": [],
+      "added_at": "2026-11-13T23:16:11+00:00",
+      "updated_at": "2026-11-13T23:16:11+00:00"
+    },
+    {
       "id": "70af91eead1ee810",
       "published_at": "2026-11-06T15:00:00+00:00",
       "disclosed_at": null,
@@ -8432,6 +8596,10 @@
         {
           "name": "ビジネス+IT",
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5kQUNlSGk0ZWlkb1Qwai1acnhncnZzcVRadnd3dlM2TnI4eDhXcE1PV1BIZHAybng2T1ZBM3lsVWxTS0xJeUlGSFRidlNPZ2lGWGo0?oc=5"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/qoo10-unauthorized-access-personal-data-viewed-202611/"
         }
       ],
       "affected_service": "Qoo10",
@@ -8439,7 +8607,7 @@
         "キューテン"
       ],
       "added_at": "2026-11-13T06:15:30+00:00",
-      "updated_at": "2026-11-13T21:16:06+00:00"
+      "updated_at": "2026-11-13T23:16:11+00:00"
     },
     {
       "id": "ba3f717106e365ae",
@@ -11803,10 +11971,14 @@
         {
           "name": "下野新聞社",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9tZm9POWFWczcwV0JLSkxyMFRpdEVmaU9BcU55VW5oeXRNOUFPMklOSUhUUXRsUjhXdVVBU1hMcW5hTG5lV29STUxYS1dtaDlmX0pPa2l1a2ZtQ28?oc=5"
+        },
+        {
+          "name": "下野新聞社",
+          "url": "https://www.shimotsuke.co.jp/articles/-/1458681"
         }
       ],
       "added_at": "2026-11-06T21:40:24+00:00",
-      "updated_at": "2026-11-06T21:40:24+00:00"
+      "updated_at": "2026-11-13T23:16:11+00:00"
     },
     {
       "id": "de1f53de576e9f74",
@@ -14620,12 +14792,16 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118103"
+        },
+        {
+          "name": "下野新聞社",
+          "url": "https://www.shimotsuke.co.jp/articles/-/1458681"
         }
       ],
       "affected_service": "電子申請システム",
       "service_aliases": [],
       "added_at": "2026-11-03T12:17:45+00:00",
-      "updated_at": "2026-11-03T12:17:45+00:00"
+      "updated_at": "2026-11-13T23:16:11+00:00"
     },
     {
       "id": "b719f0f1d0000b8c",
@@ -17095,12 +17271,16 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118103"
+        },
+        {
+          "name": "下野新聞社",
+          "url": "https://www.shimotsuke.co.jp/articles/-/1458681"
         }
       ],
       "affected_service": "しもつけオンラインサービス",
       "service_aliases": [],
       "added_at": "2026-11-03T12:17:45+00:00",
-      "updated_at": "2026-11-03T12:17:45+00:00"
+      "updated_at": "2026-11-13T23:16:11+00:00"
     },
     {
       "id": "708c1e97d0a4177b",
@@ -17834,11 +18014,12 @@
           "url": "https://internet.watch.impress.co.jp/docs/news/2153346.html"
         }
       ],
-      "affected_service": "ALL.Net / Aime",
+      "affected_service": "ALL.Net / Aime / セガ ラッキーくじオンライン",
       "service_aliases": [],
       "affected_services": [
         "ALL.Net",
-        "Aime"
+        "Aime",
+        "セガ ラッキーくじオンライン"
       ],
       "service_details": [
         {
@@ -17848,10 +18029,14 @@
         {
           "name": "Aime",
           "aliases": []
+        },
+        {
+          "name": "セガ ラッキーくじオンライン",
+          "aliases": []
         }
       ],
       "added_at": "2026-11-02T13:16:55+00:00",
-      "updated_at": "2026-11-12T07:15:39+00:00"
+      "updated_at": "2026-11-13T23:16:11+00:00"
     },
     {
       "id": "b8ebe8938e086561",
@@ -23904,6 +24089,14 @@
           ]
         },
         {
+          "incident_id": "4bee839fdffa3e78",
+          "relationship": "affects",
+          "evidence_url": "https://www.shimotsuke.co.jp/articles/-/1458681",
+          "evidence_urls": [
+            "https://www.shimotsuke.co.jp/articles/-/1458681"
+          ]
+        },
+        {
           "incident_id": "4fafc038d6f3b252",
           "relationship": "affects",
           "evidence_url": "https://www.city.kakogawa.lg.jp/soshikikarasagasu/kikakubu/jouhouseisakuka/onlineshinsei/51384.html",
@@ -24977,7 +25170,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-13T22:16:19+00:00"
+      "updated_at": "2026-11-13T23:16:11+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -42766,6 +42959,57 @@
       "updated_at": "2026-10-22T01:18:03+00:00"
     },
     {
+      "id": "954016a6d336964c",
+      "published_at": "2026-10-17T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "マネックス証券",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1130000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "AERA DIGITAL",
+          "url": "https://dot.asahi.com/articles/-/297649?page=1"
+        },
+        {
+          "name": "PR TIMES",
+          "url": "https://prtimes.jp/main/html/rd/p/000000595.000005159.html"
+        },
+        {
+          "name": "Impress Watch",
+          "url": "https://www.watch.impress.co.jp/docs/news/2156455.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/933cbba37c5f5faa82ee50fd05cd62c7d1f99b86"
+        },
+        {
+          "name": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2156446.html"
+        },
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/economy/20261114-GYT1T00098/"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUB13BCF0T11C26A1000000/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "口座開設システム",
+      "service_aliases": [],
+      "added_at": "2026-11-13T12:16:47+00:00",
+      "updated_at": "2026-11-13T23:16:11+00:00"
+    },
+    {
       "id": "aa78266df70136da",
       "published_at": "2026-10-17T15:00:00+00:00",
       "disclosed_at": null,
@@ -42961,53 +43205,6 @@
       ],
       "added_at": "2026-10-19T23:15:39+00:00",
       "updated_at": "2026-11-12T08:18:15+00:00"
-    },
-    {
-      "id": "954016a6d336964c",
-      "published_at": "2026-10-17T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "マネックス証券",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 1130000,
-      "confidence": "high",
-      "confidence_score": 70,
-      "related": [],
-      "sources": [
-        {
-          "name": "PR TIMES",
-          "url": "https://prtimes.jp/main/html/rd/p/000000595.000005159.html"
-        },
-        {
-          "name": "Impress Watch",
-          "url": "https://www.watch.impress.co.jp/docs/news/2156455.html"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/933cbba37c5f5faa82ee50fd05cd62c7d1f99b86"
-        },
-        {
-          "name": "INTERNET Watch",
-          "url": "https://internet.watch.impress.co.jp/docs/news/2156446.html"
-        },
-        {
-          "name": "読売新聞",
-          "url": "https://www.yomiuri.co.jp/economy/20261114-GYT1T00098/"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUB13BCF0T11C26A1000000/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "discovery",
-      "affected_service": "口座開設システム",
-      "service_aliases": [],
-      "added_at": "2026-11-13T12:16:47+00:00",
-      "updated_at": "2026-11-13T21:16:06+00:00"
     },
     {
       "id": "4468d7a7262d01e6",
