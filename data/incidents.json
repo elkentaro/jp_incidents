@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-13T15:16:27+00:00",
-  "total": 1196,
+  "updated_at": "2026-11-13T19:16:21+00:00",
+  "total": 1199,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-13"
@@ -346,7 +346,7 @@
     },
     {
       "date": "2026-11-09",
-      "count": 35
+      "count": 36
     },
     {
       "date": "2026-11-10",
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-13",
-      "count": 15
+      "count": 17
     },
     {
       "date": "2026-11-14",
@@ -828,12 +828,16 @@
         {
           "name": "TBS NEWS DIG",
           "url": "https://newsdig.tbs.co.jp/articles/nbc/3083381?display=1"
+        },
+        {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp/n/nib/category/society/ni4a2eb9d1856e48ce9530c8cf88400597"
         }
       ],
       "affected_service": "させぼeコイン",
       "service_aliases": [],
       "added_at": "2026-11-13T07:15:40+00:00",
-      "updated_at": "2026-11-13T07:15:40+00:00"
+      "updated_at": "2026-11-13T19:16:21+00:00"
     },
     {
       "id": "ae1d4f5f4d68b8fb",
@@ -870,6 +874,49 @@
       "updated_at": "2026-11-13T07:15:40+00:00"
     },
     {
+      "id": "de0e67750f5fe874",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大阪府",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 1400000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "56a3d2457cb3a538",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.asahi.com/articles/ASVCF34VMVCFOXIE01NM.html",
+          "evidence_urls": [
+            "https://www.asahi.com/articles/ASVCF34VMVCFOXIE01NM.html"
+          ]
+        },
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.asahi.com/articles/ASVCF34VMVCFOXIE01NM.html",
+          "evidence_urls": [
+            "https://www.asahi.com/articles/ASVCF34VMVCFOXIE01NM.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVCF34VMVCFOXIE01NM.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "食費支援事業",
+      "service_aliases": [],
+      "added_at": "2026-11-13T19:16:21+00:00",
+      "updated_at": "2026-11-13T19:16:21+00:00"
+    },
+    {
       "id": "f25e2050c3141e4b",
       "published_at": "2026-11-12T15:00:00+00:00",
       "disclosed_at": null,
@@ -893,6 +940,40 @@
       "service_aliases": [],
       "added_at": "2026-11-13T06:15:30+00:00",
       "updated_at": "2026-11-13T06:15:30+00:00"
+    },
+    {
+      "id": "92401d7ee52f9b03",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "内閣府",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 5973,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "7e675401ba9184a3",
+          "relationship": "same_organization",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/cabinet_office_okinawa41_sakura_server_5973_possible_leak_20261113/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/cabinet_office_okinawa41_sakura_server_5973_possible_leak_20261113/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/cabinet_office_okinawa41_sakura_server_5973_possible_leak_20261113/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-13T19:16:21+00:00",
+      "updated_at": "2026-11-13T19:16:21+00:00"
     },
     {
       "id": "2599deba1d9c9654",
@@ -1919,6 +2000,14 @@
       "confidence_score": 90,
       "related": [
         {
+          "incident_id": "92401d7ee52f9b03",
+          "relationship": "same_organization",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/cabinet_office_okinawa41_sakura_server_5973_possible_leak_20261113/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/cabinet_office_okinawa41_sakura_server_5973_possible_leak_20261113/"
+          ]
+        },
+        {
           "incident_id": "e0bf7f8e71d6ba85",
           "relationship": "affected_by",
           "evidence_url": "https://www.cao.go.jp/others/csi/security/20261111notice.html",
@@ -1965,7 +2054,7 @@
       "affected_service": "メールマガジン",
       "service_aliases": [],
       "added_at": "2026-11-11T07:16:10+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-13T19:16:21+00:00"
     },
     {
       "id": "8e1708341ecca0be",
@@ -4866,6 +4955,33 @@
       ],
       "added_at": "2026-11-10T06:15:30+00:00",
       "updated_at": "2026-11-12T08:18:15+00:00"
+    },
+    {
+      "id": "9e78d4477966ed2a",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": "2026-11-12T15:00:00+00:00",
+      "organization": "アットホーム",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 6901,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/athome_rental_management_unauthorized_access_6901_2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "賃貸管理システム",
+      "service_aliases": [],
+      "added_at": "2026-11-13T19:16:21+00:00",
+      "updated_at": "2026-11-13T19:16:21+00:00"
     },
     {
       "id": "ac478163eca04533",
@@ -7809,12 +7925,16 @@
         {
           "name": "TBS NEWS DIG",
           "url": "https://newsdig.tbs.co.jp/articles/-/3068957?display=1"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVCF34VMVCFOXIE01NM.html"
         }
       ],
       "affected_service": "大阪市プレミアム付商品券",
       "service_aliases": [],
       "added_at": "2026-11-06T21:40:24+00:00",
-      "updated_at": "2026-11-12T07:15:39+00:00"
+      "updated_at": "2026-11-13T19:16:21+00:00"
     },
     {
       "id": "581973ec197708b9",
@@ -12544,6 +12664,14 @@
       "confidence_score": 50,
       "related": [
         {
+          "incident_id": "de0e67750f5fe874",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.asahi.com/articles/ASVCF34VMVCFOXIE01NM.html",
+          "evidence_urls": [
+            "https://www.asahi.com/articles/ASVCF34VMVCFOXIE01NM.html"
+          ]
+        },
+        {
           "incident_id": "e0bf7f8e71d6ba85",
           "relationship": "affected_by",
           "evidence_url": "https://news.yahoo.co.jp/articles/7dd848d840f4cb82c11fcd2077b6d504542c52b5",
@@ -12574,7 +12702,7 @@
       "affected_service": "行政オンラインシステム",
       "service_aliases": [],
       "added_at": "2026-11-04T12:25:20+00:00",
-      "updated_at": "2026-11-12T07:15:39+00:00"
+      "updated_at": "2026-11-13T19:16:21+00:00"
     },
     {
       "id": "5d5d3d080fa4a4dd",
@@ -24278,6 +24406,14 @@
           ]
         },
         {
+          "incident_id": "de0e67750f5fe874",
+          "relationship": "affects",
+          "evidence_url": "https://www.asahi.com/articles/ASVCF34VMVCFOXIE01NM.html",
+          "evidence_urls": [
+            "https://www.asahi.com/articles/ASVCF34VMVCFOXIE01NM.html"
+          ]
+        },
+        {
           "incident_id": "de1f53de576e9f74",
           "relationship": "affects",
           "evidence_url": "https://www.terrada.co.jp/ja/news/17123/",
@@ -24438,7 +24574,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-13T14:16:28+00:00"
+      "updated_at": "2026-11-13T19:16:21+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
