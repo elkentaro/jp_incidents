@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-13T00:16:16+00:00",
-  "total": 1145,
+  "updated_at": "2026-11-13T01:15:28+00:00",
+  "total": 1148,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-12"
@@ -330,7 +330,7 @@
     },
     {
       "date": "2026-11-04",
-      "count": 49
+      "count": 51
     },
     {
       "date": "2026-11-05",
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-12",
-      "count": 16
+      "count": 17
     },
     {
       "date": "2026-11-13",
@@ -538,6 +538,59 @@
       ],
       "added_at": "2026-11-12T10:15:34+00:00",
       "updated_at": "2026-11-12T20:15:40+00:00"
+    },
+    {
+      "id": "e9088ded1dd0ae6f",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": "2026-11-11T15:00:00+00:00",
+      "organization": "Yeny",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1332505,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://yeny.jp/pressrelease/1547/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/yeny-ultra-pay-payblend-api-data-leak-1332505-2026/"
+        }
+      ],
+      "affected_service": "ultra pay カード / アスルクラロ沼津Pay / 巫神こんPay / 東芝ブレイブルーパス東京Pay",
+      "service_aliases": [],
+      "affected_services": [
+        "ultra pay カード",
+        "アスルクラロ沼津Pay",
+        "巫神こんPay",
+        "東芝ブレイブルーパス東京Pay"
+      ],
+      "service_details": [
+        {
+          "name": "ultra pay カード",
+          "aliases": []
+        },
+        {
+          "name": "アスルクラロ沼津Pay",
+          "aliases": []
+        },
+        {
+          "name": "巫神こんPay",
+          "aliases": []
+        },
+        {
+          "name": "東芝ブレイブルーパス東京Pay",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-12T21:15:22+00:00",
+      "updated_at": "2026-11-13T01:15:28+00:00"
     },
     {
       "id": "f7cf02a6f5cb3426",
@@ -858,53 +911,60 @@
       "updated_at": "2026-11-12T11:15:59+00:00"
     },
     {
-      "id": "e9088ded1dd0ae6f",
+      "id": "72feb59cd0405905",
       "published_at": "2026-11-11T15:00:00+00:00",
       "disclosed_at": "2026-11-11T15:00:00+00:00",
-      "organization": "Yeny",
+      "organization": "千葉興業銀行",
       "incident_type": "data leak",
       "incident_categories": [
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": 1332505,
+      "potential_records": 3398,
       "confidence": "medium",
       "confidence_score": 30,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "27c6fe562fd0baae",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/chibakogyo-bank-smbc-cf-guarantee-data-leak-3398-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/chibakogyo-bank-smbc-cf-guarantee-data-leak-3398-2026/"
+          ]
+        },
+        {
+          "incident_id": "5caeb03a887c6e82",
+          "relationship": "same_organization",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/chibakogyo-bank-smbc-cf-guarantee-data-leak-3398-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/chibakogyo-bank-smbc-cf-guarantee-data-leak-3398-2026/"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/yeny-ultra-pay-payblend-api-data-leak-1332505-2026/"
+          "url": "https://rocket-boys.co.jp/security-measures-lab/chibakogyo-bank-smbc-cf-guarantee-data-leak-3398-2026/"
         }
       ],
-      "affected_service": "ultra pay カード / アスルクラロ沼津Pay / 巫神こんPay / 東芝ブレイブルーパス東京Pay",
+      "affected_service": "ポケットカードローン一心 / ポケットフリーローン太助",
       "service_aliases": [],
       "affected_services": [
-        "ultra pay カード",
-        "アスルクラロ沼津Pay",
-        "巫神こんPay",
-        "東芝ブレイブルーパス東京Pay"
+        "ポケットカードローン一心",
+        "ポケットフリーローン太助"
       ],
       "service_details": [
         {
-          "name": "ultra pay カード",
+          "name": "ポケットカードローン一心",
           "aliases": []
         },
         {
-          "name": "アスルクラロ沼津Pay",
-          "aliases": []
-        },
-        {
-          "name": "巫神こんPay",
-          "aliases": []
-        },
-        {
-          "name": "東芝ブレイブルーパス東京Pay",
+          "name": "ポケットフリーローン太助",
           "aliases": []
         }
       ],
-      "added_at": "2026-11-12T21:15:22+00:00",
-      "updated_at": "2026-11-12T21:15:22+00:00"
+      "added_at": "2026-11-13T01:15:28+00:00",
+      "updated_at": "2026-11-13T01:15:28+00:00"
     },
     {
       "id": "08d395a9f3838df8",
@@ -9856,6 +9916,39 @@
       "updated_at": "2026-11-12T08:18:15+00:00"
     },
     {
+      "id": "9c107e053372c3fc",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "松戸市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 37967,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.matsudo.chiba.jp/shisei/keikaku-kousou/digital/online-sinsei.html",
+          "evidence_urls": [
+            "https://www.city.matsudo.chiba.jp/shisei/keikaku-kousou/digital/online-sinsei.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.city.matsudo.chiba.jp/shisei/keikaku-kousou/digital/online-sinsei.html"
+        }
+      ],
+      "affected_service": "松戸市オンライン申請システム",
+      "service_aliases": [],
+      "added_at": "2026-11-13T01:15:28+00:00",
+      "updated_at": "2026-11-13T01:15:28+00:00"
+    },
+    {
       "id": "a174dff9d09a07c3",
       "published_at": "2026-11-03T15:00:00+00:00",
       "disclosed_at": null,
@@ -10342,22 +10435,26 @@
       "related": [],
       "sources": [
         {
-          "name": "PR TIMES",
-          "url": "https://prtimes.jp/main/html/rd/p/000000136.000009867.html"
-        },
-        {
           "name": "株式会社シグナルトーク",
           "url": "https://www.signaltalk.com/press/20261107.php"
         },
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118198"
+        },
+        {
+          "name": "PR TIMES",
+          "url": "https://prtimes.jp/main/html/rd/p/000000136.000009867.html"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/13/56779.html"
         }
       ],
       "affected_service": "Maru-Jan",
       "service_aliases": [],
       "added_at": "2026-11-07T12:17:10+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-13T01:15:28+00:00"
     },
     {
       "id": "f565d4025213af60",
@@ -11507,6 +11604,37 @@
       ],
       "added_at": "2026-11-04T15:16:11+00:00",
       "updated_at": "2026-11-12T07:15:39+00:00"
+    },
+    {
+      "id": "df8ab3e2aea96fe2",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": "2026-11-03T15:00:00+00:00",
+      "organization": "全国共済農業協同組合連合会",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 2850000,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "36d105653c0ed4da",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/ja-kyosai-pcs-road-service-data-leak-2-85-million-20261112/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/ja-kyosai-pcs-road-service-data-leak-2-85-million-20261112/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/ja-kyosai-pcs-road-service-data-leak-2-85-million-20261112/"
+        }
+      ],
+      "added_at": "2026-11-13T01:15:28+00:00",
+      "updated_at": "2026-11-13T01:15:28+00:00"
     },
     {
       "id": "e125a667a9fd8a5b",
@@ -12815,6 +12943,14 @@
       "confidence_score": 90,
       "related": [
         {
+          "incident_id": "72feb59cd0405905",
+          "relationship": "same_organization",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/chibakogyo-bank-smbc-cf-guarantee-data-leak-3398-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/chibakogyo-bank-smbc-cf-guarantee-data-leak-3398-2026/"
+          ]
+        },
+        {
           "incident_id": "e0bf7f8e71d6ba85",
           "relationship": "affected_by",
           "evidence_url": "https://cybersecurity-jp.com/news/118278",
@@ -12834,7 +12970,7 @@
         }
       ],
       "added_at": "2026-11-11T01:16:17+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-13T01:15:28+00:00"
     },
     {
       "id": "5fa1320f5cec460c",
@@ -14202,6 +14338,14 @@
           ]
         },
         {
+          "incident_id": "72feb59cd0405905",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/chibakogyo-bank-smbc-cf-guarantee-data-leak-3398-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/chibakogyo-bank-smbc-cf-guarantee-data-leak-3398-2026/"
+          ]
+        },
+        {
           "incident_id": "77e208ace41d8629",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxbWdPb0ktYzdFNncyaG9pXzV1b1ZLeEh2UXhoMzVUQTBkaFQ1dHRTUk4xUlNwSFNya3FOcEx1dzBObngxRTdaYjBIY2xSTzA?oc=5",
@@ -14279,7 +14423,7 @@
       "affected_service": "保証業務に使っているシステム",
       "service_aliases": [],
       "added_at": "2026-11-05T11:16:39+00:00",
-      "updated_at": "2026-11-12T07:15:39+00:00"
+      "updated_at": "2026-11-13T01:15:28+00:00"
     },
     {
       "id": "3976a3e35b3d87f6",
@@ -18750,6 +18894,14 @@
           ]
         },
         {
+          "incident_id": "df8ab3e2aea96fe2",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/ja-kyosai-pcs-road-service-data-leak-2-85-million-20261112/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/ja-kyosai-pcs-road-service-data-leak-2-85-million-20261112/"
+          ]
+        },
+        {
           "incident_id": "e04510b5cc7cd2b5",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQMGREdWdTRF9nUC12Q29Ia050MTBGRjQ2RUFJUVpsdkJ6SkYwdF84Z29sdVhoWmY0QW9fdWFzNHNSckc5M3VWOTBadGNHODBVWW4tamJHOVVHVWc4ek9Na0wxSHNYV2tYWVJUN2dJblpMU0tvRERJLWNDeV94eDZsQ3BaajBDaEZTX3lpNlF2a1UxQS1Ndjd3Nk9zZFJLWEd0TW0xY1ZfTl9BUzNZMXJn?oc=5",
@@ -18836,7 +18988,7 @@
       "affected_service": "ロードサービス等の受付・手配業務に使用する業務システム",
       "service_aliases": [],
       "added_at": "2026-11-02T10:00:14+00:00",
-      "updated_at": "2026-11-12T09:15:21+00:00"
+      "updated_at": "2026-11-13T01:15:28+00:00"
     },
     {
       "id": "169f51ce1c38ad8b",
@@ -21700,6 +21852,14 @@
           ]
         },
         {
+          "incident_id": "9c107e053372c3fc",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.matsudo.chiba.jp/shisei/keikaku-kousou/digital/online-sinsei.html",
+          "evidence_urls": [
+            "https://www.city.matsudo.chiba.jp/shisei/keikaku-kousou/digital/online-sinsei.html"
+          ]
+        },
+        {
           "incident_id": "a0d8c4de6432447d",
           "relationship": "affects",
           "evidence_url": "https://www.pref.toyama.jp/1705/kensei/kouhou/houdou/2026/1030_shoene.html",
@@ -22189,7 +22349,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-12T22:15:17+00:00"
+      "updated_at": "2026-11-13T01:15:28+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
