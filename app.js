@@ -18,10 +18,11 @@ function replaceContent(node, children) {
 
 const copy = {
   es: {
+    ingestionDate: "Fecha de incorporación al índice; no se conocen las fechas del incidente ni de publicación.",
     linkageMap: 'Mapa de relaciones',
     recentOnly: "Añadidos o actualizados en las últimas 24 horas", recentHelp: "Según cuándo se añadió o modificó un incidente en este índice, no cuándo ocurrió.",
     sourceLimitDisclaimer: "Las noticias se añaden mientras el incidente tenga menos de 6 fuentes confirmadas. Los comunicados verificados emitidos por la organización afectada pueden superar este límite y aparecen primero. Se conservan las fuentes anteriores.",
-    dateDisclaimer: "La fecha corresponde al incidente o, si se desconoce, a su publicación.",
+    dateDisclaimer: "Se usa la fecha del incidente; si falta, la de publicación; y si ambas faltan, la de incorporación al índice (*).",
     supporters: "Colaboradores",
     confidenceDisclaimer: "La confianza ordena las fuentes así: comunicados verificados de la organización afectada o de su empresa matriz, 90; TDnet/JPX TDnet, 80; PR TIMES, 70; prensa general o especializada, 50; agregadores, 35; otras fuentes, 30; redes sociales, 10; sin fuentes, 0. Alta: 60 o más; media: 30–59; baja: menos de 30. Los comunicados alojados en TDnet o PR TIMES conservan la puntuación de esa plataforma. La fuente aceptada de mayor rango determina el resultado; las copias, los dominios adicionales y las fuentes añadidas manualmente no suman puntos por sí solos. La puntuación refleja la autoridad de las fuentes, no la gravedad ni una probabilidad de exactitud. Compruebe las fuentes enlazadas.",
     eyebrow: "ÍNDICE DE INCIDENTES DE CÓDIGO ABIERTO",
@@ -60,13 +61,14 @@ const copy = {
     evidence: (number) => `Prueba ${number}`
   },
   en: {
+    ingestionDate: "Ingestion date; incident and publication dates unavailable.",
     linkageMap: 'Linkage map',
     recentOnly: "Added or updated in the last 24 hours", recentHelp: "Based on when an incident was added to or changed in this index, not when it occurred.",
     sourceLimitDisclaimer: "Ordinary reports are added while an incident has fewer than 6 confirmed sources. Verified releases issued by the affected organization can exceed this limit and appear first. Older references are preserved.",
     disclosureDate: "Disclosure date; occurrence unknown", discoveryDate: "Discovery / notification date",
     affectedOrganization: "Affected organization", upstreamIncident: "Upstream incident", whyLinked: "Why linked?",
     evidence: (number) => `Evidence ${number}`,
-    dateDisclaimer: "Date shows the incident date, or the reported date when the incident date is unavailable.",
+    dateDisclaimer: "Date uses the incident date, then publication date, then ingestion date (*), in that order.",
     supporters: "Supporters",
     confidenceDisclaimer: "Confidence ranks sources as follows: verified disclosures from the affected organization or its parent company, 90; TDnet/JPX TDnet, 80; PR TIMES, 70; news/security press, 50; aggregators, 35; other sources, 30; social media, 10; no sources, 0. High: 60 or more; Medium: 30–59; Low: below 30. Releases hosted on TDnet or PR TIMES retain that platform’s tier. The strongest accepted source sets the score; copies, additional domains, and manual source additions do not earn points by themselves. This measures source authority, not incident severity or a probability of accuracy. Verify the linked sources.",
     eyebrow: "OPEN-SOURCE INCIDENT INDEX",
@@ -121,13 +123,14 @@ const copy = {
     levels: { high: "High", medium: "Medium", low: "Low" }
   },
   ja: {
+    ingestionDate: "事案日・公表日が不明なため収集日を使用しています。",
     linkageMap: '関連マップ',
     recentOnly: "過去24時間に追加・更新された事案のみ", recentHelp: "インシデントの発生日ではなく、この一覧への追加・更新日時に基づきます。",
     sourceLimitDisclaimer: "通常の報道は確認済み情報源が6件未満の場合に追加します。被害組織自身が発表したと確認できる公式リリースは上限を超えて追加し、先頭に表示します。既存の情報源は保持します。",
     disclosureDate: "公表日（発生日不明）", discoveryDate: "発覚・通知日",
     affectedOrganization: "影響を受けた組織", upstreamIncident: "影響の起点となる事案", whyLinked: "関連の根拠",
     evidence: (number) => `根拠 ${number}`,
-    dateDisclaimer: "日付はインシデントの日付を示し、不明な場合は報道・発表された日付を使用します。",
+    dateDisclaimer: "日付は事案日、不明な場合は公表日、いずれも不明な場合は収集日（*）を使用します。",
     supporters: "サポーター",
     confidenceDisclaimer: "信頼度は、被害組織または親会社による確認済みの発表を90点、TDnet／JPX TDnetを80点、PR TIMESを70点、報道・セキュリティ専門メディアを50点、情報集約サイトを35点、その他を30点、SNSを10点、情報源なしを0点とします。高：60点以上／中：30〜59点／低：30点未満。TDnetやPR TIMESに掲載された発表には、その配信サイトの点数を適用します。採用済みの情報源のうち最も高い点数を使い、転載、ドメイン数の増加、手動での情報源追加だけでは加点しません。点数は情報源の権威性を示し、被害の深刻度や正確である確率ではありません。リンク先の情報源をご確認ください。",
     eyebrow: "公開情報に基づくインシデント一覧",
@@ -462,6 +465,11 @@ function incidentRow(incident) {
   date.className = "date-cell";
   date.dataset.label = text("date");
   date.textContent = formatDate(incident.published_at);
+  if (incident.date_basis === "ingestion") {
+    const marker = document.createElement("sup"); marker.className = "ingestion-date-marker";
+    marker.textContent = "*"; marker.title = text("ingestionDate");
+    marker.setAttribute("aria-label", text("ingestionDate")); date.append(marker);
+  }
   if (incident.date_basis === "disclosure" || incident.date_basis === "discovery_notification") {
     const basis = document.createElement("small"); basis.className = "disclosure-date";
     basis.textContent = text(incident.date_basis === "disclosure" ? "disclosureDate" : "discoveryDate");
