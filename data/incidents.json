@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-13T13:17:15+00:00",
-  "total": 1194,
+  "updated_at": "2026-11-13T14:16:28+00:00",
+  "total": 1196,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-13"
@@ -366,7 +366,7 @@
     },
     {
       "date": "2026-11-13",
-      "count": 13
+      "count": 15
     }
   ],
   "incidents": [
@@ -576,6 +576,42 @@
       "updated_at": "2026-11-13T12:16:47+00:00"
     },
     {
+      "id": "f0c3afc53d576603",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "八戸市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.hachinohe.aomori.jp/kurashi_tetsuzuki/koseki_juminhyo/mynumber/27016.html",
+          "evidence_urls": [
+            "https://www.city.hachinohe.aomori.jp/kurashi_tetsuzuki/koseki_juminhyo/mynumber/27016.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "八戸市",
+          "url": "https://www.city.hachinohe.aomori.jp/kurashi_tetsuzuki/koseki_juminhyo/mynumber/27016.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "マイナンバーカード交付予約・管理システム",
+      "service_aliases": [],
+      "added_at": "2026-11-13T14:16:28+00:00",
+      "updated_at": "2026-11-13T14:16:28+00:00"
+    },
+    {
       "id": "83583b116cd04352",
       "published_at": "2026-11-12T15:00:00+00:00",
       "disclosed_at": null,
@@ -647,14 +683,20 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261113580181/"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC13B0E0T11C26A1000000/"
         }
       ],
       "affected_system": null,
       "date_basis": "discovery",
       "affected_service": "KARTE",
-      "service_aliases": [],
+      "service_aliases": [
+        "カルテ"
+      ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-13T13:17:15+00:00"
+      "updated_at": "2026-11-13T14:16:28+00:00"
     },
     {
       "id": "d06a6425729b87b6",
@@ -689,6 +731,42 @@
       "date_basis": "publication",
       "added_at": "2026-11-13T13:17:15+00:00",
       "updated_at": "2026-11-13T13:17:15+00:00"
+    },
+    {
+      "id": "2b069423aa73b2fc",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ロイヤルホテル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 8000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUF136VA0T11C26A1000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUF136VA0T11C26A1000000/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUF136VA0T11C26A1000000/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "メールマガジン",
+      "service_aliases": [],
+      "added_at": "2026-11-13T14:16:28+00:00",
+      "updated_at": "2026-11-13T14:16:28+00:00"
     },
     {
       "id": "77a23dba97c3a282",
@@ -1444,12 +1522,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/7ddc9da48a535060c002c1df329e859e2faad2a9"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6b8260687f39100dddb06ec8e6672d6468a84568"
         }
       ],
       "affected_service": "TSSサンフレッチェ広島公式モバイルサイト",
       "service_aliases": [],
       "added_at": "2026-11-13T06:15:30+00:00",
-      "updated_at": "2026-11-13T06:15:30+00:00"
+      "updated_at": "2026-11-13T14:16:28+00:00"
     },
     {
       "id": "26c761f006cef9e6",
@@ -1760,10 +1842,14 @@
         {
           "name": "本田技研工業 / Honda",
           "url": "https://global.honda/jp/news/2026/c261113.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/dde8b5c910caee77193a333a76b0fd1dd2e9a9d2?source=rss"
         }
       ],
       "added_at": "2026-11-13T07:15:40+00:00",
-      "updated_at": "2026-11-13T07:15:40+00:00"
+      "updated_at": "2026-11-13T14:16:28+00:00"
     },
     {
       "id": "600545e2cdc0914b",
@@ -14181,8 +14267,9 @@
       "published_at": "2026-11-02T15:00:00+00:00",
       "disclosed_at": "2026-11-02T15:00:00+00:00",
       "organization": "ハンゲ",
-      "incident_type": "unauthorized access",
+      "incident_type": "data leak",
       "incident_categories": [
+        "data leak",
         "unauthorized access"
       ],
       "potential_records": null,
@@ -14193,10 +14280,14 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/hange-unauthorized-access-emergency-maintenance/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/hange-ensapia-20261113-fourth-report-password-hashes-card-data-lea/"
         }
       ],
       "added_at": "2026-11-04T03:16:06+00:00",
-      "updated_at": "2026-11-04T03:16:06+00:00"
+      "updated_at": "2026-11-13T14:16:28+00:00"
     },
     {
       "id": "cff2b19ef6f0d60b",
@@ -17816,6 +17907,14 @@
             "https://lgpos.task-asp.net/cu/271004/ea/residents/portal/notice/2/4e963c8c-0ad5-f111-bafe-0050568e04c4/detail",
             "https://www.asahi.com/articles/ASVC31SSBVC3UCVL009M.html"
           ]
+        },
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.yomiuri.co.jp/national/20261113-GYT1T00343/",
+          "evidence_urls": [
+            "https://www.yomiuri.co.jp/national/20261113-GYT1T00343/"
+          ]
         }
       ],
       "sources": [
@@ -17826,6 +17925,10 @@
         {
           "name": "大阪市 / Osaka",
           "url": "https://www.city.osaka.lg.jp/ictsenryakushitsu/page/0000509799.html"
+        },
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/national/20261113-GYT1T00343/"
         },
         {
           "name": "news.yahoo.co.jp",
@@ -17855,7 +17958,7 @@
       "affected_service": "行政オンラインシステム",
       "service_aliases": [],
       "added_at": "2026-11-03T06:05:56+00:00",
-      "updated_at": "2026-11-13T13:17:15+00:00"
+      "updated_at": "2026-11-13T14:16:28+00:00"
     },
     {
       "id": "747ff37bca4130bd",
@@ -23110,6 +23213,14 @@
           ]
         },
         {
+          "incident_id": "2b069423aa73b2fc",
+          "relationship": "affects",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUF136VA0T11C26A1000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUF136VA0T11C26A1000000/"
+          ]
+        },
+        {
           "incident_id": "2b25cef2acb2ad08",
           "relationship": "affects",
           "evidence_url": "https://www.release.tdnet.info/inbs/140120261104564321.pdf",
@@ -24063,6 +24174,14 @@
           ]
         },
         {
+          "incident_id": "d1625f0ac45d3d6b",
+          "relationship": "affects",
+          "evidence_url": "https://www.yomiuri.co.jp/national/20261113-GYT1T00343/",
+          "evidence_urls": [
+            "https://www.yomiuri.co.jp/national/20261113-GYT1T00343/"
+          ]
+        },
+        {
           "incident_id": "d25e97a3448ca2da",
           "relationship": "affects",
           "evidence_url": "https://netshop.impress.co.jp/n/2026/11/09/17000",
@@ -24231,6 +24350,14 @@
           ]
         },
         {
+          "incident_id": "f0c3afc53d576603",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.hachinohe.aomori.jp/kurashi_tetsuzuki/koseki_juminhyo/mynumber/27016.html",
+          "evidence_urls": [
+            "https://www.city.hachinohe.aomori.jp/kurashi_tetsuzuki/koseki_juminhyo/mynumber/27016.html"
+          ]
+        },
+        {
           "incident_id": "f60345dbc9464f48",
           "relationship": "affects",
           "evidence_url": "https://www.toyo.ac.jp/news/20261111-20555.html",
@@ -24311,7 +24438,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-13T13:17:15+00:00"
+      "updated_at": "2026-11-13T14:16:28+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -42183,6 +42310,18 @@
         {
           "name": "PR TIMES",
           "url": "https://prtimes.jp/main/html/rd/p/000000595.000005159.html"
+        },
+        {
+          "name": "Impress Watch",
+          "url": "https://www.watch.impress.co.jp/docs/news/2156455.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/933cbba37c5f5faa82ee50fd05cd62c7d1f99b86"
+        },
+        {
+          "name": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2156446.html"
         }
       ],
       "affected_system": null,
@@ -42190,7 +42329,7 @@
       "affected_service": "口座開設システム",
       "service_aliases": [],
       "added_at": "2026-11-13T12:16:47+00:00",
-      "updated_at": "2026-11-13T12:16:47+00:00"
+      "updated_at": "2026-11-13T14:16:28+00:00"
     },
     {
       "id": "4468d7a7262d01e6",
