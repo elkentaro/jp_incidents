@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-14T06:15:26+00:00",
-  "total": 1217,
+  "updated_at": "2026-11-14T07:15:25+00:00",
+  "total": 1220,
   "date_range": {
     "start": "2025-10-16",
     "end": "2026-11-14"
@@ -366,7 +366,7 @@
     },
     {
       "date": "2026-11-14",
-      "count": 2
+      "count": 5
     }
   ],
   "incidents": [
@@ -405,6 +405,86 @@
       "service_aliases": [],
       "added_at": "2026-11-13T22:16:19+00:00",
       "updated_at": "2026-11-13T22:16:19+00:00"
+    },
+    {
+      "id": "66a4062b603a134d",
+      "published_at": "2026-11-13T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "河南町",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 372,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/3451623933d289e5f817605a57b53beb1597bf29"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "かなん安全安心メール",
+      "service_aliases": [],
+      "added_at": "2026-11-14T07:15:25+00:00",
+      "updated_at": "2026-11-14T07:15:25+00:00"
+    },
+    {
+      "id": "9d56c8eaf1b10768",
+      "published_at": "2026-11-13T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ちいかわマーケット",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b132e9deeeeb6ca99223c22bff79af9bcb78fb8a"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "ちいかわくじ",
+      "service_aliases": [],
+      "added_at": "2026-11-14T07:15:25+00:00",
+      "updated_at": "2026-11-14T07:15:25+00:00"
+    },
+    {
+      "id": "aa6c8299d2e5de67",
+      "published_at": "2026-11-13T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大阪府",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 12,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/3451623933d289e5f817605a57b53beb1597bf29"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "物価高騰対策事業の申請システム",
+      "service_aliases": [],
+      "added_at": "2026-11-14T07:15:25+00:00",
+      "updated_at": "2026-11-14T07:15:25+00:00"
     },
     {
       "id": "4bee839fdffa3e78",
@@ -459,12 +539,32 @@
           "url": "https://www.keisei.co.jp/cms/files/keisei/MASTER/0110/OVIfkjTf.pdf"
         },
         {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/e6a8ed8f4c31c1b1505afe00f91d84ea02fe4dc8"
+        },
+        {
+          "name": "京成電鉄 / Keisei Electric Railway",
+          "url": "https://www.keisei.co.jp/cms/files/keisei/MASTER/0110/zDQUntkx.pdf"
+        },
+        {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUC13CBJ0T11C26A1000000/"
         },
         {
           "name": "京成電鉄 / Keisei Electric Railway",
           "url": "https://new-www.keisei.co.jp/cms/files/keisei/MASTER/0110/OVIfkjTf.pdf"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/8d108dd716f87d10766c8c0e09b14f6161ddb511"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3086061?display=1"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/50f7ebc42b8d2d6f66dce3f7ea8808855030c5d7"
         }
       ],
       "affected_system": null,
@@ -472,7 +572,7 @@
       "affected_service": "スカイライナーチケットレスサービス",
       "service_aliases": [],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-14T00:16:05+00:00"
+      "updated_at": "2026-11-14T07:15:25+00:00"
     },
     {
       "id": "18a371b6c319d3a5",
@@ -933,6 +1033,10 @@
         {
           "name": "NHKニュース",
           "url": "https://news.web.nhk/newsweb/na/nd-20261113de75739"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC140U60U6A111C2000000/"
         }
       ],
       "affected_system": null,
@@ -940,7 +1044,7 @@
       "affected_service": "リフォームの管理システム",
       "service_aliases": [],
       "added_at": "2026-11-14T02:16:04+00:00",
-      "updated_at": "2026-11-14T02:16:04+00:00"
+      "updated_at": "2026-11-14T07:15:25+00:00"
     },
     {
       "id": "77a23dba97c3a282",
@@ -1232,6 +1336,10 @@
         {
           "name": "スノーピーク ＊ Snow Peak",
           "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9OVTZ2dTVxQ2lsTUJiOENwb0tITXlYaTVwbElHb3hkN0VpUEJReWR1X2xXZ2VtRHh4X0RTeHBValYtd3JTVlhWX0dCY3ZJMm9iQTFURThwdw?oc=5"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/snow_peak_four_incidents_reuse_events_community_store_20261113/"
         }
       ],
       "affected_system": null,
@@ -1268,7 +1376,7 @@
         }
       ],
       "added_at": "2026-11-13T21:16:06+00:00",
-      "updated_at": "2026-11-13T21:16:06+00:00"
+      "updated_at": "2026-11-14T07:15:25+00:00"
     },
     {
       "id": "c315588305545d55",
@@ -1677,12 +1785,16 @@
         {
           "name": "47NEWS",
           "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9sZ0NEWWUybERKZ1F0LTRBQWczY2FLN05QUUwtTlVSTVJ0Q05rLTdrNlRPdHFpd25UX1pTNV96OHBod0NtV1o4UnNVOA?oc=5"
+        },
+        {
+          "name": "新潟ニュース NST",
+          "url": "https://news.nsttv.com/post/20261113-00000008-nst/"
         }
       ],
       "affected_service": "にいがた県環境メール",
       "service_aliases": [],
       "added_at": "2026-11-13T07:15:40+00:00",
-      "updated_at": "2026-11-14T00:16:05+00:00"
+      "updated_at": "2026-11-14T07:15:25+00:00"
     },
     {
       "id": "e9088ded1dd0ae6f",
@@ -2474,10 +2586,14 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/dde8b5c910caee77193a333a76b0fd1dd2e9a9d2?source=rss"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/dde8b5c910caee77193a333a76b0fd1dd2e9a9d2"
         }
       ],
       "added_at": "2026-11-13T07:15:40+00:00",
-      "updated_at": "2026-11-13T14:16:28+00:00"
+      "updated_at": "2026-11-14T07:15:25+00:00"
     },
     {
       "id": "600545e2cdc0914b",
@@ -2684,12 +2800,16 @@
         {
           "name": "satimo list",
           "url": "https://rinavis.com/f/notice_20261111"
+        },
+        {
+          "name": "袋井市",
+          "url": "https://www.city.fukuroi.shizuoka.jp/soshiki/brand/brandkakari/furusatonouzei/15097.html"
         }
       ],
       "affected_service": "repica",
       "service_aliases": [],
       "added_at": "2026-11-12T01:16:23+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-14T07:15:25+00:00"
     },
     {
       "id": "cf1fdc0264e4b497",
@@ -2952,6 +3072,54 @@
       "updated_at": "2026-11-13T13:17:15+00:00"
     },
     {
+      "id": "33868e758324fd57",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "京阪電気鉄道",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 26914,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "aa9bc3fcfc85d71d",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE03SHNnSEVZNW9oNVdNYl80S19HblU3YWhpQmtZUk53S3pVbkJRR2xvN1NQZE1OZTh3dUJiYmxXbmk2eml1b1VRRXZzenU0aC1LeWZrRGR6WTU2LWlLU3o1Nk1EOFFfdFRjalFvdjI0R1BRZWY0WUhPRkp6Mk44ZlE?oc=5",
+            "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "京阪ホールディングス / Keihan Holdings",
+          "url": "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVCG1T63VCGPTIL004M.html"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUF140RF0U6A111C2000000/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE03SHNnSEVZNW9oNVdNYl80S19HblU3YWhpQmtZUk53S3pVbkJRR2xvN1NQZE1OZTh3dUJiYmxXbmk2eml1b1VRRXZzenU0aC1LeWZrRGR6WTU2LWlLU3o1Nk1EOFFfdFRjalFvdjI0R1BRZWY0WUhPRkp6Mk44ZlE?oc=5"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "京阪電車ファン情報",
+      "service_aliases": [],
+      "added_at": "2026-11-14T02:16:04+00:00",
+      "updated_at": "2026-11-14T07:15:25+00:00"
+    },
+    {
       "id": "3d90624c0b78c561",
       "published_at": "2026-11-10T15:00:00+00:00",
       "disclosed_at": null,
@@ -3014,6 +3182,64 @@
       ],
       "added_at": "2026-11-11T11:15:53+00:00",
       "updated_at": "2026-11-12T20:15:40+00:00"
+    },
+    {
+      "id": "5c0eb422f93f9087",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "京阪ホテルズ＆リゾーツ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 8742,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "aa9bc3fcfc85d71d",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE03SHNnSEVZNW9oNVdNYl80S19HblU3YWhpQmtZUk53S3pVbkJRR2xvN1NQZE1OZTh3dUJiYmxXbmk2eml1b1VRRXZzenU0aC1LeWZrRGR6WTU2LWlLU3o1Nk1EOFFfdFRjalFvdjI0R1BRZWY0WUhPRkp6Mk44ZlE?oc=5",
+            "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "京阪ホールディングス / Keihan Holdings",
+          "url": "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVCG1T63VCGPTIL004M.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE03SHNnSEVZNW9oNVdNYl80S19HblU3YWhpQmtZUk53S3pVbkJRR2xvN1NQZE1OZTh3dUJiYmxXbmk2eml1b1VRRXZzenU0aC1LeWZrRGR6WTU2LWlLU3o1Nk1EOFFfdFRjalFvdjI0R1BRZWY0WUhPRkp6Mk44ZlE?oc=5"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "THE THOUSAND KYOTO / 京都センチュリーホテル",
+      "service_aliases": [],
+      "affected_services": [
+        "THE THOUSAND KYOTO",
+        "京都センチュリーホテル"
+      ],
+      "service_details": [
+        {
+          "name": "THE THOUSAND KYOTO",
+          "aliases": []
+        },
+        {
+          "name": "京都センチュリーホテル",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-14T02:16:04+00:00",
+      "updated_at": "2026-11-14T07:15:25+00:00"
     },
     {
       "id": "7758375381d0f124",
@@ -3189,23 +3415,24 @@
       "updated_at": "2026-11-13T09:15:19+00:00"
     },
     {
-      "id": "33868e758324fd57",
+      "id": "f3ae73f09aab4a41",
       "published_at": "2026-11-10T15:00:00+00:00",
       "disclosed_at": null,
-      "organization": "京阪電気鉄道",
+      "organization": "京阪百貨店",
       "incident_type": "data leak",
       "incident_categories": [
         "data leak"
       ],
-      "potential_records": 26914,
+      "potential_records": 51223,
       "confidence": "medium",
-      "confidence_score": 30,
+      "confidence_score": 50,
       "related": [
         {
           "incident_id": "aa9bc3fcfc85d71d",
           "relationship": "affected_by",
           "evidence_url": "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf",
           "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE03SHNnSEVZNW9oNVdNYl80S19HblU3YWhpQmtZUk53S3pVbkJRR2xvN1NQZE1OZTh3dUJiYmxXbmk2eml1b1VRRXZzenU0aC1LeWZrRGR6WTU2LWlLU3o1Nk1EOFFfdFRjalFvdjI0R1BRZWY0WUhPRkp6Mk44ZlE?oc=5",
             "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf"
           ]
         }
@@ -3214,14 +3441,84 @@
         {
           "name": "京阪ホールディングス / Keihan Holdings",
           "url": "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVCG1T63VCGPTIL004M.html"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUF140RF0U6A111C2000000/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE03SHNnSEVZNW9oNVdNYl80S19HblU3YWhpQmtZUk53S3pVbkJRR2xvN1NQZE1OZTh3dUJiYmxXbmk2eml1b1VRRXZzenU0aC1LeWZrRGR6WTU2LWlLU3o1Nk1EOFFfdFRjalFvdjI0R1BRZWY0WUhPRkp6Mk44ZlE?oc=5"
         }
       ],
       "affected_system": null,
       "date_basis": "discovery",
-      "affected_service": "京阪電車ファン情報",
+      "affected_service": "京阪百貨店",
       "service_aliases": [],
       "added_at": "2026-11-14T02:16:04+00:00",
-      "updated_at": "2026-11-14T02:16:04+00:00"
+      "updated_at": "2026-11-14T07:15:25+00:00"
+    },
+    {
+      "id": "fbd899922a264c24",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "京阪流通システムズ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 90550,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "aa9bc3fcfc85d71d",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE03SHNnSEVZNW9oNVdNYl80S19HblU3YWhpQmtZUk53S3pVbkJRR2xvN1NQZE1OZTh3dUJiYmxXbmk2eml1b1VRRXZzenU0aC1LeWZrRGR6WTU2LWlLU3o1Nk1EOFFfdFRjalFvdjI0R1BRZWY0WUhPRkp6Mk44ZlE?oc=5",
+            "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "京阪ホールディングス / Keihan Holdings",
+          "url": "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVCG1T63VCGPTIL004M.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE03SHNnSEVZNW9oNVdNYl80S19HblU3YWhpQmtZUk53S3pVbkJRR2xvN1NQZE1OZTh3dUJiYmxXbmk2eml1b1VRRXZzenU0aC1LeWZrRGR6WTU2LWlLU3o1Nk1EOFFfdFRjalFvdjI0R1BRZWY0WUhPRkp6Mk44ZlE?oc=5"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "京都タワーサンド / 枚方モール",
+      "service_aliases": [],
+      "affected_services": [
+        "京都タワーサンド",
+        "枚方モール"
+      ],
+      "service_details": [
+        {
+          "name": "京都タワーサンド",
+          "aliases": []
+        },
+        {
+          "name": "枚方モール",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-14T02:16:04+00:00",
+      "updated_at": "2026-11-14T07:15:25+00:00"
     },
     {
       "id": "3fb461ca8b11e282",
@@ -3269,55 +3566,6 @@
       ],
       "added_at": "2026-11-11T21:16:42+00:00",
       "updated_at": "2026-11-11T21:16:42+00:00"
-    },
-    {
-      "id": "5c0eb422f93f9087",
-      "published_at": "2026-11-10T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "京阪ホテルズ＆リゾーツ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 8742,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "aa9bc3fcfc85d71d",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf",
-          "evidence_urls": [
-            "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "京阪ホールディングス / Keihan Holdings",
-          "url": "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "discovery",
-      "affected_service": "THE THOUSAND KYOTO / 京都センチュリーホテル",
-      "service_aliases": [],
-      "affected_services": [
-        "THE THOUSAND KYOTO",
-        "京都センチュリーホテル"
-      ],
-      "service_details": [
-        {
-          "name": "THE THOUSAND KYOTO",
-          "aliases": []
-        },
-        {
-          "name": "京都センチュリーホテル",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-14T02:16:04+00:00",
-      "updated_at": "2026-11-14T02:16:04+00:00"
     },
     {
       "id": "674fc8cb330376ee",
@@ -3508,90 +3756,6 @@
       ],
       "added_at": "2026-11-13T08:15:22+00:00",
       "updated_at": "2026-11-13T08:15:22+00:00"
-    },
-    {
-      "id": "f3ae73f09aab4a41",
-      "published_at": "2026-11-10T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "京阪百貨店",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 51223,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "aa9bc3fcfc85d71d",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf",
-          "evidence_urls": [
-            "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "京阪ホールディングス / Keihan Holdings",
-          "url": "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "discovery",
-      "affected_service": "京阪百貨店",
-      "service_aliases": [],
-      "added_at": "2026-11-14T02:16:04+00:00",
-      "updated_at": "2026-11-14T02:16:04+00:00"
-    },
-    {
-      "id": "fbd899922a264c24",
-      "published_at": "2026-11-10T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "京阪流通システムズ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 90550,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "aa9bc3fcfc85d71d",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf",
-          "evidence_urls": [
-            "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "京阪ホールディングス / Keihan Holdings",
-          "url": "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "discovery",
-      "affected_service": "京都タワーサンド / 枚方モール",
-      "service_aliases": [],
-      "affected_services": [
-        "京都タワーサンド",
-        "枚方モール"
-      ],
-      "service_details": [
-        {
-          "name": "京都タワーサンド",
-          "aliases": []
-        },
-        {
-          "name": "枚方モール",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-14T02:16:04+00:00",
-      "updated_at": "2026-11-14T02:16:04+00:00"
     },
     {
       "id": "03e4b56172ce7769",
@@ -6645,10 +6809,14 @@
         {
           "name": "上越妙高タウン情報",
           "url": "https://joetsu.yukiguni.town/l-news/342156/"
+        },
+        {
+          "name": "上越タウンジャーナル",
+          "url": "https://www.joetsutj.com/2026/11/13/110621"
         }
       ],
       "added_at": "2026-11-09T09:16:47+00:00",
-      "updated_at": "2026-11-13T07:15:40+00:00"
+      "updated_at": "2026-11-14T07:15:25+00:00"
     },
     {
       "id": "ee1fd6e381399c9d",
@@ -31615,6 +31783,7 @@
           "relationship": "affects",
           "evidence_url": "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf",
           "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE03SHNnSEVZNW9oNVdNYl80S19HblU3YWhpQmtZUk53S3pVbkJRR2xvN1NQZE1OZTh3dUJiYmxXbmk2eml1b1VRRXZzenU0aC1LeWZrRGR6WTU2LWlLU3o1Nk1EOFFfdFRjalFvdjI0R1BRZWY0WUhPRkp6Mk44ZlE?oc=5",
             "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf"
           ]
         },
@@ -31631,6 +31800,7 @@
           "relationship": "affects",
           "evidence_url": "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf",
           "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE03SHNnSEVZNW9oNVdNYl80S19HblU3YWhpQmtZUk53S3pVbkJRR2xvN1NQZE1OZTh3dUJiYmxXbmk2eml1b1VRRXZzenU0aC1LeWZrRGR6WTU2LWlLU3o1Nk1EOFFfdFRjalFvdjI0R1BRZWY0WUhPRkp6Mk44ZlE?oc=5",
             "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf"
           ]
         },
@@ -31671,6 +31841,7 @@
           "relationship": "affects",
           "evidence_url": "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf",
           "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE03SHNnSEVZNW9oNVdNYl80S19HblU3YWhpQmtZUk53S3pVbkJRR2xvN1NQZE1OZTh3dUJiYmxXbmk2eml1b1VRRXZzenU0aC1LeWZrRGR6WTU2LWlLU3o1Nk1EOFFfdFRjalFvdjI0R1BRZWY0WUhPRkp6Mk44ZlE?oc=5",
             "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf"
           ]
         },
@@ -31679,6 +31850,7 @@
           "relationship": "affects",
           "evidence_url": "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf",
           "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE03SHNnSEVZNW9oNVdNYl80S19HblU3YWhpQmtZUk53S3pVbkJRR2xvN1NQZE1OZTh3dUJiYmxXbmk2eml1b1VRRXZzenU0aC1LeWZrRGR6WTU2LWlLU3o1Nk1EOFFfdFRjalFvdjI0R1BRZWY0WUhPRkp6Mk44ZlE?oc=5",
             "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf"
           ]
         }
@@ -31717,7 +31889,7 @@
         }
       ],
       "added_at": "2026-10-27T07:15:28+00:00",
-      "updated_at": "2026-11-14T02:16:04+00:00"
+      "updated_at": "2026-11-14T07:15:25+00:00"
     },
     {
       "id": "af7b771bb23be504",
