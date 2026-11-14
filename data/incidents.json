@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-14T19:15:15+00:00",
+  "updated_at": "2026-11-14T20:16:02+00:00",
   "total": 1224,
   "date_range": {
     "start": "2023-12-24",
@@ -371,6 +371,46 @@
   ],
   "incidents": [
     {
+      "id": "9d56c8eaf1b10768",
+      "published_at": "2026-11-13T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ちいかわマーケット",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "57d15baf7435e548",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/b132e9deeeeb6ca99223c22bff79af9bcb78fb8a",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/b132e9deeeeb6ca99223c22bff79af9bcb78fb8a"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "ちいかわマーケット",
+          "url": "https://online-kuji.chiikawamarket.jp/store/notification/92483fef-e205-427f-8b4d-8c26b0f6d1db"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b132e9deeeeb6ca99223c22bff79af9bcb78fb8a"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "ちいかわくじ",
+      "service_aliases": [],
+      "added_at": "2026-11-14T07:15:25+00:00",
+      "updated_at": "2026-11-14T20:16:02+00:00"
+    },
+    {
       "id": "307eba6e291c0389",
       "published_at": "2026-11-13T15:00:00+00:00",
       "disclosed_at": null,
@@ -431,42 +471,6 @@
       "service_aliases": [],
       "added_at": "2026-11-14T07:15:25+00:00",
       "updated_at": "2026-11-14T07:15:25+00:00"
-    },
-    {
-      "id": "9d56c8eaf1b10768",
-      "published_at": "2026-11-13T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ちいかわマーケット",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "57d15baf7435e548",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/b132e9deeeeb6ca99223c22bff79af9bcb78fb8a",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/b132e9deeeeb6ca99223c22bff79af9bcb78fb8a"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/b132e9deeeeb6ca99223c22bff79af9bcb78fb8a"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "publication",
-      "affected_service": "ちいかわくじ",
-      "service_aliases": [],
-      "added_at": "2026-11-14T07:15:25+00:00",
-      "updated_at": "2026-11-14T19:15:15+00:00"
     },
     {
       "id": "aa6c8299d2e5de67",
