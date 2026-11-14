@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-14T08:15:34+00:00",
+  "updated_at": "2026-11-14T09:15:22+00:00",
   "total": 1220,
   "date_range": {
     "start": "2025-10-16",
@@ -639,6 +639,103 @@
       "updated_at": "2026-11-13T13:17:15+00:00"
     },
     {
+      "id": "61ae21551c726eee",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ヤマダデンキ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 3500000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "4aa0b50acb6d2b97",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.web.nhk/newsweb/na/nd-20261113de75739",
+          "evidence_urls": [
+            "https://news.web.nhk/newsweb/na/nd-20261113de75739"
+          ]
+        },
+        {
+          "incident_id": "f772b3d33bd13864",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.web.nhk/newsweb/na/nd-20261113de75739",
+          "evidence_urls": [
+            "https://news.web.nhk/newsweb/na/nd-20261113de75739"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://www.yamada-denki.jp/information/pdf/261113_1.pdf"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261113de75739"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC140U60U6A111C2000000/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "リフォームの管理システム",
+      "service_aliases": [],
+      "added_at": "2026-11-14T02:16:04+00:00",
+      "updated_at": "2026-11-14T09:15:22+00:00"
+    },
+    {
+      "id": "8cf67a97b55e1d57",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "プレイド",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://status.karte.io/incidents/rs1gsmckc197"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261113580181.pdf"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261113580181/"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC13B0E0T11C26A1000000/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/54eb1d7f5c63b9ee2dcc148d54284272cd8c1775"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "KARTE",
+      "service_aliases": [
+        "カルテ"
+      ],
+      "added_at": "2026-11-13T13:17:15+00:00",
+      "updated_at": "2026-11-14T09:15:22+00:00"
+    },
+    {
       "id": "9f04a00959566f37",
       "published_at": "2026-11-12T15:00:00+00:00",
       "disclosed_at": null,
@@ -893,46 +990,6 @@
       "updated_at": "2026-11-13T09:15:19+00:00"
     },
     {
-      "id": "8cf67a97b55e1d57",
-      "published_at": "2026-11-12T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "プレイド",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 80,
-      "related": [],
-      "sources": [
-        {
-          "name": "日本取引所グループ TDnet / JPX TDnet",
-          "url": "https://www.release.tdnet.info/inbs/140120261113580181.pdf"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261113580181/"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUC13B0E0T11C26A1000000/"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/54eb1d7f5c63b9ee2dcc148d54284272cd8c1775"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "discovery",
-      "affected_service": "KARTE",
-      "service_aliases": [
-        "カルテ"
-      ],
-      "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-13T20:16:21+00:00"
-    },
-    {
       "id": "d06a6425729b87b6",
       "published_at": "2026-11-12T15:00:00+00:00",
       "disclosed_at": null,
@@ -1001,54 +1058,6 @@
       "service_aliases": [],
       "added_at": "2026-11-13T14:16:28+00:00",
       "updated_at": "2026-11-13T14:16:28+00:00"
-    },
-    {
-      "id": "61ae21551c726eee",
-      "published_at": "2026-11-12T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ヤマダデンキ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 3500000,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "4aa0b50acb6d2b97",
-          "relationship": "same_organization",
-          "evidence_url": "https://news.web.nhk/newsweb/na/nd-20261113de75739",
-          "evidence_urls": [
-            "https://news.web.nhk/newsweb/na/nd-20261113de75739"
-          ]
-        },
-        {
-          "incident_id": "f772b3d33bd13864",
-          "relationship": "same_organization",
-          "evidence_url": "https://news.web.nhk/newsweb/na/nd-20261113de75739",
-          "evidence_urls": [
-            "https://news.web.nhk/newsweb/na/nd-20261113de75739"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "NHKニュース",
-          "url": "https://news.web.nhk/newsweb/na/nd-20261113de75739"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUC140U60U6A111C2000000/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "publication",
-      "affected_service": "リフォームの管理システム",
-      "service_aliases": [],
-      "added_at": "2026-11-14T02:16:04+00:00",
-      "updated_at": "2026-11-14T07:15:25+00:00"
     },
     {
       "id": "77a23dba97c3a282",
@@ -1871,10 +1880,14 @@
         {
           "name": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2026/11/12/56754.html"
+        },
+        {
+          "name": "legalagent list",
+          "url": "https://www.meijigakuin.ac.jp/news/10265.html"
         }
       ],
       "added_at": "2026-11-12T00:15:58+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-14T09:15:22+00:00"
     },
     {
       "id": "19c524f25e7331d5",
@@ -4150,6 +4163,10 @@
           "url": "https://www.dentsudigital.co.jp/news/updates/services/2026-1111-001111"
         },
         {
+          "name": "legalagent list",
+          "url": "https://www.dentsudigital.co.jp/news/updates/services/2026-1112-001112"
+        },
+        {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/dentsu_digital_tonariwa_unauthorized_access_20261111/"
         },
@@ -4171,7 +4188,7 @@
         "トナリワ"
       ],
       "added_at": "2026-11-11T09:15:59+00:00",
-      "updated_at": "2026-11-12T19:15:15+00:00"
+      "updated_at": "2026-11-14T09:15:22+00:00"
     },
     {
       "id": "8fb0d1022527dbd9",
@@ -11072,6 +11089,10 @@
           "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261112575882/"
         },
         {
+          "name": "legalagent list",
+          "url": "https://www.cscloud.co.jp/news/info/20261112-2/"
+        },
+        {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261112575882.pdf"
         },
@@ -11097,7 +11118,7 @@
         }
       ],
       "added_at": "2026-11-12T06:16:07+00:00",
-      "updated_at": "2026-11-12T11:15:59+00:00"
+      "updated_at": "2026-11-14T09:15:22+00:00"
     },
     {
       "id": "ce7d32fd4e6c1d66",
@@ -15011,9 +15032,10 @@
         {
           "incident_id": "e0bf7f8e71d6ba85",
           "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/85adcfe5e242b0139561ca3d253820b6184205ad",
+          "evidence_url": "https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/somu/2026/1113denshishinsei.html",
           "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/85adcfe5e242b0139561ca3d253820b6184205ad"
+            "https://news.yahoo.co.jp/articles/85adcfe5e242b0139561ca3d253820b6184205ad",
+            "https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/somu/2026/1113denshishinsei.html"
           ]
         }
       ],
@@ -15025,6 +15047,10 @@
         {
           "name": "横浜市 / Yokohama",
           "url": "https://www.city.yokohama.lg.jp/city-info/gyosei-kansa/yokohamadx/notice/notice20261106.html"
+        },
+        {
+          "name": "legalagent list",
+          "url": "https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/somu/2026/1113denshishinsei.html"
         },
         {
           "name": "news.yahoo.co.jp",
@@ -15050,7 +15076,7 @@
       "affected_service": "電子申請・届出システム",
       "service_aliases": [],
       "added_at": "2026-11-03T11:46:37+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-14T09:15:22+00:00"
     },
     {
       "id": "cc83cfb44abbac15",
@@ -19132,6 +19158,10 @@
           "url": "https://www.yomiuri.co.jp/national/20261113-GYT1T00343/"
         },
         {
+          "name": "legalagent list",
+          "url": "https://www.city.osaka.lg.jp/hodoshiryo/ictsenryakushitsu/0000691472.html"
+        },
+        {
           "name": "news.yahoo.co.jp",
           "url": "https://news.yahoo.co.jp/articles/2ac42ccca5b40dec8a526e2200aeea3dfc02164f"
         },
@@ -19159,7 +19189,7 @@
       "affected_service": "行政オンラインシステム",
       "service_aliases": [],
       "added_at": "2026-11-03T06:05:56+00:00",
-      "updated_at": "2026-11-13T14:16:28+00:00"
+      "updated_at": "2026-11-14T09:15:22+00:00"
     },
     {
       "id": "747ff37bca4130bd",
@@ -19500,6 +19530,10 @@
           "url": "https://cybersecurity-jp.com/news/118177"
         },
         {
+          "name": "legalagent list",
+          "url": "https://www.jnsa.org/dl/annual/20261113.pdf"
+        },
+        {
           "name": "news.yahoo.co.jp",
           "url": "https://news.yahoo.co.jp/articles/7d27c99efa470f0930524fb5e1d58e6088bab8d8"
         },
@@ -19527,7 +19561,7 @@
       "affected_service": "情報セキュリティ理解度チェックサービス",
       "service_aliases": [],
       "added_at": "2026-11-06T05:15:44+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-14T09:15:22+00:00"
     },
     {
       "id": "0b0acaaeb4439273",
@@ -20086,6 +20120,10 @@
           "url": "https://www.anatc-gift.com/news/all-20261030/"
         },
         {
+          "name": "legalagent list",
+          "url": "https://www.anatc.com/pressroom/20261030_02/"
+        },
+        {
           "name": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2026/11/12/56755.html"
         }
@@ -20093,7 +20131,7 @@
       "affected_service": "選べるe-GIFT",
       "service_aliases": [],
       "added_at": "2026-11-02T02:15:58+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-14T09:15:22+00:00"
     },
     {
       "id": "7d4a8e7c0b6678d9",
@@ -21773,6 +21811,10 @@
           "url": "https://monitor.macromill.com/news/20261112-oshirase.html"
         },
         {
+          "name": "legalagent list",
+          "url": "https://www.macromill.com/press/info/20261112.html"
+        },
+        {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/macromill-monitor-317-data-breach-82-bank-accounts-2026/"
         }
@@ -21780,7 +21822,7 @@
       "affected_service": "マクロミル モニタサイト",
       "service_aliases": [],
       "added_at": "2026-11-12T11:15:59+00:00",
-      "updated_at": "2026-11-13T02:15:39+00:00"
+      "updated_at": "2026-11-14T09:15:22+00:00"
     },
     {
       "id": "b4ef9ee1930f77a5",
@@ -25394,9 +25436,10 @@
         {
           "incident_id": "cade75ef66ccbad6",
           "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/85adcfe5e242b0139561ca3d253820b6184205ad",
+          "evidence_url": "https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/somu/2026/1113denshishinsei.html",
           "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/85adcfe5e242b0139561ca3d253820b6184205ad"
+            "https://news.yahoo.co.jp/articles/85adcfe5e242b0139561ca3d253820b6184205ad",
+            "https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/somu/2026/1113denshishinsei.html"
           ]
         },
         {
@@ -25733,7 +25776,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-14T02:16:04+00:00"
+      "updated_at": "2026-11-14T09:15:22+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -27195,6 +27238,43 @@
       "updated_at": "2026-11-12T08:18:15+00:00"
     },
     {
+      "id": "5b98033b51c77bbc",
+      "published_at": "2026-10-26T15:00:00+00:00",
+      "disclosed_at": "2026-11-05T15:00:00+00:00",
+      "organization": "資生堂",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 2515,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://corp.shiseido.com/jp/notice/20261106.html"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/shiseido-fca-skin-analysis-2515-confirmed-data-breach/"
+        },
+        {
+          "name": "WWDJAPAN",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5EclRtSmxhRVIwX1dCWmdZbFhwS2szc0JFM3U4V1g0c05BTXFZOVJsZ053NUg3Zy12VGdFc2UzRXprT0o1WjgzNkVISnNLV19oM2xF?oc=5"
+        },
+        {
+          "name": "Security NEXT",
+          "url": "https://www.security-next.com/192582"
+        }
+      ],
+      "affected_service": "Beauty Alive Circulation Check",
+      "service_aliases": [],
+      "added_at": "2026-11-08T14:16:28+00:00",
+      "updated_at": "2026-11-14T09:15:22+00:00"
+    },
+    {
       "id": "6fb7085ea024fe90",
       "published_at": "2026-10-26T15:00:00+00:00",
       "disclosed_at": null,
@@ -27770,39 +27850,6 @@
       "service_aliases": [],
       "added_at": "2026-10-28T08:16:11+00:00",
       "updated_at": "2026-11-12T07:15:39+00:00"
-    },
-    {
-      "id": "5b98033b51c77bbc",
-      "published_at": "2026-10-26T15:00:00+00:00",
-      "disclosed_at": "2026-11-05T15:00:00+00:00",
-      "organization": "資生堂",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 2515,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/shiseido-fca-skin-analysis-2515-confirmed-data-breach/"
-        },
-        {
-          "name": "WWDJAPAN",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5EclRtSmxhRVIwX1dCWmdZbFhwS2szc0JFM3U4V1g0c05BTXFZOVJsZ053NUg3Zy12VGdFc2UzRXprT0o1WjgzNkVISnNLV19oM2xF?oc=5"
-        },
-        {
-          "name": "Security NEXT",
-          "url": "https://www.security-next.com/192582"
-        }
-      ],
-      "affected_service": "Beauty Alive Circulation Check",
-      "service_aliases": [],
-      "added_at": "2026-11-08T14:16:28+00:00",
-      "updated_at": "2026-11-12T20:15:40+00:00"
     },
     {
       "id": "725512c99939d7b8",
@@ -31140,6 +31187,10 @@
           "url": "https://www.stepgolf.co.jp/news/261107"
         },
         {
+          "name": "legalagent list",
+          "url": "https://www.stepgolf.co.jp/news/261110"
+        },
+        {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/2d07d23ceee8739ab9704593997283fb541bff0c"
         },
@@ -31186,7 +31237,7 @@
         }
       ],
       "added_at": "2026-11-08T12:12:51+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-14T09:15:22+00:00"
     },
     {
       "id": "460925589cd58fb7",
@@ -36296,6 +36347,10 @@
           "url": "https://otspremium.com/news/3008"
         },
         {
+          "name": "legalagent list",
+          "url": "https://otspremium.com/news/3059"
+        },
+        {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/8da51d9071219324484831d7071f7b513adab4e7"
         },
@@ -36321,7 +36376,7 @@
         }
       ],
       "added_at": "2026-10-21T07:57:40+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-14T09:15:22+00:00"
     },
     {
       "id": "658df23c9dccd4ae",
@@ -51207,6 +51262,10 @@
           "url": "https://download.www.sourcenext.com/support/i/2026/1015_1/"
         },
         {
+          "name": "legalagent list",
+          "url": "https://www.sourcenext.com/support/i/2026/1113_info/"
+        },
+        {
           "name": "INTERNET Watch",
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB2VFR0TTNNTTFoeE50Mnl3NC12elBHRERtQjZROFF6SzhMZ0RwMllZQzFMX3pYQUQ2aVhmS0wzQW5oRThNRFBNN3h4Z2l2c0lWRzRQRlV6TUV5cUw3dktXZk45UWcwb3M0ZjBN?oc=5"
         },
@@ -51256,7 +51315,7 @@
         }
       ],
       "added_at": "2026-10-19T08:49:15+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-14T09:15:22+00:00"
     },
     {
       "id": "8e0cae045c5f5427",
@@ -53119,6 +53178,46 @@
       "updated_at": "2026-11-12T08:18:15+00:00"
     },
     {
+      "id": "de4fa38ca8fe407b",
+      "published_at": "2026-10-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "スカラコミュニケーションズ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "b9ad267832dfcb4c",
+          "relationship": "affects",
+          "evidence_url": "https://scan.netsecurity.ne.jp/article/2026/10/27/56573.html",
+          "evidence_urls": [
+            "https://scan.netsecurity.ne.jp/article/2026/10/27/56573.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://scala-com.jp/news/2026/11-1/"
+        },
+        {
+          "name": "scan.netsecurity.ne.jp",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/10/27/56573.html"
+        },
+        {
+          "name": "scala-com.jp",
+          "url": "https://scala-com.jp/news/2026/10-1/"
+        }
+      ],
+      "added_at": "2026-10-27T00:15:41+00:00",
+      "updated_at": "2026-11-14T09:15:22+00:00"
+    },
+    {
       "id": "f1d48c9239de81fa",
       "published_at": "2026-10-01T15:00:00+00:00",
       "disclosed_at": "2026-10-08T15:00:00+00:00",
@@ -53223,41 +53322,6 @@
       ],
       "added_at": "2026-10-21T21:19:02+00:00",
       "updated_at": "2026-11-14T02:16:04+00:00"
-    },
-    {
-      "id": "de4fa38ca8fe407b",
-      "published_at": "2026-10-01T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "スカラコミュニケーションズ",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "b9ad267832dfcb4c",
-          "relationship": "affects",
-          "evidence_url": "https://scan.netsecurity.ne.jp/article/2026/10/27/56573.html",
-          "evidence_urls": [
-            "https://scan.netsecurity.ne.jp/article/2026/10/27/56573.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "scan.netsecurity.ne.jp",
-          "url": "https://scan.netsecurity.ne.jp/article/2026/10/27/56573.html"
-        },
-        {
-          "name": "scala-com.jp",
-          "url": "https://scala-com.jp/news/2026/10-1/"
-        }
-      ],
-      "added_at": "2026-10-27T00:15:41+00:00",
-      "updated_at": "2026-11-12T07:15:39+00:00"
     },
     {
       "id": "80f23a54384289ac",
