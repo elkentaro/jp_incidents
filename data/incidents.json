@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-14T12:25:39+00:00",
+  "updated_at": "2026-11-14T13:16:20+00:00",
   "total": 1222,
   "date_range": {
     "start": "2025-10-16",
@@ -16482,6 +16482,62 @@
       "updated_at": "2026-11-12T08:18:15+00:00"
     },
     {
+      "id": "a2ca51bcc11183d5",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "MOTEX",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://www.motex.co.jp/error_res.html"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/motex_lanscope_websites_unauthorized_access_2026/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/motex-lanscope-customer-information-leak-possibility/"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/12/56757.html"
+        }
+      ],
+      "affected_service": "LANSCOPE 製品サイト / LANSCOPE PORTAL / MOTEX PARTNER PORTAL",
+      "service_aliases": [],
+      "affected_services": [
+        "LANSCOPE 製品サイト",
+        "LANSCOPE PORTAL",
+        "MOTEX PARTNER PORTAL"
+      ],
+      "service_details": [
+        {
+          "name": "LANSCOPE 製品サイト",
+          "aliases": []
+        },
+        {
+          "name": "LANSCOPE PORTAL",
+          "aliases": []
+        },
+        {
+          "name": "MOTEX PARTNER PORTAL",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-05T07:17:31+00:00",
+      "updated_at": "2026-11-14T13:16:20+00:00"
+    },
+    {
       "id": "a480effd49107e26",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
@@ -17943,58 +17999,6 @@
         }
       ],
       "added_at": "2026-11-06T08:36:04+00:00",
-      "updated_at": "2026-11-12T07:15:39+00:00"
-    },
-    {
-      "id": "a2ca51bcc11183d5",
-      "published_at": "2026-11-01T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "MOTEX",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/motex_lanscope_websites_unauthorized_access_2026/"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/motex-lanscope-customer-information-leak-possibility/"
-        },
-        {
-          "name": "ScanNetSecurity",
-          "url": "https://scan.netsecurity.ne.jp/article/2026/11/12/56757.html"
-        }
-      ],
-      "affected_service": "LANSCOPE 製品サイト / LANSCOPE PORTAL / MOTEX PARTNER PORTAL",
-      "service_aliases": [],
-      "affected_services": [
-        "LANSCOPE 製品サイト",
-        "LANSCOPE PORTAL",
-        "MOTEX PARTNER PORTAL"
-      ],
-      "service_details": [
-        {
-          "name": "LANSCOPE 製品サイト",
-          "aliases": []
-        },
-        {
-          "name": "LANSCOPE PORTAL",
-          "aliases": []
-        },
-        {
-          "name": "MOTEX PARTNER PORTAL",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-05T07:17:31+00:00",
       "updated_at": "2026-11-12T07:15:39+00:00"
     },
     {
