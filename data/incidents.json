@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-14T15:15:34+00:00",
-  "total": 1222,
+  "updated_at": "2026-11-14T19:15:15+00:00",
+  "total": 1224,
   "date_range": {
-    "start": "2025-10-16",
+    "start": "2023-12-24",
     "end": "2026-11-14"
   },
   "daily_counts_90d": [
@@ -350,7 +350,7 @@
     },
     {
       "date": "2026-11-11",
-      "count": 29
+      "count": 30
     },
     {
       "date": "2026-11-12",
@@ -445,7 +445,16 @@
       "potential_records": null,
       "confidence": "medium",
       "confidence_score": 50,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "57d15baf7435e548",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/b132e9deeeeb6ca99223c22bff79af9bcb78fb8a",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/b132e9deeeeb6ca99223c22bff79af9bcb78fb8a"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "Yahoo!ニュース",
@@ -457,7 +466,7 @@
       "affected_service": "ちいかわくじ",
       "service_aliases": [],
       "added_at": "2026-11-14T07:15:25+00:00",
-      "updated_at": "2026-11-14T07:15:25+00:00"
+      "updated_at": "2026-11-14T19:15:15+00:00"
     },
     {
       "id": "aa6c8299d2e5de67",
@@ -937,6 +946,10 @@
         {
           "name": "八戸市",
           "url": "https://www.city.hachinohe.aomori.jp/kurashi_tetsuzuki/koseki_juminhyo/mynumber/27016.html"
+        },
+        {
+          "name": "八戸市",
+          "url": "https://www.city.hachinohe.aomori.jp/soshikikarasagasu/shiminka/koseki_juuminhyo/4/1/27015.html"
         }
       ],
       "affected_system": null,
@@ -944,7 +957,7 @@
       "affected_service": "マイナンバーカード交付予約・管理システム",
       "service_aliases": [],
       "added_at": "2026-11-13T14:16:28+00:00",
-      "updated_at": "2026-11-13T14:16:28+00:00"
+      "updated_at": "2026-11-14T19:15:15+00:00"
     },
     {
       "id": "83583b116cd04352",
@@ -2877,6 +2890,30 @@
       "service_aliases": [],
       "added_at": "2026-11-12T01:16:23+00:00",
       "updated_at": "2026-11-14T07:15:25+00:00"
+    },
+    {
+      "id": "b683fe431f03683e",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "プリズマティクス株式会社",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://prismatix.jp/news/261113/"
+        }
+      ],
+      "affected_service": "prismatix",
+      "service_aliases": [],
+      "added_at": "2026-11-14T19:15:15+00:00",
+      "updated_at": "2026-11-14T19:15:15+00:00"
     },
     {
       "id": "cf1fdc0264e4b497",
@@ -5657,6 +5694,14 @@
           "evidence_urls": [
             "https://www.nttdata.com/global/ja/news/release/2026/110900/"
           ]
+        },
+        {
+          "incident_id": "ab529d3af2baedd7",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1iNU8xaE8wblJkekdEaXFfM050MTVjUE9mQXRabGN1N1p4U1RfckZ5LWdPZDVUeU9Fa1hfM0w4d0I2S2tRa0YwRFNCNzRFYllQdVdDNjduSU1TZw?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1iNU8xaE8wblJkekdEaXFfM050MTVjUE9mQXRabGN1N1p4U1RfckZ5LWdPZDVUeU9Fa1hfM0w4d0I2S2tRa0YwRFNCNzRFYllQdVdDNjduSU1TZw?oc=5"
+          ]
         }
       ],
       "sources": [
@@ -5692,7 +5737,7 @@
       "affected_service": "住友生命Vitality体験版・企業型、Vitalityスマート(福利厚生タイプ含む)の申込みに係るサービス",
       "service_aliases": [],
       "added_at": "2026-11-09T08:16:45+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-14T19:15:15+00:00"
     },
     {
       "id": "1cf8acb96247e64e",
@@ -6990,6 +7035,14 @@
           ]
         },
         {
+          "incident_id": "9d56c8eaf1b10768",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/b132e9deeeeb6ca99223c22bff79af9bcb78fb8a",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/b132e9deeeeb6ca99223c22bff79af9bcb78fb8a"
+          ]
+        },
+        {
           "incident_id": "a6da8d378141d816",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/ac6c5ea351ed511d265ed401a4fbf5c02864fe97",
@@ -7053,7 +7106,7 @@
         }
       ],
       "added_at": "2026-11-11T09:15:59+00:00",
-      "updated_at": "2026-11-14T12:25:39+00:00"
+      "updated_at": "2026-11-14T19:15:15+00:00"
     },
     {
       "id": "cb69602b79e76443",
@@ -54131,6 +54184,42 @@
       ],
       "added_at": "2026-10-31T20:15:52+00:00",
       "updated_at": "2026-11-12T08:18:15+00:00"
+    },
+    {
+      "id": "ab529d3af2baedd7",
+      "published_at": "2023-12-23T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "群馬県渋川市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 2,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "19d5816230daca6f",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1iNU8xaE8wblJkekdEaXFfM050MTVjUE9mQXRabGN1N1p4U1RfckZ5LWdPZDVUeU9Fa1hfM0w4d0I2S2tRa0YwRFNCNzRFYllQdVdDNjduSU1TZw?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1iNU8xaE8wblJkekdEaXFfM050MTVjUE9mQXRabGN1N1p4U1RfckZ5LWdPZDVUeU9Fa1hfM0w4d0I2S2tRa0YwRFNCNzRFYllQdVdDNjduSU1TZw?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "上毛新聞電子版",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1iNU8xaE8wblJkekdEaXFfM050MTVjUE9mQXRabGN1N1p4U1RfckZ5LWdPZDVUeU9Fa1hfM0w4d0I2S2tRa0YwRFNCNzRFYllQdVdDNjduSU1TZw?oc=5"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "Vitalityしぶかわウォーク",
+      "service_aliases": [],
+      "added_at": "2026-11-14T19:15:15+00:00",
+      "updated_at": "2026-11-14T19:15:15+00:00"
     }
   ],
   "aliases": {
