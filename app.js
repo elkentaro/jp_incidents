@@ -40,7 +40,7 @@ const copy = {
     reset: "Restablecer filtros", searchLabel: "Buscar organizaciones o fuentes", searchPlaceholder: "Buscar…",
     typeLabel: "Tipo de incidente", confidenceLabel: "Confianza", date: "Fecha", disclosed: "Primera divulgación",
     organization: "Organización", incidentType: "Tipo de incidente", potentialRecords: "Registros potencialmente afectados",
-    confidence: "Confianza", sources: "Fuentes", related: "Registros relacionados", upstreamUnknown: "Origen desconocido", undisclosed: "No divulgado",
+    confidence: "Confianza", sources: "Fuentes", related: "Registros relacionados", upstreamUnknown: "Origen desconocido", upstreamOutsideJapan: "Origen fuera de Japón", undisclosed: "No divulgado",
     relatedLink: (number) => `Relacionado ${number}`,
     relationships: { affected_by: "Afectado por este incidente", affects: "Registro afectado por este incidente", same_organization: "Otro incidente en la misma organización" },
     noResults: "Ningún incidente coincide con estos filtros.", loading: "Cargando datos de incidentes…",
@@ -97,7 +97,7 @@ const copy = {
     potentialRecords: "Potential records",
     confidence: "Confidence",
     sources: "Sources",
-    related: "Related records", upstreamUnknown: "Upstream unknown", undisclosed: "Undisclosed",
+    related: "Related records", upstreamUnknown: "Upstream unknown", upstreamOutsideJapan: "Upstream outside of Japan", undisclosed: "Undisclosed",
     relatedLink: (number) => `Related ${number}`,
     relationships: { affected_by: "Affected through this incident", affects: "Record affected by this incident", same_organization: "Another incident at the same organization" },
     noResults: "No incidents match these filters.",
@@ -159,7 +159,7 @@ const copy = {
     potentialRecords: "影響の可能性がある件数",
     confidence: "信頼度",
     sources: "情報源",
-    related: "関連記録", upstreamUnknown: "上流事業者不明", undisclosed: "非公表",
+    related: "関連記録", upstreamUnknown: "上流事業者不明", upstreamOutsideJapan: "上流事業者は日本国外", undisclosed: "非公表",
     relatedLink: (number) => `関連 ${number}`,
     relationships: { affected_by: "この委託先等の事案による影響", affects: "この事案の影響を受けた記録", same_organization: "同じ組織の別のインシデント" },
     noResults: "条件に一致するインシデントはありません。",
@@ -491,13 +491,15 @@ function incidentRow(incident) {
     system.textContent = incident.affected_system; organization.append(system);
   }
   const relations = (incident.related || []).filter(r => state.incidents.some(i => i.id === r.incident_id));
+  const upstreamStatus = ["unknown", "outside_japan"].includes(incident.upstream_status);
+  const upstreamLabel = incident.upstream_status === "outside_japan" ? "upstreamOutsideJapan" : "upstreamUnknown";
   const roles = [];
-  if (incident.upstream_status === "unknown" || relations.some(r => r.relationship === "affected_by")) roles.push(text("affectedOrganization"));
+  if (upstreamStatus || relations.some(r => r.relationship === "affected_by")) roles.push(text("affectedOrganization"));
   if (relations.some(r => r.relationship === "affects")) roles.push(text("upstreamIncident"));
   if (roles.length) {
     const role = document.createElement("small"); role.className = "incident-role";
     role.textContent = roles.join(" · "); organization.append(role);
-    if (incident.upstream_status === "unknown") { const label = document.createElement("small"); label.textContent = text("upstreamUnknown"); organization.append(label); }
+    if (upstreamStatus) { const label = document.createElement("small"); label.textContent = text(upstreamLabel); organization.append(label); }
   }
 
   const type = document.createElement("td");
@@ -563,8 +565,8 @@ function incidentRow(incident) {
     });
     relatedList.append(link);
   });
-  if (incident.upstream_status === "unknown") related.append(document.createTextNode(text("undisclosed")));
-  related.append(relatedList.childElementCount ? relatedList : document.createTextNode(incident.upstream_status === "unknown" ? "" : "—"));
+  if (upstreamStatus) related.append(document.createTextNode(text(incident.upstream_status === "outside_japan" ? upstreamLabel : "undisclosed")));
+  related.append(relatedList.childElementCount ? relatedList : document.createTextNode(upstreamStatus ? "" : "—"));
   if (relatedList.childElementCount) {
     const details = document.createElement("details"); details.className = "relationship-details";
     const summary = document.createElement("summary"); summary.textContent = text("whyLinked");
