@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-15T12:17:08+00:00",
-  "total": 1234,
+  "updated_at": "2026-11-15T13:16:55+00:00",
+  "total": 1235,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-15"
@@ -342,7 +342,7 @@
     },
     {
       "date": "2026-11-09",
-      "count": 36
+      "count": 37
     },
     {
       "date": "2026-11-10",
@@ -403,6 +403,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/745541aa3b35aeff7eadbab0af9a202eca8864b8"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261115de76188"
         }
       ],
       "affected_system": null,
@@ -424,7 +428,7 @@
         }
       ],
       "added_at": "2026-11-15T05:15:45+00:00",
-      "updated_at": "2026-11-15T12:17:08+00:00"
+      "updated_at": "2026-11-15T13:16:55+00:00"
     },
     {
       "id": "9d56c8eaf1b10768",
@@ -6638,6 +6642,33 @@
       "service_aliases": [],
       "added_at": "2026-11-09T09:16:47+00:00",
       "updated_at": "2026-11-12T08:18:15+00:00"
+    },
+    {
+      "id": "f08447fa43bb3a38",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": "2026-11-12T15:00:00+00:00",
+      "organization": "GFS Education",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 110000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/gfs-education-member-site-data-breach-110000-mynumber-84-20261113/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "GFS会員サイト",
+      "service_aliases": [],
+      "added_at": "2026-11-15T13:16:55+00:00",
+      "updated_at": "2026-11-15T13:16:55+00:00"
     },
     {
       "id": "f675def102ae30f3",
