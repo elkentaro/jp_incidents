@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-15T22:15:59+00:00",
-  "total": 1236,
+  "updated_at": "2026-11-15T23:15:20+00:00",
+  "total": 1237,
   "date_range": {
     "start": "2023-12-24",
-    "end": "2026-11-15"
+    "end": "2026-11-16"
   },
   "daily_counts_90d": [
     {
@@ -366,10 +366,34 @@
     },
     {
       "date": "2026-11-16",
-      "count": 0
+      "count": 1
     }
   ],
   "incidents": [
+    {
+      "id": "cf642f40a602c07d",
+      "published_at": "2026-11-15T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "日本医科大学武蔵小杉病院",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 130000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "FNNプライムオンライン",
+          "url": "https://www.fnn.jp/articles/-/1152996"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "added_at": "2026-11-15T23:15:20+00:00",
+      "updated_at": "2026-11-15T23:15:20+00:00"
+    },
     {
       "id": "d318d48ee62aac20",
       "published_at": "2026-11-14T15:00:00+00:00",
@@ -629,6 +653,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/6573b5012e1cd89e6d0daa092c294472c3cac018?source=rss"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6573b5012e1cd89e6d0daa092c294472c3cac018"
         }
       ],
       "affected_system": null,
@@ -636,7 +664,7 @@
       "affected_service": "物価高騰対策事業の申請システム",
       "service_aliases": [],
       "added_at": "2026-11-14T07:15:25+00:00",
-      "updated_at": "2026-11-15T09:15:36+00:00"
+      "updated_at": "2026-11-15T23:15:20+00:00"
     },
     {
       "id": "4bee839fdffa3e78",
