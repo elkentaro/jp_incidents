@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-15T02:15:29+00:00",
-  "total": 1230,
+  "updated_at": "2026-11-15T03:15:32+00:00",
+  "total": 1231,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-14"
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-14",
-      "count": 6
+      "count": 7
     },
     {
       "date": "2026-11-15",
@@ -409,6 +409,41 @@
       "service_aliases": [],
       "added_at": "2026-11-14T07:15:25+00:00",
       "updated_at": "2026-11-14T20:16:02+00:00"
+    },
+    {
+      "id": "bdcfe0b8bff1490b",
+      "published_at": "2026-11-13T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東京都北区",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "281734b092b0f6d1",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.city.kita.lg.jp/business/industry/1011327/1027058.html",
+          "evidence_urls": [
+            "https://www.city.kita.lg.jp/business/industry/1011327/1027058.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "北区 / Kita",
+          "url": "https://www.city.kita.lg.jp/business/industry/1011327/1027058.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "ほくペイアプリ",
+      "service_aliases": [],
+      "added_at": "2026-11-15T03:15:32+00:00",
+      "updated_at": "2026-11-15T03:15:32+00:00"
     },
     {
       "id": "307eba6e291c0389",
@@ -35961,6 +35996,14 @@
           "evidence_urls": [
             "https://www.city.kita.lg.jp/living/tax/1002005/1026907.html"
           ]
+        },
+        {
+          "incident_id": "bdcfe0b8bff1490b",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.city.kita.lg.jp/business/industry/1011327/1027058.html",
+          "evidence_urls": [
+            "https://www.city.kita.lg.jp/business/industry/1011327/1027058.html"
+          ]
         }
       ],
       "sources": [
@@ -35970,7 +36013,7 @@
         }
       ],
       "added_at": "2026-10-22T03:41:21+00:00",
-      "updated_at": "2026-11-12T07:15:39+00:00"
+      "updated_at": "2026-11-15T03:15:32+00:00"
     },
     {
       "id": "41bddacedb87f195",
