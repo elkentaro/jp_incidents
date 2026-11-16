@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-16T02:16:06+00:00",
-  "total": 1246,
+  "updated_at": "2026-11-16T03:15:43+00:00",
+  "total": 1249,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-16"
@@ -350,15 +350,15 @@
     },
     {
       "date": "2026-11-12",
-      "count": 31
+      "count": 32
     },
     {
       "date": "2026-11-13",
-      "count": 27
+      "count": 28
     },
     {
       "date": "2026-11-14",
-      "count": 7
+      "count": 8
     },
     {
       "date": "2026-11-15",
@@ -491,6 +491,32 @@
       "service_aliases": [],
       "added_at": "2026-11-16T00:15:49+00:00",
       "updated_at": "2026-11-16T00:15:49+00:00"
+    },
+    {
+      "id": "749ef8fb578f0f00",
+      "published_at": "2026-11-13T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "渋谷区",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "渋谷区 / Shibuya",
+          "url": "https://www.city.shibuya.tokyo.jp/jigyosha/shoko-rodo-sodan/chiiki-tsuka/hachipay_oshirase.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "ハチペイ",
+      "service_aliases": [],
+      "added_at": "2026-11-16T03:15:43+00:00",
+      "updated_at": "2026-11-16T03:15:43+00:00"
     },
     {
       "id": "9d56c8eaf1b10768",
@@ -870,6 +896,42 @@
       "service_aliases": [],
       "added_at": "2026-11-13T13:17:15+00:00",
       "updated_at": "2026-11-13T13:17:15+00:00"
+    },
+    {
+      "id": "39dc60a57ae2e4d9",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-12T15:00:00+00:00",
+      "organization": "MTG",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 26757,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "aa9bc3fcfc85d71d",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/mtg_style_comsbi_saas_26757_54465_data_breach_202611/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/mtg_style_comsbi_saas_26757_54465_data_breach_202611/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/mtg_style_comsbi_saas_26757_54465_data_breach_202611/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "Style",
+      "service_aliases": [],
+      "added_at": "2026-11-16T03:15:43+00:00",
+      "updated_at": "2026-11-16T03:15:43+00:00"
     },
     {
       "id": "3c6a74e3eaeb6595",
@@ -1257,12 +1319,16 @@
         {
           "name": "satimo list",
           "url": "https://www.paiza.co.jp/news/20261113/access-management-notice/"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2611/16/2000003215/"
         }
       ],
       "affected_system": null,
       "date_basis": "first_disclosure",
       "added_at": "2026-11-13T20:16:21+00:00",
-      "updated_at": "2026-11-14T02:16:04+00:00"
+      "updated_at": "2026-11-16T03:15:43+00:00"
     },
     {
       "id": "f0c3afc53d576603",
@@ -1501,12 +1567,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/ee0fd4637ae0fa404a93032f34372ede7e777a3c"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/sasebo-e-coin-arara-email-leak-35600-2026/"
         }
       ],
       "affected_service": "させぼeコイン",
       "service_aliases": [],
       "added_at": "2026-11-13T07:15:40+00:00",
-      "updated_at": "2026-11-16T00:15:49+00:00"
+      "updated_at": "2026-11-16T03:15:43+00:00"
     },
     {
       "id": "ae1d4f5f4d68b8fb",
@@ -2868,6 +2938,39 @@
       "service_aliases": [],
       "added_at": "2026-11-12T20:15:40+00:00",
       "updated_at": "2026-11-12T20:15:40+00:00"
+    },
+    {
+      "id": "320cd3e3b8cbaa45",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": "2026-11-12T15:00:00+00:00",
+      "organization": "レーマン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 14136,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "eddb63a9766c497d",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/reman-bourbon-arara-makerepeater-email-leak-14136-20261/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/reman-bourbon-arara-makerepeater-email-leak-14136-20261/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/reman-bourbon-arara-makerepeater-email-leak-14136-20261/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "added_at": "2026-11-16T03:15:43+00:00",
+      "updated_at": "2026-11-16T03:15:43+00:00"
     },
     {
       "id": "4a121ba013ca9414",
@@ -4810,6 +4913,10 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118464"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/a0ded1257ef2a1e5e25f77c2c4979d48a83bfab4"
         }
       ],
       "affected_system": null,
@@ -4817,7 +4924,7 @@
       "affected_service": "GoQSystem",
       "service_aliases": [],
       "added_at": "2026-11-15T18:16:24+00:00",
-      "updated_at": "2026-11-16T01:15:40+00:00"
+      "updated_at": "2026-11-16T03:15:43+00:00"
     },
     {
       "id": "64589e58e48fed43",
@@ -5400,6 +5507,35 @@
       "updated_at": "2026-11-13T13:17:15+00:00"
     },
     {
+      "id": "08a6601681e04cac",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": "2026-11-12T15:00:00+00:00",
+      "organization": "ラキール",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 140,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/lakeel-aws-access-key-stolen-customer-environment-140-2026/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b32b71a7af5438208b1ab5750cad84b209fc3644"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "added_at": "2026-11-16T02:16:06+00:00",
+      "updated_at": "2026-11-16T03:15:43+00:00"
+    },
+    {
       "id": "162d0bcb6d6fed86",
       "published_at": "2026-11-09T15:00:00+00:00",
       "disclosed_at": null,
@@ -5721,31 +5857,6 @@
       ],
       "added_at": "2026-11-10T20:15:39+00:00",
       "updated_at": "2026-11-12T07:15:39+00:00"
-    },
-    {
-      "id": "08a6601681e04cac",
-      "published_at": "2026-11-09T15:00:00+00:00",
-      "disclosed_at": "2026-11-12T15:00:00+00:00",
-      "organization": "ラキール",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 140,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/lakeel-aws-access-key-stolen-customer-environment-140-2026/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "discovery",
-      "added_at": "2026-11-16T02:16:06+00:00",
-      "updated_at": "2026-11-16T02:16:06+00:00"
     },
     {
       "id": "14cc468f9a7f9a3d",
@@ -18213,6 +18324,14 @@
       "confidence_score": 90,
       "related": [
         {
+          "incident_id": "320cd3e3b8cbaa45",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/reman-bourbon-arara-makerepeater-email-leak-14136-20261/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/reman-bourbon-arara-makerepeater-email-leak-14136-20261/"
+          ]
+        },
+        {
           "incident_id": "83583b116cd04352",
           "relationship": "affects",
           "evidence_url": "https://www.release.tdnet.info/inbs/140120261113579636.pdf",
@@ -18268,7 +18387,7 @@
         }
       ],
       "added_at": "2026-11-06T01:16:14+00:00",
-      "updated_at": "2026-11-13T07:15:40+00:00"
+      "updated_at": "2026-11-16T03:15:43+00:00"
     },
     {
       "id": "ef09c13430d4ac73",
@@ -32888,6 +33007,14 @@
           ]
         },
         {
+          "incident_id": "39dc60a57ae2e4d9",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/mtg_style_comsbi_saas_26757_54465_data_breach_202611/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/mtg_style_comsbi_saas_26757_54465_data_breach_202611/"
+          ]
+        },
+        {
           "incident_id": "3cf70001eb2ecd04",
           "relationship": "affects",
           "evidence_url": "https://www.coffeestyleucc.co.jp/news202610/",
@@ -33014,7 +33141,7 @@
         }
       ],
       "added_at": "2026-10-27T07:15:28+00:00",
-      "updated_at": "2026-11-15T07:15:36+00:00"
+      "updated_at": "2026-11-16T03:15:43+00:00"
     },
     {
       "id": "af7b771bb23be504",
