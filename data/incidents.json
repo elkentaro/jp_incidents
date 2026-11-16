@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-16T20:15:47+00:00",
-  "total": 1281,
+  "updated_at": "2026-11-16T21:15:39+00:00",
+  "total": 1285,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-16"
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-16",
-      "count": 16
+      "count": 20
     },
     {
       "date": "2026-11-17",
@@ -410,6 +410,42 @@
       ],
       "added_at": "2026-11-16T14:16:05+00:00",
       "updated_at": "2026-11-16T14:16:05+00:00"
+    },
+    {
+      "id": "37294d0033f0153b",
+      "published_at": "2026-11-15T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "新潟県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 3457,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "c87d3de860b7c5e1",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.niigata.lg.jp/sec/sangyoseisaku/niigata-shop-incident.html",
+          "evidence_urls": [
+            "https://www.pref.niigata.lg.jp/sec/sangyoseisaku/niigata-shop-incident.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "新潟県 / Niigata",
+          "url": "https://www.pref.niigata.lg.jp/sec/sangyoseisaku/niigata-shop-incident.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "楽天市場内「新潟県公式ショップ 新潟直送計画」",
+      "service_aliases": [],
+      "added_at": "2026-11-16T21:15:39+00:00",
+      "updated_at": "2026-11-16T21:15:39+00:00"
     },
     {
       "id": "462c096ee7be4ff0",
@@ -711,6 +747,84 @@
       "updated_at": "2026-11-16T13:16:58+00:00"
     },
     {
+      "id": "3132aa2481a76c3b",
+      "published_at": "2026-11-15T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "京都文化博物館",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 550,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "cc83cfb44abbac15",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE43ODhLb3hGSFBlcUt1MDB3YVo2STM4VXNlcm5nZUpvem00cHZpZDhQZGtfM2hqS3ptRjBMM0o0U21CZU1IMlFnTzdJOHBCbm1qWEZWUVhxemMyTEVuOEtsZXg2ZDN4UGQ1dlp4WnNHbFpBVGVlR05VTjEyVXJwbjQ?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE43ODhLb3hGSFBlcUt1MDB3YVo2STM4VXNlcm5nZUpvem00cHZpZDhQZGtfM2hqS3ptRjBMM0o0U21CZU1IMlFnTzdJOHBCbm1qWEZWUVhxemMyTEVuOEtsZXg2ZDN4UGQ1dlp4WnNHbFpBVGVlR05VTjEyVXJwbjQ?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE43ODhLb3hGSFBlcUt1MDB3YVo2STM4VXNlcm5nZUpvem00cHZpZDhQZGtfM2hqS3ptRjBMM0o0U21CZU1IMlFnTzdJOHBCbm1qWEZWUVhxemMyTEVuOEtsZXg2ZDN4UGQ1dlp4WnNHbFpBVGVlR05VTjEyVXJwbjQ?oc=5"
+        }
+      ],
+      "added_at": "2026-11-16T21:15:39+00:00",
+      "updated_at": "2026-11-16T21:15:39+00:00"
+    },
+    {
+      "id": "33344e9ff7de50ae",
+      "published_at": "2026-11-15T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "京都府",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 300,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "c18e54cb9abd1cae",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE43ODhLb3hGSFBlcUt1MDB3YVo2STM4VXNlcm5nZUpvem00cHZpZDhQZGtfM2hqS3ptRjBMM0o0U21CZU1IMlFnTzdJOHBCbm1qWEZWUVhxemMyTEVuOEtsZXg2ZDN4UGQ1dlp4WnNHbFpBVGVlR05VTjEyVXJwbjQ?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE43ODhLb3hGSFBlcUt1MDB3YVo2STM4VXNlcm5nZUpvem00cHZpZDhQZGtfM2hqS3ptRjBMM0o0U21CZU1IMlFnTzdJOHBCbm1qWEZWUVhxemMyTEVuOEtsZXg2ZDN4UGQ1dlp4WnNHbFpBVGVlR05VTjEyVXJwbjQ?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE43ODhLb3hGSFBlcUt1MDB3YVo2STM4VXNlcm5nZUpvem00cHZpZDhQZGtfM2hqS3ptRjBMM0o0U21CZU1IMlFnTzdJOHBCbm1qWEZWUVhxemMyTEVuOEtsZXg2ZDN4UGQ1dlp4WnNHbFpBVGVlR05VTjEyVXJwbjQ?oc=5"
+        }
+      ],
+      "affected_service": "府民ホール / 長岡京記念文化会館",
+      "service_aliases": [],
+      "affected_services": [
+        "府民ホール",
+        "長岡京記念文化会館"
+      ],
+      "service_details": [
+        {
+          "name": "府民ホール",
+          "aliases": []
+        },
+        {
+          "name": "長岡京記念文化会館",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-16T21:15:39+00:00",
+      "updated_at": "2026-11-16T21:15:39+00:00"
+    },
+    {
       "id": "49c31a0d93416cae",
       "published_at": "2026-11-15T15:00:00+00:00",
       "disclosed_at": null,
@@ -987,6 +1101,48 @@
       "updated_at": "2026-11-16T14:16:05+00:00"
     },
     {
+      "id": "c87d3de860b7c5e1",
+      "published_at": "2026-11-15T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "クーネルワーク",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "37294d0033f0153b",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.niigata.lg.jp/sec/sangyoseisaku/niigata-shop-incident.html",
+          "evidence_urls": [
+            "https://www.pref.niigata.lg.jp/sec/sangyoseisaku/niigata-shop-incident.html"
+          ]
+        },
+        {
+          "incident_id": "557c85f6d895d50b",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.niigata.lg.jp/sec/sangyoseisaku/niigata-shop-incident.html",
+          "evidence_urls": [
+            "https://www.pref.niigata.lg.jp/sec/sangyoseisaku/niigata-shop-incident.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "www.pref.niigata.lg.jp",
+          "url": "https://www.pref.niigata.lg.jp/sec/sangyoseisaku/niigata-shop-incident.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-16T21:15:39+00:00",
+      "updated_at": "2026-11-16T21:15:39+00:00"
+    },
+    {
       "id": "8d32fc9abf21bcf5",
       "published_at": "2026-11-14T15:00:00+00:00",
       "disclosed_at": null,
@@ -1013,6 +1169,10 @@
         {
           "name": "オプテージ / OPTAGE",
           "url": "https://optage.co.jp/press/2026/press_14.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/7ed5af34437bf98fb4f7320de4daa244d8e028a2"
         }
       ],
       "affected_system": null,
@@ -1020,7 +1180,7 @@
       "affected_service": "mineo",
       "service_aliases": [],
       "added_at": "2026-11-16T12:16:35+00:00",
-      "updated_at": "2026-11-16T12:16:35+00:00"
+      "updated_at": "2026-11-16T21:15:39+00:00"
     },
     {
       "id": "d318d48ee62aac20",
@@ -6021,6 +6181,14 @@
           "evidence_urls": [
             "https://www.niigata-nippo.co.jp/articles/-/943736"
           ]
+        },
+        {
+          "incident_id": "c87d3de860b7c5e1",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.niigata.lg.jp/sec/sangyoseisaku/niigata-shop-incident.html",
+          "evidence_urls": [
+            "https://www.pref.niigata.lg.jp/sec/sangyoseisaku/niigata-shop-incident.html"
+          ]
         }
       ],
       "sources": [
@@ -6062,7 +6230,7 @@
       "affected_service": "GoQSystem",
       "service_aliases": [],
       "added_at": "2026-11-15T18:16:24+00:00",
-      "updated_at": "2026-11-16T14:16:05+00:00"
+      "updated_at": "2026-11-16T21:15:39+00:00"
     },
     {
       "id": "64589e58e48fed43",
@@ -14515,6 +14683,14 @@
           ]
         },
         {
+          "incident_id": "33344e9ff7de50ae",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE43ODhLb3hGSFBlcUt1MDB3YVo2STM4VXNlcm5nZUpvem00cHZpZDhQZGtfM2hqS3ptRjBMM0o0U21CZU1IMlFnTzdJOHBCbm1qWEZWUVhxemMyTEVuOEtsZXg2ZDN4UGQ1dlp4WnNHbFpBVGVlR05VTjEyVXJwbjQ?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE43ODhLb3hGSFBlcUt1MDB3YVo2STM4VXNlcm5nZUpvem00cHZpZDhQZGtfM2hqS3ptRjBMM0o0U21CZU1IMlFnTzdJOHBCbm1qWEZWUVhxemMyTEVuOEtsZXg2ZDN4UGQ1dlp4WnNHbFpBVGVlR05VTjEyVXJwbjQ?oc=5"
+          ]
+        },
+        {
           "incident_id": "4f63ec197293f7ea",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOSHRpaTVxRHEzYkstazNjLWJ0dkd4bjFCUnlMMnlkRHc1TEFqb3ppVHFyMG5LX2tfMXNPRmRKRUhhaEJ5alNHbTZmTkpZVmZzN3ByamZYN2VlM3RMdlBXb1MtYmZQLTY0My1KLWNMUTVHTDFxcEI1MmZBcElWR0U5SHd6RGU3SldWa3c?oc=5",
@@ -14578,7 +14754,7 @@
         "テケト"
       ],
       "added_at": "2026-11-08T10:15:44+00:00",
-      "updated_at": "2026-11-13T07:15:40+00:00"
+      "updated_at": "2026-11-16T21:15:39+00:00"
     },
     {
       "id": "cd71aceb5c7b95e3",
@@ -17367,6 +17543,14 @@
       "confidence_score": 90,
       "related": [
         {
+          "incident_id": "3132aa2481a76c3b",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE43ODhLb3hGSFBlcUt1MDB3YVo2STM4VXNlcm5nZUpvem00cHZpZDhQZGtfM2hqS3ptRjBMM0o0U21CZU1IMlFnTzdJOHBCbm1qWEZWUVhxemMyTEVuOEtsZXg2ZDN4UGQ1dlp4WnNHbFpBVGVlR05VTjEyVXJwbjQ?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE43ODhLb3hGSFBlcUt1MDB3YVo2STM4VXNlcm5nZUpvem00cHZpZDhQZGtfM2hqS3ptRjBMM0o0U21CZU1IMlFnTzdJOHBCbm1qWEZWUVhxemMyTEVuOEtsZXg2ZDN4UGQ1dlp4WnNHbFpBVGVlR05VTjEyVXJwbjQ?oc=5"
+          ]
+        },
+        {
           "incident_id": "354d6671d33e6caa",
           "relationship": "affects",
           "evidence_url": "https://www.pref.okinawa.jp/machizukuri/park/1041852.html",
@@ -17472,7 +17656,7 @@
       "affected_service": "アソビュー!",
       "service_aliases": [],
       "added_at": "2026-11-03T16:15:47+00:00",
-      "updated_at": "2026-11-12T23:15:21+00:00"
+      "updated_at": "2026-11-16T21:15:39+00:00"
     },
     {
       "id": "fd9b9f5fb40c1ca6",
