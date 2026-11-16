@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-16T12:16:35+00:00",
-  "total": 1273,
+  "updated_at": "2026-11-16T13:16:58+00:00",
+  "total": 1277,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-16"
@@ -346,7 +346,7 @@
     },
     {
       "date": "2026-11-11",
-      "count": 34
+      "count": 35
     },
     {
       "date": "2026-11-12",
@@ -354,7 +354,7 @@
     },
     {
       "date": "2026-11-13",
-      "count": 29
+      "count": 30
     },
     {
       "date": "2026-11-14",
@@ -366,7 +366,7 @@
     },
     {
       "date": "2026-11-16",
-      "count": 11
+      "count": 13
     }
   ],
   "incidents": [
@@ -531,6 +531,41 @@
       "updated_at": "2026-11-16T06:15:50+00:00"
     },
     {
+      "id": "e0ab297a0bab550f",
+      "published_at": "2026-11-15T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "早島町",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 829,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/f8f365daea7cc73fde45bef0aeafb118bf222b51",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/f8f365daea7cc73fde45bef0aeafb118bf222b51"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/f8f365daea7cc73fde45bef0aeafb118bf222b51"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "メルマガ",
+      "service_aliases": [],
+      "added_at": "2026-11-16T13:16:58+00:00",
+      "updated_at": "2026-11-16T13:16:58+00:00"
+    },
+    {
       "id": "027a77624c548ee7",
       "published_at": "2026-11-15T15:00:00+00:00",
       "disclosed_at": null,
@@ -616,6 +651,14 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/nissin_comsbi_saas_line_data_breach_20261116/"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/mbs/3088634?display=1"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3088634?display=1"
         }
       ],
       "affected_system": null,
@@ -623,7 +666,7 @@
       "affected_service": "LINE公式アカウント「日清食品キャンペーン」",
       "service_aliases": [],
       "added_at": "2026-11-16T09:15:38+00:00",
-      "updated_at": "2026-11-16T10:15:49+00:00"
+      "updated_at": "2026-11-16T13:16:58+00:00"
     },
     {
       "id": "49c31a0d93416cae",
@@ -650,6 +693,49 @@
       "service_aliases": [],
       "added_at": "2026-11-16T08:15:31+00:00",
       "updated_at": "2026-11-16T08:15:31+00:00"
+    },
+    {
+      "id": "d37cf1e7d39a355b",
+      "published_at": "2026-11-15T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "テレビ東京コミュニケーションズ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.oricon.co.jp/news/2493297/",
+          "evidence_urls": [
+            "https://www.oricon.co.jp/news/2493297/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "オリコンニュース",
+          "url": "https://www.oricon.co.jp/news/2493297/"
+        },
+        {
+          "name": "佐賀新聞",
+          "url": "https://www.saga-s.co.jp/articles/-/1831206"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/2afca8fc6c92160219d768d88c33644bd10969c0"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "テレ東BIZ",
+      "service_aliases": [],
+      "added_at": "2026-11-16T13:16:58+00:00",
+      "updated_at": "2026-11-16T13:16:58+00:00"
     },
     {
       "id": "2d5a37d534a4cc3a",
@@ -1615,6 +1701,14 @@
           "evidence_urls": [
             "https://optage.co.jp/press/2026/press_14.html"
           ]
+        },
+        {
+          "incident_id": "d37cf1e7d39a355b",
+          "relationship": "affects",
+          "evidence_url": "https://www.oricon.co.jp/news/2493297/",
+          "evidence_urls": [
+            "https://www.oricon.co.jp/news/2493297/"
+          ]
         }
       ],
       "sources": [
@@ -1654,7 +1748,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-16T12:16:35+00:00"
+      "updated_at": "2026-11-16T13:16:58+00:00"
     },
     {
       "id": "9f04a00959566f37",
@@ -1951,6 +2045,33 @@
       "service_aliases": [],
       "added_at": "2026-11-13T14:16:28+00:00",
       "updated_at": "2026-11-14T19:15:15+00:00"
+    },
+    {
+      "id": "f9f456826ae97a0a",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-12T15:00:00+00:00",
+      "organization": "コーセー",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 28098,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/kose_maison_kose_reservation_data_breach_28098/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "Maison KOSÉ(メゾンコーセー)",
+      "service_aliases": [],
+      "added_at": "2026-11-16T13:16:58+00:00",
+      "updated_at": "2026-11-16T13:16:58+00:00"
     },
     {
       "id": "83583b116cd04352",
@@ -3591,6 +3712,14 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/c8ed4e8a8b596122498e823e7ed50ba886acdd42"
+        },
+        {
+          "name": "ABA青森朝日放送",
+          "url": "https://www.aba-net.com/news/news-205916.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/68fbe34f166881762b23be829a0e57ca05c3e86b"
         }
       ],
       "affected_system": null,
@@ -3598,7 +3727,7 @@
       "affected_service": "ポートオンラインショップ",
       "service_aliases": [],
       "added_at": "2026-11-16T10:15:49+00:00",
-      "updated_at": "2026-11-16T10:15:49+00:00"
+      "updated_at": "2026-11-16T13:16:58+00:00"
     },
     {
       "id": "320cd3e3b8cbaa45",
@@ -5206,6 +5335,32 @@
       ],
       "added_at": "2026-11-11T09:15:59+00:00",
       "updated_at": "2026-11-13T07:15:40+00:00"
+    },
+    {
+      "id": "7096e4d90c137dbf",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": "2026-11-15T15:00:00+00:00",
+      "organization": "ピクシブ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 19,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/pixiv_notion_ai_fireworks_19_information_records_20261116/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "Notion AI",
+      "service_aliases": [],
+      "added_at": "2026-11-16T13:16:58+00:00",
+      "updated_at": "2026-11-16T13:16:58+00:00"
     },
     {
       "id": "909cfe24afcf8d43",
@@ -12802,6 +12957,10 @@
           "url": "https://www.giken.com/ja/news/notices/notice_20261109/"
         },
         {
+          "name": "株式会社アクト",
+          "url": "https://act1.co.jp/2026-11-10-03/"
+        },
+        {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/giken_ransomware_3200_potential_data_leak_20261109/"
         },
@@ -12811,7 +12970,7 @@
         }
       ],
       "added_at": "2026-11-10T02:16:08+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-16T13:16:58+00:00"
     },
     {
       "id": "a8b6d5a8016e0283",
@@ -18676,6 +18835,10 @@
         {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261116580960.pdf"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/clomo_mdm_icubedsystems_data_leak_20261116/"
         }
       ],
       "affected_system": null,
@@ -18683,7 +18846,7 @@
       "affected_service": "CLOMO MDM",
       "service_aliases": [],
       "added_at": "2026-11-16T10:15:49+00:00",
-      "updated_at": "2026-11-16T10:15:49+00:00"
+      "updated_at": "2026-11-16T13:16:58+00:00"
     },
     {
       "id": "afc91125741205f2",
@@ -27783,6 +27946,14 @@
           ]
         },
         {
+          "incident_id": "e0ab297a0bab550f",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/f8f365daea7cc73fde45bef0aeafb118bf222b51",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/f8f365daea7cc73fde45bef0aeafb118bf222b51"
+          ]
+        },
+        {
           "incident_id": "e125a667a9fd8a5b",
           "relationship": "affects",
           "evidence_url": "https://www.wills.co.jp/corp/news/1895/",
@@ -27935,7 +28106,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-16T10:15:49+00:00"
+      "updated_at": "2026-11-16T13:16:58+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -54973,7 +55144,8 @@
       "organization": "エネコム",
       "incident_type": "data leak",
       "incident_categories": [
-        "data leak"
+        "data leak",
+        "unauthorized access"
       ],
       "potential_records": null,
       "confidence": "high",
@@ -54983,10 +55155,14 @@
         {
           "name": "legalagent list",
           "url": "https://www.enecom.co.jp/information/3920/"
+        },
+        {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp/15240506.html"
         }
       ],
       "added_at": "2026-10-19T09:06:44+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-16T13:16:58+00:00"
     },
     {
       "id": "f27a78f8cd01fe21",
