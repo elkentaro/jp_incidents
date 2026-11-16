@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-15T23:15:20+00:00",
+  "updated_at": "2026-11-16T00:15:49+00:00",
   "total": 1237,
   "date_range": {
     "start": "2023-12-24",
-    "end": "2026-11-16"
+    "end": "2026-11-15"
   },
   "daily_counts_90d": [
     {
@@ -362,38 +362,14 @@
     },
     {
       "date": "2026-11-15",
-      "count": 1
+      "count": 2
     },
     {
       "date": "2026-11-16",
-      "count": 1
+      "count": 0
     }
   ],
   "incidents": [
-    {
-      "id": "cf642f40a602c07d",
-      "published_at": "2026-11-15T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "日本医科大学武蔵小杉病院",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 130000,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "FNNプライムオンライン",
-          "url": "https://www.fnn.jp/articles/-/1152996"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "ingestion",
-      "added_at": "2026-11-15T23:15:20+00:00",
-      "updated_at": "2026-11-15T23:15:20+00:00"
-    },
     {
       "id": "d318d48ee62aac20",
       "published_at": "2026-11-14T15:00:00+00:00",
@@ -453,6 +429,32 @@
       ],
       "added_at": "2026-11-15T05:15:45+00:00",
       "updated_at": "2026-11-15T13:16:55+00:00"
+    },
+    {
+      "id": "19fe94baa5774d01",
+      "published_at": "2026-11-14T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東大生協",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "東大新聞オンライン",
+          "url": "https://www.todaishimbun.org/seikyofuseiaccess_261115/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "大学生協電子マネー",
+      "service_aliases": [],
+      "added_at": "2026-11-16T00:15:49+00:00",
+      "updated_at": "2026-11-16T00:15:49+00:00"
     },
     {
       "id": "9d56c8eaf1b10768",
@@ -1374,12 +1376,16 @@
         {
           "name": "TBS NEWS DIG",
           "url": "https://newsdig.tbs.co.jp/articles/-/3083381?display=1"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/ee0fd4637ae0fa404a93032f34372ede7e777a3c"
         }
       ],
       "affected_service": "させぼeコイン",
       "service_aliases": [],
       "added_at": "2026-11-13T07:15:40+00:00",
-      "updated_at": "2026-11-13T21:16:06+00:00"
+      "updated_at": "2026-11-16T00:15:49+00:00"
     },
     {
       "id": "ae1d4f5f4d68b8fb",
@@ -16381,12 +16387,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/0a96ce718751c60a8d8d9f042411e413bd47a4f7"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/16/56791.html"
         }
       ],
       "affected_service": "ご契約者さま専用ページ",
       "service_aliases": [],
       "added_at": "2026-11-04T10:15:52+00:00",
-      "updated_at": "2026-11-13T06:15:30+00:00"
+      "updated_at": "2026-11-16T00:15:49+00:00"
     },
     {
       "id": "19cce63ebf03c536",
@@ -16997,12 +17007,16 @@
         {
           "name": "NHKニュース",
           "url": "https://news.web.nhk/newsweb/na/nd-20261109de72886"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/16/56792.html"
         }
       ],
       "affected_service": "MSコンパス",
       "service_aliases": [],
       "added_at": "2026-11-09T06:16:50+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-16T00:15:49+00:00"
     },
     {
       "id": "8c7c37b1537ea3b7",
@@ -17403,12 +17417,16 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNTzN2OU1ZR3BtOWR5VFp6Z0RyYmtmOGxyOHRwdm8tcEtKYzQtR0VyZ21Dak9LTVNVTF8tLVU1V2UtWTVGblpjTkRfNGc3dEoxM25pcC1Ubl9WWkZqR3QxNTNCeG1mRHozUDRlaHEtOElqbk1FVzZlVXZvX2pGLUdmLXA5UFZJYWViaGRBcVhNYlBUVXN3Y3FfRVQ4R1kteXlQVlp2Sg?oc=5"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/16/56793.html"
         }
       ],
       "affected_service": "MyAXA",
       "service_aliases": [],
       "added_at": "2026-11-15T00:16:10+00:00",
-      "updated_at": "2026-11-15T00:16:10+00:00"
+      "updated_at": "2026-11-16T00:15:49+00:00"
     },
     {
       "id": "bd2d832f478781fb",
@@ -19185,6 +19203,47 @@
       "updated_at": "2026-11-12T07:15:39+00:00"
     },
     {
+      "id": "da81f1de130037ec",
+      "published_at": "2026-10-31T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "Shippio",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/16/56787.html"
+        },
+        {
+          "name": "LOGI-BIZ online",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1wWVdia1dUZ0lmNWF6eEZLUl8yd0xwVTljREFEVkd3b2t5blBPUHI2ZmJkZE43V1JuV2dTR2RXSnBvak5yVndyU0FWSQ?oc=5"
+        },
+        {
+          "name": "物流ニュースのLNEWS",
+          "url": "https://www.lnews.jp/2026/11/s1104704.html"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC0493G0U6A101C2000000/"
+        },
+        {
+          "name": "LOGISTICS TODAY",
+          "url": "https://www.logi-today.com/1018150"
+        }
+      ],
+      "affected_service": "Shippio Platform",
+      "service_aliases": [],
+      "added_at": "2026-11-04T06:13:31+00:00",
+      "updated_at": "2026-11-16T00:15:49+00:00"
+    },
+    {
       "id": "590917c47f5ba4f5",
       "published_at": "2026-10-31T15:00:00+00:00",
       "disclosed_at": "2026-11-01T15:00:00+00:00",
@@ -19392,43 +19451,6 @@
       "affected_service": "ピックゴー",
       "service_aliases": [],
       "added_at": "2026-11-03T22:15:33+00:00",
-      "updated_at": "2026-11-12T07:15:39+00:00"
-    },
-    {
-      "id": "da81f1de130037ec",
-      "published_at": "2026-10-31T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "Shippio",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "LOGI-BIZ online",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1wWVdia1dUZ0lmNWF6eEZLUl8yd0xwVTljREFEVkd3b2t5blBPUHI2ZmJkZE43V1JuV2dTR2RXSnBvak5yVndyU0FWSQ?oc=5"
-        },
-        {
-          "name": "物流ニュースのLNEWS",
-          "url": "https://www.lnews.jp/2026/11/s1104704.html"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUC0493G0U6A101C2000000/"
-        },
-        {
-          "name": "LOGISTICS TODAY",
-          "url": "https://www.logi-today.com/1018150"
-        }
-      ],
-      "affected_service": "Shippio Platform",
-      "service_aliases": [],
-      "added_at": "2026-11-04T06:13:31+00:00",
       "updated_at": "2026-11-12T07:15:39+00:00"
     },
     {
@@ -24150,6 +24172,10 @@
           "url": "https://news.yahoo.co.jp/articles/764ac599c15550a7e20d71c15b116ae33cee2b6c"
         },
         {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/16/56790.html"
+        },
+        {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/yasukuni-shrine-online-goods-14500-password-hash-leak/"
         },
@@ -24169,7 +24195,7 @@
       "affected_service": "オンライン授与品・頒布品サイト",
       "service_aliases": [],
       "added_at": "2026-11-11T13:16:39+00:00",
-      "updated_at": "2026-11-12T11:15:59+00:00"
+      "updated_at": "2026-11-16T00:15:49+00:00"
     },
     {
       "id": "3f9647cdc55cfd86",
@@ -54782,10 +54808,14 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118131"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/16/56788.html"
         }
       ],
       "added_at": "2026-11-05T01:16:21+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-16T00:15:49+00:00"
     },
     {
       "id": "6c2dfbdab31a21b4",
