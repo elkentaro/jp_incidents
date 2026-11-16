@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-16T08:15:31+00:00",
-  "total": 1264,
+  "updated_at": "2026-11-16T09:15:38+00:00",
+  "total": 1265,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-16"
@@ -366,7 +366,7 @@
     },
     {
       "date": "2026-11-16",
-      "count": 7
+      "count": 8
     }
   ],
   "incidents": [
@@ -450,6 +450,14 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/d563b373d959b86be92d593df073e8a185ea5ae6"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/eae78f78ce1f86490c01cb69f266028665ae9337"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118519"
         }
       ],
       "affected_system": null,
@@ -457,7 +465,47 @@
       "affected_service": "富岳",
       "service_aliases": [],
       "added_at": "2026-11-16T06:15:50+00:00",
-      "updated_at": "2026-11-16T08:15:31+00:00"
+      "updated_at": "2026-11-16T09:15:38+00:00"
+    },
+    {
+      "id": "12169f1654048f6f",
+      "published_at": "2026-11-15T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "日清食品",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1374157,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "aa9bc3fcfc85d71d",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/e4326c647e8b3cd4624507356ae76b3b3a7c18e9",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/e4326c647e8b3cd4624507356ae76b3b3a7c18e9"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/e4326c647e8b3cd4624507356ae76b3b3a7c18e9"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC1651Z0W6A111C2000000/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "LINE公式アカウント「日清食品キャンペーン」",
+      "service_aliases": [],
+      "added_at": "2026-11-16T09:15:38+00:00",
+      "updated_at": "2026-11-16T09:15:38+00:00"
     },
     {
       "id": "49c31a0d93416cae",
@@ -492,7 +540,8 @@
       "organization": "キリンビール",
       "incident_type": "data leak",
       "incident_categories": [
-        "data leak"
+        "data leak",
+        "unauthorized access"
       ],
       "potential_records": 58613,
       "confidence": "medium",
@@ -511,6 +560,10 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUC163P00W6A111C2000000/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/c9d0ddcd4cb9d11a3d30b04c39e6b102c95cc517"
         }
       ],
       "affected_system": null,
@@ -518,7 +571,7 @@
       "affected_service": "DRINX",
       "service_aliases": [],
       "added_at": "2026-11-16T08:15:31+00:00",
-      "updated_at": "2026-11-16T08:15:31+00:00"
+      "updated_at": "2026-11-16T09:15:38+00:00"
     },
     {
       "id": "2d5a37d534a4cc3a",
@@ -851,6 +904,10 @@
         {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261116581049.pdf"
+        },
+        {
+          "name": "ビジネス+IT",
+          "url": "https://www.sbbit.jp/article/cont1/188437"
         }
       ],
       "affected_system": null,
@@ -858,7 +915,7 @@
       "affected_service": "Cacoo",
       "service_aliases": [],
       "added_at": "2026-11-16T05:16:04+00:00",
-      "updated_at": "2026-11-16T08:15:31+00:00"
+      "updated_at": "2026-11-16T09:15:38+00:00"
     },
     {
       "id": "307eba6e291c0389",
@@ -5344,6 +5401,10 @@
         {
           "name": "BigGo ファイナンス",
           "url": "https://finance.biggo.jp/news/d2d3c5da-07c2-46be-a0eb-ddc3f99ea996"
+        },
+        {
+          "name": "NOVAIST",
+          "url": "https://novaist.jp/articles/goqsystem-data-breach/"
         }
       ],
       "affected_system": null,
@@ -5351,7 +5412,7 @@
       "affected_service": "GoQSystem",
       "service_aliases": [],
       "added_at": "2026-11-15T18:16:24+00:00",
-      "updated_at": "2026-11-16T06:15:50+00:00"
+      "updated_at": "2026-11-16T09:15:38+00:00"
     },
     {
       "id": "64589e58e48fed43",
@@ -14204,6 +14265,73 @@
       "updated_at": "2026-11-12T08:18:15+00:00"
     },
     {
+      "id": "56a3d2457cb3a538",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大阪府",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "de0e67750f5fe874",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.asahi.com/articles/ASVCF34VMVCFOXIE01NM.html",
+          "evidence_urls": [
+            "https://www.asahi.com/articles/ASVCF34VMVCFOXIE01NM.html"
+          ]
+        },
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/7dd848d840f4cb82c11fcd2077b6d504542c52b5",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/7dd848d840f4cb82c11fcd2077b6d504542c52b5",
+            "https://www.asahi.com/articles/ASVC42QBHVC4OXIE02DM.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVCJ2DB3VCJOXIE02GM.html"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVC42QBHVC4OXIE02DM.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/99c04d343bf20e148b9403a109d4dcd739f0fe4a"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/7dd848d840f4cb82c11fcd2077b6d504542c52b5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/01cb8f4391df76965753f58aadca6f2a26d23bc4"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/0438707b827622e5e7e10000068b6697632474e2"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/mbs/3088447?display=1"
+        }
+      ],
+      "affected_service": "行政オンラインシステム",
+      "service_aliases": [],
+      "added_at": "2026-11-04T12:25:20+00:00",
+      "updated_at": "2026-11-16T09:15:38+00:00"
+    },
+    {
       "id": "5aad8865a350a69d",
       "published_at": "2026-11-03T15:00:00+00:00",
       "disclosed_at": null,
@@ -15244,69 +15372,6 @@
       ],
       "added_at": "2026-11-04T00:14:16+00:00",
       "updated_at": "2026-11-04T00:14:16+00:00"
-    },
-    {
-      "id": "56a3d2457cb3a538",
-      "published_at": "2026-11-03T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "大阪府",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "de0e67750f5fe874",
-          "relationship": "same_organization",
-          "evidence_url": "https://www.asahi.com/articles/ASVCF34VMVCFOXIE01NM.html",
-          "evidence_urls": [
-            "https://www.asahi.com/articles/ASVCF34VMVCFOXIE01NM.html"
-          ]
-        },
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/7dd848d840f4cb82c11fcd2077b6d504542c52b5",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/7dd848d840f4cb82c11fcd2077b6d504542c52b5",
-            "https://www.asahi.com/articles/ASVC42QBHVC4OXIE02DM.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "朝日新聞",
-          "url": "https://www.asahi.com/articles/ASVC42QBHVC4OXIE02DM.html"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/99c04d343bf20e148b9403a109d4dcd739f0fe4a"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/7dd848d840f4cb82c11fcd2077b6d504542c52b5"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/01cb8f4391df76965753f58aadca6f2a26d23bc4"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/0438707b827622e5e7e10000068b6697632474e2"
-        },
-        {
-          "name": "TBS NEWS DIG",
-          "url": "https://newsdig.tbs.co.jp/articles/mbs/3088447?display=1"
-        }
-      ],
-      "affected_service": "行政オンラインシステム",
-      "service_aliases": [],
-      "added_at": "2026-11-04T12:25:20+00:00",
-      "updated_at": "2026-11-16T08:15:31+00:00"
     },
     {
       "id": "5d5d3d080fa4a4dd",
@@ -33600,6 +33665,14 @@
           ]
         },
         {
+          "incident_id": "12169f1654048f6f",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/e4326c647e8b3cd4624507356ae76b3b3a7c18e9",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/e4326c647e8b3cd4624507356ae76b3b3a7c18e9"
+          ]
+        },
+        {
           "incident_id": "33868e758324fd57",
           "relationship": "affects",
           "evidence_url": "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf",
@@ -33743,7 +33816,7 @@
         }
       ],
       "added_at": "2026-10-27T07:15:28+00:00",
-      "updated_at": "2026-11-16T04:15:35+00:00"
+      "updated_at": "2026-11-16T09:15:38+00:00"
     },
     {
       "id": "af7b771bb23be504",
