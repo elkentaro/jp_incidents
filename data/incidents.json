@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-16T01:15:40+00:00",
-  "total": 1242,
+  "updated_at": "2026-11-16T02:16:06+00:00",
+  "total": 1246,
   "date_range": {
     "start": "2023-12-24",
-    "end": "2026-11-15"
+    "end": "2026-11-16"
   },
   "daily_counts_90d": [
     {
@@ -342,11 +342,11 @@
     },
     {
       "date": "2026-11-10",
-      "count": 47
+      "count": 48
     },
     {
       "date": "2026-11-11",
-      "count": 30
+      "count": 31
     },
     {
       "date": "2026-11-12",
@@ -354,7 +354,7 @@
     },
     {
       "date": "2026-11-13",
-      "count": 26
+      "count": 27
     },
     {
       "date": "2026-11-14",
@@ -366,10 +366,46 @@
     },
     {
       "date": "2026-11-16",
-      "count": 0
+      "count": 1
     }
   ],
   "incidents": [
+    {
+      "id": "7534e513b4afedcf",
+      "published_at": "2026-11-15T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "加東市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 3,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "a99204c7fb0a8fea",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.kato.lg.jp/kakukanogoannai/kenkoufukushibu/kenkoka/Vitality/18209.html",
+          "evidence_urls": [
+            "https://www.city.kato.lg.jp/kakukanogoannai/kenkoufukushibu/kenkoka/Vitality/18209.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "加東市",
+          "url": "https://www.city.kato.lg.jp/kakukanogoannai/kenkoufukushibu/kenkoka/Vitality/18209.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "Vitalityかとうウォーク",
+      "service_aliases": [],
+      "added_at": "2026-11-16T02:16:06+00:00",
+      "updated_at": "2026-11-16T02:16:06+00:00"
+    },
     {
       "id": "d318d48ee62aac20",
       "published_at": "2026-11-14T15:00:00+00:00",
@@ -1163,6 +1199,44 @@
       "updated_at": "2026-11-15T01:15:27+00:00"
     },
     {
+      "id": "bc23a4a79551eddb",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "国民生活センター",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "5132d5e78b41b9cf",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.kokusen.go.jp/hello/data/da-20261113.html",
+          "evidence_urls": [
+            "https://www.kokusen.go.jp/hello/data/da-20261113.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.kokusen.go.jp/hello/data/da-20261113.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "m-FILTER MailAdviser(Microsoft 365対応版)",
+      "service_aliases": [
+        "m-FILTER MailAdviser",
+        "Microsoft 365対応版"
+      ],
+      "added_at": "2026-11-16T02:16:06+00:00",
+      "updated_at": "2026-11-16T02:16:06+00:00"
+    },
+    {
       "id": "c2f8a4ca539483fd",
       "published_at": "2026-11-12T15:00:00+00:00",
       "disclosed_at": "2026-11-12T15:00:00+00:00",
@@ -1704,6 +1778,10 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/snow_peak_four_incidents_reuse_events_community_store_20261113/"
+        },
+        {
+          "name": "ASCII.jp",
+          "url": "https://ascii.jp/elem/000/004/451/4451661/"
         }
       ],
       "affected_system": null,
@@ -1740,7 +1818,7 @@
         }
       ],
       "added_at": "2026-11-13T21:16:06+00:00",
-      "updated_at": "2026-11-14T07:15:25+00:00"
+      "updated_at": "2026-11-16T02:16:06+00:00"
     },
     {
       "id": "c315588305545d55",
@@ -4294,6 +4372,33 @@
       "updated_at": "2026-11-13T07:15:40+00:00"
     },
     {
+      "id": "909cfe24afcf8d43",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": "2026-11-12T15:00:00+00:00",
+      "organization": "アミクスレックス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 818,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "Chosunbiz",
+          "url": "https://biz.chosun.com/jp/jp-industry/2026/11/13/Q3OIRSHSXNESLGX4R3PDVFGRMY/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "みんなの創業 第2次プログラム",
+      "service_aliases": [],
+      "added_at": "2026-11-16T02:16:06+00:00",
+      "updated_at": "2026-11-16T02:16:06+00:00"
+    },
+    {
       "id": "9ae6202b572d37e8",
       "published_at": "2026-11-10T15:00:00+00:00",
       "disclosed_at": null,
@@ -5247,12 +5352,16 @@
         {
           "name": "satimo list",
           "url": "https://www.booklive.co.jp/topics/18739"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118463"
         }
       ],
       "affected_service": "総合電子書籍ストア「ブックライブ」",
       "service_aliases": [],
       "added_at": "2026-11-13T02:15:39+00:00",
-      "updated_at": "2026-11-13T02:15:39+00:00"
+      "updated_at": "2026-11-16T02:16:06+00:00"
     },
     {
       "id": "d25073eefd8d0aaf",
@@ -5612,6 +5721,31 @@
       ],
       "added_at": "2026-11-10T20:15:39+00:00",
       "updated_at": "2026-11-12T07:15:39+00:00"
+    },
+    {
+      "id": "08a6601681e04cac",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": "2026-11-12T15:00:00+00:00",
+      "organization": "ラキール",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 140,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/lakeel-aws-access-key-stolen-customer-environment-140-2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "added_at": "2026-11-16T02:16:06+00:00",
+      "updated_at": "2026-11-16T02:16:06+00:00"
     },
     {
       "id": "14cc468f9a7f9a3d",
@@ -6434,12 +6568,16 @@
         {
           "name": "satimo list",
           "url": "https://www.eicoh.com/news/detail/127"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/eicoh-ransomware-unauthorized-access-payment-change-2026/"
         }
       ],
       "affected_system": null,
       "date_basis": "occurrence",
       "added_at": "2026-11-16T01:15:40+00:00",
-      "updated_at": "2026-11-16T01:15:40+00:00"
+      "updated_at": "2026-11-16T02:16:06+00:00"
     },
     {
       "id": "73760e3f9e89e045",
@@ -17476,6 +17614,14 @@
           "evidence_urls": [
             "https://www.yomiuri.co.jp/local/ibaraki/news/20261110-GYTNT00252/"
           ]
+        },
+        {
+          "incident_id": "7534e513b4afedcf",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.kato.lg.jp/kakukanogoannai/kenkoufukushibu/kenkoka/Vitality/18209.html",
+          "evidence_urls": [
+            "https://www.city.kato.lg.jp/kakukanogoannai/kenkoufukushibu/kenkoka/Vitality/18209.html"
+          ]
         }
       ],
       "sources": [
@@ -17503,7 +17649,7 @@
       "affected_service": "住友生命Vitality体験版・企業型、Vitalityスマート(福利厚生タイプ含む)の申込みに係るサービス",
       "service_aliases": [],
       "added_at": "2026-11-09T08:16:45+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-16T02:16:06+00:00"
     },
     {
       "id": "afc91125741205f2",
@@ -37200,6 +37346,14 @@
           "evidence_urls": [
             "https://www.city.shibuya.tokyo.jp/kusei/koho/shibuya-portal/unauthorized_access_202611.html"
           ]
+        },
+        {
+          "incident_id": "bc23a4a79551eddb",
+          "relationship": "affects",
+          "evidence_url": "https://www.kokusen.go.jp/hello/data/da-20261113.html",
+          "evidence_urls": [
+            "https://www.kokusen.go.jp/hello/data/da-20261113.html"
+          ]
         }
       ],
       "sources": [
@@ -37233,7 +37387,7 @@
         }
       ],
       "added_at": "2026-10-21T08:05:23+00:00",
-      "updated_at": "2026-11-13T06:15:30+00:00"
+      "updated_at": "2026-11-16T02:16:06+00:00"
     },
     {
       "id": "53ec72ba13cb644f",
@@ -54383,6 +54537,41 @@
       "updated_at": "2026-11-12T08:18:15+00:00"
     },
     {
+      "id": "2b37a3ec593fdde3",
+      "published_at": "2026-09-29T15:00:00+00:00",
+      "disclosed_at": "2026-09-29T15:00:00+00:00",
+      "organization": "広島ガス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 3200,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "9e062c8ef6d5840c",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa0Q3bWJDaFFwWU03SWtfMHlBc1N6TzRLSEwxVXpxNk1RWHdsS25VZmhsNGVKdUdCN19TN1QwY0hVV3BHUDdSdUVFYWl1UzJhWkRwem42VldfMWRXWndkZXJtNFBQMndQZGFGUnctcXhwdnNoNFpUbmxxa2lVTm1CeUZzYTkwX1VrSmh2N29kal93bk5vOWlWZTdWUnpUMmxRbFN5bVRwNUZvdw?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa0Q3bWJDaFFwWU03SWtfMHlBc1N6TzRLSEwxVXpxNk1RWHdsS25VZmhsNGVKdUdCN19TN1QwY0hVV3BHUDdSdUVFYWl1UzJhWkRwem42VldfMWRXWndkZXJtNFBQMndQZGFGUnctcXhwdnNoNFpUbmxxa2lVTm1CeUZzYTkwX1VrSmh2N29kal93bk5vOWlWZTdWUnpUMmxRbFN5bVRwNUZvdw?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.hiroshima-gas.co.jp/com/w_new/info/2026/fusei1113.htm"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa0Q3bWJDaFFwWU03SWtfMHlBc1N6TzRLSEwxVXpxNk1RWHdsS25VZmhsNGVKdUdCN19TN1QwY0hVV3BHUDdSdUVFYWl1UzJhWkRwem42VldfMWRXWndkZXJtNFBQMndQZGFGUnctcXhwdnNoNFpUbmxxa2lVTm1CeUZzYTkwX1VrSmh2N29kal93bk5vOWlWZTdWUnpUMmxRbFN5bVRwNUZvdw?oc=5"
+        }
+      ],
+      "added_at": "2026-11-16T01:15:40+00:00",
+      "updated_at": "2026-11-16T02:16:06+00:00"
+    },
+    {
       "id": "f587bd286fd60bcb",
       "published_at": "2026-09-29T15:00:00+00:00",
       "disclosed_at": "2026-10-20T15:00:00+00:00",
@@ -54417,37 +54606,6 @@
       ],
       "added_at": "2026-10-21T22:20:39+00:00",
       "updated_at": "2026-11-12T08:18:15+00:00"
-    },
-    {
-      "id": "2b37a3ec593fdde3",
-      "published_at": "2026-09-29T15:00:00+00:00",
-      "disclosed_at": "2026-09-29T15:00:00+00:00",
-      "organization": "広島ガス",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 3200,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "9e062c8ef6d5840c",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa0Q3bWJDaFFwWU03SWtfMHlBc1N6TzRLSEwxVXpxNk1RWHdsS25VZmhsNGVKdUdCN19TN1QwY0hVV3BHUDdSdUVFYWl1UzJhWkRwem42VldfMWRXWndkZXJtNFBQMndQZGFGUnctcXhwdnNoNFpUbmxxa2lVTm1CeUZzYTkwX1VrSmh2N29kal93bk5vOWlWZTdWUnpUMmxRbFN5bVRwNUZvdw?oc=5",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa0Q3bWJDaFFwWU03SWtfMHlBc1N6TzRLSEwxVXpxNk1RWHdsS25VZmhsNGVKdUdCN19TN1QwY0hVV3BHUDdSdUVFYWl1UzJhWkRwem42VldfMWRXWndkZXJtNFBQMndQZGFGUnctcXhwdnNoNFpUbmxxa2lVTm1CeUZzYTkwX1VrSmh2N29kal93bk5vOWlWZTdWUnpUMmxRbFN5bVRwNUZvdw?oc=5"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa0Q3bWJDaFFwWU03SWtfMHlBc1N6TzRLSEwxVXpxNk1RWHdsS25VZmhsNGVKdUdCN19TN1QwY0hVV3BHUDdSdUVFYWl1UzJhWkRwem42VldfMWRXWndkZXJtNFBQMndQZGFGUnctcXhwdnNoNFpUbmxxa2lVTm1CeUZzYTkwX1VrSmh2N29kal93bk5vOWlWZTdWUnpUMmxRbFN5bVRwNUZvdw?oc=5"
-        }
-      ],
-      "added_at": "2026-11-16T01:15:40+00:00",
-      "updated_at": "2026-11-16T01:15:40+00:00"
     },
     {
       "id": "370d5abd9f49c181",
