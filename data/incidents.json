@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-16T05:16:04+00:00",
-  "total": 1258,
+  "updated_at": "2026-11-16T06:15:50+00:00",
+  "total": 1261,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-16"
@@ -366,10 +366,65 @@
     },
     {
       "date": "2026-11-16",
-      "count": 2
+      "count": 4
     }
   ],
   "incidents": [
+    {
+      "id": "bc877c118f83261b",
+      "published_at": "2026-11-15T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "長野県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 365,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "長野県 / Nagano",
+          "url": "https://www.pref.nagano.lg.jp/kaigo-shien/happyou/20261116press.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-16T06:15:50+00:00",
+      "updated_at": "2026-11-16T06:15:50+00:00"
+    },
+    {
+      "id": "027a77624c548ee7",
+      "published_at": "2026-11-15T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "理化学研究所",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2611/16/2000003224/"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOSG162TT0W6A111C2000000/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "富岳",
+      "service_aliases": [],
+      "added_at": "2026-11-16T06:15:50+00:00",
+      "updated_at": "2026-11-16T06:15:50+00:00"
+    },
     {
       "id": "2d5a37d534a4cc3a",
       "published_at": "2026-11-15T15:00:00+00:00",
@@ -5172,6 +5227,10 @@
           "url": "https://news.yahoo.co.jp/articles/7188b4621aebbb201bb1e6d933e079153c8de050"
         },
         {
+          "name": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2156617.html"
+        },
+        {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/goqsystem-order-data-breach-4367390-202611/"
         },
@@ -5193,7 +5252,7 @@
       "affected_service": "GoQSystem",
       "service_aliases": [],
       "added_at": "2026-11-15T18:16:24+00:00",
-      "updated_at": "2026-11-16T04:15:35+00:00"
+      "updated_at": "2026-11-16T06:15:50+00:00"
     },
     {
       "id": "64589e58e48fed43",
@@ -8270,10 +8329,14 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118311"
+        },
+        {
+          "name": "物流ニュースのLNEWS",
+          "url": "https://www.lnews.jp/2026/11/s1116501.html"
         }
       ],
       "added_at": "2026-11-11T09:15:59+00:00",
-      "updated_at": "2026-11-16T04:15:35+00:00"
+      "updated_at": "2026-11-16T06:15:50+00:00"
     },
     {
       "id": "cb69602b79e76443",
@@ -55566,6 +55629,31 @@
       ],
       "added_at": "2026-10-21T00:07:38+00:00",
       "updated_at": "2026-11-12T11:15:59+00:00"
+    },
+    {
+      "id": "15b3768a87b51871",
+      "published_at": "2026-08-02T15:00:00+00:00",
+      "disclosed_at": "2026-08-02T15:00:00+00:00",
+      "organization": "講談社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 3812,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/d9db8a50c68e9a9fffe1bef74dd119e1c8325adc"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "added_at": "2026-11-16T06:15:50+00:00",
+      "updated_at": "2026-11-16T06:15:50+00:00"
     },
     {
       "id": "31c76cc0c11d1aab",
