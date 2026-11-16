@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-16T00:15:49+00:00",
-  "total": 1237,
+  "updated_at": "2026-11-16T01:15:40+00:00",
+  "total": 1242,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-15"
@@ -178,7 +178,7 @@
     },
     {
       "date": "2026-09-30",
-      "count": 3
+      "count": 4
     },
     {
       "date": "2026-10-01",
@@ -338,7 +338,7 @@
     },
     {
       "date": "2026-11-09",
-      "count": 37
+      "count": 38
     },
     {
       "date": "2026-11-10",
@@ -350,11 +350,11 @@
     },
     {
       "date": "2026-11-12",
-      "count": 30
+      "count": 31
     },
     {
       "date": "2026-11-13",
-      "count": 25
+      "count": 26
     },
     {
       "date": "2026-11-14",
@@ -957,6 +957,14 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/54eb1d7f5c63b9ee2dcc148d54284272cd8c1775"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/plaid-karte-unauthorized-access-service-suspension-2026/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118462"
         }
       ],
       "affected_system": null,
@@ -966,7 +974,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-14T09:15:22+00:00"
+      "updated_at": "2026-11-16T01:15:40+00:00"
     },
     {
       "id": "9f04a00959566f37",
@@ -1063,6 +1071,45 @@
       "service_aliases": [],
       "added_at": "2026-11-13T07:15:40+00:00",
       "updated_at": "2026-11-13T22:16:19+00:00"
+    },
+    {
+      "id": "a82d90aaa15a47e6",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-12T15:00:00+00:00",
+      "organization": "三井住友信託銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 2351,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/smtb-fleekdrive-arara-email-leak-2351-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/smtb-fleekdrive-arara-email-leak-2351-2026/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/smtb-fleekdrive-arara-email-leak-2351-2026/"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://www.smtb.jp/-/media/tb/about/corporate/release/pdf/261113.pdf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "アララメッセージ",
+      "service_aliases": [],
+      "added_at": "2026-11-16T01:15:40+00:00",
+      "updated_at": "2026-11-16T01:15:40+00:00"
     },
     {
       "id": "ae2489380e589446",
@@ -1923,6 +1970,63 @@
       "updated_at": "2026-11-14T12:25:39+00:00"
     },
     {
+      "id": "289107dce97c57e4",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": "2026-11-13T15:00:00+00:00",
+      "organization": "株式会社アトラス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 10000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.atlas.jp/news/2026-11-14"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/atlas_confit_63_societies_10000_personal_corporate_risks_seo_links_20261115/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "「Confit」のオプション機能「発表データ収集公開機能」",
+      "service_aliases": [],
+      "added_at": "2026-11-15T09:15:36+00:00",
+      "updated_at": "2026-11-16T01:15:40+00:00"
+    },
+    {
+      "id": "43c1ffdb36beb846",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "NTTソノリティ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://ntt-sonority.com/blogs/news/261112-2"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "Notion AI",
+      "service_aliases": [],
+      "added_at": "2026-11-16T01:15:40+00:00",
+      "updated_at": "2026-11-16T01:15:40+00:00"
+    },
+    {
       "id": "4d5625761a2f2f2c",
       "published_at": "2026-11-11T15:00:00+00:00",
       "disclosed_at": null,
@@ -2686,33 +2790,6 @@
       "service_aliases": [],
       "added_at": "2026-11-12T20:15:40+00:00",
       "updated_at": "2026-11-12T20:15:40+00:00"
-    },
-    {
-      "id": "289107dce97c57e4",
-      "published_at": "2026-11-11T15:00:00+00:00",
-      "disclosed_at": "2026-11-13T15:00:00+00:00",
-      "organization": "株式会社アトラス",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 10000,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/atlas_confit_63_societies_10000_personal_corporate_risks_seo_links_20261115/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "discovery",
-      "affected_service": "「Confit」のオプション機能「発表データ収集公開機能」",
-      "service_aliases": [],
-      "added_at": "2026-11-15T09:15:36+00:00",
-      "updated_at": "2026-11-15T09:15:36+00:00"
     },
     {
       "id": "4a121ba013ca9414",
@@ -4603,6 +4680,41 @@
       "updated_at": "2026-11-12T08:18:15+00:00"
     },
     {
+      "id": "557c85f6d895d50b",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": "2026-11-11T15:00:00+00:00",
+      "organization": "株式会社GoQSystem",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 4367390,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://goq.co.jp/security-incident-2.html"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/goqsystem-order-data-breach-4367390-202611/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118464"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "GoQSystem",
+      "service_aliases": [],
+      "added_at": "2026-11-15T18:16:24+00:00",
+      "updated_at": "2026-11-16T01:15:40+00:00"
+    },
+    {
       "id": "64589e58e48fed43",
       "published_at": "2026-11-09T15:00:00+00:00",
       "disclosed_at": "2026-11-12T15:00:00+00:00",
@@ -5644,33 +5756,6 @@
       "updated_at": "2026-11-12T21:15:22+00:00"
     },
     {
-      "id": "557c85f6d895d50b",
-      "published_at": "2026-11-09T15:00:00+00:00",
-      "disclosed_at": "2026-11-11T15:00:00+00:00",
-      "organization": "株式会社GoQSystem",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 4367390,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/goqsystem-order-data-breach-4367390-202611/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "occurrence",
-      "affected_service": "GoQSystem",
-      "service_aliases": [],
-      "added_at": "2026-11-15T18:16:24+00:00",
-      "updated_at": "2026-11-15T18:16:24+00:00"
-    },
-    {
       "id": "5d9388db64d7c7fe",
       "published_at": "2026-11-09T15:00:00+00:00",
       "disclosed_at": null,
@@ -6330,6 +6415,31 @@
       "service_aliases": [],
       "added_at": "2026-11-10T00:16:43+00:00",
       "updated_at": "2026-11-12T08:18:15+00:00"
+    },
+    {
+      "id": "4876c6a3d173d68b",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社エイコー",
+      "incident_type": "ransomware",
+      "incident_categories": [
+        "ransomware",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.eicoh.com/news/detail/127"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "added_at": "2026-11-16T01:15:40+00:00",
+      "updated_at": "2026-11-16T01:15:40+00:00"
     },
     {
       "id": "73760e3f9e89e045",
@@ -24543,6 +24653,7 @@
       "incident_type": "data leak",
       "incident_categories": [
         "data leak",
+        "other",
         "unauthorized access"
       ],
       "potential_records": 385000,
@@ -24597,7 +24708,7 @@
         }
       ],
       "added_at": "2026-10-28T14:15:45+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-16T01:15:40+00:00"
     },
     {
       "id": "8359871b1e7e813f",
@@ -26021,6 +26132,14 @@
           ]
         },
         {
+          "incident_id": "a82d90aaa15a47e6",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/smtb-fleekdrive-arara-email-leak-2351-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/smtb-fleekdrive-arara-email-leak-2351-2026/"
+          ]
+        },
+        {
           "incident_id": "a8cb481db54a38a4",
           "relationship": "affects",
           "evidence_url": "https://rinavis.com/f/notice_20261111",
@@ -26552,7 +26671,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-15T08:15:41+00:00"
+      "updated_at": "2026-11-16T01:15:40+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -54300,6 +54419,37 @@
       "updated_at": "2026-11-12T08:18:15+00:00"
     },
     {
+      "id": "2b37a3ec593fdde3",
+      "published_at": "2026-09-29T15:00:00+00:00",
+      "disclosed_at": "2026-09-29T15:00:00+00:00",
+      "organization": "広島ガス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 3200,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "9e062c8ef6d5840c",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa0Q3bWJDaFFwWU03SWtfMHlBc1N6TzRLSEwxVXpxNk1RWHdsS25VZmhsNGVKdUdCN19TN1QwY0hVV3BHUDdSdUVFYWl1UzJhWkRwem42VldfMWRXWndkZXJtNFBQMndQZGFGUnctcXhwdnNoNFpUbmxxa2lVTm1CeUZzYTkwX1VrSmh2N29kal93bk5vOWlWZTdWUnpUMmxRbFN5bVRwNUZvdw?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa0Q3bWJDaFFwWU03SWtfMHlBc1N6TzRLSEwxVXpxNk1RWHdsS25VZmhsNGVKdUdCN19TN1QwY0hVV3BHUDdSdUVFYWl1UzJhWkRwem42VldfMWRXWndkZXJtNFBQMndQZGFGUnctcXhwdnNoNFpUbmxxa2lVTm1CeUZzYTkwX1VrSmh2N29kal93bk5vOWlWZTdWUnpUMmxRbFN5bVRwNUZvdw?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa0Q3bWJDaFFwWU03SWtfMHlBc1N6TzRLSEwxVXpxNk1RWHdsS25VZmhsNGVKdUdCN19TN1QwY0hVV3BHUDdSdUVFYWl1UzJhWkRwem42VldfMWRXWndkZXJtNFBQMndQZGFGUnctcXhwdnNoNFpUbmxxa2lVTm1CeUZzYTkwX1VrSmh2N29kal93bk5vOWlWZTdWUnpUMmxRbFN5bVRwNUZvdw?oc=5"
+        }
+      ],
+      "added_at": "2026-11-16T01:15:40+00:00",
+      "updated_at": "2026-11-16T01:15:40+00:00"
+    },
+    {
       "id": "370d5abd9f49c181",
       "published_at": "2026-09-29T15:00:00+00:00",
       "disclosed_at": "2026-10-15T15:00:00+00:00",
@@ -54639,6 +54789,41 @@
       "date_basis": "occurrence",
       "added_at": "2026-10-20T07:24:24+00:00",
       "updated_at": "2026-11-12T07:15:39+00:00"
+    },
+    {
+      "id": "9e062c8ef6d5840c",
+      "published_at": "2026-08-11T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "両毛システムズ",
+      "incident_type": "ransomware",
+      "incident_categories": [
+        "ransomware"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "2b37a3ec593fdde3",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa0Q3bWJDaFFwWU03SWtfMHlBc1N6TzRLSEwxVXpxNk1RWHdsS25VZmhsNGVKdUdCN19TN1QwY0hVV3BHUDdSdUVFYWl1UzJhWkRwem42VldfMWRXWndkZXJtNFBQMndQZGFGUnctcXhwdnNoNFpUbmxxa2lVTm1CeUZzYTkwX1VrSmh2N29kal93bk5vOWlWZTdWUnpUMmxRbFN5bVRwNUZvdw?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa0Q3bWJDaFFwWU03SWtfMHlBc1N6TzRLSEwxVXpxNk1RWHdsS25VZmhsNGVKdUdCN19TN1QwY0hVV3BHUDdSdUVFYWl1UzJhWkRwem42VldfMWRXWndkZXJtNFBQMndQZGFGUnctcXhwdnNoNFpUbmxxa2lVTm1CeUZzYTkwX1VrSmh2N29kal93bk5vOWlWZTdWUnpUMmxRbFN5bVRwNUZvdw?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "news.google.com",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa0Q3bWJDaFFwWU03SWtfMHlBc1N6TzRLSEwxVXpxNk1RWHdsS25VZmhsNGVKdUdCN19TN1QwY0hVV3BHUDdSdUVFYWl1UzJhWkRwem42VldfMWRXWndkZXJtNFBQMndQZGFGUnctcXhwdnNoNFpUbmxxa2lVTm1CeUZzYTkwX1VrSmh2N29kal93bk5vOWlWZTdWUnpUMmxRbFN5bVRwNUZvdw?oc=5"
+        },
+        {
+          "name": "www.ryomo.co.jp",
+          "url": "https://www.ryomo.co.jp/news/202608_02.html"
+        }
+      ],
+      "added_at": "2026-11-16T01:15:40+00:00",
+      "updated_at": "2026-11-16T01:15:40+00:00"
     },
     {
       "id": "f6e739d2d64628d4",
