@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-16T09:15:38+00:00",
-  "total": 1265,
+  "updated_at": "2026-11-16T10:15:50+00:00",
+  "total": 1270,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-16"
@@ -310,7 +310,7 @@
     },
     {
       "date": "2026-11-02",
-      "count": 62
+      "count": 63
     },
     {
       "date": "2026-11-03",
@@ -346,11 +346,11 @@
     },
     {
       "date": "2026-11-11",
-      "count": 33
+      "count": 34
     },
     {
       "date": "2026-11-12",
-      "count": 32
+      "count": 33
     },
     {
       "date": "2026-11-13",
@@ -366,7 +366,7 @@
     },
     {
       "date": "2026-11-16",
-      "count": 8
+      "count": 10
     }
   ],
   "incidents": [
@@ -395,6 +395,86 @@
       "service_aliases": [],
       "added_at": "2026-11-16T08:15:31+00:00",
       "updated_at": "2026-11-16T08:15:31+00:00"
+    },
+    {
+      "id": "6389e5938078c76d",
+      "published_at": "2026-11-15T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "四国電力",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 600000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.yonden.co.jp/press/2026/__icsFiles/afieldfile/2026/11/16/pr003.pdf",
+          "evidence_urls": [
+            "https://www.yonden.co.jp/press/2026/__icsFiles/afieldfile/2026/11/16/pr003.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "四国電力 / Shikoku Electric Power",
+          "url": "https://www.yonden.co.jp/press/2026/__icsFiles/afieldfile/2026/11/16/pr003.pdf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "よんでんコンシェルジュ",
+      "service_aliases": [],
+      "added_at": "2026-11-16T10:15:49+00:00",
+      "updated_at": "2026-11-16T10:15:49+00:00"
+    },
+    {
+      "id": "759e78a0e1d4a428",
+      "published_at": "2026-11-15T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "キリンビール",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 58613,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUC163P00W6A111C2000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUC163P00W6A111C2000000/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/economy/20261116-GYT1T00218/"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC163P00W6A111C2000000/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/c9d0ddcd4cb9d11a3d30b04c39e6b102c95cc517"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "DRINX",
+      "service_aliases": [],
+      "added_at": "2026-11-16T08:15:31+00:00",
+      "updated_at": "2026-11-16T10:15:49+00:00"
     },
     {
       "id": "bc877c118f83261b",
@@ -426,8 +506,9 @@
       "published_at": "2026-11-15T15:00:00+00:00",
       "disclosed_at": null,
       "organization": "理化学研究所",
-      "incident_type": "unauthorized access",
+      "incident_type": "data leak",
       "incident_categories": [
+        "data leak",
         "unauthorized access"
       ],
       "potential_records": null,
@@ -465,7 +546,7 @@
       "affected_service": "富岳",
       "service_aliases": [],
       "added_at": "2026-11-16T06:15:50+00:00",
-      "updated_at": "2026-11-16T09:15:38+00:00"
+      "updated_at": "2026-11-16T10:15:49+00:00"
     },
     {
       "id": "12169f1654048f6f",
@@ -498,6 +579,14 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUC1651Z0W6A111C2000000/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/3501c82f4e82bfac31d08f0c8968a4e3c1ff2dc6"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/nissin_comsbi_saas_line_data_breach_20261116/"
         }
       ],
       "affected_system": null,
@@ -505,7 +594,7 @@
       "affected_service": "LINE公式アカウント「日清食品キャンペーン」",
       "service_aliases": [],
       "added_at": "2026-11-16T09:15:38+00:00",
-      "updated_at": "2026-11-16T09:15:38+00:00"
+      "updated_at": "2026-11-16T10:15:49+00:00"
     },
     {
       "id": "49c31a0d93416cae",
@@ -532,46 +621,6 @@
       "service_aliases": [],
       "added_at": "2026-11-16T08:15:31+00:00",
       "updated_at": "2026-11-16T08:15:31+00:00"
-    },
-    {
-      "id": "759e78a0e1d4a428",
-      "published_at": "2026-11-15T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "キリンビール",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 58613,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.nikkei.com/article/DGXZQOUC163P00W6A111C2000000/",
-          "evidence_urls": [
-            "https://www.nikkei.com/article/DGXZQOUC163P00W6A111C2000000/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUC163P00W6A111C2000000/"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/c9d0ddcd4cb9d11a3d30b04c39e6b102c95cc517"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "ingestion",
-      "affected_service": "DRINX",
-      "service_aliases": [],
-      "added_at": "2026-11-16T08:15:31+00:00",
-      "updated_at": "2026-11-16T09:15:38+00:00"
     },
     {
       "id": "2d5a37d534a4cc3a",
@@ -605,6 +654,42 @@
       "date_basis": "publication",
       "added_at": "2026-11-16T04:15:35+00:00",
       "updated_at": "2026-11-16T04:15:35+00:00"
+    },
+    {
+      "id": "5f5f978b799bc80f",
+      "published_at": "2026-11-15T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "妙高市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 178,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://joetsu.yukiguni.town/l-news/342382/",
+          "evidence_urls": [
+            "https://joetsu.yukiguni.town/l-news/342382/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "上越妙高タウン情報",
+          "url": "https://joetsu.yukiguni.town/l-news/342382/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "四季彩館みょうこう",
+      "service_aliases": [],
+      "added_at": "2026-11-16T10:15:49+00:00",
+      "updated_at": "2026-11-16T10:15:49+00:00"
     },
     {
       "id": "7534e513b4afedcf",
@@ -1393,7 +1478,16 @@
       "potential_records": null,
       "confidence": "high",
       "confidence_score": 90,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "6389e5938078c76d",
+          "relationship": "affects",
+          "evidence_url": "https://www.yonden.co.jp/press/2026/__icsFiles/afieldfile/2026/11/16/pr003.pdf",
+          "evidence_urls": [
+            "https://www.yonden.co.jp/press/2026/__icsFiles/afieldfile/2026/11/16/pr003.pdf"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "legalagent list",
@@ -1431,7 +1525,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-16T01:15:40+00:00"
+      "updated_at": "2026-11-16T10:15:49+00:00"
     },
     {
       "id": "9f04a00959566f37",
@@ -3307,6 +3401,42 @@
       "updated_at": "2026-11-12T20:15:40+00:00"
     },
     {
+      "id": "e86db2e8c9489b83",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": "2026-11-15T15:00:00+00:00",
+      "organization": "オカムラ食品工業",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 8197,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "eddb63a9766c497d",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/c8ed4e8a8b596122498e823e7ed50ba886acdd42",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/c8ed4e8a8b596122498e823e7ed50ba886acdd42"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/c8ed4e8a8b596122498e823e7ed50ba886acdd42"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "ポートオンラインショップ",
+      "service_aliases": [],
+      "added_at": "2026-11-16T10:15:49+00:00",
+      "updated_at": "2026-11-16T10:15:49+00:00"
+    },
+    {
       "id": "320cd3e3b8cbaa45",
       "published_at": "2026-11-11T15:00:00+00:00",
       "disclosed_at": "2026-11-12T15:00:00+00:00",
@@ -3797,6 +3927,33 @@
       ],
       "added_at": "2026-11-11T08:15:58+00:00",
       "updated_at": "2026-11-12T08:18:15+00:00"
+    },
+    {
+      "id": "7904f5592dc32a09",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": "2026-11-15T15:00:00+00:00",
+      "organization": "株式会社ミツモア",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 366850,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/meetsmore_unauthorized_access_366850_201accounts_202611/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "ミツモア",
+      "service_aliases": [],
+      "added_at": "2026-11-16T10:15:49+00:00",
+      "updated_at": "2026-11-16T10:15:49+00:00"
     },
     {
       "id": "7e675401ba9184a3",
@@ -8493,10 +8650,14 @@
         {
           "name": "物流ニュースのLNEWS",
           "url": "https://www.lnews.jp/2026/11/s1116501.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/01aab62df475c7f4b6fa0555dfb5259f9613dcf7"
         }
       ],
       "added_at": "2026-11-11T09:15:59+00:00",
-      "updated_at": "2026-11-16T06:15:50+00:00"
+      "updated_at": "2026-11-16T10:15:49+00:00"
     },
     {
       "id": "cb69602b79e76443",
@@ -18322,6 +18483,37 @@
       "updated_at": "2026-11-16T02:16:06+00:00"
     },
     {
+      "id": "aea229161a1e59ef",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "アイキューブドシステムズ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261116580960/"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261116580960.pdf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "CLOMO MDM",
+      "service_aliases": [],
+      "added_at": "2026-11-16T10:15:49+00:00",
+      "updated_at": "2026-11-16T10:15:49+00:00"
+    },
+    {
       "id": "afc91125741205f2",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": "2026-11-08T15:00:00+00:00",
@@ -18921,6 +19113,14 @@
           "evidence_urls": [
             "https://www.makeshop.co.jp/news/info/2026-11-05_2/"
           ]
+        },
+        {
+          "incident_id": "e86db2e8c9489b83",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/c8ed4e8a8b596122498e823e7ed50ba886acdd42",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/c8ed4e8a8b596122498e823e7ed50ba886acdd42"
+          ]
         }
       ],
       "sources": [
@@ -18946,7 +19146,7 @@
         }
       ],
       "added_at": "2026-11-06T01:16:14+00:00",
-      "updated_at": "2026-11-16T03:15:43+00:00"
+      "updated_at": "2026-11-16T10:15:49+00:00"
     },
     {
       "id": "ef09c13430d4ac73",
@@ -26510,6 +26710,14 @@
           ]
         },
         {
+          "incident_id": "5f5f978b799bc80f",
+          "relationship": "affects",
+          "evidence_url": "https://joetsu.yukiguni.town/l-news/342382/",
+          "evidence_urls": [
+            "https://joetsu.yukiguni.town/l-news/342382/"
+          ]
+        },
+        {
           "incident_id": "5fa1320f5cec460c",
           "relationship": "affects",
           "evidence_url": "https://www.kobe-np.co.jp/news/society/202611/0020995366.shtml",
@@ -27551,7 +27759,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-16T08:15:31+00:00"
+      "updated_at": "2026-11-16T10:15:49+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
