@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-16T03:15:43+00:00",
-  "total": 1249,
+  "updated_at": "2026-11-16T04:15:35+00:00",
+  "total": 1256,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-16"
@@ -310,7 +310,7 @@
     },
     {
       "date": "2026-11-02",
-      "count": 61
+      "count": 62
     },
     {
       "date": "2026-11-03",
@@ -334,7 +334,7 @@
     },
     {
       "date": "2026-11-08",
-      "count": 8
+      "count": 9
     },
     {
       "date": "2026-11-09",
@@ -346,7 +346,7 @@
     },
     {
       "date": "2026-11-11",
-      "count": 31
+      "count": 33
     },
     {
       "date": "2026-11-12",
@@ -358,18 +358,51 @@
     },
     {
       "date": "2026-11-14",
-      "count": 8
+      "count": 9
     },
     {
       "date": "2026-11-15",
-      "count": 2
+      "count": 3
     },
     {
       "date": "2026-11-16",
-      "count": 1
+      "count": 2
     }
   ],
   "incidents": [
+    {
+      "id": "2d5a37d534a4cc3a",
+      "published_at": "2026-11-15T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "侶丹",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "43270fd281f33adf",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/onescloset-second-report-1290000-api-connection-key-leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/onescloset-second-report-1290000-api-connection-key-leak/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/onescloset-second-report-1290000-api-connection-key-leak/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-16T04:15:35+00:00",
+      "updated_at": "2026-11-16T04:15:35+00:00"
+    },
     {
       "id": "7534e513b4afedcf",
       "published_at": "2026-11-15T15:00:00+00:00",
@@ -418,7 +451,16 @@
       "potential_records": null,
       "confidence": "medium",
       "confidence_score": 50,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "0f5f8567d53f3ad5",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/fukuappli-pokepay-cyberattack-service-resumed-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/fukuappli-pokepay-cyberattack-service-resumed-2026/"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "福井新聞社",
@@ -464,7 +506,43 @@
         }
       ],
       "added_at": "2026-11-15T05:15:45+00:00",
-      "updated_at": "2026-11-15T13:16:55+00:00"
+      "updated_at": "2026-11-16T04:15:35+00:00"
+    },
+    {
+      "id": "0385ca5221d10e0a",
+      "published_at": "2026-11-14T15:00:00+00:00",
+      "disclosed_at": "2026-11-14T15:00:00+00:00",
+      "organization": "一般社団法人日本社会人アメリカンフットボール協会",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 13126,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "aa9bc3fcfc85d71d",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/xleague_comsbi_saas_line_leak_13126_20261115/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/xleague_comsbi_saas_line_leak_13126_20261115/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/xleague_comsbi_saas_line_leak_13126_20261115/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "XリーグのLINE公式アカウント",
+      "service_aliases": [],
+      "added_at": "2026-11-16T04:15:35+00:00",
+      "updated_at": "2026-11-16T04:15:35+00:00"
     },
     {
       "id": "19fe94baa5774d01",
@@ -549,6 +627,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/b132e9deeeeb6ca99223c22bff79af9bcb78fb8a"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/chiikawa-kuji-openlogi-data-leak-four-stores-sales-delay-2026/"
         }
       ],
       "affected_system": null,
@@ -556,7 +638,7 @@
       "affected_service": "ちいかわくじ",
       "service_aliases": [],
       "added_at": "2026-11-14T07:15:25+00:00",
-      "updated_at": "2026-11-14T20:16:02+00:00"
+      "updated_at": "2026-11-16T04:15:35+00:00"
     },
     {
       "id": "bdcfe0b8bff1490b",
@@ -729,6 +811,41 @@
       "service_aliases": [],
       "added_at": "2026-11-14T07:15:25+00:00",
       "updated_at": "2026-11-15T23:15:20+00:00"
+    },
+    {
+      "id": "0f5f8567d53f3ad5",
+      "published_at": "2026-11-13T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ポケットチェンジ",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "d318d48ee62aac20",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/fukuappli-pokepay-cyberattack-service-resumed-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/fukuappli-pokepay-cyberattack-service-resumed-2026/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/fukuappli-pokepay-cyberattack-service-resumed-2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "Pokepay(Enterprise)",
+      "service_aliases": [],
+      "added_at": "2026-11-16T04:15:35+00:00",
+      "updated_at": "2026-11-16T04:15:35+00:00"
     },
     {
       "id": "4bee839fdffa3e78",
@@ -1681,6 +1798,74 @@
       "updated_at": "2026-11-15T22:15:59+00:00"
     },
     {
+      "id": "b43207447bccc1b7",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "スノーピーク",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 52869,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "スノーピーク ＊ Snow Peak",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9OVTZ2dTVxQ2lsTUJiOENwb0tITXlYaTVwbElHb3hkN0VpUEJReWR1X2xXZ2VtRHh4X0RTeHBValYtd3JTVlhWX0dCY3ZJMm9iQTFURThwdw?oc=5"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/snow_peak_four_incidents_reuse_events_community_store_20261113/"
+        },
+        {
+          "name": "ASCII.jp",
+          "url": "https://ascii.jp/elem/000/004/451/4451661/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/e836b843a05faca7b86447484869dfb97050529e"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "リユース買取サービス / イベント予約システム / コミュニティアプリ / スノーピーク公式オンラインストア / スノーピーク公式会員アプリ",
+      "service_aliases": [],
+      "affected_services": [
+        "リユース買取サービス",
+        "イベント予約システム",
+        "コミュニティアプリ",
+        "スノーピーク公式オンラインストア",
+        "スノーピーク公式会員アプリ"
+      ],
+      "service_details": [
+        {
+          "name": "リユース買取サービス",
+          "aliases": []
+        },
+        {
+          "name": "イベント予約システム",
+          "aliases": []
+        },
+        {
+          "name": "コミュニティアプリ",
+          "aliases": []
+        },
+        {
+          "name": "スノーピーク公式オンラインストア",
+          "aliases": []
+        },
+        {
+          "name": "スノーピーク公式会員アプリ",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-13T21:16:06+00:00",
+      "updated_at": "2026-11-16T04:15:35+00:00"
+    },
+    {
       "id": "b9515d2dc0e6abf4",
       "published_at": "2026-11-12T15:00:00+00:00",
       "disclosed_at": "2026-11-12T15:00:00+00:00",
@@ -1825,70 +2010,6 @@
       "service_aliases": [],
       "added_at": "2026-11-13T20:16:21+00:00",
       "updated_at": "2026-11-13T20:16:21+00:00"
-    },
-    {
-      "id": "b43207447bccc1b7",
-      "published_at": "2026-11-12T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "スノーピーク",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 52869,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "スノーピーク ＊ Snow Peak",
-          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9OVTZ2dTVxQ2lsTUJiOENwb0tITXlYaTVwbElHb3hkN0VpUEJReWR1X2xXZ2VtRHh4X0RTeHBValYtd3JTVlhWX0dCY3ZJMm9iQTFURThwdw?oc=5"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/snow_peak_four_incidents_reuse_events_community_store_20261113/"
-        },
-        {
-          "name": "ASCII.jp",
-          "url": "https://ascii.jp/elem/000/004/451/4451661/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "publication",
-      "affected_service": "リユース買取サービス / イベント予約システム / コミュニティアプリ / スノーピーク公式オンラインストア / スノーピーク公式会員アプリ",
-      "service_aliases": [],
-      "affected_services": [
-        "リユース買取サービス",
-        "イベント予約システム",
-        "コミュニティアプリ",
-        "スノーピーク公式オンラインストア",
-        "スノーピーク公式会員アプリ"
-      ],
-      "service_details": [
-        {
-          "name": "リユース買取サービス",
-          "aliases": []
-        },
-        {
-          "name": "イベント予約システム",
-          "aliases": []
-        },
-        {
-          "name": "コミュニティアプリ",
-          "aliases": []
-        },
-        {
-          "name": "スノーピーク公式オンラインストア",
-          "aliases": []
-        },
-        {
-          "name": "スノーピーク公式会員アプリ",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-13T21:16:06+00:00",
-      "updated_at": "2026-11-16T02:16:06+00:00"
     },
     {
       "id": "c315588305545d55",
@@ -3845,6 +3966,51 @@
       "updated_at": "2026-11-12T08:18:15+00:00"
     },
     {
+      "id": "fd51cc16a3307065",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": "2026-11-12T15:00:00+00:00",
+      "organization": "ネオ・ウィング",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 285,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/neowing-cdjapan-card-information-leak-risk-285/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "Neowing / CDJapan",
+      "service_aliases": [
+        "ネオウィング"
+      ],
+      "affected_services": [
+        "Neowing",
+        "CDJapan"
+      ],
+      "service_details": [
+        {
+          "name": "Neowing",
+          "aliases": [
+            "ネオウィング"
+          ]
+        },
+        {
+          "name": "CDJapan",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-16T04:15:35+00:00",
+      "updated_at": "2026-11-16T04:15:35+00:00"
+    },
+    {
       "id": "71422f2b8113fd80",
       "published_at": "2026-11-10T15:00:00+00:00",
       "disclosed_at": null,
@@ -4644,6 +4810,66 @@
       "updated_at": "2026-11-13T08:15:22+00:00"
     },
     {
+      "id": "fd601bbc1f20790f",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": "2026-11-10T15:00:00+00:00",
+      "organization": "グレイ・パーカー・サービス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "57d15baf7435e548",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/chiikawa-kuji-openlogi-data-leak-four-stores-sales-delay-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/chiikawa-kuji-openlogi-data-leak-four-stores-sales-delay-2026/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/chiikawa-kuji-openlogi-data-leak-four-stores-sales-delay-2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "ちいかわマーケット ちいかわくじ / mofusandもふもふマーケット mofusandくじ / グレイ・パーカー・サービス オンラインくじストア / ナガノマーケット ナガノくじ",
+      "service_aliases": [],
+      "affected_services": [
+        "ちいかわマーケット ちいかわくじ",
+        "mofusandもふもふマーケット mofusandくじ",
+        "グレイ・パーカー・サービス オンラインくじストア",
+        "ナガノマーケット ナガノくじ"
+      ],
+      "service_details": [
+        {
+          "name": "ちいかわマーケット ちいかわくじ",
+          "aliases": []
+        },
+        {
+          "name": "mofusandもふもふマーケット mofusandくじ",
+          "aliases": []
+        },
+        {
+          "name": "グレイ・パーカー・サービス オンラインくじストア",
+          "aliases": []
+        },
+        {
+          "name": "ナガノマーケット ナガノくじ",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-16T04:15:35+00:00",
+      "updated_at": "2026-11-16T04:15:35+00:00"
+    },
+    {
       "id": "03e4b56172ce7769",
       "published_at": "2026-11-09T15:00:00+00:00",
       "disclosed_at": "2026-11-09T15:00:00+00:00",
@@ -4907,6 +5133,10 @@
           "url": "https://goq.co.jp/security-incident-2.html"
         },
         {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/7188b4621aebbb201bb1e6d933e079153c8de050"
+        },
+        {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/goqsystem-order-data-breach-4367390-202611/"
         },
@@ -4917,6 +5147,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/a0ded1257ef2a1e5e25f77c2c4979d48a83bfab4"
+        },
+        {
+          "name": "BigGo ファイナンス",
+          "url": "https://finance.biggo.jp/news/d2d3c5da-07c2-46be-a0eb-ddc3f99ea996"
         }
       ],
       "affected_system": null,
@@ -4924,7 +5158,7 @@
       "affected_service": "GoQSystem",
       "service_aliases": [],
       "added_at": "2026-11-15T18:16:24+00:00",
-      "updated_at": "2026-11-16T03:15:43+00:00"
+      "updated_at": "2026-11-16T04:15:35+00:00"
     },
     {
       "id": "64589e58e48fed43",
@@ -7933,6 +8167,14 @@
           ]
         },
         {
+          "incident_id": "aa8ec16387a5d312",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/kidslation-openlogi-shipment-data-breach-2350/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/kidslation-openlogi-shipment-data-breach-2350/"
+          ]
+        },
+        {
           "incident_id": "cc5eef77d4b2ab84",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPS2VWazF6QWw3NDFmN1FMX2JnY3I2RzRPR2JISWVsNVhLMFhwUkhMOTVEN2NqNDhMcUpvQW1rMW5XbkVmZHQyLWxUckgtbm1FMXgwSG8wMmNCRng0M3lhaFE5NlRVTm9YSXBnWlMxSHlfbFhsSTR1cUwxcUVCWGdaTlJER3JpdUxyeFZMS2J1cWNyTmUtdkRUTXBvRk1ZSUZLdnBxcEx3?oc=5",
@@ -7963,6 +8205,14 @@
           "evidence_urls": [
             "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdVF6bF9uRERQemJZQ1NzMEljM0J5LU9TQ3BHNUd6a21nNW4wMUthZ0lQNTJuaHZ5REJBNGxoR3d2bW5ZdzhXTC1UU0FiMnJTVGFVb3I2cVBaSFMyOXRQT20wNlNvUEtpbHh2ZGZEbTBHX3dwLVhCcWVKMnhWOW9WY01ydFgxLTZaTHZWQ2g0UHNyb1hSbTQ5WXpiYWJxNWlfMmoxTkpVbUcxVEc5eURfbQ?oc=5"
           ]
+        },
+        {
+          "incident_id": "fd601bbc1f20790f",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/chiikawa-kuji-openlogi-data-leak-four-stores-sales-delay-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/chiikawa-kuji-openlogi-data-leak-four-stores-sales-delay-2026/"
+          ]
         }
       ],
       "sources": [
@@ -7988,7 +8238,7 @@
         }
       ],
       "added_at": "2026-11-11T09:15:59+00:00",
-      "updated_at": "2026-11-14T19:15:15+00:00"
+      "updated_at": "2026-11-16T04:15:35+00:00"
     },
     {
       "id": "cb69602b79e76443",
@@ -8314,6 +8564,41 @@
       ],
       "added_at": "2026-11-13T02:15:39+00:00",
       "updated_at": "2026-11-13T02:15:39+00:00"
+    },
+    {
+      "id": "aa8ec16387a5d312",
+      "published_at": "2026-11-07T15:00:00+00:00",
+      "disclosed_at": "2026-11-11T15:00:00+00:00",
+      "organization": "キッズレーション",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 2350,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "57d15baf7435e548",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/kidslation-openlogi-shipment-data-breach-2350/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/kidslation-openlogi-shipment-data-breach-2350/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/kidslation-openlogi-shipment-data-breach-2350/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "キッズレーション公式ECサイト、楽天市場店などの出荷データ",
+      "service_aliases": [],
+      "added_at": "2026-11-16T04:15:35+00:00",
+      "updated_at": "2026-11-16T04:15:35+00:00"
     },
     {
       "id": "261fda2a43c55d1b",
@@ -19236,6 +19521,42 @@
       "updated_at": "2026-11-13T02:15:39+00:00"
     },
     {
+      "id": "43270fd281f33adf",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": "2026-11-04T15:00:00+00:00",
+      "organization": "フレイトリンクスジャパン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1290000,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "2d5a37d534a4cc3a",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/onescloset-second-report-1290000-api-connection-key-leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/onescloset-second-report-1290000-api-connection-key-leak/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/onescloset-second-report-1290000-api-connection-key-leak/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "One’sCloset",
+      "service_aliases": [],
+      "added_at": "2026-11-16T04:15:35+00:00",
+      "updated_at": "2026-11-16T04:15:35+00:00"
+    },
+    {
       "id": "538a9c07939efeb0",
       "published_at": "2026-11-01T15:00:00+00:00",
       "disclosed_at": null,
@@ -24830,6 +25151,10 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUC025YN0S6A101C2000000/"
+        },
+        {
+          "name": "週刊粧業オンライン",
+          "url": "https://www.syogyo.jp/news/2026/11/post_045167"
         }
       ],
       "affected_service": "@cosme",
@@ -24837,7 +25162,7 @@
         "アットコスメ"
       ],
       "added_at": "2026-11-02T07:16:38+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-16T04:15:35+00:00"
     },
     {
       "id": "72df1904dc4263a0",
@@ -32998,6 +33323,14 @@
           ]
         },
         {
+          "incident_id": "0385ca5221d10e0a",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/xleague_comsbi_saas_line_leak_13126_20261115/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/xleague_comsbi_saas_line_leak_13126_20261115/"
+          ]
+        },
+        {
           "incident_id": "33868e758324fd57",
           "relationship": "affects",
           "evidence_url": "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf",
@@ -33141,7 +33474,7 @@
         }
       ],
       "added_at": "2026-10-27T07:15:28+00:00",
-      "updated_at": "2026-11-16T03:15:43+00:00"
+      "updated_at": "2026-11-16T04:15:35+00:00"
     },
     {
       "id": "af7b771bb23be504",
