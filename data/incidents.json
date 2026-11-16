@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-16T13:16:58+00:00",
-  "total": 1277,
+  "updated_at": "2026-11-16T14:16:05+00:00",
+  "total": 1280,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-16"
@@ -346,7 +346,7 @@
     },
     {
       "date": "2026-11-11",
-      "count": 35
+      "count": 36
     },
     {
       "date": "2026-11-12",
@@ -366,10 +366,51 @@
     },
     {
       "date": "2026-11-16",
-      "count": 13
+      "count": 15
     }
   ],
   "incidents": [
+    {
+      "id": "3400df8f00c9953d",
+      "published_at": "2026-11-15T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "有限会社エムアイシー総合企画",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/merupara_jmail_unauthorized_access_possible_data_leak_2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "メルパラ / Jメール",
+      "service_aliases": [],
+      "affected_services": [
+        "メルパラ",
+        "Jメール"
+      ],
+      "service_details": [
+        {
+          "name": "メルパラ",
+          "aliases": []
+        },
+        {
+          "name": "Jメール",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-16T14:16:05+00:00",
+      "updated_at": "2026-11-16T14:16:05+00:00"
+    },
     {
       "id": "462c096ee7be4ff0",
       "published_at": "2026-11-15T15:00:00+00:00",
@@ -413,9 +454,10 @@
         {
           "incident_id": "8cf67a97b55e1d57",
           "relationship": "affected_by",
-          "evidence_url": "https://news.ksb.co.jp/article/17054844",
+          "evidence_url": "https://www.sbbit.jp/article/cont1/188450",
           "evidence_urls": [
             "https://news.ksb.co.jp/article/17054844",
+            "https://www.sbbit.jp/article/cont1/188450",
             "https://www.yonden.co.jp/press/2026/__icsFiles/afieldfile/2026/11/16/pr003.pdf"
           ]
         }
@@ -459,7 +501,7 @@
       "affected_service": "よんでんコンシェルジュ",
       "service_aliases": [],
       "added_at": "2026-11-16T10:15:49+00:00",
-      "updated_at": "2026-11-16T12:16:35+00:00"
+      "updated_at": "2026-11-16T14:16:05+00:00"
     },
     {
       "id": "759e78a0e1d4a428",
@@ -876,6 +918,42 @@
       "service_aliases": [],
       "added_at": "2026-11-16T12:16:35+00:00",
       "updated_at": "2026-11-16T12:16:35+00:00"
+    },
+    {
+      "id": "b91af3697998613c",
+      "published_at": "2026-11-15T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "クーネルワーク",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 3457,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "557c85f6d895d50b",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.niigata-nippo.co.jp/articles/-/943736",
+          "evidence_urls": [
+            "https://www.niigata-nippo.co.jp/articles/-/943736"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "新潟日報",
+          "url": "https://www.niigata-nippo.co.jp/articles/-/943736"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "新潟直送計画",
+      "service_aliases": [],
+      "added_at": "2026-11-16T14:16:05+00:00",
+      "updated_at": "2026-11-16T14:16:05+00:00"
     },
     {
       "id": "8d32fc9abf21bcf5",
@@ -1464,6 +1542,10 @@
           "url": "https://cybersecurity-jp.com/news/118415"
         },
         {
+          "name": "京成電鉄 / Keisei Electric Railway",
+          "url": "https://www.keisei.co.jp/cms/files/keisei/MASTER/0110/TpXAnIV6.pdf"
+        },
+        {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUC13CBJ0T11C26A1000000/"
         },
@@ -1493,7 +1575,7 @@
       "affected_service": "スカイライナーチケットレスサービス",
       "service_aliases": [],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-15T01:15:27+00:00"
+      "updated_at": "2026-11-16T14:16:05+00:00"
     },
     {
       "id": "18a371b6c319d3a5",
@@ -1680,9 +1762,10 @@
         {
           "incident_id": "6389e5938078c76d",
           "relationship": "affects",
-          "evidence_url": "https://news.ksb.co.jp/article/17054844",
+          "evidence_url": "https://www.sbbit.jp/article/cont1/188450",
           "evidence_urls": [
             "https://news.ksb.co.jp/article/17054844",
+            "https://www.sbbit.jp/article/cont1/188450",
             "https://www.yonden.co.jp/press/2026/__icsFiles/afieldfile/2026/11/16/pr003.pdf"
           ]
         },
@@ -1748,7 +1831,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-16T13:16:58+00:00"
+      "updated_at": "2026-11-16T14:16:05+00:00"
     },
     {
       "id": "9f04a00959566f37",
@@ -5242,6 +5325,45 @@
       "updated_at": "2026-11-15T02:15:29+00:00"
     },
     {
+      "id": "054bbb9b5e84dc1f",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": "2026-11-12T15:00:00+00:00",
+      "organization": "山善",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 10555,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRVA3TjBMVUlNS2FpdW03bVExYndKQ1pqS1VSdkVwbGlnMXlIZE9wRWNOWkYwZTI3SjA1UnVDdnFlRlU4RFF1S29RWjBnX0FFbExINXBFNlhCU2hCOEZGbnNhdXpGbE8xY0g1TU83MGtpX0diXzQxWjZUSWZnS1N5NTlFNWJ2Q0VMSmZST0FOTzdacngwTnhOWjNvVTFnMl96eUhQaFE3VHQ?oc=5"
+        }
+      ],
+      "affected_service": "山善ビズコム / 問い合わせ情報",
+      "service_aliases": [],
+      "affected_services": [
+        "山善ビズコム",
+        "問い合わせ情報"
+      ],
+      "service_details": [
+        {
+          "name": "山善ビズコム",
+          "aliases": []
+        },
+        {
+          "name": "問い合わせ情報",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-16T14:16:05+00:00",
+      "updated_at": "2026-11-16T14:16:05+00:00"
+    },
+    {
       "id": "3fb461ca8b11e282",
       "published_at": "2026-11-10T15:00:00+00:00",
       "disclosed_at": null,
@@ -5848,7 +5970,16 @@
       "potential_records": 4367390,
       "confidence": "high",
       "confidence_score": 90,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "b91af3697998613c",
+          "relationship": "affects",
+          "evidence_url": "https://www.niigata-nippo.co.jp/articles/-/943736",
+          "evidence_urls": [
+            "https://www.niigata-nippo.co.jp/articles/-/943736"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "satimo list",
@@ -5888,7 +6019,7 @@
       "affected_service": "GoQSystem",
       "service_aliases": [],
       "added_at": "2026-11-15T18:16:24+00:00",
-      "updated_at": "2026-11-16T09:15:38+00:00"
+      "updated_at": "2026-11-16T14:16:05+00:00"
     },
     {
       "id": "64589e58e48fed43",
@@ -39964,10 +40095,24 @@
           "url": "https://news.yahoo.co.jp/articles/3bcd3284c7c089a58ede624a83ff9c47f669deb6"
         }
       ],
-      "affected_service": "一番くじ ONLINE",
+      "affected_service": "一番くじ ONLINE / 一番くじ倶楽部",
       "service_aliases": [],
+      "affected_services": [
+        "一番くじ ONLINE",
+        "一番くじ倶楽部"
+      ],
+      "service_details": [
+        {
+          "name": "一番くじ ONLINE",
+          "aliases": []
+        },
+        {
+          "name": "一番くじ倶楽部",
+          "aliases": []
+        }
+      ],
       "added_at": "2026-10-26T21:15:43+00:00",
-      "updated_at": "2026-11-16T12:16:35+00:00"
+      "updated_at": "2026-11-16T14:16:05+00:00"
     },
     {
       "id": "bbd94d0ac13294d9",
@@ -55647,12 +55792,16 @@
         {
           "name": "Impress Watch",
           "url": "https://www.watch.impress.co.jp/docs/news/2152535.html"
+        },
+        {
+          "name": "静岡ライフ",
+          "url": "https://www.shizuoka-life.jp/post-16020/"
         }
       ],
       "affected_service": "アプリ",
       "service_aliases": [],
       "added_at": "2026-10-24T21:12:22+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-16T14:16:05+00:00"
     },
     {
       "id": "de4fa38ca8fe407b",
