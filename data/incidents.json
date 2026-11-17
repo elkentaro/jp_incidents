@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-17T04:16:26+00:00",
-  "total": 1296,
+  "updated_at": "2026-11-17T05:16:27+00:00",
+  "total": 1297,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-17"
@@ -366,7 +366,7 @@
     },
     {
       "date": "2026-11-17",
-      "count": 1
+      "count": 2
     }
   ],
   "incidents": [
@@ -404,6 +404,42 @@
       "service_aliases": [],
       "added_at": "2026-11-17T04:16:26+00:00",
       "updated_at": "2026-11-17T04:16:26+00:00"
+    },
+    {
+      "id": "a829e10222718244",
+      "published_at": "2026-11-16T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ワールド",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1QSjNUMXNJbnNBN00zekJxbVVVVFFTc0hSM2RoT0VfU3dlYndXY2tYMGdvYzJPMTZxdFM1Z3FNWWZwQ3V0UnlPajRmV0p2c2twaEtnZXEwc3FveXgy?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1QSjNUMXNJbnNBN00zekJxbVVVVFFTc0hSM2RoT0VfU3dlYndXY2tYMGdvYzJPMTZxdFM1Z3FNWWZwQ3V0UnlPajRmV0p2c2twaEtnZXEwc3FveXgy?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "WORLDコーポレートサイト",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1QSjNUMXNJbnNBN00zekJxbVVVVFFTc0hSM2RoT0VfU3dlYndXY2tYMGdvYzJPMTZxdFM1Z3FNWWZwQ3V0UnlPajRmV0p2c2twaEtnZXEwc3FveXgy?oc=5"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "ワールドオンラインストア",
+      "service_aliases": [],
+      "added_at": "2026-11-17T05:16:27+00:00",
+      "updated_at": "2026-11-17T05:16:27+00:00"
     },
     {
       "id": "12169f1654048f6f",
@@ -2163,6 +2199,14 @@
           ]
         },
         {
+          "incident_id": "a829e10222718244",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1QSjNUMXNJbnNBN00zekJxbVVVVFFTc0hSM2RoT0VfU3dlYndXY2tYMGdvYzJPMTZxdFM1Z3FNWWZwQ3V0UnlPajRmV0p2c2twaEtnZXEwc3FveXgy?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1QSjNUMXNJbnNBN00zekJxbVVVVFFTc0hSM2RoT0VfU3dlYndXY2tYMGdvYzJPMTZxdFM1Z3FNWWZwQ3V0UnlPajRmV0p2c2twaEtnZXEwc3FveXgy?oc=5"
+          ]
+        },
+        {
           "incident_id": "d37cf1e7d39a355b",
           "relationship": "affects",
           "evidence_url": "https://www.oricon.co.jp/news/2493297/",
@@ -2212,7 +2256,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-17T04:16:26+00:00"
+      "updated_at": "2026-11-17T05:16:27+00:00"
     },
     {
       "id": "9f04a00959566f37",
@@ -19765,12 +19809,16 @@
         {
           "name": "satimo list",
           "url": "https://camelcoffee.jp/news/important/2026/002221.html"
+        },
+        {
+          "name": "キャメル珈琲",
+          "url": "https://camelcoffee.jp/philosophy/"
         }
       ],
       "affected_service": "オンラインストアのメールマガジン",
       "service_aliases": [],
       "added_at": "2026-11-04T01:16:30+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-17T05:16:27+00:00"
     },
     {
       "id": "c70726cc989a1966",
@@ -47623,6 +47671,10 @@
           "url": "https://www.keio.co.jp/news/update/news_release/news_release2026/pdf/nr20261021_newsrelease.pdf"
         },
         {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/keio_pressoinn_ransomware_lodging_revenue_18oku_2026/"
+        },
+        {
           "name": "Yahoo!ニュース",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1JXzBLNE9DWXNwcVg4eHNEMzZWSTM3MTJ3RTdhTEhhNk5YRC1wbVRQdnd4aFFlaDFZVzRlcEFrQ1NJdHF0ZW9ZVDVTMGJjc0RITWNQVVN5ZkExWUZ5QWdSRGhwa1cwdG55VTdkSWRyT3ZWRXQ4M0ZWa0U2d2tUN2c?oc=5"
         },
@@ -47644,7 +47696,7 @@
         }
       ],
       "added_at": "2026-10-19T09:06:44+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-17T05:16:27+00:00"
     },
     {
       "id": "2c7973528a7563ec",
