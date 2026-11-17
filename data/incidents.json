@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-17T07:16:12+00:00",
-  "total": 1301,
+  "updated_at": "2026-11-17T08:16:10+00:00",
+  "total": 1304,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-17"
@@ -226,7 +226,7 @@
     },
     {
       "date": "2026-10-13",
-      "count": 39
+      "count": 40
     },
     {
       "date": "2026-10-14",
@@ -358,7 +358,7 @@
     },
     {
       "date": "2026-11-15",
-      "count": 5
+      "count": 6
     },
     {
       "date": "2026-11-16",
@@ -366,10 +366,37 @@
     },
     {
       "date": "2026-11-17",
-      "count": 5
+      "count": 6
     }
   ],
   "incidents": [
+    {
+      "id": "f71eff2711737120",
+      "published_at": "2026-11-16T15:00:00+00:00",
+      "disclosed_at": "2026-11-16T15:00:00+00:00",
+      "organization": "グンゼスポーツ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 139394,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/gunze_sports_website_unauthorized_access_139394/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "公式ホームページ",
+      "service_aliases": [],
+      "added_at": "2026-11-17T08:16:10+00:00",
+      "updated_at": "2026-11-17T08:16:10+00:00"
+    },
     {
       "id": "2068debf6164c31a",
       "published_at": "2026-11-16T15:00:00+00:00",
@@ -396,6 +423,14 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/1d4c40274dea74a554c9101f87d38d4d15e9967f"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2611/17/2000003257/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/morisawa_fonts_karte_23957_data_breach/"
         }
       ],
       "affected_system": null,
@@ -403,7 +438,7 @@
       "affected_service": "Morisawa Fonts",
       "service_aliases": [],
       "added_at": "2026-11-17T06:16:25+00:00",
-      "updated_at": "2026-11-17T06:16:25+00:00"
+      "updated_at": "2026-11-17T08:16:10+00:00"
     },
     {
       "id": "a829e10222718244",
@@ -436,6 +471,10 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUC172LM0X11C26A1000000/"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2611/17/2000003257/"
         }
       ],
       "affected_system": null,
@@ -443,7 +482,7 @@
       "affected_service": "ワールドオンラインストア",
       "service_aliases": [],
       "added_at": "2026-11-17T05:16:27+00:00",
-      "updated_at": "2026-11-17T07:16:12+00:00"
+      "updated_at": "2026-11-17T08:16:10+00:00"
     },
     {
       "id": "e7b712d3c616ac80",
@@ -471,6 +510,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/1d4c40274dea74a554c9101f87d38d4d15e9967f"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2611/17/2000003257/"
         }
       ],
       "affected_system": null,
@@ -478,7 +521,7 @@
       "affected_service": "bellSalesAI",
       "service_aliases": [],
       "added_at": "2026-11-17T06:16:25+00:00",
-      "updated_at": "2026-11-17T06:16:25+00:00"
+      "updated_at": "2026-11-17T08:16:10+00:00"
     },
     {
       "id": "57225b83002a9993",
@@ -724,6 +767,10 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/hankyu-hanshin-hotels-karte-members-data-leak-2026/"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2611/17/2000003257/"
         }
       ],
       "affected_system": null,
@@ -731,7 +778,7 @@
       "affected_service": "阪急阪神第一ホテルグループメンバーズクラブ",
       "service_aliases": [],
       "added_at": "2026-11-17T01:16:38+00:00",
-      "updated_at": "2026-11-17T01:16:38+00:00"
+      "updated_at": "2026-11-17T08:16:10+00:00"
     },
     {
       "id": "462c096ee7be4ff0",
@@ -1437,6 +1484,46 @@
       "updated_at": "2026-11-16T21:15:39+00:00"
     },
     {
+      "id": "45db9ec047a44b07",
+      "published_at": "2026-11-14T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ソフト９９コーポレーション",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 3813,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "557c85f6d895d50b",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261117582082/",
+          "evidence_urls": [
+            "https://www.nikkei.com/nkd/disclosure/tdnr/20261117582082/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261117582082/"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261117582082.pdf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "オンラインショップ",
+      "service_aliases": [],
+      "added_at": "2026-11-17T08:16:10+00:00",
+      "updated_at": "2026-11-17T08:16:10+00:00"
+    },
+    {
       "id": "8d32fc9abf21bcf5",
       "published_at": "2026-11-14T15:00:00+00:00",
       "disclosed_at": null,
@@ -1471,6 +1558,10 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118525"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2611/17/2000003257/"
         }
       ],
       "affected_system": null,
@@ -1478,7 +1569,7 @@
       "affected_service": "mineo",
       "service_aliases": [],
       "added_at": "2026-11-16T12:16:35+00:00",
-      "updated_at": "2026-11-17T03:16:00+00:00"
+      "updated_at": "2026-11-17T08:16:10+00:00"
     },
     {
       "id": "9199dce14118f317",
@@ -2091,6 +2182,14 @@
           "url": "https://new-www.keisei.co.jp/cms/files/keisei/MASTER/0110/gOIMhHy4.pdf"
         },
         {
+          "name": "京成電鉄 / Keisei Electric Railway",
+          "url": "https://www.keisei.co.jp/cms/files/keisei/MASTER/0110/nWeYDLzk.pdf"
+        },
+        {
+          "name": "京成電鉄 / Keisei Electric Railway",
+          "url": "https://www.keisei.co.jp/cms/files/keisei/MASTER/0110/28UhAp2X.pdf"
+        },
+        {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUC13CBJ0T11C26A1000000/"
         },
@@ -2120,7 +2219,7 @@
       "affected_service": "スカイライナーチケットレスサービス",
       "service_aliases": [],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-16T22:15:36+00:00"
+      "updated_at": "2026-11-17T08:16:10+00:00"
     },
     {
       "id": "18a371b6c319d3a5",
@@ -3684,7 +3783,8 @@
       "organization": "那須塩原市",
       "incident_type": "data leak",
       "incident_categories": [
-        "data leak"
+        "data leak",
+        "unauthorized access"
       ],
       "potential_records": null,
       "confidence": "high",
@@ -3705,6 +3805,10 @@
           "url": "https://www.city.nasushiobara.tochigi.jp/soshikikarasagasu/digitalsuishinka/huseiakusesu_zyouhourouei/24640.html"
         },
         {
+          "name": "那須塩原市",
+          "url": "https://www.city.nasushiobara.tochigi.jp/taisetsu/24641.html"
+        },
+        {
           "name": "下野新聞社",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1fcFNnQ2psUTNkOXdFYnR3dkl3QW1rd1VtY1g2WVY4UUpIOVZrX2Y1OHBYdTJya05rNHVETGRkYlZ5NzVFSkE0N043SjBudW1mSnlicENGT3NRMmc?oc=5"
         }
@@ -3712,7 +3816,7 @@
       "affected_service": "オンライン申請システム",
       "service_aliases": [],
       "added_at": "2026-11-12T22:15:17+00:00",
-      "updated_at": "2026-11-12T22:15:17+00:00"
+      "updated_at": "2026-11-17T08:16:10+00:00"
     },
     {
       "id": "644ef4826d34d12d",
@@ -6617,6 +6721,14 @@
       "confidence_score": 90,
       "related": [
         {
+          "incident_id": "45db9ec047a44b07",
+          "relationship": "affects",
+          "evidence_url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261117582082/",
+          "evidence_urls": [
+            "https://www.nikkei.com/nkd/disclosure/tdnr/20261117582082/"
+          ]
+        },
+        {
           "incident_id": "b91af3697998613c",
           "relationship": "affects",
           "evidence_url": "https://www.niigata-nippo.co.jp/articles/-/943736",
@@ -6672,7 +6784,7 @@
       "affected_service": "GoQSystem",
       "service_aliases": [],
       "added_at": "2026-11-15T18:16:24+00:00",
-      "updated_at": "2026-11-16T21:15:39+00:00"
+      "updated_at": "2026-11-17T08:16:10+00:00"
     },
     {
       "id": "64589e58e48fed43",
@@ -18910,6 +19022,10 @@
           "url": "https://www.city.kakogawa.lg.jp/soshikikarasagasu/kikakubu/jouhouseisakuka/onlineshinsei/51384.html"
         },
         {
+          "name": "加古川市",
+          "url": "https://www.city.kakogawa.lg.jp/kinkyu/51393.html"
+        },
+        {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/a8f37147c1bfb70dac99129bf21da63f80ba45b6"
         }
@@ -18931,7 +19047,7 @@
         }
       ],
       "added_at": "2026-11-06T11:16:38+00:00",
-      "updated_at": "2026-11-13T12:16:47+00:00"
+      "updated_at": "2026-11-17T08:16:10+00:00"
     },
     {
       "id": "57a40b2bf2b57970",
@@ -19075,6 +19191,10 @@
           "url": "https://www.city.himeji.lg.jp/shisei/0000034646.html"
         },
         {
+          "name": "姫路市",
+          "url": "https://www.city.himeji.lg.jp/shisei/0000034732.html"
+        },
+        {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/2e096c54d430a266f0b4312f3b0319f8b4f1e289"
         },
@@ -19112,7 +19232,7 @@
         }
       ],
       "added_at": "2026-11-02T20:15:44+00:00",
-      "updated_at": "2026-11-17T06:16:25+00:00"
+      "updated_at": "2026-11-17T08:16:10+00:00"
     },
     {
       "id": "69e127ff7e87f715",
@@ -45492,7 +45612,8 @@
       "organization": "古賀市",
       "incident_type": "data leak",
       "incident_categories": [
-        "data leak"
+        "data leak",
+        "unauthorized access"
       ],
       "potential_records": 567,
       "confidence": "high",
@@ -45518,7 +45639,7 @@
         }
       ],
       "added_at": "2026-10-21T00:07:38+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-17T08:16:10+00:00"
     },
     {
       "id": "28dda472e3ea05fc",
@@ -52464,6 +52585,14 @@
           ]
         },
         {
+          "incident_id": "4c2ef5cff8cc3318",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.kobe.lg.jp/a95474/496502948727.html",
+          "evidence_urls": [
+            "https://www.city.kobe.lg.jp/a95474/496502948727.html"
+          ]
+        },
+        {
           "incident_id": "4d670288f1792f88",
           "relationship": "affects",
           "evidence_url": "https://topics.smt.docomo.ne.jp/article/tvsdt/region/tvsdt-2026101403936341?page=1",
@@ -52904,7 +53033,7 @@
       "affected_service": "SpeeCAN RAIDEN",
       "service_aliases": [],
       "added_at": "2026-10-19T08:49:15+00:00",
-      "updated_at": "2026-11-17T06:16:25+00:00"
+      "updated_at": "2026-11-17T08:16:10+00:00"
     },
     {
       "id": "196233ffeb2e2379",
@@ -53096,6 +53225,45 @@
       ],
       "added_at": "2026-10-19T08:49:15+00:00",
       "updated_at": "2026-11-12T08:18:15+00:00"
+    },
+    {
+      "id": "4c2ef5cff8cc3318",
+      "published_at": "2026-10-12T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "神戸市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "0a08a3f6bcd30b82",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.kobe.lg.jp/a95474/496502948727.html",
+          "evidence_urls": [
+            "https://www.city.kobe.lg.jp/a95474/496502948727.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "神戸市",
+          "url": "https://www.city.kobe.lg.jp/a95474/496502948727.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "職員情報伝達メールシステム(SpeeCAN RAIDEN)",
+      "service_aliases": [
+        "職員情報伝達メールシステム",
+        "SpeeCAN RAIDEN"
+      ],
+      "added_at": "2026-11-17T08:16:10+00:00",
+      "updated_at": "2026-11-17T08:16:10+00:00"
     },
     {
       "id": "6c86f9fa61b5dc6f",
