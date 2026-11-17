@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-16T23:15:24+00:00",
-  "total": 1286,
+  "updated_at": "2026-11-17T00:16:13+00:00",
+  "total": 1289,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-16"
@@ -198,7 +198,7 @@
     },
     {
       "date": "2026-10-06",
-      "count": 9
+      "count": 11
     },
     {
       "date": "2026-10-07",
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-16",
-      "count": 20
+      "count": 21
     },
     {
       "date": "2026-11-17",
@@ -538,6 +538,42 @@
       "service_aliases": [],
       "added_at": "2026-11-16T10:15:49+00:00",
       "updated_at": "2026-11-16T14:16:05+00:00"
+    },
+    {
+      "id": "70fc40a1ac3fac36",
+      "published_at": "2026-11-15T15:00:00+00:00",
+      "disclosed_at": "2026-11-15T15:00:00+00:00",
+      "organization": "フェイラージャパン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 764429,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "aa9bc3fcfc85d71d",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/feiler_comsbi_saas_line_lottery_data_breach_764429_20261116/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/feiler_comsbi_saas_line_lottery_data_breach_764429_20261116/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/feiler_comsbi_saas_line_lottery_data_breach_764429_20261116/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "フェイラーのLINE抽選申込サービス",
+      "service_aliases": [],
+      "added_at": "2026-11-17T00:16:13+00:00",
+      "updated_at": "2026-11-17T00:16:13+00:00"
     },
     {
       "id": "759e78a0e1d4a428",
@@ -9965,10 +10001,14 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/yojiya_member_api_unauthorized_access_131557_confirmed_20261109/"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/17/56805.html"
         }
       ],
       "added_at": "2026-11-09T20:16:13+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-17T00:16:13+00:00"
     },
     {
       "id": "30cd420408abcfa9",
@@ -13475,6 +13515,106 @@
       "updated_at": "2026-11-12T08:18:15+00:00"
     },
     {
+      "id": "c18e54cb9abd1cae",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社teket",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "17bdcca1bd9b2abf",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAzeTVZU1hsTHlLMEp0N3lHT2FNUVdtbnp2ZkpZZUpMZ3I3OHJjdVg1bHVvSEJhZ01jeEloWmdqd01LQWdCOUt4TWg0UUlMa3FqOU5hRTRKLWRmT3JEdHlnU2JlY3Z2QkVrUVE?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiakFVX3lxTFAzeTVZU1hsTHlLMEp0N3lHT2FNUVdtbnp2ZkpZZUpMZ3I3OHJjdVg1bHVvSEJhZ01jeEloWmdqd01LQWdCOUt4TWg0UUlMa3FqOU5hRTRKLWRmT3JEdHlnU2JlY3Z2QkVrUVE?oc=5"
+          ]
+        },
+        {
+          "incident_id": "33344e9ff7de50ae",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE43ODhLb3hGSFBlcUt1MDB3YVo2STM4VXNlcm5nZUpvem00cHZpZDhQZGtfM2hqS3ptRjBMM0o0U21CZU1IMlFnTzdJOHBCbm1qWEZWUVhxemMyTEVuOEtsZXg2ZDN4UGQ1dlp4WnNHbFpBVGVlR05VTjEyVXJwbjQ?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE43ODhLb3hGSFBlcUt1MDB3YVo2STM4VXNlcm5nZUpvem00cHZpZDhQZGtfM2hqS3ptRjBMM0o0U21CZU1IMlFnTzdJOHBCbm1qWEZWUVhxemMyTEVuOEtsZXg2ZDN4UGQ1dlp4WnNHbFpBVGVlR05VTjEyVXJwbjQ?oc=5"
+          ]
+        },
+        {
+          "incident_id": "4f63ec197293f7ea",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOSHRpaTVxRHEzYkstazNjLWJ0dkd4bjFCUnlMMnlkRHc1TEFqb3ppVHFyMG5LX2tfMXNPRmRKRUhhaEJ5alNHbTZmTkpZVmZzN3ByamZYN2VlM3RMdlBXb1MtYmZQLTY0My1KLWNMUTVHTDFxcEI1MmZBcElWR0U5SHd6RGU3SldWa3c?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiigFBVV95cUxOSHRpaTVxRHEzYkstazNjLWJ0dkd4bjFCUnlMMnlkRHc1TEFqb3ppVHFyMG5LX2tfMXNPRmRKRUhhaEJ5alNHbTZmTkpZVmZzN3ByamZYN2VlM3RMdlBXb1MtYmZQLTY0My1KLWNMUTVHTDFxcEI1MmZBcElWR0U5SHd6RGU3SldWa3c?oc=5"
+          ]
+        },
+        {
+          "incident_id": "a5aba76731b13cfb",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/9fbab8b764b85169b77fe2c7f3d76e3dda7d8cae",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/9fbab8b764b85169b77fe2c7f3d76e3dda7d8cae"
+          ]
+        },
+        {
+          "incident_id": "ae1d4f5f4d68b8fb",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/6764fa810048e04267f880e0cd1117380e03f68a",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/6764fa810048e04267f880e0cd1117380e03f68a"
+          ]
+        },
+        {
+          "incident_id": "bf2e2e5ef81fe5ed",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5GeG9VUm9mc2o1QzVUeTFXYzk2cHltTmNVcnY2UnFLSWxOYnBaYmRlX0JHTXJJMVlJYUFwNWpqcDlqTTFUQm52RDh6VnJ4cnFNakE?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5GeG9VUm9mc2o1QzVUeTFXYzk2cHltTmNVcnY2UnFLSWxOYnBaYmRlX0JHTXJJMVlJYUFwNWpqcDlqTTFUQm52RDh6VnJ4cnFNakE?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/17/56804.html"
+        },
+        {
+          "name": "corporate.teket.jp",
+          "url": "https://corporate.teket.jp/news/privacy_261108"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/teket_unauthorized_access_all_members_ticket_codes/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118208"
+        },
+        {
+          "name": "ITmedia",
+          "url": "https://www.itmedia.co.jp/news/article/2611/09/2000003009/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/470bd32d1250512d1eb3933e82216c5627b9024b"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/a350f786cf00e14b9a4064ba66b7d4dd74cc0d76"
+        }
+      ],
+      "affected_service": "teket",
+      "service_aliases": [
+        "テケト"
+      ],
+      "added_at": "2026-11-08T10:15:44+00:00",
+      "updated_at": "2026-11-17T00:16:13+00:00"
+    },
+    {
       "id": "c89b09432d3c8d61",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": null,
@@ -14694,102 +14834,6 @@
       "service_aliases": [],
       "added_at": "2026-11-05T21:15:39+00:00",
       "updated_at": "2026-11-12T07:15:39+00:00"
-    },
-    {
-      "id": "c18e54cb9abd1cae",
-      "published_at": "2026-11-04T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "株式会社teket",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "17bdcca1bd9b2abf",
-          "relationship": "affects",
-          "evidence_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAzeTVZU1hsTHlLMEp0N3lHT2FNUVdtbnp2ZkpZZUpMZ3I3OHJjdVg1bHVvSEJhZ01jeEloWmdqd01LQWdCOUt4TWg0UUlMa3FqOU5hRTRKLWRmT3JEdHlnU2JlY3Z2QkVrUVE?oc=5",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMiakFVX3lxTFAzeTVZU1hsTHlLMEp0N3lHT2FNUVdtbnp2ZkpZZUpMZ3I3OHJjdVg1bHVvSEJhZ01jeEloWmdqd01LQWdCOUt4TWg0UUlMa3FqOU5hRTRKLWRmT3JEdHlnU2JlY3Z2QkVrUVE?oc=5"
-          ]
-        },
-        {
-          "incident_id": "33344e9ff7de50ae",
-          "relationship": "affects",
-          "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE43ODhLb3hGSFBlcUt1MDB3YVo2STM4VXNlcm5nZUpvem00cHZpZDhQZGtfM2hqS3ptRjBMM0o0U21CZU1IMlFnTzdJOHBCbm1qWEZWUVhxemMyTEVuOEtsZXg2ZDN4UGQ1dlp4WnNHbFpBVGVlR05VTjEyVXJwbjQ?oc=5",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMif0FVX3lxTE43ODhLb3hGSFBlcUt1MDB3YVo2STM4VXNlcm5nZUpvem00cHZpZDhQZGtfM2hqS3ptRjBMM0o0U21CZU1IMlFnTzdJOHBCbm1qWEZWUVhxemMyTEVuOEtsZXg2ZDN4UGQ1dlp4WnNHbFpBVGVlR05VTjEyVXJwbjQ?oc=5"
-          ]
-        },
-        {
-          "incident_id": "4f63ec197293f7ea",
-          "relationship": "affects",
-          "evidence_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOSHRpaTVxRHEzYkstazNjLWJ0dkd4bjFCUnlMMnlkRHc1TEFqb3ppVHFyMG5LX2tfMXNPRmRKRUhhaEJ5alNHbTZmTkpZVmZzN3ByamZYN2VlM3RMdlBXb1MtYmZQLTY0My1KLWNMUTVHTDFxcEI1MmZBcElWR0U5SHd6RGU3SldWa3c?oc=5",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMiigFBVV95cUxOSHRpaTVxRHEzYkstazNjLWJ0dkd4bjFCUnlMMnlkRHc1TEFqb3ppVHFyMG5LX2tfMXNPRmRKRUhhaEJ5alNHbTZmTkpZVmZzN3ByamZYN2VlM3RMdlBXb1MtYmZQLTY0My1KLWNMUTVHTDFxcEI1MmZBcElWR0U5SHd6RGU3SldWa3c?oc=5"
-          ]
-        },
-        {
-          "incident_id": "a5aba76731b13cfb",
-          "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/9fbab8b764b85169b77fe2c7f3d76e3dda7d8cae",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/9fbab8b764b85169b77fe2c7f3d76e3dda7d8cae"
-          ]
-        },
-        {
-          "incident_id": "ae1d4f5f4d68b8fb",
-          "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/6764fa810048e04267f880e0cd1117380e03f68a",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/6764fa810048e04267f880e0cd1117380e03f68a"
-          ]
-        },
-        {
-          "incident_id": "bf2e2e5ef81fe5ed",
-          "relationship": "affects",
-          "evidence_url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5GeG9VUm9mc2o1QzVUeTFXYzk2cHltTmNVcnY2UnFLSWxOYnBaYmRlX0JHTXJJMVlJYUFwNWpqcDlqTTFUQm52RDh6VnJ4cnFNakE?oc=5",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5GeG9VUm9mc2o1QzVUeTFXYzk2cHltTmNVcnY2UnFLSWxOYnBaYmRlX0JHTXJJMVlJYUFwNWpqcDlqTTFUQm52RDh6VnJ4cnFNakE?oc=5"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "corporate.teket.jp",
-          "url": "https://corporate.teket.jp/news/privacy_261108"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/teket_unauthorized_access_all_members_ticket_codes/"
-        },
-        {
-          "name": "Cybersecurity.jp",
-          "url": "https://cybersecurity-jp.com/news/118208"
-        },
-        {
-          "name": "ITmedia",
-          "url": "https://www.itmedia.co.jp/news/article/2611/09/2000003009/"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/470bd32d1250512d1eb3933e82216c5627b9024b"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/a350f786cf00e14b9a4064ba66b7d4dd74cc0d76"
-        }
-      ],
-      "affected_service": "teket",
-      "service_aliases": [
-        "テケト"
-      ],
-      "added_at": "2026-11-08T10:15:44+00:00",
-      "updated_at": "2026-11-16T21:15:39+00:00"
     },
     {
       "id": "cd71aceb5c7b95e3",
@@ -19679,12 +19723,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/7c188be153a297134d5f041f9c633bcd72970629"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/17/56803.html"
         }
       ],
       "affected_service": "機関Navi",
       "service_aliases": [],
       "added_at": "2026-11-04T02:15:58+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-17T00:16:13+00:00"
     },
     {
       "id": "d56f89db8ff00015",
@@ -34675,6 +34723,14 @@
           ]
         },
         {
+          "incident_id": "70fc40a1ac3fac36",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/feiler_comsbi_saas_line_lottery_data_breach_764429_20261116/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/feiler_comsbi_saas_line_lottery_data_breach_764429_20261116/"
+          ]
+        },
+        {
           "incident_id": "77a23dba97c3a282",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/26610fb01eff4c372fe4423756d98334dc1e1acb",
@@ -34776,7 +34832,7 @@
         }
       ],
       "added_at": "2026-10-27T07:15:28+00:00",
-      "updated_at": "2026-11-16T09:15:38+00:00"
+      "updated_at": "2026-11-17T00:16:13+00:00"
     },
     {
       "id": "af7b771bb23be504",
@@ -43313,9 +43369,10 @@
         {
           "incident_id": "5e7167bf3d6672b5",
           "relationship": "affects",
-          "evidence_url": "https://cybersecurity-jp.com/news/118420",
+          "evidence_url": "https://internet.watch.impress.co.jp/docs/news/2156755.html",
           "evidence_urls": [
             "https://cybersecurity-jp.com/news/118420",
+            "https://internet.watch.impress.co.jp/docs/news/2156755.html",
             "https://www.asahi.com/articles/ASVBP15NCVBPPTIL00MM.html",
             "https://www.omu.ac.jp/news/12123"
           ]
@@ -43359,7 +43416,7 @@
         }
       ],
       "added_at": "2026-10-20T23:30:29+00:00",
-      "updated_at": "2026-11-15T01:15:27+00:00"
+      "updated_at": "2026-11-17T00:16:13+00:00"
     },
     {
       "id": "431fb33928affc8c",
@@ -54827,7 +54884,7 @@
       ],
       "potential_records": 362000,
       "confidence": "medium",
-      "confidence_score": 35,
+      "confidence_score": 50,
       "related": [
         {
           "incident_id": "12e7a20b5ea44b95",
@@ -54850,10 +54907,14 @@
         {
           "name": "Westeria list",
           "url": "https://westeria.jp/security-incidents/cases/newspicks-2026/"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/17/56800.html"
         }
       ],
       "added_at": "2026-10-19T09:06:44+00:00",
-      "updated_at": "2026-10-21T03:52:01+00:00"
+      "updated_at": "2026-11-17T00:16:13+00:00"
     },
     {
       "id": "6b03b7f8c81e9d61",
@@ -55646,6 +55707,60 @@
       "updated_at": "2026-10-27T00:15:41+00:00"
     },
     {
+      "id": "8e45025b457b1635",
+      "published_at": "2026-10-05T15:00:00+00:00",
+      "disclosed_at": "2026-10-05T15:00:00+00:00",
+      "organization": "旭化成セラピューティクス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/17/56799.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "Pharma DIGITAL",
+      "service_aliases": [],
+      "added_at": "2026-11-17T00:16:13+00:00",
+      "updated_at": "2026-11-17T00:16:13+00:00"
+    },
+    {
+      "id": "ba64979f6741c219",
+      "published_at": "2026-10-05T15:00:00+00:00",
+      "disclosed_at": "2026-10-05T15:00:00+00:00",
+      "organization": "株式会社アクティブ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 54916,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/17/56807.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "通販サイト",
+      "service_aliases": [],
+      "added_at": "2026-11-17T00:16:13+00:00",
+      "updated_at": "2026-11-17T00:16:13+00:00"
+    },
+    {
       "id": "060c8c8b3132d6ef",
       "published_at": "2026-10-05T15:00:00+00:00",
       "disclosed_at": null,
@@ -56191,9 +56306,10 @@
         {
           "incident_id": "415606b392ad65f5",
           "relationship": "affected_by",
-          "evidence_url": "https://cybersecurity-jp.com/news/118420",
+          "evidence_url": "https://internet.watch.impress.co.jp/docs/news/2156755.html",
           "evidence_urls": [
             "https://cybersecurity-jp.com/news/118420",
+            "https://internet.watch.impress.co.jp/docs/news/2156755.html",
             "https://www.asahi.com/articles/ASVBP15NCVBPPTIL00MM.html",
             "https://www.omu.ac.jp/news/12123"
           ]
@@ -56226,7 +56342,7 @@
         }
       ],
       "added_at": "2026-10-21T21:19:02+00:00",
-      "updated_at": "2026-11-15T01:15:27+00:00"
+      "updated_at": "2026-11-17T00:16:13+00:00"
     },
     {
       "id": "80f23a54384289ac",
