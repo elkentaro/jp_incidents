@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-17T06:16:25+00:00",
-  "total": 1299,
+  "updated_at": "2026-11-17T07:16:12+00:00",
+  "total": 1301,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-17"
@@ -358,7 +358,7 @@
     },
     {
       "date": "2026-11-15",
-      "count": 4
+      "count": 5
     },
     {
       "date": "2026-11-16",
@@ -366,7 +366,7 @@
     },
     {
       "date": "2026-11-17",
-      "count": 4
+      "count": 5
     }
   ],
   "incidents": [
@@ -404,6 +404,46 @@
       "service_aliases": [],
       "added_at": "2026-11-17T06:16:25+00:00",
       "updated_at": "2026-11-17T06:16:25+00:00"
+    },
+    {
+      "id": "a829e10222718244",
+      "published_at": "2026-11-16T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ワールド",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1QSjNUMXNJbnNBN00zekJxbVVVVFFTc0hSM2RoT0VfU3dlYndXY2tYMGdvYzJPMTZxdFM1Z3FNWWZwQ3V0UnlPajRmV0p2c2twaEtnZXEwc3FveXgy?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1QSjNUMXNJbnNBN00zekJxbVVVVFFTc0hSM2RoT0VfU3dlYndXY2tYMGdvYzJPMTZxdFM1Z3FNWWZwQ3V0UnlPajRmV0p2c2twaEtnZXEwc3FveXgy?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "WORLDコーポレートサイト",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1QSjNUMXNJbnNBN00zekJxbVVVVFFTc0hSM2RoT0VfU3dlYndXY2tYMGdvYzJPMTZxdFM1Z3FNWWZwQ3V0UnlPajRmV0p2c2twaEtnZXEwc3FveXgy?oc=5"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC172LM0X11C26A1000000/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "ワールドオンラインストア",
+      "service_aliases": [],
+      "added_at": "2026-11-17T05:16:27+00:00",
+      "updated_at": "2026-11-17T07:16:12+00:00"
     },
     {
       "id": "e7b712d3c616ac80",
@@ -476,40 +516,40 @@
       "updated_at": "2026-11-17T04:16:26+00:00"
     },
     {
-      "id": "a829e10222718244",
+      "id": "f4dfa2ac8c5796bc",
       "published_at": "2026-11-16T15:00:00+00:00",
       "disclosed_at": null,
-      "organization": "ワールド",
+      "organization": "北海道観光機構",
       "incident_type": "data leak",
       "incident_categories": [
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": null,
+      "potential_records": 63708,
       "confidence": "medium",
       "confidence_score": 30,
       "related": [
         {
-          "incident_id": "8cf67a97b55e1d57",
+          "incident_id": "aa9bc3fcfc85d71d",
           "relationship": "affected_by",
-          "evidence_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1QSjNUMXNJbnNBN00zekJxbVVVVFFTc0hSM2RoT0VfU3dlYndXY2tYMGdvYzJPMTZxdFM1Z3FNWWZwQ3V0UnlPajRmV0p2c2twaEtnZXEwc3FveXgy?oc=5",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/hokkaido_tourism_hokkaido_love_comsbi_line_63708_14_2026/",
           "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1QSjNUMXNJbnNBN00zekJxbVVVVFFTc0hSM2RoT0VfU3dlYndXY2tYMGdvYzJPMTZxdFM1Z3FNWWZwQ3V0UnlPajRmV0p2c2twaEtnZXEwc3FveXgy?oc=5"
+            "https://rocket-boys.co.jp/security-measures-lab/hokkaido_tourism_hokkaido_love_comsbi_line_63708_14_2026/"
           ]
         }
       ],
       "sources": [
         {
-          "name": "WORLDコーポレートサイト",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1QSjNUMXNJbnNBN00zekJxbVVVVFFTc0hSM2RoT0VfU3dlYndXY2tYMGdvYzJPMTZxdFM1Z3FNWWZwQ3V0UnlPajRmV0p2c2twaEtnZXEwc3FveXgy?oc=5"
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/hokkaido_tourism_hokkaido_love_comsbi_line_63708_14_2026/"
         }
       ],
       "affected_system": null,
       "date_basis": "publication",
-      "affected_service": "ワールドオンラインストア",
+      "affected_service": "LINE公式アカウント「HOKKAIDO LOVE!」",
       "service_aliases": [],
-      "added_at": "2026-11-17T05:16:27+00:00",
-      "updated_at": "2026-11-17T05:16:27+00:00"
+      "added_at": "2026-11-17T07:16:12+00:00",
+      "updated_at": "2026-11-17T07:16:12+00:00"
     },
     {
       "id": "12169f1654048f6f",
@@ -1441,6 +1481,42 @@
       "updated_at": "2026-11-17T03:16:00+00:00"
     },
     {
+      "id": "9199dce14118f317",
+      "published_at": "2026-11-14T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ゴールドウイン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://about.goldwin.co.jp/news/page-41040",
+          "evidence_urls": [
+            "https://about.goldwin.co.jp/news/page-41040"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Goldwin Inc.",
+          "url": "https://about.goldwin.co.jp/news/page-41040"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "KARTE",
+      "service_aliases": [],
+      "added_at": "2026-11-17T07:16:12+00:00",
+      "updated_at": "2026-11-17T07:16:12+00:00"
+    },
+    {
       "id": "d318d48ee62aac20",
       "published_at": "2026-11-14T15:00:00+00:00",
       "disclosed_at": null,
@@ -2281,6 +2357,14 @@
           ]
         },
         {
+          "incident_id": "9199dce14118f317",
+          "relationship": "affects",
+          "evidence_url": "https://about.goldwin.co.jp/news/page-41040",
+          "evidence_urls": [
+            "https://about.goldwin.co.jp/news/page-41040"
+          ]
+        },
+        {
           "incident_id": "a829e10222718244",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1QSjNUMXNJbnNBN00zekJxbVVVVFFTc0hSM2RoT0VfU3dlYndXY2tYMGdvYzJPMTZxdFM1Z3FNWWZwQ3V0UnlPajRmV0p2c2twaEtnZXEwc3FveXgy?oc=5",
@@ -2346,7 +2430,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-17T06:16:25+00:00"
+      "updated_at": "2026-11-17T07:16:12+00:00"
     },
     {
       "id": "9f04a00959566f37",
@@ -19317,6 +19401,10 @@
         },
         {
           "name": "藤井寺市",
+          "url": "https://www.city.fujiidera.lg.jp/soshiki/seisakukikaku/jyouhou/21578.html"
+        },
+        {
+          "name": "藤井寺市",
           "url": "https://www.city.fujiidera.lg.jp/topics/21580.html"
         },
         {
@@ -19341,7 +19429,7 @@
         }
       ],
       "added_at": "2026-11-11T21:15:33+00:00",
-      "updated_at": "2026-11-17T06:16:25+00:00"
+      "updated_at": "2026-11-17T07:16:12+00:00"
     },
     {
       "id": "a2ca51bcc11183d5",
@@ -35261,6 +35349,14 @@
           ]
         },
         {
+          "incident_id": "f4dfa2ac8c5796bc",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/hokkaido_tourism_hokkaido_love_comsbi_line_63708_14_2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/hokkaido_tourism_hokkaido_love_comsbi_line_63708_14_2026/"
+          ]
+        },
+        {
           "incident_id": "fbd899922a264c24",
           "relationship": "affects",
           "evidence_url": "https://www.keihan.co.jp/corporate/info/release/assets/261114_keihan-holdings.pdf",
@@ -35312,7 +35408,7 @@
         }
       ],
       "added_at": "2026-10-27T07:15:28+00:00",
-      "updated_at": "2026-11-17T01:16:38+00:00"
+      "updated_at": "2026-11-17T07:16:12+00:00"
     },
     {
       "id": "af7b771bb23be504",
@@ -35702,7 +35798,8 @@
       "organization": "古賀市",
       "incident_type": "data leak",
       "incident_categories": [
-        "data leak"
+        "data leak",
+        "unauthorized access"
       ],
       "potential_records": 476,
       "confidence": "high",
@@ -35711,9 +35808,10 @@
         {
           "incident_id": "671c427eadb6fc63",
           "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/02b5407366263c8c0d14ff3021cfea5d537af0f3",
+          "evidence_url": "https://www.city.koga.fukuoka.jp/news/d/6753",
           "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/02b5407366263c8c0d14ff3021cfea5d537af0f3"
+            "https://news.yahoo.co.jp/articles/02b5407366263c8c0d14ff3021cfea5d537af0f3",
+            "https://www.city.koga.fukuoka.jp/news/d/6753"
           ]
         }
       ],
@@ -35730,7 +35828,7 @@
       "affected_service": "つながりひろば",
       "service_aliases": [],
       "added_at": "2026-10-25T05:15:56+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-17T07:16:12+00:00"
     },
     {
       "id": "f04da59b4b32b113",
@@ -49828,9 +49926,10 @@
         {
           "incident_id": "eef3942d60d4a529",
           "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/02b5407366263c8c0d14ff3021cfea5d537af0f3",
+          "evidence_url": "https://www.city.koga.fukuoka.jp/news/d/6753",
           "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/02b5407366263c8c0d14ff3021cfea5d537af0f3"
+            "https://news.yahoo.co.jp/articles/02b5407366263c8c0d14ff3021cfea5d537af0f3",
+            "https://www.city.koga.fukuoka.jp/news/d/6753"
           ]
         },
         {
@@ -49909,7 +50008,7 @@
       "affected_system": "Studio cloud environment",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T11:10:22+00:00",
-      "updated_at": "2026-11-12T20:15:40+00:00"
+      "updated_at": "2026-11-17T07:16:12+00:00"
     },
     {
       "id": "7a4c57d5a37c3971",
