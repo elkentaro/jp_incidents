@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-17T03:16:00+00:00",
-  "total": 1294,
+  "updated_at": "2026-11-17T04:16:26+00:00",
+  "total": 1296,
   "date_range": {
     "start": "2023-12-24",
-    "end": "2026-11-16"
+    "end": "2026-11-17"
   },
   "daily_counts_90d": [
     {
@@ -366,10 +366,45 @@
     },
     {
       "date": "2026-11-17",
-      "count": 0
+      "count": 1
     }
   ],
   "incidents": [
+    {
+      "id": "57225b83002a9993",
+      "published_at": "2026-11-16T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "アインホールディングス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.hokkaido-np.co.jp/article/1409741/",
+          "evidence_urls": [
+            "https://www.hokkaido-np.co.jp/article/1409741/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "北海道新聞デジタル",
+          "url": "https://www.hokkaido-np.co.jp/article/1409741/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "アインズ&トルペ",
+      "service_aliases": [],
+      "added_at": "2026-11-17T04:16:26+00:00",
+      "updated_at": "2026-11-17T04:16:26+00:00"
+    },
     {
       "id": "12169f1654048f6f",
       "published_at": "2026-11-15T15:00:00+00:00",
@@ -840,10 +875,24 @@
       ],
       "affected_system": null,
       "date_basis": "occurrence",
-      "affected_service": "富岳",
+      "affected_service": "富岳 / 理究",
       "service_aliases": [],
+      "affected_services": [
+        "富岳",
+        "理究"
+      ],
+      "service_details": [
+        {
+          "name": "富岳",
+          "aliases": []
+        },
+        {
+          "name": "理究",
+          "aliases": []
+        }
+      ],
       "added_at": "2026-11-16T06:15:50+00:00",
-      "updated_at": "2026-11-16T10:15:49+00:00"
+      "updated_at": "2026-11-17T04:16:26+00:00"
     },
     {
       "id": "3132aa2481a76c3b",
@@ -2071,6 +2120,14 @@
           ]
         },
         {
+          "incident_id": "57225b83002a9993",
+          "relationship": "affects",
+          "evidence_url": "https://www.hokkaido-np.co.jp/article/1409741/",
+          "evidence_urls": [
+            "https://www.hokkaido-np.co.jp/article/1409741/"
+          ]
+        },
+        {
           "incident_id": "59ebb41839af7cc6",
           "relationship": "affects",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/karte_unauthorized_access_affected_companies_roundup_2026/",
@@ -2155,7 +2212,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-17T02:16:00+00:00"
+      "updated_at": "2026-11-17T04:16:26+00:00"
     },
     {
       "id": "9f04a00959566f37",
@@ -2824,6 +2881,10 @@
         {
           "name": "にいがた経済新聞",
           "url": "https://www.niikei.jp/2084837/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/e836b843a05faca7b86447484869dfb97050529e?source=rss"
         }
       ],
       "affected_system": null,
@@ -2860,7 +2921,7 @@
         }
       ],
       "added_at": "2026-11-13T21:16:06+00:00",
-      "updated_at": "2026-11-16T05:16:04+00:00"
+      "updated_at": "2026-11-17T04:16:26+00:00"
     },
     {
       "id": "b9515d2dc0e6abf4",
@@ -17757,6 +17818,14 @@
       "confidence_score": 90,
       "related": [
         {
+          "incident_id": "2e68ea9149cf74c8",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.akita.lg.jp/kanko/1015784/1053712.html",
+          "evidence_urls": [
+            "https://www.city.akita.lg.jp/kanko/1015784/1053712.html"
+          ]
+        },
+        {
           "incident_id": "3132aa2481a76c3b",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE43ODhLb3hGSFBlcUt1MDB3YVo2STM4VXNlcm5nZUpvem00cHZpZDhQZGtfM2hqS3ptRjBMM0o0U21CZU1IMlFnTzdJOHBCbm1qWEZWUVhxemMyTEVuOEtsZXg2ZDN4UGQ1dlp4WnNHbFpBVGVlR05VTjEyVXJwbjQ?oc=5",
@@ -17870,7 +17939,7 @@
       "affected_service": "アソビュー!",
       "service_aliases": [],
       "added_at": "2026-11-03T16:15:47+00:00",
-      "updated_at": "2026-11-16T21:15:39+00:00"
+      "updated_at": "2026-11-17T04:16:26+00:00"
     },
     {
       "id": "fd9b9f5fb40c1ca6",
@@ -18407,12 +18476,16 @@
         {
           "name": "神戸新聞",
           "url": "https://www.kobe-np.co.jp/news/information/202611/0020994385.shtml"
+        },
+        {
+          "name": "神戸新聞",
+          "url": "https://www.kobe-np.co.jp/news/information/202611/0021041154.shtml"
         }
       ],
       "affected_service": "メールマガジン",
       "service_aliases": [],
       "added_at": "2026-11-02T13:16:55+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-17T04:16:26+00:00"
     },
     {
       "id": "24fbcc3575cc868a",
@@ -57362,6 +57435,42 @@
       ],
       "added_at": "2026-11-05T01:16:21+00:00",
       "updated_at": "2026-11-16T00:15:49+00:00"
+    },
+    {
+      "id": "2e68ea9149cf74c8",
+      "published_at": "2026-04-24T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "秋田市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "cc83cfb44abbac15",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.akita.lg.jp/kanko/1015784/1053712.html",
+          "evidence_urls": [
+            "https://www.city.akita.lg.jp/kanko/1015784/1053712.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "秋田市",
+          "url": "https://www.city.akita.lg.jp/kanko/1015784/1053712.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "電子チケット販売サービス「アソビュー!」",
+      "service_aliases": [],
+      "added_at": "2026-11-17T04:16:26+00:00",
+      "updated_at": "2026-11-17T04:16:26+00:00"
     },
     {
       "id": "6c2dfbdab31a21b4",
