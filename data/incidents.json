@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-17T02:16:00+00:00",
-  "total": 1292,
+  "updated_at": "2026-11-17T03:16:00+00:00",
+  "total": 1294,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-16"
@@ -290,7 +290,7 @@
     },
     {
       "date": "2026-10-29",
-      "count": 38
+      "count": 40
     },
     {
       "date": "2026-10-30",
@@ -1272,6 +1272,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/7ed5af34437bf98fb4f7320de4daa244d8e028a2"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118525"
         }
       ],
       "affected_system": null,
@@ -1279,7 +1283,7 @@
       "affected_service": "mineo",
       "service_aliases": [],
       "added_at": "2026-11-16T12:16:35+00:00",
-      "updated_at": "2026-11-16T21:15:39+00:00"
+      "updated_at": "2026-11-17T03:16:00+00:00"
     },
     {
       "id": "d318d48ee62aac20",
@@ -24657,6 +24661,41 @@
       "updated_at": "2026-11-14T09:15:22+00:00"
     },
     {
+      "id": "b26859d4baa16756",
+      "published_at": "2026-10-28T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "PIECE",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "f8b82a142d8df18e",
+          "relationship": "affected_by",
+          "evidence_url": "https://piecehotel.com/news/quPsYLsN",
+          "evidence_urls": [
+            "https://piecehotel.com/news/quPsYLsN"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "株式会社PIECE",
+          "url": "https://piecehotel.com/news/quPsYLsN"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "WASIMIL",
+      "service_aliases": [],
+      "added_at": "2026-11-17T03:16:00+00:00",
+      "updated_at": "2026-11-17T03:16:00+00:00"
+    },
+    {
       "id": "b4ef9ee1930f77a5",
       "published_at": "2026-10-28T15:00:00+00:00",
       "disclosed_at": null,
@@ -25808,6 +25847,42 @@
       ],
       "added_at": "2026-11-02T08:15:53+00:00",
       "updated_at": "2026-11-02T08:15:53+00:00"
+    },
+    {
+      "id": "f8b82a142d8df18e",
+      "published_at": "2026-10-28T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "AZOO",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "b26859d4baa16756",
+          "relationship": "affects",
+          "evidence_url": "https://piecehotel.com/news/quPsYLsN",
+          "evidence_urls": [
+            "https://piecehotel.com/news/quPsYLsN"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "株式会社PIECE",
+          "url": "https://piecehotel.com/news/quPsYLsN"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "WASIMIL",
+      "service_aliases": [],
+      "added_at": "2026-11-17T03:16:00+00:00",
+      "updated_at": "2026-11-17T03:16:00+00:00"
     },
     {
       "id": "00708cad4ca58f78",
@@ -54196,7 +54271,8 @@
       "organization": "千葉市",
       "incident_type": "data leak",
       "incident_categories": [
-        "data leak"
+        "data leak",
+        "unauthorized access"
       ],
       "potential_records": 75747,
       "confidence": "high",
@@ -54229,7 +54305,7 @@
       "affected_system": "ちばし安全・安心メール等",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T09:06:44+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-17T03:16:00+00:00"
     },
     {
       "id": "1218f208fb3469b1",
