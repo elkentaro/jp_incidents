@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-17T15:16:09+00:00",
-  "total": 1317,
+  "updated_at": "2026-11-17T19:16:58+00:00",
+  "total": 1321,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-17"
@@ -78,7 +78,7 @@
     },
     {
       "date": "2026-09-07",
-      "count": 0
+      "count": 1
     },
     {
       "date": "2026-09-08",
@@ -198,7 +198,7 @@
     },
     {
       "date": "2026-10-07",
-      "count": 8
+      "count": 9
     },
     {
       "date": "2026-10-08",
@@ -346,7 +346,7 @@
     },
     {
       "date": "2026-11-13",
-      "count": 32
+      "count": 33
     },
     {
       "date": "2026-11-14",
@@ -358,7 +358,7 @@
     },
     {
       "date": "2026-11-16",
-      "count": 22
+      "count": 23
     },
     {
       "date": "2026-11-17",
@@ -1388,6 +1388,30 @@
       "updated_at": "2026-11-16T13:16:58+00:00"
     },
     {
+      "id": "1b8fa6b2ad155b09",
+      "published_at": "2026-11-15T15:00:00+00:00",
+      "disclosed_at": "2026-11-15T15:00:00+00:00",
+      "organization": "医学生物学研究所",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/mbl_it_outsourcing_cloud_unauthorized_use_possible_data_leak/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "added_at": "2026-11-17T19:16:58+00:00",
+      "updated_at": "2026-11-17T19:16:58+00:00"
+    },
+    {
       "id": "2d5a37d534a4cc3a",
       "published_at": "2026-11-15T15:00:00+00:00",
       "disclosed_at": null,
@@ -1631,6 +1655,10 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261117582109/"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261117582109.pdf"
         }
       ],
       "affected_system": null,
@@ -1638,7 +1666,7 @@
       "affected_service": "JINS会員",
       "service_aliases": [],
       "added_at": "2026-11-17T11:16:33+00:00",
-      "updated_at": "2026-11-17T11:16:33+00:00"
+      "updated_at": "2026-11-17T19:16:58+00:00"
     },
     {
       "id": "45db9ec047a44b07",
@@ -1838,6 +1866,10 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUD176VF0X11C26A1000000/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/4aea994ed4616d36255ee119b8b7e5150b30955d"
         }
       ],
       "affected_system": null,
@@ -1845,7 +1877,7 @@
       "affected_service": "日経電子版",
       "service_aliases": [],
       "added_at": "2026-11-17T11:16:33+00:00",
-      "updated_at": "2026-11-17T11:16:33+00:00"
+      "updated_at": "2026-11-17T19:16:58+00:00"
     },
     {
       "id": "d318d48ee62aac20",
@@ -2760,6 +2792,14 @@
           ]
         },
         {
+          "incident_id": "aa7aa47af66d811b",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/jins-karte-member-18_29m-account-data-breach-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/jins-karte-member-18_29m-account-data-breach-2026/"
+          ]
+        },
+        {
           "incident_id": "d37cf1e7d39a355b",
           "relationship": "affects",
           "evidence_url": "https://www.oricon.co.jp/news/2493297/",
@@ -2825,7 +2865,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-17T11:16:33+00:00"
+      "updated_at": "2026-11-17T19:16:58+00:00"
     },
     {
       "id": "9f04a00959566f37",
@@ -3762,6 +3802,42 @@
       "service_aliases": [],
       "added_at": "2026-11-16T12:16:35+00:00",
       "updated_at": "2026-11-16T12:16:35+00:00"
+    },
+    {
+      "id": "aa7aa47af66d811b",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-16T15:00:00+00:00",
+      "organization": "JINS",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 18290000,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/jins-karte-member-18_29m-account-data-breach-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/jins-karte-member-18_29m-account-data-breach-2026/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/jins-karte-member-18_29m-account-data-breach-2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "JINS会員",
+      "service_aliases": [],
+      "added_at": "2026-11-17T19:16:58+00:00",
+      "updated_at": "2026-11-17T19:16:58+00:00"
     },
     {
       "id": "c315588305545d55",
@@ -14532,12 +14608,16 @@
         {
           "name": "日本経済新聞",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1mZW5VbTJUWHNndjk1MWNIZktLU1V5dFN3TDgzVU5Ga2hCMHpnVVNoN1RvaGVMRmEyWDUtODVmakR1cGNTSUFtamRtRzJUQVctNWVOVE1JUlRRVFdYYjdILUtnWjU4WDJGMzNwaQ?oc=5"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOCC1762X0X11C26A1000000/"
         }
       ],
       "affected_service": "個人向けカードローン",
       "service_aliases": [],
       "added_at": "2026-11-06T13:16:53+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-17T19:16:58+00:00"
     },
     {
       "id": "bee2e8e6af09f201",
@@ -56963,6 +57043,42 @@
       "updated_at": "2026-11-16T20:15:47+00:00"
     },
     {
+      "id": "3efb5e5b1ae80e93",
+      "published_at": "2026-10-06T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "富士市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 815,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "e1eb4609c1767524",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.fuji.shizuoka.jp/1005250000/p007783.html",
+          "evidence_urls": [
+            "https://www.city.fuji.shizuoka.jp/1005250000/p007783.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "富士市",
+          "url": "https://www.city.fuji.shizuoka.jp/1005250000/p007783.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "ApplyNow",
+      "service_aliases": [],
+      "added_at": "2026-11-17T19:16:58+00:00",
+      "updated_at": "2026-11-17T19:16:58+00:00"
+    },
+    {
       "id": "5361b8a858516f2f",
       "published_at": "2026-10-05T18:00:00+09:00",
       "disclosed_at": "2026-10-09T00:00:00+09:00",
@@ -58370,6 +58486,38 @@
       ],
       "added_at": "2026-11-14T12:25:39+00:00",
       "updated_at": "2026-11-14T12:25:39+00:00"
+    },
+    {
+      "id": "e1eb4609c1767524",
+      "published_at": "2026-09-06T15:00:00+00:00",
+      "disclosed_at": "2026-09-08T15:00:00+00:00",
+      "organization": "株式会社ApplyNow",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "3efb5e5b1ae80e93",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.fuji.shizuoka.jp/1005250000/p007783.html",
+          "evidence_urls": [
+            "https://www.city.fuji.shizuoka.jp/1005250000/p007783.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "applynow.co.jp",
+          "url": "https://applynow.co.jp/news/20260909"
+        }
+      ],
+      "added_at": "2026-11-17T19:16:58+00:00",
+      "updated_at": "2026-11-17T19:16:58+00:00"
     },
     {
       "id": "9dc51df1da2fcdfa",
