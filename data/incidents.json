@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-17T09:16:36+00:00",
-  "total": 1305,
+  "updated_at": "2026-11-17T10:16:39+00:00",
+  "total": 1307,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-17"
@@ -350,7 +350,7 @@
     },
     {
       "date": "2026-11-13",
-      "count": 30
+      "count": 31
     },
     {
       "date": "2026-11-14",
@@ -358,7 +358,7 @@
     },
     {
       "date": "2026-11-15",
-      "count": 6
+      "count": 7
     },
     {
       "date": "2026-11-16",
@@ -387,6 +387,10 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118588"
+        },
+        {
+          "name": "株式会社SmartHR",
+          "url": "https://smarthr.co.jp/news/info/20261117/"
         }
       ],
       "affected_system": null,
@@ -394,7 +398,7 @@
       "affected_service": "Notion AI",
       "service_aliases": [],
       "added_at": "2026-11-17T09:16:36+00:00",
-      "updated_at": "2026-11-17T09:16:36+00:00"
+      "updated_at": "2026-11-17T10:16:39+00:00"
     },
     {
       "id": "f71eff2711737120",
@@ -457,6 +461,10 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/morisawa_fonts_karte_23957_data_breach/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118587"
         }
       ],
       "affected_system": null,
@@ -464,7 +472,7 @@
       "affected_service": "Morisawa Fonts",
       "service_aliases": [],
       "added_at": "2026-11-17T06:16:25+00:00",
-      "updated_at": "2026-11-17T08:16:10+00:00"
+      "updated_at": "2026-11-17T10:16:39+00:00"
     },
     {
       "id": "a829e10222718244",
@@ -1550,6 +1558,41 @@
       "updated_at": "2026-11-17T08:16:10+00:00"
     },
     {
+      "id": "7716e2b3f9a71e3b",
+      "published_at": "2026-11-14T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ソーシャルインテリア",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 29194,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/subsclife_socialinterior_karte_29194_confirmed_leak_2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/subsclife_socialinterior_karte_29194_confirmed_leak_2026/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/subsclife_socialinterior_karte_29194_confirmed_leak_2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "subsclife by TOKYOROOMS",
+      "service_aliases": [],
+      "added_at": "2026-11-17T10:16:39+00:00",
+      "updated_at": "2026-11-17T10:16:39+00:00"
+    },
+    {
       "id": "8d32fc9abf21bcf5",
       "published_at": "2026-11-14T15:00:00+00:00",
       "disclosed_at": null,
@@ -2466,6 +2509,14 @@
           ]
         },
         {
+          "incident_id": "7716e2b3f9a71e3b",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/subsclife_socialinterior_karte_29194_confirmed_leak_2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/subsclife_socialinterior_karte_29194_confirmed_leak_2026/"
+          ]
+        },
+        {
           "incident_id": "7ad240b1b0ee8217",
           "relationship": "affects",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/karte_unauthorized_access_affected_companies_roundup_2026/",
@@ -2503,6 +2554,14 @@
           "evidence_url": "https://www.oricon.co.jp/news/2493297/",
           "evidence_urls": [
             "https://www.oricon.co.jp/news/2493297/"
+          ]
+        },
+        {
+          "incident_id": "decc065454a34cbc",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/francfranc_karte_member_598m_purchase_400m_data_leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/francfranc_karte_member_598m_purchase_400m_data_leak/"
           ]
         },
         {
@@ -2555,7 +2614,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-17T07:16:12+00:00"
+      "updated_at": "2026-11-17T10:16:39+00:00"
     },
     {
       "id": "9f04a00959566f37",
@@ -3523,6 +3582,39 @@
       "service_aliases": [],
       "added_at": "2026-11-13T22:16:19+00:00",
       "updated_at": "2026-11-14T06:15:26+00:00"
+    },
+    {
+      "id": "decc065454a34cbc",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-12T15:00:00+00:00",
+      "organization": "Francfranc",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 5980000,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/francfranc_karte_member_598m_purchase_400m_data_leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/francfranc_karte_member_598m_purchase_400m_data_leak/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/francfranc_karte_member_598m_purchase_400m_data_leak/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "added_at": "2026-11-17T10:16:39+00:00",
+      "updated_at": "2026-11-17T10:16:39+00:00"
     },
     {
       "id": "e7db5e739daf7932",
