@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-17T00:16:13+00:00",
-  "total": 1289,
+  "updated_at": "2026-11-17T01:16:38+00:00",
+  "total": 1291,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-16"
@@ -338,7 +338,7 @@
     },
     {
       "date": "2026-11-10",
-      "count": 49
+      "count": 50
     },
     {
       "date": "2026-11-11",
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-16",
-      "count": 21
+      "count": 22
     },
     {
       "date": "2026-11-17",
@@ -388,6 +388,10 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/merupara_jmail_unauthorized_access_possible_data_leak_2026/"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://www.micgp.co.jp/notice/20261116/"
         }
       ],
       "affected_system": null,
@@ -409,7 +413,7 @@
         }
       ],
       "added_at": "2026-11-16T14:16:05+00:00",
-      "updated_at": "2026-11-16T14:16:05+00:00"
+      "updated_at": "2026-11-17T01:16:38+00:00"
     },
     {
       "id": "37294d0033f0153b",
@@ -446,6 +450,47 @@
       "service_aliases": [],
       "added_at": "2026-11-16T21:15:39+00:00",
       "updated_at": "2026-11-16T21:15:39+00:00"
+    },
+    {
+      "id": "3dd725c447809ec8",
+      "published_at": "2026-11-15T15:00:00+00:00",
+      "disclosed_at": "2026-11-15T15:00:00+00:00",
+      "organization": "阪急阪神ホテルズ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 331586,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.hankyu-hotel.com/topics/2026/GPDetailPage",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/hankyu-hanshin-hotels-karte-members-data-leak-2026/",
+            "https://www.hankyu-hotel.com/topics/2026/GPDetailPage"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.hankyu-hotel.com/topics/2026/GPDetailPage"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/hankyu-hanshin-hotels-karte-members-data-leak-2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "阪急阪神第一ホテルグループメンバーズクラブ",
+      "service_aliases": [],
+      "added_at": "2026-11-17T01:16:38+00:00",
+      "updated_at": "2026-11-17T01:16:38+00:00"
     },
     {
       "id": "462c096ee7be4ff0",
@@ -556,9 +601,10 @@
         {
           "incident_id": "aa9bc3fcfc85d71d",
           "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/feiler_comsbi_saas_line_lottery_data_breach_764429_20261116/",
+          "evidence_url": "https://www.feiler-jp.com/information/detail/277",
           "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/feiler_comsbi_saas_line_lottery_data_breach_764429_20261116/"
+            "https://rocket-boys.co.jp/security-measures-lab/feiler_comsbi_saas_line_lottery_data_breach_764429_20261116/",
+            "https://www.feiler-jp.com/information/detail/277"
           ]
         }
       ],
@@ -566,6 +612,10 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/feiler_comsbi_saas_line_lottery_data_breach_764429_20261116/"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://www.feiler-jp.com/information/detail/277"
         }
       ],
       "affected_system": null,
@@ -573,7 +623,7 @@
       "affected_service": "フェイラーのLINE抽選申込サービス",
       "service_aliases": [],
       "added_at": "2026-11-17T00:16:13+00:00",
-      "updated_at": "2026-11-17T00:16:13+00:00"
+      "updated_at": "2026-11-17T01:16:38+00:00"
     },
     {
       "id": "759e78a0e1d4a428",
@@ -1991,6 +2041,15 @@
       "confidence_score": 90,
       "related": [
         {
+          "incident_id": "3dd725c447809ec8",
+          "relationship": "affects",
+          "evidence_url": "https://www.hankyu-hotel.com/topics/2026/GPDetailPage",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/hankyu-hanshin-hotels-karte-members-data-leak-2026/",
+            "https://www.hankyu-hotel.com/topics/2026/GPDetailPage"
+          ]
+        },
+        {
           "incident_id": "59ebb41839af7cc6",
           "relationship": "affects",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/karte_unauthorized_access_affected_companies_roundup_2026/",
@@ -2039,6 +2098,10 @@
           "url": "https://status.karte.io/incidents/rs1gsmckc197"
         },
         {
+          "name": "satimo list",
+          "url": "https://plaid.co.jp/news/20261116/"
+        },
+        {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261113580181.pdf"
         },
@@ -2070,7 +2133,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-16T14:16:05+00:00"
+      "updated_at": "2026-11-17T01:16:38+00:00"
     },
     {
       "id": "9f04a00959566f37",
@@ -4563,6 +4626,10 @@
           "url": "https://rocket-boys.co.jp/security-measures-lab/meetsmore_unauthorized_access_366850_201accounts_202611/"
         },
         {
+          "name": "satimo list",
+          "url": "https://company.meetsmore.com/page/notice-20261116"
+        },
+        {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/a77bdf7b31a74f59b64e5506c83357ec5e93043d"
         }
@@ -4572,7 +4639,7 @@
       "affected_service": "ミツモア",
       "service_aliases": [],
       "added_at": "2026-11-16T10:15:49+00:00",
-      "updated_at": "2026-11-16T20:15:47+00:00"
+      "updated_at": "2026-11-17T01:16:38+00:00"
     },
     {
       "id": "7e675401ba9184a3",
@@ -6148,6 +6215,32 @@
       "updated_at": "2026-11-14T00:16:05+00:00"
     },
     {
+      "id": "492f96ec8e657e7c",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "LayerX",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://layerx.co.jp/news/202611161636/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "Notion",
+      "service_aliases": [],
+      "added_at": "2026-11-17T01:16:38+00:00",
+      "updated_at": "2026-11-17T01:16:38+00:00"
+    },
+    {
       "id": "4af336cfb4255f5a",
       "published_at": "2026-11-09T15:00:00+00:00",
       "disclosed_at": null,
@@ -6810,6 +6903,10 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/daiwaliving_droom_navi_data_breach_20261116_corporate_response/"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://www.daiwaliving.co.jp/cms/wp-content/uploads/2026/11/20261116.pdf"
         }
       ],
       "affected_system": null,
@@ -6817,7 +6914,7 @@
       "affected_service": "D-ROOM NAVI",
       "service_aliases": [],
       "added_at": "2026-11-16T23:15:24+00:00",
-      "updated_at": "2026-11-16T23:15:24+00:00"
+      "updated_at": "2026-11-17T01:16:38+00:00"
     },
     {
       "id": "fb4e0c413bebb40b",
@@ -9328,8 +9425,9 @@
         {
           "incident_id": "ce0c9356be3c7079",
           "relationship": "affects",
-          "evidence_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNy1CWXh6MjRnV284cVRJTV9wWklSQks4bjI1WHJWZ1BTajR3ZTZ4clB6Rko0bG5vUkNWSTJJTmJUa09QSnk3UGJSbUNMZEI2bzJIdHRGMDVZVzZ3Nk9aemlnX0VyeU5WWVZwWi10azI4eldFMEI3bnZKbUJ3UnJVZ01yd2V3eS1QcFRkbTlrd2Z1dU1mWkV3eQ?oc=5",
+          "evidence_url": "https://bravegroup.co.jp/news/12429/",
           "evidence_urls": [
+            "https://bravegroup.co.jp/news/12429/",
             "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNy1CWXh6MjRnV284cVRJTV9wWklSQks4bjI1WHJWZ1BTajR3ZTZ4clB6Rko0bG5vUkNWSTJJTmJUa09QSnk3UGJSbUNMZEI2bzJIdHRGMDVZVzZ3Nk9aemlnX0VyeU5WWVZwWi10azI4eldFMEI3bnZKbUJ3UnJVZ01yd2V3eS1QcFRkbTlrd2Z1dU1mWkV3eQ?oc=5"
           ]
         },
@@ -9389,7 +9487,7 @@
         }
       ],
       "added_at": "2026-11-11T09:15:59+00:00",
-      "updated_at": "2026-11-16T10:15:49+00:00"
+      "updated_at": "2026-11-17T01:16:38+00:00"
     },
     {
       "id": "cb69602b79e76443",
@@ -9477,7 +9575,8 @@
       "organization": "Brave group",
       "incident_type": "data leak",
       "incident_categories": [
-        "data leak"
+        "data leak",
+        "unauthorized access"
       ],
       "potential_records": null,
       "confidence": "high",
@@ -9486,8 +9585,9 @@
         {
           "incident_id": "57d15baf7435e548",
           "relationship": "affected_by",
-          "evidence_url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNy1CWXh6MjRnV284cVRJTV9wWklSQks4bjI1WHJWZ1BTajR3ZTZ4clB6Rko0bG5vUkNWSTJJTmJUa09QSnk3UGJSbUNMZEI2bzJIdHRGMDVZVzZ3Nk9aemlnX0VyeU5WWVZwWi10azI4eldFMEI3bnZKbUJ3UnJVZ01yd2V3eS1QcFRkbTlrd2Z1dU1mWkV3eQ?oc=5",
+          "evidence_url": "https://bravegroup.co.jp/news/12429/",
           "evidence_urls": [
+            "https://bravegroup.co.jp/news/12429/",
             "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNy1CWXh6MjRnV284cVRJTV9wWklSQks4bjI1WHJWZ1BTajR3ZTZ4clB6Rko0bG5vUkNWSTJJTmJUa09QSnk3UGJSbUNMZEI2bzJIdHRGMDVZVzZ3Nk9aemlnX0VyeU5WWVZwWi10azI4eldFMEI3bnZKbUJ3UnJVZ01yd2V3eS1QcFRkbTlrd2Z1dU1mWkV3eQ?oc=5"
           ]
         }
@@ -9502,11 +9602,12 @@
           "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNy1CWXh6MjRnV284cVRJTV9wWklSQks4bjI1WHJWZ1BTajR3ZTZ4clB6Rko0bG5vUkNWSTJJTmJUa09QSnk3UGJSbUNMZEI2bzJIdHRGMDVZVzZ3Nk9aemlnX0VyeU5WWVZwWi10azI4eldFMEI3bnZKbUJ3UnJVZ01yd2V3eS1QcFRkbTlrd2Z1dU1mWkV3eQ?oc=5"
         }
       ],
-      "affected_service": "ぶいすぽっ!オフィシャルオンラインストア / AMICIS / GΔ59 OFFICIAL ONLINE STORE / HIMEHINA MART / Neo-Porte official Shop / RIONECTION OFFICIAL STORE / RIOT MUSIC OFFICIAL STORE / Xross Stars Official Online Store / YUMENOS OFFICIAL STORE / ゆにれいど! OFFICIAL STORE",
+      "affected_service": "ぶいすぽっ!オフィシャルオンラインストア / AMICIS / Brave group US Official Store / GΔ59 OFFICIAL ONLINE STORE / HIMEHINA MART / Neo-Porte official Shop / RIONECTION OFFICIAL STORE / RIOT MUSIC OFFICIAL STORE / Xross Stars Official Online Store / YUMENOS OFFICIAL STORE / ゆにれいど! OFFICIAL STORE",
       "service_aliases": [],
       "affected_services": [
         "ぶいすぽっ!オフィシャルオンラインストア",
         "AMICIS",
+        "Brave group US Official Store",
         "GΔ59 OFFICIAL ONLINE STORE",
         "HIMEHINA MART",
         "Neo-Porte official Shop",
@@ -9523,6 +9624,10 @@
         },
         {
           "name": "AMICIS",
+          "aliases": []
+        },
+        {
+          "name": "Brave group US Official Store",
           "aliases": []
         },
         {
@@ -9559,7 +9664,7 @@
         }
       ],
       "added_at": "2026-11-13T08:15:22+00:00",
-      "updated_at": "2026-11-13T08:15:22+00:00"
+      "updated_at": "2026-11-17T01:16:38+00:00"
     },
     {
       "id": "a5aba76731b13cfb",
@@ -15223,6 +15328,10 @@
           "url": "https://www.asahi.com/articles/ASVCJ2DB3VCJOXIE02GM.html"
         },
         {
+          "name": "satimo list",
+          "url": "https://www.pref.osaka.lg.jp/hodo/fumin/o050180/prs_00002.html"
+        },
+        {
           "name": "朝日新聞",
           "url": "https://www.asahi.com/articles/ASVC42QBHVC4OXIE02DM.html"
         },
@@ -15250,7 +15359,7 @@
       "affected_service": "行政オンラインシステム",
       "service_aliases": [],
       "added_at": "2026-11-04T12:25:20+00:00",
-      "updated_at": "2026-11-16T09:15:38+00:00"
+      "updated_at": "2026-11-17T01:16:38+00:00"
     },
     {
       "id": "5aad8865a350a69d",
@@ -29918,12 +30027,16 @@
         {
           "name": "satimo list",
           "url": "https://www.impress.co.jp/newsrelease/2026/10/info20261028.html"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/17/56802.html"
         }
       ],
       "affected_service": "メールマガジン",
       "service_aliases": [],
       "added_at": "2026-10-27T19:09:26+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-17T01:16:38+00:00"
     },
     {
       "id": "46843ca5cd86d598",
@@ -34725,9 +34838,10 @@
         {
           "incident_id": "70fc40a1ac3fac36",
           "relationship": "affects",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/feiler_comsbi_saas_line_lottery_data_breach_764429_20261116/",
+          "evidence_url": "https://www.feiler-jp.com/information/detail/277",
           "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/feiler_comsbi_saas_line_lottery_data_breach_764429_20261116/"
+            "https://rocket-boys.co.jp/security-measures-lab/feiler_comsbi_saas_line_lottery_data_breach_764429_20261116/",
+            "https://www.feiler-jp.com/information/detail/277"
           ]
         },
         {
@@ -34832,7 +34946,7 @@
         }
       ],
       "added_at": "2026-10-27T07:15:28+00:00",
-      "updated_at": "2026-11-17T00:16:13+00:00"
+      "updated_at": "2026-11-17T01:16:38+00:00"
     },
     {
       "id": "af7b771bb23be504",
@@ -43369,10 +43483,11 @@
         {
           "incident_id": "5e7167bf3d6672b5",
           "relationship": "affects",
-          "evidence_url": "https://internet.watch.impress.co.jp/docs/news/2156755.html",
+          "evidence_url": "https://news.yahoo.co.jp/articles/b1e189b07df09896ea3372fe8867e84e8a42a04a",
           "evidence_urls": [
             "https://cybersecurity-jp.com/news/118420",
             "https://internet.watch.impress.co.jp/docs/news/2156755.html",
+            "https://news.yahoo.co.jp/articles/b1e189b07df09896ea3372fe8867e84e8a42a04a",
             "https://www.asahi.com/articles/ASVBP15NCVBPPTIL00MM.html",
             "https://www.omu.ac.jp/news/12123"
           ]
@@ -43416,7 +43531,7 @@
         }
       ],
       "added_at": "2026-10-20T23:30:29+00:00",
-      "updated_at": "2026-11-17T00:16:13+00:00"
+      "updated_at": "2026-11-17T01:16:38+00:00"
     },
     {
       "id": "431fb33928affc8c",
@@ -50125,6 +50240,10 @@
           "url": "https://www.medley.jp/notice/20261015.html"
         },
         {
+          "name": "メドレー",
+          "url": "https://at-link.net/information/%e3%82%a2%e3%83%83%e3%83%88%e3%83%aa%e3%83%b3%e3%82%af%e3%81%b8%e3%81%ae%e4%b8%8d%e6%ad%a3%e3%82%a2%e3%82%af%e3%82%bb%e3%82%b9%e3%81%8a%e3%82%88%e3%81%b3%e3%82%b5%e3%83%bc%e3%83%93%e3%82%b9%e3%81%ae/"
+        },
+        {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261014550839.pdf"
         },
@@ -50162,7 +50281,7 @@
         }
       ],
       "added_at": "2026-10-19T08:49:15+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-17T01:16:38+00:00"
     },
     {
       "id": "2f93fa508b6184bf",
@@ -56306,10 +56425,11 @@
         {
           "incident_id": "415606b392ad65f5",
           "relationship": "affected_by",
-          "evidence_url": "https://internet.watch.impress.co.jp/docs/news/2156755.html",
+          "evidence_url": "https://news.yahoo.co.jp/articles/b1e189b07df09896ea3372fe8867e84e8a42a04a",
           "evidence_urls": [
             "https://cybersecurity-jp.com/news/118420",
             "https://internet.watch.impress.co.jp/docs/news/2156755.html",
+            "https://news.yahoo.co.jp/articles/b1e189b07df09896ea3372fe8867e84e8a42a04a",
             "https://www.asahi.com/articles/ASVBP15NCVBPPTIL00MM.html",
             "https://www.omu.ac.jp/news/12123"
           ]
@@ -56342,7 +56462,7 @@
         }
       ],
       "added_at": "2026-10-21T21:19:02+00:00",
-      "updated_at": "2026-11-17T00:16:13+00:00"
+      "updated_at": "2026-11-17T01:16:38+00:00"
     },
     {
       "id": "80f23a54384289ac",
