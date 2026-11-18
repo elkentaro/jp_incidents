@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-18T05:16:01+00:00",
-  "total": 1384,
+  "updated_at": "2026-11-18T06:16:13+00:00",
+  "total": 1387,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-18"
@@ -222,7 +222,7 @@
     },
     {
       "date": "2026-10-13",
-      "count": 40
+      "count": 41
     },
     {
       "date": "2026-10-14",
@@ -346,7 +346,7 @@
     },
     {
       "date": "2026-11-13",
-      "count": 41
+      "count": 42
     },
     {
       "date": "2026-11-14",
@@ -354,7 +354,7 @@
     },
     {
       "date": "2026-11-15",
-      "count": 11
+      "count": 12
     },
     {
       "date": "2026-11-16",
@@ -453,6 +453,10 @@
           "url": "https://campfire.co.jp/press/2026/11/17/campfire/"
         },
         {
+          "name": "株式会社CAMPFIRE",
+          "url": "https://campfire.co.jp/press/2026/11/18/campfire/"
+        },
+        {
           "name": "CAMPFIRE (キャンプファイヤー)",
           "url": "https://camp-fire.jp/news/2026/11/17/campfire"
         }
@@ -460,7 +464,7 @@
       "affected_system": null,
       "date_basis": "publication",
       "added_at": "2026-11-17T20:16:23+00:00",
-      "updated_at": "2026-11-18T03:16:31+00:00"
+      "updated_at": "2026-11-18T06:16:13+00:00"
     },
     {
       "id": "72719afb4550b10c",
@@ -1515,6 +1519,10 @@
           "url": "https://www.riken.jp/pr/news/2026/20261116_2/index.html"
         },
         {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/ff3d393a9533e4b4f337de1fc4e26a90bbd67df5"
+        },
+        {
           "name": "ITmedia",
           "url": "https://www.itmedia.co.jp/news/article/2611/16/2000003224/"
         },
@@ -1558,7 +1566,7 @@
         }
       ],
       "added_at": "2026-11-16T06:15:50+00:00",
-      "updated_at": "2026-11-17T20:16:23+00:00"
+      "updated_at": "2026-11-18T06:16:13+00:00"
     },
     {
       "id": "12169f1654048f6f",
@@ -1966,12 +1974,16 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/pwc-japan-everest-data-leak-202611/"
+        },
+        {
+          "name": "ビジネス+IT",
+          "url": "https://www.sbbit.jp/article/cont1/188526"
         }
       ],
       "affected_system": null,
       "date_basis": "first_disclosure",
       "added_at": "2026-11-17T22:16:17+00:00",
-      "updated_at": "2026-11-17T22:16:17+00:00"
+      "updated_at": "2026-11-18T06:16:13+00:00"
     },
     {
       "id": "bc877c118f83261b",
@@ -2555,6 +2567,42 @@
       "service_aliases": [],
       "added_at": "2026-11-18T02:17:02+00:00",
       "updated_at": "2026-11-18T02:17:02+00:00"
+    },
+    {
+      "id": "0a5e91817dd2bb5b",
+      "published_at": "2026-11-14T15:00:00+00:00",
+      "disclosed_at": "2026-11-16T15:00:00+00:00",
+      "organization": "日本経済新聞社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/nikkei-digital-karte-personal-data-possible-leak-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/nikkei-digital-karte-personal-data-possible-leak-2026/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/nikkei-digital-karte-personal-data-possible-leak-2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "日経電子版",
+      "service_aliases": [],
+      "added_at": "2026-11-18T06:16:13+00:00",
+      "updated_at": "2026-11-18T06:16:13+00:00"
     },
     {
       "id": "0e8787297a9ff464",
@@ -3959,6 +4007,14 @@
           ]
         },
         {
+          "incident_id": "0a5e91817dd2bb5b",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/nikkei-digital-karte-personal-data-possible-leak-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/nikkei-digital-karte-personal-data-possible-leak-2026/"
+          ]
+        },
+        {
           "incident_id": "0e8787297a9ff464",
           "relationship": "affects",
           "evidence_url": "https://www.nikkei.com/article/DGXZQOCC17A1V0X11C26A1000000/",
@@ -4139,6 +4195,14 @@
           ]
         },
         {
+          "incident_id": "b426c3fbbc0eae98",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/uniform_next_karte_1701006_corporate_abuse_countermeasures_2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/uniform_next_karte_1701006_corporate_abuse_countermeasures_2026/"
+          ]
+        },
+        {
           "incident_id": "bba46f64d143e93c",
           "relationship": "affects",
           "evidence_url": "https://company.golfdigest.co.jp/corp/pr/2026111701.html",
@@ -4244,7 +4308,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-18T05:16:01+00:00"
+      "updated_at": "2026-11-18T06:16:13+00:00"
     },
     {
       "id": "9f04a00959566f37",
@@ -5361,6 +5425,76 @@
       "service_aliases": [],
       "added_at": "2026-11-16T12:16:35+00:00",
       "updated_at": "2026-11-16T12:16:35+00:00"
+    },
+    {
+      "id": "b426c3fbbc0eae98",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-17T15:00:00+00:00",
+      "organization": "ユニフォームネクスト",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1701006,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/uniform_next_karte_1701006_corporate_abuse_countermeasures_2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/uniform_next_karte_1701006_corporate_abuse_countermeasures_2026/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/uniform_next_karte_1701006_corporate_abuse_countermeasures_2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "ユニフォームネクスト / オフィスユニフォーム / クリニックユニフォーム / フードユニフォーム / ユニネク® / ワークユニフォーム",
+      "service_aliases": [],
+      "affected_services": [
+        "ユニフォームネクスト",
+        "オフィスユニフォーム",
+        "クリニックユニフォーム",
+        "フードユニフォーム",
+        "ユニネク®",
+        "ワークユニフォーム"
+      ],
+      "service_details": [
+        {
+          "name": "ユニフォームネクスト",
+          "aliases": []
+        },
+        {
+          "name": "オフィスユニフォーム",
+          "aliases": []
+        },
+        {
+          "name": "クリニックユニフォーム",
+          "aliases": []
+        },
+        {
+          "name": "フードユニフォーム",
+          "aliases": []
+        },
+        {
+          "name": "ユニネク®",
+          "aliases": []
+        },
+        {
+          "name": "ワークユニフォーム",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-18T06:16:13+00:00",
+      "updated_at": "2026-11-18T06:16:13+00:00"
     },
     {
       "id": "c315588305545d55",
@@ -16614,6 +16748,10 @@
           "url": "https://www.smbc-cf.com/news/data/2026/11/news_20261105.pdf"
         },
         {
+          "name": "SMBCコンシューマーファイナンス",
+          "url": "https://www.smbc-cf.com/news/564.html"
+        },
+        {
           "name": "朝日新聞",
           "url": "https://www.asahi.com/articles/ASVC523XJVC5ULFA01DM.html"
         },
@@ -16635,7 +16773,7 @@
         }
       ],
       "added_at": "2026-11-05T08:16:07+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-18T06:16:13+00:00"
     },
     {
       "id": "ad5ef3b1b1a0b732",
@@ -17104,10 +17242,14 @@
         {
           "name": "Impress Watch",
           "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5zM1lZX1ZLZTRiUFg1czdNalhyQ3pWVkllY1BraGtzcFJRQWhpUnVqcnpkdDBEci1xdHdLWXJyVnpySGY1UGtwbnRzZThTUC0zRXk5SWU0OFVGZ2RuNlM0ZFhCTlc?oc=5"
+        },
+        {
+          "name": "Security NEXT",
+          "url": "https://www.security-next.com/192870"
         }
       ],
       "added_at": "2026-11-05T21:15:39+00:00",
-      "updated_at": "2026-11-13T08:15:22+00:00"
+      "updated_at": "2026-11-18T06:16:13+00:00"
     },
     {
       "id": "d5aefd9c66cf9b57",
@@ -26175,6 +26317,50 @@
       "updated_at": "2026-11-12T08:18:15+00:00"
     },
     {
+      "id": "7426faef7c02541b",
+      "published_at": "2026-10-29T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "Japan Ticket",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "1f44a0036b56c321",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQOWliaWFxT25XTXFmckV6TUc3VEFHNWJrWHFSX2lHRzJIZ3ZxWExVaWlLcVZVdWVEa3RkdDhVT3QycndCX0l5YXBQaUZtT3hNNEZ0ZUlEN3lTX2lqakxVbkRPRE1LRFhDWmFQTFFSYVUwQWJuU3FzM1poa0NiVnhrcFZVWHY?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMihAFBVV95cUxQOWliaWFxT25XTXFmckV6TUc3VEFHNWJrWHFSX2lHRzJIZ3ZxWExVaWlLcVZVdWVEa3RkdDhVT3QycndCX0l5YXBQaUZtT3hNNEZ0ZUlEN3lTX2lqakxVbkRPRE1LRFhDWmFQTFFSYVUwQWJuU3FzM1poa0NiVnhrcFZVWHY?oc=5"
+          ]
+        },
+        {
+          "incident_id": "d6d292a6112076a6",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1keVhRYU1OZGNEYVc1bDd2Uk0xNERGcXNVSG41NEpCczBQSE4tanpFM2NNRlM2RDFjYUlnRXpRbi10S2dqM2x0NzRfSEtxbTVJTk1TQnJiNy1wNkRvLTNN?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1keVhRYU1OZGNEYVc1bDd2Uk0xNERGcXNVSG41NEpCczBQSE4tanpFM2NNRlM2RDFjYUlnRXpRbi10S2dqM2x0NzRfSEtxbTVJTk1TQnJiNy1wNkRvLTNN?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "www.japanticket.com",
+          "url": "https://www.japanticket.com/news-20261029/"
+        },
+        {
+          "name": "news.google.com",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1keVhRYU1OZGNEYVc1bDd2Uk0xNERGcXNVSG41NEpCczBQSE4tanpFM2NNRlM2RDFjYUlnRXpRbi10S2dqM2x0NzRfSEtxbTVJTk1TQnJiNy1wNkRvLTNN?oc=5"
+        }
+      ],
+      "added_at": "2026-10-30T21:53:42+00:00",
+      "updated_at": "2026-11-18T06:16:13+00:00"
+    },
+    {
       "id": "7b687057653f55b3",
       "published_at": "2026-10-29T15:00:00+00:00",
       "disclosed_at": null,
@@ -27335,46 +27521,6 @@
       "service_aliases": [],
       "added_at": "2026-11-08T13:17:18+00:00",
       "updated_at": "2026-11-12T00:15:58+00:00"
-    },
-    {
-      "id": "7426faef7c02541b",
-      "published_at": "2026-10-29T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "Japan Ticket",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "1f44a0036b56c321",
-          "relationship": "affects",
-          "evidence_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQOWliaWFxT25XTXFmckV6TUc3VEFHNWJrWHFSX2lHRzJIZ3ZxWExVaWlLcVZVdWVEa3RkdDhVT3QycndCX0l5YXBQaUZtT3hNNEZ0ZUlEN3lTX2lqakxVbkRPRE1LRFhDWmFQTFFSYVUwQWJuU3FzM1poa0NiVnhrcFZVWHY?oc=5",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMihAFBVV95cUxQOWliaWFxT25XTXFmckV6TUc3VEFHNWJrWHFSX2lHRzJIZ3ZxWExVaWlLcVZVdWVEa3RkdDhVT3QycndCX0l5YXBQaUZtT3hNNEZ0ZUlEN3lTX2lqakxVbkRPRE1LRFhDWmFQTFFSYVUwQWJuU3FzM1poa0NiVnhrcFZVWHY?oc=5"
-          ]
-        },
-        {
-          "incident_id": "d6d292a6112076a6",
-          "relationship": "affects",
-          "evidence_url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1keVhRYU1OZGNEYVc1bDd2Uk0xNERGcXNVSG41NEpCczBQSE4tanpFM2NNRlM2RDFjYUlnRXpRbi10S2dqM2x0NzRfSEtxbTVJTk1TQnJiNy1wNkRvLTNN?oc=5",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1keVhRYU1OZGNEYVc1bDd2Uk0xNERGcXNVSG41NEpCczBQSE4tanpFM2NNRlM2RDFjYUlnRXpRbi10S2dqM2x0NzRfSEtxbTVJTk1TQnJiNy1wNkRvLTNN?oc=5"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "news.google.com",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1keVhRYU1OZGNEYVc1bDd2Uk0xNERGcXNVSG41NEpCczBQSE4tanpFM2NNRlM2RDFjYUlnRXpRbi10S2dqM2x0NzRfSEtxbTVJTk1TQnJiNy1wNkRvLTNN?oc=5"
-        }
-      ],
-      "added_at": "2026-10-30T21:53:42+00:00",
-      "updated_at": "2026-11-17T20:16:23+00:00"
     },
     {
       "id": "7eaf4a6d5b9ad278",
@@ -30205,6 +30351,10 @@
           "url": "https://scan.netsecurity.ne.jp/article/2026/11/09/56705.html"
         },
         {
+          "name": "ソニー生命",
+          "url": "https://www.sonylife.co.jp/info/popup/maintenance_2026.html"
+        },
+        {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/0659bd683154eceeba6b924330d499c4a42b7447"
         },
@@ -30230,7 +30380,7 @@
         }
       ],
       "added_at": "2026-10-28T14:15:45+00:00",
-      "updated_at": "2026-11-16T01:15:40+00:00"
+      "updated_at": "2026-11-18T06:16:13+00:00"
     },
     {
       "id": "8359871b1e7e813f",
@@ -57295,6 +57445,32 @@
       "date_basis": "discovery",
       "added_at": "2026-10-19T09:06:44+00:00",
       "updated_at": "2026-11-12T08:18:15+00:00"
+    },
+    {
+      "id": "b34b860e6a337b99",
+      "published_at": "2026-10-12T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "三井住友信託銀行",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "三井住友信託銀行",
+          "url": "https://www.smtb.jp/personal/attention/261013"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "インターネットバンキング",
+      "service_aliases": [],
+      "added_at": "2026-11-18T06:16:13+00:00",
+      "updated_at": "2026-11-18T06:16:13+00:00"
     },
     {
       "id": "b9c25b257c1e844c",
