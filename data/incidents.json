@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-18T07:15:49+00:00",
-  "total": 1392,
+  "updated_at": "2026-11-18T09:15:39+00:00",
+  "total": 1393,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-18"
@@ -358,7 +358,7 @@
     },
     {
       "date": "2026-11-16",
-      "count": 26
+      "count": 27
     },
     {
       "date": "2026-11-17",
@@ -693,6 +693,10 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118610"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://www.misumi.co.jp/news/news_261117"
         }
       ],
       "affected_system": null,
@@ -700,7 +704,7 @@
       "affected_service": "KARTE",
       "service_aliases": [],
       "added_at": "2026-11-17T22:16:17+00:00",
-      "updated_at": "2026-11-18T02:17:02+00:00"
+      "updated_at": "2026-11-18T09:15:39+00:00"
     },
     {
       "id": "a7475b190ecd48f1",
@@ -2464,6 +2468,60 @@
       "updated_at": "2026-11-16T04:15:35+00:00"
     },
     {
+      "id": "4f3b578e0ea019ca",
+      "published_at": "2026-11-15T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "集英社",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.shueisha.co.jp/wp-content/uploads/2026/11/b985e138d872933dc2ccc3b83c3a53e9.pdf",
+          "evidence_urls": [
+            "https://www.shueisha.co.jp/wp-content/uploads/2026/11/b985e138d872933dc2ccc3b83c3a53e9.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "集英社",
+          "url": "https://www.shueisha.co.jp/wp-content/uploads/2026/11/b985e138d872933dc2ccc3b83c3a53e9.pdf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "各雑誌、ウェブメディア、ECサイトからのメールマガジンの配信 / 各ECサイトからのコンビニ前払い時の支払期限リマインドメール / 各ECサイトからの商品再入荷情報等のプッシュ通知",
+      "service_aliases": [],
+      "affected_services": [
+        "各雑誌、ウェブメディア、ECサイトからのメールマガジンの配信",
+        "各ECサイトからのコンビニ前払い時の支払期限リマインドメール",
+        "各ECサイトからの商品再入荷情報等のプッシュ通知"
+      ],
+      "service_details": [
+        {
+          "name": "各雑誌、ウェブメディア、ECサイトからのメールマガジンの配信",
+          "aliases": []
+        },
+        {
+          "name": "各ECサイトからのコンビニ前払い時の支払期限リマインドメール",
+          "aliases": []
+        },
+        {
+          "name": "各ECサイトからの商品再入荷情報等のプッシュ通知",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-18T09:15:39+00:00",
+      "updated_at": "2026-11-18T09:15:39+00:00"
+    },
+    {
       "id": "5f5f978b799bc80f",
       "published_at": "2026-11-15T15:00:00+00:00",
       "disclosed_at": null,
@@ -4204,6 +4262,14 @@
           ]
         },
         {
+          "incident_id": "4f3b578e0ea019ca",
+          "relationship": "affects",
+          "evidence_url": "https://www.shueisha.co.jp/wp-content/uploads/2026/11/b985e138d872933dc2ccc3b83c3a53e9.pdf",
+          "evidence_urls": [
+            "https://www.shueisha.co.jp/wp-content/uploads/2026/11/b985e138d872933dc2ccc3b83c3a53e9.pdf"
+          ]
+        },
+        {
           "incident_id": "57225b83002a9993",
           "relationship": "affects",
           "evidence_url": "https://www.okinawatimes.co.jp/articles/-/1968327",
@@ -4478,7 +4544,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-18T07:15:49+00:00"
+      "updated_at": "2026-11-18T09:15:39+00:00"
     },
     {
       "id": "9f04a00959566f37",
