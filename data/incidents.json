@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-18T22:15:51+00:00",
-  "total": 1431,
+  "updated_at": "2026-11-18T23:14:19+00:00",
+  "total": 1434,
   "date_range": {
     "start": "2023-12-24",
-    "end": "2026-11-18"
+    "end": "2026-11-19"
   },
   "daily_counts_90d": [
     {
@@ -362,14 +362,55 @@
     },
     {
       "date": "2026-11-18",
-      "count": 27
+      "count": 29
     },
     {
       "date": "2026-11-19",
-      "count": 0
+      "count": 1
     }
   ],
   "incidents": [
+    {
+      "id": "f5ace41d872ad6e0",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ミツモア",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 3398469,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "7904f5592dc32a09",
+          "relationship": "same_organization",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/meetsmore-karte-60000-3398469-customer-data-leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/meetsmore-karte-60000-3398469-customer-data-leak/"
+          ]
+        },
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/meetsmore-karte-60000-3398469-customer-data-leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/meetsmore-karte-60000-3398469-customer-data-leak/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/meetsmore-karte-60000-3398469-customer-data-leak/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-18T23:14:19+00:00",
+      "updated_at": "2026-11-18T23:14:19+00:00"
+    },
     {
       "id": "0fcc9607828441b5",
       "published_at": "2026-11-17T15:00:00+00:00",
@@ -713,6 +754,62 @@
       "updated_at": "2026-11-18T20:16:16+00:00"
     },
     {
+      "id": "dc7a8d07caf7fe9d",
+      "published_at": "2026-11-17T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "三菱UFJeスマート証券",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 160000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/73dc334fce8b98800001ebfe01bb9eda361f6448",
+          "evidence_urls": [
+            "https://finance.biggo.jp/news/dd0743f5-ea9a-48da-908f-1cf96300e4d7",
+            "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1mWWRvS1VpSF9hRkxMUUdjdXlfSGVma05lUWVGQXNKUzUtanVNUllZblc5c2Z3bjdlclBhRWVQb1VLMnJwekZ6V29SSFFxZGRIQVNJTVNYbw?oc=5",
+            "https://news.yahoo.co.jp/articles/73dc334fce8b98800001ebfe01bb9eda361f6448"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "kabu.com",
+          "url": "https://kabu.com/company/pressrelease/20261118_1.html"
+        },
+        {
+          "name": "Yahoo!ファイナンス",
+          "url": "https://finance.yahoo.co.jp/news/detail/41ce52ab08d17afd023e46e5fe832380ca96c6eb"
+        },
+        {
+          "name": "BigGo ファイナンス",
+          "url": "https://finance.biggo.jp/news/dd0743f5-ea9a-48da-908f-1cf96300e4d7"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/73dc334fce8b98800001ebfe01bb9eda361f6448"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/mufg-bank-karte-6_5million-official-20261118/"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1mWWRvS1VpSF9hRkxMUUdjdXlfSGVma05lUWVGQXNKUzUtanVNUllZblc5c2Z3bjdlclBhRWVQb1VLMnJwekZ6V29SSFFxZGRIQVNJTVNYbw?oc=5"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "added_at": "2026-11-18T15:16:38+00:00",
+      "updated_at": "2026-11-18T23:14:19+00:00"
+    },
+    {
       "id": "e5cfc5c030029c71",
       "published_at": "2026-11-17T15:00:00+00:00",
       "disclosed_at": null,
@@ -765,6 +862,7 @@
           "relationship": "affected_by",
           "evidence_url": "https://www.yomiuri.co.jp/economy/20261118-GYT1T00242/",
           "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1mWWRvS1VpSF9hRkxMUUdjdXlfSGVma05lUWVGQXNKUzUtanVNUllZblc5c2Z3bjdlclBhRWVQb1VLMnJwekZ6V29SSFFxZGRIQVNJTVNYbw?oc=5",
             "https://www.yomiuri.co.jp/economy/20261118-GYT1T00242/"
           ]
         }
@@ -806,7 +904,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-18T15:16:38+00:00",
-      "updated_at": "2026-11-18T20:16:16+00:00"
+      "updated_at": "2026-11-18T23:14:19+00:00"
     },
     {
       "id": "073f272eda1d2604",
@@ -1076,6 +1174,18 @@
         {
           "name": "時事通信ニュース",
           "url": "https://sp.m.jiji.com/article/show/3914701"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE54M1M1UlBzZ1M5d0Z5cGhQem9XTlh3MmNEOFR1eWt5OTZqSTBtOXZTemk4dmZMWER5Wml0bkctUlZ1WnpfbjE4OWwxUndaMnk5aHV3U1Bhb3Z5ZmZnSjktQ1JXaWJXeV9YZ2gtSEpXY1ZtVXBBZGN1Q05Wd3hablU?oc=5"
+        },
+        {
+          "name": "ゲキサカ",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5RWWZvVE9kQW81Wk1yaEw2cC1waXZyU1VYbjdnUlZTV3B5T1dtZk1GdjE2dWRSd0o4ajhWM0xtSjd3REplVUVyZnB5d2dDWHBHanQ2eFZRazlZNkgxejlGMXFaUmp3UnR0OUl6ZFZn?oc=5"
+        },
+        {
+          "name": "鹿島アントラーズ オフィシャルサイト",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA2WlBWWWdKNHRkVE9abTlFREoyUHFTWXlrbEpSZVFYWDhVX0xGVlllN1BBR2t3ZjFGSER4VlBETk4zdC0zMTRqQ0FfbGwzTDhRM0ItUi1zY1IzWXkwNFE?oc=5"
         }
       ],
       "affected_system": null,
@@ -1083,7 +1193,7 @@
       "affected_service": "オンラインストア",
       "service_aliases": [],
       "added_at": "2026-11-18T15:16:38+00:00",
-      "updated_at": "2026-11-18T17:16:21+00:00"
+      "updated_at": "2026-11-18T23:14:19+00:00"
     },
     {
       "id": "917b022993b32087",
@@ -1164,6 +1274,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/72ff1c768f41cf86680b56fc2087aaecf91c6d16"
+        },
+        {
+          "name": "中国新聞デジタル",
+          "url": "https://www.chugoku-np.co.jp/articles/-/926634"
         }
       ],
       "affected_system": null,
@@ -1171,7 +1285,7 @@
       "affected_service": "旅客サービスシステム",
       "service_aliases": [],
       "added_at": "2026-11-18T16:15:49+00:00",
-      "updated_at": "2026-11-18T22:15:51+00:00"
+      "updated_at": "2026-11-18T23:14:19+00:00"
     },
     {
       "id": "b0e4d083fd9c05e4",
@@ -1285,51 +1399,36 @@
       "updated_at": "2026-11-18T14:16:38+00:00"
     },
     {
-      "id": "dc7a8d07caf7fe9d",
+      "id": "d629880eb3aa37cc",
       "published_at": "2026-11-17T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "三菱UFJeスマート証券",
+      "disclosed_at": "2026-11-17T15:00:00+00:00",
+      "organization": "三菱UFJモルガン・スタンレー証券",
       "incident_type": "data leak",
       "incident_categories": [
         "data leak",
         "unauthorized access"
       ],
-      "potential_records": 160000,
+      "potential_records": 280000,
       "confidence": "medium",
       "confidence_score": 50,
       "related": [
         {
           "incident_id": "8cf67a97b55e1d57",
           "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/73dc334fce8b98800001ebfe01bb9eda361f6448",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1mWWRvS1VpSF9hRkxMUUdjdXlfSGVma05lUWVGQXNKUzUtanVNUllZblc5c2Z3bjdlclBhRWVQb1VLMnJwekZ6V29SSFFxZGRIQVNJTVNYbw?oc=5",
           "evidence_urls": [
-            "https://finance.biggo.jp/news/dd0743f5-ea9a-48da-908f-1cf96300e4d7",
-            "https://news.yahoo.co.jp/articles/73dc334fce8b98800001ebfe01bb9eda361f6448"
+            "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1mWWRvS1VpSF9hRkxMUUdjdXlfSGVma05lUWVGQXNKUzUtanVNUllZblc5c2Z3bjdlclBhRWVQb1VLMnJwekZ6V29SSFFxZGRIQVNJTVNYbw?oc=5"
           ]
         }
       ],
       "sources": [
         {
-          "name": "Yahoo!ファイナンス",
-          "url": "https://finance.yahoo.co.jp/news/detail/41ce52ab08d17afd023e46e5fe832380ca96c6eb"
-        },
-        {
-          "name": "BigGo ファイナンス",
-          "url": "https://finance.biggo.jp/news/dd0743f5-ea9a-48da-908f-1cf96300e4d7"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/73dc334fce8b98800001ebfe01bb9eda361f6448"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/mufg-bank-karte-6_5million-official-20261118/"
+          "name": "TBS NEWS DIG",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1mWWRvS1VpSF9hRkxMUUdjdXlfSGVma05lUWVGQXNKUzUtanVNUllZblc5c2Z3bjdlclBhRWVQb1VLMnJwekZ6V29SSFFxZGRIQVNJTVNYbw?oc=5"
         }
       ],
-      "affected_system": null,
-      "date_basis": "ingestion",
-      "added_at": "2026-11-18T15:16:38+00:00",
-      "updated_at": "2026-11-18T22:15:51+00:00"
+      "added_at": "2026-11-18T23:14:19+00:00",
+      "updated_at": "2026-11-18T23:14:19+00:00"
     },
     {
       "id": "130d77193af46ef6",
@@ -1486,6 +1585,31 @@
       "service_aliases": [],
       "added_at": "2026-11-18T15:16:38+00:00",
       "updated_at": "2026-11-18T15:16:38+00:00"
+    },
+    {
+      "id": "eafab0d5bc35266d",
+      "published_at": "2026-11-17T15:00:00+00:00",
+      "disclosed_at": "2026-11-17T15:00:00+00:00",
+      "organization": "UPSIDER",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 137,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNU3RseW9JcDNiWG02SHFSUmJEVFo2eWN4Y24xMjZPekhKUnk1bHpYZXFuQ1VPMUlyaGFaZ3owd2ptYkxud3E3QUJKdk9wSXdIeWg2RXlFa2lvcU1aYUdWZHRUMDVrdWFGMGZFUmRtZ0t2LVNDUnp4dnFZRmtlUFg3WjZYc3E5OHFQSmM5cGF0dV9ySTFtcEEtcEgtLWdUb3l1NklnY0dGdw?oc=5"
+        }
+      ],
+      "affected_service": "Notion AI",
+      "service_aliases": [],
+      "upstream_status": "outside_japan",
+      "added_at": "2026-11-18T23:14:19+00:00",
+      "updated_at": "2026-11-18T23:14:19+00:00"
     },
     {
       "id": "1ee7597652533c53",
@@ -5574,6 +5698,7 @@
           "relationship": "affects",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/mufg_trust_bank_karte_230000_data_breach/",
           "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1mWWRvS1VpSF9hRkxMUUdjdXlfSGVma05lUWVGQXNKUzUtanVNUllZblc5c2Z3bjdlclBhRWVQb1VLMnJwekZ6V29SSFFxZGRIQVNJTVNYbw?oc=5",
             "https://rocket-boys.co.jp/security-measures-lab/mufg_trust_bank_karte_230000_data_breach/"
           ]
         },
@@ -5767,6 +5892,14 @@
           ]
         },
         {
+          "incident_id": "d629880eb3aa37cc",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1mWWRvS1VpSF9hRkxMUUdjdXlfSGVma05lUWVGQXNKUzUtanVNUllZblc5c2Z3bjdlclBhRWVQb1VLMnJwekZ6V29SSFFxZGRIQVNJTVNYbw?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1mWWRvS1VpSF9hRkxMUUdjdXlfSGVma05lUWVGQXNKUzUtanVNUllZblc5c2Z3bjdlclBhRWVQb1VLMnJwekZ6V29SSFFxZGRIQVNJTVNYbw?oc=5"
+          ]
+        },
+        {
           "incident_id": "d7c3301e73f5092c",
           "relationship": "affects",
           "evidence_url": "https://web.gekisaka.jp/news/jleague/detail/?463437-463437-fl",
@@ -5780,6 +5913,7 @@
           "evidence_url": "https://news.yahoo.co.jp/articles/73dc334fce8b98800001ebfe01bb9eda361f6448",
           "evidence_urls": [
             "https://finance.biggo.jp/news/dd0743f5-ea9a-48da-908f-1cf96300e4d7",
+            "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1mWWRvS1VpSF9hRkxMUUdjdXlfSGVma05lUWVGQXNKUzUtanVNUllZblc5c2Z3bjdlclBhRWVQb1VLMnJwekZ6V29SSFFxZGRIQVNJTVNYbw?oc=5",
             "https://news.yahoo.co.jp/articles/73dc334fce8b98800001ebfe01bb9eda361f6448"
           ]
         },
@@ -5815,6 +5949,7 @@
           "relationship": "affects",
           "evidence_url": "https://www.yomiuri.co.jp/economy/20261118-GYT1T00242/",
           "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1mWWRvS1VpSF9hRkxMUUdjdXlfSGVma05lUWVGQXNKUzUtanVNUllZblc5c2Z3bjdlclBhRWVQb1VLMnJwekZ6V29SSFFxZGRIQVNJTVNYbw?oc=5",
             "https://www.yomiuri.co.jp/economy/20261118-GYT1T00242/"
           ]
         },
@@ -5832,6 +5967,14 @@
           "evidence_url": "https://chocozap.jp/info/25114",
           "evidence_urls": [
             "https://chocozap.jp/info/25114"
+          ]
+        },
+        {
+          "incident_id": "f5ace41d872ad6e0",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/meetsmore-karte-60000-3398469-customer-data-leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/meetsmore-karte-60000-3398469-customer-data-leak/"
           ]
         }
       ],
@@ -5880,7 +6023,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-18T19:15:59+00:00"
+      "updated_at": "2026-11-18T23:14:19+00:00"
     },
     {
       "id": "9f04a00959566f37",
@@ -6415,6 +6558,7 @@
           "relationship": "affected_by",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/mufg_trust_bank_karte_230000_data_breach/",
           "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1mWWRvS1VpSF9hRkxMUUdjdXlfSGVma05lUWVGQXNKUzUtanVNUllZblc5c2Z3bjdlclBhRWVQb1VLMnJwekZ6V29SSFFxZGRIQVNJTVNYbw?oc=5",
             "https://rocket-boys.co.jp/security-measures-lab/mufg_trust_bank_karte_230000_data_breach/"
           ]
         }
@@ -6439,6 +6583,10 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/mufg-bank-karte-6_5million-official-20261118/"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1mWWRvS1VpSF9hRkxMUUdjdXlfSGVma05lUWVGQXNKUzUtanVNUllZblc5c2Z3bjdlclBhRWVQb1VLMnJwekZ6V29SSFFxZGRIQVNJTVNYbw?oc=5"
         }
       ],
       "affected_system": null,
@@ -6446,7 +6594,7 @@
       "affected_service": "三菱UFJ信託ダイレクト",
       "service_aliases": [],
       "added_at": "2026-11-18T15:16:38+00:00",
-      "updated_at": "2026-11-18T22:15:51+00:00"
+      "updated_at": "2026-11-18T23:14:19+00:00"
     },
     {
       "id": "77a23dba97c3a282",
@@ -9018,7 +9166,16 @@
       "potential_records": 366850,
       "confidence": "high",
       "confidence_score": 90,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "f5ace41d872ad6e0",
+          "relationship": "same_organization",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/meetsmore-karte-60000-3398469-customer-data-leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/meetsmore-karte-60000-3398469-customer-data-leak/"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "合同会社ロケットボーイズ",
@@ -9038,7 +9195,7 @@
       "affected_service": "ミツモア",
       "service_aliases": [],
       "added_at": "2026-11-16T10:15:49+00:00",
-      "updated_at": "2026-11-17T01:16:38+00:00"
+      "updated_at": "2026-11-18T23:14:19+00:00"
     },
     {
       "id": "7e675401ba9184a3",
