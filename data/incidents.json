@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-18T06:16:13+00:00",
-  "total": 1387,
+  "updated_at": "2026-11-18T07:15:49+00:00",
+  "total": 1392,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-18"
@@ -342,7 +342,7 @@
     },
     {
       "date": "2026-11-12",
-      "count": 34
+      "count": 35
     },
     {
       "date": "2026-11-13",
@@ -362,14 +362,100 @@
     },
     {
       "date": "2026-11-17",
-      "count": 26
+      "count": 27
     },
     {
       "date": "2026-11-18",
-      "count": 2
+      "count": 4
     }
   ],
   "incidents": [
+    {
+      "id": "6e4893996f6b82c7",
+      "published_at": "2026-11-17T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "広島県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.hiroshima.lg.jp/soshiki/45/hiroshima-ecoaction-notice.html",
+          "evidence_urls": [
+            "https://www.pref.hiroshima.lg.jp/soshiki/45/hiroshima-ecoaction-notice.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "広島県 / Hiroshima",
+          "url": "https://www.pref.hiroshima.lg.jp/soshiki/45/hiroshima-ecoaction-notice.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "広島みんなでエコアクション!キャンペーン",
+      "service_aliases": [],
+      "added_at": "2026-11-18T07:15:49+00:00",
+      "updated_at": "2026-11-18T07:15:49+00:00"
+    },
+    {
+      "id": "618216ef0a935c83",
+      "published_at": "2026-11-17T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "カウネット",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUF183X70Y6A111C2000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUF183X70Y6A111C2000000/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUF183X70Y6A111C2000000/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "カウネット / おうちカウネット",
+      "service_aliases": [],
+      "affected_services": [
+        "カウネット",
+        "おうちカウネット"
+      ],
+      "service_details": [
+        {
+          "name": "カウネット",
+          "aliases": []
+        },
+        {
+          "name": "おうちカウネット",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-18T07:15:49+00:00",
+      "updated_at": "2026-11-18T07:15:49+00:00"
+    },
     {
       "id": "917b022993b32087",
       "published_at": "2026-11-17T15:00:00+00:00",
@@ -388,6 +474,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/866724f4965bd5c824361eb621c49945bf3405d2"
+        },
+        {
+          "name": "毎日新聞",
+          "url": "https://mainichi.jp/articles/20261118/k00/00m/040/096000c"
         }
       ],
       "affected_system": null,
@@ -395,7 +485,7 @@
       "affected_service": "日本版DBS",
       "service_aliases": [],
       "added_at": "2026-11-18T05:16:01+00:00",
-      "updated_at": "2026-11-18T05:16:01+00:00"
+      "updated_at": "2026-11-18T07:15:49+00:00"
     },
     {
       "id": "53dbe311630aa347",
@@ -1017,6 +1107,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1hMWdmc0FpV0xUOGlVVTFySGlYN2lJMHRvb3A4S3pNZE1femFxRWkyb0IxU3Flc0JSbE1QNnVMekpCdC1xZjMxU21EMDNxZVlYYkFuRXFLZkpiSGVnemtjMDN6VjBNdF9tbjFUejFZZlIzYm1CcHdoemJtUnZHVG8?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/5b78d0a34b9980c4a7284143d4f1b0a13686ecc1"
         }
       ],
       "affected_system": null,
@@ -1024,7 +1118,7 @@
       "affected_service": "ネットdeスマート申請",
       "service_aliases": [],
       "added_at": "2026-11-18T05:16:01+00:00",
-      "updated_at": "2026-11-18T05:16:01+00:00"
+      "updated_at": "2026-11-18T07:15:49+00:00"
     },
     {
       "id": "57225b83002a9993",
@@ -1033,7 +1127,8 @@
       "organization": "アインホールディングス",
       "incident_type": "data leak",
       "incident_categories": [
-        "data leak"
+        "data leak",
+        "unauthorized access"
       ],
       "potential_records": null,
       "confidence": "medium",
@@ -1080,7 +1175,9 @@
       "affected_system": null,
       "date_basis": "ingestion",
       "affected_service": "アインズ&トルペ / AYURA",
-      "service_aliases": [],
+      "service_aliases": [
+        "AINZ&TULPE"
+      ],
       "affected_services": [
         "アインズ&トルペ",
         "AYURA"
@@ -1088,15 +1185,19 @@
       "service_details": [
         {
           "name": "アインズ&トルペ",
-          "aliases": []
+          "aliases": [
+            "AINZ&TULPE"
+          ]
         },
         {
           "name": "AYURA",
-          "aliases": []
+          "aliases": [
+            "アユーラ"
+          ]
         }
       ],
       "added_at": "2026-11-17T04:16:26+00:00",
-      "updated_at": "2026-11-18T05:16:01+00:00"
+      "updated_at": "2026-11-18T07:15:49+00:00"
     },
     {
       "id": "5b8590f90f347ab6",
@@ -1240,6 +1341,10 @@
         {
           "name": "TBS NEWS DIG",
           "url": "https://newsdig.tbs.co.jp/articles/-/3091677?display=1"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/d85361d1935beecbe6484605916597c704b4da16"
         }
       ],
       "affected_system": null,
@@ -1247,7 +1352,7 @@
       "affected_service": "抽選システム",
       "service_aliases": [],
       "added_at": "2026-11-17T22:16:17+00:00",
-      "updated_at": "2026-11-18T02:17:02+00:00"
+      "updated_at": "2026-11-18T07:15:49+00:00"
     },
     {
       "id": "e7b712d3c616ac80",
@@ -1431,6 +1536,39 @@
       "updated_at": "2026-11-17T20:16:23+00:00"
     },
     {
+      "id": "8feb18c57fa5d702",
+      "published_at": "2026-11-16T15:00:00+00:00",
+      "disclosed_at": "2026-11-16T15:00:00+00:00",
+      "organization": "ドコモ・ファイナンス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/docomo-finance-karte-member-login-suspension/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/docomo-finance-karte-member-login-suspension/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/docomo-finance-karte-member-login-suspension/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "added_at": "2026-11-18T07:15:49+00:00",
+      "updated_at": "2026-11-18T07:15:49+00:00"
+    },
+    {
       "id": "bdfdf58acded6eb5",
       "published_at": "2026-11-16T15:00:00+00:00",
       "disclosed_at": null,
@@ -1598,6 +1736,10 @@
         },
         {
           "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/0365415b1aa16019f6201e07502869968bf0f3ba"
+        },
+        {
+          "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/e4326c647e8b3cd4624507356ae76b3b3a7c18e9"
         },
         {
@@ -1626,7 +1768,7 @@
       "affected_service": "LINE公式アカウント「日清食品キャンペーン」",
       "service_aliases": [],
       "added_at": "2026-11-16T09:15:38+00:00",
-      "updated_at": "2026-11-17T02:16:00+00:00"
+      "updated_at": "2026-11-18T07:15:49+00:00"
     },
     {
       "id": "3400df8f00c9953d",
@@ -1978,12 +2120,16 @@
         {
           "name": "ビジネス+IT",
           "url": "https://www.sbbit.jp/article/cont1/188526"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/cc322716235b4739c75138aea6598f862b8b804f"
         }
       ],
       "affected_system": null,
       "date_basis": "first_disclosure",
       "added_at": "2026-11-17T22:16:17+00:00",
-      "updated_at": "2026-11-18T06:16:13+00:00"
+      "updated_at": "2026-11-18T07:15:49+00:00"
     },
     {
       "id": "bc877c118f83261b",
@@ -4077,6 +4223,14 @@
           ]
         },
         {
+          "incident_id": "618216ef0a935c83",
+          "relationship": "affects",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUF183X70Y6A111C2000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUF183X70Y6A111C2000000/"
+          ]
+        },
+        {
           "incident_id": "6389e5938078c76d",
           "relationship": "affects",
           "evidence_url": "https://cybersecurity-jp.com/news/118526",
@@ -4085,6 +4239,14 @@
             "https://news.ksb.co.jp/article/17054844",
             "https://www.sbbit.jp/article/cont1/188450",
             "https://www.yonden.co.jp/press/2026/__icsFiles/afieldfile/2026/11/16/pr003.pdf"
+          ]
+        },
+        {
+          "incident_id": "6e4893996f6b82c7",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.hiroshima.lg.jp/soshiki/45/hiroshima-ecoaction-notice.html",
+          "evidence_urls": [
+            "https://www.pref.hiroshima.lg.jp/soshiki/45/hiroshima-ecoaction-notice.html"
           ]
         },
         {
@@ -4151,6 +4313,14 @@
           "evidence_url": "https://optage.co.jp/press/2026/press_14.html",
           "evidence_urls": [
             "https://optage.co.jp/press/2026/press_14.html"
+          ]
+        },
+        {
+          "incident_id": "8feb18c57fa5d702",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/docomo-finance-karte-member-login-suspension/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/docomo-finance-karte-member-login-suspension/"
           ]
         },
         {
@@ -4308,7 +4478,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-18T06:16:13+00:00"
+      "updated_at": "2026-11-18T07:15:49+00:00"
     },
     {
       "id": "9f04a00959566f37",
@@ -5235,7 +5405,8 @@
       "organization": "Francfranc",
       "incident_type": "data leak",
       "incident_categories": [
-        "data leak"
+        "data leak",
+        "unauthorized access"
       ],
       "potential_records": 5980000,
       "confidence": "medium",
@@ -5282,7 +5453,7 @@
       "affected_system": null,
       "date_basis": "occurrence",
       "added_at": "2026-11-17T10:16:39+00:00",
-      "updated_at": "2026-11-18T05:16:01+00:00"
+      "updated_at": "2026-11-18T07:15:49+00:00"
     },
     {
       "id": "f25e2050c3141e4b",
@@ -6357,6 +6528,32 @@
       ],
       "added_at": "2026-11-12T00:15:58+00:00",
       "updated_at": "2026-11-14T09:15:22+00:00"
+    },
+    {
+      "id": "73ac4b36b3adc4db",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "オープングループ",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261117582184.pdf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "BizRobo!mini",
+      "service_aliases": [],
+      "added_at": "2026-11-18T07:15:49+00:00",
+      "updated_at": "2026-11-18T07:15:49+00:00"
     },
     {
       "id": "19c524f25e7331d5",
@@ -16859,12 +17056,16 @@
         {
           "name": "産経ニュース",
           "url": "https://www.sankei.com/article/20261117-RPGKVFSFPJLPHESANPZRLH4KIY/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b22c9701949d45f8f9b9ac977a37f330ca185487"
         }
       ],
       "affected_service": "電子申請システム",
       "service_aliases": [],
       "added_at": "2026-11-05T21:15:39+00:00",
-      "updated_at": "2026-11-18T02:17:02+00:00"
+      "updated_at": "2026-11-18T07:15:49+00:00"
     },
     {
       "id": "c18e54cb9abd1cae",
@@ -22395,6 +22596,10 @@
           "url": "https://www.kinkos.co.jp/corporate/archives/news/20261109/"
         },
         {
+          "name": "キンコーズ・ジャパン",
+          "url": "https://www.kinkos.co.jp/corporate/archives/news/261102/"
+        },
+        {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/kinkos_arara_message_smart_membership_266395_confirmed_20261109/"
         }
@@ -22402,7 +22607,7 @@
       "affected_service": "スマートメンバーシップ",
       "service_aliases": [],
       "added_at": "2026-11-09T10:16:41+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-18T07:15:49+00:00"
     },
     {
       "id": "6ce8d002dff5f408",
@@ -51364,10 +51569,14 @@
         {
           "name": "legalagent list",
           "url": "https://www.future-shop.jp/news/2026/10/23.html"
+        },
+        {
+          "name": "Future Shop",
+          "url": "https://www.future-shop.jp/news/2026/10/22-3.html"
         }
       ],
       "added_at": "2026-10-25T05:15:56+00:00",
-      "updated_at": "2026-11-17T21:16:22+00:00"
+      "updated_at": "2026-11-18T07:15:49+00:00"
     },
     {
       "id": "044369c0a0df5877",
@@ -55350,6 +55559,14 @@
       "confidence_score": 90,
       "related": [
         {
+          "incident_id": "77f00ceb78f6b618",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.iwaicosmo.co.jp/info/2025/0512115.html",
+          "evidence_urls": [
+            "https://www.iwaicosmo.co.jp/info/2025/0512115.html"
+          ]
+        },
+        {
           "incident_id": "e7029a3cadb1b7be",
           "relationship": "affected_by",
           "evidence_url": "https://www.security-next.com/191717",
@@ -55436,7 +55653,7 @@
       "affected_system": "トレードワークスに運用・保守を委託したインターネット取引システム",
       "date_basis": "discovery",
       "added_at": "2026-10-19T09:06:44+00:00",
-      "updated_at": "2026-11-17T23:16:16+00:00"
+      "updated_at": "2026-11-18T07:15:49+00:00"
     },
     {
       "id": "cb4534acea4b4c5d",
@@ -59730,10 +59947,14 @@
         {
           "name": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2026/11/17/56800.html"
+        },
+        {
+          "name": "NewsPicks",
+          "url": "https://corp.newspicks.com/info/20261118"
         }
       ],
       "added_at": "2026-10-19T09:06:44+00:00",
-      "updated_at": "2026-11-17T00:16:13+00:00"
+      "updated_at": "2026-11-18T07:15:49+00:00"
     },
     {
       "id": "6b03b7f8c81e9d61",
@@ -62216,6 +62437,39 @@
       ],
       "added_at": "2026-10-31T20:15:52+00:00",
       "updated_at": "2026-11-12T08:18:15+00:00"
+    },
+    {
+      "id": "77f00ceb78f6b618",
+      "published_at": "2025-05-11T15:00:00+00:00",
+      "disclosed_at": "2025-05-11T15:00:00+00:00",
+      "organization": "岩井コスモ証券",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "c54d7b0032b3bb85",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.iwaicosmo.co.jp/info/2025/0512115.html",
+          "evidence_urls": [
+            "https://www.iwaicosmo.co.jp/info/2025/0512115.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "岩井コスモ証券",
+          "url": "https://www.iwaicosmo.co.jp/info/2025/0512115.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "added_at": "2026-11-18T07:15:49+00:00",
+      "updated_at": "2026-11-18T07:15:49+00:00"
     },
     {
       "id": "80c6cb814c4bb830",
