@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-18T15:16:38+00:00",
-  "total": 1417,
+  "updated_at": "2026-11-18T16:15:49+00:00",
+  "total": 1420,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-18"
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-18",
-      "count": 19
+      "count": 22
     },
     {
       "date": "2026-11-19",
@@ -370,6 +370,101 @@
     }
   ],
   "incidents": [
+    {
+      "id": "0fcc9607828441b5",
+      "published_at": "2026-11-17T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "厚生労働省",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "d3f8753ec87b615e",
+          "relationship": "same_organization",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/mhlw-drug-supply-system-nttdata-unauthorized-access-20261118/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/mhlw-drug-supply-system-nttdata-unauthorized-access-20261118/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/4ae881a3314001f3ae4a1495ed24a8b5add3db2e?source=rss"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/mhlw-drug-supply-system-nttdata-unauthorized-access-20261118/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/67d09e1704200bc798659f1c9a4078b9e36983e9"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/e33d276dc07bdecad802642f208b24b7f1acdc4c?source=rss"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/65c7e1ad1593a76299a5e2698e2c681f3e144956"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVCL33HSVCLUTFL01MM.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/9160107866a471f88fd22b9fa1eb0954a7bbe747"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "医薬品安定供給・流通確認システム",
+      "service_aliases": [],
+      "added_at": "2026-11-18T15:16:38+00:00",
+      "updated_at": "2026-11-18T16:15:49+00:00"
+    },
+    {
+      "id": "1e993c03a473cbb3",
+      "published_at": "2026-11-17T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "中央区",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.chuo.lg.jp/a0049/gakumu/rukumi/20261118.html",
+          "evidence_urls": [
+            "https://www.city.chuo.lg.jp/a0049/gakumu/rukumi/20261118.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "中央区 / Chuo",
+          "url": "https://www.city.chuo.lg.jp/a0049/gakumu/rukumi/20261118.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "ルクミーシステム",
+      "service_aliases": [],
+      "added_at": "2026-11-18T16:15:49+00:00",
+      "updated_at": "2026-11-18T16:15:49+00:00"
+    },
     {
       "id": "6e4893996f6b82c7",
       "published_at": "2026-11-17T15:00:00+00:00",
@@ -467,12 +562,77 @@
         {
           "name": "佐賀新聞",
           "url": "https://www.saga-s.co.jp/articles/-/1832738"
+        },
+        {
+          "name": "日本海新聞",
+          "url": "https://www.nnn.co.jp/articles/-/832181"
+        },
+        {
+          "name": "岩手日報",
+          "url": "https://www.iwate-np.co.jp/article/2026/11/18/198670"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVCL4FGZVCLULFA025M.html"
         }
       ],
       "affected_system": null,
       "date_basis": "ingestion",
       "added_at": "2026-11-18T15:16:38+00:00",
-      "updated_at": "2026-11-18T15:16:38+00:00"
+      "updated_at": "2026-11-18T16:15:49+00:00"
+    },
+    {
+      "id": "eea4c1583fc1df4a",
+      "published_at": "2026-11-17T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "三菱UFJ銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 6500000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.yomiuri.co.jp/economy/20261118-GYT1T00242/",
+          "evidence_urls": [
+            "https://www.yomiuri.co.jp/economy/20261118-GYT1T00242/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "三菱UFJ銀行 / MUFG Bank",
+          "url": "https://www.bk.mufg.jp/news/news2026/pdf/news1118.pdf"
+        },
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/economy/20261118-GYT1T00242/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/df72deb9c4e62728318fde9f5727cc024ba80e80"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUB189CE0Y6A111C2000000/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/4cffc5edc5f3badc500464c09fbe76ddce7f326b"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "KARTE",
+      "service_aliases": [
+        "カルテ"
+      ],
+      "added_at": "2026-11-18T15:16:38+00:00",
+      "updated_at": "2026-11-18T16:15:49+00:00"
     },
     {
       "id": "073f272eda1d2604",
@@ -508,6 +668,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/0fedc66ae1a7bd4b885bdbb411b74a041edcb100"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC1886Z0Y6A111C2000000/"
         }
       ],
       "affected_system": null,
@@ -515,7 +679,7 @@
       "affected_service": "オンラインショップ",
       "service_aliases": [],
       "added_at": "2026-11-18T15:16:38+00:00",
-      "updated_at": "2026-11-18T15:16:38+00:00"
+      "updated_at": "2026-11-18T16:15:49+00:00"
     },
     {
       "id": "2880d200bc56b5c0",
@@ -712,6 +876,46 @@
       "updated_at": "2026-11-18T14:16:38+00:00"
     },
     {
+      "id": "abb899a55bfe34f8",
+      "published_at": "2026-11-17T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "エア・ドゥ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 2520,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "0cd8a1c184390c84",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/fa92d76f112d175b81443714312665de065bd67f",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/fa92d76f112d175b81443714312665de065bd67f"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/fa92d76f112d175b81443714312665de065bd67f"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/082dfe83b5a87a80c1cdf8850c89905c0529df2c"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "旅客サービスシステム",
+      "service_aliases": [],
+      "added_at": "2026-11-18T16:15:49+00:00",
+      "updated_at": "2026-11-18T16:15:49+00:00"
+    },
+    {
       "id": "b0e4d083fd9c05e4",
       "published_at": "2026-11-17T15:00:00+00:00",
       "disclosed_at": null,
@@ -853,6 +1057,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/968b483b59e441dc8e555c75e5b57b2e38156d07"
+        },
+        {
+          "name": "マイナビニュース",
+          "url": "https://news.mynavi.jp/article/20261118-5354951/"
         }
       ],
       "affected_system": null,
@@ -879,7 +1087,7 @@
         }
       ],
       "added_at": "2026-11-18T14:16:38+00:00",
-      "updated_at": "2026-11-18T15:16:38+00:00"
+      "updated_at": "2026-11-18T16:15:49+00:00"
     },
     {
       "id": "dc7a8d07caf7fe9d",
@@ -894,102 +1102,55 @@
       "potential_records": 160000,
       "confidence": "medium",
       "confidence_score": 50,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://finance.biggo.jp/news/dd0743f5-ea9a-48da-908f-1cf96300e4d7",
+          "evidence_urls": [
+            "https://finance.biggo.jp/news/dd0743f5-ea9a-48da-908f-1cf96300e4d7"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "Yahoo!ファイナンス",
           "url": "https://finance.yahoo.co.jp/news/detail/41ce52ab08d17afd023e46e5fe832380ca96c6eb"
+        },
+        {
+          "name": "BigGo ファイナンス",
+          "url": "https://finance.biggo.jp/news/dd0743f5-ea9a-48da-908f-1cf96300e4d7"
         }
       ],
       "affected_system": null,
       "date_basis": "ingestion",
       "added_at": "2026-11-18T15:16:38+00:00",
-      "updated_at": "2026-11-18T15:16:38+00:00"
+      "updated_at": "2026-11-18T16:15:49+00:00"
     },
     {
-      "id": "eea4c1583fc1df4a",
+      "id": "1bca2043ef5d915a",
       "published_at": "2026-11-17T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "三菱UFJ銀行",
-      "incident_type": "data leak",
+      "disclosed_at": "2026-11-17T15:00:00+00:00",
+      "organization": "兵庫県立大先端医療工学研究所",
+      "incident_type": "unauthorized access",
       "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 6500000,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "8cf67a97b55e1d57",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.yomiuri.co.jp/economy/20261118-GYT1T00242/",
-          "evidence_urls": [
-            "https://www.yomiuri.co.jp/economy/20261118-GYT1T00242/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "読売新聞",
-          "url": "https://www.yomiuri.co.jp/economy/20261118-GYT1T00242/"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/df72deb9c4e62728318fde9f5727cc024ba80e80"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUB189CE0Y6A111C2000000/"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/4cffc5edc5f3badc500464c09fbe76ddce7f326b"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "publication",
-      "affected_service": "KARTE",
-      "service_aliases": [
-        "カルテ"
-      ],
-      "added_at": "2026-11-18T15:16:38+00:00",
-      "updated_at": "2026-11-18T15:16:38+00:00"
-    },
-    {
-      "id": "0fcc9607828441b5",
-      "published_at": "2026-11-17T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "厚生労働省",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
+        "other",
         "unauthorized access"
       ],
       "potential_records": null,
       "confidence": "medium",
       "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "d3f8753ec87b615e",
-          "relationship": "same_organization",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/mhlw-drug-supply-system-nttdata-unauthorized-access-20261118/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/mhlw-drug-supply-system-nttdata-unauthorized-access-20261118/"
-          ]
-        }
-      ],
+      "related": [],
       "sources": [
         {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/mhlw-drug-supply-system-nttdata-unauthorized-access-20261118/"
+          "name": "神戸新聞",
+          "url": "https://www.kobe-np.co.jp/news/society/202611/0021048274.shtml"
         }
       ],
       "affected_system": null,
-      "date_basis": "publication",
-      "affected_service": "医薬品安定供給・流通確認システム",
-      "service_aliases": [],
-      "added_at": "2026-11-18T15:16:38+00:00",
-      "updated_at": "2026-11-18T15:16:38+00:00"
+      "date_basis": "first_disclosure",
+      "added_at": "2026-11-18T16:15:49+00:00",
+      "updated_at": "2026-11-18T16:15:49+00:00"
     },
     {
       "id": "53dbe311630aa347",
@@ -1121,12 +1282,16 @@
         {
           "name": "CAMPFIRE (キャンプファイヤー)",
           "url": "https://camp-fire.jp/news/2026/11/17/campfire"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/campfire_karte_5819779_members_data_breach/"
         }
       ],
       "affected_system": null,
       "date_basis": "publication",
       "added_at": "2026-11-17T20:16:23+00:00",
-      "updated_at": "2026-11-18T06:16:13+00:00"
+      "updated_at": "2026-11-18T16:15:49+00:00"
     },
     {
       "id": "62de74da8e91370f",
@@ -4920,6 +5085,14 @@
           ]
         },
         {
+          "incident_id": "1e993c03a473cbb3",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.chuo.lg.jp/a0049/gakumu/rukumi/20261118.html",
+          "evidence_urls": [
+            "https://www.city.chuo.lg.jp/a0049/gakumu/rukumi/20261118.html"
+          ]
+        },
+        {
           "incident_id": "2068debf6164c31a",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/1d4c40274dea74a554c9101f87d38d4d15e9967f",
@@ -5115,6 +5288,14 @@
           ]
         },
         {
+          "incident_id": "8ffddfc96aa3ce97",
+          "relationship": "affects",
+          "evidence_url": "https://prtimes.jp/main/html/rd/p/000000385.000006391.html",
+          "evidence_urls": [
+            "https://prtimes.jp/main/html/rd/p/000000385.000006391.html"
+          ]
+        },
+        {
           "incident_id": "90f25b7d84e534d3",
           "relationship": "affects",
           "evidence_url": "https://cybersecurity-jp.com/news/118610",
@@ -5221,6 +5402,14 @@
           ]
         },
         {
+          "incident_id": "dc7a8d07caf7fe9d",
+          "relationship": "affects",
+          "evidence_url": "https://finance.biggo.jp/news/dd0743f5-ea9a-48da-908f-1cf96300e4d7",
+          "evidence_urls": [
+            "https://finance.biggo.jp/news/dd0743f5-ea9a-48da-908f-1cf96300e4d7"
+          ]
+        },
+        {
           "incident_id": "decc065454a34cbc",
           "relationship": "affects",
           "evidence_url": "https://www.okinawatimes.co.jp/articles/-/1968327",
@@ -5317,7 +5506,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-18T15:16:38+00:00"
+      "updated_at": "2026-11-18T16:15:49+00:00"
     },
     {
       "id": "9f04a00959566f37",
@@ -6325,6 +6514,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/444e3fcfdf78f5466598380991e2a2acdad8132a"
+        },
+        {
+          "name": "BigGo ファイナンス",
+          "url": "https://finance.biggo.jp/news/dd0743f5-ea9a-48da-908f-1cf96300e4d7"
         }
       ],
       "affected_system": null,
@@ -6332,7 +6525,7 @@
       "affected_service": "オンライントレード",
       "service_aliases": [],
       "added_at": "2026-11-18T15:16:38+00:00",
-      "updated_at": "2026-11-18T15:16:38+00:00"
+      "updated_at": "2026-11-18T16:15:49+00:00"
     },
     {
       "id": "f25e2050c3141e4b",
@@ -34242,6 +34435,14 @@
             "https://www.traicy.com/posts/20261028386175/",
             "https://www.yomiuri.co.jp/national/20261028-GYT1T00334/"
           ]
+        },
+        {
+          "incident_id": "abb899a55bfe34f8",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/fa92d76f112d175b81443714312665de065bd67f",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/fa92d76f112d175b81443714312665de065bd67f"
+          ]
         }
       ],
       "sources": [
@@ -34251,7 +34452,7 @@
         }
       ],
       "added_at": "2026-10-28T13:16:27+00:00",
-      "updated_at": "2026-11-10T20:15:39+00:00"
+      "updated_at": "2026-11-18T16:15:49+00:00"
     },
     {
       "id": "19b3132af335af7b",
@@ -54201,12 +54402,24 @@
           "evidence_urls": [
             "https://news.infoseek.co.jp/article/prtimes_000000380_000006391/"
           ]
+        },
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://prtimes.jp/main/html/rd/p/000000385.000006391.html",
+          "evidence_urls": [
+            "https://prtimes.jp/main/html/rd/p/000000385.000006391.html"
+          ]
         }
       ],
       "sources": [
         {
           "name": "Schoo（公式発表）",
           "url": "https://prtimes.jp/main/html/rd/p/000000380.000006391.html"
+        },
+        {
+          "name": "PR TIMES",
+          "url": "https://prtimes.jp/main/html/rd/p/000000385.000006391.html"
         },
         {
           "name": "Infoseek",
@@ -54226,7 +54439,7 @@
         }
       ],
       "added_at": "2026-10-21T03:40:38+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-18T16:15:49+00:00"
     },
     {
       "id": "168768de25f9df21",
