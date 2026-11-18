@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-18T23:14:19+00:00",
-  "total": 1434,
+  "updated_at": "2026-11-18T23:23:22+00:00",
+  "total": 1444,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-19"
@@ -166,7 +166,7 @@
     },
     {
       "date": "2026-09-30",
-      "count": 4
+      "count": 6
     },
     {
       "date": "2026-10-01",
@@ -366,10 +366,293 @@
     },
     {
       "date": "2026-11-19",
-      "count": 1
+      "count": 9
     }
   ],
   "incidents": [
+    {
+      "id": "35af713e1d0b2a3b",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "H.B.P HOTEL",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-18T23:23:22+00:00",
+      "updated_at": "2026-11-18T23:23:22+00:00"
+    },
+    {
+      "id": "3cb247406336fb36",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "チューリッヒ保険",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "36d105653c0ed4da",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-18T23:23:22+00:00",
+      "updated_at": "2026-11-18T23:23:22+00:00"
+    },
+    {
+      "id": "45dc27d4ed705060",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ストライプインターナショナル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 150069,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "STRIPE CLUB",
+      "service_aliases": [],
+      "added_at": "2026-11-18T23:23:22+00:00",
+      "updated_at": "2026-11-18T23:23:22+00:00"
+    },
+    {
+      "id": "78368eb07f53ad8c",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ダイブ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "リゾートバイトダイブ",
+      "service_aliases": [],
+      "added_at": "2026-11-18T23:23:22+00:00",
+      "updated_at": "2026-11-18T23:23:22+00:00"
+    },
+    {
+      "id": "80c600c589eaea21",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "講談社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 450000,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "15b3768a87b51871",
+          "relationship": "same_organization",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+          ]
+        },
+        {
+          "incident_id": "aa9bc3fcfc85d71d",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "ViVi公式LINE",
+      "service_aliases": [],
+      "added_at": "2026-11-18T23:23:22+00:00",
+      "updated_at": "2026-11-18T23:23:22+00:00"
+    },
+    {
+      "id": "90f48cf1abe6fcb9",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ウェルカム",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 9890,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "397f1927d9801ddd",
+          "relationship": "same_organization",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+          ]
+        },
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "HAYオンラインストア",
+      "service_aliases": [],
+      "added_at": "2026-11-18T23:23:22+00:00",
+      "updated_at": "2026-11-18T23:23:22+00:00"
+    },
+    {
+      "id": "d578c0d976772519",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "コクーンシティ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "aa9bc3fcfc85d71d",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "公式LINE",
+      "service_aliases": [],
+      "added_at": "2026-11-18T23:23:22+00:00",
+      "updated_at": "2026-11-18T23:23:22+00:00"
+    },
+    {
+      "id": "de4e9cb1d098b3db",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "京姫鉄道",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 1,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "57d15baf7435e548",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-18T23:23:22+00:00",
+      "updated_at": "2026-11-18T23:23:22+00:00"
+    },
     {
       "id": "f5ace41d872ad6e0",
       "published_at": "2026-11-18T15:00:00+00:00",
@@ -5616,6 +5899,14 @@
           ]
         },
         {
+          "incident_id": "45dc27d4ed705060",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+          ]
+        },
+        {
           "incident_id": "4f3b578e0ea019ca",
           "relationship": "affects",
           "evidence_url": "https://www.shueisha.co.jp/wp-content/uploads/2026/11/b985e138d872933dc2ccc3b83c3a53e9.pdf",
@@ -5729,6 +6020,14 @@
           ]
         },
         {
+          "incident_id": "78368eb07f53ad8c",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+          ]
+        },
+        {
           "incident_id": "7ad240b1b0ee8217",
           "relationship": "affects",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/karte_unauthorized_access_affected_companies_roundup_2026/",
@@ -5800,6 +6099,14 @@
           "evidence_urls": [
             "https://cybersecurity-jp.com/news/118610",
             "https://rocket-boys.co.jp/security-measures-lab/misumi-karte-140000-b2b-abuse-risk-and-response/"
+          ]
+        },
+        {
+          "incident_id": "90f48cf1abe6fcb9",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
           ]
         },
         {
@@ -6023,7 +6330,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-18T23:14:19+00:00"
+      "updated_at": "2026-11-18T23:23:22+00:00"
     },
     {
       "id": "9f04a00959566f37",
@@ -14550,6 +14857,14 @@
           ]
         },
         {
+          "incident_id": "de4e9cb1d098b3db",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+          ]
+        },
+        {
           "incident_id": "f18cb09c78ddd7f4",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdVF6bF9uRERQemJZQ1NzMEljM0J5LU9TQ3BHNUd6a21nNW4wMUthZ0lQNTJuaHZ5REJBNGxoR3d2bW5ZdzhXTC1UU0FiMnJTVGFVb3I2cVBaSFMyOXRQT20wNlNvUEtpbHh2ZGZEbTBHX3dwLVhCcWVKMnhWOW9WY01ydFgxLTZaTHZWQ2g0UHNyb1hSbTQ5WXpiYWJxNWlfMmoxTkpVbUcxVEc5eURfbQ?oc=5",
@@ -14601,7 +14916,7 @@
         }
       ],
       "added_at": "2026-11-11T09:15:59+00:00",
-      "updated_at": "2026-11-18T15:16:38+00:00"
+      "updated_at": "2026-11-18T23:23:22+00:00"
     },
     {
       "id": "cb69602b79e76443",
@@ -30718,6 +31033,14 @@
           ]
         },
         {
+          "incident_id": "3cb247406336fb36",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+          ]
+        },
+        {
           "incident_id": "5266bf64f1fb4a19",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/3aaee8c515d52b12c335a73fe430f8add4e07be5",
@@ -30871,7 +31194,7 @@
       "affected_service": "ロードサービス等の受付・手配業務に使用する業務システム",
       "service_aliases": [],
       "added_at": "2026-11-02T10:00:14+00:00",
-      "updated_at": "2026-11-18T00:16:21+00:00"
+      "updated_at": "2026-11-18T23:23:22+00:00"
     },
     {
       "id": "169f51ce1c38ad8b",
@@ -37654,7 +37977,16 @@
       "potential_records": 3,
       "confidence": "medium",
       "confidence_score": 30,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "90f48cf1abe6fcb9",
+          "relationship": "same_organization",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "合同会社ロケットボーイズ",
@@ -37662,7 +37994,7 @@
         }
       ],
       "added_at": "2026-10-29T06:16:15+00:00",
-      "updated_at": "2026-10-29T06:16:15+00:00"
+      "updated_at": "2026-11-18T23:23:22+00:00"
     },
     {
       "id": "77607217abf8e8da",
@@ -41077,6 +41409,14 @@
           ]
         },
         {
+          "incident_id": "80c600c589eaea21",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+          ]
+        },
+        {
           "incident_id": "8137a2c5288aadc4",
           "relationship": "affects",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/hotstaff_hotkensaku_comsbi_saas_line_jobseeker_data_breach/",
@@ -41107,6 +41447,14 @@
           "evidence_url": "https://www.ucc.co.jp/press/20261102.html",
           "evidence_urls": [
             "https://www.ucc.co.jp/press/20261102.html"
+          ]
+        },
+        {
+          "incident_id": "d578c0d976772519",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
           ]
         },
         {
@@ -41186,7 +41534,7 @@
         }
       ],
       "added_at": "2026-10-27T07:15:28+00:00",
-      "updated_at": "2026-11-18T15:16:38+00:00"
+      "updated_at": "2026-11-18T23:23:22+00:00"
     },
     {
       "id": "af7b771bb23be504",
@@ -63899,6 +64247,72 @@
       "updated_at": "2026-11-12T07:15:39+00:00"
     },
     {
+      "id": "5c99863439287390",
+      "published_at": "2026-09-29T15:00:00+00:00",
+      "disclosed_at": "2026-09-29T15:00:00+00:00",
+      "organization": "はなまる",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 368,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "e1eb4609c1767524",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "added_at": "2026-11-18T23:23:22+00:00",
+      "updated_at": "2026-11-18T23:23:22+00:00"
+    },
+    {
+      "id": "8e754cb25a2f1594",
+      "published_at": "2026-09-29T15:00:00+00:00",
+      "disclosed_at": "2026-09-29T15:00:00+00:00",
+      "organization": "吉野家",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 4998,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "e1eb4609c1767524",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "added_at": "2026-11-18T23:23:22+00:00",
+      "updated_at": "2026-11-18T23:23:22+00:00"
+    },
+    {
       "id": "f5bd0f1b378e6b8e",
       "published_at": "2026-09-19T15:00:00+00:00",
       "disclosed_at": "2026-10-08T15:00:00+00:00",
@@ -64201,6 +64615,22 @@
           "evidence_urls": [
             "https://www.city.fuji.shizuoka.jp/1005250000/p007783.html"
           ]
+        },
+        {
+          "incident_id": "5c99863439287390",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+          ]
+        },
+        {
+          "incident_id": "8e754cb25a2f1594",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+          ]
         }
       ],
       "sources": [
@@ -64210,7 +64640,7 @@
         }
       ],
       "added_at": "2026-11-17T19:16:58+00:00",
-      "updated_at": "2026-11-17T19:16:58+00:00"
+      "updated_at": "2026-11-18T23:23:22+00:00"
     },
     {
       "id": "9dc51df1da2fcdfa",
@@ -64397,7 +64827,16 @@
       "potential_records": 3812,
       "confidence": "medium",
       "confidence_score": 50,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "80c600c589eaea21",
+          "relationship": "same_organization",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "Yahoo!ニュース",
@@ -64407,7 +64846,7 @@
       "affected_system": null,
       "date_basis": "first_disclosure",
       "added_at": "2026-11-16T06:15:50+00:00",
-      "updated_at": "2026-11-16T06:15:50+00:00"
+      "updated_at": "2026-11-18T23:23:22+00:00"
     },
     {
       "id": "31c76cc0c11d1aab",
