@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-18T00:16:21+00:00",
-  "total": 1362,
+  "updated_at": "2026-11-18T01:17:02+00:00",
+  "total": 1370,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-18"
@@ -230,7 +230,7 @@
     },
     {
       "date": "2026-10-15",
-      "count": 27
+      "count": 28
     },
     {
       "date": "2026-10-16",
@@ -314,7 +314,7 @@
     },
     {
       "date": "2026-11-05",
-      "count": 58
+      "count": 62
     },
     {
       "date": "2026-11-06",
@@ -326,7 +326,7 @@
     },
     {
       "date": "2026-11-08",
-      "count": 9
+      "count": 10
     },
     {
       "date": "2026-11-09",
@@ -338,7 +338,7 @@
     },
     {
       "date": "2026-11-11",
-      "count": 38
+      "count": 40
     },
     {
       "date": "2026-11-12",
@@ -396,6 +396,53 @@
       "service_aliases": [],
       "added_at": "2026-11-17T22:16:17+00:00",
       "updated_at": "2026-11-17T22:16:17+00:00"
+    },
+    {
+      "id": "72719afb4550b10c",
+      "published_at": "2026-11-16T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "クラブツーリズム",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 4060000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "09ba28525670dac9",
+          "relationship": "same_organization",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/club-tourism-karte-406m-member-data-possible-leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/club-tourism-karte-406m-member-data-possible-leak/"
+          ]
+        },
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.club-t.com/ct/news/2026/1117_1/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/club-tourism-karte-406m-member-data-possible-leak/",
+            "https://www.club-t.com/ct/news/2026/1117_1/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.club-t.com/ct/news/2026/1117_1/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/club-tourism-karte-406m-member-data-possible-leak/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-17T20:16:23+00:00",
+      "updated_at": "2026-11-18T01:17:02+00:00"
     },
     {
       "id": "8cb6d0590720520f",
@@ -552,6 +599,55 @@
       "service_aliases": [],
       "added_at": "2026-11-17T05:16:27+00:00",
       "updated_at": "2026-11-17T11:16:33+00:00"
+    },
+    {
+      "id": "bba46f64d143e93c",
+      "published_at": "2026-11-16T15:00:00+00:00",
+      "disclosed_at": "2026-11-16T15:00:00+00:00",
+      "organization": "ゴルフダイジェスト・オンライン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 6974506,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://company.golfdigest.co.jp/corp/pr/2026111701.html",
+          "evidence_urls": [
+            "https://company.golfdigest.co.jp/corp/pr/2026111701.html",
+            "https://rocket-boys.co.jp/security-measures-lab/gdo-karte-member-data-leak-6974506-personal-countermeasures-202611/"
+          ]
+        },
+        {
+          "incident_id": "8e4e2ad29e93d9e7",
+          "relationship": "same_organization",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/gdo-karte-member-data-leak-6974506-personal-countermeasures-202611/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/gdo-karte-member-data-leak-6974506-personal-countermeasures-202611/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://company.golfdigest.co.jp/corp/pr/2026111701.html"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/gdo-karte-member-data-leak-6974506-personal-countermeasures-202611/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "KARTE",
+      "service_aliases": [],
+      "added_at": "2026-11-18T00:16:21+00:00",
+      "updated_at": "2026-11-18T01:17:02+00:00"
     },
     {
       "id": "e4d9c940e29f128d",
@@ -712,8 +808,9 @@
         {
           "incident_id": "8cf67a97b55e1d57",
           "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/bfecb59099c47fa18394a8877ea1754712f25c1e",
+          "evidence_url": "https://news.yahoo.co.jp/articles/3fa65e8f0f3fe2b586077543a7de7a1d3db755dd",
           "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/3fa65e8f0f3fe2b586077543a7de7a1d3db755dd",
             "https://news.yahoo.co.jp/articles/bfecb59099c47fa18394a8877ea1754712f25c1e",
             "https://www.hokkaido-np.co.jp/article/1409741/"
           ]
@@ -764,7 +861,7 @@
         }
       ],
       "added_at": "2026-11-17T04:16:26+00:00",
-      "updated_at": "2026-11-18T00:16:21+00:00"
+      "updated_at": "2026-11-18T01:17:02+00:00"
     },
     {
       "id": "5b8590f90f347ab6",
@@ -852,6 +949,10 @@
         {
           "name": "TBS NEWS DIG",
           "url": "https://newsdig.tbs.co.jp/articles/hbc/3091677?display=1"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/ec6cc6929ed011362599c3470c855fc5dc8089ee"
         }
       ],
       "affected_system": null,
@@ -859,7 +960,7 @@
       "affected_service": "抽選システム",
       "service_aliases": [],
       "added_at": "2026-11-17T22:16:17+00:00",
-      "updated_at": "2026-11-18T00:16:21+00:00"
+      "updated_at": "2026-11-18T01:17:02+00:00"
     },
     {
       "id": "e7b712d3c616ac80",
@@ -1041,48 +1142,6 @@
       "updated_at": "2026-11-17T20:16:23+00:00"
     },
     {
-      "id": "72719afb4550b10c",
-      "published_at": "2026-11-16T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "クラブツーリズム",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 4060000,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "09ba28525670dac9",
-          "relationship": "same_organization",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/club-tourism-karte-406m-member-data-possible-leak/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/club-tourism-karte-406m-member-data-possible-leak/"
-          ]
-        },
-        {
-          "incident_id": "8cf67a97b55e1d57",
-          "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/club-tourism-karte-406m-member-data-possible-leak/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/club-tourism-karte-406m-member-data-possible-leak/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/club-tourism-karte-406m-member-data-possible-leak/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "publication",
-      "added_at": "2026-11-17T20:16:23+00:00",
-      "updated_at": "2026-11-17T20:16:23+00:00"
-    },
-    {
       "id": "76902a32579961b4",
       "published_at": "2026-11-16T15:00:00+00:00",
       "disclosed_at": null,
@@ -1125,50 +1184,6 @@
       "service_aliases": [],
       "added_at": "2026-11-17T11:16:33+00:00",
       "updated_at": "2026-11-17T11:16:33+00:00"
-    },
-    {
-      "id": "bba46f64d143e93c",
-      "published_at": "2026-11-16T15:00:00+00:00",
-      "disclosed_at": "2026-11-16T15:00:00+00:00",
-      "organization": "ゴルフダイジェスト・オンライン",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 6974506,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "8cf67a97b55e1d57",
-          "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/gdo-karte-member-data-leak-6974506-personal-countermeasures-202611/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/gdo-karte-member-data-leak-6974506-personal-countermeasures-202611/"
-          ]
-        },
-        {
-          "incident_id": "8e4e2ad29e93d9e7",
-          "relationship": "same_organization",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/gdo-karte-member-data-leak-6974506-personal-countermeasures-202611/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/gdo-karte-member-data-leak-6974506-personal-countermeasures-202611/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/gdo-karte-member-data-leak-6974506-personal-countermeasures-202611/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "first_disclosure",
-      "affected_service": "KARTE",
-      "service_aliases": [],
-      "added_at": "2026-11-18T00:16:21+00:00",
-      "updated_at": "2026-11-18T00:16:21+00:00"
     },
     {
       "id": "f21465a208ec881c",
@@ -1482,6 +1497,10 @@
         {
           "name": "ITmedia",
           "url": "https://www.itmedia.co.jp/news/article/2611/17/2000003257/"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUF178JY0X11C26A1000000/"
         }
       ],
       "affected_system": null,
@@ -1489,7 +1508,7 @@
       "affected_service": "阪急阪神第一ホテルグループメンバーズクラブ",
       "service_aliases": [],
       "added_at": "2026-11-17T01:16:38+00:00",
-      "updated_at": "2026-11-17T08:16:10+00:00"
+      "updated_at": "2026-11-18T01:17:02+00:00"
     },
     {
       "id": "462c096ee7be4ff0",
@@ -3643,8 +3662,9 @@
         {
           "incident_id": "57225b83002a9993",
           "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/bfecb59099c47fa18394a8877ea1754712f25c1e",
+          "evidence_url": "https://news.yahoo.co.jp/articles/3fa65e8f0f3fe2b586077543a7de7a1d3db755dd",
           "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/3fa65e8f0f3fe2b586077543a7de7a1d3db755dd",
             "https://news.yahoo.co.jp/articles/bfecb59099c47fa18394a8877ea1754712f25c1e",
             "https://www.hokkaido-np.co.jp/article/1409741/"
           ]
@@ -3671,9 +3691,10 @@
         {
           "incident_id": "72719afb4550b10c",
           "relationship": "affects",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/club-tourism-karte-406m-member-data-possible-leak/",
+          "evidence_url": "https://www.club-t.com/ct/news/2026/1117_1/",
           "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/club-tourism-karte-406m-member-data-possible-leak/"
+            "https://rocket-boys.co.jp/security-measures-lab/club-tourism-karte-406m-member-data-possible-leak/",
+            "https://www.club-t.com/ct/news/2026/1117_1/"
           ]
         },
         {
@@ -3775,8 +3796,9 @@
         {
           "incident_id": "bba46f64d143e93c",
           "relationship": "affects",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/gdo-karte-member-data-leak-6974506-personal-countermeasures-202611/",
+          "evidence_url": "https://company.golfdigest.co.jp/corp/pr/2026111701.html",
           "evidence_urls": [
+            "https://company.golfdigest.co.jp/corp/pr/2026111701.html",
             "https://rocket-boys.co.jp/security-measures-lab/gdo-karte-member-data-leak-6974506-personal-countermeasures-202611/"
           ]
         },
@@ -3791,8 +3813,9 @@
         {
           "incident_id": "decc065454a34cbc",
           "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/bfecb59099c47fa18394a8877ea1754712f25c1e",
+          "evidence_url": "https://news.yahoo.co.jp/articles/3fa65e8f0f3fe2b586077543a7de7a1d3db755dd",
           "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/3fa65e8f0f3fe2b586077543a7de7a1d3db755dd",
             "https://news.yahoo.co.jp/articles/bfecb59099c47fa18394a8877ea1754712f25c1e",
             "https://rocket-boys.co.jp/security-measures-lab/francfranc_karte_member_598m_purchase_400m_data_leak/"
           ]
@@ -3855,7 +3878,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-18T00:16:21+00:00"
+      "updated_at": "2026-11-18T01:17:02+00:00"
     },
     {
       "id": "9f04a00959566f37",
@@ -4425,6 +4448,46 @@
       "updated_at": "2026-11-16T03:15:43+00:00"
     },
     {
+      "id": "aa7aa47af66d811b",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-16T15:00:00+00:00",
+      "organization": "JINS",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 18290000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/jins-karte-member-18_29m-account-data-breach-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/jins-karte-member-18_29m-account-data-breach-2026/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/jins-karte-member-18_29m-account-data-breach-2026/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/89046c7bc141b9d8a60ec56407d5232631cf430f"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "JINS会員",
+      "service_aliases": [],
+      "added_at": "2026-11-17T19:16:58+00:00",
+      "updated_at": "2026-11-18T01:17:02+00:00"
+    },
+    {
       "id": "ae1d4f5f4d68b8fb",
       "published_at": "2026-11-12T15:00:00+00:00",
       "disclosed_at": null,
@@ -4712,8 +4775,9 @@
         {
           "incident_id": "8cf67a97b55e1d57",
           "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/bfecb59099c47fa18394a8877ea1754712f25c1e",
+          "evidence_url": "https://news.yahoo.co.jp/articles/3fa65e8f0f3fe2b586077543a7de7a1d3db755dd",
           "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/3fa65e8f0f3fe2b586077543a7de7a1d3db755dd",
             "https://news.yahoo.co.jp/articles/bfecb59099c47fa18394a8877ea1754712f25c1e",
             "https://rocket-boys.co.jp/security-measures-lab/francfranc_karte_member_598m_purchase_400m_data_leak/"
           ]
@@ -4739,12 +4803,16 @@
         {
           "name": "TBS NEWS DIG",
           "url": "https://newsdig.tbs.co.jp/articles/hbc/3091677?display=1"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/ec6cc6929ed011362599c3470c855fc5dc8089ee"
         }
       ],
       "affected_system": null,
       "date_basis": "occurrence",
       "added_at": "2026-11-17T10:16:39+00:00",
-      "updated_at": "2026-11-18T00:16:21+00:00"
+      "updated_at": "2026-11-18T01:17:02+00:00"
     },
     {
       "id": "f25e2050c3141e4b",
@@ -4832,42 +4900,6 @@
       "service_aliases": [],
       "added_at": "2026-11-16T12:16:35+00:00",
       "updated_at": "2026-11-16T12:16:35+00:00"
-    },
-    {
-      "id": "aa7aa47af66d811b",
-      "published_at": "2026-11-12T15:00:00+00:00",
-      "disclosed_at": "2026-11-16T15:00:00+00:00",
-      "organization": "JINS",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 18290000,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "8cf67a97b55e1d57",
-          "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/jins-karte-member-18_29m-account-data-breach-2026/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/jins-karte-member-18_29m-account-data-breach-2026/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/jins-karte-member-18_29m-account-data-breach-2026/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "occurrence",
-      "affected_service": "JINS会員",
-      "service_aliases": [],
-      "added_at": "2026-11-17T19:16:58+00:00",
-      "updated_at": "2026-11-17T19:16:58+00:00"
     },
     {
       "id": "c315588305545d55",
@@ -5154,6 +5186,65 @@
       "updated_at": "2026-11-16T01:15:40+00:00"
     },
     {
+      "id": "4a37577646a003ba",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "岡山県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 2241,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE02QzM0eHZVNVdQY185YkY1Q195VUJBSUlXaFA1QXh1S29lS1dZUElCdGdXSlpLaHpBTllZcGVWOHp5OFpfb20zeXJ6THFCaWxL?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMiUEFVX3lxTE02QzM0eHZVNVdQY185YkY1Q195VUJBSUlXaFA1QXh1S29lS1dZUElCdGdXSlpLaHpBTllZcGVWOHp5OFpfb20zeXJ6THFCaWxL?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "岡山県",
+          "url": "https://www.pref.okayama.lg.jp/site/presssystem/1065562.html"
+        },
+        {
+          "name": "岡山県",
+          "url": "https://www.pref.okayama.lg.jp/site/presssystem/1064147.html"
+        },
+        {
+          "name": "KSBニュース",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE02QzM0eHZVNVdQY185YkY1Q195VUJBSUlXaFA1QXh1S29lS1dZUElCdGdXSlpLaHpBTllZcGVWOHp5OFpfb20zeXJ6THFCaWxL?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5YVGJjeUhvU2dMeFhRdDl2SXlSSk1VWWpKMkVCNzNWSEFTbU5tZ3lfM0N2SDJfUTFxTjZUenpyOU1vT2p1dk5XTU1Yd0Z4d1VQcjVFQ3JvMUJKMk50NVk0UElvZlFhSDBOdV9mYTI1TVVCd3NiM1F1bVhPREhmdGs?oc=5"
+        }
+      ],
+      "affected_service": "医療安全情報等のお知らせ / 岡山県感染症情報メールマガジン",
+      "service_aliases": [],
+      "affected_services": [
+        "医療安全情報等のお知らせ",
+        "岡山県感染症情報メールマガジン"
+      ],
+      "service_details": [
+        {
+          "name": "医療安全情報等のお知らせ",
+          "aliases": []
+        },
+        {
+          "name": "岡山県感染症情報メールマガジン",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-12T22:15:17+00:00",
+      "updated_at": "2026-11-18T01:17:02+00:00"
+    },
+    {
       "id": "4d5625761a2f2f2c",
       "published_at": "2026-11-11T15:00:00+00:00",
       "disclosed_at": null,
@@ -5286,6 +5377,10 @@
           "url": "https://giftee.co.jp/press/news/info20261112/"
         },
         {
+          "name": "legalagent list",
+          "url": "https://giftee.co.jp/press/news/info20261117/"
+        },
+        {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/giftee-prismatix-unauthorized-access-service-suspension-20261112/"
         }
@@ -5293,7 +5388,7 @@
       "affected_service": "giftee",
       "service_aliases": [],
       "added_at": "2026-11-13T02:15:39+00:00",
-      "updated_at": "2026-11-13T06:15:30+00:00"
+      "updated_at": "2026-11-18T01:17:02+00:00"
     },
     {
       "id": "760f1c70559f530f",
@@ -5579,6 +5674,10 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUC142530U6A111C2000000/"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/18/56823.html"
         }
       ],
       "affected_service": "ultra pay カード / アスルクラロ沼津Pay / 巫神こんPay / 東芝ブレイブルーパス東京Pay",
@@ -5608,7 +5707,7 @@
         }
       ],
       "added_at": "2026-11-12T21:15:22+00:00",
-      "updated_at": "2026-11-15T17:15:42+00:00"
+      "updated_at": "2026-11-18T01:17:02+00:00"
     },
     {
       "id": "f7cf02a6f5cb3426",
@@ -5819,57 +5918,6 @@
       "service_aliases": [],
       "added_at": "2026-11-12T11:15:59+00:00",
       "updated_at": "2026-11-12T11:15:59+00:00"
-    },
-    {
-      "id": "4a37577646a003ba",
-      "published_at": "2026-11-11T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "岡山県",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 2241,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE02QzM0eHZVNVdQY185YkY1Q195VUJBSUlXaFA1QXh1S29lS1dZUElCdGdXSlpLaHpBTllZcGVWOHp5OFpfb20zeXJ6THFCaWxL?oc=5",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMiUEFVX3lxTE02QzM0eHZVNVdQY185YkY1Q195VUJBSUlXaFA1QXh1S29lS1dZUElCdGdXSlpLaHpBTllZcGVWOHp5OFpfb20zeXJ6THFCaWxL?oc=5"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "KSBニュース",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE02QzM0eHZVNVdQY185YkY1Q195VUJBSUlXaFA1QXh1S29lS1dZUElCdGdXSlpLaHpBTllZcGVWOHp5OFpfb20zeXJ6THFCaWxL?oc=5"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5YVGJjeUhvU2dMeFhRdDl2SXlSSk1VWWpKMkVCNzNWSEFTbU5tZ3lfM0N2SDJfUTFxTjZUenpyOU1vT2p1dk5XTU1Yd0Z4d1VQcjVFQ3JvMUJKMk50NVk0UElvZlFhSDBOdV9mYTI1TVVCd3NiM1F1bVhPREhmdGs?oc=5"
-        }
-      ],
-      "affected_service": "医療安全情報等のお知らせ / 岡山県感染症情報メールマガジン",
-      "service_aliases": [],
-      "affected_services": [
-        "医療安全情報等のお知らせ",
-        "岡山県感染症情報メールマガジン"
-      ],
-      "service_details": [
-        {
-          "name": "医療安全情報等のお知らせ",
-          "aliases": []
-        },
-        {
-          "name": "岡山県感染症情報メールマガジン",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-12T22:15:17+00:00",
-      "updated_at": "2026-11-12T22:15:17+00:00"
     },
     {
       "id": "56196a05f6b5b1d6",
@@ -6892,12 +6940,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/75f8d8ad7e59254bb1dcfae45d498d42213319ec"
+        },
+        {
+          "name": "Impress Watch",
+          "url": "https://www.watch.impress.co.jp/docs/news/2157207.html"
         }
       ],
       "affected_system": null,
       "date_basis": "discovery",
       "added_at": "2026-11-17T22:16:17+00:00",
-      "updated_at": "2026-11-17T22:16:17+00:00"
+      "updated_at": "2026-11-18T01:17:02+00:00"
     },
     {
       "id": "e8869a011b42a736",
@@ -7727,6 +7779,32 @@
       "updated_at": "2026-11-11T21:16:42+00:00"
     },
     {
+      "id": "4b811cd2a79ac56d",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": "2026-11-10T15:00:00+00:00",
+      "organization": "日建設計",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/weekly-csirt-2026-11-week3/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "Notion AI",
+      "service_aliases": [],
+      "added_at": "2026-11-18T01:17:02+00:00",
+      "updated_at": "2026-11-18T01:17:02+00:00"
+    },
+    {
       "id": "674fc8cb330376ee",
       "published_at": "2026-11-10T15:00:00+00:00",
       "disclosed_at": null,
@@ -7773,6 +7851,32 @@
       ],
       "added_at": "2026-11-11T09:15:59+00:00",
       "updated_at": "2026-11-13T07:15:40+00:00"
+    },
+    {
+      "id": "6c8020e3a8914aab",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": "2026-11-10T15:00:00+00:00",
+      "organization": "LRM",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/weekly-csirt-2026-11-week3/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "Notion AI",
+      "service_aliases": [],
+      "added_at": "2026-11-18T01:17:02+00:00",
+      "updated_at": "2026-11-18T01:17:02+00:00"
     },
     {
       "id": "909cfe24afcf8d43",
@@ -11837,6 +11941,31 @@
       "updated_at": "2026-11-17T01:16:38+00:00"
     },
     {
+      "id": "2607d48d1715f162",
+      "published_at": "2026-11-07T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "高知県警",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/1d21a9315c593d5040b52db46794f8353431a870"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "added_at": "2026-11-18T01:17:02+00:00",
+      "updated_at": "2026-11-18T01:17:02+00:00"
+    },
+    {
       "id": "a5aba76731b13cfb",
       "published_at": "2026-11-07T15:00:00+00:00",
       "disclosed_at": null,
@@ -12178,12 +12307,16 @@
         {
           "name": "satimo list",
           "url": "https://www.pref.okayama.jp/site/presssystem/1064871.html"
+        },
+        {
+          "name": "岡山県",
+          "url": "https://www.pref.okayama.lg.jp/page/1064879.html"
         }
       ],
       "affected_service": "メール配信サービス",
       "service_aliases": [],
       "added_at": "2026-11-07T05:15:22+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-18T01:17:02+00:00"
     },
     {
       "id": "46b3036c11093404",
@@ -13403,6 +13536,10 @@
         {
           "name": "ニコニコニュース",
           "url": "https://news.nicovideo.jp/watch/nw19966130?news_ref=watch_20_nw19213942"
+        },
+        {
+          "name": "パシフィックリーグマーケティング株式会社",
+          "url": "https://www.pacificleague.jp/assets/pdf/pr261106_1.pdf"
         }
       ],
       "affected_service": "タカコレ / タカコレくじ",
@@ -13422,7 +13559,7 @@
         }
       ],
       "added_at": "2026-11-06T08:36:04+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-18T01:17:02+00:00"
     },
     {
       "id": "a95b04d0e23bdb4f",
@@ -14151,7 +14288,16 @@
       "potential_records": 11875,
       "confidence": "medium",
       "confidence_score": 50,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "6bc0fd59b1a9afd0",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.pacificleague.jp/assets/pdf/pr261106_1.pdf",
+          "evidence_urls": [
+            "https://www.pacificleague.jp/assets/pdf/pr261106_1.pdf"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "Yahoo!ニュース",
@@ -14172,12 +14318,16 @@
         {
           "name": "ニコニコニュース",
           "url": "https://news.nicovideo.jp/watch/nw19966130?news_ref=watch_20_nw19213942"
+        },
+        {
+          "name": "パシフィックリーグマーケティング株式会社",
+          "url": "https://www.pacificleague.jp/assets/pdf/pr261106_1.pdf"
         }
       ],
       "affected_service": "球団公式サイト",
       "service_aliases": [],
       "added_at": "2026-11-06T13:16:53+00:00",
-      "updated_at": "2026-11-12T07:15:39+00:00"
+      "updated_at": "2026-11-18T01:17:02+00:00"
     },
     {
       "id": "f896195c466e5909",
@@ -17366,6 +17516,119 @@
       "updated_at": "2026-11-05T21:15:39+00:00"
     },
     {
+      "id": "6b73483a79b6e595",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "北海道日本ハムファイターズ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 3575,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pacificleague.jp/assets/pdf/pr261106_1.pdf",
+          "evidence_urls": [
+            "https://www.pacificleague.jp/assets/pdf/pr261106_1.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "パシフィックリーグマーケティング株式会社",
+          "url": "https://www.pacificleague.jp/assets/pdf/pr261106_1.pdf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "速報メルマガ",
+      "service_aliases": [],
+      "added_at": "2026-11-18T01:17:02+00:00",
+      "updated_at": "2026-11-18T01:17:02+00:00"
+    },
+    {
+      "id": "6bc0fd59b1a9afd0",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ロッテ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 2618,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pacificleague.jp/assets/pdf/pr261106_1.pdf",
+          "evidence_urls": [
+            "https://www.pacificleague.jp/assets/pdf/pr261106_1.pdf"
+          ]
+        },
+        {
+          "incident_id": "f27a29f5766d17aa",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.pacificleague.jp/assets/pdf/pr261106_1.pdf",
+          "evidence_urls": [
+            "https://www.pacificleague.jp/assets/pdf/pr261106_1.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "パシフィックリーグマーケティング株式会社",
+          "url": "https://www.pacificleague.jp/assets/pdf/pr261106_1.pdf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "試合速報メルマガ",
+      "service_aliases": [],
+      "added_at": "2026-11-18T01:17:02+00:00",
+      "updated_at": "2026-11-18T01:17:02+00:00"
+    },
+    {
+      "id": "8eca317c830fcaa9",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "埼玉西武ライオンズ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 2693,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pacificleague.jp/assets/pdf/pr261106_1.pdf",
+          "evidence_urls": [
+            "https://www.pacificleague.jp/assets/pdf/pr261106_1.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "パシフィックリーグマーケティング株式会社",
+          "url": "https://www.pacificleague.jp/assets/pdf/pr261106_1.pdf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "試合速報メルマガ",
+      "service_aliases": [],
+      "added_at": "2026-11-18T01:17:02+00:00",
+      "updated_at": "2026-11-18T01:17:02+00:00"
+    },
+    {
       "id": "bc2f973d5c8a9381",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": null,
@@ -17443,6 +17706,41 @@
       ],
       "added_at": "2026-11-05T15:15:51+00:00",
       "updated_at": "2026-11-12T07:15:39+00:00"
+    },
+    {
+      "id": "f90f196acce7106e",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東北楽天ゴールデンイーグルス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 1165,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pacificleague.jp/assets/pdf/pr261106_1.pdf",
+          "evidence_urls": [
+            "https://www.pacificleague.jp/assets/pdf/pr261106_1.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "パシフィックリーグマーケティング株式会社",
+          "url": "https://www.pacificleague.jp/assets/pdf/pr261106_1.pdf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "試合速報メルマガ",
+      "service_aliases": [],
+      "added_at": "2026-11-18T01:17:02+00:00",
+      "updated_at": "2026-11-18T01:17:02+00:00"
     },
     {
       "id": "08f81b2c1a1c8810",
@@ -21104,6 +21402,10 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOeXQ5U0FlblZaYk1NLU9mbzNjcGJ1RE5zZnRDVHk2ZERhclpETTlxeWZuX3I5bjZPQnVoZTAtdkwyWC1XZFRGVVROSzl3TU12UFozRnFOaWNfUlgtUUk0UHIyeHZNSUdpOXhkRUlONzNvVHZSYmEtSE91WVJFalVQYTRiRDBSOUhwMDlXUC01TndSUWRiT3cyMGxrR202aDZJTWpMdU50cEZMLTVFbWc?oc=5"
+        },
+        {
+          "name": "神戸新聞",
+          "url": "https://www.kobe-np.co.jp/news/himeji/202611/0021044419.shtml"
         }
       ],
       "affected_service": "姫路市オンライン手続ポータルサイト / マイナンバーカード交付予約・管理システム",
@@ -21123,7 +21425,7 @@
         }
       ],
       "added_at": "2026-11-02T20:15:44+00:00",
-      "updated_at": "2026-11-17T08:16:10+00:00"
+      "updated_at": "2026-11-18T01:17:02+00:00"
     },
     {
       "id": "69e127ff7e87f715",
@@ -29360,6 +29662,10 @@
           "url": "https://nttse.com/news/pressrelease/2026/11-06/3292/"
         },
         {
+          "name": "legalagent list",
+          "url": "https://nttse.com/news/pressrelease/2026/11-13/3310/"
+        },
+        {
           "name": "PR TIMES",
           "url": "https://prtimes.jp/main/html/rd/p/000000141.000005498.html"
         },
@@ -29393,7 +29699,7 @@
         }
       ],
       "added_at": "2026-10-30T10:15:57+00:00",
-      "updated_at": "2026-11-13T07:15:40+00:00"
+      "updated_at": "2026-11-18T01:17:02+00:00"
     },
     {
       "id": "a3c09650fe9bed69",
@@ -30310,6 +30616,22 @@
           ]
         },
         {
+          "incident_id": "6b73483a79b6e595",
+          "relationship": "affects",
+          "evidence_url": "https://www.pacificleague.jp/assets/pdf/pr261106_1.pdf",
+          "evidence_urls": [
+            "https://www.pacificleague.jp/assets/pdf/pr261106_1.pdf"
+          ]
+        },
+        {
+          "incident_id": "6bc0fd59b1a9afd0",
+          "relationship": "affects",
+          "evidence_url": "https://www.pacificleague.jp/assets/pdf/pr261106_1.pdf",
+          "evidence_urls": [
+            "https://www.pacificleague.jp/assets/pdf/pr261106_1.pdf"
+          ]
+        },
+        {
           "incident_id": "6ce8d002dff5f408",
           "relationship": "affects",
           "evidence_url": "https://cybersecurity-jp.com/news/118102",
@@ -30597,6 +30919,14 @@
           "evidence_url": "https://www.kagin.co.jp/important/emergency_20261029_3.html",
           "evidence_urls": [
             "https://www.kagin.co.jp/important/emergency_20261029_3.html"
+          ]
+        },
+        {
+          "incident_id": "8eca317c830fcaa9",
+          "relationship": "affects",
+          "evidence_url": "https://www.pacificleague.jp/assets/pdf/pr261106_1.pdf",
+          "evidence_urls": [
+            "https://www.pacificleague.jp/assets/pdf/pr261106_1.pdf"
           ]
         },
         {
@@ -31268,6 +31598,14 @@
           ]
         },
         {
+          "incident_id": "f90f196acce7106e",
+          "relationship": "affects",
+          "evidence_url": "https://www.pacificleague.jp/assets/pdf/pr261106_1.pdf",
+          "evidence_urls": [
+            "https://www.pacificleague.jp/assets/pdf/pr261106_1.pdf"
+          ]
+        },
+        {
           "incident_id": "f945606df6d28bc9",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/bd4e23e7d3d806c3e2d50a86ad704deb766a9e33",
@@ -31340,7 +31678,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-18T00:16:21+00:00"
+      "updated_at": "2026-11-18T01:17:02+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -53221,6 +53559,33 @@
       "updated_at": "2026-11-12T07:15:39+00:00"
     },
     {
+      "id": "f128f858d3c9fb7e",
+      "published_at": "2026-10-14T15:00:00+00:00",
+      "disclosed_at": "2026-10-14T15:00:00+00:00",
+      "organization": "ビューティガレージ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 775725,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/18/56819.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "ECサイト",
+      "service_aliases": [],
+      "added_at": "2026-11-18T01:17:02+00:00",
+      "updated_at": "2026-11-18T01:17:02+00:00"
+    },
+    {
       "id": "2b2999e3154faf79",
       "published_at": "2026-10-14T15:00:00+00:00",
       "disclosed_at": null,
@@ -55867,10 +56232,14 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUC29A6O0Z21C26A0000000/"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/18/56817.html"
         }
       ],
       "added_at": "2026-10-19T08:49:15+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-18T01:17:02+00:00"
     },
     {
       "id": "4c2ef5cff8cc3318",
@@ -58865,10 +59234,14 @@
         {
           "name": "Security NEXT",
           "url": "https://www.security-next.com/192395"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/18/56816.html"
         }
       ],
       "added_at": "2026-10-20T00:15:35+00:00",
-      "updated_at": "2026-11-16T20:15:47+00:00"
+      "updated_at": "2026-11-18T01:17:02+00:00"
     },
     {
       "id": "3efb5e5b1ae80e93",
