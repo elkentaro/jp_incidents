@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-18T20:16:16+00:00",
-  "total": 1430,
+  "updated_at": "2026-11-18T22:15:51+00:00",
+  "total": 1431,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-18"
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-18",
-      "count": 26
+      "count": 27
     },
     {
       "date": "2026-11-19",
@@ -711,6 +711,41 @@
       ],
       "added_at": "2026-11-18T14:16:38+00:00",
       "updated_at": "2026-11-18T20:16:16+00:00"
+    },
+    {
+      "id": "e5cfc5c030029c71",
+      "published_at": "2026-11-17T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東京都",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 320,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.metro.tokyo.lg.jp/information/press/2026/11/2026111819",
+          "evidence_urls": [
+            "https://www.metro.tokyo.lg.jp/information/press/2026/11/2026111819"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "東京都 / Tokyo Metropolitan Government",
+          "url": "https://www.metro.tokyo.lg.jp/information/press/2026/11/2026111819"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "賃貸住宅オーナー支援サイト",
+      "service_aliases": [],
+      "added_at": "2026-11-18T22:15:51+00:00",
+      "updated_at": "2026-11-18T22:15:51+00:00"
     },
     {
       "id": "eea4c1583fc1df4a",
@@ -1110,8 +1145,9 @@
         {
           "incident_id": "0cd8a1c184390c84",
           "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/fa92d76f112d175b81443714312665de065bd67f",
+          "evidence_url": "https://news.yahoo.co.jp/articles/72ff1c768f41cf86680b56fc2087aaecf91c6d16",
           "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/72ff1c768f41cf86680b56fc2087aaecf91c6d16",
             "https://news.yahoo.co.jp/articles/fa92d76f112d175b81443714312665de065bd67f"
           ]
         }
@@ -1124,6 +1160,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/082dfe83b5a87a80c1cdf8850c89905c0529df2c"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/72ff1c768f41cf86680b56fc2087aaecf91c6d16"
         }
       ],
       "affected_system": null,
@@ -1131,7 +1171,7 @@
       "affected_service": "旅客サービスシステム",
       "service_aliases": [],
       "added_at": "2026-11-18T16:15:49+00:00",
-      "updated_at": "2026-11-18T16:15:49+00:00"
+      "updated_at": "2026-11-18T22:15:51+00:00"
     },
     {
       "id": "b0e4d083fd9c05e4",
@@ -1280,12 +1320,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/73dc334fce8b98800001ebfe01bb9eda361f6448"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/mufg-bank-karte-6_5million-official-20261118/"
         }
       ],
       "affected_system": null,
       "date_basis": "ingestion",
       "added_at": "2026-11-18T15:16:38+00:00",
-      "updated_at": "2026-11-18T17:16:21+00:00"
+      "updated_at": "2026-11-18T22:15:51+00:00"
     },
     {
       "id": "130d77193af46ef6",
@@ -6391,6 +6435,10 @@
         {
           "name": "読売新聞",
           "url": "https://www.yomiuri.co.jp/economy/20261118-GYT1T00289/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/mufg-bank-karte-6_5million-official-20261118/"
         }
       ],
       "affected_system": null,
@@ -6398,7 +6446,7 @@
       "affected_service": "三菱UFJ信託ダイレクト",
       "service_aliases": [],
       "added_at": "2026-11-18T15:16:38+00:00",
-      "updated_at": "2026-11-18T20:16:16+00:00"
+      "updated_at": "2026-11-18T22:15:51+00:00"
     },
     {
       "id": "77a23dba97c3a282",
@@ -34373,6 +34421,14 @@
           ]
         },
         {
+          "incident_id": "e5cfc5c030029c71",
+          "relationship": "affects",
+          "evidence_url": "https://www.metro.tokyo.lg.jp/information/press/2026/11/2026111819",
+          "evidence_urls": [
+            "https://www.metro.tokyo.lg.jp/information/press/2026/11/2026111819"
+          ]
+        },
+        {
           "incident_id": "e6d8e4e5cecff122",
           "relationship": "affects",
           "evidence_url": "https://www.imh-sol.co.jp/news/news/N261112.html",
@@ -34557,7 +34613,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-18T15:16:38+00:00"
+      "updated_at": "2026-11-18T22:15:51+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -34908,8 +34964,9 @@
         {
           "incident_id": "abb899a55bfe34f8",
           "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/fa92d76f112d175b81443714312665de065bd67f",
+          "evidence_url": "https://news.yahoo.co.jp/articles/72ff1c768f41cf86680b56fc2087aaecf91c6d16",
           "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/72ff1c768f41cf86680b56fc2087aaecf91c6d16",
             "https://news.yahoo.co.jp/articles/fa92d76f112d175b81443714312665de065bd67f"
           ]
         }
@@ -34921,7 +34978,7 @@
         }
       ],
       "added_at": "2026-10-28T13:16:27+00:00",
-      "updated_at": "2026-11-18T16:15:49+00:00"
+      "updated_at": "2026-11-18T22:15:51+00:00"
     },
     {
       "id": "19b3132af335af7b",
