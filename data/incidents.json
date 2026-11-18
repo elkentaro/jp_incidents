@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-18T17:16:21+00:00",
-  "total": 1425,
+  "updated_at": "2026-11-18T19:15:59+00:00",
+  "total": 1427,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-18"
@@ -126,7 +126,7 @@
     },
     {
       "date": "2026-09-20",
-      "count": 1
+      "count": 2
     },
     {
       "date": "2026-09-21",
@@ -342,7 +342,7 @@
     },
     {
       "date": "2026-11-13",
-      "count": 47
+      "count": 48
     },
     {
       "date": "2026-11-14",
@@ -1147,6 +1147,14 @@
         {
           "name": "マイナビニュース",
           "url": "https://news.mynavi.jp/article/20261118-5354951/"
+        },
+        {
+          "name": "ライブドアニュース",
+          "url": "https://news.livedoor.com/article/detail/32849098/"
+        },
+        {
+          "name": "千葉テレビ放送",
+          "url": "https://www.chiba-tv.com/plus/detail/2026112237382"
         }
       ],
       "affected_system": null,
@@ -1173,7 +1181,7 @@
         }
       ],
       "added_at": "2026-11-18T14:16:38+00:00",
-      "updated_at": "2026-11-18T16:15:49+00:00"
+      "updated_at": "2026-11-18T19:15:59+00:00"
     },
     {
       "id": "dc7a8d07caf7fe9d",
@@ -4388,6 +4396,10 @@
           "url": "https://www.release.tdnet.info/inbs/140120261116581049.pdf"
         },
         {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261118582953.pdf"
+        },
+        {
           "name": "ビジネス+IT",
           "url": "https://www.sbbit.jp/article/cont1/188437"
         },
@@ -4405,7 +4417,7 @@
       "affected_service": "Cacoo",
       "service_aliases": [],
       "added_at": "2026-11-16T05:16:04+00:00",
-      "updated_at": "2026-11-17T21:16:22+00:00"
+      "updated_at": "2026-11-18T19:15:59+00:00"
     },
     {
       "id": "0f5f8567d53f3ad5",
@@ -5342,6 +5354,14 @@
           ]
         },
         {
+          "incident_id": "5a6762ca451c2bb1",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/sms-karte-eichie-nurse-senka-484504-potential-data-leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/sms-karte-eichie-nurse-senka-484504-potential-data-leak/"
+          ]
+        },
+        {
           "incident_id": "5bf28033535fe7f2",
           "relationship": "affects",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/wealthnavi_karte_910000_customers_data_breach/",
@@ -5695,7 +5715,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-18T17:16:21+00:00"
+      "updated_at": "2026-11-18T19:15:59+00:00"
     },
     {
       "id": "9f04a00959566f37",
@@ -6932,6 +6952,61 @@
       "service_aliases": [],
       "added_at": "2026-11-16T12:16:35+00:00",
       "updated_at": "2026-11-16T12:16:35+00:00"
+    },
+    {
+      "id": "5a6762ca451c2bb1",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-17T15:00:00+00:00",
+      "organization": "エス・エム・エス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 484504,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/sms-karte-eichie-nurse-senka-484504-potential-data-leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/sms-karte-eichie-nurse-senka-484504-potential-data-leak/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/sms-karte-eichie-nurse-senka-484504-potential-data-leak/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "エイチエ / エイチエ 転職 / ナース専科 就職",
+      "service_aliases": [],
+      "affected_services": [
+        "エイチエ",
+        "エイチエ 転職",
+        "ナース専科 就職"
+      ],
+      "service_details": [
+        {
+          "name": "エイチエ",
+          "aliases": []
+        },
+        {
+          "name": "エイチエ 転職",
+          "aliases": []
+        },
+        {
+          "name": "ナース専科 就職",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-18T19:15:59+00:00",
+      "updated_at": "2026-11-18T19:15:59+00:00"
     },
     {
       "id": "b426c3fbbc0eae98",
@@ -62993,16 +63068,20 @@
           "url": "https://skyticket.jp/news/maintenance/67603"
         },
         {
-          "name": "日本取引所グループ TDnet / JPX TDnet",
-          "url": "https://www.release.tdnet.info/inbs/140120261027557101.pdf"
-        },
-        {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/117849"
         },
         {
           "name": "satimo list",
           "url": "https://jp.adventurekk.com/news/security-incident-update-3/"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261027557101.pdf"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261118582686.pdf"
         },
         {
           "name": "INTERNET Watch",
@@ -63016,7 +63095,7 @@
       "affected_service": "skyticket",
       "service_aliases": [],
       "added_at": "2026-10-20T23:55:01+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-18T19:15:59+00:00"
     },
     {
       "id": "5e7167bf3d6672b5",
@@ -63395,6 +63474,31 @@
       ],
       "added_at": "2026-10-21T04:01:51+00:00",
       "updated_at": "2026-11-12T07:15:39+00:00"
+    },
+    {
+      "id": "f5bd0f1b378e6b8e",
+      "published_at": "2026-09-19T15:00:00+00:00",
+      "disclosed_at": "2026-10-08T15:00:00+00:00",
+      "organization": "アドベンチャー",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1166,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261118582686/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "added_at": "2026-11-18T19:15:59+00:00",
+      "updated_at": "2026-11-18T19:15:59+00:00"
     },
     {
       "id": "0c2e7998c50a46ac",
