@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-18T23:23:22+00:00",
-  "total": 1444,
+  "updated_at": "2026-11-19T00:15:50+00:00",
+  "total": 1445,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-19"
@@ -330,7 +330,7 @@
     },
     {
       "date": "2026-11-10",
-      "count": 52
+      "count": 53
     },
     {
       "date": "2026-11-11",
@@ -342,7 +342,7 @@
     },
     {
       "date": "2026-11-13",
-      "count": 48
+      "count": 49
     },
     {
       "date": "2026-11-14",
@@ -350,7 +350,7 @@
     },
     {
       "date": "2026-11-15",
-      "count": 12
+      "count": 11
     },
     {
       "date": "2026-11-16",
@@ -693,6 +693,65 @@
       "date_basis": "publication",
       "added_at": "2026-11-18T23:14:19+00:00",
       "updated_at": "2026-11-18T23:14:19+00:00"
+    },
+    {
+      "id": "073f272eda1d2604",
+      "published_at": "2026-11-17T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "DHC",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 19110000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "3f9647cdc55cfd86",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/0fedc66ae1a7bd4b885bdbb411b74a041edcb100",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/0fedc66ae1a7bd4b885bdbb411b74a041edcb100"
+          ]
+        },
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/0fedc66ae1a7bd4b885bdbb411b74a041edcb100",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/0fedc66ae1a7bd4b885bdbb411b74a041edcb100"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/dhc_karte_1911man_data_breach_20261118/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/0fedc66ae1a7bd4b885bdbb411b74a041edcb100"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC1886Z0Y6A111C2000000/"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVCL36JPVCLULFA01QM.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/3d64a1c20a5dbe55b9d37b7f7d89438778891863"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "オンラインショップ",
+      "service_aliases": [],
+      "added_at": "2026-11-18T15:16:38+00:00",
+      "updated_at": "2026-11-19T00:15:50+00:00"
     },
     {
       "id": "0fcc9607828441b5",
@@ -1188,61 +1247,6 @@
       ],
       "added_at": "2026-11-18T15:16:38+00:00",
       "updated_at": "2026-11-18T23:14:19+00:00"
-    },
-    {
-      "id": "073f272eda1d2604",
-      "published_at": "2026-11-17T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "DHC",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 19110000,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "3f9647cdc55cfd86",
-          "relationship": "same_organization",
-          "evidence_url": "https://news.yahoo.co.jp/articles/0fedc66ae1a7bd4b885bdbb411b74a041edcb100",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/0fedc66ae1a7bd4b885bdbb411b74a041edcb100"
-          ]
-        },
-        {
-          "incident_id": "8cf67a97b55e1d57",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/0fedc66ae1a7bd4b885bdbb411b74a041edcb100",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/0fedc66ae1a7bd4b885bdbb411b74a041edcb100"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/0fedc66ae1a7bd4b885bdbb411b74a041edcb100"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUC1886Z0Y6A111C2000000/"
-        },
-        {
-          "name": "朝日新聞",
-          "url": "https://www.asahi.com/articles/ASVCL36JPVCLULFA01QM.html"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/3d64a1c20a5dbe55b9d37b7f7d89438778891863"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "publication",
-      "affected_service": "オンラインショップ",
-      "service_aliases": [],
-      "added_at": "2026-11-18T15:16:38+00:00",
-      "updated_at": "2026-11-18T20:16:16+00:00"
     },
     {
       "id": "1201ced411a31d6a",
@@ -4300,42 +4304,6 @@
       "updated_at": "2026-11-18T02:17:02+00:00"
     },
     {
-      "id": "0a5e91817dd2bb5b",
-      "published_at": "2026-11-14T15:00:00+00:00",
-      "disclosed_at": "2026-11-16T15:00:00+00:00",
-      "organization": "日本経済新聞社",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [
-        {
-          "incident_id": "8cf67a97b55e1d57",
-          "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/nikkei-digital-karte-personal-data-possible-leak-2026/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/nikkei-digital-karte-personal-data-possible-leak-2026/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/nikkei-digital-karte-personal-data-possible-leak-2026/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "discovery",
-      "affected_service": "日経電子版",
-      "service_aliases": [],
-      "added_at": "2026-11-18T06:16:13+00:00",
-      "updated_at": "2026-11-18T06:16:13+00:00"
-    },
-    {
       "id": "0e8787297a9ff464",
       "published_at": "2026-11-14T15:00:00+00:00",
       "disclosed_at": null,
@@ -4423,6 +4391,7 @@
           "evidence_url": "https://cybersecurity-jp.com/news/118609",
           "evidence_urls": [
             "https://cybersecurity-jp.com/news/118609",
+            "https://rocket-boys.co.jp/security-measures-lab/nikkei-digital-karte-personal-data-possible-leak-2026/",
             "https://www.nikkei.com/article/DGXZQOUD176VF0X11C26A1000000/"
           ]
         }
@@ -4431,6 +4400,10 @@
         {
           "name": "RTB SQUARE",
           "url": "https://rtbsquare.work/archives/62380"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/nikkei-digital-karte-personal-data-possible-leak-2026/"
         },
         {
           "name": "日本経済新聞",
@@ -4458,7 +4431,7 @@
       "affected_service": "日経電子版",
       "service_aliases": [],
       "added_at": "2026-11-17T11:16:33+00:00",
-      "updated_at": "2026-11-18T02:17:02+00:00"
+      "updated_at": "2026-11-19T00:15:50+00:00"
     },
     {
       "id": "45db9ec047a44b07",
@@ -5816,14 +5789,6 @@
           ]
         },
         {
-          "incident_id": "0a5e91817dd2bb5b",
-          "relationship": "affects",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/nikkei-digital-karte-personal-data-possible-leak-2026/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/nikkei-digital-karte-personal-data-possible-leak-2026/"
-          ]
-        },
-        {
           "incident_id": "0e8787297a9ff464",
           "relationship": "affects",
           "evidence_url": "https://www.nikkei.com/article/DGXZQOCC17A1V0X11C26A1000000/",
@@ -5862,6 +5827,7 @@
           "evidence_url": "https://cybersecurity-jp.com/news/118609",
           "evidence_urls": [
             "https://cybersecurity-jp.com/news/118609",
+            "https://rocket-boys.co.jp/security-measures-lab/nikkei-digital-karte-personal-data-possible-leak-2026/",
             "https://www.nikkei.com/article/DGXZQOUD176VF0X11C26A1000000/"
           ]
         },
@@ -6150,6 +6116,14 @@
           ]
         },
         {
+          "incident_id": "b46965fe896ac0d6",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/basefood_karte_customer_data_leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/basefood_karte_customer_data_leak/"
+          ]
+        },
+        {
           "incident_id": "bba46f64d143e93c",
           "relationship": "affects",
           "evidence_url": "https://company.golfdigest.co.jp/corp/pr/2026111701.html",
@@ -6330,7 +6304,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-18T23:23:22+00:00"
+      "updated_at": "2026-11-19T00:15:50+00:00"
     },
     {
       "id": "9f04a00959566f37",
@@ -7725,6 +7699,41 @@
       ],
       "added_at": "2026-11-18T06:16:13+00:00",
       "updated_at": "2026-11-18T06:16:13+00:00"
+    },
+    {
+      "id": "b46965fe896ac0d6",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-17T15:00:00+00:00",
+      "organization": "ベースフード",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 710000,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/basefood_karte_customer_data_leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/basefood_karte_customer_data_leak/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/basefood_karte_customer_data_leak/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "KARTE",
+      "service_aliases": [],
+      "added_at": "2026-11-19T00:15:50+00:00",
+      "updated_at": "2026-11-19T00:15:50+00:00"
     },
     {
       "id": "c315588305545d55",
@@ -10362,6 +10371,36 @@
       "updated_at": "2026-11-15T00:16:10+00:00"
     },
     {
+      "id": "6c8020e3a8914aab",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": "2026-11-10T15:00:00+00:00",
+      "organization": "LRM",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/weekly-csirt-2026-11-week3/"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56840.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "Notion AI",
+      "service_aliases": [],
+      "added_at": "2026-11-18T01:17:02+00:00",
+      "updated_at": "2026-11-19T00:15:50+00:00"
+    },
+    {
       "id": "7096e4d90c137dbf",
       "published_at": "2026-11-10T15:00:00+00:00",
       "disclosed_at": "2026-11-15T15:00:00+00:00",
@@ -10800,32 +10839,6 @@
       "updated_at": "2026-11-13T07:15:40+00:00"
     },
     {
-      "id": "6c8020e3a8914aab",
-      "published_at": "2026-11-10T15:00:00+00:00",
-      "disclosed_at": "2026-11-10T15:00:00+00:00",
-      "organization": "LRM",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/weekly-csirt-2026-11-week3/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "first_disclosure",
-      "affected_service": "Notion AI",
-      "service_aliases": [],
-      "added_at": "2026-11-18T01:17:02+00:00",
-      "updated_at": "2026-11-18T01:17:02+00:00"
-    },
-    {
       "id": "8137a2c5288aadc4",
       "published_at": "2026-11-10T15:00:00+00:00",
       "disclosed_at": "2026-11-15T15:00:00+00:00",
@@ -11175,7 +11188,8 @@
       "organization": "イオンスマートテクノロジー",
       "incident_type": "data leak",
       "incident_categories": [
-        "data leak"
+        "data leak",
+        "unauthorized access"
       ],
       "potential_records": 414,
       "confidence": "high",
@@ -11238,12 +11252,16 @@
         {
           "name": "リスク対策.com",
           "url": "https://www.risktaisaku.com/articles/-/117074"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56836.html"
         }
       ],
       "affected_service": "ギフト承りシステム",
       "service_aliases": [],
       "added_at": "2026-11-10T13:17:15+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-19T00:15:50+00:00"
     },
     {
       "id": "480305accdcb6db8",
@@ -12070,12 +12088,16 @@
         {
           "name": "www.lrm.jp",
           "url": "https://www.lrm.jp/info/news/info_20261111/"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56841.html"
         }
       ],
       "affected_service": "Notion AI",
       "service_aliases": [],
       "added_at": "2026-11-12T22:15:17+00:00",
-      "updated_at": "2026-11-12T22:15:17+00:00"
+      "updated_at": "2026-11-19T00:15:50+00:00"
     },
     {
       "id": "ec31abf8743bfd28",
@@ -12333,6 +12355,33 @@
       ],
       "added_at": "2026-11-10T20:15:39+00:00",
       "updated_at": "2026-11-12T07:15:39+00:00"
+    },
+    {
+      "id": "4427067bcb3be1ff",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": "2026-11-12T15:00:00+00:00",
+      "organization": "スリーシェイク",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 363,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56839.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "Notion AI",
+      "service_aliases": [],
+      "added_at": "2026-11-19T00:15:50+00:00",
+      "updated_at": "2026-11-19T00:15:50+00:00"
     },
     {
       "id": "581b234adcc00f32",
@@ -49929,10 +49978,6 @@
       "related": [],
       "sources": [
         {
-          "name": "日本取引所グループ TDnet / JPX TDnet",
-          "url": "https://www.release.tdnet.info/inbs/140120261023555328.pdf"
-        },
-        {
           "name": "legalagent list",
           "url": "https://ssl4.eir-parts.net/doc/3093/tdnet/2898019/00.pdf"
         },
@@ -49941,16 +49986,24 @@
           "url": "https://www.treasure-f.com/info/detail/st825"
         },
         {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261023555328.pdf"
+        },
+        {
           "name": "Yahoo!ニュース",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE44LWdVX1loSkVPTFozRnVVT3lLSkJWR2hSWXFfWjdraWx0bEIzZEd5a0tGUUsxZUNBUk51TnVnVFFVOTQwb3M3ZHNPN21XbUN4ZGNISzJBejQtOUEtSGJTT2FoclVzMXFpVm5xUUotMmx1dm94ME5rTHN4Y21lOEU?oc=5"
         },
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/117748"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56834.html"
         }
       ],
       "added_at": "2026-10-23T08:16:11+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-19T00:15:50+00:00"
     },
     {
       "id": "a8dad4a06e50a1a5",
@@ -63684,18 +63737,22 @@
       ],
       "potential_records": 894082,
       "confidence": "medium",
-      "confidence_score": 30,
+      "confidence_score": 50,
       "related": [],
       "sources": [
         {
           "name": "satimo list",
           "url": "https://gmo-research.ai/pressroom/notice/notice-20261111"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/19/56838.html"
         }
       ],
       "affected_service": "infoQ",
       "service_aliases": [],
       "added_at": "2026-11-12T22:15:17+00:00",
-      "updated_at": "2026-11-12T22:15:17+00:00"
+      "updated_at": "2026-11-19T00:15:50+00:00"
     },
     {
       "id": "3e3633513c456478",
@@ -65213,6 +65270,7 @@
     "7b197da5898c13ba": "c315588305545d55",
     "fe3955ab5daa9251": "c315588305545d55",
     "92401d7ee52f9b03": "c315588305545d55",
-    "eabeef8122751e9d": "8132159128c70bb6"
+    "eabeef8122751e9d": "8132159128c70bb6",
+    "0a5e91817dd2bb5b": "20f151f23e74c369"
   }
 }
