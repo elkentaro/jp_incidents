@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-19T12:19:03+00:00",
-  "total": 1478,
+  "updated_at": "2026-11-19T13:18:58+00:00",
+  "total": 1481,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-19"
@@ -354,11 +354,11 @@
     },
     {
       "date": "2026-11-16",
-      "count": 30
+      "count": 31
     },
     {
       "date": "2026-11-17",
-      "count": 32
+      "count": 33
     },
     {
       "date": "2026-11-18",
@@ -366,7 +366,7 @@
     },
     {
       "date": "2026-11-19",
-      "count": 18
+      "count": 19
     }
   ],
   "incidents": [
@@ -586,9 +586,10 @@
         {
           "incident_id": "8cf67a97b55e1d57",
           "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/8135465687bd661bffdb14e91f3367079ec95691",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUC198K80Z11C26A1000000/",
           "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/8135465687bd661bffdb14e91f3367079ec95691"
+            "https://news.yahoo.co.jp/articles/8135465687bd661bffdb14e91f3367079ec95691",
+            "https://www.nikkei.com/article/DGXZQOUC198K80Z11C26A1000000/"
           ]
         }
       ],
@@ -596,6 +597,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/8135465687bd661bffdb14e91f3367079ec95691"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC198K80Z11C26A1000000/"
         }
       ],
       "affected_system": null,
@@ -603,7 +608,7 @@
       "affected_service": "毎日新聞デジタルのニュースアプリ",
       "service_aliases": [],
       "added_at": "2026-11-19T10:17:50+00:00",
-      "updated_at": "2026-11-19T10:17:50+00:00"
+      "updated_at": "2026-11-19T13:18:58+00:00"
     },
     {
       "id": "70722c164738fbef",
@@ -632,6 +637,10 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUC197X90Z11C26A1000000/"
+        },
+        {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp/15256587.html"
         }
       ],
       "affected_system": null,
@@ -641,7 +650,7 @@
         "コマド"
       ],
       "added_at": "2026-11-19T10:17:50+00:00",
-      "updated_at": "2026-11-19T10:17:50+00:00"
+      "updated_at": "2026-11-19T13:18:58+00:00"
     },
     {
       "id": "757876f3fce6084e",
@@ -1013,6 +1022,39 @@
       "date_basis": "publication",
       "added_at": "2026-11-18T23:23:22+00:00",
       "updated_at": "2026-11-18T23:23:22+00:00"
+    },
+    {
+      "id": "fd211f8704837b06",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "リンベル株式会社",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "7cbbacf6bb6ad215",
+          "relationship": "affects",
+          "evidence_url": "https://www.metro.tokyo.lg.jp/information/press/2026/11/2026111905",
+          "evidence_urls": [
+            "https://www.metro.tokyo.lg.jp/information/press/2026/11/2026111905"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "東京都 / Tokyo Metropolitan Government",
+          "url": "https://www.metro.tokyo.lg.jp/information/press/2026/11/2026111905"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-19T13:18:58+00:00",
+      "updated_at": "2026-11-19T13:18:58+00:00"
     },
     {
       "id": "073f272eda1d2604",
@@ -2730,8 +2772,9 @@
         {
           "incident_id": "57d15baf7435e548",
           "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/cover_hololive_openlogi_former_shipping_vendor_300_records/",
+          "evidence_url": "https://news.yahoo.co.jp/articles/053214d4368ed6644638e48f82f71a42594a0ac7",
           "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/053214d4368ed6644638e48f82f71a42594a0ac7",
             "https://rocket-boys.co.jp/security-measures-lab/cover_hololive_openlogi_former_shipping_vendor_300_records/"
           ]
         }
@@ -2740,6 +2783,10 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/cover_hololive_openlogi_former_shipping_vendor_300_records/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/053214d4368ed6644638e48f82f71a42594a0ac7"
         }
       ],
       "affected_system": null,
@@ -2747,7 +2794,7 @@
       "affected_service": "hololive production OFFICIAL SHOP",
       "service_aliases": [],
       "added_at": "2026-11-18T15:16:38+00:00",
-      "updated_at": "2026-11-18T15:16:38+00:00"
+      "updated_at": "2026-11-19T13:18:58+00:00"
     },
     {
       "id": "72719afb4550b10c",
@@ -2817,6 +2864,41 @@
       "service_aliases": [],
       "added_at": "2026-11-17T20:16:23+00:00",
       "updated_at": "2026-11-18T05:16:01+00:00"
+    },
+    {
+      "id": "7cbbacf6bb6ad215",
+      "published_at": "2026-11-16T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東京都",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "fd211f8704837b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.metro.tokyo.lg.jp/information/press/2026/11/2026111905",
+          "evidence_urls": [
+            "https://www.metro.tokyo.lg.jp/information/press/2026/11/2026111905"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "東京都 / Tokyo Metropolitan Government",
+          "url": "https://www.metro.tokyo.lg.jp/information/press/2026/11/2026111905"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "赤ちゃんファーストポイント交換サイト",
+      "service_aliases": [],
+      "added_at": "2026-11-19T13:18:58+00:00",
+      "updated_at": "2026-11-19T13:18:58+00:00"
     },
     {
       "id": "8cb6d0590720520f",
@@ -4501,7 +4583,16 @@
       "potential_records": 12641,
       "confidence": "high",
       "confidence_score": 70,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "5950ce3c15f03084",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/1a4d093e6ac11fcb23808efc0e3a0ca422e7e00b",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/1a4d093e6ac11fcb23808efc0e3a0ca422e7e00b"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "PR TIMES",
@@ -4513,7 +4604,7 @@
       "affected_service": "トリビュー",
       "service_aliases": [],
       "added_at": "2026-11-19T04:16:16+00:00",
-      "updated_at": "2026-11-19T04:16:16+00:00"
+      "updated_at": "2026-11-19T13:18:58+00:00"
     },
     {
       "id": "dff8577ff2d1786f",
@@ -4537,12 +4628,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/e02ba7b5e39b43fbe415f05b25e6f5d0c9dc16b5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/1a4d093e6ac11fcb23808efc0e3a0ca422e7e00b"
         }
       ],
       "affected_system": null,
       "date_basis": "discovery",
       "added_at": "2026-11-19T04:16:16+00:00",
-      "updated_at": "2026-11-19T10:17:50+00:00"
+      "updated_at": "2026-11-19T13:18:58+00:00"
     },
     {
       "id": "3132aa2481a76c3b",
@@ -4647,6 +4742,41 @@
       "service_aliases": [],
       "added_at": "2026-11-16T08:15:31+00:00",
       "updated_at": "2026-11-16T08:15:31+00:00"
+    },
+    {
+      "id": "5950ce3c15f03084",
+      "published_at": "2026-11-15T15:00:00+00:00",
+      "disclosed_at": "2026-11-18T15:00:00+00:00",
+      "organization": "SBCメディカルグループ",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "5e3c502af101c38f",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/1a4d093e6ac11fcb23808efc0e3a0ca422e7e00b",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/1a4d093e6ac11fcb23808efc0e3a0ca422e7e00b"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/1a4d093e6ac11fcb23808efc0e3a0ca422e7e00b"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "トリビュー",
+      "service_aliases": [],
+      "added_at": "2026-11-19T13:18:58+00:00",
+      "updated_at": "2026-11-19T13:18:58+00:00"
     },
     {
       "id": "59f08b559e7aee70",
@@ -6800,6 +6930,10 @@
         {
           "name": "株式会社タイミー",
           "url": "https://corp.timee.co.jp/news/detail-7442/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/80efdf1c3d3c088dee76bfc257889493ea391ca3"
         }
       ],
       "affected_system": null,
@@ -6807,7 +6941,7 @@
       "affected_service": "求人事業者の担当者情報",
       "service_aliases": [],
       "added_at": "2026-11-19T10:17:50+00:00",
-      "updated_at": "2026-11-19T11:17:52+00:00"
+      "updated_at": "2026-11-19T13:18:58+00:00"
     },
     {
       "id": "872c6ee1daba8835",
@@ -6972,9 +7106,10 @@
         {
           "incident_id": "128eb44ae7a35d8e",
           "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/8135465687bd661bffdb14e91f3367079ec95691",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUC198K80Z11C26A1000000/",
           "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/8135465687bd661bffdb14e91f3367079ec95691"
+            "https://news.yahoo.co.jp/articles/8135465687bd661bffdb14e91f3367079ec95691",
+            "https://www.nikkei.com/article/DGXZQOUC198K80Z11C26A1000000/"
           ]
         },
         {
@@ -7047,9 +7182,10 @@
         {
           "incident_id": "465abde53357a577",
           "relationship": "affects",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/sharp-cocoro-store-karte-3264445-data-leak-risk-2026/",
+          "evidence_url": "https://www.asahi.co.jp/webnews/pages/abc_63684.html",
           "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/sharp-cocoro-store-karte-3264445-data-leak-risk-2026/"
+            "https://rocket-boys.co.jp/security-measures-lab/sharp-cocoro-store-karte-3264445-data-leak-risk-2026/",
+            "https://www.asahi.co.jp/webnews/pages/abc_63684.html"
           ]
         },
         {
@@ -7579,7 +7715,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-19T12:19:03+00:00"
+      "updated_at": "2026-11-19T13:18:58+00:00"
     },
     {
       "id": "9f04a00959566f37",
@@ -8195,6 +8331,52 @@
       "service_aliases": [],
       "added_at": "2026-11-13T14:16:28+00:00",
       "updated_at": "2026-11-13T14:16:28+00:00"
+    },
+    {
+      "id": "465abde53357a577",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-18T15:00:00+00:00",
+      "organization": "シャープ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 3264445,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.asahi.co.jp/webnews/pages/abc_63684.html",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/sharp-cocoro-store-karte-3264445-data-leak-risk-2026/",
+            "https://www.asahi.co.jp/webnews/pages/abc_63684.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/sharp-cocoro-store-karte-3264445-data-leak-risk-2026/"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUF1958Y0Z11C26A1000000/"
+        },
+        {
+          "name": "朝日放送",
+          "url": "https://www.asahi.co.jp/webnews/pages/abc_63684.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "COCORO STORE",
+      "service_aliases": [
+        "ココロストア"
+      ],
+      "added_at": "2026-11-19T10:17:50+00:00",
+      "updated_at": "2026-11-19T13:18:58+00:00"
     },
     {
       "id": "690093b769061da8",
@@ -8965,41 +9147,6 @@
       ],
       "added_at": "2026-11-18T03:16:31+00:00",
       "updated_at": "2026-11-18T03:16:31+00:00"
-    },
-    {
-      "id": "465abde53357a577",
-      "published_at": "2026-11-12T15:00:00+00:00",
-      "disclosed_at": "2026-11-18T15:00:00+00:00",
-      "organization": "シャープ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 3264445,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "8cf67a97b55e1d57",
-          "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/sharp-cocoro-store-karte-3264445-data-leak-risk-2026/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/sharp-cocoro-store-karte-3264445-data-leak-risk-2026/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/sharp-cocoro-store-karte-3264445-data-leak-risk-2026/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "discovery",
-      "affected_service": "COCORO STORE",
-      "service_aliases": [],
-      "added_at": "2026-11-19T10:17:50+00:00",
-      "updated_at": "2026-11-19T10:17:50+00:00"
     },
     {
       "id": "59ebb41839af7cc6",
@@ -16354,8 +16501,9 @@
         {
           "incident_id": "62de74da8e91370f",
           "relationship": "affects",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/cover_hololive_openlogi_former_shipping_vendor_300_records/",
+          "evidence_url": "https://news.yahoo.co.jp/articles/053214d4368ed6644638e48f82f71a42594a0ac7",
           "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/053214d4368ed6644638e48f82f71a42594a0ac7",
             "https://rocket-boys.co.jp/security-measures-lab/cover_hololive_openlogi_former_shipping_vendor_300_records/"
           ]
         },
@@ -16484,7 +16632,7 @@
         }
       ],
       "added_at": "2026-11-11T09:15:59+00:00",
-      "updated_at": "2026-11-18T23:23:22+00:00"
+      "updated_at": "2026-11-19T13:18:58+00:00"
     },
     {
       "id": "cb69602b79e76443",
