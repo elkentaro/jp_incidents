@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-19T08:17:17+00:00",
-  "total": 1471,
+  "updated_at": "2026-11-19T10:17:50+00:00",
+  "total": 1476,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-19"
@@ -342,7 +342,7 @@
     },
     {
       "date": "2026-11-13",
-      "count": 52
+      "count": 54
     },
     {
       "date": "2026-11-14",
@@ -362,11 +362,11 @@
     },
     {
       "date": "2026-11-18",
-      "count": 35
+      "count": 36
     },
     {
       "date": "2026-11-19",
-      "count": 13
+      "count": 15
     }
   ],
   "incidents": [
@@ -532,6 +532,79 @@
       ],
       "added_at": "2026-11-19T02:15:42+00:00",
       "updated_at": "2026-11-19T02:15:42+00:00"
+    },
+    {
+      "id": "128eb44ae7a35d8e",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "毎日新聞社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 140000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/8135465687bd661bffdb14e91f3367079ec95691",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/8135465687bd661bffdb14e91f3367079ec95691"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/8135465687bd661bffdb14e91f3367079ec95691"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "毎日新聞デジタルのニュースアプリ",
+      "service_aliases": [],
+      "added_at": "2026-11-19T10:17:50+00:00",
+      "updated_at": "2026-11-19T10:17:50+00:00"
+    },
+    {
+      "id": "70722c164738fbef",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "サントリーウエルネス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 947667,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUC197X90Z11C26A1000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUC197X90Z11C26A1000000/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC197X90Z11C26A1000000/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "Comado",
+      "service_aliases": [
+        "コマド"
+      ],
+      "added_at": "2026-11-19T10:17:50+00:00",
+      "updated_at": "2026-11-19T10:17:50+00:00"
     },
     {
       "id": "35af713e1d0b2a3b",
@@ -1350,6 +1423,56 @@
       "updated_at": "2026-11-19T04:16:16+00:00"
     },
     {
+      "id": "9cea6db91e42ce70",
+      "published_at": "2026-11-17T15:00:00+00:00",
+      "disclosed_at": "2026-11-17T15:00:00+00:00",
+      "organization": "エン株式会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 12474,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/en-inc-karte-mid-tenshoku-12474-business-emails-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/en-inc-karte-mid-tenshoku-12474-business-emails-2026/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/en-inc-karte-mid-tenshoku-12474-business-emails-2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "ミドルの転職 / エン転職",
+      "service_aliases": [],
+      "affected_services": [
+        "ミドルの転職",
+        "エン転職"
+      ],
+      "service_details": [
+        {
+          "name": "ミドルの転職",
+          "aliases": []
+        },
+        {
+          "name": "エン転職",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-19T10:17:50+00:00",
+      "updated_at": "2026-11-19T10:17:50+00:00"
+    },
+    {
       "id": "a745cf2a4ec15790",
       "published_at": "2026-11-17T15:00:00+00:00",
       "disclosed_at": null,
@@ -2069,6 +2192,10 @@
         {
           "name": "読売新聞",
           "url": "https://www.yomiuri.co.jp/economy/20261118-GYT1T00289/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118631"
         }
       ],
       "affected_system": null,
@@ -2078,7 +2205,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-18T15:16:38+00:00",
-      "updated_at": "2026-11-18T20:16:16+00:00"
+      "updated_at": "2026-11-19T10:17:50+00:00"
     },
     {
       "id": "d1cfed978db69b09",
@@ -4328,12 +4455,16 @@
         {
           "name": "PR TIMES",
           "url": "https://prtimes.jp/main/html/rd/p/000000416.000097803.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/e02ba7b5e39b43fbe415f05b25e6f5d0c9dc16b5"
         }
       ],
       "affected_system": null,
       "date_basis": "discovery",
       "added_at": "2026-11-19T04:16:16+00:00",
-      "updated_at": "2026-11-19T04:16:16+00:00"
+      "updated_at": "2026-11-19T10:17:50+00:00"
     },
     {
       "id": "3132aa2481a76c3b",
@@ -5277,6 +5408,10 @@
         {
           "name": "legalagent list",
           "url": "https://www.legoland.jp/operation/news/news-release/news20261118/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/legoland-japan-accesso-annual-pass-data-breach-2026/"
         }
       ],
       "affected_system": null,
@@ -5284,7 +5419,7 @@
       "affected_service": "年間パスポート",
       "service_aliases": [],
       "added_at": "2026-11-19T02:15:42+00:00",
-      "updated_at": "2026-11-19T02:15:42+00:00"
+      "updated_at": "2026-11-19T10:17:50+00:00"
     },
     {
       "id": "a55deee80e6bebf6",
@@ -6557,6 +6692,41 @@
       "updated_at": "2026-11-18T00:16:21+00:00"
     },
     {
+      "id": "80b904ca2b008feb",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-18T15:00:00+00:00",
+      "organization": "タイミー",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 226662,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/timee_karte_employer_data_leak_226662_20261119/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/timee_karte_employer_data_leak_226662_20261119/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/timee_karte_employer_data_leak_226662_20261119/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "求人事業者の担当者情報",
+      "service_aliases": [],
+      "added_at": "2026-11-19T10:17:50+00:00",
+      "updated_at": "2026-11-19T10:17:50+00:00"
+    },
+    {
       "id": "872c6ee1daba8835",
       "published_at": "2026-11-12T15:00:00+00:00",
       "disclosed_at": null,
@@ -6643,10 +6813,14 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118608"
+        },
+        {
+          "name": "ニコニコニュース",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1FQjJSakt5Z2VuZ1RFTWUwNkxBOC00UlhnSG9aZXgtSkExZDI4X0c0MlI1RFVwVzZ3QU9LSllNOEFnOTF3LU8xOGtEeTBSS3ZqTHUtbm1VQVY2STlMUVZYM0FEeUdSbXRjNThpMGhDNUpoSWhmVWlyMFFNdw?oc=5"
         }
       ],
       "added_at": "2026-11-17T20:16:23+00:00",
-      "updated_at": "2026-11-18T02:17:02+00:00"
+      "updated_at": "2026-11-19T10:17:50+00:00"
     },
     {
       "id": "8cf67a97b55e1d57",
@@ -6701,6 +6875,14 @@
           "evidence_url": "https://news.yahoo.co.jp/articles/73dc334fce8b98800001ebfe01bb9eda361f6448",
           "evidence_urls": [
             "https://news.yahoo.co.jp/articles/73dc334fce8b98800001ebfe01bb9eda361f6448"
+          ]
+        },
+        {
+          "incident_id": "128eb44ae7a35d8e",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/8135465687bd661bffdb14e91f3367079ec95691",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/8135465687bd661bffdb14e91f3367079ec95691"
           ]
         },
         {
@@ -6768,6 +6950,14 @@
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/",
           "evidence_urls": [
             "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/"
+          ]
+        },
+        {
+          "incident_id": "465abde53357a577",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/sharp-cocoro-store-karte-3264445-data-leak-risk-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/sharp-cocoro-store-karte-3264445-data-leak-risk-2026/"
           ]
         },
         {
@@ -6884,6 +7074,14 @@
           ]
         },
         {
+          "incident_id": "70722c164738fbef",
+          "relationship": "affects",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUC197X90Z11C26A1000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUC197X90Z11C26A1000000/"
+          ]
+        },
+        {
           "incident_id": "7231ef4006522bd1",
           "relationship": "affects",
           "evidence_url": "https://tscubic.com/toyota-wallet/information/2026/20261118-01/",
@@ -6940,6 +7138,14 @@
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/caitech-karte-for-app-post-contract-data-retention-breach/",
           "evidence_urls": [
             "https://rocket-boys.co.jp/security-measures-lab/caitech-karte-for-app-post-contract-data-retention-breach/"
+          ]
+        },
+        {
+          "incident_id": "80b904ca2b008feb",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/timee_karte_employer_data_leak_226662_20261119/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/timee_karte_employer_data_leak_226662_20261119/"
           ]
         },
         {
@@ -7022,6 +7228,14 @@
           "evidence_url": "https://about.goldwin.co.jp/news/page-41040",
           "evidence_urls": [
             "https://about.goldwin.co.jp/news/page-41040"
+          ]
+        },
+        {
+          "incident_id": "9cea6db91e42ce70",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/en-inc-karte-mid-tenshoku-12474-business-emails-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/en-inc-karte-mid-tenshoku-12474-business-emails-2026/"
           ]
         },
         {
@@ -7273,7 +7487,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-19T08:17:17+00:00"
+      "updated_at": "2026-11-19T10:17:50+00:00"
     },
     {
       "id": "9f04a00959566f37",
@@ -8253,6 +8467,80 @@
       "updated_at": "2026-11-15T22:15:59+00:00"
     },
     {
+      "id": "b426c3fbbc0eae98",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-17T15:00:00+00:00",
+      "organization": "ユニフォームネクスト",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1701006,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/uniform_next_karte_1701006_corporate_abuse_countermeasures_2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/uniform_next_karte_1701006_corporate_abuse_countermeasures_2026/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/uniform_next_karte_1701006_corporate_abuse_countermeasures_2026/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/1d1be491c3791c7183b5f572e4dc1f1d8fad107b"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "ユニフォームネクスト / オフィスユニフォーム / クリニックユニフォーム / フードユニフォーム / ユニネク® / ワークユニフォーム",
+      "service_aliases": [],
+      "affected_services": [
+        "ユニフォームネクスト",
+        "オフィスユニフォーム",
+        "クリニックユニフォーム",
+        "フードユニフォーム",
+        "ユニネク®",
+        "ワークユニフォーム"
+      ],
+      "service_details": [
+        {
+          "name": "ユニフォームネクスト",
+          "aliases": []
+        },
+        {
+          "name": "オフィスユニフォーム",
+          "aliases": []
+        },
+        {
+          "name": "クリニックユニフォーム",
+          "aliases": []
+        },
+        {
+          "name": "フードユニフォーム",
+          "aliases": []
+        },
+        {
+          "name": "ユニネク®",
+          "aliases": []
+        },
+        {
+          "name": "ワークユニフォーム",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-18T06:16:13+00:00",
+      "updated_at": "2026-11-19T10:17:50+00:00"
+    },
+    {
       "id": "b43207447bccc1b7",
       "published_at": "2026-11-12T15:00:00+00:00",
       "disclosed_at": null,
@@ -8587,6 +8875,41 @@
       "updated_at": "2026-11-18T03:16:31+00:00"
     },
     {
+      "id": "465abde53357a577",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-18T15:00:00+00:00",
+      "organization": "シャープ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 3264445,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/sharp-cocoro-store-karte-3264445-data-leak-risk-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/sharp-cocoro-store-karte-3264445-data-leak-risk-2026/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/sharp-cocoro-store-karte-3264445-data-leak-risk-2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "COCORO STORE",
+      "service_aliases": [],
+      "added_at": "2026-11-19T10:17:50+00:00",
+      "updated_at": "2026-11-19T10:17:50+00:00"
+    },
+    {
       "id": "59ebb41839af7cc6",
       "published_at": "2026-11-12T15:00:00+00:00",
       "disclosed_at": "2026-11-12T15:00:00+00:00",
@@ -8675,76 +8998,6 @@
       ],
       "added_at": "2026-11-18T19:15:59+00:00",
       "updated_at": "2026-11-18T19:15:59+00:00"
-    },
-    {
-      "id": "b426c3fbbc0eae98",
-      "published_at": "2026-11-12T15:00:00+00:00",
-      "disclosed_at": "2026-11-17T15:00:00+00:00",
-      "organization": "ユニフォームネクスト",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 1701006,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "8cf67a97b55e1d57",
-          "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/uniform_next_karte_1701006_corporate_abuse_countermeasures_2026/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/uniform_next_karte_1701006_corporate_abuse_countermeasures_2026/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/uniform_next_karte_1701006_corporate_abuse_countermeasures_2026/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "occurrence",
-      "affected_service": "ユニフォームネクスト / オフィスユニフォーム / クリニックユニフォーム / フードユニフォーム / ユニネク® / ワークユニフォーム",
-      "service_aliases": [],
-      "affected_services": [
-        "ユニフォームネクスト",
-        "オフィスユニフォーム",
-        "クリニックユニフォーム",
-        "フードユニフォーム",
-        "ユニネク®",
-        "ワークユニフォーム"
-      ],
-      "service_details": [
-        {
-          "name": "ユニフォームネクスト",
-          "aliases": []
-        },
-        {
-          "name": "オフィスユニフォーム",
-          "aliases": []
-        },
-        {
-          "name": "クリニックユニフォーム",
-          "aliases": []
-        },
-        {
-          "name": "フードユニフォーム",
-          "aliases": []
-        },
-        {
-          "name": "ユニネク®",
-          "aliases": []
-        },
-        {
-          "name": "ワークユニフォーム",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-18T06:16:13+00:00",
-      "updated_at": "2026-11-18T06:16:13+00:00"
     },
     {
       "id": "c315588305545d55",
