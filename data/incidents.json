@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-19T06:16:44+00:00",
-  "total": 1465,
+  "updated_at": "2026-11-19T07:17:28+00:00",
+  "total": 1468,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-19"
@@ -338,11 +338,11 @@
     },
     {
       "date": "2026-11-12",
-      "count": 37
+      "count": 38
     },
     {
       "date": "2026-11-13",
-      "count": 51
+      "count": 52
     },
     {
       "date": "2026-11-14",
@@ -366,10 +366,46 @@
     },
     {
       "date": "2026-11-19",
-      "count": 10
+      "count": 11
     }
   ],
   "incidents": [
+    {
+      "id": "775d529b26c4729b",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "S.RIDE",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.sride.jp/jp/news/20261119/",
+          "evidence_urls": [
+            "https://www.sride.jp/jp/news/20261119/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "S.RIDE",
+          "url": "https://www.sride.jp/jp/news/20261119/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "S.RIDEアプリ",
+      "service_aliases": [],
+      "added_at": "2026-11-19T07:17:28+00:00",
+      "updated_at": "2026-11-19T07:17:28+00:00"
+    },
     {
       "id": "d578c0d976772519",
       "published_at": "2026-11-18T15:00:00+00:00",
@@ -1620,6 +1656,14 @@
         {
           "name": "www.itmedia.co.jp",
           "url": "https://www.itmedia.co.jp/news/article/2611/19/2000003316/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/069c699adaceb435abdb0ca89279f4a7e19146c4"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b91675f1be03f210c671fe2e809a086604aadf70"
         }
       ],
       "affected_system": null,
@@ -1627,7 +1671,7 @@
       "affected_service": "六花亭オンラインショップ",
       "service_aliases": [],
       "added_at": "2026-11-19T03:16:30+00:00",
-      "updated_at": "2026-11-19T03:16:30+00:00"
+      "updated_at": "2026-11-19T07:17:28+00:00"
     },
     {
       "id": "2880d200bc56b5c0",
@@ -1854,6 +1898,10 @@
         {
           "name": "47NEWS",
           "url": "https://www.47news.jp/15248979.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/33178765a184abb608b528bd29c5a772cc286ad3"
         }
       ],
       "affected_system": null,
@@ -1861,7 +1909,7 @@
       "affected_service": "日本版DBS",
       "service_aliases": [],
       "added_at": "2026-11-18T05:16:01+00:00",
-      "updated_at": "2026-11-18T20:16:16+00:00"
+      "updated_at": "2026-11-19T07:17:28+00:00"
     },
     {
       "id": "abb899a55bfe34f8",
@@ -2525,6 +2573,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/a1454a4080158b15406b0e9e905370cda71b529e"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/79691d8b275682c79c6ae06bac2d55c3019045f5"
         }
       ],
       "affected_system": null,
@@ -2532,7 +2584,7 @@
       "affected_service": "KARTE",
       "service_aliases": [],
       "added_at": "2026-11-17T23:16:16+00:00",
-      "updated_at": "2026-11-18T20:16:16+00:00"
+      "updated_at": "2026-11-19T07:17:28+00:00"
     },
     {
       "id": "90f25b7d84e534d3",
@@ -3287,6 +3339,44 @@
       "updated_at": "2026-11-17T08:16:10+00:00"
     },
     {
+      "id": "f21465a208ec881c",
+      "published_at": "2026-11-16T15:00:00+00:00",
+      "disclosed_at": "2026-11-16T15:00:00+00:00",
+      "organization": "インフォマート",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 2735267,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/infomart_karte_2735267_customer_data_leak_20261118/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/infomart_karte_2735267_customer_data_leak_20261118/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/infomart_karte_2735267_customer_data_leak_20261118/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/79691d8b275682c79c6ae06bac2d55c3019045f5"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "added_at": "2026-11-17T23:16:16+00:00",
+      "updated_at": "2026-11-19T07:17:28+00:00"
+    },
+    {
       "id": "fac6adb7925cee16",
       "published_at": "2026-11-16T15:00:00+00:00",
       "disclosed_at": null,
@@ -3530,40 +3620,6 @@
       "service_aliases": [],
       "added_at": "2026-11-18T02:17:02+00:00",
       "updated_at": "2026-11-18T02:17:02+00:00"
-    },
-    {
-      "id": "f21465a208ec881c",
-      "published_at": "2026-11-16T15:00:00+00:00",
-      "disclosed_at": "2026-11-16T15:00:00+00:00",
-      "organization": "インフォマート",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 2735267,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "8cf67a97b55e1d57",
-          "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/infomart_karte_2735267_customer_data_leak_20261118/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/infomart_karte_2735267_customer_data_leak_20261118/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/infomart_karte_2735267_customer_data_leak_20261118/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "occurrence",
-      "added_at": "2026-11-17T23:16:16+00:00",
-      "updated_at": "2026-11-17T23:16:16+00:00"
     },
     {
       "id": "027a77624c548ee7",
@@ -5349,12 +5405,20 @@
           "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261119583325/"
         },
         {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/3f4e510c3ebcc21c3e5a36afe6ffa94a7dfba636"
+        },
+        {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261119583325.pdf"
         },
         {
           "name": "PR TIMES",
           "url": "https://prtimes.jp/main/html/rd/p/000000388.000006391.html"
+        },
+        {
+          "name": "ABEMA TIMES",
+          "url": "https://times.abema.tv/articles/-/10290533"
         }
       ],
       "affected_system": null,
@@ -5362,7 +5426,7 @@
       "affected_service": "Schoo Swing",
       "service_aliases": [],
       "added_at": "2026-11-19T04:16:16+00:00",
-      "updated_at": "2026-11-19T06:16:44+00:00"
+      "updated_at": "2026-11-19T07:17:28+00:00"
     },
     {
       "id": "577d4cf3ca24cfb3",
@@ -6213,6 +6277,10 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261118582906/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118639"
         }
       ],
       "affected_system": null,
@@ -6222,7 +6290,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-18T17:16:21+00:00",
-      "updated_at": "2026-11-19T06:16:44+00:00"
+      "updated_at": "2026-11-19T07:17:28+00:00"
     },
     {
       "id": "61ae21551c726eee",
@@ -6715,6 +6783,14 @@
           ]
         },
         {
+          "incident_id": "775d529b26c4729b",
+          "relationship": "affects",
+          "evidence_url": "https://www.sride.jp/jp/news/20261119/",
+          "evidence_urls": [
+            "https://www.sride.jp/jp/news/20261119/"
+          ]
+        },
+        {
           "incident_id": "78368eb07f53ad8c",
           "relationship": "affects",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/",
@@ -6736,6 +6812,14 @@
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/caitech-karte-for-app-post-contract-data-retention-breach/",
           "evidence_urls": [
             "https://rocket-boys.co.jp/security-measures-lab/caitech-karte-for-app-post-contract-data-retention-breach/"
+          ]
+        },
+        {
+          "incident_id": "84d6396c568949f9",
+          "relationship": "affects",
+          "evidence_url": "https://cybersecurity-jp.com/news/118636",
+          "evidence_urls": [
+            "https://cybersecurity-jp.com/news/118636"
           ]
         },
         {
@@ -7053,7 +7137,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-19T05:16:46+00:00"
+      "updated_at": "2026-11-19T07:17:28+00:00"
     },
     {
       "id": "9f04a00959566f37",
@@ -7272,6 +7356,10 @@
         {
           "name": "satimo list",
           "url": "https://store.alpen-group.jp/corporate/news/files/pdf/6e42f9dfe660cb08b2c43664b1e512c6_1.pdf"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/79691d8b275682c79c6ae06bac2d55c3019045f5"
         }
       ],
       "affected_system": null,
@@ -7279,7 +7367,7 @@
       "affected_service": "Alpen Online",
       "service_aliases": [],
       "added_at": "2026-11-17T23:16:16+00:00",
-      "updated_at": "2026-11-18T02:17:02+00:00"
+      "updated_at": "2026-11-19T07:17:28+00:00"
     },
     {
       "id": "b46965fe896ac0d6",
@@ -7755,6 +7843,66 @@
       "service_aliases": [],
       "added_at": "2026-11-13T07:15:40+00:00",
       "updated_at": "2026-11-13T21:16:06+00:00"
+    },
+    {
+      "id": "84d6396c568949f9",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-17T15:00:00+00:00",
+      "organization": "プラス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 32479,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://cybersecurity-jp.com/news/118636",
+          "evidence_urls": [
+            "https://cybersecurity-jp.com/news/118636"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118636"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "JOINTEX / smartoffice / smartschool / スマート介護",
+      "service_aliases": [],
+      "affected_services": [
+        "JOINTEX",
+        "smartoffice",
+        "smartschool",
+        "スマート介護"
+      ],
+      "service_details": [
+        {
+          "name": "JOINTEX",
+          "aliases": []
+        },
+        {
+          "name": "smartoffice",
+          "aliases": []
+        },
+        {
+          "name": "smartschool",
+          "aliases": []
+        },
+        {
+          "name": "スマート介護",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-19T07:17:28+00:00",
+      "updated_at": "2026-11-19T07:17:28+00:00"
     },
     {
       "id": "a66a3fc2b9f18b4e",
@@ -8856,6 +9004,35 @@
       "service_aliases": [],
       "added_at": "2026-11-15T09:15:36+00:00",
       "updated_at": "2026-11-16T01:15:40+00:00"
+    },
+    {
+      "id": "37fc1b977c7dc2a2",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": "2026-11-11T15:00:00+00:00",
+      "organization": "エフェクチュアル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 826,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/effectual_location_connect_api_data_breach_20261112/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "Location Connect",
+      "service_aliases": [
+        "ロケーションコネクト"
+      ],
+      "added_at": "2026-11-19T07:17:28+00:00",
+      "updated_at": "2026-11-19T07:17:28+00:00"
     },
     {
       "id": "43c1ffdb36beb846",
@@ -54870,12 +55047,16 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118637"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/sbi_shinsei_monex_customer_impact_20261119/"
         }
       ],
       "affected_system": null,
       "date_basis": "discovery",
       "added_at": "2026-11-19T05:16:46+00:00",
-      "updated_at": "2026-11-19T05:16:46+00:00"
+      "updated_at": "2026-11-19T07:17:28+00:00"
     },
     {
       "id": "4468d7a7262d01e6",
