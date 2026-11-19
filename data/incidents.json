@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-19T00:15:50+00:00",
-  "total": 1445,
+  "updated_at": "2026-11-19T01:15:50+00:00",
+  "total": 1452,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-19"
@@ -306,7 +306,7 @@
     },
     {
       "date": "2026-11-04",
-      "count": 51
+      "count": 52
     },
     {
       "date": "2026-11-05",
@@ -338,15 +338,15 @@
     },
     {
       "date": "2026-11-12",
-      "count": 35
+      "count": 37
     },
     {
       "date": "2026-11-13",
-      "count": 49
+      "count": 50
     },
     {
       "date": "2026-11-14",
-      "count": 10
+      "count": 11
     },
     {
       "date": "2026-11-15",
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-18",
-      "count": 29
+      "count": 31
     },
     {
       "date": "2026-11-19",
@@ -853,6 +853,42 @@
       "updated_at": "2026-11-18T16:15:49+00:00"
     },
     {
+      "id": "2346ec53bb135d52",
+      "published_at": "2026-11-17T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "新得町",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "ba80f2e1838838f4",
+          "relationship": "affected_by",
+          "evidence_url": "https://shintoku-town.jp/oshirase/3675/",
+          "evidence_urls": [
+            "https://shintoku-town.jp/oshirase/3675/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://shintoku-town.jp/oshirase/3675/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "災害時避難行動要支援者システム",
+      "service_aliases": [],
+      "added_at": "2026-11-19T01:15:50+00:00",
+      "updated_at": "2026-11-19T01:15:50+00:00"
+    },
+    {
       "id": "65e7601a7cd328c8",
       "published_at": "2026-11-17T15:00:00+00:00",
       "disclosed_at": null,
@@ -1144,12 +1180,16 @@
         {
           "name": "TBS NEWS DIG",
           "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1mWWRvS1VpSF9hRkxMUUdjdXlfSGVma05lUWVGQXNKUzUtanVNUllZblc5c2Z3bjdlclBhRWVQb1VLMnJwekZ6V29SSFFxZGRIQVNJTVNYbw?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/473a25819b94a0d0847b92e25f0b554d0bb72ca7"
         }
       ],
       "affected_system": null,
       "date_basis": "ingestion",
       "added_at": "2026-11-18T15:16:38+00:00",
-      "updated_at": "2026-11-18T23:14:19+00:00"
+      "updated_at": "2026-11-19T01:15:50+00:00"
     },
     {
       "id": "e5cfc5c030029c71",
@@ -1837,6 +1877,48 @@
       "date_basis": "first_disclosure",
       "added_at": "2026-11-18T15:16:38+00:00",
       "updated_at": "2026-11-18T15:16:38+00:00"
+    },
+    {
+      "id": "ba80f2e1838838f4",
+      "published_at": "2026-11-17T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社GIS北海道",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "2346ec53bb135d52",
+          "relationship": "affects",
+          "evidence_url": "https://shintoku-town.jp/oshirase/3675/",
+          "evidence_urls": [
+            "https://shintoku-town.jp/oshirase/3675/"
+          ]
+        },
+        {
+          "incident_id": "d42cdf2a89b95abb",
+          "relationship": "affected_by",
+          "evidence_url": "https://shintoku-town.jp/oshirase/3675/",
+          "evidence_urls": [
+            "https://shintoku-town.jp/oshirase/3675/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://shintoku-town.jp/oshirase/3675/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-19T01:15:50+00:00",
+      "updated_at": "2026-11-19T01:15:50+00:00"
     },
     {
       "id": "cf4cb5e0996a4bdc",
@@ -4784,6 +4866,31 @@
       "updated_at": "2026-11-16T00:15:49+00:00"
     },
     {
+      "id": "577d4cf3ca24cfb3",
+      "published_at": "2026-11-13T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社アジャイルウェア",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://agileware.jp/news/info/2026_1118/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "added_at": "2026-11-19T01:15:50+00:00",
+      "updated_at": "2026-11-19T01:15:50+00:00"
+    },
+    {
       "id": "749ef8fb578f0f00",
       "published_at": "2026-11-13T15:00:00+00:00",
       "disclosed_at": null,
@@ -4929,6 +5036,10 @@
           "url": "https://nulab.com/ja/info/20261116_cacoo_01/"
         },
         {
+          "name": "legalagent list",
+          "url": "https://nulab.com/ja/info/20261118_cacoo_02/"
+        },
+        {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261116581044.pdf"
         },
@@ -4958,7 +5069,7 @@
       "affected_service": "Cacoo",
       "service_aliases": [],
       "added_at": "2026-11-16T05:16:04+00:00",
-      "updated_at": "2026-11-18T19:15:59+00:00"
+      "updated_at": "2026-11-19T01:15:50+00:00"
     },
     {
       "id": "0f5f8567d53f3ad5",
@@ -5412,6 +5523,46 @@
       "service_aliases": [],
       "added_at": "2026-11-13T13:17:15+00:00",
       "updated_at": "2026-11-13T13:17:15+00:00"
+    },
+    {
+      "id": "21270d807ae14d60",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-17T15:00:00+00:00",
+      "organization": "雨風太陽",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 944885,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/pocketmarche-karte-personal-data-leak-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/pocketmarche-karte-personal-data-leak-2026/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://ame-kaze-taiyo.jp/news/2026111811574585/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/pocketmarche-karte-personal-data-leak-2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "ポケットマルシェ",
+      "service_aliases": [],
+      "added_at": "2026-11-18T14:16:38+00:00",
+      "updated_at": "2026-11-19T01:15:50+00:00"
     },
     {
       "id": "39dc60a57ae2e4d9",
@@ -5968,6 +6119,14 @@
           ]
         },
         {
+          "incident_id": "7231ef4006522bd1",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/toyota_wallet_karte_potential_leak_120000_2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/toyota_wallet_karte_potential_leak_120000_2026/"
+          ]
+        },
+        {
           "incident_id": "72719afb4550b10c",
           "relationship": "affects",
           "evidence_url": "https://www.club-t.com/ct/news/2026/1117_1/",
@@ -6304,7 +6463,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-19T00:15:50+00:00"
+      "updated_at": "2026-11-19T01:15:50+00:00"
     },
     {
       "id": "9f04a00959566f37",
@@ -6531,6 +6690,45 @@
       "service_aliases": [],
       "added_at": "2026-11-17T23:16:16+00:00",
       "updated_at": "2026-11-18T02:17:02+00:00"
+    },
+    {
+      "id": "b46965fe896ac0d6",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-17T15:00:00+00:00",
+      "organization": "ベースフード",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 710000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/basefood_karte_customer_data_leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/basefood_karte_customer_data_leak/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://basefood.co.jp/news/4718"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/basefood_karte_customer_data_leak/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "KARTE",
+      "service_aliases": [],
+      "added_at": "2026-11-19T00:15:50+00:00",
+      "updated_at": "2026-11-19T01:15:50+00:00"
     },
     {
       "id": "bc23a4a79551eddb",
@@ -7450,42 +7648,6 @@
       "updated_at": "2026-11-13T20:16:21+00:00"
     },
     {
-      "id": "21270d807ae14d60",
-      "published_at": "2026-11-12T15:00:00+00:00",
-      "disclosed_at": "2026-11-17T15:00:00+00:00",
-      "organization": "雨風太陽",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 944885,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "8cf67a97b55e1d57",
-          "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/pocketmarche-karte-personal-data-leak-2026/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/pocketmarche-karte-personal-data-leak-2026/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/pocketmarche-karte-personal-data-leak-2026/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "occurrence",
-      "affected_service": "ポケットマルシェ",
-      "service_aliases": [],
-      "added_at": "2026-11-18T14:16:38+00:00",
-      "updated_at": "2026-11-18T14:16:38+00:00"
-    },
-    {
       "id": "439280998e7962c2",
       "published_at": "2026-11-12T15:00:00+00:00",
       "disclosed_at": "2026-11-12T15:00:00+00:00",
@@ -7631,6 +7793,41 @@
       "updated_at": "2026-11-18T19:15:59+00:00"
     },
     {
+      "id": "7231ef4006522bd1",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-17T15:00:00+00:00",
+      "organization": "トヨタファイナンシャルサービス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 120000,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/toyota_wallet_karte_potential_leak_120000_2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/toyota_wallet_karte_potential_leak_120000_2026/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/toyota_wallet_karte_potential_leak_120000_2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "TOYOTA Wallet",
+      "service_aliases": [],
+      "added_at": "2026-11-19T01:15:50+00:00",
+      "updated_at": "2026-11-19T01:15:50+00:00"
+    },
+    {
       "id": "b426c3fbbc0eae98",
       "published_at": "2026-11-12T15:00:00+00:00",
       "disclosed_at": "2026-11-17T15:00:00+00:00",
@@ -7699,41 +7896,6 @@
       ],
       "added_at": "2026-11-18T06:16:13+00:00",
       "updated_at": "2026-11-18T06:16:13+00:00"
-    },
-    {
-      "id": "b46965fe896ac0d6",
-      "published_at": "2026-11-12T15:00:00+00:00",
-      "disclosed_at": "2026-11-17T15:00:00+00:00",
-      "organization": "ベースフード",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 710000,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "8cf67a97b55e1d57",
-          "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/basefood_karte_customer_data_leak/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/basefood_karte_customer_data_leak/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/basefood_karte_customer_data_leak/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "occurrence",
-      "affected_service": "KARTE",
-      "service_aliases": [],
-      "added_at": "2026-11-19T00:15:50+00:00",
-      "updated_at": "2026-11-19T00:15:50+00:00"
     },
     {
       "id": "c315588305545d55",
@@ -7948,6 +8110,42 @@
       "service_aliases": [],
       "added_at": "2026-11-15T02:15:29+00:00",
       "updated_at": "2026-11-15T04:16:18+00:00"
+    },
+    {
+      "id": "0f105773ffbb91ad",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "LINOAS",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 27413,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "aa9bc3fcfc85d71d",
+          "relationship": "affected_by",
+          "evidence_url": "https://linoas.jp/event/21731/",
+          "evidence_urls": [
+            "https://linoas.jp/event/21731/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://linoas.jp/event/21731/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "公式LINE",
+      "service_aliases": [],
+      "added_at": "2026-11-19T01:15:50+00:00",
+      "updated_at": "2026-11-19T01:15:50+00:00"
     },
     {
       "id": "2501b5ff1c217ae6",
@@ -8374,6 +8572,30 @@
       ],
       "added_at": "2026-11-12T10:15:34+00:00",
       "updated_at": "2026-11-13T09:15:19+00:00"
+    },
+    {
+      "id": "a7e224f51afd9779",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "LINOAS",
+      "incident_type": "other",
+      "incident_categories": [
+        "other"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://linoas.jp/event/21731/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "added_at": "2026-11-19T01:15:50+00:00",
+      "updated_at": "2026-11-19T01:15:50+00:00"
     },
     {
       "id": "b7ef8900f059e064",
@@ -9588,6 +9810,46 @@
       "service_aliases": [],
       "added_at": "2026-11-11T07:16:10+00:00",
       "updated_at": "2026-11-15T08:15:41+00:00"
+    },
+    {
+      "id": "8137a2c5288aadc4",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": "2026-11-15T15:00:00+00:00",
+      "organization": "ホットスタッフ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 32034,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "aa9bc3fcfc85d71d",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/hotstaff_hotkensaku_comsbi_saas_line_jobseeker_data_breach/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/hotstaff_hotkensaku_comsbi_saas_line_jobseeker_data_breach/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.hotstaff.co.jp/topics/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/hotstaff_hotkensaku_comsbi_saas_line_jobseeker_data_breach/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "LINE公式アカウント「ホットスタッフ【HOT犬索】」",
+      "service_aliases": [],
+      "added_at": "2026-11-18T15:16:38+00:00",
+      "updated_at": "2026-11-19T01:15:50+00:00"
     },
     {
       "id": "897523f513769424",
@@ -10837,42 +11099,6 @@
       ],
       "added_at": "2026-11-11T09:15:59+00:00",
       "updated_at": "2026-11-13T07:15:40+00:00"
-    },
-    {
-      "id": "8137a2c5288aadc4",
-      "published_at": "2026-11-10T15:00:00+00:00",
-      "disclosed_at": "2026-11-15T15:00:00+00:00",
-      "organization": "ホットスタッフ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 32034,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "aa9bc3fcfc85d71d",
-          "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/hotstaff_hotkensaku_comsbi_saas_line_jobseeker_data_breach/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/hotstaff_hotkensaku_comsbi_saas_line_jobseeker_data_breach/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/hotstaff_hotkensaku_comsbi_saas_line_jobseeker_data_breach/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "discovery",
-      "affected_service": "LINE公式アカウント「ホットスタッフ【HOT犬索】」",
-      "service_aliases": [],
-      "added_at": "2026-11-18T15:16:38+00:00",
-      "updated_at": "2026-11-18T15:16:38+00:00"
     },
     {
       "id": "909cfe24afcf8d43",
@@ -23090,6 +23316,40 @@
       ],
       "added_at": "2026-11-04T15:16:11+00:00",
       "updated_at": "2026-11-12T07:15:39+00:00"
+    },
+    {
+      "id": "d42cdf2a89b95abb",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "有限会社リムゲート",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "ba80f2e1838838f4",
+          "relationship": "affects",
+          "evidence_url": "https://shintoku-town.jp/oshirase/3675/",
+          "evidence_urls": [
+            "https://shintoku-town.jp/oshirase/3675/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://shintoku-town.jp/oshirase/3675/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "added_at": "2026-11-19T01:15:50+00:00",
+      "updated_at": "2026-11-19T01:15:50+00:00"
     },
     {
       "id": "df8ab3e2aea96fe2",
@@ -41383,6 +41643,14 @@
           ]
         },
         {
+          "incident_id": "0f105773ffbb91ad",
+          "relationship": "affects",
+          "evidence_url": "https://linoas.jp/event/21731/",
+          "evidence_urls": [
+            "https://linoas.jp/event/21731/"
+          ]
+        },
+        {
           "incident_id": "12169f1654048f6f",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/e4326c647e8b3cd4624507356ae76b3b3a7c18e9",
@@ -41583,7 +41851,7 @@
         }
       ],
       "added_at": "2026-10-27T07:15:28+00:00",
-      "updated_at": "2026-11-18T23:23:22+00:00"
+      "updated_at": "2026-11-19T01:15:50+00:00"
     },
     {
       "id": "af7b771bb23be504",
@@ -47142,6 +47410,10 @@
           "url": "https://www.rakus.co.jp/news/2026/1111.html"
         },
         {
+          "name": "legalagent list",
+          "url": "https://www.rakus.co.jp/news/2026/1118.html"
+        },
+        {
           "name": "plasticjournal.net",
           "url": "https://plasticjournal.net/news/25490.html"
         },
@@ -47163,7 +47435,7 @@
         }
       ],
       "added_at": "2026-10-21T19:22:12+00:00",
-      "updated_at": "2026-11-18T05:16:01+00:00"
+      "updated_at": "2026-11-19T01:15:50+00:00"
     },
     {
       "id": "83db978a801210d8",
@@ -63271,10 +63543,14 @@
         {
           "name": "47NEWS",
           "url": "https://www.47news.jp/15240506.html"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/enecom_2940_personal_info_maintenance_account_thin_client_final_report/"
         }
       ],
       "added_at": "2026-10-19T09:06:44+00:00",
-      "updated_at": "2026-11-17T22:16:17+00:00"
+      "updated_at": "2026-11-19T01:15:50+00:00"
     },
     {
       "id": "f27a78f8cd01fe21",
