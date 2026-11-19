@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-19T13:18:58+00:00",
-  "total": 1481,
+  "updated_at": "2026-11-19T14:18:14+00:00",
+  "total": 1484,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-19"
@@ -278,7 +278,7 @@
     },
     {
       "date": "2026-10-28",
-      "count": 57
+      "count": 58
     },
     {
       "date": "2026-10-29",
@@ -366,7 +366,7 @@
     },
     {
       "date": "2026-11-19",
-      "count": 19
+      "count": 21
     }
   ],
   "incidents": [
@@ -405,6 +405,42 @@
       "service_aliases": [],
       "added_at": "2026-11-19T07:17:28+00:00",
       "updated_at": "2026-11-19T07:17:28+00:00"
+    },
+    {
+      "id": "c97f351bcfbd0ee3",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "GO株式会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://goinc.jp/news/info/2026/11/19/1ged4wbk8ug0heonnp2cm0/",
+          "evidence_urls": [
+            "https://goinc.jp/news/info/2026/11/19/1ged4wbk8ug0heonnp2cm0/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "GO株式会社",
+          "url": "https://goinc.jp/news/info/2026/11/19/1ged4wbk8ug0heonnp2cm0/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "タクシーアプリ『GO』",
+      "service_aliases": [],
+      "added_at": "2026-11-19T14:18:14+00:00",
+      "updated_at": "2026-11-19T14:18:14+00:00"
     },
     {
       "id": "d578c0d976772519",
@@ -611,6 +647,33 @@
       "updated_at": "2026-11-19T13:18:58+00:00"
     },
     {
+      "id": "67dfe4f80f615ac6",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "三井不動産",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/economy/20261119-GYT1T00326/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "三井ショッピングパークアプリ",
+      "service_aliases": [],
+      "added_at": "2026-11-19T14:18:14+00:00",
+      "updated_at": "2026-11-19T14:18:14+00:00"
+    },
+    {
       "id": "70722c164738fbef",
       "published_at": "2026-11-18T15:00:00+00:00",
       "disclosed_at": null,
@@ -641,6 +704,10 @@
         {
           "name": "47NEWS",
           "url": "https://www.47news.jp/15256587.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/5afeaad23f0d3b5aa365bf5fbf90e957831cfb64"
         }
       ],
       "affected_system": null,
@@ -650,7 +717,7 @@
         "コマド"
       ],
       "added_at": "2026-11-19T10:17:50+00:00",
-      "updated_at": "2026-11-19T13:18:58+00:00"
+      "updated_at": "2026-11-19T14:18:14+00:00"
     },
     {
       "id": "757876f3fce6084e",
@@ -2891,6 +2958,14 @@
         {
           "name": "東京都 / Tokyo Metropolitan Government",
           "url": "https://www.metro.tokyo.lg.jp/information/press/2026/11/2026111905"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/d4b8f67758b651750a57ee748d53375ffc16a12e"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261119de78475"
         }
       ],
       "affected_system": null,
@@ -2898,7 +2973,7 @@
       "affected_service": "赤ちゃんファーストポイント交換サイト",
       "service_aliases": [],
       "added_at": "2026-11-19T13:18:58+00:00",
-      "updated_at": "2026-11-19T13:18:58+00:00"
+      "updated_at": "2026-11-19T14:18:14+00:00"
     },
     {
       "id": "8cb6d0590720520f",
@@ -4632,12 +4707,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/1a4d093e6ac11fcb23808efc0e3a0ca422e7e00b"
+        },
+        {
+          "name": "テクノエッジ TechnoEdge",
+          "url": "https://www.techno-edge.net/article/2026/11/19/5773.html"
         }
       ],
       "affected_system": null,
       "date_basis": "discovery",
       "added_at": "2026-11-19T04:16:16+00:00",
-      "updated_at": "2026-11-19T13:18:58+00:00"
+      "updated_at": "2026-11-19T14:18:14+00:00"
     },
     {
       "id": "3132aa2481a76c3b",
@@ -4769,6 +4848,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/1a4d093e6ac11fcb23808efc0e3a0ca422e7e00b"
+        },
+        {
+          "name": "テクノエッジ TechnoEdge",
+          "url": "https://www.techno-edge.net/article/2026/11/19/5773.html"
         }
       ],
       "affected_system": null,
@@ -4776,7 +4859,7 @@
       "affected_service": "トリビュー",
       "service_aliases": [],
       "added_at": "2026-11-19T13:18:58+00:00",
-      "updated_at": "2026-11-19T13:18:58+00:00"
+      "updated_at": "2026-11-19T14:18:14+00:00"
     },
     {
       "id": "59f08b559e7aee70",
@@ -6934,6 +7017,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/80efdf1c3d3c088dee76bfc257889493ea391ca3"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC19B420Z11C26A1000000/"
         }
       ],
       "affected_system": null,
@@ -6941,7 +7028,7 @@
       "affected_service": "求人事業者の担当者情報",
       "service_aliases": [],
       "added_at": "2026-11-19T10:17:50+00:00",
-      "updated_at": "2026-11-19T13:18:58+00:00"
+      "updated_at": "2026-11-19T14:18:14+00:00"
     },
     {
       "id": "872c6ee1daba8835",
@@ -7540,6 +7627,14 @@
           ]
         },
         {
+          "incident_id": "c97f351bcfbd0ee3",
+          "relationship": "affects",
+          "evidence_url": "https://goinc.jp/news/info/2026/11/19/1ged4wbk8ug0heonnp2cm0/",
+          "evidence_urls": [
+            "https://goinc.jp/news/info/2026/11/19/1ged4wbk8ug0heonnp2cm0/"
+          ]
+        },
+        {
           "incident_id": "cd28aec583d7af5c",
           "relationship": "affects",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/offers_overflow_karte_29950_personal_data_leak_2026/",
@@ -7715,7 +7810,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-19T13:18:58+00:00"
+      "updated_at": "2026-11-19T14:18:14+00:00"
     },
     {
       "id": "9f04a00959566f37",
@@ -20140,6 +20235,10 @@
           "url": "https://www.docomo.ne.jp/info/notice/page/261118_00_m.html"
         },
         {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/242c30777e6134b003de2eaeb4ceb283fe615ef0"
+        },
+        {
           "name": "テレ朝NEWS",
           "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE83NmlNT2lnS3hPb19GYXFwQ0ZyVmlWRS1SWkE3dTMzZU9DeHZpakx3SXlZa21QVmxBLWRnMGdGdWdDS2ZCNG8wQXgzeFZJUF9PR19NZkhnZzJuUXMyX0s3OHdSbFBzdW03MTFsbkhhdzQ4Zw?oc=5"
         },
@@ -20211,7 +20310,7 @@
         }
       ],
       "added_at": "2026-11-05T04:16:40+00:00",
-      "updated_at": "2026-11-18T14:16:38+00:00"
+      "updated_at": "2026-11-19T14:18:14+00:00"
     },
     {
       "id": "5ab603a107654652",
@@ -20478,10 +20577,18 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/657c8096d23498e5297e584f9d4f2c780625cba9"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOJC198RU0Z11C26A1000000/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b0083e7087cf09e094cdb8f13d3aa0ea2e53f954"
         }
       ],
       "added_at": "2026-11-05T14:17:23+00:00",
-      "updated_at": "2026-11-18T02:17:02+00:00"
+      "updated_at": "2026-11-19T14:18:14+00:00"
     },
     {
       "id": "822413c037efdd4f",
@@ -38096,6 +38203,31 @@
       "service_aliases": [],
       "added_at": "2026-10-30T02:15:42+00:00",
       "updated_at": "2026-11-17T21:16:22+00:00"
+    },
+    {
+      "id": "f1120f2e29b4fad2",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": "2026-11-18T15:00:00+00:00",
+      "organization": "Kyash",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 11996,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/kyash-internal-web-tool-unauthorized-access-11996/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "added_at": "2026-11-19T14:18:14+00:00",
+      "updated_at": "2026-11-19T14:18:14+00:00"
     },
     {
       "id": "19667cbf1f62a90a",
