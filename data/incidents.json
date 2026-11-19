@@ -1,17 +1,13 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-19T14:18:14+00:00",
-  "total": 1484,
+  "updated_at": "2026-11-19T15:17:55+00:00",
+  "total": 1485,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-19"
   },
   "daily_counts_90d": [
-    {
-      "date": "2026-08-22",
-      "count": 0
-    },
     {
       "date": "2026-08-23",
       "count": 0
@@ -366,7 +362,11 @@
     },
     {
       "date": "2026-11-19",
-      "count": 21
+      "count": 22
+    },
+    {
+      "date": "2026-11-20",
+      "count": 0
     }
   ],
   "incidents": [
@@ -645,6 +645,39 @@
       "service_aliases": [],
       "added_at": "2026-11-19T10:17:50+00:00",
       "updated_at": "2026-11-19T13:18:58+00:00"
+    },
+    {
+      "id": "648b846d4b79a1fa",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ベネッセコーポレーション",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/f96aa9d43caf7b3733cabc3c58b0ebbd90b2375b",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/f96aa9d43caf7b3733cabc3c58b0ebbd90b2375b"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/f96aa9d43caf7b3733cabc3c58b0ebbd90b2375b"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-19T15:17:55+00:00",
+      "updated_at": "2026-11-19T15:17:55+00:00"
     },
     {
       "id": "67dfe4f80f615ac6",
@@ -4574,6 +4607,51 @@
       "updated_at": "2026-11-16T06:15:50+00:00"
     },
     {
+      "id": "dff8577ff2d1786f",
+      "published_at": "2026-11-15T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "SBCメディカルグループ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "AERA DIGITAL",
+          "url": "https://dot.asahi.com/articles/-/298047?page=1"
+        },
+        {
+          "name": "PR TIMES",
+          "url": "https://prtimes.jp/main/html/rd/p/000000416.000097803.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/e02ba7b5e39b43fbe415f05b25e6f5d0c9dc16b5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/1a4d093e6ac11fcb23808efc0e3a0ca422e7e00b"
+        },
+        {
+          "name": "テクノエッジ TechnoEdge",
+          "url": "https://www.techno-edge.net/article/2026/11/19/5773.html"
+        },
+        {
+          "name": "CNET Japan",
+          "url": "https://japan.cnet.com/article/35255171/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "added_at": "2026-11-19T04:16:16+00:00",
+      "updated_at": "2026-11-19T15:17:55+00:00"
+    },
+    {
       "id": "e0ab297a0bab550f",
       "published_at": "2026-11-15T15:00:00+00:00",
       "disclosed_at": null,
@@ -4672,6 +4750,10 @@
         {
           "name": "PR TIMES",
           "url": "https://prtimes.jp/main/html/rd/p/000000067.000047703.html"
+        },
+        {
+          "name": "CNET Japan",
+          "url": "https://japan.cnet.com/article/35255171/"
         }
       ],
       "affected_system": null,
@@ -4679,44 +4761,7 @@
       "affected_service": "トリビュー",
       "service_aliases": [],
       "added_at": "2026-11-19T04:16:16+00:00",
-      "updated_at": "2026-11-19T13:18:58+00:00"
-    },
-    {
-      "id": "dff8577ff2d1786f",
-      "published_at": "2026-11-15T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "SBCメディカルグループ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 70,
-      "related": [],
-      "sources": [
-        {
-          "name": "PR TIMES",
-          "url": "https://prtimes.jp/main/html/rd/p/000000416.000097803.html"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/e02ba7b5e39b43fbe415f05b25e6f5d0c9dc16b5"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/1a4d093e6ac11fcb23808efc0e3a0ca422e7e00b"
-        },
-        {
-          "name": "テクノエッジ TechnoEdge",
-          "url": "https://www.techno-edge.net/article/2026/11/19/5773.html"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "discovery",
-      "added_at": "2026-11-19T04:16:16+00:00",
-      "updated_at": "2026-11-19T14:18:14+00:00"
+      "updated_at": "2026-11-19T15:17:55+00:00"
     },
     {
       "id": "3132aa2481a76c3b",
@@ -4852,6 +4897,10 @@
         {
           "name": "テクノエッジ TechnoEdge",
           "url": "https://www.techno-edge.net/article/2026/11/19/5773.html"
+        },
+        {
+          "name": "CNET Japan",
+          "url": "https://japan.cnet.com/article/35255171/"
         }
       ],
       "affected_system": null,
@@ -4859,7 +4908,7 @@
       "affected_service": "トリビュー",
       "service_aliases": [],
       "added_at": "2026-11-19T13:18:58+00:00",
-      "updated_at": "2026-11-19T14:18:14+00:00"
+      "updated_at": "2026-11-19T15:17:55+00:00"
     },
     {
       "id": "59f08b559e7aee70",
@@ -7363,6 +7412,14 @@
           ]
         },
         {
+          "incident_id": "648b846d4b79a1fa",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/f96aa9d43caf7b3733cabc3c58b0ebbd90b2375b",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/f96aa9d43caf7b3733cabc3c58b0ebbd90b2375b"
+          ]
+        },
+        {
           "incident_id": "65e7601a7cd328c8",
           "relationship": "affects",
           "evidence_url": "https://www.odakyu.jp/notice/makhce0000003vpt-att/makhce0000003vq0.pdf",
@@ -7810,7 +7867,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-19T14:18:14+00:00"
+      "updated_at": "2026-11-19T15:17:55+00:00"
     },
     {
       "id": "9f04a00959566f37",
@@ -56371,10 +56428,14 @@
         {
           "name": "TBS NEWS DIG",
           "url": "https://newsdig.tbs.co.jp/articles/-/3019003"
+        },
+        {
+          "name": "テレ朝NEWS",
+          "url": "https://news.tv-asahi.co.jp/news_economy/articles/000548451.html"
         }
       ],
       "added_at": "2026-10-19T09:06:44+00:00",
-      "updated_at": "2026-11-17T05:16:27+00:00"
+      "updated_at": "2026-11-19T15:17:55+00:00"
     },
     {
       "id": "22ac72ce65c7ebe1",
