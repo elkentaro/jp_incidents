@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-19T02:15:42+00:00",
+  "updated_at": "2026-11-19T03:16:30+00:00",
   "total": 1457,
   "date_range": {
     "start": "2023-12-24",
@@ -338,7 +338,7 @@
     },
     {
       "date": "2026-11-12",
-      "count": 37
+      "count": 36
     },
     {
       "date": "2026-11-13",
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-18",
-      "count": 34
+      "count": 35
     },
     {
       "date": "2026-11-19",
@@ -1532,6 +1532,33 @@
       "date_basis": "publication",
       "added_at": "2026-11-18T17:16:21+00:00",
       "updated_at": "2026-11-18T17:16:21+00:00"
+    },
+    {
+      "id": "1b2cb42ebe6b4d57",
+      "published_at": "2026-11-17T15:00:00+00:00",
+      "disclosed_at": "2026-11-17T15:00:00+00:00",
+      "organization": "六花亭",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 8000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "www.itmedia.co.jp",
+          "url": "https://www.itmedia.co.jp/news/article/2611/19/2000003316/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "六花亭オンラインショップ",
+      "service_aliases": [],
+      "added_at": "2026-11-19T03:16:30+00:00",
+      "updated_at": "2026-11-19T03:16:30+00:00"
     },
     {
       "id": "2880d200bc56b5c0",
@@ -7137,6 +7164,10 @@
           "url": "https://rocket-boys.co.jp/security-measures-lab/mufg_morgan_stanley_securities_karte_280000_breach/"
         },
         {
+          "name": "satimo list",
+          "url": "https://www.sc.mufg.jp/company/news/000023203.pdf"
+        },
+        {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/444e3fcfdf78f5466598380991e2a2acdad8132a"
         },
@@ -7158,7 +7189,7 @@
       "affected_service": "オンライントレード",
       "service_aliases": [],
       "added_at": "2026-11-18T15:16:38+00:00",
-      "updated_at": "2026-11-19T02:15:42+00:00"
+      "updated_at": "2026-11-19T03:16:30+00:00"
     },
     {
       "id": "ed1eba6fb2a75c1e",
@@ -8396,6 +8427,7 @@
       "incident_type": "data leak",
       "incident_categories": [
         "data leak",
+        "other",
         "unauthorized access"
       ],
       "potential_records": 27413,
@@ -8422,7 +8454,7 @@
       "affected_service": "公式LINE",
       "service_aliases": [],
       "added_at": "2026-11-19T01:15:50+00:00",
-      "updated_at": "2026-11-19T01:15:50+00:00"
+      "updated_at": "2026-11-19T03:16:30+00:00"
     },
     {
       "id": "2501b5ff1c217ae6",
@@ -8879,30 +8911,6 @@
       ],
       "added_at": "2026-11-12T10:15:34+00:00",
       "updated_at": "2026-11-13T09:15:19+00:00"
-    },
-    {
-      "id": "a7e224f51afd9779",
-      "published_at": "2026-11-11T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "LINOAS",
-      "incident_type": "other",
-      "incident_categories": [
-        "other"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 90,
-      "related": [],
-      "sources": [
-        {
-          "name": "legalagent list",
-          "url": "https://linoas.jp/event/21731/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "discovery",
-      "added_at": "2026-11-19T01:15:50+00:00",
-      "updated_at": "2026-11-19T01:15:50+00:00"
     },
     {
       "id": "b7ef8900f059e064",
@@ -65849,6 +65857,7 @@
     "fe3955ab5daa9251": "c315588305545d55",
     "92401d7ee52f9b03": "c315588305545d55",
     "eabeef8122751e9d": "8132159128c70bb6",
-    "0a5e91817dd2bb5b": "20f151f23e74c369"
+    "0a5e91817dd2bb5b": "20f151f23e74c369",
+    "a7e224f51afd9779": "0f105773ffbb91ad"
   }
 }
