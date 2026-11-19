@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-19T19:18:21+00:00",
-  "total": 1485,
+  "updated_at": "2026-11-19T20:18:28+00:00",
+  "total": 1486,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-19"
@@ -342,7 +342,7 @@
     },
     {
       "date": "2026-11-14",
-      "count": 12
+      "count": 13
     },
     {
       "date": "2026-11-15",
@@ -3518,6 +3518,10 @@
         {
           "name": "石川テレビ",
           "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9Hd3ZCaVpkOEZROGVyV2dHbThXRmdFNF9pWkFjZHo0WnJoZXk4ZjN6bU52TkVKMjJGeUY0VDhlTmRQcm45ZTFrXy1kZFA1SkJYeklDUTZENkI?oc=5"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5qZEpBXzVpS2ZETm56QTNBb1hid25CeVU2Z2llYnRxbnBSZGVCNUw5emV4VWR1bW1lQU5MWlotNlNONTdEei00Y21FeTVRd2dsX1BNaW43QWN4akVaS3hDM1FDbFVqWTNFd25yNTVSMkdlclowaUN5YkRKTHBDRU0?oc=5"
         }
       ],
       "affected_system": null,
@@ -3525,7 +3529,7 @@
       "affected_service": "ネットdeスマート申請",
       "service_aliases": [],
       "added_at": "2026-11-18T05:16:01+00:00",
-      "updated_at": "2026-11-18T15:16:38+00:00"
+      "updated_at": "2026-11-19T20:18:28+00:00"
     },
     {
       "id": "57225b83002a9993",
@@ -5747,6 +5751,60 @@
       "updated_at": "2026-11-18T17:16:21+00:00"
     },
     {
+      "id": "a55deee80e6bebf6",
+      "published_at": "2026-11-14T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "タカラベルモント",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.infoseek.co.jp/article/prtimes_000000478_000055758/",
+          "evidence_urls": [
+            "https://news.infoseek.co.jp/article/prtimes_000000478_000055758/",
+            "https://prtimes.jp/main/html/rd/p/000000478.000055758.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Infoseek",
+          "url": "https://news.infoseek.co.jp/article/prtimes_000000478_000055758/"
+        },
+        {
+          "name": "PR TIMES",
+          "url": "https://prtimes.jp/main/html/rd/p/000000478.000055758.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "BEAUTY CITY / TB WEB ORDER",
+      "service_aliases": [],
+      "affected_services": [
+        "BEAUTY CITY",
+        "TB WEB ORDER"
+      ],
+      "service_details": [
+        {
+          "name": "BEAUTY CITY",
+          "aliases": []
+        },
+        {
+          "name": "TB WEB ORDER",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-19T08:17:17+00:00",
+      "updated_at": "2026-11-19T20:18:28+00:00"
+    },
+    {
       "id": "f24d6b6825484961",
       "published_at": "2026-11-14T15:00:00+00:00",
       "disclosed_at": null,
@@ -5776,55 +5834,6 @@
       "service_aliases": [],
       "added_at": "2026-11-19T02:15:42+00:00",
       "updated_at": "2026-11-19T10:17:50+00:00"
-    },
-    {
-      "id": "a55deee80e6bebf6",
-      "published_at": "2026-11-14T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "タカラベルモント",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 70,
-      "related": [
-        {
-          "incident_id": "8cf67a97b55e1d57",
-          "relationship": "affected_by",
-          "evidence_url": "https://prtimes.jp/main/html/rd/p/000000478.000055758.html",
-          "evidence_urls": [
-            "https://prtimes.jp/main/html/rd/p/000000478.000055758.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "PR TIMES",
-          "url": "https://prtimes.jp/main/html/rd/p/000000478.000055758.html"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "discovery",
-      "affected_service": "BEAUTY CITY / TB WEB ORDER",
-      "service_aliases": [],
-      "affected_services": [
-        "BEAUTY CITY",
-        "TB WEB ORDER"
-      ],
-      "service_details": [
-        {
-          "name": "BEAUTY CITY",
-          "aliases": []
-        },
-        {
-          "name": "TB WEB ORDER",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-19T08:17:17+00:00",
-      "updated_at": "2026-11-19T08:17:17+00:00"
     },
     {
       "id": "0a784297aed5dfab",
@@ -6477,6 +6486,33 @@
       "date_basis": "ingestion",
       "added_at": "2026-11-13T23:16:11+00:00",
       "updated_at": "2026-11-13T23:16:11+00:00"
+    },
+    {
+      "id": "61531c69de0fe023",
+      "published_at": "2026-11-13T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "前橋市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 7,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "上毛新聞電子版",
+          "url": "https://www.jomo-news.co.jp/articles/-/1068772"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "めぶくPay",
+      "service_aliases": [],
+      "added_at": "2026-11-19T20:18:28+00:00",
+      "updated_at": "2026-11-19T20:18:28+00:00"
     },
     {
       "id": "078c49bf61f96ae1",
@@ -7629,8 +7665,9 @@
         {
           "incident_id": "a55deee80e6bebf6",
           "relationship": "affects",
-          "evidence_url": "https://prtimes.jp/main/html/rd/p/000000478.000055758.html",
+          "evidence_url": "https://news.infoseek.co.jp/article/prtimes_000000478_000055758/",
           "evidence_urls": [
+            "https://news.infoseek.co.jp/article/prtimes_000000478_000055758/",
             "https://prtimes.jp/main/html/rd/p/000000478.000055758.html"
           ]
         },
@@ -7883,7 +7920,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-19T15:17:55+00:00"
+      "updated_at": "2026-11-19T20:18:28+00:00"
     },
     {
       "id": "9f04a00959566f37",
