@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-19T11:17:53+00:00",
-  "total": 1479,
+  "updated_at": "2026-11-19T12:19:03+00:00",
+  "total": 1478,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-19"
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-18",
-      "count": 36
+      "count": 35
     },
     {
       "date": "2026-11-19",
@@ -1032,7 +1032,8 @@
           "relationship": "same_organization",
           "evidence_url": "https://news.yahoo.co.jp/articles/0fedc66ae1a7bd4b885bdbb411b74a041edcb100",
           "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/0fedc66ae1a7bd4b885bdbb411b74a041edcb100"
+            "https://news.yahoo.co.jp/articles/0fedc66ae1a7bd4b885bdbb411b74a041edcb100",
+            "https://www.yomiuri.co.jp/economy/20261118-GYT1T00270/"
           ]
         },
         {
@@ -1040,7 +1041,8 @@
           "relationship": "affected_by",
           "evidence_url": "https://news.yahoo.co.jp/articles/0fedc66ae1a7bd4b885bdbb411b74a041edcb100",
           "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/0fedc66ae1a7bd4b885bdbb411b74a041edcb100"
+            "https://news.yahoo.co.jp/articles/0fedc66ae1a7bd4b885bdbb411b74a041edcb100",
+            "https://www.yomiuri.co.jp/economy/20261118-GYT1T00270/"
           ]
         }
       ],
@@ -1064,14 +1066,42 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/3d64a1c20a5dbe55b9d37b7f7d89438778891863"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118631"
+        },
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/economy/20261118-GYT1T00270/"
+        },
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/economy/20261118-GYT1T00289/"
         }
       ],
       "affected_system": null,
       "date_basis": "publication",
-      "affected_service": "オンラインショップ",
+      "affected_service": "オンラインショップ / KARTE",
       "service_aliases": [],
+      "affected_services": [
+        "オンラインショップ",
+        "KARTE"
+      ],
+      "service_details": [
+        {
+          "name": "オンラインショップ",
+          "aliases": []
+        },
+        {
+          "name": "KARTE",
+          "aliases": [
+            "カルテ"
+          ]
+        }
+      ],
       "added_at": "2026-11-18T15:16:38+00:00",
-      "updated_at": "2026-11-19T00:15:50+00:00"
+      "updated_at": "2026-11-19T12:19:03+00:00"
     },
     {
       "id": "0fcc9607828441b5",
@@ -2254,59 +2284,6 @@
       "service_aliases": [],
       "added_at": "2026-11-18T16:15:49+00:00",
       "updated_at": "2026-11-18T23:14:19+00:00"
-    },
-    {
-      "id": "c756534f5b95c2b8",
-      "published_at": "2026-11-17T15:00:00+00:00",
-      "disclosed_at": "2026-11-17T15:00:00+00:00",
-      "organization": "DHC",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 19110000,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "3f9647cdc55cfd86",
-          "relationship": "same_organization",
-          "evidence_url": "https://www.yomiuri.co.jp/economy/20261118-GYT1T00270/",
-          "evidence_urls": [
-            "https://www.yomiuri.co.jp/economy/20261118-GYT1T00270/"
-          ]
-        },
-        {
-          "incident_id": "8cf67a97b55e1d57",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.yomiuri.co.jp/economy/20261118-GYT1T00270/",
-          "evidence_urls": [
-            "https://www.yomiuri.co.jp/economy/20261118-GYT1T00270/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "読売新聞",
-          "url": "https://www.yomiuri.co.jp/economy/20261118-GYT1T00270/"
-        },
-        {
-          "name": "読売新聞",
-          "url": "https://www.yomiuri.co.jp/economy/20261118-GYT1T00289/"
-        },
-        {
-          "name": "Cybersecurity.jp",
-          "url": "https://cybersecurity-jp.com/news/118631"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "first_disclosure",
-      "affected_service": "KARTE",
-      "service_aliases": [
-        "カルテ"
-      ],
-      "added_at": "2026-11-18T15:16:38+00:00",
-      "updated_at": "2026-11-19T10:17:50+00:00"
     },
     {
       "id": "d1cfed978db69b09",
@@ -6955,7 +6932,8 @@
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/0fedc66ae1a7bd4b885bdbb411b74a041edcb100",
           "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/0fedc66ae1a7bd4b885bdbb411b74a041edcb100"
+            "https://news.yahoo.co.jp/articles/0fedc66ae1a7bd4b885bdbb411b74a041edcb100",
+            "https://www.yomiuri.co.jp/economy/20261118-GYT1T00270/"
           ]
         },
         {
@@ -7426,14 +7404,6 @@
           ]
         },
         {
-          "incident_id": "c756534f5b95c2b8",
-          "relationship": "affects",
-          "evidence_url": "https://www.yomiuri.co.jp/economy/20261118-GYT1T00270/",
-          "evidence_urls": [
-            "https://www.yomiuri.co.jp/economy/20261118-GYT1T00270/"
-          ]
-        },
-        {
           "incident_id": "cd28aec583d7af5c",
           "relationship": "affects",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/offers_overflow_karte_29950_personal_data_leak_2026/",
@@ -7609,7 +7579,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-19T11:17:52+00:00"
+      "updated_at": "2026-11-19T12:19:03+00:00"
     },
     {
       "id": "9f04a00959566f37",
@@ -34154,14 +34124,7 @@
           "relationship": "same_organization",
           "evidence_url": "https://news.yahoo.co.jp/articles/0fedc66ae1a7bd4b885bdbb411b74a041edcb100",
           "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/0fedc66ae1a7bd4b885bdbb411b74a041edcb100"
-          ]
-        },
-        {
-          "incident_id": "c756534f5b95c2b8",
-          "relationship": "same_organization",
-          "evidence_url": "https://www.yomiuri.co.jp/economy/20261118-GYT1T00270/",
-          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/0fedc66ae1a7bd4b885bdbb411b74a041edcb100",
             "https://www.yomiuri.co.jp/economy/20261118-GYT1T00270/"
           ]
         }
@@ -34221,7 +34184,7 @@
         }
       ],
       "added_at": "2026-10-30T10:15:57+00:00",
-      "updated_at": "2026-11-18T15:16:38+00:00"
+      "updated_at": "2026-11-19T12:19:03+00:00"
     },
     {
       "id": "4c6b74a51ee58ae2",
@@ -66983,6 +66946,7 @@
     "eabeef8122751e9d": "8132159128c70bb6",
     "0a5e91817dd2bb5b": "20f151f23e74c369",
     "a7e224f51afd9779": "0f105773ffbb91ad",
-    "144179200a5abc10": "3452fc96c339d2ca"
+    "144179200a5abc10": "3452fc96c339d2ca",
+    "c756534f5b95c2b8": "073f272eda1d2604"
   }
 }
