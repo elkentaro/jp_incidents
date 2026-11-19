@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-19T10:17:50+00:00",
-  "total": 1476,
+  "updated_at": "2026-11-19T11:17:53+00:00",
+  "total": 1479,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-19"
@@ -366,7 +366,7 @@
     },
     {
       "date": "2026-11-19",
-      "count": 15
+      "count": 18
     }
   ],
   "incidents": [
@@ -496,6 +496,43 @@
       "updated_at": "2026-11-19T05:16:46+00:00"
     },
     {
+      "id": "074272c74e09cbbb",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ウィゴー",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUC193U50Z11C26A1000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUC193U50Z11C26A1000000/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC193U50Z11C26A1000000/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "KARTE",
+      "service_aliases": [
+        "カルテ"
+      ],
+      "added_at": "2026-11-19T11:17:52+00:00",
+      "updated_at": "2026-11-19T11:17:52+00:00"
+    },
+    {
       "id": "0fcb6abfbe277100",
       "published_at": "2026-11-18T15:00:00+00:00",
       "disclosed_at": null,
@@ -605,6 +642,70 @@
       ],
       "added_at": "2026-11-19T10:17:50+00:00",
       "updated_at": "2026-11-19T10:17:50+00:00"
+    },
+    {
+      "id": "757876f3fce6084e",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "AirDo",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5CZHB3eng4WExaLWMyakNhQVlGdkg0YThFYkdqbXNEekJzQVc5WGF1M3VxSjJzb0MwNFJDTGhHeUw1YVZCcnlfaXpheEsweWFYWWdCdktWclVUb0RCUlJGM0w3ellzU2M2S1VQbm5jQTZDMkEwQzRqXzFJdHJFdEk?oc=5"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "旅客サービスシステム",
+      "service_aliases": [],
+      "upstream_status": "outside_japan",
+      "added_at": "2026-11-19T11:17:52+00:00",
+      "updated_at": "2026-11-19T11:17:52+00:00"
+    },
+    {
+      "id": "d832febcbc03fa90",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "オンワード樫山",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUC193U50Z11C26A1000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUC193U50Z11C26A1000000/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC193U50Z11C26A1000000/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "KARTE",
+      "service_aliases": [
+        "カルテ"
+      ],
+      "added_at": "2026-11-19T11:17:52+00:00",
+      "updated_at": "2026-11-19T11:17:52+00:00"
     },
     {
       "id": "35af713e1d0b2a3b",
@@ -6698,7 +6799,8 @@
       "organization": "タイミー",
       "incident_type": "data leak",
       "incident_categories": [
-        "data leak"
+        "data leak",
+        "unauthorized access"
       ],
       "potential_records": 226662,
       "confidence": "high",
@@ -6717,6 +6819,10 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/timee_karte_employer_data_leak_226662_20261119/"
+        },
+        {
+          "name": "株式会社タイミー",
+          "url": "https://corp.timee.co.jp/news/detail-7442/"
         }
       ],
       "affected_system": null,
@@ -6724,7 +6830,7 @@
       "affected_service": "求人事業者の担当者情報",
       "service_aliases": [],
       "added_at": "2026-11-19T10:17:50+00:00",
-      "updated_at": "2026-11-19T10:17:50+00:00"
+      "updated_at": "2026-11-19T11:17:52+00:00"
     },
     {
       "id": "872c6ee1daba8835",
@@ -6850,6 +6956,14 @@
           "evidence_url": "https://news.yahoo.co.jp/articles/0fedc66ae1a7bd4b885bdbb411b74a041edcb100",
           "evidence_urls": [
             "https://news.yahoo.co.jp/articles/0fedc66ae1a7bd4b885bdbb411b74a041edcb100"
+          ]
+        },
+        {
+          "incident_id": "074272c74e09cbbb",
+          "relationship": "affects",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUC193U50Z11C26A1000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUC193U50Z11C26A1000000/"
           ]
         },
         {
@@ -7361,6 +7475,14 @@
           ]
         },
         {
+          "incident_id": "d832febcbc03fa90",
+          "relationship": "affects",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUC193U50Z11C26A1000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUC193U50Z11C26A1000000/"
+          ]
+        },
+        {
           "incident_id": "dc7a8d07caf7fe9d",
           "relationship": "affects",
           "evidence_url": "https://cybersecurity-jp.com/news/118632",
@@ -7487,7 +7609,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-19T10:17:50+00:00"
+      "updated_at": "2026-11-19T11:17:52+00:00"
     },
     {
       "id": "9f04a00959566f37",
@@ -13932,6 +14054,14 @@
           "evidence_urls": [
             "https://www.city.yokohama.lg.jp/city-info/koho-kocho/press/kanagawa/2026/1022shirahata.html"
           ]
+        },
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/d4cda6a55fe3bc4933c78935311a625a31ace17b",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/d4cda6a55fe3bc4933c78935311a625a31ace17b"
+          ]
         }
       ],
       "sources": [
@@ -13943,7 +14073,7 @@
       "affected_service": "電子チケットサービス",
       "service_aliases": [],
       "added_at": "2026-11-11T03:15:41+00:00",
-      "updated_at": "2026-11-17T11:16:33+00:00"
+      "updated_at": "2026-11-19T11:17:52+00:00"
     },
     {
       "id": "a4bddfbd43d68938",
@@ -35418,6 +35548,14 @@
           ]
         },
         {
+          "incident_id": "5ddb90d3124b9e7b",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/d4cda6a55fe3bc4933c78935311a625a31ace17b",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/d4cda6a55fe3bc4933c78935311a625a31ace17b"
+          ]
+        },
+        {
           "incident_id": "5f5f978b799bc80f",
           "relationship": "affects",
           "evidence_url": "https://joetsu.yukiguni.town/l-news/342382/",
@@ -36603,7 +36741,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-18T22:15:51+00:00"
+      "updated_at": "2026-11-19T11:17:52+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
