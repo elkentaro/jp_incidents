@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-19T05:16:46+00:00",
-  "total": 1466,
+  "updated_at": "2026-11-19T06:16:44+00:00",
+  "total": 1465,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-19"
@@ -346,7 +346,7 @@
     },
     {
       "date": "2026-11-14",
-      "count": 13
+      "count": 12
     },
     {
       "date": "2026-11-15",
@@ -5333,7 +5333,16 @@
       "potential_records": 86,
       "confidence": "high",
       "confidence_score": 90,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "5ec4369d7fae9a45",
+          "relationship": "same_organization",
+          "evidence_url": "https://prtimes.jp/main/html/rd/p/000000388.000006391.html",
+          "evidence_urls": [
+            "https://prtimes.jp/main/html/rd/p/000000388.000006391.html"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "日本経済新聞",
@@ -5342,6 +5351,10 @@
         {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261119583325.pdf"
+        },
+        {
+          "name": "PR TIMES",
+          "url": "https://prtimes.jp/main/html/rd/p/000000388.000006391.html"
         }
       ],
       "affected_system": null,
@@ -5349,7 +5362,7 @@
       "affected_service": "Schoo Swing",
       "service_aliases": [],
       "added_at": "2026-11-19T04:16:16+00:00",
-      "updated_at": "2026-11-19T04:16:16+00:00"
+      "updated_at": "2026-11-19T06:16:44+00:00"
     },
     {
       "id": "577d4cf3ca24cfb3",
@@ -5556,42 +5569,6 @@
       "service_aliases": [],
       "added_at": "2026-11-16T05:16:04+00:00",
       "updated_at": "2026-11-19T01:15:50+00:00"
-    },
-    {
-      "id": "144179200a5abc10",
-      "published_at": "2026-11-13T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "Schoo",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 86,
-      "confidence": "high",
-      "confidence_score": 70,
-      "related": [
-        {
-          "incident_id": "5ec4369d7fae9a45",
-          "relationship": "same_organization",
-          "evidence_url": "https://prtimes.jp/main/html/rd/p/000000388.000006391.html",
-          "evidence_urls": [
-            "https://prtimes.jp/main/html/rd/p/000000388.000006391.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "PR TIMES",
-          "url": "https://prtimes.jp/main/html/rd/p/000000388.000006391.html"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "occurrence",
-      "affected_service": "Schoo Swing",
-      "service_aliases": [],
-      "added_at": "2026-11-19T04:16:16+00:00",
-      "updated_at": "2026-11-19T04:16:16+00:00"
     },
     {
       "id": "0f5f8567d53f3ad5",
@@ -6208,7 +6185,7 @@
       "confidence_score": 90,
       "related": [
         {
-          "incident_id": "144179200a5abc10",
+          "incident_id": "3452fc96c339d2ca",
           "relationship": "same_organization",
           "evidence_url": "https://prtimes.jp/main/html/rd/p/000000388.000006391.html",
           "evidence_urls": [
@@ -6245,7 +6222,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-18T17:16:21+00:00",
-      "updated_at": "2026-11-19T04:16:16+00:00"
+      "updated_at": "2026-11-19T06:16:44+00:00"
     },
     {
       "id": "61ae21551c726eee",
@@ -66297,6 +66274,7 @@
     "92401d7ee52f9b03": "c315588305545d55",
     "eabeef8122751e9d": "8132159128c70bb6",
     "0a5e91817dd2bb5b": "20f151f23e74c369",
-    "a7e224f51afd9779": "0f105773ffbb91ad"
+    "a7e224f51afd9779": "0f105773ffbb91ad",
+    "144179200a5abc10": "3452fc96c339d2ca"
   }
 }
