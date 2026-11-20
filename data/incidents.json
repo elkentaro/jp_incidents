@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-20T01:30:53+00:00",
+  "updated_at": "2026-11-20T01:41:03+00:00",
   "total": 1500,
   "date_range": {
     "start": "2023-12-24",
@@ -503,14 +503,32 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/nbk_nabeya_bi_tech_karte_87759_data_leak_20261119/"
+        },
+        {
+          "name": "鍋屋バイテック会社",
+          "url": "https://www.nbk1560.com/news/2026/20261119/"
         }
       ],
       "affected_system": null,
       "date_basis": "first_disclosure",
-      "affected_service": "KARTE",
+      "affected_service": "KARTE / ウェブサイト",
       "service_aliases": [],
+      "affected_services": [
+        "KARTE",
+        "ウェブサイト"
+      ],
+      "service_details": [
+        {
+          "name": "KARTE",
+          "aliases": []
+        },
+        {
+          "name": "ウェブサイト",
+          "aliases": []
+        }
+      ],
       "added_at": "2026-11-20T00:17:39+00:00",
-      "updated_at": "2026-11-20T00:17:39+00:00"
+      "updated_at": "2026-11-20T01:41:03+00:00"
     },
     {
       "id": "d578c0d976772519",
@@ -1450,6 +1468,57 @@
       "updated_at": "2026-11-18T17:16:21+00:00"
     },
     {
+      "id": "1b2cb42ebe6b4d57",
+      "published_at": "2026-11-17T15:00:00+00:00",
+      "disclosed_at": "2026-11-17T15:00:00+00:00",
+      "organization": "六花亭",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 8000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.rokkatei.co.jp/news/info/20261118-25760/"
+        },
+        {
+          "name": "www.itmedia.co.jp",
+          "url": "https://www.itmedia.co.jp/news/article/2611/19/2000003316/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/069c699adaceb435abdb0ca89279f4a7e19146c4"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b91675f1be03f210c671fe2e809a086604aadf70"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/22fdc821cbb8b4f96f4015d12389fc609453870e"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/10a037a0faec437ae467922fc55dc23683b8a7a3"
+        },
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/economy/20261119-GYT1T00235/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "六花亭オンラインショップ",
+      "service_aliases": [],
+      "added_at": "2026-11-19T03:16:30+00:00",
+      "updated_at": "2026-11-20T01:41:03+00:00"
+    },
+    {
       "id": "1e993c03a473cbb3",
       "published_at": "2026-11-17T15:00:00+00:00",
       "disclosed_at": null,
@@ -2294,53 +2363,6 @@
       "date_basis": "publication",
       "added_at": "2026-11-18T17:16:21+00:00",
       "updated_at": "2026-11-18T17:16:21+00:00"
-    },
-    {
-      "id": "1b2cb42ebe6b4d57",
-      "published_at": "2026-11-17T15:00:00+00:00",
-      "disclosed_at": "2026-11-17T15:00:00+00:00",
-      "organization": "六花亭",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 8000,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "www.itmedia.co.jp",
-          "url": "https://www.itmedia.co.jp/news/article/2611/19/2000003316/"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/069c699adaceb435abdb0ca89279f4a7e19146c4"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/b91675f1be03f210c671fe2e809a086604aadf70"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/22fdc821cbb8b4f96f4015d12389fc609453870e"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/10a037a0faec437ae467922fc55dc23683b8a7a3"
-        },
-        {
-          "name": "読売新聞",
-          "url": "https://www.yomiuri.co.jp/economy/20261119-GYT1T00235/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "discovery",
-      "affected_service": "六花亭オンラインショップ",
-      "service_aliases": [],
-      "added_at": "2026-11-19T03:16:30+00:00",
-      "updated_at": "2026-11-19T08:17:17+00:00"
     },
     {
       "id": "1cc837be848c8823",
@@ -8329,6 +8351,10 @@
         {
           "name": "satimo list",
           "url": "https://agriculture.kubota.co.jp/ksas/news/detail/54014.html"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/kubota_ksas_karte_15000_farms_potential_leak_202611/"
         }
       ],
       "affected_system": null,
@@ -8336,7 +8362,7 @@
       "affected_service": "KSAS",
       "service_aliases": [],
       "added_at": "2026-11-20T01:14:30+00:00",
-      "updated_at": "2026-11-20T01:14:30+00:00"
+      "updated_at": "2026-11-20T01:41:03+00:00"
     },
     {
       "id": "9f04a00959566f37",
