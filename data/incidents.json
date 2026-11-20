@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-20T01:41:03+00:00",
-  "total": 1500,
+  "updated_at": "2026-11-20T02:19:03+00:00",
+  "total": 1501,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-19"
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-19",
-      "count": 25
+      "count": 26
     },
     {
       "date": "2026-11-20",
@@ -396,6 +396,10 @@
         {
           "name": "CNET Japan",
           "url": "https://japan.cnet.com/article/35255181/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/42abf3dd8205166918a76250fd4f0a8e5c498530"
         }
       ],
       "affected_system": null,
@@ -403,7 +407,7 @@
       "affected_service": "三井ショッピングパークアプリ",
       "service_aliases": [],
       "added_at": "2026-11-19T14:18:14+00:00",
-      "updated_at": "2026-11-20T00:17:39+00:00"
+      "updated_at": "2026-11-20T02:19:03+00:00"
     },
     {
       "id": "775d529b26c4729b",
@@ -511,24 +515,10 @@
       ],
       "affected_system": null,
       "date_basis": "first_disclosure",
-      "affected_service": "KARTE / ウェブサイト",
+      "affected_service": "ウェブサイト",
       "service_aliases": [],
-      "affected_services": [
-        "KARTE",
-        "ウェブサイト"
-      ],
-      "service_details": [
-        {
-          "name": "KARTE",
-          "aliases": []
-        },
-        {
-          "name": "ウェブサイト",
-          "aliases": []
-        }
-      ],
       "added_at": "2026-11-20T00:17:39+00:00",
-      "updated_at": "2026-11-20T01:41:03+00:00"
+      "updated_at": "2026-11-20T02:19:03+00:00"
     },
     {
       "id": "d578c0d976772519",
@@ -1226,6 +1216,42 @@
       "service_aliases": [],
       "added_at": "2026-11-18T23:23:22+00:00",
       "updated_at": "2026-11-18T23:23:22+00:00"
+    },
+    {
+      "id": "bb8e95db5a3e6193",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": "2026-11-18T15:00:00+00:00",
+      "organization": "ビタブリッドジャパン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 11590,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/vitabrid_japan_karte_11590_data_breach_202611/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/vitabrid_japan_karte_11590_data_breach_202611/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/vitabrid_japan_karte_11590_data_breach_202611/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "公式ECサイト",
+      "service_aliases": [],
+      "added_at": "2026-11-20T02:19:03+00:00",
+      "updated_at": "2026-11-20T02:19:03+00:00"
     },
     {
       "id": "de4e9cb1d098b3db",
@@ -3215,8 +3241,9 @@
         {
           "incident_id": "557c85f6d895d50b",
           "relationship": "affected_by",
-          "evidence_url": "https://www.flowerkitchen-web.com/c/shopgide/shopnews/news",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/flower_kitchen_goqsystem_17146_gift_recipients_breach_2026/",
           "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/flower_kitchen_goqsystem_17146_gift_recipients_breach_2026/",
             "https://www.flowerkitchen-web.com/c/shopgide/shopnews/news"
           ]
         }
@@ -3225,6 +3252,10 @@
         {
           "name": "satimo list",
           "url": "https://www.flowerkitchen-web.com/c/shopgide/shopnews/news"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/flower_kitchen_goqsystem_17146_gift_recipients_breach_2026/"
         }
       ],
       "affected_system": null,
@@ -3232,7 +3263,7 @@
       "affected_service": "フラワーキッチン自由が丘",
       "service_aliases": [],
       "added_at": "2026-11-20T01:14:30+00:00",
-      "updated_at": "2026-11-20T01:14:30+00:00"
+      "updated_at": "2026-11-20T02:19:03+00:00"
     },
     {
       "id": "7cbbacf6bb6ad215",
@@ -6382,6 +6413,50 @@
       "updated_at": "2026-11-20T00:17:39+00:00"
     },
     {
+      "id": "3f2330c30561a5c2",
+      "published_at": "2026-11-13T15:00:00+00:00",
+      "disclosed_at": "2026-11-13T15:00:00+00:00",
+      "organization": "京阪ホールディングス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 224386,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "aa9bc3fcfc85d71d",
+          "relationship": "affected_by",
+          "evidence_url": "https://cybersecurity-jp.com/news/118440",
+          "evidence_urls": [
+            "https://cybersecurity-jp.com/news/118440"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "京阪ホールディングス / Keihan Holdings",
+          "url": "https://www.keihan.co.jp/corporate/info/release/assets/261120_keihan-holdings.pdf"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118440"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/7db8447304284a8dd34d4bf5ebc9fb058303f73c"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "COMSBI",
+      "service_aliases": [],
+      "added_at": "2026-11-15T02:15:29+00:00",
+      "updated_at": "2026-11-20T02:19:03+00:00"
+    },
+    {
       "id": "577d4cf3ca24cfb3",
       "published_at": "2026-11-13T15:00:00+00:00",
       "disclosed_at": null,
@@ -6399,12 +6474,16 @@
         {
           "name": "legalagent list",
           "url": "https://agileware.jp/news/info/2026_1118/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/agileware_lychee_redmine_legacy_backup_credentials_exfiltration/"
         }
       ],
       "affected_system": null,
       "date_basis": "discovery",
       "added_at": "2026-11-19T01:15:50+00:00",
-      "updated_at": "2026-11-19T01:15:50+00:00"
+      "updated_at": "2026-11-20T02:19:03+00:00"
     },
     {
       "id": "749ef8fb578f0f00",
@@ -6685,46 +6764,6 @@
       "service_aliases": [],
       "added_at": "2026-11-13T22:16:19+00:00",
       "updated_at": "2026-11-17T11:16:33+00:00"
-    },
-    {
-      "id": "3f2330c30561a5c2",
-      "published_at": "2026-11-13T15:00:00+00:00",
-      "disclosed_at": "2026-11-13T15:00:00+00:00",
-      "organization": "京阪ホールディングス",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 224386,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "aa9bc3fcfc85d71d",
-          "relationship": "affected_by",
-          "evidence_url": "https://cybersecurity-jp.com/news/118440",
-          "evidence_urls": [
-            "https://cybersecurity-jp.com/news/118440"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Cybersecurity.jp",
-          "url": "https://cybersecurity-jp.com/news/118440"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/7db8447304284a8dd34d4bf5ebc9fb058303f73c"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "occurrence",
-      "affected_service": "COMSBI",
-      "service_aliases": [],
-      "added_at": "2026-11-15T02:15:29+00:00",
-      "updated_at": "2026-11-15T15:16:48+00:00"
     },
     {
       "id": "66a4062b603a134d",
@@ -7491,6 +7530,10 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUC19B420Z11C26A1000000/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118663"
         }
       ],
       "affected_system": null,
@@ -7498,7 +7541,7 @@
       "affected_service": "求人事業者の担当者情報",
       "service_aliases": [],
       "added_at": "2026-11-19T10:17:50+00:00",
-      "updated_at": "2026-11-19T14:18:14+00:00"
+      "updated_at": "2026-11-20T02:19:03+00:00"
     },
     {
       "id": "872c6ee1daba8835",
@@ -8105,6 +8148,14 @@
           ]
         },
         {
+          "incident_id": "bb8e95db5a3e6193",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/vitabrid_japan_karte_11590_data_breach_202611/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/vitabrid_japan_karte_11590_data_breach_202611/"
+          ]
+        },
+        {
           "incident_id": "bba46f64d143e93c",
           "relationship": "affects",
           "evidence_url": "https://company.golfdigest.co.jp/corp/pr/2026111701.html",
@@ -8322,7 +8373,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-20T01:14:30+00:00"
+      "updated_at": "2026-11-20T02:19:03+00:00"
     },
     {
       "id": "958475ed41c0f37d",
@@ -9104,6 +9155,10 @@
         {
           "name": "CNET Japan",
           "url": "https://japan.cnet.com/article/35255160/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118661"
         }
       ],
       "affected_system": null,
@@ -9113,7 +9168,7 @@
         "ココロストア"
       ],
       "added_at": "2026-11-19T10:17:50+00:00",
-      "updated_at": "2026-11-19T19:18:21+00:00"
+      "updated_at": "2026-11-20T02:19:03+00:00"
     },
     {
       "id": "690093b769061da8",
@@ -13737,8 +13792,9 @@
         {
           "incident_id": "73e340ff264751de",
           "relationship": "affects",
-          "evidence_url": "https://www.flowerkitchen-web.com/c/shopgide/shopnews/news",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/flower_kitchen_goqsystem_17146_gift_recipients_breach_2026/",
           "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/flower_kitchen_goqsystem_17146_gift_recipients_breach_2026/",
             "https://www.flowerkitchen-web.com/c/shopgide/shopnews/news"
           ]
         },
@@ -13822,7 +13878,7 @@
       "affected_service": "GoQSystem",
       "service_aliases": [],
       "added_at": "2026-11-15T18:16:24+00:00",
-      "updated_at": "2026-11-20T01:14:30+00:00"
+      "updated_at": "2026-11-20T02:19:03+00:00"
     },
     {
       "id": "64589e58e48fed43",
