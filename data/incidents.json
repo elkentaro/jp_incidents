@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-20T02:19:03+00:00",
-  "total": 1501,
+  "updated_at": "2026-11-20T03:27:04+00:00",
+  "total": 1502,
   "date_range": {
     "start": "2023-12-24",
-    "end": "2026-11-19"
+    "end": "2026-11-20"
   },
   "daily_counts_90d": [
     {
@@ -366,10 +366,48 @@
     },
     {
       "date": "2026-11-20",
-      "count": 0
+      "count": 1
     }
   ],
   "incidents": [
+    {
+      "id": "9fd3d936d3b144a7",
+      "published_at": "2026-11-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "MOSH",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 928617,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/mosh_karte_928617_email_userid_data_breach_202611/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/mosh_karte_928617_email_userid_data_breach_202611/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/mosh_karte_928617_email_userid_data_breach_202611/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "MOSH",
+      "service_aliases": [
+        "ゲスト・クリエイター"
+      ],
+      "added_at": "2026-11-20T03:27:04+00:00",
+      "updated_at": "2026-11-20T03:27:04+00:00"
+    },
     {
       "id": "67dfe4f80f615ac6",
       "published_at": "2026-11-18T15:00:00+00:00",
@@ -5305,8 +5343,9 @@
       "published_at": "2026-11-15T15:00:00+00:00",
       "disclosed_at": "2026-11-18T15:00:00+00:00",
       "organization": "SBCメディカルグループ",
-      "incident_type": "unauthorized access",
+      "incident_type": "data leak",
       "incident_categories": [
+        "data leak",
         "unauthorized access"
       ],
       "potential_records": null,
@@ -5342,6 +5381,10 @@
         {
           "name": "AERA DIGITAL",
           "url": "https://dot.asahi.com/articles/photo/298047"
+        },
+        {
+          "name": "テレ朝NEWS",
+          "url": "https://news.tv-asahi.co.jp/news_economy/articles/000549294.html"
         }
       ],
       "affected_system": null,
@@ -5349,7 +5392,7 @@
       "affected_service": "トリビュー",
       "service_aliases": [],
       "added_at": "2026-11-19T13:18:58+00:00",
-      "updated_at": "2026-11-19T23:17:26+00:00"
+      "updated_at": "2026-11-20T03:27:04+00:00"
     },
     {
       "id": "59f08b559e7aee70",
@@ -8091,6 +8134,14 @@
           ]
         },
         {
+          "incident_id": "9fd3d936d3b144a7",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/mosh_karte_928617_email_userid_data_breach_202611/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/mosh_karte_928617_email_userid_data_breach_202611/"
+          ]
+        },
+        {
           "incident_id": "a55deee80e6bebf6",
           "relationship": "affects",
           "evidence_url": "https://news.infoseek.co.jp/article/prtimes_000000478_000055758/",
@@ -8373,7 +8424,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-20T02:19:03+00:00"
+      "updated_at": "2026-11-20T03:27:04+00:00"
     },
     {
       "id": "958475ed41c0f37d",
@@ -68013,69 +68064,69 @@
     }
   ],
   "aliases": {
-    "c0c4c7ae495d6d81": "671c427eadb6fc63",
-    "ee164d48a3308456": "7cffff947ec394ec",
-    "bbd4bbe2ecfffa13": "6b0f4b64bc36019c",
-    "8b7d9b3cba0b6490": "933d34557d02f202",
-    "910809cd1ec196fa": "ca35872041127442",
-    "ae3a089e043e2b07": "ca35872041127442",
-    "b4ddb9afcf984268": "bc565046df2e88d6",
-    "c5b12d5da9f4290f": "bc565046df2e88d6",
-    "497516621efc79c2": "bc565046df2e88d6",
-    "09c388ae90754d2c": "bc565046df2e88d6",
-    "80ce6830141fcd38": "28143109b9e9e9e5",
-    "cc40d3ea9ea6c544": "28143109b9e9e9e5",
-    "9bb932cbb7951ea9": "28143109b9e9e9e5",
-    "c583ae374858d441": "e1f29bc909e7426f",
-    "ae9282b91546de03": "b2b47aa569e15218",
-    "a59615ac9ca4686f": "2cd643706e47a750",
-    "216c3641192b9548": "0eaef1bd861f21f3",
-    "4bedb3d95edaf9b5": "01b9a3bb946f0daf",
-    "e24546e6612f68ce": "15204b629222c010",
-    "f59a711d4476a7fe": "e350657755c1d562",
-    "75c3c3d843e6809b": "0eba91331516b1bd",
-    "94be2eff533e75cd": "0eba91331516b1bd",
-    "79d152078edb29b5": "0eba91331516b1bd",
-    "7daf0e2792d37f25": "6f75c587190a7da1",
-    "e70ce08ed5c690de": "cbdf6f7224141cb8",
-    "e217d9fb39f21e3e": "0a86ecb2b2d87e50",
     "cfc1701c27ff92d9": "0a08a3f6bcd30b82",
-    "d2c6ca3bd26bd5ac": "0eaef1bd861f21f3",
+    "e24546e6612f68ce": "15204b629222c010",
+    "4bedb3d95edaf9b5": "01b9a3bb946f0daf",
+    "9bb932cbb7951ea9": "28143109b9e9e9e5",
+    "cc40d3ea9ea6c544": "28143109b9e9e9e5",
+    "80ce6830141fcd38": "28143109b9e9e9e5",
+    "e70ce08ed5c690de": "cbdf6f7224141cb8",
+    "bbd4bbe2ecfffa13": "6b0f4b64bc36019c",
+    "ae3a089e043e2b07": "ca35872041127442",
+    "910809cd1ec196fa": "ca35872041127442",
+    "5d515273ad570e8c": "c54d7b0032b3bb85",
+    "a59615ac9ca4686f": "2cd643706e47a750",
+    "79d152078edb29b5": "0eba91331516b1bd",
+    "94be2eff533e75cd": "0eba91331516b1bd",
+    "75c3c3d843e6809b": "0eba91331516b1bd",
+    "c583ae374858d441": "e1f29bc909e7426f",
+    "f59a711d4476a7fe": "e350657755c1d562",
+    "ee164d48a3308456": "7cffff947ec394ec",
+    "ae9282b91546de03": "b2b47aa569e15218",
+    "f1452b19c51d91ef": "20f9a1cae6506b65",
+    "c0c4c7ae495d6d81": "671c427eadb6fc63",
+    "7daf0e2792d37f25": "6f75c587190a7da1",
+    "e217d9fb39f21e3e": "0a86ecb2b2d87e50",
+    "09c388ae90754d2c": "bc565046df2e88d6",
+    "497516621efc79c2": "bc565046df2e88d6",
+    "c5b12d5da9f4290f": "bc565046df2e88d6",
+    "b4ddb9afcf984268": "bc565046df2e88d6",
+    "8b7d9b3cba0b6490": "933d34557d02f202",
     "16414fccdfdf5e18": "0eaef1bd861f21f3",
+    "d2c6ca3bd26bd5ac": "0eaef1bd861f21f3",
+    "216c3641192b9548": "0eaef1bd861f21f3",
+    "792c9e594566f60a": "aa9bc3fcfc85d71d",
     "4cc0594ace8794e0": "2639da70d5b68f2c",
-    "2953260f7715fc59": "1ff227f049a0de08",
-    "4abc615ec3fea0d6": "1ff227f049a0de08",
-    "a1047c4800d8333b": "1ff227f049a0de08",
+    "eabeef8122751e9d": "8132159128c70bb6",
     "24b890b61e3bb1e6": "3f9647cdc55cfd86",
     "1ab3d4097c2748bd": "9fa62f7bc43145a4",
-    "f1452b19c51d91ef": "20f9a1cae6506b65",
-    "5d515273ad570e8c": "c54d7b0032b3bb85",
+    "a1047c4800d8333b": "1ff227f049a0de08",
+    "4abc615ec3fea0d6": "1ff227f049a0de08",
+    "2953260f7715fc59": "1ff227f049a0de08",
     "c4ae42924805f3fd": "c22568994fef58b0",
-    "7f8e650bc1610ab8": "62c21edce1ba88de",
     "04ce6a7e8398548e": "b719f0f1d0000b8c",
-    "d6671f2e366c9ed2": "936adcbd7bc057e8",
-    "543647eb8eb3b259": "b8347963d4368d00",
+    "7f8e650bc1610ab8": "62c21edce1ba88de",
     "74f0b0ed8eb3946e": "4e61125aed51dbcb",
+    "543647eb8eb3b259": "b8347963d4368d00",
+    "d6671f2e366c9ed2": "936adcbd7bc057e8",
     "65bad253fb96954d": "0431dd98133dc204",
     "eaf462ad3680c52b": "8419a6aecdeccbf5",
-    "c1093d90264e195a": "a178b5edf8848999",
-    "4f4910cf84c927a3": "53104c066ce8eb19",
-    "73072a099cf303fd": "53104c066ce8eb19",
-    "a87c15f226fbfcbd": "53104c066ce8eb19",
-    "cf567958fbf8b1b3": "53104c066ce8eb19",
-    "5359e8005b1f39d0": "73760e3f9e89e045",
-    "f3e32c8fa0fdc473": "73760e3f9e89e045",
-    "a9b23cf8c81f91d7": "73760e3f9e89e045",
-    "032bad3b55c0d8fb": "73760e3f9e89e045",
     "022ce2ef5805e4dd": "cb69602b79e76443",
-    "792c9e594566f60a": "aa9bc3fcfc85d71d",
-    "7b197da5898c13ba": "c315588305545d55",
-    "fe3955ab5daa9251": "c315588305545d55",
+    "c1093d90264e195a": "a178b5edf8848999",
+    "cf567958fbf8b1b3": "53104c066ce8eb19",
+    "a87c15f226fbfcbd": "53104c066ce8eb19",
+    "73072a099cf303fd": "53104c066ce8eb19",
+    "4f4910cf84c927a3": "53104c066ce8eb19",
+    "032bad3b55c0d8fb": "73760e3f9e89e045",
+    "a9b23cf8c81f91d7": "73760e3f9e89e045",
+    "f3e32c8fa0fdc473": "73760e3f9e89e045",
+    "5359e8005b1f39d0": "73760e3f9e89e045",
     "92401d7ee52f9b03": "c315588305545d55",
-    "eabeef8122751e9d": "8132159128c70bb6",
+    "fe3955ab5daa9251": "c315588305545d55",
+    "7b197da5898c13ba": "c315588305545d55",
     "0a5e91817dd2bb5b": "20f151f23e74c369",
+    "c756534f5b95c2b8": "073f272eda1d2604",
     "a7e224f51afd9779": "0f105773ffbb91ad",
-    "144179200a5abc10": "3452fc96c339d2ca",
-    "c756534f5b95c2b8": "073f272eda1d2604"
+    "144179200a5abc10": "3452fc96c339d2ca"
   }
 }
