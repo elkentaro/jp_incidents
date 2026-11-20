@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-20T04:17:29+00:00",
-  "total": 1505,
+  "updated_at": "2026-11-20T05:17:21+00:00",
+  "total": 1507,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-20"
@@ -362,14 +362,69 @@
     },
     {
       "date": "2026-11-19",
-      "count": 27
+      "count": 28
     },
     {
       "date": "2026-11-20",
-      "count": 1
+      "count": 2
     }
   ],
   "incidents": [
+    {
+      "id": "330ccdb8fc90d8b6",
+      "published_at": "2026-11-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "グランビスタ ホテル＆リゾート",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "557c85f6d895d50b",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.granvista.co.jp/news/detail/1434",
+          "evidence_urls": [
+            "https://www.granvista.co.jp/news/detail/1434"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "鴨川シーワールド",
+          "url": "https://www.granvista.co.jp/news/detail/1434"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "鴨川シーワールド オルカショップ, 神戸須磨シーワールドオンラインショップ / 神戸須磨シーワールドオンラインショップ / 鴨川シーワールド オルカショップ",
+      "service_aliases": [],
+      "affected_services": [
+        "鴨川シーワールド オルカショップ, 神戸須磨シーワールドオンラインショップ",
+        "神戸須磨シーワールドオンラインショップ",
+        "鴨川シーワールド オルカショップ"
+      ],
+      "service_details": [
+        {
+          "name": "鴨川シーワールド オルカショップ, 神戸須磨シーワールドオンラインショップ",
+          "aliases": []
+        },
+        {
+          "name": "神戸須磨シーワールドオンラインショップ",
+          "aliases": []
+        },
+        {
+          "name": "鴨川シーワールド オルカショップ",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-20T05:17:21+00:00",
+      "updated_at": "2026-11-20T05:17:21+00:00"
+    },
     {
       "id": "9fd3d936d3b144a7",
       "published_at": "2026-11-19T15:00:00+00:00",
@@ -686,11 +741,24 @@
       "potential_records": null,
       "confidence": "high",
       "confidence_score": 80,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "8f93bc8af7c1dc3e",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/78d9cde0f5cb08a710295cdf819e09e6a9bd65bf",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/78d9cde0f5cb08a710295cdf819e09e6a9bd65bf"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261120583076.pdf"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/78d9cde0f5cb08a710295cdf819e09e6a9bd65bf"
         }
       ],
       "affected_system": null,
@@ -698,7 +766,7 @@
       "affected_service": "Wallet Station",
       "service_aliases": [],
       "added_at": "2026-11-20T01:22:45+00:00",
-      "updated_at": "2026-11-20T01:22:45+00:00"
+      "updated_at": "2026-11-20T05:17:21+00:00"
     },
     {
       "id": "074272c74e09cbbb",
@@ -891,6 +959,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQWlZCeUpIdHZ6OG15ZXRLTWZaX01wb0dYdE9SNTZ6N1JJcGhSdk5oUU1xNFNMYVc0WUEySVlzM01PU29yaGdIam9uMS0wS1duTS1mVVRIWF9qTFh4ZzJwcHoxQU5VTHE5WFEzblZOd19GUXZWMTRsT2NvdDZWdFltWmJ6VEF1S2hqaVdfMHJ3?oc=5"
+        },
+        {
+          "name": "産経ニュース",
+          "url": "https://www.sankei.com/article/20261119-B4ZRQBC3SVNV5FXD5CM77F5NHU/"
         }
       ],
       "affected_system": null,
@@ -900,7 +972,7 @@
         "コマド"
       ],
       "added_at": "2026-11-19T10:17:50+00:00",
-      "updated_at": "2026-11-19T21:18:35+00:00"
+      "updated_at": "2026-11-20T05:17:21+00:00"
     },
     {
       "id": "757876f3fce6084e",
@@ -928,6 +1000,50 @@
       "upstream_status": "outside_japan",
       "added_at": "2026-11-19T11:17:52+00:00",
       "updated_at": "2026-11-19T11:17:52+00:00"
+    },
+    {
+      "id": "8f93bc8af7c1dc3e",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "鹿児島銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 251172,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "14eaf28a942cd643",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/78d9cde0f5cb08a710295cdf819e09e6a9bd65bf",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/78d9cde0f5cb08a710295cdf819e09e6a9bd65bf"
+          ]
+        },
+        {
+          "incident_id": "7bda59e0bb9f1c7d",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/78d9cde0f5cb08a710295cdf819e09e6a9bd65bf",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/78d9cde0f5cb08a710295cdf819e09e6a9bd65bf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/78d9cde0f5cb08a710295cdf819e09e6a9bd65bf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "Payどん",
+      "service_aliases": [],
+      "added_at": "2026-11-20T05:17:21+00:00",
+      "updated_at": "2026-11-20T05:17:21+00:00"
     },
     {
       "id": "d832febcbc03fa90",
@@ -2179,12 +2295,16 @@
         {
           "name": "legalagent list",
           "url": "https://shintoku-town.jp/oshirase/3675/"
+        },
+        {
+          "name": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/20/130214"
         }
       ],
       "affected_system": null,
       "date_basis": "publication",
       "added_at": "2026-11-19T01:15:50+00:00",
-      "updated_at": "2026-11-20T00:17:39+00:00"
+      "updated_at": "2026-11-20T05:17:21+00:00"
     },
     {
       "id": "d7c3301e73f5092c",
@@ -8443,8 +8563,8 @@
           "url": "https://www.release.tdnet.info/inbs/140120261116581661.pdf"
         },
         {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUC13B0E0T11C26A1000000/"
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261119583758.pdf"
         },
         {
           "name": "Yahoo!ニュース",
@@ -8466,7 +8586,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-20T04:17:29+00:00"
+      "updated_at": "2026-11-20T05:17:21+00:00"
     },
     {
       "id": "958475ed41c0f37d",
@@ -13902,6 +14022,14 @@
       "confidence_score": 90,
       "related": [
         {
+          "incident_id": "330ccdb8fc90d8b6",
+          "relationship": "affects",
+          "evidence_url": "https://www.granvista.co.jp/news/detail/1434",
+          "evidence_urls": [
+            "https://www.granvista.co.jp/news/detail/1434"
+          ]
+        },
+        {
           "incident_id": "45db9ec047a44b07",
           "relationship": "affects",
           "evidence_url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261117582082/",
@@ -14006,7 +14134,7 @@
       "affected_service": "GoQSystem",
       "service_aliases": [],
       "added_at": "2026-11-15T18:16:24+00:00",
-      "updated_at": "2026-11-20T02:19:03+00:00"
+      "updated_at": "2026-11-20T05:17:21+00:00"
     },
     {
       "id": "64589e58e48fed43",
@@ -34856,6 +34984,14 @@
       "confidence_score": 90,
       "related": [
         {
+          "incident_id": "8f93bc8af7c1dc3e",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/78d9cde0f5cb08a710295cdf819e09e6a9bd65bf",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/78d9cde0f5cb08a710295cdf819e09e6a9bd65bf"
+          ]
+        },
+        {
           "incident_id": "e0bf7f8e71d6ba85",
           "relationship": "affected_by",
           "evidence_url": "https://www.kagin.co.jp/important/emergency_20261029_3.html",
@@ -34889,7 +35025,7 @@
       "affected_service": "Payどん",
       "service_aliases": [],
       "added_at": "2026-10-30T02:15:42+00:00",
-      "updated_at": "2026-11-17T22:16:17+00:00"
+      "updated_at": "2026-11-20T05:17:21+00:00"
     },
     {
       "id": "1d5248e7b99abd87",
