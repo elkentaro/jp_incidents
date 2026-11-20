@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-20T07:15:59+00:00",
-  "total": 1512,
+  "updated_at": "2026-11-20T08:16:43+00:00",
+  "total": 1515,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-20"
@@ -338,7 +338,7 @@
     },
     {
       "date": "2026-11-13",
-      "count": 57
+      "count": 59
     },
     {
       "date": "2026-11-14",
@@ -358,7 +358,7 @@
     },
     {
       "date": "2026-11-18",
-      "count": 38
+      "count": 39
     },
     {
       "date": "2026-11-19",
@@ -547,6 +547,10 @@
           "url": "https://www.mitsuifudosan.co.jp/corporate/news/2026/1119/download/sonota/20261119.pdf"
         },
         {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/mitsui_shopping_park_app_unauthorized_access_member_data_leak/"
+        },
+        {
           "name": "読売新聞",
           "url": "https://www.yomiuri.co.jp/economy/20261119-GYT1T00326/"
         },
@@ -564,7 +568,7 @@
       "affected_service": "三井ショッピングパークアプリ",
       "service_aliases": [],
       "added_at": "2026-11-19T14:18:14+00:00",
-      "updated_at": "2026-11-20T02:19:03+00:00"
+      "updated_at": "2026-11-20T08:16:43+00:00"
     },
     {
       "id": "775d529b26c4729b",
@@ -619,9 +623,10 @@
         {
           "incident_id": "8f93bc8af7c1dc3e",
           "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/78d9cde0f5cb08a710295cdf819e09e6a9bd65bf",
+          "evidence_url": "https://news.yahoo.co.jp/articles/af84475ed5372e28f87fa34dbd9483823bdfd4de",
           "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/78d9cde0f5cb08a710295cdf819e09e6a9bd65bf"
+            "https://news.yahoo.co.jp/articles/78d9cde0f5cb08a710295cdf819e09e6a9bd65bf",
+            "https://news.yahoo.co.jp/articles/af84475ed5372e28f87fa34dbd9483823bdfd4de"
           ]
         }
       ],
@@ -637,6 +642,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/78d9cde0f5cb08a710295cdf819e09e6a9bd65bf"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/infcurion_wallet_station_paydon_251172_data_breach_2026/"
         }
       ],
       "affected_system": null,
@@ -644,7 +653,7 @@
       "affected_service": "Wallet Station",
       "service_aliases": [],
       "added_at": "2026-11-20T01:22:45+00:00",
-      "updated_at": "2026-11-20T07:15:59+00:00"
+      "updated_at": "2026-11-20T08:16:43+00:00"
     },
     {
       "id": "c97f351bcfbd0ee3",
@@ -1098,9 +1107,10 @@
         {
           "incident_id": "7bda59e0bb9f1c7d",
           "relationship": "affected_by",
-          "evidence_url": "https://news.yahoo.co.jp/articles/78d9cde0f5cb08a710295cdf819e09e6a9bd65bf",
+          "evidence_url": "https://news.yahoo.co.jp/articles/af84475ed5372e28f87fa34dbd9483823bdfd4de",
           "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/78d9cde0f5cb08a710295cdf819e09e6a9bd65bf"
+            "https://news.yahoo.co.jp/articles/78d9cde0f5cb08a710295cdf819e09e6a9bd65bf",
+            "https://news.yahoo.co.jp/articles/af84475ed5372e28f87fa34dbd9483823bdfd4de"
           ]
         }
       ],
@@ -1112,6 +1122,18 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/1b6bbfccbe9bf6ce00e35a06221faf0916a2c878"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/af84475ed5372e28f87fa34dbd9483823bdfd4de"
+        },
+        {
+          "name": "株式会社アクト",
+          "url": "https://act1.co.jp/2026-11-20-06/"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVCN1JSLVCNTLTB005M.html"
         }
       ],
       "affected_system": null,
@@ -1119,7 +1141,7 @@
       "affected_service": "Payどん",
       "service_aliases": [],
       "added_at": "2026-11-20T05:17:21+00:00",
-      "updated_at": "2026-11-20T07:15:59+00:00"
+      "updated_at": "2026-11-20T08:16:43+00:00"
     },
     {
       "id": "d832febcbc03fa90",
@@ -1723,6 +1745,41 @@
       "service_aliases": [],
       "added_at": "2026-11-18T15:16:38+00:00",
       "updated_at": "2026-11-18T17:16:21+00:00"
+    },
+    {
+      "id": "139fc37d798d08f8",
+      "published_at": "2026-11-17T15:00:00+00:00",
+      "disclosed_at": "2026-11-17T15:00:00+00:00",
+      "organization": "オートバックスセブン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 1370000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/autobacs_seven_karte_membership_id_ip_1370000_breach/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/autobacs_seven_karte_membership_id_ip_1370000_breach/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/autobacs_seven_karte_membership_id_ip_1370000_breach/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "オートバックス会員",
+      "service_aliases": [],
+      "added_at": "2026-11-20T08:16:43+00:00",
+      "updated_at": "2026-11-20T08:16:43+00:00"
     },
     {
       "id": "1b2cb42ebe6b4d57",
@@ -7737,6 +7794,39 @@
       "updated_at": "2026-11-18T20:16:16+00:00"
     },
     {
+      "id": "67d60cb194872fa5",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-18T15:00:00+00:00",
+      "organization": "ハウス食品グループ本社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 44800,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/house_foods_group_karte_customer_data_breach_44800/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/house_foods_group_karte_customer_data_breach_44800/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/house_foods_group_karte_customer_data_breach_44800/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "added_at": "2026-11-20T08:16:43+00:00",
+      "updated_at": "2026-11-20T08:16:43+00:00"
+    },
+    {
       "id": "7231ef4006522bd1",
       "published_at": "2026-11-12T15:00:00+00:00",
       "disclosed_at": "2026-11-17T15:00:00+00:00",
@@ -8043,6 +8133,14 @@
           ]
         },
         {
+          "incident_id": "139fc37d798d08f8",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/autobacs_seven_karte_membership_id_ip_1370000_breach/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/autobacs_seven_karte_membership_id_ip_1370000_breach/"
+          ]
+        },
+        {
           "incident_id": "1e993c03a473cbb3",
           "relationship": "affects",
           "evidence_url": "https://www.city.chuo.lg.jp/a0049/gakumu/rukumi/20261118.html",
@@ -8219,6 +8317,14 @@
           "evidence_url": "https://www.odakyu.jp/notice/makhce0000003vpt-att/makhce0000003vq0.pdf",
           "evidence_urls": [
             "https://www.odakyu.jp/notice/makhce0000003vpt-att/makhce0000003vq0.pdf"
+          ]
+        },
+        {
+          "incident_id": "67d60cb194872fa5",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/house_foods_group_karte_customer_data_breach_44800/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/house_foods_group_karte_customer_data_breach_44800/"
           ]
         },
         {
@@ -8511,6 +8617,14 @@
           ]
         },
         {
+          "incident_id": "c81ec56837c1e332",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/yokohama_bank_hamagin365_karte_116500_data_breach/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/yokohama_bank_hamagin365_karte_116500_data_breach/"
+          ]
+        },
+        {
           "incident_id": "c97f351bcfbd0ee3",
           "relationship": "affects",
           "evidence_url": "https://goinc.jp/news/info/2026/11/19/1ged4wbk8ug0heonnp2cm0/",
@@ -8711,7 +8825,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-20T07:15:59+00:00"
+      "updated_at": "2026-11-20T08:16:43+00:00"
     },
     {
       "id": "958475ed41c0f37d",
@@ -9133,6 +9247,42 @@
       "date_basis": "first_disclosure",
       "added_at": "2026-11-13T20:16:21+00:00",
       "updated_at": "2026-11-16T03:15:43+00:00"
+    },
+    {
+      "id": "c81ec56837c1e332",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-18T15:00:00+00:00",
+      "organization": "横浜銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 116500,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/yokohama_bank_hamagin365_karte_116500_data_breach/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/yokohama_bank_hamagin365_karte_116500_data_breach/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/yokohama_bank_hamagin365_karte_116500_data_breach/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "はまぎん365",
+      "service_aliases": [],
+      "added_at": "2026-11-20T08:16:43+00:00",
+      "updated_at": "2026-11-20T08:16:43+00:00"
     },
     {
       "id": "cd28aec583d7af5c",
@@ -12947,6 +13097,10 @@
         {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261113580244.pdf"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261120584265.pdf"
         }
       ],
       "affected_system": null,
@@ -12954,7 +13108,7 @@
       "affected_service": "Notion AI",
       "service_aliases": [],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-13T13:17:15+00:00"
+      "updated_at": "2026-11-20T08:16:43+00:00"
     },
     {
       "id": "33868e758324fd57",
