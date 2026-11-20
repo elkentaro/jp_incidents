@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-20T09:24:59+00:00",
-  "total": 1519,
+  "updated_at": "2026-11-20T09:33:22+00:00",
+  "total": 1520,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-20"
@@ -334,7 +334,7 @@
     },
     {
       "date": "2026-11-12",
-      "count": 38
+      "count": 39
     },
     {
       "date": "2026-11-13",
@@ -5657,6 +5657,10 @@
         {
           "name": "AERA DIGITAL",
           "url": "https://dot.asahi.com/articles/photo/298047"
+        },
+        {
+          "name": "Impress Watch",
+          "url": "https://www.watch.impress.co.jp/docs/news/2158127.html"
         }
       ],
       "affected_system": null,
@@ -5664,7 +5668,7 @@
       "affected_service": "トリビュー",
       "service_aliases": [],
       "added_at": "2026-11-19T04:16:16+00:00",
-      "updated_at": "2026-11-19T23:17:26+00:00"
+      "updated_at": "2026-11-20T09:33:22+00:00"
     },
     {
       "id": "3132aa2481a76c3b",
@@ -11400,6 +11404,42 @@
       "service_aliases": [],
       "added_at": "2026-11-15T08:15:41+00:00",
       "updated_at": "2026-11-17T11:16:33+00:00"
+    },
+    {
+      "id": "8b9ef04d72ec50ae",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "デジタル庁",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "f1a05e615645403f",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.digital.go.jp/press/a966ee61-478c-4194-8f13-f97599fae986",
+          "evidence_urls": [
+            "https://www.digital.go.jp/press/a966ee61-478c-4194-8f13-f97599fae986"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "デジタル庁 / Digital Agency",
+          "url": "https://www.digital.go.jp/press/a966ee61-478c-4194-8f13-f97599fae986"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "ファイル共有サービス",
+      "service_aliases": [],
+      "added_at": "2026-11-20T09:33:22+00:00",
+      "updated_at": "2026-11-20T09:33:22+00:00"
     },
     {
       "id": "a3e7a1a5599413f7",
@@ -48035,6 +48075,14 @@
           "evidence_urls": [
             "https://www.digital.go.jp/press/a0a8f66c-b32d-4695-9372-bcd5d4280f22"
           ]
+        },
+        {
+          "incident_id": "8b9ef04d72ec50ae",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.digital.go.jp/press/a966ee61-478c-4194-8f13-f97599fae986",
+          "evidence_urls": [
+            "https://www.digital.go.jp/press/a966ee61-478c-4194-8f13-f97599fae986"
+          ]
         }
       ],
       "sources": [
@@ -48064,7 +48112,7 @@
         }
       ],
       "added_at": "2026-10-22T13:54:23+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-20T09:33:22+00:00"
     },
     {
       "id": "fb9e1d5ed6cbaaa8",
