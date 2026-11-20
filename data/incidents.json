@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-20T08:16:43+00:00",
-  "total": 1515,
+  "updated_at": "2026-11-20T09:15:11+00:00",
+  "total": 1519,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-20"
@@ -322,7 +322,7 @@
     },
     {
       "date": "2026-11-09",
-      "count": 42
+      "count": 43
     },
     {
       "date": "2026-11-10",
@@ -366,7 +366,7 @@
     },
     {
       "date": "2026-11-20",
-      "count": 3
+      "count": 6
     }
   ],
   "incidents": [
@@ -426,6 +426,77 @@
       "updated_at": "2026-11-20T05:17:21+00:00"
     },
     {
+      "id": "9999284484caf35c",
+      "published_at": "2026-11-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "三井住友銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 14000000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.smbc.co.jp/news/pdf/j20261120_01.pdf",
+          "evidence_urls": [
+            "https://www.smbc.co.jp/news/pdf/j20261120_01.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "三井住友銀行 / SMBC",
+          "url": "https://www.smbc.co.jp/news/pdf/j20261120_01.pdf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "KARTE",
+      "service_aliases": [],
+      "added_at": "2026-11-20T09:15:11+00:00",
+      "updated_at": "2026-11-20T09:15:11+00:00"
+    },
+    {
+      "id": "9a6bbf68d4aa4449",
+      "published_at": "2026-11-19T15:00:00+00:00",
+      "disclosed_at": "2026-11-19T15:00:00+00:00",
+      "organization": "リクルートマネジメントソリューションズ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 12421,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/recruit_management_solutions_karte_rmschool_admin_12421_data_breach_2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/recruit_management_solutions_karte_rmschool_admin_12421_data_breach_2026/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/recruit_management_solutions_karte_rmschool_admin_12421_data_breach_2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "リクルートマネジメントスクール",
+      "service_aliases": [],
+      "added_at": "2026-11-20T09:15:11+00:00",
+      "updated_at": "2026-11-20T09:15:11+00:00"
+    },
+    {
       "id": "96abe3918ca13eac",
       "published_at": "2026-11-19T15:00:00+00:00",
       "disclosed_at": null,
@@ -459,6 +530,41 @@
       "service_aliases": [],
       "added_at": "2026-11-20T06:17:27+00:00",
       "updated_at": "2026-11-20T06:17:27+00:00"
+    },
+    {
+      "id": "00118422ddcf8d29",
+      "published_at": "2026-11-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ピーチ・アビエーション",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 8997106,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.risktaisaku.com/articles/-/117393",
+          "evidence_urls": [
+            "https://www.risktaisaku.com/articles/-/117393"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "リスク対策.com",
+          "url": "https://www.risktaisaku.com/articles/-/117393"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "メール配信サービス",
+      "service_aliases": [],
+      "added_at": "2026-11-20T09:15:11+00:00",
+      "updated_at": "2026-11-20T09:15:11+00:00"
     },
     {
       "id": "9fd3d936d3b144a7",
@@ -497,6 +603,36 @@
       ],
       "added_at": "2026-11-20T03:27:04+00:00",
       "updated_at": "2026-11-20T03:27:04+00:00"
+    },
+    {
+      "id": "12b92fba1daecda5",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "SEモバイル・アンド・オンライン",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/smarriage_se_mobile_online_unauthorized_access_service_suspension/"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261120583955.pdf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "スマリッジ",
+      "service_aliases": [],
+      "added_at": "2026-11-20T04:17:29+00:00",
+      "updated_at": "2026-11-20T09:15:11+00:00"
     },
     {
       "id": "460d4d2bb13bb48c",
@@ -646,6 +782,10 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/infcurion_wallet_station_paydon_251172_data_breach_2026/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118703"
         }
       ],
       "affected_system": null,
@@ -653,7 +793,7 @@
       "affected_service": "Wallet Station",
       "service_aliases": [],
       "added_at": "2026-11-20T01:22:45+00:00",
-      "updated_at": "2026-11-20T08:16:43+00:00"
+      "updated_at": "2026-11-20T09:15:11+00:00"
     },
     {
       "id": "c97f351bcfbd0ee3",
@@ -818,32 +958,6 @@
       "date_basis": "publication",
       "added_at": "2026-11-18T23:14:19+00:00",
       "updated_at": "2026-11-19T05:16:46+00:00"
-    },
-    {
-      "id": "12b92fba1daecda5",
-      "published_at": "2026-11-18T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "SEモバイル・アンド・オンライン",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 80,
-      "related": [],
-      "sources": [
-        {
-          "name": "日本取引所グループ TDnet / JPX TDnet",
-          "url": "https://www.release.tdnet.info/inbs/140120261120583955.pdf"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "discovery",
-      "affected_service": "スマリッジ",
-      "service_aliases": [],
-      "added_at": "2026-11-20T04:17:29+00:00",
-      "updated_at": "2026-11-20T04:17:29+00:00"
     },
     {
       "id": "074272c74e09cbbb",
@@ -1134,6 +1248,10 @@
         {
           "name": "朝日新聞",
           "url": "https://www.asahi.com/articles/ASVCN1JSLVCNTLTB005M.html"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118703"
         }
       ],
       "affected_system": null,
@@ -1141,7 +1259,7 @@
       "affected_service": "Payどん",
       "service_aliases": [],
       "added_at": "2026-11-20T05:17:21+00:00",
-      "updated_at": "2026-11-20T08:16:43+00:00"
+      "updated_at": "2026-11-20T09:15:11+00:00"
     },
     {
       "id": "d832febcbc03fa90",
@@ -2205,8 +2323,8 @@
           "url": "https://www.release.tdnet.info/inbs/140120261118582902.pdf"
         },
         {
-          "name": "琉球新報デジタル",
-          "url": "https://ryukyushimpo.jp/kyodo/entry-5606066.html"
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261120584422.pdf"
         },
         {
           "name": "佐賀新聞",
@@ -2228,7 +2346,7 @@
       "affected_system": null,
       "date_basis": "ingestion",
       "added_at": "2026-11-18T15:16:38+00:00",
-      "updated_at": "2026-11-19T04:16:16+00:00"
+      "updated_at": "2026-11-20T09:15:11+00:00"
     },
     {
       "id": "9cea6db91e42ce70",
@@ -2439,8 +2557,9 @@
         {
           "incident_id": "8cf67a97b55e1d57",
           "relationship": "affected_by",
-          "evidence_url": "https://web.gekisaka.jp/news/jleague/detail/?463437-463437-fl",
+          "evidence_url": "https://sports.yahoo.co.jp/official/detail/2026111800098-spnaviow",
           "evidence_urls": [
+            "https://sports.yahoo.co.jp/official/detail/2026111800098-spnaviow",
             "https://web.gekisaka.jp/news/jleague/detail/?463437-463437-fl"
           ]
         }
@@ -2449,6 +2568,10 @@
         {
           "name": "Ｊリーグ公式サイト",
           "url": "https://www.jleague.jp/news/article/35384/"
+        },
+        {
+          "name": "スポーツナビ",
+          "url": "https://sports.yahoo.co.jp/official/detail/2026111800098-spnaviow"
         },
         {
           "name": "ゲキサカ",
@@ -2499,7 +2622,7 @@
         }
       ],
       "added_at": "2026-11-18T14:16:38+00:00",
-      "updated_at": "2026-11-18T20:16:16+00:00"
+      "updated_at": "2026-11-20T09:15:11+00:00"
     },
     {
       "id": "dc7a8d07caf7fe9d",
@@ -4350,12 +4473,16 @@
         {
           "name": "NHKニュース",
           "url": "https://news.web.nhk/newsweb/na/nd-20261117de77170"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/7b039d8e8b8438b2c70fa0a7947a9c84ac02eba9"
         }
       ],
       "affected_system": null,
       "date_basis": "publication",
       "added_at": "2026-11-17T23:16:16+00:00",
-      "updated_at": "2026-11-19T04:16:16+00:00"
+      "updated_at": "2026-11-20T09:15:11+00:00"
     },
     {
       "id": "afac8781a07ce068",
@@ -6473,6 +6600,10 @@
           "url": "https://about.goldwin.co.jp/news/page-41040"
         },
         {
+          "name": "Goldwin Inc.",
+          "url": "https://about.goldwin.co.jp/news/page-41053"
+        },
+        {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUC185QH0Y6A111C2000000/"
         }
@@ -6482,7 +6613,7 @@
       "affected_service": "KARTE",
       "service_aliases": [],
       "added_at": "2026-11-17T07:16:12+00:00",
-      "updated_at": "2026-11-18T17:16:21+00:00"
+      "updated_at": "2026-11-20T09:15:11+00:00"
     },
     {
       "id": "a55deee80e6bebf6",
@@ -7025,8 +7156,8 @@
           "url": "https://www.release.tdnet.info/inbs/140120261118582953.pdf"
         },
         {
-          "name": "ビジネス+IT",
-          "url": "https://www.sbbit.jp/article/cont1/188437"
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261120584334.pdf"
         },
         {
           "name": "Cybersecurity.jp",
@@ -7042,7 +7173,7 @@
       "affected_service": "Cacoo",
       "service_aliases": [],
       "added_at": "2026-11-16T05:16:04+00:00",
-      "updated_at": "2026-11-19T01:15:50+00:00"
+      "updated_at": "2026-11-20T09:15:11+00:00"
     },
     {
       "id": "0f5f8567d53f3ad5",
@@ -8519,6 +8650,22 @@
           ]
         },
         {
+          "incident_id": "9999284484caf35c",
+          "relationship": "affects",
+          "evidence_url": "https://www.smbc.co.jp/news/pdf/j20261120_01.pdf",
+          "evidence_urls": [
+            "https://www.smbc.co.jp/news/pdf/j20261120_01.pdf"
+          ]
+        },
+        {
+          "incident_id": "9a6bbf68d4aa4449",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/recruit_management_solutions_karte_rmschool_admin_12421_data_breach_2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/recruit_management_solutions_karte_rmschool_admin_12421_data_breach_2026/"
+          ]
+        },
+        {
           "incident_id": "9cea6db91e42ce70",
           "relationship": "affects",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/en-inc-karte-mid-tenshoku-12474-business-emails-2026/",
@@ -8677,8 +8824,9 @@
         {
           "incident_id": "d7c3301e73f5092c",
           "relationship": "affects",
-          "evidence_url": "https://web.gekisaka.jp/news/jleague/detail/?463437-463437-fl",
+          "evidence_url": "https://sports.yahoo.co.jp/official/detail/2026111800098-spnaviow",
           "evidence_urls": [
+            "https://sports.yahoo.co.jp/official/detail/2026111800098-spnaviow",
             "https://web.gekisaka.jp/news/jleague/detail/?463437-463437-fl"
           ]
         },
@@ -8825,7 +8973,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-20T08:16:43+00:00"
+      "updated_at": "2026-11-20T09:15:11+00:00"
     },
     {
       "id": "958475ed41c0f37d",
@@ -17759,6 +17907,31 @@
       ],
       "added_at": "2026-11-09T09:16:47+00:00",
       "updated_at": "2026-11-14T07:15:25+00:00"
+    },
+    {
+      "id": "e31e04028d07de37",
+      "published_at": "2026-11-08T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "カルチュア・エクスペリエンス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/culture_experience_tsutaya_cyberattack_inventory_delay/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "added_at": "2026-11-20T09:15:11+00:00",
+      "updated_at": "2026-11-20T09:15:11+00:00"
     },
     {
       "id": "ee1fd6e381399c9d",
@@ -54844,6 +55017,14 @@
       "confidence_score": 90,
       "related": [
         {
+          "incident_id": "00118422ddcf8d29",
+          "relationship": "affects",
+          "evidence_url": "https://www.risktaisaku.com/articles/-/117393",
+          "evidence_urls": [
+            "https://www.risktaisaku.com/articles/-/117393"
+          ]
+        },
+        {
           "incident_id": "057f822d645443ee",
           "relationship": "affects",
           "evidence_url": "https://www.jpma.or.jp/news_room/release/2026/261030.html",
@@ -55215,7 +55396,7 @@
         }
       ],
       "added_at": "2026-10-19T13:14:57+00:00",
-      "updated_at": "2026-11-20T07:15:59+00:00"
+      "updated_at": "2026-11-20T09:15:11+00:00"
     },
     {
       "id": "15204b629222c010",
