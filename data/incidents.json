@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-20T20:15:57+00:00",
-  "total": 1547,
+  "updated_at": "2026-11-20T23:15:53+00:00",
+  "total": 1549,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-20"
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-20",
-      "count": 27
+      "count": 29
     },
     {
       "date": "2026-11-21",
@@ -778,6 +778,41 @@
       "updated_at": "2026-11-20T13:17:33+00:00"
     },
     {
+      "id": "22d5d068692ef51d",
+      "published_at": "2026-11-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "尼崎市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 17064,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/446e6380d1a8a3123f8c40c5337be799ab1b14f2",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/446e6380d1a8a3123f8c40c5337be799ab1b14f2"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/446e6380d1a8a3123f8c40c5337be799ab1b14f2"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "オンライン申請ポータルサイト",
+      "service_aliases": [],
+      "added_at": "2026-11-20T23:15:53+00:00",
+      "updated_at": "2026-11-20T23:15:53+00:00"
+    },
+    {
       "id": "2d0d6c1797ebfdcc",
       "published_at": "2026-11-19T15:00:00+00:00",
       "disclosed_at": null,
@@ -813,6 +848,58 @@
       ],
       "added_at": "2026-11-20T14:16:59+00:00",
       "updated_at": "2026-11-20T14:16:59+00:00"
+    },
+    {
+      "id": "512572a0b399201f",
+      "published_at": "2026-11-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "鹿児島信用金庫",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "03a18bdd6715ff75",
+          "relationship": "same_organization",
+          "evidence_url": "https://japan.cnet.com/article/35255222/",
+          "evidence_urls": [
+            "https://japan.cnet.com/article/35255222/"
+          ]
+        },
+        {
+          "incident_id": "7bda59e0bb9f1c7d",
+          "relationship": "affected_by",
+          "evidence_url": "https://japan.cnet.com/article/35255222/",
+          "evidence_urls": [
+            "https://japan.cnet.com/article/35255222/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "CNET Japan",
+          "url": "https://japan.cnet.com/article/35255222/"
+        },
+        {
+          "name": "株式会社アクト",
+          "url": "https://act1.co.jp/2026-11-20-08/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b3eaf5c5af2a93e091780246dc80a7781625efdb"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "Payどん",
+      "service_aliases": [],
+      "added_at": "2026-11-20T11:16:07+00:00",
+      "updated_at": "2026-11-20T23:15:53+00:00"
     },
     {
       "id": "51f171c10dd47844",
@@ -1064,6 +1151,58 @@
       "updated_at": "2026-11-20T14:16:59+00:00"
     },
     {
+      "id": "b80a1935e1252608",
+      "published_at": "2026-11-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "鹿児島相互信用金庫",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "3ce6612226b3c800",
+          "relationship": "same_organization",
+          "evidence_url": "https://japan.cnet.com/article/35255222/",
+          "evidence_urls": [
+            "https://japan.cnet.com/article/35255222/"
+          ]
+        },
+        {
+          "incident_id": "7bda59e0bb9f1c7d",
+          "relationship": "affected_by",
+          "evidence_url": "https://japan.cnet.com/article/35255222/",
+          "evidence_urls": [
+            "https://japan.cnet.com/article/35255222/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "CNET Japan",
+          "url": "https://japan.cnet.com/article/35255222/"
+        },
+        {
+          "name": "株式会社アクト",
+          "url": "https://act1.co.jp/2026-11-20-08/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b3eaf5c5af2a93e091780246dc80a7781625efdb"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "Payどん",
+      "service_aliases": [],
+      "added_at": "2026-11-20T11:16:07+00:00",
+      "updated_at": "2026-11-20T23:15:53+00:00"
+    },
+    {
       "id": "bc0e25f919ca9b7e",
       "published_at": "2026-11-19T15:00:00+00:00",
       "disclosed_at": null,
@@ -1162,6 +1301,93 @@
       "updated_at": "2026-11-20T14:16:59+00:00"
     },
     {
+      "id": "d58f73552ac00ea2",
+      "published_at": "2026-11-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "南日本銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "7bda59e0bb9f1c7d",
+          "relationship": "affected_by",
+          "evidence_url": "https://japan.cnet.com/article/35255222/",
+          "evidence_urls": [
+            "https://japan.cnet.com/article/35255222/"
+          ]
+        },
+        {
+          "incident_id": "8ebd5d925ed1dcd6",
+          "relationship": "same_organization",
+          "evidence_url": "https://japan.cnet.com/article/35255222/",
+          "evidence_urls": [
+            "https://japan.cnet.com/article/35255222/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "CNET Japan",
+          "url": "https://japan.cnet.com/article/35255222/"
+        },
+        {
+          "name": "株式会社アクト",
+          "url": "https://act1.co.jp/2026-11-20-08/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b3eaf5c5af2a93e091780246dc80a7781625efdb"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "Payどん",
+      "service_aliases": [],
+      "added_at": "2026-11-20T11:16:07+00:00",
+      "updated_at": "2026-11-20T23:15:53+00:00"
+    },
+    {
+      "id": "f8098d3eb44e59e8",
+      "published_at": "2026-11-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "西宮市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 25115,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/446e6380d1a8a3123f8c40c5337be799ab1b14f2",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/446e6380d1a8a3123f8c40c5337be799ab1b14f2"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/446e6380d1a8a3123f8c40c5337be799ab1b14f2"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "にしのみやスマート申請",
+      "service_aliases": [],
+      "added_at": "2026-11-20T23:15:53+00:00",
+      "updated_at": "2026-11-20T23:15:53+00:00"
+    },
+    {
       "id": "2ae4cb666cc03c71",
       "published_at": "2026-11-19T15:00:00+00:00",
       "disclosed_at": null,
@@ -1222,54 +1448,6 @@
       "service_aliases": [],
       "added_at": "2026-11-20T17:16:08+00:00",
       "updated_at": "2026-11-20T17:16:08+00:00"
-    },
-    {
-      "id": "512572a0b399201f",
-      "published_at": "2026-11-19T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "鹿児島信用金庫",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "03a18bdd6715ff75",
-          "relationship": "same_organization",
-          "evidence_url": "https://japan.cnet.com/article/35255222/",
-          "evidence_urls": [
-            "https://japan.cnet.com/article/35255222/"
-          ]
-        },
-        {
-          "incident_id": "7bda59e0bb9f1c7d",
-          "relationship": "affected_by",
-          "evidence_url": "https://japan.cnet.com/article/35255222/",
-          "evidence_urls": [
-            "https://japan.cnet.com/article/35255222/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "CNET Japan",
-          "url": "https://japan.cnet.com/article/35255222/"
-        },
-        {
-          "name": "株式会社アクト",
-          "url": "https://act1.co.jp/2026-11-20-08/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "ingestion",
-      "affected_service": "Payどん",
-      "service_aliases": [],
-      "added_at": "2026-11-20T11:16:07+00:00",
-      "updated_at": "2026-11-20T13:17:33+00:00"
     },
     {
       "id": "5e3369d0f5e8fd34",
@@ -1341,102 +1519,6 @@
       ],
       "added_at": "2026-11-20T03:27:04+00:00",
       "updated_at": "2026-11-20T03:27:04+00:00"
-    },
-    {
-      "id": "b80a1935e1252608",
-      "published_at": "2026-11-19T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "鹿児島相互信用金庫",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "3ce6612226b3c800",
-          "relationship": "same_organization",
-          "evidence_url": "https://japan.cnet.com/article/35255222/",
-          "evidence_urls": [
-            "https://japan.cnet.com/article/35255222/"
-          ]
-        },
-        {
-          "incident_id": "7bda59e0bb9f1c7d",
-          "relationship": "affected_by",
-          "evidence_url": "https://japan.cnet.com/article/35255222/",
-          "evidence_urls": [
-            "https://japan.cnet.com/article/35255222/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "CNET Japan",
-          "url": "https://japan.cnet.com/article/35255222/"
-        },
-        {
-          "name": "株式会社アクト",
-          "url": "https://act1.co.jp/2026-11-20-08/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "ingestion",
-      "affected_service": "Payどん",
-      "service_aliases": [],
-      "added_at": "2026-11-20T11:16:07+00:00",
-      "updated_at": "2026-11-20T13:17:33+00:00"
-    },
-    {
-      "id": "d58f73552ac00ea2",
-      "published_at": "2026-11-19T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "南日本銀行",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "7bda59e0bb9f1c7d",
-          "relationship": "affected_by",
-          "evidence_url": "https://japan.cnet.com/article/35255222/",
-          "evidence_urls": [
-            "https://japan.cnet.com/article/35255222/"
-          ]
-        },
-        {
-          "incident_id": "8ebd5d925ed1dcd6",
-          "relationship": "same_organization",
-          "evidence_url": "https://japan.cnet.com/article/35255222/",
-          "evidence_urls": [
-            "https://japan.cnet.com/article/35255222/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "CNET Japan",
-          "url": "https://japan.cnet.com/article/35255222/"
-        },
-        {
-          "name": "株式会社アクト",
-          "url": "https://act1.co.jp/2026-11-20-08/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "ingestion",
-      "affected_service": "Payどん",
-      "service_aliases": [],
-      "added_at": "2026-11-20T11:16:07+00:00",
-      "updated_at": "2026-11-20T13:17:33+00:00"
     },
     {
       "id": "ee71a787184a6cd7",
@@ -1610,6 +1692,10 @@
         {
           "name": "S.RIDE",
           "url": "https://www.sride.jp/jp/news/20261119/"
+        },
+        {
+          "name": "産経ニュース",
+          "url": "https://www.sankei.com/article/20261120-3YMTKGWPSJDCZLRLBEI4SVHREE/"
         }
       ],
       "affected_system": null,
@@ -1617,7 +1703,7 @@
       "affected_service": "S.RIDEアプリ",
       "service_aliases": [],
       "added_at": "2026-11-19T07:17:28+00:00",
-      "updated_at": "2026-11-19T07:17:28+00:00"
+      "updated_at": "2026-11-20T23:15:53+00:00"
     },
     {
       "id": "7bda59e0bb9f1c7d",
@@ -38375,6 +38461,14 @@
           ]
         },
         {
+          "incident_id": "22d5d068692ef51d",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/446e6380d1a8a3123f8c40c5337be799ab1b14f2",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/446e6380d1a8a3123f8c40c5337be799ab1b14f2"
+          ]
+        },
+        {
           "incident_id": "25b1a36f3d81dbe5",
           "relationship": "affects",
           "evidence_url": "https://www.city.sakai.lg.jp/shisei/koho/koho/merumaga/index.html",
@@ -39866,6 +39960,14 @@
           ]
         },
         {
+          "incident_id": "f8098d3eb44e59e8",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/446e6380d1a8a3123f8c40c5337be799ab1b14f2",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/446e6380d1a8a3123f8c40c5337be799ab1b14f2"
+          ]
+        },
+        {
           "incident_id": "f896022778d48ba6",
           "relationship": "affects",
           "evidence_url": "https://newsdig.tbs.co.jp/articles/mrt/3062882?display=1",
@@ -39954,7 +40056,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-20T18:17:01+00:00"
+      "updated_at": "2026-11-20T23:15:53+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
