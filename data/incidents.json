@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-20T01:14:30+00:00",
-  "total": 1499,
+  "updated_at": "2026-11-20T01:22:45+00:00",
+  "total": 1500,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-19"
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-19",
-      "count": 24
+      "count": 25
     },
     {
       "date": "2026-11-20",
@@ -600,6 +600,33 @@
       "date_basis": "publication",
       "added_at": "2026-11-18T23:14:19+00:00",
       "updated_at": "2026-11-19T05:16:46+00:00"
+    },
+    {
+      "id": "7bda59e0bb9f1c7d",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "インフキュリオン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261120583076.pdf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "Wallet Station",
+      "service_aliases": [],
+      "added_at": "2026-11-20T01:22:45+00:00",
+      "updated_at": "2026-11-20T01:22:45+00:00"
     },
     {
       "id": "074272c74e09cbbb",
@@ -37719,6 +37746,35 @@
       "updated_at": "2026-11-12T08:18:15+00:00"
     },
     {
+      "id": "f1120f2e29b4fad2",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": "2026-11-18T15:00:00+00:00",
+      "organization": "Kyash",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 11996,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.kyash.co/information/20261119"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/kyash-internal-web-tool-unauthorized-access-11996/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "added_at": "2026-11-19T14:18:14+00:00",
+      "updated_at": "2026-11-20T01:22:45+00:00"
+    },
+    {
       "id": "2169c56f9058ef97",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": null,
@@ -38869,31 +38925,6 @@
       "service_aliases": [],
       "added_at": "2026-10-30T02:15:42+00:00",
       "updated_at": "2026-11-17T21:16:22+00:00"
-    },
-    {
-      "id": "f1120f2e29b4fad2",
-      "published_at": "2026-10-27T15:00:00+00:00",
-      "disclosed_at": "2026-11-18T15:00:00+00:00",
-      "organization": "Kyash",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 11996,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/kyash-internal-web-tool-unauthorized-access-11996/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "occurrence",
-      "added_at": "2026-11-19T14:18:14+00:00",
-      "updated_at": "2026-11-19T14:18:14+00:00"
     },
     {
       "id": "19667cbf1f62a90a",
