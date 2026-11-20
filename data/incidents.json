@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-20T10:16:04+00:00",
-  "total": 1522,
+  "updated_at": "2026-11-20T11:16:08+00:00",
+  "total": 1527,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-20"
@@ -366,7 +366,7 @@
     },
     {
       "date": "2026-11-20",
-      "count": 6
+      "count": 11
     }
   ],
   "incidents": [
@@ -404,6 +404,10 @@
         {
           "name": "テレ朝NEWS",
           "url": "https://news.tv-asahi.co.jp/news_economy/articles/000549409.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/4ecdb07b1d3c1fe4e7c81c72e20b50ef0524a7cc?source=rss"
         }
       ],
       "affected_system": null,
@@ -411,7 +415,7 @@
       "affected_service": "メール配信サービス",
       "service_aliases": [],
       "added_at": "2026-11-20T09:15:11+00:00",
-      "updated_at": "2026-11-20T10:16:04+00:00"
+      "updated_at": "2026-11-20T11:16:07+00:00"
     },
     {
       "id": "330ccdb8fc90d8b6",
@@ -499,6 +503,14 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUB208VL0Q6A121C2000000/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/98bdf369247c4e5039bfb3b74c709d00df1cca50"
+        },
+        {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp/15262461.html"
         }
       ],
       "affected_system": null,
@@ -506,7 +518,7 @@
       "affected_service": "KARTE",
       "service_aliases": [],
       "added_at": "2026-11-20T09:15:11+00:00",
-      "updated_at": "2026-11-20T10:16:04+00:00"
+      "updated_at": "2026-11-20T11:16:07+00:00"
     },
     {
       "id": "9a6bbf68d4aa4449",
@@ -544,6 +556,59 @@
       "updated_at": "2026-11-20T09:15:11+00:00"
     },
     {
+      "id": "f8055c742eaee539",
+      "published_at": "2026-11-19T15:00:00+00:00",
+      "disclosed_at": "2026-11-19T15:00:00+00:00",
+      "organization": "マンダム",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 36671,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/e7420e0ee5b79742c2299e69904fc468dade26d1"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "マンダムオンラインショップ",
+      "service_aliases": [],
+      "added_at": "2026-11-20T11:16:07+00:00",
+      "updated_at": "2026-11-20T11:16:07+00:00"
+    },
+    {
+      "id": "09bdc0dab47bc2a5",
+      "published_at": "2026-11-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "メルカリ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 3796,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/economy/20261120-GYT1T00303/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "ノーションAI",
+      "service_aliases": [],
+      "added_at": "2026-11-20T11:16:07+00:00",
+      "updated_at": "2026-11-20T11:16:07+00:00"
+    },
+    {
       "id": "96abe3918ca13eac",
       "published_at": "2026-11-19T15:00:00+00:00",
       "disclosed_at": null,
@@ -577,6 +642,50 @@
       "service_aliases": [],
       "added_at": "2026-11-20T06:17:27+00:00",
       "updated_at": "2026-11-20T06:17:27+00:00"
+    },
+    {
+      "id": "512572a0b399201f",
+      "published_at": "2026-11-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "鹿児島信用金庫",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "03a18bdd6715ff75",
+          "relationship": "same_organization",
+          "evidence_url": "https://japan.cnet.com/article/35255222/",
+          "evidence_urls": [
+            "https://japan.cnet.com/article/35255222/"
+          ]
+        },
+        {
+          "incident_id": "7bda59e0bb9f1c7d",
+          "relationship": "affected_by",
+          "evidence_url": "https://japan.cnet.com/article/35255222/",
+          "evidence_urls": [
+            "https://japan.cnet.com/article/35255222/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "CNET Japan",
+          "url": "https://japan.cnet.com/article/35255222/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "Payどん",
+      "service_aliases": [],
+      "added_at": "2026-11-20T11:16:07+00:00",
+      "updated_at": "2026-11-20T11:16:07+00:00"
     },
     {
       "id": "9fd3d936d3b144a7",
@@ -617,6 +726,94 @@
       "updated_at": "2026-11-20T03:27:04+00:00"
     },
     {
+      "id": "b80a1935e1252608",
+      "published_at": "2026-11-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "鹿児島相互信用金庫",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "3ce6612226b3c800",
+          "relationship": "same_organization",
+          "evidence_url": "https://japan.cnet.com/article/35255222/",
+          "evidence_urls": [
+            "https://japan.cnet.com/article/35255222/"
+          ]
+        },
+        {
+          "incident_id": "7bda59e0bb9f1c7d",
+          "relationship": "affected_by",
+          "evidence_url": "https://japan.cnet.com/article/35255222/",
+          "evidence_urls": [
+            "https://japan.cnet.com/article/35255222/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "CNET Japan",
+          "url": "https://japan.cnet.com/article/35255222/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "Payどん",
+      "service_aliases": [],
+      "added_at": "2026-11-20T11:16:07+00:00",
+      "updated_at": "2026-11-20T11:16:07+00:00"
+    },
+    {
+      "id": "d58f73552ac00ea2",
+      "published_at": "2026-11-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "南日本銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "7bda59e0bb9f1c7d",
+          "relationship": "affected_by",
+          "evidence_url": "https://japan.cnet.com/article/35255222/",
+          "evidence_urls": [
+            "https://japan.cnet.com/article/35255222/"
+          ]
+        },
+        {
+          "incident_id": "8ebd5d925ed1dcd6",
+          "relationship": "same_organization",
+          "evidence_url": "https://japan.cnet.com/article/35255222/",
+          "evidence_urls": [
+            "https://japan.cnet.com/article/35255222/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "CNET Japan",
+          "url": "https://japan.cnet.com/article/35255222/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "Payどん",
+      "service_aliases": [],
+      "added_at": "2026-11-20T11:16:07+00:00",
+      "updated_at": "2026-11-20T11:16:07+00:00"
+    },
+    {
       "id": "12b92fba1daecda5",
       "published_at": "2026-11-18T15:00:00+00:00",
       "disclosed_at": null,
@@ -637,6 +834,10 @@
         {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261120583955.pdf"
+        },
+        {
+          "name": "Media Innovation",
+          "url": "https://media-innovation.jp/article/2026/11/20/144031.html"
         }
       ],
       "affected_system": null,
@@ -644,7 +845,7 @@
       "affected_service": "スマリッジ",
       "service_aliases": [],
       "added_at": "2026-11-20T04:17:29+00:00",
-      "updated_at": "2026-11-20T09:15:11+00:00"
+      "updated_at": "2026-11-20T11:16:07+00:00"
     },
     {
       "id": "460d4d2bb13bb48c",
@@ -709,6 +910,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/42abf3dd8205166918a76250fd4f0a8e5c498530"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/8be118f826885bb1d1147a0c905c1687cbb1435b"
         }
       ],
       "affected_system": null,
@@ -716,7 +921,7 @@
       "affected_service": "三井ショッピングパークアプリ",
       "service_aliases": [],
       "added_at": "2026-11-19T14:18:14+00:00",
-      "updated_at": "2026-11-20T08:16:43+00:00"
+      "updated_at": "2026-11-20T11:16:07+00:00"
     },
     {
       "id": "775d529b26c4729b",
@@ -769,12 +974,36 @@
       "confidence_score": 90,
       "related": [
         {
+          "incident_id": "512572a0b399201f",
+          "relationship": "affects",
+          "evidence_url": "https://japan.cnet.com/article/35255222/",
+          "evidence_urls": [
+            "https://japan.cnet.com/article/35255222/"
+          ]
+        },
+        {
           "incident_id": "8f93bc8af7c1dc3e",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/af84475ed5372e28f87fa34dbd9483823bdfd4de",
           "evidence_urls": [
             "https://news.yahoo.co.jp/articles/78d9cde0f5cb08a710295cdf819e09e6a9bd65bf",
             "https://news.yahoo.co.jp/articles/af84475ed5372e28f87fa34dbd9483823bdfd4de"
+          ]
+        },
+        {
+          "incident_id": "b80a1935e1252608",
+          "relationship": "affects",
+          "evidence_url": "https://japan.cnet.com/article/35255222/",
+          "evidence_urls": [
+            "https://japan.cnet.com/article/35255222/"
+          ]
+        },
+        {
+          "incident_id": "d58f73552ac00ea2",
+          "relationship": "affects",
+          "evidence_url": "https://japan.cnet.com/article/35255222/",
+          "evidence_urls": [
+            "https://japan.cnet.com/article/35255222/"
           ]
         }
       ],
@@ -809,7 +1038,7 @@
       "affected_service": "Wallet Station",
       "service_aliases": [],
       "added_at": "2026-11-20T01:22:45+00:00",
-      "updated_at": "2026-11-20T10:16:04+00:00"
+      "updated_at": "2026-11-20T11:16:07+00:00"
     },
     {
       "id": "c97f351bcfbd0ee3",
@@ -7284,8 +7513,9 @@
       "published_at": "2026-11-13T15:00:00+00:00",
       "disclosed_at": null,
       "organization": "ポケットチェンジ",
-      "incident_type": "unauthorized access",
+      "incident_type": "data leak",
       "incident_categories": [
+        "data leak",
         "unauthorized access"
       ],
       "potential_records": null,
@@ -7325,6 +7555,10 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/pocket_change_pokepay_data_breach_passport_card_2026/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/235489fe5e43400a4cda94f2a8ca3c2232a663c5?source=rss"
         }
       ],
       "affected_system": null,
@@ -7346,7 +7580,7 @@
         }
       ],
       "added_at": "2026-11-16T04:15:35+00:00",
-      "updated_at": "2026-11-20T10:16:04+00:00"
+      "updated_at": "2026-11-20T11:16:07+00:00"
     },
     {
       "id": "307eba6e291c0389",
@@ -8202,6 +8436,10 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118663"
+        },
+        {
+          "name": "株式会社アクト",
+          "url": "https://act1.co.jp/2026-11-20-03/"
         }
       ],
       "affected_system": null,
@@ -8209,7 +8447,7 @@
       "affected_service": "求人事業者の担当者情報",
       "service_aliases": [],
       "added_at": "2026-11-19T10:17:50+00:00",
-      "updated_at": "2026-11-20T02:19:03+00:00"
+      "updated_at": "2026-11-20T11:16:07+00:00"
     },
     {
       "id": "872c6ee1daba8835",
@@ -11536,6 +11774,22 @@
         {
           "name": "デジタル庁 / Digital Agency",
           "url": "https://www.digital.go.jp/press/a966ee61-478c-4194-8f13-f97599fae986"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/f71b47521e17088aafa958b47bb71a6bbe13221b"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/246b6f0c25a2454bf6e574e05d3c88581fe2f8fa"
+        },
+        {
+          "name": "CNET Japan",
+          "url": "https://japan.cnet.com/article/35255233/"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVCN30WCVCNULFA01NM.html"
         }
       ],
       "affected_system": null,
@@ -11543,7 +11797,7 @@
       "affected_service": "ファイル共有サービス",
       "service_aliases": [],
       "added_at": "2026-11-20T09:33:22+00:00",
-      "updated_at": "2026-11-20T09:33:22+00:00"
+      "updated_at": "2026-11-20T11:16:07+00:00"
     },
     {
       "id": "a3e7a1a5599413f7",
@@ -22761,12 +23015,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/b22c9701949d45f8f9b9ac977a37f330ca185487"
+        },
+        {
+          "name": "ktv.jp",
+          "url": "https://www.ktv.jp/news/articles/?id=31042"
         }
       ],
       "affected_service": "電子申請システム",
       "service_aliases": [],
       "added_at": "2026-11-05T21:15:39+00:00",
-      "updated_at": "2026-11-18T07:15:49+00:00"
+      "updated_at": "2026-11-20T11:16:07+00:00"
     },
     {
       "id": "c18e54cb9abd1cae",
@@ -39858,6 +40116,14 @@
       "confidence_score": 30,
       "related": [
         {
+          "incident_id": "512572a0b399201f",
+          "relationship": "same_organization",
+          "evidence_url": "https://japan.cnet.com/article/35255222/",
+          "evidence_urls": [
+            "https://japan.cnet.com/article/35255222/"
+          ]
+        },
+        {
           "incident_id": "e0bf7f8e71d6ba85",
           "relationship": "affected_by",
           "evidence_url": "https://www.kagin.co.jp/important/emergency_20261029_3.html",
@@ -39879,7 +40145,7 @@
       "affected_service": "Payどん",
       "service_aliases": [],
       "added_at": "2026-10-30T02:15:42+00:00",
-      "updated_at": "2026-11-17T21:16:22+00:00"
+      "updated_at": "2026-11-20T11:16:07+00:00"
     },
     {
       "id": "3ce6612226b3c800",
@@ -39896,6 +40162,14 @@
       "confidence_score": 30,
       "related": [
         {
+          "incident_id": "b80a1935e1252608",
+          "relationship": "same_organization",
+          "evidence_url": "https://japan.cnet.com/article/35255222/",
+          "evidence_urls": [
+            "https://japan.cnet.com/article/35255222/"
+          ]
+        },
+        {
           "incident_id": "e0bf7f8e71d6ba85",
           "relationship": "affected_by",
           "evidence_url": "https://www.kagin.co.jp/important/emergency_20261029_3.html",
@@ -39917,7 +40191,7 @@
       "affected_service": "Payどん",
       "service_aliases": [],
       "added_at": "2026-10-30T02:15:42+00:00",
-      "updated_at": "2026-11-17T21:16:22+00:00"
+      "updated_at": "2026-11-20T11:16:07+00:00"
     },
     {
       "id": "7364b338d85ed5d1",
@@ -40001,6 +40275,14 @@
       "confidence_score": 30,
       "related": [
         {
+          "incident_id": "d58f73552ac00ea2",
+          "relationship": "same_organization",
+          "evidence_url": "https://japan.cnet.com/article/35255222/",
+          "evidence_urls": [
+            "https://japan.cnet.com/article/35255222/"
+          ]
+        },
+        {
           "incident_id": "e0bf7f8e71d6ba85",
           "relationship": "affected_by",
           "evidence_url": "https://www.kagin.co.jp/important/emergency_20261029_3.html",
@@ -40022,7 +40304,7 @@
       "affected_service": "Payどん",
       "service_aliases": [],
       "added_at": "2026-10-30T02:15:42+00:00",
-      "updated_at": "2026-11-17T21:16:22+00:00"
+      "updated_at": "2026-11-20T11:16:07+00:00"
     },
     {
       "id": "19667cbf1f62a90a",
