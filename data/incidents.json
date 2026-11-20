@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-19T23:17:26+00:00",
-  "total": 1486,
+  "updated_at": "2026-11-20T00:17:39+00:00",
+  "total": 1495,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-19"
@@ -226,7 +226,7 @@
     },
     {
       "date": "2026-10-16",
-      "count": 36
+      "count": 37
     },
     {
       "date": "2026-10-17",
@@ -294,7 +294,7 @@
     },
     {
       "date": "2026-11-02",
-      "count": 65
+      "count": 66
     },
     {
       "date": "2026-11-03",
@@ -302,7 +302,7 @@
     },
     {
       "date": "2026-11-04",
-      "count": 52
+      "count": 53
     },
     {
       "date": "2026-11-05",
@@ -326,7 +326,7 @@
     },
     {
       "date": "2026-11-10",
-      "count": 53
+      "count": 54
     },
     {
       "date": "2026-11-11",
@@ -350,7 +350,7 @@
     },
     {
       "date": "2026-11-16",
-      "count": 31
+      "count": 32
     },
     {
       "date": "2026-11-17",
@@ -358,11 +358,11 @@
     },
     {
       "date": "2026-11-18",
-      "count": 35
+      "count": 37
     },
     {
       "date": "2026-11-19",
-      "count": 22
+      "count": 24
     },
     {
       "date": "2026-11-20",
@@ -370,6 +370,41 @@
     }
   ],
   "incidents": [
+    {
+      "id": "67dfe4f80f615ac6",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "三井不動産",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://www.mitsuifudosan.co.jp/corporate/news/2026/1119/download/sonota/20261119.pdf"
+        },
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/economy/20261119-GYT1T00326/"
+        },
+        {
+          "name": "CNET Japan",
+          "url": "https://japan.cnet.com/article/35255181/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "三井ショッピングパークアプリ",
+      "service_aliases": [],
+      "added_at": "2026-11-19T14:18:14+00:00",
+      "updated_at": "2026-11-20T00:17:39+00:00"
+    },
     {
       "id": "775d529b26c4729b",
       "published_at": "2026-11-18T15:00:00+00:00",
@@ -441,6 +476,41 @@
       "service_aliases": [],
       "added_at": "2026-11-19T14:18:14+00:00",
       "updated_at": "2026-11-19T14:18:14+00:00"
+    },
+    {
+      "id": "cbcf6be4582645ae",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": "2026-11-18T15:00:00+00:00",
+      "organization": "鍋屋バイテック会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 87759,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/nbk_nabeya_bi_tech_karte_87759_data_leak_20261119/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/nbk_nabeya_bi_tech_karte_87759_data_leak_20261119/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/nbk_nabeya_bi_tech_karte_87759_data_leak_20261119/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "KARTE",
+      "service_aliases": [],
+      "added_at": "2026-11-20T00:17:39+00:00",
+      "updated_at": "2026-11-20T00:17:39+00:00"
     },
     {
       "id": "d578c0d976772519",
@@ -682,33 +752,6 @@
       "date_basis": "publication",
       "added_at": "2026-11-19T15:17:55+00:00",
       "updated_at": "2026-11-19T15:17:55+00:00"
-    },
-    {
-      "id": "67dfe4f80f615ac6",
-      "published_at": "2026-11-18T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "三井不動産",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "読売新聞",
-          "url": "https://www.yomiuri.co.jp/economy/20261119-GYT1T00326/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "publication",
-      "affected_service": "三井ショッピングパークアプリ",
-      "service_aliases": [],
-      "added_at": "2026-11-19T14:18:14+00:00",
-      "updated_at": "2026-11-19T14:18:14+00:00"
     },
     {
       "id": "70722c164738fbef",
@@ -1167,6 +1210,60 @@
       "date_basis": "publication",
       "added_at": "2026-11-18T23:23:22+00:00",
       "updated_at": "2026-11-18T23:23:22+00:00"
+    },
+    {
+      "id": "f0d90bb1461278e5",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ＳＯＭＰＯひまわり生命保険",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 320000,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.himawari-life.co.jp/-/media/himawari/files/company/topics/2026/a-01-2026-11-19.pdf?la=ja-JP",
+          "evidence_urls": [
+            "https://www.himawari-life.co.jp/-/media/himawari/files/company/topics/2026/a-01-2026-11-19.pdf?la=ja-JP"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://www.himawari-life.co.jp/-/media/himawari/files/company/topics/2026/a-01-2026-11-19.pdf?la=ja-JP"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "「MYひまわり」(アプリ版・Web版) / aruku with SOMPOひまわり生命 / 公式LINE",
+      "service_aliases": [],
+      "affected_services": [
+        "「MYひまわり」(アプリ版・Web版)",
+        "aruku with SOMPOひまわり生命",
+        "公式LINE"
+      ],
+      "service_details": [
+        {
+          "name": "「MYひまわり」(アプリ版・Web版)",
+          "aliases": []
+        },
+        {
+          "name": "aruku with SOMPOひまわり生命",
+          "aliases": []
+        },
+        {
+          "name": "公式LINE",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-20T00:17:39+00:00",
+      "updated_at": "2026-11-20T00:17:39+00:00"
     },
     {
       "id": "073f272eda1d2604",
@@ -1834,6 +1931,68 @@
       "updated_at": "2026-11-19T02:15:42+00:00"
     },
     {
+      "id": "ba80f2e1838838f4",
+      "published_at": "2026-11-17T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社GIS北海道",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "2346ec53bb135d52",
+          "relationship": "affects",
+          "evidence_url": "https://shintoku-town.jp/oshirase/3675/",
+          "evidence_urls": [
+            "https://shintoku-town.jp/oshirase/3675/"
+          ]
+        },
+        {
+          "incident_id": "457bc18b3fd4b0d4",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.iwamizawa.hokkaido.jp/soshiki/zeimu/zei/2/3/18234.html",
+          "evidence_urls": [
+            "https://www.city.iwamizawa.hokkaido.jp/soshiki/zeimu/zei/2/3/18234.html"
+          ]
+        },
+        {
+          "incident_id": "d42cdf2a89b95abb",
+          "relationship": "affected_by",
+          "evidence_url": "https://shintoku-town.jp/oshirase/3675/",
+          "evidence_urls": [
+            "https://shintoku-town.jp/oshirase/3675/"
+          ]
+        },
+        {
+          "incident_id": "e62e228a3b0d8078",
+          "relationship": "affects",
+          "evidence_url": "https://www.e-rumoi.jp/soumu/page11_00252.html",
+          "evidence_urls": [
+            "https://www.e-rumoi.jp/soumu/page11_00252.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "www.gish.co.jp",
+          "url": "https://www.gish.co.jp/%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1%E6%BC%8F%E3%81%88%E3%81%84%E3%81%AE%E5%8F%AF%E8%83%BD%E6%80%A7%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%81%94%E5%A0%B1%E5%91%8A%E3%81%A8%E3%81%8A%E8%A9%AB%E3%81%B3.pdf"
+        },
+        {
+          "name": "legalagent list",
+          "url": "https://shintoku-town.jp/oshirase/3675/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-19T01:15:50+00:00",
+      "updated_at": "2026-11-20T00:17:39+00:00"
+    },
+    {
       "id": "d7c3301e73f5092c",
       "published_at": "2026-11-17T15:00:00+00:00",
       "disclosed_at": null,
@@ -2151,6 +2310,33 @@
       "service_aliases": [],
       "added_at": "2026-11-19T03:16:30+00:00",
       "updated_at": "2026-11-19T08:17:17+00:00"
+    },
+    {
+      "id": "1cc837be848c8823",
+      "published_at": "2026-11-17T15:00:00+00:00",
+      "disclosed_at": "2026-11-17T15:00:00+00:00",
+      "organization": "イード",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1154,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56864.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "ONE cosme",
+      "service_aliases": [],
+      "added_at": "2026-11-20T00:17:39+00:00",
+      "updated_at": "2026-11-20T00:17:39+00:00"
     },
     {
       "id": "2880d200bc56b5c0",
@@ -2600,48 +2786,6 @@
       "updated_at": "2026-11-17T22:16:17+00:00"
     },
     {
-      "id": "ba80f2e1838838f4",
-      "published_at": "2026-11-17T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "株式会社GIS北海道",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "2346ec53bb135d52",
-          "relationship": "affects",
-          "evidence_url": "https://shintoku-town.jp/oshirase/3675/",
-          "evidence_urls": [
-            "https://shintoku-town.jp/oshirase/3675/"
-          ]
-        },
-        {
-          "incident_id": "d42cdf2a89b95abb",
-          "relationship": "affected_by",
-          "evidence_url": "https://shintoku-town.jp/oshirase/3675/",
-          "evidence_urls": [
-            "https://shintoku-town.jp/oshirase/3675/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "legalagent list",
-          "url": "https://shintoku-town.jp/oshirase/3675/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "publication",
-      "added_at": "2026-11-19T01:15:50+00:00",
-      "updated_at": "2026-11-19T01:15:50+00:00"
-    },
-    {
       "id": "cf4cb5e0996a4bdc",
       "published_at": "2026-11-17T15:00:00+00:00",
       "disclosed_at": null,
@@ -2700,6 +2844,30 @@
       "upstream_status": "outside_japan",
       "added_at": "2026-11-18T23:14:19+00:00",
       "updated_at": "2026-11-18T23:14:19+00:00"
+    },
+    {
+      "id": "f8f29ed3f502f058",
+      "published_at": "2026-11-17T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "鳥取県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 42,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "鳥取県 / Tottori",
+          "url": "http://db.pref.tottori.jp/pressrelease.nsf/webview/6C05A1FB96C0F85E49258EB40019FD2E?OpenDocument"
+        }
+      ],
+      "affected_service": "危機管理部危機管理政策課",
+      "service_aliases": [],
+      "added_at": "2026-11-20T00:17:39+00:00",
+      "updated_at": "2026-11-20T00:17:39+00:00"
     },
     {
       "id": "1ee7597652533c53",
@@ -4379,6 +4547,50 @@
       "updated_at": "2026-11-18T05:16:01+00:00"
     },
     {
+      "id": "457bc18b3fd4b0d4",
+      "published_at": "2026-11-15T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "岩見沢市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "ba80f2e1838838f4",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.iwamizawa.hokkaido.jp/soshiki/zeimu/zei/2/3/18234.html",
+          "evidence_urls": [
+            "https://www.city.iwamizawa.hokkaido.jp/soshiki/zeimu/zei/2/3/18234.html"
+          ]
+        },
+        {
+          "incident_id": "d42cdf2a89b95abb",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.iwamizawa.hokkaido.jp/soshiki/zeimu/zei/2/3/18234.html",
+          "evidence_urls": [
+            "https://www.city.iwamizawa.hokkaido.jp/soshiki/zeimu/zei/2/3/18234.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "www.city.iwamizawa.hokkaido.jp",
+          "url": "https://www.city.iwamizawa.hokkaido.jp/soshiki/zeimu/zei/2/3/18234.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "固定資産税に関する情報",
+      "service_aliases": [],
+      "added_at": "2026-11-20T00:17:39+00:00",
+      "updated_at": "2026-11-20T00:17:39+00:00"
+    },
+    {
       "id": "462c096ee7be4ff0",
       "published_at": "2026-11-15T15:00:00+00:00",
       "disclosed_at": null,
@@ -6053,6 +6265,10 @@
           "url": "https://news.yahoo.co.jp/articles/3f4e510c3ebcc21c3e5a36afe6ffa94a7dfba636"
         },
         {
+          "name": "legalagent list",
+          "url": "https://corp.schoo.jp/post/0bDA5P_w"
+        },
+        {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261119583325.pdf"
         },
@@ -6070,7 +6286,7 @@
       "affected_service": "Schoo Swing",
       "service_aliases": [],
       "added_at": "2026-11-19T04:16:16+00:00",
-      "updated_at": "2026-11-19T07:17:28+00:00"
+      "updated_at": "2026-11-20T00:17:39+00:00"
     },
     {
       "id": "577d4cf3ca24cfb3",
@@ -7777,6 +7993,14 @@
           ]
         },
         {
+          "incident_id": "cbcf6be4582645ae",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/nbk_nabeya_bi_tech_karte_87759_data_leak_20261119/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/nbk_nabeya_bi_tech_karte_87759_data_leak_20261119/"
+          ]
+        },
+        {
           "incident_id": "cd28aec583d7af5c",
           "relationship": "affects",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/offers_overflow_karte_29950_personal_data_leak_2026/",
@@ -7875,6 +8099,14 @@
           ]
         },
         {
+          "incident_id": "f0d90bb1461278e5",
+          "relationship": "affects",
+          "evidence_url": "https://www.himawari-life.co.jp/-/media/himawari/files/company/topics/2026/a-01-2026-11-19.pdf?la=ja-JP",
+          "evidence_urls": [
+            "https://www.himawari-life.co.jp/-/media/himawari/files/company/topics/2026/a-01-2026-11-19.pdf?la=ja-JP"
+          ]
+        },
+        {
           "incident_id": "f21465a208ec881c",
           "relationship": "affects",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/infomart_karte_2735267_customer_data_leak_20261118/",
@@ -7952,7 +8184,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-19T20:18:28+00:00"
+      "updated_at": "2026-11-20T00:17:39+00:00"
     },
     {
       "id": "9f04a00959566f37",
@@ -11726,6 +11958,10 @@
           "url": "https://internet.watch.impress.co.jp/docs/news/2157218.html"
         },
         {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56863.html"
+        },
+        {
           "name": "PR TIMES",
           "url": "https://prtimes.jp/main/html/rd/p/000000009.000157986.html"
         },
@@ -11755,7 +11991,7 @@
       "affected_service": "テスト環境のシステム",
       "service_aliases": [],
       "added_at": "2026-11-17T21:16:22+00:00",
-      "updated_at": "2026-11-19T05:16:46+00:00"
+      "updated_at": "2026-11-20T00:17:39+00:00"
     },
     {
       "id": "cf1fdc0264e4b497",
@@ -13973,6 +14209,30 @@
       "service_aliases": [],
       "added_at": "2026-11-18T03:16:31+00:00",
       "updated_at": "2026-11-18T03:16:31+00:00"
+    },
+    {
+      "id": "e400313a2d8eee61",
+      "published_at": "2026-11-09T15:00:00+00:00",
+      "disclosed_at": "2026-11-09T15:00:00+00:00",
+      "organization": "ソースネクスト",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 137,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56852.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "added_at": "2026-11-20T00:17:39+00:00",
+      "updated_at": "2026-11-20T00:17:39+00:00"
     },
     {
       "id": "e97f70ad6b593e31",
@@ -24442,6 +24702,32 @@
       "updated_at": "2026-11-04T23:15:16+00:00"
     },
     {
+      "id": "8f28f48b7d75610b",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": "2026-11-03T15:00:00+00:00",
+      "organization": "インテージ",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56859.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "インターネット調査システム",
+      "service_aliases": [],
+      "added_at": "2026-11-20T00:17:39+00:00",
+      "updated_at": "2026-11-20T00:17:39+00:00"
+    },
+    {
       "id": "910104a73dd80f53",
       "published_at": "2026-11-03T15:00:00+00:00",
       "disclosed_at": null,
@@ -25038,6 +25324,14 @@
       "confidence_score": 30,
       "related": [
         {
+          "incident_id": "457bc18b3fd4b0d4",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.iwamizawa.hokkaido.jp/soshiki/zeimu/zei/2/3/18234.html",
+          "evidence_urls": [
+            "https://www.city.iwamizawa.hokkaido.jp/soshiki/zeimu/zei/2/3/18234.html"
+          ]
+        },
+        {
           "incident_id": "ba80f2e1838838f4",
           "relationship": "affects",
           "evidence_url": "https://shintoku-town.jp/oshirase/3675/",
@@ -25055,7 +25349,7 @@
       "affected_system": null,
       "date_basis": "discovery",
       "added_at": "2026-11-19T01:15:50+00:00",
-      "updated_at": "2026-11-19T01:15:50+00:00"
+      "updated_at": "2026-11-20T00:17:39+00:00"
     },
     {
       "id": "df8ab3e2aea96fe2",
@@ -26207,6 +26501,10 @@
           "url": "https://www.ms-ins.com/news/fy2026/pdf/1106_1.pdf"
         },
         {
+          "name": "legalagent list",
+          "url": "https://www.ms-ins.com/information/2026/information_1119_1.pdf"
+        },
+        {
           "name": "読売新聞",
           "url": "https://www.yomiuri.co.jp/economy/20261104-GYT1T00280/"
         },
@@ -26234,7 +26532,7 @@
       "affected_service": "ご契約者さま専用ページ",
       "service_aliases": [],
       "added_at": "2026-11-04T10:15:52+00:00",
-      "updated_at": "2026-11-16T00:15:49+00:00"
+      "updated_at": "2026-11-20T00:17:39+00:00"
     },
     {
       "id": "19cce63ebf03c536",
@@ -28025,6 +28323,42 @@
       ],
       "added_at": "2026-11-09T08:16:45+00:00",
       "updated_at": "2026-11-12T08:18:15+00:00"
+    },
+    {
+      "id": "e62e228a3b0d8078",
+      "published_at": "2026-11-01T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "留萌市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 71002,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "ba80f2e1838838f4",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.e-rumoi.jp/soumu/page11_00252.html",
+          "evidence_urls": [
+            "https://www.e-rumoi.jp/soumu/page11_00252.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "www.e-rumoi.jp",
+          "url": "https://www.e-rumoi.jp/soumu/page11_00252.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "住民基本台帳データ",
+      "service_aliases": [],
+      "added_at": "2026-11-20T00:17:39+00:00",
+      "updated_at": "2026-11-20T00:17:39+00:00"
     },
     {
       "id": "e9811136a68c506f",
@@ -38485,12 +38819,16 @@
         {
           "name": "NOVAIST",
           "url": "https://novaist.jp/articles/teamspirit-data-breach/"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56857.html"
         }
       ],
       "affected_service": "ソフトウェア開発用サーバー",
       "service_aliases": [],
       "added_at": "2026-11-07T11:39:00+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-20T00:17:39+00:00"
     },
     {
       "id": "3af225d6bc57b16b",
@@ -38690,12 +39028,16 @@
         {
           "name": "Security NEXT",
           "url": "https://www.security-next.com/192582"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56858.html"
         }
       ],
       "affected_service": "Beauty Alive Circulation Check",
       "service_aliases": [],
       "added_at": "2026-11-08T14:16:28+00:00",
-      "updated_at": "2026-11-14T09:15:22+00:00"
+      "updated_at": "2026-11-20T00:17:39+00:00"
     },
     {
       "id": "6fb7085ea024fe90",
@@ -45772,10 +46114,6 @@
       "related": [],
       "sources": [
         {
-          "name": "日本取引所グループ TDnet / JPX TDnet",
-          "url": "https://www.release.tdnet.info/inbs/140120261023555489.pdf"
-        },
-        {
           "name": "satimo list",
           "url": "https://www2.jpx.co.jp/disc/26850/140120261023555489.pdf"
         },
@@ -45792,6 +46130,10 @@
           "url": "https://www.andst-hd.co.jp/news/notice/entry-17245/"
         },
         {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261023555489.pdf"
+        },
+        {
           "name": "47NEWS",
           "url": "https://www.47news.jp/15128223.html"
         },
@@ -45806,10 +46148,14 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/2bb0c59f39c6eaed1af745952afba3c9a9a18020"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56853.html"
         }
       ],
       "added_at": "2026-10-23T08:33:10+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-20T00:17:39+00:00"
     },
     {
       "id": "65f3107c9b8e0705",
@@ -52375,6 +52721,35 @@
       "updated_at": "2026-11-12T08:18:15+00:00"
     },
     {
+      "id": "19c2b091c23303fc",
+      "published_at": "2026-10-19T15:00:00+00:00",
+      "disclosed_at": "2026-11-05T15:00:00+00:00",
+      "organization": "ソニー少額短期保険",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 108,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/sony_sasti_test_environment_108_employee_data_breach/"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56856.html"
+        }
+      ],
+      "affected_service": "契約管理システム",
+      "service_aliases": [],
+      "added_at": "2026-11-09T01:16:50+00:00",
+      "updated_at": "2026-11-20T00:17:39+00:00"
+    },
+    {
       "id": "1e7d708d8c1ea723",
       "published_at": "2026-10-19T15:00:00+00:00",
       "disclosed_at": null,
@@ -53230,31 +53605,6 @@
       "updated_at": "2026-10-21T05:30:04+00:00"
     },
     {
-      "id": "19c2b091c23303fc",
-      "published_at": "2026-10-19T15:00:00+00:00",
-      "disclosed_at": "2026-11-05T15:00:00+00:00",
-      "organization": "ソニー少額短期保険",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 108,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/sony_sasti_test_environment_108_employee_data_breach/"
-        }
-      ],
-      "affected_service": "契約管理システム",
-      "service_aliases": [],
-      "added_at": "2026-11-09T01:16:50+00:00",
-      "updated_at": "2026-11-09T01:16:50+00:00"
-    },
-    {
       "id": "35199c11de392f0c",
       "published_at": "2026-10-19T15:00:00+00:00",
       "disclosed_at": null,
@@ -53846,6 +54196,10 @@
           "url": "https://www.cuenote.jp/support/news-incident.html"
         },
         {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56860.html"
+        },
+        {
           "name": "legalagent list",
           "url": "https://www.release.tdnet.info/inbs/140120261019553124.pdf"
         },
@@ -53889,7 +54243,7 @@
         }
       ],
       "added_at": "2026-10-19T13:14:57+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-20T00:17:39+00:00"
     },
     {
       "id": "15204b629222c010",
@@ -56706,6 +57060,40 @@
       "updated_at": "2026-11-12T08:18:15+00:00"
     },
     {
+      "id": "7f97536767014b72",
+      "published_at": "2026-10-15T15:00:00+00:00",
+      "disclosed_at": "2026-11-04T15:00:00+00:00",
+      "organization": "GMO Flatt Security",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56854.html",
+          "evidence_urls": [
+            "https://scan.netsecurity.ne.jp/article/2026/11/20/56854.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56854.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "added_at": "2026-11-20T00:17:39+00:00",
+      "updated_at": "2026-11-20T00:17:39+00:00"
+    },
+    {
       "id": "83b61a3db8b6680d",
       "published_at": "2026-10-15T15:00:00+00:00",
       "disclosed_at": null,
@@ -58358,6 +58746,14 @@
           ]
         },
         {
+          "incident_id": "7f97536767014b72",
+          "relationship": "affects",
+          "evidence_url": "https://scan.netsecurity.ne.jp/article/2026/11/20/56854.html",
+          "evidence_urls": [
+            "https://scan.netsecurity.ne.jp/article/2026/11/20/56854.html"
+          ]
+        },
+        {
           "incident_id": "81ace1ca432c9aa9",
           "relationship": "affects",
           "evidence_url": "https://prtimes.jp/main/html/rd/p/000000493.000089626.html",
@@ -58718,7 +59114,7 @@
       "affected_system": "Studio cloud environment",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T11:10:22+00:00",
-      "updated_at": "2026-11-18T05:16:01+00:00"
+      "updated_at": "2026-11-20T00:17:39+00:00"
     },
     {
       "id": "7a4c57d5a37c3971",
