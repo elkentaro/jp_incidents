@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-20T00:17:39+00:00",
-  "total": 1495,
+  "updated_at": "2026-11-20T01:14:30+00:00",
+  "total": 1499,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-19"
@@ -318,7 +318,7 @@
     },
     {
       "date": "2026-11-08",
-      "count": 10
+      "count": 11
     },
     {
       "date": "2026-11-09",
@@ -338,7 +338,7 @@
     },
     {
       "date": "2026-11-13",
-      "count": 54
+      "count": 56
     },
     {
       "date": "2026-11-14",
@@ -354,7 +354,7 @@
     },
     {
       "date": "2026-11-17",
-      "count": 33
+      "count": 34
     },
     {
       "date": "2026-11-18",
@@ -897,12 +897,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/4a26712067329894f5e632bc113b37eafa2570f7"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/8389469abecc477c83b065e4cb35dde345812b2e"
         }
       ],
       "affected_system": null,
       "date_basis": "publication",
       "added_at": "2026-11-19T13:18:58+00:00",
-      "updated_at": "2026-11-19T23:17:26+00:00"
+      "updated_at": "2026-11-20T01:14:30+00:00"
     },
     {
       "id": "35af713e1d0b2a3b",
@@ -3146,6 +3150,42 @@
       "updated_at": "2026-11-18T05:16:01+00:00"
     },
     {
+      "id": "73e340ff264751de",
+      "published_at": "2026-11-16T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "グリーンインダストリー",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 17146,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "557c85f6d895d50b",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.flowerkitchen-web.com/c/shopgide/shopnews/news",
+          "evidence_urls": [
+            "https://www.flowerkitchen-web.com/c/shopgide/shopnews/news"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.flowerkitchen-web.com/c/shopgide/shopnews/news"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "フラワーキッチン自由が丘",
+      "service_aliases": [],
+      "added_at": "2026-11-20T01:14:30+00:00",
+      "updated_at": "2026-11-20T01:14:30+00:00"
+    },
+    {
       "id": "7cbbacf6bb6ad215",
       "published_at": "2026-11-16T15:00:00+00:00",
       "disclosed_at": null,
@@ -4810,6 +4850,75 @@
       "updated_at": "2026-11-18T07:15:49+00:00"
     },
     {
+      "id": "b0d51947e0683fdd",
+      "published_at": "2026-11-15T15:00:00+00:00",
+      "disclosed_at": "2026-11-15T15:00:00+00:00",
+      "organization": "アイコニア・ホスピタリティ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "aa9bc3fcfc85d71d",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/iconia_hospitality_comsbi_five_brands_data_breach_2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/iconia_hospitality_comsbi_five_brands_data_breach_2026/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.hawaiians.co.jp/news/4244/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/iconia_hospitality_comsbi_five_brands_data_breach_2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "亀の井ホテル / ほったらかしの宿 ゆうふり / わんわんパラダイス / スパリゾートハワイアンズ / 空庭温泉 OSAKA BAY TOWER",
+      "service_aliases": [],
+      "affected_services": [
+        "亀の井ホテル",
+        "ほったらかしの宿 ゆうふり",
+        "わんわんパラダイス",
+        "スパリゾートハワイアンズ",
+        "空庭温泉 OSAKA BAY TOWER"
+      ],
+      "service_details": [
+        {
+          "name": "亀の井ホテル",
+          "aliases": []
+        },
+        {
+          "name": "ほったらかしの宿 ゆうふり",
+          "aliases": []
+        },
+        {
+          "name": "わんわんパラダイス",
+          "aliases": []
+        },
+        {
+          "name": "スパリゾートハワイアンズ",
+          "aliases": []
+        },
+        {
+          "name": "空庭温泉 OSAKA BAY TOWER",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-19T04:16:16+00:00",
+      "updated_at": "2026-11-20T01:14:30+00:00"
+    },
+    {
       "id": "bc877c118f83261b",
       "published_at": "2026-11-15T15:00:00+00:00",
       "disclosed_at": null,
@@ -5453,71 +5562,6 @@
       "service_aliases": [],
       "added_at": "2026-11-16T12:16:35+00:00",
       "updated_at": "2026-11-16T12:16:35+00:00"
-    },
-    {
-      "id": "b0d51947e0683fdd",
-      "published_at": "2026-11-15T15:00:00+00:00",
-      "disclosed_at": "2026-11-15T15:00:00+00:00",
-      "organization": "アイコニア・ホスピタリティ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "aa9bc3fcfc85d71d",
-          "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/iconia_hospitality_comsbi_five_brands_data_breach_2026/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/iconia_hospitality_comsbi_five_brands_data_breach_2026/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/iconia_hospitality_comsbi_five_brands_data_breach_2026/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "first_disclosure",
-      "affected_service": "亀の井ホテル / ほったらかしの宿 ゆうふり / わんわんパラダイス / スパリゾートハワイアンズ / 空庭温泉 OSAKA BAY TOWER",
-      "service_aliases": [],
-      "affected_services": [
-        "亀の井ホテル",
-        "ほったらかしの宿 ゆうふり",
-        "わんわんパラダイス",
-        "スパリゾートハワイアンズ",
-        "空庭温泉 OSAKA BAY TOWER"
-      ],
-      "service_details": [
-        {
-          "name": "亀の井ホテル",
-          "aliases": []
-        },
-        {
-          "name": "ほったらかしの宿 ゆうふり",
-          "aliases": []
-        },
-        {
-          "name": "わんわんパラダイス",
-          "aliases": []
-        },
-        {
-          "name": "スパリゾートハワイアンズ",
-          "aliases": []
-        },
-        {
-          "name": "空庭温泉 OSAKA BAY TOWER",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-19T04:16:16+00:00",
-      "updated_at": "2026-11-19T04:16:16+00:00"
     },
     {
       "id": "b91af3697998613c",
@@ -7180,6 +7224,42 @@
       "updated_at": "2026-11-19T07:17:28+00:00"
     },
     {
+      "id": "616cb25d2f2a04b9",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "クボタ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 7660,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.kubota.co.jp/news/2026/data/info20261113.pdf",
+          "evidence_urls": [
+            "https://www.kubota.co.jp/news/2026/data/info20261113.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.kubota.co.jp/news/2026/data/info20261113.pdf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "クボタべっぴんふぁーむ",
+      "service_aliases": [],
+      "added_at": "2026-11-20T01:14:30+00:00",
+      "updated_at": "2026-11-20T01:14:30+00:00"
+    },
+    {
       "id": "61ae21551c726eee",
       "published_at": "2026-11-12T15:00:00+00:00",
       "disclosed_at": null,
@@ -7903,6 +7983,14 @@
           ]
         },
         {
+          "incident_id": "958475ed41c0f37d",
+          "relationship": "affects",
+          "evidence_url": "https://agriculture.kubota.co.jp/ksas/news/detail/54014.html",
+          "evidence_urls": [
+            "https://agriculture.kubota.co.jp/ksas/news/detail/54014.html"
+          ]
+        },
+        {
           "incident_id": "9cea6db91e42ce70",
           "relationship": "affects",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/en-inc-karte-mid-tenshoku-12474-business-emails-2026/",
@@ -8003,8 +8091,9 @@
         {
           "incident_id": "cd28aec583d7af5c",
           "relationship": "affects",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/offers_overflow_karte_29950_personal_data_leak_2026/",
+          "evidence_url": "https://offers.jp/notice_karte_incident",
           "evidence_urls": [
+            "https://offers.jp/notice_karte_incident",
             "https://rocket-boys.co.jp/security-measures-lab/offers_overflow_karte_29950_personal_data_leak_2026/"
           ]
         },
@@ -8184,7 +8273,43 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-20T00:17:39+00:00"
+      "updated_at": "2026-11-20T01:14:30+00:00"
+    },
+    {
+      "id": "958475ed41c0f37d",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "クボタ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://agriculture.kubota.co.jp/ksas/news/detail/54014.html",
+          "evidence_urls": [
+            "https://agriculture.kubota.co.jp/ksas/news/detail/54014.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://agriculture.kubota.co.jp/ksas/news/detail/54014.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "KSAS",
+      "service_aliases": [],
+      "added_at": "2026-11-20T01:14:30+00:00",
+      "updated_at": "2026-11-20T01:14:30+00:00"
     },
     {
       "id": "9f04a00959566f37",
@@ -8526,6 +8651,47 @@
       "updated_at": "2026-11-16T03:15:43+00:00"
     },
     {
+      "id": "cd28aec583d7af5c",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-16T15:00:00+00:00",
+      "organization": "overflow",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 29950,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://offers.jp/notice_karte_incident",
+          "evidence_urls": [
+            "https://offers.jp/notice_karte_incident",
+            "https://rocket-boys.co.jp/security-measures-lab/offers_overflow_karte_29950_personal_data_leak_2026/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://offers.jp/notice_karte_incident"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/offers_overflow_karte_29950_personal_data_leak_2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "Offers",
+      "service_aliases": [],
+      "added_at": "2026-11-18T15:16:38+00:00",
+      "updated_at": "2026-11-20T01:14:30+00:00"
+    },
+    {
       "id": "e6a9e7da15d27bf6",
       "published_at": "2026-11-12T15:00:00+00:00",
       "disclosed_at": null,
@@ -8683,6 +8849,47 @@
       "service_aliases": [],
       "added_at": "2026-11-16T13:16:58+00:00",
       "updated_at": "2026-11-19T17:18:09+00:00"
+    },
+    {
+      "id": "fece3f126eae9e73",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-17T15:00:00+00:00",
+      "organization": "株式会社エアークローゼット",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 50990,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/aircloset-karte-50990-customer-information-leak/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/aircloset-karte-50990-customer-information-leak/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://corp.air-closet.com/news/notice/261118/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/aircloset-karte-50990-customer-information-leak/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "airCloset",
+      "service_aliases": [
+        "エアークローゼット"
+      ],
+      "added_at": "2026-11-19T04:16:16+00:00",
+      "updated_at": "2026-11-20T01:14:30+00:00"
     },
     {
       "id": "83583b116cd04352",
@@ -9793,42 +10000,6 @@
       "updated_at": "2026-11-14T06:15:26+00:00"
     },
     {
-      "id": "cd28aec583d7af5c",
-      "published_at": "2026-11-12T15:00:00+00:00",
-      "disclosed_at": "2026-11-16T15:00:00+00:00",
-      "organization": "overflow",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 29950,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "8cf67a97b55e1d57",
-          "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/offers_overflow_karte_29950_personal_data_leak_2026/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/offers_overflow_karte_29950_personal_data_leak_2026/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/offers_overflow_karte_29950_personal_data_leak_2026/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "occurrence",
-      "affected_service": "Offers",
-      "service_aliases": [],
-      "added_at": "2026-11-18T15:16:38+00:00",
-      "updated_at": "2026-11-18T15:16:38+00:00"
-    },
-    {
       "id": "e7db5e739daf7932",
       "published_at": "2026-11-12T15:00:00+00:00",
       "disclosed_at": null,
@@ -9888,43 +10059,6 @@
       "service_aliases": [],
       "added_at": "2026-11-18T05:16:01+00:00",
       "updated_at": "2026-11-18T05:16:01+00:00"
-    },
-    {
-      "id": "fece3f126eae9e73",
-      "published_at": "2026-11-12T15:00:00+00:00",
-      "disclosed_at": "2026-11-17T15:00:00+00:00",
-      "organization": "株式会社エアークローゼット",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 50990,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "8cf67a97b55e1d57",
-          "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/aircloset-karte-50990-customer-information-leak/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/aircloset-karte-50990-customer-information-leak/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/aircloset-karte-50990-customer-information-leak/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "occurrence",
-      "affected_service": "airCloset",
-      "service_aliases": [
-        "エアークローゼット"
-      ],
-      "added_at": "2026-11-19T04:16:16+00:00",
-      "updated_at": "2026-11-19T04:16:16+00:00"
     },
     {
       "id": "0cefea7d435e4eca",
@@ -10336,6 +10470,46 @@
       "service_aliases": [],
       "added_at": "2026-11-12T22:15:17+00:00",
       "updated_at": "2026-11-17T08:16:10+00:00"
+    },
+    {
+      "id": "5f23ed62d57889d9",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": "2026-11-15T15:00:00+00:00",
+      "organization": "ニュー・クイック",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 51951,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "aa9bc3fcfc85d71d",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/newquick_comsbi_saas_line_51951_20261118/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/newquick_comsbi_saas_line_51951_20261118/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.new-quick.co.jp/news/release/202611161800"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/newquick_comsbi_saas_line_51951_20261118/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "ニュー・クイックLINE公式アカウント",
+      "service_aliases": [],
+      "added_at": "2026-11-19T04:16:16+00:00",
+      "updated_at": "2026-11-20T01:14:30+00:00"
     },
     {
       "id": "644ef4826d34d12d",
@@ -11171,42 +11345,6 @@
       ],
       "added_at": "2026-11-13T07:15:40+00:00",
       "updated_at": "2026-11-13T07:15:40+00:00"
-    },
-    {
-      "id": "5f23ed62d57889d9",
-      "published_at": "2026-11-11T15:00:00+00:00",
-      "disclosed_at": "2026-11-15T15:00:00+00:00",
-      "organization": "ニュー・クイック",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 51951,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "aa9bc3fcfc85d71d",
-          "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/newquick_comsbi_saas_line_51951_20261118/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/newquick_comsbi_saas_line_51951_20261118/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/newquick_comsbi_saas_line_51951_20261118/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "discovery",
-      "affected_service": "ニュー・クイックLINE公式アカウント",
-      "service_aliases": [],
-      "added_at": "2026-11-19T04:16:16+00:00",
-      "updated_at": "2026-11-19T04:16:16+00:00"
     },
     {
       "id": "72feb59cd0405905",
@@ -13544,6 +13682,14 @@
           ]
         },
         {
+          "incident_id": "73e340ff264751de",
+          "relationship": "affects",
+          "evidence_url": "https://www.flowerkitchen-web.com/c/shopgide/shopnews/news",
+          "evidence_urls": [
+            "https://www.flowerkitchen-web.com/c/shopgide/shopnews/news"
+          ]
+        },
+        {
           "incident_id": "76902a32579961b4",
           "relationship": "affects",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/mtg-goqsystem-social-gift-delivery-data-leak-15033-202611/",
@@ -13623,7 +13769,7 @@
       "affected_service": "GoQSystem",
       "service_aliases": [],
       "added_at": "2026-11-15T18:16:24+00:00",
-      "updated_at": "2026-11-19T04:16:16+00:00"
+      "updated_at": "2026-11-20T01:14:30+00:00"
     },
     {
       "id": "64589e58e48fed43",
@@ -17361,6 +17507,30 @@
       "date_basis": "discovery",
       "added_at": "2026-11-18T01:17:02+00:00",
       "updated_at": "2026-11-18T20:16:16+00:00"
+    },
+    {
+      "id": "2d4737fe14d58b6c",
+      "published_at": "2026-11-07T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "CNプレイガイド",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/d6ed2066db45021e04caf39cff0e01e900f74c0f"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "added_at": "2026-11-20T01:14:30+00:00",
+      "updated_at": "2026-11-20T01:14:30+00:00"
     },
     {
       "id": "a5aba76731b13cfb",
@@ -36279,6 +36449,14 @@
           ]
         },
         {
+          "incident_id": "616cb25d2f2a04b9",
+          "relationship": "affects",
+          "evidence_url": "https://www.kubota.co.jp/news/2026/data/info20261113.pdf",
+          "evidence_urls": [
+            "https://www.kubota.co.jp/news/2026/data/info20261113.pdf"
+          ]
+        },
+        {
           "incident_id": "62c21edce1ba88de",
           "relationship": "affects",
           "evidence_url": "https://news.ntv.co.jp/n/ytv/category/economy/yt39f330fe1d6546b6b96c7e3928a4b7d7",
@@ -37447,7 +37625,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-19T11:17:52+00:00"
+      "updated_at": "2026-11-20T01:14:30+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
