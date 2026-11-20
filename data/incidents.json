@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-20T03:27:04+00:00",
-  "total": 1502,
+  "updated_at": "2026-11-20T04:17:29+00:00",
+  "total": 1505,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-20"
@@ -274,7 +274,7 @@
     },
     {
       "date": "2026-10-28",
-      "count": 58
+      "count": 59
     },
     {
       "date": "2026-10-29",
@@ -338,7 +338,7 @@
     },
     {
       "date": "2026-11-13",
-      "count": 56
+      "count": 57
     },
     {
       "date": "2026-11-14",
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-19",
-      "count": 26
+      "count": 27
     },
     {
       "date": "2026-11-20",
@@ -646,6 +646,32 @@
       "date_basis": "publication",
       "added_at": "2026-11-18T23:14:19+00:00",
       "updated_at": "2026-11-19T05:16:46+00:00"
+    },
+    {
+      "id": "12b92fba1daecda5",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "SEモバイル・アンド・オンライン",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261120583955.pdf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "スマリッジ",
+      "service_aliases": [],
+      "added_at": "2026-11-20T04:17:29+00:00",
+      "updated_at": "2026-11-20T04:17:29+00:00"
     },
     {
       "id": "7bda59e0bb9f1c7d",
@@ -1644,6 +1670,10 @@
         {
           "name": "legalagent list",
           "url": "https://shintoku-town.jp/oshirase/3675/"
+        },
+        {
+          "name": "マイナビニュース",
+          "url": "https://news.mynavi.jp/techplus/article/20261120-5365717/"
         }
       ],
       "affected_system": null,
@@ -1651,7 +1681,7 @@
       "affected_service": "災害時避難行動要支援者システム",
       "service_aliases": [],
       "added_at": "2026-11-19T01:15:50+00:00",
-      "updated_at": "2026-11-19T01:15:50+00:00"
+      "updated_at": "2026-11-20T04:17:29+00:00"
     },
     {
       "id": "356549be3a98ed12",
@@ -4739,6 +4769,10 @@
         {
           "name": "www.city.iwamizawa.hokkaido.jp",
           "url": "https://www.city.iwamizawa.hokkaido.jp/soshiki/zeimu/zei/2/3/18234.html"
+        },
+        {
+          "name": "マイナビニュース",
+          "url": "https://news.mynavi.jp/techplus/article/20261120-5365717/"
         }
       ],
       "affected_system": null,
@@ -4746,7 +4780,7 @@
       "affected_service": "固定資産税に関する情報",
       "service_aliases": [],
       "added_at": "2026-11-20T00:17:39+00:00",
-      "updated_at": "2026-11-20T00:17:39+00:00"
+      "updated_at": "2026-11-20T04:17:29+00:00"
     },
     {
       "id": "462c096ee7be4ff0",
@@ -7978,6 +8012,14 @@
           ]
         },
         {
+          "incident_id": "725a9bc35dda08e8",
+          "relationship": "affects",
+          "evidence_url": "https://prtimes.jp/main/html/rd/p/000000208.000076897.html",
+          "evidence_urls": [
+            "https://prtimes.jp/main/html/rd/p/000000208.000076897.html"
+          ]
+        },
+        {
           "incident_id": "72719afb4550b10c",
           "relationship": "affects",
           "evidence_url": "https://www.club-t.com/ct/news/2026/1117_1/",
@@ -8424,7 +8466,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-20T03:27:04+00:00"
+      "updated_at": "2026-11-20T04:17:29+00:00"
     },
     {
       "id": "958475ed41c0f37d",
@@ -9096,6 +9138,41 @@
       ],
       "added_at": "2026-11-13T07:15:40+00:00",
       "updated_at": "2026-11-13T09:15:19+00:00"
+    },
+    {
+      "id": "725a9bc35dda08e8",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "鈴木ハーブ研究所",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 1106,
+      "confidence": "high",
+      "confidence_score": 70,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://prtimes.jp/main/html/rd/p/000000208.000076897.html",
+          "evidence_urls": [
+            "https://prtimes.jp/main/html/rd/p/000000208.000076897.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "PR TIMES",
+          "url": "https://prtimes.jp/main/html/rd/p/000000208.000076897.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "KARTE",
+      "service_aliases": [],
+      "added_at": "2026-11-20T04:17:29+00:00",
+      "updated_at": "2026-11-20T04:17:29+00:00"
     },
     {
       "id": "d06a6425729b87b6",
@@ -28685,6 +28762,10 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118665"
+        },
+        {
+          "name": "マイナビニュース",
+          "url": "https://news.mynavi.jp/techplus/article/20261120-5365717/"
         }
       ],
       "affected_system": null,
@@ -28692,7 +28773,7 @@
       "affected_service": "住民基本台帳データ",
       "service_aliases": [],
       "added_at": "2026-11-20T00:17:39+00:00",
-      "updated_at": "2026-11-20T01:30:53+00:00"
+      "updated_at": "2026-11-20T04:17:29+00:00"
     },
     {
       "id": "e9811136a68c506f",
@@ -35980,6 +36061,41 @@
       "updated_at": "2026-11-12T08:18:15+00:00"
     },
     {
+      "id": "d23ea21a2b70adea",
+      "published_at": "2026-10-27T15:00:00+00:00",
+      "disclosed_at": "2026-11-17T15:00:00+00:00",
+      "organization": "コーミ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 1040,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/komi_arara_message_email_leak_1040_20261118/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/komi_arara_message_email_leak_1040_20261118/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/komi_arara_message_email_leak_1040_20261118/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "アララメッセージ",
+      "service_aliases": [],
+      "added_at": "2026-11-20T04:17:29+00:00",
+      "updated_at": "2026-11-20T04:17:29+00:00"
+    },
+    {
       "id": "dc15595102d7025a",
       "published_at": "2026-10-27T15:00:00+00:00",
       "disclosed_at": null,
@@ -37436,6 +37552,14 @@
           ]
         },
         {
+          "incident_id": "d23ea21a2b70adea",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/komi_arara_message_email_leak_1040_20261118/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/komi_arara_message_email_leak_1040_20261118/"
+          ]
+        },
+        {
           "incident_id": "d25e97a3448ca2da",
           "relationship": "affects",
           "evidence_url": "https://netshop.impress.co.jp/n/2026/11/09/17000",
@@ -37789,7 +37913,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-20T01:14:30+00:00"
+      "updated_at": "2026-11-20T04:17:29+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -67240,12 +67364,20 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUC1915Y0Z11C26A1000000/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/skyticket_three_unauthorized_access_incidents_1464m-2/"
+        },
+        {
+          "name": "CNET Japan",
+          "url": "https://japan.cnet.com/article/35255198/"
         }
       ],
       "affected_system": null,
       "date_basis": "occurrence",
       "added_at": "2026-11-18T19:15:59+00:00",
-      "updated_at": "2026-11-19T04:16:16+00:00"
+      "updated_at": "2026-11-20T04:17:29+00:00"
     },
     {
       "id": "0c2e7998c50a46ac",
