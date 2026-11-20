@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-20T06:17:27+00:00",
-  "total": 1510,
+  "updated_at": "2026-11-20T07:15:59+00:00",
+  "total": 1512,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-20"
@@ -310,7 +310,7 @@
     },
     {
       "date": "2026-11-06",
-      "count": 53
+      "count": 54
     },
     {
       "date": "2026-11-07",
@@ -338,7 +338,7 @@
     },
     {
       "date": "2026-11-13",
-      "count": 58
+      "count": 57
     },
     {
       "date": "2026-11-14",
@@ -358,7 +358,7 @@
     },
     {
       "date": "2026-11-18",
-      "count": 37
+      "count": 38
     },
     {
       "date": "2026-11-19",
@@ -603,6 +603,50 @@
       "updated_at": "2026-11-19T07:17:28+00:00"
     },
     {
+      "id": "7bda59e0bb9f1c7d",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "インフキュリオン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8f93bc8af7c1dc3e",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/78d9cde0f5cb08a710295cdf819e09e6a9bd65bf",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/78d9cde0f5cb08a710295cdf819e09e6a9bd65bf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261120583076/"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261120583076.pdf"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/78d9cde0f5cb08a710295cdf819e09e6a9bd65bf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "Wallet Station",
+      "service_aliases": [],
+      "added_at": "2026-11-20T01:22:45+00:00",
+      "updated_at": "2026-11-20T07:15:59+00:00"
+    },
+    {
       "id": "c97f351bcfbd0ee3",
       "published_at": "2026-11-18T15:00:00+00:00",
       "disclosed_at": null,
@@ -791,46 +835,6 @@
       "service_aliases": [],
       "added_at": "2026-11-20T04:17:29+00:00",
       "updated_at": "2026-11-20T04:17:29+00:00"
-    },
-    {
-      "id": "7bda59e0bb9f1c7d",
-      "published_at": "2026-11-18T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "インフキュリオン",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 80,
-      "related": [
-        {
-          "incident_id": "8f93bc8af7c1dc3e",
-          "relationship": "affects",
-          "evidence_url": "https://news.yahoo.co.jp/articles/78d9cde0f5cb08a710295cdf819e09e6a9bd65bf",
-          "evidence_urls": [
-            "https://news.yahoo.co.jp/articles/78d9cde0f5cb08a710295cdf819e09e6a9bd65bf"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "日本取引所グループ TDnet / JPX TDnet",
-          "url": "https://www.release.tdnet.info/inbs/140120261120583076.pdf"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/78d9cde0f5cb08a710295cdf819e09e6a9bd65bf"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "discovery",
-      "affected_service": "Wallet Station",
-      "service_aliases": [],
-      "added_at": "2026-11-20T01:22:45+00:00",
-      "updated_at": "2026-11-20T05:17:21+00:00"
     },
     {
       "id": "074272c74e09cbbb",
@@ -1104,6 +1108,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/78d9cde0f5cb08a710295cdf819e09e6a9bd65bf"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/1b6bbfccbe9bf6ce00e35a06221faf0916a2c878"
         }
       ],
       "affected_system": null,
@@ -1111,7 +1119,7 @@
       "affected_service": "Payどん",
       "service_aliases": [],
       "added_at": "2026-11-20T05:17:21+00:00",
-      "updated_at": "2026-11-20T05:17:21+00:00"
+      "updated_at": "2026-11-20T07:15:59+00:00"
     },
     {
       "id": "d832febcbc03fa90",
@@ -1837,6 +1845,10 @@
         {
           "name": "朝日新聞",
           "url": "https://www.asahi.com/articles/ASVCN12QWVCNIIPE001M.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/2ff1b90d3bcb6e345c8cbb56839454ee07e22d01"
         }
       ],
       "affected_system": null,
@@ -1844,7 +1856,7 @@
       "affected_service": "災害時避難行動要支援者システム",
       "service_aliases": [],
       "added_at": "2026-11-19T01:15:50+00:00",
-      "updated_at": "2026-11-20T06:17:27+00:00"
+      "updated_at": "2026-11-20T07:15:59+00:00"
     },
     {
       "id": "356549be3a98ed12",
@@ -3098,6 +3110,33 @@
       "service_aliases": [],
       "added_at": "2026-11-17T22:16:17+00:00",
       "updated_at": "2026-11-17T22:16:17+00:00"
+    },
+    {
+      "id": "c332cbe40a4c7b28",
+      "published_at": "2026-11-17T15:00:00+00:00",
+      "disclosed_at": "2026-11-17T15:00:00+00:00",
+      "organization": "三越伊勢丹",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/mitsukoshi_isetan_product_review_unauthorized_access_39978/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "三越伊勢丹オンラインストア",
+      "service_aliases": [],
+      "added_at": "2026-11-20T07:15:59+00:00",
+      "updated_at": "2026-11-20T07:15:59+00:00"
     },
     {
       "id": "cf4cb5e0996a4bdc",
@@ -4944,6 +4983,10 @@
         {
           "name": "朝日新聞",
           "url": "https://www.asahi.com/articles/ASVCN12QWVCNIIPE001M.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/2ff1b90d3bcb6e345c8cbb56839454ee07e22d01"
         }
       ],
       "affected_system": null,
@@ -4951,7 +4994,7 @@
       "affected_service": "固定資産税に関する情報",
       "service_aliases": [],
       "added_at": "2026-11-20T00:17:39+00:00",
-      "updated_at": "2026-11-20T06:17:27+00:00"
+      "updated_at": "2026-11-20T07:15:59+00:00"
     },
     {
       "id": "462c096ee7be4ff0",
@@ -6046,7 +6089,8 @@
       "organization": "ジンズホールディングス",
       "incident_type": "data leak",
       "incident_categories": [
-        "data leak"
+        "data leak",
+        "unauthorized access"
       ],
       "potential_records": 18290000,
       "confidence": "high",
@@ -6057,6 +6101,7 @@
           "relationship": "affected_by",
           "evidence_url": "https://www.nikkei.com/article/DGXZQOCC17A1V0X11C26A1000000/",
           "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/jins-karte-member-18_29m-account-data-breach-2026/",
             "https://www.nikkei.com/article/DGXZQOCC17A1V0X11C26A1000000/",
             "https://www.nikkei.com/nkd/disclosure/tdnr/20261117582109/"
           ]
@@ -6090,6 +6135,30 @@
         {
           "name": "TBS NEWS DIG",
           "url": "https://newsdig.tbs.co.jp/articles/-/3092885?display=1"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/jins-karte-member-18_29m-account-data-breach-2026/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/89046c7bc141b9d8a60ec56407d5232631cf430f"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/a7c765f40a323d382bb4b2b15905fb1a1c9ac92f"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261117de77389"
+        },
+        {
+          "name": "INTERNET Watch",
+          "url": "https://internet.watch.impress.co.jp/docs/news/2157316.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/a1454a4080158b15406b0e9e905370cda71b529e"
         }
       ],
       "affected_system": null,
@@ -6097,7 +6166,7 @@
       "affected_service": "JINS会員",
       "service_aliases": [],
       "added_at": "2026-11-17T11:16:33+00:00",
-      "updated_at": "2026-11-18T04:18:02+00:00"
+      "updated_at": "2026-11-20T07:15:59+00:00"
     },
     {
       "id": "20f151f23e74c369",
@@ -7943,6 +8012,7 @@
           "relationship": "affects",
           "evidence_url": "https://www.nikkei.com/article/DGXZQOCC17A1V0X11C26A1000000/",
           "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/jins-karte-member-18_29m-account-data-breach-2026/",
             "https://www.nikkei.com/article/DGXZQOCC17A1V0X11C26A1000000/",
             "https://www.nikkei.com/nkd/disclosure/tdnr/20261117582109/"
           ]
@@ -8392,14 +8462,6 @@
           ]
         },
         {
-          "incident_id": "aa7aa47af66d811b",
-          "relationship": "affects",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/jins-karte-member-18_29m-account-data-breach-2026/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/jins-karte-member-18_29m-account-data-breach-2026/"
-          ]
-        },
-        {
           "incident_id": "b2c9c248d09ea84c",
           "relationship": "affects",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/alpen-online-karte-customer-86494-data-leak-personal-countermeasures/",
@@ -8649,7 +8711,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-20T06:17:27+00:00"
+      "updated_at": "2026-11-20T07:15:59+00:00"
     },
     {
       "id": "958475ed41c0f37d",
@@ -9394,10 +9456,10 @@
       ],
       "affected_system": null,
       "date_basis": "occurrence",
-      "affected_service": "KARTE",
+      "affected_service": "マイページ",
       "service_aliases": [],
       "added_at": "2026-11-20T04:17:29+00:00",
-      "updated_at": "2026-11-20T04:17:29+00:00"
+      "updated_at": "2026-11-20T07:15:59+00:00"
     },
     {
       "id": "d06a6425729b87b6",
@@ -9730,62 +9792,6 @@
       "service_aliases": [],
       "added_at": "2026-11-13T07:15:40+00:00",
       "updated_at": "2026-11-16T03:15:43+00:00"
-    },
-    {
-      "id": "aa7aa47af66d811b",
-      "published_at": "2026-11-12T15:00:00+00:00",
-      "disclosed_at": "2026-11-16T15:00:00+00:00",
-      "organization": "JINS",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 18290000,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "8cf67a97b55e1d57",
-          "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/jins-karte-member-18_29m-account-data-breach-2026/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/jins-karte-member-18_29m-account-data-breach-2026/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/jins-karte-member-18_29m-account-data-breach-2026/"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/89046c7bc141b9d8a60ec56407d5232631cf430f"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/a7c765f40a323d382bb4b2b15905fb1a1c9ac92f"
-        },
-        {
-          "name": "NHKニュース",
-          "url": "https://news.web.nhk/newsweb/na/nd-20261117de77389"
-        },
-        {
-          "name": "INTERNET Watch",
-          "url": "https://internet.watch.impress.co.jp/docs/news/2157316.html"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/a1454a4080158b15406b0e9e905370cda71b529e"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "occurrence",
-      "affected_service": "JINS会員",
-      "service_aliases": [],
-      "added_at": "2026-11-17T19:16:58+00:00",
-      "updated_at": "2026-11-18T20:16:16+00:00"
     },
     {
       "id": "ae1d4f5f4d68b8fb",
@@ -19366,6 +19372,42 @@
       ],
       "added_at": "2026-11-09T10:16:41+00:00",
       "updated_at": "2026-11-12T08:18:15+00:00"
+    },
+    {
+      "id": "5562e5580faa93e0",
+      "published_at": "2026-11-05T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "Peach Aviation",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 8997106,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.flypeach.com/application/files/3617/9515/4415/20261120_INFO_JP.pdf",
+          "evidence_urls": [
+            "https://www.flypeach.com/application/files/3617/9515/4415/20261120_INFO_JP.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Peach Aviation",
+          "url": "https://www.flypeach.com/application/files/3617/9515/4415/20261120_INFO_JP.pdf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "Cuenote FC",
+      "service_aliases": [],
+      "added_at": "2026-11-20T07:15:59+00:00",
+      "updated_at": "2026-11-20T07:15:59+00:00"
     },
     {
       "id": "599d36c0c1bea1ea",
@@ -29044,6 +29086,10 @@
         {
           "name": "朝日新聞",
           "url": "https://www.asahi.com/articles/ASVCN12QWVCNIIPE001M.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/2ff1b90d3bcb6e345c8cbb56839454ee07e22d01"
         }
       ],
       "affected_system": null,
@@ -29051,7 +29097,7 @@
       "affected_service": "住民基本台帳データ",
       "service_aliases": [],
       "added_at": "2026-11-20T00:17:39+00:00",
-      "updated_at": "2026-11-20T06:17:27+00:00"
+      "updated_at": "2026-11-20T07:15:59+00:00"
     },
     {
       "id": "e9811136a68c506f",
@@ -36376,10 +36422,10 @@
       ],
       "affected_system": null,
       "date_basis": "occurrence",
-      "affected_service": "アララメッセージ",
+      "affected_service": "メールマガジン",
       "service_aliases": [],
       "added_at": "2026-11-20T04:17:29+00:00",
-      "updated_at": "2026-11-20T04:17:29+00:00"
+      "updated_at": "2026-11-20T07:15:59+00:00"
     },
     {
       "id": "dc15595102d7025a",
@@ -54775,6 +54821,14 @@
           ]
         },
         {
+          "incident_id": "5562e5580faa93e0",
+          "relationship": "affects",
+          "evidence_url": "https://www.flypeach.com/application/files/3617/9515/4415/20261120_INFO_JP.pdf",
+          "evidence_urls": [
+            "https://www.flypeach.com/application/files/3617/9515/4415/20261120_INFO_JP.pdf"
+          ]
+        },
+        {
           "incident_id": "65f3107c9b8e0705",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/26a27bee503d10aac1db449099d2a2b1f3291297",
@@ -55007,7 +55061,7 @@
         }
       ],
       "added_at": "2026-10-19T13:14:57+00:00",
-      "updated_at": "2026-11-20T00:17:39+00:00"
+      "updated_at": "2026-11-20T07:15:59+00:00"
     },
     {
       "id": "15204b629222c010",
@@ -68067,6 +68121,34 @@
       "updated_at": "2026-11-12T07:15:39+00:00"
     },
     {
+      "id": "efa5082295878e09",
+      "published_at": "2026-08-15T15:00:00+00:00",
+      "disclosed_at": "2026-11-19T15:00:00+00:00",
+      "organization": "星槎道都大学",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "other",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/seisadohto_university_microsoft365_breach_phishing_sending/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "Microsoft 365",
+      "service_aliases": [],
+      "added_at": "2026-11-20T07:15:59+00:00",
+      "updated_at": "2026-11-20T07:15:59+00:00"
+    },
+    {
       "id": "9e062c8ef6d5840c",
       "published_at": "2026-08-11T15:00:00+00:00",
       "disclosed_at": null,
@@ -68553,6 +68635,7 @@
     "0a5e91817dd2bb5b": "20f151f23e74c369",
     "c756534f5b95c2b8": "073f272eda1d2604",
     "a7e224f51afd9779": "0f105773ffbb91ad",
-    "144179200a5abc10": "3452fc96c339d2ca"
+    "144179200a5abc10": "3452fc96c339d2ca",
+    "aa7aa47af66d811b": "0e8787297a9ff464"
   }
 }
