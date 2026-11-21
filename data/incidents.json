@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-21T11:16:18+00:00",
-  "total": 1537,
+  "updated_at": "2026-11-21T12:16:50+00:00",
+  "total": 1538,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-21"
@@ -342,7 +342,7 @@
     },
     {
       "date": "2026-11-15",
-      "count": 13
+      "count": 14
     },
     {
       "date": "2026-11-16",
@@ -8092,6 +8092,41 @@
       "updated_at": "2026-11-19T22:19:27+00:00"
     },
     {
+      "id": "a7b7f83b618baa46",
+      "published_at": "2026-11-14T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "バンダイナムコ島根スサノオマジック",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 664,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.susanoo-m.com/news/detail/id=21277",
+          "evidence_urls": [
+            "https://www.susanoo-m.com/news/detail/id=21277"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "島根スサノオマジック",
+          "url": "https://www.susanoo-m.com/news/detail/id=21277"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "KARTE",
+      "service_aliases": [],
+      "added_at": "2026-11-21T12:16:50+00:00",
+      "updated_at": "2026-11-21T12:16:50+00:00"
+    },
+    {
       "id": "f24d6b6825484961",
       "published_at": "2026-11-14T15:00:00+00:00",
       "disclosed_at": null,
@@ -10313,6 +10348,14 @@
           ]
         },
         {
+          "incident_id": "a7b7f83b618baa46",
+          "relationship": "affects",
+          "evidence_url": "https://www.susanoo-m.com/news/detail/id=21277",
+          "evidence_urls": [
+            "https://www.susanoo-m.com/news/detail/id=21277"
+          ]
+        },
+        {
           "incident_id": "a829e10222718244",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1QSjNUMXNJbnNBN00zekJxbVVVVFFTc0hSM2RoT0VfU3dlYndXY2tYMGdvYzJPMTZxdFM1Z3FNWWZwQ3V0UnlPajRmV0p2c2twaEtnZXEwc3FveXgy?oc=5",
@@ -10628,7 +10671,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-21T11:16:18+00:00"
+      "updated_at": "2026-11-21T12:16:50+00:00"
     },
     {
       "id": "958475ed41c0f37d",
