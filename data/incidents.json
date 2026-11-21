@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-21T03:16:13+00:00",
-  "total": 1531,
+  "updated_at": "2026-11-21T04:16:08+00:00",
+  "total": 1532,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-21"
@@ -334,7 +334,7 @@
     },
     {
       "date": "2026-11-13",
-      "count": 59
+      "count": 60
     },
     {
       "date": "2026-11-14",
@@ -9277,6 +9277,41 @@
       "updated_at": "2026-11-19T02:15:42+00:00"
     },
     {
+      "id": "7e79023bf80ef247",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-17T15:00:00+00:00",
+      "organization": "BONAVENTURA",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 576742,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/bonaventura_karte_576742_data_leak_20261120/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/bonaventura_karte_576742_data_leak_20261120/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/bonaventura_karte_576742_data_leak_20261120/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "KARTE",
+      "service_aliases": [],
+      "added_at": "2026-11-21T04:16:08+00:00",
+      "updated_at": "2026-11-21T04:16:08+00:00"
+    },
+    {
       "id": "80042314ebcd1723",
       "published_at": "2026-11-12T15:00:00+00:00",
       "disclosed_at": "2026-11-16T15:00:00+00:00",
@@ -9851,6 +9886,14 @@
           ]
         },
         {
+          "incident_id": "7e79023bf80ef247",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/bonaventura_karte_576742_data_leak_20261120/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/bonaventura_karte_576742_data_leak_20261120/"
+          ]
+        },
+        {
           "incident_id": "80042314ebcd1723",
           "relationship": "affects",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/caitech-karte-for-app-post-contract-data-retention-breach/",
@@ -10333,7 +10376,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-21T02:16:04+00:00"
+      "updated_at": "2026-11-21T04:16:08+00:00"
     },
     {
       "id": "958475ed41c0f37d",
