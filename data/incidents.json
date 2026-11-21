@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-21T01:16:23+00:00",
-  "total": 1528,
+  "updated_at": "2026-11-21T02:16:05+00:00",
+  "total": 1531,
   "date_range": {
     "start": "2023-12-24",
-    "end": "2026-11-20"
+    "end": "2026-11-21"
   },
   "daily_counts_90d": [
     {
@@ -362,14 +362,49 @@
     },
     {
       "date": "2026-11-20",
-      "count": 30
+      "count": 32
     },
     {
       "date": "2026-11-21",
-      "count": 0
+      "count": 1
     }
   ],
   "incidents": [
+    {
+      "id": "c34cf5cb128f12fd",
+      "published_at": "2026-11-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "棚倉町",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 166,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.minyu-net.com/news/detail/2026112109081457506",
+          "evidence_urls": [
+            "https://www.minyu-net.com/news/detail/2026112109081457506"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "福島民友新聞社",
+          "url": "https://www.minyu-net.com/news/detail/2026112109081457506"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "町スマート申請システム",
+      "service_aliases": [],
+      "added_at": "2026-11-21T02:16:04+00:00",
+      "updated_at": "2026-11-21T02:16:04+00:00"
+    },
     {
       "id": "00118422ddcf8d29",
       "published_at": "2026-11-19T15:00:00+00:00",
@@ -509,6 +544,72 @@
       "service_aliases": [],
       "added_at": "2026-11-20T14:16:59+00:00",
       "updated_at": "2026-11-20T14:16:59+00:00"
+    },
+    {
+      "id": "51f171c10dd47844",
+      "published_at": "2026-11-19T15:00:00+00:00",
+      "disclosed_at": "2026-11-19T15:00:00+00:00",
+      "organization": "丸井グループ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 8830000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.asahi.com/articles/ASVCN3PTWVCNULFA01BM.html",
+          "evidence_urls": [
+            "https://www.asahi.com/articles/ASVCN3PTWVCNULFA01BM.html"
+          ]
+        },
+        {
+          "incident_id": "a58b4c17e32d9c67",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.asahi.com/articles/ASVCN3PTWVCNULFA01BM.html",
+          "evidence_urls": [
+            "https://www.asahi.com/articles/ASVCN3PTWVCNULFA01BM.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "www.0101maruigroup.co.jp",
+          "url": "https://www.0101maruigroup.co.jp/nr/26_1120_1"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVCN3PTWVCNULFA01BM.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/5de4c0770065f6f6bf2de6c37781044dbfd48471"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6023c1ea0747d128494d7f9da2c479b39fbc9965"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC209MW0Q6A121C2000000/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/fc730d49b90e53d14b477c93c4bb01f22bc0a9d0"
+        },
+        {
+          "name": "Impress Watch",
+          "url": "https://www.watch.impress.co.jp/docs/news/2158411.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "added_at": "2026-11-20T14:16:59+00:00",
+      "updated_at": "2026-11-21T02:16:04+00:00"
     },
     {
       "id": "5e063748d664c691",
@@ -991,66 +1092,39 @@
       "updated_at": "2026-11-21T01:16:22+00:00"
     },
     {
-      "id": "51f171c10dd47844",
+      "id": "658216d42a37a25e",
       "published_at": "2026-11-19T15:00:00+00:00",
       "disclosed_at": "2026-11-19T15:00:00+00:00",
-      "organization": "丸井グループ",
-      "incident_type": "data leak",
+      "organization": "イオンフィナンシャルサービス",
+      "incident_type": "unauthorized access",
       "incident_categories": [
-        "data leak",
         "unauthorized access"
       ],
-      "potential_records": 8830000,
+      "potential_records": null,
       "confidence": "medium",
       "confidence_score": 50,
       "related": [
         {
-          "incident_id": "8cf67a97b55e1d57",
+          "incident_id": "7bda59e0bb9f1c7d",
           "relationship": "affected_by",
-          "evidence_url": "https://www.asahi.com/articles/ASVCN3PTWVCNULFA01BM.html",
+          "evidence_url": "https://news.yahoo.co.jp/articles/71924e78db0ee625dc2fcc6aaaffca521c080a28",
           "evidence_urls": [
-            "https://www.asahi.com/articles/ASVCN3PTWVCNULFA01BM.html"
-          ]
-        },
-        {
-          "incident_id": "a58b4c17e32d9c67",
-          "relationship": "same_organization",
-          "evidence_url": "https://www.asahi.com/articles/ASVCN3PTWVCNULFA01BM.html",
-          "evidence_urls": [
-            "https://www.asahi.com/articles/ASVCN3PTWVCNULFA01BM.html"
+            "https://news.yahoo.co.jp/articles/71924e78db0ee625dc2fcc6aaaffca521c080a28"
           ]
         }
       ],
       "sources": [
         {
-          "name": "朝日新聞",
-          "url": "https://www.asahi.com/articles/ASVCN3PTWVCNULFA01BM.html"
-        },
-        {
           "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/5de4c0770065f6f6bf2de6c37781044dbfd48471"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/6023c1ea0747d128494d7f9da2c479b39fbc9965"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUC209MW0Q6A121C2000000/"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/fc730d49b90e53d14b477c93c4bb01f22bc0a9d0"
-        },
-        {
-          "name": "Impress Watch",
-          "url": "https://www.watch.impress.co.jp/docs/news/2158411.html"
+          "url": "https://news.yahoo.co.jp/articles/71924e78db0ee625dc2fcc6aaaffca521c080a28"
         }
       ],
       "affected_system": null,
       "date_basis": "first_disclosure",
-      "added_at": "2026-11-20T14:16:59+00:00",
-      "updated_at": "2026-11-20T18:17:01+00:00"
+      "affected_service": "AEON Pay",
+      "service_aliases": [],
+      "added_at": "2026-11-21T02:16:04+00:00",
+      "updated_at": "2026-11-21T02:16:04+00:00"
     },
     {
       "id": "8acdfc8459902e15",
@@ -1388,6 +1462,10 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUC209P70Q6A121C2000000/"
+        },
+        {
+          "name": "CNET Japan",
+          "url": "https://japan.cnet.com/article/35255249/"
         }
       ],
       "affected_system": null,
@@ -1395,7 +1473,7 @@
       "affected_service": "新規事業提案制度",
       "service_aliases": [],
       "added_at": "2026-11-20T14:16:59+00:00",
-      "updated_at": "2026-11-20T14:16:59+00:00"
+      "updated_at": "2026-11-21T02:16:04+00:00"
     },
     {
       "id": "d58f73552ac00ea2",
@@ -1487,6 +1565,39 @@
       "service_aliases": [],
       "added_at": "2026-11-20T23:15:53+00:00",
       "updated_at": "2026-11-20T23:15:53+00:00"
+    },
+    {
+      "id": "166a20d7523a04ce",
+      "published_at": "2026-11-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "エポスカード",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 8500000,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.eposcard.co.jp/articles/news/261120.html",
+          "evidence_urls": [
+            "https://www.eposcard.co.jp/articles/news/261120.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "www.eposcard.co.jp",
+          "url": "https://www.eposcard.co.jp/articles/news/261120.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-21T02:16:04+00:00",
+      "updated_at": "2026-11-21T02:16:04+00:00"
     },
     {
       "id": "2ae4cb666cc03c71",
@@ -1795,6 +1906,14 @@
           ]
         },
         {
+          "incident_id": "658216d42a37a25e",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/71924e78db0ee625dc2fcc6aaaffca521c080a28",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/71924e78db0ee625dc2fcc6aaaffca521c080a28"
+          ]
+        },
+        {
           "incident_id": "8f93bc8af7c1dc3e",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/af84475ed5372e28f87fa34dbd9483823bdfd4de",
@@ -1859,7 +1978,7 @@
       "affected_service": "Wallet Station",
       "service_aliases": [],
       "added_at": "2026-11-20T01:22:45+00:00",
-      "updated_at": "2026-11-20T14:16:59+00:00"
+      "updated_at": "2026-11-21T02:16:04+00:00"
     },
     {
       "id": "8f93bc8af7c1dc3e",
@@ -1929,6 +2048,46 @@
       "service_aliases": [],
       "added_at": "2026-11-20T05:17:21+00:00",
       "updated_at": "2026-11-21T01:16:22+00:00"
+    },
+    {
+      "id": "bb8e95db5a3e6193",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": "2026-11-18T15:00:00+00:00",
+      "organization": "ビタブリッドジャパン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 11590,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/vitabrid_japan_karte_11590_data_breach_202611/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/vitabrid_japan_karte_11590_data_breach_202611/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://vitabrid.co.jp/contents/customer202611/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/vitabrid_japan_karte_11590_data_breach_202611/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "公式ECサイト",
+      "service_aliases": [],
+      "added_at": "2026-11-20T02:19:03+00:00",
+      "updated_at": "2026-11-21T02:16:04+00:00"
     },
     {
       "id": "c97f351bcfbd0ee3",
@@ -2682,42 +2841,6 @@
       "service_aliases": [],
       "added_at": "2026-11-18T23:23:22+00:00",
       "updated_at": "2026-11-18T23:23:22+00:00"
-    },
-    {
-      "id": "bb8e95db5a3e6193",
-      "published_at": "2026-11-18T15:00:00+00:00",
-      "disclosed_at": "2026-11-18T15:00:00+00:00",
-      "organization": "ビタブリッドジャパン",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 11590,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "8cf67a97b55e1d57",
-          "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/vitabrid_japan_karte_11590_data_breach_202611/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/vitabrid_japan_karte_11590_data_breach_202611/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/vitabrid_japan_karte_11590_data_breach_202611/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "occurrence",
-      "affected_service": "公式ECサイト",
-      "service_aliases": [],
-      "added_at": "2026-11-20T02:19:03+00:00",
-      "updated_at": "2026-11-20T02:19:03+00:00"
     },
     {
       "id": "de4e9cb1d098b3db",
@@ -9428,6 +9551,14 @@
           ]
         },
         {
+          "incident_id": "166a20d7523a04ce",
+          "relationship": "affects",
+          "evidence_url": "https://www.eposcard.co.jp/articles/news/261120.html",
+          "evidence_urls": [
+            "https://www.eposcard.co.jp/articles/news/261120.html"
+          ]
+        },
+        {
           "incident_id": "1e993c03a473cbb3",
           "relationship": "affects",
           "evidence_url": "https://www.city.chuo.lg.jp/a0049/gakumu/rukumi/20261118.html",
@@ -10198,7 +10329,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-21T01:16:22+00:00"
+      "updated_at": "2026-11-21T02:16:04+00:00"
     },
     {
       "id": "958475ed41c0f37d",
@@ -38569,6 +38700,14 @@
           ]
         },
         {
+          "incident_id": "c34cf5cb128f12fd",
+          "relationship": "affects",
+          "evidence_url": "https://www.minyu-net.com/news/detail/2026112109081457506",
+          "evidence_urls": [
+            "https://www.minyu-net.com/news/detail/2026112109081457506"
+          ]
+        },
+        {
           "incident_id": "c41156f61dbf6bc1",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/6b515e23d28fcbd427753bdd12e25798ef2d355c",
@@ -39118,7 +39257,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-21T01:16:22+00:00"
+      "updated_at": "2026-11-21T02:16:04+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
