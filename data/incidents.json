@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-21T10:16:04+00:00",
-  "total": 1535,
+  "updated_at": "2026-11-21T11:16:18+00:00",
+  "total": 1537,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-21"
@@ -354,7 +354,7 @@
     },
     {
       "date": "2026-11-18",
-      "count": 39
+      "count": 40
     },
     {
       "date": "2026-11-19",
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-20",
-      "count": 33
+      "count": 34
     },
     {
       "date": "2026-11-21",
@@ -1744,6 +1744,33 @@
       "date_basis": "publication",
       "added_at": "2026-11-20T17:16:08+00:00",
       "updated_at": "2026-11-20T17:16:08+00:00"
+    },
+    {
+      "id": "d654c97b0d23841e",
+      "published_at": "2026-11-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "国土交通省",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 24,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://www.mlit.go.jp/report/press/house05_hh_001376.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "申請システム",
+      "service_aliases": [],
+      "added_at": "2026-11-21T11:16:18+00:00",
+      "updated_at": "2026-11-21T11:16:18+00:00"
     },
     {
       "id": "ee71a787184a6cd7",
@@ -3450,6 +3477,42 @@
       "service_aliases": [],
       "added_at": "2026-11-19T02:15:42+00:00",
       "updated_at": "2026-11-19T02:15:42+00:00"
+    },
+    {
+      "id": "4e26ae52fad887b0",
+      "published_at": "2026-11-17T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "エブリー",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://corp.every.tv/news/20261118",
+          "evidence_urls": [
+            "https://corp.every.tv/news/20261118"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "株式会社エブリー",
+          "url": "https://corp.every.tv/news/20261118"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "デリッシュキッチン",
+      "service_aliases": [],
+      "added_at": "2026-11-21T11:16:18+00:00",
+      "updated_at": "2026-11-21T11:16:18+00:00"
     },
     {
       "id": "4e53ae3f116e67e8",
@@ -8361,6 +8424,10 @@
         {
           "name": "ABEMA",
           "url": "https://abema.tv/video/episode/89-93_s100_p762"
+        },
+        {
+          "name": "au Webポータル",
+          "url": "https://article.auone.jp/e28d63d5-75bd-44cc-9b07-12fcd5a3ecca"
         }
       ],
       "affected_system": null,
@@ -8368,7 +8435,7 @@
       "affected_service": "Schoo Swing",
       "service_aliases": [],
       "added_at": "2026-11-19T04:16:16+00:00",
-      "updated_at": "2026-11-20T19:15:56+00:00"
+      "updated_at": "2026-11-21T11:16:18+00:00"
     },
     {
       "id": "3f2330c30561a5c2",
@@ -9236,6 +9303,10 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118639"
+        },
+        {
+          "name": "みんかぶ",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBKTFNTRUhKN0J0VjFDMURJRFQ1NUJYTFQyMWtpS3g0VnlTVVNyODBvOXByejQta05teUJSSDZ1MElkQTJibXJsUA?oc=5"
         }
       ],
       "affected_system": null,
@@ -9245,7 +9316,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-18T17:16:21+00:00",
-      "updated_at": "2026-11-19T07:17:28+00:00"
+      "updated_at": "2026-11-21T11:16:18+00:00"
     },
     {
       "id": "616cb25d2f2a04b9",
@@ -9848,6 +9919,14 @@
           "evidence_urls": [
             "https://rocket-boys.co.jp/security-measures-lab/sharp-cocoro-store-karte-3264445-data-leak-risk-2026/",
             "https://www.asahi.co.jp/webnews/pages/abc_63684.html"
+          ]
+        },
+        {
+          "incident_id": "4e26ae52fad887b0",
+          "relationship": "affects",
+          "evidence_url": "https://corp.every.tv/news/20261118",
+          "evidence_urls": [
+            "https://corp.every.tv/news/20261118"
           ]
         },
         {
@@ -10549,7 +10628,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-21T08:16:17+00:00"
+      "updated_at": "2026-11-21T11:16:18+00:00"
     },
     {
       "id": "958475ed41c0f37d",
@@ -62893,6 +62972,10 @@
         {
           "name": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2026/11/18/56821.html"
+        },
+        {
+          "name": "legalagent list",
+          "url": "https://lili-jo.com/notice/20261022.html"
         }
       ],
       "affected_system": null,
@@ -62900,7 +62983,7 @@
       "affected_service": "マッチングアプリ「Lili」",
       "service_aliases": [],
       "added_at": "2026-11-18T00:16:21+00:00",
-      "updated_at": "2026-11-18T00:16:21+00:00"
+      "updated_at": "2026-11-21T11:16:18+00:00"
     },
     {
       "id": "393599c45109c37a",
