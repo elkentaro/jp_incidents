@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-21T05:16:20+00:00",
-  "total": 1532,
+  "updated_at": "2026-11-21T06:16:41+00:00",
+  "total": 1533,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-21"
@@ -334,7 +334,7 @@
     },
     {
       "date": "2026-11-13",
-      "count": 60
+      "count": 61
     },
     {
       "date": "2026-11-14",
@@ -9614,6 +9614,14 @@
           ]
         },
         {
+          "incident_id": "196f7fd7f4b5e981",
+          "relationship": "affects",
+          "evidence_url": "https://news.ntv.co.jp/n/nib/category/society/nifd16d3503d8642ad9efd3c68e8c33750",
+          "evidence_urls": [
+            "https://news.ntv.co.jp/n/nib/category/society/nifd16d3503d8642ad9efd3c68e8c33750"
+          ]
+        },
+        {
           "incident_id": "1e993c03a473cbb3",
           "relationship": "affects",
           "evidence_url": "https://www.city.chuo.lg.jp/a0049/gakumu/rukumi/20261118.html",
@@ -10392,7 +10400,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-21T04:16:08+00:00"
+      "updated_at": "2026-11-21T06:16:41+00:00"
     },
     {
       "id": "958475ed41c0f37d",
@@ -11219,6 +11227,42 @@
       "date_basis": "publication",
       "added_at": "2026-11-13T13:17:15+00:00",
       "updated_at": "2026-11-13T13:17:15+00:00"
+    },
+    {
+      "id": "196f7fd7f4b5e981",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "長崎市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 48,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.ntv.co.jp/n/nib/category/society/nifd16d3503d8642ad9efd3c68e8c33750",
+          "evidence_urls": [
+            "https://news.ntv.co.jp/n/nib/category/society/nifd16d3503d8642ad9efd3c68e8c33750"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp/n/nib/category/society/nifd16d3503d8642ad9efd3c68e8c33750"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "travel nagasaki",
+      "service_aliases": [],
+      "added_at": "2026-11-21T06:16:41+00:00",
+      "updated_at": "2026-11-21T06:16:41+00:00"
     },
     {
       "id": "2b069423aa73b2fc",
