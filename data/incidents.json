@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-21T19:16:02+00:00",
+  "updated_at": "2026-11-21T20:16:23+00:00",
   "total": 1538,
   "date_range": {
     "start": "2023-12-24",
@@ -930,6 +930,45 @@
       "updated_at": "2026-11-21T00:16:43+00:00"
     },
     {
+      "id": "ee71a787184a6cd7",
+      "published_at": "2026-11-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "加古川市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.kakogawa.lg.jp/kosodate_site/genre/4/2/51427.html",
+          "evidence_urls": [
+            "https://www.city.kakogawa.lg.jp/kosodate_site/genre/4/2/51427.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "加古川市",
+          "url": "https://www.city.kakogawa.lg.jp/soshikikarasagasu/kodomo/hoikuka/51420.html"
+        },
+        {
+          "name": "加古川市",
+          "url": "https://www.city.kakogawa.lg.jp/kosodate_site/genre/4/2/51427.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "保育ICTサービス「ルクミー」",
+      "service_aliases": [],
+      "added_at": "2026-11-20T13:17:33+00:00",
+      "updated_at": "2026-11-21T20:16:23+00:00"
+    },
+    {
       "id": "f8055c742eaee539",
       "published_at": "2026-11-19T15:00:00+00:00",
       "disclosed_at": "2026-11-19T15:00:00+00:00",
@@ -1771,41 +1810,6 @@
       "service_aliases": [],
       "added_at": "2026-11-21T11:16:18+00:00",
       "updated_at": "2026-11-21T11:16:18+00:00"
-    },
-    {
-      "id": "ee71a787184a6cd7",
-      "published_at": "2026-11-19T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "加古川市",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "8cf67a97b55e1d57",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.city.kakogawa.lg.jp/kosodate_site/genre/4/2/51427.html",
-          "evidence_urls": [
-            "https://www.city.kakogawa.lg.jp/kosodate_site/genre/4/2/51427.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "加古川市",
-          "url": "https://www.city.kakogawa.lg.jp/kosodate_site/genre/4/2/51427.html"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "ingestion",
-      "affected_service": "保育ICTサービス「ルクミー」",
-      "service_aliases": [],
-      "added_at": "2026-11-20T13:17:33+00:00",
-      "updated_at": "2026-11-20T13:17:33+00:00"
     },
     {
       "id": "12b92fba1daecda5",
