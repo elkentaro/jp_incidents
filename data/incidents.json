@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-21T08:16:17+00:00",
-  "total": 1533,
+  "updated_at": "2026-11-21T09:15:57+00:00",
+  "total": 1535,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-21"
@@ -354,7 +354,7 @@
     },
     {
       "date": "2026-11-18",
-      "count": 38
+      "count": 39
     },
     {
       "date": "2026-11-19",
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-20",
-      "count": 32
+      "count": 33
     },
     {
       "date": "2026-11-21",
@@ -640,6 +640,33 @@
       "service_aliases": [],
       "added_at": "2026-11-20T14:16:59+00:00",
       "updated_at": "2026-11-20T14:16:59+00:00"
+    },
+    {
+      "id": "8dce8d51322f6011",
+      "published_at": "2026-11-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大英産業",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://www.daieisangyo.co.jp/news/3243"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "Grand Inn Canalside",
+      "service_aliases": [],
+      "added_at": "2026-11-21T09:15:57+00:00",
+      "updated_at": "2026-11-21T09:15:57+00:00"
     },
     {
       "id": "9999284484caf35c",
@@ -4027,6 +4054,50 @@
       "updated_at": "2026-11-18T22:15:51+00:00"
     },
     {
+      "id": "e892ab8581f5e2e0",
+      "published_at": "2026-11-17T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "MTG",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 5115,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "39dc60a57ae2e4d9",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.mtg.gr.jp/news/detail/2026/11/article_2690.html",
+          "evidence_urls": [
+            "https://www.mtg.gr.jp/news/detail/2026/11/article_2690.html"
+          ]
+        },
+        {
+          "incident_id": "76902a32579961b4",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.mtg.gr.jp/news/detail/2026/11/article_2690.html",
+          "evidence_urls": [
+            "https://www.mtg.gr.jp/news/detail/2026/11/article_2690.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://www.mtg.gr.jp/news/detail/2026/11/article_2690.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "My ReFa",
+      "service_aliases": [],
+      "added_at": "2026-11-21T09:15:57+00:00",
+      "updated_at": "2026-11-21T09:15:57+00:00"
+    },
+    {
       "id": "eea4c1583fc1df4a",
       "published_at": "2026-11-17T15:00:00+00:00",
       "disclosed_at": null,
@@ -5745,6 +5816,14 @@
           "evidence_urls": [
             "https://rocket-boys.co.jp/security-measures-lab/mtg-goqsystem-social-gift-delivery-data-leak-15033-202611/"
           ]
+        },
+        {
+          "incident_id": "e892ab8581f5e2e0",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.mtg.gr.jp/news/detail/2026/11/article_2690.html",
+          "evidence_urls": [
+            "https://www.mtg.gr.jp/news/detail/2026/11/article_2690.html"
+          ]
         }
       ],
       "sources": [
@@ -5762,7 +5841,7 @@
       "affected_service": "GoQSystem",
       "service_aliases": [],
       "added_at": "2026-11-17T11:16:33+00:00",
-      "updated_at": "2026-11-18T02:17:02+00:00"
+      "updated_at": "2026-11-21T09:15:57+00:00"
     },
     {
       "id": "a4bfb1673216fb00",
@@ -8881,6 +8960,10 @@
           "url": "https://rocket-boys.co.jp/security-measures-lab/chatplus_aiagentplus_faqplus_unauthorized_access_2026/"
         },
         {
+          "name": "legalagent list",
+          "url": "https://www.chatplus.jp/news/news20261117/"
+        },
+        {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261117582334.pdf"
         },
@@ -8913,7 +8996,7 @@
         }
       ],
       "added_at": "2026-11-17T11:16:33+00:00",
-      "updated_at": "2026-11-20T17:16:08+00:00"
+      "updated_at": "2026-11-21T09:15:57+00:00"
     },
     {
       "id": "18a371b6c319d3a5",
@@ -9024,6 +9107,14 @@
           "evidence_urls": [
             "https://rocket-boys.co.jp/security-measures-lab/mtg_style_comsbi_saas_26757_54465_data_breach_202611/"
           ]
+        },
+        {
+          "incident_id": "e892ab8581f5e2e0",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.mtg.gr.jp/news/detail/2026/11/article_2690.html",
+          "evidence_urls": [
+            "https://www.mtg.gr.jp/news/detail/2026/11/article_2690.html"
+          ]
         }
       ],
       "sources": [
@@ -9037,7 +9128,7 @@
       "affected_service": "Style",
       "service_aliases": [],
       "added_at": "2026-11-16T03:15:43+00:00",
-      "updated_at": "2026-11-17T11:16:33+00:00"
+      "updated_at": "2026-11-21T09:15:57+00:00"
     },
     {
       "id": "3c6a74e3eaeb6595",
@@ -10705,6 +10796,10 @@
           "url": "https://rocket-boys.co.jp/security-measures-lab/giants-club-giants-email-leak-807030-2026/"
         },
         {
+          "name": "legalagent list",
+          "url": "https://www.giants.jp/news/31858/"
+        },
+        {
           "name": "Yahoo!ニュース",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9xV2p5MWFtN19GS1c1dkM5V3J1c1I0SVMzMWQ4ME9ucXFWVnV1WXZOS1c1UGJOOU95eDZBOVhaeks5a3I2TkpUTlN6N18xc0xyYVA5a3phU3N6VTFMM1hRODF2R1U1eTlFWXVBMWpJdW5yLWFXYnlzbjRCSjZ1SmM?oc=5"
         },
@@ -10726,7 +10821,7 @@
       "affected_service": "CLUB GIANTS",
       "service_aliases": [],
       "added_at": "2026-11-13T12:16:47+00:00",
-      "updated_at": "2026-11-15T01:15:27+00:00"
+      "updated_at": "2026-11-21T09:15:57+00:00"
     },
     {
       "id": "b2c9c248d09ea84c",
@@ -11313,6 +11408,10 @@
         {
           "name": "日テレNEWS NNN",
           "url": "https://news.ntv.co.jp/n/nib/category/society/nifd16d3503d8642ad9efd3c68e8c33750"
+        },
+        {
+          "name": "日テレNEWS NNN",
+          "url": "https://news.ntv.co.jp/category/society/nifd16d3503d8642ad9efd3c68e8c33750"
         }
       ],
       "affected_system": null,
@@ -11320,7 +11419,7 @@
       "affected_service": "travel nagasaki",
       "service_aliases": [],
       "added_at": "2026-11-21T06:16:41+00:00",
-      "updated_at": "2026-11-21T06:16:41+00:00"
+      "updated_at": "2026-11-21T09:15:57+00:00"
     },
     {
       "id": "2b069423aa73b2fc",
@@ -29461,6 +29560,10 @@
           "url": "https://www.motex.co.jp/news/notice/2026/release261116/"
         },
         {
+          "name": "legalagent list",
+          "url": "https://www.motex.co.jp/news/notice/2026/release261119-2/"
+        },
+        {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/motex_lanscope_websites_unauthorized_access_2026/"
         },
@@ -29499,7 +29602,7 @@
         }
       ],
       "added_at": "2026-11-05T07:17:31+00:00",
-      "updated_at": "2026-11-17T02:16:00+00:00"
+      "updated_at": "2026-11-21T09:15:57+00:00"
     },
     {
       "id": "a480effd49107e26",
