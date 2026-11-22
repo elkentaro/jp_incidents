@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-22T12:16:33+00:00",
-  "total": 1548,
+  "updated_at": "2026-11-22T14:18:56+00:00",
+  "total": 1549,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-22"
@@ -366,7 +366,7 @@
     },
     {
       "date": "2026-11-22",
-      "count": 1
+      "count": 2
     }
   ],
   "incidents": [
@@ -400,6 +400,14 @@
         {
           "name": "47NEWS",
           "url": "https://www.47news.jp/15270752.html"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVCQ3559VCQUTIL007M.html"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC221UL0S6A121C2000000/"
         }
       ],
       "affected_system": null,
@@ -407,7 +415,40 @@
       "affected_service": "タワーレコードオンライン",
       "service_aliases": [],
       "added_at": "2026-11-22T11:16:03+00:00",
-      "updated_at": "2026-11-22T12:16:33+00:00"
+      "updated_at": "2026-11-22T14:18:56+00:00"
+    },
+    {
+      "id": "6711ba15b719ea79",
+      "published_at": "2026-11-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "radiko",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://togetter.com/li/2773732",
+          "evidence_urls": [
+            "https://togetter.com/li/2773732"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Togetter",
+          "url": "https://togetter.com/li/2773732"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-22T14:18:56+00:00",
+      "updated_at": "2026-11-22T14:18:56+00:00"
     },
     {
       "id": "8a9e909ca4e9411e",
@@ -10334,6 +10375,14 @@
           ]
         },
         {
+          "incident_id": "6711ba15b719ea79",
+          "relationship": "affects",
+          "evidence_url": "https://togetter.com/li/2773732",
+          "evidence_urls": [
+            "https://togetter.com/li/2773732"
+          ]
+        },
+        {
           "incident_id": "67d60cb194872fa5",
           "relationship": "affects",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/house_foods_group_karte_customer_data_breach_44800/",
@@ -10945,7 +10994,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-22T02:15:52+00:00"
+      "updated_at": "2026-11-22T14:18:56+00:00"
     },
     {
       "id": "958475ed41c0f37d",
