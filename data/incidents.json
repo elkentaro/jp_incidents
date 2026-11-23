@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-23T02:16:39+00:00",
-  "total": 1552,
+  "updated_at": "2026-11-23T03:16:41+00:00",
+  "total": 1554,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-22"
@@ -354,7 +354,7 @@
     },
     {
       "date": "2026-11-20",
-      "count": 37
+      "count": 38
     },
     {
       "date": "2026-11-21",
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-22",
-      "count": 2
+      "count": 3
     },
     {
       "date": "2026-11-23",
@@ -370,6 +370,31 @@
     }
   ],
   "incidents": [
+    {
+      "id": "5f193b6e3006f4a6",
+      "published_at": "2026-11-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "イェビョル損保",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 66,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "Chosunbiz",
+          "url": "https://biz.chosun.com/jp/jp-finance/2026/11/22/34R27G7RNZFBDKCZBAKG44FSD4/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-23T03:16:41+00:00",
+      "updated_at": "2026-11-23T03:16:41+00:00"
+    },
     {
       "id": "a3d796b29e951e79",
       "published_at": "2026-11-21T15:00:00+00:00",
@@ -381,10 +406,14 @@
         "unauthorized access"
       ],
       "potential_records": 11000000,
-      "confidence": "medium",
-      "confidence_score": 50,
+      "confidence": "high",
+      "confidence_score": 90,
       "related": [],
       "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/tower_records_online_1100man_password_hash_breach_2026/"
+        },
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/269659d7246adc6239b74120320371d45b6a3f06"
@@ -415,7 +444,7 @@
       "affected_service": "タワーレコードオンライン",
       "service_aliases": [],
       "added_at": "2026-11-22T11:16:03+00:00",
-      "updated_at": "2026-11-22T14:18:56+00:00"
+      "updated_at": "2026-11-23T03:16:41+00:00"
     },
     {
       "id": "6711ba15b719ea79",
@@ -1302,6 +1331,10 @@
         {
           "name": "legalagent list",
           "url": "https://www.mandom.co.jp/release/2026112001.html"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUF230EU0T21C26A1000000/"
         }
       ],
       "affected_system": null,
@@ -1309,7 +1342,7 @@
       "affected_service": "マンダムオンラインショップ",
       "service_aliases": [],
       "added_at": "2026-11-20T11:16:07+00:00",
-      "updated_at": "2026-11-21T08:16:17+00:00"
+      "updated_at": "2026-11-23T03:16:41+00:00"
     },
     {
       "id": "09bdc0dab47bc2a5",
@@ -1926,6 +1959,31 @@
       "date_basis": "publication",
       "added_at": "2026-11-21T02:16:04+00:00",
       "updated_at": "2026-11-21T05:16:20+00:00"
+    },
+    {
+      "id": "2010ef92d8039710",
+      "published_at": "2026-11-19T15:00:00+00:00",
+      "disclosed_at": "2026-11-20T15:00:00+00:00",
+      "organization": "ベストコ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 50196,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/bestco-best-kobetsu-50196-95937-potential-data-leak/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "added_at": "2026-11-23T03:16:41+00:00",
+      "updated_at": "2026-11-23T03:16:41+00:00"
     },
     {
       "id": "2ae4cb666cc03c71",
