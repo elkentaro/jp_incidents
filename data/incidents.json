@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-22T22:15:52+00:00",
-  "total": 1549,
+  "updated_at": "2026-11-23T00:16:02+00:00",
+  "total": 1551,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-22"
@@ -302,7 +302,7 @@
     },
     {
       "date": "2026-11-07",
-      "count": 13
+      "count": 15
     },
     {
       "date": "2026-11-08",
@@ -20725,6 +20725,40 @@
       "updated_at": "2026-11-12T08:18:15+00:00"
     },
     {
+      "id": "9dcfa6a5f3e1e1e8",
+      "published_at": "2026-11-06T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "WOW WORLD",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 49000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "7b26428511df49de",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/wow-world-unauthorized-access-49000/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/wow-world-unauthorized-access-49000/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/wow-world-unauthorized-access-49000/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "added_at": "2026-11-23T00:16:02+00:00",
+      "updated_at": "2026-11-23T00:16:02+00:00"
+    },
+    {
       "id": "d2d1ddfd77a57614",
       "published_at": "2026-11-06T15:00:00+00:00",
       "disclosed_at": null,
@@ -20927,6 +20961,39 @@
       ],
       "added_at": "2026-11-07T02:16:11+00:00",
       "updated_at": "2026-11-12T00:15:58+00:00"
+    },
+    {
+      "id": "7b26428511df49de",
+      "published_at": "2026-11-06T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "Vポイントマーケティング",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 9313,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "9dcfa6a5f3e1e1e8",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/wow-world-unauthorized-access-49000/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/wow-world-unauthorized-access-49000/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/wow-world-unauthorized-access-49000/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "added_at": "2026-11-23T00:16:02+00:00",
+      "updated_at": "2026-11-23T00:16:02+00:00"
     },
     {
       "id": "d47afbe7e699beaf",
