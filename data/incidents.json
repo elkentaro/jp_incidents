@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-23T19:17:04+00:00",
-  "total": 1556,
+  "updated_at": "2026-11-23T21:16:11+00:00",
+  "total": 1557,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-22"
@@ -346,7 +346,7 @@
     },
     {
       "date": "2026-11-19",
-      "count": 30
+      "count": 31
     },
     {
       "date": "2026-11-20",
@@ -3232,6 +3232,41 @@
       "service_aliases": [],
       "added_at": "2026-11-18T23:23:22+00:00",
       "updated_at": "2026-11-18T23:23:22+00:00"
+    },
+    {
+      "id": "8605b4304f36e435",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": "2026-11-19T15:00:00+00:00",
+      "organization": "GA technologies",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/ga_technologies_renosy_karte_member_data_leak_202611/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/ga_technologies_renosy_karte_member_data_leak_202611/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/ga_technologies_renosy_karte_member_data_leak_202611/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "RENOSY",
+      "service_aliases": [],
+      "added_at": "2026-11-23T21:16:11+00:00",
+      "updated_at": "2026-11-23T21:16:11+00:00"
     },
     {
       "id": "90f48cf1abe6fcb9",
@@ -10686,6 +10721,14 @@
           ]
         },
         {
+          "incident_id": "8605b4304f36e435",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/ga_technologies_renosy_karte_member_data_leak_202611/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/ga_technologies_renosy_karte_member_data_leak_202611/"
+          ]
+        },
+        {
           "incident_id": "872c6ee1daba8835",
           "relationship": "affects",
           "evidence_url": "https://www.club-tourism.co.jp/jpn/news/2026/1117_1/",
@@ -11176,7 +11219,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-23T19:17:04+00:00"
+      "updated_at": "2026-11-23T21:16:11+00:00"
     },
     {
       "id": "958475ed41c0f37d",
