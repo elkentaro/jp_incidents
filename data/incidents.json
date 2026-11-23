@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-23T15:16:15+00:00",
+  "updated_at": "2026-11-23T17:16:15+00:00",
   "total": 1556,
   "date_range": {
     "start": "2023-12-24",
@@ -493,6 +493,45 @@
       "updated_at": "2026-11-21T23:16:17+00:00"
     },
     {
+      "id": "c34cf5cb128f12fd",
+      "published_at": "2026-11-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "棚倉町",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 166,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.minyu-net.com/news/detail/2026112109081457506",
+          "evidence_urls": [
+            "https://www.minyu-net.com/news/detail/2026112109081457506"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "福島民友新聞社",
+          "url": "https://www.minyu-net.com/news/detail/2026112109081457506"
+        },
+        {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp/15264974.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "町スマート申請システム",
+      "service_aliases": [],
+      "added_at": "2026-11-21T02:16:04+00:00",
+      "updated_at": "2026-11-23T17:16:15+00:00"
+    },
+    {
       "id": "3e2920a83c42c3ad",
       "published_at": "2026-11-20T15:00:00+00:00",
       "disclosed_at": null,
@@ -531,41 +570,6 @@
       "service_aliases": [],
       "added_at": "2026-11-21T23:16:17+00:00",
       "updated_at": "2026-11-22T03:16:03+00:00"
-    },
-    {
-      "id": "c34cf5cb128f12fd",
-      "published_at": "2026-11-20T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "棚倉町",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 166,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.minyu-net.com/news/detail/2026112109081457506",
-          "evidence_urls": [
-            "https://www.minyu-net.com/news/detail/2026112109081457506"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "福島民友新聞社",
-          "url": "https://www.minyu-net.com/news/detail/2026112109081457506"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "ingestion",
-      "affected_service": "町スマート申請システム",
-      "service_aliases": [],
-      "added_at": "2026-11-21T02:16:04+00:00",
-      "updated_at": "2026-11-21T02:16:04+00:00"
     },
     {
       "id": "00118422ddcf8d29",
