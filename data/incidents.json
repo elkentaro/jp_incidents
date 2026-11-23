@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-23T01:16:24+00:00",
-  "total": 1551,
+  "updated_at": "2026-11-23T02:16:39+00:00",
+  "total": 1552,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-22"
@@ -326,7 +326,7 @@
     },
     {
       "date": "2026-11-13",
-      "count": 63
+      "count": 64
     },
     {
       "date": "2026-11-14",
@@ -9440,6 +9440,56 @@
       "updated_at": "2026-11-13T13:17:15+00:00"
     },
     {
+      "id": "1da159087aa344d8",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-19T15:00:00+00:00",
+      "organization": "クラシル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 320000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/kurashiru_recichalle_karte_320000_chirashi_1300_post_contract_data_breach/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/kurashiru_recichalle_karte_320000_chirashi_1300_post_contract_data_breach/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/kurashiru_recichalle_karte_320000_chirashi_1300_post_contract_data_breach/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "レシチャレ / クラシルチラシ",
+      "service_aliases": [],
+      "affected_services": [
+        "レシチャレ",
+        "クラシルチラシ"
+      ],
+      "service_details": [
+        {
+          "name": "レシチャレ",
+          "aliases": []
+        },
+        {
+          "name": "クラシルチラシ",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-23T02:16:39+00:00",
+      "updated_at": "2026-11-23T02:16:39+00:00"
+    },
+    {
       "id": "21270d807ae14d60",
       "published_at": "2026-11-12T15:00:00+00:00",
       "disclosed_at": "2026-11-17T15:00:00+00:00",
@@ -10205,6 +10255,14 @@
           "evidence_url": "https://news.ntv.co.jp/n/nib/category/society/nifd16d3503d8642ad9efd3c68e8c33750",
           "evidence_urls": [
             "https://news.ntv.co.jp/n/nib/category/society/nifd16d3503d8642ad9efd3c68e8c33750"
+          ]
+        },
+        {
+          "incident_id": "1da159087aa344d8",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/kurashiru_recichalle_karte_320000_chirashi_1300_post_contract_data_breach/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/kurashiru_recichalle_karte_320000_chirashi_1300_post_contract_data_breach/"
           ]
         },
         {
@@ -11039,7 +11097,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-22T14:18:56+00:00"
+      "updated_at": "2026-11-23T02:16:39+00:00"
     },
     {
       "id": "958475ed41c0f37d",
@@ -30339,12 +30397,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/9a17496ea85e56de0ad8d81695bc4681ffd9f67b"
+        },
+        {
+          "name": "Infoseek",
+          "url": "https://news.infoseek.co.jp/article/poitan_196496/"
         }
       ],
       "affected_service": "デジタル社債の管理業務",
       "service_aliases": [],
       "added_at": "2026-11-02T13:16:55+00:00",
-      "updated_at": "2026-11-20T14:16:59+00:00"
+      "updated_at": "2026-11-23T02:16:39+00:00"
     },
     {
       "id": "a8e44ce2aed59169",
