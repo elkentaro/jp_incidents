@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-23T00:16:02+00:00",
+  "updated_at": "2026-11-23T01:16:24+00:00",
   "total": 1551,
   "date_range": {
     "start": "2023-12-24",
@@ -9596,6 +9596,43 @@
       "updated_at": "2026-11-18T00:16:21+00:00"
     },
     {
+      "id": "43229f00364e5ca1",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-19T15:00:00+00:00",
+      "organization": "ポーラ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 56349,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/pola_karte_pola_id_56349_data_leak_20261120/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/pola_karte_pola_id_56349_data_leak_20261120/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.pola.co.jp/notice/unauthorized-access-20261120/index.html"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/pola_karte_pola_id_56349_data_leak_20261120/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "added_at": "2026-11-22T02:15:52+00:00",
+      "updated_at": "2026-11-23T01:16:24+00:00"
+    },
+    {
       "id": "5ec4369d7fae9a45",
       "published_at": "2026-11-12T15:00:00+00:00",
       "disclosed_at": null,
@@ -12670,39 +12707,6 @@
       "updated_at": "2026-11-13T20:16:21+00:00"
     },
     {
-      "id": "43229f00364e5ca1",
-      "published_at": "2026-11-12T15:00:00+00:00",
-      "disclosed_at": "2026-11-19T15:00:00+00:00",
-      "organization": "ポーラ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 56349,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "8cf67a97b55e1d57",
-          "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/pola_karte_pola_id_56349_data_leak_20261120/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/pola_karte_pola_id_56349_data_leak_20261120/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/pola_karte_pola_id_56349_data_leak_20261120/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "occurrence",
-      "added_at": "2026-11-22T02:15:52+00:00",
-      "updated_at": "2026-11-22T02:15:52+00:00"
-    },
-    {
       "id": "439280998e7962c2",
       "published_at": "2026-11-12T15:00:00+00:00",
       "disclosed_at": "2026-11-12T15:00:00+00:00",
@@ -13187,6 +13191,10 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/effectual_location_connect_api_data_breach_20261112/"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://effectual.co.jp/news/20261112/"
         }
       ],
       "affected_system": null,
@@ -13196,7 +13204,7 @@
         "ロケーションコネクト"
       ],
       "added_at": "2026-11-19T07:17:28+00:00",
-      "updated_at": "2026-11-19T07:17:28+00:00"
+      "updated_at": "2026-11-23T01:16:24+00:00"
     },
     {
       "id": "43c1ffdb36beb846",
@@ -20694,6 +20702,43 @@
       "updated_at": "2026-11-13T02:15:39+00:00"
     },
     {
+      "id": "7b26428511df49de",
+      "published_at": "2026-11-06T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "Vポイントマーケティング",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 9313,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "9dcfa6a5f3e1e1e8",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/wow-world-unauthorized-access-49000/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/wow-world-unauthorized-access-49000/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.vpoint.co.jp/news/20261120_2532/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/wow-world-unauthorized-access-49000/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "added_at": "2026-11-23T00:16:02+00:00",
+      "updated_at": "2026-11-23T01:16:24+00:00"
+    },
+    {
       "id": "7dc5f8abf578e750",
       "published_at": "2026-11-06T15:00:00+00:00",
       "disclosed_at": null,
@@ -20751,12 +20796,16 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/wow-world-unauthorized-access-49000/"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://www.wow-world.co.jp/release/001621.html"
         }
       ],
       "affected_system": null,
       "date_basis": "occurrence",
       "added_at": "2026-11-23T00:16:02+00:00",
-      "updated_at": "2026-11-23T00:16:02+00:00"
+      "updated_at": "2026-11-23T01:16:24+00:00"
     },
     {
       "id": "d2d1ddfd77a57614",
@@ -20961,39 +21010,6 @@
       ],
       "added_at": "2026-11-07T02:16:11+00:00",
       "updated_at": "2026-11-12T00:15:58+00:00"
-    },
-    {
-      "id": "7b26428511df49de",
-      "published_at": "2026-11-06T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "Vポイントマーケティング",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 9313,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "9dcfa6a5f3e1e1e8",
-          "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/wow-world-unauthorized-access-49000/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/wow-world-unauthorized-access-49000/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/wow-world-unauthorized-access-49000/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "occurrence",
-      "added_at": "2026-11-23T00:16:02+00:00",
-      "updated_at": "2026-11-23T00:16:02+00:00"
     },
     {
       "id": "d47afbe7e699beaf",
