@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-23T21:16:11+00:00",
+  "updated_at": "2026-11-23T22:15:57+00:00",
   "total": 1557,
   "date_range": {
     "start": "2023-12-24",
@@ -1097,6 +1097,43 @@
       "updated_at": "2026-11-20T17:16:08+00:00"
     },
     {
+      "id": "b29677ff8cfb23a4",
+      "published_at": "2026-11-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "キヤノンマーケティングジャパン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 3660000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUC20AIL0Q6A121C2000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUC20AIL0Q6A121C2000000/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/canon_mj_karte_3660000_data_exposure_b2b_risks/"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC20AIL0Q6A121C2000000/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "added_at": "2026-11-20T14:16:59+00:00",
+      "updated_at": "2026-11-23T22:15:57+00:00"
+    },
+    {
       "id": "b9e885fee89670aa",
       "published_at": "2026-11-19T15:00:00+00:00",
       "disclosed_at": "2026-11-19T15:00:00+00:00",
@@ -1113,6 +1150,10 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/mcdonalds_japan_app_database_unauthorized_access_purchase_location/"
+        },
+        {
+          "name": "ビジネス+IT",
+          "url": "https://www.sbbit.jp/article/cont1/188680"
         }
       ],
       "affected_system": null,
@@ -1120,7 +1161,7 @@
       "affected_service": "マクドナルド公式アプリ",
       "service_aliases": [],
       "added_at": "2026-11-23T04:16:39+00:00",
-      "updated_at": "2026-11-23T04:16:39+00:00"
+      "updated_at": "2026-11-23T22:15:57+00:00"
     },
     {
       "id": "bc0e25f919ca9b7e",
@@ -1707,39 +1748,6 @@
       ],
       "added_at": "2026-11-20T14:16:59+00:00",
       "updated_at": "2026-11-20T17:16:08+00:00"
-    },
-    {
-      "id": "b29677ff8cfb23a4",
-      "published_at": "2026-11-19T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "キヤノンマーケティングジャパン",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 3660000,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "8cf67a97b55e1d57",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.nikkei.com/article/DGXZQOUC20AIL0Q6A121C2000000/",
-          "evidence_urls": [
-            "https://www.nikkei.com/article/DGXZQOUC20AIL0Q6A121C2000000/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUC20AIL0Q6A121C2000000/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "ingestion",
-      "added_at": "2026-11-20T14:16:59+00:00",
-      "updated_at": "2026-11-22T06:16:06+00:00"
     },
     {
       "id": "b80a1935e1252608",
