@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-24T00:16:45+00:00",
-  "total": 1558,
+  "updated_at": "2026-11-24T01:16:40+00:00",
+  "total": 1559,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-22"
@@ -318,7 +318,7 @@
     },
     {
       "date": "2026-11-12",
-      "count": 38
+      "count": 39
     },
     {
       "date": "2026-11-13",
@@ -667,6 +667,35 @@
       "service_aliases": [],
       "added_at": "2026-11-20T09:15:11+00:00",
       "updated_at": "2026-11-21T23:16:17+00:00"
+    },
+    {
+      "id": "2010ef92d8039710",
+      "published_at": "2026-11-19T15:00:00+00:00",
+      "disclosed_at": "2026-11-20T15:00:00+00:00",
+      "organization": "ベストコ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 50196,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://bestco.jp/news/74/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/bestco-best-kobetsu-50196-95937-potential-data-leak/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "added_at": "2026-11-23T03:16:41+00:00",
+      "updated_at": "2026-11-24T01:16:40+00:00"
     },
     {
       "id": "330ccdb8fc90d8b6",
@@ -1227,6 +1256,10 @@
         {
           "name": "ビジネス+IT",
           "url": "https://www.sbbit.jp/article/cont1/188680"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/97fea33417c07d9e8a64d625dc991d07c0dfdb1f"
         }
       ],
       "affected_system": null,
@@ -1234,7 +1267,7 @@
       "affected_service": "マクドナルド公式アプリ",
       "service_aliases": [],
       "added_at": "2026-11-23T04:16:39+00:00",
-      "updated_at": "2026-11-23T22:15:57+00:00"
+      "updated_at": "2026-11-24T01:16:40+00:00"
     },
     {
       "id": "bc0e25f919ca9b7e",
@@ -2012,31 +2045,6 @@
       "updated_at": "2026-11-21T05:16:20+00:00"
     },
     {
-      "id": "2010ef92d8039710",
-      "published_at": "2026-11-19T15:00:00+00:00",
-      "disclosed_at": "2026-11-20T15:00:00+00:00",
-      "organization": "ベストコ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 50196,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/bestco-best-kobetsu-50196-95937-potential-data-leak/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "occurrence",
-      "added_at": "2026-11-23T03:16:41+00:00",
-      "updated_at": "2026-11-23T03:16:41+00:00"
-    },
-    {
       "id": "2ae4cb666cc03c71",
       "published_at": "2026-11-19T15:00:00+00:00",
       "disclosed_at": null,
@@ -2450,6 +2458,10 @@
           "url": "https://infcurion.com/news/news-20261121_001/"
         },
         {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261122584562/"
+        },
+        {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261120583076.pdf"
         },
@@ -2458,8 +2470,8 @@
           "url": "https://www.release.tdnet.info/inbs/140120261120584369.pdf"
         },
         {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/78d9cde0f5cb08a710295cdf819e09e6a9bd65bf"
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261122584562.pdf"
         },
         {
           "name": "合同会社ロケットボーイズ",
@@ -2479,7 +2491,46 @@
       "affected_service": "Wallet Station",
       "service_aliases": [],
       "added_at": "2026-11-20T01:22:45+00:00",
-      "updated_at": "2026-11-21T08:16:17+00:00"
+      "updated_at": "2026-11-24T01:16:40+00:00"
+    },
+    {
+      "id": "8605b4304f36e435",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": "2026-11-19T15:00:00+00:00",
+      "organization": "GA technologies",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/ga_technologies_renosy_karte_member_data_leak_202611/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/ga_technologies_renosy_karte_member_data_leak_202611/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.ga-tech.co.jp/news/qehozmfnf4ycy8ti/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/ga_technologies_renosy_karte_member_data_leak_202611/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "RENOSY",
+      "service_aliases": [],
+      "added_at": "2026-11-23T21:16:11+00:00",
+      "updated_at": "2026-11-24T01:16:40+00:00"
     },
     {
       "id": "8f93bc8af7c1dc3e",
@@ -3278,41 +3329,6 @@
       "service_aliases": [],
       "added_at": "2026-11-18T23:23:22+00:00",
       "updated_at": "2026-11-18T23:23:22+00:00"
-    },
-    {
-      "id": "8605b4304f36e435",
-      "published_at": "2026-11-18T15:00:00+00:00",
-      "disclosed_at": "2026-11-19T15:00:00+00:00",
-      "organization": "GA technologies",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "8cf67a97b55e1d57",
-          "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/ga_technologies_renosy_karte_member_data_leak_202611/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/ga_technologies_renosy_karte_member_data_leak_202611/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/ga_technologies_renosy_karte_member_data_leak_202611/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "occurrence",
-      "affected_service": "RENOSY",
-      "service_aliases": [],
-      "added_at": "2026-11-23T21:16:11+00:00",
-      "updated_at": "2026-11-23T21:16:11+00:00"
     },
     {
       "id": "90f48cf1abe6fcb9",
@@ -5434,6 +5450,10 @@
           "url": "https://rocket-boys.co.jp/security-measures-lab/cover_hololive_openlogi_former_shipping_vendor_300_records/"
         },
         {
+          "name": "satimo list",
+          "url": "https://shop.hololivepro.com/blogs/news/shipping_openlogi_databreach_20261117"
+        },
+        {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/053214d4368ed6644638e48f82f71a42594a0ac7"
         }
@@ -5443,7 +5463,7 @@
       "affected_service": "hololive production OFFICIAL SHOP",
       "service_aliases": [],
       "added_at": "2026-11-18T15:16:38+00:00",
-      "updated_at": "2026-11-19T13:18:58+00:00"
+      "updated_at": "2026-11-24T01:16:40+00:00"
     },
     {
       "id": "634939f204704a6a",
@@ -9453,6 +9473,10 @@
           "url": "https://new-www.keisei.co.jp/cms/files/keisei/MASTER/0110/nWeYDLzk.pdf"
         },
         {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56880.html"
+        },
+        {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUC13CBJ0T11C26A1000000/"
         },
@@ -9482,7 +9506,7 @@
       "affected_service": "スカイライナーチケットレスサービス",
       "service_aliases": [],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-18T05:16:01+00:00"
+      "updated_at": "2026-11-24T01:16:40+00:00"
     },
     {
       "id": "15e3f49b51019cdf",
@@ -9618,6 +9642,10 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/kurashiru_recichalle_karte_320000_chirashi_1300_post_contract_data_breach/"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://kurashiru.co.jp/news/update/d8yg20boxz"
         }
       ],
       "affected_system": null,
@@ -9639,7 +9667,7 @@
         }
       ],
       "added_at": "2026-11-23T02:16:39+00:00",
-      "updated_at": "2026-11-23T02:16:39+00:00"
+      "updated_at": "2026-11-24T01:16:40+00:00"
     },
     {
       "id": "21270d807ae14d60",
@@ -14454,6 +14482,41 @@
       "updated_at": "2026-11-12T20:15:40+00:00"
     },
     {
+      "id": "81015e37f61e916d",
+      "published_at": "2026-11-11T15:00:00+00:00",
+      "disclosed_at": "2026-11-11T15:00:00+00:00",
+      "organization": "パーソルキャリア",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "80fe411952caf308",
+          "relationship": "affected_by",
+          "evidence_url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56877.html",
+          "evidence_urls": [
+            "https://scan.netsecurity.ne.jp/article/2026/11/24/56877.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56877.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "TONARIWA",
+      "service_aliases": [],
+      "added_at": "2026-11-24T01:16:40+00:00",
+      "updated_at": "2026-11-24T01:16:40+00:00"
+    },
+    {
       "id": "e86db2e8c9489b83",
       "published_at": "2026-11-11T15:00:00+00:00",
       "disclosed_at": "2026-11-15T15:00:00+00:00",
@@ -17145,6 +17208,14 @@
           "evidence_urls": [
             "https://www.post.japanpost.jp/newsrelease/pressrelease/685401036.html"
           ]
+        },
+        {
+          "incident_id": "81015e37f61e916d",
+          "relationship": "affects",
+          "evidence_url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56877.html",
+          "evidence_urls": [
+            "https://scan.netsecurity.ne.jp/article/2026/11/24/56877.html"
+          ]
         }
       ],
       "sources": [
@@ -17175,6 +17246,10 @@
         {
           "name": "電通デジタル",
           "url": "https://www.dentsudigital.co.jp/news/updates"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56878.html"
         }
       ],
       "affected_service": "TONARIWA",
@@ -17182,7 +17257,7 @@
         "トナリワ"
       ],
       "added_at": "2026-11-11T09:15:59+00:00",
-      "updated_at": "2026-11-17T20:16:23+00:00"
+      "updated_at": "2026-11-24T01:16:40+00:00"
     },
     {
       "id": "8fb0d1022527dbd9",
@@ -19069,6 +19144,10 @@
           "url": "https://www.athome.co.jp/corporate/news/topics/oshirase-202611/"
         },
         {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56879.html"
+        },
+        {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118421"
         }
@@ -19078,7 +19157,7 @@
       "affected_service": "賃貸管理システム",
       "service_aliases": [],
       "added_at": "2026-11-13T19:16:21+00:00",
-      "updated_at": "2026-11-15T01:15:27+00:00"
+      "updated_at": "2026-11-24T01:16:40+00:00"
     },
     {
       "id": "ac478163eca04533",
@@ -21137,6 +21216,34 @@
       "updated_at": "2026-11-17T23:16:16+00:00"
     },
     {
+      "id": "d47afbe7e699beaf",
+      "published_at": "2026-11-06T15:00:00+00:00",
+      "disclosed_at": "2026-11-08T15:00:00+00:00",
+      "organization": "FWD生命保険",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 9000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56875.html"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/fwdlife_fwd_navi_9000_customer_contracts_unauthorized_access_2026/"
+        }
+      ],
+      "affected_service": "FWD navi",
+      "service_aliases": [],
+      "added_at": "2026-11-09T07:08:09+00:00",
+      "updated_at": "2026-11-24T01:16:40+00:00"
+    },
+    {
       "id": "f4b56629909c3d7b",
       "published_at": "2026-11-06T15:00:00+00:00",
       "disclosed_at": null,
@@ -21296,30 +21403,6 @@
       ],
       "added_at": "2026-11-07T02:16:11+00:00",
       "updated_at": "2026-11-12T00:15:58+00:00"
-    },
-    {
-      "id": "d47afbe7e699beaf",
-      "published_at": "2026-11-06T15:00:00+00:00",
-      "disclosed_at": "2026-11-08T15:00:00+00:00",
-      "organization": "FWD生命保険",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 9000,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/fwdlife_fwd_navi_9000_customer_contracts_unauthorized_access_2026/"
-        }
-      ],
-      "affected_service": "FWD navi",
-      "service_aliases": [],
-      "added_at": "2026-11-09T07:08:09+00:00",
-      "updated_at": "2026-11-09T07:08:09+00:00"
     },
     {
       "id": "03874becece52044",
@@ -22353,9 +22436,10 @@
         {
           "incident_id": "2a43a2f542033fd9",
           "relationship": "affected_by",
-          "evidence_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBDeVhLOG12cmplUVNsMlY2X3RfLTVPSENQYWxBRzRrNzV5M0ZwWTFTeDJ1ZktrdktJVnhYZHFNdUtLeW5HcUthRGFpT0xOazlnZ005WUxRQTY5TmNfejdydXJlcWFIYTBWVW9WbA?oc=5",
+          "evidence_url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56871.html",
           "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMibEFVX3lxTFBDeVhLOG12cmplUVNsMlY2X3RfLTVPSENQYWxBRzRrNzV5M0ZwWTFTeDJ1ZktrdktJVnhYZHFNdUtLeW5HcUthRGFpT0xOazlnZ005WUxRQTY5TmNfejdydXJlcWFIYTBWVW9WbA?oc=5"
+            "https://news.google.com/rss/articles/CBMibEFVX3lxTFBDeVhLOG12cmplUVNsMlY2X3RfLTVPSENQYWxBRzRrNzV5M0ZwWTFTeDJ1ZktrdktJVnhYZHFNdUtLeW5HcUthRGFpT0xOazlnZ005WUxRQTY5TmNfejdydXJlcWFIYTBWVW9WbA?oc=5",
+            "https://scan.netsecurity.ne.jp/article/2026/11/24/56871.html"
           ]
         }
       ],
@@ -22367,12 +22451,16 @@
         {
           "name": "日本経済新聞",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBDeVhLOG12cmplUVNsMlY2X3RfLTVPSENQYWxBRzRrNzV5M0ZwWTFTeDJ1ZktrdktJVnhYZHFNdUtLeW5HcUthRGFpT0xOazlnZ005WUxRQTY5TmNfejdydXJlcWFIYTBWVW9WbA?oc=5"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56871.html"
         }
       ],
       "affected_service": "チェキット",
       "service_aliases": [],
       "added_at": "2026-11-06T14:16:57+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-24T01:16:40+00:00"
     },
     {
       "id": "af5b9a2a47782b11",
@@ -35184,9 +35272,10 @@
         {
           "incident_id": "a95b04d0e23bdb4f",
           "relationship": "affects",
-          "evidence_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBDeVhLOG12cmplUVNsMlY2X3RfLTVPSENQYWxBRzRrNzV5M0ZwWTFTeDJ1ZktrdktJVnhYZHFNdUtLeW5HcUthRGFpT0xOazlnZ005WUxRQTY5TmNfejdydXJlcWFIYTBWVW9WbA?oc=5",
+          "evidence_url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56871.html",
           "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMibEFVX3lxTFBDeVhLOG12cmplUVNsMlY2X3RfLTVPSENQYWxBRzRrNzV5M0ZwWTFTeDJ1ZktrdktJVnhYZHFNdUtLeW5HcUthRGFpT0xOazlnZ005WUxRQTY5TmNfejdydXJlcWFIYTBWVW9WbA?oc=5"
+            "https://news.google.com/rss/articles/CBMibEFVX3lxTFBDeVhLOG12cmplUVNsMlY2X3RfLTVPSENQYWxBRzRrNzV5M0ZwWTFTeDJ1ZktrdktJVnhYZHFNdUtLeW5HcUthRGFpT0xOazlnZ005WUxRQTY5TmNfejdydXJlcWFIYTBWVW9WbA?oc=5",
+            "https://scan.netsecurity.ne.jp/article/2026/11/24/56871.html"
           ]
         }
       ],
@@ -35197,7 +35286,7 @@
         }
       ],
       "added_at": "2026-11-06T14:16:57+00:00",
-      "updated_at": "2026-11-12T07:15:39+00:00"
+      "updated_at": "2026-11-24T01:16:40+00:00"
     },
     {
       "id": "40a361e7c0c0c863",
