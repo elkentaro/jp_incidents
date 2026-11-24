@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-24T20:16:16+00:00",
-  "total": 1578,
+  "updated_at": "2026-11-24T23:15:59+00:00",
+  "total": 1579,
   "date_range": {
     "start": "2023-12-24",
-    "end": "2026-11-24"
+    "end": "2026-11-25"
   },
   "daily_counts_90d": [
     {
@@ -366,10 +366,45 @@
     },
     {
       "date": "2026-11-25",
-      "count": 0
+      "count": 1
     }
   ],
   "incidents": [
+    {
+      "id": "ccb82c0445610c8b",
+      "published_at": "2026-11-24T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東宝",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 3470217,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/toho_one_karte_3470217_data_breach_20261124/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/toho_one_karte_3470217_data_breach_20261124/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/toho_one_karte_3470217_data_breach_20261124/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "TOHO-ONE",
+      "service_aliases": [],
+      "added_at": "2026-11-24T23:15:59+00:00",
+      "updated_at": "2026-11-24T23:15:59+00:00"
+    },
     {
       "id": "26d1c50bebae98e8",
       "published_at": "2026-11-23T15:00:00+00:00",
@@ -11715,6 +11750,14 @@
           ]
         },
         {
+          "incident_id": "ccb82c0445610c8b",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/toho_one_karte_3470217_data_breach_20261124/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/toho_one_karte_3470217_data_breach_20261124/"
+          ]
+        },
+        {
           "incident_id": "cd28aec583d7af5c",
           "relationship": "affects",
           "evidence_url": "https://offers.jp/notice_karte_incident",
@@ -11941,7 +11984,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-24T10:16:07+00:00"
+      "updated_at": "2026-11-24T23:15:59+00:00"
     },
     {
       "id": "958475ed41c0f37d",
