@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-24T02:17:36+00:00",
-  "total": 1560,
+  "updated_at": "2026-11-24T03:16:32+00:00",
+  "total": 1564,
   "date_range": {
     "start": "2023-12-24",
-    "end": "2026-11-22"
+    "end": "2026-11-24"
   },
   "daily_counts_90d": [
     {
@@ -354,7 +354,7 @@
     },
     {
       "date": "2026-11-21",
-      "count": 3
+      "count": 4
     },
     {
       "date": "2026-11-22",
@@ -366,10 +366,100 @@
     },
     {
       "date": "2026-11-24",
-      "count": 0
+      "count": 3
     }
   ],
   "incidents": [
+    {
+      "id": "26d1c50bebae98e8",
+      "published_at": "2026-11-23T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "昭和町",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 557,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "7e647fcc0bac0b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/-/3105902?display=1",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/-/3105902?display=1"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3105902?display=1"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "ブラストメール",
+      "service_aliases": [],
+      "added_at": "2026-11-24T03:16:32+00:00",
+      "updated_at": "2026-11-24T03:16:32+00:00"
+    },
+    {
+      "id": "5e412fef73c0c888",
+      "published_at": "2026-11-23T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "PLANT",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 42107,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261123584551/"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261123584551.pdf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "PLANT Pay",
+      "service_aliases": [],
+      "added_at": "2026-11-24T03:16:32+00:00",
+      "updated_at": "2026-11-24T03:16:32+00:00"
+    },
+    {
+      "id": "b9edebbdade62a2f",
+      "published_at": "2026-11-23T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "キッズウェル・バイオ",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/kidswell-bio-outsourced-website-unauthorized-access-shutdown-20261124/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "added_at": "2026-11-24T03:16:32+00:00",
+      "updated_at": "2026-11-24T03:16:32+00:00"
+    },
     {
       "id": "a3d796b29e951e79",
       "published_at": "2026-11-21T15:00:00+00:00",
@@ -388,6 +478,10 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/tower_records_online_1100man_password_hash_breach_2026/"
+        },
+        {
+          "name": "株式会社アクト",
+          "url": "https://act1.co.jp/2026-11-24-01/"
         },
         {
           "name": "Yahoo!ニュース",
@@ -419,7 +513,7 @@
       "affected_service": "タワーレコードオンライン",
       "service_aliases": [],
       "added_at": "2026-11-22T11:16:03+00:00",
-      "updated_at": "2026-11-23T03:16:41+00:00"
+      "updated_at": "2026-11-24T03:16:32+00:00"
     },
     {
       "id": "46dd181fbc016ab6",
@@ -529,6 +623,32 @@
       ],
       "added_at": "2026-11-21T23:16:17+00:00",
       "updated_at": "2026-11-21T23:16:17+00:00"
+    },
+    {
+      "id": "1f7eee629ae2c0fe",
+      "published_at": "2026-11-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "インフォネット",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261124584682.pdf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "infoCMS",
+      "service_aliases": [],
+      "added_at": "2026-11-24T03:16:32+00:00",
+      "updated_at": "2026-11-24T03:16:32+00:00"
     },
     {
       "id": "c34cf5cb128f12fd",
@@ -1157,6 +1277,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBCdXVSWkt4QVBBaEI0OENOUzFPQ181RUQ5elNiOVh6dEctXzY5bmQ5VXZYYnl1QkkwMDcxYUpoc2pGV2w0cURlMGdXelpGZk9kME5jdTF4alhJZkpVd0JKM2VaNFpHOWJnNC1kV3lzRURZNC0ySHc0eWFUY21HZXM?oc=5"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/sagawa_hands_free_baggage_reservation_13059_possible_leak_2026/"
         }
       ],
       "affected_system": null,
@@ -1164,7 +1288,7 @@
       "affected_service": "店頭で荷物を預かるサービス",
       "service_aliases": [],
       "added_at": "2026-11-20T17:16:08+00:00",
-      "updated_at": "2026-11-20T17:16:08+00:00"
+      "updated_at": "2026-11-24T03:16:32+00:00"
     },
     {
       "id": "ac34dfe057ede897",
@@ -52064,6 +52188,14 @@
           ]
         },
         {
+          "incident_id": "26d1c50bebae98e8",
+          "relationship": "affects",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/-/3105902?display=1",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/-/3105902?display=1"
+          ]
+        },
+        {
           "incident_id": "2d5c0c635a1e28ca",
           "relationship": "affects",
           "evidence_url": "https://artnewsjapan.com/article/90648",
@@ -52729,7 +52861,7 @@
         }
       ],
       "added_at": "2026-10-21T19:22:12+00:00",
-      "updated_at": "2026-11-21T01:16:22+00:00"
+      "updated_at": "2026-11-24T03:16:32+00:00"
     },
     {
       "id": "83db978a801210d8",
