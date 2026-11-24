@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-23T23:16:09+00:00",
-  "total": 1557,
+  "updated_at": "2026-11-24T00:16:45+00:00",
+  "total": 1558,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-22"
@@ -358,7 +358,7 @@
     },
     {
       "date": "2026-11-22",
-      "count": 2
+      "count": 3
     },
     {
       "date": "2026-11-23",
@@ -420,6 +420,40 @@
       "service_aliases": [],
       "added_at": "2026-11-22T11:16:03+00:00",
       "updated_at": "2026-11-23T03:16:41+00:00"
+    },
+    {
+      "id": "46dd181fbc016ab6",
+      "published_at": "2026-11-21T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "アイル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "7dc5f8abf578e750",
+          "relationship": "same_organization",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/ill_saas_staging_real_customer_data_api_credentials_breach_2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/ill_saas_staging_real_customer_data_api_credentials_breach_2026/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/ill_saas_staging_real_customer_data_api_credentials_breach_2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-24T00:16:45+00:00",
+      "updated_at": "2026-11-24T00:16:45+00:00"
     },
     {
       "id": "6711ba15b719ea79",
@@ -8880,6 +8914,10 @@
         {
           "name": "au Webポータル",
           "url": "https://article.auone.jp/e28d63d5-75bd-44cc-9b07-12fcd5a3ecca"
+        },
+        {
+          "name": "ABEMA",
+          "url": "https://abema.tv/video/episode/89-93_s100_p762?utm_medium=social&utm_source=twitter&utm_campaign=official_tw_sokuhou_ap_premium_episode_89-93_s100_p762"
         }
       ],
       "affected_system": null,
@@ -8887,7 +8925,7 @@
       "affected_service": "Schoo Swing",
       "service_aliases": [],
       "added_at": "2026-11-19T04:16:16+00:00",
-      "updated_at": "2026-11-21T11:16:18+00:00"
+      "updated_at": "2026-11-24T00:16:45+00:00"
     },
     {
       "id": "3f2330c30561a5c2",
@@ -20990,7 +21028,16 @@
       "potential_records": null,
       "confidence": "high",
       "confidence_score": 90,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "46dd181fbc016ab6",
+          "relationship": "same_organization",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/ill_saas_staging_real_customer_data_api_credentials_breach_2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/ill_saas_staging_real_customer_data_api_credentials_breach_2026/"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "satimo list",
@@ -21006,7 +21053,7 @@
         "クロスポイント"
       ],
       "added_at": "2026-11-11T01:16:17+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-24T00:16:45+00:00"
     },
     {
       "id": "9dcfa6a5f3e1e1e8",
@@ -70812,10 +70859,10 @@
     "0a5e91817dd2bb5b": "20f151f23e74c369",
     "c756534f5b95c2b8": "073f272eda1d2604",
     "a7e224f51afd9779": "0f105773ffbb91ad",
-    "144179200a5abc10": "3452fc96c339d2ca",
     "aa7aa47af66d811b": "0e8787297a9ff464",
     "e217d9fb39f21e3e": "0a86ecb2b2d87e50",
     "e70ce08ed5c690de": "cbdf6f7224141cb8",
-    "74f0b0ed8eb3946e": "4e61125aed51dbcb"
+    "74f0b0ed8eb3946e": "4e61125aed51dbcb",
+    "144179200a5abc10": "3452fc96c339d2ca"
   }
 }
