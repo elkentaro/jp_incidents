@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-24T06:16:28+00:00",
-  "total": 1567,
+  "updated_at": "2026-11-24T07:16:31+00:00",
+  "total": 1570,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-24"
@@ -354,7 +354,7 @@
     },
     {
       "date": "2026-11-21",
-      "count": 4
+      "count": 5
     },
     {
       "date": "2026-11-22",
@@ -366,7 +366,7 @@
     },
     {
       "date": "2026-11-24",
-      "count": 4
+      "count": 5
     }
   ],
   "incidents": [
@@ -412,6 +412,31 @@
       "service_aliases": [],
       "added_at": "2026-11-24T03:16:32+00:00",
       "updated_at": "2026-11-24T05:16:10+00:00"
+    },
+    {
+      "id": "58f46d8e07c26b39",
+      "published_at": "2026-11-23T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社リサーチパネル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/research_panel_search_vulnerability_password_exposure_2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-24T07:16:31+00:00",
+      "updated_at": "2026-11-24T07:16:31+00:00"
     },
     {
       "id": "5e412fef73c0c888",
@@ -462,6 +487,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/fe67248c885dc3e2757ba16c52b3bfe587d32053"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/70850fa328597be9a1fb07a44fd40357b6b06e90"
         }
       ],
       "affected_system": null,
@@ -469,7 +498,7 @@
       "affected_service": "公式オンラインショップ",
       "service_aliases": [],
       "added_at": "2026-11-24T06:16:28+00:00",
-      "updated_at": "2026-11-24T06:16:28+00:00"
+      "updated_at": "2026-11-24T07:16:31+00:00"
     },
     {
       "id": "b9edebbdade62a2f",
@@ -763,6 +792,42 @@
       "service_aliases": [],
       "added_at": "2026-11-21T23:16:17+00:00",
       "updated_at": "2026-11-22T03:16:03+00:00"
+    },
+    {
+      "id": "95d8228a6ea3aa7a",
+      "published_at": "2026-11-20T15:00:00+00:00",
+      "disclosed_at": "2026-11-20T15:00:00+00:00",
+      "organization": "むさしの村",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 64702,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "aa9bc3fcfc85d71d",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/musashinomura_comsbi_saas_line_user_data_64702_leak_2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/musashinomura_comsbi_saas_line_user_data_64702_leak_2026/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/musashinomura_comsbi_saas_line_user_data_64702_leak_2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "むさしの村公式LINE",
+      "service_aliases": [],
+      "added_at": "2026-11-24T07:16:31+00:00",
+      "updated_at": "2026-11-24T07:16:31+00:00"
     },
     {
       "id": "00118422ddcf8d29",
@@ -1354,6 +1419,10 @@
           "url": "https://www.metro.tokyo.lg.jp/information/press/2026/11/2026112016"
         },
         {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/tokyo_disaster_prevention_app_freescout_dawn_189_data_breach/"
+        },
+        {
           "name": "東京防災ホームページ",
           "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPUjhNd3RQVk1OejhuQ054WmlFNjVsWDFvV3ZpX0xXanBkal9rb3pqaExsMlhDZHhPdC0taXRpQjFBaWgwX3JHYlFXNWY2OGFrWFU3ODJxbEtXRW9PZGJaZk55YzdQZG1GMTJ0b3U3X3E2ZFFqempFdXNmWmEzNGYzSGhHLXlvbHc?oc=5"
         }
@@ -1363,7 +1432,7 @@
       "affected_service": "東京都防災アプリ",
       "service_aliases": [],
       "added_at": "2026-11-20T17:16:08+00:00",
-      "updated_at": "2026-11-20T17:16:08+00:00"
+      "updated_at": "2026-11-24T07:16:31+00:00"
     },
     {
       "id": "b29677ff8cfb23a4",
@@ -4452,6 +4521,10 @@
           "url": "https://www.osaki.co.jp/ja/notice/20261120.html"
         },
         {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/osaki_electric_qilin_claim_technical_documents_vpn_2026/"
+        },
+        {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261118582902.pdf"
         },
@@ -4479,7 +4552,7 @@
       "affected_system": null,
       "date_basis": "ingestion",
       "added_at": "2026-11-18T15:16:38+00:00",
-      "updated_at": "2026-11-21T08:16:17+00:00"
+      "updated_at": "2026-11-24T07:16:31+00:00"
     },
     {
       "id": "9cea6db91e42ce70",
@@ -5035,6 +5108,10 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUF183X70Y6A111C2000000/"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUF2445W0U6A121C2000000/"
         }
       ],
       "affected_system": null,
@@ -5056,7 +5133,7 @@
         }
       ],
       "added_at": "2026-11-18T07:15:49+00:00",
-      "updated_at": "2026-11-18T07:15:49+00:00"
+      "updated_at": "2026-11-24T07:16:31+00:00"
     },
     {
       "id": "65fdb63c95561d31",
@@ -47261,6 +47338,14 @@
           ]
         },
         {
+          "incident_id": "95d8228a6ea3aa7a",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/musashinomura_comsbi_saas_line_user_data_64702_leak_2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/musashinomura_comsbi_saas_line_user_data_64702_leak_2026/"
+          ]
+        },
+        {
           "incident_id": "b0d51947e0683fdd",
           "relationship": "affects",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/iconia_hospitality_comsbi_five_brands_data_breach_2026/",
@@ -47370,7 +47455,7 @@
         }
       ],
       "added_at": "2026-10-27T07:15:28+00:00",
-      "updated_at": "2026-11-24T05:16:10+00:00"
+      "updated_at": "2026-11-24T07:16:31+00:00"
     },
     {
       "id": "af7b771bb23be504",
@@ -71054,6 +71139,35 @@
       ],
       "added_at": "2026-11-05T01:16:21+00:00",
       "updated_at": "2026-11-16T00:15:49+00:00"
+    },
+    {
+      "id": "16c96d334af3d492",
+      "published_at": "2026-06-07T15:00:00+00:00",
+      "disclosed_at": "2026-11-23T15:00:00+00:00",
+      "organization": "CSマーケティング",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 3633,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/bellezza-cs-marketing-credit-card-data-breach-3633/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "ベレッツァ",
+      "service_aliases": [
+        "Bellezza"
+      ],
+      "added_at": "2026-11-24T07:16:31+00:00",
+      "updated_at": "2026-11-24T07:16:31+00:00"
     },
     {
       "id": "2e68ea9149cf74c8",
