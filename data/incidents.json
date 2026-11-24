@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-24T11:16:18+00:00",
-  "total": 1576,
+  "updated_at": "2026-11-24T12:17:00+00:00",
+  "total": 1577,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-24"
@@ -366,7 +366,7 @@
     },
     {
       "date": "2026-11-24",
-      "count": 7
+      "count": 8
     }
   ],
   "incidents": [
@@ -603,6 +603,33 @@
       "updated_at": "2026-11-24T08:16:51+00:00"
     },
     {
+      "id": "ce836317c286e480",
+      "published_at": "2026-11-23T15:00:00+00:00",
+      "disclosed_at": "2026-11-23T15:00:00+00:00",
+      "organization": "ペットメディカルサポート",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 210000,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/pshoken_pet_medical_support_data_breach_210000_2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "PS保険",
+      "service_aliases": [],
+      "added_at": "2026-11-24T12:17:00+00:00",
+      "updated_at": "2026-11-24T12:17:00+00:00"
+    },
+    {
       "id": "a3d796b29e951e79",
       "published_at": "2026-11-21T15:00:00+00:00",
       "disclosed_at": null,
@@ -787,6 +814,10 @@
         {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261124584682.pdf"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9GbEFVWjQtaWN6QTQ0TDlOUzlMajl1dlVObjNiYWhQZy1iRm9IY3pDbEpyUGE0eHZ6RkFYMWxDdWtWOHI0MXVyX2ZiaVh2MmRickh1aTNjWk9TZTlyaWJiZUpGNklCUmlwenc?oc=5"
         }
       ],
       "affected_system": null,
@@ -794,7 +825,7 @@
       "affected_service": "infoCMS",
       "service_aliases": [],
       "added_at": "2026-11-24T03:16:32+00:00",
-      "updated_at": "2026-11-24T03:16:32+00:00"
+      "updated_at": "2026-11-24T12:17:00+00:00"
     },
     {
       "id": "c34cf5cb128f12fd",
@@ -1598,6 +1629,10 @@
         {
           "name": "ASCII.jp",
           "url": "https://ascii.jp/elem/000/004/453/4453962/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/668fc3dfd85b4d9bab54641089a6a197fc1a5991"
         }
       ],
       "affected_system": null,
@@ -1605,7 +1640,7 @@
       "affected_service": "マクドナルド公式アプリ",
       "service_aliases": [],
       "added_at": "2026-11-23T04:16:39+00:00",
-      "updated_at": "2026-11-24T10:16:07+00:00"
+      "updated_at": "2026-11-24T12:17:00+00:00"
     },
     {
       "id": "bc0e25f919ca9b7e",
@@ -9539,6 +9574,44 @@
       "updated_at": "2026-11-20T02:19:03+00:00"
     },
     {
+      "id": "4bee839fdffa3e78",
+      "published_at": "2026-11-13T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "高根沢町",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.town.takanezawa.tochigi.jp/information/2026-1103-0845-77.html",
+          "evidence_urls": [
+            "https://www.shimotsuke.co.jp/articles/-/1458681",
+            "https://www.town.takanezawa.tochigi.jp/information/2026-1103-0845-77.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "栃木県高根沢町",
+          "url": "https://www.town.takanezawa.tochigi.jp/information/2026-1103-0845-77.html"
+        },
+        {
+          "name": "下野新聞社",
+          "url": "https://www.shimotsuke.co.jp/articles/-/1458681"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "added_at": "2026-11-13T23:16:11+00:00",
+      "updated_at": "2026-11-24T12:17:00+00:00"
+    },
+    {
       "id": "577d4cf3ca24cfb3",
       "published_at": "2026-11-13T15:00:00+00:00",
       "disclosed_at": null,
@@ -9864,39 +9937,6 @@
       "service_aliases": [],
       "added_at": "2026-11-14T07:15:25+00:00",
       "updated_at": "2026-11-15T23:15:20+00:00"
-    },
-    {
-      "id": "4bee839fdffa3e78",
-      "published_at": "2026-11-13T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "高根沢町",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.shimotsuke.co.jp/articles/-/1458681",
-          "evidence_urls": [
-            "https://www.shimotsuke.co.jp/articles/-/1458681"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "下野新聞社",
-          "url": "https://www.shimotsuke.co.jp/articles/-/1458681"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "ingestion",
-      "added_at": "2026-11-13T23:16:11+00:00",
-      "updated_at": "2026-11-13T23:16:11+00:00"
     },
     {
       "id": "61531c69de0fe023",
@@ -39811,9 +39851,10 @@
         {
           "incident_id": "4bee839fdffa3e78",
           "relationship": "affects",
-          "evidence_url": "https://www.shimotsuke.co.jp/articles/-/1458681",
+          "evidence_url": "https://www.town.takanezawa.tochigi.jp/information/2026-1103-0845-77.html",
           "evidence_urls": [
-            "https://www.shimotsuke.co.jp/articles/-/1458681"
+            "https://www.shimotsuke.co.jp/articles/-/1458681",
+            "https://www.town.takanezawa.tochigi.jp/information/2026-1103-0845-77.html"
           ]
         },
         {
@@ -41305,7 +41346,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-22T02:15:52+00:00"
+      "updated_at": "2026-11-24T12:17:00+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -60637,6 +60678,10 @@
           "url": "https://www.keio.co.jp/news/update/news_release/news_release2026/pdf/nr20261124_newsrelease.pdf"
         },
         {
+          "name": "NOVAIST",
+          "url": "https://novaist.jp/articles/keio-ransomware-data-breach/"
+        },
+        {
           "name": "Yahoo!ニュース",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1JXzBLNE9DWXNwcVg4eHNEMzZWSTM3MTJ3RTdhTEhhNk5YRC1wbVRQdnd4aFFlaDFZVzRlcEFrQ1NJdHF0ZW9ZVDVTMGJjc0RITWNQVVN5ZkExWUZ5QWdSRGhwa1cwdG55VTdkSWRyT3ZWRXQ4M0ZWa0U2d2tUN2c?oc=5"
         },
@@ -60662,7 +60707,7 @@
         }
       ],
       "added_at": "2026-10-19T09:06:44+00:00",
-      "updated_at": "2026-11-24T08:16:51+00:00"
+      "updated_at": "2026-11-24T12:17:00+00:00"
     },
     {
       "id": "22ac72ce65c7ebe1",
