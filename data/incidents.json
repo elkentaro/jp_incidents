@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-24T04:16:30+00:00",
-  "total": 1564,
+  "updated_at": "2026-11-24T05:16:11+00:00",
+  "total": 1566,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-24"
@@ -322,7 +322,7 @@
     },
     {
       "date": "2026-11-13",
-      "count": 65
+      "count": 66
     },
     {
       "date": "2026-11-14",
@@ -334,7 +334,7 @@
     },
     {
       "date": "2026-11-16",
-      "count": 32
+      "count": 33
     },
     {
       "date": "2026-11-17",
@@ -400,6 +400,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/9435284c4bdfe7ca0ecaa12f52ac2dd47540a73b"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/uty/3105902?display=1"
         }
       ],
       "affected_system": null,
@@ -407,7 +411,7 @@
       "affected_service": "ブラストメール",
       "service_aliases": [],
       "added_at": "2026-11-24T03:16:32+00:00",
-      "updated_at": "2026-11-24T04:16:30+00:00"
+      "updated_at": "2026-11-24T05:16:10+00:00"
     },
     {
       "id": "5e412fef73c0c888",
@@ -1801,6 +1805,10 @@
         {
           "name": "satimo list",
           "url": "https://www.kagin.co.jp/important/20261120_094.html"
+        },
+        {
+          "name": "NOVAIST",
+          "url": "https://novaist.jp/articles/paydon-data-leak-shutdown/"
         }
       ],
       "affected_system": null,
@@ -1808,7 +1816,7 @@
       "affected_service": "Payどん",
       "service_aliases": [],
       "added_at": "2026-11-20T11:16:07+00:00",
-      "updated_at": "2026-11-21T01:16:22+00:00"
+      "updated_at": "2026-11-24T05:16:10+00:00"
     },
     {
       "id": "8acdfc8459902e15",
@@ -2007,6 +2015,10 @@
         {
           "name": "satimo list",
           "url": "https://www.kagin.co.jp/important/20261120_094.html"
+        },
+        {
+          "name": "NOVAIST",
+          "url": "https://novaist.jp/articles/paydon-data-leak-shutdown/"
         }
       ],
       "affected_system": null,
@@ -2014,7 +2026,7 @@
       "affected_service": "Payどん",
       "service_aliases": [],
       "added_at": "2026-11-20T11:16:07+00:00",
-      "updated_at": "2026-11-21T01:16:22+00:00"
+      "updated_at": "2026-11-24T05:16:10+00:00"
     },
     {
       "id": "d58f73552ac00ea2",
@@ -2063,6 +2075,10 @@
         {
           "name": "satimo list",
           "url": "https://www.kagin.co.jp/important/20261120_094.html"
+        },
+        {
+          "name": "NOVAIST",
+          "url": "https://novaist.jp/articles/paydon-data-leak-shutdown/"
         }
       ],
       "affected_system": null,
@@ -2070,7 +2086,7 @@
       "affected_service": "Payどん",
       "service_aliases": [],
       "added_at": "2026-11-20T11:16:07+00:00",
-      "updated_at": "2026-11-21T01:16:22+00:00"
+      "updated_at": "2026-11-24T05:16:10+00:00"
     },
     {
       "id": "f2e870701fba3340",
@@ -8031,6 +8047,41 @@
       "updated_at": "2026-11-20T06:17:27+00:00"
     },
     {
+      "id": "0615fbfa2626052a",
+      "published_at": "2026-11-15T15:00:00+00:00",
+      "disclosed_at": "2026-11-19T15:00:00+00:00",
+      "organization": "日本新薬",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 40921,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "aa9bc3fcfc85d71d",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/nippon_shinyaku_winzone_comsbi_saas_line_40921_2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/nippon_shinyaku_winzone_comsbi_saas_line_40921_2026/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/nippon_shinyaku_winzone_comsbi_saas_line_40921_2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "WINZONE公式LINEアカウント",
+      "service_aliases": [],
+      "added_at": "2026-11-24T05:16:10+00:00",
+      "updated_at": "2026-11-24T05:16:10+00:00"
+    },
+    {
       "id": "1b8fa6b2ad155b09",
       "published_at": "2026-11-15T15:00:00+00:00",
       "disclosed_at": "2026-11-15T15:00:00+00:00",
@@ -11209,6 +11260,14 @@
           ]
         },
         {
+          "incident_id": "b5eeb88c86f147a2",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/tokyo_tatemono_tofrom_app_workers_karte_4235_data_leak_2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/tokyo_tatemono_tofrom_app_workers_karte_4235_data_leak_2026/"
+          ]
+        },
+        {
           "incident_id": "bb8e95db5a3e6193",
           "relationship": "affects",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/vitabrid_japan_karte_11590_data_breach_202611/",
@@ -11500,7 +11559,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-23T23:16:09+00:00"
+      "updated_at": "2026-11-24T05:16:10+00:00"
     },
     {
       "id": "958475ed41c0f37d",
@@ -11905,6 +11964,41 @@
       "date_basis": "occurrence",
       "added_at": "2026-11-19T00:15:50+00:00",
       "updated_at": "2026-11-22T06:16:06+00:00"
+    },
+    {
+      "id": "b5eeb88c86f147a2",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-12T15:00:00+00:00",
+      "organization": "東京建物",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 4235,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/tokyo_tatemono_tofrom_app_workers_karte_4235_data_leak_2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/tokyo_tatemono_tofrom_app_workers_karte_4235_data_leak_2026/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/tokyo_tatemono_tofrom_app_workers_karte_4235_data_leak_2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "TOFROM App for workers",
+      "service_aliases": [],
+      "added_at": "2026-11-24T05:16:10+00:00",
+      "updated_at": "2026-11-24T05:16:10+00:00"
     },
     {
       "id": "bc23a4a79551eddb",
@@ -47017,6 +47111,14 @@
           ]
         },
         {
+          "incident_id": "0615fbfa2626052a",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/nippon_shinyaku_winzone_comsbi_saas_line_40921_2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/nippon_shinyaku_winzone_comsbi_saas_line_40921_2026/"
+          ]
+        },
+        {
           "incident_id": "0f105773ffbb91ad",
           "relationship": "affects",
           "evidence_url": "https://linoas.jp/event/21731/",
@@ -47241,7 +47343,7 @@
         }
       ],
       "added_at": "2026-10-27T07:15:28+00:00",
-      "updated_at": "2026-11-19T04:16:16+00:00"
+      "updated_at": "2026-11-24T05:16:10+00:00"
     },
     {
       "id": "af7b771bb23be504",
