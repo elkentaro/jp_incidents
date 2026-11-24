@@ -442,6 +442,11 @@ function updateSortHeaders() {
 }
 
 function safeSourceLink(source) {
+  if (source.type === "email" && source.url === "") {
+    const label = document.createElement("span");
+    label.textContent = "Email notification";
+    return label;
+  }
   try {
     const url = new URL(source.url);
     if (!/^https?:$/.test(url.protocol)) return null;
