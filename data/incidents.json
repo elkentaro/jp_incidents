@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-24T07:16:31+00:00",
-  "total": 1570,
+  "updated_at": "2026-11-24T08:16:51+00:00",
+  "total": 1573,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-24"
@@ -290,7 +290,7 @@
     },
     {
       "date": "2026-11-05",
-      "count": 59
+      "count": 60
     },
     {
       "date": "2026-11-06",
@@ -342,7 +342,7 @@
     },
     {
       "date": "2026-11-18",
-      "count": 41
+      "count": 42
     },
     {
       "date": "2026-11-19",
@@ -366,7 +366,7 @@
     },
     {
       "date": "2026-11-24",
-      "count": 5
+      "count": 6
     }
   ],
   "incidents": [
@@ -523,6 +523,30 @@
       "date_basis": "discovery",
       "added_at": "2026-11-24T03:16:32+00:00",
       "updated_at": "2026-11-24T03:16:32+00:00"
+    },
+    {
+      "id": "c24d223e21abdea3",
+      "published_at": "2026-11-23T15:00:00+00:00",
+      "disclosed_at": "2026-11-23T15:00:00+00:00",
+      "organization": "ゼロ",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/zero-9028-outsourced-server-unauthorized-access-website-outage-20261124/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "added_at": "2026-11-24T08:16:51+00:00",
+      "updated_at": "2026-11-24T08:16:51+00:00"
     },
     {
       "id": "a3d796b29e951e79",
@@ -1500,6 +1524,14 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118783"
+        },
+        {
+          "name": "CNET Japan",
+          "url": "https://japan.cnet.com/article/35255325/"
+        },
+        {
+          "name": "ASCII.jp",
+          "url": "https://ascii.jp/elem/000/004/453/4453962/"
         }
       ],
       "affected_system": null,
@@ -1507,7 +1539,7 @@
       "affected_service": "マクドナルド公式アプリ",
       "service_aliases": [],
       "added_at": "2026-11-23T04:16:39+00:00",
-      "updated_at": "2026-11-24T02:17:36+00:00"
+      "updated_at": "2026-11-24T08:16:51+00:00"
     },
     {
       "id": "bc0e25f919ca9b7e",
@@ -1781,6 +1813,47 @@
       "service_aliases": [],
       "added_at": "2026-11-20T11:16:07+00:00",
       "updated_at": "2026-11-21T03:16:13+00:00"
+    },
+    {
+      "id": "166a20d7523a04ce",
+      "published_at": "2026-11-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "エポスカード",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 8500000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.eposcard.co.jp/articles/news/261120.html",
+          "evidence_urls": [
+            "https://www.eposcard.co.jp/articles/news/261120.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "www.eposcard.co.jp",
+          "url": "https://www.eposcard.co.jp/articles/news/261120.html"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/marui-group-epos-card-karte-customer-data-breach-1733million/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/8781107f31352c8e1d2c9b127a90a0e17441a5e3"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-21T02:16:04+00:00",
+      "updated_at": "2026-11-24T08:16:51+00:00"
     },
     {
       "id": "22d5d068692ef51d",
@@ -2258,43 +2331,6 @@
       "service_aliases": [],
       "added_at": "2026-11-20T23:15:53+00:00",
       "updated_at": "2026-11-22T01:16:08+00:00"
-    },
-    {
-      "id": "166a20d7523a04ce",
-      "published_at": "2026-11-19T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "エポスカード",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 8500000,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "8cf67a97b55e1d57",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.eposcard.co.jp/articles/news/261120.html",
-          "evidence_urls": [
-            "https://www.eposcard.co.jp/articles/news/261120.html"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "www.eposcard.co.jp",
-          "url": "https://www.eposcard.co.jp/articles/news/261120.html"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/marui-group-epos-card-karte-customer-data-breach-1733million/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "publication",
-      "added_at": "2026-11-21T02:16:04+00:00",
-      "updated_at": "2026-11-21T05:16:20+00:00"
     },
     {
       "id": "2ae4cb666cc03c71",
@@ -2971,6 +3007,10 @@
         {
           "name": "GO株式会社",
           "url": "https://goinc.jp/news/info/2026/11/19/1ged4wbk8ug0heonnp2cm0/"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC244TU0U6A121C2000000/"
         }
       ],
       "affected_system": null,
@@ -2978,7 +3018,7 @@
       "affected_service": "タクシーアプリ『GO』",
       "service_aliases": [],
       "added_at": "2026-11-19T14:18:14+00:00",
-      "updated_at": "2026-11-19T14:18:14+00:00"
+      "updated_at": "2026-11-24T08:16:51+00:00"
     },
     {
       "id": "cbcf6be4582645ae",
@@ -4316,6 +4356,64 @@
       "updated_at": "2026-11-19T02:15:42+00:00"
     },
     {
+      "id": "618216ef0a935c83",
+      "published_at": "2026-11-17T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "カウネット",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUF183X70Y6A111C2000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUF183X70Y6A111C2000000/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/kaunet-kokuyo-karte-300525-data-breach-20261124/"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUF183X70Y6A111C2000000/"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUF2445W0U6A121C2000000/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "カウネット / おうちカウネット",
+      "service_aliases": [],
+      "affected_services": [
+        "カウネット",
+        "おうちカウネット"
+      ],
+      "service_details": [
+        {
+          "name": "カウネット",
+          "aliases": []
+        },
+        {
+          "name": "おうちカウネット",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-18T07:15:49+00:00",
+      "updated_at": "2026-11-24T08:16:51+00:00"
+    },
+    {
       "id": "65e7601a7cd328c8",
       "published_at": "2026-11-17T15:00:00+00:00",
       "disclosed_at": null,
@@ -5040,6 +5138,37 @@
       "updated_at": "2026-11-18T20:16:16+00:00"
     },
     {
+      "id": "4c75fd0200bf30a6",
+      "published_at": "2026-11-17T15:00:00+00:00",
+      "disclosed_at": "2026-11-23T15:00:00+00:00",
+      "organization": "JAXA",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 2000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/db569fcef2564adbde4292bc50db72ce8b860acf"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOSG244FZ0U6A121C2000000/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "公開系情報システム",
+      "service_aliases": [],
+      "added_at": "2026-11-24T08:16:51+00:00",
+      "updated_at": "2026-11-24T08:16:51+00:00"
+    },
+    {
       "id": "5bf28033535fe7f2",
       "published_at": "2026-11-17T15:00:00+00:00",
       "disclosed_at": "2026-11-17T15:00:00+00:00",
@@ -5080,60 +5209,6 @@
       "date_basis": "first_disclosure",
       "added_at": "2026-11-18T15:16:38+00:00",
       "updated_at": "2026-11-19T05:16:46+00:00"
-    },
-    {
-      "id": "618216ef0a935c83",
-      "published_at": "2026-11-17T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "カウネット",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "8cf67a97b55e1d57",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.nikkei.com/article/DGXZQOUF183X70Y6A111C2000000/",
-          "evidence_urls": [
-            "https://www.nikkei.com/article/DGXZQOUF183X70Y6A111C2000000/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUF183X70Y6A111C2000000/"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUF2445W0U6A121C2000000/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "ingestion",
-      "affected_service": "カウネット / おうちカウネット",
-      "service_aliases": [],
-      "affected_services": [
-        "カウネット",
-        "おうちカウネット"
-      ],
-      "service_details": [
-        {
-          "name": "カウネット",
-          "aliases": []
-        },
-        {
-          "name": "おうちカウネット",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-18T07:15:49+00:00",
-      "updated_at": "2026-11-24T07:16:31+00:00"
     },
     {
       "id": "65fdb63c95561d31",
@@ -25846,6 +25921,31 @@
       "updated_at": "2026-11-12T08:18:15+00:00"
     },
     {
+      "id": "5c7d4a93deca2d16",
+      "published_at": "2026-11-04T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "富士ユナイトホールディングス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261124585268.pdf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "added_at": "2026-11-24T08:16:51+00:00",
+      "updated_at": "2026-11-24T08:16:51+00:00"
+    },
+    {
       "id": "9a1e2bc21268aad2",
       "published_at": "2026-11-04T15:00:00+00:00",
       "disclosed_at": null,
@@ -34332,6 +34432,10 @@
           "url": "https://www.kyuden.co.jp/td/press/2026/261120.html"
         },
         {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/kyushu-power-td-member-data-29506-possible-leak-20261120/"
+        },
+        {
           "name": "ScanNetSecurity",
           "url": "https://s.netsecurity.ne.jp/article/2026/11/11/56743.html"
         },
@@ -34351,7 +34455,7 @@
       "affected_service": "電力量・料金照会サービス",
       "service_aliases": [],
       "added_at": "2026-11-06T02:16:04+00:00",
-      "updated_at": "2026-11-21T08:16:17+00:00"
+      "updated_at": "2026-11-24T08:16:51+00:00"
     },
     {
       "id": "6060c1559cd87ea6",
@@ -60351,6 +60455,10 @@
           "url": "https://rocket-boys.co.jp/security-measures-lab/keio_pressoinn_ransomware_lodging_revenue_18oku_2026/"
         },
         {
+          "name": "京王電鉄 / Keio Corporation",
+          "url": "https://www.keio.co.jp/news/update/news_release/news_release2026/pdf/nr20261124_newsrelease.pdf"
+        },
+        {
           "name": "Yahoo!ニュース",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1JXzBLNE9DWXNwcVg4eHNEMzZWSTM3MTJ3RTdhTEhhNk5YRC1wbVRQdnd4aFFlaDFZVzRlcEFrQ1NJdHF0ZW9ZVDVTMGJjc0RITWNQVVN5ZkExWUZ5QWdSRGhwa1cwdG55VTdkSWRyT3ZWRXQ4M0ZWa0U2d2tUN2c?oc=5"
         },
@@ -60376,7 +60484,7 @@
         }
       ],
       "added_at": "2026-10-19T09:06:44+00:00",
-      "updated_at": "2026-11-19T15:17:55+00:00"
+      "updated_at": "2026-11-24T08:16:51+00:00"
     },
     {
       "id": "22ac72ce65c7ebe1",
