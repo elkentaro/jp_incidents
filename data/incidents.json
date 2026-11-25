@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-25T09:16:11+00:00",
-  "total": 1599,
+  "updated_at": "2026-11-25T10:16:21+00:00",
+  "total": 1606,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-25"
@@ -134,7 +134,7 @@
     },
     {
       "date": "2026-09-28",
-      "count": 0
+      "count": 1
     },
     {
       "date": "2026-09-29",
@@ -318,7 +318,7 @@
     },
     {
       "date": "2026-11-13",
-      "count": 66
+      "count": 67
     },
     {
       "date": "2026-11-14",
@@ -366,10 +366,59 @@
     },
     {
       "date": "2026-11-25",
-      "count": 7
+      "count": 12
     }
   ],
   "incidents": [
+    {
+      "id": "16c10d87d005d1bb",
+      "published_at": "2026-11-24T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "渋谷区",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 3745,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.shibuya.tokyo.jp/kusei/koho/shibuya-portal/unauthorized_access_20261125.html",
+          "evidence_urls": [
+            "https://www.city.shibuya.tokyo.jp/kusei/koho/shibuya-portal/unauthorized_access_20261125.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "渋谷区 / Shibuya",
+          "url": "https://www.city.shibuya.tokyo.jp/kusei/koho/shibuya-portal/unauthorized_access_20261125.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "渋谷ハチコウ大学クラブ活動 / 健康はつらつ事業",
+      "service_aliases": [],
+      "affected_services": [
+        "渋谷ハチコウ大学クラブ活動",
+        "健康はつらつ事業"
+      ],
+      "service_details": [
+        {
+          "name": "渋谷ハチコウ大学クラブ活動",
+          "aliases": []
+        },
+        {
+          "name": "健康はつらつ事業",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-25T10:16:21+00:00",
+      "updated_at": "2026-11-25T10:16:21+00:00"
+    },
     {
       "id": "27fedcbdd97d0e5d",
       "published_at": "2026-11-24T15:00:00+00:00",
@@ -473,6 +522,57 @@
       "updated_at": "2026-11-25T03:16:08+00:00"
     },
     {
+      "id": "976201696951f0d3",
+      "published_at": "2026-11-24T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大崎電気システムズ",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261125586202.pdf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-25T10:16:21+00:00",
+      "updated_at": "2026-11-25T10:16:21+00:00"
+    },
+    {
+      "id": "5ff4a950ee5fcfe0",
+      "published_at": "2026-11-24T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "福島県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/2c45fa4fecd3c18800042ea5460a7e97ac6e1a23"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "ふるさと福島就職情報センター福島窓口",
+      "service_aliases": [],
+      "added_at": "2026-11-25T10:16:21+00:00",
+      "updated_at": "2026-11-25T10:16:21+00:00"
+    },
+    {
       "id": "c7a8c86149d0e030",
       "published_at": "2026-11-24T15:00:00+00:00",
       "disclosed_at": null,
@@ -495,6 +595,31 @@
       "date_basis": "ingestion",
       "added_at": "2026-11-25T09:16:11+00:00",
       "updated_at": "2026-11-25T09:16:11+00:00"
+    },
+    {
+      "id": "ccf5c53a0e031aa5",
+      "published_at": "2026-11-24T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "MJS M＆Aパートナーズ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261125de81289"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-25T10:16:21+00:00",
+      "updated_at": "2026-11-25T10:16:21+00:00"
     },
     {
       "id": "34634d72d864a2e4",
@@ -568,6 +693,40 @@
       "date_basis": "publication",
       "added_at": "2026-11-25T06:16:06+00:00",
       "updated_at": "2026-11-25T06:16:06+00:00"
+    },
+    {
+      "id": "ec9266555285ebe6",
+      "published_at": "2026-11-24T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東北電力",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 50,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.tohoku-epco.co.jp/news/normal/1249387_2558.html",
+          "evidence_urls": [
+            "https://www.tohoku-epco.co.jp/news/normal/1249387_2558.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "東北電力 / Tohoku Electric Power",
+          "url": "https://www.tohoku-epco.co.jp/news/normal/1249387_2558.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-25T10:16:21+00:00",
+      "updated_at": "2026-11-25T10:16:21+00:00"
     },
     {
       "id": "26d1c50bebae98e8",
@@ -727,6 +886,10 @@
         {
           "name": "福井新聞社",
           "url": "https://www.fukuishimbun.co.jp/articles/-/2754745"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/2862f07ca01b9ca3e7df23218f7ae7ed3b271551"
         }
       ],
       "affected_system": null,
@@ -734,7 +897,7 @@
       "affected_service": "PLANT Pay",
       "service_aliases": [],
       "added_at": "2026-11-24T03:16:32+00:00",
-      "updated_at": "2026-11-24T10:16:07+00:00"
+      "updated_at": "2026-11-25T10:16:21+00:00"
     },
     {
       "id": "9e3604f4b69ad21d",
@@ -3372,6 +3535,10 @@
           "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261122584562/"
         },
         {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261125586210/"
+        },
+        {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261120583076.pdf"
         },
@@ -3384,8 +3551,8 @@
           "url": "https://www.release.tdnet.info/inbs/140120261122584562.pdf"
         },
         {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/infcurion_wallet_station_paydon_251172_data_breach_2026/"
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261125586210.pdf"
         },
         {
           "name": "Cybersecurity.jp",
@@ -3401,7 +3568,7 @@
       "affected_service": "Wallet Station",
       "service_aliases": [],
       "added_at": "2026-11-20T01:22:45+00:00",
-      "updated_at": "2026-11-24T01:16:40+00:00"
+      "updated_at": "2026-11-25T10:16:21+00:00"
     },
     {
       "id": "8605b4304f36e435",
@@ -5269,7 +5436,8 @@
       "incident_type": "data leak",
       "incident_categories": [
         "data leak",
-        "ransomware"
+        "ransomware",
+        "unauthorized access"
       ],
       "potential_records": null,
       "confidence": "high",
@@ -5305,8 +5473,8 @@
           "url": "https://www.release.tdnet.info/inbs/140120261120584422.pdf"
         },
         {
-          "name": "佐賀新聞",
-          "url": "https://www.saga-s.co.jp/articles/-/1832738"
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261125586202.pdf"
         },
         {
           "name": "日本海新聞",
@@ -5324,7 +5492,7 @@
       "affected_system": null,
       "date_basis": "ingestion",
       "added_at": "2026-11-18T15:16:38+00:00",
-      "updated_at": "2026-11-24T07:16:31+00:00"
+      "updated_at": "2026-11-25T10:16:21+00:00"
     },
     {
       "id": "9cea6db91e42ce70",
@@ -10828,6 +10996,14 @@
           "evidence_urls": [
             "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5nMl9lWndOVjdFWFR2VUtKemNyV1ZNVXMzakhHdWF2ZE9KNUVyXzdDd0lPcXJYaXZkT3hWNUN5UUlQMjJjTnotbVlGWVQtZ2VsWmQ2VXhkX1dsc1do?oc=5"
           ]
+        },
+        {
+          "incident_id": "5e4ac6edc5ef049d",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQLWNubW1BaFN4S05JU2w3NGlrcVVNVUtwOUVsYzBQdUwzMlZWMUxCUUY0VW9xam14UE1aLUJDX1d1azJIdUJiaVBPcXhsZXRKR1RJWGtQWkNSSG9wcGJBeDNKNnU1LTRZZzlmVEZqM1JmX19KWWpFTnlYTFg3bmlVRndGaEFfOTMzNVAtVGRoblFMUWc5?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMilAFBVV95cUxQLWNubW1BaFN4S05JU2w3NGlrcVVNVUtwOUVsYzBQdUwzMlZWMUxCUUY0VW9xam14UE1aLUJDX1d1azJIdUJiaVBPcXhsZXRKR1RJWGtQWkNSSG9wcGJBeDNKNnU1LTRZZzlmVEZqM1JmX19KWWpFTnlYTFg3bmlVRndGaEFfOTMzNVAtVGRoblFMUWc5?oc=5"
+          ]
         }
       ],
       "sources": [
@@ -10876,7 +11052,7 @@
         }
       ],
       "added_at": "2026-11-17T11:16:33+00:00",
-      "updated_at": "2026-11-21T09:15:57+00:00"
+      "updated_at": "2026-11-25T10:16:21+00:00"
     },
     {
       "id": "18a371b6c319d3a5",
@@ -11539,6 +11715,41 @@
       "updated_at": "2026-11-20T11:16:07+00:00"
     },
     {
+      "id": "828995cb9bdb1c50",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-23T15:00:00+00:00",
+      "organization": "永谷園",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 46000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/nagatanien-app-karte-46000-possible-data-leak-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/nagatanien-app-karte-46000-possible-data-leak-2026/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/nagatanien-app-karte-46000-possible-data-leak-2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "永谷園アプリ",
+      "service_aliases": [],
+      "added_at": "2026-11-25T10:16:21+00:00",
+      "updated_at": "2026-11-25T10:16:21+00:00"
+    },
+    {
       "id": "872c6ee1daba8835",
       "published_at": "2026-11-12T15:00:00+00:00",
       "disclosed_at": null,
@@ -12106,6 +12317,14 @@
           ]
         },
         {
+          "incident_id": "828995cb9bdb1c50",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/nagatanien-app-karte-46000-possible-data-leak-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/nagatanien-app-karte-46000-possible-data-leak-2026/"
+          ]
+        },
+        {
           "incident_id": "84d6396c568949f9",
           "relationship": "affects",
           "evidence_url": "https://cybersecurity-jp.com/news/118636",
@@ -12539,6 +12758,14 @@
           ]
         },
         {
+          "incident_id": "ec9266555285ebe6",
+          "relationship": "affects",
+          "evidence_url": "https://www.tohoku-epco.co.jp/news/normal/1249387_2558.html",
+          "evidence_urls": [
+            "https://www.tohoku-epco.co.jp/news/normal/1249387_2558.html"
+          ]
+        },
+        {
           "incident_id": "ee71a787184a6cd7",
           "relationship": "affects",
           "evidence_url": "https://www.city.kakogawa.lg.jp/kosodate_site/genre/4/2/51427.html",
@@ -12674,7 +12901,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-25T09:16:11+00:00"
+      "updated_at": "2026-11-25T10:16:21+00:00"
     },
     {
       "id": "958475ed41c0f37d",
@@ -18812,9 +19039,10 @@
         {
           "incident_id": "aa9bc3fcfc85d71d",
           "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/human-adjust-comsbi-saas-line-data-leak-risk-2026/",
+          "evidence_url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261124585501/",
           "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/human-adjust-comsbi-saas-line-data-leak-risk-2026/"
+            "https://rocket-boys.co.jp/security-measures-lab/human-adjust-comsbi-saas-line-data-leak-risk-2026/",
+            "https://www.nikkei.com/nkd/disclosure/tdnr/20261124585501/"
           ]
         }
       ],
@@ -18826,6 +19054,10 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261113579962/"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261124585501/"
         },
         {
           "name": "日本取引所グループ TDnet / JPX TDnet",
@@ -18844,7 +19076,7 @@
         "SaaS版"
       ],
       "added_at": "2026-11-13T12:16:47+00:00",
-      "updated_at": "2026-11-25T08:16:27+00:00"
+      "updated_at": "2026-11-25T10:16:21+00:00"
     },
     {
       "id": "a6e801e509730f1e",
@@ -39169,12 +39401,16 @@
         {
           "name": "Security NEXT",
           "url": "https://www.security-next.com/192157"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261125de81294"
         }
       ],
       "affected_service": "インターネット花キューピット / ビジネス花キューピット",
       "service_aliases": [],
       "added_at": "2026-10-28T10:15:54+00:00",
-      "updated_at": "2026-11-17T20:16:23+00:00"
+      "updated_at": "2026-11-25T10:16:21+00:00"
     },
     {
       "id": "3c1baa348f2229d9",
@@ -40318,6 +40554,14 @@
           "evidence_url": "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1",
           "evidence_urls": [
             "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1"
+          ]
+        },
+        {
+          "incident_id": "16c10d87d005d1bb",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.shibuya.tokyo.jp/kusei/koho/shibuya-portal/unauthorized_access_20261125.html",
+          "evidence_urls": [
+            "https://www.city.shibuya.tokyo.jp/kusei/koho/shibuya-portal/unauthorized_access_20261125.html"
           ]
         },
         {
@@ -42201,7 +42445,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-25T03:16:08+00:00"
+      "updated_at": "2026-11-25T10:16:21+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -48541,9 +48785,10 @@
         {
           "incident_id": "9443ee532ae9709b",
           "relationship": "affects",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/human-adjust-comsbi-saas-line-data-leak-risk-2026/",
+          "evidence_url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261124585501/",
           "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/human-adjust-comsbi-saas-line-data-leak-risk-2026/"
+            "https://rocket-boys.co.jp/security-measures-lab/human-adjust-comsbi-saas-line-data-leak-risk-2026/",
+            "https://www.nikkei.com/nkd/disclosure/tdnr/20261124585501/"
           ]
         },
         {
@@ -48664,7 +48909,7 @@
         }
       ],
       "added_at": "2026-10-27T07:15:28+00:00",
-      "updated_at": "2026-11-24T07:16:31+00:00"
+      "updated_at": "2026-11-25T10:16:21+00:00"
     },
     {
       "id": "af7b771bb23be504",
@@ -64214,6 +64459,45 @@
       "updated_at": "2026-11-21T08:16:17+00:00"
     },
     {
+      "id": "f4b4126d52ffe567",
+      "published_at": "2026-10-14T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "メディアドゥ",
+      "incident_type": "other",
+      "incident_categories": [
+        "other"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "cbdf6f7224141cb8",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.release.tdnet.info/inbs/140120261125585727.pdf",
+          "evidence_urls": [
+            "https://www.release.tdnet.info/inbs/140120261125585727.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261125585727/"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261125585727.pdf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "コミックシーモア",
+      "service_aliases": [],
+      "added_at": "2026-11-25T08:16:27+00:00",
+      "updated_at": "2026-11-25T10:16:21+00:00"
+    },
+    {
       "id": "f58940476d597124",
       "published_at": "2026-10-14T15:00:00+00:00",
       "disclosed_at": null,
@@ -64261,41 +64545,6 @@
       "date_basis": "existing_record",
       "added_at": "2026-10-19T09:06:44+00:00",
       "updated_at": "2026-11-12T08:18:15+00:00"
-    },
-    {
-      "id": "f4b4126d52ffe567",
-      "published_at": "2026-10-14T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "メディアドゥ",
-      "incident_type": "other",
-      "incident_categories": [
-        "other"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 80,
-      "related": [
-        {
-          "incident_id": "cbdf6f7224141cb8",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.release.tdnet.info/inbs/140120261125585727.pdf",
-          "evidence_urls": [
-            "https://www.release.tdnet.info/inbs/140120261125585727.pdf"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "日本取引所グループ TDnet / JPX TDnet",
-          "url": "https://www.release.tdnet.info/inbs/140120261125585727.pdf"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "occurrence",
-      "affected_service": "コミックシーモア",
-      "service_aliases": [],
-      "added_at": "2026-11-25T08:16:27+00:00",
-      "updated_at": "2026-11-25T08:16:27+00:00"
     },
     {
       "id": "56e180ebe64ee99d",
@@ -71720,6 +71969,40 @@
       "updated_at": "2026-11-18T23:23:22+00:00"
     },
     {
+      "id": "5e4ac6edc5ef049d",
+      "published_at": "2026-09-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ヤマト運輸",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "15e3f49b51019cdf",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQLWNubW1BaFN4S05JU2w3NGlrcVVNVUtwOUVsYzBQdUwzMlZWMUxCUUY0VW9xam14UE1aLUJDX1d1azJIdUJiaVBPcXhsZXRKR1RJWGtQWkNSSG9wcGJBeDNKNnU1LTRZZzlmVEZqM1JmX19KWWpFTnlYTFg3bmlVRndGaEFfOTMzNVAtVGRoblFMUWc5?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMilAFBVV95cUxQLWNubW1BaFN4S05JU2w3NGlrcVVNVUtwOUVsYzBQdUwzMlZWMUxCUUY0VW9xam14UE1aLUJDX1d1azJIdUJiaVBPcXhsZXRKR1RJWGtQWkNSSG9wcGJBeDNKNnU1LTRZZzlmVEZqM1JmX19KWWpFTnlYTFg3bmlVRndGaEFfOTMzNVAtVGRoblFMUWc5?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQLWNubW1BaFN4S05JU2w3NGlrcVVNVUtwOUVsYzBQdUwzMlZWMUxCUUY0VW9xam14UE1aLUJDX1d1azJIdUJiaVBPcXhsZXRKR1RJWGtQWkNSSG9wcGJBeDNKNnU1LTRZZzlmVEZqM1JmX19KWWpFTnlYTFg3bmlVRndGaEFfOTMzNVAtVGRoblFMUWc5?oc=5"
+        }
+      ],
+      "affected_service": "チャット窓口",
+      "service_aliases": [],
+      "added_at": "2026-11-25T10:16:21+00:00",
+      "updated_at": "2026-11-25T10:16:21+00:00"
+    },
+    {
       "id": "f5bd0f1b378e6b8e",
       "published_at": "2026-09-19T15:00:00+00:00",
       "disclosed_at": "2026-10-08T15:00:00+00:00",
@@ -72583,6 +72866,18 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/78219e7c200aa24500c4d4abf0724e3a4d031205"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/1cbb5e82eed5bd5b9214df20bb6e0dcc9fa7787f"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/cadacb84783aeb5f25cc00aa4def96901c1df4e8"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261125de81337"
         }
       ],
       "affected_system": null,
@@ -72590,7 +72885,7 @@
       "affected_service": "サツドラ公式アプリ",
       "service_aliases": [],
       "added_at": "2026-11-25T09:16:11+00:00",
-      "updated_at": "2026-11-25T09:16:11+00:00"
+      "updated_at": "2026-11-25T10:16:21+00:00"
     },
     {
       "id": "77f00ceb78f6b618",
