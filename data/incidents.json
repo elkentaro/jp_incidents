@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-25T02:16:29+00:00",
-  "total": 1588,
+  "updated_at": "2026-11-25T03:16:09+00:00",
+  "total": 1590,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-25"
@@ -366,10 +366,73 @@
     },
     {
       "date": "2026-11-25",
-      "count": 1
+      "count": 3
     }
   ],
   "incidents": [
+    {
+      "id": "27fedcbdd97d0e5d",
+      "published_at": "2026-11-24T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社キンリュー",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "",
+          "evidence_urls": []
+        }
+      ],
+      "sources": [
+        {
+          "name": "Email notification",
+          "url": "",
+          "type": "email"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "KINRYUオンラインストア",
+      "service_aliases": [],
+      "added_at": "2026-11-25T03:16:08+00:00",
+      "updated_at": "2026-11-25T03:16:08+00:00"
+    },
+    {
+      "id": "b5f986abc9fbf0d9",
+      "published_at": "2026-11-24T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "AUTHENTIC JAPAN株式会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "Email notification",
+          "url": "",
+          "type": "email"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "ココヘリ",
+      "service_aliases": [],
+      "upstream_status": "unknown",
+      "added_at": "2026-11-25T03:16:08+00:00",
+      "updated_at": "2026-11-25T03:16:08+00:00"
+    },
     {
       "id": "ccb82c0445610c8b",
       "published_at": "2026-11-24T15:00:00+00:00",
@@ -380,8 +443,8 @@
         "data leak"
       ],
       "potential_records": 3470217,
-      "confidence": "medium",
-      "confidence_score": 30,
+      "confidence": "high",
+      "confidence_score": 90,
       "related": [
         {
           "incident_id": "8cf67a97b55e1d57",
@@ -394,6 +457,10 @@
       ],
       "sources": [
         {
+          "name": "東宝",
+          "url": "https://www.toho-one.com/notifications/2026/20261117_01"
+        },
+        {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/toho_one_karte_3470217_data_breach_20261124/"
         }
@@ -403,7 +470,7 @@
       "affected_service": "TOHO-ONE",
       "service_aliases": [],
       "added_at": "2026-11-24T23:15:59+00:00",
-      "updated_at": "2026-11-24T23:15:59+00:00"
+      "updated_at": "2026-11-25T03:16:08+00:00"
     },
     {
       "id": "26d1c50bebae98e8",
@@ -659,6 +726,10 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/isb_fit_sdm_signage_unauthorized_access_2026/"
+        },
+        {
+          "name": "株式会社アクト",
+          "url": "https://act1.co.jp/2026-11-25-01/"
         }
       ],
       "affected_system": null,
@@ -680,7 +751,7 @@
         }
       ],
       "added_at": "2026-11-25T01:15:59+00:00",
-      "updated_at": "2026-11-25T01:15:59+00:00"
+      "updated_at": "2026-11-25T03:16:08+00:00"
     },
     {
       "id": "b9edebbdade62a2f",
@@ -40039,6 +40110,12 @@
           ]
         },
         {
+          "incident_id": "27fedcbdd97d0e5d",
+          "relationship": "affects",
+          "evidence_url": "",
+          "evidence_urls": []
+        },
+        {
           "incident_id": "28330966aa1fdffe",
           "relationship": "affects",
           "evidence_url": "https://www.city.itami.lg.jp/oshirase/50668.html",
@@ -41832,7 +41909,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-24T12:17:00+00:00"
+      "updated_at": "2026-11-25T03:16:08+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
