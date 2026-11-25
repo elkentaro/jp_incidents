@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-25T19:16:31+00:00",
-  "total": 1610,
+  "updated_at": "2026-11-25T20:16:04+00:00",
+  "total": 1613,
   "date_range": {
     "start": "2023-12-24",
-    "end": "2026-11-25"
+    "end": "2026-11-26"
   },
   "daily_counts_90d": [
     {
@@ -350,7 +350,7 @@
     },
     {
       "date": "2026-11-22",
-      "count": 3
+      "count": 4
     },
     {
       "date": "2026-11-23",
@@ -362,14 +362,51 @@
     },
     {
       "date": "2026-11-25",
-      "count": 13
+      "count": 14
     },
     {
       "date": "2026-11-26",
-      "count": 0
+      "count": 1
     }
   ],
   "incidents": [
+    {
+      "id": "e59d0f50b9a186af",
+      "published_at": "2026-11-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "かんぽ生命",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 60000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUA25AVA0V21C26A1000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUA25AVA0V21C26A1000000/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUA25AVA0V21C26A1000000/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "KARTE",
+      "service_aliases": [
+        "カルテ"
+      ],
+      "added_at": "2026-11-25T20:16:04+00:00",
+      "updated_at": "2026-11-25T20:16:04+00:00"
+    },
     {
       "id": "16c10d87d005d1bb",
       "published_at": "2026-11-24T15:00:00+00:00",
@@ -541,6 +578,14 @@
           "url": "https://mmap.co.jp/news/news_20261124/"
         },
         {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/39e2508eaf6409d428ddc86de6a7f07d0f8505f5"
+        },
+        {
+          "name": "株式会社ミロク情報サービス",
+          "url": "https://www.mjs.co.jp/news/news_2026/2026112400/"
+        },
+        {
           "name": "NHKニュース",
           "url": "https://news.web.nhk/newsweb/na/nd-20261125de81289"
         },
@@ -552,7 +597,7 @@
       "affected_system": null,
       "date_basis": "publication",
       "added_at": "2026-11-25T10:16:21+00:00",
-      "updated_at": "2026-11-25T14:16:34+00:00"
+      "updated_at": "2026-11-25T20:16:04+00:00"
     },
     {
       "id": "976201696951f0d3",
@@ -577,6 +622,39 @@
       "date_basis": "publication",
       "added_at": "2026-11-25T10:16:21+00:00",
       "updated_at": "2026-11-25T10:16:21+00:00"
+    },
+    {
+      "id": "0ac6e0e5edb845f4",
+      "published_at": "2026-11-24T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "かんぽ生命保険",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 60000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE56Q29pOWRsWTJwVUNzRHktNkhQUzhxZk9QVTdFenVfMU84QXZGakQ1d0FLQ21DanpuaHA3Rkt2Z3pFTFlGRVZUUjdUQjBEalBkZjdCUVJud183Sm10ZnhNMVpmWjNoTWo4ZDc4Sk9SN3BtVGtjb2hIc3BUcG1NVFU?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE56Q29pOWRsWTJwVUNzRHktNkhQUzhxZk9QVTdFenVfMU84QXZGakQ1d0FLQ21DanpuaHA3Rkt2Z3pFTFlGRVZUUjdUQjBEalBkZjdCUVJud183Sm10ZnhNMVpmWjNoTWo4ZDc4Sk9SN3BtVGtjb2hIc3BUcG1NVFU?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE56Q29pOWRsWTJwVUNzRHktNkhQUzhxZk9QVTdFenVfMU84QXZGakQ1d0FLQ21DanpuaHA3Rkt2Z3pFTFlGRVZUUjdUQjBEalBkZjdCUVJud183Sm10ZnhNMVpmWjNoTWo4ZDc4Sk9SN3BtVGtjb2hIc3BUcG1NVFU?oc=5"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-25T20:16:04+00:00",
+      "updated_at": "2026-11-25T20:16:04+00:00"
     },
     {
       "id": "3127de1f44f16233",
@@ -1413,6 +1491,99 @@
       "updated_at": "2026-11-22T14:18:56+00:00"
     },
     {
+      "id": "a68191f24dadd23f",
+      "published_at": "2026-11-21T15:00:00+00:00",
+      "disclosed_at": "2026-11-23T15:00:00+00:00",
+      "organization": "ジェイドグループ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOaURrdUJwRW9XRzBUNENNbG9zMlN4TmtNc0tBRlpJbW1GclgzREI4a0NNVTh6czlvNXR4N2xWMTV3Z2dYZml5Wm4ycDhSNUY4cnE1QWNvWnl5Ylo3Q0h3YXkzMjFaWE1CaFlsMFJ4MUF5TzQxV2JKdVR4dHBYZVBxeE04YkR4V0I5TXpHRzU4VU5IbkIwNlpVbEpiTERKaW8?oc=5"
+        }
+      ],
+      "affected_service": "DESCENTE STORE オンライン/CLUB DESCENTE / FILA公式通販 / Samantha Global Official Online Shop / アンダーアーマー公式サイト / フィットフィットオフィシャルサイト",
+      "service_aliases": [],
+      "affected_services": [
+        "DESCENTE STORE オンライン/CLUB DESCENTE",
+        "FILA公式通販",
+        "Samantha Global Official Online Shop",
+        "アンダーアーマー公式サイト",
+        "フィットフィットオフィシャルサイト"
+      ],
+      "service_details": [
+        {
+          "name": "DESCENTE STORE オンライン/CLUB DESCENTE",
+          "aliases": []
+        },
+        {
+          "name": "FILA公式通販",
+          "aliases": []
+        },
+        {
+          "name": "Samantha Global Official Online Shop",
+          "aliases": []
+        },
+        {
+          "name": "アンダーアーマー公式サイト",
+          "aliases": []
+        },
+        {
+          "name": "フィットフィットオフィシャルサイト",
+          "aliases": []
+        }
+      ],
+      "upstream_status": "unknown",
+      "added_at": "2026-11-25T20:16:04+00:00",
+      "updated_at": "2026-11-25T20:16:04+00:00"
+    },
+    {
+      "id": "1f7eee629ae2c0fe",
+      "published_at": "2026-11-20T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "インフォネット",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "株式会社アクト",
+          "url": "https://act1.co.jp/2026-11-24-05/"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261124584682.pdf"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9GbEFVWjQtaWN6QTQ0TDlOUzlMajl1dlVObjNiYWhQZy1iRm9IY3pDbEpyUGE0eHZ6RkFYMWxDdWtWOHI0MXVyX2ZiaVh2MmRickh1aTNjWk9TZTlyaWJiZUpGNklCUmlwenc?oc=5"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/infonet-infocms-shared-server-unauthorized-access-20261124/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "infoCMS",
+      "service_aliases": [],
+      "added_at": "2026-11-24T03:16:32+00:00",
+      "updated_at": "2026-11-25T20:16:04+00:00"
+    },
+    {
       "id": "8a9e909ca4e9411e",
       "published_at": "2026-11-20T15:00:00+00:00",
       "disclosed_at": null,
@@ -1449,40 +1620,6 @@
       ],
       "added_at": "2026-11-21T23:16:17+00:00",
       "updated_at": "2026-11-21T23:16:17+00:00"
-    },
-    {
-      "id": "1f7eee629ae2c0fe",
-      "published_at": "2026-11-20T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "インフォネット",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "high",
-      "confidence_score": 80,
-      "related": [],
-      "sources": [
-        {
-          "name": "日本取引所グループ TDnet / JPX TDnet",
-          "url": "https://www.release.tdnet.info/inbs/140120261124584682.pdf"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9GbEFVWjQtaWN6QTQ0TDlOUzlMajl1dlVObjNiYWhQZy1iRm9IY3pDbEpyUGE0eHZ6RkFYMWxDdWtWOHI0MXVyX2ZiaVh2MmRickh1aTNjWk9TZTlyaWJiZUpGNklCUmlwenc?oc=5"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/infonet-infocms-shared-server-unauthorized-access-20261124/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "occurrence",
-      "affected_service": "infoCMS",
-      "service_aliases": [],
-      "added_at": "2026-11-24T03:16:32+00:00",
-      "updated_at": "2026-11-25T01:15:59+00:00"
     },
     {
       "id": "c34cf5cb128f12fd",
@@ -12034,6 +12171,14 @@
           ]
         },
         {
+          "incident_id": "0ac6e0e5edb845f4",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE56Q29pOWRsWTJwVUNzRHktNkhQUzhxZk9QVTdFenVfMU84QXZGakQ1d0FLQ21DanpuaHA3Rkt2Z3pFTFlGRVZUUjdUQjBEalBkZjdCUVJud183Sm10ZnhNMVpmWjNoTWo4ZDc4Sk9SN3BtVGtjb2hIc3BUcG1NVFU?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMif0FVX3lxTE56Q29pOWRsWTJwVUNzRHktNkhQUzhxZk9QVTdFenVfMU84QXZGakQ1d0FLQ21DanpuaHA3Rkt2Z3pFTFlGRVZUUjdUQjBEalBkZjdCUVJud183Sm10ZnhNMVpmWjNoTWo4ZDc4Sk9SN3BtVGtjb2hIc3BUcG1NVFU?oc=5"
+          ]
+        },
+        {
           "incident_id": "0e8787297a9ff464",
           "relationship": "affects",
           "evidence_url": "https://www.nikkei.com/article/DGXZQOCC17A1V0X11C26A1000000/",
@@ -12870,6 +13015,14 @@
           ]
         },
         {
+          "incident_id": "e59d0f50b9a186af",
+          "relationship": "affects",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUA25AVA0V21C26A1000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUA25AVA0V21C26A1000000/"
+          ]
+        },
+        {
           "incident_id": "e6a9e7da15d27bf6",
           "relationship": "affects",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/mufg_morgan_stanley_securities_karte_280000_breach/",
@@ -13038,7 +13191,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-25T10:16:21+00:00"
+      "updated_at": "2026-11-25T20:16:04+00:00"
     },
     {
       "id": "958475ed41c0f37d",
@@ -35894,12 +36047,16 @@
         {
           "name": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2026/11/25/56896.html"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://s.netsecurity.ne.jp/article/img/2026/11/25/56896/56516.html"
         }
       ],
       "affected_service": "電力量・料金照会サービス",
       "service_aliases": [],
       "added_at": "2026-11-06T02:16:04+00:00",
-      "updated_at": "2026-11-25T00:16:17+00:00"
+      "updated_at": "2026-11-25T20:16:04+00:00"
     },
     {
       "id": "6060c1559cd87ea6",
@@ -72920,6 +73077,10 @@
         {
           "name": "ネットショップ担当者フォーラム",
           "url": "https://netshop.impress.co.jp/n/2026/11/25/17092"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/2f4ae4dffa5a9ab0122407d3c0141808c1778829"
         }
       ],
       "affected_system": null,
@@ -72927,7 +73088,7 @@
       "affected_service": "ヴェレダ 公式オンラインショップ",
       "service_aliases": [],
       "added_at": "2026-11-25T14:16:34+00:00",
-      "updated_at": "2026-11-25T14:16:34+00:00"
+      "updated_at": "2026-11-25T20:16:04+00:00"
     },
     {
       "id": "16c96d334af3d492",
