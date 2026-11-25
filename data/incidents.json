@@ -1,17 +1,13 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-25T14:16:34+00:00",
-  "total": 1608,
+  "updated_at": "2026-11-25T15:16:10+00:00",
+  "total": 1610,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-25"
   },
   "daily_counts_90d": [
-    {
-      "date": "2026-08-28",
-      "count": 0
-    },
     {
       "date": "2026-08-29",
       "count": 1
@@ -362,11 +358,15 @@
     },
     {
       "date": "2026-11-24",
-      "count": 12
+      "count": 13
     },
     {
       "date": "2026-11-25",
-      "count": 12
+      "count": 13
+    },
+    {
+      "date": "2026-11-26",
+      "count": 0
     }
   ],
   "incidents": [
@@ -579,6 +579,56 @@
       "updated_at": "2026-11-25T10:16:21+00:00"
     },
     {
+      "id": "3127de1f44f16233",
+      "published_at": "2026-11-24T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "花キューピット",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 670,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "306e3cb8d37abc69",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUC25A7D0V21C26A1000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUC25A7D0V21C26A1000000/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC25A7D0V21C26A1000000/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "インターネット花キューピット / 花キューピットタウン",
+      "service_aliases": [],
+      "affected_services": [
+        "インターネット花キューピット",
+        "花キューピットタウン"
+      ],
+      "service_details": [
+        {
+          "name": "インターネット花キューピット",
+          "aliases": []
+        },
+        {
+          "name": "花キューピットタウン",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-25T15:16:10+00:00",
+      "updated_at": "2026-11-25T15:16:10+00:00"
+    },
+    {
       "id": "5ff4a950ee5fcfe0",
       "published_at": "2026-11-24T15:00:00+00:00",
       "disclosed_at": null,
@@ -664,12 +714,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/91999b55537ca34ed116f87646129ae3574f82ac"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/e726c2fc658978e06e69bcc7800d912ee7ee9a4a"
         }
       ],
       "affected_system": null,
       "date_basis": "publication",
       "added_at": "2026-11-25T10:16:21+00:00",
-      "updated_at": "2026-11-25T14:16:34+00:00"
+      "updated_at": "2026-11-25T15:16:10+00:00"
     },
     {
       "id": "34634d72d864a2e4",
@@ -791,6 +845,32 @@
       "service_aliases": [],
       "added_at": "2026-11-24T03:16:32+00:00",
       "updated_at": "2026-11-24T13:17:10+00:00"
+    },
+    {
+      "id": "3d78c12d6662ade6",
+      "published_at": "2026-11-23T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東京都",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 6,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "東京都 / Tokyo Metropolitan Government",
+          "url": "https://www.metro.tokyo.lg.jp/information/press/2026/11/2026112513"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "グローバル・エコシステム連携事業 シンガポール派遣プログラム",
+      "service_aliases": [],
+      "added_at": "2026-11-25T15:16:10+00:00",
+      "updated_at": "2026-11-25T15:16:10+00:00"
     },
     {
       "id": "5293512faf02d112",
@@ -39429,7 +39509,16 @@
       "potential_records": 4230000,
       "confidence": "high",
       "confidence_score": 90,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "3127de1f44f16233",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUC25A7D0V21C26A1000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUC25A7D0V21C26A1000000/"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "読売新聞",
@@ -39475,7 +39564,7 @@
       "affected_service": "インターネット花キューピット / ビジネス花キューピット",
       "service_aliases": [],
       "added_at": "2026-10-28T10:15:54+00:00",
-      "updated_at": "2026-11-25T10:16:21+00:00"
+      "updated_at": "2026-11-25T15:16:10+00:00"
     },
     {
       "id": "3c1baa348f2229d9",
