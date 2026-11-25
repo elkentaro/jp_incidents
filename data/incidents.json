@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-25T03:16:09+00:00",
-  "total": 1590,
+  "updated_at": "2026-11-25T04:16:21+00:00",
+  "total": 1591,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-25"
@@ -326,7 +326,7 @@
     },
     {
       "date": "2026-11-15",
-      "count": 14
+      "count": 15
     },
     {
       "date": "2026-11-16",
@@ -9824,6 +9824,42 @@
       "updated_at": "2026-11-16T00:15:49+00:00"
     },
     {
+      "id": "ca19e51e13752499",
+      "published_at": "2026-11-14T15:00:00+00:00",
+      "disclosed_at": "2026-11-17T15:00:00+00:00",
+      "organization": "藤崎",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 75000,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/fujisaki_online_karte_75000_data_breach_20261124/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/fujisaki_online_karte_75000_data_breach_20261124/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/fujisaki_online_karte_75000_data_breach_20261124/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "FUJISAKI online",
+      "service_aliases": [],
+      "added_at": "2026-11-25T04:16:21+00:00",
+      "updated_at": "2026-11-25T04:16:21+00:00"
+    },
+    {
       "id": "0f5f8567d53f3ad5",
       "published_at": "2026-11-13T15:00:00+00:00",
       "disclosed_at": null,
@@ -12164,6 +12200,14 @@
           ]
         },
         {
+          "incident_id": "ca19e51e13752499",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/fujisaki_online_karte_75000_data_breach_20261124/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/fujisaki_online_karte_75000_data_breach_20261124/"
+          ]
+        },
+        {
           "incident_id": "cbcf6be4582645ae",
           "relationship": "affects",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/nbk_nabeya_bi_tech_karte_87759_data_leak_20261119/",
@@ -12406,7 +12450,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-25T02:16:29+00:00"
+      "updated_at": "2026-11-25T04:16:21+00:00"
     },
     {
       "id": "958475ed41c0f37d",
