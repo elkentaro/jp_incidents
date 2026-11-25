@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-25T06:16:06+00:00",
-  "total": 1595,
+  "updated_at": "2026-11-25T08:16:27+00:00",
+  "total": 1596,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-25"
@@ -202,7 +202,7 @@
     },
     {
       "date": "2026-10-15",
-      "count": 28
+      "count": 29
     },
     {
       "date": "2026-10-16",
@@ -614,6 +614,10 @@
         },
         {
           "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/95a5173e30cea1ada77610cbbfc55d90a875522f"
+        },
+        {
+          "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/fe67248c885dc3e2757ba16c52b3bfe587d32053"
         },
         {
@@ -642,7 +646,7 @@
       "affected_service": "公式オンラインショップ",
       "service_aliases": [],
       "added_at": "2026-11-24T06:16:28+00:00",
-      "updated_at": "2026-11-25T01:15:59+00:00"
+      "updated_at": "2026-11-25T08:16:27+00:00"
     },
     {
       "id": "58f46d8e07c26b39",
@@ -5391,6 +5395,59 @@
       "updated_at": "2026-11-19T02:15:42+00:00"
     },
     {
+      "id": "cf4cb5e0996a4bdc",
+      "published_at": "2026-11-17T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社産経デジタル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNX19PRWRLSVJtR09YZHZVS2ppXzBiM0FPUTgtYlJFZmJ6bmk2OHJHOUNINkJuR1U4UlJrYVAybER4VWRsWHk4MzJpcVdwdTVlb1lFN2FjXzZCdzZ1R3RRZzlZUFNhT3cyV3FvV3ViN1l3a0YtTUFGcjBuVDI1YldrVDZwbHFvOVk?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMihwFBVV95cUxNX19PRWRLSVJtR09YZHZVS2ppXzBiM0FPUTgtYlJFZmJ6bmk2OHJHOUNINkJuR1U4UlJrYVAybER4VWRsWHk4MzJpcVdwdTVlb1lFN2FjXzZCdzZ1R3RRZzlZUFNhT3cyV3FvV3ViN1l3a0YtTUFGcjBuVDI1YldrVDZwbHFvOVk?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "産経デジタル",
+          "url": "https://www.sankei-digital.co.jp/recruit/news/?post=29896"
+        },
+        {
+          "name": "サンスポ",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNX19PRWRLSVJtR09YZHZVS2ppXzBiM0FPUTgtYlJFZmJ6bmk2OHJHOUNINkJuR1U4UlJrYVAybER4VWRsWHk4MzJpcVdwdTVlb1lFN2FjXzZCdzZ1R3RRZzlZUFNhT3cyV3FvV3ViN1l3a0YtTUFGcjBuVDI1YldrVDZwbHFvOVk?oc=5"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "ZBAT! / 産経ネットショップ",
+      "service_aliases": [],
+      "affected_services": [
+        "ZBAT!",
+        "産経ネットショップ"
+      ],
+      "service_details": [
+        {
+          "name": "ZBAT!",
+          "aliases": []
+        },
+        {
+          "name": "産経ネットショップ",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-18T15:16:38+00:00",
+      "updated_at": "2026-11-25T08:16:27+00:00"
+    },
+    {
       "id": "d7c3301e73f5092c",
       "published_at": "2026-11-17T15:00:00+00:00",
       "disclosed_at": null,
@@ -6101,41 +6158,6 @@
       "service_aliases": [],
       "added_at": "2026-11-20T07:15:59+00:00",
       "updated_at": "2026-11-20T07:15:59+00:00"
-    },
-    {
-      "id": "cf4cb5e0996a4bdc",
-      "published_at": "2026-11-17T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "株式会社産経デジタル",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "8cf67a97b55e1d57",
-          "relationship": "affected_by",
-          "evidence_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNX19PRWRLSVJtR09YZHZVS2ppXzBiM0FPUTgtYlJFZmJ6bmk2OHJHOUNINkJuR1U4UlJrYVAybER4VWRsWHk4MzJpcVdwdTVlb1lFN2FjXzZCdzZ1R3RRZzlZUFNhT3cyV3FvV3ViN1l3a0YtTUFGcjBuVDI1YldrVDZwbHFvOVk?oc=5",
-          "evidence_urls": [
-            "https://news.google.com/rss/articles/CBMihwFBVV95cUxNX19PRWRLSVJtR09YZHZVS2ppXzBiM0FPUTgtYlJFZmJ6bmk2OHJHOUNINkJuR1U4UlJrYVAybER4VWRsWHk4MzJpcVdwdTVlb1lFN2FjXzZCdzZ1R3RRZzlZUFNhT3cyV3FvV3ViN1l3a0YtTUFGcjBuVDI1YldrVDZwbHFvOVk?oc=5"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "サンスポ",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNX19PRWRLSVJtR09YZHZVS2ppXzBiM0FPUTgtYlJFZmJ6bmk2OHJHOUNINkJuR1U4UlJrYVAybER4VWRsWHk4MzJpcVdwdTVlb1lFN2FjXzZCdzZ1R3RRZzlZUFNhT3cyV3FvV3ViN1l3a0YtTUFGcjBuVDI1YldrVDZwbHFvOVk?oc=5"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "ingestion",
-      "affected_service": "ZBAT!",
-      "service_aliases": [],
-      "added_at": "2026-11-18T15:16:38+00:00",
-      "updated_at": "2026-11-18T15:16:38+00:00"
     },
     {
       "id": "eafab0d5bc35266d",
@@ -18732,6 +18754,10 @@
         {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261113579962.pdf"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261124585501.pdf"
         }
       ],
       "affected_system": null,
@@ -18742,7 +18768,7 @@
         "SaaS版"
       ],
       "added_at": "2026-11-13T12:16:47+00:00",
-      "updated_at": "2026-11-13T21:16:06+00:00"
+      "updated_at": "2026-11-25T08:16:27+00:00"
     },
     {
       "id": "a6e801e509730f1e",
@@ -63910,6 +63936,14 @@
           "evidence_urls": [
             "https://www.nttsolmare.com/press/2026/1118.html"
           ]
+        },
+        {
+          "incident_id": "f4b4126d52ffe567",
+          "relationship": "affects",
+          "evidence_url": "https://www.release.tdnet.info/inbs/140120261125585727.pdf",
+          "evidence_urls": [
+            "https://www.release.tdnet.info/inbs/140120261125585727.pdf"
+          ]
         }
       ],
       "sources": [
@@ -63983,7 +64017,7 @@
         }
       ],
       "added_at": "2026-10-19T08:49:15+00:00",
-      "updated_at": "2026-11-21T08:16:17+00:00"
+      "updated_at": "2026-11-25T08:16:27+00:00"
     },
     {
       "id": "dfa3a93d1dda2a35",
@@ -64147,6 +64181,41 @@
       "date_basis": "existing_record",
       "added_at": "2026-10-19T09:06:44+00:00",
       "updated_at": "2026-11-12T08:18:15+00:00"
+    },
+    {
+      "id": "f4b4126d52ffe567",
+      "published_at": "2026-10-14T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "メディアドゥ",
+      "incident_type": "other",
+      "incident_categories": [
+        "other"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [
+        {
+          "incident_id": "cbdf6f7224141cb8",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.release.tdnet.info/inbs/140120261125585727.pdf",
+          "evidence_urls": [
+            "https://www.release.tdnet.info/inbs/140120261125585727.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261125585727.pdf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "コミックシーモア",
+      "service_aliases": [],
+      "added_at": "2026-11-25T08:16:27+00:00",
+      "updated_at": "2026-11-25T08:16:27+00:00"
     },
     {
       "id": "56e180ebe64ee99d",
@@ -72334,6 +72403,10 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118898"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/95a5173e30cea1ada77610cbbfc55d90a875522f"
         }
       ],
       "affected_system": null,
@@ -72343,7 +72416,7 @@
         "Bellezza"
       ],
       "added_at": "2026-11-24T07:16:31+00:00",
-      "updated_at": "2026-11-25T02:16:29+00:00"
+      "updated_at": "2026-11-25T08:16:27+00:00"
     },
     {
       "id": "2e68ea9149cf74c8",
