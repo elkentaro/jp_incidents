@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-25T08:16:27+00:00",
-  "total": 1596,
+  "updated_at": "2026-11-25T09:16:11+00:00",
+  "total": 1599,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-25"
@@ -362,11 +362,11 @@
     },
     {
       "date": "2026-11-24",
-      "count": 10
+      "count": 11
     },
     {
       "date": "2026-11-25",
-      "count": 6
+      "count": 7
     }
   ],
   "incidents": [
@@ -471,6 +471,30 @@
       "service_aliases": [],
       "added_at": "2026-11-24T23:15:59+00:00",
       "updated_at": "2026-11-25T03:16:08+00:00"
+    },
+    {
+      "id": "c7a8c86149d0e030",
+      "published_at": "2026-11-24T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "共英製鋼",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUF256JO0V21C26A1000000/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "added_at": "2026-11-25T09:16:11+00:00",
+      "updated_at": "2026-11-25T09:16:11+00:00"
     },
     {
       "id": "34634d72d864a2e4",
@@ -912,6 +936,42 @@
       "date_basis": "discovery",
       "added_at": "2026-11-24T08:16:51+00:00",
       "updated_at": "2026-11-24T08:16:51+00:00"
+    },
+    {
+      "id": "e9ae353ce36b7049",
+      "published_at": "2026-11-23T15:00:00+00:00",
+      "disclosed_at": "2026-11-24T15:00:00+00:00",
+      "organization": "パルシステム生活協同組合連合会",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1997972,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/pal-system-karte-1997972-data-breach-202611/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/pal-system-karte-1997972-data-breach-202611/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/pal-system-karte-1997972-data-breach-202611/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "KARTE",
+      "service_aliases": [],
+      "added_at": "2026-11-25T09:16:11+00:00",
+      "updated_at": "2026-11-25T09:16:11+00:00"
     },
     {
       "id": "02aed220f1f4fe38",
@@ -6630,6 +6690,10 @@
           "url": "https://www.metro.tokyo.lg.jp/information/press/2026/11/2026111905"
         },
         {
+          "name": "東京都 / Tokyo Metropolitan Government",
+          "url": "https://www.metro.tokyo.lg.jp/information/press/2026/11/2026112507"
+        },
+        {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/d4b8f67758b651750a57ee748d53375ffc16a12e"
         },
@@ -6643,7 +6707,7 @@
       "affected_service": "赤ちゃんファーストポイント交換サイト",
       "service_aliases": [],
       "added_at": "2026-11-19T13:18:58+00:00",
-      "updated_at": "2026-11-19T14:18:14+00:00"
+      "updated_at": "2026-11-25T09:16:11+00:00"
     },
     {
       "id": "8cb6d0590720520f",
@@ -12467,6 +12531,14 @@
           ]
         },
         {
+          "incident_id": "e9ae353ce36b7049",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/pal-system-karte-1997972-data-breach-202611/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/pal-system-karte-1997972-data-breach-202611/"
+          ]
+        },
+        {
           "incident_id": "ee71a787184a6cd7",
           "relationship": "affects",
           "evidence_url": "https://www.city.kakogawa.lg.jp/kosodate_site/genre/4/2/51427.html",
@@ -12602,7 +12674,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-25T04:16:21+00:00"
+      "updated_at": "2026-11-25T09:16:11+00:00"
     },
     {
       "id": "958475ed41c0f37d",
@@ -16179,6 +16251,53 @@
       "updated_at": "2026-11-18T00:16:21+00:00"
     },
     {
+      "id": "054bbb9b5e84dc1f",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": "2026-11-12T15:00:00+00:00",
+      "organization": "山善",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 10555,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://s.netsecurity.ne.jp/article/img/2026/11/25/56894/56305.html"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRVA3TjBMVUlNS2FpdW03bVExYndKQ1pqS1VSdkVwbGlnMXlIZE9wRWNOWkYwZTI3SjA1UnVDdnFlRlU4RFF1S29RWjBnX0FFbExINXBFNlhCU2hCOEZGbnNhdXpGbE8xY0g1TU83MGtpX0diXzQxWjZUSWZnS1N5NTlFNWJ2Q0VMSmZST0FOTzdacngwTnhOWjNvVTFnMl96eUhQaFE3VHQ?oc=5"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/25/56894.html"
+        }
+      ],
+      "affected_service": "山善ビズコム / 問い合わせ情報",
+      "service_aliases": [],
+      "affected_services": [
+        "山善ビズコム",
+        "問い合わせ情報"
+      ],
+      "service_details": [
+        {
+          "name": "山善ビズコム",
+          "aliases": []
+        },
+        {
+          "name": "問い合わせ情報",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-16T14:16:05+00:00",
+      "updated_at": "2026-11-25T09:16:11+00:00"
+    },
+    {
       "id": "08d395a9f3838df8",
       "published_at": "2026-11-10T15:00:00+00:00",
       "disclosed_at": "2026-11-10T15:00:00+00:00",
@@ -17160,49 +17279,6 @@
       "service_aliases": [],
       "added_at": "2026-11-13T13:17:15+00:00",
       "updated_at": "2026-11-20T08:16:43+00:00"
-    },
-    {
-      "id": "054bbb9b5e84dc1f",
-      "published_at": "2026-11-10T15:00:00+00:00",
-      "disclosed_at": "2026-11-12T15:00:00+00:00",
-      "organization": "山善",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 10555,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRVA3TjBMVUlNS2FpdW03bVExYndKQ1pqS1VSdkVwbGlnMXlIZE9wRWNOWkYwZTI3SjA1UnVDdnFlRlU4RFF1S29RWjBnX0FFbExINXBFNlhCU2hCOEZGbnNhdXpGbE8xY0g1TU83MGtpX0diXzQxWjZUSWZnS1N5NTlFNWJ2Q0VMSmZST0FOTzdacngwTnhOWjNvVTFnMl96eUhQaFE3VHQ?oc=5"
-        },
-        {
-          "name": "ScanNetSecurity",
-          "url": "https://scan.netsecurity.ne.jp/article/2026/11/25/56894.html"
-        }
-      ],
-      "affected_service": "山善ビズコム / 問い合わせ情報",
-      "service_aliases": [],
-      "affected_services": [
-        "山善ビズコム",
-        "問い合わせ情報"
-      ],
-      "service_details": [
-        {
-          "name": "山善ビズコム",
-          "aliases": []
-        },
-        {
-          "name": "問い合わせ情報",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-16T14:16:05+00:00",
-      "updated_at": "2026-11-25T00:16:17+00:00"
     },
     {
       "id": "33868e758324fd57",
@@ -31420,6 +31496,10 @@
           "url": "https://www.city.sendai.jp/kosekijumin/20261106.html"
         },
         {
+          "name": "仙台市 / Sendai",
+          "url": "https://www.city.sendai.jp/kosekijumin/20261125_2.html"
+        },
+        {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/cb219146e580193259b48763074cab659b6c35ec"
         },
@@ -31435,7 +31515,7 @@
       "affected_service": "マイナンバーカード交付予約・管理システム",
       "service_aliases": [],
       "added_at": "2026-11-06T10:15:48+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-25T09:16:11+00:00"
     },
     {
       "id": "4daeb8965b6e424d",
@@ -72485,6 +72565,32 @@
       ],
       "added_at": "2026-10-31T20:15:52+00:00",
       "updated_at": "2026-11-12T08:18:15+00:00"
+    },
+    {
+      "id": "9e21ebb7b6285cd1",
+      "published_at": "2025-07-14T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "サツドラホールディングス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 229026,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/78219e7c200aa24500c4d4abf0724e3a4d031205"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "サツドラ公式アプリ",
+      "service_aliases": [],
+      "added_at": "2026-11-25T09:16:11+00:00",
+      "updated_at": "2026-11-25T09:16:11+00:00"
     },
     {
       "id": "77f00ceb78f6b618",
