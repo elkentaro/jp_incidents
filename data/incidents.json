@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-26T08:16:23+00:00",
-  "total": 1641,
+  "updated_at": "2026-11-26T09:16:34+00:00",
+  "total": 1644,
   "date_range": {
     "start": "2023-01-01",
     "end": "2026-11-26"
@@ -202,7 +202,7 @@
     },
     {
       "date": "2026-10-16",
-      "count": 37
+      "count": 38
     },
     {
       "date": "2026-10-17",
@@ -338,7 +338,7 @@
     },
     {
       "date": "2026-11-19",
-      "count": 32
+      "count": 33
     },
     {
       "date": "2026-11-20",
@@ -366,7 +366,7 @@
     },
     {
       "date": "2026-11-26",
-      "count": 4
+      "count": 5
     }
   ],
   "incidents": [
@@ -397,6 +397,10 @@
         {
           "name": "みずほ銀行 / Mizuho Bank",
           "url": "https://www.mizuhobank.co.jp/release/pdf/20261126release_jp.pdf"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUB266I30W6A121C2000000/"
         }
       ],
       "affected_system": null,
@@ -404,7 +408,7 @@
       "affected_service": "KARTE",
       "service_aliases": [],
       "added_at": "2026-11-26T08:16:23+00:00",
-      "updated_at": "2026-11-26T08:16:23+00:00"
+      "updated_at": "2026-11-26T09:16:34+00:00"
     },
     {
       "id": "4bcad0f9c1d9e6e0",
@@ -423,8 +427,9 @@
         {
           "incident_id": "8cf67a97b55e1d57",
           "relationship": "affected_by",
-          "evidence_url": "https://prtimes.jp/main/html/rd/p/000001503.000029460.html",
+          "evidence_url": "https://cybersecurity-jp.com/news/118983",
           "evidence_urls": [
+            "https://cybersecurity-jp.com/news/118983",
             "https://prtimes.jp/main/html/rd/p/000001503.000029460.html"
           ]
         }
@@ -437,6 +442,10 @@
         {
           "name": "ニューバランス",
           "url": "https://company.newbalance.jp/press/2026/p-74134"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118983"
         },
         {
           "name": "PR TIMES",
@@ -452,7 +461,43 @@
       "affected_service": "ニューバランス公式オンラインストア",
       "service_aliases": [],
       "added_at": "2026-11-26T02:16:13+00:00",
-      "updated_at": "2026-11-26T05:16:15+00:00"
+      "updated_at": "2026-11-26T09:16:34+00:00"
+    },
+    {
+      "id": "b79b4a918f3bda40",
+      "published_at": "2026-11-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "国分グループ本社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 8590,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.kokubu.co.jp/news/2026/detail/1126170000.html",
+          "evidence_urls": [
+            "https://www.kokubu.co.jp/news/2026/detail/1126170000.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "国分グループ / Kokubu Group",
+          "url": "https://www.kokubu.co.jp/news/2026/detail/1126170000.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "ROJI日本橋オンラインストア",
+      "service_aliases": [],
+      "added_at": "2026-11-26T09:16:34+00:00",
+      "updated_at": "2026-11-26T09:16:34+00:00"
     },
     {
       "id": "2a9dfbf41b69a8b3",
@@ -484,6 +529,10 @@
         {
           "name": "日本経済新聞",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1ycVlPRFFrb2JJem93WkFHSXNhUnd4a2RFOXdJNWowOEhObHloVV9pWkxiTDVkeTZFempJSmNsaGxJdmo2UFUyVVpYaFFHeUd1OUs4RTdkanRUZk5WUWF5R2tLUzFJYkRTSHc?oc=5"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/toreba_openlogi_31730_data_breach_20261126/"
         }
       ],
       "affected_system": null,
@@ -491,7 +540,7 @@
       "affected_service": "オンラインゲーム",
       "service_aliases": [],
       "added_at": "2026-11-26T05:16:15+00:00",
-      "updated_at": "2026-11-26T07:16:58+00:00"
+      "updated_at": "2026-11-26T09:16:34+00:00"
     },
     {
       "id": "96389c68e1bd321a",
@@ -714,6 +763,40 @@
       "date_basis": "first_disclosure",
       "added_at": "2026-11-26T03:16:09+00:00",
       "updated_at": "2026-11-26T03:16:09+00:00"
+    },
+    {
+      "id": "83001097c7f97942",
+      "published_at": "2026-11-24T15:00:00+00:00",
+      "disclosed_at": "2026-11-24T15:00:00+00:00",
+      "organization": "ENEOS",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/14ea5722f27d67e446780f7175106fa6f8cfbd5e"
+        },
+        {
+          "name": "産経ニュース",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE56d2tFM1Z3VUdHenVhdHB6aGNnWFIwTEo2MzFPX1B1bDdqajZRa0JDOU9MMUluVFFxalZUSS1oLXByOGpHOGFSQ1NqS3ZPdmt0WU0yWm1RQk1UTDlrOThYUFNCUXRzbkRIRmVrT2trQzd0WlpCX2c?oc=5"
+        },
+        {
+          "name": "sbapp.net",
+          "url": "https://sbapp.net/appnews/iphone/review/eneos-app-outage-190150"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118982"
+        }
+      ],
+      "added_at": "2026-11-26T00:16:31+00:00",
+      "updated_at": "2026-11-26T09:16:34+00:00"
     },
     {
       "id": "87f218998db1816c",
@@ -1075,32 +1158,6 @@
       "service_aliases": [],
       "added_at": "2026-11-25T10:16:21+00:00",
       "updated_at": "2026-11-25T10:16:21+00:00"
-    },
-    {
-      "id": "83001097c7f97942",
-      "published_at": "2026-11-24T15:00:00+00:00",
-      "disclosed_at": "2026-11-24T15:00:00+00:00",
-      "organization": "ENEOS",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "産経ニュース",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE56d2tFM1Z3VUdHenVhdHB6aGNnWFIwTEo2MzFPX1B1bDdqajZRa0JDOU9MMUluVFFxalZUSS1oLXByOGpHOGFSQ1NqS3ZPdmt0WU0yWm1RQk1UTDlrOThYUFNCUXRzbkRIRmVrT2trQzd0WlpCX2c?oc=5"
-        },
-        {
-          "name": "sbapp.net",
-          "url": "https://sbapp.net/appnews/iphone/review/eneos-app-outage-190150"
-        }
-      ],
-      "added_at": "2026-11-26T00:16:31+00:00",
-      "updated_at": "2026-11-26T06:16:57+00:00"
     },
     {
       "id": "8c105a990dd27c1a",
@@ -5006,6 +5063,31 @@
       "upstream_status": "outside_japan",
       "added_at": "2026-11-19T11:17:52+00:00",
       "updated_at": "2026-11-19T11:17:52+00:00"
+    },
+    {
+      "id": "a9d46f4dc04f3cf4",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": "2026-11-24T15:00:00+00:00",
+      "organization": "1Password",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/5ba5da26054c5441aafad938989643bdbe452c1a"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "added_at": "2026-11-26T09:16:34+00:00",
+      "updated_at": "2026-11-26T09:16:34+00:00"
     },
     {
       "id": "d832febcbc03fa90",
@@ -13203,8 +13285,9 @@
         {
           "incident_id": "4bcad0f9c1d9e6e0",
           "relationship": "affects",
-          "evidence_url": "https://prtimes.jp/main/html/rd/p/000001503.000029460.html",
+          "evidence_url": "https://cybersecurity-jp.com/news/118983",
           "evidence_urls": [
+            "https://cybersecurity-jp.com/news/118983",
             "https://prtimes.jp/main/html/rd/p/000001503.000029460.html"
           ]
         },
@@ -13754,6 +13837,14 @@
           ]
         },
         {
+          "incident_id": "b79b4a918f3bda40",
+          "relationship": "affects",
+          "evidence_url": "https://www.kokubu.co.jp/news/2026/detail/1126170000.html",
+          "evidence_urls": [
+            "https://www.kokubu.co.jp/news/2026/detail/1126170000.html"
+          ]
+        },
+        {
           "incident_id": "ba4a0092ac388e60",
           "relationship": "affects",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/shikoku_bank_mikatano_karte_data_breach_202611/",
@@ -14102,7 +14193,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-26T08:16:23+00:00"
+      "updated_at": "2026-11-26T09:16:34+00:00"
     },
     {
       "id": "8ea683a4f9752ffb",
@@ -27122,6 +27213,10 @@
           "url": "https://www.docomo.ne.jp/info/notice/page/261122_00_m.html"
         },
         {
+          "name": "NTTドコモ お知らせ / NTT DOCOMO notices",
+          "url": "https://www.docomo.ne.jp/info/notice/page/261126_00_m.html"
+        },
+        {
           "name": "テレ朝NEWS",
           "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE83NmlNT2lnS3hPb19GYXFwQ0ZyVmlWRS1SWkE3dTMzZU9DeHZpakx3SXlZa21QVmxBLWRnMGdGdWdDS2ZCNG8wQXgzeFZJUF9PR19NZkhnZzJuUXMyX0s3OHdSbFBzdW03MTFsbkhhdzQ4Zw?oc=5"
         },
@@ -27193,7 +27288,7 @@
         }
       ],
       "added_at": "2026-11-05T04:16:40+00:00",
-      "updated_at": "2026-11-22T10:15:59+00:00"
+      "updated_at": "2026-11-26T09:16:34+00:00"
     },
     {
       "id": "5ab603a107654652",
@@ -60318,6 +60413,14 @@
           ]
         },
         {
+          "incident_id": "03d7f75371c15619",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/impact_field_cuenote_fc_561852_data_breach_20261124/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/impact_field_cuenote_fc_561852_data_breach_20261124/"
+          ]
+        },
+        {
           "incident_id": "057f822d645443ee",
           "relationship": "affects",
           "evidence_url": "https://www.jpma.or.jp/news_room/release/2026/261030.html",
@@ -60693,7 +60796,7 @@
         }
       ],
       "added_at": "2026-10-19T13:14:57+00:00",
-      "updated_at": "2026-11-21T08:16:17+00:00"
+      "updated_at": "2026-11-26T09:16:34+00:00"
     },
     {
       "id": "15204b629222c010",
@@ -63263,6 +63366,42 @@
       "date_basis": "existing_record",
       "added_at": "2026-10-19T08:49:15+00:00",
       "updated_at": "2026-11-12T08:18:15+00:00"
+    },
+    {
+      "id": "03d7f75371c15619",
+      "published_at": "2026-10-15T15:00:00+00:00",
+      "disclosed_at": "2026-11-23T15:00:00+00:00",
+      "organization": "インパクトフィールド",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 561852,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "0a86ecb2b2d87e50",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/impact_field_cuenote_fc_561852_data_breach_20261124/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/impact_field_cuenote_fc_561852_data_breach_20261124/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/impact_field_cuenote_fc_561852_data_breach_20261124/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "Cuenote FC",
+      "service_aliases": [],
+      "added_at": "2026-11-26T09:16:34+00:00",
+      "updated_at": "2026-11-26T09:16:34+00:00"
     },
     {
       "id": "05d3dac3e47e2bee",
@@ -73258,6 +73397,41 @@
       "updated_at": "2026-11-17T20:16:23+00:00"
     },
     {
+      "id": "9ba22e1affa26b45",
+      "published_at": "2026-09-30T15:00:00+00:00",
+      "disclosed_at": "2026-11-24T15:00:00+00:00",
+      "organization": "文部科学省",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 163953,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/mext-government-procurement-system-163953-data-breach/"
+        },
+        {
+          "name": "株式会社アクト",
+          "url": "https://act1.co.jp/2026-11-26-07/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118985"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "政府調達情報システム",
+      "service_aliases": [],
+      "added_at": "2026-11-26T08:16:23+00:00",
+      "updated_at": "2026-11-26T09:16:34+00:00"
+    },
+    {
       "id": "6e98db27d20a8c6c",
       "published_at": "2026-09-30T15:00:00+00:00",
       "disclosed_at": null,
@@ -73289,33 +73463,6 @@
       "date_basis": "publication",
       "added_at": "2026-11-17T20:16:23+00:00",
       "updated_at": "2026-11-17T20:16:23+00:00"
-    },
-    {
-      "id": "9ba22e1affa26b45",
-      "published_at": "2026-09-30T15:00:00+00:00",
-      "disclosed_at": "2026-11-24T15:00:00+00:00",
-      "organization": "文部科学省",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 163953,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/mext-government-procurement-system-163953-data-breach/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "discovery",
-      "affected_service": "政府調達情報システム",
-      "service_aliases": [],
-      "added_at": "2026-11-26T08:16:23+00:00",
-      "updated_at": "2026-11-26T08:16:23+00:00"
     },
     {
       "id": "0e5a5f861e9983dc",
@@ -74732,6 +74879,14 @@
         {
           "name": "TBS NEWS DIG",
           "url": "https://newsdig.tbs.co.jp/articles/-/3113329?display=1"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/118984"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/adire-mailshonin-1828-personal-data-breach/"
         }
       ],
       "affected_system": null,
@@ -74739,7 +74894,7 @@
       "affected_service": "ウェブサイトの問い合わせフォーム",
       "service_aliases": [],
       "added_at": "2026-11-26T06:16:57+00:00",
-      "updated_at": "2026-11-26T08:16:23+00:00"
+      "updated_at": "2026-11-26T09:16:34+00:00"
     }
   ],
   "aliases": {
