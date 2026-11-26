@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-26T07:16:58+00:00",
-  "total": 1634,
+  "updated_at": "2026-11-26T08:16:23+00:00",
+  "total": 1641,
   "date_range": {
     "start": "2023-01-01",
     "end": "2026-11-26"
@@ -122,7 +122,7 @@
     },
     {
       "date": "2026-09-26",
-      "count": 0
+      "count": 1
     },
     {
       "date": "2026-09-27",
@@ -142,7 +142,7 @@
     },
     {
       "date": "2026-10-01",
-      "count": 6
+      "count": 7
     },
     {
       "date": "2026-10-02",
@@ -294,7 +294,7 @@
     },
     {
       "date": "2026-11-08",
-      "count": 11
+      "count": 12
     },
     {
       "date": "2026-11-09",
@@ -330,7 +330,7 @@
     },
     {
       "date": "2026-11-17",
-      "count": 36
+      "count": 37
     },
     {
       "date": "2026-11-18",
@@ -362,14 +362,50 @@
     },
     {
       "date": "2026-11-25",
-      "count": 20
+      "count": 22
     },
     {
       "date": "2026-11-26",
-      "count": 3
+      "count": 4
     }
   ],
   "incidents": [
+    {
+      "id": "27cf8f27821c244d",
+      "published_at": "2026-11-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "みずほ銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 33224,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.mizuhobank.co.jp/release/pdf/20261126release_jp.pdf",
+          "evidence_urls": [
+            "https://www.mizuhobank.co.jp/release/pdf/20261126release_jp.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "みずほ銀行 / Mizuho Bank",
+          "url": "https://www.mizuhobank.co.jp/release/pdf/20261126release_jp.pdf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "KARTE",
+      "service_aliases": [],
+      "added_at": "2026-11-26T08:16:23+00:00",
+      "updated_at": "2026-11-26T08:16:23+00:00"
+    },
     {
       "id": "4bcad0f9c1d9e6e0",
       "published_at": "2026-11-25T15:00:00+00:00",
@@ -606,6 +642,47 @@
       "updated_at": "2026-11-26T06:16:57+00:00"
     },
     {
+      "id": "7752de567c343fe3",
+      "published_at": "2026-11-24T15:00:00+00:00",
+      "disclosed_at": "2026-11-24T15:00:00+00:00",
+      "organization": "アウトレットプラザ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/outletplaza_ec_data_breach_20261126/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "アウトレットプラザ / プレミアムアウトレットプラザ",
+      "service_aliases": [],
+      "affected_services": [
+        "アウトレットプラザ",
+        "プレミアムアウトレットプラザ"
+      ],
+      "service_details": [
+        {
+          "name": "アウトレットプラザ",
+          "aliases": []
+        },
+        {
+          "name": "プレミアムアウトレットプラザ",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-26T08:16:23+00:00",
+      "updated_at": "2026-11-26T08:16:23+00:00"
+    },
+    {
       "id": "7a44c12f9ef26a89",
       "published_at": "2026-11-24T15:00:00+00:00",
       "disclosed_at": "2026-11-24T15:00:00+00:00",
@@ -666,6 +743,31 @@
       "service_aliases": [],
       "added_at": "2026-11-26T04:16:07+00:00",
       "updated_at": "2026-11-26T04:16:07+00:00"
+    },
+    {
+      "id": "a53cf1119db65c04",
+      "published_at": "2026-11-24T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社ヤマップ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 779,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "株式会社ヤマップ / YAMAP",
+          "url": "https://corporate.yamap.co.jp/news/UgX5Wjfy"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "added_at": "2026-11-26T08:16:23+00:00",
+      "updated_at": "2026-11-26T08:16:23+00:00"
     },
     {
       "id": "b5f986abc9fbf0d9",
@@ -7727,6 +7829,42 @@
       "updated_at": "2026-11-20T02:19:03+00:00"
     },
     {
+      "id": "7a51d768b86d8549",
+      "published_at": "2026-11-16T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "Peach Aviation",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 9440000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.flypeach.com/application/files/2417/9567/2811/20261126_INFO_JP.pdf",
+          "evidence_urls": [
+            "https://www.flypeach.com/application/files/2417/9567/2811/20261126_INFO_JP.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Peach Aviation",
+          "url": "https://www.flypeach.com/application/files/2417/9567/2811/20261126_INFO_JP.pdf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "KARTE",
+      "service_aliases": [],
+      "added_at": "2026-11-26T08:16:23+00:00",
+      "updated_at": "2026-11-26T08:16:23+00:00"
+    },
+    {
       "id": "7cbbacf6bb6ad215",
       "published_at": "2026-11-16T15:00:00+00:00",
       "disclosed_at": null,
@@ -9350,12 +9488,13 @@
         {
           "incident_id": "8cf67a97b55e1d57",
           "relationship": "affected_by",
-          "evidence_url": "https://cybersecurity-jp.com/news/118526",
+          "evidence_url": "https://www.yonden.co.jp/press/2026/__icsFiles/afieldfile/2026/11/26/pr006_1.pdf",
           "evidence_urls": [
             "https://cybersecurity-jp.com/news/118526",
             "https://news.ksb.co.jp/article/17054844",
             "https://www.sbbit.jp/article/cont1/188450",
-            "https://www.yonden.co.jp/press/2026/__icsFiles/afieldfile/2026/11/16/pr003.pdf"
+            "https://www.yonden.co.jp/press/2026/__icsFiles/afieldfile/2026/11/16/pr003.pdf",
+            "https://www.yonden.co.jp/press/2026/__icsFiles/afieldfile/2026/11/26/pr006_1.pdf"
           ]
         }
       ],
@@ -9371,6 +9510,10 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/shikoku-electric-yonden-concierge-karte-data-leak-20261116/"
+        },
+        {
+          "name": "四国電力 / Shikoku Electric Power",
+          "url": "https://www.yonden.co.jp/press/2026/__icsFiles/afieldfile/2026/11/26/pr006_1.pdf"
         },
         {
           "name": "Yahoo!ニュース",
@@ -9402,7 +9545,7 @@
       "affected_service": "よんでんコンシェルジュ",
       "service_aliases": [],
       "added_at": "2026-11-16T10:15:49+00:00",
-      "updated_at": "2026-11-17T02:16:00+00:00"
+      "updated_at": "2026-11-26T08:16:23+00:00"
     },
     {
       "id": "70fc40a1ac3fac36",
@@ -12991,6 +13134,14 @@
           ]
         },
         {
+          "incident_id": "27cf8f27821c244d",
+          "relationship": "affects",
+          "evidence_url": "https://www.mizuhobank.co.jp/release/pdf/20261126release_jp.pdf",
+          "evidence_urls": [
+            "https://www.mizuhobank.co.jp/release/pdf/20261126release_jp.pdf"
+          ]
+        },
+        {
           "incident_id": "2880d200bc56b5c0",
           "relationship": "affects",
           "evidence_url": "https://www.sanyo-shokai.co.jp/important/2026/11/17-1301.html",
@@ -13160,12 +13311,13 @@
         {
           "incident_id": "6389e5938078c76d",
           "relationship": "affects",
-          "evidence_url": "https://cybersecurity-jp.com/news/118526",
+          "evidence_url": "https://www.yonden.co.jp/press/2026/__icsFiles/afieldfile/2026/11/26/pr006_1.pdf",
           "evidence_urls": [
             "https://cybersecurity-jp.com/news/118526",
             "https://news.ksb.co.jp/article/17054844",
             "https://www.sbbit.jp/article/cont1/188450",
-            "https://www.yonden.co.jp/press/2026/__icsFiles/afieldfile/2026/11/16/pr003.pdf"
+            "https://www.yonden.co.jp/press/2026/__icsFiles/afieldfile/2026/11/16/pr003.pdf",
+            "https://www.yonden.co.jp/press/2026/__icsFiles/afieldfile/2026/11/26/pr006_1.pdf"
           ]
         },
         {
@@ -13283,6 +13435,14 @@
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/fit-chan-laponte-karte-33222-data-breach-20261125/",
           "evidence_urls": [
             "https://rocket-boys.co.jp/security-measures-lab/fit-chan-laponte-karte-33222-data-breach-20261125/"
+          ]
+        },
+        {
+          "incident_id": "7a51d768b86d8549",
+          "relationship": "affects",
+          "evidence_url": "https://www.flypeach.com/application/files/2417/9567/2811/20261126_INFO_JP.pdf",
+          "evidence_urls": [
+            "https://www.flypeach.com/application/files/2417/9567/2811/20261126_INFO_JP.pdf"
           ]
         },
         {
@@ -13942,7 +14102,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-26T06:16:57+00:00"
+      "updated_at": "2026-11-26T08:16:23+00:00"
     },
     {
       "id": "8ea683a4f9752ffb",
@@ -23106,6 +23266,33 @@
       ],
       "added_at": "2026-11-09T20:16:13+00:00",
       "updated_at": "2026-11-09T20:16:13+00:00"
+    },
+    {
+      "id": "216aab0416ecb893",
+      "published_at": "2026-11-07T15:00:00+00:00",
+      "disclosed_at": "2026-11-24T15:00:00+00:00",
+      "organization": "クリエイト",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 2764,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/create-web-download-2764-password-data-breach-202611/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "WEBダウンロードシステム",
+      "service_aliases": [],
+      "added_at": "2026-11-26T08:16:23+00:00",
+      "updated_at": "2026-11-26T08:16:23+00:00"
     },
     {
       "id": "57d15baf7435e548",
@@ -73104,6 +73291,33 @@
       "updated_at": "2026-11-17T20:16:23+00:00"
     },
     {
+      "id": "9ba22e1affa26b45",
+      "published_at": "2026-09-30T15:00:00+00:00",
+      "disclosed_at": "2026-11-24T15:00:00+00:00",
+      "organization": "文部科学省",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 163953,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/mext-government-procurement-system-163953-data-breach/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "政府調達情報システム",
+      "service_aliases": [],
+      "added_at": "2026-11-26T08:16:23+00:00",
+      "updated_at": "2026-11-26T08:16:23+00:00"
+    },
+    {
       "id": "0e5a5f861e9983dc",
       "published_at": "2026-09-29T15:00:00+00:00",
       "disclosed_at": "2026-10-19T15:00:00+00:00",
@@ -73362,6 +73576,31 @@
       ],
       "added_at": "2026-11-25T10:16:21+00:00",
       "updated_at": "2026-11-26T03:16:09+00:00"
+    },
+    {
+      "id": "cc5080b1ef87816f",
+      "published_at": "2026-09-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "広島修道大学",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "広島修道大学",
+          "url": "https://www.shudo-u.ac.jp/news/20261126-unauthorizedaccess.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "added_at": "2026-11-26T08:16:23+00:00",
+      "updated_at": "2026-11-26T08:16:23+00:00"
     },
     {
       "id": "f5bd0f1b378e6b8e",
@@ -74457,8 +74696,8 @@
         "unauthorized access"
       ],
       "potential_records": 1828,
-      "confidence": "medium",
-      "confidence_score": 50,
+      "confidence": "high",
+      "confidence_score": 90,
       "related": [
         {
           "incident_id": "5b02019999cfdf0b",
@@ -74472,7 +74711,27 @@
       "sources": [
         {
           "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/3fd0ee18b0a0be6ddfbe9840232342d3030a0e7f?source=rss"
+        },
+        {
+          "name": "ライブドアニュース",
+          "url": "https://news.livedoor.com/article/detail/32906140/"
+        },
+        {
+          "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/7e2b91f3aa3fd28cb098e342a3c278a32094171a"
+        },
+        {
+          "name": "ABEMA TIMES",
+          "url": "https://times.abema.tv/articles/-/10292323"
+        },
+        {
+          "name": "Infoseek",
+          "url": "https://news.infoseek.co.jp/article/mainichi_20261126k0000m040151000c/"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/-/3113329?display=1"
         }
       ],
       "affected_system": null,
@@ -74480,7 +74739,7 @@
       "affected_service": "ウェブサイトの問い合わせフォーム",
       "service_aliases": [],
       "added_at": "2026-11-26T06:16:57+00:00",
-      "updated_at": "2026-11-26T07:16:58+00:00"
+      "updated_at": "2026-11-26T08:16:23+00:00"
     }
   ],
   "aliases": {
