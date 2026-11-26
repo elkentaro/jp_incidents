@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-26T04:16:07+00:00",
-  "total": 1627,
+  "updated_at": "2026-11-26T05:16:15+00:00",
+  "total": 1629,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-26"
@@ -366,7 +366,7 @@
     },
     {
       "date": "2026-11-26",
-      "count": 1
+      "count": 3
     }
   ],
   "incidents": [
@@ -399,6 +399,10 @@
           "url": "https://sportsmania.jp/370833/"
         },
         {
+          "name": "ニューバランス",
+          "url": "https://company.newbalance.jp/press/2026/p-74134"
+        },
+        {
           "name": "PR TIMES",
           "url": "https://prtimes.jp/main/html/rd/p/000001503.000029460.html"
         },
@@ -412,7 +416,66 @@
       "affected_service": "ニューバランス公式オンラインストア",
       "service_aliases": [],
       "added_at": "2026-11-26T02:16:13+00:00",
-      "updated_at": "2026-11-26T03:16:09+00:00"
+      "updated_at": "2026-11-26T05:16:15+00:00"
+    },
+    {
+      "id": "2a9dfbf41b69a8b3",
+      "published_at": "2026-11-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "トレバ株式会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 31730,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261126586608.pdf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-26T05:16:15+00:00",
+      "updated_at": "2026-11-26T05:16:15+00:00"
+    },
+    {
+      "id": "96389c68e1bd321a",
+      "published_at": "2026-11-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "THK",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "15e3f49b51019cdf",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/thk_chatplus_customer_information_leak_202611/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/thk_chatplus_customer_information_leak_202611/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/thk_chatplus_customer_information_leak_202611/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "Webサイトの問い合わせ用チャット機能",
+      "service_aliases": [],
+      "added_at": "2026-11-26T05:16:15+00:00",
+      "updated_at": "2026-11-26T05:16:15+00:00"
     },
     {
       "id": "16c10d87d005d1bb",
@@ -6556,6 +6619,10 @@
         {
           "name": "legalagent list",
           "url": "https://www.mtg.gr.jp/news/detail/2026/11/article_2690.html"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/mtg_my_refa_5115_data_breach_202611/"
         }
       ],
       "affected_system": null,
@@ -6563,7 +6630,7 @@
       "affected_service": "My ReFa",
       "service_aliases": [],
       "added_at": "2026-11-21T09:15:57+00:00",
-      "updated_at": "2026-11-21T09:15:57+00:00"
+      "updated_at": "2026-11-26T05:16:15+00:00"
     },
     {
       "id": "eea4c1583fc1df4a",
@@ -10709,6 +10776,10 @@
         {
           "name": "PR TIMES",
           "url": "https://prtimes.jp/main/html/rd/p/000000478.000055758.html"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/takara_belmont_beauty_city_tb_web_order_karte_32419_data_breach_2026/"
         }
       ],
       "affected_system": null,
@@ -10730,7 +10801,7 @@
         }
       ],
       "added_at": "2026-11-19T08:17:17+00:00",
-      "updated_at": "2026-11-19T22:19:27+00:00"
+      "updated_at": "2026-11-26T05:16:15+00:00"
     },
     {
       "id": "a7b7f83b618baa46",
@@ -11725,6 +11796,14 @@
             "https://cybersecurity-jp.com/news/118921",
             "https://news.google.com/rss/articles/CBMilAFBVV95cUxQLWNubW1BaFN4S05JU2w3NGlrcVVNVUtwOUVsYzBQdUwzMlZWMUxCUUY0VW9xam14UE1aLUJDX1d1azJIdUJiaVBPcXhsZXRKR1RJWGtQWkNSSG9wcGJBeDNKNnU1LTRZZzlmVEZqM1JmX19KWWpFTnlYTFg3bmlVRndGaEFfOTMzNVAtVGRoblFMUWc5?oc=5"
           ]
+        },
+        {
+          "incident_id": "96389c68e1bd321a",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/thk_chatplus_customer_information_leak_202611/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/thk_chatplus_customer_information_leak_202611/"
+          ]
         }
       ],
       "sources": [
@@ -11773,7 +11852,7 @@
         }
       ],
       "added_at": "2026-11-17T11:16:33+00:00",
-      "updated_at": "2026-11-26T02:16:13+00:00"
+      "updated_at": "2026-11-26T05:16:15+00:00"
     },
     {
       "id": "18a371b6c319d3a5",
