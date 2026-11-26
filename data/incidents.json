@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-26T15:15:58+00:00",
-  "total": 1650,
+  "updated_at": "2026-11-26T17:15:57+00:00",
+  "total": 1652,
   "date_range": {
     "start": "2023-01-01",
     "end": "2026-11-26"
@@ -334,7 +334,7 @@
     },
     {
       "date": "2026-11-19",
-      "count": 33
+      "count": 34
     },
     {
       "date": "2026-11-20",
@@ -350,7 +350,7 @@
     },
     {
       "date": "2026-11-23",
-      "count": 1
+      "count": 2
     },
     {
       "date": "2026-11-24",
@@ -405,14 +405,20 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUB266I30W6A121C2000000/"
+        },
+        {
+          "name": "ニッキンONLINE",
+          "url": "https://www.nikkinonline.com/article/442924"
         }
       ],
       "affected_system": null,
       "date_basis": "publication",
       "affected_service": "KARTE",
-      "service_aliases": [],
+      "service_aliases": [
+        "カルテ"
+      ],
       "added_at": "2026-11-26T08:16:23+00:00",
-      "updated_at": "2026-11-26T11:16:22+00:00"
+      "updated_at": "2026-11-26T17:15:57+00:00"
     },
     {
       "id": "4bcad0f9c1d9e6e0",
@@ -573,6 +579,10 @@
         {
           "name": "読売新聞",
           "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE94aFQ3bHpEVzExcUR6UTRzcHl4Y3Rud1hlVURUby1CdHluY1EwUUljejVnRmxlNmZNcmltYnRJbzE2b01RZTFOcnJNQkRadXRTWkNaRzlYQUJUYUVncXVNUXRLdUs?oc=5"
+        },
+        {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp/15290910.html"
         }
       ],
       "affected_system": null,
@@ -580,7 +590,7 @@
       "affected_service": "KARTE",
       "service_aliases": [],
       "added_at": "2026-11-26T11:16:22+00:00",
-      "updated_at": "2026-11-26T11:16:22+00:00"
+      "updated_at": "2026-11-26T17:15:57+00:00"
     },
     {
       "id": "e073f38511a099f0",
@@ -608,6 +618,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/74d8193adff4cb4dfa8432e3240cb4f0d802b30d"
+        },
+        {
+          "name": "沖縄タイムス社",
+          "url": "https://www.okinawatimes.co.jp/articles/-/1975010"
         }
       ],
       "affected_system": null,
@@ -617,7 +631,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-26T11:16:22+00:00",
-      "updated_at": "2026-11-26T11:16:22+00:00"
+      "updated_at": "2026-11-26T17:15:57+00:00"
     },
     {
       "id": "96389c68e1bd321a",
@@ -1757,6 +1771,34 @@
       "updated_at": "2026-11-25T14:16:34+00:00"
     },
     {
+      "id": "b9edebbdade62a2f",
+      "published_at": "2026-11-23T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "キッズウェル・バイオ",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "株式会社アクト",
+          "url": "https://act1.co.jp/2026-11-24-04/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/kidswell-bio-outsourced-website-unauthorized-access-shutdown-20261124/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "added_at": "2026-11-24T03:16:32+00:00",
+      "updated_at": "2026-11-26T17:15:57+00:00"
+    },
+    {
       "id": "ce836317c286e480",
       "published_at": "2026-11-23T15:00:00+00:00",
       "disclosed_at": "2026-11-23T15:00:00+00:00",
@@ -1965,30 +2007,6 @@
       "updated_at": "2026-11-25T03:16:08+00:00"
     },
     {
-      "id": "b9edebbdade62a2f",
-      "published_at": "2026-11-23T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "キッズウェル・バイオ",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/kidswell-bio-outsourced-website-unauthorized-access-shutdown-20261124/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "discovery",
-      "added_at": "2026-11-24T03:16:32+00:00",
-      "updated_at": "2026-11-24T03:16:32+00:00"
-    },
-    {
       "id": "c24d223e21abdea3",
       "published_at": "2026-11-23T15:00:00+00:00",
       "disclosed_at": "2026-11-23T15:00:00+00:00",
@@ -2036,6 +2054,42 @@
       "service_aliases": [],
       "added_at": "2026-11-25T02:16:29+00:00",
       "updated_at": "2026-11-25T02:16:29+00:00"
+    },
+    {
+      "id": "7003c08b4e166bf2",
+      "published_at": "2026-11-22T15:00:00+00:00",
+      "disclosed_at": "2026-11-23T15:00:00+00:00",
+      "organization": "デサントジャパン",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "a68191f24dadd23f",
+          "relationship": "affected_by",
+          "evidence_url": "https://act1.co.jp/2026-11-25-04/",
+          "evidence_urls": [
+            "https://act1.co.jp/2026-11-25-04/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "株式会社アクト",
+          "url": "https://act1.co.jp/2026-11-25-04/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "DESCENTE STORE オンライン",
+      "service_aliases": [],
+      "added_at": "2026-11-26T17:15:57+00:00",
+      "updated_at": "2026-11-26T17:15:57+00:00"
     },
     {
       "id": "a3d796b29e951e79",
@@ -2180,7 +2234,16 @@
       "potential_records": null,
       "confidence": "medium",
       "confidence_score": 30,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "7003c08b4e166bf2",
+          "relationship": "affects",
+          "evidence_url": "https://act1.co.jp/2026-11-25-04/",
+          "evidence_urls": [
+            "https://act1.co.jp/2026-11-25-04/"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "合同会社ロケットボーイズ",
@@ -2220,7 +2283,7 @@
       ],
       "upstream_status": "unknown",
       "added_at": "2026-11-25T20:16:04+00:00",
-      "updated_at": "2026-11-25T20:16:04+00:00"
+      "updated_at": "2026-11-26T17:15:57+00:00"
     },
     {
       "id": "c63ef3dc4e5ea9d2",
@@ -5379,6 +5442,30 @@
       "updated_at": "2026-11-26T04:16:07+00:00"
     },
     {
+      "id": "330b30910ec9e1c2",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "百五総合研究所",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 1,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "三重県 / Mie",
+          "url": "https://www.pref.mie.lg.jp/TOPICS/m0031500510.htm"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "added_at": "2026-11-26T17:15:57+00:00",
+      "updated_at": "2026-11-26T17:15:57+00:00"
+    },
+    {
       "id": "35af713e1d0b2a3b",
       "published_at": "2026-11-18T15:00:00+00:00",
       "disclosed_at": null,
@@ -8195,6 +8282,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/5adc43b3187322b399868e61b7b5045460436c38"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/ed2c174d302bbc2087c90d734b74d3bbe80732a9"
         }
       ],
       "affected_system": null,
@@ -8202,7 +8293,7 @@
       "affected_service": "赤ちゃんファーストポイント交換サイト",
       "service_aliases": [],
       "added_at": "2026-11-19T13:18:58+00:00",
-      "updated_at": "2026-11-26T03:16:09+00:00"
+      "updated_at": "2026-11-26T17:15:57+00:00"
     },
     {
       "id": "8cb6d0590720520f",
@@ -73693,6 +73784,10 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118985"
+        },
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/national/20261126-GYT1T00268/"
         }
       ],
       "affected_system": null,
@@ -73700,7 +73795,7 @@
       "affected_service": "政府調達情報システム",
       "service_aliases": [],
       "added_at": "2026-11-26T08:16:23+00:00",
-      "updated_at": "2026-11-26T09:16:34+00:00"
+      "updated_at": "2026-11-26T17:15:57+00:00"
     },
     {
       "id": "6e98db27d20a8c6c",
