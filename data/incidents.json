@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-26T11:16:22+00:00",
-  "total": 1649,
+  "updated_at": "2026-11-26T12:16:55+00:00",
+  "total": 1650,
   "date_range": {
     "start": "2023-01-01",
     "end": "2026-11-26"
@@ -342,7 +342,7 @@
     },
     {
       "date": "2026-11-20",
-      "count": 44
+      "count": 45
     },
     {
       "date": "2026-11-21",
@@ -4320,6 +4320,56 @@
       "service_aliases": [],
       "added_at": "2026-11-26T01:17:16+00:00",
       "updated_at": "2026-11-26T02:16:13+00:00"
+    },
+    {
+      "id": "c1063fe52dd6a95a",
+      "published_at": "2026-11-19T15:00:00+00:00",
+      "disclosed_at": "2026-11-23T15:00:00+00:00",
+      "organization": "グロービス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/globis-mba-karte-personal-data-breach-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/globis-mba-karte-personal-data-breach-2026/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/globis-mba-karte-personal-data-breach-2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "グロービス経営大学院 / グロービス・マネジメント・スクール",
+      "service_aliases": [],
+      "affected_services": [
+        "グロービス経営大学院",
+        "グロービス・マネジメント・スクール"
+      ],
+      "service_details": [
+        {
+          "name": "グロービス経営大学院",
+          "aliases": []
+        },
+        {
+          "name": "グロービス・マネジメント・スクール",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-26T12:16:55+00:00",
+      "updated_at": "2026-11-26T12:16:55+00:00"
     },
     {
       "id": "d654c97b0d23841e",
@@ -14064,6 +14114,14 @@
           ]
         },
         {
+          "incident_id": "c1063fe52dd6a95a",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/globis-mba-karte-personal-data-breach-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/globis-mba-karte-personal-data-breach-2026/"
+          ]
+        },
+        {
           "incident_id": "c52821da482a8f74",
           "relationship": "affects",
           "evidence_url": "https://www.nikkei.com/article/DGXZQOUC209P70Q6A121C2000000/",
@@ -14370,7 +14428,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-26T11:16:22+00:00"
+      "updated_at": "2026-11-26T12:16:55+00:00"
     },
     {
       "id": "8ea683a4f9752ffb",
@@ -45855,7 +45913,8 @@
       "organization": "シンカ",
       "incident_type": "data leak",
       "incident_categories": [
-        "data leak"
+        "data leak",
+        "unauthorized access"
       ],
       "potential_records": null,
       "confidence": "high",
@@ -45865,6 +45924,10 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261126586941/"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261126586941.pdf"
         }
       ],
       "affected_system": null,
@@ -45872,7 +45935,7 @@
       "affected_service": "カイクラ",
       "service_aliases": [],
       "added_at": "2026-11-26T11:16:22+00:00",
-      "updated_at": "2026-11-26T11:16:22+00:00"
+      "updated_at": "2026-11-26T12:16:55+00:00"
     },
     {
       "id": "832c90a535a1d08d",
@@ -73909,6 +73972,10 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118921"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b15a3ae1413038fdffb5352c0b5e81c756b54ab1"
         }
       ],
       "affected_system": null,
@@ -73930,7 +73997,7 @@
         }
       ],
       "added_at": "2026-11-25T10:16:21+00:00",
-      "updated_at": "2026-11-26T03:16:09+00:00"
+      "updated_at": "2026-11-26T12:16:55+00:00"
     },
     {
       "id": "cc5080b1ef87816f",
