@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-26T18:16:26+00:00",
-  "total": 1657,
+  "updated_at": "2026-11-26T19:16:02+00:00",
+  "total": 1658,
   "date_range": {
     "start": "2023-01-01",
     "end": "2026-11-26"
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-26",
-      "count": 10
+      "count": 11
     },
     {
       "date": "2026-11-27",
@@ -370,6 +370,31 @@
     }
   ],
   "incidents": [
+    {
+      "id": "06584284fefe0723",
+      "published_at": "2026-11-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "物語コーポレーション",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 79799,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/monogatari_corporation_79799_form_data_breach_20261126/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-26T19:16:02+00:00",
+      "updated_at": "2026-11-26T19:16:02+00:00"
+    },
     {
       "id": "27cf8f27821c244d",
       "published_at": "2026-11-25T15:00:00+00:00",
@@ -991,10 +1016,14 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118982"
+        },
+        {
+          "name": "BigGo ファイナンス",
+          "url": "https://finance.biggo.jp/news/3d74566a-de87-4b53-bca0-9156e0015977"
         }
       ],
       "added_at": "2026-11-26T00:16:31+00:00",
-      "updated_at": "2026-11-26T09:16:34+00:00"
+      "updated_at": "2026-11-26T19:16:02+00:00"
     },
     {
       "id": "87f218998db1816c",
@@ -5502,12 +5531,16 @@
         {
           "name": "Impress Watch",
           "url": "https://www.watch.impress.co.jp/docs/news/2159418.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/b5c36aab69d1022afd7714d9321ec661af9b3b02"
         }
       ],
       "affected_system": null,
       "date_basis": "discovery",
       "added_at": "2026-11-26T09:16:34+00:00",
-      "updated_at": "2026-11-26T18:16:26+00:00"
+      "updated_at": "2026-11-26T19:16:02+00:00"
     },
     {
       "id": "d832febcbc03fa90",
