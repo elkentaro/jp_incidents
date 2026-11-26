@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-26T05:16:15+00:00",
-  "total": 1629,
+  "updated_at": "2026-11-26T06:16:57+00:00",
+  "total": 1634,
   "date_range": {
-    "start": "2023-12-24",
+    "start": "2023-01-01",
     "end": "2026-11-26"
   },
   "daily_counts_90d": [
@@ -314,7 +314,7 @@
     },
     {
       "date": "2026-11-13",
-      "count": 68
+      "count": 69
     },
     {
       "date": "2026-11-14",
@@ -334,7 +334,7 @@
     },
     {
       "date": "2026-11-18",
-      "count": 42
+      "count": 43
     },
     {
       "date": "2026-11-19",
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-25",
-      "count": 18
+      "count": 20
     },
     {
       "date": "2026-11-26",
@@ -430,7 +430,16 @@
       "potential_records": 31730,
       "confidence": "high",
       "confidence_score": 80,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "57d15baf7435e548",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.release.tdnet.info/inbs/140120261126586608.pdf",
+          "evidence_urls": [
+            "https://www.release.tdnet.info/inbs/140120261126586608.pdf"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "日本取引所グループ TDnet / JPX TDnet",
@@ -439,8 +448,10 @@
       ],
       "affected_system": null,
       "date_basis": "publication",
+      "affected_service": "オンラインゲーム",
+      "service_aliases": [],
       "added_at": "2026-11-26T05:16:15+00:00",
-      "updated_at": "2026-11-26T05:16:15+00:00"
+      "updated_at": "2026-11-26T06:16:57+00:00"
     },
     {
       "id": "96389c68e1bd321a",
@@ -559,6 +570,36 @@
       "service_aliases": [],
       "added_at": "2026-11-25T03:16:08+00:00",
       "updated_at": "2026-11-25T03:16:08+00:00"
+    },
+    {
+      "id": "5d2ebd5579039684",
+      "published_at": "2026-11-24T15:00:00+00:00",
+      "disclosed_at": "2026-11-24T15:00:00+00:00",
+      "organization": "エイシス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/eisys-ci-en-creator-personal-data-breach-20261125/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "Ci-en(シエン)",
+      "service_aliases": [
+        "Ci-en",
+        "シエン"
+      ],
+      "added_at": "2026-11-26T06:16:57+00:00",
+      "updated_at": "2026-11-26T06:16:57+00:00"
     },
     {
       "id": "7a44c12f9ef26a89",
@@ -946,10 +987,40 @@
         {
           "name": "産経ニュース",
           "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE56d2tFM1Z3VUdHenVhdHB6aGNnWFIwTEo2MzFPX1B1bDdqajZRa0JDOU9MMUluVFFxalZUSS1oLXByOGpHOGFSQ1NqS3ZPdmt0WU0yWm1RQk1UTDlrOThYUFNCUXRzbkRIRmVrT2trQzd0WlpCX2c?oc=5"
+        },
+        {
+          "name": "sbapp.net",
+          "url": "https://sbapp.net/appnews/iphone/review/eneos-app-outage-190150"
         }
       ],
       "added_at": "2026-11-26T00:16:31+00:00",
-      "updated_at": "2026-11-26T00:16:31+00:00"
+      "updated_at": "2026-11-26T06:16:57+00:00"
+    },
+    {
+      "id": "8c105a990dd27c1a",
+      "published_at": "2026-11-24T15:00:00+00:00",
+      "disclosed_at": "2026-11-24T15:00:00+00:00",
+      "organization": "イオンエンターテイメント",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/national/20261125-GYT1T00379/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "イオンシネマポイント",
+      "service_aliases": [],
+      "added_at": "2026-11-26T06:16:57+00:00",
+      "updated_at": "2026-11-26T06:16:57+00:00"
     },
     {
       "id": "c7a8c86149d0e030",
@@ -1133,6 +1204,10 @@
         {
           "name": "TBS NEWS DIG",
           "url": "https://newsdig.tbs.co.jp/articles/-/3106833?display=1"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/uty/3106833?display=1"
         }
       ],
       "affected_system": null,
@@ -1140,7 +1215,7 @@
       "affected_service": "ブラストメール",
       "service_aliases": [],
       "added_at": "2026-11-24T03:16:32+00:00",
-      "updated_at": "2026-11-24T13:17:10+00:00"
+      "updated_at": "2026-11-26T06:16:57+00:00"
     },
     {
       "id": "3d78c12d6662ade6",
@@ -6690,6 +6765,30 @@
       "date_basis": "publication",
       "added_at": "2026-11-18T15:16:38+00:00",
       "updated_at": "2026-11-22T06:16:06+00:00"
+    },
+    {
+      "id": "f4f0dc8199c67a7f",
+      "published_at": "2026-11-17T15:00:00+00:00",
+      "disclosed_at": "2026-11-23T15:00:00+00:00",
+      "organization": "三井金属",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/mitsui_kinzoku_website_unauthorized_access_infonet_202611/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "added_at": "2026-11-26T06:16:57+00:00",
+      "updated_at": "2026-11-26T06:16:57+00:00"
     },
     {
       "id": "1201ced411a31d6a",
@@ -12602,6 +12701,71 @@
       "updated_at": "2026-11-17T20:16:23+00:00"
     },
     {
+      "id": "8ad26cc290921958",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-23T15:00:00+00:00",
+      "organization": "マイナビ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 281450,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/mynavi-karte-281450-data-breach-202611/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/mynavi-karte-281450-data-breach-202611/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/mynavi-karte-281450-data-breach-202611/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "マイナビウエディング / MATCHBOX / マイナビバイト / マイナビ学生の窓口 / マイナビ看護学生",
+      "service_aliases": [],
+      "affected_services": [
+        "マイナビウエディング",
+        "MATCHBOX",
+        "マイナビバイト",
+        "マイナビ学生の窓口",
+        "マイナビ看護学生"
+      ],
+      "service_details": [
+        {
+          "name": "マイナビウエディング",
+          "aliases": []
+        },
+        {
+          "name": "MATCHBOX",
+          "aliases": []
+        },
+        {
+          "name": "マイナビバイト",
+          "aliases": []
+        },
+        {
+          "name": "マイナビ学生の窓口",
+          "aliases": []
+        },
+        {
+          "name": "マイナビ看護学生",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-26T06:16:57+00:00",
+      "updated_at": "2026-11-26T06:16:57+00:00"
+    },
+    {
       "id": "8b492a7abc887c6a",
       "published_at": "2026-11-12T15:00:00+00:00",
       "disclosed_at": null,
@@ -13198,6 +13362,14 @@
           ]
         },
         {
+          "incident_id": "8ad26cc290921958",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/mynavi-karte-281450-data-breach-202611/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/mynavi-karte-281450-data-breach-202611/"
+          ]
+        },
+        {
           "incident_id": "8b492a7abc887c6a",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5pbUxsUU15Yl9YVldsMF9xLW9rUFhfcmF1enM5aThQRHZ5eFUtVWx1ZjFDWERHRmQ5NDJyVGhNcVp0RjJzYnQtbVdQclBCTjQ4cTg0c2g1eTdkNjdnMTh6YUlSRzJhVExrWkE?oc=5",
@@ -13766,7 +13938,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-26T03:16:09+00:00"
+      "updated_at": "2026-11-26T06:16:57+00:00"
     },
     {
       "id": "8ea683a4f9752ffb",
@@ -22946,6 +23118,14 @@
           ]
         },
         {
+          "incident_id": "2a9dfbf41b69a8b3",
+          "relationship": "affects",
+          "evidence_url": "https://www.release.tdnet.info/inbs/140120261126586608.pdf",
+          "evidence_urls": [
+            "https://www.release.tdnet.info/inbs/140120261126586608.pdf"
+          ]
+        },
+        {
           "incident_id": "3225e22383eaa1f6",
           "relationship": "affects",
           "evidence_url": "https://skiyaki.com/contents/1126864",
@@ -23095,7 +23275,7 @@
         }
       ],
       "added_at": "2026-11-11T09:15:59+00:00",
-      "updated_at": "2026-11-19T13:18:58+00:00"
+      "updated_at": "2026-11-26T06:16:57+00:00"
     },
     {
       "id": "cb69602b79e76443",
@@ -57752,6 +57932,10 @@
           "url": "https://www.trustbank.co.jp/newsroom/newsrelease/news20261109/"
         },
         {
+          "name": "株式会社トラストバンク",
+          "url": "https://www.trustbank.co.jp/newsroom/newsrelease/news20261126/"
+        },
+        {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261020553586.pdf"
         },
@@ -57837,7 +58021,7 @@
         "ふるさとちょいす"
       ],
       "added_at": "2026-10-20T23:46:03+00:00",
-      "updated_at": "2026-11-26T04:16:07+00:00"
+      "updated_at": "2026-11-26T06:16:57+00:00"
     },
     {
       "id": "1ad4af4d81083790",
@@ -74249,6 +74433,33 @@
       "service_aliases": [],
       "added_at": "2026-11-14T19:15:15+00:00",
       "updated_at": "2026-11-21T01:16:22+00:00"
+    },
+    {
+      "id": "e6f0b455afa038da",
+      "published_at": "2022-12-31T15:00:00+00:00",
+      "disclosed_at": "2022-12-31T15:00:00+00:00",
+      "organization": "アディーレ法律事務所",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1828,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/7e2b91f3aa3fd28cb098e342a3c278a32094171a"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "ウェブサイトの問い合わせフォーム",
+      "service_aliases": [],
+      "added_at": "2026-11-26T06:16:57+00:00",
+      "updated_at": "2026-11-26T06:16:57+00:00"
     }
   ],
   "aliases": {
@@ -74316,9 +74527,9 @@
     "f1452b19c51d91ef": "20f9a1cae6506b65",
     "e59d0f50b9a186af": "0ac6e0e5edb845f4",
     "28f7961f3696897c": "7731dc646222fc1d",
+    "62d786cd329ed23b": "5e4ac6edc5ef049d",
     "16414fccdfdf5e18": "0eaef1bd861f21f3",
     "d2c6ca3bd26bd5ac": "0eaef1bd861f21f3",
-    "216c3641192b9548": "0eaef1bd861f21f3",
-    "62d786cd329ed23b": "5e4ac6edc5ef049d"
+    "216c3641192b9548": "0eaef1bd861f21f3"
   }
 }
