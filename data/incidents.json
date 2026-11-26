@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-26T03:16:09+00:00",
-  "total": 1625,
+  "updated_at": "2026-11-26T04:16:07+00:00",
+  "total": 1627,
   "date_range": {
     "start": "2023-12-24",
     "end": "2026-11-26"
@@ -306,7 +306,7 @@
     },
     {
       "date": "2026-11-11",
-      "count": 40
+      "count": 41
     },
     {
       "date": "2026-11-12",
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-25",
-      "count": 17
+      "count": 18
     },
     {
       "date": "2026-11-26",
@@ -529,6 +529,35 @@
       "date_basis": "first_disclosure",
       "added_at": "2026-11-26T03:16:09+00:00",
       "updated_at": "2026-11-26T03:16:09+00:00"
+    },
+    {
+      "id": "87f218998db1816c",
+      "published_at": "2026-11-24T15:00:00+00:00",
+      "disclosed_at": "2026-11-24T15:00:00+00:00",
+      "organization": "サイダス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 1,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "WHI Holdings",
+          "url": "https://www.whi-holdings.co.jp/ja/news/news-20261125.html"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZ1VmQUg3eWVYOU43VzFlYnlaUFlFV1RpQWN1cFd1eFNBY1k0MmRtRDBWQW9RVmNpV2JtdHFKMVVZbjRPWnJ4YzhZT3Rnc1U3VGVrcGNLTVdxcGpnZWRPVGRnOWNrQjZHWjVTM1d2NEV6ZmpkRjNGX3k2VVZvelRVRTI3cDJ3M1FjaXRhMVFEbDhTMUlFY3l0SHpvZTNwb1RldF9rWWZEOGlRdw?oc=5"
+        }
+      ],
+      "affected_service": "COMPANY Talent Management 2.0",
+      "service_aliases": [],
+      "added_at": "2026-11-26T04:16:07+00:00",
+      "updated_at": "2026-11-26T04:16:07+00:00"
     },
     {
       "id": "b5f986abc9fbf0d9",
@@ -4781,11 +4810,27 @@
       "confidence_score": 50,
       "related": [
         {
+          "incident_id": "05d60f3fde12e533",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.catalog-gift.net/ringbell/rb-release.pdf",
+          "evidence_urls": [
+            "https://www.catalog-gift.net/ringbell/rb-release.pdf"
+          ]
+        },
+        {
           "incident_id": "7cbbacf6bb6ad215",
           "relationship": "affects",
           "evidence_url": "https://www.metro.tokyo.lg.jp/information/press/2026/11/2026111905",
           "evidence_urls": [
             "https://www.metro.tokyo.lg.jp/information/press/2026/11/2026111905"
+          ]
+        },
+        {
+          "incident_id": "8fd7a29689d65168",
+          "relationship": "affects",
+          "evidence_url": "https://www.city.tokyo-nakano.lg.jp/kusei/public/houdou/2026/press261126.html",
+          "evidence_urls": [
+            "https://www.city.tokyo-nakano.lg.jp/kusei/public/houdou/2026/press261126.html"
           ]
         }
       ],
@@ -4806,7 +4851,7 @@
       "affected_system": null,
       "date_basis": "publication",
       "added_at": "2026-11-19T13:18:58+00:00",
-      "updated_at": "2026-11-20T01:14:30+00:00"
+      "updated_at": "2026-11-26T04:16:07+00:00"
     },
     {
       "id": "35af713e1d0b2a3b",
@@ -9323,7 +9368,16 @@
       "potential_records": 5134,
       "confidence": "high",
       "confidence_score": 90,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "fd211f8704837b06",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.city.tokyo-nakano.lg.jp/kusei/public/houdou/2026/press261126.html",
+          "evidence_urls": [
+            "https://www.city.tokyo-nakano.lg.jp/kusei/public/houdou/2026/press261126.html"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "中野区 / Nakano",
@@ -9335,7 +9389,7 @@
       "affected_service": "ファーストバースデーサポート事業",
       "service_aliases": [],
       "added_at": "2026-11-26T02:16:13+00:00",
-      "updated_at": "2026-11-26T02:16:13+00:00"
+      "updated_at": "2026-11-26T04:16:07+00:00"
     },
     {
       "id": "9540df0175334dbb",
@@ -17365,6 +17419,42 @@
       ],
       "added_at": "2026-11-16T14:16:05+00:00",
       "updated_at": "2026-11-25T09:16:11+00:00"
+    },
+    {
+      "id": "05d60f3fde12e533",
+      "published_at": "2026-11-10T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "リンベル",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 720000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "fd211f8704837b06",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.catalog-gift.net/ringbell/rb-release.pdf",
+          "evidence_urls": [
+            "https://www.catalog-gift.net/ringbell/rb-release.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "www.catalog-gift.net",
+          "url": "https://www.catalog-gift.net/ringbell/rb-release.pdf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "リンベル公式オンラインストア",
+      "service_aliases": [],
+      "added_at": "2026-11-26T04:16:07+00:00",
+      "updated_at": "2026-11-26T04:16:07+00:00"
     },
     {
       "id": "08d395a9f3838df8",
@@ -57591,8 +57681,8 @@
           "url": "https://www.release.tdnet.info/inbs/140120261109568473.pdf"
         },
         {
-          "name": "NHKニュース",
-          "url": "https://news.web.nhk/newsweb/na/nd-20261019de61781"
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261126586529.pdf"
         },
         {
           "name": "群馬県 / Gunma",
@@ -57668,7 +57758,7 @@
         "ふるさとちょいす"
       ],
       "added_at": "2026-10-20T23:46:03+00:00",
-      "updated_at": "2026-11-17T20:16:23+00:00"
+      "updated_at": "2026-11-26T04:16:07+00:00"
     },
     {
       "id": "1ad4af4d81083790",
@@ -74108,9 +74198,6 @@
     "c5b12d5da9f4290f": "bc565046df2e88d6",
     "b4ddb9afcf984268": "bc565046df2e88d6",
     "8b7d9b3cba0b6490": "933d34557d02f202",
-    "16414fccdfdf5e18": "0eaef1bd861f21f3",
-    "d2c6ca3bd26bd5ac": "0eaef1bd861f21f3",
-    "216c3641192b9548": "0eaef1bd861f21f3",
     "792c9e594566f60a": "aa9bc3fcfc85d71d",
     "4cc0594ace8794e0": "2639da70d5b68f2c",
     "eabeef8122751e9d": "8132159128c70bb6",
@@ -74150,6 +74237,9 @@
     "f1452b19c51d91ef": "20f9a1cae6506b65",
     "e59d0f50b9a186af": "0ac6e0e5edb845f4",
     "28f7961f3696897c": "7731dc646222fc1d",
+    "16414fccdfdf5e18": "0eaef1bd861f21f3",
+    "d2c6ca3bd26bd5ac": "0eaef1bd861f21f3",
+    "216c3641192b9548": "0eaef1bd861f21f3",
     "62d786cd329ed23b": "5e4ac6edc5ef049d"
   }
 }
