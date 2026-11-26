@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-26T17:15:57+00:00",
-  "total": 1652,
+  "updated_at": "2026-11-26T18:16:26+00:00",
+  "total": 1657,
   "date_range": {
     "start": "2023-01-01",
     "end": "2026-11-26"
@@ -330,7 +330,7 @@
     },
     {
       "date": "2026-11-18",
-      "count": 43
+      "count": 44
     },
     {
       "date": "2026-11-19",
@@ -354,7 +354,7 @@
     },
     {
       "date": "2026-11-24",
-      "count": 15
+      "count": 17
     },
     {
       "date": "2026-11-25",
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-26",
-      "count": 8
+      "count": 10
     },
     {
       "date": "2026-11-27",
@@ -464,6 +464,14 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/new_balance_karte_374man_data_breach_20261126/"
+        },
+        {
+          "name": "京都新聞デジタル",
+          "url": "https://www.kyoto-np.co.jp/articles/-/1833855"
+        },
+        {
+          "name": "47NEWS",
+          "url": "https://www.47news.jp/15291682.html"
         }
       ],
       "affected_system": null,
@@ -471,7 +479,7 @@
       "affected_service": "ニューバランス公式オンラインストア",
       "service_aliases": [],
       "added_at": "2026-11-26T02:16:13+00:00",
-      "updated_at": "2026-11-26T09:16:34+00:00"
+      "updated_at": "2026-11-26T18:16:26+00:00"
     },
     {
       "id": "b79b4a918f3bda40",
@@ -583,6 +591,10 @@
         {
           "name": "47NEWS",
           "url": "https://www.47news.jp/15290910.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/0b785212b80c12ea26ad6a38a0eb7230d1f2324f"
         }
       ],
       "affected_system": null,
@@ -590,7 +602,7 @@
       "affected_service": "KARTE",
       "service_aliases": [],
       "added_at": "2026-11-26T11:16:22+00:00",
-      "updated_at": "2026-11-26T17:15:57+00:00"
+      "updated_at": "2026-11-26T18:16:26+00:00"
     },
     {
       "id": "e073f38511a099f0",
@@ -667,6 +679,74 @@
       "service_aliases": [],
       "added_at": "2026-11-26T05:16:15+00:00",
       "updated_at": "2026-11-26T05:16:15+00:00"
+    },
+    {
+      "id": "a5d4ac7d8ab27750",
+      "published_at": "2026-11-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "なの花東日本",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 40000,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "PHARMACY NEWSBREAK",
+          "url": "https://pnb.jiho.jp/article/252341"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "ヘルスケアコヤマ",
+      "service_aliases": [],
+      "added_at": "2026-11-26T18:16:26+00:00",
+      "updated_at": "2026-11-26T18:16:26+00:00"
+    },
+    {
+      "id": "e6ef7257cc0872cb",
+      "published_at": "2026-11-25T15:00:00+00:00",
+      "disclosed_at": "2026-11-25T15:00:00+00:00",
+      "organization": "宇都宮市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 6257,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "a2f2cbe2ef453ee8",
+          "relationship": "same_organization",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/"
+          ]
+        },
+        {
+          "incident_id": "c185bf248c4a7d3d",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "added_at": "2026-11-26T18:16:26+00:00",
+      "updated_at": "2026-11-26T18:16:26+00:00"
     },
     {
       "id": "fb85993a8f86c8f2",
@@ -1963,6 +2043,39 @@
       "updated_at": "2026-11-26T00:16:31+00:00"
     },
     {
+      "id": "208474cfa8914339",
+      "published_at": "2026-11-23T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "宇治市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "c185bf248c4a7d3d",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "added_at": "2026-11-26T18:16:26+00:00",
+      "updated_at": "2026-11-26T18:16:26+00:00"
+    },
+    {
       "id": "adc93ce6278726b5",
       "published_at": "2026-11-23T15:00:00+00:00",
       "disclosed_at": null,
@@ -2005,6 +2118,39 @@
       ],
       "added_at": "2026-11-25T01:15:59+00:00",
       "updated_at": "2026-11-25T03:16:08+00:00"
+    },
+    {
+      "id": "bd6f2240b20e7a8d",
+      "published_at": "2026-11-23T15:00:00+00:00",
+      "disclosed_at": "2026-11-23T15:00:00+00:00",
+      "organization": "佐野市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "c185bf248c4a7d3d",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "added_at": "2026-11-26T18:16:26+00:00",
+      "updated_at": "2026-11-26T18:16:26+00:00"
     },
     {
       "id": "c24d223e21abdea3",
@@ -4595,6 +4741,14 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/8be118f826885bb1d1147a0c905c1687cbb1435b"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261126de82098"
+        },
+        {
+          "name": "読売新聞",
+          "url": "https://www.yomiuri.co.jp/national/20261126-GYT1T00253/"
         }
       ],
       "affected_system": null,
@@ -4602,7 +4756,7 @@
       "affected_service": "三井ショッピングパークアプリ",
       "service_aliases": [],
       "added_at": "2026-11-19T14:18:14+00:00",
-      "updated_at": "2026-11-20T11:16:07+00:00"
+      "updated_at": "2026-11-26T18:16:26+00:00"
     },
     {
       "id": "775d529b26c4729b",
@@ -5344,12 +5498,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/3558fcb63c74a4ddb756a6b8a84c38b0abd122c5"
+        },
+        {
+          "name": "Impress Watch",
+          "url": "https://www.watch.impress.co.jp/docs/news/2159418.html"
         }
       ],
       "affected_system": null,
       "date_basis": "discovery",
       "added_at": "2026-11-26T09:16:34+00:00",
-      "updated_at": "2026-11-26T11:16:22+00:00"
+      "updated_at": "2026-11-26T18:16:26+00:00"
     },
     {
       "id": "d832febcbc03fa90",
@@ -5729,11 +5887,43 @@
       "confidence_score": 30,
       "related": [
         {
+          "incident_id": "208474cfa8914339",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/"
+          ]
+        },
+        {
+          "incident_id": "48c951bc15ed4dd0",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/"
+          ]
+        },
+        {
           "incident_id": "769cddad7a0b607a",
           "relationship": "affects",
           "evidence_url": "http://db.pref.tottori.jp/pressrelease.nsf/webview/4FDC19B2F4D8C47449258EB9003B5E32?OpenDocument",
           "evidence_urls": [
             "http://db.pref.tottori.jp/pressrelease.nsf/webview/4FDC19B2F4D8C47449258EB9003B5E32?OpenDocument"
+          ]
+        },
+        {
+          "incident_id": "bd6f2240b20e7a8d",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/"
+          ]
+        },
+        {
+          "incident_id": "e6ef7257cc0872cb",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/"
           ]
         }
       ],
@@ -5741,10 +5931,14 @@
         {
           "name": "www.tm-erde.co.jp",
           "url": "https://www.tm-erde.co.jp/2026/11/24/3533/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/"
         }
       ],
       "added_at": "2026-11-25T02:16:29+00:00",
-      "updated_at": "2026-11-25T02:16:29+00:00"
+      "updated_at": "2026-11-26T18:16:26+00:00"
     },
     {
       "id": "de4e9cb1d098b3db",
@@ -7639,6 +7833,39 @@
       "updated_at": "2026-11-18T16:15:49+00:00"
     },
     {
+      "id": "48c951bc15ed4dd0",
+      "published_at": "2026-11-17T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "みどり市",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "c185bf248c4a7d3d",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "added_at": "2026-11-26T18:16:26+00:00",
+      "updated_at": "2026-11-26T18:16:26+00:00"
+    },
+    {
       "id": "53dbe311630aa347",
       "published_at": "2026-11-17T15:00:00+00:00",
       "disclosed_at": null,
@@ -8286,6 +8513,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/ed2c174d302bbc2087c90d734b74d3bbe80732a9"
+        },
+        {
+          "name": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/27/004031"
         }
       ],
       "affected_system": null,
@@ -8293,7 +8524,7 @@
       "affected_service": "赤ちゃんファーストポイント交換サイト",
       "service_aliases": [],
       "added_at": "2026-11-19T13:18:58+00:00",
-      "updated_at": "2026-11-26T17:15:57+00:00"
+      "updated_at": "2026-11-26T18:16:26+00:00"
     },
     {
       "id": "8cb6d0590720520f",
@@ -8491,6 +8722,10 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/world-online-store-karte-9320000-data-breach-20261126/"
+        },
+        {
+          "name": "NHKニュース",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261126de82115"
         }
       ],
       "affected_system": null,
@@ -8498,7 +8733,7 @@
       "affected_service": "ワールドオンラインストア",
       "service_aliases": [],
       "added_at": "2026-11-17T05:16:27+00:00",
-      "updated_at": "2026-11-26T11:16:22+00:00"
+      "updated_at": "2026-11-26T18:16:26+00:00"
     },
     {
       "id": "bba46f64d143e93c",
@@ -10079,6 +10314,10 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/nakano-ringbell-first-birthday-data-leak/"
+        },
+        {
+          "name": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/27/004031"
         }
       ],
       "affected_system": null,
@@ -10086,7 +10325,7 @@
       "affected_service": "ファーストバースデーサポート事業",
       "service_aliases": [],
       "added_at": "2026-11-26T02:16:13+00:00",
-      "updated_at": "2026-11-26T11:16:22+00:00"
+      "updated_at": "2026-11-26T18:16:26+00:00"
     },
     {
       "id": "9540df0175334dbb",
@@ -14556,6 +14795,10 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118923"
+        },
+        {
+          "name": "株式会社アクト",
+          "url": "https://act1.co.jp/2026-11-26-04/"
         }
       ],
       "affected_system": null,
@@ -14563,7 +14806,7 @@
       "affected_service": "MyJCB",
       "service_aliases": [],
       "added_at": "2026-11-26T00:16:31+00:00",
-      "updated_at": "2026-11-26T02:16:13+00:00"
+      "updated_at": "2026-11-26T18:16:26+00:00"
     },
     {
       "id": "958475ed41c0f37d",
@@ -18292,6 +18535,10 @@
         {
           "name": "www.catalog-gift.net",
           "url": "https://www.catalog-gift.net/ringbell/rb-release.pdf"
+        },
+        {
+          "name": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/27/004031"
         }
       ],
       "affected_system": null,
@@ -18299,7 +18546,7 @@
       "affected_service": "リンベル公式オンラインストア",
       "service_aliases": [],
       "added_at": "2026-11-26T04:16:07+00:00",
-      "updated_at": "2026-11-26T04:16:07+00:00"
+      "updated_at": "2026-11-26T18:16:26+00:00"
     },
     {
       "id": "08d395a9f3838df8",
@@ -23707,6 +23954,10 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/create-web-download-2764-password-data-breach-202611/"
+        },
+        {
+          "name": "株式会社アクト",
+          "url": "https://act1.co.jp/2026-11-26-09/"
         }
       ],
       "affected_system": null,
@@ -23714,7 +23965,7 @@
       "affected_service": "WEBダウンロードシステム",
       "service_aliases": [],
       "added_at": "2026-11-26T08:16:23+00:00",
-      "updated_at": "2026-11-26T08:16:23+00:00"
+      "updated_at": "2026-11-26T18:16:26+00:00"
     },
     {
       "id": "57d15baf7435e548",
@@ -27693,12 +27944,16 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118927"
+        },
+        {
+          "name": "Security NEXT",
+          "url": "https://www.security-next.com/193313"
         }
       ],
       "affected_system": null,
       "date_basis": "discovery",
       "added_at": "2026-11-24T08:16:51+00:00",
-      "updated_at": "2026-11-26T01:17:16+00:00"
+      "updated_at": "2026-11-26T18:16:26+00:00"
     },
     {
       "id": "64d1bee3ebeecc43",
@@ -29803,6 +30058,10 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/118927"
+        },
+        {
+          "name": "Security NEXT",
+          "url": "https://www.security-next.com/193313"
         }
       ],
       "affected_system": null,
@@ -29810,7 +30069,7 @@
       "affected_service": "Webによる受注システム",
       "service_aliases": [],
       "added_at": "2026-11-24T10:16:07+00:00",
-      "updated_at": "2026-11-26T01:17:16+00:00"
+      "updated_at": "2026-11-26T18:16:26+00:00"
     },
     {
       "id": "f896022778d48ba6",
@@ -32899,6 +33158,14 @@
           "evidence_urls": [
             "https://cybersecurity-jp.com/news/118103"
           ]
+        },
+        {
+          "incident_id": "e6ef7257cc0872cb",
+          "relationship": "same_organization",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/"
+          ]
         }
       ],
       "sources": [
@@ -32914,7 +33181,7 @@
       "affected_service": "電子申請システム",
       "service_aliases": [],
       "added_at": "2026-11-03T12:17:45+00:00",
-      "updated_at": "2026-11-21T00:16:43+00:00"
+      "updated_at": "2026-11-26T18:16:26+00:00"
     },
     {
       "id": "b719f0f1d0000b8c",
@@ -73788,6 +74055,14 @@
         {
           "name": "読売新聞",
           "url": "https://www.yomiuri.co.jp/national/20261126-GYT1T00268/"
+        },
+        {
+          "name": "京都新聞デジタル",
+          "url": "https://www.kyoto-np.co.jp/articles/-/1833900"
+        },
+        {
+          "name": "沖縄タイムス社",
+          "url": "https://www.okinawatimes.co.jp/articles/-/1975337"
         }
       ],
       "affected_system": null,
@@ -73795,7 +74070,7 @@
       "affected_service": "政府調達情報システム",
       "service_aliases": [],
       "added_at": "2026-11-26T08:16:23+00:00",
-      "updated_at": "2026-11-26T17:15:57+00:00"
+      "updated_at": "2026-11-26T18:16:26+00:00"
     },
     {
       "id": "6e98db27d20a8c6c",
