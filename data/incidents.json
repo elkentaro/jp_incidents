@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-26T06:16:57+00:00",
+  "updated_at": "2026-11-26T07:16:58+00:00",
   "total": 1634,
   "date_range": {
     "start": "2023-01-01",
@@ -444,6 +444,10 @@
         {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261126586608.pdf"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1ycVlPRFFrb2JJem93WkFHSXNhUnd4a2RFOXdJNWowOEhObHloVV9pWkxiTDVkeTZFempJSmNsaGxJdmo2UFUyVVpYaFFHeUd1OUs4RTdkanRUZk5WUWF5R2tLUzFJYkRTSHc?oc=5"
         }
       ],
       "affected_system": null,
@@ -451,7 +455,7 @@
       "affected_service": "オンラインゲーム",
       "service_aliases": [],
       "added_at": "2026-11-26T05:16:15+00:00",
-      "updated_at": "2026-11-26T06:16:57+00:00"
+      "updated_at": "2026-11-26T07:16:58+00:00"
     },
     {
       "id": "96389c68e1bd321a",
@@ -16432,6 +16436,14 @@
           "evidence_urls": [
             "https://www.pref.niigata.lg.jp/site/kankyo/kankyomail-rouei.html"
           ]
+        },
+        {
+          "incident_id": "e6f0b455afa038da",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/7e2b91f3aa3fd28cb098e342a3c278a32094171a",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/7e2b91f3aa3fd28cb098e342a3c278a32094171a"
+          ]
         }
       ],
       "sources": [
@@ -16445,7 +16457,7 @@
         }
       ],
       "added_at": "2026-11-13T07:15:40+00:00",
-      "updated_at": "2026-11-25T22:16:15+00:00"
+      "updated_at": "2026-11-26T07:16:58+00:00"
     },
     {
       "id": "5f14db3e89b72105",
@@ -74447,7 +74459,16 @@
       "potential_records": 1828,
       "confidence": "medium",
       "confidence_score": 50,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "5b02019999cfdf0b",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/7e2b91f3aa3fd28cb098e342a3c278a32094171a",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/7e2b91f3aa3fd28cb098e342a3c278a32094171a"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "Yahoo!ニュース",
@@ -74459,7 +74480,7 @@
       "affected_service": "ウェブサイトの問い合わせフォーム",
       "service_aliases": [],
       "added_at": "2026-11-26T06:16:57+00:00",
-      "updated_at": "2026-11-26T06:16:57+00:00"
+      "updated_at": "2026-11-26T07:16:58+00:00"
     }
   ],
   "aliases": {
