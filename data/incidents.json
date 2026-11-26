@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-26T19:16:02+00:00",
-  "total": 1658,
+  "updated_at": "2026-11-26T22:16:01+00:00",
+  "total": 1661,
   "date_range": {
     "start": "2023-01-01",
-    "end": "2026-11-26"
+    "end": "2026-11-27"
   },
   "daily_counts_90d": [
     {
@@ -322,7 +322,7 @@
     },
     {
       "date": "2026-11-16",
-      "count": 37
+      "count": 38
     },
     {
       "date": "2026-11-17",
@@ -362,14 +362,49 @@
     },
     {
       "date": "2026-11-26",
-      "count": 11
+      "count": 12
     },
     {
       "date": "2026-11-27",
-      "count": 0
+      "count": 1
     }
   ],
   "incidents": [
+    {
+      "id": "159ee4476f56ff51",
+      "published_at": "2026-11-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大田原市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 538,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.shimotsuke.co.jp/articles/-/1466798",
+          "evidence_urls": [
+            "https://www.shimotsuke.co.jp/articles/-/1466798"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "下野新聞社",
+          "url": "https://www.shimotsuke.co.jp/articles/-/1466798"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "マイナンバーカード交付予約システム",
+      "service_aliases": [],
+      "added_at": "2026-11-26T22:16:01+00:00",
+      "updated_at": "2026-11-26T22:16:01+00:00"
+    },
     {
       "id": "06584284fefe0723",
       "published_at": "2026-11-25T15:00:00+00:00",
@@ -505,6 +540,42 @@
       "service_aliases": [],
       "added_at": "2026-11-26T02:16:13+00:00",
       "updated_at": "2026-11-26T18:16:26+00:00"
+    },
+    {
+      "id": "944ef1da9cfc7701",
+      "published_at": "2026-11-25T15:00:00+00:00",
+      "disclosed_at": "2026-11-25T15:00:00+00:00",
+      "organization": "パルシステム生活協同組合連合会",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 118806,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "3b4432bc847a1336",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/pal_system_kurashi_coop_sagawa_118806_possible_data_breach_202611/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/pal_system_kurashi_coop_sagawa_118806_possible_data_breach_202611/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/pal_system_kurashi_coop_sagawa_118806_possible_data_breach_202611/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "くらしと生協",
+      "service_aliases": [],
+      "added_at": "2026-11-26T22:16:01+00:00",
+      "updated_at": "2026-11-26T22:16:01+00:00"
     },
     {
       "id": "b79b4a918f3bda40",
@@ -4514,6 +4585,14 @@
           "evidence_urls": [
             "https://corp.moneyforward.com/news/info/20261120-mf-press-1/"
           ]
+        },
+        {
+          "incident_id": "9630328fc8def33e",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/yokohama-shinkin-mikatano-karte-184-data-breach-20261125/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/yokohama-shinkin-mikatano-karte-184-data-breach-20261125/"
+          ]
         }
       ],
       "sources": [
@@ -4527,7 +4606,7 @@
       "affected_service": "『Mikatano』サービス",
       "service_aliases": [],
       "added_at": "2026-11-25T01:15:59+00:00",
-      "updated_at": "2026-11-25T01:15:59+00:00"
+      "updated_at": "2026-11-26T22:16:01+00:00"
     },
     {
       "id": "b449cb8c3f853e47",
@@ -11155,6 +11234,41 @@
       "service_aliases": [],
       "added_at": "2026-11-16T12:16:35+00:00",
       "updated_at": "2026-11-16T12:16:35+00:00"
+    },
+    {
+      "id": "9630328fc8def33e",
+      "published_at": "2026-11-15T15:00:00+00:00",
+      "disclosed_at": "2026-11-24T15:00:00+00:00",
+      "organization": "横浜信用金庫",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 184,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "9a9e4e94ab7076ec",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/yokohama-shinkin-mikatano-karte-184-data-breach-20261125/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/yokohama-shinkin-mikatano-karte-184-data-breach-20261125/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/yokohama-shinkin-mikatano-karte-184-data-breach-20261125/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "Mikatano シリーズ",
+      "service_aliases": [],
+      "added_at": "2026-11-26T22:16:01+00:00",
+      "updated_at": "2026-11-26T22:16:01+00:00"
     },
     {
       "id": "b91af3697998613c",
@@ -42754,6 +42868,14 @@
           ]
         },
         {
+          "incident_id": "159ee4476f56ff51",
+          "relationship": "affects",
+          "evidence_url": "https://www.shimotsuke.co.jp/articles/-/1466798",
+          "evidence_urls": [
+            "https://www.shimotsuke.co.jp/articles/-/1466798"
+          ]
+        },
+        {
           "incident_id": "162d0bcb6d6fed86",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/4e67d321218e97c367924fecf07ecbe4b4b9eeb1",
@@ -44666,7 +44788,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-26T02:16:13+00:00"
+      "updated_at": "2026-11-26T22:16:01+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -53086,6 +53208,14 @@
           ]
         },
         {
+          "incident_id": "944ef1da9cfc7701",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/pal_system_kurashi_coop_sagawa_118806_possible_data_breach_202611/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/pal_system_kurashi_coop_sagawa_118806_possible_data_breach_202611/"
+          ]
+        },
+        {
           "incident_id": "a2377c9415e94dc9",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE4wWWROZW1nVUcxZEdBRnJSOTZfQ0FmbGtaaV9jaWllTGZwWU9ZV0V0cGJSOHRSbS1kN2VjMDhCaTY3clFtUDJPVDBB?oc=5",
@@ -53189,7 +53319,7 @@
       "affected_service": "お荷物問い合わせサービス",
       "service_aliases": [],
       "added_at": "2026-10-22T10:24:30+00:00",
-      "updated_at": "2026-11-14T12:25:39+00:00"
+      "updated_at": "2026-11-26T22:16:01+00:00"
     },
     {
       "id": "4220c745782e4b6d",
