@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-27T15:18:29+00:00",
-  "total": 1697,
+  "updated_at": "2026-11-27T16:17:36+00:00",
+  "total": 1707,
   "date_range": {
     "start": "2023-01-01",
-    "end": "2026-11-27"
+    "end": "2026-11-28"
   },
   "daily_counts_90d": [
     {
@@ -350,7 +350,7 @@
     },
     {
       "date": "2026-11-24",
-      "count": 18
+      "count": 19
     },
     {
       "date": "2026-11-25",
@@ -362,14 +362,90 @@
     },
     {
       "date": "2026-11-27",
-      "count": 16
+      "count": 23
     },
     {
       "date": "2026-11-28",
-      "count": 0
+      "count": 2
     }
   ],
   "incidents": [
+    {
+      "id": "4c89c74060e3fa9c",
+      "published_at": "2026-11-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "栃木県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 13015,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "480305accdcb6db8",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.shimotsuke.co.jp/articles/-/1467604",
+          "evidence_urls": [
+            "https://www.shimotsuke.co.jp/articles/-/1467604"
+          ]
+        },
+        {
+          "incident_id": "837e64fbe47b271e",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.shimotsuke.co.jp/articles/-/1467604",
+          "evidence_urls": [
+            "https://www.shimotsuke.co.jp/articles/-/1467604"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "下野新聞社",
+          "url": "https://www.shimotsuke.co.jp/articles/-/1467604"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "日環アリーナ栃木",
+      "service_aliases": [],
+      "added_at": "2026-11-27T16:17:36+00:00",
+      "updated_at": "2026-11-27T16:17:36+00:00"
+    },
+    {
+      "id": "837e64fbe47b271e",
+      "published_at": "2026-11-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ミズノ",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "4c89c74060e3fa9c",
+          "relationship": "affects",
+          "evidence_url": "https://www.shimotsuke.co.jp/articles/-/1467604",
+          "evidence_urls": [
+            "https://www.shimotsuke.co.jp/articles/-/1467604"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "下野新聞社",
+          "url": "https://www.shimotsuke.co.jp/articles/-/1467604"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "added_at": "2026-11-27T16:17:36+00:00",
+      "updated_at": "2026-11-27T16:17:36+00:00"
+    },
     {
       "id": "0963568ef95855c5",
       "published_at": "2026-11-26T15:00:00+00:00",
@@ -471,6 +547,67 @@
       "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
+      "id": "d99f26b5dc8a8ef1",
+      "published_at": "2026-11-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ロングランプランニング",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/longrun-confetti-member-data-breach-202611/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "カンフェティ",
+      "service_aliases": [],
+      "added_at": "2026-11-27T16:17:36+00:00",
+      "updated_at": "2026-11-27T16:17:36+00:00"
+    },
+    {
+      "id": "1069037e1d00384f",
+      "published_at": "2026-11-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ビックカメラ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 921,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "49c50de559239646",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUC27B3K0X21C26A1000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUC27B3K0X21C26A1000000/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC27B3K0X21C26A1000000/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "added_at": "2026-11-27T16:17:36+00:00",
+      "updated_at": "2026-11-27T16:17:36+00:00"
+    },
+    {
       "id": "1da0df71cee62406",
       "published_at": "2026-11-26T15:00:00+00:00",
       "disclosed_at": null,
@@ -500,6 +637,31 @@
       "service_aliases": [],
       "added_at": "2026-11-27T12:16:24+00:00",
       "updated_at": "2026-11-27T13:17:14+00:00"
+    },
+    {
+      "id": "251ebdb16ca422e6",
+      "published_at": "2026-11-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ソフマップ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 40,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC27B3K0X21C26A1000000/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "added_at": "2026-11-27T16:17:36+00:00",
+      "updated_at": "2026-11-27T16:17:36+00:00"
     },
     {
       "id": "43e7f94b8f52b995",
@@ -621,6 +783,31 @@
       "updated_at": "2026-11-27T15:18:29+00:00"
     },
     {
+      "id": "b7c37c00a514293d",
+      "published_at": "2026-11-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "コジマ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 199,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC27B3K0X21C26A1000000/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "added_at": "2026-11-27T16:17:36+00:00",
+      "updated_at": "2026-11-27T16:17:36+00:00"
+    },
+    {
       "id": "dbb4c6605d40c667",
       "published_at": "2026-11-26T15:00:00+00:00",
       "disclosed_at": null,
@@ -727,6 +914,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/82386c01f07f7ac4ecb08f8b97abab65000b3a3e"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/34c6800b2c3a0e0dbd03a3b7ffaae5c05390f52a"
         }
       ],
       "affected_system": null,
@@ -734,7 +925,7 @@
       "affected_service": "健診予約システム",
       "service_aliases": [],
       "added_at": "2026-11-27T12:16:24+00:00",
-      "updated_at": "2026-11-27T12:16:24+00:00"
+      "updated_at": "2026-11-27T16:17:36+00:00"
     },
     {
       "id": "14093b518d9b2f0b",
@@ -798,6 +989,39 @@
       "updated_at": "2026-11-26T22:16:01+00:00"
     },
     {
+      "id": "196c1c5ea9f0207b",
+      "published_at": "2026-11-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東京海上あんしん生命",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.nikkinonline.com/article/443309",
+          "evidence_urls": [
+            "https://www.nikkinonline.com/article/443309"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "ニッキンONLINE",
+          "url": "https://www.nikkinonline.com/article/443309"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-27T16:17:36+00:00",
+      "updated_at": "2026-11-27T16:17:36+00:00"
+    },
+    {
       "id": "5a0a577514a3025e",
       "published_at": "2026-11-26T15:00:00+00:00",
       "disclosed_at": null,
@@ -837,6 +1061,47 @@
       ],
       "added_at": "2026-11-27T13:17:14+00:00",
       "updated_at": "2026-11-27T13:17:14+00:00"
+    },
+    {
+      "id": "5e036ed37538cefa",
+      "published_at": "2026-11-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東京海上ダイレクト損害保険",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 261,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "16730e4996307750",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.nikkinonline.com/article/443309",
+          "evidence_urls": [
+            "https://www.nikkinonline.com/article/443309"
+          ]
+        },
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.nikkinonline.com/article/443309",
+          "evidence_urls": [
+            "https://www.nikkinonline.com/article/443309"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "ニッキンONLINE",
+          "url": "https://www.nikkinonline.com/article/443309"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-27T16:17:36+00:00",
+      "updated_at": "2026-11-27T16:17:36+00:00"
     },
     {
       "id": "7a73ede14297fb1e",
@@ -881,6 +1146,39 @@
       "service_aliases": [],
       "added_at": "2026-11-27T12:16:24+00:00",
       "updated_at": "2026-11-27T12:16:24+00:00"
+    },
+    {
+      "id": "82cb718dedb57d87",
+      "published_at": "2026-11-26T15:00:00+00:00",
+      "disclosed_at": "2026-11-26T15:00:00+00:00",
+      "organization": "東京海上日動火災保険",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.nikkinonline.com/article/443309",
+          "evidence_urls": [
+            "https://www.nikkinonline.com/article/443309"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "ニッキンONLINE",
+          "url": "https://www.nikkinonline.com/article/443309"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "added_at": "2026-11-27T16:17:36+00:00",
+      "updated_at": "2026-11-27T16:17:36+00:00"
     },
     {
       "id": "b3302fafe7131b03",
@@ -1966,10 +2264,14 @@
         {
           "name": "ビジネス+IT",
           "url": "https://www.sbbit.jp/article/cont1/188774"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/14ea5722f27d67e446780f7175106fa6f8cfbd5e?source=sns&dv=sp&mid=other&date=20261126&ctg=it&bt=tw_up"
         }
       ],
       "added_at": "2026-11-26T00:16:31+00:00",
-      "updated_at": "2026-11-27T13:17:14+00:00"
+      "updated_at": "2026-11-27T16:17:36+00:00"
     },
     {
       "id": "87f218998db1816c",
@@ -3046,6 +3348,61 @@
       ],
       "added_at": "2026-11-25T09:16:11+00:00",
       "updated_at": "2026-11-26T11:16:22+00:00"
+    },
+    {
+      "id": "7b616b4974cf71f0",
+      "published_at": "2026-11-23T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "GMOペパボ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 516564,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/ca3168ec83d50acaf71a8d3edff2ef8a03b68f4d"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC27B210X21C26A1000000/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "ロリポップ!レンタルサーバー / ロリポップ!AIエージェントクラウド / ロリポップ!AIホームページ / ロリポップ!デプロイナウ",
+      "service_aliases": [],
+      "affected_services": [
+        "ロリポップ!レンタルサーバー",
+        "ロリポップ!AIエージェントクラウド",
+        "ロリポップ!AIホームページ",
+        "ロリポップ!デプロイナウ"
+      ],
+      "service_details": [
+        {
+          "name": "ロリポップ!レンタルサーバー",
+          "aliases": []
+        },
+        {
+          "name": "ロリポップ!AIエージェントクラウド",
+          "aliases": []
+        },
+        {
+          "name": "ロリポップ!AIホームページ",
+          "aliases": []
+        },
+        {
+          "name": "ロリポップ!デプロイナウ",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-27T16:17:36+00:00",
+      "updated_at": "2026-11-27T16:17:36+00:00"
     },
     {
       "id": "ba4a0092ac388e60",
@@ -15131,6 +15488,14 @@
           ]
         },
         {
+          "incident_id": "196c1c5ea9f0207b",
+          "relationship": "affects",
+          "evidence_url": "https://www.nikkinonline.com/article/443309",
+          "evidence_urls": [
+            "https://www.nikkinonline.com/article/443309"
+          ]
+        },
+        {
           "incident_id": "196f7fd7f4b5e981",
           "relationship": "affects",
           "evidence_url": "https://news.ntv.co.jp/n/nib/category/society/nifd16d3503d8642ad9efd3c68e8c33750",
@@ -15366,6 +15731,14 @@
           ]
         },
         {
+          "incident_id": "5e036ed37538cefa",
+          "relationship": "affects",
+          "evidence_url": "https://www.nikkinonline.com/article/443309",
+          "evidence_urls": [
+            "https://www.nikkinonline.com/article/443309"
+          ]
+        },
+        {
           "incident_id": "5ec4369d7fae9a45",
           "relationship": "affects",
           "evidence_url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261118582906/",
@@ -15588,6 +15961,14 @@
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/nagatanien-app-karte-46000-possible-data-leak-2026/",
           "evidence_urls": [
             "https://rocket-boys.co.jp/security-measures-lab/nagatanien-app-karte-46000-possible-data-leak-2026/"
+          ]
+        },
+        {
+          "incident_id": "82cb718dedb57d87",
+          "relationship": "affects",
+          "evidence_url": "https://www.nikkinonline.com/article/443309",
+          "evidence_urls": [
+            "https://www.nikkinonline.com/article/443309"
           ]
         },
         {
@@ -16241,7 +16622,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-27T15:18:29+00:00"
+      "updated_at": "2026-11-27T16:17:36+00:00"
     },
     {
       "id": "8ea683a4f9752ffb",
@@ -22039,7 +22420,16 @@
       "potential_records": null,
       "confidence": "high",
       "confidence_score": 90,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "4c89c74060e3fa9c",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.shimotsuke.co.jp/articles/-/1467604",
+          "evidence_urls": [
+            "https://www.shimotsuke.co.jp/articles/-/1467604"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "栃木県 / Tochigi",
@@ -22057,7 +22447,7 @@
       "affected_service": "ぐるとち",
       "service_aliases": [],
       "added_at": "2026-11-12T09:15:21+00:00",
-      "updated_at": "2026-11-14T00:16:05+00:00"
+      "updated_at": "2026-11-27T16:17:36+00:00"
     },
     {
       "id": "492f96ec8e657e7c",
@@ -29173,7 +29563,16 @@
       "potential_records": 74,
       "confidence": "high",
       "confidence_score": 90,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "5e036ed37538cefa",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.nikkinonline.com/article/443309",
+          "evidence_urls": [
+            "https://www.nikkinonline.com/article/443309"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "satimo list",
@@ -29194,6 +29593,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/expert/articles/e6cb65c8271ee1ec3873950cd3d0e2f4547dcf60"
+        },
+        {
+          "name": "Security NEXT",
+          "url": "https://www.security-next.com/193168"
         }
       ],
       "affected_service": "マイページ / 東京海上ダイレクトアプリ",
@@ -29213,7 +29616,7 @@
         }
       ],
       "added_at": "2026-11-05T16:16:05+00:00",
-      "updated_at": "2026-11-14T00:16:05+00:00"
+      "updated_at": "2026-11-27T16:17:36+00:00"
     },
     {
       "id": "354d6671d33e6caa",
@@ -31285,7 +31688,16 @@
       "potential_records": 133039,
       "confidence": "medium",
       "confidence_score": 50,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "1069037e1d00384f",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUC27B3K0X21C26A1000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUC27B3K0X21C26A1000000/"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "合同会社ロケットボーイズ",
@@ -31299,7 +31711,7 @@
       "affected_service": "法人顧客向け問い合わせフォーム",
       "service_aliases": [],
       "added_at": "2026-11-10T20:15:39+00:00",
-      "updated_at": "2026-11-12T07:15:39+00:00"
+      "updated_at": "2026-11-27T16:17:36+00:00"
     },
     {
       "id": "5caa4239be9ca4fa",
@@ -34854,9 +35266,10 @@
         {
           "incident_id": "e0bf7f8e71d6ba85",
           "relationship": "affected_by",
-          "evidence_url": "https://newsdig.tbs.co.jp/articles/mbs/3116556?display=1",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUF272NY0X21C26A1000000/",
           "evidence_urls": [
-            "https://newsdig.tbs.co.jp/articles/mbs/3116556?display=1"
+            "https://newsdig.tbs.co.jp/articles/mbs/3116556?display=1",
+            "https://www.nikkei.com/article/DGXZQOUF272NY0X21C26A1000000/"
           ]
         }
       ],
@@ -34864,6 +35277,10 @@
         {
           "name": "TBS NEWS DIG",
           "url": "https://newsdig.tbs.co.jp/articles/mbs/3116556?display=1"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUF272NY0X21C26A1000000/"
         }
       ],
       "affected_system": null,
@@ -34871,7 +35288,7 @@
       "affected_service": "安否確認システム",
       "service_aliases": [],
       "added_at": "2026-11-27T06:16:39+00:00",
-      "updated_at": "2026-11-27T06:16:39+00:00"
+      "updated_at": "2026-11-27T16:17:36+00:00"
     },
     {
       "id": "8a2a8d13a22fe810",
@@ -44865,9 +45282,10 @@
         {
           "incident_id": "40defbcde51295e6",
           "relationship": "affects",
-          "evidence_url": "https://newsdig.tbs.co.jp/articles/mbs/3116556?display=1",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUF272NY0X21C26A1000000/",
           "evidence_urls": [
-            "https://newsdig.tbs.co.jp/articles/mbs/3116556?display=1"
+            "https://newsdig.tbs.co.jp/articles/mbs/3116556?display=1",
+            "https://www.nikkei.com/article/DGXZQOUF272NY0X21C26A1000000/"
           ]
         },
         {
@@ -46480,7 +46898,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-27T12:16:24+00:00"
+      "updated_at": "2026-11-27T16:17:36+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -56331,10 +56749,14 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/1ce59a3660d5f6d89c2e2006d4df0f043c9ee724"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOCC276WQ0X21C26A1000000/"
         }
       ],
       "added_at": "2026-10-23T01:00:27+00:00",
-      "updated_at": "2026-11-12T07:15:39+00:00"
+      "updated_at": "2026-11-27T16:17:36+00:00"
     },
     {
       "id": "643b8f7eefe572d3",
