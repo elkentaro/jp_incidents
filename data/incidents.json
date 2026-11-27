@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-27T12:16:24+00:00",
-  "total": 1687,
+  "updated_at": "2026-11-27T12:31:47+00:00",
+  "total": 1688,
   "date_range": {
     "start": "2023-01-01",
     "end": "2026-11-27"
@@ -366,7 +366,7 @@
     },
     {
       "date": "2026-11-27",
-      "count": 9
+      "count": 10
     }
   ],
   "incidents": [
@@ -383,7 +383,16 @@
       "potential_records": 489,
       "confidence": "high",
       "confidence_score": 90,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "b3302fafe7131b03",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/ykk-ap-otameshi-reform-data-breach-20261127/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/ykk-ap-otameshi-reform-data-breach-20261127/"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "合同会社ロケットボーイズ",
@@ -392,8 +401,10 @@
       ],
       "affected_system": null,
       "date_basis": "first_disclosure",
+      "affected_service": "お試しリフォーム",
+      "service_aliases": [],
       "added_at": "2026-11-27T12:16:24+00:00",
-      "updated_at": "2026-11-27T12:16:24+00:00"
+      "updated_at": "2026-11-27T12:31:47+00:00"
     },
     {
       "id": "52d79f87a51bfdfe",
@@ -547,6 +558,32 @@
       "updated_at": "2026-11-27T12:16:24+00:00"
     },
     {
+      "id": "14093b518d9b2f0b",
+      "published_at": "2026-11-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "エンカレッジ・テクノロジ",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/encourage_technology_outsourced_server_unauthorized_access_20261127/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "コーポレートサイト",
+      "service_aliases": [],
+      "added_at": "2026-11-27T12:31:47+00:00",
+      "updated_at": "2026-11-27T12:31:47+00:00"
+    },
+    {
       "id": "159ee4476f56ff51",
       "published_at": "2026-11-26T15:00:00+00:00",
       "disclosed_at": null,
@@ -637,7 +674,16 @@
       "potential_records": null,
       "confidence": "medium",
       "confidence_score": 30,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "0963568ef95855c5",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/ykk-ap-otameshi-reform-data-breach-20261127/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/ykk-ap-otameshi-reform-data-breach-20261127/"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "合同会社ロケットボーイズ",
@@ -647,7 +693,7 @@
       "affected_system": null,
       "date_basis": "first_disclosure",
       "added_at": "2026-11-27T12:16:24+00:00",
-      "updated_at": "2026-11-27T12:16:24+00:00"
+      "updated_at": "2026-11-27T12:31:47+00:00"
     },
     {
       "id": "06584284fefe0723",
@@ -41183,6 +41229,10 @@
           "url": "https://www.irisohyama.co.jp/news/2026/?date=1029"
         },
         {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/36476a37a931110b3b41a6f161a03960308f5276"
+        },
+        {
           "name": "ITmedia",
           "url": "https://www.itmedia.co.jp/news/article/2610/30/2000002737/"
         },
@@ -41248,7 +41298,7 @@
         }
       ],
       "added_at": "2026-10-30T01:13:09+00:00",
-      "updated_at": "2026-11-14T06:15:26+00:00"
+      "updated_at": "2026-11-27T12:31:47+00:00"
     },
     {
       "id": "862f0a5454308701",
@@ -77090,7 +77140,6 @@
     "8b7d9b3cba0b6490": "933d34557d02f202",
     "792c9e594566f60a": "aa9bc3fcfc85d71d",
     "4cc0594ace8794e0": "2639da70d5b68f2c",
-    "eabeef8122751e9d": "8132159128c70bb6",
     "24b890b61e3bb1e6": "3f9647cdc55cfd86",
     "a1047c4800d8333b": "1ff227f049a0de08",
     "4abc615ec3fea0d6": "1ff227f049a0de08",
@@ -77130,6 +77179,7 @@
     "16414fccdfdf5e18": "0eaef1bd861f21f3",
     "d2c6ca3bd26bd5ac": "0eaef1bd861f21f3",
     "216c3641192b9548": "0eaef1bd861f21f3",
-    "1ab3d4097c2748bd": "9fa62f7bc43145a4"
+    "1ab3d4097c2748bd": "9fa62f7bc43145a4",
+    "eabeef8122751e9d": "8132159128c70bb6"
   }
 }
