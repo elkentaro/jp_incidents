@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-27T01:16:26+00:00",
+  "updated_at": "2026-11-27T02:16:39+00:00",
   "total": 1666,
   "date_range": {
     "start": "2023-01-01",
@@ -572,6 +572,10 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/pal_system_kurashi_coop_sagawa_118806_possible_data_breach_202611/"
+        },
+        {
+          "name": "satimo list",
+          "url": "https://information.pal-system.co.jp/press/20261126-incident/"
         }
       ],
       "affected_system": null,
@@ -579,7 +583,7 @@
       "affected_service": "くらしと生協",
       "service_aliases": [],
       "added_at": "2026-11-26T22:16:01+00:00",
-      "updated_at": "2026-11-26T22:16:01+00:00"
+      "updated_at": "2026-11-27T02:16:39+00:00"
     },
     {
       "id": "b79b4a918f3bda40",
@@ -2569,6 +2573,39 @@
       "updated_at": "2026-11-24T02:17:36+00:00"
     },
     {
+      "id": "c63ef3dc4e5ea9d2",
+      "published_at": "2026-11-21T15:00:00+00:00",
+      "disclosed_at": "2026-11-25T15:00:00+00:00",
+      "organization": "エーエフシー",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 302580,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/afc-ec-302580-customer-data-breach-202611/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/119001"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "エーエフシー公式オンラインショップ",
+      "service_aliases": [
+        "464981.com"
+      ],
+      "added_at": "2026-11-26T11:16:22+00:00",
+      "updated_at": "2026-11-27T02:16:39+00:00"
+    },
+    {
       "id": "6711ba15b719ea79",
       "published_at": "2026-11-21T15:00:00+00:00",
       "disclosed_at": null,
@@ -2664,35 +2701,6 @@
       "upstream_status": "unknown",
       "added_at": "2026-11-25T20:16:04+00:00",
       "updated_at": "2026-11-26T17:15:57+00:00"
-    },
-    {
-      "id": "c63ef3dc4e5ea9d2",
-      "published_at": "2026-11-21T15:00:00+00:00",
-      "disclosed_at": "2026-11-25T15:00:00+00:00",
-      "organization": "エーエフシー",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 302580,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/afc-ec-302580-customer-data-breach-202611/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "occurrence",
-      "affected_service": "エーエフシー公式オンラインショップ",
-      "service_aliases": [
-        "464981.com"
-      ],
-      "added_at": "2026-11-26T11:16:22+00:00",
-      "updated_at": "2026-11-26T11:16:22+00:00"
     },
     {
       "id": "1f7eee629ae2c0fe",
@@ -5334,6 +5342,76 @@
       "updated_at": "2026-11-21T02:16:04+00:00"
     },
     {
+      "id": "c185bf248c4a7d3d",
+      "published_at": "2026-11-18T15:00:00+00:00",
+      "disclosed_at": "2026-11-23T15:00:00+00:00",
+      "organization": "ティーエムエルデ株式会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "208474cfa8914339",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/"
+          ]
+        },
+        {
+          "incident_id": "48c951bc15ed4dd0",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/"
+          ]
+        },
+        {
+          "incident_id": "769cddad7a0b607a",
+          "relationship": "affects",
+          "evidence_url": "http://db.pref.tottori.jp/pressrelease.nsf/webview/4FDC19B2F4D8C47449258EB9003B5E32?OpenDocument",
+          "evidence_urls": [
+            "http://db.pref.tottori.jp/pressrelease.nsf/webview/4FDC19B2F4D8C47449258EB9003B5E32?OpenDocument"
+          ]
+        },
+        {
+          "incident_id": "bd6f2240b20e7a8d",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/"
+          ]
+        },
+        {
+          "incident_id": "e6ef7257cc0872cb",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "www.tm-erde.co.jp",
+          "url": "https://www.tm-erde.co.jp/2026/11/24/3533/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/"
+        }
+      ],
+      "affected_service": "エコ・アクション・ポイント",
+      "service_aliases": [],
+      "added_at": "2026-11-25T02:16:29+00:00",
+      "updated_at": "2026-11-27T02:16:39+00:00"
+    },
+    {
       "id": "c97f351bcfbd0ee3",
       "published_at": "2026-11-18T15:00:00+00:00",
       "disclosed_at": null,
@@ -6149,74 +6227,6 @@
       "service_aliases": [],
       "added_at": "2026-11-18T23:23:22+00:00",
       "updated_at": "2026-11-18T23:23:22+00:00"
-    },
-    {
-      "id": "c185bf248c4a7d3d",
-      "published_at": "2026-11-18T15:00:00+00:00",
-      "disclosed_at": "2026-11-23T15:00:00+00:00",
-      "organization": "ティーエムエルデ株式会社",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "208474cfa8914339",
-          "relationship": "affects",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/"
-          ]
-        },
-        {
-          "incident_id": "48c951bc15ed4dd0",
-          "relationship": "affects",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/"
-          ]
-        },
-        {
-          "incident_id": "769cddad7a0b607a",
-          "relationship": "affects",
-          "evidence_url": "http://db.pref.tottori.jp/pressrelease.nsf/webview/4FDC19B2F4D8C47449258EB9003B5E32?OpenDocument",
-          "evidence_urls": [
-            "http://db.pref.tottori.jp/pressrelease.nsf/webview/4FDC19B2F4D8C47449258EB9003B5E32?OpenDocument"
-          ]
-        },
-        {
-          "incident_id": "bd6f2240b20e7a8d",
-          "relationship": "affects",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/"
-          ]
-        },
-        {
-          "incident_id": "e6ef7257cc0872cb",
-          "relationship": "affects",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/",
-          "evidence_urls": [
-            "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "www.tm-erde.co.jp",
-          "url": "https://www.tm-erde.co.jp/2026/11/24/3533/"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/eco-action-point-data-breach/"
-        }
-      ],
-      "added_at": "2026-11-25T02:16:29+00:00",
-      "updated_at": "2026-11-26T18:16:26+00:00"
     },
     {
       "id": "de4e9cb1d098b3db",
@@ -46687,6 +46697,10 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/thinca_kaikura_internal_server_5286_data_breach_202611/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/119002"
         }
       ],
       "affected_system": null,
@@ -46694,7 +46708,7 @@
       "affected_service": "カイクラ",
       "service_aliases": [],
       "added_at": "2026-11-26T11:16:22+00:00",
-      "updated_at": "2026-11-27T00:16:07+00:00"
+      "updated_at": "2026-11-27T02:16:39+00:00"
     },
     {
       "id": "832c90a535a1d08d",
@@ -75937,6 +75951,10 @@
         },
         {
           "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/3fd0ee18b0a0be6ddfbe9840232342d3030a0e7f"
+        },
+        {
+          "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/7e2b91f3aa3fd28cb098e342a3c278a32094171a"
         },
         {
@@ -75965,7 +75983,7 @@
       "affected_service": "ウェブサイトの問い合わせフォーム",
       "service_aliases": [],
       "added_at": "2026-11-26T06:16:57+00:00",
-      "updated_at": "2026-11-26T11:16:22+00:00"
+      "updated_at": "2026-11-27T02:16:39+00:00"
     }
   ],
   "aliases": {
