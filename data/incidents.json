@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-27T03:15:58+00:00",
-  "total": 1666,
+  "updated_at": "2026-11-27T04:16:33+00:00",
+  "total": 1668,
   "date_range": {
     "start": "2023-01-01",
     "end": "2026-11-27"
@@ -354,7 +354,7 @@
     },
     {
       "date": "2026-11-24",
-      "count": 17
+      "count": 18
     },
     {
       "date": "2026-11-25",
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-26",
-      "count": 14
+      "count": 15
     },
     {
       "date": "2026-11-27",
@@ -536,6 +536,10 @@
         {
           "name": "47NEWS",
           "url": "https://www.47news.jp/15291682.html"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC26C9A0W6A121C2000000/"
         }
       ],
       "affected_system": null,
@@ -543,7 +547,7 @@
       "affected_service": "ニューバランス公式オンラインストア",
       "service_aliases": [],
       "added_at": "2026-11-26T02:16:13+00:00",
-      "updated_at": "2026-11-26T18:16:26+00:00"
+      "updated_at": "2026-11-27T04:16:33+00:00"
     },
     {
       "id": "944ef1da9cfc7701",
@@ -624,6 +628,85 @@
       "service_aliases": [],
       "added_at": "2026-11-26T09:16:34+00:00",
       "updated_at": "2026-11-27T01:16:26+00:00"
+    },
+    {
+      "id": "f28a767eaabf5c70",
+      "published_at": "2026-11-25T15:00:00+00:00",
+      "disclosed_at": "2026-11-25T15:00:00+00:00",
+      "organization": "三菱地所",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 103600,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://act1.co.jp/2026-11-27-03/",
+          "evidence_urls": [
+            "https://act1.co.jp/2026-11-27-03/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "株式会社アクト",
+          "url": "https://act1.co.jp/2026-11-27-03/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "update!MARUNOUCHI for workers / MECチケットモール / NEW PORT デリバリープラットフォーム / Will Conscious Marunouchi チケッティングサイト / みなとみらいポイントアプリ / ザ クラブ・ロイヤルパークホテルズ / 三菱地所オフィス情報 / 三菱地所ワーケーションポータルサイト",
+      "service_aliases": [],
+      "affected_services": [
+        "update!MARUNOUCHI for workers",
+        "MECチケットモール",
+        "NEW PORT デリバリープラットフォーム",
+        "Will Conscious Marunouchi チケッティングサイト",
+        "みなとみらいポイントアプリ",
+        "ザ クラブ・ロイヤルパークホテルズ",
+        "三菱地所オフィス情報",
+        "三菱地所ワーケーションポータルサイト"
+      ],
+      "service_details": [
+        {
+          "name": "update!MARUNOUCHI for workers",
+          "aliases": []
+        },
+        {
+          "name": "MECチケットモール",
+          "aliases": []
+        },
+        {
+          "name": "NEW PORT デリバリープラットフォーム",
+          "aliases": []
+        },
+        {
+          "name": "Will Conscious Marunouchi チケッティングサイト",
+          "aliases": []
+        },
+        {
+          "name": "みなとみらいポイントアプリ",
+          "aliases": []
+        },
+        {
+          "name": "ザ クラブ・ロイヤルパークホテルズ",
+          "aliases": []
+        },
+        {
+          "name": "三菱地所オフィス情報",
+          "aliases": []
+        },
+        {
+          "name": "三菱地所ワーケーションポータルサイト",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-27T04:16:33+00:00",
+      "updated_at": "2026-11-27T04:16:33+00:00"
     },
     {
       "id": "2a9dfbf41b69a8b3",
@@ -2356,6 +2439,41 @@
       ],
       "added_at": "2026-11-25T01:15:59+00:00",
       "updated_at": "2026-11-25T03:16:08+00:00"
+    },
+    {
+      "id": "b58bd9413449cee7",
+      "published_at": "2026-11-23T15:00:00+00:00",
+      "disclosed_at": "2026-11-25T15:00:00+00:00",
+      "organization": "くふうカンパニー",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "3e3633513c456478",
+          "relationship": "same_organization",
+          "evidence_url": "https://act1.co.jp/2026-11-27-05/",
+          "evidence_urls": [
+            "https://act1.co.jp/2026-11-27-05/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "株式会社アクト",
+          "url": "https://act1.co.jp/2026-11-27-05/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "リテール・リーダーズ",
+      "service_aliases": [],
+      "added_at": "2026-11-27T04:16:33+00:00",
+      "updated_at": "2026-11-27T04:16:33+00:00"
     },
     {
       "id": "bd6f2240b20e7a8d",
@@ -4213,6 +4331,61 @@
       "updated_at": "2026-11-24T05:16:10+00:00"
     },
     {
+      "id": "6213c87653391378",
+      "published_at": "2026-11-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ミスターマックス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 1806330,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.mrmaxhd.co.jp/release/upload/20261125_release.pdf",
+          "evidence_urls": [
+            "https://www.mrmaxhd.co.jp/release/upload/20261125_release.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "satimo list",
+          "url": "https://www.mrmaxhd.co.jp/release/upload/20261125_release.pdf"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/mrmax-karte-1806330-data-breach-202611/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/9d9c1f27bdcf374c376caa55e7f0410ed57fbede"
+        }
+      ],
+      "affected_service": "MrMax アプリ / オンラインストア",
+      "service_aliases": [],
+      "affected_services": [
+        "MrMax アプリ",
+        "オンラインストア"
+      ],
+      "service_details": [
+        {
+          "name": "MrMax アプリ",
+          "aliases": []
+        },
+        {
+          "name": "オンラインストア",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-26T02:16:13+00:00",
+      "updated_at": "2026-11-27T04:16:33+00:00"
+    },
+    {
       "id": "8acdfc8459902e15",
       "published_at": "2026-11-19T15:00:00+00:00",
       "disclosed_at": null,
@@ -4651,57 +4824,6 @@
       "date_basis": "publication",
       "added_at": "2026-11-20T17:16:08+00:00",
       "updated_at": "2026-11-20T17:16:08+00:00"
-    },
-    {
-      "id": "6213c87653391378",
-      "published_at": "2026-11-19T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ミスターマックス",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 1806330,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "8cf67a97b55e1d57",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.mrmaxhd.co.jp/release/upload/20261125_release.pdf",
-          "evidence_urls": [
-            "https://www.mrmaxhd.co.jp/release/upload/20261125_release.pdf"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "satimo list",
-          "url": "https://www.mrmaxhd.co.jp/release/upload/20261125_release.pdf"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/mrmax-karte-1806330-data-breach-202611/"
-        }
-      ],
-      "affected_service": "MrMax アプリ / オンラインストア",
-      "service_aliases": [],
-      "affected_services": [
-        "MrMax アプリ",
-        "オンラインストア"
-      ],
-      "service_details": [
-        {
-          "name": "MrMax アプリ",
-          "aliases": []
-        },
-        {
-          "name": "オンラインストア",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-26T02:16:13+00:00",
-      "updated_at": "2026-11-26T03:16:09+00:00"
     },
     {
       "id": "7b4bb70f3e98ffde",
@@ -14992,6 +15114,14 @@
           ]
         },
         {
+          "incident_id": "f28a767eaabf5c70",
+          "relationship": "affects",
+          "evidence_url": "https://act1.co.jp/2026-11-27-03/",
+          "evidence_urls": [
+            "https://act1.co.jp/2026-11-27-03/"
+          ]
+        },
+        {
           "incident_id": "f34f5c53f703dbf5",
           "relationship": "affects",
           "evidence_url": "https://www.tochigibank.co.jp/showimage/pdf?fileNo=3672",
@@ -15101,7 +15231,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-26T12:16:55+00:00"
+      "updated_at": "2026-11-27T04:16:33+00:00"
     },
     {
       "id": "8ea683a4f9752ffb",
@@ -46705,6 +46835,10 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/119002"
+        },
+        {
+          "name": "株式会社アクト",
+          "url": "https://act1.co.jp/2026-11-27-04/"
         }
       ],
       "affected_system": null,
@@ -46712,7 +46846,7 @@
       "affected_service": "カイクラ",
       "service_aliases": [],
       "added_at": "2026-11-26T11:16:22+00:00",
-      "updated_at": "2026-11-27T02:16:39+00:00"
+      "updated_at": "2026-11-27T04:16:33+00:00"
     },
     {
       "id": "832c90a535a1d08d",
@@ -74098,7 +74232,16 @@
       "potential_records": 308,
       "confidence": "high",
       "confidence_score": 90,
-      "related": [],
+      "related": [
+        {
+          "incident_id": "b58bd9413449cee7",
+          "relationship": "same_organization",
+          "evidence_url": "https://act1.co.jp/2026-11-27-05/",
+          "evidence_urls": [
+            "https://act1.co.jp/2026-11-27-05/"
+          ]
+        }
+      ],
       "sources": [
         {
           "name": "株式会社くふうカンパニー",
@@ -74116,7 +74259,7 @@
       "affected_service": "くふう まちトークβ版",
       "service_aliases": [],
       "added_at": "2026-10-27T00:15:41+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-27T04:16:33+00:00"
     },
     {
       "id": "b209c133e3d77d32",
