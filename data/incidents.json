@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-27T21:16:35+00:00",
-  "total": 1708,
+  "updated_at": "2026-11-27T22:17:16+00:00",
+  "total": 1709,
   "date_range": {
     "start": "2023-01-01",
     "end": "2026-11-28"
@@ -354,7 +354,7 @@
     },
     {
       "date": "2026-11-25",
-      "count": 25
+      "count": 26
     },
     {
       "date": "2026-11-26",
@@ -606,6 +606,63 @@
       "service_aliases": [],
       "added_at": "2026-11-27T16:17:36+00:00",
       "updated_at": "2026-11-27T16:17:36+00:00"
+    },
+    {
+      "id": "dc3d01178576d11e",
+      "published_at": "2026-11-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ミンカブ・ジ・イノフォイド",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 153000,
+      "confidence": "high",
+      "confidence_score": 80,
+      "related": [],
+      "sources": [
+        {
+          "name": "ミンカブ・ジ・イノフォイド",
+          "url": "https://www.release.tdnet.info/inbs/140120261127587952.pdf"
+        },
+        {
+          "name": "リスク対策.com",
+          "url": "https://www.risktaisaku.com/articles/-/117598"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6f7f2b45689859828bb4e5f971150df5ac2f2294"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0xbDV1aE5xOHBqYUN3eENfUWF5SjBwRkduSWk2SHRTYTdjYWFQd3YwZlk0T3ZWd1FJczZjZHQ5cXJBSGkxRjU1dS1CT0lEX3NaS3poSl9FZlgzeWNEbVFGMU0tay1Xc3pVckE?oc=5"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNMnRyMG1BdGR4bFBlbGRxZ0VfdXFTMERUeFBSTDExdmU0WFNVbjk4ZHBqa21qNzJoUWdoUnN1dUJNdlU0ekQxN2tySm5YNm9TTG1lNXdfQkFUTG91TnFNLWpZM1ZtOEFRamZ5T1pGNnpMYVBlN2VaZk94Z0JUbmdBdS1ZU05jR1RzcmI3TXJjSXJQRnlXckR0bl9fZ0tMQQ?oc=5"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "資産形成情報メディア「ミンカブ」 / 資産管理サービス",
+      "service_aliases": [],
+      "affected_services": [
+        "資産形成情報メディア「ミンカブ」",
+        "資産管理サービス"
+      ],
+      "service_details": [
+        {
+          "name": "資産形成情報メディア「ミンカブ」",
+          "aliases": []
+        },
+        {
+          "name": "資産管理サービス",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-27T13:17:14+00:00",
+      "updated_at": "2026-11-27T22:17:16+00:00"
     },
     {
       "id": "1069037e1d00384f",
@@ -876,51 +933,6 @@
       "service_aliases": [],
       "added_at": "2026-11-27T06:16:39+00:00",
       "updated_at": "2026-11-27T06:16:39+00:00"
-    },
-    {
-      "id": "dc3d01178576d11e",
-      "published_at": "2026-11-26T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ミンカブ・ジ・イノフォイド",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 153000,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "リスク対策.com",
-          "url": "https://www.risktaisaku.com/articles/-/117598"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/6f7f2b45689859828bb4e5f971150df5ac2f2294"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "publication",
-      "affected_service": "資産形成情報メディア「ミンカブ」 / 資産管理サービス",
-      "service_aliases": [],
-      "affected_services": [
-        "資産形成情報メディア「ミンカブ」",
-        "資産管理サービス"
-      ],
-      "service_details": [
-        {
-          "name": "資産形成情報メディア「ミンカブ」",
-          "aliases": []
-        },
-        {
-          "name": "資産管理サービス",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-27T13:17:14+00:00",
-      "updated_at": "2026-11-27T15:18:29+00:00"
     },
     {
       "id": "ed9020351dac66e9",
@@ -2835,6 +2847,40 @@
       "date_basis": "publication",
       "added_at": "2026-11-25T10:16:21+00:00",
       "updated_at": "2026-11-25T15:16:10+00:00"
+    },
+    {
+      "id": "22746348f546d21b",
+      "published_at": "2026-11-24T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "佐野市",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 244,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWE15M21yVEhQUEFKb09MbmFVVzJ4OWVicVlrZEpEdGx5Xy1IbXRHeFMwOFR5QVhzRnh5WGs5MTdUT3hXSHBxNTFSb29mMkpxRkFPOTZYM3BfNEFBV2FRQ19zdEJUUk84d1lZX2w1cHVETDdRTDJTS3ktYnJLNkJsZE91WHk?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWE15M21yVEhQUEFKb09MbmFVVzJ4OWVicVlrZEpEdGx5Xy1IbXRHeFMwOFR5QVhzRnh5WGs5MTdUT3hXSHBxNTFSb29mMkpxRkFPOTZYM3BfNEFBV2FRQ19zdEJUUk84d1lZX2w1cHVETDdRTDJTS3ktYnJLNkJsZE91WHk?oc=5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "佐野市",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWE15M21yVEhQUEFKb09MbmFVVzJ4OWVicVlrZEpEdGx5Xy1IbXRHeFMwOFR5QVhzRnh5WGs5MTdUT3hXSHBxNTFSb29mMkpxRkFPOTZYM3BfNEFBV2FRQ19zdEJUUk84d1lZX2w1cHVETDdRTDJTS3ktYnJLNkJsZE91WHk?oc=5"
+        }
+      ],
+      "affected_service": "マイナンバーカード交付予約・管理システム",
+      "service_aliases": [],
+      "added_at": "2026-11-27T22:17:16+00:00",
+      "updated_at": "2026-11-27T22:17:16+00:00"
     },
     {
       "id": "34634d72d864a2e4",
@@ -45082,6 +45128,14 @@
           ]
         },
         {
+          "incident_id": "22746348f546d21b",
+          "relationship": "affects",
+          "evidence_url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWE15M21yVEhQUEFKb09MbmFVVzJ4OWVicVlrZEpEdGx5Xy1IbXRHeFMwOFR5QVhzRnh5WGs5MTdUT3hXSHBxNTFSb29mMkpxRkFPOTZYM3BfNEFBV2FRQ19zdEJUUk84d1lZX2w1cHVETDdRTDJTS3ktYnJLNkJsZE91WHk?oc=5",
+          "evidence_urls": [
+            "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWE15M21yVEhQUEFKb09MbmFVVzJ4OWVicVlrZEpEdGx5Xy1IbXRHeFMwOFR5QVhzRnh5WGs5MTdUT3hXSHBxNTFSb29mMkpxRkFPOTZYM3BfNEFBV2FRQ19zdEJUUk84d1lZX2w1cHVETDdRTDJTS3ktYnJLNkJsZE91WHk?oc=5"
+          ]
+        },
+        {
           "incident_id": "22d5d068692ef51d",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/446e6380d1a8a3123f8c40c5337be799ab1b14f2",
@@ -46946,7 +47000,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-27T16:17:36+00:00"
+      "updated_at": "2026-11-27T22:17:16+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
