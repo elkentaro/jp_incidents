@@ -1,17 +1,13 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-27T14:17:15+00:00",
-  "total": 1694,
+  "updated_at": "2026-11-27T15:18:29+00:00",
+  "total": 1697,
   "date_range": {
     "start": "2023-01-01",
     "end": "2026-11-27"
   },
   "daily_counts_90d": [
-    {
-      "date": "2026-08-30",
-      "count": 0
-    },
     {
       "date": "2026-08-31",
       "count": 1
@@ -366,7 +362,11 @@
     },
     {
       "date": "2026-11-27",
-      "count": 13
+      "count": 16
+    },
+    {
+      "date": "2026-11-28",
+      "count": 0
     }
   ],
   "incidents": [
@@ -502,6 +502,39 @@
       "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
+      "id": "43e7f94b8f52b995",
+      "published_at": "2026-11-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "シロク",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/8b77b364df108744094dbe14ab381cbef6bb9efb",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/8b77b364df108744094dbe14ab381cbef6bb9efb"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/8b77b364df108744094dbe14ab381cbef6bb9efb"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-27T15:18:29+00:00",
+      "updated_at": "2026-11-27T15:18:29+00:00"
+    },
+    {
       "id": "54dd359716824ae5",
       "published_at": "2026-11-26T15:00:00+00:00",
       "disclosed_at": null,
@@ -526,6 +559,66 @@
       "service_aliases": [],
       "added_at": "2026-11-27T12:16:24+00:00",
       "updated_at": "2026-11-27T12:16:24+00:00"
+    },
+    {
+      "id": "641d6e078c34ceb5",
+      "published_at": "2026-11-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大丸松坂屋百貨店",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC27B5Q0X21C26A1000000/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "大丸松坂屋オンラインストア",
+      "service_aliases": [],
+      "added_at": "2026-11-27T15:18:29+00:00",
+      "updated_at": "2026-11-27T15:18:29+00:00"
+    },
+    {
+      "id": "87993dc17b4244f0",
+      "published_at": "2026-11-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "クラシコ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/8b77b364df108744094dbe14ab381cbef6bb9efb",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/8b77b364df108744094dbe14ab381cbef6bb9efb"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/8b77b364df108744094dbe14ab381cbef6bb9efb"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-27T15:18:29+00:00",
+      "updated_at": "2026-11-27T15:18:29+00:00"
     },
     {
       "id": "dbb4c6605d40c667",
@@ -562,6 +655,51 @@
       "service_aliases": [],
       "added_at": "2026-11-27T06:16:39+00:00",
       "updated_at": "2026-11-27T06:16:39+00:00"
+    },
+    {
+      "id": "dc3d01178576d11e",
+      "published_at": "2026-11-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ミンカブ・ジ・イノフォイド",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 153000,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [],
+      "sources": [
+        {
+          "name": "リスク対策.com",
+          "url": "https://www.risktaisaku.com/articles/-/117598"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/6f7f2b45689859828bb4e5f971150df5ac2f2294"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "資産形成情報メディア「ミンカブ」 / 資産管理サービス",
+      "service_aliases": [],
+      "affected_services": [
+        "資産形成情報メディア「ミンカブ」",
+        "資産管理サービス"
+      ],
+      "service_details": [
+        {
+          "name": "資産形成情報メディア「ミンカブ」",
+          "aliases": []
+        },
+        {
+          "name": "資産管理サービス",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-27T13:17:14+00:00",
+      "updated_at": "2026-11-27T15:18:29+00:00"
     },
     {
       "id": "ed9020351dac66e9",
@@ -778,47 +916,6 @@
       "updated_at": "2026-11-27T12:31:47+00:00"
     },
     {
-      "id": "dc3d01178576d11e",
-      "published_at": "2026-11-26T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ミンカブ・ジ・イノフォイド",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 153000,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "リスク対策.com",
-          "url": "https://www.risktaisaku.com/articles/-/117598"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "publication",
-      "affected_service": "資産形成情報メディア「ミンカブ」 / 資産管理サービス",
-      "service_aliases": [],
-      "affected_services": [
-        "資産形成情報メディア「ミンカブ」",
-        "資産管理サービス"
-      ],
-      "service_details": [
-        {
-          "name": "資産形成情報メディア「ミンカブ」",
-          "aliases": []
-        },
-        {
-          "name": "資産管理サービス",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-27T13:17:14+00:00",
-      "updated_at": "2026-11-27T13:17:14+00:00"
-    },
-    {
       "id": "06584284fefe0723",
       "published_at": "2026-11-25T15:00:00+00:00",
       "disclosed_at": null,
@@ -836,12 +933,16 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/monogatari_corporation_79799_form_data_breach_20261126/"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC277730X21C26A1000000/"
         }
       ],
       "affected_system": null,
       "date_basis": "publication",
       "added_at": "2026-11-26T19:16:02+00:00",
-      "updated_at": "2026-11-26T19:16:02+00:00"
+      "updated_at": "2026-11-27T15:18:29+00:00"
     },
     {
       "id": "27cf8f27821c244d",
@@ -9714,8 +9815,9 @@
         {
           "incident_id": "8cf67a97b55e1d57",
           "relationship": "affected_by",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/shimamura-karte-7million-member-attributes-50000-children-birthmonth-leak/",
+          "evidence_url": "https://act1.co.jp/2026-11-27-07/",
           "evidence_urls": [
+            "https://act1.co.jp/2026-11-27-07/",
             "https://rocket-boys.co.jp/security-measures-lab/shimamura-karte-7million-member-attributes-50000-children-birthmonth-leak/"
           ]
         }
@@ -9724,6 +9826,10 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/shimamura-karte-7million-member-attributes-50000-children-birthmonth-leak/"
+        },
+        {
+          "name": "株式会社アクト",
+          "url": "https://act1.co.jp/2026-11-27-07/"
         },
         {
           "name": "Yahoo!ニュース",
@@ -9741,7 +9847,7 @@
       "affected_system": null,
       "date_basis": "first_disclosure",
       "added_at": "2026-11-17T23:16:16+00:00",
-      "updated_at": "2026-11-22T06:16:06+00:00"
+      "updated_at": "2026-11-27T15:18:29+00:00"
     },
     {
       "id": "90f25b7d84e534d3",
@@ -15142,6 +15248,14 @@
           ]
         },
         {
+          "incident_id": "43e7f94b8f52b995",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/8b77b364df108744094dbe14ab381cbef6bb9efb",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/8b77b364df108744094dbe14ab381cbef6bb9efb"
+          ]
+        },
+        {
           "incident_id": "45dc27d4ed705060",
           "relationship": "affects",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/b2b_post_contract_personal_data_retention_06_20261/",
@@ -15501,6 +15615,14 @@
           ]
         },
         {
+          "incident_id": "87993dc17b4244f0",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/8b77b364df108744094dbe14ab381cbef6bb9efb",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/8b77b364df108744094dbe14ab381cbef6bb9efb"
+          ]
+        },
+        {
           "incident_id": "8acdfc8459902e15",
           "relationship": "affects",
           "evidence_url": "https://news.yahoo.co.jp/articles/fbbc2dada833725edf0e5cef73fc551f96b09b6d",
@@ -15527,8 +15649,9 @@
         {
           "incident_id": "8cb6d0590720520f",
           "relationship": "affects",
-          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/shimamura-karte-7million-member-attributes-50000-children-birthmonth-leak/",
+          "evidence_url": "https://act1.co.jp/2026-11-27-07/",
           "evidence_urls": [
+            "https://act1.co.jp/2026-11-27-07/",
             "https://rocket-boys.co.jp/security-measures-lab/shimamura-karte-7million-member-attributes-50000-children-birthmonth-leak/"
           ]
         },
@@ -16118,7 +16241,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-27T13:17:14+00:00"
+      "updated_at": "2026-11-27T15:18:29+00:00"
     },
     {
       "id": "8ea683a4f9752ffb",
@@ -18919,8 +19042,9 @@
         {
           "incident_id": "80fe411952caf308",
           "relationship": "affected_by",
-          "evidence_url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56877.html",
+          "evidence_url": "https://act1.co.jp/2026-11-27-09/",
           "evidence_urls": [
+            "https://act1.co.jp/2026-11-27-09/",
             "https://scan.netsecurity.ne.jp/article/2026/11/24/56877.html"
           ]
         }
@@ -18941,6 +19065,10 @@
         {
           "name": "Cybersecurity.jp",
           "url": "https://cybersecurity-jp.com/news/119098"
+        },
+        {
+          "name": "株式会社アクト",
+          "url": "https://act1.co.jp/2026-11-27-09/"
         }
       ],
       "affected_system": null,
@@ -18948,7 +19076,7 @@
       "affected_service": "dodaエージェントサービス",
       "service_aliases": [],
       "added_at": "2026-11-24T01:16:40+00:00",
-      "updated_at": "2026-11-27T13:17:14+00:00"
+      "updated_at": "2026-11-27T15:18:29+00:00"
     },
     {
       "id": "8b9ef04d72ec50ae",
@@ -20249,6 +20377,10 @@
         {
           "name": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2026/11/27/56913.html"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://s.netsecurity.ne.jp/article/img/2026/11/27/56913/56540.html"
         }
       ],
       "affected_system": null,
@@ -20256,7 +20388,7 @@
       "affected_service": "ミツモア",
       "service_aliases": [],
       "added_at": "2026-11-16T10:15:49+00:00",
-      "updated_at": "2026-11-27T00:16:07+00:00"
+      "updated_at": "2026-11-27T15:18:29+00:00"
     },
     {
       "id": "7e675401ba9184a3",
@@ -22401,8 +22533,9 @@
         {
           "incident_id": "81015e37f61e916d",
           "relationship": "affects",
-          "evidence_url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56877.html",
+          "evidence_url": "https://act1.co.jp/2026-11-27-09/",
           "evidence_urls": [
+            "https://act1.co.jp/2026-11-27-09/",
             "https://scan.netsecurity.ne.jp/article/2026/11/24/56877.html"
           ]
         }
@@ -22450,7 +22583,7 @@
         "トナリワ"
       ],
       "added_at": "2026-11-11T09:15:59+00:00",
-      "updated_at": "2026-11-27T01:16:26+00:00"
+      "updated_at": "2026-11-27T15:18:29+00:00"
     },
     {
       "id": "8fb0d1022527dbd9",
@@ -76935,6 +77068,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/2f4ae4dffa5a9ab0122407d3c0141808c1778829"
+        },
+        {
+          "name": "Security NEXT",
+          "url": "https://www.security-next.com/193310"
         }
       ],
       "affected_system": null,
@@ -76942,7 +77079,7 @@
       "affected_service": "ヴェレダ 公式オンラインショップ",
       "service_aliases": [],
       "added_at": "2026-11-25T14:16:34+00:00",
-      "updated_at": "2026-11-25T20:16:04+00:00"
+      "updated_at": "2026-11-27T15:18:29+00:00"
     },
     {
       "id": "16c96d334af3d492",
