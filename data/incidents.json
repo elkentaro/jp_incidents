@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-26T23:15:50+00:00",
-  "total": 1663,
+  "updated_at": "2026-11-27T00:16:07+00:00",
+  "total": 1665,
   "date_range": {
     "start": "2023-01-01",
     "end": "2026-11-27"
@@ -358,11 +358,11 @@
     },
     {
       "date": "2026-11-25",
-      "count": 22
+      "count": 23
     },
     {
       "date": "2026-11-26",
-      "count": 13
+      "count": 14
     },
     {
       "date": "2026-11-27",
@@ -770,6 +770,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/bb669e68205ccab05560a7130596fe71c277d53e?source=rss"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/attenir-karte-data-breach-20261126/"
         }
       ],
       "affected_system": null,
@@ -779,7 +783,48 @@
         "カルテ"
       ],
       "added_at": "2026-11-26T11:16:22+00:00",
-      "updated_at": "2026-11-26T23:15:50+00:00"
+      "updated_at": "2026-11-27T00:16:07+00:00"
+    },
+    {
+      "id": "eba2996ba5d9680e",
+      "published_at": "2026-11-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "インヴェンティット株式会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "3fcc1308ab574a14",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/8ba8074ef9955c19569f474634abdead67a12fea",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/8ba8074ef9955c19569f474634abdead67a12fea"
+          ]
+        },
+        {
+          "incident_id": "8e5216fb3af59e3a",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/8ba8074ef9955c19569f474634abdead67a12fea",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/8ba8074ef9955c19569f474634abdead67a12fea"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/8ba8074ef9955c19569f474634abdead67a12fea"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-27T00:16:07+00:00",
+      "updated_at": "2026-11-27T00:16:07+00:00"
     },
     {
       "id": "96389c68e1bd321a",
@@ -1477,6 +1522,39 @@
       ],
       "added_at": "2026-11-25T15:16:10+00:00",
       "updated_at": "2026-11-25T15:16:10+00:00"
+    },
+    {
+      "id": "3fcc1308ab574a14",
+      "published_at": "2026-11-24T15:00:00+00:00",
+      "disclosed_at": "2026-11-24T15:00:00+00:00",
+      "organization": "山元町教育委員会",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 27,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "eba2996ba5d9680e",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/8ba8074ef9955c19569f474634abdead67a12fea",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/8ba8074ef9955c19569f474634abdead67a12fea"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/8ba8074ef9955c19569f474634abdead67a12fea"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "added_at": "2026-11-27T00:16:07+00:00",
+      "updated_at": "2026-11-27T00:16:07+00:00"
     },
     {
       "id": "5ff4a950ee5fcfe0",
@@ -9516,6 +9594,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/d85361d1935beecbe6484605916597c704b4da16"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/27/56917.html"
         }
       ],
       "affected_system": null,
@@ -9523,7 +9605,7 @@
       "affected_service": "抽選システム",
       "service_aliases": [],
       "added_at": "2026-11-17T22:16:17+00:00",
-      "updated_at": "2026-11-18T07:15:49+00:00"
+      "updated_at": "2026-11-27T00:16:07+00:00"
     },
     {
       "id": "e7b712d3c616ac80",
@@ -19026,6 +19108,10 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/a77bdf7b31a74f59b64e5506c83357ec5e93043d"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/27/56913.html"
         }
       ],
       "affected_system": null,
@@ -19033,7 +19119,7 @@
       "affected_service": "ミツモア",
       "service_aliases": [],
       "added_at": "2026-11-16T10:15:49+00:00",
-      "updated_at": "2026-11-18T23:14:19+00:00"
+      "updated_at": "2026-11-27T00:16:07+00:00"
     },
     {
       "id": "7e675401ba9184a3",
@@ -32571,6 +32657,14 @@
           "evidence_urls": [
             "https://art.passes.jp/post/%E3%80%90%E9%87%8D%E8%A6%81%E3%80%91%E3%83%A1%E3%83%BC%E3%83%AB%E3%83%9E%E3%82%AC%E3%82%B8%E3%83%B3%E9%85%8D%E4%BF%A1%E6%A5%AD%E5%8B%99%E5%A7%94%E8%A8%97%E5%85%88%E3%81%B8%E3%81%AE%E4%B8%8D%E6%AD%A3%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%81%8A%E8%A9%AB%E3%81%B3%E3%81%A8%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B"
           ]
+        },
+        {
+          "incident_id": "eba2996ba5d9680e",
+          "relationship": "same_organization",
+          "evidence_url": "https://news.yahoo.co.jp/articles/8ba8074ef9955c19569f474634abdead67a12fea",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/8ba8074ef9955c19569f474634abdead67a12fea"
+          ]
         }
       ],
       "sources": [
@@ -32586,7 +32680,7 @@
       "affected_service": "ARTPASS",
       "service_aliases": [],
       "added_at": "2026-11-06T08:36:04+00:00",
-      "updated_at": "2026-11-20T06:17:27+00:00"
+      "updated_at": "2026-11-27T00:16:07+00:00"
     },
     {
       "id": "c550da83664778a4",
@@ -46517,6 +46611,10 @@
         {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261126586941.pdf"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/thinca_kaikura_internal_server_5286_data_breach_202611/"
         }
       ],
       "affected_system": null,
@@ -46524,7 +46622,7 @@
       "affected_service": "カイクラ",
       "service_aliases": [],
       "added_at": "2026-11-26T11:16:22+00:00",
-      "updated_at": "2026-11-26T12:16:55+00:00"
+      "updated_at": "2026-11-27T00:16:07+00:00"
     },
     {
       "id": "832c90a535a1d08d",
@@ -72305,6 +72403,61 @@
       "updated_at": "2026-11-12T08:18:15+00:00"
     },
     {
+      "id": "9974d69269ae360b",
+      "published_at": "2026-10-07T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ユーザベース",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 362000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "12e7a20b5ea44b95",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.uzabase.com/jp/info/20261019/",
+          "evidence_urls": [
+            "https://www.uzabase.com/jp/info/20261019/"
+          ]
+        },
+        {
+          "incident_id": "912b38db2059ec17",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.uzabase.com/jp/info/20261019/",
+          "evidence_urls": [
+            "https://www.uzabase.com/jp/info/20261019/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/27/56914.html"
+        },
+        {
+          "name": "Westeria list",
+          "url": "https://westeria.jp/security-incidents/cases/newspicks-2026/"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/17/56800.html"
+        },
+        {
+          "name": "NewsPicks",
+          "url": "https://corp.newspicks.com/info/20261118"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/newspicks_metabase_final_report_20261118/"
+        }
+      ],
+      "added_at": "2026-10-19T09:06:44+00:00",
+      "updated_at": "2026-11-27T00:16:07+00:00"
+    },
+    {
       "id": "e350657755c1d562",
       "published_at": "2026-10-07T15:00:00+00:00",
       "disclosed_at": null,
@@ -72533,57 +72686,6 @@
       ],
       "added_at": "2026-11-03T02:16:05+00:00",
       "updated_at": "2026-11-12T07:15:39+00:00"
-    },
-    {
-      "id": "9974d69269ae360b",
-      "published_at": "2026-10-07T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "ユーザベース",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak"
-      ],
-      "potential_records": 362000,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "12e7a20b5ea44b95",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.uzabase.com/jp/info/20261019/",
-          "evidence_urls": [
-            "https://www.uzabase.com/jp/info/20261019/"
-          ]
-        },
-        {
-          "incident_id": "912b38db2059ec17",
-          "relationship": "same_organization",
-          "evidence_url": "https://www.uzabase.com/jp/info/20261019/",
-          "evidence_urls": [
-            "https://www.uzabase.com/jp/info/20261019/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "Westeria list",
-          "url": "https://westeria.jp/security-incidents/cases/newspicks-2026/"
-        },
-        {
-          "name": "ScanNetSecurity",
-          "url": "https://scan.netsecurity.ne.jp/article/2026/11/17/56800.html"
-        },
-        {
-          "name": "NewsPicks",
-          "url": "https://corp.newspicks.com/info/20261118"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/newspicks_metabase_final_report_20261118/"
-        }
-      ],
-      "added_at": "2026-10-19T09:06:44+00:00",
-      "updated_at": "2026-11-18T15:16:38+00:00"
     },
     {
       "id": "6b03b7f8c81e9d61",
@@ -73388,10 +73490,14 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/enecom_2940_personal_info_maintenance_account_thin_client_final_report/"
+        },
+        {
+          "name": "ScanNetSecurity",
+          "url": "https://scan.netsecurity.ne.jp/article/2026/11/27/56916.html"
         }
       ],
       "added_at": "2026-10-19T09:06:44+00:00",
-      "updated_at": "2026-11-19T01:15:50+00:00"
+      "updated_at": "2026-11-27T00:16:07+00:00"
     },
     {
       "id": "ba64979f6741c219",
