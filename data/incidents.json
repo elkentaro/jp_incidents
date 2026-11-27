@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-27T06:16:39+00:00",
-  "total": 1674,
+  "updated_at": "2026-11-27T07:16:23+00:00",
+  "total": 1678,
   "date_range": {
     "start": "2023-01-01",
     "end": "2026-11-27"
@@ -258,7 +258,7 @@
     },
     {
       "date": "2026-10-31",
-      "count": 16
+      "count": 17
     },
     {
       "date": "2026-11-01",
@@ -274,7 +274,7 @@
     },
     {
       "date": "2026-11-04",
-      "count": 53
+      "count": 54
     },
     {
       "date": "2026-11-05",
@@ -310,7 +310,7 @@
     },
     {
       "date": "2026-11-13",
-      "count": 69
+      "count": 70
     },
     {
       "date": "2026-11-14",
@@ -362,7 +362,7 @@
     },
     {
       "date": "2026-11-26",
-      "count": 17
+      "count": 18
     },
     {
       "date": "2026-11-27",
@@ -519,6 +519,42 @@
       ],
       "added_at": "2026-11-26T08:16:23+00:00",
       "updated_at": "2026-11-26T23:15:50+00:00"
+    },
+    {
+      "id": "46dab18aa62e1ffa",
+      "published_at": "2026-11-25T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "株式会社栄光",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 90,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "c18e54cb9abd1cae",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.eikoh.co.jp/news/news-2/p224088/",
+          "evidence_urls": [
+            "https://www.eikoh.co.jp/news/news-2/p224088/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://www.eikoh.co.jp/news/news-2/p224088/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "栄光ゼミナール×RIDDLER ナゾトキ教室",
+      "service_aliases": [],
+      "added_at": "2026-11-27T07:16:23+00:00",
+      "updated_at": "2026-11-27T07:16:23+00:00"
     },
     {
       "id": "4bcad0f9c1d9e6e0",
@@ -2301,6 +2337,49 @@
       "updated_at": "2026-11-25T01:15:59+00:00"
     },
     {
+      "id": "b58bd9413449cee7",
+      "published_at": "2026-11-23T15:00:00+00:00",
+      "disclosed_at": "2026-11-25T15:00:00+00:00",
+      "organization": "くふうカンパニー",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "3e3633513c456478",
+          "relationship": "same_organization",
+          "evidence_url": "https://act1.co.jp/2026-11-27-05/",
+          "evidence_urls": [
+            "https://act1.co.jp/2026-11-27-05/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://kufu.co.jp/2026/11/26/kufu-announce-6/"
+        },
+        {
+          "name": "株式会社アクト",
+          "url": "https://act1.co.jp/2026-11-27-05/"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOZC1Ia0pOZUNsY01nRDBxTUdxa2FtNXRXbEJJblZncFk4NmwwZ0hQamROQ0tDdFpZLTBpVVpfbFhNcGtacFIzVXIteUhxWHkwZTlUc2txaVhLTXEzZWg0dWF3MGN5UjM1d0QxTWVKS2x2d2RYWXZDeGhQOEI2RUl2OS1vQkxtYk54bTVMV0tTLXhDTXdrckNubEZVQQ?oc=5"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "リテール・リーダーズ",
+      "service_aliases": [],
+      "added_at": "2026-11-27T04:16:33+00:00",
+      "updated_at": "2026-11-27T07:16:23+00:00"
+    },
+    {
       "id": "b99afdd622b0cc36",
       "published_at": "2026-11-23T15:00:00+00:00",
       "disclosed_at": "2026-11-23T15:00:00+00:00",
@@ -2593,45 +2672,6 @@
       ],
       "added_at": "2026-11-25T01:15:59+00:00",
       "updated_at": "2026-11-25T03:16:08+00:00"
-    },
-    {
-      "id": "b58bd9413449cee7",
-      "published_at": "2026-11-23T15:00:00+00:00",
-      "disclosed_at": "2026-11-25T15:00:00+00:00",
-      "organization": "くふうカンパニー",
-      "incident_type": "unauthorized access",
-      "incident_categories": [
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "3e3633513c456478",
-          "relationship": "same_organization",
-          "evidence_url": "https://act1.co.jp/2026-11-27-05/",
-          "evidence_urls": [
-            "https://act1.co.jp/2026-11-27-05/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "株式会社アクト",
-          "url": "https://act1.co.jp/2026-11-27-05/"
-        },
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOZC1Ia0pOZUNsY01nRDBxTUdxa2FtNXRXbEJJblZncFk4NmwwZ0hQamROQ0tDdFpZLTBpVVpfbFhNcGtacFIzVXIteUhxWHkwZTlUc2txaVhLTXEzZWg0dWF3MGN5UjM1d0QxTWVKS2x2d2RYWXZDeGhQOEI2RUl2OS1vQkxtYk54bTVMV0tTLXhDTXdrckNubEZVQQ?oc=5"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "occurrence",
-      "affected_service": "リテール・リーダーズ",
-      "service_aliases": [],
-      "added_at": "2026-11-27T04:16:33+00:00",
-      "updated_at": "2026-11-27T05:16:15+00:00"
     },
     {
       "id": "bd6f2240b20e7a8d",
@@ -3407,6 +3447,45 @@
       "date_basis": "occurrence",
       "added_at": "2026-11-23T03:16:41+00:00",
       "updated_at": "2026-11-25T14:16:34+00:00"
+    },
+    {
+      "id": "2ae4cb666cc03c71",
+      "published_at": "2026-11-19T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "IRいしかわ鉄道",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://www.ishikawa-railway.jp/news/1306"
+        },
+        {
+          "name": "中日新聞Web",
+          "url": "https://www.chunichi.co.jp/article/1342411"
+        },
+        {
+          "name": "legalagent list",
+          "url": "https://www.ishikawa-railway.jp/news/1310"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/ir-ishikawa-railway-fanclub-data-breach-9418-2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "いしてつ愛あーるクラブ",
+      "service_aliases": [],
+      "added_at": "2026-11-20T13:17:33+00:00",
+      "updated_at": "2026-11-27T07:16:23+00:00"
     },
     {
       "id": "330ccdb8fc90d8b6",
@@ -4939,37 +5018,6 @@
       "service_aliases": [],
       "added_at": "2026-11-20T23:15:53+00:00",
       "updated_at": "2026-11-22T01:16:08+00:00"
-    },
-    {
-      "id": "2ae4cb666cc03c71",
-      "published_at": "2026-11-19T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "IRいしかわ鉄道",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [],
-      "sources": [
-        {
-          "name": "中日新聞Web",
-          "url": "https://www.chunichi.co.jp/article/1342411"
-        },
-        {
-          "name": "legalagent list",
-          "url": "https://www.ishikawa-railway.jp/news/1310"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "ingestion",
-      "affected_service": "いしてつ愛あーるクラブ",
-      "service_aliases": [],
-      "added_at": "2026-11-20T13:17:33+00:00",
-      "updated_at": "2026-11-27T06:16:39+00:00"
     },
     {
       "id": "39dbfc4d94558cdb",
@@ -16202,6 +16250,41 @@
       "updated_at": "2026-11-18T20:16:16+00:00"
     },
     {
+      "id": "ee371b95572b8e85",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-12T15:00:00+00:00",
+      "organization": "テレビ東京ダイレクト",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 2350,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "57d15baf7435e548",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.tx-direct.co.jp/pdf/20261126.pdf",
+          "evidence_urls": [
+            "https://www.tx-direct.co.jp/pdf/20261126.pdf"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://www.tx-direct.co.jp/pdf/20261126.pdf"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "テレ東オンラインくじ",
+      "service_aliases": [],
+      "added_at": "2026-11-27T07:16:23+00:00",
+      "updated_at": "2026-11-27T07:16:23+00:00"
+    },
+    {
       "id": "f0c3afc53d576603",
       "published_at": "2026-11-12T15:00:00+00:00",
       "disclosed_at": null,
@@ -21449,6 +21532,10 @@
           "url": "https://www.city.sakai.lg.jp/shisei/koho/hodo/hodoteikyoshiryo/kakohodo/r8/r811/081113_05.files/1113_05.pdf"
         },
         {
+          "name": "堺市 / Sakai",
+          "url": "https://www.city.sakai.lg.jp/shisei/koho/hodo/hodoteikyoshiryo/kakohodo/r8/r811/081127_02.files/1127_02.pdf"
+        },
+        {
           "name": "Yahoo!ニュース",
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1KRVM3OWRoR1JSSVcyWlctM0ZWMnhhdlVFNExiY0VkcUR6QUZ1akNBV2s2YjdMSlZxcjJTNmYyNmNpeVBBZ1hydVBQNmRzVlNDN3AtTTlFbVJpVjMtalVaU0xfNEtqOGhpZDZ1Y0lpQlcxNHVRU01FeDdRZnpfc1U?oc=5"
         }
@@ -21459,7 +21546,7 @@
       "service_aliases": [],
       "upstream_status": "unknown",
       "added_at": "2026-11-13T08:15:22+00:00",
-      "updated_at": "2026-11-13T22:16:19+00:00"
+      "updated_at": "2026-11-27T07:16:23+00:00"
     },
     {
       "id": "6af0f0fd6d8c68d5",
@@ -24859,6 +24946,14 @@
           ]
         },
         {
+          "incident_id": "ee371b95572b8e85",
+          "relationship": "affects",
+          "evidence_url": "https://www.tx-direct.co.jp/pdf/20261126.pdf",
+          "evidence_urls": [
+            "https://www.tx-direct.co.jp/pdf/20261126.pdf"
+          ]
+        },
+        {
           "incident_id": "f18cb09c78ddd7f4",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPdVF6bF9uRERQemJZQ1NzMEljM0J5LU9TQ3BHNUd6a21nNW4wMUthZ0lQNTJuaHZ5REJBNGxoR3d2bW5ZdzhXTC1UU0FiMnJTVGFVb3I2cVBaSFMyOXRQT20wNlNvUEtpbHh2ZGZEbTBHX3dwLVhCcWVKMnhWOW9WY01ydFgxLTZaTHZWQ2g0UHNyb1hSbTQ5WXpiYWJxNWlfMmoxTkpVbUcxVEc5eURfbQ?oc=5",
@@ -24910,7 +25005,7 @@
         }
       ],
       "added_at": "2026-11-11T09:15:59+00:00",
-      "updated_at": "2026-11-26T06:16:57+00:00"
+      "updated_at": "2026-11-27T07:16:23+00:00"
     },
     {
       "id": "cb69602b79e76443",
@@ -29511,6 +29606,14 @@
           ]
         },
         {
+          "incident_id": "46dab18aa62e1ffa",
+          "relationship": "affects",
+          "evidence_url": "https://www.eikoh.co.jp/news/news-2/p224088/",
+          "evidence_urls": [
+            "https://www.eikoh.co.jp/news/news-2/p224088/"
+          ]
+        },
+        {
           "incident_id": "4f63ec197293f7ea",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOSHRpaTVxRHEzYkstazNjLWJ0dkd4bjFCUnlMMnlkRHc1TEFqb3ppVHFyMG5LX2tfMXNPRmRKRUhhaEJ5alNHbTZmTkpZVmZzN3ByamZYN2VlM3RMdlBXb1MtYmZQLTY0My1KLWNMUTVHTDFxcEI1MmZBcElWR0U5SHd6RGU3SldWa3c?oc=5",
@@ -29590,7 +29693,7 @@
         "テケト"
       ],
       "added_at": "2026-11-08T10:15:44+00:00",
-      "updated_at": "2026-11-21T08:16:17+00:00"
+      "updated_at": "2026-11-27T07:16:23+00:00"
     },
     {
       "id": "c89b09432d3c8d61",
@@ -31133,6 +31236,34 @@
       "service_aliases": [],
       "added_at": "2026-11-05T01:16:21+00:00",
       "updated_at": "2026-11-25T01:15:59+00:00"
+    },
+    {
+      "id": "09fa44785248c655",
+      "published_at": "2026-11-03T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "浦幌町",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 8,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://www.urahoro.jp/news/detail.html?content=1091"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "マイナンバーカードの交付等のインターネット予約",
+      "service_aliases": [],
+      "upstream_status": "unknown",
+      "added_at": "2026-11-27T07:16:23+00:00",
+      "updated_at": "2026-11-27T07:16:23+00:00"
     },
     {
       "id": "21f29b333963a3ce",
@@ -33105,6 +33236,14 @@
       "confidence_score": 30,
       "related": [
         {
+          "incident_id": "cd53485734240a90",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.yourinventit.com/news/20261104/",
+          "evidence_urls": [
+            "https://www.yourinventit.com/news/20261104/"
+          ]
+        },
+        {
           "incident_id": "e0bf7f8e71d6ba85",
           "relationship": "affected_by",
           "evidence_url": "https://art.passes.jp/post/%E3%80%90%E9%87%8D%E8%A6%81%E3%80%91%E3%83%A1%E3%83%BC%E3%83%AB%E3%83%9E%E3%82%AC%E3%82%B8%E3%83%B3%E9%85%8D%E4%BF%A1%E6%A5%AD%E5%8B%99%E5%A7%94%E8%A8%97%E5%85%88%E3%81%B8%E3%81%AE%E4%B8%8D%E6%AD%A3%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%81%8A%E8%A9%AB%E3%81%B3%E3%81%A8%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B",
@@ -33134,7 +33273,7 @@
       "affected_service": "ARTPASS",
       "service_aliases": [],
       "added_at": "2026-11-06T08:36:04+00:00",
-      "updated_at": "2026-11-27T00:16:07+00:00"
+      "updated_at": "2026-11-27T07:16:23+00:00"
     },
     {
       "id": "c550da83664778a4",
@@ -38030,6 +38169,42 @@
       "service_aliases": [],
       "added_at": "2026-11-04T23:15:16+00:00",
       "updated_at": "2026-11-21T00:16:43+00:00"
+    },
+    {
+      "id": "cd53485734240a90",
+      "published_at": "2026-10-30T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "インヴェンティット株式会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8e5216fb3af59e3a",
+          "relationship": "same_organization",
+          "evidence_url": "https://www.yourinventit.com/news/20261104/",
+          "evidence_urls": [
+            "https://www.yourinventit.com/news/20261104/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "www.yourinventit.com",
+          "url": "https://www.yourinventit.com/news/20261104/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "mobiconnect",
+      "service_aliases": [],
+      "added_at": "2026-11-27T07:16:23+00:00",
+      "updated_at": "2026-11-27T07:16:23+00:00"
     },
     {
       "id": "d1625f0ac45d3d6b",
@@ -43017,6 +43192,10 @@
           "url": "https://prtimes.jp/main/html/rd/p/000000144.000005498.html"
         },
         {
+          "name": "PR TIMES",
+          "url": "https://prtimes.jp/main/html/rd/p/000000145.000005498.html"
+        },
+        {
           "name": "日経BP",
           "url": "https://project.nikkeibp.co.jp/ms/atcl/19/news/00001/06168/?ST=msb"
         },
@@ -43042,7 +43221,7 @@
         }
       ],
       "added_at": "2026-10-30T10:15:57+00:00",
-      "updated_at": "2026-11-18T05:16:01+00:00"
+      "updated_at": "2026-11-27T07:16:23+00:00"
     },
     {
       "id": "a3c09650fe9bed69",
@@ -51012,6 +51191,10 @@
           "url": "https://www.stepgolf.co.jp/news/261115"
         },
         {
+          "name": "legalagent list",
+          "url": "https://www.stepgolf.co.jp/news/261126"
+        },
+        {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/2d07d23ceee8739ab9704593997283fb541bff0c"
         },
@@ -51058,7 +51241,7 @@
         }
       ],
       "added_at": "2026-11-08T12:12:51+00:00",
-      "updated_at": "2026-11-15T08:15:41+00:00"
+      "updated_at": "2026-11-27T07:16:23+00:00"
     },
     {
       "id": "3a0da9e6a1e89a3f",
@@ -68980,10 +69163,14 @@
         {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261020553396.pdf"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261127587337.pdf"
         }
       ],
       "added_at": "2026-10-21T00:00:16+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-27T07:16:23+00:00"
     },
     {
       "id": "e7029a3cadb1b7be",
@@ -76479,7 +76666,6 @@
     "4cc0594ace8794e0": "2639da70d5b68f2c",
     "eabeef8122751e9d": "8132159128c70bb6",
     "24b890b61e3bb1e6": "3f9647cdc55cfd86",
-    "1ab3d4097c2748bd": "9fa62f7bc43145a4",
     "a1047c4800d8333b": "1ff227f049a0de08",
     "4abc615ec3fea0d6": "1ff227f049a0de08",
     "2953260f7715fc59": "1ff227f049a0de08",
@@ -76511,6 +76697,7 @@
     "a87c15f226fbfcbd": "53104c066ce8eb19",
     "73072a099cf303fd": "53104c066ce8eb19",
     "4f4910cf84c927a3": "53104c066ce8eb19",
+    "1ab3d4097c2748bd": "9fa62f7bc43145a4",
     "f1452b19c51d91ef": "20f9a1cae6506b65",
     "e59d0f50b9a186af": "0ac6e0e5edb845f4",
     "28f7961f3696897c": "7731dc646222fc1d",
