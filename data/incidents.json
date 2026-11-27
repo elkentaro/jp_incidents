@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-27T17:16:47+00:00",
+  "updated_at": "2026-11-27T19:16:56+00:00",
   "total": 1708,
   "date_range": {
     "start": "2023-01-01",
@@ -34831,6 +34831,59 @@
       "updated_at": "2026-11-12T08:18:15+00:00"
     },
     {
+      "id": "40defbcde51295e6",
+      "published_at": "2026-11-02T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大阪大学",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 51891,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "a0aa196c95281fea",
+          "relationship": "same_organization",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/mbs/3116556?display=1",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/mbs/3116556?display=1"
+          ]
+        },
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUF272NY0X21C26A1000000/",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/mbs/3116556?display=1",
+            "https://www.nikkei.com/article/DGXZQOUF272NY0X21C26A1000000/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "大阪大学",
+          "url": "https://www.osaka-u.ac.jp/ja/news/topics/2026/11/27001"
+        },
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/mbs/3116556?display=1"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUF272NY0X21C26A1000000/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "安否確認システム",
+      "service_aliases": [],
+      "added_at": "2026-11-27T06:16:39+00:00",
+      "updated_at": "2026-11-27T19:16:56+00:00"
+    },
+    {
       "id": "4ae714ea4b465c28",
       "published_at": "2026-11-02T15:00:00+00:00",
       "disclosed_at": null,
@@ -35282,55 +35335,6 @@
       ],
       "added_at": "2026-11-03T13:17:19+00:00",
       "updated_at": "2026-11-12T07:15:39+00:00"
-    },
-    {
-      "id": "40defbcde51295e6",
-      "published_at": "2026-11-02T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "大阪大学",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 51891,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [
-        {
-          "incident_id": "a0aa196c95281fea",
-          "relationship": "same_organization",
-          "evidence_url": "https://newsdig.tbs.co.jp/articles/mbs/3116556?display=1",
-          "evidence_urls": [
-            "https://newsdig.tbs.co.jp/articles/mbs/3116556?display=1"
-          ]
-        },
-        {
-          "incident_id": "e0bf7f8e71d6ba85",
-          "relationship": "affected_by",
-          "evidence_url": "https://www.nikkei.com/article/DGXZQOUF272NY0X21C26A1000000/",
-          "evidence_urls": [
-            "https://newsdig.tbs.co.jp/articles/mbs/3116556?display=1",
-            "https://www.nikkei.com/article/DGXZQOUF272NY0X21C26A1000000/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "TBS NEWS DIG",
-          "url": "https://newsdig.tbs.co.jp/articles/mbs/3116556?display=1"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUF272NY0X21C26A1000000/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "discovery",
-      "affected_service": "安否確認システム",
-      "service_aliases": [],
-      "added_at": "2026-11-27T06:16:39+00:00",
-      "updated_at": "2026-11-27T16:17:36+00:00"
     },
     {
       "id": "8a2a8d13a22fe810",
