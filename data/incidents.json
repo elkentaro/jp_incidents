@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-27T12:31:47+00:00",
-  "total": 1688,
+  "updated_at": "2026-11-27T13:17:14+00:00",
+  "total": 1693,
   "date_range": {
     "start": "2023-01-01",
     "end": "2026-11-27"
@@ -290,7 +290,7 @@
     },
     {
       "date": "2026-11-08",
-      "count": 12
+      "count": 13
     },
     {
       "date": "2026-11-09",
@@ -310,7 +310,7 @@
     },
     {
       "date": "2026-11-13",
-      "count": 71
+      "count": 72
     },
     {
       "date": "2026-11-14",
@@ -366,7 +366,7 @@
     },
     {
       "date": "2026-11-27",
-      "count": 10
+      "count": 13
     }
   ],
   "incidents": [
@@ -407,6 +407,39 @@
       "updated_at": "2026-11-27T12:31:47+00:00"
     },
     {
+      "id": "322b6e22ff85670c",
+      "published_at": "2026-11-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "note株式会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "671c427eadb6fc63",
+          "relationship": "affected_by",
+          "evidence_url": "https://note.jp/n/n41f0c251cf1e?cdr=1",
+          "evidence_urls": [
+            "https://note.jp/n/n41f0c251cf1e?cdr=1"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "note株式会社",
+          "url": "https://note.jp/n/n41f0c251cf1e?cdr=1"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-27T13:17:14+00:00",
+      "updated_at": "2026-11-27T13:17:14+00:00"
+    },
+    {
       "id": "52d79f87a51bfdfe",
       "published_at": "2026-11-26T15:00:00+00:00",
       "disclosed_at": null,
@@ -424,6 +457,10 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/nkd/disclosure/tdnr/20261127587800/"
+        },
+        {
+          "name": "日本取引所グループ TDnet / JPX TDnet",
+          "url": "https://www.release.tdnet.info/inbs/140120261127587800.pdf"
         }
       ],
       "affected_system": null,
@@ -431,7 +468,7 @@
       "affected_service": "商品デリバティブ取引の対面取引サービス",
       "service_aliases": [],
       "added_at": "2026-11-27T12:16:24+00:00",
-      "updated_at": "2026-11-27T12:16:24+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "1da0df71cee62406",
@@ -451,6 +488,10 @@
         {
           "name": "朝日新聞",
           "url": "https://www.asahi.com/articles/ASVCW31PVVCWOXIE02DM.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/280b9b68b79f187d863da527edb9d8ef3ed5138e"
         }
       ],
       "affected_system": null,
@@ -458,7 +499,7 @@
       "affected_service": "大阪フィルム・カウンシル(大阪FC)のサイト",
       "service_aliases": [],
       "added_at": "2026-11-27T12:16:24+00:00",
-      "updated_at": "2026-11-27T12:16:24+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "54dd359716824ae5",
@@ -619,6 +660,47 @@
       "updated_at": "2026-11-26T22:16:01+00:00"
     },
     {
+      "id": "5a0a577514a3025e",
+      "published_at": "2026-11-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ZOZO",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 6398000,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/zozo-zozotown-wear-development-production-data-breach-2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "ZOZOTOWN / WEAR by ZOZO",
+      "service_aliases": [],
+      "affected_services": [
+        "ZOZOTOWN",
+        "WEAR by ZOZO"
+      ],
+      "service_details": [
+        {
+          "name": "ZOZOTOWN",
+          "aliases": []
+        },
+        {
+          "name": "WEAR by ZOZO",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-27T13:17:14+00:00",
+      "updated_at": "2026-11-27T13:17:14+00:00"
+    },
+    {
       "id": "7a73ede14297fb1e",
       "published_at": "2026-11-26T15:00:00+00:00",
       "disclosed_at": null,
@@ -694,6 +776,47 @@
       "date_basis": "first_disclosure",
       "added_at": "2026-11-27T12:16:24+00:00",
       "updated_at": "2026-11-27T12:31:47+00:00"
+    },
+    {
+      "id": "dc3d01178576d11e",
+      "published_at": "2026-11-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ミンカブ・ジ・イノフォイド",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 153000,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "リスク対策.com",
+          "url": "https://www.risktaisaku.com/articles/-/117598"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "資産形成情報メディア「ミンカブ」 / 資産管理サービス",
+      "service_aliases": [],
+      "affected_services": [
+        "資産形成情報メディア「ミンカブ」",
+        "資産管理サービス"
+      ],
+      "service_details": [
+        {
+          "name": "資産形成情報メディア「ミンカブ」",
+          "aliases": []
+        },
+        {
+          "name": "資産管理サービス",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-27T13:17:14+00:00",
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "06584284fefe0723",
@@ -775,12 +898,8 @@
       ],
       "affected_system": null,
       "date_basis": "publication",
-      "affected_service": "KARTE",
-      "service_aliases": [
-        "カルテ"
-      ],
       "added_at": "2026-11-26T08:16:23+00:00",
-      "updated_at": "2026-11-27T12:16:24+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "46dab18aa62e1ffa",
@@ -1157,10 +1276,8 @@
       ],
       "affected_system": null,
       "date_basis": "publication",
-      "affected_service": "KARTE",
-      "service_aliases": [],
       "added_at": "2026-11-26T11:16:22+00:00",
-      "updated_at": "2026-11-27T05:16:15+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "70f30262360ea5e1",
@@ -1240,12 +1357,8 @@
       ],
       "affected_system": null,
       "date_basis": "publication",
-      "affected_service": "KARTE",
-      "service_aliases": [
-        "カルテ"
-      ],
       "added_at": "2026-11-26T11:16:22+00:00",
-      "updated_at": "2026-11-27T08:16:20+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "eba2996ba5d9680e",
@@ -1748,10 +1861,14 @@
         {
           "name": "BigGo ファイナンス",
           "url": "https://finance.biggo.jp/news/3d74566a-de87-4b53-bca0-9156e0015977"
+        },
+        {
+          "name": "ビジネス+IT",
+          "url": "https://www.sbbit.jp/article/cont1/188774"
         }
       ],
       "added_at": "2026-11-26T00:16:31+00:00",
-      "updated_at": "2026-11-26T19:16:02+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "87f218998db1816c",
@@ -2375,10 +2492,8 @@
       ],
       "affected_system": null,
       "date_basis": "publication",
-      "affected_service": "ブラストメール",
-      "service_aliases": [],
       "added_at": "2026-11-24T03:16:32+00:00",
-      "updated_at": "2026-11-26T06:16:57+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "3d78c12d6662ade6",
@@ -3456,12 +3571,8 @@
       ],
       "affected_system": null,
       "date_basis": "publication",
-      "affected_service": "PreCheck-in",
-      "service_aliases": [
-        "プリ・チェックイン"
-      ],
       "added_at": "2026-11-21T23:16:17+00:00",
-      "updated_at": "2026-11-21T23:16:17+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "c34cf5cb128f12fd",
@@ -9493,10 +9604,8 @@
       ],
       "affected_system": null,
       "date_basis": "discovery",
-      "affected_service": "KARTE",
-      "service_aliases": [],
       "added_at": "2026-11-26T08:16:23+00:00",
-      "updated_at": "2026-11-26T23:15:50+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "7cbbacf6bb6ad215",
@@ -10339,10 +10448,8 @@
       ],
       "affected_system": null,
       "date_basis": "publication",
-      "affected_service": "GoQSystem",
-      "service_aliases": [],
       "added_at": "2026-11-17T11:16:33+00:00",
-      "updated_at": "2026-11-21T09:15:57+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "a4bfb1673216fb00",
@@ -10563,10 +10670,8 @@
       ],
       "affected_system": null,
       "date_basis": "ingestion",
-      "affected_service": "ふるさとチョイス",
-      "service_aliases": [],
       "added_at": "2026-11-17T20:16:23+00:00",
-      "updated_at": "2026-11-17T20:16:23+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "8feb18c57fa5d702",
@@ -11898,10 +12003,8 @@
       ],
       "affected_system": null,
       "date_basis": "occurrence",
-      "affected_service": "トリビュー",
-      "service_aliases": [],
       "added_at": "2026-11-19T13:18:58+00:00",
-      "updated_at": "2026-11-20T03:27:04+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "59f08b559e7aee70",
@@ -13204,10 +13307,44 @@
       ],
       "affected_system": null,
       "date_basis": "occurrence",
-      "affected_service": "COMSBI",
+      "affected_service": "京阪電車ファン情報 / THE THOUSAND KYOTO / 京都センチュリーホテル / 京都タワーサンド / 京阪百貨店 / 枚方モール",
       "service_aliases": [],
+      "affected_services": [
+        "京阪電車ファン情報",
+        "THE THOUSAND KYOTO",
+        "京都センチュリーホテル",
+        "京都タワーサンド",
+        "京阪百貨店",
+        "枚方モール"
+      ],
+      "service_details": [
+        {
+          "name": "京阪電車ファン情報",
+          "aliases": []
+        },
+        {
+          "name": "THE THOUSAND KYOTO",
+          "aliases": []
+        },
+        {
+          "name": "京都センチュリーホテル",
+          "aliases": []
+        },
+        {
+          "name": "京都タワーサンド",
+          "aliases": []
+        },
+        {
+          "name": "京阪百貨店",
+          "aliases": []
+        },
+        {
+          "name": "枚方モール",
+          "aliases": []
+        }
+      ],
       "added_at": "2026-11-15T02:15:29+00:00",
-      "updated_at": "2026-11-20T02:19:03+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "4bee839fdffa3e78",
@@ -14064,10 +14201,8 @@
       ],
       "affected_system": null,
       "date_basis": "discovery",
-      "affected_service": "KARTE",
-      "service_aliases": [],
       "added_at": "2026-11-27T08:16:20+00:00",
-      "updated_at": "2026-11-27T08:16:20+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "3c6a74e3eaeb6595",
@@ -15283,6 +15418,14 @@
           ]
         },
         {
+          "incident_id": "7f15d3b176e11dc2",
+          "relationship": "affects",
+          "evidence_url": "https://www.lnews.jp/2026/11/s1127707.html",
+          "evidence_urls": [
+            "https://www.lnews.jp/2026/11/s1127707.html"
+          ]
+        },
+        {
           "incident_id": "80042314ebcd1723",
           "relationship": "affects",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/caitech-karte-for-app-post-contract-data-retention-breach/",
@@ -15948,7 +16091,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-27T12:16:24+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "8ea683a4f9752ffb",
@@ -17942,6 +18085,40 @@
       "updated_at": "2026-11-18T19:15:59+00:00"
     },
     {
+      "id": "7f15d3b176e11dc2",
+      "published_at": "2026-11-12T15:00:00+00:00",
+      "disclosed_at": "2026-11-26T15:00:00+00:00",
+      "organization": "日本郵政",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 50,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.lnews.jp/2026/11/s1127707.html",
+          "evidence_urls": [
+            "https://www.lnews.jp/2026/11/s1127707.html"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "物流ニュースのLNEWS",
+          "url": "https://www.lnews.jp/2026/11/s1127707.html"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "added_at": "2026-11-27T13:17:14+00:00",
+      "updated_at": "2026-11-27T13:17:14+00:00"
+    },
+    {
       "id": "c315588305545d55",
       "published_at": "2026-11-12T15:00:00+00:00",
       "disclosed_at": "2026-11-12T15:00:00+00:00",
@@ -18705,7 +18882,8 @@
       "organization": "パーソルキャリア",
       "incident_type": "data leak",
       "incident_categories": [
-        "data leak"
+        "data leak",
+        "unauthorized access"
       ],
       "potential_records": null,
       "confidence": "high",
@@ -18732,14 +18910,18 @@
         {
           "name": "合同会社ロケットボーイズ",
           "url": "https://rocket-boys.co.jp/security-measures-lab/persol_career_doda_tonariwa_data_breach_20261126/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/119098"
         }
       ],
       "affected_system": null,
       "date_basis": "first_disclosure",
-      "affected_service": "TONARIWA",
+      "affected_service": "dodaエージェントサービス",
       "service_aliases": [],
       "added_at": "2026-11-24T01:16:40+00:00",
-      "updated_at": "2026-11-27T12:16:24+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "8b9ef04d72ec50ae",
@@ -22387,13 +22569,8 @@
       ],
       "affected_system": null,
       "date_basis": "discovery",
-      "affected_service": "COMSBI(SaaS版)",
-      "service_aliases": [
-        "COMSBI",
-        "SaaS版"
-      ],
       "added_at": "2026-11-13T12:16:47+00:00",
-      "updated_at": "2026-11-26T02:16:13+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "a6e801e509730f1e",
@@ -23871,10 +24048,8 @@
           "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOTF9mUDZXenNpTl9CSnBLVXl5WU55aFA1WGdkbmgzQ0IyN2tlcG85YzJYRzgzYmJTTTh6UXRZSk40LTA3dEpPV1Z5V3BSVmtkNHdheUQ2S0llS2VibEF6cnRfNmNVTFdoTEYzeXNxRk1JeHp3RVpjUFVPdUk5SGdsZ3VRYV9wcGdvYzhXbU4xUU4?oc=5"
         }
       ],
-      "affected_service": "Cuenote FC",
-      "service_aliases": [],
       "added_at": "2026-11-10T13:17:15+00:00",
-      "updated_at": "2026-11-25T14:16:34+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "4876c6a3d173d68b",
@@ -25226,6 +25401,39 @@
       "updated_at": "2026-11-09T20:16:13+00:00"
     },
     {
+      "id": "14fbd8800abb36a1",
+      "published_at": "2026-11-07T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "note株式会社",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 7,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "57d15baf7435e548",
+          "relationship": "affected_by",
+          "evidence_url": "https://note.jp/n/n41f0c251cf1e?cdr=1",
+          "evidence_urls": [
+            "https://note.jp/n/n41f0c251cf1e?cdr=1"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "note株式会社",
+          "url": "https://note.jp/n/n41f0c251cf1e?cdr=1"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "added_at": "2026-11-27T13:17:14+00:00",
+      "updated_at": "2026-11-27T13:17:14+00:00"
+    },
+    {
       "id": "216aab0416ecb893",
       "published_at": "2026-11-07T15:00:00+00:00",
       "disclosed_at": "2026-11-24T15:00:00+00:00",
@@ -25270,6 +25478,14 @@
       "confidence": "high",
       "confidence_score": 90,
       "related": [
+        {
+          "incident_id": "14fbd8800abb36a1",
+          "relationship": "affects",
+          "evidence_url": "https://note.jp/n/n41f0c251cf1e?cdr=1",
+          "evidence_urls": [
+            "https://note.jp/n/n41f0c251cf1e?cdr=1"
+          ]
+        },
         {
           "incident_id": "19c524f25e7331d5",
           "relationship": "affects",
@@ -25444,7 +25660,7 @@
         }
       ],
       "added_at": "2026-11-11T09:15:59+00:00",
-      "updated_at": "2026-11-27T07:16:23+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "cb69602b79e76443",
@@ -27199,10 +27415,10 @@
       ],
       "affected_system": null,
       "date_basis": "discovery",
-      "affected_service": "Cuenote FC",
+      "affected_service": "返金払い戻しフォーム",
       "service_aliases": [],
       "added_at": "2026-11-20T07:15:59+00:00",
-      "updated_at": "2026-11-22T22:15:52+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "599d36c0c1bea1ea",
@@ -28712,10 +28928,8 @@
           "url": "https://rocket-boys.co.jp/security-measures-lab/idealog_kaijo_best_search_jrwest_hotels_7/"
         }
       ],
-      "affected_service": "会場ベストサーチ",
-      "service_aliases": [],
       "added_at": "2026-11-09T06:16:50+00:00",
-      "updated_at": "2026-11-09T06:16:50+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "e17cb4d370ffdb62",
@@ -36585,10 +36799,8 @@
           "url": "https://www.ucc.co.jp/press/20261102.html"
         }
       ],
-      "affected_service": "COMSBI エンタープライズ基盤",
-      "service_aliases": [],
       "added_at": "2026-11-02T07:16:38+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "d050177e1bfb19cf",
@@ -37884,10 +38096,8 @@
           "url": "https://www.nttpc.co.jp/press/info/2026/11/202611021600.html"
         }
       ],
-      "affected_service": "Cuenote FC",
-      "service_aliases": [],
       "added_at": "2026-11-04T13:16:52+00:00",
-      "updated_at": "2026-11-12T07:15:39+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "dc9c96985afbdb4a",
@@ -41027,10 +41237,8 @@
           "url": "https://news.web.nhk/newsweb/na/nd-20261030de68144"
         }
       ],
-      "affected_service": "Cuenote FC",
-      "service_aliases": [],
       "added_at": "2026-10-29T10:15:51+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "2f7b77dc9492c5df",
@@ -41481,10 +41689,8 @@
       ],
       "affected_system": null,
       "date_basis": "publication",
-      "affected_service": "WASIMIL",
-      "service_aliases": [],
       "added_at": "2026-11-17T03:16:00+00:00",
-      "updated_at": "2026-11-17T03:16:00+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "b4ef9ee1930f77a5",
@@ -48346,10 +48552,8 @@
           "url": "https://www.asahi.com/articles/ASVBW41HJVBWUTPB008M.html"
         }
       ],
-      "affected_service": "ふるさとチョイス",
-      "service_aliases": [],
       "added_at": "2026-10-28T03:15:38+00:00",
-      "updated_at": "2026-10-28T03:15:38+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "53dc18b52ebf633f",
@@ -49271,10 +49475,8 @@
           "url": "https://www.city.kitahiroshima.hokkaido.jp/hotnews/detail/00160673.html"
         }
       ],
-      "affected_service": "ふるさとチョイス",
-      "service_aliases": [],
       "added_at": "2026-10-27T02:16:16+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "349735446211a601",
@@ -49883,10 +50085,8 @@
           "url": "https://cybersecurity-jp.com/news/117906"
         }
       ],
-      "affected_service": "Cuenote FC",
-      "service_aliases": [],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "e5c9be9f0373c5f8",
@@ -56394,10 +56594,8 @@
           "url": "https://www.city.ito.shizuoka.jp/gyosei/soshikikarasagasu/sangyoka/shiseijoho/2/furusato/14777.html"
         }
       ],
-      "affected_service": "ふるさとチョイス",
-      "service_aliases": [],
       "added_at": "2026-11-02T07:16:38+00:00",
-      "updated_at": "2026-11-02T07:16:38+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "5f60f1cbcbd5c20c",
@@ -57006,10 +57204,8 @@
       ],
       "affected_system": null,
       "date_basis": "publication",
-      "affected_service": "ふるさとチョイス",
-      "service_aliases": [],
       "added_at": "2026-11-17T11:16:33+00:00",
-      "updated_at": "2026-11-17T11:16:33+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "2dc160527ae7970a",
@@ -59259,10 +59455,8 @@
           "url": "https://www.city.suginami.tokyo.jp/s028/news/29784.html"
         }
       ],
-      "affected_service": "ふるさとチョイス",
-      "service_aliases": [],
       "added_at": "2026-11-02T07:16:38+00:00",
-      "updated_at": "2026-11-12T07:15:39+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "2668891b9e24dbd7",
@@ -61971,10 +62165,8 @@
           "url": "https://newsdig.tbs.co.jp/articles/-/3079226?display=1"
         }
       ],
-      "affected_service": "ふるラボ",
-      "service_aliases": [],
       "added_at": "2026-11-11T21:15:33+00:00",
-      "updated_at": "2026-11-12T20:15:40+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "c2642f919cdf226a",
@@ -64507,10 +64699,8 @@
           "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1wZFhsLTIwdUhhUEs5LVVnY0haaEdjWUx2WEx6cU5qOVVQX2s5clQ0Rm12aHhnbHk0ZU5TVkxqRTZ2WWZ3Tk9oRnBFSlNmZTFBQ29Rcnl5VDB6eUdrOGR2SzRwcmo4X3JiNWd5Q29qY2h5dw?oc=5"
         }
       ],
-      "affected_service": "NET119緊急通報システム",
-      "service_aliases": [],
       "added_at": "2026-11-12T22:15:17+00:00",
-      "updated_at": "2026-11-12T22:15:17+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "ad2e55a87bebd619",
@@ -64768,8 +64958,8 @@
           "url": "https://prtimes.jp/main/html/rd/p/000000595.000005159.html"
         },
         {
-          "name": "Impress Watch",
-          "url": "https://www.watch.impress.co.jp/docs/news/2156455.html"
+          "name": "PR TIMES",
+          "url": "https://prtimes.jp/main/html/rd/p/000000596.000005159.html"
         },
         {
           "name": "Yahoo!ニュース",
@@ -64793,7 +64983,7 @@
       "affected_service": "口座開設システム",
       "service_aliases": [],
       "added_at": "2026-11-13T12:16:47+00:00",
-      "updated_at": "2026-11-19T05:16:46+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "aa78266df70136da",
@@ -65538,10 +65728,8 @@
       ],
       "affected_system": null,
       "date_basis": "occurrence",
-      "affected_service": "Cuenote FC",
-      "service_aliases": [],
       "added_at": "2026-11-26T09:16:34+00:00",
-      "updated_at": "2026-11-26T09:16:34+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "05d3dac3e47e2bee",
@@ -66838,10 +67026,8 @@
           "url": "https://cybersecurity-jp.com/news/117817"
         }
       ],
-      "affected_service": "発車オーライネット",
-      "service_aliases": [],
       "added_at": "2026-10-28T02:15:45+00:00",
-      "updated_at": "2026-10-28T02:15:45+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "75f114a204297ec4",
@@ -66949,10 +67135,8 @@
           "url": "https://www.valuecommerce.co.jp/news/c_news/6819/"
         }
       ],
-      "affected_service": "Cuenote FC",
-      "service_aliases": [],
       "added_at": "2026-11-03T02:16:05+00:00",
-      "updated_at": "2026-11-12T07:15:39+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "e8c0da4c844b2c92",
@@ -67389,6 +67573,14 @@
           "evidence_urls": [
             "https://news.yahoo.co.jp/articles/1b210f4d29a86c558a66af241165d649edb62831",
             "https://www.fnn.jp/articles/-/1147894"
+          ]
+        },
+        {
+          "incident_id": "322b6e22ff85670c",
+          "relationship": "affects",
+          "evidence_url": "https://note.jp/n/n41f0c251cf1e?cdr=1",
+          "evidence_urls": [
+            "https://note.jp/n/n41f0c251cf1e?cdr=1"
           ]
         },
         {
@@ -67881,7 +68073,7 @@
       "affected_system": "Studio cloud environment",
       "date_basis": "existing_record",
       "added_at": "2026-10-19T11:10:22+00:00",
-      "updated_at": "2026-11-21T00:16:43+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "7a4c57d5a37c3971",
@@ -71301,13 +71493,10 @@
       ],
       "affected_system": null,
       "date_basis": "discovery",
-      "affected_service": "職員情報伝達メールシステム(SpeeCAN RAIDEN)",
-      "service_aliases": [
-        "職員情報伝達メールシステム",
-        "SpeeCAN RAIDEN"
-      ],
+      "affected_service": "職員情報伝達メールシステム",
+      "service_aliases": [],
       "added_at": "2026-11-17T08:16:10+00:00",
-      "updated_at": "2026-11-17T08:16:10+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "6c86f9fa61b5dc6f",
@@ -74409,10 +74598,10 @@
       ],
       "affected_system": null,
       "date_basis": "publication",
-      "affected_service": "ApplyNow",
+      "affected_service": "富士市職員採用試験のプレゼンテーション動画試験",
       "service_aliases": [],
       "added_at": "2026-11-17T19:16:58+00:00",
-      "updated_at": "2026-11-17T19:16:58+00:00"
+      "updated_at": "2026-11-27T13:17:14+00:00"
     },
     {
       "id": "5361b8a858516f2f",
