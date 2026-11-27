@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-27T16:17:36+00:00",
-  "total": 1707,
+  "updated_at": "2026-11-27T17:16:47+00:00",
+  "total": 1708,
   "date_range": {
     "start": "2023-01-01",
     "end": "2026-11-28"
@@ -366,10 +366,44 @@
     },
     {
       "date": "2026-11-28",
-      "count": 2
+      "count": 3
     }
   ],
   "incidents": [
+    {
+      "id": "710c5a81bd44b773",
+      "published_at": "2026-11-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "三重県",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 9,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.pref.mie.lg.jp/TOPICS/m03628000010031.htm",
+          "evidence_urls": [
+            "https://www.pref.mie.lg.jp/TOPICS/m03628000010031.htm"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "三重県 / Mie",
+          "url": "https://www.pref.mie.lg.jp/TOPICS/m03628000010031.htm"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "added_at": "2026-11-27T17:16:47+00:00",
+      "updated_at": "2026-11-27T17:16:47+00:00"
+    },
     {
       "id": "4c89c74060e3fa9c",
       "published_at": "2026-11-27T15:00:00+00:00",
@@ -15841,6 +15875,14 @@
           ]
         },
         {
+          "incident_id": "710c5a81bd44b773",
+          "relationship": "affects",
+          "evidence_url": "https://www.pref.mie.lg.jp/TOPICS/m03628000010031.htm",
+          "evidence_urls": [
+            "https://www.pref.mie.lg.jp/TOPICS/m03628000010031.htm"
+          ]
+        },
+        {
           "incident_id": "7231ef4006522bd1",
           "relationship": "affects",
           "evidence_url": "https://tscubic.com/toyota-wallet/information/2026/20261118-01/",
@@ -16622,7 +16664,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-27T16:17:36+00:00"
+      "updated_at": "2026-11-27T17:16:47+00:00"
     },
     {
       "id": "8ea683a4f9752ffb",
