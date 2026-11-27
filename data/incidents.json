@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-27T05:16:15+00:00",
-  "total": 1668,
+  "updated_at": "2026-11-27T06:16:39+00:00",
+  "total": 1674,
   "date_range": {
     "start": "2023-01-01",
     "end": "2026-11-27"
@@ -270,7 +270,7 @@
     },
     {
       "date": "2026-11-03",
-      "count": 19
+      "count": 20
     },
     {
       "date": "2026-11-04",
@@ -342,7 +342,7 @@
     },
     {
       "date": "2026-11-21",
-      "count": 6
+      "count": 7
     },
     {
       "date": "2026-11-22",
@@ -358,18 +358,54 @@
     },
     {
       "date": "2026-11-25",
-      "count": 23
+      "count": 24
     },
     {
       "date": "2026-11-26",
-      "count": 15
+      "count": 17
     },
     {
       "date": "2026-11-27",
-      "count": 1
+      "count": 2
     }
   ],
   "incidents": [
+    {
+      "id": "dbb4c6605d40c667",
+      "published_at": "2026-11-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大阪大学",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 51891,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://news.yahoo.co.jp/articles/4d6b77f0249989a7249b25915e0fef2b8839249a",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/4d6b77f0249989a7249b25915e0fef2b8839249a"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/4d6b77f0249989a7249b25915e0fef2b8839249a"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "安否確認システム",
+      "service_aliases": [],
+      "added_at": "2026-11-27T06:16:39+00:00",
+      "updated_at": "2026-11-27T06:16:39+00:00"
+    },
     {
       "id": "159ee4476f56ff51",
       "published_at": "2026-11-26T15:00:00+00:00",
@@ -938,6 +974,41 @@
       "updated_at": "2026-11-27T00:16:07+00:00"
     },
     {
+      "id": "522b807554a1d5eb",
+      "published_at": "2026-11-25T15:00:00+00:00",
+      "disclosed_at": "2026-11-25T15:00:00+00:00",
+      "organization": "ヒューマンリソシア",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "5f0ecbb9513a9ca8",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/valuehr-health-checkup-reservation-unauthorized-access-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/valuehr-health-checkup-reservation-unauthorized-access-2026/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/valuehr-health-checkup-reservation-unauthorized-access-2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "健診予約情報",
+      "service_aliases": [],
+      "added_at": "2026-11-27T06:16:39+00:00",
+      "updated_at": "2026-11-27T06:16:39+00:00"
+    },
+    {
       "id": "96389c68e1bd321a",
       "published_at": "2026-11-25T15:00:00+00:00",
       "disclosed_at": null,
@@ -998,6 +1069,41 @@
       "service_aliases": [],
       "added_at": "2026-11-26T18:16:26+00:00",
       "updated_at": "2026-11-26T18:16:26+00:00"
+    },
+    {
+      "id": "ba69bf01eab48250",
+      "published_at": "2026-11-25T15:00:00+00:00",
+      "disclosed_at": "2026-11-25T15:00:00+00:00",
+      "organization": "ヒューマンホールディングス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "5f0ecbb9513a9ca8",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/valuehr-health-checkup-reservation-unauthorized-access-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/valuehr-health-checkup-reservation-unauthorized-access-2026/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/valuehr-health-checkup-reservation-unauthorized-access-2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "健診予約情報",
+      "service_aliases": [],
+      "added_at": "2026-11-27T06:16:39+00:00",
+      "updated_at": "2026-11-27T06:16:39+00:00"
     },
     {
       "id": "e6ef7257cc0872cb",
@@ -1115,6 +1221,42 @@
       ],
       "added_at": "2026-11-25T10:16:21+00:00",
       "updated_at": "2026-11-25T10:16:21+00:00"
+    },
+    {
+      "id": "22736e029061f0b3",
+      "published_at": "2026-11-24T15:00:00+00:00",
+      "disclosed_at": "2026-11-24T15:00:00+00:00",
+      "organization": "よなよなエール",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 2994,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://yonasato.com/ec/news/topics/1121",
+          "evidence_urls": [
+            "https://yonasato.com/ec/news/topics/1121"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://yonasato.com/ec/news/topics/1121"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "よなよなの里",
+      "service_aliases": [],
+      "added_at": "2026-11-27T06:16:39+00:00",
+      "updated_at": "2026-11-27T06:16:39+00:00"
     },
     {
       "id": "27fedcbdd97d0e5d",
@@ -2669,6 +2811,43 @@
       "updated_at": "2026-11-24T10:16:07+00:00"
     },
     {
+      "id": "c63ef3dc4e5ea9d2",
+      "published_at": "2026-11-21T15:00:00+00:00",
+      "disclosed_at": "2026-11-25T15:00:00+00:00",
+      "organization": "エーエフシー",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 302580,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://464981.com/shop/pages/important-notice-20261126"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/afc-ec-302580-customer-data-breach-202611/"
+        },
+        {
+          "name": "Cybersecurity.jp",
+          "url": "https://cybersecurity-jp.com/news/119001"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "occurrence",
+      "affected_service": "エーエフシー公式オンラインショップ",
+      "service_aliases": [
+        "464981.com"
+      ],
+      "added_at": "2026-11-26T11:16:22+00:00",
+      "updated_at": "2026-11-27T06:16:39+00:00"
+    },
+    {
       "id": "46dd181fbc016ab6",
       "published_at": "2026-11-21T15:00:00+00:00",
       "disclosed_at": null,
@@ -2705,39 +2884,6 @@
       "date_basis": "publication",
       "added_at": "2026-11-24T00:16:45+00:00",
       "updated_at": "2026-11-24T02:17:36+00:00"
-    },
-    {
-      "id": "c63ef3dc4e5ea9d2",
-      "published_at": "2026-11-21T15:00:00+00:00",
-      "disclosed_at": "2026-11-25T15:00:00+00:00",
-      "organization": "エーエフシー",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 302580,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "合同会社ロケットボーイズ",
-          "url": "https://rocket-boys.co.jp/security-measures-lab/afc-ec-302580-customer-data-breach-202611/"
-        },
-        {
-          "name": "Cybersecurity.jp",
-          "url": "https://cybersecurity-jp.com/news/119001"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "occurrence",
-      "affected_service": "エーエフシー公式オンラインショップ",
-      "service_aliases": [
-        "464981.com"
-      ],
-      "added_at": "2026-11-26T11:16:22+00:00",
-      "updated_at": "2026-11-27T02:16:39+00:00"
     },
     {
       "id": "6711ba15b719ea79",
@@ -2869,6 +3015,10 @@
           "url": "https://e-infonet.jp/news/detail.html?dispmid=594&itemid=1067"
         },
         {
+          "name": "legalagent list",
+          "url": "https://www.e-infonet.jp/news/detail.html?itemid=1069&dispmid=594"
+        },
+        {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261124584682.pdf"
         },
@@ -2894,7 +3044,51 @@
       "affected_service": "infoCMS",
       "service_aliases": [],
       "added_at": "2026-11-24T03:16:32+00:00",
-      "updated_at": "2026-11-26T23:15:50+00:00"
+      "updated_at": "2026-11-27T06:16:39+00:00"
+    },
+    {
+      "id": "5f0ecbb9513a9ca8",
+      "published_at": "2026-11-20T15:00:00+00:00",
+      "disclosed_at": "2026-11-24T15:00:00+00:00",
+      "organization": "バリューHR",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "522b807554a1d5eb",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/valuehr-health-checkup-reservation-unauthorized-access-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/valuehr-health-checkup-reservation-unauthorized-access-2026/"
+          ]
+        },
+        {
+          "incident_id": "ba69bf01eab48250",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/valuehr-health-checkup-reservation-unauthorized-access-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/valuehr-health-checkup-reservation-unauthorized-access-2026/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/valuehr-health-checkup-reservation-unauthorized-access-2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "バリューカフェテリア®システム",
+      "service_aliases": [],
+      "added_at": "2026-11-27T06:16:39+00:00",
+      "updated_at": "2026-11-27T06:16:39+00:00"
     },
     {
       "id": "8a9e909ca4e9411e",
@@ -4764,6 +4958,10 @@
         {
           "name": "中日新聞Web",
           "url": "https://www.chunichi.co.jp/article/1342411"
+        },
+        {
+          "name": "legalagent list",
+          "url": "https://www.ishikawa-railway.jp/news/1310"
         }
       ],
       "affected_system": null,
@@ -4771,7 +4969,7 @@
       "affected_service": "いしてつ愛あーるクラブ",
       "service_aliases": [],
       "added_at": "2026-11-20T13:17:33+00:00",
-      "updated_at": "2026-11-20T13:17:33+00:00"
+      "updated_at": "2026-11-27T06:16:39+00:00"
     },
     {
       "id": "39dbfc4d94558cdb",
@@ -5151,6 +5349,14 @@
           "url": "https://www.itmedia.co.jp/news/article/2611/27/2000003510/"
         },
         {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/mitsui_shopping_park_app_data_leak_update_202611/"
+        },
+        {
+          "name": "legalagent list",
+          "url": "https://www.mitsuifudosan.co.jp/corporate/news/2026/1126_03/download/sonota/20261126_03.pdf"
+        },
+        {
           "name": "読売新聞",
           "url": "https://www.yomiuri.co.jp/economy/20261119-GYT1T00326/"
         },
@@ -5180,7 +5386,7 @@
       "affected_service": "三井ショッピングパークアプリ",
       "service_aliases": [],
       "added_at": "2026-11-19T14:18:14+00:00",
-      "updated_at": "2026-11-27T03:15:58+00:00"
+      "updated_at": "2026-11-27T06:16:39+00:00"
     },
     {
       "id": "775d529b26c4729b",
@@ -14242,6 +14448,14 @@
           ]
         },
         {
+          "incident_id": "22736e029061f0b3",
+          "relationship": "affects",
+          "evidence_url": "https://yonasato.com/ec/news/topics/1121",
+          "evidence_urls": [
+            "https://yonasato.com/ec/news/topics/1121"
+          ]
+        },
+        {
           "incident_id": "27cf8f27821c244d",
           "relationship": "affects",
           "evidence_url": "https://www.mizuhobank.co.jp/release/pdf/20261126release_jp.pdf",
@@ -15251,7 +15465,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-27T04:16:33+00:00"
+      "updated_at": "2026-11-27T06:16:39+00:00"
     },
     {
       "id": "8ea683a4f9752ffb",
@@ -18617,6 +18831,10 @@
         {
           "name": "ScanNetSecurity",
           "url": "https://scan.netsecurity.ne.jp/article/2026/11/24/56877.html"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/persol_career_doda_tonariwa_data_breach_20261126/"
         }
       ],
       "affected_system": null,
@@ -18624,7 +18842,7 @@
       "affected_service": "TONARIWA",
       "service_aliases": [],
       "added_at": "2026-11-24T01:16:40+00:00",
-      "updated_at": "2026-11-24T01:16:40+00:00"
+      "updated_at": "2026-11-27T06:16:39+00:00"
     },
     {
       "id": "e86db2e8c9489b83",
@@ -33652,6 +33870,50 @@
       "updated_at": "2026-11-12T07:15:39+00:00"
     },
     {
+      "id": "40defbcde51295e6",
+      "published_at": "2026-11-02T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大阪大学",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 51891,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "a0aa196c95281fea",
+          "relationship": "same_organization",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/mbs/3116556?display=1",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/mbs/3116556?display=1"
+          ]
+        },
+        {
+          "incident_id": "e0bf7f8e71d6ba85",
+          "relationship": "affected_by",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/mbs/3116556?display=1",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/mbs/3116556?display=1"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "TBS NEWS DIG",
+          "url": "https://newsdig.tbs.co.jp/articles/mbs/3116556?display=1"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "安否確認システム",
+      "service_aliases": [],
+      "added_at": "2026-11-27T06:16:39+00:00",
+      "updated_at": "2026-11-27T06:16:39+00:00"
+    },
+    {
       "id": "8a2a8d13a22fe810",
       "published_at": "2026-11-02T15:00:00+00:00",
       "disclosed_at": null,
@@ -43601,6 +43863,14 @@
           ]
         },
         {
+          "incident_id": "40defbcde51295e6",
+          "relationship": "affects",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/mbs/3116556?display=1",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/mbs/3116556?display=1"
+          ]
+        },
+        {
           "incident_id": "41224def3cdf1ee9",
           "relationship": "affects",
           "evidence_url": "https://shop.ginza-akebono.co.jp/view/news/20261106124301",
@@ -44882,6 +45152,14 @@
           ]
         },
         {
+          "incident_id": "dbb4c6605d40c667",
+          "relationship": "affects",
+          "evidence_url": "https://news.yahoo.co.jp/articles/4d6b77f0249989a7249b25915e0fef2b8839249a",
+          "evidence_urls": [
+            "https://news.yahoo.co.jp/articles/4d6b77f0249989a7249b25915e0fef2b8839249a"
+          ]
+        },
+        {
           "incident_id": "dc4b5c55e8d9430d",
           "relationship": "affects",
           "evidence_url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQRHRtUVZNMVhCNVRvN3l0WVl5UHFheFNINWJ2dHBPbDlYOFdCTGxJS3VSTVl6bkpqdk9nV251WkRxcDhuUWZpRjE0ZnBid2NwYVVrdmVrU0owbDdaRFo5Y2dIaXZIMF83TEhfVTNMdXNNRHphVVR3MnZ4VUF6c1pSTndiTld2LUlvTWhSczIyVQ?oc=5",
@@ -45194,7 +45472,7 @@
         }
       ],
       "added_at": "2026-10-29T01:16:22+00:00",
-      "updated_at": "2026-11-26T22:16:01+00:00"
+      "updated_at": "2026-11-27T06:16:39+00:00"
     },
     {
       "id": "e9aee8b5e4ee9ebb",
@@ -72307,6 +72585,14 @@
       "confidence_score": 90,
       "related": [
         {
+          "incident_id": "40defbcde51295e6",
+          "relationship": "same_organization",
+          "evidence_url": "https://newsdig.tbs.co.jp/articles/mbs/3116556?display=1",
+          "evidence_urls": [
+            "https://newsdig.tbs.co.jp/articles/mbs/3116556?display=1"
+          ]
+        },
+        {
           "incident_id": "415606b392ad65f5",
           "relationship": "affected_by",
           "evidence_url": "https://www.itmedia.co.jp/business/articles/2610/22/news069.html",
@@ -72349,7 +72635,7 @@
         }
       ],
       "added_at": "2026-10-21T11:04:18+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-27T06:16:39+00:00"
     },
     {
       "id": "b2b47aa569e15218",
