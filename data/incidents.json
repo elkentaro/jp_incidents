@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-28T02:19:19+00:00",
-  "total": 1710,
+  "updated_at": "2026-11-28T03:17:06+00:00",
+  "total": 1712,
   "date_range": {
     "start": "2023-01-01",
     "end": "2026-11-28"
@@ -350,7 +350,7 @@
     },
     {
       "date": "2026-11-24",
-      "count": 19
+      "count": 21
     },
     {
       "date": "2026-11-25",
@@ -521,6 +521,41 @@
       "updated_at": "2026-11-28T02:19:19+00:00"
     },
     {
+      "id": "1da0df71cee62406",
+      "published_at": "2026-11-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大阪観光局",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 30000,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://s3.ap-northeast-1.amazonaws.com/content.osaka-info.jp/press_release/20261127.pdf"
+        },
+        {
+          "name": "朝日新聞",
+          "url": "https://www.asahi.com/articles/ASVCW31PVVCWOXIE02DM.html"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/280b9b68b79f187d863da527edb9d8ef3ed5138e"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "大阪フィルム・カウンシル(大阪FC)のサイト",
+      "service_aliases": [],
+      "added_at": "2026-11-27T12:16:24+00:00",
+      "updated_at": "2026-11-28T03:17:06+00:00"
+    },
+    {
       "id": "322b6e22ff85670c",
       "published_at": "2026-11-26T15:00:00+00:00",
       "disclosed_at": null,
@@ -636,6 +671,37 @@
       ],
       "added_at": "2026-11-27T13:17:14+00:00",
       "updated_at": "2026-11-28T02:19:19+00:00"
+    },
+    {
+      "id": "641d6e078c34ceb5",
+      "published_at": "2026-11-26T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "大丸松坂屋百貨店",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://daimaru-matsuzakaya.com/assets/news/news_87.pdf"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC27B5Q0X21C26A1000000/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "affected_service": "大丸松坂屋オンラインストア",
+      "service_aliases": [],
+      "added_at": "2026-11-27T15:18:29+00:00",
+      "updated_at": "2026-11-28T03:17:06+00:00"
     },
     {
       "id": "d99f26b5dc8a8ef1",
@@ -764,37 +830,6 @@
       "updated_at": "2026-11-27T23:16:55+00:00"
     },
     {
-      "id": "1da0df71cee62406",
-      "published_at": "2026-11-26T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "大阪観光局",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 30000,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "朝日新聞",
-          "url": "https://www.asahi.com/articles/ASVCW31PVVCWOXIE02DM.html"
-        },
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/280b9b68b79f187d863da527edb9d8ef3ed5138e"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "publication",
-      "affected_service": "大阪フィルム・カウンシル(大阪FC)のサイト",
-      "service_aliases": [],
-      "added_at": "2026-11-27T12:16:24+00:00",
-      "updated_at": "2026-11-27T13:17:14+00:00"
-    },
-    {
       "id": "251ebdb16ca422e6",
       "published_at": "2026-11-26T15:00:00+00:00",
       "disclosed_at": null,
@@ -881,33 +916,6 @@
       "service_aliases": [],
       "added_at": "2026-11-27T12:16:24+00:00",
       "updated_at": "2026-11-27T12:16:24+00:00"
-    },
-    {
-      "id": "641d6e078c34ceb5",
-      "published_at": "2026-11-26T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "大丸松坂屋百貨店",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUC27B5Q0X21C26A1000000/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "ingestion",
-      "affected_service": "大丸松坂屋オンラインストア",
-      "service_aliases": [],
-      "added_at": "2026-11-27T15:18:29+00:00",
-      "updated_at": "2026-11-27T15:18:29+00:00"
     },
     {
       "id": "87993dc17b4244f0",
@@ -2988,6 +2996,51 @@
       "updated_at": "2026-11-25T06:16:06+00:00"
     },
     {
+      "id": "1ba283f8a80ca7c7",
+      "published_at": "2026-11-23T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "ロフト",
+      "incident_type": "unauthorized access",
+      "incident_categories": [
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://www.loft.co.jp/news/detail.php?news_id=726883"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "ロフトアプリ / MoMA Design Store オンラインストア / ロフトネットストア",
+      "service_aliases": [],
+      "affected_services": [
+        "ロフトアプリ",
+        "MoMA Design Store オンラインストア",
+        "ロフトネットストア"
+      ],
+      "service_details": [
+        {
+          "name": "ロフトアプリ",
+          "aliases": []
+        },
+        {
+          "name": "MoMA Design Store オンラインストア",
+          "aliases": []
+        },
+        {
+          "name": "ロフトネットストア",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-28T03:17:06+00:00",
+      "updated_at": "2026-11-28T03:17:06+00:00"
+    },
+    {
       "id": "26d1c50bebae98e8",
       "published_at": "2026-11-23T15:00:00+00:00",
       "disclosed_at": null,
@@ -3373,6 +3426,33 @@
       "updated_at": "2026-11-26T17:15:57+00:00"
     },
     {
+      "id": "c7dfbc47888c5474",
+      "published_at": "2026-11-23T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "デサント",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://www.descente.co.jp/jp/important/261127imp/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "DESCENTE Field",
+      "service_aliases": [],
+      "added_at": "2026-11-28T03:17:06+00:00",
+      "updated_at": "2026-11-28T03:17:06+00:00"
+    },
+    {
       "id": "ce836317c286e480",
       "published_at": "2026-11-23T15:00:00+00:00",
       "disclosed_at": "2026-11-23T15:00:00+00:00",
@@ -3483,6 +3563,10 @@
         {
           "name": "日本経済新聞",
           "url": "https://www.nikkei.com/article/DGXZQOUC27B210X21C26A1000000/"
+        },
+        {
+          "name": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/28/110735"
         }
       ],
       "affected_system": null,
@@ -3514,7 +3598,7 @@
         }
       ],
       "added_at": "2026-11-27T16:17:36+00:00",
-      "updated_at": "2026-11-27T16:17:36+00:00"
+      "updated_at": "2026-11-28T03:17:06+00:00"
     },
     {
       "id": "ba4a0092ac388e60",
@@ -38478,12 +38562,16 @@
         {
           "name": "Yahoo!ニュース",
           "url": "https://news.yahoo.co.jp/articles/bd4e23e7d3d806c3e2d50a86ad704deb766a9e33"
+        },
+        {
+          "name": "福島民友新聞社",
+          "url": "https://www.minyu-net.com/news/detail/2026112810193557791"
         }
       ],
       "affected_service": "マイナンバーカード交付予約と管理システム",
       "service_aliases": [],
       "added_at": "2026-11-04T15:16:11+00:00",
-      "updated_at": "2026-11-04T15:16:11+00:00"
+      "updated_at": "2026-11-28T03:17:06+00:00"
     },
     {
       "id": "3cf70001eb2ecd04",
