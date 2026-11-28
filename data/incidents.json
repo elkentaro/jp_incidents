@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-28T08:19:48+00:00",
-  "total": 1716,
+  "updated_at": "2026-11-28T09:18:07+00:00",
+  "total": 1717,
   "date_range": {
     "start": "2023-01-01",
     "end": "2026-11-28"
@@ -334,7 +334,7 @@
     },
     {
       "date": "2026-11-20",
-      "count": 47
+      "count": 48
     },
     {
       "date": "2026-11-21",
@@ -3388,6 +3388,10 @@
         {
           "name": "piyolog",
           "url": "https://piyolog.hatenadiary.jp/entry/2026/11/28/110735"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/e038bf6a53ddb40e6780020b686e83adfabe75ea"
         }
       ],
       "affected_system": null,
@@ -3419,7 +3423,7 @@
         }
       ],
       "added_at": "2026-11-27T16:17:36+00:00",
-      "updated_at": "2026-11-28T06:18:35+00:00"
+      "updated_at": "2026-11-28T09:18:07+00:00"
     },
     {
       "id": "9e3604f4b69ad21d",
@@ -6486,6 +6490,41 @@
       ],
       "added_at": "2026-11-26T12:16:55+00:00",
       "updated_at": "2026-11-26T12:16:55+00:00"
+    },
+    {
+      "id": "c9d0e14633ea23b6",
+      "published_at": "2026-11-19T15:00:00+00:00",
+      "disclosed_at": "2026-11-19T15:00:00+00:00",
+      "organization": "中国銀行",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/chugin-business-portal-mikatano-karte-data-breach-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/chugin-business-portal-mikatano-karte-data-breach-2026/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/chugin-business-portal-mikatano-karte-data-breach-2026/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "first_disclosure",
+      "affected_service": "ちゅうぎんビジネスポータル",
+      "service_aliases": [],
+      "added_at": "2026-11-28T09:18:07+00:00",
+      "updated_at": "2026-11-28T09:18:07+00:00"
     },
     {
       "id": "d654c97b0d23841e",
@@ -16715,6 +16754,14 @@
           ]
         },
         {
+          "incident_id": "c9d0e14633ea23b6",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/chugin-business-portal-mikatano-karte-data-breach-2026/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/chugin-business-portal-mikatano-karte-data-breach-2026/"
+          ]
+        },
+        {
           "incident_id": "ca19e51e13752499",
           "relationship": "affects",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/fujisaki_online_karte_75000_data_breach_20261124/",
@@ -17014,7 +17061,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-28T07:20:12+00:00"
+      "updated_at": "2026-11-28T09:18:07+00:00"
     },
     {
       "id": "8ea683a4f9752ffb",
@@ -23480,8 +23527,9 @@
         {
           "incident_id": "aa9bc3fcfc85d71d",
           "relationship": "affected_by",
-          "evidence_url": "https://www.fse.or.jp/files/lis_tkj/261125249A0.pdf",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/human-adjust-comsbi-data-breach-2026/",
           "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/human-adjust-comsbi-data-breach-2026/",
             "https://rocket-boys.co.jp/security-measures-lab/human-adjust-comsbi-saas-line-data-leak-risk-2026/",
             "https://www.fse.or.jp/files/lis_tkj/261125249A0.pdf",
             "https://www.nikkei.com/nkd/disclosure/tdnr/20261124585501/"
@@ -23510,6 +23558,10 @@
           "url": "https://www.fse.or.jp/files/lis_tkj/261125249A0.pdf"
         },
         {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/human-adjust-comsbi-data-breach-2026/"
+        },
+        {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261113579962.pdf"
         },
@@ -23521,7 +23573,7 @@
       "affected_system": null,
       "date_basis": "discovery",
       "added_at": "2026-11-13T12:16:47+00:00",
-      "updated_at": "2026-11-28T02:19:19+00:00"
+      "updated_at": "2026-11-28T09:18:07+00:00"
     },
     {
       "id": "a6e801e509730f1e",
@@ -53750,8 +53802,9 @@
         {
           "incident_id": "9443ee532ae9709b",
           "relationship": "affects",
-          "evidence_url": "https://www.fse.or.jp/files/lis_tkj/261125249A0.pdf",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/human-adjust-comsbi-data-breach-2026/",
           "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/human-adjust-comsbi-data-breach-2026/",
             "https://rocket-boys.co.jp/security-measures-lab/human-adjust-comsbi-saas-line-data-leak-risk-2026/",
             "https://www.fse.or.jp/files/lis_tkj/261125249A0.pdf",
             "https://www.nikkei.com/nkd/disclosure/tdnr/20261124585501/"
@@ -53875,7 +53928,7 @@
         }
       ],
       "added_at": "2026-10-27T07:15:28+00:00",
-      "updated_at": "2026-11-28T02:19:19+00:00"
+      "updated_at": "2026-11-28T09:18:07+00:00"
     },
     {
       "id": "af7b771bb23be504",
