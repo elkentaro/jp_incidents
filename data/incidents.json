@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-28T03:17:06+00:00",
-  "total": 1712,
+  "updated_at": "2026-11-28T04:16:53+00:00",
+  "total": 1714,
   "date_range": {
     "start": "2023-01-01",
     "end": "2026-11-28"
@@ -354,7 +354,7 @@
     },
     {
       "date": "2026-11-25",
-      "count": 26
+      "count": 27
     },
     {
       "date": "2026-11-26",
@@ -366,7 +366,7 @@
     },
     {
       "date": "2026-11-28",
-      "count": 3
+      "count": 4
     }
   ],
   "incidents": [
@@ -403,6 +403,41 @@
       "date_basis": "ingestion",
       "added_at": "2026-11-27T17:16:47+00:00",
       "updated_at": "2026-11-27T17:16:47+00:00"
+    },
+    {
+      "id": "fc159332859ce7b9",
+      "published_at": "2026-11-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "カズマ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 26547,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/kazuma_at_contact_karte_data_breach_26547_20261126/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/kazuma_at_contact_karte_data_breach_26547_20261126/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/kazuma_at_contact_karte_data_breach_26547_20261126/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "アットコンタクト",
+      "service_aliases": [],
+      "added_at": "2026-11-28T04:16:53+00:00",
+      "updated_at": "2026-11-28T04:16:53+00:00"
     },
     {
       "id": "4c89c74060e3fa9c",
@@ -614,6 +649,10 @@
         {
           "name": "日本取引所グループ TDnet / JPX TDnet",
           "url": "https://www.release.tdnet.info/inbs/140120261127587800.pdf"
+        },
+        {
+          "name": "合同会社ロケットボーイズ",
+          "url": "https://rocket-boys.co.jp/security-measures-lab/nissan_securities_comtrade_data_breach_20261127/"
         }
       ],
       "affected_system": null,
@@ -621,7 +660,7 @@
       "affected_service": "商品デリバティブ取引の対面取引サービス",
       "service_aliases": [],
       "added_at": "2026-11-27T12:16:24+00:00",
-      "updated_at": "2026-11-28T02:19:19+00:00"
+      "updated_at": "2026-11-28T04:16:53+00:00"
     },
     {
       "id": "5a0a577514a3025e",
@@ -2887,6 +2926,39 @@
       "date_basis": "publication",
       "added_at": "2026-11-25T10:16:21+00:00",
       "updated_at": "2026-11-25T15:16:10+00:00"
+    },
+    {
+      "id": "0b391bcb3afd5204",
+      "published_at": "2026-11-24T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "日本航空",
+      "incident_type": "other",
+      "incident_categories": [
+        "other"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [
+        {
+          "incident_id": "a3c09650fe9bed69",
+          "relationship": "same_organization",
+          "evidence_url": "https://act1.co.jp/column/10884-2/",
+          "evidence_urls": [
+            "https://act1.co.jp/column/10884-2/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "株式会社アクト",
+          "url": "https://act1.co.jp/column/10884-2/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "added_at": "2026-11-28T04:16:53+00:00",
+      "updated_at": "2026-11-28T04:16:53+00:00"
     },
     {
       "id": "22746348f546d21b",
@@ -16806,6 +16878,14 @@
           ]
         },
         {
+          "incident_id": "fc159332859ce7b9",
+          "relationship": "affects",
+          "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/kazuma_at_contact_karte_data_breach_26547_20261126/",
+          "evidence_urls": [
+            "https://rocket-boys.co.jp/security-measures-lab/kazuma_at_contact_karte_data_breach_26547_20261126/"
+          ]
+        },
+        {
           "incident_id": "fece3f126eae9e73",
           "relationship": "affects",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/aircloset-karte-50990-customer-information-leak/",
@@ -16891,7 +16971,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-28T02:19:19+00:00"
+      "updated_at": "2026-11-28T04:16:53+00:00"
     },
     {
       "id": "8ea683a4f9752ffb",
@@ -44766,6 +44846,14 @@
       "confidence_score": 90,
       "related": [
         {
+          "incident_id": "0b391bcb3afd5204",
+          "relationship": "same_organization",
+          "evidence_url": "https://act1.co.jp/column/10884-2/",
+          "evidence_urls": [
+            "https://act1.co.jp/column/10884-2/"
+          ]
+        },
+        {
           "incident_id": "0cd8a1c184390c84",
           "relationship": "affected_by",
           "evidence_url": "https://news.yahoo.co.jp/articles/5b2d712fc43b2136c85bad4ec97c9b4309b1fa11",
@@ -44813,7 +44901,7 @@
         }
       ],
       "added_at": "2026-10-28T11:16:00+00:00",
-      "updated_at": "2026-11-12T08:18:15+00:00"
+      "updated_at": "2026-11-28T04:16:53+00:00"
     },
     {
       "id": "a4c6a8cdac85f9f4",
