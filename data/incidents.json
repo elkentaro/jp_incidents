@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-28T06:18:36+00:00",
-  "total": 1714,
+  "updated_at": "2026-11-28T07:20:12+00:00",
+  "total": 1716,
   "date_range": {
     "start": "2023-01-01",
     "end": "2026-11-28"
@@ -366,7 +366,7 @@
     },
     {
       "date": "2026-11-28",
-      "count": 4
+      "count": 5
     }
   ],
   "incidents": [
@@ -438,6 +438,39 @@
       "service_aliases": [],
       "added_at": "2026-11-28T04:16:53+00:00",
       "updated_at": "2026-11-28T04:16:53+00:00"
+    },
+    {
+      "id": "5782d9359d4cfcc0",
+      "published_at": "2026-11-27T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "東京海上ホールディングス",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak"
+      ],
+      "potential_records": 2863,
+      "confidence": "medium",
+      "confidence_score": 50,
+      "related": [
+        {
+          "incident_id": "8cf67a97b55e1d57",
+          "relationship": "affected_by",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUB276LV0X21C26A1000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUB276LV0X21C26A1000000/"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUB276LV0X21C26A1000000/"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "ingestion",
+      "added_at": "2026-11-28T07:20:12+00:00",
+      "updated_at": "2026-11-28T07:20:12+00:00"
     },
     {
       "id": "4c89c74060e3fa9c",
@@ -16028,6 +16061,14 @@
           ]
         },
         {
+          "incident_id": "5782d9359d4cfcc0",
+          "relationship": "affects",
+          "evidence_url": "https://www.nikkei.com/article/DGXZQOUB276LV0X21C26A1000000/",
+          "evidence_urls": [
+            "https://www.nikkei.com/article/DGXZQOUB276LV0X21C26A1000000/"
+          ]
+        },
+        {
           "incident_id": "59ebb41839af7cc6",
           "relationship": "affects",
           "evidence_url": "https://rocket-boys.co.jp/security-measures-lab/karte_unauthorized_access_affected_companies_roundup_2026/",
@@ -16969,7 +17010,7 @@
         "カルテ"
       ],
       "added_at": "2026-11-13T13:17:15+00:00",
-      "updated_at": "2026-11-28T04:16:53+00:00"
+      "updated_at": "2026-11-28T07:20:12+00:00"
     },
     {
       "id": "8ea683a4f9752ffb",
@@ -77932,6 +77973,47 @@
       ],
       "added_at": "2026-11-24T07:16:31+00:00",
       "updated_at": "2026-11-26T01:17:16+00:00"
+    },
+    {
+      "id": "5a1fe07d3ccdb569",
+      "published_at": "2026-05-17T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "松沢書店",
+      "incident_type": "ransomware",
+      "incident_categories": [
+        "ransomware",
+        "unauthorized access"
+      ],
+      "potential_records": null,
+      "confidence": "medium",
+      "confidence_score": 30,
+      "related": [],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://www.corp.musenet.co.jp/pages/23?detail=1&b_id=106&r_id=37"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "publication",
+      "affected_service": "楽譜ナビ / 注文くん",
+      "service_aliases": [],
+      "affected_services": [
+        "楽譜ナビ",
+        "注文くん"
+      ],
+      "service_details": [
+        {
+          "name": "楽譜ナビ",
+          "aliases": []
+        },
+        {
+          "name": "注文くん",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-28T07:20:12+00:00",
+      "updated_at": "2026-11-28T07:20:12+00:00"
     },
     {
       "id": "2e68ea9149cf74c8",
