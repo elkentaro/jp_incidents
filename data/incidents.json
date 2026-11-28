@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "confidence_policy": "source_priority_v3",
-  "updated_at": "2026-11-28T05:16:52+00:00",
-  "total": 1715,
+  "updated_at": "2026-11-28T06:18:36+00:00",
+  "total": 1714,
   "date_range": {
     "start": "2023-01-01",
     "end": "2026-11-28"
@@ -354,7 +354,7 @@
     },
     {
       "date": "2026-11-25",
-      "count": 27
+      "count": 26
     },
     {
       "date": "2026-11-26",
@@ -2928,39 +2928,6 @@
       "updated_at": "2026-11-25T15:16:10+00:00"
     },
     {
-      "id": "0b391bcb3afd5204",
-      "published_at": "2026-11-24T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "日本航空",
-      "incident_type": "other",
-      "incident_categories": [
-        "other"
-      ],
-      "potential_records": null,
-      "confidence": "medium",
-      "confidence_score": 30,
-      "related": [
-        {
-          "incident_id": "a3c09650fe9bed69",
-          "relationship": "same_organization",
-          "evidence_url": "https://act1.co.jp/column/10884-2/",
-          "evidence_urls": [
-            "https://act1.co.jp/column/10884-2/"
-          ]
-        }
-      ],
-      "sources": [
-        {
-          "name": "株式会社アクト",
-          "url": "https://act1.co.jp/column/10884-2/"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "publication",
-      "added_at": "2026-11-28T04:16:53+00:00",
-      "updated_at": "2026-11-28T04:16:53+00:00"
-    },
-    {
       "id": "22746348f546d21b",
       "published_at": "2026-11-24T15:00:00+00:00",
       "disclosed_at": null,
@@ -3359,6 +3326,69 @@
       "updated_at": "2026-11-26T03:16:09+00:00"
     },
     {
+      "id": "7b616b4974cf71f0",
+      "published_at": "2026-11-23T15:00:00+00:00",
+      "disclosed_at": null,
+      "organization": "GMOペパボ",
+      "incident_type": "data leak",
+      "incident_categories": [
+        "data leak",
+        "unauthorized access"
+      ],
+      "potential_records": 516564,
+      "confidence": "high",
+      "confidence_score": 90,
+      "related": [],
+      "sources": [
+        {
+          "name": "legalagent list",
+          "url": "https://lolipop.jp/info/news/8279/"
+        },
+        {
+          "name": "Yahoo!ニュース",
+          "url": "https://news.yahoo.co.jp/articles/ca3168ec83d50acaf71a8d3edff2ef8a03b68f4d"
+        },
+        {
+          "name": "日本経済新聞",
+          "url": "https://www.nikkei.com/article/DGXZQOUC27B210X21C26A1000000/"
+        },
+        {
+          "name": "piyolog",
+          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/28/110735"
+        }
+      ],
+      "affected_system": null,
+      "date_basis": "discovery",
+      "affected_service": "ロリポップ!レンタルサーバー / ロリポップ!AIエージェントクラウド / ロリポップ!AIホームページ / ロリポップ!デプロイナウ",
+      "service_aliases": [],
+      "affected_services": [
+        "ロリポップ!レンタルサーバー",
+        "ロリポップ!AIエージェントクラウド",
+        "ロリポップ!AIホームページ",
+        "ロリポップ!デプロイナウ"
+      ],
+      "service_details": [
+        {
+          "name": "ロリポップ!レンタルサーバー",
+          "aliases": []
+        },
+        {
+          "name": "ロリポップ!AIエージェントクラウド",
+          "aliases": []
+        },
+        {
+          "name": "ロリポップ!AIホームページ",
+          "aliases": []
+        },
+        {
+          "name": "ロリポップ!デプロイナウ",
+          "aliases": []
+        }
+      ],
+      "added_at": "2026-11-27T16:17:36+00:00",
+      "updated_at": "2026-11-28T06:18:35+00:00"
+    },
+    {
       "id": "9e3604f4b69ad21d",
       "published_at": "2026-11-23T15:00:00+00:00",
       "disclosed_at": null,
@@ -3612,65 +3642,6 @@
       ],
       "added_at": "2026-11-25T09:16:11+00:00",
       "updated_at": "2026-11-26T11:16:22+00:00"
-    },
-    {
-      "id": "7b616b4974cf71f0",
-      "published_at": "2026-11-23T15:00:00+00:00",
-      "disclosed_at": null,
-      "organization": "GMOペパボ",
-      "incident_type": "data leak",
-      "incident_categories": [
-        "data leak",
-        "unauthorized access"
-      ],
-      "potential_records": 516564,
-      "confidence": "medium",
-      "confidence_score": 50,
-      "related": [],
-      "sources": [
-        {
-          "name": "Yahoo!ニュース",
-          "url": "https://news.yahoo.co.jp/articles/ca3168ec83d50acaf71a8d3edff2ef8a03b68f4d"
-        },
-        {
-          "name": "日本経済新聞",
-          "url": "https://www.nikkei.com/article/DGXZQOUC27B210X21C26A1000000/"
-        },
-        {
-          "name": "piyolog",
-          "url": "https://piyolog.hatenadiary.jp/entry/2026/11/28/110735"
-        }
-      ],
-      "affected_system": null,
-      "date_basis": "discovery",
-      "affected_service": "ロリポップ!レンタルサーバー / ロリポップ!AIエージェントクラウド / ロリポップ!AIホームページ / ロリポップ!デプロイナウ",
-      "service_aliases": [],
-      "affected_services": [
-        "ロリポップ!レンタルサーバー",
-        "ロリポップ!AIエージェントクラウド",
-        "ロリポップ!AIホームページ",
-        "ロリポップ!デプロイナウ"
-      ],
-      "service_details": [
-        {
-          "name": "ロリポップ!レンタルサーバー",
-          "aliases": []
-        },
-        {
-          "name": "ロリポップ!AIエージェントクラウド",
-          "aliases": []
-        },
-        {
-          "name": "ロリポップ!AIホームページ",
-          "aliases": []
-        },
-        {
-          "name": "ロリポップ!デプロイナウ",
-          "aliases": []
-        }
-      ],
-      "added_at": "2026-11-27T16:17:36+00:00",
-      "updated_at": "2026-11-28T03:17:06+00:00"
     },
     {
       "id": "ba4a0092ac388e60",
@@ -44873,14 +44844,6 @@
       "confidence_score": 90,
       "related": [
         {
-          "incident_id": "0b391bcb3afd5204",
-          "relationship": "same_organization",
-          "evidence_url": "https://act1.co.jp/column/10884-2/",
-          "evidence_urls": [
-            "https://act1.co.jp/column/10884-2/"
-          ]
-        },
-        {
           "incident_id": "0cd8a1c184390c84",
           "relationship": "affected_by",
           "evidence_url": "https://news.yahoo.co.jp/articles/5b2d712fc43b2136c85bad4ec97c9b4309b1fa11",
@@ -44928,7 +44891,7 @@
         }
       ],
       "added_at": "2026-10-28T11:16:00+00:00",
-      "updated_at": "2026-11-28T04:16:53+00:00"
+      "updated_at": "2026-11-28T06:18:35+00:00"
     },
     {
       "id": "a4c6a8cdac85f9f4",
